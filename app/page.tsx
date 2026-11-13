@@ -34,9 +34,11 @@ import {
   ChatMessage,
   ChatSession,
   ExpertLawyer,
-  LEGAL_DOCUMENTS_LIST,
   TierMode
 } from "./data/legalWorkspaceData";
+
+type CorpusRecord = { doc_id: string; doc_title?: string; source_url?: string; total_versions?: number; reviewed_versions?: number };
+type CorpusInventory = { total_documents: number; total_chunks: number; corpus_status: string; snapshot_id?: string; records: CorpusRecord[] };
 
 const INITIAL_SESSIONS: ChatSession[] = [{ id: "demo-new", title: "Tra cứu mới", group: "today", status: "draft", messages: [] }];
 
@@ -67,6 +69,9 @@ export default function AskPayWorkspacePage() {
   const [demoFault, setDemoFault] = useState<"normal" | "hallucination" | "expired">("normal");
   const [loadingStep, setLoadingStep] = useState<string>("");
   const [errorMsg, setErrorMsg] = useState<string>("");
+  const [corpus, setCorpus] = useState<CorpusInventory | null>(null);
+  const [corpusError, setCorpusError] = useState<string>("");
+  const [asOf, setAsOf] = useState<string>("");
 
   // Follow-up inline state keyed by message id
   const [followUpText, setFollowUpText] = useState<Record<string, string>>({});
@@ -90,6 +95,19 @@ export default function AskPayWorkspacePage() {
   const receiptAddress = process.env.NEXT_PUBLIC_RECEIPT_LOG_ADDRESS || "";
   const fujiRpc =
     process.env.NEXT_PUBLIC_FUJI_RPC_URL || "https://api.avax-test.network/ext/bc/C/rpc";
+
+  useEffect(() => {
+    const controller = new AbortController();
+    fetch("/api/legal-corpus", { signal: controller.signal, cache: "no-store" })
+      .then(async (response) => {
+        if (!response.ok) throw new Error("Không tải được kho dữ liệu.");
+        const data: CorpusInventory = await response.json();
+        setCorpus(data);
+        setCorpusError("");
+      })
+      .catch((error) => { if (error.name !== "AbortError") { setCorpus(null); setCorpusError("Không tải được kho dữ liệu."); } });
+    return () => controller.abort();
+  }, [showDocsModal]);
 
   // Hydrate persisted sessions & adjust panel visibility for small screens
   useEffect(() => {
@@ -285,7 +303,7 @@ export default function AskPayWorkspacePage() {
       const questionId = keccak256(toBytes(`${asker}-${Date.now()}-${queryText}`));
       const escrowTxHash = "";
 
-      setLoadingStep("Đang kiểm tra dữ liệu mẫu...");
+      setLoadingStep("Đang tra cứu và kiểm tra trích dẫn...");
 
       const res = await fetch("/api/ask-and-settle", {
         method: "POST",
@@ -294,10 +312,11 @@ export default function AskPayWorkspacePage() {
           questionId,
           question: queryText,
           tier: apiTier,
+          ...(corpus?.corpus_status === "REVIEW_ASSERTED" && asOf ? { asOf } : {}),
           askerAddress: asker,
           escrowTxHash,
-          simulateHallucination: demoFault === "hallucination",
-          simulateExpiredLaw: demoFault === "expired"
+          simulateHallucination: corpus?.corpus_status === "DEMO_UNVERIFIED" && demoFault === "hallucination",
+          simulateExpiredLaw: corpus?.corpus_status === "DEMO_UNVERIFIED" && demoFault === "expired"
         })
       });
 
@@ -625,8 +644,8 @@ export default function AskPayWorkspacePage() {
                   color={activeSession?.status === "refunded" ? "#d97706" : "#059669"}
                 />
                 {activeSession?.status === "refunded"
-                  ? "Dữ liệu mẫu không đạt kiểm tra trích dẫn · không có giao dịch"
-                  : "Bản thử nghiệm · dữ liệu mẫu chưa xác minh · không có giao dịch"}
+                  ? "Trích dẫn không đạt kiểm tra · không có giao dịch"
+                  : "Bản thử nghiệm · cần đối chiếu nguồn · không có giao dịch"}
               </p>
             </div>
           </div>
@@ -646,7 +665,7 @@ export default function AskPayWorkspacePage() {
                 cursor: "pointer"
               }}
             >
-              Dữ liệu mẫu XNK
+              {corpus ? `${corpus.total_documents} văn bản trong kho` : "Kho dữ liệu"}
             </button>
 
             <button
@@ -761,7 +780,7 @@ export default function AskPayWorkspacePage() {
                     >
                       <UndoIcon size={15} color="#b45309" />
                       <span>
-                        Không đạt kiểm tra dữ liệu mẫu ({msg.validation?.overall_score ?? 0}%). Không có giao dịch thanh toán.
+                        Không đạt kiểm tra trích dẫn ({msg.validation?.overall_score ?? 0}%). Không có giao dịch thanh toán.
                       </span>
                     </div>
                   )}
@@ -1016,7 +1035,7 @@ export default function AskPayWorkspacePage() {
               </div>
 
               {/* Subtle Demo Fault Selector for Hackathon Live Testing */}
-              <div style={{ display: "flex", alignItems: "center", gap: 6 }}>
+              {corpus?.corpus_status === "DEMO_UNVERIFIED" && <div style={{ display: "flex", alignItems: "center", gap: 6 }}>
                 <label
                   htmlFor="demo-fault-select"
                   style={{ fontSize: 11, color: "#64748b", fontWeight: 500 }}
@@ -1045,7 +1064,12 @@ export default function AskPayWorkspacePage() {
                   <option value="hallucination">Giả lập AI bịa luật</option>
                   <option value="expired">Giả lập Luật hết hạn</option>
                 </select>
-              </div>
+              </div>}
+              {corpus?.corpus_status === "REVIEW_ASSERTED" && (
+                <label style={{ fontSize: 11, color: "#64748b" }}>
+                  Ngày tra cứu: <input type="date" value={asOf} onChange={(event) => setAsOf(event.target.value)} />
+                </label>
+              )}
             </div>
 
             {/* Rounded Prompt Input Card */}
@@ -1074,7 +1098,7 @@ export default function AskPayWorkspacePage() {
                     type="button"
                     onClick={() => setShowDocsModal(true)}
                     className="icon-btn"
-                    title="Xem danh mục văn bản dự kiến"
+                    title="Xem kho dữ liệu tra cứu"
                   >
                     <PaperclipIcon size={16} />
                   </button>
@@ -1135,7 +1159,7 @@ export default function AskPayWorkspacePage() {
               }}
             >
               <h3 style={{ margin: 0, fontSize: 16.5, fontWeight: 700, color: "#0a1c2e" }}>
-                Danh mục văn bản dự kiến · chưa xác minh
+                Kho dữ liệu tra cứu
               </h3>
               <button
                 type="button"
@@ -1146,47 +1170,28 @@ export default function AskPayWorkspacePage() {
               </button>
             </div>
 
-            <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
-              {LEGAL_DOCUMENTS_LIST.map((doc, idx) => {
-                const isExpired = doc.status.includes("Hết");
-                return (
-                  <div
-                    key={idx}
-                    style={{
-                      padding: "10px 12px",
-                      borderRadius: 10,
-                      border: "1px solid #e2e8f0",
-                      background: isExpired ? "#fffbeb" : "#f8fafc"
-                    }}
-                  >
-                    <div
-                      style={{
-                        display: "flex",
-                        justifyContent: "space-between",
-                        alignItems: "center",
-                        gap: 8,
-                        marginBottom: 3
-                      }}
-                    >
-                      <strong style={{ fontSize: 13.5, color: "#102a43" }}>{doc.code}</strong>
-                      <span
-                        style={{
-                          fontSize: 11,
-                          fontWeight: 600,
-                          padding: "2px 8px",
-                          borderRadius: 999,
-                          background: isExpired ? "#fee2e2" : "#dcfce7",
-                          color: isExpired ? "#991b1b" : "#166534"
-                        }}
-                      >
-                        Chưa xác minh
-                      </span>
+            {corpusError && <p role="alert">{corpusError}</p>}
+            {!corpus && !corpusError && <p>Đang tải kho dữ liệu...</p>}
+            {corpus && (
+              <>
+                <p style={{ fontSize: 12, color: "#64748b" }}>
+                  {corpus.total_documents} văn bản · {corpus.total_chunks} đoạn / phiên bản.
+                  {corpus.corpus_status === "DEMO_UNVERIFIED"
+                    ? " Dữ liệu mẫu chưa xác minh."
+                    : ` Snapshot ${corpus.snapshot_id || "không rõ"}; thông tin duyệt do người nhập khai báo.`}
+                </p>
+                <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
+                  {Array.from(new Map(corpus.records.filter((doc) => typeof doc.doc_id === "string").map((doc) => [doc.doc_id, doc])).values()).map((doc) => (
+                    <div key={doc.doc_id} style={{ padding: "10px 12px", borderRadius: 10, border: "1px solid #e2e8f0", background: "#f8fafc" }}>
+                      <strong style={{ fontSize: 13.5, color: "#102a43" }}>{doc.doc_id}</strong>
+                      <div style={{ fontSize: 12.5, color: "#475569", marginTop: 3 }}>{doc.doc_title}</div>
+                      {typeof doc.reviewed_versions === "number" && <div style={{ fontSize: 11, color: "#64748b" }}>Ghi nhận duyệt: {doc.reviewed_versions}/{doc.total_versions} phiên bản</div>}
+                      {doc.source_url?.startsWith("https://") && <a href={doc.source_url} target="_blank" rel="noreferrer" style={{ fontSize: 12 }}>Nguồn được khai báo ↗</a>}
                     </div>
-                    <div style={{ fontSize: 12.5, color: "#475569" }}>{doc.title}</div>
-                  </div>
-                );
-              })}
-            </div>
+                  ))}
+                </div>
+              </>
+            )}
           </div>
         </div>
       )}

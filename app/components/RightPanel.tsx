@@ -430,7 +430,7 @@ export default function RightPanel({
             </div>
 
             <div className="dark-audit-footer">
-              Dữ liệu mẫu chưa xác minh · Không có giao dịch blockchain
+              Cần đối chiếu nguồn · Không có giao dịch blockchain
             </div>
           </>
         )}

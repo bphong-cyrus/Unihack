@@ -37,3 +37,19 @@ test('rejects malformed service result', async () => {
   assert.equal(result.status, 502);
   assert.equal(result.body.onchain, undefined);
 });
+
+test('corpus proxy returns the actual service inventory without fabricated records', async () => {
+  const { fetchLegalCorpus } = await import('../app/api/ask-and-settle/legal-proxy.mjs');
+  const result = await fetchLegalCorpus('http://service/corpus', async () => ({ ok: true, json: async () => ({ total_documents: 1, total_chunks: 2, corpus_status: 'REVIEW_ASSERTED', records: [{ doc_id: 'TEST' }] }) }));
+  assert.equal(result.status, 200);
+  assert.equal(result.body.records[0].doc_id, 'TEST');
+  assert.equal(result.body.total_documents, 1);
+});
+
+test('corpus proxy reports unavailable and malformed inventory', async () => {
+  const { fetchLegalCorpus } = await import('../app/api/ask-and-settle/legal-proxy.mjs');
+  const unavailable = await fetchLegalCorpus('http://service/corpus', async () => { throw new Error('offline'); });
+  assert.equal(unavailable.status, 503);
+  const invalid = await fetchLegalCorpus('http://service/corpus', async () => ({ ok: true, json: async () => ({ records: [] }) }));
+  assert.equal(invalid.status, 502);
+});
