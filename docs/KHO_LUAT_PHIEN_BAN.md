@@ -1,0 +1,13 @@
+# Nhập và kiểm tra kho luật theo phiên bản
+
+`ai-service/legal_corpus.py` đọc snapshot nội bộ từ manifest JSON và các tệp nguồn nằm cùng thư mục hoặc bên dưới. `python3 ai-service/corpus_cli.py check /duong-dan/manifest.json` kiểm tra tính hợp lệ và in JSON gồm số tài liệu, số phiên bản khoản và số bản có ghi nhận duyệt; lệnh trả mã khác 0 nếu có lỗi. Công cụ không tải mạng, không sửa tệp, không xuất bản dữ liệu và không ghi trạng thái duyệt thay cho người biên tập.
+
+Manifest gồm `snapshot_id` và danh sách `documents`. Mỗi tài liệu có `document_id`, `title`, `source_url` HTTPS, đường dẫn tương đối `source_file`, `source_sha256` của nguyên vẹn tệp nguồn, `retrieved_at` ISO 8601 có múi giờ và danh sách `provisions`. Mỗi phiên bản khoản có `article`, `clause`, `point` (chuỗi rỗng nếu không có điểm), `text`, `effective_from` và `effective_until` theo ISO `YYYY-MM-DD`. Khoảng hiệu lực là **bao gồm ngày bắt đầu, không bao gồm ngày kết thúc**; `effective_until: null` nghĩa là chưa khai báo ngày kết thúc, không tự chứng minh còn hiệu lực.
+
+Một phiên bản được coi là có ghi nhận duyệt khi có đủ `reviewed_by`, `reviewed_at` (ISO 8601 có múi giờ) và `status_evidence_url` HTTPS. Cả ba trường đều `null` nghĩa là chưa duyệt. Phần mềm từ chối ghi nhận thiếu một trong ba, từ chối thời gian chồng lấn ở cùng điều/khoản/điểm, và không trả phiên bản chưa duyệt từ hàm `lookup`. Khác khoản hoặc khác điểm có thể có các mốc hiệu lực độc lập.
+
+Quy trình nhập dự kiến: tải bản gốc từ cơ quan có thẩm quyền; giữ nguyên byte và tính SHA-256; trích nội dung theo điều/khoản/điểm; đối chiếu sửa đổi, hiệu lực và phiên bản với nguồn; ghi nguồn, bằng chứng và người duyệt; chạy lệnh kiểm tra; chỉ sau đó đưa snapshot qua quy trình phát hành có kiểm soát. Nguồn HTTPS, hash và trường người duyệt là thông tin do người nhập cung cấp: **chúng không tự xác thực tính chính thức, danh tính người duyệt, tính chính xác của văn bản trích xuất hay hiệu lực pháp luật**. Cần cơ chế xác thực danh tính và kiểm duyệt thực tế trước khi tích hợp vận hành.
+
+Hàm `validate_snapshot_citations` trong `ai-service/versioned_validator.py` kiểm tra tất cả trích dẫn theo snapshot và ngày, trả nguồn và hash khi có phiên bản được duyệt. Cả hai validator cùng dùng hàm so khớp trích dẫn; điểm so khớp được so với ngưỡng trước khi làm tròn.
+
+Hiện các thành phần này chưa được nối vào ba endpoint demo và chưa có corpus thật đã duyệt. Không được diễn giải kết quả kiểm tra kỹ thuật là xác nhận pháp lý; thanh toán vẫn tắt. Kiểm thử sử dụng dữ liệu tổng hợp, không phải văn bản luật thật.

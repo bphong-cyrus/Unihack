@@ -1,5 +1,6 @@
 import sys
 import unittest
+from unittest.mock import patch
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
@@ -30,6 +31,12 @@ class ValidatorContractTests(unittest.TestCase):
     def test_validate_short_excerpt_fails_even_if_exact(self):
         excerpt = " ".join(self.record["raw_text"].split()[:9])
         self.assertEqual(main.compute_excerpt_similarity(excerpt, self.record["raw_text"]), 0)
+
+    def test_similarity_just_below_threshold_is_not_rounded_up(self):
+        excerpt = 'một hai ba bốn năm sáu bảy tám chín mười'
+        source = 'một hai ba bốn năm sáu bảy tám chín khác'
+        with patch('citation_text.fuzz.partial_ratio', return_value=89.999):
+            self.assertLess(main.compute_excerpt_similarity(excerpt, source), 0.90)
 
     def test_validate_expired_citation_fails(self):
         rec = main.CORPUS_RECORDS[-1]

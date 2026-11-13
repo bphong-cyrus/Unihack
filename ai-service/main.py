@@ -1,14 +1,12 @@
 import hashlib
 import json
-import re
 import time
-import unicodedata
 from typing import List, Optional
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 
-from rapidfuzz import fuzz
+from citation_text import normalize_vn_text, compute_excerpt_similarity
 
 app = FastAPI(
     title="AskPay XNK — LegalIR / LegalQA & Citation Validator API",
@@ -130,26 +128,6 @@ CORPUS_INDEX = {
 # ==============================================================================
 # 2. DETERMINISTIC CITATION VALIDATOR (Chuẩn >= 90% Excerpt Match)
 # ==============================================================================
-def normalize_vn_text(text: str) -> str:
-    if not text:
-        return ""
-    text = unicodedata.normalize("NFC", text).lower()
-    text = re.sub(r"[^\w\s]", " ", text, flags=re.UNICODE)
-    text = re.sub(r"\s+", " ", text).strip()
-    return text
-
-
-def compute_excerpt_similarity(excerpt: str, source_text: str) -> float:
-    norm_excerpt = normalize_vn_text(excerpt)
-    norm_source = normalize_vn_text(source_text)
-
-    if len(norm_excerpt.split()) < 10 or not norm_source:
-        return 0.0
-
-    if norm_excerpt in norm_source:
-        return 1.0
-
-    return round(fuzz.partial_ratio(norm_excerpt, norm_source) / 100.0, 4)
 
 
 def validate_citations(citations: list[dict]) -> dict:
