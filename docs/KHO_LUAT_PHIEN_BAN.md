@@ -10,4 +10,6 @@ Quy trình nhập dự kiến: tải bản gốc từ cơ quan có thẩm quyề
 
 Hàm `validate_snapshot_citations` trong `ai-service/versioned_validator.py` kiểm tra tất cả trích dẫn theo snapshot và ngày, trả nguồn và hash khi có phiên bản được duyệt. Cả hai validator cùng dùng hàm so khớp trích dẫn; điểm so khớp được so với ngưỡng trước khi làm tròn.
 
-Hiện các thành phần này chưa được nối vào ba endpoint demo và chưa có corpus thật đã duyệt. Không được diễn giải kết quả kiểm tra kỹ thuật là xác nhận pháp lý; thanh toán vẫn tắt. Kiểm thử sử dụng dữ liệu tổng hợp, không phải văn bản luật thật.
+Đặt biến môi trường `ASKPAY_CORPUS_MANIFEST` bằng đường dẫn manifest tuyệt đối trước khi chạy dịch vụ để ba endpoint dùng snapshot đó. `/ask` tìm theo từ khóa trong các khoản đã ghi nhận duyệt, trả tối đa ba đoạn nguyên văn cùng nguồn, không sinh kết luận; `quick` xét tối đa ba ứng viên và `deep` tối đa tám. `/ask` và `/validate` nhận `as_of` tùy chọn ở dạng `YYYY-MM-DD`, mặc định là ngày tại Việt Nam. Kho được đọc và kiểm tra lại mỗi yêu cầu; nếu tệp hỏng hoặc sai hash, API trả 503 và không quay về dữ liệu demo. Cờ mô phỏng lỗi chỉ dùng trong chế độ demo. Khi không cấu hình snapshot, API tiếp tục dùng bảy đoạn demo và từ chối tham số ngày thay vì bỏ qua.
+
+Chưa có corpus thật đã duyệt, bộ truy xuất từ khóa chưa được đánh giá và không phải hệ thống LegalIR/LegalQA hoàn chỉnh. Không được diễn giải kết quả kiểm tra kỹ thuật là xác nhận pháp lý; thanh toán vẫn tắt. Kiểm thử sử dụng dữ liệu tổng hợp, không phải văn bản luật thật.

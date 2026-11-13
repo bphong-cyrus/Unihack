@@ -2,7 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import { forwardLegalQuestion } from '../app/api/ask-and-settle/legal-proxy.mjs';
 
-const request = { questionId: '0x123', question: 'Thời hạn khai hải quan?', tier: 'quick' };
+const request = { questionId: '0x123', question: 'Thời hạn khai hải quan?', tier: 'quick', asOf: '2023-01-01' };
 
 test('forwards the question and returns the service result without claiming settlement', async () => {
   const response = { question_id: '0x123', answer: 'Ví dụ', citations: [], validation: { passed: false, verdict: 'UNVERIFIED_REFUND', overall_score: 0, citation_checks: [] } };
@@ -12,6 +12,7 @@ test('forwards the question and returns the service result without claiming sett
     return { ok: true, json: async () => response };
   });
   assert.equal(sent.question_id, request.questionId);
+  assert.equal(sent.as_of, request.asOf);
   assert.equal(result.body.answer, 'Ví dụ');
   assert.equal(result.body.onchain, undefined);
   assert.equal(result.body.demo, true);

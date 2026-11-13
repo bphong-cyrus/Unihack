@@ -54,6 +54,7 @@ def _doc_id(value):
 @dataclass(frozen=True)
 class Provision:
     document_id: str
+    document_title: str
     article: str
     clause: str
     point: str
@@ -104,7 +105,7 @@ class CorpusSnapshot:
 
 def _read_document(document, root):
     document_id = _doc_id(_required_string(document, 'document_id'))
-    _required_string(document, 'title')
+    title = _required_string(document, 'title')
     source_url = _https(_required_string(document, 'source_url'))
     _timestamp(_required_string(document, 'retrieved_at'))
     relative = Path(_required_string(document, 'source_file'))
@@ -123,10 +124,10 @@ def _read_document(document, root):
     provisions = document.get('provisions')
     if not isinstance(provisions, list) or not provisions:
         raise CorpusError('document must contain provisions')
-    return document_id, source_url, digest, provisions
+    return document_id, title, source_url, digest, provisions
 
 
-def _read_provision(record, document_id, source_url, digest):
+def _read_provision(record, document_id, title, source_url, digest):
     article = _required_string(record, 'article')
     clause = _required_string(record, 'clause')
     point = record.get('point', '')
@@ -144,7 +145,7 @@ def _read_provision(record, document_id, source_url, digest):
         evidence = _https(_required_string(record, 'status_evidence_url'))
     else:
         reviewer = reviewed_at = evidence = None
-    return Provision(document_id, article, clause, point.strip(), _required_string(record, 'text'),
+    return Provision(document_id, title, article, clause, point.strip(), _required_string(record, 'text'),
                      start, end, reviewer, reviewed_at, evidence, source_url, digest)
 
 
@@ -162,12 +163,12 @@ def load_snapshot(manifest_path):
         groups = {}
         items = []
         for document in documents:
-            doc_id, url, digest, records = _read_document(document, path.parent)
+            doc_id, title, url, digest, records = _read_document(document, path.parent)
             if doc_id in seen:
                 raise CorpusError('duplicate document ID')
             seen.add(doc_id)
             for record in records:
-                item = _read_provision(record, doc_id, url, digest)
+                item = _read_provision(record, doc_id, title, url, digest)
                 key = (doc_id, item.article, item.clause, item.point)
                 groups.setdefault(key, []).append(item)
                 items.append(item)

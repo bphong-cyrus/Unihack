@@ -1,5 +1,6 @@
 import sys
 import unittest
+from fastapi import HTTPException
 from unittest.mock import patch
 from pathlib import Path
 
@@ -42,6 +43,13 @@ class ValidatorContractTests(unittest.TestCase):
         rec = main.CORPUS_RECORDS[-1]
         result = main.validate_citations([dict(document=rec["doc_id"], article=rec["article"], clause=rec["clause"], excerpt=rec["raw_text"])])
         self.assertEqual(result["citation_checks"][0]["fail_reason"], "DOCUMENT_EXPIRED_OR_REPLACED")
+
+    def test_demo_rejects_historical_date_instead_of_ignoring_it(self):
+        for operation in (lambda: main.ask_legal_question(main.AskRequest(question='Hải quan', as_of='2020-01-01')),
+                          lambda: main.validate_endpoint(main.ValidateRequest(citations=[], as_of='2020-01-01'))):
+            with self.assertRaises(HTTPException) as error:
+                operation()
+            self.assertEqual(error.exception.status_code, 400)
 
     def test_validate_endpoint_exists(self):
         routes = {(route.path, method) for route in main.app.routes for method in getattr(route, "methods", set())}

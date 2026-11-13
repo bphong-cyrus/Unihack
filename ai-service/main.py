@@ -1,12 +1,15 @@
 import hashlib
 import json
 import time
+from datetime import date
 from typing import List, Optional
-from fastapi import FastAPI
+from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 
 from citation_text import normalize_vn_text, compute_excerpt_similarity
+from snapshot_api import ask_snapshot, configured_snapshot, corpus_response, query_date
+from versioned_validator import validate_snapshot_citations
 
 app = FastAPI(
     title="AskPay XNK — LegalIR / LegalQA & Citation Validator API",
@@ -215,6 +218,7 @@ def sha256_hex(data: str) -> str:
 # ==============================================================================
 class ValidateRequest(BaseModel):
     citations: list[dict]
+    as_of: Optional[date] = None
 
 
 class AskRequest(BaseModel):
@@ -224,10 +228,14 @@ class AskRequest(BaseModel):
     domain: str = "import_export_customs"
     simulate_hallucination: bool = False
     simulate_expired_law: bool = False
+    as_of: Optional[date] = None
 
 
 @app.get("/api/v1/legal/corpus")
 def get_corpus():
+    snapshot = configured_snapshot()
+    if snapshot is not None:
+        return corpus_response(snapshot)
     return {
         "total_documents": len({r["doc_id"] for r in CORPUS_RECORDS}),
         "total_chunks": len(CORPUS_RECORDS),
@@ -239,11 +247,21 @@ def get_corpus():
 
 @app.post("/api/v1/legal/validate")
 def validate_endpoint(req: ValidateRequest):
+    snapshot = configured_snapshot()
+    if snapshot is not None:
+        return validate_snapshot_citations(req.citations, snapshot, query_date(req.as_of))
+    if req.as_of is not None:
+        raise HTTPException(status_code=400, detail="Dữ liệu demo không hỗ trợ tra cứu theo ngày.")
     return validate_citations(req.citations)
 
 
 @app.post("/api/v1/legal/ask")
 def ask_legal_question(req: AskRequest):
+    snapshot = configured_snapshot()
+    if snapshot is not None:
+        return ask_snapshot(req, snapshot)
+    if req.as_of is not None:
+        raise HTTPException(status_code=400, detail="Dữ liệu demo không hỗ trợ tra cứu theo ngày.")
     start_time = time.time()
 
     # Trường hợp 1: Giả lập AI trích dẫn văn bản đã hết hiệu lực (để demo Auto-Refund)

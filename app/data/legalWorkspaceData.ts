@@ -18,6 +18,8 @@ export interface CitationCheck {
   excerpt_similarity: number;
   threshold_required: number;
   raw_text?: string;
+  source_url?: string | null;
+  source_sha256?: string | null;
   status: "PASS" | "FAIL";
   fail_reason: string | null;
 }
@@ -28,6 +30,8 @@ export interface ValidationPayload {
   overall_score: number;
   citation_checks: CitationCheck[];
   fail_reason?: string;
+  snapshot_id?: string;
+  as_of?: string;
 }
 
 export interface OnchainProof {

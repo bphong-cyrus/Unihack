@@ -12,6 +12,7 @@ export async function forwardLegalQuestion(body, url, fetchImpl = fetch) {
       body: JSON.stringify({
         question_id: body.questionId, question: body.question.trim(), tier: body.tier,
         domain: 'import_export_customs',
+        ...(body.asOf ? { as_of: body.asOf } : {}),
         simulate_hallucination: body.simulateHallucination === true,
         simulate_expired_law: body.simulateExpiredLaw === true
       }),

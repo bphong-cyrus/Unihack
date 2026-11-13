@@ -277,8 +277,8 @@ export default function RightPanel({
                         }}
                       >
                         {currentCheck && !currentCheck.is_in_force
-                          ? "EXPIRED (Hết hiệu lực)"
-                          : "ACTIVE (Đang hiệu lực)"}
+                          ? "Chưa có dữ liệu phù hợp"
+                          : "Phù hợp dữ liệu đã nhập"}
                       </span>
                     </div>
 
@@ -330,7 +330,7 @@ export default function RightPanel({
                           {currentCheck.article_clause_exists ? "✓" : "✕"} Đúng Điều/Khoản (25%)
                         </div>
                         <div style={{ color: currentCheck.is_in_force ? "#047857" : "#b91c1c" }}>
-                          {currentCheck.is_in_force ? "✓" : "✕"} Hiệu lực ACTIVE (20%)
+                          {currentCheck.is_in_force ? "✓" : "✕"} Trạng thái theo dữ liệu (20%)
                         </div>
                         <div
                           style={{
@@ -358,6 +358,13 @@ export default function RightPanel({
                         </div>
                       )}
                     </div>
+                  )}
+
+                  {currentCheck?.source_url && currentCheck.source_url.startsWith("https://") && (
+                    <p style={{ fontSize: 12, margin: "0 0 12px" }}>
+                      <a href={currentCheck.source_url} target="_blank" rel="noreferrer">Xem nguồn được khai báo ↗</a>
+                      {activeAssistantMsg?.validation?.as_of && ` · Ngày tra cứu: ${activeAssistantMsg.validation.as_of}`}
+                    </p>
                   )}
 
                   {/* Authentic Raw Text Card */}
