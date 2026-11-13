@@ -1,0 +1,25 @@
+{
+  "name": "askpay-xnk-avalanche",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "compile:contracts": "node contracts/compile_and_deploy.mjs --compile-only",
+    "deploy:contracts": "node contracts/compile_and_deploy.mjs --deploy"
+  },
+  "dependencies": {
+    "next": "14.2.15",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "viem": "^2.21.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.0",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "solc": "^0.8.20",
+    "typescript": "^5.5.0"
+  }
+}

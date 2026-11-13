@@ -1,0 +1,407 @@
+{
+  "contractName": "AskPayEscrow",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_aiOracle",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "_treasury",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "bytes32",
+          "name": "questionId",
+          "type": "bytes32"
+        },
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "asker",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "enum AskPayEscrow.Tier",
+          "name": "tier",
+          "type": "uint8"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "amount",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "internalType": "bytes32",
+          "name": "questionHash",
+          "type": "bytes32"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "timestamp",
+          "type": "uint256"
+        }
+      ],
+      "name": "QuestionAsked",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "bytes32",
+          "name": "questionId",
+          "type": "bytes32"
+        },
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "asker",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "bool",
+          "name": "passed",
+          "type": "bool"
+        },
+        {
+          "indexed": false,
+          "internalType": "enum AskPayEscrow.Status",
+          "name": "finalStatus",
+          "type": "uint8"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "amountTransferred",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint16",
+          "name": "validatorScore",
+          "type": "uint16"
+        },
+        {
+          "indexed": false,
+          "internalType": "bytes32",
+          "name": "l1ReceiptHash",
+          "type": "bytes32"
+        }
+      ],
+      "name": "QuestionResolved",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "bytes32",
+          "name": "questionId",
+          "type": "bytes32"
+        },
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "asker",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "amountRefunded",
+          "type": "uint256"
+        }
+      ],
+      "name": "TimeoutRefundClaimed",
+      "type": "event"
+    },
+    {
+      "inputs": [],
+      "name": "aiOracle",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "questionId",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "enum AskPayEscrow.Tier",
+          "name": "tier",
+          "type": "uint8"
+        },
+        {
+          "internalType": "bytes32",
+          "name": "questionHash",
+          "type": "bytes32"
+        }
+      ],
+      "name": "askQuestion",
+      "outputs": [],
+      "stateMutability": "payable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "questionId",
+          "type": "bytes32"
+        }
+      ],
+      "name": "claimTimeoutRefund",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "deepPrice",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "",
+          "type": "bytes32"
+        }
+      ],
+      "name": "escrows",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "asker",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "amount",
+          "type": "uint256"
+        },
+        {
+          "internalType": "enum AskPayEscrow.Tier",
+          "name": "tier",
+          "type": "uint8"
+        },
+        {
+          "internalType": "enum AskPayEscrow.Status",
+          "name": "status",
+          "type": "uint8"
+        },
+        {
+          "internalType": "uint256",
+          "name": "createdAt",
+          "type": "uint256"
+        },
+        {
+          "internalType": "bytes32",
+          "name": "questionHash",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "bytes32",
+          "name": "l1ReceiptHash",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "uint16",
+          "name": "validatorScore",
+          "type": "uint16"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "owner",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "quickPrice",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "questionId",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "bool",
+          "name": "passed",
+          "type": "bool"
+        },
+        {
+          "internalType": "uint16",
+          "name": "validatorScore",
+          "type": "uint16"
+        },
+        {
+          "internalType": "bytes32",
+          "name": "l1ReceiptHash",
+          "type": "bytes32"
+        }
+      ],
+      "name": "resolveQuestion",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_aiOracle",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "_treasury",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "_quickPrice",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "_deepPrice",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "_timeoutDuration",
+          "type": "uint256"
+        }
+      ],
+      "name": "setConfig",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "timeoutDuration",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "totalAutoRefunded",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "totalQuestions",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "totalVerifiedPassed",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "treasury",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x60806040526611c37937e0800060035566470de4df82000060045561012c600555348015602a575f5ffd5b50604051610dd0380380610dd0833981016040819052604791609b565b5f80546001600160a01b03199081163317909155600180546001600160a01b039485169083161790556002805492909316911617905560c7565b80516001600160a01b03811681146096575f5ffd5b919050565b5f5f6040838503121560ab575f5ffd5b60b2836081565b915060be602084016081565b90509250929050565b610cfc806100d45f395ff3fe6080604052600436106100d9575f3560e01c806361d027b31161007c5780638da5cb5b116100575780638da5cb5b14610277578063aea7ce2d14610295578063bd83baa9146102aa578063bea5b914146102bf575f5ffd5b806361d027b31461022e5780636d46a1c61461024d57806385d19e1a14610262575f5ffd5b80631a59656c116100b75780631a59656c146101305780632d83549c1461015857806331b221cd146101d8578063574531c71461020f575f5ffd5b8063018c5cb3146100dd57806306afb8c4146100f257806311d044fa14610111575b5f5ffd5b6100f06100eb366004610aad565b6102d4565b005b3480156100fd575f5ffd5b506100f061010c366004610b00565b610552565b34801561011c575f5ffd5b506100f061012b366004610b49565b6105d6565b34801561013b575f5ffd5b5061014560035481565b6040519081526020015b60405180910390f35b348015610163575f5ffd5b506101c4610172366004610b98565b60096020525f908152604090208054600182015460028301546003840154600485015460058601546006909601546001600160a01b0390951695939460ff8085169561010090950416939061ffff1688565b60405161014f989796959493929190610be7565b3480156101e3575f5ffd5b506001546101f7906001600160a01b031681565b6040516001600160a01b03909116815260200161014f565b34801561021a575f5ffd5b506100f0610229366004610b98565b6108d1565b348015610239575f5ffd5b506002546101f7906001600160a01b031681565b348015610258575f5ffd5b5061014560075481565b34801561026d575f5ffd5b5061014560055481565b348015610282575f5ffd5b505f546101f7906001600160a01b031681565b3480156102a0575f5ffd5b5061014560085481565b3480156102b5575f5ffd5b5061014560045481565b3480156102ca575f5ffd5b5061014560065481565b5f5f84815260096020526040902060020154610100900460ff1660048111156102ff576102ff610baf565b146103515760405162461bcd60e51b815260206004820152601a60248201527f5175657374696f6e20494420616c72656164792065786973747300000000000060448201526064015b60405180910390fd5b5f8083600181111561036557610365610baf565b1461037257600454610376565b6003545b9050803410156103de5760405162461bcd60e51b815260206004820152602d60248201527f496e73756666696369656e7420657363726f77206465706f73697420666f722060448201526c39b2b632b1ba32b2103a34b2b960991b6064820152608401610348565b604080516101008101825233815234602082015290810184600181111561040757610407610baf565b81526001602080830182905242604080850191909152606084018790525f6080850181905260a09094018490528884526009825292839020845181546001600160a01b0319166001600160a01b039091161781559084015181830155918301516002830180549192909160ff191690838181111561048757610487610baf565b0217905550606082015160028201805461ff0019166101008360048111156104b1576104b1610baf565b02179055506080820151600382015560a0820151600482015560c0820151600582015560e0909101516006918201805461ffff191661ffff9092169190911790558054600191905f90610505908490610c42565b9091555050604051339085907f492f613aab51e564c9d3f3ad5257196e9b410c3c05082e36efa30bf843d4737790610544908790349088904290610c67565b60405180910390a350505050565b5f546001600160a01b031633146105985760405162461bcd60e51b815260206004820152600a60248201526927b7363c9037bbb732b960b11b6044820152606401610348565b600180546001600160a01b039687166001600160a01b0319918216179091556002805495909616941693909317909355600355600491909155600555565b6001546001600160a01b03163314806105f857505f546001600160a01b031633145b6106355760405162461bcd60e51b815260206004820152600e60248201526d4f6e6c79204149204f7261636c6560901b6044820152606401610348565b5f84815260096020526040902060016002820154610100900460ff16600481111561066257610662610baf565b146106a95760405162461bcd60e51b81526020600482015260176024820152765175657374696f6e206973206e6f742070656e64696e6760481b6044820152606401610348565b60068101805461ffff191661ffff851617905560058101829055600181015484156107a0576002828101805461ff001916610100830217905550600160075f8282546106f59190610c42565b90915550506002546040515f916001600160a01b03169083908381818185875af1925050503d805f8114610744576040519150601f19603f3d011682016040523d82523d5f602084013e610749565b606091505b505090508061079a5760405162461bcd60e51b815260206004820152601b60248201527f5472616e7366657220746f207472656173757279206661696c656400000000006044820152606401610348565b5061086c565b60028201805461ff00191661030017905560088054600191905f906107c6908490610c42565b909155505081546040515f916001600160a01b03169083908381818185875af1925050503d805f8114610814576040519150601f19603f3d011682016040523d82523d5f602084013e610819565b606091505b505090508061086a5760405162461bcd60e51b815260206004820152601b60248201527f4175746f2d726566756e6420746f2061736b6572206661696c656400000000006044820152606401610348565b505b815460028301546040516001600160a01b039092169188917f03777733f19a6550b3b86879b07404c8c1121f02ffcea2a76a331ca73b433102916108c1918a9161010090910460ff169087908b908b90610c90565b60405180910390a3505050505050565b5f81815260096020526040902060016002820154610100900460ff1660048111156108fe576108fe610baf565b146109455760405162461bcd60e51b81526020600482015260176024820152765175657374696f6e206973206e6f742070656e64696e6760481b6044820152606401610348565b60055481600301546109579190610c42565b4210156109a65760405162461bcd60e51b815260206004820152601760248201527f54696d656f7574206e6f742072656163686564207965740000000000000000006044820152606401610348565b60028101805461ff00191661040017905560088054600191905f906109cc908490610c42565b9091555050600181015481546040515f916001600160a01b03169083908381818185875af1925050503d805f8114610a1f576040519150601f19603f3d011682016040523d82523d5f602084013e610a24565b606091505b5050905080610a6d5760405162461bcd60e51b8152602060048201526015602482015274151a5b595bdd5d081c99599d5b990819985a5b1959605a1b6044820152606401610348565b82546040518381526001600160a01b039091169085907fffcddf3c7f0281667fdc3186d9337bb802457d0a1fe032bf412cc977955f5ff990602001610544565b5f5f5f60608486031215610abf575f5ffd5b83359250602084013560028110610ad4575f5ffd5b929592945050506040919091013590565b80356001600160a01b0381168114610afb575f5ffd5b919050565b5f5f5f5f5f60a08688031215610b14575f5ffd5b610b1d86610ae5565b9450610b2b60208701610ae5565b94979496505050506040830135926060810135926080909101359150565b5f5f5f5f60808587031215610b5c575f5ffd5b8435935060208501358015158114610b72575f5ffd5b9250604085013561ffff81168114610b88575f5ffd5b9396929550929360600135925050565b5f60208284031215610ba8575f5ffd5b5035919050565b634e487b7160e01b5f52602160045260245ffd5b60028110610bd357610bd3610baf565b9052565b60058110610bd357610bd3610baf565b6001600160a01b0389168152602081018890526101008101610c0c6040830189610bc3565b610c196060830188610bd7565b8560808301528460a08301528360c083015261ffff831660e08301529998505050505050505050565b80820180821115610c6157634e487b7160e01b5f52601160045260245ffd5b92915050565b60808101610c758287610bc3565b84602083015283604083015282606083015295945050505050565b851515815260a08101610ca66020830187610bd7565b84604083015261ffff84166060830152826080830152969550505050505056fea2646970667358221220b5b52fae3c5475e334d58e7f34baeca3b871547cb4adc835635cf30d4f1f061464736f6c63430008260033"
+}
