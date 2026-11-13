@@ -625,34 +625,53 @@
     {
       "document_id": "03/2023/TT-BCT",
       "metadata_url": "https://vanban.chinhphu.vn/?docid=207654&pageid=27160",
-      "retrieved_at_utc": "2026-11-13T19:27:13.467757+00:00",
+      "retrieved_at_utc": "2026-11-13T19:31:47.245027+00:00",
       "identity_check": "matched_metadata",
       "attachments": [
         {
           "url": "https://datafiles.chinhphu.vn/cpp/files/vbpq/2023/3/03-bct.pdf",
-          "error": "ValueError: size limit exceeded"
+          "file": "032023ttbct/01.pdf",
+          "sha256": "27d54846cf917bce6bb596e80cc516d9ab21e496efdc60a2868f923e982b195e",
+          "bytes": 26373869,
+          "signature_verified": false
         },
         {
           "url": "https://datafiles.chinhphu.vn/cpp/files/vbpq/2023/3/03-bct-1.pdf",
-          "error": "ValueError: size limit exceeded"
+          "file": "032023ttbct/02.pdf",
+          "sha256": "30e69cce00ffa25078e62318bb2483496e848837e0d52e99c24a11a12c641a5f",
+          "bytes": 20488280,
+          "signature_verified": false
         },
         {
           "url": "https://datafiles.chinhphu.vn/cpp/files/vbpq/2023/3/03-bct-2.pdf",
-          "error": "ValueError: size limit exceeded"
+          "file": "032023ttbct/03.pdf",
+          "sha256": "15e17f9be2dcfea5e553f1cc0db5b6ffa6eda6f0c37768c384eaa893813ab6e0",
+          "bytes": 28981411,
+          "signature_verified": false
         },
         {
           "url": "https://datafiles.chinhphu.vn/cpp/files/vbpq/2023/3/03-bct-3.pdf",
-          "error": "ValueError: size limit exceeded"
+          "file": "032023ttbct/04.pdf",
+          "sha256": "be7cecf1693445b21672f0f0d869744881be42ee6a5984de742a8a4c8d5a084e",
+          "bytes": 31992401,
+          "signature_verified": false
         }
       ]
     },
     {
       "document_id": "12/2019/TT-BCT",
       "metadata_url": "https://moit.gov.vn/van-ban-phap-luat/van-ban-phap-quy/-thong-tu-quy-dinh-quy-tac-xuat-xu-hang-hoa-trong-hiep-dinh-3.html",
-      "retrieved_at_utc": "2026-11-13T19:29:20.130884+00:00",
-      "identity_check": "official_metadata_link_only",
-      "attachments": [],
-      "error": "Chưa tải được bản gốc từ nguồn chính thức; cần kiểm tra thủ công."
+      "retrieved_at_utc": "2026-11-13T19:31:47.537169+00:00",
+      "identity_check": "matched_metadata",
+      "attachments": [
+        {
+          "url": "https://moit.gov.vn/upload/2005517/20210623/_VB_1565254230844_VB_Th%C3%B4ng%20t%C6%B0%20Quy%20t%E1%BA%AFc%20xu%E1%BA%A5t%20x%E1%BB%A9%20trong%20ACFTA_MOIT.rar",
+          "file": "122019ttbct/01.rar",
+          "sha256": "a17385b343d2e30025e5444a7a029153709c1441246b82d9ecd63167fc5a96a9",
+          "bytes": 425215,
+          "signature_verified": false
+        }
+      ]
     }
   ]
 }

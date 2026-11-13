@@ -2,7 +2,7 @@
 
 Danh mục thu thập từ cổng Chính phủ và Bộ Công Thương theo đặc tả AskPay; ngày thu thập từng mục và SHA-256 của từng tệp được lưu trong `legal-sources/manifest.json`. Dữ liệu này là kho nguồn chờ biên tập, chưa phải corpus đã duyệt. Trang thông tin, tệp tải và số hiệu khớp không chứng minh chữ ký điện tử, hiệu lực hiện tại hay nội dung từng khoản. Không giải nén RAR tự động.
 
-Các tệp gốc được tải từ liên kết đính kèm trên trang metadata chính thức; một văn bản có thể có nhiều phần hoặc phụ lục. Các lỗi tải vẫn được ghi trong manifest. `12/2019/TT-BCT` hiện mới có liên kết metadata Bộ Công Thương, chưa có bản tải. Các tệp `03/2023/TT-BCT` vượt giới hạn 12 MB/tệp nên chưa tải.
+Các tệp gốc được tải từ liên kết đính kèm trên trang metadata chính thức; một văn bản có thể có nhiều phần hoặc phụ lục. Các lỗi tải vẫn được ghi trong manifest. Các tệp đính kèm của 35 mục đã được tải; bốn tệp của `03/2023/TT-BCT` được tải lại với giới hạn phù hợp. Không suy ra phụ lục đã đầy đủ chỉ từ số tệp tải được.
 
 Đặc tả ghi 10 nghị định nhưng liệt kê 11; 25 mã được nêu trực tiếp cộng 4 mã FTA và 2 văn bản cũ thành 31 mã, không phải 30. Bốn mục sửa đổi bổ sung được giữ để rà soát, không tính thay cho yêu cầu gốc.
 
@@ -41,8 +41,8 @@ Các tệp gốc được tải từ liên kết đính kèm trên trang metadat
 | 167/2025/NĐ-CP | [Trang nguồn](https://vanban.chinhphu.vn/?docid=214375&pageid=27160) | 1/1 |
 | 182/2025/NĐ-CP | [Trang nguồn](https://vanban.chinhphu.vn/?docid=214329&pageid=27160) | 1/1 |
 | 23/2025/TT-BCT | [Trang nguồn](https://vanban.chinhphu.vn/?docid=213616&pageid=27160) | 1/1 |
-| 03/2023/TT-BCT | [Trang nguồn](https://vanban.chinhphu.vn/?docid=207654&pageid=27160) | 0/4 |
-| 12/2019/TT-BCT | [Trang nguồn](https://moit.gov.vn/van-ban-phap-luat/van-ban-phap-quy/-thong-tu-quy-dinh-quy-tac-xuat-xu-hang-hoa-trong-hiep-dinh-3.html) | 0/0 |
+| 03/2023/TT-BCT | [Trang nguồn](https://vanban.chinhphu.vn/?docid=207654&pageid=27160) | 4/4 |
+| 12/2019/TT-BCT | [Trang nguồn](https://moit.gov.vn/van-ban-phap-luat/van-ban-phap-quy/-thong-tu-quy-dinh-quy-tac-xuat-xu-hang-hoa-trong-hiep-dinh-3.html) | 1/1 |
 
 ## Quan hệ cần rà soát
 

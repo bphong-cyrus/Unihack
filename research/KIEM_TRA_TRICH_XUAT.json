@@ -1,0 +1,882 @@
+{
+  "method": "pypdf extract_text on first, middle, last pages; does not assess OCR or legal accuracy",
+  "summary": {
+    "NO_EXTRACTABLE_TEXT_IN_SAMPLE": 42
+  },
+  "files": [
+    {
+      "document_id": "54/2014/QH13",
+      "file": "542014qh13/01.pdf",
+      "sha256": "1c16477bd2fb5aea74f714c86e80255faedd179e91876b3b7191b83da044e9bf",
+      "pages": 54,
+      "sampled_pages": [
+        {
+          "page": 1,
+          "characters": 0
+        },
+        {
+          "page": 28,
+          "characters": 0
+        },
+        {
+          "page": 54,
+          "characters": 0
+        }
+      ],
+      "assessment": "NO_EXTRACTABLE_TEXT_IN_SAMPLE"
+    },
+    {
+      "document_id": "05/2017/QH14",
+      "file": "052017qh14/01.pdf",
+      "sha256": "3a8a0686b1d69cedd04fe24be22e61f88cbd69969422173d0a7d107fb26f1c07",
+      "pages": 52,
+      "sampled_pages": [
+        {
+          "page": 1,
+          "characters": 0
+        },
+        {
+          "page": 27,
+          "characters": 0
+        },
+        {
+          "page": 52,
+          "characters": 0
+        }
+      ],
+      "assessment": "NO_EXTRACTABLE_TEXT_IN_SAMPLE"
+    },
+    {
+      "document_id": "107/2016/QH13",
+      "file": "1072016qh13/01.pdf",
+      "sha256": "32841618792a0ef83b8f9dab098d39afe556471a83039489f38e1e9ccd91b04b",
+      "pages": 29,
+      "sampled_pages": [
+        {
+          "page": 1,
+          "characters": 0
+        },
+        {
+          "page": 15,
+          "characters": 0
+        },
+        {
+          "page": 29,
+          "characters": 0
+        }
+      ],
+      "assessment": "NO_EXTRACTABLE_TEXT_IN_SAMPLE"
+    },
+    {
+      "document_id": "38/2019/QH14",
+      "file": "382019qh14/01.pdf",
+      "sha256": "a8efac5685b982e4ea765f49d898b5118932de0738a0315bc17545a58957d2d7",
+      "pages": 87,
+      "sampled_pages": [
+        {
+          "page": 1,
+          "characters": 0
+        },
+        {
+          "page": 44,
+          "characters": 0
+        },
+        {
+          "page": 87,
+          "characters": 0
+        }
+      ],
+      "assessment": "NO_EXTRACTABLE_TEXT_IN_SAMPLE"
+    },
+    {
+      "document_id": "08/2015/NĐ-CP",
+      "file": "082015ndcp/01.pdf",
+      "sha256": "62220abfcec173b2fd2114885fd9d7718409a22966f2623a7bf743b1048e5669",
+      "pages": 87,
+      "sampled_pages": [
+        {
+          "page": 1,
+          "characters": 0
+        },
+        {
+          "page": 44,
+          "characters": 0
+        },
+        {
+          "page": 87,
+          "characters": 0
+        }
+      ],
+      "assessment": "NO_EXTRACTABLE_TEXT_IN_SAMPLE"
+    },
+    {
+      "document_id": "59/2018/NĐ-CP",
+      "file": "592018ndcp/01.pdf",
+      "sha256": "7ac1b46e806ae9290125acb9ac1d535bcea768749d16941e9fae20bbf7343a1a",
+      "pages": 48,
+      "sampled_pages": [
+        {
+          "page": 1,
+          "characters": 0
+        },
+        {
+          "page": 25,
+          "characters": 0
+        },
+        {
+          "page": 48,
+          "characters": 0
+        }
+      ],
+      "assessment": "NO_EXTRACTABLE_TEXT_IN_SAMPLE"
+    },
+    {
+      "document_id": "69/2018/NĐ-CP",
+      "file": "692018ndcp/01.pdf",
+      "sha256": "cfe9d66c02837d203a0781cb916273fa6c3c6151b52fc6becc6d1c006d96681e",
+      "pages": 89,
+      "sampled_pages": [
+        {
+          "page": 1,
+          "characters": 0
+        },
+        {
+          "page": 45,
+          "characters": 0
+        },
+        {
+          "page": 89,
+          "characters": 0
+        }
+      ],
+      "assessment": "NO_EXTRACTABLE_TEXT_IN_SAMPLE"
+    },
+    {
+      "document_id": "134/2016/NĐ-CP",
+      "file": "1342016ndcp/01.pdf",
+      "sha256": "4fe3832d278d03e6ab53c064c6aa3c60063d372570eaa6b57427b0bd252e5460",
+      "pages": 78,
+      "sampled_pages": [
+        {
+          "page": 1,
+          "characters": 0
+        },
+        {
+          "page": 40,
+          "characters": 0
+        },
+        {
+          "page": 78,
+          "characters": 0
+        }
+      ],
+      "assessment": "NO_EXTRACTABLE_TEXT_IN_SAMPLE"
+    },
+    {
+      "document_id": "18/2021/NĐ-CP",
+      "file": "182021ndcp/01.pdf",
+      "sha256": "cb0bf16ab3ee6554929e0d9d2cc4f180f51b8ea10ddd30a37309353edeb050d8",
+      "pages": 114,
+      "sampled_pages": [
+        {
+          "page": 1,
+          "characters": 0
+        },
+        {
+          "page": 58,
+          "characters": 0
+        },
+        {
+          "page": 114,
+          "characters": 0
+        }
+      ],
+      "assessment": "NO_EXTRACTABLE_TEXT_IN_SAMPLE"
+    },
+    {
+      "document_id": "18/2021/NĐ-CP",
+      "file": "182021ndcp/02.pdf",
+      "sha256": "710a1398c611658b5b4a43fccba500048d8a39fcd8f8aba6e18b6867f3fb1bed",
+      "pages": 52,
+      "sampled_pages": [
+        {
+          "page": 1,
+          "characters": 0
+        },
+        {
+          "page": 27,
+          "characters": 0
+        },
+        {
+          "page": 52,
+          "characters": 0
+        }
+      ],
+      "assessment": "NO_EXTRACTABLE_TEXT_IN_SAMPLE"
+    },
+    {
+      "document_id": "128/2020/NĐ-CP",
+      "file": "1282020ndcp/01.pdf",
+      "sha256": "76c09dc2006de464217953328ede89bcb7914250c9c0c86fab01e1cf76e23fb8",
+      "pages": 45,
+      "sampled_pages": [
+        {
+          "page": 1,
+          "characters": 0
+        },
+        {
+          "page": 23,
+          "characters": 0
+        },
+        {
+          "page": 45,
+          "characters": 0
+        }
+      ],
+      "assessment": "NO_EXTRACTABLE_TEXT_IN_SAMPLE"
+    },
+    {
+      "document_id": "102/2021/NĐ-CP",
+      "file": "1022021ndcp/01.pdf",
+      "sha256": "2d4ea494360877c923ac60a393ea2014cca30fb0172f0676525ccd29f1594f2f",
+      "pages": 26,
+      "sampled_pages": [
+        {
+          "page": 1,
+          "characters": 0
+        },
+        {
+          "page": 14,
+          "characters": 0
+        },
+        {
+          "page": 26,
+          "characters": 0
+        }
+      ],
+      "assessment": "NO_EXTRACTABLE_TEXT_IN_SAMPLE"
+    },
+    {
+      "document_id": "31/2018/NĐ-CP",
+      "file": "312018ndcp/01.pdf",
+      "sha256": "129a530f46096b72c04453e47c977a33a17c5761ba032525b4f776fef9d0c103",
+      "pages": 29,
+      "sampled_pages": [
+        {
+          "page": 1,
+          "characters": 0
+        },
+        {
+          "page": 15,
+          "characters": 0
+        },
+        {
+          "page": 29,
+          "characters": 0
+        }
+      ],
+      "assessment": "NO_EXTRACTABLE_TEXT_IN_SAMPLE"
+    },
+    {
+      "document_id": "126/2020/NĐ-CP",
+      "file": "1262020ndcp/01.pdf",
+      "sha256": "310648e80396d267610946458e7fdd71ba87ef538b009d6574ed21514de3f7ca",
+      "pages": 119,
+      "sampled_pages": [
+        {
+          "page": 1,
+          "characters": 0
+        },
+        {
+          "page": 60,
+          "characters": 0
+        },
+        {
+          "page": 119,
+          "characters": 0
+        }
+      ],
+      "assessment": "NO_EXTRACTABLE_TEXT_IN_SAMPLE"
+    },
+    {
+      "document_id": "126/2020/NĐ-CP",
+      "file": "1262020ndcp/02.pdf",
+      "sha256": "008daa92f4d699b69b9318c4a8e6fa7db8d73453305e1a4f155134656e26847b",
+      "pages": 147,
+      "sampled_pages": [
+        {
+          "page": 1,
+          "characters": 0
+        },
+        {
+          "page": 74,
+          "characters": 0
+        },
+        {
+          "page": 147,
+          "characters": 0
+        }
+      ],
+      "assessment": "NO_EXTRACTABLE_TEXT_IN_SAMPLE"
+    },
+    {
+      "document_id": "43/2017/NĐ-CP",
+      "file": "432017ndcp/01.pdf",
+      "sha256": "e698dcc97d6d39d11dea9c9688b289d36e976e1e9acda2ee15cd2fe93402ab62",
+      "pages": 36,
+      "sampled_pages": [
+        {
+          "page": 1,
+          "characters": 0
+        },
+        {
+          "page": 19,
+          "characters": 0
+        },
+        {
+          "page": 36,
+          "characters": 0
+        }
+      ],
+      "assessment": "NO_EXTRACTABLE_TEXT_IN_SAMPLE"
+    },
+    {
+      "document_id": "111/2021/NĐ-CP",
+      "file": "1112021ndcp/01.pdf",
+      "sha256": "28f73262bc40d1d463fa3c76f66a8a5ea34a841f05829845d79646590eb62fb6",
+      "pages": 22,
+      "sampled_pages": [
+        {
+          "page": 1,
+          "characters": 0
+        },
+        {
+          "page": 12,
+          "characters": 0
+        },
+        {
+          "page": 22,
+          "characters": 0
+        }
+      ],
+      "assessment": "NO_EXTRACTABLE_TEXT_IN_SAMPLE"
+    },
+    {
+      "document_id": "39/2018/TT-BTC",
+      "file": "392018ttbtc/01.pdf",
+      "sha256": "9fb3f0c1aea555a14a56bd02c9fe0ceb84c64def6d4fd493a0c95f3ec902697a",
+      "pages": 189,
+      "sampled_pages": [
+        {
+          "page": 1,
+          "characters": 0
+        },
+        {
+          "page": 95,
+          "characters": 0
+        },
+        {
+          "page": 189,
+          "characters": 0
+        }
+      ],
+      "assessment": "NO_EXTRACTABLE_TEXT_IN_SAMPLE"
+    },
+    {
+      "document_id": "39/2018/TT-BTC",
+      "file": "392018ttbtc/02.pdf",
+      "sha256": "6d0f91de07f6d07b324a581d076f6fa702e63557e3d0ae730864ec2c415f35d3",
+      "pages": 181,
+      "sampled_pages": [
+        {
+          "page": 1,
+          "characters": 0
+        },
+        {
+          "page": 91,
+          "characters": 0
+        },
+        {
+          "page": 181,
+          "characters": 0
+        }
+      ],
+      "assessment": "NO_EXTRACTABLE_TEXT_IN_SAMPLE"
+    },
+    {
+      "document_id": "39/2018/TT-BTC",
+      "file": "392018ttbtc/03.pdf",
+      "sha256": "08a3206757664f5f10683543a702f95e7ce641f1f87af07edb35dbd8036e7692",
+      "pages": 160,
+      "sampled_pages": [
+        {
+          "page": 1,
+          "characters": 0
+        },
+        {
+          "page": 81,
+          "characters": 0
+        },
+        {
+          "page": 160,
+          "characters": 0
+        }
+      ],
+      "assessment": "NO_EXTRACTABLE_TEXT_IN_SAMPLE"
+    },
+    {
+      "document_id": "14/2015/TT-BTC",
+      "file": "142015ttbtc/01.pdf",
+      "sha256": "cea53a34e99daba6507819b7ab503b21d27e577ae7683dc2476b471ce3e18a56",
+      "pages": 26,
+      "sampled_pages": [
+        {
+          "page": 1,
+          "characters": 0
+        },
+        {
+          "page": 14,
+          "characters": 0
+        },
+        {
+          "page": 26,
+          "characters": 0
+        }
+      ],
+      "assessment": "NO_EXTRACTABLE_TEXT_IN_SAMPLE"
+    },
+    {
+      "document_id": "17/2021/TT-BTC",
+      "file": "172021ttbtc/01.pdf",
+      "sha256": "46c4ddcfe384964cbe69803ca9c382535b6337841c4f124e8dc7f4fbf553dcc7",
+      "pages": 10,
+      "sampled_pages": [
+        {
+          "page": 1,
+          "characters": 0
+        },
+        {
+          "page": 6,
+          "characters": 0
+        },
+        {
+          "page": 10,
+          "characters": 0
+        }
+      ],
+      "assessment": "NO_EXTRACTABLE_TEXT_IN_SAMPLE"
+    },
+    {
+      "document_id": "39/2015/TT-BTC",
+      "file": "392015ttbtc/01.pdf",
+      "sha256": "bb813e4c978a1222d1e0d7dd7e6eb932c5b9adfa39c0f11a7e03fe68a29acca4",
+      "pages": 55,
+      "sampled_pages": [
+        {
+          "page": 1,
+          "characters": 0
+        },
+        {
+          "page": 28,
+          "characters": 0
+        },
+        {
+          "page": 55,
+          "characters": 0
+        }
+      ],
+      "assessment": "NO_EXTRACTABLE_TEXT_IN_SAMPLE"
+    },
+    {
+      "document_id": "60/2019/TT-BTC",
+      "file": "602019ttbtc/01.pdf",
+      "sha256": "8a8769f45a3601fb5468250bf8b12491580857faf98682e36d1caa457ce8a0a6",
+      "pages": 2,
+      "sampled_pages": [
+        {
+          "page": 1,
+          "characters": 0
+        },
+        {
+          "page": 2,
+          "characters": 0
+        }
+      ],
+      "assessment": "NO_EXTRACTABLE_TEXT_IN_SAMPLE"
+    },
+    {
+      "document_id": "60/2019/TT-BTC",
+      "file": "602019ttbtc/02.pdf",
+      "sha256": "0c24d2d9c278d85c319235e96bff5e2994660df79d8f74962d1b78f8b6b6d73c",
+      "pages": 36,
+      "sampled_pages": [
+        {
+          "page": 1,
+          "characters": 0
+        },
+        {
+          "page": 19,
+          "characters": 0
+        },
+        {
+          "page": 36,
+          "characters": 0
+        }
+      ],
+      "assessment": "NO_EXTRACTABLE_TEXT_IN_SAMPLE"
+    },
+    {
+      "document_id": "06/2021/TT-BTC",
+      "file": "062021ttbtc/01.pdf",
+      "sha256": "4b6249b2850f0545afe7d7c7fc902dbf173d6b861425dd8576cf15a98c57130f",
+      "pages": 71,
+      "sampled_pages": [
+        {
+          "page": 1,
+          "characters": 0
+        },
+        {
+          "page": 36,
+          "characters": 0
+        },
+        {
+          "page": 71,
+          "characters": 0
+        }
+      ],
+      "assessment": "NO_EXTRACTABLE_TEXT_IN_SAMPLE"
+    },
+    {
+      "document_id": "38/2018/TT-BCT",
+      "file": "382018ttbct/01.pdf",
+      "sha256": "3fc606e4082ea7344af17d930efcd2464a51f33ad765190e5e3db177d7c40d54",
+      "pages": 8,
+      "sampled_pages": [
+        {
+          "page": 1,
+          "characters": 0
+        },
+        {
+          "page": 5,
+          "characters": 0
+        },
+        {
+          "page": 8,
+          "characters": 0
+        }
+      ],
+      "assessment": "NO_EXTRACTABLE_TEXT_IN_SAMPLE"
+    },
+    {
+      "document_id": "11/2020/TT-BCT",
+      "file": "112020ttbct/01.pdf",
+      "sha256": "c5f66e465fee24c0d087c2dff71628e54d4f8da34f3f2fbab568e4db52ecea0b",
+      "pages": 2,
+      "sampled_pages": [
+        {
+          "page": 1,
+          "characters": 0
+        },
+        {
+          "page": 2,
+          "characters": 0
+        }
+      ],
+      "assessment": "NO_EXTRACTABLE_TEXT_IN_SAMPLE"
+    },
+    {
+      "document_id": "11/2020/TT-BCT",
+      "file": "112020ttbct/02.pdf",
+      "sha256": "598f166bde81595716b67171c3cf224a9ef18edfee2d9ffe1cd02ef04e10dd0d",
+      "pages": 78,
+      "sampled_pages": [
+        {
+          "page": 1,
+          "characters": 0
+        },
+        {
+          "page": 40,
+          "characters": 0
+        },
+        {
+          "page": 78,
+          "characters": 0
+        }
+      ],
+      "assessment": "NO_EXTRACTABLE_TEXT_IN_SAMPLE"
+    },
+    {
+      "document_id": "03/2019/TT-BCT",
+      "file": "032019ttbct/01.pdf",
+      "sha256": "cc207040bd3e59844690d1bb2536ae8499aef77cea38744c7e25a4cabbe8b5c0",
+      "pages": 84,
+      "sampled_pages": [
+        {
+          "page": 1,
+          "characters": 0
+        },
+        {
+          "page": 43,
+          "characters": 0
+        },
+        {
+          "page": 84,
+          "characters": 0
+        }
+      ],
+      "assessment": "NO_EXTRACTABLE_TEXT_IN_SAMPLE"
+    },
+    {
+      "document_id": "127/2013/NĐ-CP",
+      "file": "1272013ndcp/01.pdf",
+      "sha256": "6b970da9c19ccae81ecbc3385fb53f1fa2375e93ad03643e1f9b4e43ed87e573",
+      "pages": 49,
+      "sampled_pages": [
+        {
+          "page": 1,
+          "characters": 0
+        },
+        {
+          "page": 25,
+          "characters": 0
+        },
+        {
+          "page": 49,
+          "characters": 0
+        }
+      ],
+      "assessment": "NO_EXTRACTABLE_TEXT_IN_SAMPLE"
+    },
+    {
+      "document_id": "128/2013/TT-BTC",
+      "file": "1282013ttbtc/01.pdf",
+      "sha256": "79f10f2dc1b20f9f6cbb1d48a403804ffc23e10dcd5a1d07a4d1a3a6d74d69b4",
+      "pages": 100,
+      "sampled_pages": [
+        {
+          "page": 1,
+          "characters": 0
+        },
+        {
+          "page": 51,
+          "characters": 0
+        },
+        {
+          "page": 100,
+          "characters": 0
+        }
+      ],
+      "assessment": "NO_EXTRACTABLE_TEXT_IN_SAMPLE"
+    },
+    {
+      "document_id": "128/2013/TT-BTC",
+      "file": "1282013ttbtc/02.pdf",
+      "sha256": "21734457dcf2025f7cfa6e01cd1be3bac6a19c0d0ffaba9269ab42f639fc3f64",
+      "pages": 100,
+      "sampled_pages": [
+        {
+          "page": 1,
+          "characters": 0
+        },
+        {
+          "page": 51,
+          "characters": 0
+        },
+        {
+          "page": 100,
+          "characters": 0
+        }
+      ],
+      "assessment": "NO_EXTRACTABLE_TEXT_IN_SAMPLE"
+    },
+    {
+      "document_id": "128/2013/TT-BTC",
+      "file": "1282013ttbtc/03.pdf",
+      "sha256": "8b7775e5183edf2a5cf94c8f49f2eafa7e076f2ed2b9dbe2c74f1b628615c1b3",
+      "pages": 100,
+      "sampled_pages": [
+        {
+          "page": 1,
+          "characters": 0
+        },
+        {
+          "page": 51,
+          "characters": 0
+        },
+        {
+          "page": 100,
+          "characters": 0
+        }
+      ],
+      "assessment": "NO_EXTRACTABLE_TEXT_IN_SAMPLE"
+    },
+    {
+      "document_id": "128/2013/TT-BTC",
+      "file": "1282013ttbtc/04.pdf",
+      "sha256": "b4915697db633b8e795ded6da4ebbee9501aad73647c72f95b06871c5158b8de",
+      "pages": 66,
+      "sampled_pages": [
+        {
+          "page": 1,
+          "characters": 0
+        },
+        {
+          "page": 34,
+          "characters": 0
+        },
+        {
+          "page": 66,
+          "characters": 0
+        }
+      ],
+      "assessment": "NO_EXTRACTABLE_TEXT_IN_SAMPLE"
+    },
+    {
+      "document_id": "167/2025/NĐ-CP",
+      "file": "1672025ndcp/01.pdf",
+      "sha256": "e450d946d5698b02a9b47a35b5ea28728cb837ea38452d21febf22a33b87500d",
+      "pages": 78,
+      "sampled_pages": [
+        {
+          "page": 1,
+          "characters": 0
+        },
+        {
+          "page": 40,
+          "characters": 0
+        },
+        {
+          "page": 78,
+          "characters": 0
+        }
+      ],
+      "assessment": "NO_EXTRACTABLE_TEXT_IN_SAMPLE"
+    },
+    {
+      "document_id": "182/2025/NĐ-CP",
+      "file": "1822025ndcp/01.pdf",
+      "sha256": "7d40bb6ad447f9661b471e97ccb31deba06fec42049cfafc4865ba9874f061f5",
+      "pages": 4,
+      "sampled_pages": [
+        {
+          "page": 1,
+          "characters": 0
+        },
+        {
+          "page": 3,
+          "characters": 0
+        },
+        {
+          "page": 4,
+          "characters": 0
+        }
+      ],
+      "assessment": "NO_EXTRACTABLE_TEXT_IN_SAMPLE"
+    },
+    {
+      "document_id": "23/2025/TT-BCT",
+      "file": "232025ttbct/01.pdf",
+      "sha256": "066f18c3d7d1e412214f4c446dd9d46ae547bce010e271cbf08f217d22d6e404",
+      "pages": 3,
+      "sampled_pages": [
+        {
+          "page": 1,
+          "characters": 0
+        },
+        {
+          "page": 2,
+          "characters": 0
+        },
+        {
+          "page": 3,
+          "characters": 0
+        }
+      ],
+      "assessment": "NO_EXTRACTABLE_TEXT_IN_SAMPLE"
+    },
+    {
+      "document_id": "03/2023/TT-BCT",
+      "file": "032023ttbct/01.pdf",
+      "sha256": "27d54846cf917bce6bb596e80cc516d9ab21e496efdc60a2868f923e982b195e",
+      "pages": 60,
+      "sampled_pages": [
+        {
+          "page": 1,
+          "characters": 0
+        },
+        {
+          "page": 31,
+          "characters": 0
+        },
+        {
+          "page": 60,
+          "characters": 0
+        }
+      ],
+      "assessment": "NO_EXTRACTABLE_TEXT_IN_SAMPLE"
+    },
+    {
+      "document_id": "03/2023/TT-BCT",
+      "file": "032023ttbct/02.pdf",
+      "sha256": "30e69cce00ffa25078e62318bb2483496e848837e0d52e99c24a11a12c641a5f",
+      "pages": 60,
+      "sampled_pages": [
+        {
+          "page": 1,
+          "characters": 0
+        },
+        {
+          "page": 31,
+          "characters": 0
+        },
+        {
+          "page": 60,
+          "characters": 0
+        }
+      ],
+      "assessment": "NO_EXTRACTABLE_TEXT_IN_SAMPLE"
+    },
+    {
+      "document_id": "03/2023/TT-BCT",
+      "file": "032023ttbct/03.pdf",
+      "sha256": "15e17f9be2dcfea5e553f1cc0db5b6ffa6eda6f0c37768c384eaa893813ab6e0",
+      "pages": 62,
+      "sampled_pages": [
+        {
+          "page": 1,
+          "characters": 0
+        },
+        {
+          "page": 32,
+          "characters": 0
+        },
+        {
+          "page": 62,
+          "characters": 0
+        }
+      ],
+      "assessment": "NO_EXTRACTABLE_TEXT_IN_SAMPLE"
+    },
+    {
+      "document_id": "03/2023/TT-BCT",
+      "file": "032023ttbct/04.pdf",
+      "sha256": "be7cecf1693445b21672f0f0d869744881be42ee6a5984de742a8a4c8d5a084e",
+      "pages": 66,
+      "sampled_pages": [
+        {
+          "page": 1,
+          "characters": 0
+        },
+        {
+          "page": 34,
+          "characters": 0
+        },
+        {
+          "page": 66,
+          "characters": 0
+        }
+      ],
+      "assessment": "NO_EXTRACTABLE_TEXT_IN_SAMPLE"
+    }
+  ]
+}
