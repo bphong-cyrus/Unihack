@@ -8,10 +8,7 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 
-try:
-    from rapidfuzz import fuzz
-except ImportError:
-    fuzz = None
+from rapidfuzz import fuzz
 
 app = FastAPI(
     title="AskPay XNK — LegalIR / LegalQA & Citation Validator API",
@@ -146,20 +143,13 @@ def compute_excerpt_similarity(excerpt: str, source_text: str) -> float:
     norm_excerpt = normalize_vn_text(excerpt)
     norm_source = normalize_vn_text(source_text)
 
-    if len(norm_excerpt.split()) < 8 or not norm_source:
+    if len(norm_excerpt.split()) < 10 or not norm_source:
         return 0.0
 
     if norm_excerpt in norm_source:
         return 1.0
 
-    if fuzz is not None:
-        return round(fuzz.partial_ratio(norm_excerpt, norm_source) / 100.0, 4)
-
-    # Fallback nếu chưa cài rapidfuzz: tính tỉ lệ từ trùng khớp liên tiếp
-    ex_words = norm_excerpt.split()
-    src_words = set(norm_source.split())
-    matched = sum(1 for w in ex_words if w in src_words)
-    return round(matched / len(ex_words), 4)
+    return round(fuzz.partial_ratio(norm_excerpt, norm_source) / 100.0, 4)
 
 
 def validate_citations(citations: list[dict]) -> dict:
@@ -224,6 +214,7 @@ def validate_citations(citations: list[dict]) -> dict:
                 "is_in_force": is_in_force,
                 "excerpt_similarity": similarity,
                 "threshold_required": 0.90,
+                "raw_text": record["raw_text"] if record else "",
                 "status": "PASS" if passed_this else "FAIL",
                 "fail_reason": fail_reason,
             }
@@ -244,6 +235,10 @@ def sha256_hex(data: str) -> str:
 # ==============================================================================
 # 3. API MODELS & ENDPOINTS
 # ==============================================================================
+class ValidateRequest(BaseModel):
+    citations: list[dict]
+
+
 class AskRequest(BaseModel):
     question_id: Optional[str] = "0x00"
     question: str
@@ -256,10 +251,17 @@ class AskRequest(BaseModel):
 @app.get("/api/v1/legal/corpus")
 def get_corpus():
     return {
-        "total_documents": len(CORPUS_RECORDS),
+        "total_documents": len({r["doc_id"] for r in CORPUS_RECORDS}),
+        "total_chunks": len(CORPUS_RECORDS),
+        "corpus_status": "DEMO_UNVERIFIED",
         "domain": "Import-Export & Vietnam Customs Law",
         "records": CORPUS_RECORDS,
     }
+
+
+@app.post("/api/v1/legal/validate")
+def validate_endpoint(req: ValidateRequest):
+    return validate_citations(req.citations)
 
 
 @app.post("/api/v1/legal/ask")
