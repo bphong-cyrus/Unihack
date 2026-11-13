@@ -268,6 +268,7 @@ function runBuiltinMockLegalQA(
       is_in_force: isInForce,
       excerpt_similarity: similarity,
       threshold_required: 0.9,
+      raw_text: rec?.raw_text || c.excerpt || "",
       status: failReason ? "FAIL" : "PASS",
       fail_reason: failReason,
       _score: itemScore
@@ -371,7 +372,7 @@ export async function POST(req: Request) {
           simulate_hallucination: Boolean(simulateHallucination),
           simulate_expired_law: Boolean(simulateExpiredLaw)
         }),
-        signal: AbortSignal.timeout(2500)
+        signal: AbortSignal.timeout(15000)
       });
       if (!ragRes.ok) throw new Error(`HTTP ${ragRes.status}`);
       ragData = await ragRes.json();
