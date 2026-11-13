@@ -416,109 +416,14 @@ export default function RightPanel({
                   }}
                 >
                   {activeAssistantMsg
-                    ? "Câu trả lời này không có trích dẫn hợp lệ trong kho văn bản pháp luật XNK — Smart Contract đã tự động kích hoạt hoàn tiền 100%."
+                    ? "Không có trích dẫn phù hợp trong dữ liệu mẫu. Không có giao dịch thanh toán."
                     : "Chọn một câu hỏi hoặc gửi tra cứu mới để đối chiếu nguyên văn Điều/Khoản tại đây."}
                 </div>
               )}
             </div>
 
-            {/* Dark Slate On-chain Proof Footer */}
             <div className="dark-audit-footer">
-              <div
-                style={{
-                  display: "flex",
-                  justifyContent: "space-between",
-                  alignItems: "center",
-                  marginBottom: 5
-                }}
-              >
-                <span className="font-mono" style={{ color: "#94a3b8" }}>
-                  Source: AskPay_XNK_Corpus
-                </span>
-                <span
-                  style={{
-                    color:
-                      onchain?.mode === "LIVE_AVALANCHE"
-                        ? "#34d399"
-                        : onchain?.mode === "SAMPLE_SHOWCASE"
-                        ? "#60a5fa"
-                        : "#fbbf24",
-                    fontWeight: 600
-                  }}
-                >
-                  {onchain?.mode === "LIVE_AVALANCHE"
-                    ? "Verified by L1 Node (663010)"
-                    : onchain?.mode === "SAMPLE_SHOWCASE"
-                    ? "Dữ liệu mẫu đối chiếu"
-                    : "Simulated Preview Mode"}
-                </span>
-              </div>
-
-              {onchain ? (
-                <div style={{ display: "flex", flexDirection: "column", gap: 3 }}>
-                  <div
-                    style={{
-                      display: "flex",
-                      justifyContent: "space-between",
-                      alignItems: "center",
-                      gap: 8
-                    }}
-                  >
-                    <span className="font-mono" style={{ color: "#e2e8f0", fontSize: 11 }}>
-                      L1 Tx: {onchain.l1ReceiptTxHash.slice(0, 12)}...
-                      {onchain.l1ReceiptTxHash.slice(-6)}
-                    </span>
-                    <button
-                      type="button"
-                      onClick={() => handleCopyHash(onchain.l1ReceiptTxHash, "l1")}
-                      style={{
-                        background: "rgba(255,255,255,0.08)",
-                        border: "none",
-                        color: "#cbd5e1",
-                        fontSize: 10.5,
-                        padding: "2px 6px",
-                        borderRadius: 4,
-                        cursor: "pointer"
-                      }}
-                    >
-                      {copiedTx === "l1" ? "Đã chép" : "Copy"}
-                    </button>
-                  </div>
-                  <div
-                    style={{
-                      display: "flex",
-                      justifyContent: "space-between",
-                      alignItems: "center",
-                      gap: 8
-                    }}
-                  >
-                    <span className="font-mono" style={{ color: "#94a3b8", fontSize: 11 }}>
-                      Fuji:{" "}
-                      {onchain.mode === "LIVE_AVALANCHE" && !onchain.escrowTxHash
-                        ? "Ghi biên lai L1 (Chưa ký ví)"
-                        : onchain.settlementStatus === "RELEASED_TO_TREASURY"
-                        ? "Giải ngân Escrow"
-                        : "Hoàn tiền 100%"}
-                    </span>
-                    {onchain.mode === "LIVE_AVALANCHE" &&
-                      Boolean(onchain.escrowTxHash) &&
-                      onchain.fujiSettlementTxHash.startsWith("0x") && (
-                        <a
-                          href={`https://testnet.snowtrace.io/tx/${onchain.fujiSettlementTxHash}`}
-                          target="_blank"
-                          rel="noreferrer"
-                          style={{ color: "#38bdf8", fontSize: 11, textDecoration: "none" }}
-                        >
-                          Snowtrace ↗
-                        </a>
-                      )}
-                  </div>
-                </div>
-              ) : (
-                <div className="font-mono" style={{ color: "#64748b", fontSize: 11 }}>
-                  Escrow Contract: 0xb4fc75...2108
-                </div>
-              )}
+              Dữ liệu mẫu chưa xác minh · Không có giao dịch blockchain
             </div>
           </>
         )}

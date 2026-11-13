@@ -391,7 +391,7 @@ def ask_legal_question(req: AskRequest):
         elif not any(kw in q_lower for kw in xnk_keywords):
             answer = (
                 "Hiện chưa tìm thấy điều khoản pháp luật Hải quan và Xuất nhập khẩu phù hợp trong kho văn bản "
-                "để xác thực câu hỏi này. Theo cam kết, toàn bộ phí tra cứu của bạn sẽ được hoàn lại 100%."
+                "để đối chiếu câu hỏi này. Đây là dữ liệu thử nghiệm, không có giao dịch thanh toán."
             )
             citations = []
         else:

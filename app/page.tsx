@@ -3,12 +3,9 @@
 import React, { useEffect, useRef, useState } from "react";
 import {
   createPublicClient,
-  createWalletClient,
-  custom,
   formatEther,
   http,
   keccak256,
-  parseEther,
   toBytes
 } from "viem";
 import { avalancheFuji } from "viem/chains";
@@ -37,26 +34,13 @@ import {
   ChatMessage,
   ChatSession,
   ExpertLawyer,
-  INITIAL_SESSIONS,
   LEGAL_DOCUMENTS_LIST,
   TierMode
 } from "./data/legalWorkspaceData";
 
-const ESCROW_ABI = [
-  {
-    name: "askQuestion",
-    type: "function",
-    stateMutability: "payable",
-    inputs: [
-      { name: "questionId", type: "bytes32" },
-      { name: "tier", type: "uint8" },
-      { name: "questionHash", type: "bytes32" }
-    ],
-    outputs: []
-  }
-] as const;
+const INITIAL_SESSIONS: ChatSession[] = [{ id: "demo-new", title: "Tra cứu mới", group: "today", status: "draft", messages: [] }];
 
-const STORAGE_KEY = "askpay_xnk_sessions_v2";
+const STORAGE_KEY = "askpay_xnk_sessions_demo_v3";
 
 function formatNowLabel(): string {
   try {
@@ -76,7 +60,6 @@ export default function AskPayWorkspacePage() {
   // Wallet & On-chain states
   const [account, setAccount] = useState<string>("");
   const [avaxBalance, setAvaxBalance] = useState<string>("");
-  const [useOnchainWallet, setUseOnchainWallet] = useState<boolean>(true);
 
   // Composer & Demo states
   const [questionInput, setQuestionInput] = useState<string>("");
@@ -264,11 +247,7 @@ export default function AskPayWorkspacePage() {
     const activeMode = customMode ?? mode;
     const isDeep = activeMode === "deep";
     const apiTier = isDeep ? "deep" : "quick";
-    const priceLabel = isDeep
-      ? "Phân tích sâu - 0.20 USDC"
-      : activeMode === "factcheck"
-      ? "Kiểm chứng - 0.05 USDC"
-      : "Hỏi nhanh - 0.05 USDC";
+
 
     setErrorMsg("");
     setLoadingStep("Đang chuẩn bị giao dịch & kết nối...");
@@ -300,61 +279,13 @@ export default function AskPayWorkspacePage() {
     }, 60);
 
     try {
-      const eth =
-        typeof window !== "undefined"
-          ? (window as any).avalanche || (window as any).ethereum
-          : null;
-      let activeAccount = account;
-
-      if (
-        useOnchainWallet &&
-        !activeAccount &&
-        eth &&
-        escrowAddress &&
-        escrowAddress.startsWith("0x")
-      ) {
-        activeAccount = await connectWallet();
-      }
-
+      // The current corpus has not been verified; do not request a wallet transaction.
+      const activeAccount = account;
       const asker = activeAccount || "0x0000000000000000000000000000000000000001";
       const questionId = keccak256(toBytes(`${asker}-${Date.now()}-${queryText}`));
-      const questionHash = keccak256(toBytes(queryText));
-      let escrowTxHash = "";
+      const escrowTxHash = "";
 
-      if (
-        useOnchainWallet &&
-        activeAccount &&
-        eth &&
-        escrowAddress &&
-        escrowAddress.startsWith("0x")
-      ) {
-        setLoadingStep("1/3 Đang khóa tiền cọc Escrow trên Avalanche Fuji...");
-        await ensureFujiChain(eth);
-        const publicClient = createPublicClient({
-          chain: avalancheFuji,
-          transport: http(fujiRpc)
-        });
-        const walletClient = createWalletClient({
-          chain: avalancheFuji,
-          transport: custom(eth)
-        });
-
-        const depositValue = isDeep ? parseEther("0.02") : parseEther("0.005");
-        const txHash = await walletClient.writeContract({
-          chain: avalancheFuji,
-          account: activeAccount as `0x${string}`,
-          address: escrowAddress as `0x${string}`,
-          abi: ESCROW_ABI,
-          functionName: "askQuestion",
-          args: [questionId, isDeep ? 1 : 0, questionHash],
-          value: depositValue
-        });
-        await publicClient.waitForTransactionReceipt({ hash: txHash });
-        escrowTxHash = txHash;
-        await refreshBalance(activeAccount);
-      }
-
-      setLoadingStep("2/3 LegalIR truy xuất & kiểm định 4 chốt chặn nguyên văn...");
+      setLoadingStep("Đang kiểm tra dữ liệu mẫu...");
 
       const res = await fetch("/api/ask-and-settle", {
         method: "POST",
@@ -381,20 +312,11 @@ export default function AskPayWorkspacePage() {
         role: "assistant",
         timestampLabel: formatNowLabel(),
         mode: activeMode,
-        feeLabel: passed ? priceLabel : "Hoàn tiền 100% (0.00 USDC)",
+        feeLabel: "Bản thử nghiệm · không thu phí",
         questionId,
         content: data.answer || "",
         citations: data.citations || [],
-        validation: data.validation,
-        onchain: {
-          mode: data.onchain?.mode || "SIMULATED_PREVIEW",
-          escrowTxHash: escrowTxHash || undefined,
-          l1ReceiptTxHash: data.onchain?.l1ReceiptTxHash || "",
-          fujiSettlementTxHash: data.onchain?.fujiSettlementTxHash || "",
-          settlementStatus:
-            data.onchain?.settlementStatus ||
-            (passed ? "RELEASED_TO_TREASURY" : "AUTO_REFUNDED_TO_USER")
-        }
+        validation: data.validation
       };
 
       setSessions((prev) =>
@@ -553,13 +475,13 @@ export default function AskPayWorkspacePage() {
           >
             <div>
               <div style={{ fontSize: 12.5, fontWeight: 700, color: "#78350f" }}>
-                Bảo chứng Escrow 100%
+                Bản thử nghiệm AskPay
               </div>
               <div style={{ fontSize: 10.5, color: "#b45309" }}>
-                Trích dẫn &lt;90% tự hoàn tiền
+                Mô phỏng kiểm tra trích dẫn
               </div>
             </div>
-            <span className="promo-pill">0% Rủi ro</span>
+            <span className="promo-pill">DEMO</span>
           </button>
         </div>
 
@@ -585,7 +507,7 @@ export default function AskPayWorkspacePage() {
                   </span>
                 )}
                 {s.status === "refunded" && (
-                  <span title="Đã tự động hoàn tiền">
+                  <span title="Trích dẫn mẫu không đạt">
                     <UndoIcon size={14} color="#f59e0b" />
                   </span>
                 )}
@@ -614,7 +536,7 @@ export default function AskPayWorkspacePage() {
                     </span>
                   )}
                   {s.status === "refunded" && (
-                    <span title="Đã hoàn tiền 100%">
+                    <span title="Trích dẫn mẫu không đạt">
                       <UndoIcon size={14} color="#f59e0b" />
                     </span>
                   )}
@@ -703,8 +625,8 @@ export default function AskPayWorkspacePage() {
                   color={activeSession?.status === "refunded" ? "#d97706" : "#059669"}
                 />
                 {activeSession?.status === "refunded"
-                  ? "Phát hiện căn cứ không hợp lệ — Smart Contract đã hoàn tiền 100%"
-                  : "Session được bảo chứng Escrow & Đối chiếu nguyên văn ≥ 90%"}
+                  ? "Dữ liệu mẫu không đạt kiểm tra trích dẫn · không có giao dịch"
+                  : "Bản thử nghiệm · dữ liệu mẫu chưa xác minh · không có giao dịch"}
               </p>
             </div>
           </div>
@@ -724,7 +646,7 @@ export default function AskPayWorkspacePage() {
                 cursor: "pointer"
               }}
             >
-              30+ Văn bản XNK
+              Dữ liệu mẫu XNK
             </button>
 
             <button
@@ -764,7 +686,7 @@ export default function AskPayWorkspacePage() {
                 <p style={{ margin: 0, fontSize: 13.5, color: "#64748b", lineHeight: 1.55 }}>
                   Mọi câu trả lời đều phải vượt qua <strong>4 chốt chặn kiểm định nguyên văn</strong>{" "}
                   (tồn tại văn bản, đúng Điều/Khoản, hiệu lực <code>ACTIVE</code>, khớp{" "}
-                  <code>≥ 90%</code>). Nếu sai căn cứ, Smart Contract tự động hoàn tiền 100%.
+                  <code>≥ 90%</code>). Dữ liệu hiện tại chỉ để minh họa, không dùng làm căn cứ pháp lý.
                 </p>
 
                 <div className="welcome-grid">
@@ -839,8 +761,7 @@ export default function AskPayWorkspacePage() {
                     >
                       <UndoIcon size={15} color="#b45309" />
                       <span>
-                        Không đạt chuẩn trích dẫn ({msg.validation?.overall_score ?? 0}%) — Hợp
-                        đồng AskPayEscrow đã TỰ ĐỘNG HOÀN TIỀN 100%.
+                        Không đạt kiểm tra dữ liệu mẫu ({msg.validation?.overall_score ?? 0}%). Không có giao dịch thanh toán.
                       </span>
                     </div>
                   )}
@@ -962,7 +883,7 @@ export default function AskPayWorkspacePage() {
                       className="font-mono"
                       style={{ fontSize: 10.5, color: "#94a3b8", whiteSpace: "nowrap" }}
                     >
-                      0.05 USDC
+                      Miễn phí (demo)
                     </span>
                     <button
                       type="button"
@@ -1070,7 +991,7 @@ export default function AskPayWorkspacePage() {
                 >
                   <LightningIcon size={13} />
                   Hỏi Nhanh
-                  <span style={{ fontSize: 10, opacity: 0.75 }}>0.05$</span>
+                  <span style={{ fontSize: 10, opacity: 0.75 }}>Demo</span>
                 </button>
 
                 <button
@@ -1080,7 +1001,7 @@ export default function AskPayWorkspacePage() {
                 >
                   <BranchIcon size={13} />
                   Tình Huống
-                  <span style={{ fontSize: 10, opacity: 0.75 }}>0.20$</span>
+                  <span style={{ fontSize: 10, opacity: 0.75 }}>Demo</span>
                 </button>
 
                 <button
@@ -1090,7 +1011,7 @@ export default function AskPayWorkspacePage() {
                 >
                   <ShieldCheckIcon size={13} />
                   Kiểm Chứng Luật
-                  <span style={{ fontSize: 10, opacity: 0.75 }}>0.05$</span>
+                  <span style={{ fontSize: 10, opacity: 0.75 }}>Demo</span>
                 </button>
               </div>
 
@@ -1100,7 +1021,7 @@ export default function AskPayWorkspacePage() {
                   htmlFor="demo-fault-select"
                   style={{ fontSize: 11, color: "#64748b", fontWeight: 500 }}
                 >
-                  Test hoàn tiền:
+                  Tình huống mẫu:
                 </label>
                 <select
                   id="demo-fault-select"
@@ -1153,14 +1074,12 @@ export default function AskPayWorkspacePage() {
                     type="button"
                     onClick={() => setShowDocsModal(true)}
                     className="icon-btn"
-                    title="Xem kho 30+ văn bản pháp luật XNK"
+                    title="Xem danh mục văn bản dự kiến"
                   >
                     <PaperclipIcon size={16} />
                   </button>
                   <span style={{ fontSize: 11.5, color: "#64748b" }}>
-                    {useOnchainWallet && account
-                      ? `Ví Fuji sẵn sàng (${mode === "deep" ? "0.02" : "0.005"} AVAX)`
-                      : "Kiểm định nguyên văn ≥ 90%"}
+                    Bản thử nghiệm · không thu phí
                   </span>
                 </div>
 
@@ -1216,7 +1135,7 @@ export default function AskPayWorkspacePage() {
               }}
             >
               <h3 style={{ margin: 0, fontSize: 16.5, fontWeight: 700, color: "#0a1c2e" }}>
-                Danh mục Văn bản Pháp luật Hải quan &amp; XNK
+                Danh mục văn bản dự kiến · chưa xác minh
               </h3>
               <button
                 type="button"
@@ -1260,7 +1179,7 @@ export default function AskPayWorkspacePage() {
                           color: isExpired ? "#991b1b" : "#166534"
                         }}
                       >
-                        {doc.status}
+                        Chưa xác minh
                       </span>
                     </div>
                     <div style={{ fontSize: 12.5, color: "#475569" }}>{doc.title}</div>
@@ -1287,7 +1206,7 @@ export default function AskPayWorkspacePage() {
               }}
             >
               <h3 style={{ margin: 0, fontSize: 16.5, fontWeight: 700, color: "#0a1c2e" }}>
-                Lịch sử giao dịch Escrow &amp; Biên lai L1
+                Lịch sử mẫu
               </h3>
               <button
                 type="button"
@@ -1411,23 +1330,7 @@ export default function AskPayWorkspacePage() {
                   </button>
                 )}
 
-                <label
-                  style={{
-                    display: "flex",
-                    alignItems: "center",
-                    gap: 8,
-                    marginTop: 10,
-                    cursor: "pointer",
-                    color: "#334155"
-                  }}
-                >
-                  <input
-                    type="checkbox"
-                    checked={useOnchainWallet}
-                    onChange={(e) => setUseOnchainWallet(e.target.checked)}
-                  />
-                  <span>Bật ký Escrow trực tiếp bằng ví trình duyệt khi tra cứu</span>
-                </label>
+                <p>Thanh toán và ký escrow đang tạm tắt trong bản thử nghiệm.</p>
               </div>
 
               <div
@@ -1439,16 +1342,16 @@ export default function AskPayWorkspacePage() {
                 }}
               >
                 <div style={{ fontWeight: 700, color: "#0a1c2e", marginBottom: 6 }}>
-                  Smart Contracts Đã Triển Khai (Dual-Chain Avalanche)
+                  Cấu hình hợp đồng (chưa xác minh triển khai)
                 </div>
                 <div className="font-mono" style={{ fontSize: 11.5, color: "#334155", lineHeight: 1.7 }}>
                   <div>
                     • Fuji Escrow (43113):{" "}
-                    {escrowAddress || "0xb4fc756871c6e1694f13d7692c8f714c47142108"}
+                    {escrowAddress || "Chưa cấu hình"}
                   </div>
                   <div>
                     • AskPay Own L1 (663010):{" "}
-                    {receiptAddress || "0xb4fc756871c6e1694f13d7692c8f714c47142108"}
+                    {receiptAddress || "Chưa cấu hình"}
                   </div>
                 </div>
                 <div style={{ marginTop: 8, fontSize: 12, color: "#475569" }}>
