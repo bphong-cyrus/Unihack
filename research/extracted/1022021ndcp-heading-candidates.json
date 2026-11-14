@@ -1,0 +1,153 @@
+{
+  "document_id": "102/2021/NĐ-CP",
+  "source_sha256": "2d4ea494360877c923ac60a393ea2014cca30fb0172f0676525ccd29f1594f2f",
+  "page_count": 26,
+  "review_status": "UNREVIEWED",
+  "candidates": [
+    {
+      "article": "1",
+      "page": 2,
+      "line_index": 8,
+      "text": "Điều 1. Sửa đổi, bổ sung một số điều của Nghị định số 125/2020/NĐ-CP",
+      "confidence": 0.6316543122274979,
+      "record_file": "page-002.json"
+    },
+    {
+      "article": "2",
+      "page": 4,
+      "line_index": 15,
+      "text": "Điều 2. Sửa đổi, bổ sung một số điều của Nghị định số 128/2020/NĐ-CP",
+      "confidence": 0.5646977064676275,
+      "record_file": "page-004.json"
+    },
+    {
+      "article": "15",
+      "page": 6,
+      "line_index": 6,
+      "text": "Điều 15, Điều 16, Điều 17, Điều 18, Điều 19, Điều 20, Điều 21, Điều 22,",
+      "confidence": 0.6332645340414403,
+      "record_file": "page-006.json"
+    },
+    {
+      "article": "23",
+      "page": 6,
+      "line_index": 7,
+      "text": "Điều 23, Điều 24 và các khoản 1, 3, 4 Điều 25 Nghị định này là mức trung",
+      "confidence": 0.7221884228377097,
+      "record_file": "page-006.json"
+    },
+    {
+      "article": "3",
+      "page": 14,
+      "line_index": 33,
+      "text": "Điều 3. Sửa đổi, bổ sung một số điều của Nghị định số 98/2013/NĐ-CP",
+      "confidence": 0.7517763178218281,
+      "record_file": "page-014.json"
+    },
+    {
+      "article": "40",
+      "page": 16,
+      "line_index": 33,
+      "text": "Điều 40, khoản 1 Điều 44 và khoản 1 Điều 49 Nghị định này, thời điểm chấm",
+      "confidence": 0.6914605746879295,
+      "record_file": "page-016.json"
+    },
+    {
+      "article": "4",
+      "page": 18,
+      "line_index": 1,
+      "text": "Điều 4. Sửa đổi, bổ sung một số điều của Nghị định số 63/2019/NĐ-CP",
+      "confidence": 0.553636281297471,
+      "record_file": "page-018.json"
+    },
+    {
+      "article": "31",
+      "page": 20,
+      "line_index": 20,
+      "text": "Điều 31, khoản 1, khoản",
+      "confidence": 0.8765903022794423,
+      "record_file": "page-020.json"
+    },
+    {
+      "article": "36",
+      "page": 20,
+      "line_index": 21,
+      "text": "Điều 36",
+      "confidence": 0.9939929983662451,
+      "record_file": "page-020.json"
+    },
+    {
+      "article": "58",
+      "page": 20,
+      "line_index": 42,
+      "text": "Điều 58, Điều 59, Điều 60 Nghị định này: thời điểm kết thúc là thời điểm nộp",
+      "confidence": 0.7560509029133782,
+      "record_file": "page-020.json"
+    },
+    {
+      "article": "53",
+      "page": 22,
+      "line_index": 20,
+      "text": "Điều 53",
+      "confidence": 0.9532843025702669,
+      "record_file": "page-022.json"
+    },
+    {
+      "article": "5",
+      "page": 23,
+      "line_index": 1,
+      "text": "Điều 5. Sửa đổi, bổ sung một số điều của Nghị định 41/2018/NĐ-CP",
+      "confidence": 0.7762695447663734,
+      "record_file": "page-023.json"
+    },
+    {
+      "article": "6",
+      "page": 24,
+      "line_index": 9,
+      "text": "Điều 6. Bổ sung, bỏ mộtsố từ, cụm từ, bãi bỏ khoản tại một số đỉều như sau",
+      "confidence": 0.4871561208186834,
+      "record_file": "page-024.json"
+    },
+    {
+      "article": "5",
+      "page": 24,
+      "line_index": 16,
+      "text": "Điều 5.",
+      "confidence": 0.9322301676111989,
+      "record_file": "page-024.json"
+    },
+    {
+      "article": "26",
+      "page": 24,
+      "line_index": 29,
+      "text": "Điều 26.",
+      "confidence": 0.7461250844914443,
+      "record_file": "page-024.json"
+    },
+    {
+      "article": "7",
+      "page": 25,
+      "line_index": 26,
+      "text": "Điều 7. Quy định chuyển tiếp",
+      "confidence": 0.5381287165937148,
+      "record_file": "page-025.json"
+    },
+    {
+      "article": "8",
+      "page": 26,
+      "line_index": 1,
+      "text": "Điều 8. Trách nhiệm thực hiện",
+      "confidence": 0.9716192689939743,
+      "record_file": "page-026.json"
+    },
+    {
+      "article": "9",
+      "page": 26,
+      "line_index": 6,
+      "text": "Điều 9. Hiệu lực thi hành",
+      "confidence": 0.9060911518926007,
+      "record_file": "page-026.json"
+    }
+  ],
+  "limitations": "Heuristic headings may be missing or refer to amendments; verify against original pages."
+}
