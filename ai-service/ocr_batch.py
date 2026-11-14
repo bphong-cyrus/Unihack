@@ -14,7 +14,8 @@ class BatchError(ValueError):
     """An OCR checkpoint is incompatible with the requested source or settings."""
 
 
-def run_batch(source, output, document_id, page_count, recognize, dpi=150):
+def run_batch(source, output, document_id, page_count, recognize, dpi=150, engine=ENGINE,
+              engine_metadata=None):
     source, output = Path(source).resolve(), Path(output).resolve()
     if not document_id.strip() or page_count < 1 or dpi < 1:
         raise BatchError('invalid document, page count or resolution')
@@ -23,7 +24,11 @@ def run_batch(source, output, document_id, page_count, recognize, dpi=150):
     relative = os.path.relpath(source, output)
     expected = {'document_id': document_id, 'source_file': relative,
                 'source_sha256': digest, 'page_count': page_count,
-                'render_dpi': dpi, 'engine': ENGINE, 'review_status': 'UNREVIEWED'}
+                'render_dpi': dpi, 'engine': engine, 'review_status': 'UNREVIEWED'}
+    engine_metadata = engine_metadata or {}
+    if set(expected).intersection(engine_metadata):
+        raise BatchError('engine metadata cannot override page identity')
+    expected.update(engine_metadata)
     allowed = {f'page-{page:03}.json' for page in range(1, page_count + 1)}
     if any(path.name not in allowed for path in output.glob('page-*.json')):
         raise BatchError('unexpected page checkpoint')

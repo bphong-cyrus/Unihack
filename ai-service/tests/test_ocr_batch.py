@@ -69,6 +69,35 @@ class OcrBatchTests(unittest.TestCase):
             with self.assertRaises(BatchError):
                 run_batch(source, out, 'A', 1, lambda *args: [])
 
+    def test_engine_metadata_is_saved_and_validated_on_resume(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            source = root / 'source.pdf'
+            source.write_bytes(b'official source')
+            out = root / 'ocr'
+            calls = []
+            recognize = lambda *args: calls.append(args) or []
+            metadata = {'tesseract_version': '5.5.4', 'languages': ['vie', 'eng']}
+            run_batch(source, out, 'A', 1, recognize, engine='Tesseract 5.5.4', engine_metadata=metadata)
+            record = json.loads((out / 'page-001.json').read_text())
+            self.assertEqual(record['engine'], 'Tesseract 5.5.4')
+            self.assertEqual(record['tesseract_version'], '5.5.4')
+            self.assertEqual(record['languages'], ['vie', 'eng'])
+            calls.clear()
+            with self.assertRaises(BatchError):
+                run_batch(source, out, 'A', 1, recognize, engine='Tesseract 5.5.4',
+                          engine_metadata={'tesseract_version': '5.5.4', 'languages': ['vie']})
+            self.assertEqual(calls, [])
+
+    def test_engine_metadata_cannot_override_page_identity(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            source = root / 'source.pdf'
+            source.write_bytes(b'official source')
+            with self.assertRaises(BatchError):
+                run_batch(source, root / 'ocr', 'A', 1, lambda *args: [],
+                          engine='Tesseract 5.5.4', engine_metadata={'page_count': 9})
+
 
 if __name__ == '__main__':
     unittest.main()
