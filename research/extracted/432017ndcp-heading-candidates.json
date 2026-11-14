@@ -1,0 +1,217 @@
+{
+  "document_id": "43/2017/NĐ-CP",
+  "source_sha256": "e698dcc97d6d39d11dea9c9688b289d36e976e1e9acda2ee15cd2fe93402ab62",
+  "page_count": 36,
+  "review_status": "UNREVIEWED",
+  "candidates": [
+    {
+      "article": "1",
+      "page": 1,
+      "line_index": 38,
+      "text": "Điều 1. Phạm vi điều chỉnh",
+      "confidence": 0.9762773318183541,
+      "record_file": "page-001.json"
+    },
+    {
+      "article": "2",
+      "page": 2,
+      "line_index": 16,
+      "text": "Điều 2. Đối tượng áp dụng",
+      "confidence": 0.6121809775185324,
+      "record_file": "page-002.json"
+    },
+    {
+      "article": "3",
+      "page": 2,
+      "line_index": 22,
+      "text": "Điều 3. Giải thích từ ngữ",
+      "confidence": 0.6513849076639775,
+      "record_file": "page-002.json"
+    },
+    {
+      "article": "4",
+      "page": 4,
+      "line_index": 0,
+      "text": "Điều 4. Vị trí nhãn",
+      "confidence": 0.9190837291081402,
+      "record_file": "page-004.json"
+    },
+    {
+      "article": "5",
+      "page": 4,
+      "line_index": 15,
+      "text": "Điều 5. Kích thưóc nhãn",
+      "confidence": 0.7835791808651,
+      "record_file": "page-004.json"
+    },
+    {
+      "article": "10",
+      "page": 4,
+      "line_index": 27,
+      "text": "Điều 10",
+      "confidence": 0.8455700407576885,
+      "record_file": "page-004.json"
+    },
+    {
+      "article": "6",
+      "page": 4,
+      "line_index": 46,
+      "text": "Điều 6. Màu sắc của chữ, ký hiệu và hình ảnh trên nhãn",
+      "confidence": 0.8528081700212197,
+      "record_file": "page-004.json"
+    },
+    {
+      "article": "7",
+      "page": 4,
+      "line_index": 57,
+      "text": "Điều 7. Ngôn",
+      "confidence": 0.8687723046456581,
+      "record_file": "page-004.json"
+    },
+    {
+      "article": "8",
+      "page": 5,
+      "line_index": 40,
+      "text": "Điều 8. Ghi nhãn phụ",
+      "confidence": 0.9667080766418363,
+      "record_file": "page-005.json"
+    },
+    {
+      "article": "9",
+      "page": 6,
+      "line_index": 0,
+      "text": "Điều 9. Trách nhiệm",
+      "confidence": 0.9184798347322908,
+      "record_file": "page-006.json"
+    },
+    {
+      "article": "10",
+      "page": 6,
+      "line_index": 34,
+      "text": "Điều 10. Nội",
+      "confidence": 0.9798191359961551,
+      "record_file": "page-006.json"
+    },
+    {
+      "article": "11",
+      "page": 7,
+      "line_index": 0,
+      "text": "Điều 11. Tên",
+      "confidence": 0.827251702879389,
+      "record_file": "page-007.json"
+    },
+    {
+      "article": "12",
+      "page": 7,
+      "line_index": 26,
+      "text": "Điều 12. Tên và địa chỉ tổ chức, cá nhân chịu trách nhiệm về",
+      "confidence": 0.7977932074883545,
+      "record_file": "page-007.json"
+    },
+    {
+      "article": "13",
+      "page": 8,
+      "line_index": 19,
+      "text": "Điều 13. Định Iượng hàng hoá",
+      "confidence": 0.8502045940562702,
+      "record_file": "page-008.json"
+    },
+    {
+      "article": "14",
+      "page": 8,
+      "line_index": 51,
+      "text": "Điều 14. Ngày sản xuất, hạn sử dụng",
+      "confidence": 0.8011125211876887,
+      "record_file": "page-008.json"
+    },
+    {
+      "article": "15",
+      "page": 9,
+      "line_index": 38,
+      "text": "Điều 15. Xuất xứ",
+      "confidence": 0.8238240790485586,
+      "record_file": "page-009.json"
+    },
+    {
+      "article": "16",
+      "page": 9,
+      "line_index": 57,
+      "text": "Điều 16. Thành phần, thành phần định Iượng",
+      "confidence": 0.7868188135087041,
+      "record_file": "page-009.json"
+    },
+    {
+      "article": "17",
+      "page": 10,
+      "line_index": 57,
+      "text": "Điều 17. Thông số kỹ thuật, thông tin cảnh báo",
+      "confidence": 0.6536900180470514,
+      "record_file": "page-010.json"
+    },
+    {
+      "article": "18",
+      "page": 12,
+      "line_index": 1,
+      "text": "Điều 18. Các nội dung khác thể hiện trên nhãn hàng hoá",
+      "confidence": 0.7387509217348937,
+      "record_file": "page-012.json"
+    },
+    {
+      "article": "19",
+      "page": 12,
+      "line_index": 23,
+      "text": "Điều 19. Các thông tin",
+      "confidence": 0.6014886873294767,
+      "record_file": "page-012.json"
+    },
+    {
+      "article": "20",
+      "page": 12,
+      "line_index": 47,
+      "text": "Điều 20. Bộ Khoa học và Công nghệ",
+      "confidence": 0.8612124465335118,
+      "record_file": "page-012.json"
+    },
+    {
+      "article": "21",
+      "page": 13,
+      "line_index": 1,
+      "text": "Điều 21. Các bộ, cơ quan ngang bộ, cơ quan thuộc Chính phủ",
+      "confidence": 0.7844527470464323,
+      "record_file": "page-013.json"
+    },
+    {
+      "article": "22",
+      "page": 13,
+      "line_index": 17,
+      "text": "Điều 22. Ủy ban nhân dân tỉnh, thành",
+      "confidence": 0.7986858535511298,
+      "record_file": "page-013.json"
+    },
+    {
+      "article": "23",
+      "page": 13,
+      "line_index": 25,
+      "text": "Điều 23. Hiệu lực thi hành",
+      "confidence": 0.7936068665082694,
+      "record_file": "page-013.json"
+    },
+    {
+      "article": "24",
+      "page": 13,
+      "line_index": 30,
+      "text": "Điều 24. Điều khoản chuyển tiếp",
+      "confidence": 0.8689772454287261,
+      "record_file": "page-013.json"
+    },
+    {
+      "article": "25",
+      "page": 13,
+      "line_index": 51,
+      "text": "Điều 25. Trách nhiệm thi hành",
+      "confidence": 0.9046080845923029,
+      "record_file": "page-013.json"
+    }
+  ],
+  "limitations": "Heuristic headings may be missing or refer to amendments; verify against original pages."
+}
