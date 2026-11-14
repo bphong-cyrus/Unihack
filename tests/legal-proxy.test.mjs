@@ -1,8 +1,19 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
+import { execFileSync } from 'node:child_process';
 import { forwardLegalQuestion } from '../app/api/ask-and-settle/legal-proxy.mjs';
 
 const request = { questionId: '0x123', question: 'Thời hạn khai hải quan?', tier: 'quick', asOf: '2023-01-01' };
+
+test('proxy accepts actual demo service results for matched and unmatched questions', async () => {
+  const script = `import json,sys; sys.path.insert(0,'ai-service'); import main; print(json.dumps([main.ask_legal_question(main.AskRequest(question_id='0x123',question=q)) for q in ['Khai sai mã HS bị phạt bao nhiêu?', 'Thuế xuất khẩu cà phê là bao nhiêu?']],ensure_ascii=False))`;
+  const results = JSON.parse(execFileSync(process.env.PYTHON || 'python3', ['-c', script], { encoding: 'utf8' }));
+  for (const [index, response] of results.entries()) {
+    const result = await forwardLegalQuestion({ ...request, asOf: undefined }, 'http://service/ask', async () => ({ ok: true, json: async () => response }));
+    assert.equal(result.status, 200);
+    assert.equal(result.body.validation.passed, index === 0);
+  }
+});
 
 test('forwards the question and returns the service result without claiming settlement', async () => {
   const response = { question_id: '0x123', answer: 'Ví dụ', citations: [], validation: { passed: false, verdict: 'UNVERIFIED_REFUND', overall_score: 0, citation_checks: [] } };

@@ -33,7 +33,7 @@ Không cấu hình snapshot thì API dùng các ví dụ demo. Để dùng snaps
 
 ```bash
 .venv/bin/python -m unittest discover -s ai-service/tests -q
-node --test tests/legal-proxy.test.mjs tests/memo.test.cjs
+PYTHON=.venv/bin/python node --test tests/legal-proxy.test.mjs tests/memo.test.cjs
 npm run build
 ```
 
