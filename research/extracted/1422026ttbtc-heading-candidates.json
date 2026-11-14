@@ -1,0 +1,81 @@
+{
+  "document_id": "142/2026/TT-BTC",
+  "source_sha256": "bc1adadf1f5fd383decc3fb28d1cdac030e0719e1140caaacd58448f49348de6",
+  "page_count": 83,
+  "review_status": "UNREVIEWED",
+  "candidates": [
+    {
+      "article": "1",
+      "page": 2,
+      "line_index": 12,
+      "text": "Điều 1. Sứa đổi, bổ",
+      "confidence": 0.7604931723864904,
+      "record_file": "page-002.json"
+    },
+    {
+      "article": "2",
+      "page": 4,
+      "line_index": 16,
+      "text": "Điều 2. Sửa đổL, bẩ gung một 8ố đỉều cảa Thông tư số I9L/2O1S/TT-",
+      "confidence": 0.19353504616940578,
+      "record_file": "page-004.json"
+    },
+    {
+      "article": "14",
+      "page": 5,
+      "line_index": 25,
+      "text": "Điều 14",
+      "confidence": 0.7291793710575029,
+      "record_file": "page-005.json"
+    },
+    {
+      "article": "3",
+      "page": 6,
+      "line_index": 44,
+      "text": "Điều 3. Súa đổi, bổ",
+      "confidence": 0.46516267574659953,
+      "record_file": "page-006.json"
+    },
+    {
+      "article": "19",
+      "page": 7,
+      "line_index": 14,
+      "text": "Điều 19",
+      "confidence": 0.9901381502176128,
+      "record_file": "page-007.json"
+    },
+    {
+      "article": "24",
+      "page": 9,
+      "line_index": 74,
+      "text": "Đíều 24",
+      "confidence": 0.7437063684253494,
+      "record_file": "page-009.json"
+    },
+    {
+      "article": "26",
+      "page": 9,
+      "line_index": 91,
+      "text": "Điều 26",
+      "confidence": 0.8256833773008453,
+      "record_file": "page-009.json"
+    },
+    {
+      "article": "3",
+      "page": 12,
+      "line_index": 18,
+      "text": "Điều 3.",
+      "confidence": 0.9072646325649792,
+      "record_file": "page-012.json"
+    },
+    {
+      "article": "4",
+      "page": 13,
+      "line_index": 59,
+      "text": "Điều 4. Đíều khoản tbi hànb",
+      "confidence": 0.7203670258380424,
+      "record_file": "page-013.json"
+    }
+  ],
+  "limitations": "Heuristic headings may be missing or refer to amendments; verify against original pages."
+}
