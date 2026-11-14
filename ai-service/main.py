@@ -307,11 +307,6 @@ def ask_legal_question(req: AskRequest):
     # Trường hợp 3: Câu trả lời chuẩn xác từ Corpus XNK (PASS >= 90% -> Giải ngân)
     else:
         q_lower = req.question.lower()
-        xnk_keywords = [
-            "hải quan", "xuất khẩu", "nhập khẩu", "xnk", "mã hs", "hs",
-            "c/o", "xuất xứ", "tờ khai", "thông quan", "thuế", "tái xuất",
-            "hàng hóa", "kiểm tra sau thông quan", "thương nhân", "bổ sung", "phạt"
-        ]
         if "c/o" in q_lower or "xuất xứ" in q_lower or "thương nhân" in q_lower:
             answer = (
                 "Theo quy định tại Khoản 1 Điều 15 Nghị định 31/2018/NĐ-CP, doanh nghiệp xuất nhập khẩu "
@@ -388,7 +383,9 @@ def ask_legal_question(req: AskRequest):
                     ),
                 }
             ]
-        elif not any(kw in q_lower for kw in xnk_keywords):
+        elif not (any(term in q_lower for term in ("mã hs", "mã số hàng"))
+                  and any(term in q_lower for term in ("sai", "nhầm"))
+                  and any(term in q_lower for term in ("phạt", "xử lý"))):
             answer = (
                 "Hiện chưa tìm thấy điều khoản pháp luật Hải quan và Xuất nhập khẩu phù hợp trong kho văn bản "
                 "để đối chiếu câu hỏi này. Đây là dữ liệu thử nghiệm, không có giao dịch thanh toán."

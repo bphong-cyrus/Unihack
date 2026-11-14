@@ -60,6 +60,6 @@ Các tệp gốc được tải từ liên kết đính kèm trên trang metadat
 - Thông tư 128/2013/TT-BTC là văn bản cũ được nguồn Công báo liệt kê thay thế bởi Thông tư 38/2015/TT-BTC; Nghị định 127/2013/NĐ-CP là văn bản cũ cần lập lịch sử hiệu lực chi tiết. Không đưa vào xử lý như quy định hiện hành chỉ dựa vào các thông tin này.
 - Thông tư 38/2018/TT-BCT liên quan chế độ ưu đãi thuế quan phổ cập (GSP), cần phân biệt với Thông tư 38/2018/TT-BTC về xác định xuất xứ hàng hóa; không mặc định đây là cùng một văn bản.
 
-Chưa thực hiện tách khoản, đối chiếu bản hợp nhất, xác minh chữ ký số, rà soát hiệu lực theo thời gian, hoặc phê duyệt bởi chuyên gia.
+Đã tạo các khoản ứng viên từ Thông tư 12/2019/TT-BCT và bản OCR 45 trang Nghị định 128/2020/NĐ-CP trong `research/extracted/`. Các kết quả này chưa được kiểm duyệt; OCR có thể sai và không phải nguồn để xác nhận trích dẫn. Chưa hoàn tất tách khoản, đối chiếu bản hợp nhất, xác minh chữ ký số, rà soát hiệu lực theo thời gian, hoặc phê duyệt bởi chuyên gia.
 
 Các tệp RAR nhiều phần được giữ tên gốc để khôi phục đúng thứ tự. Thông tư [142/2026/TT-BTC](https://vanban.chinhphu.vn/?docid=219685&pageid=27160) có ngày hiệu lực 16/11/2026; cần phân biệt ngày tra cứu và quy định chuyển tiếp. Luật [108/2025/QH15](https://vanban.chinhphu.vn/?docid=216541&pageid=27160) có hiệu lực 01/07/2026; cần kiểm tra điều khoản thay thế và chuyển tiếp trước khi gán trạng thái luật cũ.

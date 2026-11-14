@@ -71,6 +71,15 @@ class ValidatorContractTests(unittest.TestCase):
         routes = {(route.path, method) for route in main.app.routes for method in getattr(route, "methods", set())}
         self.assertIn(("/api/v1/legal/validate", "POST"), routes)
 
+    def test_demo_unrelated_tax_question_has_no_citations(self):
+        result = main.ask_legal_question(main.AskRequest(question='Thuế xuất khẩu cà phê áp dụng mức bao nhiêu?'))
+        self.assertEqual(result['citations'], [])
+        self.assertFalse(result['validation']['passed'])
+
+    def test_demo_wrong_hs_penalty_question_keeps_example(self):
+        result = main.ask_legal_question(main.AskRequest(question='Khai sai mã HS bị phạt bao nhiêu?'))
+        self.assertTrue(result['citations'])
+
     def test_corpus_reports_sample_and_actual_document_count(self):
         result = main.get_corpus()
         self.assertEqual(result["total_documents"], len({r["doc_id"] for r in main.CORPUS_RECORDS}))
