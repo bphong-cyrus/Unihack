@@ -10,4 +10,4 @@
 
 Để tiếp tục nhận dạng một PDF gốc: `python3 ai-service/ocr_batch.py research/legal-sources/232025ttbct/01.pdf research/extracted/ocr-232025ttbct --document-id '23/2025/TT-BCT'`. Công cụ yêu cầu `mutool`, `pypdf`, `torch`, EasyOCR và bộ model tiếng Việt/Anh đã cài sẵn; không tự tải model. Có thể chạy lại cùng lệnh sau khi gián đoạn: các trang đã lưu được kiểm tra hash, đường dẫn nguồn, số trang và cấu hình trước khi xử lý tiếp. Không trộn trang từ nguồn hoặc cấu hình khác trong cùng thư mục. Kết quả vẫn là OCR chưa duyệt, không xác nhận chữ ký hoặc hiệu lực pháp luật; phải đối chiếu từng trang với bản gốc và kiểm tra văn bản sửa đổi trước khi sử dụng.
 
-Với Thông tư 11/2020/TT-BCT, `ocr-112020ttbct-01/` chỉ nhận dạng tệp nguồn thứ nhất (2 trang); tệp thứ hai có 78 trang và chưa được OCR. Không coi hai trang này là toàn bộ văn bản hoặc phụ lục.
+Với Thông tư 11/2020/TT-BCT, `ocr-112020ttbct-01/` và `ocr-112020ttbct-02/` lần lượt chứa kết quả nhận dạng hai tệp nguồn (2 và 78 trang). Kết quả chưa được đối chiếu với bản gốc, chưa xác minh bố cục bảng, nội dung phụ lục hay hiệu lực.
