@@ -176,6 +176,10 @@ export const EXPERT_LAWYERS: ExpertLawyer[] = [
   }
 ];
 
+function escapeHtml(value: string): string {
+  return value.replace(/[&<>"']/g, (char) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[char] as string));
+}
+
 export function buildFormalMemoHtml(
   question: string,
   assistantMsg?: ChatMessage | null
@@ -190,9 +194,9 @@ export function buildFormalMemoHtml(
       ? citations
           .map(
             (c, idx) =>
-              `<p><strong>${idx + 1}. Điều ${c.article}, Khoản ${c.clause} — ${c.document}</strong>${
-                c.document_title ? ` (${c.document_title})` : ""
-              }<br/><em>&ldquo;${c.excerpt}&rdquo;</em></p>`
+              `<p><strong>${idx + 1}. Điều ${escapeHtml(c.article)}, Khoản ${escapeHtml(c.clause)} — ${escapeHtml(c.document)}</strong>${
+                c.document_title ? ` (${escapeHtml(c.document_title)})` : ""
+              }<br/><em>&ldquo;${escapeHtml(c.excerpt)}&rdquo;</em></p>`
           )
           .join("")
       : "<p><em>Chưa có trích dẫn hợp lệ được xác thực cho phiên tra cứu này.</em></p>";
@@ -202,21 +206,17 @@ export function buildFormalMemoHtml(
     : "ASKPAY-XNK-MEMO";
 
   return `
-    <div style="text-align:center;margin-bottom:14px;">
-      <div style="font-weight:700;font-size:12px;text-transform:uppercase;">CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM</div>
-      <div style="font-weight:600;font-size:11.5px;text-decoration:underline;margin-top:2px;">Độc lập - Tự do - Hạnh phúc</div>
-    </div>
     <div style="text-align:center;margin:14px 0 16px;">
-      <div style="font-weight:800;font-size:14px;color:#0a1c2e;">PHIẾU THAM VẤN &amp; ĐỐI CHIẾU PHÁP LUẬT HẢI QUAN</div>
-      <div style="font-size:11px;color:#64748b;margin-top:2px;">Mã tham chiếu: ${proofCode}</div>
+      <div style="font-weight:800;font-size:14px;color:#0a1c2e;">PHIẾU TRA CỨU THỬ NGHIỆM</div>
+      <div style="font-size:11px;color:#64748b;margin-top:2px;">Mã tham chiếu: ${escapeHtml(proofCode)}</div>
     </div>
-    <p><strong>I. Tình huống / Yêu cầu tra cứu:</strong><br/>${question || "Tra cứu nghiệp vụ Xuất Nhập Khẩu"}</p>
-    <p><strong>II. Nội dung phân tích &amp; Khuyến nghị thực hiện:</strong><br/>${answer.replace(/\n/g, "<br/>")}</p>
+    <p><strong>I. Tình huống / Yêu cầu tra cứu:</strong><br/>${escapeHtml(question || "Tra cứu nghiệp vụ Xuất Nhập Khẩu")}</p>
+    <p><strong>II. Nội dung tra cứu:</strong><br/>${escapeHtml(answer).replace(/\n/g, "<br/>")}</p>
     <div style="margin-top:10px;">
-      <p><strong>III. Căn cứ pháp lý đã đối chiếu nguyên văn:</strong></p>
+      <p><strong>III. Trích dẫn được cung cấp:</strong></p>
       ${citationsHtml}
     </div>
-    <p style="margin-top:14px;font-size:11.5px;color:#475569;"><em>Ghi chú kiểm toán: Tài liệu được tổng hợp và kiểm định qua Deterministic Citation Validator của hệ thống AskPay XNK.</em></p>
+    <p style="margin-top:14px;font-size:11.5px;color:#475569;"><em>Kiểm tra trích dẫn chưa chứng minh câu trả lời đúng hoặc văn bản còn hiệu lực. Cần đối chiếu nguồn và tham vấn chuyên gia.</em></p>
   `;
 }
 
