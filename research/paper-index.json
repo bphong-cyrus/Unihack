@@ -189,7 +189,12 @@
       "title_supplied": "Reciprocal Rank Fusion Outperforms Condorcet and Individual Rank Learning Methods",
       "identifier": null,
       "supplied_url": "https://cormack.uwaterloo.ca/cormacksigir09-rrf.pdf",
-      "status": "NO_IDENTIFIER"
+      "status": "NO_IDENTIFIER",
+      "title_resolution": {
+        "low_confidence": false,
+        "reason": null,
+        "exit_code": 1
+      }
     },
     {
       "key": "nogueira2019passage",
@@ -482,7 +487,14 @@
       "title_supplied": "ViDRILL}: A Multi-Stage Retrieval Framework for {Vietnamese} Legal Document Search",
       "identifier": null,
       "supplied_url": "https://aclanthology.org/2025.vlsp-1.17/",
-      "status": "NO_IDENTIFIER"
+      "status": "NO_IDENTIFIER",
+      "title_resolution": {
+        "low_confidence": true,
+        "reason": "score_below_threshold",
+        "exit_code": 0,
+        "candidate_title": "A Unified Ontology-Based Knowledge Graph Framework for Multi-Domain Vietnamese Legal Document Retrieval",
+        "candidate_doi": "10.56532/mjsat.v6i2.684"
+      }
     },
     {
       "key": "optimizing2025semihard",
@@ -503,14 +515,32 @@
       "title_supplied": "Optimizing Retrieval Strategies for {Vietnamese} Legal {RAG} Systems",
       "identifier": null,
       "supplied_url": "https://www.researchgate.net/publication/400147067_Optimizing_Retrieval_Strategies_for_Vietnamese_Legal_RAG_Systems",
-      "status": "NO_IDENTIFIER"
+      "status": "NO_IDENTIFIER",
+      "title_resolution": {
+        "low_confidence": false,
+        "reason": null,
+        "exit_code": 1
+      }
     },
     {
       "key": "vilegallm2024",
       "title_supplied": "ViLegalLM}: Language Models for {Vietnamese} Legal Text",
-      "identifier": null,
+      "identifier": "10.18653/v1/2026.findings-acl.1801",
       "supplied_url": "https://pdfs.semanticscholar.org/6fea/1427c76e586ffe8fd248a36c3387238a4c09.pdf",
-      "status": "NO_IDENTIFIER"
+      "status": "DOWNLOADED_TITLE_MATCH_REVIEW",
+      "title_resolution": {
+        "low_confidence": false,
+        "reason": null,
+        "exit_code": 0,
+        "candidate_title": "ViLegalLM: Language Models for Vietnamese Legal Text",
+        "candidate_doi": "10.18653/v1/2026.findings-acl.1801"
+      },
+      "resolved_title": "ViLegalLM: Language Models for Vietnamese Legal Text",
+      "pdf_url": "https://aclanthology.org/2026.findings-acl.1801.pdf",
+      "source": "semantic_scholar",
+      "local_file": "Nguyen_2026_AMACL_ViLegalLM_Language_Models_for_Vietnamese.pdf",
+      "sha256": "5f6e487534d386a2fcb58f50ba63d50c2e61dab567485040b5c68d4a6a5b01d8",
+      "title_review": "CHECK_YEAR_AND_METADATA"
     },
     {
       "key": "vilegalexpert2026",
@@ -559,14 +589,24 @@
       "title_supplied": "Integrating Information Retrieval and Large Language Models for {Vietnamese} Legal {QA",
       "identifier": null,
       "supplied_url": "https://www.scitepress.org/Papers/2025/137512/137512.pdf",
-      "status": "NO_IDENTIFIER"
+      "status": "NO_IDENTIFIER",
+      "title_resolution": {
+        "low_confidence": false,
+        "reason": null,
+        "exit_code": 4
+      }
     },
     {
       "key": "agentic2025scitepress",
       "title_supplied": "Agentic {RAG}-Based Legal Advisory Chatbot: A Knowledge-Driven Approach for {Vietnamese} Legal System",
       "identifier": null,
       "supplied_url": "https://www.scitepress.org/Papers/2025/137354/137354.pdf",
-      "status": "NO_IDENTIFIER"
+      "status": "NO_IDENTIFIER",
+      "title_resolution": {
+        "low_confidence": false,
+        "reason": null,
+        "exit_code": 4
+      }
     },
     {
       "key": "alqac2021summary",
@@ -643,7 +683,12 @@
       "title_supplied": "BEIR}: A Heterogeneous Benchmark for Zero-shot Evaluation of Information Retrieval Models",
       "identifier": null,
       "supplied_url": "https://datasets-benchmarks-proceedings.neurips.cc/paper/2021/file/65b9eea6e1cc6bb9f0cd2a47751a186f-Paper-round2.pdf",
-      "status": "NO_IDENTIFIER"
+      "status": "NO_IDENTIFIER",
+      "title_resolution": {
+        "low_confidence": false,
+        "reason": null,
+        "exit_code": 1
+      }
     },
     {
       "key": "guha2023legalbench",
@@ -720,7 +765,12 @@
       "title_supplied": "A Guided Tour to Approximate String Matching",
       "identifier": null,
       "supplied_url": "https://users.dcc.uchile.cl/~gnavarro/ps/acmcs01.1.pdf",
-      "status": "NO_IDENTIFIER"
+      "status": "NO_IDENTIFIER",
+      "title_resolution": {
+        "low_confidence": false,
+        "reason": null,
+        "exit_code": 4
+      }
     },
     {
       "key": "menick2022teaching",
@@ -1000,9 +1050,22 @@
     {
       "key": "dutchlaw2024nllp",
       "title_supplied": "Attributed Question Answering for Preconditions in the {Dutch} Law",
-      "identifier": null,
+      "identifier": "10.18653/v1/2024.nllp-1.12",
       "supplied_url": "https://aclanthology.org/2024.nllp-1.12.pdf",
-      "status": "NO_IDENTIFIER"
+      "status": "DOWNLOADED_TITLE_MATCH_REVIEW",
+      "title_resolution": {
+        "low_confidence": false,
+        "reason": null,
+        "exit_code": 0,
+        "candidate_title": "Attributed Question Answering for Preconditions in the Dutch Law",
+        "candidate_doi": "10.18653/v1/2024.nllp-1.12"
+      },
+      "resolved_title": "Attributed Question Answering for Preconditions in the Dutch Law",
+      "pdf_url": "https://aclanthology.org/2024.nllp-1.12.pdf",
+      "source": "semantic_scholar",
+      "local_file": "Redelaar_2024_NLLP_Attributed_Question_Answering_for_Precon.pdf",
+      "sha256": "39b27751b2a50da344e29483ad72570e29ab1974b56c92103ca3f0afe1b90280",
+      "title_review": "CHECK_YEAR_AND_METADATA"
     },
     {
       "key": "citationclosure2026",
@@ -1049,7 +1112,12 @@
       "title_supplied": "Ontology-Driven Legal Rule Auditor for Secure, Trustworthy, and Governed {RAG} Systems",
       "identifier": null,
       "supplied_url": "https://www.mdpi.com/2073-431X/15/8/471",
-      "status": "NO_IDENTIFIER"
+      "status": "NO_IDENTIFIER",
+      "title_resolution": {
+        "low_confidence": false,
+        "reason": null,
+        "exit_code": 4
+      }
     },
     {
       "key": "angelopoulos2024conformal",
@@ -1210,14 +1278,24 @@
       "title_supplied": "Arbitrum: Scalable, private smart contracts",
       "identifier": null,
       "supplied_url": "https://www.usenix.org/system/files/conference/usenixsecurity18/sec18-kalodner.pdf",
-      "status": "NO_IDENTIFIER"
+      "status": "NO_IDENTIFIER",
+      "title_resolution": {
+        "low_confidence": true,
+        "reason": "score_below_threshold",
+        "exit_code": 1
+      }
     },
     {
       "key": "zhang2016towncrier",
       "title_supplied": "Town Crier: An Authenticated Data Feed for Smart Contracts",
       "identifier": null,
       "supplied_url": "https://eprint.iacr.org/2016/168",
-      "status": "NO_IDENTIFIER"
+      "status": "NO_IDENTIFIER",
+      "title_resolution": {
+        "low_confidence": false,
+        "reason": null,
+        "exit_code": 4
+      }
     },
     {
       "key": "zhang2020deco",
