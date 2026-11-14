@@ -1,0 +1,65 @@
+{
+  "document_id": "167/2025/NĐ-CP",
+  "source_sha256": "e450d946d5698b02a9b47a35b5ea28728cb837ea38452d21febf22a33b87500d",
+  "page_count": 78,
+  "review_status": "UNREVIEWED",
+  "candidates": [
+    {
+      "article": "1",
+      "page": 1,
+      "line_index": 54,
+      "text": "Điều 1. Sửa đổi, bổ",
+      "confidence": 0.9750871990456088,
+      "record_file": "page-001.json"
+    },
+    {
+      "article": "37",
+      "page": 27,
+      "line_index": 30,
+      "text": "Điều 37",
+      "confidence": 0.5022749119438559,
+      "record_file": "page-027.json"
+    },
+    {
+      "article": "69",
+      "page": 56,
+      "line_index": 53,
+      "text": "Điều 69, Điều 70, Điều 71 Nghị định này như sau:",
+      "confidence": 0.7239046395724725,
+      "record_file": "page-056.json"
+    },
+    {
+      "article": "2",
+      "page": 76,
+      "line_index": 12,
+      "text": "Điều 2. Thay thế, bãi bỏ một số cụm từ, điểm, khoản, điều của Nghị",
+      "confidence": 0.6202929363052184,
+      "record_file": "page-076.json"
+    },
+    {
+      "article": "40",
+      "page": 76,
+      "line_index": 44,
+      "text": "Điều 40",
+      "confidence": 0.7113743718434541,
+      "record_file": "page-076.json"
+    },
+    {
+      "article": "3",
+      "page": 76,
+      "line_index": 65,
+      "text": "Điều 3. Trách nhiệm tổ chức thực hiện",
+      "confidence": 0.6051976182672609,
+      "record_file": "page-076.json"
+    },
+    {
+      "article": "4",
+      "page": 77,
+      "line_index": 3,
+      "text": "Điều 4. Điều khoản thi hành",
+      "confidence": 0.7384779476821737,
+      "record_file": "page-077.json"
+    }
+  ],
+  "limitations": "Heuristic headings may be missing or refer to amendments; verify against original pages."
+}
