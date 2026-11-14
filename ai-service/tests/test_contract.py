@@ -1,6 +1,7 @@
 import sys
 import unittest
 from fastapi import HTTPException
+from pydantic import ValidationError
 from unittest.mock import patch
 from pathlib import Path
 
@@ -57,6 +58,12 @@ class ValidatorContractTests(unittest.TestCase):
             with self.assertRaises(HTTPException) as error:
                 operation()
             self.assertEqual(error.exception.status_code, 400)
+
+    def test_ask_rejects_blank_question_and_unsupported_tier_or_domain(self):
+        for values in ({'question': '   '}, {'question': 'hải quan', 'tier': 'other'},
+                       {'question': 'hải quan', 'domain': 'other'}):
+            with self.subTest(values=values), self.assertRaises(ValidationError):
+                main.AskRequest(**values)
 
     def test_validate_endpoint_exists(self):
         routes = {(route.path, method) for route in main.app.routes for method in getattr(route, "methods", set())}

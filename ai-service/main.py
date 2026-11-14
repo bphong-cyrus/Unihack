@@ -2,10 +2,10 @@ import hashlib
 import json
 import time
 from datetime import date
-from typing import List, Optional
+from typing import Annotated, List, Literal, Optional
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
-from pydantic import BaseModel
+from pydantic import BaseModel, StringConstraints
 
 from citation_text import normalize_vn_text, compute_excerpt_similarity
 from snapshot_api import ask_snapshot, configured_snapshot, corpus_response, query_date
@@ -223,9 +223,9 @@ class ValidateRequest(BaseModel):
 
 class AskRequest(BaseModel):
     question_id: Optional[str] = "0x00"
-    question: str
-    tier: str = "quick"
-    domain: str = "import_export_customs"
+    question: Annotated[str, StringConstraints(strip_whitespace=True, min_length=1)]
+    tier: Literal["quick", "deep"] = "quick"
+    domain: Literal["import_export_customs"] = "import_export_customs"
     simulate_hallucination: bool = False
     simulate_expired_law: bool = False
     as_of: Optional[date] = None
