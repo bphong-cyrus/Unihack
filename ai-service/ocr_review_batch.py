@@ -1,6 +1,7 @@
 """Create read-only OCR review pages and an index from a set of OCR records."""
 import argparse
 import html
+import json
 from pathlib import Path
 from ocr_review import ReviewError, render_review
 
@@ -13,6 +14,14 @@ def render_batch(records_dir, output_dir):
     if output.exists():
         raise ReviewError('output directory already exists')
     pages = [(path.stem + '.html', render_review(path, output / (path.stem + '.html'))) for path in files]
+    identities = set()
+    for path in files:
+        record = json.loads(path.read_text(encoding='utf-8'))
+        if path.stem != f"page-{record['page']:03}":
+            raise ReviewError('page filename does not match record')
+        identities.add((record['document_id'], record['source_sha256'], record['page_count']))
+    if len(identities) != 1:
+        raise ReviewError('OCR records do not belong to the same source')
     links = ''.join(f'<li><a href="{html.escape(name, quote=True)}">{html.escape(name)}</a></li>' for name, _ in pages)
     index = ('<!doctype html><html lang="vi"><meta charset="utf-8"><title>Rà soát OCR</title>'
              '<h1>OCR chưa duyệt</h1><p>Đối chiếu từng trang với bản gốc; kết quả không xác nhận hiệu lực pháp luật.</p>'

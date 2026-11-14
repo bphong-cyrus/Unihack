@@ -37,3 +37,15 @@ class ReviewBatchTests(unittest.TestCase):
             with self.assertRaises(ReviewError):
                 render_batch(root, output)
             self.assertFalse(output.exists())
+
+    def test_batch_rejects_records_from_different_documents(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            (root / 'source.pdf').write_bytes(b'pdf')
+            for page, document in ((1, 'A'), (2, 'B')):
+                (root / f'page-{page:03}.json').write_text(json.dumps({
+                    'document_id': document, 'source_file': 'source.pdf',
+                    'source_sha256': hashlib.sha256(b'pdf').hexdigest(), 'page': page,
+                    'page_count': 2, 'review_status': 'UNREVIEWED', 'lines': []}))
+            with self.assertRaises(ReviewError):
+                render_batch(root, root / 'out')
