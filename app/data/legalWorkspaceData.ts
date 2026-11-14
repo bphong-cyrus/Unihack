@@ -5,6 +5,7 @@ export interface CitationItem {
   document_title?: string;
   article: string;
   clause: string;
+  point?: string;
   excerpt: string;
 }
 
@@ -194,7 +195,7 @@ export function buildFormalMemoHtml(
       ? citations
           .map(
             (c, idx) =>
-              `<p><strong>${idx + 1}. Điều ${escapeHtml(c.article)}, Khoản ${escapeHtml(c.clause)} — ${escapeHtml(c.document)}</strong>${
+              `<p><strong>${idx + 1}. Điều ${escapeHtml(c.article)}, Khoản ${escapeHtml(c.clause)}${c.point ? `, Điểm ${escapeHtml(c.point)}` : ''} — ${escapeHtml(c.document)}</strong>${
                 c.document_title ? ` (${escapeHtml(c.document_title)})` : ""
               }<br/><em>&ldquo;${escapeHtml(c.excerpt)}&rdquo;</em></p>`
           )

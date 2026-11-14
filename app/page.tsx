@@ -810,7 +810,7 @@ export default function AskPayWorkspacePage() {
                           className="citation-hl"
                           title="Bấm để đối chiếu nguyên văn ở bảng bên phải"
                         >
-                          Điều {cit.article}, Khoản {cit.clause} ({cit.document})
+                          Điều {cit.article}, Khoản {cit.clause}{cit.point ? `, Điểm ${cit.point}` : ""} ({cit.document})
                         </button>
                       ))}
                     </div>

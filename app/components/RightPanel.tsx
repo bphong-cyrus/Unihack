@@ -236,7 +236,7 @@ export default function RightPanel({
                         color: safeIdx === idx ? "#ffffff" : "#475569"
                       }}
                     >
-                      Đ{c.article}.K{c.clause} · {c.document}
+                      Đ{c.article}.K{c.clause}{c.point ? `.Điểm ${c.point}` : ""} · {c.document}
                     </button>
                   ))}
                 </div>
@@ -262,7 +262,7 @@ export default function RightPanel({
                           color: "#0a1c2e"
                         }}
                       >
-                        Điều {currentCit.article}, Khoản {currentCit.clause}
+                        Điều {currentCit.article}, Khoản {currentCit.clause}{currentCit.point ? `, Điểm ${currentCit.point}` : ""}
                       </h3>
                       <span
                         style={{

@@ -23,3 +23,10 @@ test('memo does not imply legal approval or settlement', () => {
   assert.match(html, /chưa chứng minh/i);
   assert.doesNotMatch(html, /Căn cứ pháp lý đã đối chiếu nguyên văn/);
 });
+
+test('memo includes the cited point when present', () => {
+  const html = buildFormalMemoHtml('Câu hỏi', { content: 'Trả lời', citations: [
+    { document: 'A', article: '1', clause: '2', point: 'b', excerpt: 'Văn bản trích dẫn' }
+  ] });
+  assert.match(html, /Điểm b/);
+});
