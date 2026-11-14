@@ -1,0 +1,57 @@
+{
+  "document_id": "59/2018/NĐ-CP",
+  "source_sha256": "7ac1b46e806ae9290125acb9ac1d535bcea768749d16941e9fae20bbf7343a1a",
+  "page_count": 48,
+  "review_status": "UNREVIEWED",
+  "candidates": [
+    {
+      "article": "1",
+      "page": 1,
+      "line_index": 38,
+      "text": "Điều 1. Sửa đổi, bổ sung một số điều của Nghị định số 08/2015/NĐ-CP",
+      "confidence": 0.710717014940316,
+      "record_file": "page-001.json"
+    },
+    {
+      "article": "65",
+      "page": 35,
+      "line_index": 26,
+      "text": "Điều 65",
+      "confidence": 0.8833007938548996,
+      "record_file": "page-035.json"
+    },
+    {
+      "article": "66",
+      "page": 44,
+      "line_index": 31,
+      "text": "Điều 66, Điều 67 và Điều 68 Nghị định này.",
+      "confidence": 0.532118194381411,
+      "record_file": "page-044.json"
+    },
+    {
+      "article": "2",
+      "page": 46,
+      "line_index": 52,
+      "text": "Điều 2. Hiệu lực thi hành",
+      "confidence": 0.6563060338593765,
+      "record_file": "page-046.json"
+    },
+    {
+      "article": "78",
+      "page": 46,
+      "line_index": 58,
+      "text": "Điều 78, Điều 80 Nghị định số 08/2015/NĐ-CP",
+      "confidence": 0.5375326742411147,
+      "record_file": "page-046.json"
+    },
+    {
+      "article": "3",
+      "page": 46,
+      "line_index": 61,
+      "text": "Điều 3. Trách nhiệm",
+      "confidence": 0.974477965751347,
+      "record_file": "page-046.json"
+    }
+  ],
+  "limitations": "Heuristic headings may be missing or refer to amendments; verify against original pages."
+}
