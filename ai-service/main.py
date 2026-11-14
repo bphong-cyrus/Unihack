@@ -153,10 +153,12 @@ def validate_citations(citations: list[dict]) -> dict:
         doc_id = str(c.get("document", "")).strip().upper()
         article = str(c.get("article", "")).strip()
         clause = str(c.get("clause", "")).strip()
+        point = str(c.get("point", "")).strip()
         excerpt = str(c.get("excerpt", "")).strip()
 
         doc_exists = any(k[0] == doc_id for k in CORPUS_INDEX.keys())
-        record = CORPUS_INDEX.get((doc_id, article, clause))
+        # The demo corpus records clauses only; it cannot verify a named point.
+        record = CORPUS_INDEX.get((doc_id, article, clause)) if not point else None
         art_clause_exists = record is not None
         is_in_force = bool(record and record.get("status") == "ACTIVE")
         similarity = (
@@ -192,6 +194,7 @@ def validate_citations(citations: list[dict]) -> dict:
                 "document": doc_id,
                 "article": article,
                 "clause": clause,
+                "point": point,
                 "doc_exists": doc_exists,
                 "article_clause_exists": art_clause_exists,
                 "is_in_force": is_in_force,

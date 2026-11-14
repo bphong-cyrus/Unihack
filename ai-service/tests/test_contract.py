@@ -24,6 +24,12 @@ class ValidatorContractTests(unittest.TestCase):
         self.assertEqual(result["corpus_status"], "DEMO_UNVERIFIED")
         self.assertEqual(result["citation_checks"][0]["raw_text"], self.record["raw_text"])
 
+    def test_demo_cannot_validate_an_unrecorded_point(self):
+        citation = dict(self.citation, point='b')
+        result = main.validate_citations([citation])
+        self.assertFalse(result['passed'])
+        self.assertFalse(result['citation_checks'][0]['article_clause_exists'])
+
     def test_validate_empty_or_one_invalid_citation_refunds(self):
         self.assertFalse(main.validate_citations([])["passed"])
         bad = dict(self.citation, document="DOES-NOT-EXIST")
