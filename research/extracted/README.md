@@ -23,3 +23,5 @@ Với Thông tư 11/2020/TT-BCT, `ocr-112020ttbct-01/` và `ocr-112020ttbct-02/`
 `1282020ndcp-heading-candidates.json` là chỉ mục tương tự cho Nghị định 128/2020/NĐ-CP. Có 37 dòng ứng viên mang số 1–37. Dòng OCR dẫn chiếu nhiều điều tại trang 34 không còn được tính là tiêu đề. Chỉ mục này chưa được duyệt, không xác nhận cấu trúc văn bản hoặc hiệu lực.
 
 `172021ttbtc-heading-candidates.json` là chỉ mục tương tự cho Thông tư 17/2021/TT-BTC, có hai dòng ứng viên mang số 1 và 2. Việc nhận diện tiêu đề không tách các nội dung sửa đổi bên trong và chưa thay thế việc đối chiếu văn bản, hiệu lực hoặc phụ lục.
+
+Các chỉ mục `602019ttbtc-01-heading-candidates.json`, `602019ttbtc-02-heading-candidates.json`, `1822025ndcp-heading-candidates.json` và `232025ttbct-heading-candidates.json` lần lượt có 2, 7, 3 và 5 dòng ứng viên. Hai tệp đầu tương ứng hai PDF riêng của Thông tư 60/2019/TT-BTC. Những dòng trong văn bản sửa đổi có thể là dẫn chiếu tới văn bản khác; tất cả cần được đối chiếu thủ công, chưa phải cấu trúc luật hoặc dữ liệu đã duyệt.

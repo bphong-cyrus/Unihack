@@ -1,0 +1,49 @@
+{
+  "document_id": "23/2025/TT-BCT",
+  "source_sha256": "066f18c3d7d1e412214f4c446dd9d46ae547bce010e271cbf08f217d22d6e404",
+  "page_count": 3,
+  "review_status": "UNREVIEWED",
+  "candidates": [
+    {
+      "article": "1",
+      "page": 1,
+      "line_index": 74,
+      "text": "Điềủ 1. Sửa dổi, bổ sung Điều 1l",
+      "confidence": 0.3701378144570702,
+      "record_file": "page-001.json"
+    },
+    {
+      "article": "2",
+      "page": 1,
+      "line_index": 95,
+      "text": "Điều 2",
+      "confidence": 0.9782759941918814,
+      "record_file": "page-001.json"
+    },
+    {
+      "article": "15",
+      "page": 2,
+      "line_index": 20,
+      "text": "Điều 15",
+      "confidence": 0.9588792977153869,
+      "record_file": "page-002.json"
+    },
+    {
+      "article": "1",
+      "page": 2,
+      "line_index": 63,
+      "text": "Điều 1, khoản 1 Điều 3, khoản 1 và khoản 5 Điều 4, khoản",
+      "confidence": 0.6744456608149278,
+      "record_file": "page-002.json"
+    },
+    {
+      "article": "3",
+      "page": 3,
+      "line_index": 5,
+      "text": "Đỉều 3. Điều khoản thi hành",
+      "confidence": 0.46150286478382907,
+      "record_file": "page-003.json"
+    }
+  ],
+  "limitations": "Heuristic headings may be missing or refer to amendments; verify against original pages."
+}

@@ -1,0 +1,25 @@
+{
+  "document_id": "60/2019/TT-BTC",
+  "source_sha256": "8a8769f45a3601fb5468250bf8b12491580857faf98682e36d1caa457ce8a0a6",
+  "page_count": 2,
+  "review_status": "UNREVIEWED",
+  "candidates": [
+    {
+      "article": "2",
+      "page": 2,
+      "line_index": 0,
+      "text": "Điều 2: Quyết định này có hiệu lực kể từ ngày ký và là một",
+      "confidence": 0.7115800708334337,
+      "record_file": "page-002.json"
+    },
+    {
+      "article": "3",
+      "page": 2,
+      "line_index": 8,
+      "text": "Điều 3:",
+      "confidence": 0.9964925184143184,
+      "record_file": "page-002.json"
+    }
+  ],
+  "limitations": "Heuristic headings may be missing or refer to amendments; verify against original pages."
+}

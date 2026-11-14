@@ -1,0 +1,65 @@
+{
+  "document_id": "60/2019/TT-BTC",
+  "source_sha256": "0c24d2d9c278d85c319235e96bff5e2994660df79d8f74962d1b78f8b6b6d73c",
+  "page_count": 36,
+  "review_status": "UNREVIEWED",
+  "candidates": [
+    {
+      "article": "1",
+      "page": 1,
+      "line_index": 65,
+      "text": "Điều 1. Sửa đổi, bổ sung một số điều của Thông tư số 39/2015/TT-BTC",
+      "confidence": 0.6719815270492571,
+      "record_file": "page-001.json"
+    },
+    {
+      "article": "13",
+      "page": 9,
+      "line_index": 13,
+      "text": "Điều 13, Điều 14 và Điều 15",
+      "confidence": 0.7651251806413252,
+      "record_file": "page-009.json"
+    },
+    {
+      "article": "7",
+      "page": 10,
+      "line_index": 14,
+      "text": "Điều 7",
+      "confidence": 0.6585614866507806,
+      "record_file": "page-010.json"
+    },
+    {
+      "article": "6",
+      "page": 14,
+      "line_index": 25,
+      "text": "Điều 6, Điều 8, Điều 9, Điều 10, Điều 11 Thông tư này và",
+      "confidence": 0.8588882910759242,
+      "record_file": "page-014.json"
+    },
+    {
+      "article": "2",
+      "page": 26,
+      "line_index": 39,
+      "text": "Điều 2. Trách nhiệm tổ chức thực hiện",
+      "confidence": 0.5089166021605437,
+      "record_file": "page-026.json"
+    },
+    {
+      "article": "3",
+      "page": 27,
+      "line_index": 1,
+      "text": "Điều 3. Hiệu Iực thi hành",
+      "confidence": 0.7446249621966928,
+      "record_file": "page-027.json"
+    },
+    {
+      "article": "3",
+      "page": 35,
+      "line_index": 26,
+      "text": "Điều 3",
+      "confidence": 0.9986075195092962,
+      "record_file": "page-035.json"
+    }
+  ],
+  "limitations": "Heuristic headings may be missing or refer to amendments; verify against original pages."
+}
