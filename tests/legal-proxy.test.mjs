@@ -84,3 +84,18 @@ test('corpus proxy reports unavailable and malformed inventory', async () => {
   const invalid = await fetchLegalCorpus('http://service/corpus', async () => ({ ok: true, json: async () => ({ records: [] }) }));
   assert.equal(invalid.status, 502);
 });
+
+test('corpus proxy rejects invalid records and impossible counts', async () => {
+  const { fetchLegalCorpus } = await import('../app/api/ask-and-settle/legal-proxy.mjs');
+  const base = { total_documents: 1, total_chunks: 2, corpus_status: 'REVIEW_ASSERTED', records: [{ doc_id: 'X' }] };
+  for (const data of [
+    { ...base, records: [null] },
+    { ...base, records: [{ doc_id: 'X', source_url: {} }] },
+    { ...base, records: [{ doc_id: 'X', doc_title: {} }] },
+    { ...base, total_documents: -1 },
+    { ...base, records: [{ doc_id: 'X', total_versions: 1, reviewed_versions: 2 }] }
+  ]) {
+    const result = await fetchLegalCorpus('http://service/corpus', async () => ({ ok: true, json: async () => data }));
+    assert.equal(result.status, 502);
+  }
+});

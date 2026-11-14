@@ -65,8 +65,15 @@ export async function fetchLegalCorpus(url, fetchImpl = fetch) {
   if (!response.ok) return { status: 502, body: { error: 'Kho dữ liệu trả về lỗi.' } };
   let data;
   try { data = await response.json(); } catch { data = null; }
-  if (!data || !Number.isInteger(data.total_documents) || !Number.isInteger(data.total_chunks) ||
-      typeof data.corpus_status !== 'string' || !Array.isArray(data.records)) {
+  const validRecord = item => item && typeof item.doc_id === 'string' && item.doc_id.trim() &&
+    (item.doc_title == null || typeof item.doc_title === 'string') &&
+    (item.source_url == null || typeof item.source_url === 'string') &&
+    (item.total_versions === undefined || (Number.isInteger(item.total_versions) && item.total_versions >= 0)) &&
+    (item.reviewed_versions === undefined || (Number.isInteger(item.reviewed_versions) && item.reviewed_versions >= 0 &&
+      Number.isInteger(item.total_versions) && item.reviewed_versions <= item.total_versions));
+  if (!data || !Number.isInteger(data.total_documents) || data.total_documents < 0 ||
+      !Number.isInteger(data.total_chunks) || data.total_chunks < 0 ||
+      typeof data.corpus_status !== 'string' || !Array.isArray(data.records) || !data.records.every(validRecord)) {
     return { status: 502, body: { error: 'Thông tin kho dữ liệu không hợp lệ.' } };
   }
   return { status: 200, body: data };
