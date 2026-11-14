@@ -2,7 +2,7 @@
 
 Danh mục thu thập từ cổng Chính phủ và Bộ Công Thương theo đặc tả AskPay; ngày thu thập từng mục và SHA-256 của từng tệp được lưu trong `legal-sources/manifest.json`. Dữ liệu này là kho nguồn chờ biên tập, chưa phải corpus đã duyệt. Trang thông tin, tệp tải và số hiệu khớp không chứng minh chữ ký điện tử, hiệu lực hiện tại hay nội dung từng khoản. Không giải nén RAR tự động.
 
-Các tệp gốc được tải từ liên kết đính kèm trên trang metadata chính thức; một văn bản có thể có nhiều phần hoặc phụ lục. Các lỗi tải vẫn được ghi trong manifest. Các tệp đính kèm của 35 mục đã được tải; bốn tệp của `03/2023/TT-BCT` được tải lại với giới hạn phù hợp. Không suy ra phụ lục đã đầy đủ chỉ từ số tệp tải được.
+Các tệp gốc được tải từ liên kết đính kèm trên trang metadata chính thức; một văn bản có thể có nhiều phần hoặc phụ lục. Các lỗi tải vẫn được ghi trong manifest. Đã tải tệp đính kèm của 43 mục; chưa tìm được bản chính thức của `53/2026/VBHN-TT-BTC`. Không suy ra phụ lục đã đầy đủ chỉ từ số tệp tải được.
 
 Đặc tả ghi 10 nghị định nhưng liệt kê 11; 25 mã được nêu trực tiếp cộng 4 mã FTA và 2 văn bản cũ thành 31 mã, không phải 30. Bốn mục sửa đổi bổ sung được giữ để rà soát, không tính thay cho yêu cầu gốc.
 
@@ -43,6 +43,15 @@ Các tệp gốc được tải từ liên kết đính kèm trên trang metadat
 | 23/2025/TT-BCT | [Trang nguồn](https://vanban.chinhphu.vn/?docid=213616&pageid=27160) | 1/1 |
 | 03/2023/TT-BCT | [Trang nguồn](https://vanban.chinhphu.vn/?docid=207654&pageid=27160) | 4/4 |
 | 12/2019/TT-BCT | [Trang nguồn](https://moit.gov.vn/van-ban-phap-luat/van-ban-phap-quy/-thong-tu-quy-dinh-quy-tac-xuat-xu-hang-hoa-trong-hiep-dinh-3.html) | 1/1 |
+| 121/2025/TT-BTC | [Trang nguồn](https://vanban.chinhphu.vn/?docid=216623&pageid=27160) | 1/1 |
+| 85/2026/TT-BTC | [Trang nguồn](https://vanban.chinhphu.vn/?docid=218770&pageid=27160) | 1/1 |
+| 373/2025/NĐ-CP | [Trang nguồn](https://vanban.chinhphu.vn/?docid=216685&pageid=27160) | 1/1 |
+| 10/2022/TT-BCT | [Trang nguồn](https://vanban.chinhphu.vn/?docid=205890&pageid=27160) | 1/1 |
+| 45/2016/NĐ-CP | [Trang nguồn](https://vanban.chinhphu.vn/?docid=184866&pageid=27160) | 1/1 |
+| 155/2016/TT-BTC | [Trang nguồn](https://vanban.chinhphu.vn/?docid=187090&pageid=27160) | 2/2 |
+| 108/2025/QH15 | [Trang nguồn](https://vanban.chinhphu.vn/?docid=216541&pageid=27160) | 1/1 |
+| 142/2026/TT-BTC | [Trang nguồn](https://vanban.chinhphu.vn/?docid=219685&pageid=27160) | 2/2 |
+| 53/2026/VBHN-TT-BTC | Chưa tìm thấy nguồn chính thức | 0/0 |
 
 ## Quan hệ cần rà soát
 
@@ -52,3 +61,5 @@ Các tệp gốc được tải từ liên kết đính kèm trên trang metadat
 - Thông tư 38/2018/TT-BCT liên quan chế độ ưu đãi thuế quan phổ cập (GSP), cần phân biệt với Thông tư 38/2018/TT-BTC về xác định xuất xứ hàng hóa; không mặc định đây là cùng một văn bản.
 
 Chưa thực hiện tách khoản, đối chiếu bản hợp nhất, xác minh chữ ký số, rà soát hiệu lực theo thời gian, hoặc phê duyệt bởi chuyên gia.
+
+Các tệp RAR nhiều phần được giữ tên gốc để khôi phục đúng thứ tự. Thông tư [142/2026/TT-BTC](https://vanban.chinhphu.vn/?docid=219685&pageid=27160) có ngày hiệu lực 16/11/2026; cần phân biệt ngày tra cứu và quy định chuyển tiếp. Luật [108/2025/QH15](https://vanban.chinhphu.vn/?docid=216541&pageid=27160) có hiệu lực 01/07/2026; cần kiểm tra điều khoản thay thế và chuyển tiếp trước khi gán trạng thái luật cũ.
