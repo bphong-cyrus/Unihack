@@ -10,7 +10,8 @@
       "line_index": 17,
       "text": "Điều 1. Phạm vi điều chính",
       "confidence": 0.9113793433333335,
-      "record_file": "page-001.json"
+      "record_file": "page-001.json",
+      "source_verified": true
     },
     {
       "article": "2",
@@ -18,7 +19,8 @@
       "line_index": 24,
       "text": "Điều 2. Đối tượng áp dụng",
       "confidence": 0.9604468533333334,
-      "record_file": "page-001.json"
+      "record_file": "page-001.json",
+      "source_verified": true
     },
     {
       "article": "3",
@@ -26,7 +28,8 @@
       "line_index": 28,
       "text": "Điều 3. Giải thích từ ngữ",
       "confidence": 0.9670436083333334,
-      "record_file": "page-001.json"
+      "record_file": "page-001.json",
+      "source_verified": true
     },
     {
       "article": "4",
@@ -43,22 +46,6 @@
       "text": "Điều 5. Quần lý thu các khoản thu khác thuộc ngân sách nhà nước",
       "confidence": 0.9645346442857143,
       "record_file": "page-003.json"
-    },
-    {
-      "article": "126",
-      "page": 6,
-      "line_index": 15,
-      "text": "Điều 126, Điều 127, Điều 128, Điều 129, Điều 130, Điều 131, Điều 132,",
-      "confidence": 0.9656509192857142,
-      "record_file": "page-006.json"
-    },
-    {
-      "article": "133",
-      "page": 6,
-      "line_index": 16,
-      "text": "Điều 133, Điều 134 và Điều 135 của Luật Quản lý thuế.",
-      "confidence": 0.9647371933333333,
-      "record_file": "page-006.json"
     },
     {
       "article": "6",
@@ -258,7 +245,8 @@
       "line_index": 35,
       "text": "Điều 31. Cưỡng chế bằng biện pháp trích tiền từ tài khoản, phong",
       "confidence": 0.9622846092307692,
-      "record_file": "page-074.json"
+      "record_file": "page-074.json",
+      "source_verified": true
     },
     {
       "article": "32",
@@ -365,5 +353,5 @@
       "record_file": "page-118.json"
     }
   ],
-  "limitations": "Heuristic headings may be missing or refer to amendments; verify against original pages."
+  "limitations": "Only candidate article headings in the decree body are retained. The page 1 headings for Articles 1–3 and page 74 heading for Article 31 were manually checked against the official PDF and marked source_verified. All other retained candidates remain heuristic and may be incorrect; the index is not exhaustive and may miss headings. References to articles in the body and appendix form/template clauses are excluded."
 }
