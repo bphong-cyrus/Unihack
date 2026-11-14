@@ -49,3 +49,16 @@ class ReviewBatchTests(unittest.TestCase):
                     'page_count': 2, 'review_status': 'UNREVIEWED', 'lines': []}))
             with self.assertRaises(ReviewError):
                 render_batch(root, root / 'out')
+
+    def test_index_explicitly_identifies_missing_pages(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            (root / 'source.pdf').write_bytes(b'pdf')
+            (root / 'page-001.json').write_text(json.dumps({
+                'document_id': 'A', 'source_file': 'source.pdf',
+                'source_sha256': hashlib.sha256(b'pdf').hexdigest(), 'page': 1,
+                'page_count': 3, 'review_status': 'UNREVIEWED', 'lines': []}))
+            render_batch(root, root / 'out')
+            index = (root / 'out/index.html').read_text()
+            self.assertIn('1/3', index)
+            self.assertIn('2, 3', index)
