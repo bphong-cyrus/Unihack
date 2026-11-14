@@ -19,3 +19,5 @@ Với Thông tư 11/2020/TT-BCT, `ocr-112020ttbct-01/` và `ocr-112020ttbct-02/`
 `1072016qh13-heading-candidates.json` tương tự cho Luật Thuế xuất khẩu, thuế nhập khẩu 2016: có 22 dòng ứng viên mang số 1–22, chưa được đối chiếu bản gốc hoặc rà soát hiệu lực. Không dùng chỉ mục này như nội dung luật đã duyệt.
 
 `312018ndcp-heading-candidates.json` là chỉ mục tương tự cho Nghị định 31/2018/NĐ-CP. Có 35 dòng ứng viên mang số 1–35; trong đó hai dòng 7 và 8 có dấu câu bị OCR đọc sai hoặc bỏ sót. Kết quả có thể thiếu hoặc nhầm dòng và chưa được đối chiếu bản gốc hay rà soát hiệu lực.
+
+`1282020ndcp-heading-candidates.json` là chỉ mục tương tự cho Nghị định 128/2020/NĐ-CP. Có 38 dòng ứng viên mang số 1–37, trong đó số 28 xuất hiện hai lần và phải được kiểm tra với trang gốc. Chỉ mục này chưa được duyệt, không xác nhận cấu trúc văn bản hoặc hiệu lực.
