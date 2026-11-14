@@ -3,9 +3,10 @@ import argparse
 import hashlib
 import json
 import re
+import unicodedata
 from pathlib import Path
 
-HEADING = re.compile(r'^\s*Điều\s+(\d+)[.,:]\s*', re.IGNORECASE)
+HEADING = re.compile(r'^\s*dieu\s+(\d+)[.,:]\s*', re.IGNORECASE)
 
 
 def find_headings(directory):
@@ -27,7 +28,9 @@ def find_headings(directory):
                 or (root / record['source_file']).resolve() != source or record['review_status'] != 'UNREVIEWED'):
             raise ValueError('inconsistent OCR records')
         for index, line in enumerate(record['lines']):
-            match = HEADING.match(line['text'])
+            normalized = ''.join(char for char in unicodedata.normalize('NFD', line['text'].lower().replace('đ', 'd'))
+                                 if not unicodedata.combining(char))
+            match = HEADING.match(normalized)
             if match:
                 candidates.append({'article': match.group(1), 'page': page, 'line_index': index,
                                    'text': line['text'], 'confidence': line['confidence'],

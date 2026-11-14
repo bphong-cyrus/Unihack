@@ -5,6 +5,14 @@
   "review_status": "UNREVIEWED",
   "candidates": [
     {
+      "article": "1",
+      "page": 1,
+      "line_index": 24,
+      "text": "Đíều 1. Phạm vi điều chỉnh",
+      "confidence": 0.5851802279461162,
+      "record_file": "page-001.json"
+    },
+    {
       "article": "2",
       "page": 1,
       "line_index": 31,
@@ -139,6 +147,14 @@
       "text": "Điều 18. Quyền và nghĩa vụ của",
       "confidence": 0.9786058360117329,
       "record_file": "page-008.json"
+    },
+    {
+      "article": "19",
+      "page": 10,
+      "line_index": 4,
+      "text": "Đỉều 19. Nhiệm vụ và",
+      "confidence": 0.5575670030238656,
+      "record_file": "page-010.json"
     },
     {
       "article": "20",
@@ -605,6 +621,14 @@
       "record_file": "page-040.json"
     },
     {
+      "article": "78",
+      "page": 40,
+      "line_index": 57,
+      "text": "Đíều 78. Các trường hợp kiểm tra sau thông quan",
+      "confidence": 0.86721270358636,
+      "record_file": "page-040.json"
+    },
+    {
       "article": "79",
       "page": 41,
       "line_index": 6,
@@ -627,6 +651,14 @@
       "text": "Điều 81. Nhiệm vụ và",
       "confidence": 0.8364497806519028,
       "record_file": "page-042.json"
+    },
+    {
+      "article": "82",
+      "page": 43,
+      "line_index": 53,
+      "text": "Đỉều 82. Quyền và nghĩa vụ của",
+      "confidence": 0.7683732378660341,
+      "record_file": "page-043.json"
     },
     {
       "article": "83",
@@ -754,6 +786,14 @@
       "line_index": 14,
       "text": "Điều 98. Báo cáo thống kê",
       "confidence": 0.6114799264428062,
+      "record_file": "page-052.json"
+    },
+    {
+      "article": "99",
+      "page": 52,
+      "line_index": 26,
+      "text": "Đỉều 99. Nội dung",
+      "confidence": 0.8865519571801919,
       "record_file": "page-052.json"
     },
     {
