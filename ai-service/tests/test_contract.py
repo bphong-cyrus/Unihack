@@ -30,6 +30,11 @@ class ValidatorContractTests(unittest.TestCase):
         self.assertFalse(result['passed'])
         self.assertFalse(result['citation_checks'][0]['article_clause_exists'])
 
+    def test_document_id_ignores_whitespace_in_demo(self):
+        document = self.citation['document']
+        result = main.validate_citations([dict(self.citation, document='  ' + document.replace('/', ' / ') + '  ')])
+        self.assertTrue(result['passed'])
+
     def test_validate_empty_or_one_invalid_citation_refunds(self):
         self.assertFalse(main.validate_citations([])["passed"])
         bad = dict(self.citation, document="DOES-NOT-EXIST")

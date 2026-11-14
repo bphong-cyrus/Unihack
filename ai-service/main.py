@@ -150,7 +150,7 @@ def validate_citations(citations: list[dict]) -> dict:
     total_scores = []
 
     for c in citations:
-        doc_id = str(c.get("document", "")).strip().upper()
+        doc_id = ''.join(str(c.get("document", "")).upper().split())
         article = str(c.get("article", "")).strip()
         clause = str(c.get("clause", "")).strip()
         point = str(c.get("point", "")).strip()
