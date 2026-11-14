@@ -1,0 +1,593 @@
+{
+  "document_id": "69/2018/NĐ-CP",
+  "source_sha256": "cfe9d66c02837d203a0781cb916273fa6c3c6151b52fc6becc6d1c006d96681e",
+  "page_count": 89,
+  "review_status": "UNREVIEWED",
+  "candidates": [
+    {
+      "article": "1",
+      "page": 1,
+      "line_index": 40,
+      "text": "Điều 1. Phạm vi điều chỉnh",
+      "confidence": 0.7849627717178195,
+      "record_file": "page-001.json"
+    },
+    {
+      "article": "2",
+      "page": 2,
+      "line_index": 0,
+      "text": "Điều 2. Đối tượng áp dụng",
+      "confidence": 0.7620616674872849,
+      "record_file": "page-002.json"
+    },
+    {
+      "article": "3",
+      "page": 2,
+      "line_index": 7,
+      "text": "Điều 3. Quyền tự do kinh doanh xuất khẩu, nhập khẩu",
+      "confidence": 0.9418517543191239,
+      "record_file": "page-002.json"
+    },
+    {
+      "article": "4",
+      "page": 2,
+      "line_index": 35,
+      "text": "Điều 4. Thủ tục xuất khẩu, nhập khẩu",
+      "confidence": 0.7334510860897712,
+      "record_file": "page-002.json"
+    },
+    {
+      "article": "5",
+      "page": 3,
+      "line_index": 3,
+      "text": "Điều 5. Hàng hóa cấm xuất khẩu, cấm nhập khẩu",
+      "confidence": 0.7983589337299506,
+      "record_file": "page-003.json"
+    },
+    {
+      "article": "6",
+      "page": 3,
+      "line_index": 25,
+      "text": "Điều 6. Chỉ định thương nhân xuất khẩu, nhập khẩu",
+      "confidence": 0.6719192867836066,
+      "record_file": "page-003.json"
+    },
+    {
+      "article": "8",
+      "page": 4,
+      "line_index": 0,
+      "text": "Điều 8. Một số mặt",
+      "confidence": 0.951917503360447,
+      "record_file": "page-004.json"
+    },
+    {
+      "article": "10",
+      "page": 5,
+      "line_index": 27,
+      "text": "Điều 10. Giấy chứng nhận Iưu hành tự do (CFS) đối với",
+      "confidence": 0.6507601045002863,
+      "record_file": "page-005.json"
+    },
+    {
+      "article": "11",
+      "page": 6,
+      "line_index": 23,
+      "text": "Điều 11. CFS đối với hàng hóa xuất khẩu",
+      "confidence": 0.49048457827575787,
+      "record_file": "page-006.json"
+    },
+    {
+      "article": "12",
+      "page": 7,
+      "line_index": 46,
+      "text": "Điều 12. Cấm kinh doanh tạm nhập; tái xuất, chuyển khẩu; tạm",
+      "confidence": 0.5162736948891038,
+      "record_file": "page-007.json"
+    },
+    {
+      "article": "13",
+      "page": 8,
+      "line_index": 18,
+      "text": "Điều 13. Kinh doanh tạm nhập, tái xuất",
+      "confidence": 0.5804518464093553,
+      "record_file": "page-008.json"
+    },
+    {
+      "article": "14",
+      "page": 9,
+      "line_index": 27,
+      "text": "Điều 14. Điều tiết hàng hóa kinh doanh tạm nhậps tái xuất",
+      "confidence": 0.6627830838632265,
+      "record_file": "page-009.json"
+    },
+    {
+      "article": "15",
+      "page": 9,
+      "line_index": 59,
+      "text": "Điều 15. Các hình thức tạm nhập, tái xuất khác",
+      "confidence": 0.6682646070918677,
+      "record_file": "page-009.json"
+    },
+    {
+      "article": "16",
+      "page": 11,
+      "line_index": 41,
+      "text": "Điều 16. Cửa khẩu tạm nhập, tái xuất hàng hóa",
+      "confidence": 0.6989057121997965,
+      "record_file": "page-011.json"
+    },
+    {
+      "article": "13",
+      "page": 12,
+      "line_index": 16,
+      "text": "Điều 13",
+      "confidence": 0.9887225002714425,
+      "record_file": "page-012.json"
+    },
+    {
+      "article": "17",
+      "page": 13,
+      "line_index": 27,
+      "text": "Điều 17. Tạm xuất; tái nhập",
+      "confidence": 0.6480732788037025,
+      "record_file": "page-013.json"
+    },
+    {
+      "article": "18",
+      "page": 14,
+      "line_index": 44,
+      "text": "Điều 18. Kinh doanh",
+      "confidence": 0.7392757537721512,
+      "record_file": "page-014.json"
+    },
+    {
+      "article": "19",
+      "page": 15,
+      "line_index": 30,
+      "text": "Điều 19. Hồ sơ cấp Giấy phép kinh doanh tạm nhập, tái xuất; Giấy",
+      "confidence": 0.5589839748309389,
+      "record_file": "page-015.json"
+    },
+    {
+      "article": "20",
+      "page": 16,
+      "line_index": 72,
+      "text": "Đíều 20. Quy trình cấp Giấy phép kinh doanh tạm nhập, tái xuất;",
+      "confidence": 0.4684777119459592,
+      "record_file": "page-016.json"
+    },
+    {
+      "article": "15",
+      "page": 17,
+      "line_index": 24,
+      "text": "Điều 15",
+      "confidence": 0.9772836877541292,
+      "record_file": "page-017.json"
+    },
+    {
+      "article": "21",
+      "page": 17,
+      "line_index": 41,
+      "text": "Điều 21.",
+      "confidence": 0.8555991804907227,
+      "record_file": "page-017.json"
+    },
+    {
+      "article": "22",
+      "page": 17,
+      "line_index": 62,
+      "text": "Điều 22, Một số quy định riêng đối với hoạt động kinh doanh tạm",
+      "confidence": 0.7968233262915694,
+      "record_file": "page-017.json"
+    },
+    {
+      "article": "12",
+      "page": 18,
+      "line_index": 3,
+      "text": "Điều 12, Biều 13, Điều 14, Điểu 16 Nghị định này, doanh nghiệp thực hiện",
+      "confidence": 0.3754430199004416,
+      "record_file": "page-018.json"
+    },
+    {
+      "article": "23",
+      "page": 18,
+      "line_index": 24,
+      "text": "Điều 23. Điều kiện kinh doanh tạm nhập, tái xuất",
+      "confidence": 0.7351782963581187,
+      "record_file": "page-018.json"
+    },
+    {
+      "article": "24",
+      "page": 19,
+      "line_index": 12,
+      "text": "Điều 24. Điều kiện kinh doanh tạm nhập, tái xuất",
+      "confidence": 0.5673330910952593,
+      "record_file": "page-019.json"
+    },
+    {
+      "article": "25",
+      "page": 19,
+      "line_index": 25,
+      "text": "Điều 25. Điều kiện kinh doanh tạm nhậps tái xuất hàng hóa đã qua",
+      "confidence": 0.6158061690383083,
+      "record_file": "page-019.json"
+    },
+    {
+      "article": "26",
+      "page": 19,
+      "line_index": 41,
+      "text": "Điều 26. Mã số kinh doanh tạm nhập, tái xuất",
+      "confidence": 0.8049283224479956,
+      "record_file": "page-019.json"
+    },
+    {
+      "article": "27",
+      "page": 20,
+      "line_index": 16,
+      "text": "Điều 27. Hồ",
+      "confidence": 0.8552788106035298,
+      "record_file": "page-020.json"
+    },
+    {
+      "article": "28",
+      "page": 21,
+      "line_index": 44,
+      "text": "Điều 28. Thu hồi Mã số kinh doanh tạm nhập, tái xuất",
+      "confidence": 0.7664391330595677,
+      "record_file": "page-021.json"
+    },
+    {
+      "article": "29",
+      "page": 22,
+      "line_index": 32,
+      "text": "Điều 29. Đình chỉ tạm thời hiệu lực Mã số kinh doanh tạm nhập,",
+      "confidence": 0.5620370996179995,
+      "record_file": "page-022.json"
+    },
+    {
+      "article": "31",
+      "page": 23,
+      "line_index": 20,
+      "text": "Điều 31",
+      "confidence": 0.9974892267449746,
+      "record_file": "page-023.json"
+    },
+    {
+      "article": "31",
+      "page": 23,
+      "line_index": 41,
+      "text": "Điều 31. Trách nhiệm của doanh nghiệp được cấp Mã số kinh doanh",
+      "confidence": 0.5546581526925694,
+      "record_file": "page-023.json"
+    },
+    {
+      "article": "32",
+      "page": 24,
+      "line_index": 20,
+      "text": "Điều 32. Bộ Công Thương",
+      "confidence": 0.8229999543266611,
+      "record_file": "page-024.json"
+    },
+    {
+      "article": "33",
+      "page": 24,
+      "line_index": 36,
+      "text": "Điều 33. Ủy ban nhân dân cấp tỉnh",
+      "confidence": 0.8890984200455557,
+      "record_file": "page-024.json"
+    },
+    {
+      "article": "34",
+      "page": 26,
+      "line_index": 1,
+      "text": "Điều 34. Tổng cục Hải quan",
+      "confidence": 0.9359508490979455,
+      "record_file": "page-026.json"
+    },
+    {
+      "article": "35",
+      "page": 26,
+      "line_index": 26,
+      "text": "Điều 35. Quy định chung về quá cảnh hàng hóa",
+      "confidence": 0.9106080858507364,
+      "record_file": "page-026.json"
+    },
+    {
+      "article": "36",
+      "page": 27,
+      "line_index": 21,
+      "text": "Điều 36. Hồ sơ, quy trình cấp Giấy phép",
+      "confidence": 0.7597596840658676,
+      "record_file": "page-027.json"
+    },
+    {
+      "article": "37",
+      "page": 28,
+      "line_index": 37,
+      "text": "Điều 37. Thương nhân làm dịch vụ vận chuyển quá cảnh hàng hóa",
+      "confidence": 0.7069092669726773,
+      "record_file": "page-028.json"
+    },
+    {
+      "article": "38",
+      "page": 28,
+      "line_index": 49,
+      "text": "Điều 38. Gia",
+      "confidence": 0.4545943672782791,
+      "record_file": "page-028.json"
+    },
+    {
+      "article": "39",
+      "page": 30,
+      "line_index": 7,
+      "text": "Điều 39. Hợp",
+      "confidence": 0.9652995650826848,
+      "record_file": "page-030.json"
+    },
+    {
+      "article": "40",
+      "page": 30,
+      "line_index": 45,
+      "text": "Điều 40. Định mức sử dụng, định mức tiêu",
+      "confidence": 0.6647723382470156,
+      "record_file": "page-030.json"
+    },
+    {
+      "article": "41",
+      "page": 31,
+      "line_index": 1,
+      "text": "Điều 41. Thuê,",
+      "confidence": 0.8338093360214031,
+      "record_file": "page-031.json"
+    },
+    {
+      "article": "42",
+      "page": 31,
+      "line_index": 12,
+      "text": "Điều 42. Quyền,",
+      "confidence": 0.6239175432253409,
+      "record_file": "page-031.json"
+    },
+    {
+      "article": "43",
+      "page": 32,
+      "line_index": 34,
+      "text": "Điều 43. Gia",
+      "confidence": 0.9959612306996962,
+      "record_file": "page-032.json"
+    },
+    {
+      "article": "44",
+      "page": 32,
+      "line_index": 58,
+      "text": "Điều 44. Thông báo, thanh lý, -",
+      "confidence": 0.566782507244487,
+      "record_file": "page-032.json"
+    },
+    {
+      "article": "45",
+      "page": 33,
+      "line_index": 52,
+      "text": "Điều 45. Thủ tục hải quan",
+      "confidence": 0.9787147809811657,
+      "record_file": "page-033.json"
+    },
+    {
+      "article": "46",
+      "page": 33,
+      "line_index": 59,
+      "text": "Điều 46. Các hình thức gia",
+      "confidence": 0.745759226466374,
+      "record_file": "page-033.json"
+    },
+    {
+      "article": "47",
+      "page": 34,
+      "line_index": 1,
+      "text": "Điều 47. Gia",
+      "confidence": 0.9941740792852042,
+      "record_file": "page-034.json"
+    },
+    {
+      "article": "48",
+      "page": 37,
+      "line_index": 34,
+      "text": "Điều 48. Hợp",
+      "confidence": 0.9614838404671223,
+      "record_file": "page-037.json"
+    },
+    {
+      "article": "49",
+      "page": 37,
+      "line_index": 43,
+      "text": "Điều 49. Quyền và nghĩa vụ của thương nhân đặt gia",
+      "confidence": 0.6721713421917327,
+      "record_file": "page-037.json"
+    },
+    {
+      "article": "50",
+      "page": 38,
+      "line_index": 34,
+      "text": "Điều 50. Thương nhân làm đại lý mua, bán",
+      "confidence": 0.6413569928618299,
+      "record_file": "page-038.json"
+    },
+    {
+      "article": "51",
+      "page": 39,
+      "line_index": 1,
+      "text": "Điều 51. Nghĩa vụ thuế",
+      "confidence": 0.8730900599227547,
+      "record_file": "page-039.json"
+    },
+    {
+      "article": "52",
+      "page": 39,
+      "line_index": 14,
+      "text": "Điều 52. Thủ tục xuất khẩu, nhập khẩu",
+      "confidence": 0.7262484303314815,
+      "record_file": "page-039.json"
+    },
+    {
+      "article": "53",
+      "page": 39,
+      "line_index": 24,
+      "text": "Điều 53. Trả lại hàng",
+      "confidence": 0.7938171913863299,
+      "record_file": "page-039.json"
+    },
+    {
+      "article": "54",
+      "page": 39,
+      "line_index": 35,
+      "text": "Điều  54.",
+      "confidence": 0.7903569247967974,
+      "record_file": "page-039.json"
+    },
+    {
+      "article": "55",
+      "page": 39,
+      "line_index": 61,
+      "text": "Điều 55. Nghĩa vụ về thuế",
+      "confidence": 0.7398868482986881,
+      "record_file": "page-039.json"
+    },
+    {
+      "article": "56",
+      "page": 40,
+      "line_index": 9,
+      "text": "Điều 56. Nhận lại",
+      "confidence": 0.8775561785452729,
+      "record_file": "page-040.json"
+    },
+    {
+      "article": "57",
+      "page": 40,
+      "line_index": 32,
+      "text": "Điều 57.Nguyên tắc",
+      "confidence": 0.9820837582596716,
+      "record_file": "page-040.json"
+    },
+    {
+      "article": "58",
+      "page": 41,
+      "line_index": 7,
+      "text": "Điều 58. Nội",
+      "confidence": 0.9296321490477809,
+      "record_file": "page-041.json"
+    },
+    {
+      "article": "59",
+      "page": 41,
+      "line_index": 57,
+      "text": "Điều 59. Cơ quan chủ",
+      "confidence": 0.7338421959744796,
+      "record_file": "page-041.json"
+    },
+    {
+      "article": "60",
+      "page": 43,
+      "line_index": 6,
+      "text": "Điều 60. Cơ quan đầu mối",
+      "confidence": 0.6645048689449147,
+      "record_file": "page-043.json"
+    },
+    {
+      "article": "61",
+      "page": 44,
+      "line_index": 9,
+      "text": "Điều 61. Cơ quan, tổ chức, cá nhân liên quan",
+      "confidence": 0.5998991522561121,
+      "record_file": "page-044.json"
+    },
+    {
+      "article": "62",
+      "page": 44,
+      "line_index": 37,
+      "text": "Điều 62. Tiếp nhận",
+      "confidence": 0.6586317534121441,
+      "record_file": "page-044.json"
+    },
+    {
+      "article": "63",
+      "page": 45,
+      "line_index": 46,
+      "text": "Điều 63. Xây dựng, thực hiện kế hoạch giải quyết vụ việc tranh chấp",
+      "confidence": 0.8089434927995677,
+      "record_file": "page-045.json"
+    },
+    {
+      "article": "64",
+      "page": 47,
+      "line_index": 5,
+      "text": "Điều 64. Trách nhiệm tiếp nhận, giải quyết yêu cầu tham vấn",
+      "confidence": 0.8245624078215376,
+      "record_file": "page-047.json"
+    },
+    {
+      "article": "65",
+      "page": 47,
+      "line_index": 29,
+      "text": "Điều 65. Xử lý trường",
+      "confidence": 0.8259320839386366,
+      "record_file": "page-047.json"
+    },
+    {
+      "article": "66",
+      "page": 48,
+      "line_index": 10,
+      "text": "Điều 66. Xác định trách nhiệm của cơ quan, tổ chức; cá nhân đã ban",
+      "confidence": 0.7610802277108341,
+      "record_file": "page-048.json"
+    },
+    {
+      "article": "68",
+      "page": 48,
+      "line_index": 48,
+      "text": "Điều 68. Xử lý trường",
+      "confidence": 0.743537425865817,
+      "record_file": "page-048.json"
+    },
+    {
+      "article": "69",
+      "page": 49,
+      "line_index": 47,
+      "text": "Điều 69. Xây dựng, thực hiện kế hoạch",
+      "confidence": 0.7665889076063291,
+      "record_file": "page-049.json"
+    },
+    {
+      "article": "70",
+      "page": 50,
+      "line_index": 3,
+      "text": "Điều 70. Tổ chức thực hiện",
+      "confidence": 0.6072233423831616,
+      "record_file": "page-050.json"
+    },
+    {
+      "article": "71",
+      "page": 50,
+      "line_index": 25,
+      "text": "Điều 71. Trách nhiệm của thương nhân hoạt động ngoại thương",
+      "confidence": 0.8228107168089447,
+      "record_file": "page-050.json"
+    },
+    {
+      "article": "72",
+      "page": 50,
+      "line_index": 36,
+      "text": "Điều 72. Điều khoản chuyển tiếp",
+      "confidence": 0.8220976336046087,
+      "record_file": "page-050.json"
+    },
+    {
+      "article": "73",
+      "page": 51,
+      "line_index": 35,
+      "text": "Điều 73. Điều khoản thi hành",
+      "confidence": 0.8921966062797417,
+      "record_file": "page-051.json"
+    }
+  ],
+  "limitations": "Heuristic headings may be missing or refer to amendments; verify against original pages."
+}
