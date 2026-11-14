@@ -90,12 +90,12 @@
       "title_supplied": "The Probabilistic Relevance Framework: {BM25} and Beyond",
       "identifier": "10.1561/1500000019",
       "supplied_url": "https://www.staff.city.ac.uk/~sbrp622/papers/foundations_bm25_review.pdf",
-      "status": "FAILED",
+      "status": "DOWNLOADED_DIRECT_REVIEW",
       "resolved_title": "The Probabilistic Relevance Framework: BM25 and Beyond",
-      "pdf_url": null,
-      "source": null,
+      "pdf_url": "https://www.staff.city.ac.uk/~sbrp622/papers/foundations_bm25_review.pdf",
+      "source": "supplied_public_url",
       "title_similarity": 1.0,
-      "title_review": "CLOSE_MATCH",
+      "title_review": "FIRST_PAGE_REQUIRES_METADATA_REVIEW",
       "error": {
         "code": "not_found",
         "message": "No open-access PDF found",
@@ -104,7 +104,10 @@
         "reason": "OA availability changes over time; retry after embargo lifts or preprint appears",
         "suggest_institutional": true,
         "hint": "If your institution has a subscription to this paper, set PAPER_FETCH_INSTITUTIONAL=1 and run from on-campus or VPN."
-      }
+      },
+      "local_file": "robertson2009probabilistic.pdf",
+      "sha256": "11a9ef825dfd3fe50c8621273d02ea26b6f502b60379db9519d6c5c10de4fd25",
+      "pages": 59
     },
     {
       "key": "formal2021splade",
@@ -189,12 +192,18 @@
       "title_supplied": "Reciprocal Rank Fusion Outperforms Condorcet and Individual Rank Learning Methods",
       "identifier": null,
       "supplied_url": "https://cormack.uwaterloo.ca/cormacksigir09-rrf.pdf",
-      "status": "NO_IDENTIFIER",
+      "status": "DOWNLOADED_DIRECT_REVIEW",
       "title_resolution": {
         "low_confidence": false,
         "reason": null,
         "exit_code": 1
-      }
+      },
+      "local_file": "cormack2009reciprocal.pdf",
+      "sha256": "5c1f9f1fe0d80f67d82041bbe151ea17437bc7a7d9a920564cf122d1b09eafb5",
+      "pdf_url": "https://cormack.uwaterloo.ca/cormacksigir09-rrf.pdf",
+      "source": "supplied_public_url",
+      "title_review": "FIRST_PAGE_REQUIRES_METADATA_REVIEW",
+      "pages": 2
     },
     {
       "key": "nogueira2019passage",
@@ -487,14 +496,20 @@
       "title_supplied": "ViDRILL}: A Multi-Stage Retrieval Framework for {Vietnamese} Legal Document Search",
       "identifier": null,
       "supplied_url": "https://aclanthology.org/2025.vlsp-1.17/",
-      "status": "NO_IDENTIFIER",
+      "status": "DOWNLOADED_DIRECT_REVIEW",
       "title_resolution": {
         "low_confidence": true,
         "reason": "score_below_threshold",
         "exit_code": 0,
         "candidate_title": "A Unified Ontology-Based Knowledge Graph Framework for Multi-Domain Vietnamese Legal Document Retrieval",
         "candidate_doi": "10.56532/mjsat.v6i2.684"
-      }
+      },
+      "local_file": "tran2025vidrill.pdf",
+      "sha256": "da3fa7e1367878bfcfd1c93676f2dbe194610f97d795d2e5cf33e8b146999ec4",
+      "pdf_url": "https://aclanthology.org/2025.vlsp-1.17.pdf",
+      "source": "supplied_public_url",
+      "title_review": "FIRST_PAGE_REQUIRES_METADATA_REVIEW",
+      "pages": 7
     },
     {
       "key": "optimizing2025semihard",
@@ -589,24 +604,36 @@
       "title_supplied": "Integrating Information Retrieval and Large Language Models for {Vietnamese} Legal {QA",
       "identifier": null,
       "supplied_url": "https://www.scitepress.org/Papers/2025/137512/137512.pdf",
-      "status": "NO_IDENTIFIER",
+      "status": "DOWNLOADED_DIRECT_REVIEW",
       "title_resolution": {
         "low_confidence": false,
         "reason": null,
         "exit_code": 4
-      }
+      },
+      "local_file": "integrating2025kmis.pdf",
+      "sha256": "c0e8977ac829fada3870fb0073e802a1aa57cff9d03002d20682516af567d5da",
+      "pdf_url": "https://www.scitepress.org/Papers/2025/137512/137512.pdf",
+      "source": "supplied_public_url",
+      "title_review": "FIRST_PAGE_REQUIRES_METADATA_REVIEW",
+      "pages": 11
     },
     {
       "key": "agentic2025scitepress",
       "title_supplied": "Agentic {RAG}-Based Legal Advisory Chatbot: A Knowledge-Driven Approach for {Vietnamese} Legal System",
       "identifier": null,
       "supplied_url": "https://www.scitepress.org/Papers/2025/137354/137354.pdf",
-      "status": "NO_IDENTIFIER",
+      "status": "DOWNLOADED_DIRECT_REVIEW",
       "title_resolution": {
         "low_confidence": false,
         "reason": null,
         "exit_code": 4
-      }
+      },
+      "local_file": "agentic2025scitepress.pdf",
+      "sha256": "7cc458f561b0a46dde91cec7d6207c53b13187de0cc484ac8027d638ea1c9396",
+      "pdf_url": "https://www.scitepress.org/Papers/2025/137354/137354.pdf",
+      "source": "supplied_public_url",
+      "title_review": "FIRST_PAGE_REQUIRES_METADATA_REVIEW",
+      "pages": 10
     },
     {
       "key": "alqac2021summary",
@@ -683,12 +710,18 @@
       "title_supplied": "BEIR}: A Heterogeneous Benchmark for Zero-shot Evaluation of Information Retrieval Models",
       "identifier": null,
       "supplied_url": "https://datasets-benchmarks-proceedings.neurips.cc/paper/2021/file/65b9eea6e1cc6bb9f0cd2a47751a186f-Paper-round2.pdf",
-      "status": "NO_IDENTIFIER",
+      "status": "DOWNLOADED_DIRECT_REVIEW",
       "title_resolution": {
         "low_confidence": false,
         "reason": null,
         "exit_code": 1
-      }
+      },
+      "local_file": "thakur2021beir.pdf",
+      "sha256": "682da185b92b4d04f906de2a59f4b5152c1a1f15433cc7da812d1f522756c1bc",
+      "pdf_url": "https://datasets-benchmarks-proceedings.neurips.cc/paper/2021/file/65b9eea6e1cc6bb9f0cd2a47751a186f-Paper-round2.pdf",
+      "source": "supplied_public_url",
+      "title_review": "FIRST_PAGE_REQUIRES_METADATA_REVIEW",
+      "pages": 16
     },
     {
       "key": "guha2023legalbench",
@@ -765,12 +798,18 @@
       "title_supplied": "A Guided Tour to Approximate String Matching",
       "identifier": null,
       "supplied_url": "https://users.dcc.uchile.cl/~gnavarro/ps/acmcs01.1.pdf",
-      "status": "NO_IDENTIFIER",
+      "status": "DOWNLOADED_DIRECT_REVIEW",
       "title_resolution": {
         "low_confidence": false,
         "reason": null,
         "exit_code": 4
-      }
+      },
+      "local_file": "navarro2001guided.pdf",
+      "sha256": "de623d8544df6d037f8d603793ca7398a2b46f423c0c97898749a34bb42efbda",
+      "pdf_url": "https://users.dcc.uchile.cl/~gnavarro/ps/acmcs01.1.pdf",
+      "source": "supplied_public_url",
+      "title_review": "FIRST_PAGE_REQUIRES_METADATA_REVIEW",
+      "pages": 68
     },
     {
       "key": "menick2022teaching",
@@ -1278,12 +1317,18 @@
       "title_supplied": "Arbitrum: Scalable, private smart contracts",
       "identifier": null,
       "supplied_url": "https://www.usenix.org/system/files/conference/usenixsecurity18/sec18-kalodner.pdf",
-      "status": "NO_IDENTIFIER",
+      "status": "DOWNLOADED_DIRECT_REVIEW",
       "title_resolution": {
         "low_confidence": true,
         "reason": "score_below_threshold",
         "exit_code": 1
-      }
+      },
+      "local_file": "kalodner2018arbitrum.pdf",
+      "sha256": "97e82b446893c7aa131299c44f72adf4329f33967b6a6ff8453803b23302fd43",
+      "pdf_url": "https://www.usenix.org/system/files/conference/usenixsecurity18/sec18-kalodner.pdf",
+      "source": "supplied_public_url",
+      "title_review": "FIRST_PAGE_REQUIRES_METADATA_REVIEW",
+      "pages": 19
     },
     {
       "key": "zhang2016towncrier",
@@ -1295,7 +1340,8 @@
         "low_confidence": false,
         "reason": null,
         "exit_code": 4
-      }
+      },
+      "direct_fetch_error": "HTTPError: HTTP Error 403: Forbidden"
     },
     {
       "key": "zhang2020deco",
