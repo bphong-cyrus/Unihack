@@ -23,5 +23,9 @@ def compute_excerpt_similarity(excerpt: str, source_text: str) -> float:
     if norm_excerpt in norm_source:
         return 1.0
 
-    return fuzz.partial_ratio(norm_excerpt, norm_source) / 100.0
+    # partial_ratio is symmetric: when the excerpt is longer it can score only
+    # the source substring and ignore invented trailing text. Bound the score by
+    # the fraction of excerpt that could be covered by the source.
+    coverage_bound = min(1.0, len(norm_source) / len(norm_excerpt))
+    return min(fuzz.partial_ratio(norm_excerpt, norm_source) / 100.0, coverage_bound)
 

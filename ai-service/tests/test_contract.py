@@ -39,6 +39,13 @@ class ValidatorContractTests(unittest.TestCase):
         with patch('citation_text.fuzz.partial_ratio', return_value=89.999):
             self.assertLess(main.compute_excerpt_similarity(excerpt, source), 0.90)
 
+    def test_excerpt_with_added_claim_does_not_pass_as_source_substring(self):
+        record = self.record
+        false_claim = record['raw_text'] + ' Doanh nghiệp được miễn toàn bộ thuế và hình phạt trong mọi trường hợp.' * 5
+        result = main.validate_citations([dict(self.citation, excerpt=false_claim)])
+        self.assertFalse(result['passed'])
+        self.assertLess(result['citation_checks'][0]['excerpt_similarity'], 0.9)
+
     def test_validate_expired_citation_fails(self):
         rec = main.CORPUS_RECORDS[-1]
         result = main.validate_citations([dict(document=rec["doc_id"], article=rec["article"], clause=rec["clause"], excerpt=rec["raw_text"])])
