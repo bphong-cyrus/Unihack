@@ -1,0 +1,25 @@
+{
+  "document_id": "17/2021/TT-BTC",
+  "source_sha256": "46c4ddcfe384964cbe69803ca9c382535b6337841c4f124e8dc7f4fbf553dcc7",
+  "page_count": 10,
+  "review_status": "UNREVIEWED",
+  "candidates": [
+    {
+      "article": "1",
+      "page": 2,
+      "line_index": 65,
+      "text": "Điều 1. Sửa đổi, bổ sung một số điều tại",
+      "confidence": 0.7384488266297355,
+      "record_file": "page-002.json"
+    },
+    {
+      "article": "2",
+      "page": 6,
+      "line_index": 18,
+      "text": "Điều 2. Hiệu lực thi hành",
+      "confidence": 0.5344692116302905,
+      "record_file": "page-006.json"
+    }
+  ],
+  "limitations": "Heuristic headings may be missing or refer to amendments; verify against original pages."
+}
