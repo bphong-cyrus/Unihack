@@ -1,0 +1,611 @@
+{
+  "document_id": "127/2013/NĐ-CP",
+  "source_sha256": "6b970da9c19ccae81ecbc3385fb53f1fa2375e93ad03643e1f9b4e43ed87e573",
+  "page_count": 49,
+  "review_status": "UNREVIEWED",
+  "candidates": [
+    {
+      "article": "1",
+      "page": 1,
+      "line_index": 33,
+      "text": "Điều 1. Phạm vi điều chỉnh",
+      "confidence": 0.9430346055726898,
+      "record_file": "page-001.json"
+    },
+    {
+      "article": "2",
+      "page": 2,
+      "line_index": 15,
+      "text": "Điều 2. Tình tiết",
+      "confidence": 0.8795944368052887,
+      "record_file": "page-002.json"
+    },
+    {
+      "article": "3",
+      "page": 2,
+      "line_index": 22,
+      "text": "Điều 3. Thời hiệu xử phạt hành chính trong lĩnh vực hải quan",
+      "confidence": 0.710964076858861,
+      "record_file": "page-002.json"
+    },
+    {
+      "article": "4",
+      "page": 3,
+      "line_index": 0,
+      "text": "Điều 4. Mức phạt tiền đối với cá nhân, tổ chức",
+      "confidence": 0.5577216837466396,
+      "record_file": "page-003.json"
+    },
+    {
+      "article": "5",
+      "page": 3,
+      "line_index": 16,
+      "text": "Điều 5. Những trường hợp",
+      "confidence": 0.8189101388609769,
+      "record_file": "page-003.json"
+    },
+    {
+      "article": "6",
+      "page": 4,
+      "line_index": 14,
+      "text": "Điều 6. Vi phạm quy định về thời hạn làm thủ tục hải quan, nộp hồ",
+      "confidence": 0.7504911528788527,
+      "record_file": "page-004.json"
+    },
+    {
+      "article": "7",
+      "page": 5,
+      "line_index": 43,
+      "text": "Điều 7. Vi phạm quy định về khai hải quan",
+      "confidence": 0.6721568019487704,
+      "record_file": "page-005.json"
+    },
+    {
+      "article": "13",
+      "page": 5,
+      "line_index": 55,
+      "text": "Điều 13, Điều 14 Nghị định này;",
+      "confidence": 0.6915702547252871,
+      "record_file": "page-005.json"
+    },
+    {
+      "article": "8",
+      "page": 6,
+      "line_index": 84,
+      "text": "Điều 8. Vi phạm quy định về khai thuế",
+      "confidence": 0.5373925717667131,
+      "record_file": "page-006.json"
+    },
+    {
+      "article": "9",
+      "page": 7,
+      "line_index": 60,
+      "text": "Điều 9",
+      "confidence": 0.9496076547100796,
+      "record_file": "page-007.json"
+    },
+    {
+      "article": "10",
+      "page": 9,
+      "line_index": 12,
+      "text": "Điều 10.Vi phạm quy định về kiểm tra hải quan, thanh tra thuế",
+      "confidence": 0.6559923260555329,
+      "record_file": "page-009.json"
+    },
+    {
+      "article": "11",
+      "page": 10,
+      "line_index": 31,
+      "text": "Điều 11. Vi phạm quy định về giám sát hải quan",
+      "confidence": 0.7457509203151811,
+      "record_file": "page-010.json"
+    },
+    {
+      "article": "12",
+      "page": 11,
+      "line_index": 57,
+      "text": "Điều 12. Vi phạm quy định về kiểm soát hải quan",
+      "confidence": 0.5772952460873894,
+      "record_file": "page-011.json"
+    },
+    {
+      "article": "13",
+      "page": 13,
+      "line_index": 0,
+      "text": "Điều 13. Xử phạt đối với hành vi trốn thuế, gian lận thuế",
+      "confidence": 0.6674561828527061,
+      "record_file": "page-013.json"
+    },
+    {
+      "article": "14",
+      "page": 14,
+      "line_index": 20,
+      "text": "Điều 14. Vi phạm các quy định chíph sách",
+      "confidence": 0.8717908602013014,
+      "record_file": "page-014.json"
+    },
+    {
+      "article": "15",
+      "page": 15,
+      "line_index": 54,
+      "text": "Điều 15. Vi phạm quy định về quản lý kho ngoại quan, kho bảo thuế",
+      "confidence": 0.8013278934111246,
+      "record_file": "page-015.json"
+    },
+    {
+      "article": "16",
+      "page": 17,
+      "line_index": 17,
+      "text": "Điều 16. Xử phạt đối với Kho bạc Nhà nước, tổ chức tín dụng và tổ",
+      "confidence": 0.6644187081378787,
+      "record_file": "page-017.json"
+    },
+    {
+      "article": "17",
+      "page": 18,
+      "line_index": 9,
+      "text": "Điều 17. Áp dụng các biện pháp ngăn chặn vi phạm hành chính và",
+      "confidence": 0.8812315976467389,
+      "record_file": "page-018.json"
+    },
+    {
+      "article": "18",
+      "page": 19,
+      "line_index": 0,
+      "text": "Điều 18. Thẩm quyền lập biên bản vi phạm hành chính",
+      "confidence": 0.8084741244816958,
+      "record_file": "page-019.json"
+    },
+    {
+      "article": "19",
+      "page": 19,
+      "line_index": 19,
+      "text": "Điều 19. Thẩm quyền xử phạt vi phạm hành chính trong lĩnh vực",
+      "confidence": 0.7825540907803936,
+      "record_file": "page-019.json"
+    },
+    {
+      "article": "20",
+      "page": 20,
+      "line_index": 57,
+      "text": "Điều 20. Giao",
+      "confidence": 0.6996514670331071,
+      "record_file": "page-020.json"
+    },
+    {
+      "article": "21",
+      "page": 21,
+      "line_index": 2,
+      "text": "Điều 21. Nguyên tắc xác định và",
+      "confidence": 0.8530517369679724,
+      "record_file": "page-021.json"
+    },
+    {
+      "article": "22",
+      "page": 22,
+      "line_index": 0,
+      "text": "Điều 22. Thủ tục xử phạt, thi hành",
+      "confidence": 0.6369743262644769,
+      "record_file": "page-022.json"
+    },
+    {
+      "article": "23",
+      "page": 22,
+      "line_index": 6,
+      "text": "Điều 23. Xử lý đối với",
+      "confidence": 0.7316675644894377,
+      "record_file": "page-022.json"
+    },
+    {
+      "article": "24",
+      "page": 22,
+      "line_index": 68,
+      "text": "Điều 24. Miễn, giảm tiền phạt vi phạm hành chính trong lĩnh vực hải",
+      "confidence": 0.7422673901724274,
+      "record_file": "page-022.json"
+    },
+    {
+      "article": "25",
+      "page": 23,
+      "line_index": 40,
+      "text": "Điều 25. Phạm vi và đối tượng áp dụng",
+      "confidence": 0.7632237694833424,
+      "record_file": "page-023.json"
+    },
+    {
+      "article": "26",
+      "page": 24,
+      "line_index": 57,
+      "text": "Điều 26. Trường hợp bị cưỡng chế thi hành quyết định hành chính",
+      "confidence": 0.5719098770376865,
+      "record_file": "page-024.json"
+    },
+    {
+      "article": "27",
+      "page": 25,
+      "line_index": 20,
+      "text": "Điều 27. Các biện pháp cưỡng chế",
+      "confidence": 0.5997967700632576,
+      "record_file": "page-025.json"
+    },
+    {
+      "article": "28",
+      "page": 25,
+      "line_index": 45,
+      "text": "Điều 28.",
+      "confidence": 0.9959984696856772,
+      "record_file": "page-025.json"
+    },
+    {
+      "article": "29",
+      "page": 26,
+      "line_index": 0,
+      "text": "Điều 29. Thẩm quyền ra",
+      "confidence": 0.9542851667646362,
+      "record_file": "page-026.json"
+    },
+    {
+      "article": "30",
+      "page": 27,
+      "line_index": 5,
+      "text": "Điều 30. Quyết định cưỡng chế",
+      "confidence": 0.8590578755124573,
+      "record_file": "page-027.json"
+    },
+    {
+      "article": "31",
+      "page": 27,
+      "line_index": 39,
+      "text": "Điều 31_",
+      "confidence": 0.9147824307477314,
+      "record_file": "page-027.json"
+    },
+    {
+      "article": "32",
+      "page": 28,
+      "line_index": 3,
+      "text": "Điều 32. Hiệu lực thi hành",
+      "confidence": 0.6999180549188995,
+      "record_file": "page-028.json"
+    },
+    {
+      "article": "33",
+      "page": 28,
+      "line_index": 28,
+      "text": "Điều 33. Xác minh điều kiện thi hành quyết định cưỡng chế",
+      "confidence": 0.8133130854525228,
+      "record_file": "page-028.json"
+    },
+    {
+      "article": "34",
+      "page": 29,
+      "line_index": 0,
+      "text": "Điều 34. Thủ tục gửi văn bản yêu",
+      "confidence": 0.8364185439322942,
+      "record_file": "page-029.json"
+    },
+    {
+      "article": "35",
+      "page": 30,
+      "line_index": 0,
+      "text": "Điều 35. Nguyên tắc áp dụng các biện pháp cưỡng chế thi hành",
+      "confidence": 0.5563580717108803,
+      "record_file": "page-030.json"
+    },
+    {
+      "article": "36",
+      "page": 30,
+      "line_index": 45,
+      "text": "Điều 36. Bảo đảm thi hành quyết định cưỡng chế thi hành quyết",
+      "confidence": 0.7796554672198313,
+      "record_file": "page-030.json"
+    },
+    {
+      "article": "37",
+      "page": 31,
+      "line_index": 4,
+      "text": "Điều 37. Chi phí",
+      "confidence": 0.6519117729334326,
+      "record_file": "page-031.json"
+    },
+    {
+      "article": "38",
+      "page": 31,
+      "line_index": 40,
+      "text": "Điều 38.",
+      "confidence": 0.9847706187567122,
+      "record_file": "page-031.json"
+    },
+    {
+      "article": "39",
+      "page": 32,
+      "line_index": 0,
+      "text": "Điều 39; Quyết định",
+      "confidence": 0.9423350144890785,
+      "record_file": "page-032.json",
+      "source_verified": true
+    },
+    {
+      "article": "40",
+      "page": 32,
+      "line_index": 52,
+      "text": "Điều 40. Trách nhiệm của Kho bạc Nhà nước, tổ chức tín dụng nơi",
+      "confidence": 0.7241652446252624,
+      "record_file": "page-032.json"
+    },
+    {
+      "article": "41",
+      "page": 33,
+      "line_index": 45,
+      "text": "Điều 41. Thủ tục thu tiền",
+      "confidence": 0.8077896178698437,
+      "record_file": "page-033.json"
+    },
+    {
+      "article": "42",
+      "page": 34,
+      "line_index": 11,
+      "text": "Điều 42. Phạm vi và đối tượng bị áp dụng cưỡng chế",
+      "confidence": 0.6347221484176238,
+      "record_file": "page-034.json"
+    },
+    {
+      "article": "43",
+      "page": 34,
+      "line_index": 21,
+      "text": "Điều 43. Thủ tục cưỡng chế",
+      "confidence": 0.7857627511037922,
+      "record_file": "page-034.json"
+    },
+    {
+      "article": "44",
+      "page": 34,
+      "line_index": 61,
+      "text": "Điều 44. Tỷ Iệ khấu trừ",
+      "confidence": 0.7105627011492899,
+      "record_file": "page-034.json"
+    },
+    {
+      "article": "45",
+      "page": 35,
+      "line_index": 0,
+      "text": "Điều 45. Trách nhiệm của cơ quan, tổ chức,",
+      "confidence": 0.7187543172270175,
+      "record_file": "page-035.json"
+    },
+    {
+      "article": "46",
+      "page": 35,
+      "line_index": 48,
+      "text": "Điều 46. Dừng làm thủ tục hải quan đối với",
+      "confidence": 0.5822579730763024,
+      "record_file": "page-035.json"
+    },
+    {
+      "article": "47",
+      "page": 36,
+      "line_index": 36,
+      "text": "Điều 47. Thủ tục áp dụng",
+      "confidence": 0.7953037834792916,
+      "record_file": "page-036.json"
+    },
+    {
+      "article": "48",
+      "page": 36,
+      "line_index": 68,
+      "text": "Điều 48. Phạm vi và đối tượng bị áp dụng biện pháp cưỡng chế kê",
+      "confidence": 0.5764330857311459,
+      "record_file": "page-036.json"
+    },
+    {
+      "article": "26",
+      "page": 36,
+      "line_index": 77,
+      "text": "Điều 26",
+      "confidence": 0.9957706915213234,
+      "record_file": "page-036.json"
+    },
+    {
+      "article": "49",
+      "page": 37,
+      "line_index": 23,
+      "text": "Điều 49. Những tài sản sau đây không được kê biên",
+      "confidence": 0.8911611963676969,
+      "record_file": "page-037.json"
+    },
+    {
+      "article": "50",
+      "page": 38,
+      "line_index": 44,
+      "text": "Đỉều 50. Quyết định cưỡng chế",
+      "confidence": 0.9756390123058161,
+      "record_file": "page-038.json"
+    },
+    {
+      "article": "51",
+      "page": 38,
+      "line_index": 64,
+      "text": "Điều 51. Thủ tục thực hiện biện pháp kê biên tài sản",
+      "confidence": 0.7829664504783478,
+      "record_file": "page-038.json"
+    },
+    {
+      "article": "52",
+      "page": 39,
+      "line_index": 48,
+      "text": "Điều 52. Biên bản kê biên tài sản",
+      "confidence": 0.9470930859523804,
+      "record_file": "page-039.json"
+    },
+    {
+      "article": "53",
+      "page": 40,
+      "line_index": 5,
+      "text": "Điều 53. Giao bảo",
+      "confidence": 0.8019772334230827,
+      "record_file": "page-040.json"
+    },
+    {
+      "article": "54",
+      "page": 41,
+      "line_index": 0,
+      "text": "Điều 54. Định giá tài sản kê biên",
+      "confidence": 0.9645926330615797,
+      "record_file": "page-041.json"
+    },
+    {
+      "article": "55",
+      "page": 41,
+      "line_index": 57,
+      "text": "Điều 55. Thẩm quyền thành lập Hội",
+      "confidence": 0.7149891979479922,
+      "record_file": "page-041.json"
+    },
+    {
+      "article": "56",
+      "page": 42,
+      "line_index": 7,
+      "text": "Điều 56. Nhiệm vụ của Hội",
+      "confidence": 0.900225146503332,
+      "record_file": "page-042.json"
+    },
+    {
+      "article": "57",
+      "page": 42,
+      "line_index": 14,
+      "text": "Điều 57.",
+      "confidence": 0.8869564061357168,
+      "record_file": "page-042.json"
+    },
+    {
+      "article": "58",
+      "page": 43,
+      "line_index": 0,
+      "text": "Điều 58.",
+      "confidence": 0.9954855568427703,
+      "record_file": "page-043.json"
+    },
+    {
+      "article": "59",
+      "page": 43,
+      "line_index": 23,
+      "text": "Điều 59. Phạm vi áp dụng biện pháp cưỡng chế",
+      "confidence": 0.9578182020673762,
+      "record_file": "page-043.json"
+    },
+    {
+      "article": "60",
+      "page": 43,
+      "line_index": 39,
+      "text": "Điều 60. Nguyên tắc thu",
+      "confidence": 0.5952777947631435,
+      "record_file": "page-043.json"
+    },
+    {
+      "article": "61",
+      "page": 44,
+      "line_index": 7,
+      "text": "Điều 61. Trình tự, thủ tục cưỡng chế",
+      "confidence": 0.6665171942184361,
+      "record_file": "page-044.json"
+    },
+    {
+      "article": "62",
+      "page": 44,
+      "line_index": 37,
+      "text": "Điều 62. Trách nhiệm của bên thứ ba",
+      "confidence": 0.5765092263426752,
+      "record_file": "page-044.json"
+    },
+    {
+      "article": "63",
+      "page": 45,
+      "line_index": 4,
+      "text": "Điều 63. Phạm vi áp dụng biện pháp",
+      "confidence": 0.9626098315571797,
+      "record_file": "page-045.json"
+    },
+    {
+      "article": "64",
+      "page": 45,
+      "line_index": 28,
+      "text": "Điều 64.",
+      "confidence": 0.9474173789998842,
+      "record_file": "page-045.json"
+    },
+    {
+      "article": "65",
+      "page": 45,
+      "line_index": 72,
+      "text": "Điều 65. Cưỡng chế",
+      "confidence": 0.9777682989467819,
+      "record_file": "page-045.json"
+    },
+    {
+      "article": "66",
+      "page": 46,
+      "line_index": 10,
+      "text": "Điều 66. Cưỡng chế",
+      "confidence": 0.9388747960878677,
+      "record_file": "page-046.json"
+    },
+    {
+      "article": "67",
+      "page": 46,
+      "line_index": 29,
+      "text": "Điều 67; Cưỡng chế",
+      "confidence": 0.9776166645866184,
+      "record_file": "page-046.json",
+      "source_verified": true
+    },
+    {
+      "article": "68",
+      "page": 47,
+      "line_index": 0,
+      "text": "Điều 68. Cưỡng chế",
+      "confidence": 0.7861923565868625,
+      "record_file": "page-047.json"
+    },
+    {
+      "article": "69",
+      "page": 47,
+      "line_index": 14,
+      "text": "Điều 69. Cưỡng chế buộc thực hiện các biện pháp khắc phục hậu quả",
+      "confidence": 0.7343352204174127,
+      "record_file": "page-047.json"
+    },
+    {
+      "article": "70",
+      "page": 48,
+      "line_index": 27,
+      "text": "Điều 70. Hiệu Iực thi hành",
+      "confidence": 0.8414582715465185,
+      "record_file": "page-048.json"
+    },
+    {
+      "article": "71",
+      "page": 48,
+      "line_index": 34,
+      "text": "Điều 71. Điều khoản chuyển tiếp",
+      "confidence": 0.8467871814268608,
+      "record_file": "page-048.json"
+    },
+    {
+      "article": "72",
+      "page": 48,
+      "line_index": 59,
+      "text": "Điều 72. Hướng dẫn, tổ chức thi hành",
+      "confidence": 0.8602037752940145,
+      "record_file": "page-048.json"
+    },
+    {
+      "article": "73",
+      "page": 49,
+      "line_index": 0,
+      "text": "Điều 73. Trách nhiệm thi hành",
+      "confidence": 0.8037910570398259,
+      "record_file": "page-049.json"
+    }
+  ],
+  "limitations": "Heuristic headings may be missing or refer to amendments; verify against original pages."
+}
