@@ -32,7 +32,9 @@ def evaluate(snapshot, cases, k):
             question = case['question'].strip()
             as_of = date.fromisoformat(case['as_of'])
             labels = case['relevant']
-            if not case_id or case_id in seen or not question or not isinstance(labels, list) or not labels:
+            no_result = case.get('expect_no_result', False)
+            if (not case_id or case_id in seen or not question or not isinstance(labels, list)
+                    or not isinstance(no_result, bool) or (no_result and labels) or (not no_result and not labels)):
                 raise EvaluationError('invalid case or duplicate id')
             relevant = {_key(label) for label in labels}
             if len(relevant) != len(labels):
@@ -44,11 +46,17 @@ def evaluate(snapshot, cases, k):
         found = [(item.document_id, item.article, item.clause, item.point) for item in items]
         matches = [index for index, key in enumerate(found, 1) if key in relevant]
         rows.append({'id': case_id, 'retrieved': [list(key) for key in found],
-                     'recall': len(set(found) & relevant) / len(relevant),
-                     'reciprocal_rank': 1 / matches[0] if matches else 0.0})
+                     'recall': len(set(found) & relevant) / len(relevant) if relevant else None,
+                     'reciprocal_rank': (1 / matches[0] if matches else 0.0) if relevant else None,
+                     'correct_no_result': not found if no_result else None})
+    labeled = [row for row in rows if row['recall'] is not None]
+    abstentions = [row for row in rows if row['correct_no_result'] is not None]
     return {'snapshot_id': snapshot.snapshot_id, 'k': k, 'case_count': len(rows),
-            'recall_at_k': sum(row['recall'] for row in rows) / len(rows),
-            'mrr_at_k': sum(row['reciprocal_rank'] for row in rows) / len(rows), 'cases': rows}
+            'recall_at_k': sum(row['recall'] for row in labeled) / len(labeled) if labeled else None,
+            'mrr_at_k': sum(row['reciprocal_rank'] for row in labeled) / len(labeled) if labeled else None,
+            'no_result_count': len(abstentions),
+            'no_result_accuracy': sum(row['correct_no_result'] for row in abstentions) / len(abstentions) if abstentions else None,
+            'cases': rows}
 
 
 def main():

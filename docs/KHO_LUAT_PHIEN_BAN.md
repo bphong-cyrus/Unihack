@@ -20,4 +20,6 @@ Giao diện hiển thị danh mục do API trả về, cho chọn ngày khi snap
 
 Để đánh giá truy xuất khi có bộ câu hỏi đã gán nhãn độc lập, chạy `python3 ai-service/retrieval_eval.py MANIFEST CASES --k 3`. Tệp `CASES` là mảng JSON; mỗi mục gồm `id`, `question`, `as_of` và `relevant` (mảng đối tượng có `document`, `article`, `clause`, `point` tùy chọn). Chương trình báo recall trung bình trên các điều khoản liên quan và MRR tại k, kèm danh sách truy xuất theo từng câu; câu không tìm thấy vẫn được tính. Nhãn trùng, thiếu nhãn hoặc ID trùng bị từ chối. Các test hiện chỉ dùng dữ liệu giả; chưa có điểm đánh giá cho corpus pháp luật thật.
 
+Trường hợp được gán nhãn không có kết quả phù hợp dùng `"relevant": []` cùng `"expect_no_result": true`. Các trường hợp này được tính riêng qua `no_result_count` và `no_result_accuracy`, không đưa vào mẫu số recall/MRR. Chỉ số này đo việc bộ truy xuất trả rỗng so với nhãn, không chứng minh câu trả lời đúng hay đánh giá đầy đủ câu hỏi ngoài phạm vi.
+
 Mọi kết quả validation hiện trả `settlement_eligible: false`, kể cả khi các phép so khớp đạt. `passed` và `verdict` được giữ để tương thích hợp đồng demo và không được dùng một mình để giải ngân. Đây là tín hiệu trong API, không phải cơ chế ngăn một oracle bên ngoài bỏ qua nó; tuyệt đối chưa kết nối oracle với tiền thật.

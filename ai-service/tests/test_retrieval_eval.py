@@ -26,4 +26,19 @@ class RetrievalEvaluationTests(unittest.TestCase):
                       [{'id':'a','question':'câu hỏi','as_of':'2024-01-01','relevant':[{'document':'A','article':'1','clause':'1'}]}]*2):
             with self.assertRaises(EvaluationError): evaluate(snapshot,cases,3)
 
+    def test_evaluates_explicit_no_result_cases_separately(self):
+        item = SimpleNamespace(document_id='A', article='1', clause='1', point='', document_title='', text='hồ sơ hải quan tờ khai')
+        snapshot = SimpleNamespace(snapshot_id='fixture', provisions=[item], lookup=lambda *args: item)
+        cases = [
+            {'id':'abstain', 'question':'thiên văn hành tinh', 'as_of':'2024-01-01', 'relevant':[], 'expect_no_result':True},
+            {'id':'wrong', 'question':'hồ sơ hải quan', 'as_of':'2024-01-01', 'relevant':[], 'expect_no_result':True},
+            {'id':'found', 'question':'hồ sơ hải quan', 'as_of':'2024-01-01', 'relevant':[{'document':'A','article':'1','clause':'1'}]},
+        ]
+        result = evaluate(snapshot, cases, 3)
+        self.assertEqual(result['recall_at_k'], 1.0)
+        self.assertEqual(result['no_result_count'], 2)
+        self.assertEqual(result['no_result_accuracy'], 0.5)
+        self.assertTrue(result['cases'][0]['correct_no_result'])
+        self.assertFalse(result['cases'][1]['correct_no_result'])
+
 if __name__ == '__main__': unittest.main()
