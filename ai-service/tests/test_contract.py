@@ -80,6 +80,21 @@ class ValidatorContractTests(unittest.TestCase):
         result = main.ask_legal_question(main.AskRequest(question='Khai sai mã HS bị phạt bao nhiêu?'))
         self.assertTrue(result['citations'])
 
+    def test_demo_generic_keyword_does_not_trigger_unrelated_example(self):
+        for question in ('Thương nhân nộp thuế bao nhiêu?', 'Xuất xứ cà phê là gì?',
+                         'Màu phân luồng hàng hóa là gì?', 'Hoàn thuế giá trị gia tăng thế nào?',
+                         'Thời hạn tờ khai xuất khẩu là bao lâu?'):
+            with self.subTest(question=question):
+                result = main.ask_legal_question(main.AskRequest(question=question))
+                self.assertEqual(result['citations'], [])
+                self.assertFalse(result['validation']['passed'])
+
+    def test_demo_suggested_origin_and_refund_questions_keep_examples(self):
+        for question in ('Thủ tục đăng ký hồ sơ thương nhân xin cấp C/O lần đầu',
+                         'Điều kiện hoàn thuế nhập khẩu đối với hàng tái xuất'):
+            with self.subTest(question=question):
+                self.assertTrue(main.ask_legal_question(main.AskRequest(question=question))['citations'])
+
     def test_corpus_reports_sample_and_actual_document_count(self):
         result = main.get_corpus()
         self.assertEqual(result["total_documents"], len({r["doc_id"] for r in main.CORPUS_RECORDS}))

@@ -307,7 +307,8 @@ def ask_legal_question(req: AskRequest):
     # Trường hợp 3: Câu trả lời chuẩn xác từ Corpus XNK (PASS >= 90% -> Giải ngân)
     else:
         q_lower = req.question.lower()
-        if "c/o" in q_lower or "xuất xứ" in q_lower or "thương nhân" in q_lower:
+        if (any(term in q_lower for term in ("c/o", "chứng nhận xuất xứ"))
+                and "thương nhân" in q_lower and any(term in q_lower for term in ("đăng ký", "hồ sơ"))):
             answer = (
                 "Theo quy định tại Khoản 1 Điều 15 Nghị định 31/2018/NĐ-CP, doanh nghiệp xuất nhập khẩu "
                 "đề nghị cấp Giấy chứng nhận xuất xứ hàng hóa (C/O) lần đầu bắt buộc phải đăng ký Hồ sơ thương nhân "
@@ -326,7 +327,7 @@ def ask_legal_question(req: AskRequest):
                     ),
                 }
             ]
-        elif "hoàn thuế" in q_lower or "tái xuất" in q_lower:
+        elif "hoàn thuế" in q_lower and "nhập khẩu" in q_lower and "tái xuất" in q_lower:
             answer = (
                 "Theo Khoản 1 Điều 19 Luật Thuế xuất khẩu, thuế nhập khẩu 2016 (Luật số 107/2016/QH13), "
                 "doanh nghiệp đã nộp thuế nhập khẩu nhưng hàng hóa nhập khẩu phải tái xuất sẽ được hoàn thuế "
@@ -346,7 +347,7 @@ def ask_legal_question(req: AskRequest):
                     ),
                 }
             ]
-        elif "thời hạn" in q_lower and "tờ khai" in q_lower:
+        elif "thời hạn" in q_lower and "tờ khai" in q_lower and "nhập khẩu" in q_lower:
             answer = (
                 "Theo Điểm b Khoản 1 Điều 25 Luật Hải quan 2014 (Luật số 54/2014/QH13), đối với hàng hóa "
                 "nhập khẩu, người khai hải quan phải nộp tờ khai hải quan trước ngày hàng hóa đến cửa khẩu "
@@ -364,7 +365,7 @@ def ask_legal_question(req: AskRequest):
                     ),
                 }
             ]
-        elif "khai bổ sung" in q_lower or "phân luồng" in q_lower:
+        elif "khai bổ sung" in q_lower and "phân luồng" in q_lower:
             answer = (
                 "Theo Khoản 7 Điều 1 Thông tư 39/2018/TT-BTC, người khai hải quan được phép khai bổ sung "
                 "hồ sơ hải quan sau khi Hệ thống phân luồng tờ khai nhưng trước thời điểm cơ quan hải quan "
