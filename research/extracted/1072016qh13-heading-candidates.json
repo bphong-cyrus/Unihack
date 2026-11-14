@@ -1,0 +1,185 @@
+{
+  "document_id": "107/2016/QH13",
+  "source_sha256": "32841618792a0ef83b8f9dab098d39afe556471a83039489f38e1e9ccd91b04b",
+  "page_count": 29,
+  "review_status": "UNREVIEWED",
+  "candidates": [
+    {
+      "article": "1",
+      "page": 1,
+      "line_index": 31,
+      "text": "Điều 1. Phạm vi điều chỉnh",
+      "confidence": 0.5780254192930107,
+      "record_file": "page-001.json"
+    },
+    {
+      "article": "2",
+      "page": 1,
+      "line_index": 38,
+      "text": "Điều 2. Đối tượng chịu thuế",
+      "confidence": 0.9674480062967344,
+      "record_file": "page-001.json"
+    },
+    {
+      "article": "3",
+      "page": 2,
+      "line_index": 1,
+      "text": "Điều 3. Người nộp thuế",
+      "confidence": 0.7984011275696924,
+      "record_file": "page-002.json"
+    },
+    {
+      "article": "4",
+      "page": 2,
+      "line_index": 59,
+      "text": "Điều 4. Giảỉ thích từ ngữ",
+      "confidence": 0.7122696563780292,
+      "record_file": "page-002.json"
+    },
+    {
+      "article": "5",
+      "page": 3,
+      "line_index": 40,
+      "text": "Điều 5. Căn cứ tính thuế xuất khẩu, thuế nhập khẩu đối với",
+      "confidence": 0.4316779750634999,
+      "record_file": "page-003.json"
+    },
+    {
+      "article": "6",
+      "page": 4,
+      "line_index": 22,
+      "text": "Điều 6. Căn cứ tính thuế xuất khẩu, thuế nhập khẩu đối với",
+      "confidence": 0.9003529561748904,
+      "record_file": "page-004.json"
+    },
+    {
+      "article": "7",
+      "page": 4,
+      "line_index": 39,
+      "text": "Điều 7. Thuế đối với hàng hóa nhập khẩu áp dụng hạn ngạch thuế",
+      "confidence": 0.6039239845676144,
+      "record_file": "page-004.json"
+    },
+    {
+      "article": "8",
+      "page": 4,
+      "line_index": 51,
+      "text": "Điều 8. Trị giá tính thuế, thời điểm tính thuế",
+      "confidence": 0.6285919610035527,
+      "record_file": "page-004.json"
+    },
+    {
+      "article": "9",
+      "page": 5,
+      "line_index": 10,
+      "text": "Đỉều 9. Thời hạn nộp thuế",
+      "confidence": 0.7692192001532238,
+      "record_file": "page-005.json"
+    },
+    {
+      "article": "10",
+      "page": 5,
+      "line_index": 39,
+      "text": "Điều 10. Nguyên tắc ban bành biểu thuế, thuế suất",
+      "confidence": 0.6934379439971533,
+      "record_file": "page-005.json"
+    },
+    {
+      "article": "11",
+      "page": 5,
+      "line_index": 71,
+      "text": "Điều 11. Thẩm quyền ban hành biểu thuế, thuế suất",
+      "confidence": 0.4849032211220757,
+      "record_file": "page-005.json"
+    },
+    {
+      "article": "12",
+      "page": 6,
+      "line_index": 29,
+      "text": "Điều 12. Thuế",
+      "confidence": 0.9871946531102831,
+      "record_file": "page-006.json"
+    },
+    {
+      "article": "13",
+      "page": 7,
+      "line_index": 3,
+      "text": "Điều 13. Thuế chống trợ cấp",
+      "confidence": 0.8761268171276544,
+      "record_file": "page-007.json"
+    },
+    {
+      "article": "14",
+      "page": 7,
+      "line_index": 38,
+      "text": "Điều 14. Thuế tự vệ",
+      "confidence": 0.6360637346215591,
+      "record_file": "page-007.json"
+    },
+    {
+      "article": "15",
+      "page": 8,
+      "line_index": 15,
+      "text": "Điều 15. Áp dụng thuế chống bán phá giá, thuế chống=",
+      "confidence": 0.4687817264072071,
+      "record_file": "page-008.json"
+    },
+    {
+      "article": "16",
+      "page": 8,
+      "line_index": 51,
+      "text": "Điều 16. Miễn thuế",
+      "confidence": 0.963513030734477,
+      "record_file": "page-008.json"
+    },
+    {
+      "article": "17",
+      "page": 12,
+      "line_index": 28,
+      "text": "Điều 17. Thủ tục miễn thuế",
+      "confidence": 0.8474193904264974,
+      "record_file": "page-012.json"
+    },
+    {
+      "article": "18",
+      "page": 12,
+      "line_index": 36,
+      "text": "Điều 18. Giảm thuế",
+      "confidence": 0.7682115994875571,
+      "record_file": "page-012.json"
+    },
+    {
+      "article": "19",
+      "page": 12,
+      "line_index": 52,
+      "text": "Điều 19. Hoàn thuế",
+      "confidence": 0.972496867132359,
+      "record_file": "page-012.json"
+    },
+    {
+      "article": "20",
+      "page": 13,
+      "line_index": 31,
+      "text": "Điều 20. Hỉệu Iực tbi hành",
+      "confidence": 0.5080697060814792,
+      "record_file": "page-013.json"
+    },
+    {
+      "article": "21",
+      "page": 13,
+      "line_index": 36,
+      "text": "Điều 21. Điều khoản",
+      "confidence": 0.8383217704020239,
+      "record_file": "page-013.json"
+    },
+    {
+      "article": "22",
+      "page": 14,
+      "line_index": 1,
+      "text": "Điều 22. Quy định chi tiết",
+      "confidence": 0.8336484962241477,
+      "record_file": "page-014.json"
+    }
+  ],
+  "limitations": "Heuristic headings may be missing or refer to amendments; verify against original pages."
+}
