@@ -8,9 +8,19 @@ from pathlib import Path
 def audit_sources(manifest):
     path = Path(manifest).resolve()
     data = json.loads(path.read_text(encoding='utf-8'))
+    documents = data['documents']
+    if not isinstance(documents, list) or not documents:
+        raise ValueError('documents must be a nonempty list')
+    seen = set()
     report = {'documents': len(data['documents']), 'files_ok': 0,
               'documents_without_attachments': [], 'errors': []}
-    for document in data['documents']:
+    for document in documents:
+        document_id = document['document_id']
+        if not isinstance(document_id, str) or not document_id.strip() or document_id in seen:
+            raise ValueError('document IDs must be nonempty and unique')
+        seen.add(document_id)
+        if not isinstance(document['attachments'], list):
+            raise ValueError('attachments must be a list')
         if not document['attachments']:
             report['documents_without_attachments'].append(document['document_id'])
         for attachment in document['attachments']:

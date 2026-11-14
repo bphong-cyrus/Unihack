@@ -31,3 +31,12 @@ class SourceAuditTests(unittest.TestCase):
             manifest = Path(tmp) / 'manifest.json'
             manifest.write_text(json.dumps({'documents': [{'document_id': 'A', 'attachments': [{'file': '../outside', 'bytes': 0, 'sha256': 'x'}]}]}))
             self.assertTrue(audit_sources(manifest)['errors'])
+
+    def test_audit_rejects_empty_or_duplicate_document_inventory(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            manifest = Path(tmp) / 'manifest.json'
+            for documents in ([], [{'document_id': 'A', 'attachments': []}, {'document_id': 'A', 'attachments': []}]):
+                with self.subTest(documents=documents):
+                    manifest.write_text(json.dumps({'documents': documents}))
+                    with self.assertRaises(ValueError):
+                        audit_sources(manifest)
