@@ -1,0 +1,801 @@
+{
+  "document_id": "54/2014/QH13",
+  "source_sha256": "1c16477bd2fb5aea74f714c86e80255faedd179e91876b3b7191b83da044e9bf",
+  "page_count": 54,
+  "review_status": "UNREVIEWED",
+  "candidates": [
+    {
+      "article": "2",
+      "page": 1,
+      "line_index": 31,
+      "text": "Điều 2. Đối tượng áp",
+      "confidence": 0.7546801136381531,
+      "record_file": "page-001.json"
+    },
+    {
+      "article": "3",
+      "page": 1,
+      "line_index": 48,
+      "text": "Điều 3. Chính sách về hải quan",
+      "confidence": 0.9194206278573204,
+      "record_file": "page-001.json"
+    },
+    {
+      "article": "4",
+      "page": 1,
+      "line_index": 54,
+      "text": "Điều 4. Giải thích từ ngữ",
+      "confidence": 0.9215828072581803,
+      "record_file": "page-001.json"
+    },
+    {
+      "article": "5",
+      "page": 4,
+      "line_index": 20,
+      "text": "Điều 5. Áp dụng điều ước",
+      "confidence": 0.6693795118300068,
+      "record_file": "page-004.json"
+    },
+    {
+      "article": "6",
+      "page": 4,
+      "line_index": 43,
+      "text": "Điều 6. Hoạt động hợp tác",
+      "confidence": 0.7906408356621046,
+      "record_file": "page-004.json"
+    },
+    {
+      "article": "7",
+      "page": 5,
+      "line_index": 3,
+      "text": "Điều 7. Địa bàn hoạt động hải quan",
+      "confidence": 0.7345158164355163,
+      "record_file": "page-005.json"
+    },
+    {
+      "article": "8",
+      "page": 5,
+      "line_index": 31,
+      "text": "Điều 8. Hiện đại hoá quản lý hải quan",
+      "confidence": 0.7672079674518409,
+      "record_file": "page-005.json"
+    },
+    {
+      "article": "9",
+      "page": 5,
+      "line_index": 44,
+      "text": "Điều 9. Phối hợp thực hiện pháp luật về hải quan",
+      "confidence": 0.801744903123184,
+      "record_file": "page-005.json"
+    },
+    {
+      "article": "10",
+      "page": 6,
+      "line_index": 0,
+      "text": "Điều 10. Hành vi bị nghiêm cấm trong lĩnh vực hải quan",
+      "confidence": 0.8009541175857662,
+      "record_file": "page-006.json"
+    },
+    {
+      "article": "11",
+      "page": 6,
+      "line_index": 32,
+      "text": "Điều 11. Giám sát thi hành pháp luật về hải quan",
+      "confidence": 0.8039871655193891,
+      "record_file": "page-006.json"
+    },
+    {
+      "article": "12",
+      "page": 6,
+      "line_index": 51,
+      "text": "Điều 12. Nhiệm vụ của Hải quan",
+      "confidence": 0.747740177524053,
+      "record_file": "page-006.json"
+    },
+    {
+      "article": "13",
+      "page": 7,
+      "line_index": 7,
+      "text": "Điều 13. Nguyên tắc tổ chức và hoạt động của Hải quan",
+      "confidence": 0.603102508085412,
+      "record_file": "page-007.json"
+    },
+    {
+      "article": "14",
+      "page": 7,
+      "line_index": 18,
+      "text": "Điều 14. Hệ thống tổ chức Hải quan",
+      "confidence": 0.6683013639522067,
+      "record_file": "page-007.json"
+    },
+    {
+      "article": "15",
+      "page": 7,
+      "line_index": 37,
+      "text": "Điều 15.",
+      "confidence": 0.9887189934470352,
+      "record_file": "page-007.json"
+    },
+    {
+      "article": "16",
+      "page": 7,
+      "line_index": 57,
+      "text": "Điều 16. Nguyên tắc tiến hành thủ tục hải quan, kỉểm",
+      "confidence": 0.7505963688981353,
+      "record_file": "page-007.json"
+    },
+    {
+      "article": "17",
+      "page": 8,
+      "line_index": 19,
+      "text": "Điều 17. Quản lý rủi ro trong hoạt động nghiệp vụ hải quan",
+      "confidence": 0.8000836162224113,
+      "record_file": "page-008.json"
+    },
+    {
+      "article": "18",
+      "page": 8,
+      "line_index": 41,
+      "text": "Điều 18. Quyền và nghĩa vụ của",
+      "confidence": 0.9786058360117329,
+      "record_file": "page-008.json"
+    },
+    {
+      "article": "20",
+      "page": 10,
+      "line_index": 40,
+      "text": "Điều 20. Đại lý làm thủ tục hải quan",
+      "confidence": 0.7268730795433613,
+      "record_file": "page-010.json"
+    },
+    {
+      "article": "21",
+      "page": 11,
+      "line_index": 20,
+      "text": "Điều 21. Thủ tục hải quan",
+      "confidence": 0.5351897381309683,
+      "record_file": "page-011.json"
+    },
+    {
+      "article": "22",
+      "page": 11,
+      "line_index": 48,
+      "text": "Điều 22. Địa điểm làm thủ tục hải quan",
+      "confidence": 0.6366085192530961,
+      "record_file": "page-011.json"
+    },
+    {
+      "article": "23",
+      "page": 12,
+      "line_index": 42,
+      "text": "Điều 23. Thời hạn cơ quan hải quan làm thủ tục hải quan",
+      "confidence": 0.7089929281383434,
+      "record_file": "page-012.json"
+    },
+    {
+      "article": "24",
+      "page": 13,
+      "line_index": 27,
+      "text": "Điều 24. Hồ sơ hải quan",
+      "confidence": 0.7973741699930206,
+      "record_file": "page-013.json"
+    },
+    {
+      "article": "25",
+      "page": 14,
+      "line_index": 8,
+      "text": "Điều 25. Thời hạn nộp hồ sơ hải quan",
+      "confidence": 0.6559415302732832,
+      "record_file": "page-014.json"
+    },
+    {
+      "article": "26",
+      "page": 14,
+      "line_index": 44,
+      "text": "Điều 26. Phân loại hàng hoá",
+      "confidence": 0.7689018398079136,
+      "record_file": "page-014.json"
+    },
+    {
+      "article": "27",
+      "page": 15,
+      "line_index": 29,
+      "text": "Điều 27. Xác định xuất xứ",
+      "confidence": 0.8625454017818939,
+      "record_file": "page-015.json"
+    },
+    {
+      "article": "28",
+      "page": 16,
+      "line_index": 17,
+      "text": "Điều 28. Xác định trước mã số, xuất xứ, trị giá hải quan",
+      "confidence": 0.8104947920142699,
+      "record_file": "page-016.json"
+    },
+    {
+      "article": "29",
+      "page": 16,
+      "line_index": 72,
+      "text": "Điều 29. Khai hải quan",
+      "confidence": 0.8466040146566826,
+      "record_file": "page-016.json"
+    },
+    {
+      "article": "30",
+      "page": 17,
+      "line_index": 52,
+      "text": "Điều 30.",
+      "confidence": 0.8635947369561537,
+      "record_file": "page-017.json"
+    },
+    {
+      "article": "31",
+      "page": 18,
+      "line_index": 1,
+      "text": "Điều 31. Căn cứ, thẩm",
+      "confidence": 0.7469720410764487,
+      "record_file": "page-018.json"
+    },
+    {
+      "article": "32",
+      "page": 18,
+      "line_index": 9,
+      "text": "Điều 32. Kiểm tra hồ sơ hải quan",
+      "confidence": 0.6941086731711837,
+      "record_file": "page-018.json"
+    },
+    {
+      "article": "33",
+      "page": 18,
+      "line_index": 21,
+      "text": "Điều 33. Kỉểm tra thực tế hàng hoá",
+      "confidence": 0.7644691506884803,
+      "record_file": "page-018.json"
+    },
+    {
+      "article": "34",
+      "page": 19,
+      "line_index": 1,
+      "text": "Điều 34. Kiểm tra thực tế hàng hoá trong trường hợp vắng mặt",
+      "confidence": 0.8112190700740888,
+      "record_file": "page-019.json"
+    },
+    {
+      "article": "35",
+      "page": 19,
+      "line_index": 30,
+      "text": "Điều 35. Trách nhiệm kiểm tra",
+      "confidence": 0.5547125218421198,
+      "record_file": "page-019.json"
+    },
+    {
+      "article": "36",
+      "page": 20,
+      "line_index": 21,
+      "text": "Điều 36. Giải phóng hàng hóa",
+      "confidence": 0.9410953204757354,
+      "record_file": "page-020.json"
+    },
+    {
+      "article": "37",
+      "page": 20,
+      "line_index": 43,
+      "text": "Điều 37. Thông quan",
+      "confidence": 0.9661955735004408,
+      "record_file": "page-020.json"
+    },
+    {
+      "article": "38",
+      "page": 21,
+      "line_index": 14,
+      "text": "Điều 38. Đối tượng, phương thức và thời gian giám sát hải quan",
+      "confidence": 0.7305294395504565,
+      "record_file": "page-021.json"
+    },
+    {
+      "article": "39",
+      "page": 21,
+      "line_index": 46,
+      "text": "Điều 39. Trách nhiệm của cơ quan hải quan trong hoạt động giám sát",
+      "confidence": 0.8613135910539922,
+      "record_file": "page-021.json"
+    },
+    {
+      "article": "40",
+      "page": 22,
+      "line_index": 10,
+      "text": "Điều 40. Trách nhiệm của",
+      "confidence": 0.6368275389066625,
+      "record_file": "page-022.json"
+    },
+    {
+      "article": "41",
+      "page": 22,
+      "line_index": 51,
+      "text": "Điều 41. Trách nhiệm của doanh nghiệp kinh doanh cảng, kho, bãi",
+      "confidence": 0.7251839350622805,
+      "record_file": "page-022.json"
+    },
+    {
+      "article": "42",
+      "page": 23,
+      "line_index": 22,
+      "text": "Điều 42. Điều kiện áp dụng chế độ ưu tiên",
+      "confidence": 0.8573399151316877,
+      "record_file": "page-023.json"
+    },
+    {
+      "article": "43",
+      "page": 23,
+      "line_index": 46,
+      "text": "Điều 43. Chế độ ưu tiên đối với doanh nghiệp",
+      "confidence": 0.8264016111569411,
+      "record_file": "page-023.json"
+    },
+    {
+      "article": "44",
+      "page": 24,
+      "line_index": 15,
+      "text": "Điều 44. Trách nhiệm của cơ quan hải quan trong việc thực hiện chế",
+      "confidence": 0.7174846192853301,
+      "record_file": "page-024.json"
+    },
+    {
+      "article": "45",
+      "page": 24,
+      "line_index": 26,
+      "text": "Điều 45. Trách nhiệm của doanh nghiệp được áp dụng chế độ ưu tiên",
+      "confidence": 0.667816197397779,
+      "record_file": "page-024.json"
+    },
+    {
+      "article": "46",
+      "page": 24,
+      "line_index": 40,
+      "text": "Điều 46. Kiểm tra, giám sát hải quan đối với",
+      "confidence": 0.5251792776475215,
+      "record_file": "page-024.json"
+    },
+    {
+      "article": "47",
+      "page": 25,
+      "line_index": 16,
+      "text": "Điều 47. Kiểm tra, giám sát hải quan đối với hàng hóa bán tại cửa",
+      "confidence": 0.7199289798661748,
+      "record_file": "page-025.json"
+    },
+    {
+      "article": "48",
+      "page": 25,
+      "line_index": 47,
+      "text": "Điều  48. Kiểm tra,",
+      "confidence": 0.6173039841762352,
+      "record_file": "page-025.json"
+    },
+    {
+      "article": "49",
+      "page": 26,
+      "line_index": 20,
+      "text": "Điều 49. Kiểm tra,",
+      "confidence": 0.6855998068806652,
+      "record_file": "page-026.json"
+    },
+    {
+      "article": "50",
+      "page": 26,
+      "line_index": 40,
+      "text": "Điều 50. Kiểm tra,",
+      "confidence": 0.7454468845292077,
+      "record_file": "page-026.json"
+    },
+    {
+      "article": "51",
+      "page": 27,
+      "line_index": 14,
+      "text": "Điều 51. Kiểm tra, giám sát hải quan đối với hàng boá mua",
+      "confidence": 0.7049641266025515,
+      "record_file": "page-027.json"
+    },
+    {
+      "article": "52",
+      "page": 27,
+      "line_index": 28,
+      "text": "Điều 52. Kiểm",
+      "confidence": 0.9414882132884189,
+      "record_file": "page-027.json"
+    },
+    {
+      "article": "53",
+      "page": 27,
+      "line_index": 45,
+      "text": "Điều 53. Kiểm tra,",
+      "confidence": 0.5222199012487261,
+      "record_file": "page-027.json"
+    },
+    {
+      "article": "54",
+      "page": 27,
+      "line_index": 53,
+      "text": "Điều 54. Kiểm tra,",
+      "confidence": 0.9812761531882428,
+      "record_file": "page-027.json"
+    },
+    {
+      "article": "55",
+      "page": 28,
+      "line_index": 10,
+      "text": "Điều 55.",
+      "confidence": 0.9028215198947928,
+      "record_file": "page-028.json"
+    },
+    {
+      "article": "56",
+      "page": 28,
+      "line_index": 44,
+      "text": "Điều 56.",
+      "confidence": 0.940451369044781,
+      "record_file": "page-028.json"
+    },
+    {
+      "article": "57",
+      "page": 28,
+      "line_index": 62,
+      "text": "Điều 57. Kiểm tra,",
+      "confidence": 0.876898693363584,
+      "record_file": "page-028.json"
+    },
+    {
+      "article": "58",
+      "page": 29,
+      "line_index": 13,
+      "text": "Điều 58. Kiểm tra,",
+      "confidence": 0.6715182533670341,
+      "record_file": "page-029.json"
+    },
+    {
+      "article": "59",
+      "page": 30,
+      "line_index": 26,
+      "text": "Điều 59. Trách nhiệm của cơ quan hải quan trong kiểm",
+      "confidence": 0.6091022077907287,
+      "record_file": "page-030.json"
+    },
+    {
+      "article": "60",
+      "page": 31,
+      "line_index": 2,
+      "text": "Điều 60.",
+      "confidence": 0.9100235737135554,
+      "record_file": "page-031.json"
+    },
+    {
+      "article": "61",
+      "page": 31,
+      "line_index": 43,
+      "text": "Điều 61. Hàng",
+      "confidence": 0.7496592595101177,
+      "record_file": "page-031.json"
+    },
+    {
+      "article": "62",
+      "page": 32,
+      "line_index": 9,
+      "text": "Điều 62. Điều kiện thành lập kho ngoại quan, kho bảo thuế, địa điểm",
+      "confidence": 0.6780286843467062,
+      "record_file": "page-032.json"
+    },
+    {
+      "article": "63",
+      "page": 32,
+      "line_index": 37,
+      "text": "Điều 63. Quyền và nghĩa vụ của doanh nghiệp kinh doanh kho ngoại",
+      "confidence": 0.8693189585498586,
+      "record_file": "page-032.json"
+    },
+    {
+      "article": "64",
+      "page": 34,
+      "line_index": 4,
+      "text": "Điều 64. Thủ tục hải quan đối với",
+      "confidence": 0.7174222573920214,
+      "record_file": "page-034.json"
+    },
+    {
+      "article": "65",
+      "page": 34,
+      "line_index": 39,
+      "text": "Điều 65.",
+      "confidence": 0.8133409301649409,
+      "record_file": "page-034.json"
+    },
+    {
+      "article": "66",
+      "page": 34,
+      "line_index": 61,
+      "text": "Điều 66. Thông báo thông tin phương tiện vận tải",
+      "confidence": 0.9129758190106253,
+      "record_file": "page-034.json"
+    },
+    {
+      "article": "67",
+      "page": 35,
+      "line_index": 8,
+      "text": "Điều 67. Địa đỉểm làm thủ tục hải quan đối với phương tiện vận tải",
+      "confidence": 0.53881730779145,
+      "record_file": "page-035.json"
+    },
+    {
+      "article": "68",
+      "page": 35,
+      "line_index": 14,
+      "text": "Điều 68.",
+      "confidence": 0.9817338950343453,
+      "record_file": "page-035.json"
+    },
+    {
+      "article": "69",
+      "page": 35,
+      "line_index": 47,
+      "text": "Điều 69. Thủ tục hải quan đối với phương tiện vận tải",
+      "confidence": 0.6441853621655811,
+      "record_file": "page-035.json"
+    },
+    {
+      "article": "70",
+      "page": 36,
+      "line_index": 46,
+      "text": "Điều 70.",
+      "confidence": 0.9922209894676774,
+      "record_file": "page-036.json"
+    },
+    {
+      "article": "71",
+      "page": 36,
+      "line_index": 60,
+      "text": "Điều 71. Vận",
+      "confidence": 0.8963044620231855,
+      "record_file": "page-036.json"
+    },
+    {
+      "article": "72",
+      "page": 37,
+      "line_index": 6,
+      "text": "Điều 72. Trách nhiệm của",
+      "confidence": 0.9455536558923483,
+      "record_file": "page-037.json"
+    },
+    {
+      "article": "73",
+      "page": 37,
+      "line_index": 28,
+      "text": "Điều 73. Nguyên tắc kiểm tra,",
+      "confidence": 0.6050788093400801,
+      "record_file": "page-037.json"
+    },
+    {
+      "article": "74",
+      "page": 37,
+      "line_index": 56,
+      "text": "Điều 74. Thủ tục đề nghị kiểm tra,",
+      "confidence": 0.7552130616893034,
+      "record_file": "page-037.json"
+    },
+    {
+      "article": "75",
+      "page": 38,
+      "line_index": 56,
+      "text": "Điều 75. Tiếp nhận, xử lý đơn đề nghị kiểm tra,",
+      "confidence": 0.8424206734581973,
+      "record_file": "page-038.json"
+    },
+    {
+      "article": "76",
+      "page": 39,
+      "line_index": 10,
+      "text": "Điều 76. Thủ tục tạm dừng làm thủ tục hải quan",
+      "confidence": 0.5581457142885199,
+      "record_file": "page-039.json"
+    },
+    {
+      "article": "77",
+      "page": 40,
+      "line_index": 26,
+      "text": "Điều 77. Kiểm tra sau",
+      "confidence": 0.8993610478887926,
+      "record_file": "page-040.json"
+    },
+    {
+      "article": "79",
+      "page": 41,
+      "line_index": 6,
+      "text": "Điều 79. Kiểm tra sau",
+      "confidence": 0.8306715619800855,
+      "record_file": "page-041.json"
+    },
+    {
+      "article": "80",
+      "page": 41,
+      "line_index": 59,
+      "text": "Điều 80. Kiểm tra sau",
+      "confidence": 0.9444005944895625,
+      "record_file": "page-041.json"
+    },
+    {
+      "article": "81",
+      "page": 42,
+      "line_index": 62,
+      "text": "Điều 81. Nhiệm vụ và",
+      "confidence": 0.8364497806519028,
+      "record_file": "page-042.json"
+    },
+    {
+      "article": "83",
+      "page": 44,
+      "line_index": 19,
+      "text": "Điều 83. Trách nhiệm của",
+      "confidence": 0.8539436827574126,
+      "record_file": "page-044.json"
+    },
+    {
+      "article": "84",
+      "page": 44,
+      "line_index": 32,
+      "text": "Điều 84. Trách nhiệm của cơ quan hải quan trong việc tổ chức thu",
+      "confidence": 0.7552144747694425,
+      "record_file": "page-044.json"
+    },
+    {
+      "article": "85",
+      "page": 45,
+      "line_index": 1,
+      "text": "Điều 85. Xác định mức thuế, thời điểm tính thuế, thời hạn nộp thuế",
+      "confidence": 0.6021332524048663,
+      "record_file": "page-045.json"
+    },
+    {
+      "article": "86",
+      "page": 45,
+      "line_index": 10,
+      "text": "Điều 86. Trị",
+      "confidence": 0.8606860123748299,
+      "record_file": "page-045.json"
+    },
+    {
+      "article": "87",
+      "page": 45,
+      "line_index": 34,
+      "text": "Điều 87. Nhiệm vụ của Hải quan trong phòng, chống buôn lậu, vận",
+      "confidence": 0.6845911753978651,
+      "record_file": "page-045.json"
+    },
+    {
+      "article": "88",
+      "page": 45,
+      "line_index": 42,
+      "text": "Điều 88. Phạm vi trách nhiệm phòng, chống buôn lậu, vận chuyển",
+      "confidence": 0.5635089598179569,
+      "record_file": "page-045.json"
+    },
+    {
+      "article": "89",
+      "page": 47,
+      "line_index": 1,
+      "text": "Điều 89. Thẩm quyền của cơ quan hải quan trong việc áp dụng các biện",
+      "confidence": 0.8719909654602892,
+      "record_file": "page-047.json"
+    },
+    {
+      "article": "90",
+      "page": 47,
+      "line_index": 54,
+      "text": "Điều 90. Thẩm quyền của cơ quan hải quan,",
+      "confidence": 0.7887585962466652,
+      "record_file": "page-047.json"
+    },
+    {
+      "article": "91",
+      "page": 48,
+      "line_index": 25,
+      "text": "Điều 91. Quyền và nghĩa vụ của tổ chức và cá nhân liên quan trong",
+      "confidence": 0.8795682669959826,
+      "record_file": "page-048.json"
+    },
+    {
+      "article": "92",
+      "page": 49,
+      "line_index": 5,
+      "text": "Điều 92, Trang bị và sử dụng trang thiết bị kỹ thuật; phương tiện phục",
+      "confidence": 0.5442311372737137,
+      "record_file": "page-049.json"
+    },
+    {
+      "article": "93",
+      "page": 49,
+      "line_index": 39,
+      "text": "Điều 93. Thông tin hải quan",
+      "confidence": 0.6367687156563542,
+      "record_file": "page-049.json"
+    },
+    {
+      "article": "94",
+      "page": 49,
+      "line_index": 49,
+      "text": "Điều 94. Hệ",
+      "confidence": 0.991551988802035,
+      "record_file": "page-049.json"
+    },
+    {
+      "article": "95",
+      "page": 50,
+      "line_index": 30,
+      "text": "Điều 95. Thu thập, cung cấp thông tin hải quan ở trong nước",
+      "confidence": 0.6391181597368253,
+      "record_file": "page-050.json"
+    },
+    {
+      "article": "96",
+      "page": 51,
+      "line_index": 17,
+      "text": "Điều 96. Thu thập",
+      "confidence": 0.9880414226985504,
+      "record_file": "page-051.json"
+    },
+    {
+      "article": "97",
+      "page": 51,
+      "line_index": 52,
+      "text": "Điều 97. Hoạt động thống kê",
+      "confidence": 0.8079536455588732,
+      "record_file": "page-051.json"
+    },
+    {
+      "article": "98",
+      "page": 52,
+      "line_index": 14,
+      "text": "Điều 98. Báo cáo thống kê",
+      "confidence": 0.6114799264428062,
+      "record_file": "page-052.json"
+    },
+    {
+      "article": "100",
+      "page": 52,
+      "line_index": 49,
+      "text": "Điều 100. Cơ quan quản lý nhà nước về hải quan",
+      "confidence": 0.9129977105229777,
+      "record_file": "page-052.json"
+    },
+    {
+      "article": "101",
+      "page": 53,
+      "line_index": 10,
+      "text": "Điều 101. Sửa đổi, bổ sung một số điều của Luật quản lý thuế số",
+      "confidence": 0.5565753574450317,
+      "record_file": "page-053.json"
+    },
+    {
+      "article": "102",
+      "page": 53,
+      "line_index": 47,
+      "text": "Điều 102. Sửa đổi, bổ sung một số điều của Luật xử lý vi phạm hành",
+      "confidence": 0.6665539557236543,
+      "record_file": "page-053.json"
+    },
+    {
+      "article": "103",
+      "page": 54,
+      "line_index": 20,
+      "text": "Điều 103. Hiệu Iực thi hành",
+      "confidence": 0.8858412288394539,
+      "record_file": "page-054.json"
+    },
+    {
+      "article": "104",
+      "page": 54,
+      "line_index": 24,
+      "text": "Điều 104. Quy định chi tiết",
+      "confidence": 0.7967783136685986,
+      "record_file": "page-054.json"
+    }
+  ],
+  "limitations": "Heuristic headings may be missing or refer to amendments; verify against original pages."
+}
