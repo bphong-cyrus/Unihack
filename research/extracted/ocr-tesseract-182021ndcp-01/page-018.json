@@ -1,0 +1,838 @@
+{
+  "document_id": "18/2021/NĐ-CP",
+  "source_file": "../../legal-sources/182021ndcp/01.pdf",
+  "source_sha256": "cb0bf16ab3ee6554929e0d9d2cc4f180f51b8ea10ddd30a37309353edeb050d8",
+  "page_count": 114,
+  "render_dpi": 150,
+  "engine": "Tesseract 5.5.4 (vie+eng; OEM 1; PSM 3)",
+  "review_status": "UNREVIEWED",
+  "tesseract_version": "5.5.4",
+  "languages": [
+    "vie",
+    "eng"
+  ],
+  "traineddata_sha256": {
+    "vie": "b6b49293d95d0b6dbd8780174627e82c75be957b6f4ed9862155540d6b00bb45",
+    "eng": "8280aed0782fe27257a68ea10fe7ef324ca0f8d85bd2fd145d1c2b560bcb66ba"
+  },
+  "ocr_engine_mode": 1,
+  "page_segmentation_mode": 3,
+  "thread_limit": 2,
+  "page": 18,
+  "lines": [
+    {
+      "bbox": [
+        [
+          661.0,
+          52.0
+        ],
+        [
+          685.0,
+          52.0
+        ],
+        [
+          685.0,
+          72.0
+        ],
+        [
+          661.0,
+          72.0
+        ]
+      ],
+      "text": "18",
+      "confidence": 0.9577681
+    },
+    {
+      "bbox": [
+        [
+          271.0,
+          135.0
+        ],
+        [
+          1135.0,
+          135.0
+        ],
+        [
+          1135.0,
+          176.0
+        ],
+        [
+          271.0,
+          176.0
+        ]
+      ],
+      "text": "8. Hồ sơ, thủ tục miễn thuế xuất khẩu đối với mặt hàng trầm hương được",
+      "confidence": 0.949796848125
+    },
+    {
+      "bbox": [
+        [
+          211.0,
+          169.0
+        ],
+        [
+          1135.0,
+          169.0
+        ],
+        [
+          1135.0,
+          204.0
+        ],
+        [
+          211.0,
+          204.0
+        ]
+      ],
+      "text": "sản xuất từ cây Dó bầu trồng và mặt hàng da trăn có nguồn gốc từ gây nuôi",
+      "confidence": 0.9566049188888889
+    },
+    {
+      "bbox": [
+        [
+          212.0,
+          209.0
+        ],
+        [
+          313.0,
+          209.0
+        ],
+        [
+          313.0,
+          230.0
+        ],
+        [
+          212.0,
+          230.0
+        ]
+      ],
+      "text": "sinh sản:",
+      "confidence": 0.96984543
+    },
+    {
+      "bbox": [
+        [
+          271.0,
+          263.0
+        ],
+        [
+          1136.0,
+          263.0
+        ],
+        [
+          1136.0,
+          303.0
+        ],
+        [
+          271.0,
+          303.0
+        ]
+      ],
+      "text": "Hồ sơ, thủ tục miễn thuế thực hiện theo quy định tại Điều 31 Nghị định",
+      "confidence": 0.96845912875
+    },
+    {
+      "bbox": [
+        [
+          211.0,
+          297.0
+        ],
+        [
+          1136.0,
+          297.0
+        ],
+        [
+          1136.0,
+          339.0
+        ],
+        [
+          211.0,
+          339.0
+        ]
+      ],
+      "text": "này. Đối với mặt hàng da trăn có nguồn gốc từ gây nuôi sinh sản, người nộp",
+      "confidence": 0.9274701411764705
+    },
+    {
+      "bbox": [
+        [
+          211.0,
+          331.0
+        ],
+        [
+          591.0,
+          331.0
+        ],
+        [
+          591.0,
+          364.0
+        ],
+        [
+          211.0,
+          364.0
+        ]
+      ],
+      "text": "thuế nộp thêm các chứng từ sau:",
+      "confidence": 0.9689243214285714
+    },
+    {
+      "bbox": [
+        [
+          272.0,
+          390.0
+        ],
+        [
+          1138.0,
+          390.0
+        ],
+        [
+          1138.0,
+          430.0
+        ],
+        [
+          272.0,
+          430.0
+        ]
+      ],
+      "text": "a) Giấy chứng nhận đăng ký trại nuôi sinh sản động vật hoang dã do cơ",
+      "confidence": 0.95467760125
+    },
+    {
+      "bbox": [
+        [
+          212.0,
+          423.0
+        ],
+        [
+          1137.0,
+          423.0
+        ],
+        [
+          1137.0,
+          464.0
+        ],
+        [
+          212.0,
+          464.0
+        ]
+      ],
+      "text": "quan Kiểm lâm địa phương hoặc cơ quan do Bộ Nông nghiệp và Phát triển",
+      "confidence": 0.9684738886666667
+    },
+    {
+      "bbox": [
+        [
+          211.0,
+          458.0
+        ],
+        [
+          1138.0,
+          458.0
+        ],
+        [
+          1138.0,
+          496.0
+        ],
+        [
+          211.0,
+          496.0
+        ]
+      ],
+      "text": "nông thôn chỉ định cap: 01 bản chụp, xuất trình bản chính trong lần xuất khẩu",
+      "confidence": 0.963961919375
+    },
+    {
+      "bbox": [
+        [
+          212.0,
+          491.0
+        ],
+        [
+          463.0,
+          491.0
+        ],
+        [
+          463.0,
+          522.0
+        ],
+        [
+          212.0,
+          522.0
+        ]
+      ],
+      "text": "đầu tiên dé đối chiều;",
+      "confidence": 0.947688598
+    },
+    {
+      "bbox": [
+        [
+          279.0,
+          550.0
+        ],
+        [
+          1137.0,
+          550.0
+        ],
+        [
+          1137.0,
+          590.0
+        ],
+        [
+          279.0,
+          590.0
+        ]
+      ],
+      "text": "b) Giấy xác nhận số lượng trăn được giết md có nguồn gốc từ gây nuôi",
+      "confidence": 0.95762711625
+    },
+    {
+      "bbox": [
+        [
+          212.0,
+          590.0
+        ],
+        [
+          1138.0,
+          590.0
+        ],
+        [
+          1138.0,
+          623.0
+        ],
+        [
+          212.0,
+          623.0
+        ]
+      ],
+      "text": "sinh sản do cơ quan Kiêm lâm địa phương xác nhận môi lân làm thủ tục xuất",
+      "confidence": 0.9448864829411765
+    },
+    {
+      "bbox": [
+        [
+          211.0,
+          623.0
+        ],
+        [
+          833.0,
+          623.0
+        ],
+        [
+          833.0,
+          650.0
+        ],
+        [
+          211.0,
+          650.0
+        ]
+      ],
+      "text": "khâu: 01 bản chụp, xuât trình bản chính đê đôi chiêu.",
+      "confidence": 0.956790340909091
+    },
+    {
+      "bbox": [
+        [
+          272.0,
+          677.0
+        ],
+        [
+          1136.0,
+          677.0
+        ],
+        [
+          1136.0,
+          716.0
+        ],
+        [
+          272.0,
+          716.0
+        ]
+      ],
+      "text": "9. Thủ tục miễn thuế đối với sản phẩm nông sản chưa qua chế biến do",
+      "confidence": 0.9662480206249999
+    },
+    {
+      "bbox": [
+        [
+          212.0,
+          716.0
+        ],
+        [
+          1035.0,
+          716.0
+        ],
+        [
+          1035.0,
+          744.0
+        ],
+        [
+          212.0,
+          744.0
+        ]
+      ],
+      "text": "phía Việt Nam ho trợ dau tư, trong tại Campuchia nhập khâu vê nước:",
+      "confidence": 0.9419047935714286
+    },
+    {
+      "bbox": [
+        [
+          272.0,
+          769.0
+        ],
+        [
+          1137.0,
+          769.0
+        ],
+        [
+          1137.0,
+          807.0
+        ],
+        [
+          272.0,
+          807.0
+        ]
+      ],
+      "text": "a) Hàng năm, người nộp thuế thông báo Danh mục hàng hoá nhập khẩu",
+      "confidence": 0.9613190792857143
+    },
+    {
+      "bbox": [
+        [
+          211.0,
+          802.0
+        ],
+        [
+          1137.0,
+          802.0
+        ],
+        [
+          1137.0,
+          847.0
+        ],
+        [
+          211.0,
+          847.0
+        ]
+      ],
+      "text": "miễn thuế thông qua Hệ thống xử lý dữ liệu điện tử cho Cục Hải quan tỉnh",
+      "confidence": 0.9670646794117647
+    },
+    {
+      "bbox": [
+        [
+          211.0,
+          834.0
+        ],
+        [
+          1137.0,
+          834.0
+        ],
+        [
+          1137.0,
+          876.0
+        ],
+        [
+          211.0,
+          876.0
+        ]
+      ],
+      "text": "tiếp giáp biên giới Campuchia. Trường hợp thông báo Danh mục miễn thuế",
+      "confidence": 0.9543108246153846
+    },
+    {
+      "bbox": [
+        [
+          211.0,
+          869.0
+        ],
+        [
+          1138.0,
+          869.0
+        ],
+        [
+          1138.0,
+          904.0
+        ],
+        [
+          211.0,
+          904.0
+        ]
+      ],
+      "text": "bằng giấy, người nộp thuế thông báo cho Cục Hải quan tỉnh tiếp giáp biên",
+      "confidence": 0.9686658213333333
+    },
+    {
+      "bbox": [
+        [
+          212.0,
+          904.0
+        ],
+        [
+          886.0,
+          904.0
+        ],
+        [
+          886.0,
+          937.0
+        ],
+        [
+          212.0,
+          937.0
+        ]
+      ],
+      "text": "giới Campuchia theo quy định tại Điều 30 Nghị định này.",
+      "confidence": 0.9670208390909092
+    },
+    {
+      "bbox": [
+        [
+          270.0,
+          962.0
+        ],
+        [
+          1136.0,
+          962.0
+        ],
+        [
+          1136.0,
+          1005.0
+        ],
+        [
+          270.0,
+          1005.0
+        ]
+      ],
+      "text": "Ngoài hồ sơ thông báo Danh mục hàng hoá nhập khẩu miễn thuế theo",
+      "confidence": 0.9676675964285714
+    },
+    {
+      "bbox": [
+        [
+          212.0,
+          995.0
+        ],
+        [
+          1136.0,
+          995.0
+        ],
+        [
+          1136.0,
+          1030.0
+        ],
+        [
+          212.0,
+          1030.0
+        ]
+      ],
+      "text": "quy định tại khoản 3 Điều 30 Nghị định này, người nộp thuế là doanh nghiệp",
+      "confidence": 0.968080405625
+    },
+    {
+      "bbox": [
+        [
+          211.0,
+          1034.0
+        ],
+        [
+          532.0,
+          1034.0
+        ],
+        [
+          532.0,
+          1061.0
+        ],
+        [
+          211.0,
+          1061.0
+        ]
+      ],
+      "text": "nộp thêm các chứng từ sau:",
+      "confidence": 0.9682328916666666
+    },
+    {
+      "bbox": [
+        [
+          271.0,
+          1088.0
+        ],
+        [
+          1135.0,
+          1088.0
+        ],
+        [
+          1135.0,
+          1122.0
+        ],
+        [
+          271.0,
+          1122.0
+        ]
+      ],
+      "text": "Văn bản xác nhận cho phép đầu tư của cơ quan có thẩm quyền tại",
+      "confidence": 0.9643743193333333
+    },
+    {
+      "bbox": [
+        [
+          211.0,
+          1122.0
+        ],
+        [
+          1135.0,
+          1122.0
+        ],
+        [
+          1135.0,
+          1158.0
+        ],
+        [
+          211.0,
+          1158.0
+        ]
+      ],
+      "text": "Campuchia nơi doanh nghiệp Việt Nam đầu tư: 01 bản chụp kèm 01 bản dịch",
+      "confidence": 0.9666777453333334
+    },
+    {
+      "bbox": [
+        [
+          210.0,
+          1155.0
+        ],
+        [
+          810.0,
+          1155.0
+        ],
+        [
+          810.0,
+          1188.0
+        ],
+        [
+          210.0,
+          1188.0
+        ]
+      ],
+      "text": "tiếng Việt có đóng dấu xác nhận của doanh nghiệp;",
+      "confidence": 0.967735648
+    },
+    {
+      "bbox": [
+        [
+          270.0,
+          1213.0
+        ],
+        [
+          1136.0,
+          1213.0
+        ],
+        [
+          1136.0,
+          1253.0
+        ],
+        [
+          270.0,
+          1253.0
+        ]
+      ],
+      "text": "Hợp đồng hoặc Thoả thuận ký kết với phía Campuchia về việc hỗ trợ",
+      "confidence": 0.9411327578571429
+    },
+    {
+      "bbox": [
+        [
+          211.0,
+          1246.0
+        ],
+        [
+          1135.0,
+          1246.0
+        ],
+        [
+          1135.0,
+          1285.0
+        ],
+        [
+          211.0,
+          1285.0
+        ]
+      ],
+      "text": "đầu tư, trồng và nhận lại nông sản, trong đó ghi rõ sô tiền, hàng đầu tư vào",
+      "confidence": 0.9510395522222223
+    },
+    {
+      "bbox": [
+        [
+          210.0,
+          1281.0
+        ],
+        [
+          1136.0,
+          1281.0
+        ],
+        [
+          1136.0,
+          1314.0
+        ],
+        [
+          210.0,
+          1314.0
+        ]
+      ],
+      "text": "từng lĩnh vực và tương ứng là số lượng, chủng loại, trị giá từng loại nông sản",
+      "confidence": 0.9650929176470587
+    },
+    {
+      "bbox": [
+        [
+          210.0,
+          1310.0
+        ],
+        [
+          1019.0,
+          1310.0
+        ],
+        [
+          1019.0,
+          1347.0
+        ],
+        [
+          210.0,
+          1347.0
+        ]
+      ],
+      "text": "sẽ thu hoạch được: 01 bản chụp và xuất trình bản chính dé đối chiếu;",
+      "confidence": 0.9602383719999998
+    },
+    {
+      "bbox": [
+        [
+          269.0,
+          1372.0
+        ],
+        [
+          1135.0,
+          1372.0
+        ],
+        [
+          1135.0,
+          1413.0
+        ],
+        [
+          269.0,
+          1413.0
+        ]
+      ],
+      "text": "Chứng từ liên quan đến việc hỗ trợ đầu tư, trồng nông sản tại các tỉnh",
+      "confidence": 0.9665450706250001
+    },
+    {
+      "bbox": [
+        [
+          210.0,
+          1406.0
+        ],
+        [
+          1136.0,
+          1406.0
+        ],
+        [
+          1136.0,
+          1445.0
+        ],
+        [
+          210.0,
+          1445.0
+        ]
+      ],
+      "text": "của Campuchia tiếp giáp biên giới Việt Nam (nếu có): 01 bản chụp và xuất",
+      "confidence": 0.9649814513333334
+    },
+    {
+      "bbox": [
+        [
+          210.0,
+          1439.0
+        ],
+        [
+          886.0,
+          1439.0
+        ],
+        [
+          886.0,
+          1472.0
+        ],
+        [
+          210.0,
+          1472.0
+        ]
+      ],
+      "text": "trình bản chính trong lần nhập khẩu đầu tiên để đối chiều.",
+      "confidence": 0.9501124141666668
+    },
+    {
+      "bbox": [
+        [
+          269.0,
+          1498.0
+        ],
+        [
+          1134.0,
+          1498.0
+        ],
+        [
+          1134.0,
+          1537.0
+        ],
+        [
+          269.0,
+          1537.0
+        ]
+      ],
+      "text": "b) Trên cơ sở Danh mục hàng hoá nhập khẩu miễn thuế đã thông báo cho",
+      "confidence": 0.96592836375
+    },
+    {
+      "bbox": [
+        [
+          210.0,
+          1531.0
+        ],
+        [
+          1135.0,
+          1531.0
+        ],
+        [
+          1135.0,
+          1568.0
+        ],
+        [
+          210.0,
+          1568.0
+        ]
+      ],
+      "text": "cơ quan hải quan, người nộp thuế thực hiện thủ tục miễn thuế đối với hàng",
+      "confidence": 0.96868495125
+    },
+    {
+      "bbox": [
+        [
+          209.0,
+          1564.0
+        ],
+        [
+          866.0,
+          1564.0
+        ],
+        [
+          866.0,
+          1598.0
+        ],
+        [
+          209.0,
+          1598.0
+        ]
+      ],
+      "text": "hoá nhập khẩu theo quy định tại Điều 31 Nghị định này.",
+      "confidence": 0.9648784124999998
+    }
+  ]
+}

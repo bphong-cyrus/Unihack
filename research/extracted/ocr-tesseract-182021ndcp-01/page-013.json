@@ -1,0 +1,904 @@
+{
+  "document_id": "18/2021/NĐ-CP",
+  "source_file": "../../legal-sources/182021ndcp/01.pdf",
+  "source_sha256": "cb0bf16ab3ee6554929e0d9d2cc4f180f51b8ea10ddd30a37309353edeb050d8",
+  "page_count": 114,
+  "render_dpi": 150,
+  "engine": "Tesseract 5.5.4 (vie+eng; OEM 1; PSM 3)",
+  "review_status": "UNREVIEWED",
+  "tesseract_version": "5.5.4",
+  "languages": [
+    "vie",
+    "eng"
+  ],
+  "traineddata_sha256": {
+    "vie": "b6b49293d95d0b6dbd8780174627e82c75be957b6f4ed9862155540d6b00bb45",
+    "eng": "8280aed0782fe27257a68ea10fe7ef324ca0f8d85bd2fd145d1c2b560bcb66ba"
+  },
+  "ocr_engine_mode": 1,
+  "page_segmentation_mode": 3,
+  "thread_limit": 2,
+  "page": 13,
+  "lines": [
+    {
+      "bbox": [
+        [
+          663.0,
+          43.0
+        ],
+        [
+          686.0,
+          43.0
+        ],
+        [
+          686.0,
+          63.0
+        ],
+        [
+          663.0,
+          63.0
+        ]
+      ],
+      "text": "13",
+      "confidence": 0.96667282
+    },
+    {
+      "bbox": [
+        [
+          272.0,
+          126.0
+        ],
+        [
+          1137.0,
+          126.0
+        ],
+        [
+          1137.0,
+          165.0
+        ],
+        [
+          272.0,
+          165.0
+        ]
+      ],
+      "text": "e) Lượng hàng hóa nhập khẩu được sử dụng để sản xuất sản phẩm xuất",
+      "confidence": 0.9591522579999999
+    },
+    {
+      "bbox": [
+        [
+          212.0,
+          158.0
+        ],
+        [
+          1138.0,
+          158.0
+        ],
+        [
+          1138.0,
+          199.0
+        ],
+        [
+          212.0,
+          199.0
+        ]
+      ],
+      "text": "khẩu tại chỗ được miễn thuế nhập khẩu là lượng hàng hóa thực tê được sử",
+      "confidence": 0.945721893125
+    },
+    {
+      "bbox": [
+        [
+          212.0,
+          192.0
+        ],
+        [
+          1136.0,
+          192.0
+        ],
+        [
+          1136.0,
+          232.0
+        ],
+        [
+          212.0,
+          232.0
+        ]
+      ],
+      "text": "dụng để san xuất sản phẩm đã xuất khẩu tại chỗ, nếu người xuất khẩu tại chỗ",
+      "confidence": 0.9066089223529411
+    },
+    {
+      "bbox": [
+        [
+          211.0,
+          232.0
+        ],
+        [
+          1138.0,
+          232.0
+        ],
+        [
+          1138.0,
+          267.0
+        ],
+        [
+          211.0,
+          267.0
+        ]
+      ],
+      "text": "thực hiện thông báo cho cơ quan hai quan thông tin về tờ khai hải quan của",
+      "confidence": 0.9595364917647058
+    },
+    {
+      "bbox": [
+        [
+          213.0,
+          260.0
+        ],
+        [
+          1139.0,
+          260.0
+        ],
+        [
+          1139.0,
+          305.0
+        ],
+        [
+          213.0,
+          305.0
+        ]
+      ],
+      "text": "sản phẩm nhập khẩu tại chỗ tương ứng đã hoàn thành thủ tục nhập khẩu trong",
+      "confidence": 0.959193549375
+    },
+    {
+      "bbox": [
+        [
+          212.0,
+          295.0
+        ],
+        [
+          1139.0,
+          295.0
+        ],
+        [
+          1139.0,
+          333.0
+        ],
+        [
+          212.0,
+          333.0
+        ]
+      ],
+      "text": "thời hạn 15 ngày, kể từ ngày thông quan sản phẩm xuất khẩu tại chỗ theo Mẫu",
+      "confidence": 0.9413132829411766
+    },
+    {
+      "bbox": [
+        [
+          213.0,
+          328.0
+        ],
+        [
+          832.0,
+          328.0
+        ],
+        [
+          832.0,
+          363.0
+        ],
+        [
+          213.0,
+          363.0
+        ]
+      ],
+      "text": "số 22 Phụ lục VII ban hành kèm theo Nghị định này.",
+      "confidence": 0.95921554
+    },
+    {
+      "bbox": [
+        [
+          272.0,
+          388.0
+        ],
+        [
+          1140.0,
+          388.0
+        ],
+        [
+          1140.0,
+          422.0
+        ],
+        [
+          272.0,
+          422.0
+        ]
+      ],
+      "text": "Quá thời hạn nêu trên, người xuất khẩu tại chỗ không thông báo cho cơ",
+      "confidence": 0.9658624533333334
+    },
+    {
+      "bbox": [
+        [
+          213.0,
+          422.0
+        ],
+        [
+          1139.0,
+          422.0
+        ],
+        [
+          1139.0,
+          466.0
+        ],
+        [
+          213.0,
+          466.0
+        ]
+      ],
+      "text": "quan hải quan thông tin tờ khai hải quan của sản phẩm nhập khẩu tại chỗ",
+      "confidence": 0.965210531875
+    },
+    {
+      "bbox": [
+        [
+          212.0,
+          456.0
+        ],
+        [
+          1139.0,
+          456.0
+        ],
+        [
+          1139.0,
+          495.0
+        ],
+        [
+          212.0,
+          495.0
+        ]
+      ],
+      "text": "tương ứng đã hoàn thành thủ tục nhập khẩu, người xuất khâu tại chỗ phải",
+      "confidence": 0.9659698166666666
+    },
+    {
+      "bbox": [
+        [
+          212.0,
+          490.0
+        ],
+        [
+          1139.0,
+          490.0
+        ],
+        [
+          1139.0,
+          530.0
+        ],
+        [
+          212.0,
+          530.0
+        ]
+      ],
+      "text": "đăng ký tờ khai hải quan mới và kê khai, nộp thuế đối với hàng hóa nhập",
+      "confidence": 0.9593634388235295
+    },
+    {
+      "bbox": [
+        [
+          211.0,
+          523.0
+        ],
+        [
+          1140.0,
+          523.0
+        ],
+        [
+          1140.0,
+          557.0
+        ],
+        [
+          211.0,
+          557.0
+        ]
+      ],
+      "text": "khẩu đã sử dụng để sản xuất sản phẩm xuất khẩu tại chỗ theo mức thuế suất",
+      "confidence": 0.9648387729411764
+    },
+    {
+      "bbox": [
+        [
+          211.0,
+          557.0
+        ],
+        [
+          1140.0,
+          557.0
+        ],
+        [
+          1140.0,
+          591.0
+        ],
+        [
+          211.0,
+          591.0
+        ]
+      ],
+      "text": "và trị giá tính thuế của hàng hóa nhập khẩu quy định tại thời điểm đăng ký tờ",
+      "confidence": 0.9690270522222222
+    },
+    {
+      "bbox": [
+        [
+          212.0,
+          597.0
+        ],
+        [
+          429.0,
+          597.0
+        ],
+        [
+          429.0,
+          624.0
+        ],
+        [
+          212.0,
+          624.0
+        ]
+      ],
+      "text": "khai hải quan mới.",
+      "confidence": 0.9699269125000001
+    },
+    {
+      "bbox": [
+        [
+          272.0,
+          650.0
+        ],
+        [
+          1141.0,
+          650.0
+        ],
+        [
+          1141.0,
+          684.0
+        ],
+        [
+          272.0,
+          684.0
+        ]
+      ],
+      "text": "Sau khi nộp thuế, người xuất khẩu tại chỗ thực hiện thông báo cho cơ",
+      "confidence": 0.9652692933333333
+    },
+    {
+      "bbox": [
+        [
+          212.0,
+          684.0
+        ],
+        [
+          1139.0,
+          684.0
+        ],
+        [
+          1139.0,
+          717.0
+        ],
+        [
+          212.0,
+          717.0
+        ]
+      ],
+      "text": "quan hải quan thông tin về tờ khai hải quan của sản phẩm nhập khẩu tại chỗ",
+      "confidence": 0.966783254117647
+    },
+    {
+      "bbox": [
+        [
+          211.0,
+          718.0
+        ],
+        [
+          1139.0,
+          718.0
+        ],
+        [
+          1139.0,
+          751.0
+        ],
+        [
+          211.0,
+          751.0
+        ]
+      ],
+      "text": "tương ứng đã hoàn thành thủ tục nhập khẩu thì được xử lý số tiền thuế đã nộp",
+      "confidence": 0.95234647
+    },
+    {
+      "bbox": [
+        [
+          211.0,
+          752.0
+        ],
+        [
+          1022.0,
+          752.0
+        ],
+        [
+          1022.0,
+          785.0
+        ],
+        [
+          211.0,
+          785.0
+        ]
+      ],
+      "text": "theo quy định của pháp luật quản lý thuế về xử lý tiền thuế nộp thừa.",
+      "confidence": 0.966686750625
+    },
+    {
+      "bbox": [
+        [
+          271.0,
+          809.0
+        ],
+        [
+          1138.0,
+          809.0
+        ],
+        [
+          1138.0,
+          849.0
+        ],
+        [
+          271.0,
+          849.0
+        ]
+      ],
+      "text": "g) Sản phẩm xuất khẩu tại chỗ không được miễn thuế xuất khẩu. Người",
+      "confidence": 0.9619877578571427
+    },
+    {
+      "bbox": [
+        [
+          211.0,
+          843.0
+        ],
+        [
+          1139.0,
+          843.0
+        ],
+        [
+          1139.0,
+          887.0
+        ],
+        [
+          211.0,
+          887.0
+        ]
+      ],
+      "text": "xuất khẩu tại chỗ đăng ký tờ khai hải quan xuất khẩu tại chỗ và kê khai nộp",
+      "confidence": 0.9643532916666667
+    },
+    {
+      "bbox": [
+        [
+          211.0,
+          876.0
+        ],
+        [
+          1138.0,
+          876.0
+        ],
+        [
+          1138.0,
+          916.0
+        ],
+        [
+          211.0,
+          916.0
+        ]
+      ],
+      "text": "thuế xuất khẩu theo mức thuế suất và trị giá của sản phẩm xuất khẩu tại chỗ",
+      "confidence": 0.9678063105882353
+    },
+    {
+      "bbox": [
+        [
+          211.0,
+          910.0
+        ],
+        [
+          1046.0,
+          910.0
+        ],
+        [
+          1046.0,
+          944.0
+        ],
+        [
+          211.0,
+          944.0
+        ]
+      ],
+      "text": "theo quy định tại thời điểm đăng ký tờ khai hải quan xuất khâu tại chỗ.",
+      "confidence": 0.94741705375
+    },
+    {
+      "bbox": [
+        [
+          271.0,
+          969.0
+        ],
+        [
+          1139.0,
+          969.0
+        ],
+        [
+          1139.0,
+          1003.0
+        ],
+        [
+          271.0,
+          1003.0
+        ]
+      ],
+      "text": "h) Sản phẩm nhập khẩu tại chỗ đăng ký tờ khai hải quan theo loại hình",
+      "confidence": 0.964252475625
+    },
+    {
+      "bbox": [
+        [
+          211.0,
+          1003.0
+        ],
+        [
+          1138.0,
+          1003.0
+        ],
+        [
+          1138.0,
+          1041.0
+        ],
+        [
+          211.0,
+          1041.0
+        ]
+      ],
+      "text": "nhập gia công được miễn thuế nhập khẩu nếu người nhập khẩu tại chỗ đáp",
+      "confidence": 0.9647292746666668
+    },
+    {
+      "bbox": [
+        [
+          211.0,
+          1036.0
+        ],
+        [
+          1138.0,
+          1036.0
+        ],
+        [
+          1138.0,
+          1076.0
+        ],
+        [
+          211.0,
+          1076.0
+        ]
+      ],
+      "text": "ứng quy định tại điểm a, b khoản 2 Điều 10 Nghị định này. Sản phẩm nhập",
+      "confidence": 0.9621913552941177
+    },
+    {
+      "bbox": [
+        [
+          211.0,
+          1069.0
+        ],
+        [
+          1139.0,
+          1069.0
+        ],
+        [
+          1139.0,
+          1109.0
+        ],
+        [
+          211.0,
+          1109.0
+        ]
+      ],
+      "text": "khâu tại chỗ đăng ký tờ khai hải quan theo loại hình khác thì người nhập khẩu",
+      "confidence": 0.9540200035294117
+    },
+    {
+      "bbox": [
+        [
+          211.0,
+          1103.0
+        ],
+        [
+          1138.0,
+          1103.0
+        ],
+        [
+          1138.0,
+          1136.0
+        ],
+        [
+          211.0,
+          1136.0
+        ]
+      ],
+      "text": "tại chỗ kê khai, nộp thuế theo mức thuế suất và trị giá tính thuê của sản phẩm",
+      "confidence": 0.9570686561111111
+    },
+    {
+      "bbox": [
+        [
+          211.0,
+          1135.0
+        ],
+        [
+          685.0,
+          1135.0
+        ],
+        [
+          685.0,
+          1168.0
+        ],
+        [
+          211.0,
+          1168.0
+        ]
+      ],
+      "text": "nhập khẩu tại thời điểm đăng ký tờ khai.",
+      "confidence": 0.9616774911111111
+    },
+    {
+      "bbox": [
+        [
+          270.0,
+          1190.0
+        ],
+        [
+          1137.0,
+          1190.0
+        ],
+        [
+          1137.0,
+          1232.0
+        ],
+        [
+          270.0,
+          1232.0
+        ]
+      ],
+      "text": "Trường hợp người nhập khẩu tại chỗ đã nộp thuế nhập khẩu hàng hóa đề",
+      "confidence": 0.9578430593333332
+    },
+    {
+      "bbox": [
+        [
+          211.0,
+          1222.0
+        ],
+        [
+          1138.0,
+          1222.0
+        ],
+        [
+          1138.0,
+          1268.0
+        ],
+        [
+          211.0,
+          1268.0
+        ]
+      ],
+      "text": "sản xuất, kinh doanh, đã đưa sản phẩm nhập khẩu tại chỗ vào sản xuất hàng",
+      "confidence": 0.9674192956250001
+    },
+    {
+      "bbox": [
+        [
+          210.0,
+          1259.0
+        ],
+        [
+          1138.0,
+          1259.0
+        ],
+        [
+          1138.0,
+          1294.0
+        ],
+        [
+          210.0,
+          1294.0
+        ]
+      ],
+      "text": "hóa xuất khẩu và thực tế đã xuất khẩu sản phẩm ra nước ngoài hoặc vào khu",
+      "confidence": 0.9675360729411764
+    },
+    {
+      "bbox": [
+        [
+          210.0,
+          1293.0
+        ],
+        [
+          1136.0,
+          1293.0
+        ],
+        [
+          1136.0,
+          1328.0
+        ],
+        [
+          210.0,
+          1328.0
+        ]
+      ],
+      "text": "phi thuế quan thì được hoàn thuế nhập khẩu đã nộp theo quy định tại Điều 36",
+      "confidence": 0.9675650299999999
+    },
+    {
+      "bbox": [
+        [
+          209.0,
+          1333.0
+        ],
+        [
+          383.0,
+          1333.0
+        ],
+        [
+          383.0,
+          1360.0
+        ],
+        [
+          209.0,
+          1360.0
+        ]
+      ],
+      "text": "Nghị định này.",
+      "confidence": 0.9638180299999999
+    },
+    {
+      "bbox": [
+        [
+          270.0,
+          1380.0
+        ],
+        [
+          1136.0,
+          1380.0
+        ],
+        [
+          1136.0,
+          1421.0
+        ],
+        [
+          270.0,
+          1421.0
+        ]
+      ],
+      "text": "3. Hồ sơ, thủ tục miễn thuế thực hiện theo quy định tại Điều 31 Nghị",
+      "confidence": 0.9685706374999999
+    },
+    {
+      "bbox": [
+        [
+          210.0,
+          1426.0
+        ],
+        [
+          316.0,
+          1426.0
+        ],
+        [
+          316.0,
+          1453.0
+        ],
+        [
+          210.0,
+          1453.0
+        ]
+      ],
+      "text": "định này.",
+      "confidence": 0.964761775
+    },
+    {
+      "bbox": [
+        [
+          269.0,
+          1480.0
+        ],
+        [
+          1136.0,
+          1480.0
+        ],
+        [
+          1136.0,
+          1520.0
+        ],
+        [
+          269.0,
+          1520.0
+        ]
+      ],
+      "text": "Khi làm thủ tục xuất khẩu tại chỗ đối với hàng hóa quy định tại Điều",
+      "confidence": 0.9644077631250001
+    },
+    {
+      "bbox": [
+        [
+          209.0,
+          1514.0
+        ],
+        [
+          1135.0,
+          1514.0
+        ],
+        [
+          1135.0,
+          1552.0
+        ],
+        [
+          209.0,
+          1552.0
+        ]
+      ],
+      "text": "này, ngoài hồ sơ miễn thuế theo quy định tại Điều 31 Nghị định này, người",
+      "confidence": 0.96844306375
+    },
+    {
+      "bbox": [
+        [
+          209.0,
+          1547.0
+        ],
+        [
+          1163.0,
+          1547.0
+        ],
+        [
+          1163.0,
+          1587.0
+        ],
+        [
+          209.0,
+          1587.0
+        ]
+      ],
+      "text": "xuất khẩu tại chỗ phải nộp thêm văn bản chỉ định giao hàng hoá tại Việt Nam ..",
+      "confidence": 0.9626660672222223
+    },
+    {
+      "bbox": [
+        [
+          209.0,
+          1582.0
+        ],
+        [
+          754.0,
+          1582.0
+        ],
+        [
+          754.0,
+          1616.0
+        ],
+        [
+          209.0,
+          1616.0
+        ]
+      ],
+      "text": "của tổ chức, cá nhân nước ngoài: 01 bản chụp.",
+      "confidence": 0.964427749
+    }
+  ]
+}

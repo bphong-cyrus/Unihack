@@ -1,0 +1,354 @@
+{
+  "document_id": "18/2021/NĐ-CP",
+  "source_file": "../../legal-sources/182021ndcp/01.pdf",
+  "source_sha256": "cb0bf16ab3ee6554929e0d9d2cc4f180f51b8ea10ddd30a37309353edeb050d8",
+  "page_count": 114,
+  "render_dpi": 150,
+  "engine": "Tesseract 5.5.4 (vie+eng; OEM 1; PSM 3)",
+  "review_status": "UNREVIEWED",
+  "tesseract_version": "5.5.4",
+  "languages": [
+    "vie",
+    "eng"
+  ],
+  "traineddata_sha256": {
+    "vie": "b6b49293d95d0b6dbd8780174627e82c75be957b6f4ed9862155540d6b00bb45",
+    "eng": "8280aed0782fe27257a68ea10fe7ef324ca0f8d85bd2fd145d1c2b560bcb66ba"
+  },
+  "ocr_engine_mode": 1,
+  "page_segmentation_mode": 3,
+  "thread_limit": 2,
+  "page": 91,
+  "lines": [
+    {
+      "bbox": [
+        [
+          657.0,
+          18.0
+        ],
+        [
+          683.0,
+          18.0
+        ],
+        [
+          683.0,
+          38.0
+        ],
+        [
+          657.0,
+          38.0
+        ]
+      ],
+      "text": "52",
+      "confidence": 0.9327565800000001
+    },
+    {
+      "bbox": [
+        [
+          570.0,
+          119.0
+        ],
+        [
+          771.0,
+          119.0
+        ],
+        [
+          771.0,
+          140.0
+        ],
+        [
+          570.0,
+          140.0
+        ]
+      ],
+      "text": "INSTRUCTION",
+      "confidence": 0.91332718
+    },
+    {
+      "bbox": [
+        [
+          322.0,
+          198.0
+        ],
+        [
+          1139.0,
+          198.0
+        ],
+        [
+          1139.0,
+          224.0
+        ],
+        [
+          322.0,
+          224.0
+        ]
+      ],
+      "text": "1. The quota book is also used when the user of the quota book (the",
+      "confidence": 0.934823222
+    },
+    {
+      "bbox": [
+        [
+          260.0,
+          231.0
+        ],
+        [
+          1139.0,
+          231.0
+        ],
+        [
+          1139.0,
+          258.0
+        ],
+        [
+          260.0,
+          258.0
+        ]
+      ],
+      "text": "person to whom the quota book is issued) imports commodities by",
+      "confidence": 0.9253204263636364
+    },
+    {
+      "bbox": [
+        [
+          260.0,
+          263.0
+        ],
+        [
+          1140.0,
+          263.0
+        ],
+        [
+          1140.0,
+          291.0
+        ],
+        [
+          260.0,
+          291.0
+        ]
+      ],
+      "text": "himself/herself or authorizes the other to import commodities into Viet",
+      "confidence": 0.95599237
+    },
+    {
+      "bbox": [
+        [
+          260.0,
+          298.0
+        ],
+        [
+          323.0,
+          298.0
+        ],
+        [
+          323.0,
+          318.0
+        ],
+        [
+          260.0,
+          318.0
+        ]
+      ],
+      "text": "Nam.",
+      "confidence": 0.9462052900000001
+    },
+    {
+      "bbox": [
+        [
+          321.0,
+          342.0
+        ],
+        [
+          1138.0,
+          342.0
+        ],
+        [
+          1138.0,
+          370.0
+        ],
+        [
+          321.0,
+          370.0
+        ]
+      ],
+      "text": "2. If the book is lost, the user is requested to inform immediately to",
+      "confidence": 0.9583379528571428
+    },
+    {
+      "bbox": [
+        [
+          261.0,
+          375.0
+        ],
+        [
+          1022.0,
+          375.0
+        ],
+        [
+          1022.0,
+          403.0
+        ],
+        [
+          261.0,
+          403.0
+        ]
+      ],
+      "text": "the Provincial or Municipal Customs Department issues the book.",
+      "confidence": 0.9651819266666667
+    },
+    {
+      "bbox": [
+        [
+          322.0,
+          421.0
+        ],
+        [
+          1140.0,
+          421.0
+        ],
+        [
+          1140.0,
+          449.0
+        ],
+        [
+          322.0,
+          449.0
+        ]
+      ],
+      "text": "3. When completing the mission term, the user should return the quota",
+      "confidence": 0.9656438058333333
+    },
+    {
+      "bbox": [
+        [
+          262.0,
+          454.0
+        ],
+        [
+          1116.0,
+          454.0
+        ],
+        [
+          1116.0,
+          482.0
+        ],
+        [
+          262.0,
+          482.0
+        ]
+      ],
+      "text": "book to the Provincial or Municipal Customs Department issues the book.",
+      "confidence": 0.9660124481818183
+    },
+    {
+      "bbox": [
+        [
+          321.0,
+          499.0
+        ],
+        [
+          1139.0,
+          499.0
+        ],
+        [
+          1139.0,
+          528.0
+        ],
+        [
+          321.0,
+          528.0
+        ]
+      ],
+      "text": "4. This book includes 6 pages, is numbered from 1 to 6 (except for the",
+      "confidence": 0.9611052240000001
+    },
+    {
+      "bbox": [
+        [
+          263.0,
+          533.0
+        ],
+        [
+          967.0,
+          533.0
+        ],
+        [
+          967.0,
+          561.0
+        ],
+        [
+          263.0,
+          561.0
+        ]
+      ],
+      "text": "cover page) and printed on A5 size; the cover page is orange.",
+      "confidence": 0.9660865141666666
+    },
+    {
+      "bbox": [
+        [
+          322.0,
+          578.0
+        ],
+        [
+          1101.0,
+          578.0
+        ],
+        [
+          1101.0,
+          606.0
+        ],
+        [
+          322.0,
+          606.0
+        ]
+      ],
+      "text": "5. This book is attached with stamps of alcohol, beer and cigarettes.",
+      "confidence": 0.9288556658333335
+    },
+    {
+      "bbox": [
+        [
+          321.0,
+          623.0
+        ],
+        [
+          1139.0,
+          623.0
+        ],
+        [
+          1139.0,
+          651.0
+        ],
+        [
+          321.0,
+          651.0
+        ]
+      ],
+      "text": "6. The Ministry of Finance prints, issues, manages and uses the quota",
+      "confidence": 0.9311945541666666
+    },
+    {
+      "bbox": [
+        [
+          262.0,
+          655.0
+        ],
+        [
+          326.0,
+          655.0
+        ],
+        [
+          326.0,
+          676.0
+        ],
+        [
+          262.0,
+          676.0
+        ]
+      ],
+      "text": "book.",
+      "confidence": 0.9247468600000001
+    }
+  ]
+}

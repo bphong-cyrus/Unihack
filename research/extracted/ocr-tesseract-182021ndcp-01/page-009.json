@@ -1,0 +1,816 @@
+{
+  "document_id": "18/2021/NĐ-CP",
+  "source_file": "../../legal-sources/182021ndcp/01.pdf",
+  "source_sha256": "cb0bf16ab3ee6554929e0d9d2cc4f180f51b8ea10ddd30a37309353edeb050d8",
+  "page_count": 114,
+  "render_dpi": 150,
+  "engine": "Tesseract 5.5.4 (vie+eng; OEM 1; PSM 3)",
+  "review_status": "UNREVIEWED",
+  "tesseract_version": "5.5.4",
+  "languages": [
+    "vie",
+    "eng"
+  ],
+  "traineddata_sha256": {
+    "vie": "b6b49293d95d0b6dbd8780174627e82c75be957b6f4ed9862155540d6b00bb45",
+    "eng": "8280aed0782fe27257a68ea10fe7ef324ca0f8d85bd2fd145d1c2b560bcb66ba"
+  },
+  "ocr_engine_mode": 1,
+  "page_segmentation_mode": 3,
+  "thread_limit": 2,
+  "page": 9,
+  "lines": [
+    {
+      "bbox": [
+        [
+          273.0,
+          123.0
+        ],
+        [
+          1139.0,
+          123.0
+        ],
+        [
+          1139.0,
+          166.0
+        ],
+        [
+          273.0,
+          166.0
+        ]
+      ],
+      "text": "Trường hợp người nhập khẩu tại chỗ đã nộp thuế nhập khẩu hàng hóa đề",
+      "confidence": 0.9337439006666667
+    },
+    {
+      "bbox": [
+        [
+          214.0,
+          155.0
+        ],
+        [
+          1140.0,
+          155.0
+        ],
+        [
+          1140.0,
+          201.0
+        ],
+        [
+          214.0,
+          201.0
+        ]
+      ],
+      "text": "sản xuất, kinh doanh và đưa sản phẩm nhập khẩu tại chỗ vào sản xuất hàng",
+      "confidence": 0.96583753625
+    },
+    {
+      "bbox": [
+        [
+          214.0,
+          193.0
+        ],
+        [
+          1140.0,
+          193.0
+        ],
+        [
+          1140.0,
+          227.0
+        ],
+        [
+          214.0,
+          227.0
+        ]
+      ],
+      "text": "hóa xuất khẩu và thực tế đã xuất khẩu sản phẩm ra nước ngoài hoặc vào khu",
+      "confidence": 0.96767624
+    },
+    {
+      "bbox": [
+        [
+          213.0,
+          227.0
+        ],
+        [
+          1140.0,
+          227.0
+        ],
+        [
+          1140.0,
+          262.0
+        ],
+        [
+          213.0,
+          262.0
+        ]
+      ],
+      "text": "phi thuế quan thì được hoàn thuế nhập khẩu đã nộp theo quy định tại Điều 36",
+      "confidence": 0.9684972923529412
+    },
+    {
+      "bbox": [
+        [
+          213.0,
+          267.0
+        ],
+        [
+          386.0,
+          267.0
+        ],
+        [
+          386.0,
+          294.0
+        ],
+        [
+          213.0,
+          294.0
+        ]
+      ],
+      "text": "Nghị định này.",
+      "confidence": 0.9633263666666666
+    },
+    {
+      "bbox": [
+        [
+          273.0,
+          321.0
+        ],
+        [
+          1140.0,
+          321.0
+        ],
+        [
+          1140.0,
+          361.0
+        ],
+        [
+          273.0,
+          361.0
+        ]
+      ],
+      "text": "4. Phế liệu, phế phẩm tạo thành trong quá trình gia công khi chuyển tiêu",
+      "confidence": 0.957750452
+    },
+    {
+      "bbox": [
+        [
+          214.0,
+          352.0
+        ],
+        [
+          1140.0,
+          352.0
+        ],
+        [
+          1140.0,
+          399.0
+        ],
+        [
+          214.0,
+          399.0
+        ]
+      ],
+      "text": "thụ nội địa được miễn thuế nhập khẩu, người nộp thuế không phải làm thủ tục",
+      "confidence": 0.9550639099999999
+    },
+    {
+      "bbox": [
+        [
+          214.0,
+          390.0
+        ],
+        [
+          1140.0,
+          390.0
+        ],
+        [
+          1140.0,
+          429.0
+        ],
+        [
+          214.0,
+          429.0
+        ]
+      ],
+      "text": "hải quan nhưng phải kê khai, nộp thuế giá trị gia tăng, thuế tiêu thụ đặc biệt,",
+      "confidence": 0.9639175217647059
+    },
+    {
+      "bbox": [
+        [
+          214.0,
+          422.0
+        ],
+        [
+          1141.0,
+          422.0
+        ],
+        [
+          1141.0,
+          460.0
+        ],
+        [
+          214.0,
+          460.0
+        ]
+      ],
+      "text": "thuế bảo vệ môi trường (nếu có) cho cơ quan thuế theo quy định của pháp luật",
+      "confidence": 0.9657929370588236
+    },
+    {
+      "bbox": [
+        [
+          213.0,
+          456.0
+        ],
+        [
+          304.0,
+          456.0
+        ],
+        [
+          304.0,
+          483.0
+        ],
+        [
+          213.0,
+          483.0
+        ]
+      ],
+      "text": "về thuế.",
+      "confidence": 0.948759075
+    },
+    {
+      "bbox": [
+        [
+          273.0,
+          516.0
+        ],
+        [
+          1140.0,
+          516.0
+        ],
+        [
+          1140.0,
+          550.0
+        ],
+        [
+          273.0,
+          550.0
+        ]
+      ],
+      "text": "5. Hồ sơ, thủ tục miễn thuế thực hiện theo quy định tại Điều 31 Nghị",
+      "confidence": 0.96661609625
+    },
+    {
+      "bbox": [
+        [
+          213.0,
+          555.0
+        ],
+        [
+          319.0,
+          555.0
+        ],
+        [
+          319.0,
+          582.0
+        ],
+        [
+          213.0,
+          582.0
+        ]
+      ],
+      "text": "định này.",
+      "confidence": 0.969927405
+    },
+    {
+      "bbox": [
+        [
+          272.0,
+          609.0
+        ],
+        [
+          1141.0,
+          609.0
+        ],
+        [
+          1141.0,
+          648.0
+        ],
+        [
+          272.0,
+          648.0
+        ]
+      ],
+      "text": "Khi làm thủ tục xuất khẩu tại chỗ đối với hàng hóa quy định tại Điều",
+      "confidence": 0.9678221906250001
+    },
+    {
+      "bbox": [
+        [
+          213.0,
+          642.0
+        ],
+        [
+          1140.0,
+          642.0
+        ],
+        [
+          1140.0,
+          680.0
+        ],
+        [
+          213.0,
+          680.0
+        ]
+      ],
+      "text": "này, ngoài hồ sơ miễn thuế theo quy định tại Điều 31 Nghị định này, người",
+      "confidence": 0.9677593849999999
+    },
+    {
+      "bbox": [
+        [
+          212.0,
+          675.0
+        ],
+        [
+          1141.0,
+          675.0
+        ],
+        [
+          1141.0,
+          714.0
+        ],
+        [
+          212.0,
+          714.0
+        ]
+      ],
+      "text": "xuất khẩu tại chỗ phải nộp thêm văn bản chỉ định giao hàng hoá tại Việt Nam",
+      "confidence": 0.96327064
+    },
+    {
+      "bbox": [
+        [
+          213.0,
+          709.0
+        ],
+        [
+          771.0,
+          709.0
+        ],
+        [
+          771.0,
+          744.0
+        ],
+        [
+          213.0,
+          744.0
+        ]
+      ],
+      "text": "của tổ chức, cá nhân nước ngoài: 01 bản chụp.”",
+      "confidence": 0.959296059
+    },
+    {
+      "bbox": [
+        [
+          273.0,
+          769.0
+        ],
+        [
+          964.0,
+          769.0
+        ],
+        [
+          964.0,
+          803.0
+        ],
+        [
+          273.0,
+          803.0
+        ]
+      ],
+      "text": "5. Điểm a khoản 1 Điều 11 được sửa đổi, bd sung như sau:",
+      "confidence": 0.9539892257142857
+    },
+    {
+      "bbox": [
+        [
+          272.0,
+          828.0
+        ],
+        [
+          1138.0,
+          828.0
+        ],
+        [
+          1138.0,
+          862.0
+        ],
+        [
+          272.0,
+          862.0
+        ]
+      ],
+      "text": "“Điều 11. Miễn thuế đối với hàng hóa xuất khẩu để gia công, sản",
+      "confidence": 0.9638511814285714
+    },
+    {
+      "bbox": [
+        [
+          213.0,
+          861.0
+        ],
+        [
+          536.0,
+          861.0
+        ],
+        [
+          536.0,
+          895.0
+        ],
+        [
+          213.0,
+          895.0
+        ]
+      ],
+      "text": "phẩm gia công nhập khẩu",
+      "confidence": 0.96624585
+    },
+    {
+      "bbox": [
+        [
+          275.0,
+          920.0
+        ],
+        [
+          1139.0,
+          920.0
+        ],
+        [
+          1139.0,
+          963.0
+        ],
+        [
+          275.0,
+          963.0
+        ]
+      ],
+      "text": "1. Hàng hóa xuất khẩu để gia công, sản phẩm gia công nhập khẩu theo",
+      "confidence": 0.9301949513333334
+    },
+    {
+      "bbox": [
+        [
+          212.0,
+          954.0
+        ],
+        [
+          1140.0,
+          954.0
+        ],
+        [
+          1140.0,
+          993.0
+        ],
+        [
+          212.0,
+          993.0
+        ]
+      ],
+      "text": "hợp đồng gia công được miễn thuế xuất khẩu, thuế nhập khẩu theo quy định",
+      "confidence": 0.9679413446666668
+    },
+    {
+      "bbox": [
+        [
+          211.0,
+          987.0
+        ],
+        [
+          965.0,
+          987.0
+        ],
+        [
+          965.0,
+          1021.0
+        ],
+        [
+          211.0,
+          1021.0
+        ]
+      ],
+      "text": "tại khoản 6 Điều 16 Luật Thuế xuất khẩu, thuế nhập khẩu, gồm:",
+      "confidence": 0.9516704738461539
+    },
+    {
+      "bbox": [
+        [
+          271.0,
+          1047.0
+        ],
+        [
+          775.0,
+          1047.0
+        ],
+        [
+          775.0,
+          1079.0
+        ],
+        [
+          271.0,
+          1079.0
+        ]
+      ],
+      "text": "a) Nguyên liệu, vật tư, linh kiện xuất khẩu.",
+      "confidence": 0.9556544333333333
+    },
+    {
+      "bbox": [
+        [
+          271.0,
+          1105.0
+        ],
+        [
+          1139.0,
+          1105.0
+        ],
+        [
+          1139.0,
+          1149.0
+        ],
+        [
+          271.0,
+          1149.0
+        ]
+      ],
+      "text": "Trị giá hoặc lượng nguyên liệu, vật tư, linh kiện đã xuất khẩu tương ứng",
+      "confidence": 0.9670353740000001
+    },
+    {
+      "bbox": [
+        [
+          211.0,
+          1137.0
+        ],
+        [
+          1139.0,
+          1137.0
+        ],
+        [
+          1139.0,
+          1177.0
+        ],
+        [
+          211.0,
+          1177.0
+        ]
+      ],
+      "text": "với sản phẩm gia công không nhập khẩu trở lại phải chịu thuế xuất khẩu theo",
+      "confidence": 0.94782535125
+    },
+    {
+      "bbox": [
+        [
+          211.0,
+          1171.0
+        ],
+        [
+          900.0,
+          1171.0
+        ],
+        [
+          900.0,
+          1203.0
+        ],
+        [
+          211.0,
+          1203.0
+        ]
+      ],
+      "text": "mức thuế suất của nguyên liệu, vật tư, linh kiện xuất khẩu.",
+      "confidence": 0.9562701666666668
+    },
+    {
+      "bbox": [
+        [
+          270.0,
+          1229.0
+        ],
+        [
+          1137.0,
+          1229.0
+        ],
+        [
+          1137.0,
+          1263.0
+        ],
+        [
+          270.0,
+          1263.0
+        ]
+      ],
+      "text": "Hàng hóa xuất khẩu là tài nguyên khoáng sản, sản phẩm có tổng giá trị",
+      "confidence": 0.964137848
+    },
+    {
+      "bbox": [
+        [
+          211.0,
+          1263.0
+        ],
+        [
+          1139.0,
+          1263.0
+        ],
+        [
+          1139.0,
+          1302.0
+        ],
+        [
+          211.0,
+          1302.0
+        ]
+      ],
+      "text": "tài nguyên, khoáng sản cộng chỉ phí năng lượng chiếm từ 51% giá thành sản",
+      "confidence": 0.9636109786666666
+    },
+    {
+      "bbox": [
+        [
+          210.0,
+          1293.0
+        ],
+        [
+          1139.0,
+          1293.0
+        ],
+        [
+          1139.0,
+          1336.0
+        ],
+        [
+          210.0,
+          1336.0
+        ]
+      ],
+      "text": "phẩm trở lên và hàng hóa (trừ phế liệu tạo thành trong quá trình sản xuất, gia",
+      "confidence": 0.9688316164705882
+    },
+    {
+      "bbox": [
+        [
+          211.0,
+          1326.0
+        ],
+        [
+          1137.0,
+          1326.0
+        ],
+        [
+          1137.0,
+          1370.0
+        ],
+        [
+          211.0,
+          1370.0
+        ]
+      ],
+      "text": "công xuất khẩu từ hàng hóa nhập khẩu) xuất khẩu dé gia công thuộc đối",
+      "confidence": 0.9588262426666667
+    },
+    {
+      "bbox": [
+        [
+          210.0,
+          1364.0
+        ],
+        [
+          965.0,
+          1364.0
+        ],
+        [
+          965.0,
+          1397.0
+        ],
+        [
+          210.0,
+          1397.0
+        ]
+      ],
+      "text": "tượng chịu thuế xuất khâu, thì không được miễn thuế xuất khẩu.",
+      "confidence": 0.9600313383333332
+    },
+    {
+      "bbox": [
+        [
+          270.0,
+          1423.0
+        ],
+        [
+          1136.0,
+          1423.0
+        ],
+        [
+          1136.0,
+          1463.0
+        ],
+        [
+          270.0,
+          1463.0
+        ]
+      ],
+      "text": "Việc xác định sản phẩm có tổng giá trị tài nguyên, khoáng sản cộng với",
+      "confidence": 0.9672933706666665
+    },
+    {
+      "bbox": [
+        [
+          211.0,
+          1462.0
+        ],
+        [
+          1136.0,
+          1462.0
+        ],
+        [
+          1136.0,
+          1491.0
+        ],
+        [
+          211.0,
+          1491.0
+        ]
+      ],
+      "text": "chi phí năng lượng chiêm từ 51% giá thành sản phâm trở lên thực hiện theo",
+      "confidence": 0.957556580625
+    },
+    {
+      "bbox": [
+        [
+          210.0,
+          1491.0
+        ],
+        [
+          1137.0,
+          1491.0
+        ],
+        [
+          1137.0,
+          1531.0
+        ],
+        [
+          210.0,
+          1531.0
+        ]
+      ],
+      "text": "quy định tại Nghị định số 100/2016/NĐ-CP ngày 01 tháng 7 năm 2016 của",
+      "confidence": 0.9639988578571429
+    },
+    {
+      "bbox": [
+        [
+          210.0,
+          1525.0
+        ],
+        [
+          1137.0,
+          1525.0
+        ],
+        [
+          1137.0,
+          1563.0
+        ],
+        [
+          210.0,
+          1563.0
+        ]
+      ],
+      "text": "Chính phủ quy định chỉ tiết và hướng dẫn thi hành một số điều của Luật sửa",
+      "confidence": 0.9657349794117647
+    },
+    {
+      "bbox": [
+        [
+          210.0,
+          1558.0
+        ],
+        [
+          1136.0,
+          1558.0
+        ],
+        [
+          1136.0,
+          1594.0
+        ],
+        [
+          210.0,
+          1594.0
+        ]
+      ],
+      "text": "đổi, bd sung một số điều của Luật Thuế giá trị gia tăng, Luật Thuế tiêu thụ",
+      "confidence": 0.9425594970588236
+    }
+  ]
+}

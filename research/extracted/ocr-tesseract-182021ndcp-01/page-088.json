@@ -1,0 +1,816 @@
+{
+  "document_id": "18/2021/NĐ-CP",
+  "source_file": "../../legal-sources/182021ndcp/01.pdf",
+  "source_sha256": "cb0bf16ab3ee6554929e0d9d2cc4f180f51b8ea10ddd30a37309353edeb050d8",
+  "page_count": 114,
+  "render_dpi": 150,
+  "engine": "Tesseract 5.5.4 (vie+eng; OEM 1; PSM 3)",
+  "review_status": "UNREVIEWED",
+  "tesseract_version": "5.5.4",
+  "languages": [
+    "vie",
+    "eng"
+  ],
+  "traineddata_sha256": {
+    "vie": "b6b49293d95d0b6dbd8780174627e82c75be957b6f4ed9862155540d6b00bb45",
+    "eng": "8280aed0782fe27257a68ea10fe7ef324ca0f8d85bd2fd145d1c2b560bcb66ba"
+  },
+  "ocr_engine_mode": 1,
+  "page_segmentation_mode": 3,
+  "thread_limit": 2,
+  "page": 88,
+  "lines": [
+    {
+      "bbox": [
+        [
+          645.0,
+          50.0
+        ],
+        [
+          672.0,
+          50.0
+        ],
+        [
+          672.0,
+          71.0
+        ],
+        [
+          645.0,
+          71.0
+        ]
+      ],
+      "text": "49",
+      "confidence": 0.97003029
+    },
+    {
+      "bbox": [
+        [
+          469.0,
+          145.0
+        ],
+        [
+          851.0,
+          145.0
+        ],
+        [
+          851.0,
+          178.0
+        ],
+        [
+          469.0,
+          178.0
+        ]
+      ],
+      "text": "Phụ lục tem rượu, bia, thuốc lá",
+      "confidence": 0.9669221385714286
+    },
+    {
+      "bbox": [
+        [
+          345.0,
+          185.0
+        ],
+        [
+          974.0,
+          185.0
+        ],
+        [
+          974.0,
+          212.0
+        ],
+        [
+          345.0,
+          212.0
+        ]
+      ],
+      "text": "Appendix on stamps of alcohol, beer and cigarettes",
+      "confidence": 0.95539896
+    },
+    {
+      "bbox": [
+        [
+          268.0,
+          235.0
+        ],
+        [
+          1114.0,
+          235.0
+        ],
+        [
+          1114.0,
+          269.0
+        ],
+        [
+          268.0,
+          269.0
+        ]
+      ],
+      "text": "1. Phụ lục gồm các loại tem để quan lý 3 mặt hàng: rượu, bia, thuốc",
+      "confidence": 0.969313215
+    },
+    {
+      "bbox": [
+        [
+          208.0,
+          275.0
+        ],
+        [
+          1114.0,
+          275.0
+        ],
+        [
+          1114.0,
+          303.0
+        ],
+        [
+          208.0,
+          303.0
+        ]
+      ],
+      "text": "14/The appendix comprises stamps for the management of 3 goods: alcohol,",
+      "confidence": 0.9416721636363635
+    },
+    {
+      "bbox": [
+        [
+          208.0,
+          309.0
+        ],
+        [
+          428.0,
+          309.0
+        ],
+        [
+          428.0,
+          335.0
+        ],
+        [
+          208.0,
+          335.0
+        ]
+      ],
+      "text": "beer and cigarettes.",
+      "confidence": 0.9660119866666667
+    },
+    {
+      "bbox": [
+        [
+          265.0,
+          361.0
+        ],
+        [
+          1115.0,
+          361.0
+        ],
+        [
+          1115.0,
+          392.0
+        ],
+        [
+          265.0,
+          392.0
+        ]
+      ],
+      "text": "2. Số Sổ định mức miễn thuế được in trên mỗi tem/The Quota book",
+      "confidence": 0.9605439264285713
+    },
+    {
+      "bbox": [
+        [
+          207.0,
+          400.0
+        ],
+        [
+          588.0,
+          400.0
+        ],
+        [
+          588.0,
+          426.0
+        ],
+        [
+          207.0,
+          426.0
+        ]
+      ],
+      "text": "number is printed on cach stamp.",
+      "confidence": 0.959830005
+    },
+    {
+      "bbox": [
+        [
+          266.0,
+          451.0
+        ],
+        [
+          1115.0,
+          451.0
+        ],
+        [
+          1115.0,
+          484.0
+        ],
+        [
+          266.0,
+          484.0
+        ]
+      ],
+      "text": "3. Số lượng tem mặt hàng rượu, bia, thuốc lá tại Phụ lục phù hợp với",
+      "confidence": 0.9661320831250001
+    },
+    {
+      "bbox": [
+        [
+          208.0,
+          485.0
+        ],
+        [
+          1116.0,
+          485.0
+        ],
+        [
+          1116.0,
+          530.0
+        ],
+        [
+          208.0,
+          530.0
+        ]
+      ],
+      "text": "định lượng miễn thuế quy định tại điều ước quốc tế hoặc thỏa thuận giữa",
+      "confidence": 0.9683335579999999
+    },
+    {
+      "bbox": [
+        [
+          208.0,
+          518.0
+        ],
+        [
+          1116.0,
+          518.0
+        ],
+        [
+          1116.0,
+          556.0
+        ],
+        [
+          208.0,
+          556.0
+        ]
+      ],
+      "text": "Chính phủ Việt Nam với tổ chức phi Chính phủ nước ngoài hoặc định lượng",
+      "confidence": 0.9661274166666667
+    },
+    {
+      "bbox": [
+        [
+          208.0,
+          551.0
+        ],
+        [
+          1116.0,
+          551.0
+        ],
+        [
+          1116.0,
+          590.0
+        ],
+        [
+          208.0,
+          590.0
+        ]
+      ],
+      "text": "tại Quyết định của Thủ tướng Chính phủ phê duyệt chủng loại và định lượng",
+      "confidence": 0.9697198113333334
+    },
+    {
+      "bbox": [
+        [
+          208.0,
+          580.0
+        ],
+        [
+          1116.0,
+          580.0
+        ],
+        [
+          1116.0,
+          627.0
+        ],
+        [
+          208.0,
+          627.0
+        ]
+      ],
+      "text": "hàng hóa nhập khẩu miễn thuế theo Điều ước quốc tế/thỏa thuận giữa Chính",
+      "confidence": 0.9587420107142858
+    },
+    {
+      "bbox": [
+        [
+          207.0,
+          618.0
+        ],
+        [
+          1115.0,
+          618.0
+        ],
+        [
+          1115.0,
+          651.0
+        ],
+        [
+          207.0,
+          651.0
+        ]
+      ],
+      "text": "phủ Việt Nam với tổ chức phi chính phủ nước ngoài)/The quantity of stamps",
+      "confidence": 0.9520080907142856
+    },
+    {
+      "bbox": [
+        [
+          208.0,
+          656.0
+        ],
+        [
+          1116.0,
+          656.0
+        ],
+        [
+          1116.0,
+          684.0
+        ],
+        [
+          208.0,
+          684.0
+        ]
+      ],
+      "text": "for the management of alcohol, beer and cigarettes in the Appendix is",
+      "confidence": 0.9589560333333332
+    },
+    {
+      "bbox": [
+        [
+          208.0,
+          689.0
+        ],
+        [
+          1115.0,
+          689.0
+        ],
+        [
+          1115.0,
+          717.0
+        ],
+        [
+          208.0,
+          717.0
+        ]
+      ],
+      "text": "consistent with the duty-free quota stipulated in international",
+      "confidence": 0.8869005775
+    },
+    {
+      "bbox": [
+        [
+          208.0,
+          722.0
+        ],
+        [
+          1116.0,
+          722.0
+        ],
+        [
+          1116.0,
+          749.0
+        ],
+        [
+          208.0,
+          749.0
+        ]
+      ],
+      "text": "treaties/agreements between the Government of Viet Nam and foreign non-",
+      "confidence": 0.951306402
+    },
+    {
+      "bbox": [
+        [
+          208.0,
+          755.0
+        ],
+        [
+          1116.0,
+          755.0
+        ],
+        [
+          1116.0,
+          783.0
+        ],
+        [
+          208.0,
+          783.0
+        ]
+      ],
+      "text": "government organizations or consistent with the quota stipulated in the Prime",
+      "confidence": 0.96497768
+    },
+    {
+      "bbox": [
+        [
+          208.0,
+          788.0
+        ],
+        [
+          1116.0,
+          788.0
+        ],
+        [
+          1116.0,
+          816.0
+        ],
+        [
+          208.0,
+          816.0
+        ]
+      ],
+      "text": "Minister's Decision approving the list and quota of duty-free imported goods",
+      "confidence": 0.8773778827272727
+    },
+    {
+      "bbox": [
+        [
+          209.0,
+          821.0
+        ],
+        [
+          1120.0,
+          821.0
+        ],
+        [
+          1120.0,
+          849.0
+        ],
+        [
+          209.0,
+          849.0
+        ]
+      ],
+      "text": "according to international treaties/agreements between the Government of",
+      "confidence": 0.9529125325
+    },
+    {
+      "bbox": [
+        [
+          209.0,
+          854.0
+        ],
+        [
+          828.0,
+          854.0
+        ],
+        [
+          828.0,
+          882.0
+        ],
+        [
+          209.0,
+          882.0
+        ]
+      ],
+      "text": "Viet Nam and foreign non-government organizations.",
+      "confidence": 0.9644921733333333
+    },
+    {
+      "bbox": [
+        [
+          267.0,
+          911.0
+        ],
+        [
+          728.0,
+          911.0
+        ],
+        [
+          728.0,
+          939.0
+        ],
+        [
+          267.0,
+          939.0
+        ]
+      ],
+      "text": "4. Các chủng loại tem/Types of Stamps:",
+      "confidence": 0.9501469857142857
+    },
+    {
+      "bbox": [
+        [
+          268.0,
+          962.0
+        ],
+        [
+          1117.0,
+          962.0
+        ],
+        [
+          1117.0,
+          996.0
+        ],
+        [
+          268.0,
+          996.0
+        ]
+      ],
+      "text": "a) Đối với mặt hàng rượu gồm các loại tem: 0,75 lít, 1,5 lít, 02 lit, 3 lít,",
+      "confidence": 0.9622338655555557
+    },
+    {
+      "bbox": [
+        [
+          209.0,
+          997.0
+        ],
+        [
+          1117.0,
+          997.0
+        ],
+        [
+          1117.0,
+          1030.0
+        ],
+        [
+          209.0,
+          1030.0
+        ]
+      ],
+      "text": "4,5 lít, 6 lít, 18 lít được đánh số thứ tự trên mặt tem từ 1 đến hết số lượng tem",
+      "confidence": 0.9668019866666667
+    },
+    {
+      "bbox": [
+        [
+          209.0,
+          1033.0
+        ],
+        [
+          1117.0,
+          1033.0
+        ],
+        [
+          1117.0,
+          1062.0
+        ],
+        [
+          209.0,
+          1062.0
+        ]
+      ],
+      "text": "theo từng quý/Stamps for alcohol: includes types of 0,75 liters, 1,5 liters, 02",
+      "confidence": 0.9568160776923077
+    },
+    {
+      "bbox": [
+        [
+          210.0,
+          1067.0
+        ],
+        [
+          1118.0,
+          1067.0
+        ],
+        [
+          1118.0,
+          1093.0
+        ],
+        [
+          210.0,
+          1093.0
+        ]
+      ],
+      "text": "liters, 3 liters, 4,5 liters, 6 liters, 18 liters, numbered from 1 to the maximum",
+      "confidence": 0.9632412453333333
+    },
+    {
+      "bbox": [
+        [
+          209.0,
+          1100.0
+        ],
+        [
+          545.0,
+          1100.0
+        ],
+        [
+          545.0,
+          1126.0
+        ],
+        [
+          209.0,
+          1126.0
+        ]
+      ],
+      "text": "number as quarterly allowed.",
+      "confidence": 0.9664592925
+    },
+    {
+      "bbox": [
+        [
+          268.0,
+          1150.0
+        ],
+        [
+          1118.0,
+          1150.0
+        ],
+        [
+          1118.0,
+          1188.0
+        ],
+        [
+          268.0,
+          1188.0
+        ]
+      ],
+      "text": "b) Đối với mặt hàng bia gồm các loại tem: 8 lít, 12 lít, 16 lít được đánh",
+      "confidence": 0.9555266983333334
+    },
+    {
+      "bbox": [
+        [
+          211.0,
+          1181.0
+        ],
+        [
+          1117.0,
+          1181.0
+        ],
+        [
+          1117.0,
+          1218.0
+        ],
+        [
+          211.0,
+          1218.0
+        ]
+      ],
+      "text": "số thứ tự từ 1 đến hết số lượng tem theo từng quý/ Stamps for beer: includes",
+      "confidence": 0.9496966376470588
+    },
+    {
+      "bbox": [
+        [
+          210.0,
+          1220.0
+        ],
+        [
+          1118.0,
+          1220.0
+        ],
+        [
+          1118.0,
+          1248.0
+        ],
+        [
+          210.0,
+          1248.0
+        ]
+      ],
+      "text": "types of 8 liters, 12 liters, 16 liters, numbered from 1 to the maximum number",
+      "confidence": 0.932577402
+    },
+    {
+      "bbox": [
+        [
+          210.0,
+          1254.0
+        ],
+        [
+          450.0,
+          1254.0
+        ],
+        [
+          450.0,
+          1280.0
+        ],
+        [
+          210.0,
+          1280.0
+        ]
+      ],
+      "text": "as quarterly allowed.",
+      "confidence": 0.9234699999999999
+    },
+    {
+      "bbox": [
+        [
+          269.0,
+          1302.0
+        ],
+        [
+          1115.0,
+          1302.0
+        ],
+        [
+          1115.0,
+          1348.0
+        ],
+        [
+          269.0,
+          1348.0
+        ]
+      ],
+      "text": "2ì Đối với mặt hàng thuốc lá gồm loại tem: 1 tút được đánh số thứ tự từ 1",
+      "confidence": 0.9119225663157896
+    },
+    {
+      "bbox": [
+        [
+          211.0,
+          1338.0
+        ],
+        [
+          1115.0,
+          1338.0
+        ],
+        [
+          1115.0,
+          1378.0
+        ],
+        [
+          211.0,
+          1378.0
+        ]
+      ],
+      "text": "đến hết số lượng tem theo từng quý/Stamps for cigarette: includes types of 01",
+      "confidence": 0.9502313935714287
+    },
+    {
+      "bbox": [
+        [
+          211.0,
+          1379.0
+        ],
+        [
+          1038.0,
+          1379.0
+        ],
+        [
+          1038.0,
+          1411.0
+        ],
+        [
+          211.0,
+          1411.0
+        ]
+      ],
+      "text": "carton, numbered from 1 to the maximum number as quarterly allowed.",
+      "confidence": 0.9632990263636363
+    },
+    {
+      "bbox": [
+        [
+          270.0,
+          1434.0
+        ],
+        [
+          1119.0,
+          1434.0
+        ],
+        [
+          1119.0,
+          1468.0
+        ],
+        [
+          270.0,
+          1468.0
+        ]
+      ],
+      "text": "5. Tem này chi có giá trị khi xuất trình cùng với Sổ định mức miễn",
+      "confidence": 0.9651539956249999
+    },
+    {
+      "bbox": [
+        [
+          211.0,
+          1462.0
+        ],
+        [
+          985.0,
+          1462.0
+        ],
+        [
+          985.0,
+          1502.0
+        ],
+        [
+          211.0,
+          1502.0
+        ]
+      ],
+      "text": "thuế/This stamp 1s only valid when presented with the Quota book.",
+      "confidence": 0.9275405263636364
+    }
+  ]
+}

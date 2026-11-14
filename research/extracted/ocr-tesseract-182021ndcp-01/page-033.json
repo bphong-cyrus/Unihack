@@ -1,0 +1,838 @@
+{
+  "document_id": "18/2021/NĐ-CP",
+  "source_file": "../../legal-sources/182021ndcp/01.pdf",
+  "source_sha256": "cb0bf16ab3ee6554929e0d9d2cc4f180f51b8ea10ddd30a37309353edeb050d8",
+  "page_count": 114,
+  "render_dpi": 150,
+  "engine": "Tesseract 5.5.4 (vie+eng; OEM 1; PSM 3)",
+  "review_status": "UNREVIEWED",
+  "tesseract_version": "5.5.4",
+  "languages": [
+    "vie",
+    "eng"
+  ],
+  "traineddata_sha256": {
+    "vie": "b6b49293d95d0b6dbd8780174627e82c75be957b6f4ed9862155540d6b00bb45",
+    "eng": "8280aed0782fe27257a68ea10fe7ef324ca0f8d85bd2fd145d1c2b560bcb66ba"
+  },
+  "ocr_engine_mode": 1,
+  "page_segmentation_mode": 3,
+  "thread_limit": 2,
+  "page": 33,
+  "lines": [
+    {
+      "bbox": [
+        [
+          661.0,
+          47.0
+        ],
+        [
+          687.0,
+          47.0
+        ],
+        [
+          687.0,
+          67.0
+        ],
+        [
+          661.0,
+          67.0
+        ]
+      ],
+      "text": "33",
+      "confidence": 0.92783096
+    },
+    {
+      "bbox": [
+        [
+          273.0,
+          130.0
+        ],
+        [
+          1139.0,
+          130.0
+        ],
+        [
+          1139.0,
+          169.0
+        ],
+        [
+          273.0,
+          169.0
+        ]
+      ],
+      "text": "b) Trong thời hạn 60 ngày kể từ ngày nhận được thông báo hoàn thiện",
+      "confidence": 0.9607814179999999
+    },
+    {
+      "bbox": [
+        [
+          214.0,
+          169.0
+        ],
+        [
+          1139.0,
+          169.0
+        ],
+        [
+          1139.0,
+          209.0
+        ],
+        [
+          214.0,
+          209.0
+        ]
+      ],
+      "text": "việc lap đặt tô hợp, dây chuyên của chủ dự án, cơ quan hải quan nơi tiếp nhận",
+      "confidence": 0.9556266777777779
+    },
+    {
+      "bbox": [
+        [
+          214.0,
+          198.0
+        ],
+        [
+          1139.0,
+          198.0
+        ],
+        [
+          1139.0,
+          237.0
+        ],
+        [
+          214.0,
+          237.0
+        ]
+      ],
+      "text": "thông báo Danh mục miễn thuế thực hiện kiểm tra tại tru sở của chủ dự án dé",
+      "confidence": 0.9671605505555556
+    },
+    {
+      "bbox": [
+        [
+          215.0,
+          228.0
+        ],
+        [
+          1139.0,
+          228.0
+        ],
+        [
+          1139.0,
+          274.0
+        ],
+        [
+          215.0,
+          274.0
+        ]
+      ],
+      "text": "xác định hàng hóa nhập khẩu: miễn thuế đã sử dụng đúng mục đích lắp đặt vào",
+      "confidence": 0.9599351152941176
+    },
+    {
+      "bbox": [
+        [
+          215.0,
+          265.0
+        ],
+        [
+          1140.0,
+          265.0
+        ],
+        [
+          1140.0,
+          305.0
+        ],
+        [
+          215.0,
+          305.0
+        ]
+      ],
+      "text": "tổ hợp, dây chuyền được miễn thuế. Trường hợp cơ quan hải quan phát hiện",
+      "confidence": 0.9658084253333332
+    },
+    {
+      "bbox": [
+        [
+          216.0,
+          299.0
+        ],
+        [
+          1141.0,
+          299.0
+        ],
+        [
+          1141.0,
+          333.0
+        ],
+        [
+          216.0,
+          333.0
+        ]
+      ],
+      "text": "chủ dự án không sử dụng hết hoặc thay đổi mục đích sử dụng hàng hóa miễn",
+      "confidence": 0.9669325252941177
+    },
+    {
+      "bbox": [
+        [
+          216.0,
+          333.0
+        ],
+        [
+          1141.0,
+          333.0
+        ],
+        [
+          1141.0,
+          367.0
+        ],
+        [
+          216.0,
+          367.0
+        ]
+      ],
+      "text": "thuế theo tổ hợp, dây chuyển nhưng không đăng ký tờ khai hải quan mới, cơ",
+      "confidence": 0.96746088
+    },
+    {
+      "bbox": [
+        [
+          216.0,
+          367.0
+        ],
+        [
+          824.0,
+          367.0
+        ],
+        [
+          824.0,
+          400.0
+        ],
+        [
+          216.0,
+          400.0
+        ]
+      ],
+      "text": "quan hải quan thực hiện ấn định thuế theo quy định.",
+      "confidence": 0.9551587272727273
+    },
+    {
+      "bbox": [
+        [
+          274.0,
+          427.0
+        ],
+        [
+          1141.0,
+          427.0
+        ],
+        [
+          1141.0,
+          470.0
+        ],
+        [
+          274.0,
+          470.0
+        ]
+      ],
+      "text": "c) Chủ dự án thực hiện thông báo tình hình sử dụng hàng hóa nhập khẩu",
+      "confidence": 0.9597060256250001
+    },
+    {
+      "bbox": [
+        [
+          214.0,
+          458.0
+        ],
+        [
+          1139.0,
+          458.0
+        ],
+        [
+          1139.0,
+          499.0
+        ],
+        [
+          214.0,
+          499.0
+        ]
+      ],
+      "text": "đề hoàn thiện lắp đặt tổ hợp, dây chuyền theo quy định tại khoản 1 Điều này.",
+      "confidence": 0.9262522823529412
+    },
+    {
+      "bbox": [
+        [
+          214.0,
+          492.0
+        ],
+        [
+          1141.0,
+          492.0
+        ],
+        [
+          1141.0,
+          533.0
+        ],
+        [
+          214.0,
+          533.0
+        ]
+      ],
+      "text": "Kể từ năm hoàn thiện lắp đặt tổ hợp, dây chuyền, chủ dự án thực hiện thông",
+      "confidence": 0.9629698052941177
+    },
+    {
+      "bbox": [
+        [
+          214.0,
+          527.0
+        ],
+        [
+          951.0,
+          527.0
+        ],
+        [
+          951.0,
+          562.0
+        ],
+        [
+          214.0,
+          562.0
+        ]
+      ],
+      "text": "báo tình hình sử dụng đối với sản phẩm sau hoàn thiện lắp đặt.",
+      "confidence": 0.9663495507142856
+    },
+    {
+      "bbox": [
+        [
+          274.0,
+          585.0
+        ],
+        [
+          802.0,
+          585.0
+        ],
+        [
+          802.0,
+          619.0
+        ],
+        [
+          274.0,
+          619.0
+        ]
+      ],
+      "text": "4. Kiểm tra việc sử dụng hàng hóa miễn thuế",
+      "confidence": 0.966943001
+    },
+    {
+      "bbox": [
+        [
+          274.0,
+          645.0
+        ],
+        [
+          1140.0,
+          645.0
+        ],
+        [
+          1140.0,
+          690.0
+        ],
+        [
+          274.0,
+          690.0
+        ]
+      ],
+      "text": "a) Cơ quan hải quan nơi tiếp nhận thông báo Danh mục miễn thuế thực",
+      "confidence": 0.9660816153333333
+    },
+    {
+      "bbox": [
+        [
+          214.0,
+          677.0
+        ],
+        [
+          1141.0,
+          677.0
+        ],
+        [
+          1141.0,
+          716.0
+        ],
+        [
+          214.0,
+          716.0
+        ]
+      ],
+      "text": "hiện kiểm tra việc sử dụng hàng hóa miễn thuế tại trụ sở của chủ dự án theo",
+      "confidence": 0.9676595044444444
+    },
+    {
+      "bbox": [
+        [
+          214.0,
+          707.0
+        ],
+        [
+          514.0,
+          707.0
+        ],
+        [
+          514.0,
+          748.0
+        ],
+        [
+          214.0,
+          748.0
+        ]
+      ],
+      "text": "nguyên tắc quản lý rủi ro.",
+      "confidence": 0.9687547166666667
+    },
+    {
+      "bbox": [
+        [
+          273.0,
+          771.0
+        ],
+        [
+          1140.0,
+          771.0
+        ],
+        [
+          1140.0,
+          804.0
+        ],
+        [
+          273.0,
+          804.0
+        ]
+      ],
+      "text": "b) Việc kiểm tra được thực hiện theo trình tự, thủ tục về kiểm tra sau",
+      "confidence": 0.965397715625
+    },
+    {
+      "bbox": [
+        [
+          213.0,
+          809.0
+        ],
+        [
+          364.0,
+          809.0
+        ],
+        [
+          364.0,
+          836.0
+        ],
+        [
+          213.0,
+          836.0
+        ]
+      ],
+      "text": "thông quan.”",
+      "confidence": 0.9565734100000001
+    },
+    {
+      "bbox": [
+        [
+          276.0,
+          863.0
+        ],
+        [
+          1089.0,
+          863.0
+        ],
+        [
+          1089.0,
+          898.0
+        ],
+        [
+          276.0,
+          898.0
+        ]
+      ],
+      "text": "16. Khoản 2, điểm c khoản 3 Điều 32 được sửa đổi, bổ sung như sau:",
+      "confidence": 0.9587738381249999
+    },
+    {
+      "bbox": [
+        [
+          273.0,
+          922.0
+        ],
+        [
+          875.0,
+          922.0
+        ],
+        [
+          875.0,
+          956.0
+        ],
+        [
+          273.0,
+          956.0
+        ]
+      ],
+      "text": "“Điều 32. Giảm thuế xuất khẩu, thuế nhập khẩu",
+      "confidence": 0.9528958555555556
+    },
+    {
+      "bbox": [
+        [
+          272.0,
+          979.0
+        ],
+        [
+          663.0,
+          979.0
+        ],
+        [
+          663.0,
+          1013.0
+        ],
+        [
+          272.0,
+          1013.0
+        ]
+      ],
+      "text": "2. Hồ sơ đề nghị giảm thuế, gồm:",
+      "confidence": 0.96759800875
+    },
+    {
+      "bbox": [
+        [
+          272.0,
+          1038.0
+        ],
+        [
+          1140.0,
+          1038.0
+        ],
+        [
+          1140.0,
+          1079.0
+        ],
+        [
+          272.0,
+          1079.0
+        ]
+      ],
+      "text": "a) Công văn đề nghị giảm thuế của người nộp thuế gửi qua Hệ thống xử",
+      "confidence": 0.966687088125
+    },
+    {
+      "bbox": [
+        [
+          212.0,
+          1074.0
+        ],
+        [
+          1137.0,
+          1074.0
+        ],
+        [
+          1137.0,
+          1119.0
+        ],
+        [
+          212.0,
+          1119.0
+        ]
+      ],
+      "text": "lý dữ liệu điện tử của cơ quan hải quan theo các tiêu chí thông tin tại Mẫu số 3",
+      "confidence": 0.967101594
+    },
+    {
+      "bbox": [
+        [
+          211.0,
+          1105.0
+        ],
+        [
+          1139.0,
+          1105.0
+        ],
+        [
+          1139.0,
+          1138.0
+        ],
+        [
+          211.0,
+          1138.0
+        ]
+      ],
+      "text": "Phụ luc VIIa hoặc công văn đề nghị giảm thuế theo Mẫu số 08 tại Phụ luc VII",
+      "confidence": 0.9604501205555556
+    },
+    {
+      "bbox": [
+        [
+          212.0,
+          1142.0
+        ],
+        [
+          784.0,
+          1142.0
+        ],
+        [
+          784.0,
+          1171.0
+        ],
+        [
+          212.0,
+          1171.0
+        ]
+      ],
+      "text": "ban hành kèm theo Nghị định này: 01 bản chính;",
+      "confidence": 0.9684417189999999
+    },
+    {
+      "bbox": [
+        [
+          271.0,
+          1195.0
+        ],
+        [
+          1138.0,
+          1195.0
+        ],
+        [
+          1138.0,
+          1236.0
+        ],
+        [
+          271.0,
+          1236.0
+        ]
+      ],
+      "text": "b) Hợp đồng bảo hiểm, thông báo trả tiền bồi thường của tổ chức nhận",
+      "confidence": 0.9532321273333334
+    },
+    {
+      "bbox": [
+        [
+          212.0,
+          1228.0
+        ],
+        [
+          1138.0,
+          1228.0
+        ],
+        [
+          1138.0,
+          1269.0
+        ],
+        [
+          212.0,
+          1269.0
+        ]
+      ],
+      "text": "bảo hiểm (nếu có), trường hợp hợp đồng bảo hiểm không bao gồm nội dung",
+      "confidence": 0.9681985886666666
+    },
+    {
+      "bbox": [
+        [
+          211.0,
+          1261.0
+        ],
+        [
+          1137.0,
+          1261.0
+        ],
+        [
+          1137.0,
+          1304.0
+        ],
+        [
+          211.0,
+          1304.0
+        ]
+      ],
+      "text": "bồi thường về thuế phải có xác nhận của tổ chức bảo hiểm; hợp đồng hoặc",
+      "confidence": 0.966919685
+    },
+    {
+      "bbox": [
+        [
+          211.0,
+          1297.0
+        ],
+        [
+          1137.0,
+          1297.0
+        ],
+        [
+          1137.0,
+          1332.0
+        ],
+        [
+          211.0,
+          1332.0
+        ]
+      ],
+      "text": "biên bản thỏa thuận đền bù của hãng vận tải đối với trường hợp tổn thất do",
+      "confidence": 0.9593714917647059
+    },
+    {
+      "bbox": [
+        [
+          211.0,
+          1331.0
+        ],
+        [
+          705.0,
+          1331.0
+        ],
+        [
+          705.0,
+          1365.0
+        ],
+        [
+          211.0,
+          1365.0
+        ]
+      ],
+      "text": "hãng vận tải gây ra (nếu có): 01 bản chụp;",
+      "confidence": 0.958560906
+    },
+    {
+      "bbox": [
+        [
+          270.0,
+          1394.0
+        ],
+        [
+          1136.0,
+          1394.0
+        ],
+        [
+          1136.0,
+          1425.0
+        ],
+        [
+          270.0,
+          1425.0
+        ]
+      ],
+      "text": "e) Biên bản xác nhận nguyên nhân thiệt hại của cơ quan chức năng tại",
+      "confidence": 0.9380490260000001
+    },
+    {
+      "bbox": [
+        [
+          210.0,
+          1428.0
+        ],
+        [
+          1136.0,
+          1428.0
+        ],
+        [
+          1136.0,
+          1459.0
+        ],
+        [
+          210.0,
+          1459.0
+        ]
+      ],
+      "text": "địa bàn nơi phát sinh thiệt hại (biên bản xác nhận vụ cháy của cơ quan cảnh",
+      "confidence": 0.9691253223529412
+    },
+    {
+      "bbox": [
+        [
+          210.0,
+          1462.0
+        ],
+        [
+          1136.0,
+          1462.0
+        ],
+        [
+          1136.0,
+          1497.0
+        ],
+        [
+          210.0,
+          1497.0
+        ]
+      ],
+      "text": "sát phòng cháy chữa cháy của địa ¡ phương nơi xảy ra vụ cháy; văn bản xác",
+      "confidence": 0.9333003005882354
+    },
+    {
+      "bbox": [
+        [
+          210.0,
+          1492.0
+        ],
+        [
+          1136.0,
+          1492.0
+        ],
+        [
+          1136.0,
+          1533.0
+        ],
+        [
+          210.0,
+          1533.0
+        ]
+      ],
+      "text": "nhận của một trong các cơ quan, tổ chức có liên quan sau: Cơ quan Công an",
+      "confidence": 0.9679109058823531
+    },
+    {
+      "bbox": [
+        [
+          209.0,
+          1525.0
+        ],
+        [
+          1136.0,
+          1525.0
+        ],
+        [
+          1136.0,
+          1566.0
+        ],
+        [
+          209.0,
+          1566.0
+        ]
+      ],
+      "text": "xã, phường, thị trần; Ủy ban nhân dân xã, phường, thị trấn; Ban quản lý khu",
+      "confidence": 0.9624460324999999
+    },
+    {
+      "bbox": [
+        [
+          209.0,
+          1559.0
+        ],
+        [
+          1135.0,
+          1559.0
+        ],
+        [
+          1135.0,
+          1595.0
+        ],
+        [
+          209.0,
+          1595.0
+        ]
+      ],
+      "text": "công nghiệp; Ban quản lý khu chế xuất; Ban quản lý khu kinh tế; Ban quản lý",
+      "confidence": 0.9566178482352942
+    }
+  ]
+}

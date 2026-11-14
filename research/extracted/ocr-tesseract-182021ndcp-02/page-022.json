@@ -1,0 +1,420 @@
+{
+  "document_id": "18/2021/NĐ-CP",
+  "source_file": "../../legal-sources/182021ndcp/02.pdf",
+  "source_sha256": "710a1398c611658b5b4a43fccba500048d8a39fcd8f8aba6e18b6867f3fb1bed",
+  "page_count": 52,
+  "render_dpi": 150,
+  "engine": "Tesseract 5.5.4 (vie+eng; OEM 1; PSM 3)",
+  "review_status": "UNREVIEWED",
+  "tesseract_version": "5.5.4",
+  "languages": [
+    "vie",
+    "eng"
+  ],
+  "traineddata_sha256": {
+    "vie": "b6b49293d95d0b6dbd8780174627e82c75be957b6f4ed9862155540d6b00bb45",
+    "eng": "8280aed0782fe27257a68ea10fe7ef324ca0f8d85bd2fd145d1c2b560bcb66ba"
+  },
+  "ocr_engine_mode": 1,
+  "page_segmentation_mode": 3,
+  "thread_limit": 2,
+  "page": 22,
+  "lines": [
+    {
+      "bbox": [
+        [
+          658.0,
+          30.0
+        ],
+        [
+          685.0,
+          30.0
+        ],
+        [
+          685.0,
+          51.0
+        ],
+        [
+          658.0,
+          51.0
+        ]
+      ],
+      "text": "97",
+      "confidence": 0.88800812
+    },
+    {
+      "bbox": [
+        [
+          276.0,
+          113.0
+        ],
+        [
+          1125.0,
+          113.0
+        ],
+        [
+          1125.0,
+          152.0
+        ],
+        [
+          276.0,
+          152.0
+        ]
+      ],
+      "text": "Doanh nghiệp... xin cam đoan và chịu trách nhiệm trước pháp luật về nội",
+      "confidence": 0.9659718307142857
+    },
+    {
+      "bbox": [
+        [
+          218.0,
+          146.0
+        ],
+        [
+          1126.0,
+          146.0
+        ],
+        [
+          1126.0,
+          195.0
+        ],
+        [
+          218.0,
+          195.0
+        ]
+      ],
+      "text": "dung thông báo nêu trên. Đề nghị cơ quan hải quan kiểm tra và có xác nhận",
+      "confidence": 0.9687698141176471
+    },
+    {
+      "bbox": [
+        [
+          219.0,
+          179.0
+        ],
+        [
+          949.0,
+          179.0
+        ],
+        [
+          949.0,
+          213.0
+        ],
+        [
+          219.0,
+          213.0
+        ]
+      ],
+      "text": "điều kiện kiểm tra, giám sát hải quan đôi với doanh nghiệp... ./.",
+      "confidence": 0.9573388953846153
+    },
+    {
+      "bbox": [
+        [
+          254.0,
+          260.0
+        ],
+        [
+          1003.0,
+          260.0
+        ],
+        [
+          1003.0,
+          297.0
+        ],
+        [
+          254.0,
+          297.0
+        ]
+      ],
+      "text": "mm ., ngày... tháng ... nam ...",
+      "confidence": 0.7102410885714286
+    },
+    {
+      "bbox": [
+        [
+          218.0,
+          292.0
+        ],
+        [
+          1050.0,
+          292.0
+        ],
+        [
+          1050.0,
+          341.0
+        ],
+        [
+          218.0,
+          341.0
+        ]
+      ],
+      "text": "Dt quan ĐẠI DIỆN THEO PHÁP LUẬT",
+      "confidence": 0.8004255342857143
+    },
+    {
+      "bbox": [
+        [
+          219.0,
+          333.0
+        ],
+        [
+          1001.0,
+          333.0
+        ],
+        [
+          1001.0,
+          365.0
+        ],
+        [
+          219.0,
+          365.0
+        ]
+      ],
+      "text": "TT VT CỦA DOANH NGHIỆP",
+      "confidence": 0.719044494
+    },
+    {
+      "bbox": [
+        [
+          685.0,
+          365.0
+        ],
+        [
+          1019.0,
+          365.0
+        ],
+        [
+          1019.0,
+          393.0
+        ],
+        [
+          685.0,
+          393.0
+        ]
+      ],
+      "text": "(Ký, ghi rõ họ tên, đóng dầu)",
+      "confidence": 0.9077228657142856
+    },
+    {
+      "bbox": [
+        [
+          223.0,
+          1264.0
+        ],
+        [
+          313.0,
+          1264.0
+        ],
+        [
+          313.0,
+          1282.0
+        ],
+        [
+          223.0,
+          1282.0
+        ]
+      ],
+      "text": "Ghi chú:",
+      "confidence": 0.9626358
+    },
+    {
+      "bbox": [
+        [
+          222.0,
+          1286.0
+        ],
+        [
+          1130.0,
+          1286.0
+        ],
+        [
+          1130.0,
+          1326.0
+        ],
+        [
+          222.0,
+          1326.0
+        ]
+      ],
+      "text": "0) Ghi theo thời điểm nêu trong Giấy chứng nhận đăng ký đầu tư, Giấy chứng nhận đăng",
+      "confidence": 0.9234028883333333
+    },
+    {
+      "bbox": [
+        [
+          222.0,
+          1315.0
+        ],
+        [
+          1130.0,
+          1315.0
+        ],
+        [
+          1130.0,
+          1349.0
+        ],
+        [
+          222.0,
+          1349.0
+        ]
+      ],
+      "text": "ký đầu tư điều chỉnh (nếu có) hoặc văn bản của cơ quan đăng ký đầu tư có thẳm quyền",
+      "confidence": 0.954506135
+    },
+    {
+      "bbox": [
+        [
+          222.0,
+          1345.0
+        ],
+        [
+          1131.0,
+          1345.0
+        ],
+        [
+          1131.0,
+          1373.0
+        ],
+        [
+          222.0,
+          1373.0
+        ]
+      ],
+      "text": "trong trường hợp không phải thực hiện cấp Giấy chứng nhận đăng ký đầu tư hoặc văn bản",
+      "confidence": 0.96781116
+    },
+    {
+      "bbox": [
+        [
+          222.0,
+          1374.0
+        ],
+        [
+          1130.0,
+          1374.0
+        ],
+        [
+          1130.0,
+          1402.0
+        ],
+        [
+          222.0,
+          1402.0
+        ]
+      ],
+      "text": "xác nhận của cơ quan đăng ký đầu tư. Trường hợp Giấy chứng nhận đăng ký đầu tư, Giấy",
+      "confidence": 0.9646556194736843
+    },
+    {
+      "bbox": [
+        [
+          223.0,
+          1402.0
+        ],
+        [
+          1131.0,
+          1402.0
+        ],
+        [
+          1131.0,
+          1430.0
+        ],
+        [
+          223.0,
+          1430.0
+        ]
+      ],
+      "text": "chứng nhận đầu tư điều chỉnh hoặc văn bản của cơ quan đăng ky đầu tư có thẳm quyền",
+      "confidence": 0.9541442436842105
+    },
+    {
+      "bbox": [
+        [
+          223.0,
+          1430.0
+        ],
+        [
+          1132.0,
+          1430.0
+        ],
+        [
+          1132.0,
+          1458.0
+        ],
+        [
+          223.0,
+          1458.0
+        ]
+      ],
+      "text": "trong trường hợp không phải thực hiện cấp Giấy chứng nhận đăng ký đầu tư, không nêu",
+      "confidence": 0.9669372782352942
+    },
+    {
+      "bbox": [
+        [
+          224.0,
+          1458.0
+        ],
+        [
+          1132.0,
+          1458.0
+        ],
+        [
+          1132.0,
+          1486.0
+        ],
+        [
+          224.0,
+          1486.0
+        ]
+      ],
+      "text": "thời điểm doanh nghiệp chế xuất chính thức đi vào hoạt động thì thời điểm doanh nghiệp",
+      "confidence": 0.9638856364705881
+    },
+    {
+      "bbox": [
+        [
+          224.0,
+          1486.0
+        ],
+        [
+          1133.0,
+          1486.0
+        ],
+        [
+          1133.0,
+          1515.0
+        ],
+        [
+          224.0,
+          1515.0
+        ]
+      ],
+      "text": "chế xuất chính thức đi vào hoạt động là thời điểm doanh nghiệp bắt đầu sản xuất chính",
+      "confidence": 0.9646309061111111
+    },
+    {
+      "bbox": [
+        [
+          224.0,
+          1519.0
+        ],
+        [
+          820.0,
+          1519.0
+        ],
+        [
+          820.0,
+          1544.0
+        ],
+        [
+          224.0,
+          1544.0
+        ]
+      ],
+      "text": "thức theo thông báo của doanh nghiệp với cơ quan hải quan.",
+      "confidence": 0.9690842624999999
+    }
+  ]
+}

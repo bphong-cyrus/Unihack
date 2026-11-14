@@ -1,0 +1,926 @@
+{
+  "document_id": "18/2021/NĐ-CP",
+  "source_file": "../../legal-sources/182021ndcp/01.pdf",
+  "source_sha256": "cb0bf16ab3ee6554929e0d9d2cc4f180f51b8ea10ddd30a37309353edeb050d8",
+  "page_count": 114,
+  "render_dpi": 150,
+  "engine": "Tesseract 5.5.4 (vie+eng; OEM 1; PSM 3)",
+  "review_status": "UNREVIEWED",
+  "tesseract_version": "5.5.4",
+  "languages": [
+    "vie",
+    "eng"
+  ],
+  "traineddata_sha256": {
+    "vie": "b6b49293d95d0b6dbd8780174627e82c75be957b6f4ed9862155540d6b00bb45",
+    "eng": "8280aed0782fe27257a68ea10fe7ef324ca0f8d85bd2fd145d1c2b560bcb66ba"
+  },
+  "ocr_engine_mode": 1,
+  "page_segmentation_mode": 3,
+  "thread_limit": 2,
+  "page": 32,
+  "lines": [
+    {
+      "bbox": [
+        [
+          657.0,
+          61.0
+        ],
+        [
+          684.0,
+          61.0
+        ],
+        [
+          684.0,
+          82.0
+        ],
+        [
+          657.0,
+          82.0
+        ]
+      ],
+      "text": "32",
+      "confidence": 0.96612572
+    },
+    {
+      "bbox": [
+        [
+          210.0,
+          146.0
+        ],
+        [
+          1135.0,
+          146.0
+        ],
+        [
+          1135.0,
+          180.0
+        ],
+        [
+          210.0,
+          180.0
+        ]
+      ],
+      "text": "hoạt động. Trong thời hạn 30 ngày kể từ ngày kết thúc thời hạn 05 năm, chủ",
+      "confidence": 0.9614840911764705
+    },
+    {
+      "bbox": [
+        [
+          211.0,
+          182.0
+        ],
+        [
+          1135.0,
+          182.0
+        ],
+        [
+          1135.0,
+          226.0
+        ],
+        [
+          211.0,
+          226.0
+        ]
+      ],
+      "text": "dự án thực hiện đăng ký tờ khai hải quan mới và kê khai, nộp thuế đối với",
+      "confidence": 0.9669563199999999
+    },
+    {
+      "bbox": [
+        [
+          210.0,
+          213.0
+        ],
+        [
+          1136.0,
+          213.0
+        ],
+        [
+          1136.0,
+          249.0
+        ],
+        [
+          210.0,
+          249.0
+        ]
+      ],
+      "text": "nguyên liệu, vật tư, linh kiện nhập khẩu đã miễn thuế chưa sử dụng hết trong",
+      "confidence": 0.966056724375
+    },
+    {
+      "bbox": [
+        [
+          210.0,
+          251.0
+        ],
+        [
+          407.0,
+          251.0
+        ],
+        [
+          407.0,
+          277.0
+        ],
+        [
+          210.0,
+          277.0
+        ]
+      ],
+      "text": "thời hạn 05 năm.",
+      "confidence": 0.96949356
+    },
+    {
+      "bbox": [
+        [
+          271.0,
+          297.0
+        ],
+        [
+          1137.0,
+          297.0
+        ],
+        [
+          1137.0,
+          340.0
+        ],
+        [
+          271.0,
+          340.0
+        ]
+      ],
+      "text": "2. Trường hợp nhập khẩu nguyên liệu, vật tư dùng để chế tạo quy định",
+      "confidence": 0.9653490193333333
+    },
+    {
+      "bbox": [
+        [
+          210.0,
+          334.0
+        ],
+        [
+          1136.0,
+          334.0
+        ],
+        [
+          1136.0,
+          370.0
+        ],
+        [
+          210.0,
+          370.0
+        ]
+      ],
+      "text": "tại điểm a khoản 11, điểm b khoản 15, điểm a khoản 16 Điều 16 Luật Thuế",
+      "confidence": 0.9517245976470587
+    },
+    {
+      "bbox": [
+        [
+          211.0,
+          355.0
+        ],
+        [
+          871.0,
+          355.0
+        ],
+        [
+          871.0,
+          406.0
+        ],
+        [
+          211.0,
+          406.0
+        ]
+      ],
+      "text": "xuất khẩu, thuế nhập khẩu, chủ dự án thực hiện như sau:",
+      "confidence": 0.9659935516666667
+    },
+    {
+      "bbox": [
+        [
+          271.0,
+          425.0
+        ],
+        [
+          1135.0,
+          425.0
+        ],
+        [
+          1135.0,
+          466.0
+        ],
+        [
+          271.0,
+          466.0
+        ]
+      ],
+      "text": "a) Trong thời hạn 30 ngày kể từ ngày hoàn thiện việc chế tạo máy móc,",
+      "confidence": 0.9628575606249999
+    },
+    {
+      "bbox": [
+        [
+          210.0,
+          458.0
+        ],
+        [
+          1135.0,
+          458.0
+        ],
+        [
+          1135.0,
+          500.0
+        ],
+        [
+          210.0,
+          500.0
+        ]
+      ],
+      "text": "thiết bị hoặc linh kiện, chỉ tiết, bộ phận rời, phụ tùng của máy móc, thiết bị,",
+      "confidence": 0.966722318235294
+    },
+    {
+      "bbox": [
+        [
+          211.0,
+          493.0
+        ],
+        [
+          1136.0,
+          493.0
+        ],
+        [
+          1136.0,
+          533.0
+        ],
+        [
+          211.0,
+          533.0
+        ]
+      ],
+      "text": "chủ dự án thông báo cho cơ quan hải quan nơi tiếp nhận Danh mục miễn thuế",
+      "confidence": 0.9670090847058823
+    },
+    {
+      "bbox": [
+        [
+          211.0,
+          525.0
+        ],
+        [
+          1135.0,
+          525.0
+        ],
+        [
+          1135.0,
+          561.0
+        ],
+        [
+          211.0,
+          561.0
+        ]
+      ],
+      "text": "về việc hoàn thành chế tạo theo các chỉ tiêu thông tin quy định tại Mẫu số 08",
+      "confidence": 0.967840983888889
+    },
+    {
+      "bbox": [
+        [
+          210.0,
+          562.0
+        ],
+        [
+          1137.0,
+          562.0
+        ],
+        [
+          1137.0,
+          599.0
+        ],
+        [
+          210.0,
+          599.0
+        ]
+      ],
+      "text": "Phụ lục VIIa ban hành kèm theo Nghị định này thông qua Hệ thống xử lý dữ",
+      "confidence": 0.9623736476470587
+    },
+    {
+      "bbox": [
+        [
+          211.0,
+          594.0
+        ],
+        [
+          1137.0,
+          594.0
+        ],
+        [
+          1137.0,
+          628.0
+        ],
+        [
+          211.0,
+          628.0
+        ]
+      ],
+      "text": "liệu điện tử hoặc theo Mẫu số 19 Phụ luc VII ban hành kèm theo Nghị định",
+      "confidence": 0.9656709652941176
+    },
+    {
+      "bbox": [
+        [
+          211.0,
+          628.0
+        ],
+        [
+          1136.0,
+          628.0
+        ],
+        [
+          1136.0,
+          674.0
+        ],
+        [
+          211.0,
+          674.0
+        ]
+      ],
+      "text": "này. Trường hợp không sử dụng hết, trong thời hạn 30 ngày kể từ ngày hoàn",
+      "confidence": 0.956504689375
+    },
+    {
+      "bbox": [
+        [
+          211.0,
+          661.0
+        ],
+        [
+          1136.0,
+          661.0
+        ],
+        [
+          1136.0,
+          695.0
+        ],
+        [
+          211.0,
+          695.0
+        ]
+      ],
+      "text": "thiện việc chế tạo, chủ dự án phải đăng ký tờ khai hải quan mới và kê khai",
+      "confidence": 0.9677403005555556
+    },
+    {
+      "bbox": [
+        [
+          211.0,
+          694.0
+        ],
+        [
+          825.0,
+          694.0
+        ],
+        [
+          825.0,
+          728.0
+        ],
+        [
+          211.0,
+          728.0
+        ]
+      ],
+      "text": "nộp thuế tại thời điểm đăng ký tờ khai hải quan mới.",
+      "confidence": 0.9656730391666667
+    },
+    {
+      "bbox": [
+        [
+          270.0,
+          749.0
+        ],
+        [
+          1136.0,
+          749.0
+        ],
+        [
+          1136.0,
+          788.0
+        ],
+        [
+          270.0,
+          788.0
+        ]
+      ],
+      "text": "b) Trong thời hạn 60 ngày kể từ ngày nhận được thông báo của chủ dự",
+      "confidence": 0.96472564625
+    },
+    {
+      "bbox": [
+        [
+          211.0,
+          782.0
+        ],
+        [
+          1136.0,
+          782.0
+        ],
+        [
+          1136.0,
+          822.0
+        ],
+        [
+          211.0,
+          822.0
+        ]
+      ],
+      "text": "án nêu tại điểm a khoản này, cơ quan hải quan nơi tiếp nhận thong báo Danh",
+      "confidence": 0.9324883423529411
+    },
+    {
+      "bbox": [
+        [
+          210.0,
+          816.0
+        ],
+        [
+          1136.0,
+          816.0
+        ],
+        [
+          1136.0,
+          850.0
+        ],
+        [
+          210.0,
+          850.0
+        ]
+      ],
+      "text": "mục miễn thuế thực hiện kiểm tra tại trụ sở của chủ dự án để xác định lượng",
+      "confidence": 0.9627864583333333
+    },
+    {
+      "bbox": [
+        [
+          210.0,
+          850.0
+        ],
+        [
+          1135.0,
+          850.0
+        ],
+        [
+          1135.0,
+          883.0
+        ],
+        [
+          210.0,
+          883.0
+        ]
+      ],
+      "text": "hàng hóa nhập khẩu miễn thuế đã sử dụng đúng mục đích chế tạo máy móc,",
+      "confidence": 0.96869534
+    },
+    {
+      "bbox": [
+        [
+          210.0,
+          883.0
+        ],
+        [
+          1134.0,
+          883.0
+        ],
+        [
+          1134.0,
+          917.0
+        ],
+        [
+          210.0,
+          917.0
+        ]
+      ],
+      "text": "thiết bị hoặc linh kiện, chỉ tiết, bộ phận rời, phụ tùng của máy móc, thiết bị.",
+      "confidence": 0.9532427664705883
+    },
+    {
+      "bbox": [
+        [
+          211.0,
+          918.0
+        ],
+        [
+          1135.0,
+          918.0
+        ],
+        [
+          1135.0,
+          956.0
+        ],
+        [
+          211.0,
+          956.0
+        ]
+      ],
+      "text": "Trường hợp cơ quan hải quan phát hiện chủ dự án không sử dụng hết hoặc",
+      "confidence": 0.969256505625
+    },
+    {
+      "bbox": [
+        [
+          211.0,
+          950.0
+        ],
+        [
+          1135.0,
+          950.0
+        ],
+        [
+          1135.0,
+          989.0
+        ],
+        [
+          211.0,
+          989.0
+        ]
+      ],
+      "text": "thay đổi mục đích sử dụng hàng hóa miễn thuế nhưng không đăng ký tờ khai",
+      "confidence": 0.95687442375
+    },
+    {
+      "bbox": [
+        [
+          210.0,
+          984.0
+        ],
+        [
+          846.0,
+          984.0
+        ],
+        [
+          846.0,
+          1017.0
+        ],
+        [
+          210.0,
+          1017.0
+        ]
+      ],
+      "text": "hải quan mới thì thực hiện ấn định thuế theo quy định.",
+      "confidence": 0.9646127433333334
+    },
+    {
+      "bbox": [
+        [
+          229.0,
+          1035.0
+        ],
+        [
+          1136.0,
+          1035.0
+        ],
+        [
+          1136.0,
+          1081.0
+        ],
+        [
+          229.0,
+          1081.0
+        ]
+      ],
+      "text": "©) Chủ dự án thực hiện thông báo tình hình sử dung hàng hóa nhập khẩu",
+      "confidence": 0.903871211875
+    },
+    {
+      "bbox": [
+        [
+          210.0,
+          1074.0
+        ],
+        [
+          1135.0,
+          1074.0
+        ],
+        [
+          1135.0,
+          1115.0
+        ],
+        [
+          210.0,
+          1115.0
+        ]
+      ],
+      "text": "dé chê tạo theo quy định tại khoản 1 Điều này. Kê từ năm hoàn thiện việc chê",
+      "confidence": 0.9615305916666667
+    },
+    {
+      "bbox": [
+        [
+          210.0,
+          1111.0
+        ],
+        [
+          1131.0,
+          1111.0
+        ],
+        [
+          1131.0,
+          1139.0
+        ],
+        [
+          210.0,
+          1139.0
+        ]
+      ],
+      "text": "tạo, chủ dự án thực hiện thông báo việc sử dụng đôi với sản phâm sau chê tạo.",
+      "confidence": 0.9637655049999999
+    },
+    {
+      "bbox": [
+        [
+          269.0,
+          1160.0
+        ],
+        [
+          1135.0,
+          1160.0
+        ],
+        [
+          1135.0,
+          1199.0
+        ],
+        [
+          269.0,
+          1199.0
+        ]
+      ],
+      "text": "3. Trường hợp nhập khẩu miễn thuế theo tổ hợp, dây chuyền phải nhập",
+      "confidence": 0.9669824114285714
+    },
+    {
+      "bbox": [
+        [
+          209.0,
+          1193.0
+        ],
+        [
+          1134.0,
+          1193.0
+        ],
+        [
+          1134.0,
+          1232.0
+        ],
+        [
+          209.0,
+          1232.0
+        ]
+      ],
+      "text": "khẩu làm nhiều chuyến, không trừ lùi theo số lượng hàng hóa tại thời điểm",
+      "confidence": 0.9578464959999999
+    },
+    {
+      "bbox": [
+        [
+          209.0,
+          1228.0
+        ],
+        [
+          1136.0,
+          1228.0
+        ],
+        [
+          1136.0,
+          1260.0
+        ],
+        [
+          209.0,
+          1260.0
+        ]
+      ],
+      "text": "đăng ký tờ khai hải quan, ngoài quy định tại khoản 1 Điều này, chủ dự án",
+      "confidence": 0.9682692994117645
+    },
+    {
+      "bbox": [
+        [
+          209.0,
+          1266.0
+        ],
+        [
+          425.0,
+          1266.0
+        ],
+        [
+          425.0,
+          1291.0
+        ],
+        [
+          209.0,
+          1291.0
+        ]
+      ],
+      "text": "thực hiện như sau:",
+      "confidence": 0.9685879875000001
+    },
+    {
+      "bbox": [
+        [
+          269.0,
+          1315.0
+        ],
+        [
+          1135.0,
+          1315.0
+        ],
+        [
+          1135.0,
+          1348.0
+        ],
+        [
+          269.0,
+          1348.0
+        ]
+      ],
+      "text": "a) Trong thời hạn 30 ngày kế từ ngày hoàn thiện việc lắp đặt tổ hop, dây",
+      "confidence": 0.958261085882353
+    },
+    {
+      "bbox": [
+        [
+          209.0,
+          1348.0
+        ],
+        [
+          1135.0,
+          1348.0
+        ],
+        [
+          1135.0,
+          1382.0
+        ],
+        [
+          209.0,
+          1382.0
+        ]
+      ],
+      "text": "chuyền, chủ dự án có thông báo với cơ quan hải quan nơi tiếp nhận Danh mục",
+      "confidence": 0.9673250935294118
+    },
+    {
+      "bbox": [
+        [
+          208.0,
+          1382.0
+        ],
+        [
+          1135.0,
+          1382.0
+        ],
+        [
+          1135.0,
+          1415.0
+        ],
+        [
+          208.0,
+          1415.0
+        ]
+      ],
+      "text": "miễn thuế về việc hoàn thiện lắp đặt tổ hợp, dây chuyền theo các chỉ tiêu",
+      "confidence": 0.968005970625
+    },
+    {
+      "bbox": [
+        [
+          208.0,
+          1415.0
+        ],
+        [
+          1136.0,
+          1415.0
+        ],
+        [
+          1136.0,
+          1448.0
+        ],
+        [
+          208.0,
+          1448.0
+        ]
+      ],
+      "text": "thông tin quy định tại Mẫu số 09 Phụ luc VIIa ban hành kèm theo Nghị định",
+      "confidence": 0.9472437170588236
+    },
+    {
+      "bbox": [
+        [
+          208.0,
+          1448.0
+        ],
+        [
+          1134.0,
+          1448.0
+        ],
+        [
+          1134.0,
+          1481.0
+        ],
+        [
+          208.0,
+          1481.0
+        ]
+      ],
+      "text": "này thông qua Hệ thống xử lý dữ liệu điện tử hoặc theo Mẫu số 20 Phụ lục VII",
+      "confidence": 0.9624228989473684
+    },
+    {
+      "bbox": [
+        [
+          209.0,
+          1482.0
+        ],
+        [
+          1134.0,
+          1482.0
+        ],
+        [
+          1134.0,
+          1520.0
+        ],
+        [
+          209.0,
+          1520.0
+        ]
+      ],
+      "text": "ban hành kèm theo Nghị định này. Trường hợp không sử dụng hết, trong thời",
+      "confidence": 0.9676822306666666
+    },
+    {
+      "bbox": [
+        [
+          209.0,
+          1515.0
+        ],
+        [
+          1135.0,
+          1515.0
+        ],
+        [
+          1135.0,
+          1554.0
+        ],
+        [
+          209.0,
+          1554.0
+        ]
+      ],
+      "text": "hạn 30 ngày kể từ ngày hoàn thiện việc lắp đặt tổ hợp, day chuyén, chủ dự án",
+      "confidence": 0.9518408549999999
+    },
+    {
+      "bbox": [
+        [
+          209.0,
+          1549.0
+        ],
+        [
+          1159.0,
+          1549.0
+        ],
+        [
+          1159.0,
+          1582.0
+        ],
+        [
+          209.0,
+          1582.0
+        ]
+      ],
+      "text": "phải đăng ký tờ khai hải quan mới và kê khai nộp thuế tại thời điểm đăng ky +.",
+      "confidence": 0.9378604852631578
+    },
+    {
+      "bbox": [
+        [
+          209.0,
+          1588.0
+        ],
+        [
+          458.0,
+          1588.0
+        ],
+        [
+          458.0,
+          1615.0
+        ],
+        [
+          209.0,
+          1615.0
+        ]
+      ],
+      "text": "tờ khai hải quan mới.",
+      "confidence": 0.968323104
+    }
+  ]
+}
