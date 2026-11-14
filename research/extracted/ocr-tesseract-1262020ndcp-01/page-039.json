@@ -1,0 +1,860 @@
+{
+  "document_id": "126/2020/NĐ-CP",
+  "source_file": "../../legal-sources/1262020ndcp/01.pdf",
+  "source_sha256": "310648e80396d267610946458e7fdd71ba87ef538b009d6574ed21514de3f7ca",
+  "page_count": 119,
+  "render_dpi": 150,
+  "engine": "Tesseract 5.5.4 (vie+eng; OEM 1; PSM 3)",
+  "review_status": "UNREVIEWED",
+  "tesseract_version": "5.5.4",
+  "languages": [
+    "vie",
+    "eng"
+  ],
+  "traineddata_sha256": {
+    "vie": "b6b49293d95d0b6dbd8780174627e82c75be957b6f4ed9862155540d6b00bb45",
+    "eng": "8280aed0782fe27257a68ea10fe7ef324ca0f8d85bd2fd145d1c2b560bcb66ba"
+  },
+  "ocr_engine_mode": 1,
+  "page_segmentation_mode": 3,
+  "thread_limit": 2,
+  "page": 39,
+  "lines": [
+    {
+      "bbox": [
+        [
+          681.0,
+          67.0
+        ],
+        [
+          708.0,
+          67.0
+        ],
+        [
+          708.0,
+          88.0
+        ],
+        [
+          681.0,
+          88.0
+        ]
+      ],
+      "text": "39",
+      "confidence": 0.9698690000000001
+    },
+    {
+      "bbox": [
+        [
+          268.0,
+          138.0
+        ],
+        [
+          1125.0,
+          138.0
+        ],
+        [
+          1125.0,
+          185.0
+        ],
+        [
+          268.0,
+          185.0
+        ]
+      ],
+      "text": "b.2) Trường hợp cơ quan quản lý thuế tính thuế, thông báo số tiền thuế",
+      "confidence": 0.9659063360000001
+    },
+    {
+      "bbox": [
+        [
+          209.0,
+          178.0
+        ],
+        [
+          1126.0,
+          178.0
+        ],
+        [
+          1126.0,
+          220.0
+        ],
+        [
+          209.0,
+          220.0
+        ]
+      ],
+      "text": "phải nộp theo hồ sơ xác định nghĩa vu tài chính do cơ quan quản lý nhà nước",
+      "confidence": 0.9608076477777778
+    },
+    {
+      "bbox": [
+        [
+          209.0,
+          206.0
+        ],
+        [
+          1127.0,
+          206.0
+        ],
+        [
+          1127.0,
+          252.0
+        ],
+        [
+          209.0,
+          252.0
+        ]
+      ],
+      "text": "có thẩm quyền chuyển đến, cơ quan quản lý thuế có trách nhiệm kiểm tra",
+      "confidence": 0.9570599286666668
+    },
+    {
+      "bbox": [
+        [
+          209.0,
+          240.0
+        ],
+        [
+          1127.0,
+          240.0
+        ],
+        [
+          1127.0,
+          289.0
+        ],
+        [
+          209.0,
+          289.0
+        ]
+      ],
+      "text": "thông tin trên hồ sơ xác định nghĩa vụ tài chính và thực hiện tính thuế, thông",
+      "confidence": 0.9655470235294118
+    },
+    {
+      "bbox": [
+        [
+          209.0,
+          279.0
+        ],
+        [
+          548.0,
+          279.0
+        ],
+        [
+          548.0,
+          314.0
+        ],
+        [
+          209.0,
+          314.0
+        ]
+      ],
+      "text": "báo thuế cho người nộp thuế.",
+      "confidence": 0.9654982
+    },
+    {
+      "bbox": [
+        [
+          269.0,
+          329.0
+        ],
+        [
+          1126.0,
+          329.0
+        ],
+        [
+          1126.0,
+          379.0
+        ],
+        [
+          269.0,
+          379.0
+        ]
+      ],
+      "text": "b.3) Trường hợp thông tin của các cơ quan nhà nước có thẩm quyền",
+      "confidence": 0.9642569400000001
+    },
+    {
+      "bbox": [
+        [
+          209.0,
+          361.0
+        ],
+        [
+          1127.0,
+          361.0
+        ],
+        [
+          1127.0,
+          411.0
+        ],
+        [
+          209.0,
+          411.0
+        ]
+      ],
+      "text": "chuyển đến chưa đủ thành phần, chưa đủ thông tin hoặc cơ quan quản lý thuế",
+      "confidence": 0.9658268737500001
+    },
+    {
+      "bbox": [
+        [
+          209.0,
+          398.0
+        ],
+        [
+          1127.0,
+          398.0
+        ],
+        [
+          1127.0,
+          444.0
+        ],
+        [
+          209.0,
+          444.0
+        ]
+      ],
+      "text": "phát hiện thông tin không đúng thực tế thì trong thời hạn 03 ngày làm việc kể",
+      "confidence": 0.9616740505882353
+    },
+    {
+      "bbox": [
+        [
+          209.0,
+          432.0
+        ],
+        [
+          1128.0,
+          432.0
+        ],
+        [
+          1128.0,
+          477.0
+        ],
+        [
+          209.0,
+          477.0
+        ]
+      ],
+      "text": "từ ngày nhận được hồ sơ, cơ quan quản lý thuế có trách nhiệm thông báo bằng",
+      "confidence": 0.9676545976470589
+    },
+    {
+      "bbox": [
+        [
+          210.0,
+          469.0
+        ],
+        [
+          1127.0,
+          469.0
+        ],
+        [
+          1127.0,
+          506.0
+        ],
+        [
+          210.0,
+          506.0
+        ]
+      ],
+      "text": "văn bản cho cơ quan đã gửi hồ sơ dé bồ sung, điều chỉnh thông tin. Sau khi",
+      "confidence": 0.9555117894444445
+    },
+    {
+      "bbox": [
+        [
+          210.0,
+          499.0
+        ],
+        [
+          1129.0,
+          499.0
+        ],
+        [
+          1129.0,
+          545.0
+        ],
+        [
+          210.0,
+          545.0
+        ]
+      ],
+      "text": "nhận đủ hồ sơ, thông tin thì cơ quan quản lý thuế thực hiện tính và ban hành",
+      "confidence": 0.9680141822222222
+    },
+    {
+      "bbox": [
+        [
+          210.0,
+          535.0
+        ],
+        [
+          1128.0,
+          535.0
+        ],
+        [
+          1128.0,
+          574.0
+        ],
+        [
+          210.0,
+          574.0
+        ]
+      ],
+      "text": "thông báo nộp tiền theo thời hạn quy định tại các điều tương ứng của Nghị",
+      "confidence": 0.9677730468749999
+    },
+    {
+      "bbox": [
+        [
+          211.0,
+          581.0
+        ],
+        [
+          317.0,
+          581.0
+        ],
+        [
+          317.0,
+          606.0
+        ],
+        [
+          211.0,
+          606.0
+        ]
+      ],
+      "text": "định này.",
+      "confidence": 0.9669109349999999
+    },
+    {
+      "bbox": [
+        [
+          270.0,
+          625.0
+        ],
+        [
+          1129.0,
+          625.0
+        ],
+        [
+          1129.0,
+          665.0
+        ],
+        [
+          270.0,
+          665.0
+        ]
+      ],
+      "text": "b.4) Trường hợp cơ quan quản lý thuế thông báo số tiền thuế _phải nộp",
+      "confidence": 0.9623269453333334
+    },
+    {
+      "bbox": [
+        [
+          211.0,
+          659.0
+        ],
+        [
+          1129.0,
+          659.0
+        ],
+        [
+          1129.0,
+          703.0
+        ],
+        [
+          211.0,
+          703.0
+        ]
+      ],
+      "text": "theo văn bản xác định nghĩa vụ phải nộp của cơ quan nhà nước có thẩm quyền",
+      "confidence": 0.9667492400000001
+    },
+    {
+      "bbox": [
+        [
+          212.0,
+          697.0
+        ],
+        [
+          1130.0,
+          697.0
+        ],
+        [
+          1130.0,
+          738.0
+        ],
+        [
+          212.0,
+          738.0
+        ]
+      ],
+      "text": "theo quy định tại các điều tương ứng của Nghị định này. Trường hợp thông",
+      "confidence": 0.9681492413333334
+    },
+    {
+      "bbox": [
+        [
+          212.0,
+          725.0
+        ],
+        [
+          1129.0,
+          725.0
+        ],
+        [
+          1129.0,
+          764.0
+        ],
+        [
+          212.0,
+          764.0
+        ]
+      ],
+      "text": "tin của các cơ quan nhà nước có thẩm quyền chuyển đến chưa đủ căn cứ đề",
+      "confidence": 0.9614141570588235
+    },
+    {
+      "bbox": [
+        [
+          212.0,
+          759.0
+        ],
+        [
+          1130.0,
+          759.0
+        ],
+        [
+          1130.0,
+          798.0
+        ],
+        [
+          212.0,
+          798.0
+        ]
+      ],
+      "text": "ban hành thông báo nộp thuế, trong thời hạn 03 ngày làm việc kể từ ngày",
+      "confidence": 0.9486462362500001
+    },
+    {
+      "bbox": [
+        [
+          213.0,
+          793.0
+        ],
+        [
+          1131.0,
+          793.0
+        ],
+        [
+          1131.0,
+          836.0
+        ],
+        [
+          213.0,
+          836.0
+        ]
+      ],
+      "text": "nhận được văn bản, cơ quan quản lý thuế có trách nhiệm thông báo bằng văn",
+      "confidence": 0.966046409375
+    },
+    {
+      "bbox": [
+        [
+          213.0,
+          829.0
+        ],
+        [
+          1132.0,
+          829.0
+        ],
+        [
+          1132.0,
+          871.0
+        ],
+        [
+          213.0,
+          871.0
+        ]
+      ],
+      "text": "bản cho cơ quan đã gửi hồ sơ dé bd sung, . điều chỉnh thông tin. Sau khi nhận",
+      "confidence": 0.9285097584210525
+    },
+    {
+      "bbox": [
+        [
+          213.0,
+          862.0
+        ],
+        [
+          1131.0,
+          862.0
+        ],
+        [
+          1131.0,
+          905.0
+        ],
+        [
+          213.0,
+          905.0
+        ]
+      ],
+      "text": "đủ hồ sơ, thông tin thì cơ quan quản lý thuế thực hiện ban hành thông báo nộp",
+      "confidence": 0.9684241655555554
+    },
+    {
+      "bbox": [
+        [
+          213.0,
+          897.0
+        ],
+        [
+          1026.0,
+          897.0
+        ],
+        [
+          1026.0,
+          932.0
+        ],
+        [
+          213.0,
+          932.0
+        ]
+      ],
+      "text": "tiền theo thời hạn quy định tại các điều tương ứng của Nghị định này.",
+      "confidence": 0.9677693233333333
+    },
+    {
+      "bbox": [
+        [
+          273.0,
+          952.0
+        ],
+        [
+          1131.0,
+          952.0
+        ],
+        [
+          1131.0,
+          991.0
+        ],
+        [
+          273.0,
+          991.0
+        ]
+      ],
+      "text": "b.5) Các trường hợp quy định tại điểm b, c, d, e và điểm g khoản 10",
+      "confidence": 0.94838737
+    },
+    {
+      "bbox": [
+        [
+          214.0,
+          987.0
+        ],
+        [
+          1132.0,
+          987.0
+        ],
+        [
+          1132.0,
+          1031.0
+        ],
+        [
+          214.0,
+          1031.0
+        ]
+      ],
+      "text": "Điều này, cơ quan hải quan căn cứ dữ liệu quản lý thuế, các chứng từ tài liệu",
+      "confidence": 0.968670013888889
+    },
+    {
+      "bbox": [
+        [
+          214.0,
+          1020.0
+        ],
+        [
+          1132.0,
+          1020.0
+        ],
+        [
+          1132.0,
+          1066.0
+        ],
+        [
+          214.0,
+          1066.0
+        ]
+      ],
+      "text": "có liên quan để xác định số tiền thuế phải nộp đối với hàng hóa xuất khẩu,",
+      "confidence": 0.9673141347058823
+    },
+    {
+      "bbox": [
+        [
+          214.0,
+          1057.0
+        ],
+        [
+          340.0,
+          1057.0
+        ],
+        [
+          340.0,
+          1096.0
+        ],
+        [
+          214.0,
+          1096.0
+        ]
+      ],
+      "text": "nhập khẩu.",
+      "confidence": 0.9619389300000001
+    },
+    {
+      "bbox": [
+        [
+          274.0,
+          1116.0
+        ],
+        [
+          794.0,
+          1116.0
+        ],
+        [
+          794.0,
+          1152.0
+        ],
+        [
+          274.0,
+          1152.0
+        ]
+      ],
+      "text": "c) Đối với cơ quan nhà nước có thẳm quyền:",
+      "confidence": 0.931758842
+    },
+    {
+      "bbox": [
+        [
+          275.0,
+          1171.0
+        ],
+        [
+          1134.0,
+          1171.0
+        ],
+        [
+          1134.0,
+          1211.0
+        ],
+        [
+          275.0,
+          1211.0
+        ]
+      ],
+      "text": "e.1) Chịu trách nhiệm về tính đầy đủ, chính xác của thông tin trên hồ sơ",
+      "confidence": 0.95623468875
+    },
+    {
+      "bbox": [
+        [
+          216.0,
+          1212.0
+        ],
+        [
+          1027.0,
+          1212.0
+        ],
+        [
+          1027.0,
+          1245.0
+        ],
+        [
+          216.0,
+          1245.0
+        ]
+      ],
+      "text": "xác định nghĩa vụ tài chính hoặc văn bản xác định nghĩa vụ phải nộp;",
+      "confidence": 0.9681778
+    },
+    {
+      "bbox": [
+        [
+          276.0,
+          1269.0
+        ],
+        [
+          1134.0,
+          1269.0
+        ],
+        [
+          1134.0,
+          1304.0
+        ],
+        [
+          276.0,
+          1304.0
+        ]
+      ],
+      "text": "¢.2) Chuyển đầy đủ, kịp thời hồ sơ xác định nghĩa vụ tài chính hoặc văn",
+      "confidence": 0.9524847087499999
+    },
+    {
+      "bbox": [
+        [
+          217.0,
+          1301.0
+        ],
+        [
+          892.0,
+          1301.0
+        ],
+        [
+          892.0,
+          1338.0
+        ],
+        [
+          217.0,
+          1338.0
+        ]
+      ],
+      "text": "bản xác định nghĩa vụ phải nộp cho cơ quan quản lý thuế;",
+      "confidence": 0.9686384938461537
+    },
+    {
+      "bbox": [
+        [
+          277.0,
+          1355.0
+        ],
+        [
+          1105.0,
+          1355.0
+        ],
+        [
+          1105.0,
+          1399.0
+        ],
+        [
+          277.0,
+          1399.0
+        ]
+      ],
+      "text": "c.3) Điều chỉnh, bb sung thông tin theo đề nghị của cơ quan quản lý thuế;",
+      "confidence": 0.952742795625
+    },
+    {
+      "bbox": [
+        [
+          277.0,
+          1420.0
+        ],
+        [
+          1136.0,
+          1420.0
+        ],
+        [
+          1136.0,
+          1466.0
+        ],
+        [
+          277.0,
+          1466.0
+        ]
+      ],
+      "text": "c.4) Gửi kịp thời các văn bản điều chỉnh, bổ sung thông tin dé xác định",
+      "confidence": 0.937089876875
+    },
+    {
+      "bbox": [
+        [
+          219.0,
+          1454.0
+        ],
+        [
+          1136.0,
+          1454.0
+        ],
+        [
+          1136.0,
+          1501.0
+        ],
+        [
+          219.0,
+          1501.0
+        ]
+      ],
+      "text": "số thuế phải nộp cho cơ quan quản lý thuế để điều chỉnh nghĩa vụ thuế và điều",
+      "confidence": 0.9634928472222222
+    },
+    {
+      "bbox": [
+        [
+          218.0,
+          1494.0
+        ],
+        [
+          883.0,
+          1494.0
+        ],
+        [
+          883.0,
+          1529.0
+        ],
+        [
+          218.0,
+          1529.0
+        ]
+      ],
+      "text": "chỉnh, bổ sung thông báo nộp thuế đã ban hành trước đó;",
+      "confidence": 0.9628397683333333
+    },
+    {
+      "bbox": [
+        [
+          274.0,
+          1551.0
+        ],
+        [
+          1137.0,
+          1551.0
+        ],
+        [
+          1137.0,
+          1597.0
+        ],
+        [
+          274.0,
+          1597.0
+        ]
+      ],
+      "text": "Cc. 5) Phéi hop véi co quan quản lý thuế và xây dụng hệ thống thông tin",
+      "confidence": 0.9322229352941177
+    },
+    {
+      "bbox": [
+        [
+          220.0,
+          1589.0
+        ],
+        [
+          918.0,
+          1589.0
+        ],
+        [
+          918.0,
+          1625.0
+        ],
+        [
+          220.0,
+          1625.0
+        ]
+      ],
+      "text": "để truyền nhận thông tin tự động bằng phương thức điện tử;",
+      "confidence": 0.9618234883333333
+    }
+  ]
+}

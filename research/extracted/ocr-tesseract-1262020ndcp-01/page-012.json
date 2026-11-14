@@ -1,0 +1,860 @@
+{
+  "document_id": "126/2020/NĐ-CP",
+  "source_file": "../../legal-sources/1262020ndcp/01.pdf",
+  "source_sha256": "310648e80396d267610946458e7fdd71ba87ef538b009d6574ed21514de3f7ca",
+  "page_count": 119,
+  "render_dpi": 150,
+  "engine": "Tesseract 5.5.4 (vie+eng; OEM 1; PSM 3)",
+  "review_status": "UNREVIEWED",
+  "tesseract_version": "5.5.4",
+  "languages": [
+    "vie",
+    "eng"
+  ],
+  "traineddata_sha256": {
+    "vie": "b6b49293d95d0b6dbd8780174627e82c75be957b6f4ed9862155540d6b00bb45",
+    "eng": "8280aed0782fe27257a68ea10fe7ef324ca0f8d85bd2fd145d1c2b560bcb66ba"
+  },
+  "ocr_engine_mode": 1,
+  "page_segmentation_mode": 3,
+  "thread_limit": 2,
+  "page": 12,
+  "lines": [
+    {
+      "bbox": [
+        [
+          678.0,
+          59.0
+        ],
+        [
+          702.0,
+          59.0
+        ],
+        [
+          702.0,
+          79.0
+        ],
+        [
+          678.0,
+          79.0
+        ]
+      ],
+      "text": "12",
+      "confidence": 0.96926117
+    },
+    {
+      "bbox": [
+        [
+          261.0,
+          133.0
+        ],
+        [
+          1119.0,
+          133.0
+        ],
+        [
+          1119.0,
+          172.0
+        ],
+        [
+          261.0,
+          172.0
+        ]
+      ],
+      "text": "đ) Tổ chức chỉ trả các khoản thưởng, hỗ trợ đạt doanh số, khuyến mại,",
+      "confidence": 0.9605972553333332
+    },
+    {
+      "bbox": [
+        [
+          202.0,
+          166.0
+        ],
+        [
+          1120.0,
+          166.0
+        ],
+        [
+          1120.0,
+          212.0
+        ],
+        [
+          202.0,
+          212.0
+        ]
+      ],
+      "text": "chiết khấu thương mại, chiết khấu thanh toán, chi hỗ trợ bằng tiền hoặc không",
+      "confidence": 0.944039668
+    },
+    {
+      "bbox": [
+        [
+          202.0,
+          201.0
+        ],
+        [
+          1119.0,
+          201.0
+        ],
+        [
+          1119.0,
+          241.0
+        ],
+        [
+          202.0,
+          241.0
+        ]
+      ],
+      "text": "bằng tiền cho cá nhân là các hộ kinh doanh, cá nhân kinh doanh nộp thuế theo",
+      "confidence": 0.9682695735294117
+    },
+    {
+      "bbox": [
+        [
+          202.0,
+          234.0
+        ],
+        [
+          1119.0,
+          234.0
+        ],
+        [
+          1119.0,
+          270.0
+        ],
+        [
+          202.0,
+          270.0
+        ]
+      ],
+      "text": "phương pháp khoán thì tổ chức có trách nhiệm khai thuế thay và nộp thuế",
+      "confidence": 0.9685058139999999
+    },
+    {
+      "bbox": [
+        [
+          203.0,
+          275.0
+        ],
+        [
+          573.0,
+          275.0
+        ],
+        [
+          573.0,
+          303.0
+        ],
+        [
+          203.0,
+          303.0
+        ]
+      ],
+      "text": "thay cho cá nhân theo quy định.",
+      "confidence": 0.9674859071428571
+    },
+    {
+      "bbox": [
+        [
+          263.0,
+          324.0
+        ],
+        [
+          1118.0,
+          324.0
+        ],
+        [
+          1118.0,
+          366.0
+        ],
+        [
+          263.0,
+          366.0
+        ]
+      ],
+      "text": "e) Tổ chức thuê tài sản của cá nhân mà trong hợp đồng cho thuê quy",
+      "confidence": 0.9608457568750001
+    },
+    {
+      "bbox": [
+        [
+          204.0,
+          360.0
+        ],
+        [
+          1119.0,
+          360.0
+        ],
+        [
+          1119.0,
+          398.0
+        ],
+        [
+          204.0,
+          398.0
+        ]
+      ],
+      "text": "định tổ chức là người nộp thuế thay cho cá nhân thì tổ chức có trách nhiệm",
+      "confidence": 0.9677901188235295
+    },
+    {
+      "bbox": [
+        [
+          203.0,
+          394.0
+        ],
+        [
+          889.0,
+          394.0
+        ],
+        [
+          889.0,
+          427.0
+        ],
+        [
+          203.0,
+          427.0
+        ]
+      ],
+      "text": "khai thuế thay và nộp thuê thay cho cá nhân theo quy định.",
+      "confidence": 0.9610281538461539
+    },
+    {
+      "bbox": [
+        [
+          263.0,
+          448.0
+        ],
+        [
+          1121.0,
+          448.0
+        ],
+        [
+          1121.0,
+          488.0
+        ],
+        [
+          263.0,
+          488.0
+        ]
+      ],
+      "text": "g) Bên mua bất động sản mà trong hợp đồng chuyển nhượng bất động",
+      "confidence": 0.9587513178571428
+    },
+    {
+      "bbox": [
+        [
+          205.0,
+          478.0
+        ],
+        [
+          1121.0,
+          478.0
+        ],
+        [
+          1121.0,
+          522.0
+        ],
+        [
+          205.0,
+          522.0
+        ]
+      ],
+      "text": "sản có thoả thuận bên mua là người nộp thuế thay cho bên bán (trừ trường",
+      "confidence": 0.9688482093749999
+    },
+    {
+      "bbox": [
+        [
+          204.0,
+          515.0
+        ],
+        [
+          1120.0,
+          515.0
+        ],
+        [
+          1120.0,
+          550.0
+        ],
+        [
+          204.0,
+          550.0
+        ]
+      ],
+      "text": "hợp được miễn thuế, không phải nộp thuế hoặc tạm thời chưa phải nộp thuế);",
+      "confidence": 0.9568332213333334
+    },
+    {
+      "bbox": [
+        [
+          204.0,
+          554.0
+        ],
+        [
+          1122.0,
+          554.0
+        ],
+        [
+          1122.0,
+          583.0
+        ],
+        [
+          204.0,
+          583.0
+        ]
+      ],
+      "text": "bên thứ ba có liên quan được phép bán tài sản của cá nhân theo quy định của",
+      "confidence": 0.9692656661111111
+    },
+    {
+      "bbox": [
+        [
+          204.0,
+          582.0
+        ],
+        [
+          1121.0,
+          582.0
+        ],
+        [
+          1121.0,
+          617.0
+        ],
+        [
+          204.0,
+          617.0
+        ]
+      ],
+      "text": "pháp luật thì bên mua, bên thứ ba có trách nhiệm khai thuế thay, nộp thuế",
+      "confidence": 0.96810318
+    },
+    {
+      "bbox": [
+        [
+          204.0,
+          623.0
+        ],
+        [
+          574.0,
+          623.0
+        ],
+        [
+          574.0,
+          650.0
+        ],
+        [
+          204.0,
+          650.0
+        ]
+      ],
+      "text": "thay cho cá nhân theo quy định.",
+      "confidence": 0.9700019185714287
+    },
+    {
+      "bbox": [
+        [
+          264.0,
+          672.0
+        ],
+        [
+          1122.0,
+          672.0
+        ],
+        [
+          1122.0,
+          713.0
+        ],
+        [
+          264.0,
+          713.0
+        ]
+      ],
+      "text": "h) Tổ chức phát hành thực hiện thủ tục thay đổi danh sách thành viên",
+      "confidence": 0.9600735119999999
+    },
+    {
+      "bbox": [
+        [
+          205.0,
+          705.0
+        ],
+        [
+          1122.0,
+          705.0
+        ],
+        [
+          1122.0,
+          744.0
+        ],
+        [
+          205.0,
+          744.0
+        ]
+      ],
+      "text": "góp vốn hoặc danh sách cổ đông trong trường hợp chuyển nhượng vốn mà",
+      "confidence": 0.9650796185714285
+    },
+    {
+      "bbox": [
+        [
+          205.0,
+          739.0
+        ],
+        [
+          1122.0,
+          739.0
+        ],
+        [
+          1122.0,
+          779.0
+        ],
+        [
+          205.0,
+          779.0
+        ]
+      ],
+      "text": "không có chứng từ chứng minh cá nhân chuyển nhượng vôn đã hoàn thành",
+      "confidence": 0.9579451364285714
+    },
+    {
+      "bbox": [
+        [
+          205.0,
+          772.0
+        ],
+        [
+          1122.0,
+          772.0
+        ],
+        [
+          1122.0,
+          813.0
+        ],
+        [
+          205.0,
+          813.0
+        ]
+      ],
+      "text": "nghĩa vụ thuế thì tổ chức phát hành khai thuế thay, nộp thuế thay cho cá nhân",
+      "confidence": 0.9661464776470587
+    },
+    {
+      "bbox": [
+        [
+          206.0,
+          807.0
+        ],
+        [
+          610.0,
+          807.0
+        ],
+        [
+          610.0,
+          840.0
+        ],
+        [
+          206.0,
+          840.0
+        ]
+      ],
+      "text": "chuyền nhượng vốn theo quy định.",
+      "confidence": 0.8850321700000001
+    },
+    {
+      "bbox": [
+        [
+          265.0,
+          862.0
+        ],
+        [
+          1123.0,
+          862.0
+        ],
+        [
+          1123.0,
+          896.0
+        ],
+        [
+          265.0,
+          896.0
+        ]
+      ],
+      "text": "i) Tổ chức được giao nhiệm vụ tổ chức thu phí, lệ phí theo quy định của",
+      "confidence": 0.96560682
+    },
+    {
+      "bbox": [
+        [
+          205.0,
+          896.0
+        ],
+        [
+          1122.0,
+          896.0
+        ],
+        [
+          1122.0,
+          930.0
+        ],
+        [
+          205.0,
+          930.0
+        ]
+      ],
+      "text": "pháp luật về phí, lệ phí thực hiện khai số tiền phí, lệ phí đã thu được với cơ",
+      "confidence": 0.9663811531578947
+    },
+    {
+      "bbox": [
+        [
+          206.0,
+          930.0
+        ],
+        [
+          1122.0,
+          930.0
+        ],
+        [
+          1122.0,
+          964.0
+        ],
+        [
+          206.0,
+          964.0
+        ]
+      ],
+      "text": "quan thuế quản lý trực tiếp (trừ phí hải quan; lệ phí hàng hoá, hành lý, phương",
+      "confidence": 0.9647396817647059
+    },
+    {
+      "bbox": [
+        [
+          205.0,
+          969.0
+        ],
+        [
+          462.0,
+          969.0
+        ],
+        [
+          462.0,
+          996.0
+        ],
+        [
+          205.0,
+          996.0
+        ]
+      ],
+      "text": "tiện vận tải quá cảnh).",
+      "confidence": 0.96963118
+    },
+    {
+      "bbox": [
+        [
+          266.0,
+          1017.0
+        ],
+        [
+          1122.0,
+          1017.0
+        ],
+        [
+          1122.0,
+          1056.0
+        ],
+        [
+          266.0,
+          1056.0
+        ]
+      ],
+      "text": "6. Người nộp thuế phải nộp hồ sơ khai thuế cho cơ quan thuế nơi chuyển",
+      "confidence": 0.9663451999999999
+    },
+    {
+      "bbox": [
+        [
+          206.0,
+          1051.0
+        ],
+        [
+          1122.0,
+          1051.0
+        ],
+        [
+          1122.0,
+          1086.0
+        ],
+        [
+          206.0,
+          1086.0
+        ]
+      ],
+      "text": "đi trong trường hợp đến thời hạn nộp hồ sơ khai thuế nhưng người nộp thuế",
+      "confidence": 0.9678108831250001
+    },
+    {
+      "bbox": [
+        [
+          207.0,
+          1086.0
+        ],
+        [
+          1122.0,
+          1086.0
+        ],
+        [
+          1122.0,
+          1124.0
+        ],
+        [
+          207.0,
+          1124.0
+        ]
+      ],
+      "text": "chưa hoàn thành thủ tục thay đổi địa chỉ trụ sở với cơ quan đăng ký kinh",
+      "confidence": 0.9693068300000001
+    },
+    {
+      "bbox": [
+        [
+          207.0,
+          1119.0
+        ],
+        [
+          1025.0,
+          1119.0
+        ],
+        [
+          1025.0,
+          1153.0
+        ],
+        [
+          207.0,
+          1153.0
+        ]
+      ],
+      "text": "doanh, cơ quan đăng ký hợp tác xã hoặc cơ quan thuế nơi chuyển đến.",
+      "confidence": 0.9636436006666667
+    },
+    {
+      "bbox": [
+        [
+          266.0,
+          1175.0
+        ],
+        [
+          1123.0,
+          1175.0
+        ],
+        [
+          1123.0,
+          1208.0
+        ],
+        [
+          266.0,
+          1208.0
+        ]
+      ],
+      "text": "7. Danh mục hd sơ khai thuế áp dụng đối với từng loại thuế, từng hoạt",
+      "confidence": 0.9678529362499999
+    },
+    {
+      "bbox": [
+        [
+          206.0,
+          1214.0
+        ],
+        [
+          960.0,
+          1214.0
+        ],
+        [
+          960.0,
+          1242.0
+        ],
+        [
+          206.0,
+          1242.0
+        ]
+      ],
+      "text": "động kinh doanh tại Phụ lục I ban hành kèm theo Nghị định này.",
+      "confidence": 0.9625996092857143
+    },
+    {
+      "bbox": [
+        [
+          265.0,
+          1266.0
+        ],
+        [
+          1122.0,
+          1266.0
+        ],
+        [
+          1122.0,
+          1298.0
+        ],
+        [
+          265.0,
+          1298.0
+        ]
+      ],
+      "text": "Điều 8. Các loại thuế khai theo tháng, khai theo quý, khai theo năm,",
+      "confidence": 0.9666116935714285
+    },
+    {
+      "bbox": [
+        [
+          207.0,
+          1299.0
+        ],
+        [
+          1036.0,
+          1299.0
+        ],
+        [
+          1036.0,
+          1332.0
+        ],
+        [
+          207.0,
+          1332.0
+        ]
+      ],
+      "text": "khai theo từng lin phat sinh nghia va thuế và khai quyết toán thuế",
+      "confidence": 0.941820265
+    },
+    {
+      "bbox": [
+        [
+          269.0,
+          1355.0
+        ],
+        [
+          1124.0,
+          1355.0
+        ],
+        [
+          1124.0,
+          1397.0
+        ],
+        [
+          269.0,
+          1397.0
+        ]
+      ],
+      "text": "1. Các. loại thuế, khoản thu khác thuộc ngân sách nhà nước do cơ quan",
+      "confidence": 0.9255233026666666
+    },
+    {
+      "bbox": [
+        [
+          207.0,
+          1394.0
+        ],
+        [
+          922.0,
+          1394.0
+        ],
+        [
+          922.0,
+          1422.0
+        ],
+        [
+          207.0,
+          1422.0
+        ]
+      ],
+      "text": "quản lý thuê quản lý thu thuộc loại khai theo tháng, bao gôm:",
+      "confidence": 0.9564938361538461
+    },
+    {
+      "bbox": [
+        [
+          251.0,
+          1446.0
+        ],
+        [
+          1123.0,
+          1446.0
+        ],
+        [
+          1123.0,
+          1486.0
+        ],
+        [
+          251.0,
+          1486.0
+        ]
+      ],
+      "text": "a) Thuế gia trị gia tăng, thuế thu nhập cá nhân. Trường hợp người nộp",
+      "confidence": 0.9272444820000001
+    },
+    {
+      "bbox": [
+        [
+          207.0,
+          1486.0
+        ],
+        [
+          1124.0,
+          1486.0
+        ],
+        [
+          1124.0,
+          1513.0
+        ],
+        [
+          207.0,
+          1513.0
+        ]
+      ],
+      "text": "thuê đáp ứng các tiêu chí theo quy định tại Điêu 9 Nghị định này thì được lựa",
+      "confidence": 0.9528418905555556
+    },
+    {
+      "bbox": [
+        [
+          209.0,
+          1521.0
+        ],
+        [
+          436.0,
+          1521.0
+        ],
+        [
+          436.0,
+          1547.0
+        ],
+        [
+          209.0,
+          1547.0
+        ]
+      ],
+      "text": "chọn khai theo quý.",
+      "confidence": 0.96870737
+    },
+    {
+      "bbox": [
+        [
+          268.0,
+          1574.0
+        ],
+        [
+          559.0,
+          1574.0
+        ],
+        [
+          559.0,
+          1608.0
+        ],
+        [
+          268.0,
+          1608.0
+        ]
+      ],
+      "text": "b) Thuế tiêu thụ đặc biệt.",
+      "confidence": 0.9539217999999999
+    }
+  ]
+}

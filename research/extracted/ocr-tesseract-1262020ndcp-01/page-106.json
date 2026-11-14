@@ -1,0 +1,816 @@
+{
+  "document_id": "126/2020/NĐ-CP",
+  "source_file": "../../legal-sources/1262020ndcp/01.pdf",
+  "source_sha256": "310648e80396d267610946458e7fdd71ba87ef538b009d6574ed21514de3f7ca",
+  "page_count": 119,
+  "render_dpi": 150,
+  "engine": "Tesseract 5.5.4 (vie+eng; OEM 1; PSM 3)",
+  "review_status": "UNREVIEWED",
+  "tesseract_version": "5.5.4",
+  "languages": [
+    "vie",
+    "eng"
+  ],
+  "traineddata_sha256": {
+    "vie": "b6b49293d95d0b6dbd8780174627e82c75be957b6f4ed9862155540d6b00bb45",
+    "eng": "8280aed0782fe27257a68ea10fe7ef324ca0f8d85bd2fd145d1c2b560bcb66ba"
+  },
+  "ocr_engine_mode": 1,
+  "page_segmentation_mode": 3,
+  "thread_limit": 2,
+  "page": 106,
+  "lines": [
+    {
+      "bbox": [
+        [
+          692.0,
+          57.0
+        ],
+        [
+          731.0,
+          57.0
+        ],
+        [
+          731.0,
+          77.0
+        ],
+        [
+          692.0,
+          77.0
+        ]
+      ],
+      "text": "106",
+      "confidence": 0.96722397
+    },
+    {
+      "bbox": [
+        [
+          281.0,
+          133.0
+        ],
+        [
+          1139.0,
+          133.0
+        ],
+        [
+          1139.0,
+          167.0
+        ],
+        [
+          281.0,
+          167.0
+        ]
+      ],
+      "text": "4. Trách nhiệm của cơ quan nhà nước có thẩm quyền cấp giấy chứng",
+      "confidence": 0.9621730035714287
+    },
+    {
+      "bbox": [
+        [
+          222.0,
+          172.0
+        ],
+        [
+          523.0,
+          172.0
+        ],
+        [
+          523.0,
+          199.0
+        ],
+        [
+          222.0,
+          199.0
+        ]
+      ],
+      "text": "nhận đăng ký kinh doanh.",
+      "confidence": 0.967868378
+    },
+    {
+      "bbox": [
+        [
+          281.0,
+          228.0
+        ],
+        [
+          1139.0,
+          228.0
+        ],
+        [
+          1139.0,
+          269.0
+        ],
+        [
+          281.0,
+          269.0
+        ]
+      ],
+      "text": "a) Trong thời hạn 10 ngày kể từ ngày nhận được văn bản đề nghị thu hồi",
+      "confidence": 0.9523341952941177
+    },
+    {
+      "bbox": [
+        [
+          222.0,
+          262.0
+        ],
+        [
+          1139.0,
+          262.0
+        ],
+        [
+          1139.0,
+          304.0
+        ],
+        [
+          222.0,
+          304.0
+        ]
+      ],
+      "text": "của cơ quan quản lý thuế, cơ quan quản lý nhà nước có thẩm quyền cấp giấy",
+      "confidence": 0.9596703070588236
+    },
+    {
+      "bbox": [
+        [
+          222.0,
+          299.0
+        ],
+        [
+          1140.0,
+          299.0
+        ],
+        [
+          1140.0,
+          332.0
+        ],
+        [
+          222.0,
+          332.0
+        ]
+      ],
+      "text": "chứng nhận đăng ký kinh doanh thực hiện thu hồi giấy chứng nhận đăng",
+      "confidence": 0.9682752821428572
+    },
+    {
+      "bbox": [
+        [
+          221.0,
+          333.0
+        ],
+        [
+          1140.0,
+          333.0
+        ],
+        [
+          1140.0,
+          376.0
+        ],
+        [
+          221.0,
+          376.0
+        ]
+      ],
+      "text": "ký kinh doanh theo trình tự, thủ tục quy định hoặc thông báo cho cơ quan",
+      "confidence": 0.962386946875
+    },
+    {
+      "bbox": [
+        [
+          222.0,
+          366.0
+        ],
+        [
+          642.0,
+          366.0
+        ],
+        [
+          642.0,
+          400.0
+        ],
+        [
+          222.0,
+          400.0
+        ]
+      ],
+      "text": "quản lý thuế về lý do không thu hồi.",
+      "confidence": 0.9684228511111111
+    },
+    {
+      "bbox": [
+        [
+          281.0,
+          428.0
+        ],
+        [
+          1139.0,
+          428.0
+        ],
+        [
+          1139.0,
+          470.0
+        ],
+        [
+          281.0,
+          470.0
+        ]
+      ],
+      "text": "b) Sau khi nhận được văn bản về việc không thu hồi giấy chứng nhận",
+      "confidence": 0.9647006220000001
+    },
+    {
+      "bbox": [
+        [
+          221.0,
+          463.0
+        ],
+        [
+          1139.0,
+          463.0
+        ],
+        [
+          1139.0,
+          505.0
+        ],
+        [
+          221.0,
+          505.0
+        ]
+      ],
+      "text": "đăng ký kinh doanh nêu trên của cơ quan nhà nước có thẩm quyền, cơ quan",
+      "confidence": 0.9546214875
+    },
+    {
+      "bbox": [
+        [
+          221.0,
+          496.0
+        ],
+        [
+          1138.0,
+          496.0
+        ],
+        [
+          1138.0,
+          533.0
+        ],
+        [
+          221.0,
+          533.0
+        ]
+      ],
+      "text": "quản lý thuế tiếp tục thực hiện theo dõi khoản nợ này và áp dụng các biện pháp",
+      "confidence": 0.9666769744444444
+    },
+    {
+      "bbox": [
+        [
+          220.0,
+          531.0
+        ],
+        [
+          1075.0,
+          531.0
+        ],
+        [
+          1075.0,
+          567.0
+        ],
+        [
+          220.0,
+          567.0
+        ]
+      ],
+      "text": "cưỡng chế trước để đảm bảo thu được tiền thuế nợ vào ngân sách nhà nước.",
+      "confidence": 0.95826558875
+    },
+    {
+      "bbox": [
+        [
+          280.0,
+          594.0
+        ],
+        [
+          1136.0,
+          594.0
+        ],
+        [
+          1136.0,
+          633.0
+        ],
+        [
+          280.0,
+          633.0
+        ]
+      ],
+      "text": "5. Trong thời gian quy định của _pháp luật về đăng ký doanh nghiệp,",
+      "confidence": 0.9175799285714286
+    },
+    {
+      "bbox": [
+        [
+          219.0,
+          625.0
+        ],
+        [
+          1137.0,
+          625.0
+        ],
+        [
+          1137.0,
+          674.0
+        ],
+        [
+          219.0,
+          674.0
+        ]
+      ],
+      "text": "người nộp thuế bị cưỡng, chế nộp đủ số tiền thuế nợ vào ngân sách nhà nước",
+      "confidence": 0.9548603052941176
+    },
+    {
+      "bbox": [
+        [
+          219.0,
+          660.0
+        ],
+        [
+          1137.0,
+          660.0
+        ],
+        [
+          1137.0,
+          703.0
+        ],
+        [
+          219.0,
+          703.0
+        ]
+      ],
+      "text": "hoặc số tiền bị cưỡng chế đã được cơ quan quản lý thuế ban hành quyết định",
+      "confidence": 0.9666417417647059
+    },
+    {
+      "bbox": [
+        [
+          218.0,
+          695.0
+        ],
+        [
+          1137.0,
+          695.0
+        ],
+        [
+          1137.0,
+          732.0
+        ],
+        [
+          218.0,
+          732.0
+        ]
+      ],
+      "text": "nộp dần hoặc gia hạn hoặc miễn tiền chậm nộp tiền thuế hoặc không tính tiền",
+      "confidence": 0.968415251875
+    },
+    {
+      "bbox": [
+        [
+          218.0,
+          731.0
+        ],
+        [
+          1136.0,
+          731.0
+        ],
+        [
+          1136.0,
+          775.0
+        ],
+        [
+          218.0,
+          775.0
+        ]
+      ],
+      "text": "chậm nộp và người nộp thuế bị cưỡng chế có văn bản đề nghị khôi phục tình",
+      "confidence": 0.9655948776470588
+    },
+    {
+      "bbox": [
+        [
+          217.0,
+          769.0
+        ],
+        [
+          1135.0,
+          769.0
+        ],
+        [
+          1135.0,
+          815.0
+        ],
+        [
+          217.0,
+          815.0
+        ]
+      ],
+      "text": "trạng pháp lý của doanh nghiệp thì cợ quan quản lý thuế lập văn bản đề nghị",
+      "confidence": 0.9642098776470589
+    },
+    {
+      "bbox": [
+        [
+          213.0,
+          800.0
+        ],
+        [
+          1136.0,
+          800.0
+        ],
+        [
+          1136.0,
+          843.0
+        ],
+        [
+          213.0,
+          843.0
+        ]
+      ],
+      "text": "khôi phục tình trạng pháp lý của doanh nghiệp, gửi cơ quan nhà nước có thẳm",
+      "confidence": 0.96652861125
+    },
+    {
+      "bbox": [
+        [
+          217.0,
+          834.0
+        ],
+        [
+          881.0,
+          834.0
+        ],
+        [
+          881.0,
+          871.0
+        ],
+        [
+          217.0,
+          871.0
+        ]
+      ],
+      "text": "quyền để khôi phục tình trạng pháp lý cho doanh nghiệp.",
+      "confidence": 0.9664631718181818
+    },
+    {
+      "bbox": [
+        [
+          277.0,
+          895.0
+        ],
+        [
+          1135.0,
+          895.0
+        ],
+        [
+          1135.0,
+          940.0
+        ],
+        [
+          277.0,
+          940.0
+        ]
+      ],
+      "text": "a) Văn bản đề nghị khôi phục tình trạng pháp lý của doanh nghiệp phải",
+      "confidence": 0.9645647486666666
+    },
+    {
+      "bbox": [
+        [
+          217.0,
+          929.0
+        ],
+        [
+          1135.0,
+          929.0
+        ],
+        [
+          1135.0,
+          979.0
+        ],
+        [
+          217.0,
+          979.0
+        ]
+      ],
+      "text": "có một số nội dung chủ yếu sau: Tên cơ quan quản lý thuế đề nghị, cơ quan",
+      "confidence": 0.967273165
+    },
+    {
+      "bbox": [
+        [
+          216.0,
+          965.0
+        ],
+        [
+          1134.0,
+          965.0
+        ],
+        [
+          1134.0,
+          1005.0
+        ],
+        [
+          216.0,
+          1005.0
+        ]
+      ],
+      "text": "nhà nước có thắm quyền nhận văn bản; thông tin của người nộp thuế bị cưỡng",
+      "confidence": 0.9554448881250001
+    },
+    {
+      "bbox": [
+        [
+          216.0,
+          997.0
+        ],
+        [
+          1133.0,
+          997.0
+        ],
+        [
+          1133.0,
+          1038.0
+        ],
+        [
+          216.0,
+          1038.0
+        ]
+      ],
+      "text": "chế: tên, mã số thuế, địa chỉ đăng ký kinh doanh; lý do khôi phục tình trạng",
+      "confidence": 0.9658705770588234
+    },
+    {
+      "bbox": [
+        [
+          215.0,
+          1038.0
+        ],
+        [
+          522.0,
+          1038.0
+        ],
+        [
+          522.0,
+          1067.0
+        ],
+        [
+          215.0,
+          1067.0
+        ]
+      ],
+      "text": "pháp lý của doanh nghiệp.",
+      "confidence": 0.969953644
+    },
+    {
+      "bbox": [
+        [
+          275.0,
+          1094.0
+        ],
+        [
+          1134.0,
+          1094.0
+        ],
+        [
+          1134.0,
+          1136.0
+        ],
+        [
+          275.0,
+          1136.0
+        ]
+      ],
+      "text": "b) Văn bản đề nghị khôi phục tình trạng pháp lý của doanh nghiệp do cơ",
+      "confidence": 0.938722655
+    },
+    {
+      "bbox": [
+        [
+          215.0,
+          1129.0
+        ],
+        [
+          1132.0,
+          1129.0
+        ],
+        [
+          1132.0,
+          1175.0
+        ],
+        [
+          215.0,
+          1175.0
+        ]
+      ],
+      "text": "quan quản lý thuế lập theo Mẫu số 07-1/CC tại Phụ lục III ban hành kèm theo",
+      "confidence": 0.9567195570588235
+    },
+    {
+      "bbox": [
+        [
+          214.0,
+          1165.0
+        ],
+        [
+          1133.0,
+          1165.0
+        ],
+        [
+          1133.0,
+          1204.0
+        ],
+        [
+          214.0,
+          1204.0
+        ]
+      ],
+      "text": "Nghị định này và gửi đến cơ quan quản lý nhà nước có thẩm quyền trong",
+      "confidence": 0.9678965662500001
+    },
+    {
+      "bbox": [
+        [
+          214.0,
+          1200.0
+        ],
+        [
+          1133.0,
+          1200.0
+        ],
+        [
+          1133.0,
+          1239.0
+        ],
+        [
+          214.0,
+          1239.0
+        ]
+      ],
+      "text": "vòng 03 ngày làm việc kể từ ngày nhận được văn bản đề nghị khôi phục tình",
+      "confidence": 0.9664654088235295
+    },
+    {
+      "bbox": [
+        [
+          214.0,
+          1239.0
+        ],
+        [
+          587.0,
+          1239.0
+        ],
+        [
+          587.0,
+          1268.0
+        ],
+        [
+          214.0,
+          1268.0
+        ]
+      ],
+      "text": "trạng pháp lý của doanh nghiệp.",
+      "confidence": 0.9675735983333333
+    },
+    {
+      "bbox": [
+        [
+          591.0,
+          1311.0
+        ],
+        [
+          753.0,
+          1311.0
+        ],
+        [
+          753.0,
+          1345.0
+        ],
+        [
+          591.0,
+          1345.0
+        ]
+      ],
+      "text": "Chương VIH",
+      "confidence": 0.9208813499999999
+    },
+    {
+      "bbox": [
+        [
+          508.0,
+          1338.0
+        ],
+        [
+          835.0,
+          1338.0
+        ],
+        [
+          835.0,
+          1370.0
+        ],
+        [
+          508.0,
+          1370.0
+        ]
+      ],
+      "text": "MỘT SO VAN ĐÈ KHÁC",
+      "confidence": 0.945433824
+    },
+    {
+      "bbox": [
+        [
+          272.0,
+          1393.0
+        ],
+        [
+          1107.0,
+          1393.0
+        ],
+        [
+          1107.0,
+          1434.0
+        ],
+        [
+          272.0,
+          1434.0
+        ]
+      ],
+      "text": "Điều 38. Quy định về doanh nghiệp ưu tiên trong lĩnh vực hải quan",
+      "confidence": 0.9678802935714285
+    },
+    {
+      "bbox": [
+        [
+          272.0,
+          1457.0
+        ],
+        [
+          1129.0,
+          1457.0
+        ],
+        [
+          1129.0,
+          1491.0
+        ],
+        [
+          272.0,
+          1491.0
+        ]
+      ],
+      "text": "Doanh nghiệp ưu tiên thực hiện theo quy định tại Luật Hải quan và các",
+      "confidence": 0.9670803266666667
+    },
+    {
+      "bbox": [
+        [
+          213.0,
+          1489.0
+        ],
+        [
+          1129.0,
+          1489.0
+        ],
+        [
+          1129.0,
+          1531.0
+        ],
+        [
+          213.0,
+          1531.0
+        ]
+      ],
+      "text": "văn bản quy phạm pháp luật hướng dẫn có liên quan và thực hiện theo quy",
+      "confidence": 0.967143684375
+    },
+    {
+      "bbox": [
+        [
+          213.0,
+          1520.0
+        ],
+        [
+          664.0,
+          1520.0
+        ],
+        [
+          664.0,
+          1552.0
+        ],
+        [
+          213.0,
+          1552.0
+        ]
+      ],
+      "text": "định tại Nghị định này, cụ thể như sau:",
+      "confidence": 0.9692759855555556
+    }
+  ]
+}

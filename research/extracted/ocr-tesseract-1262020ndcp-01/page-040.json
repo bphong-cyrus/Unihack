@@ -1,0 +1,882 @@
+{
+  "document_id": "126/2020/NĐ-CP",
+  "source_file": "../../legal-sources/1262020ndcp/01.pdf",
+  "source_sha256": "310648e80396d267610946458e7fdd71ba87ef538b009d6574ed21514de3f7ca",
+  "page_count": 119,
+  "render_dpi": 150,
+  "engine": "Tesseract 5.5.4 (vie+eng; OEM 1; PSM 3)",
+  "review_status": "UNREVIEWED",
+  "tesseract_version": "5.5.4",
+  "languages": [
+    "vie",
+    "eng"
+  ],
+  "traineddata_sha256": {
+    "vie": "b6b49293d95d0b6dbd8780174627e82c75be957b6f4ed9862155540d6b00bb45",
+    "eng": "8280aed0782fe27257a68ea10fe7ef324ca0f8d85bd2fd145d1c2b560bcb66ba"
+  },
+  "ocr_engine_mode": 1,
+  "page_segmentation_mode": 3,
+  "thread_limit": 2,
+  "page": 40,
+  "lines": [
+    {
+      "bbox": [
+        [
+          679.0,
+          59.0
+        ],
+        [
+          707.0,
+          59.0
+        ],
+        [
+          707.0,
+          80.0
+        ],
+        [
+          679.0,
+          80.0
+        ]
+      ],
+      "text": "40",
+      "confidence": 0.96945038
+    },
+    {
+      "bbox": [
+        [
+          237.0,
+          136.0
+        ],
+        [
+          1123.0,
+          136.0
+        ],
+        [
+          1123.0,
+          176.0
+        ],
+        [
+          237.0,
+          176.0
+        ]
+      ],
+      "text": ". c.6) Hội đồng tư vấn thuế xã, phường có trách nhiệm theo quy định tại",
+      "confidence": 0.941679149375
+    },
+    {
+      "bbox": [
+        [
+          207.0,
+          171.0
+        ],
+        [
+          1123.0,
+          171.0
+        ],
+        [
+          1123.0,
+          204.0
+        ],
+        [
+          207.0,
+          204.0
+        ]
+      ],
+      "text": "Điều 28 Luật Quản lý thuế để cơ quan thuế xác định số thuế khoán phải nộp",
+      "confidence": 0.968196971764706
+    },
+    {
+      "bbox": [
+        [
+          207.0,
+          211.0
+        ],
+        [
+          670.0,
+          211.0
+        ],
+        [
+          670.0,
+          237.0
+        ],
+        [
+          207.0,
+          237.0
+        ]
+      ],
+      "text": "cho hộ kinh doanh, cá nhân kinh doanh;",
+      "confidence": 0.9676997937499999
+    },
+    {
+      "bbox": [
+        [
+          266.0,
+          264.0
+        ],
+        [
+          1122.0,
+          264.0
+        ],
+        [
+          1122.0,
+          298.0
+        ],
+        [
+          266.0,
+          298.0
+        ]
+      ],
+      "text": "¢.7) Ủy ban nhân dân cấp xã hoặc văn phòng đăng ký quyền sử dụng đất",
+      "confidence": 0.961771015625
+    },
+    {
+      "bbox": [
+        [
+          207.0,
+          299.0
+        ],
+        [
+          1121.0,
+          299.0
+        ],
+        [
+          1121.0,
+          333.0
+        ],
+        [
+          207.0,
+          333.0
+        ]
+      ],
+      "text": "có trách nhiệm xác nhận thông tin khai thuế sử dụng đất phi nông nghiệp cho",
+      "confidence": 0.969387583125
+    },
+    {
+      "bbox": [
+        [
+          207.0,
+          335.0
+        ],
+        [
+          1121.0,
+          335.0
+        ],
+        [
+          1121.0,
+          368.0
+        ],
+        [
+          207.0,
+          368.0
+        ]
+      ],
+      "text": "người nộp thuế trong phạm vi nhiệm vụ của mình trong thời hạn 03 ngày làm",
+      "confidence": 0.968309808125
+    },
+    {
+      "bbox": [
+        [
+          207.0,
+          368.0
+        ],
+        [
+          1122.0,
+          368.0
+        ],
+        [
+          1122.0,
+          410.0
+        ],
+        [
+          207.0,
+          410.0
+        ]
+      ],
+      "text": "việc kể từ khi nhận được đề nghị của người nộp thuế hoặc của cơ quan quản",
+      "confidence": 0.9657909688235293
+    },
+    {
+      "bbox": [
+        [
+          208.0,
+          410.0
+        ],
+        [
+          292.0,
+          410.0
+        ],
+        [
+          292.0,
+          437.0
+        ],
+        [
+          208.0,
+          437.0
+        ]
+      ],
+      "text": "lý thuê.",
+      "confidence": 0.965317995
+    },
+    {
+      "bbox": [
+        [
+          266.0,
+          464.0
+        ],
+        [
+          503.0,
+          464.0
+        ],
+        [
+          503.0,
+          496.0
+        ],
+        [
+          266.0,
+          496.0
+        ]
+      ],
+      "text": "d) Tổ chức tín dụng.",
+      "confidence": 0.9551004319999999
+    },
+    {
+      "bbox": [
+        [
+          266.0,
+          522.0
+        ],
+        [
+          1122.0,
+          522.0
+        ],
+        [
+          1122.0,
+          556.0
+        ],
+        [
+          266.0,
+          556.0
+        ]
+      ],
+      "text": "Hàng hóa nhập khẩu thuộc đối tượng miễn thuế, không chịu thuế, người",
+      "confidence": 0.9647074461538462
+    },
+    {
+      "bbox": [
+        [
+          207.0,
+          557.0
+        ],
+        [
+          1122.0,
+          557.0
+        ],
+        [
+          1122.0,
+          590.0
+        ],
+        [
+          207.0,
+          590.0
+        ]
+      ],
+      "text": "khai thuế cầm cố, thế chấp để làm tài sản bảo đảm các khoản vay, trường hợp",
+      "confidence": 0.9612233005882354
+    },
+    {
+      "bbox": [
+        [
+          207.0,
+          591.0
+        ],
+        [
+          1122.0,
+          591.0
+        ],
+        [
+          1122.0,
+          624.0
+        ],
+        [
+          207.0,
+          624.0
+        ]
+      ],
+      "text": "tổ chức tín dụng phải xử lý tài sản cầm cố, thế chấp theo quy định của pháp",
+      "confidence": 0.9591492811111111
+    },
+    {
+      "bbox": [
+        [
+          208.0,
+          625.0
+        ],
+        [
+          1121.0,
+          625.0
+        ],
+        [
+          1121.0,
+          658.0
+        ],
+        [
+          208.0,
+          658.0
+        ]
+      ],
+      "text": "luật để thu hồi nợ nhưng người khai thuế chưa kê khai tờ khai hải quan mới",
+      "confidence": 0.9652518235294119
+    },
+    {
+      "bbox": [
+        [
+          208.0,
+          659.0
+        ],
+        [
+          1122.0,
+          659.0
+        ],
+        [
+          1122.0,
+          693.0
+        ],
+        [
+          208.0,
+          693.0
+        ]
+      ],
+      "text": "và nộp đủ thuế theo quy định của pháp luật về hải quan thì tổ chức tín dụng có",
+      "confidence": 0.9669111068421052
+    },
+    {
+      "bbox": [
+        [
+          208.0,
+          693.0
+        ],
+        [
+          1123.0,
+          693.0
+        ],
+        [
+          1123.0,
+          740.0
+        ],
+        [
+          208.0,
+          740.0
+        ]
+      ],
+      "text": "trách nhiệm cung cấp các thông tin về hang hóa cầm cố, thé chấp phải xử lý",
+      "confidence": 0.9397808758823529
+    },
+    {
+      "bbox": [
+        [
+          208.0,
+          727.0
+        ],
+        [
+          1124.0,
+          727.0
+        ],
+        [
+          1124.0,
+          762.0
+        ],
+        [
+          208.0,
+          762.0
+        ]
+      ],
+      "text": "cho cơ quan Hải quan đề ấn định thuế số tiền thuế phải nộp. Tổ chức tín dụng",
+      "confidence": 0.9628748583333333
+    },
+    {
+      "bbox": [
+        [
+          209.0,
+          762.0
+        ],
+        [
+          785.0,
+          762.0
+        ],
+        [
+          785.0,
+          796.0
+        ],
+        [
+          209.0,
+          796.0
+        ]
+      ],
+      "text": "có trách nhiệm nộp thuế thay cho người nộp thuế.",
+      "confidence": 0.9641689370000001
+    },
+    {
+      "bbox": [
+        [
+          271.0,
+          821.0
+        ],
+        [
+          1125.0,
+          821.0
+        ],
+        [
+          1125.0,
+          866.0
+        ],
+        [
+          271.0,
+          866.0
+        ]
+      ],
+      "text": "12. Trường hợp cơ quan thuế không tính thuế, khong thông báo nộp thuế",
+      "confidence": 0.9633931235714286
+    },
+    {
+      "bbox": [
+        [
+          209.0,
+          855.0
+        ],
+        [
+          1125.0,
+          855.0
+        ],
+        [
+          1125.0,
+          897.0
+        ],
+        [
+          209.0,
+          897.0
+        ]
+      ],
+      "text": "đối với các khoản thu từ tiền thuê đất, thuê mặt nước, tiền sử dụng đất phát",
+      "confidence": 0.9651202752941175
+    },
+    {
+      "bbox": [
+        [
+          210.0,
+          890.0
+        ],
+        [
+          1124.0,
+          890.0
+        ],
+        [
+          1124.0,
+          930.0
+        ],
+        [
+          210.0,
+          930.0
+        ]
+      ],
+      "text": "sinh trong khu kinh tế, khu công nghệ cao thì trách nhiệm của cơ quan thuế,",
+      "confidence": 0.967394174375
+    },
+    {
+      "bbox": [
+        [
+          209.0,
+          925.0
+        ],
+        [
+          1125.0,
+          925.0
+        ],
+        [
+          1125.0,
+          959.0
+        ],
+        [
+          209.0,
+          959.0
+        ]
+      ],
+      "text": "người nộp thuế và cơ quan nhà nước có thẩm quyền được giao nhiệm vụ quản",
+      "confidence": 0.9643323806249999
+    },
+    {
+      "bbox": [
+        [
+          210.0,
+          966.0
+        ],
+        [
+          710.0,
+          966.0
+        ],
+        [
+          710.0,
+          993.0
+        ],
+        [
+          210.0,
+          993.0
+        ]
+      ],
+      "text": "lý thu theo quy định của pháp luật như sau:",
+      "confidence": 0.969905441
+    },
+    {
+      "bbox": [
+        [
+          269.0,
+          1015.0
+        ],
+        [
+          1125.0,
+          1015.0
+        ],
+        [
+          1125.0,
+          1058.0
+        ],
+        [
+          269.0,
+          1058.0
+        ]
+      ],
+      "text": "a) Cơ quan nhà nước có thẩm quyền được giao nhiệm vụ quản lý thu",
+      "confidence": 0.9548508093333333
+    },
+    {
+      "bbox": [
+        [
+          209.0,
+          1053.0
+        ],
+        [
+          1125.0,
+          1053.0
+        ],
+        [
+          1125.0,
+          1091.0
+        ],
+        [
+          209.0,
+          1091.0
+        ]
+      ],
+      "text": "theo quy định của pháp luật có liên quan đối với các khoản thu theo quy định",
+      "confidence": 0.9682041211764707
+    },
+    {
+      "bbox": [
+        [
+          209.0,
+          1086.0
+        ],
+        [
+          1124.0,
+          1086.0
+        ],
+        [
+          1124.0,
+          1129.0
+        ],
+        [
+          209.0,
+          1129.0
+        ]
+      ],
+      "text": "tại khoản này có trách nhiệm: Tiếp nhận hồ sơ, xác định đầy đủ, chính xác số",
+      "confidence": 0.9669701823529412
+    },
+    {
+      "bbox": [
+        [
+          209.0,
+          1121.0
+        ],
+        [
+          1125.0,
+          1121.0
+        ],
+        [
+          1125.0,
+          1163.0
+        ],
+        [
+          209.0,
+          1163.0
+        ]
+      ],
+      "text": "tiền phải nộp vào ngân sách nhà nước của người nộp thuế, ban hành văn bản",
+      "confidence": 0.960524845
+    },
+    {
+      "bbox": [
+        [
+          210.0,
+          1155.0
+        ],
+        [
+          1124.0,
+          1155.0
+        ],
+        [
+          1124.0,
+          1194.0
+        ],
+        [
+          210.0,
+          1194.0
+        ]
+      ],
+      "text": "gửi người nộp thuế (trong đó ghi rõ nội dung khoản thu, sô tiền phải nộp vào",
+      "confidence": 0.964308594117647
+    },
+    {
+      "bbox": [
+        [
+          209.0,
+          1189.0
+        ],
+        [
+          1124.0,
+          1189.0
+        ],
+        [
+          1124.0,
+          1229.0
+        ],
+        [
+          209.0,
+          1229.0
+        ]
+      ],
+      "text": "ngân sách nhà nước và thời hạn phải nộp vào ngân sách nhà nước), đồng thời",
+      "confidence": 0.96951137125
+    },
+    {
+      "bbox": [
+        [
+          210.0,
+          1224.0
+        ],
+        [
+          1126.0,
+          1224.0
+        ],
+        [
+          1126.0,
+          1266.0
+        ],
+        [
+          210.0,
+          1266.0
+        ]
+      ],
+      "text": "gửi cơ quan thuế tại địa bàn nơi phát sinh khoản thu để thực hiện đôn đốc và",
+      "confidence": 0.9608632955555555
+    },
+    {
+      "bbox": [
+        [
+          210.0,
+          1255.0
+        ],
+        [
+          863.0,
+          1255.0
+        ],
+        [
+          863.0,
+          1296.0
+        ],
+        [
+          210.0,
+          1296.0
+        ]
+      ],
+      "text": "cưỡng chế về thuế theo quy định của Luật Quản lý thuế.",
+      "confidence": 0.9653046483333333
+    },
+    {
+      "bbox": [
+        [
+          269.0,
+          1319.0
+        ],
+        [
+          1127.0,
+          1319.0
+        ],
+        [
+          1127.0,
+          1353.0
+        ],
+        [
+          269.0,
+          1353.0
+        ]
+      ],
+      "text": "b) Cơ quan thuế có trách nhiệm tiếp nhận văn bản do cơ quan nhà nước",
+      "confidence": 0.9651617962500001
+    },
+    {
+      "bbox": [
+        [
+          211.0,
+          1355.0
+        ],
+        [
+          1127.0,
+          1355.0
+        ],
+        [
+          1127.0,
+          1389.0
+        ],
+        [
+          211.0,
+          1389.0
+        ]
+      ],
+      "text": "có thẩm quyền được giao nhiệm vụ quản lý thu chuyển sang; theo dõi, đôn",
+      "confidence": 0.9514993533333334
+    },
+    {
+      "bbox": [
+        [
+          211.0,
+          1390.0
+        ],
+        [
+          1127.0,
+          1390.0
+        ],
+        [
+          1127.0,
+          1425.0
+        ],
+        [
+          211.0,
+          1425.0
+        ]
+      ],
+      "text": "đốc người nộp thuế nộp tiền vào ngân sách nhà nước theo đúng thời hạn, số",
+      "confidence": 0.965689925625
+    },
+    {
+      "bbox": [
+        [
+          211.0,
+          1426.0
+        ],
+        [
+          1127.0,
+          1426.0
+        ],
+        [
+          1127.0,
+          1460.0
+        ],
+        [
+          211.0,
+          1460.0
+        ]
+      ],
+      "text": "tiền ghi trên văn bản của cơ quan nhà nước có thẩm quyền; tính tiền chậm nộp",
+      "confidence": 0.9541430764705882
+    },
+    {
+      "bbox": [
+        [
+          212.0,
+          1461.0
+        ],
+        [
+          1127.0,
+          1461.0
+        ],
+        [
+          1127.0,
+          1496.0
+        ],
+        [
+          212.0,
+          1496.0
+        ]
+      ],
+      "text": "và cưỡng chế nợ thuế (nếu có) theo quy định của Luật Quản lý thuế đối với",
+      "confidence": 0.9675542664705883
+    },
+    {
+      "bbox": [
+        [
+          212.0,
+          1497.0
+        ],
+        [
+          1128.0,
+          1497.0
+        ],
+        [
+          1128.0,
+          1532.0
+        ],
+        [
+          212.0,
+          1532.0
+        ]
+      ],
+      "text": "các khoản thu theo quy định tại khoản này. Cơ quan thuế có trách nhiệm tổng",
+      "confidence": 0.966238135625
+    },
+    {
+      "bbox": [
+        [
+          212.0,
+          1534.0
+        ],
+        [
+          1128.0,
+          1534.0
+        ],
+        [
+          1128.0,
+          1568.0
+        ],
+        [
+          212.0,
+          1568.0
+        ]
+      ],
+      "text": "hợp đầy đủ số nộp ngân sách đối với các khoản thu theo quy định tại khoản",
+      "confidence": 0.9641291188235295
+    },
+    {
+      "bbox": [
+        [
+          213.0,
+          1576.0
+        ],
+        [
+          690.0,
+          1576.0
+        ],
+        [
+          690.0,
+          1604.0
+        ],
+        [
+          213.0,
+          1604.0
+        ]
+      ],
+      "text": "này vào báo cáo thu ngân sách nhà nước.",
+      "confidence": 0.9691268744444445
+    }
+  ]
+}

@@ -1,0 +1,882 @@
+{
+  "document_id": "126/2020/NĐ-CP",
+  "source_file": "../../legal-sources/1262020ndcp/01.pdf",
+  "source_sha256": "310648e80396d267610946458e7fdd71ba87ef538b009d6574ed21514de3f7ca",
+  "page_count": 119,
+  "render_dpi": 150,
+  "engine": "Tesseract 5.5.4 (vie+eng; OEM 1; PSM 3)",
+  "review_status": "UNREVIEWED",
+  "tesseract_version": "5.5.4",
+  "languages": [
+    "vie",
+    "eng"
+  ],
+  "traineddata_sha256": {
+    "vie": "b6b49293d95d0b6dbd8780174627e82c75be957b6f4ed9862155540d6b00bb45",
+    "eng": "8280aed0782fe27257a68ea10fe7ef324ca0f8d85bd2fd145d1c2b560bcb66ba"
+  },
+  "ocr_engine_mode": 1,
+  "page_segmentation_mode": 3,
+  "thread_limit": 2,
+  "page": 60,
+  "lines": [
+    {
+      "bbox": [
+        [
+          709.0,
+          60.0
+        ],
+        [
+          736.0,
+          60.0
+        ],
+        [
+          736.0,
+          81.0
+        ],
+        [
+          709.0,
+          81.0
+        ]
+      ],
+      "text": "60",
+      "confidence": 0.96193382
+    },
+    {
+      "bbox": [
+        [
+          293.0,
+          136.0
+        ],
+        [
+          567.0,
+          136.0
+        ],
+        [
+          567.0,
+          166.0
+        ],
+        [
+          293.0,
+          166.0
+        ]
+      ],
+      "text": "2. Thời gian khoanh nợ",
+      "confidence": 0.9548681619999999
+    },
+    {
+      "bbox": [
+        [
+          293.0,
+          190.0
+        ],
+        [
+          1150.0,
+          190.0
+        ],
+        [
+          1150.0,
+          237.0
+        ],
+        [
+          293.0,
+          237.0
+        ]
+      ],
+      "text": "a) Đối với người nộp thuế quy định tại khoản 1 Điều 83 Luật Quản lý",
+      "confidence": 0.958144521875
+    },
+    {
+      "bbox": [
+        [
+          232.0,
+          224.0
+        ],
+        [
+          1149.0,
+          224.0
+        ],
+        [
+          1149.0,
+          271.0
+        ],
+        [
+          232.0,
+          271.0
+        ]
+      ],
+      "text": "thuế thì thời gian khoanh nợ được tính từ ngày được cấp giấy chứng tử hoặc",
+      "confidence": 0.96424684125
+    },
+    {
+      "bbox": [
+        [
+          232.0,
+          258.0
+        ],
+        [
+          1148.0,
+          258.0
+        ],
+        [
+          1148.0,
+          306.0
+        ],
+        [
+          232.0,
+          306.0
+        ]
+      ],
+      "text": "giấy báo tử hoặc các giấy tờ thay cho giấy báo tử theo quy định của pháp luật",
+      "confidence": 0.9680608527777776
+    },
+    {
+      "bbox": [
+        [
+          232.0,
+          293.0
+        ],
+        [
+          1147.0,
+          293.0
+        ],
+        [
+          1147.0,
+          342.0
+        ],
+        [
+          232.0,
+          342.0
+        ]
+      ],
+      "text": "về hộ tịch hoặc quyết định của Tòa án tuyên bd là đã chết, mất tích, mất năng",
+      "confidence": 0.9485906894444445
+    },
+    {
+      "bbox": [
+        [
+          232.0,
+          332.0
+        ],
+        [
+          1147.0,
+          332.0
+        ],
+        [
+          1147.0,
+          374.0
+        ],
+        [
+          232.0,
+          374.0
+        ]
+      ],
+      "text": "lực hành vi dân sự đến khi Tòa án hủy quyết định tuyên bố một người là đã",
+      "confidence": 0.9676050816666667
+    },
+    {
+      "bbox": [
+        [
+          231.0,
+          363.0
+        ],
+        [
+          1090.0,
+          363.0
+        ],
+        [
+          1090.0,
+          408.0
+        ],
+        [
+          231.0,
+          408.0
+        ]
+      ],
+      "text": "chết, mất tích, mất năng lực hành vi dân sự hoặc được xóa nợ theo quy định.",
+      "confidence": 0.9672156347058823
+    },
+    {
+      "bbox": [
+        [
+          289.0,
+          424.0
+        ],
+        [
+          1143.0,
+          424.0
+        ],
+        [
+          1143.0,
+          470.0
+        ],
+        [
+          289.0,
+          470.0
+        ]
+      ],
+      "text": "b) Đối với người nộp thuế quy định tại khoản 2 Điều 83 Luật Quản lý",
+      "confidence": 0.964098643125
+    },
+    {
+      "bbox": [
+        [
+          229.0,
+          456.0
+        ],
+        [
+          1143.0,
+          456.0
+        ],
+        [
+          1143.0,
+          526.0
+        ],
+        [
+          229.0,
+          526.0
+        ]
+      ],
+      "text": "thuế thì thời gian Khoanh nợ được tính từ ngày cơ quan đăng ký kinh doanh",
+      "confidence": 0.946445631875
+    },
+    {
+      "bbox": [
+        [
+          228.0,
+          495.0
+        ],
+        [
+          1142.0,
+          495.0
+        ],
+        [
+          1142.0,
+          538.0
+        ],
+        [
+          228.0,
+          538.0
+        ]
+      ],
+      "text": "đăng tải thông tin về việc người nộp thuế đang làm thủ tục giải thể trên Hệ",
+      "confidence": 0.9650936129411763
+    },
+    {
+      "bbox": [
+        [
+          227.0,
+          522.0
+        ],
+        [
+          1141.0,
+          522.0
+        ],
+        [
+          1141.0,
+          574.0
+        ],
+        [
+          227.0,
+          574.0
+        ]
+      ],
+      "text": "thống thông tin quốc gia về đăng ký kinh doanh đến khi người nộp thuế tiếp",
+      "confidence": 0.9667913956249999
+    },
+    {
+      "bbox": [
+        [
+          226.0,
+          566.0
+        ],
+        [
+          1142.0,
+          566.0
+        ],
+        [
+          1142.0,
+          607.0
+        ],
+        [
+          226.0,
+          607.0
+        ]
+      ],
+      "text": "tục hoạt động kinh doanh, hoặc hoàn thành thủ tục giải thể hoặc được xóa nợ",
+      "confidence": 0.9555388218749999
+    },
+    {
+      "bbox": [
+        [
+          225.0,
+          600.0
+        ],
+        [
+          533.0,
+          600.0
+        ],
+        [
+          533.0,
+          628.0
+        ],
+        [
+          225.0,
+          628.0
+        ]
+      ],
+      "text": "theo quy định. !",
+      "confidence": 0.9262881875
+    },
+    {
+      "bbox": [
+        [
+          284.0,
+          655.0
+        ],
+        [
+          1140.0,
+          655.0
+        ],
+        [
+          1140.0,
+          702.0
+        ],
+        [
+          284.0,
+          702.0
+        ]
+      ],
+      "text": "e) Đối với người nộp thuế quy định tại khoản 3 Điều 83 Luật Quản lý",
+      "confidence": 0.93020807
+    },
+    {
+      "bbox": [
+        [
+          224.0,
+          688.0
+        ],
+        [
+          1141.0,
+          688.0
+        ],
+        [
+          1141.0,
+          736.0
+        ],
+        [
+          224.0,
+          736.0
+        ]
+      ],
+      "text": "thuế thì thời gian khoanh nợ được tính từ ngày Tòa án có thẳm quyền thông",
+      "confidence": 0.95373429875
+    },
+    {
+      "bbox": [
+        [
+          224.0,
+          726.0
+        ],
+        [
+          1141.0,
+          726.0
+        ],
+        [
+          1141.0,
+          769.0
+        ],
+        [
+          224.0,
+          769.0
+        ]
+      ],
+      "text": "báo thụ lý đơn yêu cầu mở thủ tục phá sản hoặc người nộp thuế đã gửi hồ sơ",
+      "confidence": 0.9686646684210527
+    },
+    {
+      "bbox": [
+        [
+          223.0,
+          761.0
+        ],
+        [
+          1140.0,
+          761.0
+        ],
+        [
+          1140.0,
+          805.0
+        ],
+        [
+          223.0,
+          805.0
+        ]
+      ],
+      "text": "phá sản doanh nghiệp đến cơ quan quản lý thuế nhưng đang trong thời gian",
+      "confidence": 0.9682721
+    },
+    {
+      "bbox": [
+        [
+          224.0,
+          796.0
+        ],
+        [
+          1139.0,
+          796.0
+        ],
+        [
+          1139.0,
+          835.0
+        ],
+        [
+          224.0,
+          835.0
+        ]
+      ],
+      "text": "làm các thủ tục thanh toán, xử lý nợ theo quy định của Luật Phá sản đến",
+      "confidence": 0.9680410770588235
+    },
+    {
+      "bbox": [
+        [
+          222.0,
+          829.0
+        ],
+        [
+          1139.0,
+          829.0
+        ],
+        [
+          1139.0,
+          872.0
+        ],
+        [
+          222.0,
+          872.0
+        ]
+      ],
+      "text": "khi người nộp thuế tiếp tục hoạt động kinh doanh hoặc được xóa nợ theo",
+      "confidence": 0.9683660286666667
+    },
+    {
+      "bbox": [
+        [
+          222.0,
+          866.0
+        ],
+        [
+          329.0,
+          866.0
+        ],
+        [
+          329.0,
+          892.0
+        ],
+        [
+          222.0,
+          892.0
+        ]
+      ],
+      "text": "quy định.",
+      "confidence": 0.9656396100000001
+    },
+    {
+      "bbox": [
+        [
+          279.0,
+          926.0
+        ],
+        [
+          1137.0,
+          926.0
+        ],
+        [
+          1137.0,
+          966.0
+        ],
+        [
+          279.0,
+          966.0
+        ]
+      ],
+      "text": "Trường hợp Tòa án có thẩm quyền đã thông báo thụ lý đơn yêu cầu mở",
+      "confidence": 0.96483503875
+    },
+    {
+      "bbox": [
+        [
+          219.0,
+          959.0
+        ],
+        [
+          1137.0,
+          959.0
+        ],
+        [
+          1137.0,
+          1001.0
+        ],
+        [
+          219.0,
+          1001.0
+        ]
+      ],
+      "text": "thủ tục phá sản thì người nộp thuê được khoanh nợ đối với số tiền thuế còn nợ",
+      "confidence": 0.9640989516666667
+    },
+    {
+      "bbox": [
+        [
+          220.0,
+          993.0
+        ],
+        [
+          1049.0,
+          993.0
+        ],
+        [
+          1049.0,
+          1034.0
+        ],
+        [
+          220.0,
+          1034.0
+        ]
+      ],
+      "text": "den thời điểm Tòa án thông báo thụ lý đơn yêu cầu mở thủ tục phá sản.",
+      "confidence": 0.9634603929411765
+    },
+    {
+      "bbox": [
+        [
+          277.0,
+          1049.0
+        ],
+        [
+          1133.0,
+          1049.0
+        ],
+        [
+          1133.0,
+          1096.0
+        ],
+        [
+          277.0,
+          1096.0
+        ]
+      ],
+      "text": "d) Đối với người nộp thuế quy định tại khoản 4 Điều 83 Luật Quản lý",
+      "confidence": 0.9544071331249999
+    },
+    {
+      "bbox": [
+        [
+          217.0,
+          1081.0
+        ],
+        [
+          1133.0,
+          1081.0
+        ],
+        [
+          1133.0,
+          1127.0
+        ],
+        [
+          217.0,
+          1127.0
+        ]
+      ],
+      "text": "thuế thì thời gian khoanh nợ được tính từ ngày cơ quan quản lý thuế có văn",
+      "confidence": 0.963327312352941
+    },
+    {
+      "bbox": [
+        [
+          217.0,
+          1119.0
+        ],
+        [
+          1132.0,
+          1119.0
+        ],
+        [
+          1132.0,
+          1164.0
+        ],
+        [
+          217.0,
+          1164.0
+        ]
+      ],
+      "text": "bản thông báo trên toàn quốc về việc người nộp thuê hoặc đại diện theo pháp",
+      "confidence": 0.9654407450000001
+    },
+    {
+      "bbox": [
+        [
+          216.0,
+          1152.0
+        ],
+        [
+          1131.0,
+          1152.0
+        ],
+        [
+          1131.0,
+          1194.0
+        ],
+        [
+          216.0,
+          1194.0
+        ]
+      ],
+      "text": "luật của người nộp thuế không hiện diện tại địa chỉ kinh doanh, địa chỉ liên",
+      "confidence": 0.9678572225000001
+    },
+    {
+      "bbox": [
+        [
+          215.0,
+          1186.0
+        ],
+        [
+          1132.0,
+          1186.0
+        ],
+        [
+          1132.0,
+          1229.0
+        ],
+        [
+          215.0,
+          1229.0
+        ]
+      ],
+      "text": "lạc đã đăng ký với cơ quan quản lý thuế đến khi người nộp thuế tiếp tục hoạt",
+      "confidence": 0.967116505
+    },
+    {
+      "bbox": [
+        [
+          214.0,
+          1220.0
+        ],
+        [
+          797.0,
+          1220.0
+        ],
+        [
+          797.0,
+          1256.0
+        ],
+        [
+          214.0,
+          1256.0
+        ]
+      ],
+      "text": "động kinh doanh hoặc được xóa nợ theo quy định.",
+      "confidence": 0.969117249
+    },
+    {
+      "bbox": [
+        [
+          273.0,
+          1274.0
+        ],
+        [
+          1129.0,
+          1274.0
+        ],
+        [
+          1129.0,
+          1323.0
+        ],
+        [
+          273.0,
+          1323.0
+        ]
+      ],
+      "text": "đ) Đối với người nộp thuế quy định tại khoản 5 Điều 83 Luật Quản lý",
+      "confidence": 0.9610500668749999
+    },
+    {
+      "bbox": [
+        [
+          212.0,
+          1306.0
+        ],
+        [
+          1129.0,
+          1306.0
+        ],
+        [
+          1129.0,
+          1354.0
+        ],
+        [
+          212.0,
+          1354.0
+        ]
+      ],
+      "text": "thuế thì thời gian khoanh nợ được tính từ ngày cơ quan quản lý thuế có văn",
+      "confidence": 0.9634675588235294
+    },
+    {
+      "bbox": [
+        [
+          212.0,
+          1340.0
+        ],
+        [
+          1129.0,
+          1340.0
+        ],
+        [
+          1129.0,
+          1388.0
+        ],
+        [
+          212.0,
+          1388.0
+        ]
+      ],
+      "text": "bản đề nghị cơ quan có thẩm quyền thu hồi hoặc từ ngày có hiệu lực của",
+      "confidence": 0.9260921488235294
+    },
+    {
+      "bbox": [
+        [
+          211.0,
+          1378.0
+        ],
+        [
+          1127.0,
+          1378.0
+        ],
+        [
+          1127.0,
+          1428.0
+        ],
+        [
+          211.0,
+          1428.0
+        ]
+      ],
+      "text": "quyết định thu hồi giấy chứng nhận đăng ký kinh doanh hoặc giấy chứng",
+      "confidence": 0.954739325
+    },
+    {
+      "bbox": [
+        [
+          210.0,
+          1412.0
+        ],
+        [
+          1126.0,
+          1412.0
+        ],
+        [
+          1126.0,
+          1456.0
+        ],
+        [
+          210.0,
+          1456.0
+        ]
+      ],
+      "text": "nhận đăng ký doanh nghiệp hoặc giấy chứng nhận đăng ký hợp tác xã hoặc",
+      "confidence": 0.9695277813333334
+    },
+    {
+      "bbox": [
+        [
+          210.0,
+          1440.0
+        ],
+        [
+          1126.0,
+          1440.0
+        ],
+        [
+          1126.0,
+          1489.0
+        ],
+        [
+          210.0,
+          1489.0
+        ]
+      ],
+      "text": "giấy chứng nhận đăng ký hộ kinh doanh hoặc giấy phép thành lập và hoạt",
+      "confidence": 0.969352254
+    },
+    {
+      "bbox": [
+        [
+          210.0,
+          1476.0
+        ],
+        [
+          1126.0,
+          1476.0
+        ],
+        [
+          1126.0,
+          1521.0
+        ],
+        [
+          210.0,
+          1521.0
+        ]
+      ],
+      "text": "động hoặc giấy phép hành nghề hoặc giấy chứng nhận đăng ký chỉ nhánh, văn",
+      "confidence": 0.961798162
+    },
+    {
+      "bbox": [
+        [
+          209.0,
+          1510.0
+        ],
+        [
+          1125.0,
+          1510.0
+        ],
+        [
+          1125.0,
+          1556.0
+        ],
+        [
+          209.0,
+          1556.0
+        ]
+      ],
+      "text": "phòng đại diện đến khi người nộp thuế tiếp tục hoạt động kinh doanh hoặc",
+      "confidence": 0.9661584373333334
+    },
+    {
+      "bbox": [
+        [
+          209.0,
+          1545.0
+        ],
+        [
+          528.0,
+          1545.0
+        ],
+        [
+          528.0,
+          1577.0
+        ],
+        [
+          209.0,
+          1577.0
+        ]
+      ],
+      "text": "được xóa nợ theo quy định.",
+      "confidence": 0.9660126766666667
+    }
+  ]
+}

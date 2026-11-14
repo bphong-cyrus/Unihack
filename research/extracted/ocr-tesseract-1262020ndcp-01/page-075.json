@@ -1,0 +1,838 @@
+{
+  "document_id": "126/2020/NĐ-CP",
+  "source_file": "../../legal-sources/1262020ndcp/01.pdf",
+  "source_sha256": "310648e80396d267610946458e7fdd71ba87ef538b009d6574ed21514de3f7ca",
+  "page_count": 119,
+  "render_dpi": 150,
+  "engine": "Tesseract 5.5.4 (vie+eng; OEM 1; PSM 3)",
+  "review_status": "UNREVIEWED",
+  "tesseract_version": "5.5.4",
+  "languages": [
+    "vie",
+    "eng"
+  ],
+  "traineddata_sha256": {
+    "vie": "b6b49293d95d0b6dbd8780174627e82c75be957b6f4ed9862155540d6b00bb45",
+    "eng": "8280aed0782fe27257a68ea10fe7ef324ca0f8d85bd2fd145d1c2b560bcb66ba"
+  },
+  "ocr_engine_mode": 1,
+  "page_segmentation_mode": 3,
+  "thread_limit": 2,
+  "page": 75,
+  "lines": [
+    {
+      "bbox": [
+        [
+          688.0,
+          64.0
+        ],
+        [
+          714.0,
+          64.0
+        ],
+        [
+          714.0,
+          85.0
+        ],
+        [
+          688.0,
+          85.0
+        ]
+      ],
+      "text": "75",
+      "confidence": 0.96466843
+    },
+    {
+      "bbox": [
+        [
+          274.0,
+          139.0
+        ],
+        [
+          1133.0,
+          139.0
+        ],
+        [
+          1133.0,
+          182.0
+        ],
+        [
+          274.0,
+          182.0
+        ]
+      ],
+      "text": "Quyết định hành chính về quản lý thuế bao gồm: quyết định xử phạt vi",
+      "confidence": 0.965000228
+    },
+    {
+      "bbox": [
+        [
+          214.0,
+          172.0
+        ],
+        [
+          1133.0,
+          172.0
+        ],
+        [
+          1133.0,
+          216.0
+        ],
+        [
+          214.0,
+          216.0
+        ]
+      ],
+      "text": "phạm hành chính về quản lý thuế; các thông báo ấn định thuế, quyết định ấn",
+      "confidence": 0.965985193125
+    },
+    {
+      "bbox": [
+        [
+          215.0,
+          207.0
+        ],
+        [
+          1134.0,
+          207.0
+        ],
+        [
+          1134.0,
+          251.0
+        ],
+        [
+          215.0,
+          251.0
+        ]
+      ],
+      "text": "định thuế; thông báo tiền thuế nợ; quyết định thu hồi hoàn; quyết định gia",
+      "confidence": 0.9663721973333332
+    },
+    {
+      "bbox": [
+        [
+          214.0,
+          243.0
+        ],
+        [
+          1133.0,
+          243.0
+        ],
+        [
+          1133.0,
+          285.0
+        ],
+        [
+          214.0,
+          285.0
+        ]
+      ],
+      "text": "hạn; quyết định nộp dần; quyết định chấm dứt hiệu lực của quyết định khoanh",
+      "confidence": 0.9574585486666666
+    },
+    {
+      "bbox": [
+        [
+          214.0,
+          278.0
+        ],
+        [
+          1133.0,
+          278.0
+        ],
+        [
+          1133.0,
+          320.0
+        ],
+        [
+          214.0,
+          320.0
+        ]
+      ],
+      "text": "tiền thuế nợ; quyết định áp dụng biện pháp khắc phục hậu quả theo quy ‹ định",
+      "confidence": 0.9597081535294117
+    },
+    {
+      "bbox": [
+        [
+          214.0,
+          311.0
+        ],
+        [
+          1132.0,
+          311.0
+        ],
+        [
+          1132.0,
+          357.0
+        ],
+        [
+          214.0,
+          357.0
+        ]
+      ],
+      "text": "của pháp luật về xử lý vi phạm hành chính. về quản lý thuế; quyết định về bồi",
+      "confidence": 0.9655663011111112
+    },
+    {
+      "bbox": [
+        [
+          213.0,
+          347.0
+        ],
+        [
+          1132.0,
+          347.0
+        ],
+        [
+          1132.0,
+          382.0
+        ],
+        [
+          213.0,
+          382.0
+        ]
+      ],
+      "text": "thường thiệt hại; quyết định hành chính về quản lý thuế khác theo quy định",
+      "confidence": 0.9666808113333333
+    },
+    {
+      "bbox": [
+        [
+          214.0,
+          390.0
+        ],
+        [
+          376.0,
+          390.0
+        ],
+        [
+          376.0,
+          417.0
+        ],
+        [
+          214.0,
+          417.0
+        ]
+      ],
+      "text": "của pháp luật.",
+      "confidence": 0.9684999833333334
+    },
+    {
+      "bbox": [
+        [
+          273.0,
+          440.0
+        ],
+        [
+          1132.0,
+          440.0
+        ],
+        [
+          1132.0,
+          483.0
+        ],
+        [
+          273.0,
+          483.0
+        ]
+      ],
+      "text": "Đối tượng bị cưỡng chế thi hành quyết định hành chính về quản lý thuế",
+      "confidence": 0.9375966746666667
+    },
+    {
+      "bbox": [
+        [
+          214.0,
+          484.0
+        ],
+        [
+          321.0,
+          484.0
+        ],
+        [
+          321.0,
+          511.0
+        ],
+        [
+          214.0,
+          511.0
+        ]
+      ],
+      "text": "bao gồm:",
+      "confidence": 0.664930595
+    },
+    {
+      "bbox": [
+        [
+          273.0,
+          537.0
+        ],
+        [
+          1133.0,
+          537.0
+        ],
+        [
+          1133.0,
+          570.0
+        ],
+        [
+          273.0,
+          570.0
+        ]
+      ],
+      "text": "a) Người nộp thuế thuộc các trường hợp quy định tại các khoản 1, 2, 3 và 4",
+      "confidence": 0.9646545411111112
+    },
+    {
+      "bbox": [
+        [
+          214.0,
+          571.0
+        ],
+        [
+          547.0,
+          571.0
+        ],
+        [
+          547.0,
+          604.0
+        ],
+        [
+          214.0,
+          604.0
+        ]
+      ],
+      "text": "Điều 124 Luật Quản lý thuế.",
+      "confidence": 0.9618413683333334
+    },
+    {
+      "bbox": [
+        [
+          273.0,
+          629.0
+        ],
+        [
+          1134.0,
+          629.0
+        ],
+        [
+          1134.0,
+          669.0
+        ],
+        [
+          273.0,
+          669.0
+        ]
+      ],
+      "text": "Đồi với người nộp thuế còn nợ ngân sách nhà nước có số tiền thuế nợ đã",
+      "confidence": 0.9612466488235293
+    },
+    {
+      "bbox": [
+        [
+          214.0,
+          663.0
+        ],
+        [
+          1133.0,
+          663.0
+        ],
+        [
+          1133.0,
+          705.0
+        ],
+        [
+          214.0,
+          705.0
+        ]
+      ],
+      "text": "được cơ quan quản lý thuế ban hành quyết định nộp dần tiền thuế nợ hoặc",
+      "confidence": 0.9680538
+    },
+    {
+      "bbox": [
+        [
+          214.0,
+          697.0
+        ],
+        [
+          1133.0,
+          697.0
+        ],
+        [
+          1133.0,
+          739.0
+        ],
+        [
+          214.0,
+          739.0
+        ]
+      ],
+      "text": "quyết định gia hạn nộp thuế hoặc quyết định khoanh tiền thuế nợ hoặc thông",
+      "confidence": 0.9610510513333334
+    },
+    {
+      "bbox": [
+        [
+          214.0,
+          732.0
+        ],
+        [
+          1133.0,
+          732.0
+        ],
+        [
+          1133.0,
+          767.0
+        ],
+        [
+          214.0,
+          767.0
+        ]
+      ],
+      "text": "báo không tính tiền chậm nộp thì chưa thực hiện cưỡng chế đối với số tiền",
+      "confidence": 0.9692258543750001
+    },
+    {
+      "bbox": [
+        [
+          213.0,
+          768.0
+        ],
+        [
+          1133.0,
+          768.0
+        ],
+        [
+          1133.0,
+          801.0
+        ],
+        [
+          213.0,
+          801.0
+        ]
+      ],
+      "text": "thuế nợ trong thời gian được nộp dần hoặc gia hạn hoặc khoanh nợ hoặc",
+      "confidence": 0.9621477499999999
+    },
+    {
+      "bbox": [
+        [
+          214.0,
+          801.0
+        ],
+        [
+          1134.0,
+          801.0
+        ],
+        [
+          1134.0,
+          835.0
+        ],
+        [
+          214.0,
+          835.0
+        ]
+      ],
+      "text": "không tính tiền chậm nộp hoặc trong thời gian các cơ quan Kiểm toán Nhà",
+      "confidence": 0.9688538459999999
+    },
+    {
+      "bbox": [
+        [
+          214.0,
+          835.0
+        ],
+        [
+          1133.0,
+          835.0
+        ],
+        [
+          1133.0,
+          869.0
+        ],
+        [
+          214.0,
+          869.0
+        ]
+      ],
+      "text": "nước, Thanh tra Nhà nước xác định lại chính xác nghĩa vụ thuế của người nộp",
+      "confidence": 0.9687938549999999
+    },
+    {
+      "bbox": [
+        [
+          214.0,
+          871.0
+        ],
+        [
+          753.0,
+          871.0
+        ],
+        [
+          753.0,
+          904.0
+        ],
+        [
+          214.0,
+          904.0
+        ]
+      ],
+      "text": "thuế theo văn bản đề nghị của người nộp thuế.",
+      "confidence": 0.967742217
+    },
+    {
+      "bbox": [
+        [
+          273.0,
+          930.0
+        ],
+        [
+          1134.0,
+          930.0
+        ],
+        [
+          1134.0,
+          971.0
+        ],
+        [
+          273.0,
+          971.0
+        ]
+      ],
+      "text": "b) Tổ chức tín dụng không chấp hành quyết định xử phạt vi phạm hành",
+      "confidence": 0.9599101
+    },
+    {
+      "bbox": [
+        [
+          214.0,
+          964.0
+        ],
+        [
+          909.0,
+          964.0
+        ],
+        [
+          909.0,
+          999.0
+        ],
+        [
+          214.0,
+          999.0
+        ]
+      ],
+      "text": "chính về quản lý thuế theo quy định của Luật Quản lý thuế.",
+      "confidence": 0.9668596484615385
+    },
+    {
+      "bbox": [
+        [
+          273.0,
+          1023.0
+        ],
+        [
+          1133.0,
+          1023.0
+        ],
+        [
+          1133.0,
+          1064.0
+        ],
+        [
+          273.0,
+          1064.0
+        ]
+      ],
+      "text": "c) Tổ chức bảo lãnh nộp tiền thuế cho người nộp thuế: Quá thời hạn quy",
+      "confidence": 0.963040271875
+    },
+    {
+      "bbox": [
+        [
+          214.0,
+          1057.0
+        ],
+        [
+          1134.0,
+          1057.0
+        ],
+        [
+          1134.0,
+          1098.0
+        ],
+        [
+          214.0,
+          1098.0
+        ]
+      ],
+      "text": "định 90 ngày, kể từ ngày hết hạn nộp tiền thuế nợ theo văn bản chấp thuận",
+      "confidence": 0.9634525570588235
+    },
+    {
+      "bbox": [
+        [
+          214.0,
+          1093.0
+        ],
+        [
+          1134.0,
+          1093.0
+        ],
+        [
+          1134.0,
+          1132.0
+        ],
+        [
+          214.0,
+          1132.0
+        ]
+      ],
+      "text": "của cơ quan quản lý thuế mà người nộp thuế chưa nộp đủ vào ngân sách nhà",
+      "confidence": 0.9682581723529411
+    },
+    {
+      "bbox": [
+        [
+          214.0,
+          1125.0
+        ],
+        [
+          1070.0,
+          1125.0
+        ],
+        [
+          1070.0,
+          1160.0
+        ],
+        [
+          214.0,
+          1160.0
+        ]
+      ],
+      "text": "nước thì bên bảo lãnh bị cưỡng chế theo quy định của Luật Quản lý thuế.",
+      "confidence": 0.9650124975
+    },
+    {
+      "bbox": [
+        [
+          274.0,
+          1184.0
+        ],
+        [
+          1133.0,
+          1184.0
+        ],
+        [
+          1133.0,
+          1219.0
+        ],
+        [
+          274.0,
+          1219.0
+        ]
+      ],
+      "text": "d) Kho bạc nhà nước, kho bạc nhà nước cấp tỉnh, kho bạc nhà nước cấp",
+      "confidence": 0.9651124581249999
+    },
+    {
+      "bbox": [
+        [
+          215.0,
+          1221.0
+        ],
+        [
+          1133.0,
+          1221.0
+        ],
+        [
+          1133.0,
+          1263.0
+        ],
+        [
+          215.0,
+          1263.0
+        ]
+      ],
+      "text": "huyện (sau đây gọi chung là kho bạc nhà nước) không thực hiện việc trích",
+      "confidence": 0.9633019506666666
+    },
+    {
+      "bbox": [
+        [
+          215.0,
+          1251.0
+        ],
+        [
+          1134.0,
+          1251.0
+        ],
+        [
+          1134.0,
+          1299.0
+        ],
+        [
+          215.0,
+          1299.0
+        ]
+      ],
+      "text": "chuyển | tiền từ tài khoản của người nộp thuế bị cưỡng chế mở tại kho bạc nhà",
+      "confidence": 0.9617789327777777
+    },
+    {
+      "bbox": [
+        [
+          215.0,
+          1288.0
+        ],
+        [
+          1133.0,
+          1288.0
+        ],
+        [
+          1133.0,
+          1329.0
+        ],
+        [
+          215.0,
+          1329.0
+        ]
+      ],
+      "text": "nước để nộp vào ngân sách nhà nước theo quyết định xử phạt vi phạm hành",
+      "confidence": 0.9585828925
+    },
+    {
+      "bbox": [
+        [
+          215.0,
+          1323.0
+        ],
+        [
+          800.0,
+          1323.0
+        ],
+        [
+          800.0,
+          1357.0
+        ],
+        [
+          215.0,
+          1357.0
+        ]
+      ],
+      "text": "chính về quản lý thuế của cơ quan có thẳm quyền.",
+      "confidence": 0.9530053909090909
+    },
+    {
+      "bbox": [
+        [
+          274.0,
+          1382.0
+        ],
+        [
+          1134.0,
+          1382.0
+        ],
+        [
+          1134.0,
+          1427.0
+        ],
+        [
+          274.0,
+          1427.0
+        ]
+      ],
+      "text": "đ) Tổ chức, cá nhân có liên quan không chấp hành các quyết định xử",
+      "confidence": 0.9630208880000001
+    },
+    {
+      "bbox": [
+        [
+          215.0,
+          1417.0
+        ],
+        [
+          1025.0,
+          1417.0
+        ],
+        [
+          1025.0,
+          1452.0
+        ],
+        [
+          215.0,
+          1452.0
+        ]
+      ],
+      "text": "phạt vi phạm hành chính về quản lý thuế của cơ quan có thẩm quyền.",
+      "confidence": 0.9645419106666666
+    },
+    {
+      "bbox": [
+        [
+          275.0,
+          1478.0
+        ],
+        [
+          1133.0,
+          1478.0
+        ],
+        [
+          1133.0,
+          1519.0
+        ],
+        [
+          275.0,
+          1519.0
+        ]
+      ],
+      "text": "Trường hợp người nộp thuế bị cưỡng chế là chủ dự án ODA, chủ tài",
+      "confidence": 0.9641238506666667
+    },
+    {
+      "bbox": [
+        [
+          216.0,
+          1513.0
+        ],
+        [
+          1135.0,
+          1513.0
+        ],
+        [
+          1135.0,
+          1553.0
+        ],
+        [
+          216.0,
+          1553.0
+        ]
+      ],
+      "text": "khoản ngudn von ODA và vay ưu đãi đại kho bạc nhà nước, tổ chức tín dụng",
+      "confidence": 0.9438205947058823
+    },
+    {
+      "bbox": [
+        [
+          216.0,
+          1555.0
+        ],
+        [
+          732.0,
+          1555.0
+        ],
+        [
+          732.0,
+          1582.0
+        ],
+        [
+          216.0,
+          1582.0
+        ]
+      ],
+      "text": "thì không áp dụng biện pháp cưỡng chê này.",
+      "confidence": 0.96805453
+    }
+  ]
+}

@@ -1,0 +1,926 @@
+{
+  "document_id": "126/2020/NĐ-CP",
+  "source_file": "../../legal-sources/1262020ndcp/01.pdf",
+  "source_sha256": "310648e80396d267610946458e7fdd71ba87ef538b009d6574ed21514de3f7ca",
+  "page_count": 119,
+  "render_dpi": 150,
+  "engine": "Tesseract 5.5.4 (vie+eng; OEM 1; PSM 3)",
+  "review_status": "UNREVIEWED",
+  "tesseract_version": "5.5.4",
+  "languages": [
+    "vie",
+    "eng"
+  ],
+  "traineddata_sha256": {
+    "vie": "b6b49293d95d0b6dbd8780174627e82c75be957b6f4ed9862155540d6b00bb45",
+    "eng": "8280aed0782fe27257a68ea10fe7ef324ca0f8d85bd2fd145d1c2b560bcb66ba"
+  },
+  "ocr_engine_mode": 1,
+  "page_segmentation_mode": 3,
+  "thread_limit": 2,
+  "page": 8,
+  "lines": [
+    {
+      "bbox": [
+        [
+          201.0,
+          131.0
+        ],
+        [
+          1120.0,
+          131.0
+        ],
+        [
+          1120.0,
+          181.0
+        ],
+        [
+          201.0,
+          181.0
+        ]
+      ],
+      "text": "quản lý trực tiếp trước khi khôi phục mã số thuế (trừ trường hợp được cơ",
+      "confidence": 0.9676980924999999
+    },
+    {
+      "bbox": [
+        [
+          202.0,
+          157.0
+        ],
+        [
+          1120.0,
+          157.0
+        ],
+        [
+          1120.0,
+          215.0
+        ],
+        [
+          202.0,
+          215.0
+        ]
+      ],
+      "text": "quan nhà nước có thẩm quyền chấp nhận nộp dần tiền thuế nợ theo cam kết",
+      "confidence": 0.9665443893750001
+    },
+    {
+      "bbox": [
+        [
+          204.0,
+          191.0
+        ],
+        [
+          1120.0,
+          191.0
+        ],
+        [
+          1120.0,
+          247.0
+        ],
+        [
+          204.0,
+          247.0
+        ]
+      ],
+      "text": "của người nộp thuế hoặc khoản tiền nợ đã được gia hạn nộp hoặc khoản tiền",
+      "confidence": 0.9681829681249999
+    },
+    {
+      "bbox": [
+        [
+          204.0,
+          222.0
+        ],
+        [
+          1048.0,
+          222.0
+        ],
+        [
+          1048.0,
+          280.0
+        ],
+        [
+          204.0,
+          280.0
+        ]
+      ],
+      "text": "nợ không phải tính tiền chậm nộp theo quy định của Luật Quản lý thuế).",
+      "confidence": 0.9627670093333333
+    },
+    {
+      "bbox": [
+        [
+          599.0,
+          300.0
+        ],
+        [
+          728.0,
+          300.0
+        ],
+        [
+          728.0,
+          327.0
+        ],
+        [
+          599.0,
+          327.0
+        ]
+      ],
+      "text": "Chương II",
+      "confidence": 0.8287130349999999
+    },
+    {
+      "bbox": [
+        [
+          492.0,
+          324.0
+        ],
+        [
+          836.0,
+          324.0
+        ],
+        [
+          836.0,
+          360.0
+        ],
+        [
+          492.0,
+          360.0
+        ]
+      ],
+      "text": "KHAI THUẾ, TÍNH THUẾ",
+      "confidence": 0.9119137549999999
+    },
+    {
+      "bbox": [
+        [
+          267.0,
+          376.0
+        ],
+        [
+          559.0,
+          376.0
+        ],
+        [
+          559.0,
+          410.0
+        ],
+        [
+          267.0,
+          410.0
+        ]
+      ],
+      "text": "Điều 7. Hồ sơ khai thuế",
+      "confidence": 0.9627083449999999
+    },
+    {
+      "bbox": [
+        [
+          271.0,
+          410.0
+        ],
+        [
+          1124.0,
+          410.0
+        ],
+        [
+          1124.0,
+          454.0
+        ],
+        [
+          271.0,
+          454.0
+        ]
+      ],
+      "text": "1. Hồ sơ khai thuế là tờ khai thuế và các chứng từ, tài liệu liên quan làm",
+      "confidence": 0.9689838411111111
+    },
+    {
+      "bbox": [
+        [
+          210.0,
+          444.0
+        ],
+        [
+          1126.0,
+          444.0
+        ],
+        [
+          1126.0,
+          489.0
+        ],
+        [
+          210.0,
+          489.0
+        ]
+      ],
+      "text": "căn cứ để xác định nghĩa vụ thuế của người nộp thuế với ngân sách nhà nước",
+      "confidence": 0.9568819029411765
+    },
+    {
+      "bbox": [
+        [
+          211.0,
+          477.0
+        ],
+        [
+          1128.0,
+          477.0
+        ],
+        [
+          1128.0,
+          528.0
+        ],
+        [
+          211.0,
+          528.0
+        ]
+      ],
+      "text": "do người nộp thuế lập và gửi đến cơ quan quản lý thuế bằng phương thức điện",
+      "confidence": 0.9679983029411765
+    },
+    {
+      "bbox": [
+        [
+          212.0,
+          506.0
+        ],
+        [
+          1129.0,
+          506.0
+        ],
+        [
+          1129.0,
+          564.0
+        ],
+        [
+          212.0,
+          564.0
+        ]
+      ],
+      "text": "tử hoặc giấy. Người nộp thuế phải khai tờ khai thuế, bảng kê, phụ lục (nếu có)",
+      "confidence": 0.9654804052941176
+    },
+    {
+      "bbox": [
+        [
+          213.0,
+          544.0
+        ],
+        [
+          1130.0,
+          544.0
+        ],
+        [
+          1130.0,
+          592.0
+        ],
+        [
+          213.0,
+          592.0
+        ]
+      ],
+      "text": "theo đúng mẫu quy định của Bộ trưởng Bộ Tài chính và chịu trách nhiệm",
+      "confidence": 0.9660742946666666
+    },
+    {
+      "bbox": [
+        [
+          214.0,
+          577.0
+        ],
+        [
+          1132.0,
+          577.0
+        ],
+        [
+          1132.0,
+          627.0
+        ],
+        [
+          214.0,
+          627.0
+        ]
+      ],
+      "text": "trước pháp luật về tính chính xác, trung thực, đầy đủ các nội dung trong tờ",
+      "confidence": 0.96652153
+    },
+    {
+      "bbox": [
+        [
+          215.0,
+          612.0
+        ],
+        [
+          1132.0,
+          612.0
+        ],
+        [
+          1132.0,
+          658.0
+        ],
+        [
+          215.0,
+          658.0
+        ]
+      ],
+      "text": "khai thuế, bảng kê, phụ lục; nộp đầy đủ các chứng từ, tài liệu quy định trong",
+      "confidence": 0.9621602264705882
+    },
+    {
+      "bbox": [
+        [
+          216.0,
+          638.0
+        ],
+        [
+          1133.0,
+          638.0
+        ],
+        [
+          1133.0,
+          690.0
+        ],
+        [
+          216.0,
+          690.0
+        ]
+      ],
+      "text": "hồ sơ khai thuế với cơ quan quản lý thuế. Đối với một số loại giấy tờ trong hồ",
+      "confidence": 0.9540727284210527
+    },
+    {
+      "bbox": [
+        [
+          218.0,
+          678.0
+        ],
+        [
+          1134.0,
+          678.0
+        ],
+        [
+          1134.0,
+          723.0
+        ],
+        [
+          218.0,
+          723.0
+        ]
+      ],
+      "text": "sơ khai thuế mà Bộ Tài chính không ban hành mẫu nhưng pháp luật có liên",
+      "confidence": 0.9681611206249999
+    },
+    {
+      "bbox": [
+        [
+          218.0,
+          714.0
+        ],
+        [
+          1119.0,
+          714.0
+        ],
+        [
+          1119.0,
+          763.0
+        ],
+        [
+          218.0,
+          763.0
+        ]
+      ],
+      "text": "quan có quy định mẫu thì thực hiện theo quy định của pháp luật có liên quan.",
+      "confidence": 0.9673551811764706
+    },
+    {
+      "bbox": [
+        [
+          279.0,
+          749.0
+        ],
+        [
+          1136.0,
+          749.0
+        ],
+        [
+          1136.0,
+          814.0
+        ],
+        [
+          279.0,
+          814.0
+        ]
+      ],
+      "text": "a) Người nộp thuế căn cứ hồ sơ khai thuế và hồ sơ khai bổ sung để tự",
+      "confidence": 0.909973653888889
+    },
+    {
+      "bbox": [
+        [
+          220.0,
+          788.0
+        ],
+        [
+          1137.0,
+          788.0
+        ],
+        [
+          1137.0,
+          835.0
+        ],
+        [
+          220.0,
+          835.0
+        ]
+      ],
+      "text": "tính số tiền thuế phải nộp, sô tiên thuế phải nộp bd sung, tien chậm nộp (nêu",
+      "confidence": 0.9248763288235294
+    },
+    {
+      "bbox": [
+        [
+          221.0,
+          823.0
+        ],
+        [
+          1137.0,
+          823.0
+        ],
+        [
+          1137.0,
+          872.0
+        ],
+        [
+          221.0,
+          872.0
+        ]
+      ],
+      "text": "có) và nộp tiền vào ngân sách nhà nước theo quy định (trừ trường hợp quy",
+      "confidence": 0.96715389625
+    },
+    {
+      "bbox": [
+        [
+          222.0,
+          850.0
+        ],
+        [
+          1139.0,
+          850.0
+        ],
+        [
+          1139.0,
+          905.0
+        ],
+        [
+          222.0,
+          905.0
+        ]
+      ],
+      "text": "định tại Điều 13 của Nghị định này). Cơ quan quản lý thuế thực hiện ấn định",
+      "confidence": 0.9670971729411765
+    },
+    {
+      "bbox": [
+        [
+          223.0,
+          886.0
+        ],
+        [
+          1140.0,
+          886.0
+        ],
+        [
+          1140.0,
+          937.0
+        ],
+        [
+          223.0,
+          937.0
+        ]
+      ],
+      "text": "thuế theo quy định tại Điều 50, Điều 52 của Luật Quản lý thuế trong trường",
+      "confidence": 0.9678621
+    },
+    {
+      "bbox": [
+        [
+          224.0,
+          918.0
+        ],
+        [
+          1141.0,
+          918.0
+        ],
+        [
+          1141.0,
+          973.0
+        ],
+        [
+          224.0,
+          973.0
+        ]
+      ],
+      "text": "hợp phát hiện người nộp thuế khai không đầy đủ, không chính xác về căn cứ",
+      "confidence": 0.9691674275
+    },
+    {
+      "bbox": [
+        [
+          224.0,
+          958.0
+        ],
+        [
+          844.0,
+          958.0
+        ],
+        [
+          844.0,
+          1003.0
+        ],
+        [
+          224.0,
+          1003.0
+        ]
+      ],
+      "text": "tính thuế, số tiền thuế phải nộp trong hồ sơ khai thuế.",
+      "confidence": 0.9679225916666667
+    },
+    {
+      "bbox": [
+        [
+          285.0,
+          989.0
+        ],
+        [
+          1142.0,
+          989.0
+        ],
+        [
+          1142.0,
+          1049.0
+        ],
+        [
+          285.0,
+          1049.0
+        ]
+      ],
+      "text": "b) Cơ quan quản lý thuế căn cứ hồ sơ khai thuế của người nộp thuế,",
+      "confidence": 0.9644232175
+    },
+    {
+      "bbox": [
+        [
+          227.0,
+          1027.0
+        ],
+        [
+          1143.0,
+          1027.0
+        ],
+        [
+          1143.0,
+          1083.0
+        ],
+        [
+          227.0,
+          1083.0
+        ]
+      ],
+      "text": "thông tin của cơ quan nhà nước có thẳm quyền và các thông tin quản lý thuế",
+      "confidence": 0.9663413458823529
+    },
+    {
+      "bbox": [
+        [
+          228.0,
+          1067.0
+        ],
+        [
+          1144.0,
+          1067.0
+        ],
+        [
+          1144.0,
+          1111.0
+        ],
+        [
+          228.0,
+          1111.0
+        ]
+      ],
+      "text": "để tính số tiền thuế phải nộp và thông báo số tiền thuế phải nộp cho người nộp",
+      "confidence": 0.9663797916666667
+    },
+    {
+      "bbox": [
+        [
+          229.0,
+          1110.0
+        ],
+        [
+          809.0,
+          1110.0
+        ],
+        [
+          809.0,
+          1148.0
+        ],
+        [
+          229.0,
+          1148.0
+        ]
+      ],
+      "text": "thuế theo quy định tại Điều 13 của Nghị định này.",
+      "confidence": 0.9622494990909091
+    },
+    {
+      "bbox": [
+        [
+          289.0,
+          1143.0
+        ],
+        [
+          1147.0,
+          1143.0
+        ],
+        [
+          1147.0,
+          1192.0
+        ],
+        [
+          289.0,
+          1192.0
+        ]
+      ],
+      "text": "c) Cơ quan thuế căn cứ hồ sơ khai thuế của hộ kinh doanh, cá nhân kinh",
+      "confidence": 0.9554341270588236
+    },
+    {
+      "bbox": [
+        [
+          231.0,
+          1172.0
+        ],
+        [
+          1147.0,
+          1172.0
+        ],
+        [
+          1147.0,
+          1225.0
+        ],
+        [
+          231.0,
+          1225.0
+        ]
+      ],
+      "text": "doanh nộp thuế theo phương pháp khoán và các thông tin quản lý thuế để xác",
+      "confidence": 0.9652129175
+    },
+    {
+      "bbox": [
+        [
+          232.0,
+          1208.0
+        ],
+        [
+          1148.0,
+          1208.0
+        ],
+        [
+          1148.0,
+          1260.0
+        ],
+        [
+          232.0,
+          1260.0
+        ]
+      ],
+      "text": "định mức thuế khoán theo quy định tại Điều 51 Luật Quản lý thuế và theo quy",
+      "confidence": 0.9663901470588236
+    },
+    {
+      "bbox": [
+        [
+          232.0,
+          1258.0
+        ],
+        [
+          624.0,
+          1258.0
+        ],
+        [
+          624.0,
+          1293.0
+        ],
+        [
+          232.0,
+          1293.0
+        ]
+      ],
+      "text": "định của Bộ trưởng Bộ Tài chính.",
+      "confidence": 0.9682880285714285
+    },
+    {
+      "bbox": [
+        [
+          293.0,
+          1283.0
+        ],
+        [
+          1151.0,
+          1283.0
+        ],
+        [
+          1151.0,
+          1330.0
+        ],
+        [
+          293.0,
+          1330.0
+        ]
+      ],
+      "text": "2. Hồ sơ khai thuế tương ứng với từng loại thuế, người nộp thuế, phù",
+      "confidence": 0.9621380159999999
+    },
+    {
+      "bbox": [
+        [
+          234.0,
+          1317.0
+        ],
+        [
+          1152.0,
+          1317.0
+        ],
+        [
+          1152.0,
+          1373.0
+        ],
+        [
+          234.0,
+          1373.0
+        ]
+      ],
+      "text": "hợp với phương pháp tính thuế, kỳ tính thuế (tháng, quý, năm, từng lần phát",
+      "confidence": 0.964767694
+    },
+    {
+      "bbox": [
+        [
+          237.0,
+          1355.0
+        ],
+        [
+          1151.0,
+          1355.0
+        ],
+        [
+          1151.0,
+          1402.0
+        ],
+        [
+          237.0,
+          1402.0
+        ]
+      ],
+      "text": "sinh hoặc quyết toán). Trường hợp cùng một loại thuê mà người nộp thuê có",
+      "confidence": 0.9691603486666667
+    },
+    {
+      "bbox": [
+        [
+          237.0,
+          1383.0
+        ],
+        [
+          1152.0,
+          1383.0
+        ],
+        [
+          1152.0,
+          1434.0
+        ],
+        [
+          237.0,
+          1434.0
+        ]
+      ],
+      "text": "nhiều hoạt động kinh doanh thì thực hiện khai chung trên một hồ sơ khai thuế,",
+      "confidence": 0.96613989375
+    },
+    {
+      "bbox": [
+        [
+          238.0,
+          1440.0
+        ],
+        [
+          508.0,
+          1440.0
+        ],
+        [
+          508.0,
+          1468.0
+        ],
+        [
+          238.0,
+          1468.0
+        ]
+      ],
+      "text": "trừ các trường hợp sau:",
+      "confidence": 0.9692030179999999
+    },
+    {
+      "bbox": [
+        [
+          299.0,
+          1466.0
+        ],
+        [
+          1155.0,
+          1466.0
+        ],
+        [
+          1155.0,
+          1513.0
+        ],
+        [
+          299.0,
+          1513.0
+        ]
+      ],
+      "text": "a) Người nộp thuế có nhiều hoạt động kinh doanh trong đó có hoạt động",
+      "confidence": 0.9654606053333333
+    },
+    {
+      "bbox": [
+        [
+          240.0,
+          1497.0
+        ],
+        [
+          1155.0,
+          1497.0
+        ],
+        [
+          1155.0,
+          1553.0
+        ],
+        [
+          240.0,
+          1553.0
+        ]
+      ],
+      "text": "xb sb kiến thiết, xổ số điện toán thì phải lập hồ sơ khai thuế giá trị gia tăng,",
+      "confidence": 0.9497450489473686
+    },
+    {
+      "bbox": [
+        [
+          241.0,
+          1526.0
+        ],
+        [
+          1156.0,
+          1526.0
+        ],
+        [
+          1156.0,
+          1578.0
+        ],
+        [
+          241.0,
+          1578.0
+        ]
+      ],
+      "text": "thuế tiêu thụ đặc biệt, lợi nhuận sau thuế riêng cho hoạt động xô số kiến thiết,",
+      "confidence": 0.959105184117647
+    },
+    {
+      "bbox": [
+        [
+          243.0,
+          1582.0
+        ],
+        [
+          425.0,
+          1582.0
+        ],
+        [
+          425.0,
+          1613.0
+        ],
+        [
+          243.0,
+          1613.0
+        ]
+      ],
+      "text": "xổ số điện toán.",
+      "confidence": 0.9582118975
+    }
+  ]
+}

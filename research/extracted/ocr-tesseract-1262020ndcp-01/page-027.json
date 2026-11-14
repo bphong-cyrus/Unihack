@@ -1,0 +1,838 @@
+{
+  "document_id": "126/2020/NĐ-CP",
+  "source_file": "../../legal-sources/1262020ndcp/01.pdf",
+  "source_sha256": "310648e80396d267610946458e7fdd71ba87ef538b009d6574ed21514de3f7ca",
+  "page_count": 119,
+  "render_dpi": 150,
+  "engine": "Tesseract 5.5.4 (vie+eng; OEM 1; PSM 3)",
+  "review_status": "UNREVIEWED",
+  "tesseract_version": "5.5.4",
+  "languages": [
+    "vie",
+    "eng"
+  ],
+  "traineddata_sha256": {
+    "vie": "b6b49293d95d0b6dbd8780174627e82c75be957b6f4ed9862155540d6b00bb45",
+    "eng": "8280aed0782fe27257a68ea10fe7ef324ca0f8d85bd2fd145d1c2b560bcb66ba"
+  },
+  "ocr_engine_mode": 1,
+  "page_segmentation_mode": 3,
+  "thread_limit": 2,
+  "page": 27,
+  "lines": [
+    {
+      "bbox": [
+        [
+          681.0,
+          69.0
+        ],
+        [
+          708.0,
+          69.0
+        ],
+        [
+          708.0,
+          89.0
+        ],
+        [
+          681.0,
+          89.0
+        ]
+      ],
+      "text": "27",
+      "confidence": 0.95593414
+    },
+    {
+      "bbox": [
+        [
+          267.0,
+          146.0
+        ],
+        [
+          1127.0,
+          146.0
+        ],
+        [
+          1127.0,
+          179.0
+        ],
+        [
+          267.0,
+          179.0
+        ]
+      ],
+      "text": "h) Khai thuế thu nhập doanh nghiệp tại nơi có đơn vị phụ thuộc, địa",
+      "confidence": 0.966075302
+    },
+    {
+      "bbox": [
+        [
+          209.0,
+          177.0
+        ],
+        [
+          1116.0,
+          177.0
+        ],
+        [
+          1116.0,
+          211.0
+        ],
+        [
+          209.0,
+          211.0
+        ]
+      ],
+      "text": "điểm kinh doanh có thu nhập được hưởng ưu đãi thuế thu nhập doanh nghiệp.",
+      "confidence": 0.968118912
+    },
+    {
+      "bbox": [
+        [
+          268.0,
+          234.0
+        ],
+        [
+          1125.0,
+          234.0
+        ],
+        [
+          1125.0,
+          276.0
+        ],
+        [
+          268.0,
+          276.0
+        ]
+      ],
+      "text": "i) Khai phí bảo vệ môi trường tại noi khai thác khoáng sản (trừ dầu thô,",
+      "confidence": 0.968727679375
+    },
+    {
+      "bbox": [
+        [
+          209.0,
+          274.0
+        ],
+        [
+          1126.0,
+          274.0
+        ],
+        [
+          1126.0,
+          303.0
+        ],
+        [
+          209.0,
+          303.0
+        ]
+      ],
+      "text": "khí thiên nhiên và khí than; tổ chức thu mua gom khoáng sản từ người khai",
+      "confidence": 0.9677928162499999
+    },
+    {
+      "bbox": [
+        [
+          208.0,
+          311.0
+        ],
+        [
+          352.0,
+          311.0
+        ],
+        [
+          352.0,
+          338.0
+        ],
+        [
+          208.0,
+          338.0
+        ]
+      ],
+      "text": "thác nhỏ lẻ).",
+      "confidence": 0.9633187333333332
+    },
+    {
+      "bbox": [
+        [
+          267.0,
+          361.0
+        ],
+        [
+          1114.0,
+          361.0
+        ],
+        [
+          1114.0,
+          397.0
+        ],
+        [
+          267.0,
+          397.0
+        ]
+      ],
+      "text": "k) Khai lệ phí môn bài tại nơi có đơn vị phụ thuộc, địa điểm kinh doanh.",
+      "confidence": 0.9655420829411764
+    },
+    {
+      "bbox": [
+        [
+          268.0,
+          420.0
+        ],
+        [
+          1125.0,
+          420.0
+        ],
+        [
+          1125.0,
+          463.0
+        ],
+        [
+          268.0,
+          463.0
+        ]
+      ],
+      "text": "2. Địa điểm nộp hồ sơ khai thuế đối với người nộp thuế có hoạt động,",
+      "confidence": 0.968280353125
+    },
+    {
+      "bbox": [
+        [
+          209.0,
+          453.0
+        ],
+        [
+          1126.0,
+          453.0
+        ],
+        [
+          1126.0,
+          488.0
+        ],
+        [
+          209.0,
+          488.0
+        ]
+      ],
+      "text": "kinh doanh trên nhiều địa bàn cấp tỉnh khác nơi người nộp thuế có trụ sở",
+      "confidence": 0.969350495625
+    },
+    {
+      "bbox": [
+        [
+          209.0,
+          487.0
+        ],
+        [
+          1127.0,
+          487.0
+        ],
+        [
+          1127.0,
+          522.0
+        ],
+        [
+          209.0,
+          522.0
+        ]
+      ],
+      "text": "chính theo quy định tại điểm b khoản 4 Điều 45 Luật Quản lý thuế thực hiện",
+      "confidence": 0.9636915899999999
+    },
+    {
+      "bbox": [
+        [
+          209.0,
+          526.0
+        ],
+        [
+          1126.0,
+          526.0
+        ],
+        [
+          1126.0,
+          556.0
+        ],
+        [
+          209.0,
+          556.0
+        ]
+      ],
+      "text": "hạch toán tập trung tại trụ sở chính (trừ các trường hợp quy định tại khoản 1,",
+      "confidence": 0.9681195241176471
+    },
+    {
+      "bbox": [
+        [
+          209.0,
+          550.0
+        ],
+        [
+          1127.0,
+          550.0
+        ],
+        [
+          1127.0,
+          596.0
+        ],
+        [
+          209.0,
+          596.0
+        ]
+      ],
+      "text": "khoản 3, khoản 4, khoản 5 và khoản 6 Điều này) tại cơ quan thuế quản lý trụ",
+      "confidence": 0.9627068583333334
+    },
+    {
+      "bbox": [
+        [
+          210.0,
+          587.0
+        ],
+        [
+          1126.0,
+          587.0
+        ],
+        [
+          1126.0,
+          628.0
+        ],
+        [
+          210.0,
+          628.0
+        ]
+      ],
+      "text": "sở chính. Đồng thời, người nộp thuế phải nộp Bảng phân bd số thuê phải nộp",
+      "confidence": 0.942359433125
+    },
+    {
+      "bbox": [
+        [
+          209.0,
+          624.0
+        ],
+        [
+          1128.0,
+          624.0
+        ],
+        [
+          1128.0,
+          662.0
+        ],
+        [
+          209.0,
+          662.0
+        ]
+      ],
+      "text": "(nếu có) theo từng dia bàn cap tỉnh nơi được hưởng nguôn thu ngân sách nhà",
+      "confidence": 0.9600894356249999
+    },
+    {
+      "bbox": [
+        [
+          209.0,
+          654.0
+        ],
+        [
+          1127.0,
+          654.0
+        ],
+        [
+          1127.0,
+          699.0
+        ],
+        [
+          209.0,
+          699.0
+        ]
+      ],
+      "text": "nước (bao gồm cả đơn vị phụ thuộc, địa điểm kinh doanh) cho cơ quan thuế",
+      "confidence": 0.966696758125
+    },
+    {
+      "bbox": [
+        [
+          209.0,
+          689.0
+        ],
+        [
+          1127.0,
+          689.0
+        ],
+        [
+          1127.0,
+          723.0
+        ],
+        [
+          209.0,
+          723.0
+        ]
+      ],
+      "text": "quản lý trụ sở chính, trừ một số trường hợp sau đây không phải nộp Bảng",
+      "confidence": 0.9686528387500001
+    },
+    {
+      "bbox": [
+        [
+          209.0,
+          723.0
+        ],
+        [
+          509.0,
+          723.0
+        ],
+        [
+          509.0,
+          757.0
+        ],
+        [
+          209.0,
+          757.0
+        ]
+      ],
+      "text": "phân bd số thuế phải nộp:",
+      "confidence": 0.91579993
+    },
+    {
+      "bbox": [
+        [
+          269.0,
+          782.0
+        ],
+        [
+          1127.0,
+          782.0
+        ],
+        [
+          1127.0,
+          820.0
+        ],
+        [
+          269.0,
+          820.0
+        ]
+      ],
+      "text": "a) Thuế giá trị gia tăng của hoạt động kinh doanh vận tải của người nộp",
+      "confidence": 0.9649657968750001
+    },
+    {
+      "bbox": [
+        [
+          209.0,
+          815.0
+        ],
+        [
+          1127.0,
+          815.0
+        ],
+        [
+          1127.0,
+          848.0
+        ],
+        [
+          209.0,
+          848.0
+        ]
+      ],
+      "text": "thuế mà các tuyến đường vận tải đi qua địa ban các tinh khác nơi người nộp",
+      "confidence": 0.9666885158823528
+    },
+    {
+      "bbox": [
+        [
+          209.0,
+          849.0
+        ],
+        [
+          477.0,
+          849.0
+        ],
+        [
+          477.0,
+          881.0
+        ],
+        [
+          209.0,
+          881.0
+        ]
+      ],
+      "text": "thuế đóng trụ sở chính.",
+      "confidence": 0.9682697299999999
+    },
+    {
+      "bbox": [
+        [
+          269.0,
+          904.0
+        ],
+        [
+          1127.0,
+          904.0
+        ],
+        [
+          1127.0,
+          945.0
+        ],
+        [
+          269.0,
+          945.0
+        ]
+      ],
+      "text": "b) Thuế giá trị gia tăng của hoạt động kinh doanh bảo hiểm và tái",
+      "confidence": 0.96571939
+    },
+    {
+      "bbox": [
+        [
+          209.0,
+          946.0
+        ],
+        [
+          322.0,
+          946.0
+        ],
+        [
+          322.0,
+          967.0
+        ],
+        [
+          209.0,
+          967.0
+        ]
+      ],
+      "text": "bảo hiém.",
+      "confidence": 0.9241548199999999
+    },
+    {
+      "bbox": [
+        [
+          269.0,
+          996.0
+        ],
+        [
+          1128.0,
+          996.0
+        ],
+        [
+          1128.0,
+          1036.0
+        ],
+        [
+          269.0,
+          1036.0
+        ]
+      ],
+      "text": "c) Thuế giá trị gia tăng của hoạt động kinh doanh xây dựng (bao gồm cả",
+      "confidence": 0.963294724375
+    },
+    {
+      "bbox": [
+        [
+          209.0,
+          1031.0
+        ],
+        [
+          1128.0,
+          1031.0
+        ],
+        [
+          1128.0,
+          1072.0
+        ],
+        [
+          209.0,
+          1072.0
+        ]
+      ],
+      "text": "xây dựng đường giao thông, đường dây tải điện, đường ông dẫn nước, đường",
+      "confidence": 0.9684052871428571
+    },
+    {
+      "bbox": [
+        [
+          210.0,
+          1065.0
+        ],
+        [
+          1128.0,
+          1065.0
+        ],
+        [
+          1128.0,
+          1108.0
+        ],
+        [
+          210.0,
+          1108.0
+        ]
+      ],
+      "text": "ống dẫn dầu, đường ống dẫn khí) tại địa bàn cấp tỉnh khác nơi có trụ sở chính",
+      "confidence": 0.9657838538888889
+    },
+    {
+      "bbox": [
+        [
+          210.0,
+          1096.0
+        ],
+        [
+          1128.0,
+          1096.0
+        ],
+        [
+          1128.0,
+          1136.0
+        ],
+        [
+          210.0,
+          1136.0
+        ]
+      ],
+      "text": "nhưng không thành lập đơn vị phụ thuộc, địa điểm kinh doanh tại địa bàn cấp",
+      "confidence": 0.9693298775
+    },
+    {
+      "bbox": [
+        [
+          209.0,
+          1130.0
+        ],
+        [
+          1125.0,
+          1130.0
+        ],
+        [
+          1125.0,
+          1164.0
+        ],
+        [
+          209.0,
+          1164.0
+        ]
+      ],
+      "text": "tỉnh đó mà giá tri công trình xây dung bao gồm cả thuế giá trị gia tăng dưới 1",
+      "confidence": 0.9621098210526315
+    },
+    {
+      "bbox": [
+        [
+          210.0,
+          1165.0
+        ],
+        [
+          303.0,
+          1165.0
+        ],
+        [
+          303.0,
+          1197.0
+        ],
+        [
+          210.0,
+          1197.0
+        ]
+      ],
+      "text": "tỷ đồng.",
+      "confidence": 0.96654213
+    },
+    {
+      "bbox": [
+        [
+          270.0,
+          1220.0
+        ],
+        [
+          1128.0,
+          1220.0
+        ],
+        [
+          1128.0,
+          1255.0
+        ],
+        [
+          270.0,
+          1255.0
+        ]
+      ],
+      "text": "d) Thuế thu nhập doanh nghiệp của đơn vị phụ thuộc, địa điểm kinh",
+      "confidence": 0.9628151749999999
+    },
+    {
+      "bbox": [
+        [
+          211.0,
+          1258.0
+        ],
+        [
+          1127.0,
+          1258.0
+        ],
+        [
+          1127.0,
+          1291.0
+        ],
+        [
+          211.0,
+          1291.0
+        ]
+      ],
+      "text": "doanh có thu nhập được hưởng ưu đãi thuế thu nhập doanh nghiệp. Người",
+      "confidence": 0.96692505
+    },
+    {
+      "bbox": [
+        [
+          210.0,
+          1295.0
+        ],
+        [
+          1128.0,
+          1295.0
+        ],
+        [
+          1128.0,
+          1329.0
+        ],
+        [
+          210.0,
+          1329.0
+        ]
+      ],
+      "text": "nộp thuế phải xác định riêng số thuế thu nhập doanh nghiệp phải nộp cho hoạt",
+      "confidence": 0.968130325625
+    },
+    {
+      "bbox": [
+        [
+          211.0,
+          1331.0
+        ],
+        [
+          1127.0,
+          1331.0
+        ],
+        [
+          1127.0,
+          1366.0
+        ],
+        [
+          211.0,
+          1366.0
+        ]
+      ],
+      "text": "động được hưởng ưu đãi với cơ quan thuế quản lý nơi có đơn vị phụ thuộc,",
+      "confidence": 0.96948576
+    },
+    {
+      "bbox": [
+        [
+          211.0,
+          1368.0
+        ],
+        [
+          1129.0,
+          1368.0
+        ],
+        [
+          1129.0,
+          1401.0
+        ],
+        [
+          211.0,
+          1401.0
+        ]
+      ],
+      "text": "địa điểm kinh doanh và không được tính phân bổ cho đơn vị phụ thuộc, địa",
+      "confidence": 0.965220356875
+    },
+    {
+      "bbox": [
+        [
+          211.0,
+          1405.0
+        ],
+        [
+          707.0,
+          1405.0
+        ],
+        [
+          707.0,
+          1438.0
+        ],
+        [
+          211.0,
+          1438.0
+        ]
+      ],
+      "text": "điểm kinh doanh khác của người nộp thuế.",
+      "confidence": 0.9661552600000001
+    },
+    {
+      "bbox": [
+        [
+          271.0,
+          1467.0
+        ],
+        [
+          1129.0,
+          1467.0
+        ],
+        [
+          1129.0,
+          1501.0
+        ],
+        [
+          271.0,
+          1501.0
+        ]
+      ],
+      "text": "đ) Thuế giá trị gia tăng, thuế thu nhập doanh nghiệp của đơn vị phụ",
+      "confidence": 0.9583791086666666
+    },
+    {
+      "bbox": [
+        [
+          211.0,
+          1504.0
+        ],
+        [
+          1129.0,
+          1504.0
+        ],
+        [
+          1129.0,
+          1537.0
+        ],
+        [
+          211.0,
+          1537.0
+        ]
+      ],
+      "text": "thuộc, địa điểm kinh doanh của người nộp thuế là doanh nghiệp siêu nhỏ theo",
+      "confidence": 0.9682881019999999
+    },
+    {
+      "bbox": [
+        [
+          211.0,
+          1542.0
+        ],
+        [
+          898.0,
+          1542.0
+        ],
+        [
+          898.0,
+          1575.0
+        ],
+        [
+          211.0,
+          1575.0
+        ]
+      ],
+      "text": "quy định của pháp luật về hỗ trợ doanh nghiệp nhỏ và vừa.",
+      "confidence": 0.9683225838461539
+    }
+  ]
+}

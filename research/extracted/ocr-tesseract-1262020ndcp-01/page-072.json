@@ -1,0 +1,838 @@
+{
+  "document_id": "126/2020/NĐ-CP",
+  "source_file": "../../legal-sources/1262020ndcp/01.pdf",
+  "source_sha256": "310648e80396d267610946458e7fdd71ba87ef538b009d6574ed21514de3f7ca",
+  "page_count": 119,
+  "render_dpi": 150,
+  "engine": "Tesseract 5.5.4 (vie+eng; OEM 1; PSM 3)",
+  "review_status": "UNREVIEWED",
+  "tesseract_version": "5.5.4",
+  "languages": [
+    "vie",
+    "eng"
+  ],
+  "traineddata_sha256": {
+    "vie": "b6b49293d95d0b6dbd8780174627e82c75be957b6f4ed9862155540d6b00bb45",
+    "eng": "8280aed0782fe27257a68ea10fe7ef324ca0f8d85bd2fd145d1c2b560bcb66ba"
+  },
+  "ocr_engine_mode": 1,
+  "page_segmentation_mode": 3,
+  "thread_limit": 2,
+  "page": 72,
+  "lines": [
+    {
+      "bbox": [
+        [
+          689.0,
+          61.0
+        ],
+        [
+          716.0,
+          61.0
+        ],
+        [
+          716.0,
+          81.0
+        ],
+        [
+          689.0,
+          81.0
+        ]
+      ],
+      "text": "72",
+      "confidence": 0.9615374799999999
+    },
+    {
+      "bbox": [
+        [
+          275.0,
+          136.0
+        ],
+        [
+          1132.0,
+          136.0
+        ],
+        [
+          1132.0,
+          169.0
+        ],
+        [
+          275.0,
+          169.0
+        ]
+      ],
+      "text": "a.3) Thực hiện chuyển đầy đủ số tiền thuế và các khoản thu khác thuộc",
+      "confidence": 0.9650539493333332
+    },
+    {
+      "bbox": [
+        [
+          215.0,
+          176.0
+        ],
+        [
+          1134.0,
+          176.0
+        ],
+        [
+          1134.0,
+          204.0
+        ],
+        [
+          215.0,
+          204.0
+        ]
+      ],
+      "text": "ngân sách nhà nước vào tài khoản của Kho bạc Nhà nước mở tại ngân hàng",
+      "confidence": 0.95988164375
+    },
+    {
+      "bbox": [
+        [
+          215.0,
+          206.0
+        ],
+        [
+          1133.0,
+          206.0
+        ],
+        [
+          1133.0,
+          239.0
+        ],
+        [
+          215.0,
+          239.0
+        ]
+      ],
+      "text": "thương mại, ngân hàng nhà nước theo quy định tại Nghị định số 11/2020/NĐ-CP",
+      "confidence": 0.9633474671428571
+    },
+    {
+      "bbox": [
+        [
+          215.0,
+          247.0
+        ],
+        [
+          1134.0,
+          247.0
+        ],
+        [
+          1134.0,
+          274.0
+        ],
+        [
+          215.0,
+          274.0
+        ]
+      ],
+      "text": "ngày 20 tháng 01 năm 2020 của Chính phủ trong ngày giao dịch. Trường hợp",
+      "confidence": 0.967144048
+    },
+    {
+      "bbox": [
+        [
+          215.0,
+          277.0
+        ],
+        [
+          1134.0,
+          277.0
+        ],
+        [
+          1134.0,
+          309.0
+        ],
+        [
+          215.0,
+          309.0
+        ]
+      ],
+      "text": "không thể hoàn tất thủ tục trong ngày giao dịch, ngân hàng thương mại thực",
+      "confidence": 0.9686478780000001
+    },
+    {
+      "bbox": [
+        [
+          215.0,
+          312.0
+        ],
+        [
+          801.0,
+          312.0
+        ],
+        [
+          801.0,
+          344.0
+        ],
+        [
+          215.0,
+          344.0
+        ]
+      ],
+      "text": "hiện chuyển trước 10 giờ ngày giao dịch tiếp theo.",
+      "confidence": 0.962933663
+    },
+    {
+      "bbox": [
+        [
+          275.0,
+          371.0
+        ],
+        [
+          1133.0,
+          371.0
+        ],
+        [
+          1133.0,
+          404.0
+        ],
+        [
+          275.0,
+          404.0
+        ]
+      ],
+      "text": "a.4) Đối với số tiền thuế và khoản thu ngân sách nhà nước chậm nộp",
+      "confidence": 0.964557068
+    },
+    {
+      "bbox": [
+        [
+          215.0,
+          407.0
+        ],
+        [
+          1134.0,
+          407.0
+        ],
+        [
+          1134.0,
+          439.0
+        ],
+        [
+          215.0,
+          439.0
+        ]
+      ],
+      "text": "hoặc nộp không đầy đủ vào ngân sách nhà nước do lỗi của ngân hàng thương",
+      "confidence": 0.96931398
+    },
+    {
+      "bbox": [
+        [
+          215.0,
+          441.0
+        ],
+        [
+          1134.0,
+          441.0
+        ],
+        [
+          1134.0,
+          474.0
+        ],
+        [
+          215.0,
+          474.0
+        ]
+      ],
+      "text": "mại thì ngân hàng thương mại phải chịu trách nhiệm thanh toán tiền chậm nộp",
+      "confidence": 0.965603454
+    },
+    {
+      "bbox": [
+        [
+          215.0,
+          477.0
+        ],
+        [
+          649.0,
+          477.0
+        ],
+        [
+          649.0,
+          509.0
+        ],
+        [
+          215.0,
+          509.0
+        ]
+      ],
+      "text": "theo quy định của Luật Quản lý thuế.",
+      "confidence": 0.95607084375
+    },
+    {
+      "bbox": [
+        [
+          275.0,
+          536.0
+        ],
+        [
+          1134.0,
+          536.0
+        ],
+        [
+          1134.0,
+          576.0
+        ],
+        [
+          275.0,
+          576.0
+        ]
+      ],
+      "text": "a.5) Ngén hang thương mai thực hiện thông báo, tra soát đến các đơn vị",
+      "confidence": 0.9526729019999999
+    },
+    {
+      "bbox": [
+        [
+          216.0,
+          571.0
+        ],
+        [
+          1134.0,
+          571.0
+        ],
+        [
+          1134.0,
+          615.0
+        ],
+        [
+          216.0,
+          615.0
+        ]
+      ],
+      "text": "liên quan dễ xử lý đối với các trường hợp sai sót theo quy định và không được",
+      "confidence": 0.9620886944444444
+    },
+    {
+      "bbox": [
+        [
+          215.0,
+          606.0
+        ],
+        [
+          1134.0,
+          606.0
+        ],
+        [
+          1134.0,
+          639.0
+        ],
+        [
+          215.0,
+          639.0
+        ]
+      ],
+      "text": "hoàn trả số tiền thuế đã nộp cho người nộp thuế nếu đã truyền thông tin cho",
+      "confidence": 0.96870959
+    },
+    {
+      "bbox": [
+        [
+          215.0,
+          647.0
+        ],
+        [
+          1135.0,
+          647.0
+        ],
+        [
+          1135.0,
+          673.0
+        ],
+        [
+          215.0,
+          673.0
+        ]
+      ],
+      "text": "Kho bạc Nhà nước. Riêng ngân hàng thương mại nơi Kho bạc Nhà nước mở",
+      "confidence": 0.9658723306666667
+    },
+    {
+      "bbox": [
+        [
+          215.0,
+          676.0
+        ],
+        [
+          1134.0,
+          676.0
+        ],
+        [
+          1134.0,
+          709.0
+        ],
+        [
+          215.0,
+          709.0
+        ]
+      ],
+      "text": "tài khoản thực hiện đối chiều với Kho bạc Nhà nước về chứng từ nộp tiền vào",
+      "confidence": 0.9653975141176471
+    },
+    {
+      "bbox": [
+        [
+          215.0,
+          717.0
+        ],
+        [
+          337.0,
+          717.0
+        ],
+        [
+          337.0,
+          743.0
+        ],
+        [
+          215.0,
+          743.0
+        ]
+      ],
+      "text": "ngân sách.",
+      "confidence": 0.9672800050000001
+    },
+    {
+      "bbox": [
+        [
+          275.0,
+          770.0
+        ],
+        [
+          1135.0,
+          770.0
+        ],
+        [
+          1135.0,
+          803.0
+        ],
+        [
+          275.0,
+          803.0
+        ]
+      ],
+      "text": "b) Đối với ngân hàng thương mại đã tham gia kết nối với Cổng thông tin",
+      "confidence": 0.9528434475
+    },
+    {
+      "bbox": [
+        [
+          215.0,
+          811.0
+        ],
+        [
+          1135.0,
+          811.0
+        ],
+        [
+          1135.0,
+          838.0
+        ],
+        [
+          215.0,
+          838.0
+        ]
+      ],
+      "text": "điện tử của cơ quan quản lý thuê ngoài các nhiệm vụ quy định tại điểm a",
+      "confidence": 0.9624071229411765
+    },
+    {
+      "bbox": [
+        [
+          215.0,
+          846.0
+        ],
+        [
+          853.0,
+          846.0
+        ],
+        [
+          853.0,
+          873.0
+        ],
+        [
+          215.0,
+          873.0
+        ]
+      ],
+      "text": "khoản này còn thực hiện các nhiệm vụ, quyên hạn sau:",
+      "confidence": 0.9668612045454545
+    },
+    {
+      "bbox": [
+        [
+          275.0,
+          900.0
+        ],
+        [
+          1135.0,
+          900.0
+        ],
+        [
+          1135.0,
+          933.0
+        ],
+        [
+          275.0,
+          933.0
+        ]
+      ],
+      "text": "b.1) Hướng dẫn người nộp thuế kê khai các thông tin nộp thuế trên",
+      "confidence": 0.9644548857142857
+    },
+    {
+      "bbox": [
+        [
+          216.0,
+          935.0
+        ],
+        [
+          1134.0,
+          935.0
+        ],
+        [
+          1134.0,
+          968.0
+        ],
+        [
+          216.0,
+          968.0
+        ]
+      ],
+      "text": "chứng từ nộp ngân sách nhà nước. Truyền đầy đủ thông tin trên chứng từ nộp",
+      "confidence": 0.96848889375
+    },
+    {
+      "bbox": [
+        [
+          215.0,
+          970.0
+        ],
+        [
+          1134.0,
+          970.0
+        ],
+        [
+          1134.0,
+          1003.0
+        ],
+        [
+          215.0,
+          1003.0
+        ]
+      ],
+      "text": "ngân sách nhà nước đã cấp cho người nộp thuế, cho cơ quan quản lý thuế",
+      "confidence": 0.9692489818750001
+    },
+    {
+      "bbox": [
+        [
+          214.0,
+          1005.0
+        ],
+        [
+          908.0,
+          1005.0
+        ],
+        [
+          908.0,
+          1038.0
+        ],
+        [
+          214.0,
+          1038.0
+        ]
+      ],
+      "text": "thông qua Cổng thông tin điện tử của cơ quan quản lý thuế.",
+      "confidence": 0.9549845784615384
+    },
+    {
+      "bbox": [
+        [
+          275.0,
+          1064.0
+        ],
+        [
+          1134.0,
+          1064.0
+        ],
+        [
+          1134.0,
+          1105.0
+        ],
+        [
+          275.0,
+          1105.0
+        ]
+      ],
+      "text": "b.2) Truy vấn thông tin theo mã định danh khoản thu tại Cổng thông tin",
+      "confidence": 0.9281628959999999
+    },
+    {
+      "bbox": [
+        [
+          216.0,
+          1100.0
+        ],
+        [
+          1134.0,
+          1100.0
+        ],
+        [
+          1134.0,
+          1140.0
+        ],
+        [
+          216.0,
+          1140.0
+        ]
+      ],
+      "text": "điện tử của cơ quan quản lý thuế đề ghi trên chứng từ nộp tiền vào ngân sách",
+      "confidence": 0.9637540444444445
+    },
+    {
+      "bbox": [
+        [
+          215.0,
+          1135.0
+        ],
+        [
+          1134.0,
+          1135.0
+        ],
+        [
+          1134.0,
+          1168.0
+        ],
+        [
+          215.0,
+          1168.0
+        ]
+      ],
+      "text": "nhà nước. Không được hủy lệnh chuyển tiền khi thông tin nộp thuế đã được",
+      "confidence": 0.9658210706666667
+    },
+    {
+      "bbox": [
+        [
+          216.0,
+          1169.0
+        ],
+        [
+          926.0,
+          1169.0
+        ],
+        [
+          926.0,
+          1203.0
+        ],
+        [
+          216.0,
+          1203.0
+        ]
+      ],
+      "text": "chuyển đến Cổng thông tin điện tử của cơ quan quản lý thuế.",
+      "confidence": 0.93448274
+    },
+    {
+      "bbox": [
+        [
+          275.0,
+          1229.0
+        ],
+        [
+          1134.0,
+          1229.0
+        ],
+        [
+          1134.0,
+          1263.0
+        ],
+        [
+          275.0,
+          1263.0
+        ]
+      ],
+      "text": "b.3) Xây dựng hệ thống công nghệ thông tin đáp ứng chuẩn thông điệp",
+      "confidence": 0.9646018042857143
+    },
+    {
+      "bbox": [
+        [
+          216.0,
+          1264.0
+        ],
+        [
+          1134.0,
+          1264.0
+        ],
+        [
+          1134.0,
+          1298.0
+        ],
+        [
+          216.0,
+          1298.0
+        ]
+      ],
+      "text": "dữ liệu trao đổi thông tin theo đúng định dạng các thông điệp cơ quan quản lý",
+      "confidence": 0.9500483152941176
+    },
+    {
+      "bbox": [
+        [
+          215.0,
+          1299.0
+        ],
+        [
+          1134.0,
+          1299.0
+        ],
+        [
+          1134.0,
+          1332.0
+        ],
+        [
+          215.0,
+          1332.0
+        ]
+      ],
+      "text": "thuế ban hành. Bảo mật và chỉ sử dụng thông tin thu nộp ngân sách nhà nước",
+      "confidence": 0.9666594164705882
+    },
+    {
+      "bbox": [
+        [
+          216.0,
+          1334.0
+        ],
+        [
+          1134.0,
+          1334.0
+        ],
+        [
+          1134.0,
+          1368.0
+        ],
+        [
+          216.0,
+          1368.0
+        ]
+      ],
+      "text": "của người nộp thuế, người khai hải quan do cơ quan quản lý thuế cung cấp",
+      "confidence": 0.9680263806249999
+    },
+    {
+      "bbox": [
+        [
+          216.0,
+          1369.0
+        ],
+        [
+          1134.0,
+          1369.0
+        ],
+        [
+          1134.0,
+          1403.0
+        ],
+        [
+          216.0,
+          1403.0
+        ]
+      ],
+      "text": "trên Cổng thông tin điện tử của cơ quan quản lý thuế để thực hiện thu ngân",
+      "confidence": 0.9617240447058824
+    },
+    {
+      "bbox": [
+        [
+          218.0,
+          1410.0
+        ],
+        [
+          390.0,
+          1410.0
+        ],
+        [
+          390.0,
+          1430.0
+        ],
+        [
+          218.0,
+          1430.0
+        ]
+      ],
+      "text": "sách nhà nước.",
+      "confidence": 0.9677723733333334
+    },
+    {
+      "bbox": [
+        [
+          277.0,
+          1464.0
+        ],
+        [
+          1133.0,
+          1464.0
+        ],
+        [
+          1133.0,
+          1498.0
+        ],
+        [
+          277.0,
+          1498.0
+        ]
+      ],
+      "text": "c) Các tổ chức cung ứng dịch vụ trung gian thanh toán theo từng chức",
+      "confidence": 0.9628451539999999
+    },
+    {
+      "bbox": [
+        [
+          218.0,
+          1500.0
+        ],
+        [
+          1133.0,
+          1500.0
+        ],
+        [
+          1133.0,
+          1532.0
+        ],
+        [
+          218.0,
+          1532.0
+        ]
+      ],
+      "text": "năng, nhiệm vụ của mình có trách nhiệm thực hiện một hoặc một số nhiệm",
+      "confidence": 0.9691339406666666
+    },
+    {
+      "bbox": [
+        [
+          218.0,
+          1540.0
+        ],
+        [
+          898.0,
+          1540.0
+        ],
+        [
+          898.0,
+          1567.0
+        ],
+        [
+          218.0,
+          1567.0
+        ]
+      ],
+      "text": "vụ, quyên hạn theo quy định tại điểm a, điểm b khoản này.",
+      "confidence": 0.94198633
+    }
+  ]
+}

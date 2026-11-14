@@ -1,0 +1,904 @@
+{
+  "document_id": "126/2020/NĐ-CP",
+  "source_file": "../../legal-sources/1262020ndcp/01.pdf",
+  "source_sha256": "310648e80396d267610946458e7fdd71ba87ef538b009d6574ed21514de3f7ca",
+  "page_count": 119,
+  "render_dpi": 150,
+  "engine": "Tesseract 5.5.4 (vie+eng; OEM 1; PSM 3)",
+  "review_status": "UNREVIEWED",
+  "tesseract_version": "5.5.4",
+  "languages": [
+    "vie",
+    "eng"
+  ],
+  "traineddata_sha256": {
+    "vie": "b6b49293d95d0b6dbd8780174627e82c75be957b6f4ed9862155540d6b00bb45",
+    "eng": "8280aed0782fe27257a68ea10fe7ef324ca0f8d85bd2fd145d1c2b560bcb66ba"
+  },
+  "ocr_engine_mode": 1,
+  "page_segmentation_mode": 3,
+  "thread_limit": 2,
+  "page": 64,
+  "lines": [
+    {
+      "bbox": [
+        [
+          686.0,
+          55.0
+        ],
+        [
+          713.0,
+          55.0
+        ],
+        [
+          713.0,
+          75.0
+        ],
+        [
+          686.0,
+          75.0
+        ]
+      ],
+      "text": "64",
+      "confidence": 0.9631304900000001
+    },
+    {
+      "bbox": [
+        [
+          231.0,
+          131.0
+        ],
+        [
+          1129.0,
+          131.0
+        ],
+        [
+          1129.0,
+          173.0
+        ],
+        [
+          231.0,
+          173.0
+        ]
+      ],
+      "text": "2 Phối hợp giữa cơ quan quản lý thuế và cơ quan đăng ký kinh doanh",
+      "confidence": 0.951216745625
+    },
+    {
+      "bbox": [
+        [
+          213.0,
+          174.0
+        ],
+        [
+          306.0,
+          174.0
+        ],
+        [
+          306.0,
+          201.0
+        ],
+        [
+          213.0,
+          201.0
+        ]
+      ],
+      "text": "cấp tinh",
+      "confidence": 0.9182358899999999
+    },
+    {
+      "bbox": [
+        [
+          273.0,
+          219.0
+        ],
+        [
+          1130.0,
+          219.0
+        ],
+        [
+          1130.0,
+          262.0
+        ],
+        [
+          273.0,
+          262.0
+        ]
+      ],
+      "text": "a) Việc trao đổi thông tin giữa cơ quan quản lý thuế và cơ quan đăng ký",
+      "confidence": 0.9649839735294118
+    },
+    {
+      "bbox": [
+        [
+          214.0,
+          261.0
+        ],
+        [
+          731.0,
+          261.0
+        ],
+        [
+          731.0,
+          290.0
+        ],
+        [
+          214.0,
+          290.0
+        ]
+      ],
+      "text": "kinh doanh cấp tỉnh được thực hiện như sau:",
+      "confidence": 0.9674289355555555
+    },
+    {
+      "bbox": [
+        [
+          274.0,
+          308.0
+        ],
+        [
+          1130.0,
+          308.0
+        ],
+        [
+          1130.0,
+          348.0
+        ],
+        [
+          274.0,
+          348.0
+        ]
+      ],
+      "text": "a.1) Cơ quan quản lý thuế quản lý trực tiếp người nộp thuế cung cấp cho",
+      "confidence": 0.9601098349999999
+    },
+    {
+      "bbox": [
+        [
+          215.0,
+          342.0
+        ],
+        [
+          1129.0,
+          342.0
+        ],
+        [
+          1129.0,
+          386.0
+        ],
+        [
+          215.0,
+          386.0
+        ]
+      ],
+      "text": "cơ quan đăng ký kinh doanh các thông tin về người nộp thuế đã được xóa nợ,",
+      "confidence": 0.9645348529411764
+    },
+    {
+      "bbox": [
+        [
+          215.0,
+          377.0
+        ],
+        [
+          1130.0,
+          377.0
+        ],
+        [
+          1130.0,
+          420.0
+        ],
+        [
+          215.0,
+          420.0
+        ]
+      ],
+      "text": "bao gom: Tên người nộp thuế, mã số thuế; tên, số thẻ căn cước công dân hoặc",
+      "confidence": 0.9626119547058823
+    },
+    {
+      "bbox": [
+        [
+          216.0,
+          411.0
+        ],
+        [
+          1131.0,
+          411.0
+        ],
+        [
+          1131.0,
+          448.0
+        ],
+        [
+          216.0,
+          448.0
+        ]
+      ],
+      "text": "giấy chứng minh nhân dân hoặc hộ chiếu hoặc chứng thực cá nhân hợp pháp",
+      "confidence": 0.9588054340000001
+    },
+    {
+      "bbox": [
+        [
+          216.0,
+          447.0
+        ],
+        [
+          1131.0,
+          447.0
+        ],
+        [
+          1131.0,
+          478.0
+        ],
+        [
+          216.0,
+          478.0
+        ]
+      ],
+      "text": "khác của cá nhân, cá nhân kinh doanh, chủ hộ gia đình, chủ hộ kinh doanh,",
+      "confidence": 0.96867829
+    },
+    {
+      "bbox": [
+        [
+          216.0,
+          480.0
+        ],
+        [
+          1132.0,
+          480.0
+        ],
+        [
+          1132.0,
+          520.0
+        ],
+        [
+          216.0,
+          520.0
+        ]
+      ],
+      "text": "chủ doanh nghiệp tư nhân và chủ công ty trách nhiệm hữu hạn một thành",
+      "confidence": 0.9679506853333334
+    },
+    {
+      "bbox": [
+        [
+          216.0,
+          512.0
+        ],
+        [
+          785.0,
+          512.0
+        ],
+        [
+          785.0,
+          546.0
+        ],
+        [
+          216.0,
+          546.0
+        ]
+      ],
+      "text": "viên; số tiền thuế đã được xóa, thời điểm xóa nợ.",
+      "confidence": 0.9684251945454547
+    },
+    {
+      "bbox": [
+        [
+          276.0,
+          564.0
+        ],
+        [
+          1133.0,
+          564.0
+        ],
+        [
+          1133.0,
+          609.0
+        ],
+        [
+          276.0,
+          609.0
+        ]
+      ],
+      "text": "a.2) Cơ quan đăng ký kinh doanh cung cấp cho cơ quan quản lý thuế",
+      "confidence": 0.9627591093333333
+    },
+    {
+      "bbox": [
+        [
+          216.0,
+          599.0
+        ],
+        [
+          1134.0,
+          599.0
+        ],
+        [
+          1134.0,
+          641.0
+        ],
+        [
+          216.0,
+          641.0
+        ]
+      ],
+      "text": "thông tin về đề nghị đăng ký kinh. doanh của người nộp thuế đã được xóa nợ",
+      "confidence": 0.956522208235294
+    },
+    {
+      "bbox": [
+        [
+          217.0,
+          632.0
+        ],
+        [
+          1008.0,
+          632.0
+        ],
+        [
+          1008.0,
+          671.0
+        ],
+        [
+          217.0,
+          671.0
+        ]
+      ],
+      "text": "do cơ quan quản lý thuế đã cung cấp tại điểm a.1 khoản 2 Điều này.",
+      "confidence": 0.9609671774999999
+    },
+    {
+      "bbox": [
+        [
+          277.0,
+          686.0
+        ],
+        [
+          1134.0,
+          686.0
+        ],
+        [
+          1134.0,
+          731.0
+        ],
+        [
+          277.0,
+          731.0
+        ]
+      ],
+      "text": "a.3) Trường hợp người nộp thuế được xóa nợ, đã nộp lại đủ số tiền thuế,",
+      "confidence": 0.964475689375
+    },
+    {
+      "bbox": [
+        [
+          218.0,
+          726.0
+        ],
+        [
+          1135.0,
+          726.0
+        ],
+        [
+          1135.0,
+          766.0
+        ],
+        [
+          218.0,
+          766.0
+        ]
+      ],
+      "text": "tiền chậm nộp, tiền phạt được xóa vào ngân sách nhà nước thì cơ quan quản",
+      "confidence": 0.968405051875
+    },
+    {
+      "bbox": [
+        [
+          219.0,
+          754.0
+        ],
+        [
+          1137.0,
+          754.0
+        ],
+        [
+          1137.0,
+          793.0
+        ],
+        [
+          219.0,
+          793.0
+        ]
+      ],
+      "text": "lý thuế cung cấp cho cơ quan đăng ký kinh doanh thông tin về việc hoàn",
+      "confidence": 0.964724003125
+    },
+    {
+      "bbox": [
+        [
+          219.0,
+          792.0
+        ],
+        [
+          1136.0,
+          792.0
+        ],
+        [
+          1136.0,
+          826.0
+        ],
+        [
+          219.0,
+          826.0
+        ]
+      ],
+      "text": "thành nghĩa vụ nộp thuế của cá nhân, cá nhân kinh doanh, chủ hộ gia đình,",
+      "confidence": 0.968708220625
+    },
+    {
+      "bbox": [
+        [
+          220.0,
+          826.0
+        ],
+        [
+          1136.0,
+          826.0
+        ],
+        [
+          1136.0,
+          860.0
+        ],
+        [
+          220.0,
+          860.0
+        ]
+      ],
+      "text": "chủ hộ kinh doanh, chủ doanh nghiệp tư nhân và chủ công ty trách nhiệm hữu",
+      "confidence": 0.969306111875
+    },
+    {
+      "bbox": [
+        [
+          220.0,
+          848.0
+        ],
+        [
+          1136.0,
+          848.0
+        ],
+        [
+          1136.0,
+          899.0
+        ],
+        [
+          220.0,
+          899.0
+        ]
+      ],
+      "text": "hạn một thành viên đã được xóa nợ. Thông tin bao gồm: Tên người nộp thuế,",
+      "confidence": 0.963337068125
+    },
+    {
+      "bbox": [
+        [
+          220.0,
+          892.0
+        ],
+        [
+          1137.0,
+          892.0
+        ],
+        [
+          1137.0,
+          924.0
+        ],
+        [
+          220.0,
+          924.0
+        ]
+      ],
+      "text": "mã số thuế; tên, số thẻ căn cước công dân hoặc giây chứng minh nhân dân",
+      "confidence": 0.96548471
+    },
+    {
+      "bbox": [
+        [
+          220.0,
+          926.0
+        ],
+        [
+          1138.0,
+          926.0
+        ],
+        [
+          1138.0,
+          959.0
+        ],
+        [
+          220.0,
+          959.0
+        ]
+      ],
+      "text": "hoặc hộ chiếu hoặc chứng thực cá nhân hợp pháp khác của cá nhân, cá nhân",
+      "confidence": 0.9677880050000001
+    },
+    {
+      "bbox": [
+        [
+          221.0,
+          959.0
+        ],
+        [
+          1139.0,
+          959.0
+        ],
+        [
+          1139.0,
+          994.0
+        ],
+        [
+          221.0,
+          994.0
+        ]
+      ],
+      "text": "kinh doanh, chủ hộ gia đình, chủ hộ kinh doanh, chủ doanh nghiệp tư nhân và",
+      "confidence": 0.9688951400000001
+    },
+    {
+      "bbox": [
+        [
+          221.0,
+          988.0
+        ],
+        [
+          1137.0,
+          988.0
+        ],
+        [
+          1137.0,
+          1036.0
+        ],
+        [
+          221.0,
+          1036.0
+        ]
+      ],
+      "text": "chủ công ty trách nhiệm hữu hạn một thành viên; số tiền thuế đã được xóa,",
+      "confidence": 0.9680456356249999
+    },
+    {
+      "bbox": [
+        [
+          221.0,
+          1025.0
+        ],
+        [
+          949.0,
+          1025.0
+        ],
+        [
+          949.0,
+          1058.0
+        ],
+        [
+          221.0,
+          1058.0
+        ]
+      ],
+      "text": "thời điểm xóa nợ; số tiền thuế đã nộp vào ngân sách nhà nước.",
+      "confidence": 0.9687368557142858
+    },
+    {
+      "bbox": [
+        [
+          280.0,
+          1078.0
+        ],
+        [
+          1139.0,
+          1078.0
+        ],
+        [
+          1139.0,
+          1115.0
+        ],
+        [
+          280.0,
+          1115.0
+        ]
+      ],
+      "text": "b) Cơ quan đăng ký kinh doanh không cấp giấy chứng nhận đăng ký",
+      "confidence": 0.9649733721428572
+    },
+    {
+      "bbox": [
+        [
+          221.0,
+          1115.0
+        ],
+        [
+          1139.0,
+          1115.0
+        ],
+        [
+          1139.0,
+          1145.0
+        ],
+        [
+          221.0,
+          1145.0
+        ]
+      ],
+      "text": "kinh doanh cho cá nhân, cá nhân kinh doanh, chủ hộ gia đình, chủ hộ kinh",
+      "confidence": 0.9687887418750001
+    },
+    {
+      "bbox": [
+        [
+          222.0,
+          1148.0
+        ],
+        [
+          1140.0,
+          1148.0
+        ],
+        [
+          1140.0,
+          1182.0
+        ],
+        [
+          222.0,
+          1182.0
+        ]
+      ],
+      "text": "doanh, chủ doanh nghiệp tư nhân, chủ công ty trách nhiệm hữu hạn một thành",
+      "confidence": 0.9672753439999999
+    },
+    {
+      "bbox": [
+        [
+          222.0,
+          1176.0
+        ],
+        [
+          1141.0,
+          1176.0
+        ],
+        [
+          1141.0,
+          1217.0
+        ],
+        [
+          222.0,
+          1217.0
+        ]
+      ],
+      "text": "viên đã được xóa nợ khi chưa hoàn trả vào ngân sách nhà nước số tiền thuế đã",
+      "confidence": 0.9687923816666667
+    },
+    {
+      "bbox": [
+        [
+          222.0,
+          1209.0
+        ],
+        [
+          1141.0,
+          1209.0
+        ],
+        [
+          1141.0,
+          1249.0
+        ],
+        [
+          222.0,
+          1249.0
+        ]
+      ],
+      "text": "được xóa nợ. Trường hợp cơ quan quản lý thuế phát hiện người nộp thuế đã",
+      "confidence": 0.968915616875
+    },
+    {
+      "bbox": [
+        [
+          223.0,
+          1243.0
+        ],
+        [
+          1141.0,
+          1243.0
+        ],
+        [
+          1141.0,
+          1284.0
+        ],
+        [
+          223.0,
+          1284.0
+        ]
+      ],
+      "text": "được xóa nợ nhưng chưa hoàn trả vào ngân sách nhà nước số tiên thuế đã",
+      "confidence": 0.958998850625
+    },
+    {
+      "bbox": [
+        [
+          224.0,
+          1278.0
+        ],
+        [
+          1140.0,
+          1278.0
+        ],
+        [
+          1140.0,
+          1317.0
+        ],
+        [
+          224.0,
+          1317.0
+        ]
+      ],
+      "text": "được xóa mà cơ quan đăng ký kinh doanh đã cấp giấy chứng nhận đăng ký",
+      "confidence": 0.9672103068750001
+    },
+    {
+      "bbox": [
+        [
+          224.0,
+          1312.0
+        ],
+        [
+          1141.0,
+          1312.0
+        ],
+        [
+          1141.0,
+          1360.0
+        ],
+        [
+          224.0,
+          1360.0
+        ]
+      ],
+      "text": "kinh doanh thì cơ quan đăng ký kinh doanh thu hồi lại giây chứng nhận đăng",
+      "confidence": 0.965145920625
+    },
+    {
+      "bbox": [
+        [
+          224.0,
+          1345.0
+        ],
+        [
+          930.0,
+          1345.0
+        ],
+        [
+          930.0,
+          1382.0
+        ],
+        [
+          224.0,
+          1382.0
+        ]
+      ],
+      "text": "ký kinh doanh đã cap theo đề nghị của cơ quan quản lý thuế.",
+      "confidence": 0.9670878435714285
+    },
+    {
+      "bbox": [
+        [
+          285.0,
+          1404.0
+        ],
+        [
+          640.0,
+          1404.0
+        ],
+        [
+          640.0,
+          1438.0
+        ],
+        [
+          285.0,
+          1438.0
+        ]
+      ],
+      "text": "¢) Hình thức trao đổi thông tin",
+      "confidence": 0.9336880485714286
+    },
+    {
+      "bbox": [
+        [
+          286.0,
+          1458.0
+        ],
+        [
+          1143.0,
+          1458.0
+        ],
+        [
+          1143.0,
+          1494.0
+        ],
+        [
+          286.0,
+          1494.0
+        ]
+      ],
+      "text": "c.1) Bộ Tài chính và Bộ Kế hoạch và Đầu tư có trách nhiệm xây dựng",
+      "confidence": 0.9595949218750001
+    },
+    {
+      "bbox": [
+        [
+          228.0,
+          1492.0
+        ],
+        [
+          1143.0,
+          1492.0
+        ],
+        [
+          1143.0,
+          1535.0
+        ],
+        [
+          228.0,
+          1535.0
+        ]
+      ],
+      "text": "quy trình trao đổi thông tin để kiểm soát việc hoàn trả cho Nhà nước khoản nợ",
+      "confidence": 0.9515311058823529
+    },
+    {
+      "bbox": [
+        [
+          227.0,
+          1524.0
+        ],
+        [
+          1142.0,
+          1524.0
+        ],
+        [
+          1142.0,
+          1565.0
+        ],
+        [
+          227.0,
+          1565.0
+        ]
+      ],
+      "text": "tiền thuế, tiền chậm nộp, tiền phạt đã được xóa và cấp giấy chứng nhận đăng",
+      "confidence": 0.9674876312499999
+    },
+    {
+      "bbox": [
+        [
+          228.0,
+          1560.0
+        ],
+        [
+          820.0,
+          1560.0
+        ],
+        [
+          820.0,
+          1596.0
+        ],
+        [
+          228.0,
+          1596.0
+        ]
+      ],
+      "text": "ký kinh doanh cho người nộp thuế đã được xóa nợ.",
+      "confidence": 0.9675014781818182
+    }
+  ]
+}

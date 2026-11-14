@@ -1,0 +1,882 @@
+{
+  "document_id": "126/2020/NĐ-CP",
+  "source_file": "../../legal-sources/1262020ndcp/01.pdf",
+  "source_sha256": "310648e80396d267610946458e7fdd71ba87ef538b009d6574ed21514de3f7ca",
+  "page_count": 119,
+  "render_dpi": 150,
+  "engine": "Tesseract 5.5.4 (vie+eng; OEM 1; PSM 3)",
+  "review_status": "UNREVIEWED",
+  "tesseract_version": "5.5.4",
+  "languages": [
+    "vie",
+    "eng"
+  ],
+  "traineddata_sha256": {
+    "vie": "b6b49293d95d0b6dbd8780174627e82c75be957b6f4ed9862155540d6b00bb45",
+    "eng": "8280aed0782fe27257a68ea10fe7ef324ca0f8d85bd2fd145d1c2b560bcb66ba"
+  },
+  "ocr_engine_mode": 1,
+  "page_segmentation_mode": 3,
+  "thread_limit": 2,
+  "page": 22,
+  "lines": [
+    {
+      "bbox": [
+        [
+          683.0,
+          60.0
+        ],
+        [
+          710.0,
+          60.0
+        ],
+        [
+          710.0,
+          80.0
+        ],
+        [
+          683.0,
+          80.0
+        ]
+      ],
+      "text": "22",
+      "confidence": 0.9456527699999999
+    },
+    {
+      "bbox": [
+        [
+          269.0,
+          137.0
+        ],
+        [
+          833.0,
+          137.0
+        ],
+        [
+          833.0,
+          171.0
+        ],
+        [
+          269.0,
+          171.0
+        ]
+      ],
+      "text": "b) Khai thuế thu nhập cá nhân theo quý như sau:",
+      "confidence": 0.9642235709090908
+    },
+    {
+      "bbox": [
+        [
+          270.0,
+          188.0
+        ],
+        [
+          1128.0,
+          188.0
+        ],
+        [
+          1128.0,
+          228.0
+        ],
+        [
+          270.0,
+          228.0
+        ]
+      ],
+      "text": "b.1) Người nộp thuế thuộc diện khai thuế thu nhập cá nhân theo tháng",
+      "confidence": 0.9556967985714286
+    },
+    {
+      "bbox": [
+        [
+          211.0,
+          220.0
+        ],
+        [
+          1127.0,
+          220.0
+        ],
+        [
+          1127.0,
+          260.0
+        ],
+        [
+          211.0,
+          260.0
+        ]
+      ],
+      "text": "được quy định tại điểm a khoản 1 Điều 8 Nghị định này nếu đủ điều kiện khai",
+      "confidence": 0.9574808716666666
+    },
+    {
+      "bbox": [
+        [
+          210.0,
+          254.0
+        ],
+        [
+          1127.0,
+          254.0
+        ],
+        [
+          1127.0,
+          291.0
+        ],
+        [
+          210.0,
+          291.0
+        ]
+      ],
+      "text": "thuế giá trị gia tăng theo quý thì được lựa chọn khai thuế thu nhập cá nhân",
+      "confidence": 0.968733358235294
+    },
+    {
+      "bbox": [
+        [
+          210.0,
+          298.0
+        ],
+        [
+          318.0,
+          298.0
+        ],
+        [
+          318.0,
+          324.0
+        ],
+        [
+          210.0,
+          324.0
+        ]
+      ],
+      "text": "theo quý.",
+      "confidence": 0.969261515
+    },
+    {
+      "bbox": [
+        [
+          271.0,
+          340.0
+        ],
+        [
+          1127.0,
+          340.0
+        ],
+        [
+          1127.0,
+          380.0
+        ],
+        [
+          271.0,
+          380.0
+        ]
+      ],
+      "text": "b.2) Việc khai thuế theo quý được xác định một lan kể từ quý đầu",
+      "confidence": 0.9638287406666667
+    },
+    {
+      "bbox": [
+        [
+          212.0,
+          374.0
+        ],
+        [
+          1127.0,
+          374.0
+        ],
+        [
+          1127.0,
+          410.0
+        ],
+        [
+          212.0,
+          410.0
+        ]
+      ],
+      "text": "tiên phát sinh nghĩa vụ khai thuế và được áp dụng én định trong cả năm",
+      "confidence": 0.9456847143749999
+    },
+    {
+      "bbox": [
+        [
+          213.0,
+          416.0
+        ],
+        [
+          344.0,
+          416.0
+        ],
+        [
+          344.0,
+          443.0
+        ],
+        [
+          213.0,
+          443.0
+        ]
+      ],
+      "text": "dương lịch.",
+      "confidence": 0.9680218899999999
+    },
+    {
+      "bbox": [
+        [
+          272.0,
+          459.0
+        ],
+        [
+          1129.0,
+          459.0
+        ],
+        [
+          1129.0,
+          501.0
+        ],
+        [
+          272.0,
+          501.0
+        ]
+      ],
+      "text": "2. Người nộp thuế có trách nhiệm tự xác định thuộc đối tượng khai thuế",
+      "confidence": 0.9691486353333333
+    },
+    {
+      "bbox": [
+        [
+          213.0,
+          500.0
+        ],
+        [
+          752.0,
+          500.0
+        ],
+        [
+          752.0,
+          529.0
+        ],
+        [
+          213.0,
+          529.0
+        ]
+      ],
+      "text": "theo quý đê thực hiện khai thuê theo quy định.",
+      "confidence": 0.9651984330000001
+    },
+    {
+      "bbox": [
+        [
+          273.0,
+          545.0
+        ],
+        [
+          1129.0,
+          545.0
+        ],
+        [
+          1129.0,
+          586.0
+        ],
+        [
+          273.0,
+          586.0
+        ]
+      ],
+      "text": "a) Người nộp thuế đáp ứng tiêu chí khai thuế theo quý được lựa chọn",
+      "confidence": 0.9653436986666667
+    },
+    {
+      "bbox": [
+        [
+          214.0,
+          584.0
+        ],
+        [
+          910.0,
+          584.0
+        ],
+        [
+          910.0,
+          613.0
+        ],
+        [
+          214.0,
+          613.0
+        ]
+      ],
+      "text": "khai thuê theo tháng hoặc quý ôn định trọn năm dương lịch.",
+      "confidence": 0.9659474058333335
+    },
+    {
+      "bbox": [
+        [
+          273.0,
+          629.0
+        ],
+        [
+          1130.0,
+          629.0
+        ],
+        [
+          1130.0,
+          672.0
+        ],
+        [
+          273.0,
+          672.0
+        ]
+      ],
+      "text": "b) Trường hợp người nộp thuế đang thực hiện khai thuế theo tháng nếu",
+      "confidence": 0.9624049014285716
+    },
+    {
+      "bbox": [
+        [
+          214.0,
+          663.0
+        ],
+        [
+          1130.0,
+          663.0
+        ],
+        [
+          1130.0,
+          698.0
+        ],
+        [
+          214.0,
+          698.0
+        ]
+      ],
+      "text": "đủ điều kiện khai thuế theo quý và lựa chọn chuyển sang khai thuế theo quý",
+      "confidence": 0.965388183125
+    },
+    {
+      "bbox": [
+        [
+          214.0,
+          699.0
+        ],
+        [
+          1130.0,
+          699.0
+        ],
+        [
+          1130.0,
+          739.0
+        ],
+        [
+          214.0,
+          739.0
+        ]
+      ],
+      "text": "thì gửi văn bản đề nghị quy định tại Phụ lục I ban hành kèm theo Nghị định",
+      "confidence": 0.9650537777777778
+    },
+    {
+      "bbox": [
+        [
+          214.0,
+          730.0
+        ],
+        [
+          1130.0,
+          730.0
+        ],
+        [
+          1130.0,
+          773.0
+        ],
+        [
+          214.0,
+          773.0
+        ]
+      ],
+      "text": "này đề nghị thay đổi kỳ tính thuế đến cơ quan thuế quản lý trực tiếp chậm",
+      "confidence": 0.966615318235294
+    },
+    {
+      "bbox": [
+        [
+          215.0,
+          764.0
+        ],
+        [
+          1131.0,
+          764.0
+        ],
+        [
+          1131.0,
+          806.0
+        ],
+        [
+          215.0,
+          806.0
+        ]
+      ],
+      "text": "nhất là 31 tháng 01 của năm bắt đầu khai thuế theo quý. Nếu sau thời hạn này",
+      "confidence": 0.9645010755555556
+    },
+    {
+      "bbox": [
+        [
+          215.0,
+          796.0
+        ],
+        [
+          1131.0,
+          796.0
+        ],
+        [
+          1131.0,
+          837.0
+        ],
+        [
+          215.0,
+          837.0
+        ]
+      ],
+      "text": "người nộp thuế không gửi văn bản đến cơ quan thuế thì người nộp thuế tiếp",
+      "confidence": 0.968013176875
+    },
+    {
+      "bbox": [
+        [
+          215.0,
+          832.0
+        ],
+        [
+          958.0,
+          832.0
+        ],
+        [
+          958.0,
+          865.0
+        ],
+        [
+          215.0,
+          865.0
+        ]
+      ],
+      "text": "tục thực hiện khai thuế theo tháng ồn định trọn năm dương lịch.",
+      "confidence": 0.9526557392307693
+    },
+    {
+      "bbox": [
+        [
+          275.0,
+          881.0
+        ],
+        [
+          1131.0,
+          881.0
+        ],
+        [
+          1131.0,
+          922.0
+        ],
+        [
+          275.0,
+          922.0
+        ]
+      ],
+      "text": "c) Trường hợp người nộp thuế tự phát hiện không đủ điều kiện khai thuế",
+      "confidence": 0.9604058620000001
+    },
+    {
+      "bbox": [
+        [
+          216.0,
+          914.0
+        ],
+        [
+          1132.0,
+          914.0
+        ],
+        [
+          1132.0,
+          962.0
+        ],
+        [
+          216.0,
+          962.0
+        ]
+      ],
+      "text": "theo quý thì người nộp thuế phải thực hiện khai thuế theo tháng kể từ tháng",
+      "confidence": 0.965572580625
+    },
+    {
+      "bbox": [
+        [
+          216.0,
+          947.0
+        ],
+        [
+          1131.0,
+          947.0
+        ],
+        [
+          1131.0,
+          986.0
+        ],
+        [
+          216.0,
+          986.0
+        ]
+      ],
+      "text": "đầu của quý tiếp theo. Người nộp thuế không phải nộp lại hồ sơ khai thuế",
+      "confidence": 0.9640376712500001
+    },
+    {
+      "bbox": [
+        [
+          216.0,
+          981.0
+        ],
+        [
+          1132.0,
+          981.0
+        ],
+        [
+          1132.0,
+          1021.0
+        ],
+        [
+          216.0,
+          1021.0
+        ]
+      ],
+      "text": "theo tháng của các quý trước đó nhưng phải nộp Bản xác định số tiền thuế",
+      "confidence": 0.96921833125
+    },
+    {
+      "bbox": [
+        [
+          216.0,
+          1020.0
+        ],
+        [
+          1132.0,
+          1020.0
+        ],
+        [
+          1132.0,
+          1054.0
+        ],
+        [
+          216.0,
+          1054.0
+        ]
+      ],
+      "text": "phải nộp theo tháng tăng thêm so với sô đã kê khai theo quý quy định tại Phụ",
+      "confidence": 0.9676172422222221
+    },
+    {
+      "bbox": [
+        [
+          217.0,
+          1049.0
+        ],
+        [
+          1098.0,
+          1049.0
+        ],
+        [
+          1098.0,
+          1084.0
+        ],
+        [
+          217.0,
+          1084.0
+        ]
+      ],
+      "text": "lục I ban hành kèm theo Nghị định này và phải tính tiền chậm nộp theo quy định.",
+      "confidence": 0.961906958888889
+    },
+    {
+      "bbox": [
+        [
+          276.0,
+          1096.0
+        ],
+        [
+          1132.0,
+          1096.0
+        ],
+        [
+          1132.0,
+          1142.0
+        ],
+        [
+          276.0,
+          1142.0
+        ]
+      ],
+      "text": "d) Trường hợp cơ quan thuế phát hiện người nộp thuế khong đủ điều",
+      "confidence": 0.938154667142857
+    },
+    {
+      "bbox": [
+        [
+          216.0,
+          1133.0
+        ],
+        [
+          1132.0,
+          1133.0
+        ],
+        [
+          1132.0,
+          1179.0
+        ],
+        [
+          216.0,
+          1179.0
+        ]
+      ],
+      "text": "kiện khai thuế theo quý thì cơ quan thuế phải xác định lại số tiền thuế phải",
+      "confidence": 0.9673341458823529
+    },
+    {
+      "bbox": [
+        [
+          217.0,
+          1168.0
+        ],
+        [
+          1133.0,
+          1168.0
+        ],
+        [
+          1133.0,
+          1210.0
+        ],
+        [
+          217.0,
+          1210.0
+        ]
+      ],
+      "text": "nộp theo tháng tăng thêm so với sô người nộp thuế đã kê khai và phải tính",
+      "confidence": 0.9649590829411764
+    },
+    {
+      "bbox": [
+        [
+          216.0,
+          1200.0
+        ],
+        [
+          1133.0,
+          1200.0
+        ],
+        [
+          1133.0,
+          1243.0
+        ],
+        [
+          216.0,
+          1243.0
+        ]
+      ],
+      "text": "tiền chậm nộp theo quy định. Người nộp thuế phải thực hiện khai thuế theo",
+      "confidence": 0.9662276766666668
+    },
+    {
+      "bbox": [
+        [
+          216.0,
+          1231.0
+        ],
+        [
+          906.0,
+          1231.0
+        ],
+        [
+          906.0,
+          1272.0
+        ],
+        [
+          216.0,
+          1272.0
+        ]
+      ],
+      "text": "tháng kể từ thời điểm nhận được văn bản của cơ quan thuế.",
+      "confidence": 0.9648934015384615
+    },
+    {
+      "bbox": [
+        [
+          277.0,
+          1286.0
+        ],
+        [
+          1134.0,
+          1286.0
+        ],
+        [
+          1134.0,
+          1337.0
+        ],
+        [
+          277.0,
+          1337.0
+        ]
+      ],
+      "text": "Điều 10. Thời hạn nộp hồ sơ khai thuế cửa các khoản thu về đất, lệ",
+      "confidence": 0.9621526968749999
+    },
+    {
+      "bbox": [
+        [
+          219.0,
+          1321.0
+        ],
+        [
+          1134.0,
+          1321.0
+        ],
+        [
+          1134.0,
+          1356.0
+        ],
+        [
+          219.0,
+          1356.0
+        ]
+      ],
+      "text": "phí môn bài, lệ phí trước bạ, tiền cấp quyền và các khoản thu khác theo",
+      "confidence": 0.9676875593750001
+    },
+    {
+      "bbox": [
+        [
+          219.0,
+          1361.0
+        ],
+        [
+          705.0,
+          1361.0
+        ],
+        [
+          705.0,
+          1390.0
+        ],
+        [
+          219.0,
+          1390.0
+        ]
+      ],
+      "text": "pháp luật quan lý, sử dụng tài sản công",
+      "confidence": 0.9681357333333334
+    },
+    {
+      "bbox": [
+        [
+          277.0,
+          1405.0
+        ],
+        [
+          1135.0,
+          1405.0
+        ],
+        [
+          1135.0,
+          1446.0
+        ],
+        [
+          277.0,
+          1446.0
+        ]
+      ],
+      "text": "Người nộp thuế thực hiện quy định về thời hạn nộp hồ sơ khai thuế theo",
+      "confidence": 0.96741827
+    },
+    {
+      "bbox": [
+        [
+          220.0,
+          1438.0
+        ],
+        [
+          1136.0,
+          1438.0
+        ],
+        [
+          1136.0,
+          1487.0
+        ],
+        [
+          220.0,
+          1487.0
+        ]
+      ],
+      "text": "quy định tại Điều 44 Luật Quản lý thuế. Đối với thời hạn nộp hồ sơ khai của",
+      "confidence": 0.9539334022222222
+    },
+    {
+      "bbox": [
+        [
+          220.0,
+          1472.0
+        ],
+        [
+          1136.0,
+          1472.0
+        ],
+        [
+          1136.0,
+          1506.0
+        ],
+        [
+          220.0,
+          1506.0
+        ]
+      ],
+      "text": "các khoản thu về đất, lệ phí môn bài, lệ phí trước bạ, tiền cấp quyền và các",
+      "confidence": 0.9632736277777778
+    },
+    {
+      "bbox": [
+        [
+          220.0,
+          1510.0
+        ],
+        [
+          1135.0,
+          1510.0
+        ],
+        [
+          1135.0,
+          1540.0
+        ],
+        [
+          220.0,
+          1540.0
+        ]
+      ],
+      "text": "khoản thu khác theo pháp luật quản lý, sử dụng tài sản công theo quy định tại",
+      "confidence": 0.9663530588235294
+    },
+    {
+      "bbox": [
+        [
+          221.0,
+          1540.0
+        ],
+        [
+          918.0,
+          1540.0
+        ],
+        [
+          918.0,
+          1573.0
+        ],
+        [
+          221.0,
+          1573.0
+        ]
+      ],
+      "text": "khoản 5 Điều 44 Luật Quản lý thuế được thực hiện như sau:",
+      "confidence": 0.9661111276923076
+    }
+  ]
+}

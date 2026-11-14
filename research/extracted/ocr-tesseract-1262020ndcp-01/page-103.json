@@ -1,0 +1,838 @@
+{
+  "document_id": "126/2020/NĐ-CP",
+  "source_file": "../../legal-sources/1262020ndcp/01.pdf",
+  "source_sha256": "310648e80396d267610946458e7fdd71ba87ef538b009d6574ed21514de3f7ca",
+  "page_count": 119,
+  "render_dpi": 150,
+  "engine": "Tesseract 5.5.4 (vie+eng; OEM 1; PSM 3)",
+  "review_status": "UNREVIEWED",
+  "tesseract_version": "5.5.4",
+  "languages": [
+    "vie",
+    "eng"
+  ],
+  "traineddata_sha256": {
+    "vie": "b6b49293d95d0b6dbd8780174627e82c75be957b6f4ed9862155540d6b00bb45",
+    "eng": "8280aed0782fe27257a68ea10fe7ef324ca0f8d85bd2fd145d1c2b560bcb66ba"
+  },
+  "ocr_engine_mode": 1,
+  "page_segmentation_mode": 3,
+  "thread_limit": 2,
+  "page": 103,
+  "lines": [
+    {
+      "bbox": [
+        [
+          697.0,
+          64.0
+        ],
+        [
+          735.0,
+          64.0
+        ],
+        [
+          735.0,
+          83.0
+        ],
+        [
+          697.0,
+          83.0
+        ]
+      ],
+      "text": "103",
+      "confidence": 0.96947845
+    },
+    {
+      "bbox": [
+        [
+          226.0,
+          135.0
+        ],
+        [
+          1145.0,
+          135.0
+        ],
+        [
+          1145.0,
+          173.0
+        ],
+        [
+          226.0,
+          173.0
+        ]
+      ],
+      "text": "nhận; quyết định cưỡng chế đã được niêm yết tại trụ sở của tổ chức hoặc nơi",
+      "confidence": 0.9661757611764706
+    },
+    {
+      "bbox": [
+        [
+          226.0,
+          172.0
+        ],
+        [
+          1144.0,
+          172.0
+        ],
+        [
+          1144.0,
+          208.0
+        ],
+        [
+          226.0,
+          208.0
+        ]
+      ],
+      "text": "cư trú của cá nhân bị cưỡng chế hoặc có căn cứ cho rằng người nộp thuế bị",
+      "confidence": 0.9687535605555556
+    },
+    {
+      "bbox": [
+        [
+          225.0,
+          204.0
+        ],
+        [
+          1145.0,
+          204.0
+        ],
+        [
+          1145.0,
+          243.0
+        ],
+        [
+          225.0,
+          243.0
+        ]
+      ],
+      "text": "cưỡng chế trồn tránh không nhận quyết định cưỡng chế thì được coi là quyết",
+      "confidence": 0.961445566
+    },
+    {
+      "bbox": [
+        [
+          225.0,
+          242.0
+        ],
+        [
+          441.0,
+          242.0
+        ],
+        [
+          441.0,
+          271.0
+        ],
+        [
+          225.0,
+          271.0
+        ]
+      ],
+      "text": "định đã được giao.",
+      "confidence": 0.96948881
+    },
+    {
+      "bbox": [
+        [
+          283.0,
+          297.0
+        ],
+        [
+          1144.0,
+          297.0
+        ],
+        [
+          1144.0,
+          336.0
+        ],
+        [
+          283.0,
+          336.0
+        ]
+      ],
+      "text": "¢) Quyết định cưỡng chế chấm dứt hiệu lực kể từ ngày người nộp thuế đã",
+      "confidence": 0.96114091875
+    },
+    {
+      "bbox": [
+        [
+          223.0,
+          331.0
+        ],
+        [
+          1143.0,
+          331.0
+        ],
+        [
+          1143.0,
+          369.0
+        ],
+        [
+          223.0,
+          369.0
+        ]
+      ],
+      "text": "nộp đủ số tiền thuế nợ bị cưỡng chế vào ngân sách nhà nước hoặc số tiền thuế",
+      "confidence": 0.9667351577777779
+    },
+    {
+      "bbox": [
+        [
+          222.0,
+          366.0
+        ],
+        [
+          1142.0,
+          366.0
+        ],
+        [
+          1142.0,
+          406.0
+        ],
+        [
+          222.0,
+          406.0
+        ]
+      ],
+      "text": "nợ bị cưỡng chế được cơ quan quản lý thuế ban hành quyết định nộp dan tiền",
+      "confidence": 0.9649532152941177
+    },
+    {
+      "bbox": [
+        [
+          222.0,
+          399.0
+        ],
+        [
+          1141.0,
+          399.0
+        ],
+        [
+          1141.0,
+          441.0
+        ],
+        [
+          222.0,
+          441.0
+        ]
+      ],
+      "text": "thuế nợ hoặc quyết định gia hạn nộp thuế hoặc quyết định miễn tiền chậm nộp",
+      "confidence": 0.96601387
+    },
+    {
+      "bbox": [
+        [
+          221.0,
+          434.0
+        ],
+        [
+          1141.0,
+          434.0
+        ],
+        [
+          1141.0,
+          474.0
+        ],
+        [
+          221.0,
+          474.0
+        ]
+      ],
+      "text": "tiền thuế hoặc thông báo không tính tiền chậm nộp. Cơ quan quản lý thuế ban",
+      "confidence": 0.9694277518750001
+    },
+    {
+      "bbox": [
+        [
+          221.0,
+          469.0
+        ],
+        [
+          1141.0,
+          469.0
+        ],
+        [
+          1141.0,
+          508.0
+        ],
+        [
+          221.0,
+          508.0
+        ]
+      ],
+      "text": "hành quyết định chấm dứt hiệu lực của quyết định cưỡng chế theo Mẫu",
+      "confidence": 0.9682040071428571
+    },
+    {
+      "bbox": [
+        [
+          221.0,
+          502.0
+        ],
+        [
+          910.0,
+          502.0
+        ],
+        [
+          910.0,
+          541.0
+        ],
+        [
+          221.0,
+          541.0
+        ]
+      ],
+      "text": "số 08/CC tại Phụ lục III ban hành kèm theo Nghị định này.",
+      "confidence": 0.9296726815384615
+    },
+    {
+      "bbox": [
+        [
+          279.0,
+          563.0
+        ],
+        [
+          1139.0,
+          563.0
+        ],
+        [
+          1139.0,
+          603.0
+        ],
+        [
+          279.0,
+          603.0
+        ]
+      ],
+      "text": "4. Nguyên tắc thu tiền, tài sản từ bên thứ ba đang giữ tài sản của người",
+      "confidence": 0.9686340764705882
+    },
+    {
+      "bbox": [
+        [
+          219.0,
+          602.0
+        ],
+        [
+          479.0,
+          602.0
+        ],
+        [
+          479.0,
+          629.0
+        ],
+        [
+          219.0,
+          629.0
+        ]
+      ],
+      "text": "nộp thuê bị cưỡng chê",
+      "confidence": 0.9671388859999999
+    },
+    {
+      "bbox": [
+        [
+          278.0,
+          658.0
+        ],
+        [
+          1138.0,
+          658.0
+        ],
+        [
+          1138.0,
+          701.0
+        ],
+        [
+          278.0,
+          701.0
+        ]
+      ],
+      "text": "a) Bên thứ ba có khoản nợ đến hạn phải trả cho người nộp thuế bị cưỡng",
+      "confidence": 0.9660765705882352
+    },
+    {
+      "bbox": [
+        [
+          218.0,
+          694.0
+        ],
+        [
+          1138.0,
+          694.0
+        ],
+        [
+          1138.0,
+          729.0
+        ],
+        [
+          218.0,
+          729.0
+        ]
+      ],
+      "text": "chê hoặc giữ tiên, tài sản khác của người nộp thuế bị cưỡng chê thì có trách",
+      "confidence": 0.9652034399999999
+    },
+    {
+      "bbox": [
+        [
+          217.0,
+          728.0
+        ],
+        [
+          946.0,
+          728.0
+        ],
+        [
+          946.0,
+          763.0
+        ],
+        [
+          217.0,
+          763.0
+        ]
+      ],
+      "text": "nhiệm nộp tiên thuế nợ thay cho người nộp thuê bị cưỡng chế.",
+      "confidence": 0.95808116
+    },
+    {
+      "bbox": [
+        [
+          276.0,
+          784.0
+        ],
+        [
+          1136.0,
+          784.0
+        ],
+        [
+          1136.0,
+          823.0
+        ],
+        [
+          276.0,
+          823.0
+        ]
+      ],
+      "text": "b) Trường hợp tiền, tài sản khác của người nộp thuế bị cưỡng chế do bên",
+      "confidence": 0.965076775
+    },
+    {
+      "bbox": [
+        [
+          216.0,
+          817.0
+        ],
+        [
+          1135.0,
+          817.0
+        ],
+        [
+          1135.0,
+          857.0
+        ],
+        [
+          216.0,
+          857.0
+        ]
+      ],
+      "text": "thứ ba đang nắm giữ là đối tượng của các giao dịch bảo đảm hoặc thuộc",
+      "confidence": 0.96807124625
+    },
+    {
+      "bbox": [
+        [
+          215.0,
+          852.0
+        ],
+        [
+          1135.0,
+          852.0
+        ],
+        [
+          1135.0,
+          887.0
+        ],
+        [
+          215.0,
+          887.0
+        ]
+      ],
+      "text": "trường hợp giải quyết phá sản thì việc thu tiền, tài sản khác từ bên thứ ba",
+      "confidence": 0.9480314547058823
+    },
+    {
+      "bbox": [
+        [
+          215.0,
+          890.0
+        ],
+        [
+          727.0,
+          890.0
+        ],
+        [
+          727.0,
+          922.0
+        ],
+        [
+          215.0,
+          922.0
+        ]
+      ],
+      "text": "được thực hiện theo quy định của pháp luật.",
+      "confidence": 0.9648797355555555
+    },
+    {
+      "bbox": [
+        [
+          273.0,
+          944.0
+        ],
+        [
+          1133.0,
+          944.0
+        ],
+        [
+          1133.0,
+          987.0
+        ],
+        [
+          273.0,
+          987.0
+        ]
+      ],
+      "text": "e) Số tiền bên thứ ba nộp vào ngân sách nhà nước thay cho người nộp",
+      "confidence": 0.943584723125
+    },
+    {
+      "bbox": [
+        [
+          213.0,
+          978.0
+        ],
+        [
+          1133.0,
+          978.0
+        ],
+        [
+          1133.0,
+          1021.0
+        ],
+        [
+          213.0,
+          1021.0
+        ]
+      ],
+      "text": "thuế bị cưỡng chế được xác định là số tiền đã thanh toán cho người nộp thuế",
+      "confidence": 0.9686023217647058
+    },
+    {
+      "bbox": [
+        [
+          213.0,
+          1014.0
+        ],
+        [
+          1133.0,
+          1014.0
+        ],
+        [
+          1133.0,
+          1054.0
+        ],
+        [
+          213.0,
+          1054.0
+        ]
+      ],
+      "text": "bị cưỡng chế. Căn cứ vào chứng từ thu tiền, tài sản khác của bên thứ ba, cơ",
+      "confidence": 0.9678559488888888
+    },
+    {
+      "bbox": [
+        [
+          213.0,
+          1048.0
+        ],
+        [
+          1131.0,
+          1048.0
+        ],
+        [
+          1131.0,
+          1089.0
+        ],
+        [
+          213.0,
+          1089.0
+        ]
+      ],
+      "text": "quan có thẩm quyền thực hiện cưỡng chế thông báo cho người nộp thuế bị",
+      "confidence": 0.9582748206666666
+    },
+    {
+      "bbox": [
+        [
+          212.0,
+          1081.0
+        ],
+        [
+          752.0,
+          1081.0
+        ],
+        [
+          752.0,
+          1117.0
+        ],
+        [
+          212.0,
+          1117.0
+        ]
+      ],
+      "text": "cưỡng chế và các cơ quan liên quan được biết.",
+      "confidence": 0.9655703969999999
+    },
+    {
+      "bbox": [
+        [
+          271.0,
+          1146.0
+        ],
+        [
+          1130.0,
+          1146.0
+        ],
+        [
+          1130.0,
+          1180.0
+        ],
+        [
+          271.0,
+          1180.0
+        ]
+      ],
+      "text": "5. Trách nhiệm của bên thứ ba đang có khoản nợ, đang giữ tiền, tài sản",
+      "confidence": 0.96603649125
+    },
+    {
+      "bbox": [
+        [
+          210.0,
+          1178.0
+        ],
+        [
+          656.0,
+          1178.0
+        ],
+        [
+          656.0,
+          1210.0
+        ],
+        [
+          210.0,
+          1210.0
+        ]
+      ],
+      "text": "khác của người nộp thuế bị cưỡng chế",
+      "confidence": 0.96712288
+    },
+    {
+      "bbox": [
+        [
+          229.0,
+          1233.0
+        ],
+        [
+          1128.0,
+          1233.0
+        ],
+        [
+          1128.0,
+          1274.0
+        ],
+        [
+          229.0,
+          1274.0
+        ]
+      ],
+      "text": ". a) Cung cấp cho cơ quan quản lý thuế thông tin về khoản nợ hoặc khoản",
+      "confidence": 0.8771603147058823
+    },
+    {
+      "bbox": [
+        [
+          209.0,
+          1271.0
+        ],
+        [
+          1127.0,
+          1271.0
+        ],
+        [
+          1127.0,
+          1311.0
+        ],
+        [
+          209.0,
+          1311.0
+        ]
+      ],
+      "text": "tiên, tài sản khác đang nắm giữ của đối tượng thuộc diện cưỡng chế, trong đó",
+      "confidence": 0.953421793125
+    },
+    {
+      "bbox": [
+        [
+          209.0,
+          1307.0
+        ],
+        [
+          1127.0,
+          1307.0
+        ],
+        [
+          1127.0,
+          1351.0
+        ],
+        [
+          209.0,
+          1351.0
+        ]
+      ],
+      "text": "nêu rõ sô tiên, thời hạn thanh toán nợ, loại tài sản, sô lượng tài sản, tình trạng",
+      "confidence": 0.9668947583333334
+    },
+    {
+      "bbox": [
+        [
+          208.0,
+          1341.0
+        ],
+        [
+          288.0,
+          1341.0
+        ],
+        [
+          288.0,
+          1362.0
+        ],
+        [
+          208.0,
+          1362.0
+        ]
+      ],
+      "text": "tài sản.",
+      "confidence": 0.92170868
+    },
+    {
+      "bbox": [
+        [
+          267.0,
+          1401.0
+        ],
+        [
+          1125.0,
+          1401.0
+        ],
+        [
+          1125.0,
+          1441.0
+        ],
+        [
+          267.0,
+          1441.0
+        ]
+      ],
+      "text": "b) Khi nhận được văn bản yêu cầu xác minh thông tin của cơ quan quản",
+      "confidence": 0.964564553125
+    },
+    {
+      "bbox": [
+        [
+          208.0,
+          1430.0
+        ],
+        [
+          1124.0,
+          1430.0
+        ],
+        [
+          1124.0,
+          1476.0
+        ],
+        [
+          208.0,
+          1476.0
+        ]
+      ],
+      "text": "lý thuế thì bên thứ ba không được chuyển trả tiền (bao gồm cả khoản nợ phải",
+      "confidence": 0.96265429
+    },
+    {
+      "bbox": [
+        [
+          206.0,
+          1469.0
+        ],
+        [
+          1124.0,
+          1469.0
+        ],
+        [
+          1124.0,
+          1511.0
+        ],
+        [
+          206.0,
+          1511.0
+        ]
+      ],
+      "text": "thanh toán cho người nộp thuế), tài sản khác cho người nộp thuế bị cưỡng chế",
+      "confidence": 0.964343166875
+    },
+    {
+      "bbox": [
+        [
+          207.0,
+          1501.0
+        ],
+        [
+          1124.0,
+          1501.0
+        ],
+        [
+          1124.0,
+          1546.0
+        ],
+        [
+          207.0,
+          1546.0
+        ]
+      ],
+      "text": "cho đến khi thực hiện nộp tiền vào ngân sách nhà nước hoặc chuyển giao tài",
+      "confidence": 0.9669019593749999
+    },
+    {
+      "bbox": [
+        [
+          206.0,
+          1539.0
+        ],
+        [
+          951.0,
+          1539.0
+        ],
+        [
+          951.0,
+          1577.0
+        ],
+        [
+          206.0,
+          1577.0
+        ]
+      ],
+      "text": "sản cho cơ quan quản lý thuế dé làm thủ tục bán đầu giá tài sản.",
+      "confidence": 0.9487662275
+    }
+  ]
+}

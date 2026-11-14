@@ -1,0 +1,926 @@
+{
+  "document_id": "126/2020/NĐ-CP",
+  "source_file": "../../legal-sources/1262020ndcp/01.pdf",
+  "source_sha256": "310648e80396d267610946458e7fdd71ba87ef538b009d6574ed21514de3f7ca",
+  "page_count": 119,
+  "render_dpi": 150,
+  "engine": "Tesseract 5.5.4 (vie+eng; OEM 1; PSM 3)",
+  "review_status": "UNREVIEWED",
+  "tesseract_version": "5.5.4",
+  "languages": [
+    "vie",
+    "eng"
+  ],
+  "traineddata_sha256": {
+    "vie": "b6b49293d95d0b6dbd8780174627e82c75be957b6f4ed9862155540d6b00bb45",
+    "eng": "8280aed0782fe27257a68ea10fe7ef324ca0f8d85bd2fd145d1c2b560bcb66ba"
+  },
+  "ocr_engine_mode": 1,
+  "page_segmentation_mode": 3,
+  "thread_limit": 2,
+  "page": 80,
+  "lines": [
+    {
+      "bbox": [
+        [
+          690.0,
+          54.0
+        ],
+        [
+          717.0,
+          54.0
+        ],
+        [
+          717.0,
+          74.0
+        ],
+        [
+          690.0,
+          74.0
+        ]
+      ],
+      "text": "80",
+      "confidence": 0.96650833
+    },
+    {
+      "bbox": [
+        [
+          275.0,
+          129.0
+        ],
+        [
+          1132.0,
+          129.0
+        ],
+        [
+          1132.0,
+          169.0
+        ],
+        [
+          275.0,
+          169.0
+        ]
+      ],
+      "text": "b) Cá nhân bị cưỡng chế, cơ quan, tổ chức quản lý tiền lương hoặc thu",
+      "confidence": 0.963531011875
+    },
+    {
+      "bbox": [
+        [
+          216.0,
+          161.0
+        ],
+        [
+          1134.0,
+          161.0
+        ],
+        [
+          1134.0,
+          202.0
+        ],
+        [
+          216.0,
+          202.0
+        ]
+      ],
+      "text": "nhập và các cơ quan, tổ chức liên quan phải cung cập các thông tin về tiền",
+      "confidence": 0.9571224535294117
+    },
+    {
+      "bbox": [
+        [
+          216.0,
+          196.0
+        ],
+        [
+          1134.0,
+          196.0
+        ],
+        [
+          1134.0,
+          242.0
+        ],
+        [
+          216.0,
+          242.0
+        ]
+      ],
+      "text": "lương và thu nhập của cá nhân bị cưỡng chế cho cơ quan quản lý thuế trong",
+      "confidence": 0.9673639994117648
+    },
+    {
+      "bbox": [
+        [
+          216.0,
+          231.0
+        ],
+        [
+          1134.0,
+          231.0
+        ],
+        [
+          1134.0,
+          269.0
+        ],
+        [
+          216.0,
+          269.0
+        ]
+      ],
+      "text": "thời hạn 03 ngày làm việc, kể từ ngày nhận được yêu câu và chịu trách nhiệm",
+      "confidence": 0.9550301094117647
+    },
+    {
+      "bbox": [
+        [
+          216.0,
+          264.0
+        ],
+        [
+          738.0,
+          264.0
+        ],
+        [
+          738.0,
+          297.0
+        ],
+        [
+          216.0,
+          297.0
+        ]
+      ],
+      "text": "trước pháp luật về các thông tin đã cung cấp.",
+      "confidence": 0.9656342689999999
+    },
+    {
+      "bbox": [
+        [
+          276.0,
+          316.0
+        ],
+        [
+          1134.0,
+          316.0
+        ],
+        [
+          1134.0,
+          356.0
+        ],
+        [
+          276.0,
+          356.0
+        ]
+      ],
+      "text": "c) Trường hợp sau 03 ngày làm việc, cá nhân bị cưỡng chế, cơ quan, tổ",
+      "confidence": 0.9313166525
+    },
+    {
+      "bbox": [
+        [
+          217.0,
+          350.0
+        ],
+        [
+          1135.0,
+          350.0
+        ],
+        [
+          1135.0,
+          390.0
+        ],
+        [
+          217.0,
+          390.0
+        ]
+      ],
+      "text": "chức quản lý tiên lương hoặc thu nhập và các cơ quan, tổ chức liên quan",
+      "confidence": 0.956623410625
+    },
+    {
+      "bbox": [
+        [
+          217.0,
+          384.0
+        ],
+        [
+          1134.0,
+          384.0
+        ],
+        [
+          1134.0,
+          423.0
+        ],
+        [
+          217.0,
+          423.0
+        ]
+      ],
+      "text": "không cung cấp hoặc cung cấp thông tin không đầy đủ về tiền lương và thu",
+      "confidence": 0.9682580237499999
+    },
+    {
+      "bbox": [
+        [
+          217.0,
+          417.0
+        ],
+        [
+          1135.0,
+          417.0
+        ],
+        [
+          1135.0,
+          457.0
+        ],
+        [
+          217.0,
+          457.0
+        ]
+      ],
+      "text": "nhập của cá nhân bị cưỡng chê thì cơ quan quản lý thuế căn cứ vào tình hình",
+      "confidence": 0.9679523588888889
+    },
+    {
+      "bbox": [
+        [
+          217.0,
+          451.0
+        ],
+        [
+          1133.0,
+          451.0
+        ],
+        [
+          1133.0,
+          490.0
+        ],
+        [
+          217.0,
+          490.0
+        ]
+      ],
+      "text": "thực tế để áp dụng biện pháp cưỡng chế phù hợp theo quy định tại khoản 3",
+      "confidence": 0.9674442694117648
+    },
+    {
+      "bbox": [
+        [
+          217.0,
+          485.0
+        ],
+        [
+          550.0,
+          485.0
+        ],
+        [
+          550.0,
+          518.0
+        ],
+        [
+          217.0,
+          518.0
+        ]
+      ],
+      "text": "Điều 125 Luật Quản lý thuế.",
+      "confidence": 0.9651528033333334
+    },
+    {
+      "bbox": [
+        [
+          277.0,
+          538.0
+        ],
+        [
+          1086.0,
+          538.0
+        ],
+        [
+          1086.0,
+          571.0
+        ],
+        [
+          277.0,
+          571.0
+        ]
+      ],
+      "text": "3. Quyết định cưỡng chế khấu trừ một phần tiền lương hoặc thu nhập",
+      "confidence": 0.9611216628571428
+    },
+    {
+      "bbox": [
+        [
+          277.0,
+          592.0
+        ],
+        [
+          1136.0,
+          592.0
+        ],
+        [
+          1136.0,
+          631.0
+        ],
+        [
+          277.0,
+          631.0
+        ]
+      ],
+      "text": "a) Quyết định cưỡng chế lập theo Mẫu số 02/CC tại Phụ luc III ban hành",
+      "confidence": 0.9506413593749999
+    },
+    {
+      "bbox": [
+        [
+          218.0,
+          624.0
+        ],
+        [
+          1135.0,
+          624.0
+        ],
+        [
+          1135.0,
+          668.0
+        ],
+        [
+          218.0,
+          668.0
+        ]
+      ],
+      "text": "kèm theo Nghị định này, tại quyết định cưỡng chế khấu trừ một phần tiền",
+      "confidence": 0.9634376666666666
+    },
+    {
+      "bbox": [
+        [
+          219.0,
+          657.0
+        ],
+        [
+          1136.0,
+          657.0
+        ],
+        [
+          1136.0,
+          697.0
+        ],
+        [
+          219.0,
+          697.0
+        ]
+      ],
+      "text": "lương hoặc thu nhập cân ghi rõ: Tên, địa chỉ, mã số thuế của người nộp thuế",
+      "confidence": 0.9649269958823529
+    },
+    {
+      "bbox": [
+        [
+          219.0,
+          691.0
+        ],
+        [
+          1136.0,
+          691.0
+        ],
+        [
+          1136.0,
+          732.0
+        ],
+        [
+          219.0,
+          732.0
+        ]
+      ],
+      "text": "bị cưỡng chế; lý do bị cưỡng chế; số tiền bị cưỡng chế; tên, địa chỉ cơ quan,",
+      "confidence": 0.9595572744444445
+    },
+    {
+      "bbox": [
+        [
+          219.0,
+          723.0
+        ],
+        [
+          1138.0,
+          723.0
+        ],
+        [
+          1138.0,
+          774.0
+        ],
+        [
+          219.0,
+          774.0
+        ]
+      ],
+      "text": "tổ chức quản lý tiền lương hoặc thu nhập của cá nhân bị cưỡng chế; tên, địa",
+      "confidence": 0.9621344494117647
+    },
+    {
+      "bbox": [
+        [
+          219.0,
+          760.0
+        ],
+        [
+          1137.0,
+          760.0
+        ],
+        [
+          1137.0,
+          798.0
+        ],
+        [
+          219.0,
+          798.0
+        ]
+      ],
+      "text": "chỉ, số tài khoản nộp ngân sách nhà nước mở tại kho bạc nhà nước; phương",
+      "confidence": 0.9668001318749999
+    },
+    {
+      "bbox": [
+        [
+          219.0,
+          791.0
+        ],
+        [
+          874.0,
+          791.0
+        ],
+        [
+          874.0,
+          825.0
+        ],
+        [
+          219.0,
+          825.0
+        ]
+      ],
+      "text": "thức chuyển số tiền bị cưỡng chế đến kho bạc nhà nước.",
+      "confidence": 0.9558137816666665
+    },
+    {
+      "bbox": [
+        [
+          278.0,
+          844.0
+        ],
+        [
+          1137.0,
+          844.0
+        ],
+        [
+          1137.0,
+          884.0
+        ],
+        [
+          278.0,
+          884.0
+        ]
+      ],
+      "text": "Thủ trưởng cơ quan quản lý. thuế, Cục trưởng Cục Kiểm tra sau thông",
+      "confidence": 0.9548853257142856
+    },
+    {
+      "bbox": [
+        [
+          220.0,
+          878.0
+        ],
+        [
+          1138.0,
+          878.0
+        ],
+        [
+          1138.0,
+          919.0
+        ],
+        [
+          220.0,
+          919.0
+        ]
+      ],
+      "text": "quan, Cục trưởng Cục Điều tra chống buôn lậu thuộc Tổng cục Hải quan, Chủ",
+      "confidence": 0.9660719713333333
+    },
+    {
+      "bbox": [
+        [
+          219.0,
+          912.0
+        ],
+        [
+          1138.0,
+          912.0
+        ],
+        [
+          1138.0,
+          951.0
+        ],
+        [
+          219.0,
+          951.0
+        ]
+      ],
+      "text": "tịch Ủy ban nhân dân cấp huyện, cấp tỉnh có thẩm quyên ban hành quyêt định",
+      "confidence": 0.9522405374999999
+    },
+    {
+      "bbox": [
+        [
+          220.0,
+          944.0
+        ],
+        [
+          1138.0,
+          944.0
+        ],
+        [
+          1138.0,
+          985.0
+        ],
+        [
+          220.0,
+          985.0
+        ]
+      ],
+      "text": "cưỡng chế đối với các quyết định hành chính về quản lý. thuế do mình ban",
+      "confidence": 0.949542188125
+    },
+    {
+      "bbox": [
+        [
+          220.0,
+          977.0
+        ],
+        [
+          1137.0,
+          977.0
+        ],
+        [
+          1137.0,
+          1018.0
+        ],
+        [
+          220.0,
+          1018.0
+        ]
+      ],
+      "text": "hành hoặc cấp dưới ban hành nhưng không có thắm quyền cưỡng chế hoặc",
+      "confidence": 0.9427394757142857
+    },
+    {
+      "bbox": [
+        [
+          221.0,
+          1010.0
+        ],
+        [
+          1138.0,
+          1010.0
+        ],
+        [
+          1138.0,
+          1052.0
+        ],
+        [
+          221.0,
+          1052.0
+        ]
+      ],
+      "text": "cấp dưới có thẩm quyền ra quyết định cưỡng chế nhưng không đủ điều kiện",
+      "confidence": 0.9218215773333333
+    },
+    {
+      "bbox": [
+        [
+          221.0,
+          1040.0
+        ],
+        [
+          1138.0,
+          1040.0
+        ],
+        [
+          1138.0,
+          1087.0
+        ],
+        [
+          221.0,
+          1087.0
+        ]
+      ],
+      "text": "về lực lượng, phương tiện dé tổ chức thi hành quyết định cưỡng chế và có văn",
+      "confidence": 0.9498376294117646
+    },
+    {
+      "bbox": [
+        [
+          221.0,
+          1075.0
+        ],
+        [
+          1139.0,
+          1075.0
+        ],
+        [
+          1139.0,
+          1121.0
+        ],
+        [
+          221.0,
+          1121.0
+        ]
+      ],
+      "text": "bản đề nghị cap trên ra quyết định cưỡng chế. Trường hợp cap trưởng vắng",
+      "confidence": 0.9628175193333333
+    },
+    {
+      "bbox": [
+        [
+          220.0,
+          1109.0
+        ],
+        [
+          1138.0,
+          1109.0
+        ],
+        [
+          1138.0,
+          1155.0
+        ],
+        [
+          220.0,
+          1155.0
+        ]
+      ],
+      "text": "mặt có thể giao quyền cho cấp phó xem xét ban hành quyết định cưỡng chế,",
+      "confidence": 0.956118479375
+    },
+    {
+      "bbox": [
+        [
+          221.0,
+          1145.0
+        ],
+        [
+          1139.0,
+          1145.0
+        ],
+        [
+          1139.0,
+          1183.0
+        ],
+        [
+          221.0,
+          1183.0
+        ]
+      ],
+      "text": "việc giao quyên được thực hiện bằng văn bản theo Mẫu số 09/CC tại Phụ lục III",
+      "confidence": 0.9518386264705883
+    },
+    {
+      "bbox": [
+        [
+          221.0,
+          1177.0
+        ],
+        [
+          1139.0,
+          1177.0
+        ],
+        [
+          1139.0,
+          1228.0
+        ],
+        [
+          221.0,
+          1228.0
+        ]
+      ],
+      "text": "ban hành kèm theo Nghị định này, cấp phó được giao quyền phải chịu trách",
+      "confidence": 0.967365422
+    },
+    {
+      "bbox": [
+        [
+          221.0,
+          1213.0
+        ],
+        [
+          1139.0,
+          1213.0
+        ],
+        [
+          1139.0,
+          1258.0
+        ],
+        [
+          221.0,
+          1258.0
+        ]
+      ],
+      "text": "nhiệm về quyết định của mình trước cập trưởng và trước pháp luật Người",
+      "confidence": 0.9458053914285713
+    },
+    {
+      "bbox": [
+        [
+          221.0,
+          1245.0
+        ],
+        [
+          1095.0,
+          1245.0
+        ],
+        [
+          1095.0,
+          1279.0
+        ],
+        [
+          221.0,
+          1279.0
+        ]
+      ],
+      "text": "được giao quyên không được giao quyền tiếp cho bất kỳ cá nhân nào khác.",
+      "confidence": 0.9463273866666667
+    },
+    {
+      "bbox": [
+        [
+          270.0,
+          1298.0
+        ],
+        [
+          1140.0,
+          1298.0
+        ],
+        [
+          1140.0,
+          1344.0
+        ],
+        [
+          270.0,
+          1344.0
+        ]
+      ],
+      "text": "b) Quyét dinh cudng ché được ban hành ngay sau ngày hết thời hiệu của",
+      "confidence": 0.9176122226666666
+    },
+    {
+      "bbox": [
+        [
+          222.0,
+          1331.0
+        ],
+        [
+          1140.0,
+          1331.0
+        ],
+        [
+          1140.0,
+          1373.0
+        ],
+        [
+          222.0,
+          1373.0
+        ]
+      ],
+      "text": "quyết định cưỡng chế trích tiền từ tài khoản hoặc ngay sau ngày đủ điều kiện",
+      "confidence": 0.967344099375
+    },
+    {
+      "bbox": [
+        [
+          222.0,
+          1365.0
+        ],
+        [
+          1140.0,
+          1365.0
+        ],
+        [
+          1140.0,
+          1406.0
+        ],
+        [
+          222.0,
+          1406.0
+        ]
+      ],
+      "text": "chuyển biện pháp cưỡng chế theo quy định tại khoản 3 Điều 125 Luật Quản",
+      "confidence": 0.966419906
+    },
+    {
+      "bbox": [
+        [
+          223.0,
+          1401.0
+        ],
+        [
+          308.0,
+          1401.0
+        ],
+        [
+          308.0,
+          1434.0
+        ],
+        [
+          223.0,
+          1434.0
+        ]
+      ],
+      "text": "lý thuế.",
+      "confidence": 0.9530145600000001
+    },
+    {
+      "bbox": [
+        [
+          283.0,
+          1452.0
+        ],
+        [
+          1140.0,
+          1452.0
+        ],
+        [
+          1140.0,
+          1494.0
+        ],
+        [
+          283.0,
+          1494.0
+        ]
+      ],
+      "text": "¢) Quyết định cưỡng chế được gửi cho cá nhân bị cưỡng chế, cơ quan, tổ",
+      "confidence": 0.9602503475
+    },
+    {
+      "bbox": [
+        [
+          224.0,
+          1486.0
+        ],
+        [
+          1138.0,
+          1486.0
+        ],
+        [
+          1138.0,
+          1528.0
+        ],
+        [
+          224.0,
+          1528.0
+        ]
+      ],
+      "text": "chức quản lý tiền lương hoặc thu nhập của cá nhân bị cưỡng chế, các cơ quan,",
+      "confidence": 0.9680213370588235
+    },
+    {
+      "bbox": [
+        [
+          224.0,
+          1519.0
+        ],
+        [
+          1139.0,
+          1519.0
+        ],
+        [
+          1139.0,
+          1559.0
+        ],
+        [
+          224.0,
+          1559.0
+        ]
+      ],
+      "text": "tổ chức có liên quan ngay trong ngày ban hành quyết định cưỡng chế và được",
+      "confidence": 0.96848485
+    },
+    {
+      "bbox": [
+        [
+          225.0,
+          1554.0
+        ],
+        [
+          1079.0,
+          1554.0
+        ],
+        [
+          1079.0,
+          1589.0
+        ],
+        [
+          225.0,
+          1589.0
+        ]
+      ],
+      "text": "cập nhật trên trang thông tin điện tử của ngành thuế hoặc ngành hải quan.",
+      "confidence": 0.9683519993333333
+    }
+  ]
+}

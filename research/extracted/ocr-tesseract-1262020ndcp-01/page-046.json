@@ -1,0 +1,860 @@
+{
+  "document_id": "126/2020/NĐ-CP",
+  "source_file": "../../legal-sources/1262020ndcp/01.pdf",
+  "source_sha256": "310648e80396d267610946458e7fdd71ba87ef538b009d6574ed21514de3f7ca",
+  "page_count": 119,
+  "render_dpi": 150,
+  "engine": "Tesseract 5.5.4 (vie+eng; OEM 1; PSM 3)",
+  "review_status": "UNREVIEWED",
+  "tesseract_version": "5.5.4",
+  "languages": [
+    "vie",
+    "eng"
+  ],
+  "traineddata_sha256": {
+    "vie": "b6b49293d95d0b6dbd8780174627e82c75be957b6f4ed9862155540d6b00bb45",
+    "eng": "8280aed0782fe27257a68ea10fe7ef324ca0f8d85bd2fd145d1c2b560bcb66ba"
+  },
+  "ocr_engine_mode": 1,
+  "page_segmentation_mode": 3,
+  "thread_limit": 2,
+  "page": 46,
+  "lines": [
+    {
+      "bbox": [
+        [
+          529.0,
+          53.0
+        ],
+        [
+          718.0,
+          53.0
+        ],
+        [
+          718.0,
+          82.0
+        ],
+        [
+          529.0,
+          82.0
+        ]
+      ],
+      "text": "| 46",
+      "confidence": 0.9153903199999999
+    },
+    {
+      "bbox": [
+        [
+          276.0,
+          137.0
+        ],
+        [
+          1135.0,
+          137.0
+        ],
+        [
+          1135.0,
+          186.0
+        ],
+        [
+          276.0,
+          186.0
+        ]
+      ],
+      "text": "e) Người khai thuế không phản ánh hoặc phản ánh không đầy đủ, trung",
+      "confidence": 0.9608549778571429
+    },
+    {
+      "bbox": [
+        [
+          216.0,
+          171.0
+        ],
+        [
+          972.0,
+          171.0
+        ],
+        [
+          972.0,
+          230.0
+        ],
+        [
+          216.0,
+          230.0
+        ]
+      ],
+      "text": "thực, chính xác số liệu vê số kể toán dé xác định nghĩa vụ thuế.",
+      "confidence": 0.906750636
+    },
+    {
+      "bbox": [
+        [
+          275.0,
+          232.0
+        ],
+        [
+          1132.0,
+          232.0
+        ],
+        [
+          1132.0,
+          272.0
+        ],
+        [
+          275.0,
+          272.0
+        ]
+      ],
+      "text": "g) Cơ quan hải quan có đủ bằng chứng, căn cứ xác định về việc khai báo",
+      "confidence": 0.9659130141176471
+    },
+    {
+      "bbox": [
+        [
+          216.0,
+          268.0
+        ],
+        [
+          758.0,
+          268.0
+        ],
+        [
+          758.0,
+          299.0
+        ],
+        [
+          216.0,
+          299.0
+        ]
+      ],
+      "text": "trị giá không đúng với trị giá giao dịch thực tế.",
+      "confidence": 0.967356519090909
+    },
+    {
+      "bbox": [
+        [
+          274.0,
+          328.0
+        ],
+        [
+          1131.0,
+          328.0
+        ],
+        [
+          1131.0,
+          366.0
+        ],
+        [
+          274.0,
+          366.0
+        ]
+      ],
+      "text": "h) Giao dịch được thực hiện không đúng với bản chất kinh tế, không",
+      "confidence": 0.9639597757142857
+    },
+    {
+      "bbox": [
+        [
+          216.0,
+          356.0
+        ],
+        [
+          918.0,
+          356.0
+        ],
+        [
+          918.0,
+          394.0
+        ],
+        [
+          216.0,
+          394.0
+        ]
+      ],
+      "text": "đúng thực tế phát sinh, ảnh hưởng đến số tiền thuế phải nộp.",
+      "confidence": 0.9594514123076923
+    },
+    {
+      "bbox": [
+        [
+          275.0,
+          413.0
+        ],
+        [
+          975.0,
+          413.0
+        ],
+        [
+          975.0,
+          455.0
+        ],
+        [
+          275.0,
+          455.0
+        ]
+      ],
+      "text": "i) Người khai thuế không tự tính được số tiền thuế phải nộp.",
+      "confidence": 0.9616538961538461
+    },
+    {
+      "bbox": [
+        [
+          273.0,
+          477.0
+        ],
+        [
+          1130.0,
+          477.0
+        ],
+        [
+          1130.0,
+          514.0
+        ],
+        [
+          273.0,
+          514.0
+        ]
+      ],
+      "text": "k) Hàng hóa nhập khẩu thuộc đối tượng miễn thuế, không chịu thuế",
+      "confidence": 0.9650671984615384
+    },
+    {
+      "bbox": [
+        [
+          214.0,
+          510.0
+        ],
+        [
+          1130.0,
+          510.0
+        ],
+        [
+          1130.0,
+          549.0
+        ],
+        [
+          214.0,
+          549.0
+        ]
+      ],
+      "text": "nhưng người khai thuế tự ý thay đổi mục đích sử dụng hoặc chuyển tiêu thụ",
+      "confidence": 0.959997444375
+    },
+    {
+      "bbox": [
+        [
+          214.0,
+          544.0
+        ],
+        [
+          1130.0,
+          544.0
+        ],
+        [
+          1130.0,
+          586.0
+        ],
+        [
+          214.0,
+          586.0
+        ]
+      ],
+      "text": "nội địa không kê khai, nộp thuế trên tờ khai hải quan mới theo quy định của",
+      "confidence": 0.9675462035294118
+    },
+    {
+      "bbox": [
+        [
+          213.0,
+          580.0
+        ],
+        [
+          1130.0,
+          580.0
+        ],
+        [
+          1130.0,
+          618.0
+        ],
+        [
+          213.0,
+          618.0
+        ]
+      ],
+      "text": "pháp luật; hàng hóa là nguyên liệu, vật tư, linh kiện nhập khẩu hết thời hạn",
+      "confidence": 0.9659820075000001
+    },
+    {
+      "bbox": [
+        [
+          214.0,
+          609.0
+        ],
+        [
+          1129.0,
+          609.0
+        ],
+        [
+          1129.0,
+          652.0
+        ],
+        [
+          214.0,
+          652.0
+        ]
+      ],
+      "text": "được miễn thuế 05 năm kể từ khi bắt đầu sản xuất của dự án đặc biệt ưu đãi",
+      "confidence": 0.962204722631579
+    },
+    {
+      "bbox": [
+        [
+          213.0,
+          641.0
+        ],
+        [
+          1129.0,
+          641.0
+        ],
+        [
+          1129.0,
+          687.0
+        ],
+        [
+          213.0,
+          687.0
+        ]
+      ],
+      "text": "đầu tư hoặc dự án đầu tư vào địa bàn có điều kiện kinh tế xã hội đặc biệt khó",
+      "confidence": 0.9622497204999999
+    },
+    {
+      "bbox": [
+        [
+          213.0,
+          678.0
+        ],
+        [
+          1128.0,
+          678.0
+        ],
+        [
+          1128.0,
+          726.0
+        ],
+        [
+          213.0,
+          726.0
+        ]
+      ],
+      "text": "khăn nhưng người khai thuế không kê khai nộp thuế; hàng hóa xuất khẩu,",
+      "confidence": 0.9610952321428572
+    },
+    {
+      "bbox": [
+        [
+          212.0,
+          709.0
+        ],
+        [
+          1128.0,
+          709.0
+        ],
+        [
+          1128.0,
+          750.0
+        ],
+        [
+          212.0,
+          750.0
+        ]
+      ],
+      "text": "nhập khẩu tại chỗ không đúng quy định của pháp luật về thuế, pháp luật về",
+      "confidence": 0.96678408125
+    },
+    {
+      "bbox": [
+        [
+          212.0,
+          748.0
+        ],
+        [
+          615.0,
+          748.0
+        ],
+        [
+          615.0,
+          790.0
+        ],
+        [
+          212.0,
+          790.0
+        ]
+      ],
+      "text": "hải quan, pháp luật về thương mại.",
+      "confidence": 0.96271721
+    },
+    {
+      "bbox": [
+        [
+          271.0,
+          803.0
+        ],
+        [
+          1128.0,
+          803.0
+        ],
+        [
+          1128.0,
+          852.0
+        ],
+        [
+          271.0,
+          852.0
+        ]
+      ],
+      "text": "Trường hợp nguyên liệu, vật tư nhập khẩu để gia công, sản xuất xuất",
+      "confidence": 0.9674654078571429
+    },
+    {
+      "bbox": [
+        [
+          211.0,
+          836.0
+        ],
+        [
+          1127.0,
+          836.0
+        ],
+        [
+          1127.0,
+          874.0
+        ],
+        [
+          211.0,
+          874.0
+        ]
+      ],
+      "text": "khẩu chênh lệch âm (ít hơn) hoặc dương (nhiều hơn) so với số liệu đã báo cáo",
+      "confidence": 0.9672104376470588
+    },
+    {
+      "bbox": [
+        [
+          211.0,
+          878.0
+        ],
+        [
+          1128.0,
+          878.0
+        ],
+        [
+          1128.0,
+          918.0
+        ],
+        [
+          211.0,
+          918.0
+        ]
+      ],
+      "text": "cơ quan hải quan, cơ quan hải quan đã xác định được nguyên nhân dẫn đến",
+      "confidence": 0.968049306875
+    },
+    {
+      "bbox": [
+        [
+          211.0,
+          908.0
+        ],
+        [
+          1127.0,
+          908.0
+        ],
+        [
+          1127.0,
+          952.0
+        ],
+        [
+          211.0,
+          952.0
+        ]
+      ],
+      "text": "chênh lệch âm hoặc dương thì căn cứ hành vi vi phạm dé xử lý và thực hiện",
+      "confidence": 0.9616133027777778
+    },
+    {
+      "bbox": [
+        [
+          210.0,
+          941.0
+        ],
+        [
+          1126.0,
+          941.0
+        ],
+        [
+          1126.0,
+          981.0
+        ],
+        [
+          210.0,
+          981.0
+        ]
+      ],
+      "text": "ấn định thuế đối với toàn bộ phần chênh lệch bao gồm cả phần chênh lệch âm",
+      "confidence": 0.967024918235294
+    },
+    {
+      "bbox": [
+        [
+          210.0,
+          977.0
+        ],
+        [
+          535.0,
+          977.0
+        ],
+        [
+          535.0,
+          1018.0
+        ],
+        [
+          210.0,
+          1018.0
+        ]
+      ],
+      "text": "và phần chênh lệch dương. ;",
+      "confidence": 0.94004701
+    },
+    {
+      "bbox": [
+        [
+          269.0,
+          1042.0
+        ],
+        [
+          1125.0,
+          1042.0
+        ],
+        [
+          1125.0,
+          1078.0
+        ],
+        [
+          269.0,
+          1078.0
+        ]
+      ],
+      "text": "Trường hợp nguyên liệu, vật tư nhập khẩu chênh lệch âm hoặc dương so",
+      "confidence": 0.9659257292857144
+    },
+    {
+      "bbox": [
+        [
+          209.0,
+          1078.0
+        ],
+        [
+          1125.0,
+          1078.0
+        ],
+        [
+          1125.0,
+          1120.0
+        ],
+        [
+          209.0,
+          1120.0
+        ]
+      ],
+      "text": "với sô liệu đã báo cáo cơ quan hải quan nhưng cơ quan hải quan không xác",
+      "confidence": 0.9651862694117647
+    },
+    {
+      "bbox": [
+        [
+          209.0,
+          1111.0
+        ],
+        [
+          1124.0,
+          1111.0
+        ],
+        [
+          1124.0,
+          1155.0
+        ],
+        [
+          209.0,
+          1155.0
+        ]
+      ],
+      "text": "định được nguyên nhân dẫn đến chênh lệch, không xác định được hành vi vi",
+      "confidence": 0.9658645933333334
+    },
+    {
+      "bbox": [
+        [
+          207.0,
+          1147.0
+        ],
+        [
+          1124.0,
+          1147.0
+        ],
+        [
+          1124.0,
+          1184.0
+        ],
+        [
+          207.0,
+          1184.0
+        ]
+      ],
+      "text": "phạm thì cơ quan hải quản chỉ thực hiện ấn định thuế đối với số lượng nguyên",
+      "confidence": 0.9574976347058823
+    },
+    {
+      "bbox": [
+        [
+          208.0,
+          1183.0
+        ],
+        [
+          514.0,
+          1183.0
+        ],
+        [
+          514.0,
+          1211.0
+        ],
+        [
+          208.0,
+          1211.0
+        ]
+      ],
+      "text": "liệu, vật tư chênh lệch âm.",
+      "confidence": 0.9690117883333333
+    },
+    {
+      "bbox": [
+        [
+          266.0,
+          1239.0
+        ],
+        [
+          1123.0,
+          1239.0
+        ],
+        [
+          1123.0,
+          1280.0
+        ],
+        [
+          266.0,
+          1280.0
+        ]
+      ],
+      "text": "Đối với số lượng nguyên liệu, vật tư chênh lệch dương nhưng số nguyên",
+      "confidence": 0.9457009014285714
+    },
+    {
+      "bbox": [
+        [
+          206.0,
+          1278.0
+        ],
+        [
+          1123.0,
+          1278.0
+        ],
+        [
+          1123.0,
+          1322.0
+        ],
+        [
+          206.0,
+          1322.0
+        ]
+      ],
+      "text": "liệu, vật tư này van được doanh nghiệp sử dung đúng mục đích gia công, sản",
+      "confidence": 0.96459724875
+    },
+    {
+      "bbox": [
+        [
+          206.0,
+          1308.0
+        ],
+        [
+          1123.0,
+          1308.0
+        ],
+        [
+          1123.0,
+          1358.0
+        ],
+        [
+          206.0,
+          1358.0
+        ]
+      ],
+      "text": "xuất xuất khẩu thì cơ quan hải quan không thực hiện ấn định thuế. Doanh",
+      "confidence": 0.9552359006666667
+    },
+    {
+      "bbox": [
+        [
+          205.0,
+          1348.0
+        ],
+        [
+          1123.0,
+          1348.0
+        ],
+        [
+          1123.0,
+          1394.0
+        ],
+        [
+          205.0,
+          1394.0
+        ]
+      ],
+      "text": "nghiệp phải theo dõi quản lý đối với nguyên liệu, vật tư nhập khẩu để gia",
+      "confidence": 0.9640917356250001
+    },
+    {
+      "bbox": [
+        [
+          206.0,
+          1381.0
+        ],
+        [
+          1122.0,
+          1381.0
+        ],
+        [
+          1122.0,
+          1421.0
+        ],
+        [
+          206.0,
+          1421.0
+        ]
+      ],
+      "text": "công, sản xuất xuất khẩu như đối với nguyên liệu, vật tư nhập khẩu lần đầu",
+      "confidence": 0.96122755625
+    },
+    {
+      "bbox": [
+        [
+          205.0,
+          1415.0
+        ],
+        [
+          628.0,
+          1415.0
+        ],
+        [
+          628.0,
+          1451.0
+        ],
+        [
+          205.0,
+          1451.0
+        ]
+      ],
+      "text": "cho đến khi xuất khẩu hết sản phẩm.",
+      "confidence": 0.9613712125
+    },
+    {
+      "bbox": [
+        [
+          264.0,
+          1479.0
+        ],
+        [
+          1121.0,
+          1479.0
+        ],
+        [
+          1121.0,
+          1527.0
+        ],
+        [
+          264.0,
+          1527.0
+        ]
+      ],
+      "text": "Trường hợp hàng hóa nhập khẩu để gia công của doanh nghiệp trong",
+      "confidence": 0.9639356938461539
+    },
+    {
+      "bbox": [
+        [
+          204.0,
+          1515.0
+        ],
+        [
+          1121.0,
+          1515.0
+        ],
+        [
+          1121.0,
+          1557.0
+        ],
+        [
+          204.0,
+          1557.0
+        ]
+      ],
+      "text": "nước có sô lượng nguyên liệu, vật tư chênh lệch dương tại thời điểm đã hết",
+      "confidence": 0.964551445
+    },
+    {
+      "bbox": [
+        [
+          204.0,
+          1547.0
+        ],
+        [
+          1120.0,
+          1547.0
+        ],
+        [
+          1120.0,
+          1593.0
+        ],
+        [
+          204.0,
+          1593.0
+        ]
+      ],
+      "text": "thời hạn thực hiện hợp đồng gia công, bên nhận gia công đã quyết toán hợp",
+      "confidence": 0.9676415493749999
+    },
+    {
+      "bbox": [
+        [
+          205.0,
+          1579.0
+        ],
+        [
+          1119.0,
+          1579.0
+        ],
+        [
+          1119.0,
+          1620.0
+        ],
+        [
+          205.0,
+          1620.0
+        ]
+      ],
+      "text": "đồng gia công với bên đặt gia công thì doanh nghiệp phải tái xuất hoặc kê",
+      "confidence": 0.9656325575
+    }
+  ]
+}

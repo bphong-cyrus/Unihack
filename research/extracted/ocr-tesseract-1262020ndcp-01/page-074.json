@@ -1,0 +1,970 @@
+{
+  "document_id": "126/2020/NĐ-CP",
+  "source_file": "../../legal-sources/1262020ndcp/01.pdf",
+  "source_sha256": "310648e80396d267610946458e7fdd71ba87ef538b009d6574ed21514de3f7ca",
+  "page_count": 119,
+  "render_dpi": 150,
+  "engine": "Tesseract 5.5.4 (vie+eng; OEM 1; PSM 3)",
+  "review_status": "UNREVIEWED",
+  "tesseract_version": "5.5.4",
+  "languages": [
+    "vie",
+    "eng"
+  ],
+  "traineddata_sha256": {
+    "vie": "b6b49293d95d0b6dbd8780174627e82c75be957b6f4ed9862155540d6b00bb45",
+    "eng": "8280aed0782fe27257a68ea10fe7ef324ca0f8d85bd2fd145d1c2b560bcb66ba"
+  },
+  "ocr_engine_mode": 1,
+  "page_segmentation_mode": 3,
+  "thread_limit": 2,
+  "page": 74,
+  "lines": [
+    {
+      "bbox": [
+        [
+          683.0,
+          58.0
+        ],
+        [
+          710.0,
+          58.0
+        ],
+        [
+          710.0,
+          79.0
+        ],
+        [
+          683.0,
+          79.0
+        ]
+      ],
+      "text": "74",
+      "confidence": 0.90330338
+    },
+    {
+      "bbox": [
+        [
+          270.0,
+          124.0
+        ],
+        [
+          1127.0,
+          124.0
+        ],
+        [
+          1127.0,
+          179.0
+        ],
+        [
+          270.0,
+          179.0
+        ]
+      ],
+      "text": "c) Trường hợp cá nhân có mua hàng hóa, dịch vụ của nhà cung cấp nước",
+      "confidence": 0.9617480700000001
+    },
+    {
+      "bbox": [
+        [
+          212.0,
+          163.0
+        ],
+        [
+          1130.0,
+          163.0
+        ],
+        [
+          1130.0,
+          214.0
+        ],
+        [
+          212.0,
+          214.0
+        ]
+      ],
+      "text": "ngoài có thanh toán bằng thẻ hoặc các hình thức khác mà ngân hàng thương",
+      "confidence": 0.9683229413333333
+    },
+    {
+      "bbox": [
+        [
+          213.0,
+          196.0
+        ],
+        [
+          1130.0,
+          196.0
+        ],
+        [
+          1130.0,
+          251.0
+        ],
+        [
+          213.0,
+          251.0
+        ]
+      ],
+      "text": "mại, tổ chức cung ứng dịch vụ trung gian thanh toán không thể thực hiện khâu",
+      "confidence": 0.9643744649999999
+    },
+    {
+      "bbox": [
+        [
+          213.0,
+          230.0
+        ],
+        [
+          1133.0,
+          230.0
+        ],
+        [
+          1133.0,
+          279.0
+        ],
+        [
+          213.0,
+          279.0
+        ]
+      ],
+      "text": "trừ, nộp thay thì ngân hàng thương mại, tổ chức cung ứng dịch vụ trung gian",
+      "confidence": 0.9654293724999999
+    },
+    {
+      "bbox": [
+        [
+          214.0,
+          263.0
+        ],
+        [
+          1133.0,
+          263.0
+        ],
+        [
+          1133.0,
+          308.0
+        ],
+        [
+          214.0,
+          308.0
+        ]
+      ],
+      "text": "thanh toán có trách nhiệm theo dõi số tiền chuyên cho các nhà cung cap ở",
+      "confidence": 0.951022883125
+    },
+    {
+      "bbox": [
+        [
+          215.0,
+          297.0
+        ],
+        [
+          1133.0,
+          297.0
+        ],
+        [
+          1133.0,
+          346.0
+        ],
+        [
+          215.0,
+          346.0
+        ]
+      ],
+      "text": "nước ngoài và định kỳ hàng tháng gửi về Tổng cục Thuế theo mẫu do Bộ",
+      "confidence": 0.96807854125
+    },
+    {
+      "bbox": [
+        [
+          216.0,
+          342.0
+        ],
+        [
+          574.0,
+          342.0
+        ],
+        [
+          574.0,
+          380.0
+        ],
+        [
+          216.0,
+          380.0
+        ]
+      ],
+      "text": "trưởng Bộ Tài chính ban hành.",
+      "confidence": 0.9672478983333334
+    },
+    {
+      "bbox": [
+        [
+          277.0,
+          376.0
+        ],
+        [
+          1135.0,
+          376.0
+        ],
+        [
+          1135.0,
+          421.0
+        ],
+        [
+          277.0,
+          421.0
+        ]
+      ],
+      "text": "d) Hàng tháng ngân hàng thương mại, tổ chức cung ứng dịch vụ trung",
+      "confidence": 0.9650413564285714
+    },
+    {
+      "bbox": [
+        [
+          219.0,
+          407.0
+        ],
+        [
+          1136.0,
+          407.0
+        ],
+        [
+          1136.0,
+          457.0
+        ],
+        [
+          219.0,
+          457.0
+        ]
+      ],
+      "text": "gian thanh toán có trách nhiệm kê khai, nộp vào ngân sách nhà nước sô tiên",
+      "confidence": 0.9676737081250001
+    },
+    {
+      "bbox": [
+        [
+          220.0,
+          439.0
+        ],
+        [
+          1136.0,
+          439.0
+        ],
+        [
+          1136.0,
+          486.0
+        ],
+        [
+          220.0,
+          486.0
+        ]
+      ],
+      "text": "đã khấu trừ, nộp thay nghĩa vụ thuế phải nộp của nhà cung cấp ở nước ngoài",
+      "confidence": 0.9667275952941177
+    },
+    {
+      "bbox": [
+        [
+          219.0,
+          484.0
+        ],
+        [
+          770.0,
+          484.0
+        ],
+        [
+          770.0,
+          519.0
+        ],
+        [
+          219.0,
+          519.0
+        ]
+      ],
+      "text": "theo mẫu do Bộ trưởng Bộ Tài chính ban hành.",
+      "confidence": 0.968595648
+    },
+    {
+      "bbox": [
+        [
+          281.0,
+          514.0
+        ],
+        [
+          1137.0,
+          514.0
+        ],
+        [
+          1137.0,
+          559.0
+        ],
+        [
+          281.0,
+          559.0
+        ]
+      ],
+      "text": "4. Trích tiền để nộp thuế từ tài khoản của người nộp thuế, phong tỏa tài",
+      "confidence": 0.9638624706250001
+    },
+    {
+      "bbox": [
+        [
+          221.0,
+          544.0
+        ],
+        [
+          1139.0,
+          544.0
+        ],
+        [
+          1139.0,
+          596.0
+        ],
+        [
+          221.0,
+          596.0
+        ]
+      ],
+      "text": "khoản của người nộp thuế bị cưỡng chế thi hành quyết định hành chính về",
+      "confidence": 0.9630655313333334
+    },
+    {
+      "bbox": [
+        [
+          223.0,
+          583.0
+        ],
+        [
+          1139.0,
+          583.0
+        ],
+        [
+          1139.0,
+          632.0
+        ],
+        [
+          223.0,
+          632.0
+        ]
+      ],
+      "text": "quản lý thuế theo đề nghị của cơ quan quản lý thuế thực hiện theo quy định tại",
+      "confidence": 0.9681130983333334
+    },
+    {
+      "bbox": [
+        [
+          223.0,
+          629.0
+        ],
+        [
+          598.0,
+          629.0
+        ],
+        [
+          598.0,
+          660.0
+        ],
+        [
+          223.0,
+          660.0
+        ]
+      ],
+      "text": "khoản 4 Điều 31 Nghị định này.",
+      "confidence": 0.9677940599999999
+    },
+    {
+      "bbox": [
+        [
+          285.0,
+          655.0
+        ],
+        [
+          1141.0,
+          655.0
+        ],
+        [
+          1141.0,
+          703.0
+        ],
+        [
+          285.0,
+          703.0
+        ]
+      ],
+      "text": "5. Trường hợp người nộp thuế có bảo lãnh về tiền thuế, tiền chậm nộp,",
+      "confidence": 0.9674391933333333
+    },
+    {
+      "bbox": [
+        [
+          224.0,
+          693.0
+        ],
+        [
+          1143.0,
+          693.0
+        ],
+        [
+          1143.0,
+          739.0
+        ],
+        [
+          224.0,
+          739.0
+        ]
+      ],
+      "text": "tiền phạt và các khoản thu khác thuộc ngân sách nhà nước theo quy định của",
+      "confidence": 0.9687241225
+    },
+    {
+      "bbox": [
+        [
+          225.0,
+          726.0
+        ],
+        [
+          1144.0,
+          726.0
+        ],
+        [
+          1144.0,
+          771.0
+        ],
+        [
+          225.0,
+          771.0
+        ]
+      ],
+      "text": "Luật Quản lý thuế nhưng người nộp thuế không nộp đúng thời hạn thì ngân",
+      "confidence": 0.9674173126666666
+    },
+    {
+      "bbox": [
+        [
+          227.0,
+          756.0
+        ],
+        [
+          1146.0,
+          756.0
+        ],
+        [
+          1146.0,
+          806.0
+        ],
+        [
+          227.0,
+          806.0
+        ]
+      ],
+      "text": "hàng bảo lãnh phải chịu trách nhiệm nộp tiền thuế, tiền chậm nộp, tiền phạt và",
+      "confidence": 0.96415620375
+    },
+    {
+      "bbox": [
+        [
+          228.0,
+          788.0
+        ],
+        [
+          1146.0,
+          788.0
+        ],
+        [
+          1146.0,
+          834.0
+        ],
+        [
+          228.0,
+          834.0
+        ]
+      ],
+      "text": "các khoản thu khác thuộc ngân sách nhà nước thay cho người nộp thuế trong",
+      "confidence": 0.9681351886666667
+    },
+    {
+      "bbox": [
+        [
+          228.0,
+          820.0
+        ],
+        [
+          1147.0,
+          820.0
+        ],
+        [
+          1147.0,
+          873.0
+        ],
+        [
+          228.0,
+          873.0
+        ]
+      ],
+      "text": "phạm vi bảo lãnh. Trường hợp quá 90 ngày kể từ ngày hết thời hạn nộp tiền",
+      "confidence": 0.9545015929411765
+    },
+    {
+      "bbox": [
+        [
+          229.0,
+          858.0
+        ],
+        [
+          1147.0,
+          858.0
+        ],
+        [
+          1147.0,
+          904.0
+        ],
+        [
+          229.0,
+          904.0
+        ]
+      ],
+      "text": "thuế nợ theo văn ban chap thuận của cơ quan quản lý thuế mà người nộp thuê",
+      "confidence": 0.9607129129411766
+    },
+    {
+      "bbox": [
+        [
+          231.0,
+          889.0
+        ],
+        [
+          1147.0,
+          889.0
+        ],
+        [
+          1147.0,
+          946.0
+        ],
+        [
+          231.0,
+          946.0
+        ]
+      ],
+      "text": "chưa nộp đủ vào ngân sách nhà nước thì bên bảo lãnh bị cưỡng chế đối với số",
+      "confidence": 0.969120408888889
+    },
+    {
+      "bbox": [
+        [
+          231.0,
+          931.0
+        ],
+        [
+          994.0,
+          931.0
+        ],
+        [
+          994.0,
+          971.0
+        ],
+        [
+          231.0,
+          971.0
+        ]
+      ],
+      "text": "tiền trong phạm vi bảo lãnh theo quy định của Luật Quản lý thuê.",
+      "confidence": 0.9675104785714287
+    },
+    {
+      "bbox": [
+        [
+          292.0,
+          963.0
+        ],
+        [
+          1149.0,
+          963.0
+        ],
+        [
+          1149.0,
+          1017.0
+        ],
+        [
+          292.0,
+          1017.0
+        ]
+      ],
+      "text": "6. Hàng hóa nhập khẩu thuộc đối tượng miễn thuế, không chịu thuế,",
+      "confidence": 0.9658712892307691
+    },
+    {
+      "bbox": [
+        [
+          233.0,
+          1003.0
+        ],
+        [
+          1151.0,
+          1003.0
+        ],
+        [
+          1151.0,
+          1048.0
+        ],
+        [
+          233.0,
+          1048.0
+        ]
+      ],
+      "text": "người nộp thuê cầm có, thế chấp dé làm tài sản bảo đảm các khoản vay nhưng",
+      "confidence": 0.9560846976470588
+    },
+    {
+      "bbox": [
+        [
+          233.0,
+          1035.0
+        ],
+        [
+          1151.0,
+          1035.0
+        ],
+        [
+          1151.0,
+          1089.0
+        ],
+        [
+          233.0,
+          1089.0
+        ]
+      ],
+      "text": "ngân hàng thương mại phải xử lý tài sản cầm cố, thế chấp theo quy định của",
+      "confidence": 0.9570969382352941
+    },
+    {
+      "bbox": [
+        [
+          234.0,
+          1065.0
+        ],
+        [
+          1152.0,
+          1065.0
+        ],
+        [
+          1152.0,
+          1115.0
+        ],
+        [
+          234.0,
+          1115.0
+        ]
+      ],
+      "text": "pháp luật đề thu hôi nợ thì ngân hàng thương mại cung cap thông tin về hàng",
+      "confidence": 0.9574928070588236
+    },
+    {
+      "bbox": [
+        [
+          235.0,
+          1101.0
+        ],
+        [
+          1153.0,
+          1101.0
+        ],
+        [
+          1153.0,
+          1149.0
+        ],
+        [
+          235.0,
+          1149.0
+        ]
+      ],
+      "text": "hóa cầm cố, thế chấp cho cơ quan hải quan để thực hiện ấn định thuế, ngân",
+      "confidence": 0.9566212111764706
+    },
+    {
+      "bbox": [
+        [
+          235.0,
+          1130.0
+        ],
+        [
+          1155.0,
+          1130.0
+        ],
+        [
+          1155.0,
+          1191.0
+        ],
+        [
+          235.0,
+          1191.0
+        ]
+      ],
+      "text": "hàng thương mại có trách nhiệm nộp thuê thay cho người nộp thuế theo quyết",
+      "confidence": 0.9673064613333332
+    },
+    {
+      "bbox": [
+        [
+          237.0,
+          1181.0
+        ],
+        [
+          700.0,
+          1181.0
+        ],
+        [
+          700.0,
+          1214.0
+        ],
+        [
+          237.0,
+          1214.0
+        ]
+      ],
+      "text": "định ấn định thuế của cơ quan hải quan.",
+      "confidence": 0.9684344388888888
+    },
+    {
+      "bbox": [
+        [
+          381.0,
+          1224.0
+        ],
+        [
+          1019.0,
+          1224.0
+        ],
+        [
+          1019.0,
+          1265.0
+        ],
+        [
+          381.0,
+          1265.0
+        ]
+      ],
+      "text": "Si Chương VN NN",
+      "confidence": 0.03202873
+    },
+    {
+      "bbox": [
+        [
+          331.0,
+          1251.0
+        ],
+        [
+          1065.0,
+          1251.0
+        ],
+        [
+          1065.0,
+          1294.0
+        ],
+        [
+          331.0,
+          1294.0
+        ]
+      ],
+      "text": "CƯỠNG CHE THI HANH QUYẾT ĐỊNH HÀNH CHÍNH",
+      "confidence": 0.92608592875
+    },
+    {
+      "bbox": [
+        [
+          563.0,
+          1291.0
+        ],
+        [
+          832.0,
+          1291.0
+        ],
+        [
+          832.0,
+          1320.0
+        ],
+        [
+          563.0,
+          1320.0
+        ]
+      ],
+      "text": "VE QUAN LÝ THUÊ",
+      "confidence": 0.857379115
+    },
+    {
+      "bbox": [
+        [
+          300.0,
+          1325.0
+        ],
+        [
+          1159.0,
+          1325.0
+        ],
+        [
+          1159.0,
+          1366.0
+        ],
+        [
+          300.0,
+          1366.0
+        ]
+      ],
+      "text": "Điều 31. Cưỡng chế bằng biện pháp trích tiền từ tài khoản, phong",
+      "confidence": 0.9622846092307692
+    },
+    {
+      "bbox": [
+        [
+          242.0,
+          1356.0
+        ],
+        [
+          1159.0,
+          1356.0
+        ],
+        [
+          1159.0,
+          1398.0
+        ],
+        [
+          242.0,
+          1398.0
+        ]
+      ],
+      "text": "tba tài khoản của người nộp thuế bị cưỡng chế thi hành quyết định hành",
+      "confidence": 0.9437574806666666
+    },
+    {
+      "bbox": [
+        [
+          243.0,
+          1399.0
+        ],
+        [
+          510.0,
+          1399.0
+        ],
+        [
+          510.0,
+          1434.0
+        ],
+        [
+          243.0,
+          1434.0
+        ]
+      ],
+      "text": "chính về quản lý thuế",
+      "confidence": 0.9677946460000001
+    },
+    {
+      "bbox": [
+        [
+          306.0,
+          1443.0
+        ],
+        [
+          552.0,
+          1443.0
+        ],
+        [
+          552.0,
+          1474.0
+        ],
+        [
+          306.0,
+          1474.0
+        ]
+      ],
+      "text": "1. Đối tượng áp dụng",
+      "confidence": 0.9467516479999999
+    },
+    {
+      "bbox": [
+        [
+          304.0,
+          1470.0
+        ],
+        [
+          1161.0,
+          1470.0
+        ],
+        [
+          1161.0,
+          1522.0
+        ],
+        [
+          304.0,
+          1522.0
+        ]
+      ],
+      "text": "Biện pháp trích tiền từ tài khoản, phong tỏa tài khoản áp dụng đối với",
+      "confidence": 0.9684827473333333
+    },
+    {
+      "bbox": [
+        [
+          246.0,
+          1506.0
+        ],
+        [
+          1162.0,
+          1506.0
+        ],
+        [
+          1162.0,
+          1554.0
+        ],
+        [
+          246.0,
+          1554.0
+        ]
+      ],
+      "text": "người nộp thuế bị cưỡng chế thi hành quyết định hành chính về quản lý thuê",
+      "confidence": 0.960999928125
+    },
+    {
+      "bbox": [
+        [
+          247.0,
+          1543.0
+        ],
+        [
+          1162.0,
+          1543.0
+        ],
+        [
+          1162.0,
+          1582.0
+        ],
+        [
+          247.0,
+          1582.0
+        ]
+      ],
+      "text": "mở tài khoản tại Kho bạo Nhà nước, ngân hàng thương mai và to chức tin",
+      "confidence": 0.96017059
+    },
+    {
+      "bbox": [
+        [
+          248.0,
+          1593.0
+        ],
+        [
+          374.0,
+          1593.0
+        ],
+        [
+          374.0,
+          1621.0
+        ],
+        [
+          248.0,
+          1621.0
+        ]
+      ],
+      "text": "dụng khác.",
+      "confidence": 0.965828245
+    }
+  ]
+}
