@@ -5,3 +5,5 @@
 `../KIEM_TRA_TRICH_XUAT.json` ghi số ký tự trích xuất tại trang đầu, giữa và cuối từng PDF bằng pypdf. Đây chỉ là phép lấy mẫu kỹ thuật, không phải kết quả OCR hay kiểm tra đầy đủ toàn văn. Tệp RAR và RTF không nằm trong kết quả này. Cần OCR tiếng Việt và so sánh với ảnh gốc cho những PDF không có lớp chữ.
 
 `122019ttbct-review-queue.json` chia các đoạn thành 126 mục ứng viên theo số khoản; `source_paragraph_indexes` là vị trí không tính lại theo một điều trong tệp candidates gốc (bắt đầu từ 0). Mục `preamble` là phần dẫn trước khoản đầu tiên, `0` là điều không phát hiện khoản đánh số. Nhãn, điểm, bảng, phụ lục, sửa đổi và nội dung giáp ranh vẫn cần soát thủ công; tất cả mục đều `UNREVIEWED` và không tự động nạp vào API.
+
+Để tạo trang đối chiếu chỉ đọc cho một trang OCR đã có, chạy `python3 ai-service/ocr_review.py research/extracted/ocr-1282020ndcp/page-001.json --out research/extracted/ocr-1282020ndcp/page-001-review.html`, sau đó mở HTML trong trình duyệt. Công cụ kiểm tra SHA-256 PDF trước khi tạo trang; điểm OCR không phải xác nhận nội dung. Nếu trình duyệt chặn PDF ở URL `file:`, có thể dùng máy chủ HTTP cục bộ cho riêng thư mục dự án trong lúc rà soát.
