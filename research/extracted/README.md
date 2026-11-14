@@ -17,3 +17,5 @@ Với Thông tư 11/2020/TT-BCT, `ocr-112020ttbct-01/` và `ocr-112020ttbct-02/`
 `542014qh13-heading-candidates.json` là chỉ mục tự động các dòng có dạng tiêu đề điều trong OCR Luật Hải quan 2014, giữ số trang và chỉ số dòng bắt đầu từ 0 để đối chiếu. Công cụ `python3 ai-service/ocr_headings.py research/extracted/ocr-542014qh13 --out <tệp-mới.json>` chỉ xử lý bộ trang đầy đủ và khớp hash. Việc tìm kiếm bỏ qua khác biệt dấu nhưng giữ nguyên dòng OCR gốc. Chỉ mục hiện có ứng viên cho các số 1–104; điều này không chứng minh các vị trí đúng hay đầy đủ. Đây không phải phân đoạn điều khoản đã duyệt: OCR có thể bỏ sót, nhận nhầm tiêu đề hoặc coi điều được sửa đổi trong nội dung là điều của văn bản.
 
 `1072016qh13-heading-candidates.json` tương tự cho Luật Thuế xuất khẩu, thuế nhập khẩu 2016: có 22 dòng ứng viên mang số 1–22, chưa được đối chiếu bản gốc hoặc rà soát hiệu lực. Không dùng chỉ mục này như nội dung luật đã duyệt.
+
+`312018ndcp-heading-candidates.json` là chỉ mục tương tự cho Nghị định 31/2018/NĐ-CP. Có 33 dòng ứng viên; trong dải số 1–35, công cụ chưa nhận ra số 7 và 8. Kết quả có thể thiếu hoặc nhầm dòng và chưa được đối chiếu bản gốc hay rà soát hiệu lực.
