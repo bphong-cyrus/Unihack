@@ -1,0 +1,49 @@
+{
+  "document_id": "111/2021/NĐ-CP",
+  "source_sha256": "28f73262bc40d1d463fa3c76f66a8a5ea34a841f05829845d79646590eb62fb6",
+  "page_count": 22,
+  "review_status": "UNREVIEWED",
+  "candidates": [
+    {
+      "article": "1",
+      "page": 1,
+      "line_index": 45,
+      "text": "Điều 1. Sửa đổi, bổ sung một số điều Nghị định số 43/2017/NĐ-CP",
+      "confidence": 0.4905296132390418,
+      "record_file": "page-001.json"
+    },
+    {
+      "article": "24",
+      "page": 5,
+      "line_index": 28,
+      "text": "'Điều 24. Điều khoản chuyển tiếp",
+      "confidence": 0.7785895015543656,
+      "record_file": "page-005.json"
+    },
+    {
+      "article": "2",
+      "page": 5,
+      "line_index": 56,
+      "text": "Điều 2. Bãi bỏ và",
+      "confidence": 0.5561963931778099,
+      "record_file": "page-005.json"
+    },
+    {
+      "article": "3",
+      "page": 5,
+      "line_index": 72,
+      "text": "Điều 3. Hiệu Iực thi hành",
+      "confidence": 0.8059189112670383,
+      "record_file": "page-005.json"
+    },
+    {
+      "article": "4",
+      "page": 6,
+      "line_index": 0,
+      "text": "Điều 4. Trách nhiệm thi hành",
+      "confidence": 0.771602642053964,
+      "record_file": "page-006.json"
+    }
+  ],
+  "limitations": "Heuristic headings may be missing or refer to amendments; verify against original pages."
+}
