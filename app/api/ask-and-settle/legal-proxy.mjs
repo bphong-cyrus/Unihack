@@ -33,12 +33,14 @@ export async function forwardLegalQuestion(body, url, fetchImpl = fetch) {
     typeof item.excerpt_similarity === 'number' && Number.isFinite(item.excerpt_similarity) &&
     item.excerpt_similarity >= 0 && item.excerpt_similarity <= 1 &&
     (item.source_url == null || typeof item.source_url === 'string') &&
+    (item.source_sha256 == null || typeof item.source_sha256 === 'string') &&
     (item.raw_text == null || typeof item.raw_text === 'string') &&
     ['PASS', 'FAIL'].includes(item.status);
   if (!result || result.question_id !== body.questionId || typeof result.answer !== 'string' ||
       !Array.isArray(result.citations) || typeof result.validation?.passed !== 'boolean' ||
       !result.citations.every(validCitation) ||
       !Number.isFinite(result.validation?.overall_score) || result.validation.overall_score < 0 || result.validation.overall_score > 100 ||
+      (result.validation.snapshot_sha256 !== undefined && typeof result.validation.snapshot_sha256 !== 'string') ||
       !Array.isArray(result.validation?.citation_checks) || !result.validation.citation_checks.every(validCheck) ||
       result.citations.length !== result.validation.citation_checks.length ||
       !result.citations.every((citation, index) => {

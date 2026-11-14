@@ -34,10 +34,12 @@ test('memo includes the cited point when present', () => {
 test('memo retains declared source and date for verification', () => {
   const html = buildFormalMemoHtml('Câu hỏi', { content: 'Trả lời', citations: [
     { document: 'A', article: '1', clause: '2', excerpt: 'Trích dẫn' }
-  ], validation: { as_of: '2023-01-01', snapshot_id: 'snapshot-1', citation_checks: [
-    { source_url: 'https://example.gov.vn/source?a=1&b=2' }
+  ], validation: { as_of: '2023-01-01', snapshot_id: 'snapshot-1', snapshot_sha256: 'abc123', citation_checks: [
+    { source_url: 'https://example.gov.vn/source?a=1&b=2', source_sha256: 'def456' }
   ] } });
   assert.match(html, /2023-01-01/);
   assert.match(html, /snapshot-1/);
+  assert.match(html, /abc123/);
+  assert.match(html, /def456/);
   assert.match(html, /https:\/\/example.gov.vn\/source\?a=1&amp;b=2/);
 });

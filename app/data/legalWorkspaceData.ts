@@ -32,6 +32,7 @@ export interface ValidationPayload {
   citation_checks: CitationCheck[];
   fail_reason?: string;
   snapshot_id?: string;
+  snapshot_sha256?: string;
   as_of?: string;
 }
 
@@ -201,6 +202,10 @@ export function buildFormalMemoHtml(
                 assistantMsg?.validation?.citation_checks?.[idx]?.source_url
                   ? `<br/>Nguồn được khai báo: ${escapeHtml(assistantMsg.validation.citation_checks[idx].source_url as string)}`
                   : ""
+              }${
+                assistantMsg?.validation?.citation_checks?.[idx]?.source_sha256
+                  ? `<br/>SHA-256 tệp nguồn: ${escapeHtml(assistantMsg.validation.citation_checks[idx].source_sha256 as string)}`
+                  : ""
               }</p>`
           )
           .join("")
@@ -216,6 +221,7 @@ export function buildFormalMemoHtml(
       <div style="font-size:11px;color:#64748b;margin-top:2px;">Mã tham chiếu: ${escapeHtml(proofCode)}</div>
       ${assistantMsg?.validation?.as_of ? `<div>Ngày tra cứu: ${escapeHtml(assistantMsg.validation.as_of)}</div>` : ""}
       ${assistantMsg?.validation?.snapshot_id ? `<div>Snapshot: ${escapeHtml(assistantMsg.validation.snapshot_id)}</div>` : ""}
+      ${assistantMsg?.validation?.snapshot_sha256 ? `<div>SHA-256 manifest: ${escapeHtml(assistantMsg.validation.snapshot_sha256)}</div>` : ""}
     </div>
     <p><strong>I. Tình huống / Yêu cầu tra cứu:</strong><br/>${escapeHtml(question || "Tra cứu nghiệp vụ Xuất Nhập Khẩu")}</p>
     <p><strong>II. Nội dung tra cứu:</strong><br/>${escapeHtml(answer).replace(/\n/g, "<br/>")}</p>

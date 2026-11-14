@@ -69,6 +69,8 @@ test('rejects unsafe optional fields and inconsistent citation checks', async ()
   for (const response of [
     { ...base, validation: { ...base.validation, citation_checks: [{ ...check, source_url: {} }] } },
     { ...base, validation: { ...base.validation, citation_checks: [{ ...check, raw_text: {} }] } },
+    { ...base, validation: { ...base.validation, citation_checks: [{ ...check, source_sha256: {} }] } },
+    { ...base, validation: { ...base.validation, snapshot_sha256: {} } },
     { ...base, validation: { ...base.validation, citation_checks: [{ ...check, document: 'OTHER' }] } },
     { ...base, validation: { ...base.validation, citation_checks: [{ ...check, clause: '2' }] } },
     { ...base, validation: { ...base.validation, citation_checks: [{ ...check, point: 'b' }] } },
