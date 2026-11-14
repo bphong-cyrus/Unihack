@@ -28,7 +28,7 @@ class SnapshotApiTests(unittest.TestCase):
             'provisions': [{'article': '1', 'clause': '1', 'point': '', 'text': self.text,
                             'effective_from': '2022-01-01', 'effective_until': None,
                             'reviewed_by': 'fixture', 'reviewed_at': '2025-01-01T00:00:00+00:00',
-                            'status_evidence_url': 'https://example.gov.vn/status'}]}]}, ensure_ascii=False))
+                            'status_evidence_url': 'https://example.gov.vn/status', 'verified_through': '2025-01-01'}]}]}, ensure_ascii=False))
         patcher = patch.dict(os.environ, {'ASKPAY_CORPUS_MANIFEST': str(self.manifest)})
         patcher.start()
         self.addCleanup(patcher.stop)

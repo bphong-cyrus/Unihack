@@ -9,6 +9,7 @@ from hashlib import sha256
 import json
 from pathlib import Path
 from urllib.parse import urlparse
+from zoneinfo import ZoneInfo
 from types import MappingProxyType
 
 
@@ -64,6 +65,7 @@ class Provision:
     reviewed_by: str | None
     reviewed_at: str | None
     status_evidence_url: str | None
+    verified_through: date | None
     source_url: str
     source_sha256: str
 
@@ -97,7 +99,8 @@ class CorpusSnapshot:
     def lookup(self, document_id, article, clause, point, as_of):
         key = (_doc_id(document_id), str(article).strip(), str(clause).strip(), str(point).strip())
         for item in self._index.get(key, ()):
-            if (item.reviewed and item.effective_from <= as_of
+            if (item.reviewed and item.verified_through is not None and as_of <= item.verified_through
+                    and item.effective_from <= as_of
                     and (item.effective_until is None or as_of < item.effective_until)):
                 return item
         return None
@@ -137,16 +140,19 @@ def _read_provision(record, document_id, title, source_url, digest):
     end = _date(record['effective_until']) if record.get('effective_until') is not None else None
     if end is not None and end <= start:
         raise CorpusError('effective_until must be later than effective_from')
-    review = [record.get('reviewed_by'), record.get('reviewed_at'), record.get('status_evidence_url')]
+    review = [record.get('reviewed_by'), record.get('reviewed_at'), record.get('status_evidence_url'), record.get('verified_through')]
     if any(value is not None for value in review):
         reviewer = _required_string(record, 'reviewed_by')
         reviewed_at = _required_string(record, 'reviewed_at')
-        _timestamp(reviewed_at)
+        review_time = _timestamp(reviewed_at)
+        verified_through = _date(record.get('verified_through'))
+        if verified_through > review_time.astimezone(ZoneInfo('Asia/Ho_Chi_Minh')).date():
+            raise CorpusError('verified_through cannot be later than review date')
         evidence = _https(_required_string(record, 'status_evidence_url'))
     else:
-        reviewer = reviewed_at = evidence = None
+        reviewer = reviewed_at = evidence = verified_through = None
     return Provision(document_id, title, article, clause, point.strip(), _required_string(record, 'text'),
-                     start, end, reviewer, reviewed_at, evidence, source_url, digest)
+                     start, end, reviewer, reviewed_at, evidence, verified_through, source_url, digest)
 
 
 def load_snapshot(manifest_path):

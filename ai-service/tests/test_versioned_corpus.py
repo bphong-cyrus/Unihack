@@ -30,11 +30,11 @@ class VersionedCorpusContract(unittest.TestCase):
                     {'article': '1', 'clause': '1', 'point': '', 'text': 'Văn bản cũ',
                      'effective_from': '2020-01-01', 'effective_until': '2022-01-01',
                      'reviewed_by': 'reviewer', 'reviewed_at': '2025-01-01T00:00:00+00:00',
-                     'status_evidence_url': 'https://example.gov.vn/status'},
+                     'status_evidence_url': 'https://example.gov.vn/status', 'verified_through': '2025-01-01'},
                     {'article': '1', 'clause': '1', 'point': '', 'text': 'Văn bản mới',
                      'effective_from': '2022-01-01', 'effective_until': None,
                      'reviewed_by': 'reviewer', 'reviewed_at': '2025-01-01T00:00:00+00:00',
-                     'status_evidence_url': 'https://example.gov.vn/status'},
+                     'status_evidence_url': 'https://example.gov.vn/status', 'verified_through': '2025-01-01'},
                     {'article': '1', 'clause': '2', 'point': '', 'text': 'Khoản khác',
                      'effective_from': '2020-01-01', 'effective_until': None,
                      'reviewed_by': None, 'reviewed_at': None,
@@ -59,6 +59,21 @@ class VersionedCorpusContract(unittest.TestCase):
         self.assertEqual(corpus.document_count, 1)
         self.assertEqual(corpus.provision_count, 3)
         self.assertEqual(corpus.reviewed_count, 2)
+
+    def test_review_does_not_cover_dates_after_verified_through(self):
+        corpus = self.load()
+        self.assertIsNotNone(corpus.lookup('TEST/2020', '1', '1', '', date(2025, 1, 1)))
+        self.assertIsNone(corpus.lookup('TEST/2020', '1', '1', '', date(2025, 1, 2)))
+
+    def test_review_without_verified_through_is_rejected(self):
+        del self.manifest['documents'][0]['provisions'][0]['verified_through']
+        with self.assertRaises(CorpusError):
+            self.load()
+
+    def test_review_cannot_assert_verification_after_review_date(self):
+        self.manifest['documents'][0]['provisions'][1]['verified_through'] = '2025-01-02'
+        with self.assertRaises(CorpusError):
+            self.load()
 
     def test_tampered_source_is_rejected(self):
         (self.directory / 'source.bin').write_bytes(b'changed')
