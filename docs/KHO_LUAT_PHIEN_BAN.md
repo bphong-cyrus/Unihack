@@ -22,4 +22,6 @@ Giao diện hiển thị danh mục do API trả về, cho chọn ngày khi snap
 
 Trường hợp được gán nhãn không có kết quả phù hợp dùng `"relevant": []` cùng `"expect_no_result": true`. Các trường hợp này được tính riêng qua `no_result_count` và `no_result_accuracy`, không đưa vào mẫu số recall/MRR. Chỉ số này đo việc bộ truy xuất trả rỗng so với nhãn, không chứng minh câu trả lời đúng hay đánh giá đầy đủ câu hỏi ngoài phạm vi.
 
+Báo cáo đánh giá bao gồm `snapshot_sha256` của byte manifest và `cases_sha256` của dữ liệu câu hỏi sau khi chuẩn hóa JSON (sắp khóa, bỏ khoảng trắng định dạng, UTF-8). Lưu báo cáo cùng phiên bản mã truy xuất để có thể đối chiếu lần chạy; hai mã này không xác nhận chất lượng nhãn hay tính hợp pháp của dữ liệu.
+
 Mọi kết quả validation hiện trả `settlement_eligible: false`, kể cả khi các phép so khớp đạt. `passed` và `verdict` được giữ để tương thích hợp đồng demo và không được dùng một mình để giải ngân. Đây là tín hiệu trong API, không phải cơ chế ngăn một oracle bên ngoài bỏ qua nó; tuyệt đối chưa kết nối oracle với tiền thật.

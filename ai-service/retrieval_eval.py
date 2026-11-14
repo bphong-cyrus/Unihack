@@ -1,5 +1,6 @@
 """Evaluate lexical retrieval against explicitly labeled question/provision pairs."""
 import argparse
+import hashlib
 from datetime import date
 import json
 from pathlib import Path
@@ -51,7 +52,9 @@ def evaluate(snapshot, cases, k):
                      'correct_no_result': not found if no_result else None})
     labeled = [row for row in rows if row['recall'] is not None]
     abstentions = [row for row in rows if row['correct_no_result'] is not None]
-    return {'snapshot_id': snapshot.snapshot_id, 'k': k, 'case_count': len(rows),
+    cases_bytes = json.dumps(cases, ensure_ascii=False, sort_keys=True, separators=(',', ':')).encode('utf-8')
+    return {'snapshot_id': snapshot.snapshot_id, 'snapshot_sha256': snapshot.snapshot_sha256,
+            'cases_sha256': hashlib.sha256(cases_bytes).hexdigest(), 'k': k, 'case_count': len(rows),
             'recall_at_k': sum(row['recall'] for row in labeled) / len(labeled) if labeled else None,
             'mrr_at_k': sum(row['reciprocal_rank'] for row in labeled) / len(labeled) if labeled else None,
             'no_result_count': len(abstentions),
