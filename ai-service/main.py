@@ -138,6 +138,8 @@ def validate_citations(citations: list[dict]) -> dict:
         return {
             "passed": False,
             "verdict": "UNVERIFIED_REFUND",
+            "settlement_eligible": False,
+            "corpus_status": "DEMO_UNVERIFIED",
             "overall_score": 0.0,
             "citation_checks": [],
             "fail_reason": "NO_CITATION_PROVIDED",
@@ -204,6 +206,8 @@ def validate_citations(citations: list[dict]) -> dict:
     return {
         "passed": all_passed,
         "verdict": "VERIFIED_RELEASE" if all_passed else "UNVERIFIED_REFUND",
+        "settlement_eligible": False,
+        "corpus_status": "DEMO_UNVERIFIED",
         "overall_score": round(sum(total_scores) / len(total_scores), 2),
         "citation_checks": checks,
     }

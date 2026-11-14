@@ -4,7 +4,8 @@ from citation_text import compute_excerpt_similarity
 
 def validate_snapshot_citations(citations, snapshot, as_of):
     if not citations:
-        return {'passed': False, 'verdict': 'UNVERIFIED_REFUND', 'overall_score': 0.0,
+        return {'passed': False, 'verdict': 'UNVERIFIED_REFUND', 'settlement_eligible': False,
+                'corpus_status': 'REVIEW_ASSERTED', 'overall_score': 0.0,
                 'citation_checks': [], 'fail_reason': 'NO_CITATION_PROVIDED',
                 'snapshot_id': snapshot.snapshot_id, 'as_of': as_of.isoformat()}
 
@@ -40,5 +41,6 @@ def validate_snapshot_citations(citations, snapshot, as_of):
         })
     passed = all(check['status'] == 'PASS' for check in checks)
     return {'passed': passed, 'verdict': 'VERIFIED_RELEASE' if passed else 'UNVERIFIED_REFUND',
+            'settlement_eligible': False, 'corpus_status': 'REVIEW_ASSERTED',
             'overall_score': round(sum(scores) / len(scores), 2), 'citation_checks': checks,
             'snapshot_id': snapshot.snapshot_id, 'as_of': as_of.isoformat()}

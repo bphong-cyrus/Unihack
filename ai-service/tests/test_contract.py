@@ -20,6 +20,8 @@ class ValidatorContractTests(unittest.TestCase):
     def test_validate_exact_sample_passes(self):
         result = main.validate_citations([self.citation])
         self.assertTrue(result["passed"])
+        self.assertFalse(result["settlement_eligible"])
+        self.assertEqual(result["corpus_status"], "DEMO_UNVERIFIED")
         self.assertEqual(result["citation_checks"][0]["raw_text"], self.record["raw_text"])
 
     def test_validate_empty_or_one_invalid_citation_refunds(self):

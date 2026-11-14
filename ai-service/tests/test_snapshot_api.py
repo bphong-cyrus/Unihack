@@ -39,6 +39,8 @@ class SnapshotApiTests(unittest.TestCase):
         self.assertEqual(result['snapshot_id'], 'test-snapshot')
         self.assertEqual(result['citations'][0]['excerpt'], self.text)
         self.assertTrue(result['validation']['passed'])
+        self.assertFalse(result['validation']['settlement_eligible'])
+        self.assertEqual(result['validation']['corpus_status'], 'REVIEW_ASSERTED')
         self.assertEqual(result['validation']['citation_checks'][0]['source_url'], 'https://example.gov.vn/document')
         self.assertEqual(result['answer_method'], 'EXTRACTIVE')
         self.assertEqual(result['payment_status'], 'DISABLED')
