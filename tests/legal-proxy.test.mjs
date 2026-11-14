@@ -51,6 +51,21 @@ test('rejects malformed nested citations and validation results', async () => {
   }
 });
 
+test('rejects unsafe optional fields and inconsistent citation checks', async () => {
+  const citation = { document: 'X', article: '1', clause: '1', excerpt: 'text' };
+  const check = { document: 'X', article: '1', clause: '1', doc_exists: true, article_clause_exists: true, is_in_force: true, excerpt_similarity: 1, status: 'PASS' };
+  const base = { question_id: '0x123', answer: 'A', citations: [citation], validation: { passed: true, verdict: 'VERIFIED_RELEASE', overall_score: 100, citation_checks: [check] } };
+  for (const response of [
+    { ...base, validation: { ...base.validation, citation_checks: [{ ...check, source_url: {} }] } },
+    { ...base, validation: { ...base.validation, citation_checks: [{ ...check, raw_text: {} }] } },
+    { ...base, validation: { ...base.validation, citation_checks: [] } },
+    { ...base, validation: { ...base.validation, passed: false } }
+  ]) {
+    const result = await forwardLegalQuestion(request, 'http://service/ask', async () => ({ ok: true, json: async () => response }));
+    assert.equal(result.status, 502);
+  }
+});
+
 test('corpus proxy returns the actual service inventory without fabricated records', async () => {
   const { fetchLegalCorpus } = await import('../app/api/ask-and-settle/legal-proxy.mjs');
   const result = await fetchLegalCorpus('http://service/corpus', async () => ({ ok: true, json: async () => ({ total_documents: 1, total_chunks: 2, corpus_status: 'REVIEW_ASSERTED', records: [{ doc_id: 'TEST' }] }) }));

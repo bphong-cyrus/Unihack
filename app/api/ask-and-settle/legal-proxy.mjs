@@ -29,12 +29,17 @@ export async function forwardLegalQuestion(body, url, fetchImpl = fetch) {
   const validCheck = item => item && ['document', 'article', 'clause'].every(key => typeof item[key] === 'string') &&
     ['doc_exists', 'article_clause_exists', 'is_in_force'].every(key => typeof item[key] === 'boolean') &&
     typeof item.excerpt_similarity === 'number' && Number.isFinite(item.excerpt_similarity) &&
+    item.excerpt_similarity >= 0 && item.excerpt_similarity <= 1 &&
+    (item.source_url == null || typeof item.source_url === 'string') &&
+    (item.raw_text == null || typeof item.raw_text === 'string') &&
     ['PASS', 'FAIL'].includes(item.status);
   if (!result || result.question_id !== body.questionId || typeof result.answer !== 'string' ||
       !Array.isArray(result.citations) || typeof result.validation?.passed !== 'boolean' ||
       !result.citations.every(validCitation) ||
-      !Number.isFinite(result.validation?.overall_score) ||
-      !Array.isArray(result.validation?.citation_checks) || !result.validation.citation_checks.every(validCheck)) {
+      !Number.isFinite(result.validation?.overall_score) || result.validation.overall_score < 0 || result.validation.overall_score > 100 ||
+      !Array.isArray(result.validation?.citation_checks) || !result.validation.citation_checks.every(validCheck) ||
+      result.citations.length !== result.validation.citation_checks.length ||
+      result.validation.passed !== (result.citations.length > 0 && result.validation.citation_checks.every(check => check.status === 'PASS'))) {
     return { status: 502, body: { error: 'Dữ liệu từ dịch vụ tra cứu không hợp lệ.' } };
   }
   const { onchain, ...answer } = result;
