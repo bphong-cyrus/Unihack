@@ -8,6 +8,8 @@
 
 Để tạo trang đối chiếu chỉ đọc cho một trang OCR đã có, chạy `python3 ai-service/ocr_review.py research/extracted/ocr-1282020ndcp/page-001.json --out research/extracted/ocr-1282020ndcp/page-001-review.html`, sau đó mở HTML trong trình duyệt. Công cụ kiểm tra SHA-256 PDF trước khi tạo trang; điểm OCR không phải xác nhận nội dung. Nếu trình duyệt chặn PDF ở URL `file:`, có thể dùng máy chủ HTTP cục bộ cho riêng thư mục dự án trong lúc rà soát.
 
+Để tạo danh mục và trang đối chiếu cho toàn bộ trang đã OCR, chạy `python3 ai-service/ocr_review_batch.py research/extracted/ocr-112020ttbct-02 /tmp/askpay-review-112020-02` rồi mở `index.html` trong thư mục đầu ra. Thư mục đầu ra phải chưa tồn tại; công cụ không ghi đè dữ liệu cũ và kiểm tra toàn bộ nguồn trước khi tạo trang. Đây là công cụ đọc, không ghi nhận phê duyệt.
+
 Để tiếp tục nhận dạng một PDF gốc: `python3 ai-service/ocr_batch.py research/legal-sources/232025ttbct/01.pdf research/extracted/ocr-232025ttbct --document-id '23/2025/TT-BCT'`. Công cụ yêu cầu `mutool`, `pypdf`, `torch`, EasyOCR và bộ model tiếng Việt/Anh đã cài sẵn; không tự tải model. Có thể chạy lại cùng lệnh sau khi gián đoạn: các trang đã lưu được kiểm tra hash, đường dẫn nguồn, số trang và cấu hình trước khi xử lý tiếp. Không trộn trang từ nguồn hoặc cấu hình khác trong cùng thư mục. Kết quả vẫn là OCR chưa duyệt, không xác nhận chữ ký hoặc hiệu lực pháp luật; phải đối chiếu từng trang với bản gốc và kiểm tra văn bản sửa đổi trước khi sử dụng.
 
 Với Thông tư 11/2020/TT-BCT, `ocr-112020ttbct-01/` và `ocr-112020ttbct-02/` lần lượt chứa kết quả nhận dạng hai tệp nguồn (2 và 78 trang). Kết quả chưa được đối chiếu với bản gốc, chưa xác minh bố cục bảng, nội dung phụ lục hay hiệu lực.
