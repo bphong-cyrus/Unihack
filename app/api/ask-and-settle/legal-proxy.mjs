@@ -24,9 +24,17 @@ export async function forwardLegalQuestion(body, url, fetchImpl = fetch) {
   if (!response.ok) return { status: 502, body: { error: 'Dịch vụ tra cứu trả về lỗi.' } };
   let result;
   try { result = await response.json(); } catch { result = null; }
+  const validCitation = item => item && ['document', 'article', 'clause', 'excerpt'].every(key => typeof item[key] === 'string') &&
+    (item.document_title === undefined || typeof item.document_title === 'string');
+  const validCheck = item => item && ['document', 'article', 'clause'].every(key => typeof item[key] === 'string') &&
+    ['doc_exists', 'article_clause_exists', 'is_in_force'].every(key => typeof item[key] === 'boolean') &&
+    typeof item.excerpt_similarity === 'number' && Number.isFinite(item.excerpt_similarity) &&
+    ['PASS', 'FAIL'].includes(item.status);
   if (!result || result.question_id !== body.questionId || typeof result.answer !== 'string' ||
       !Array.isArray(result.citations) || typeof result.validation?.passed !== 'boolean' ||
-      !Array.isArray(result.validation?.citation_checks)) {
+      !result.citations.every(validCitation) ||
+      !Number.isFinite(result.validation?.overall_score) ||
+      !Array.isArray(result.validation?.citation_checks) || !result.validation.citation_checks.every(validCheck)) {
     return { status: 502, body: { error: 'Dữ liệu từ dịch vụ tra cứu không hợp lệ.' } };
   }
   const { onchain, ...answer } = result;

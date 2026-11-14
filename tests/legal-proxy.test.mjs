@@ -38,6 +38,19 @@ test('rejects malformed service result', async () => {
   assert.equal(result.body.onchain, undefined);
 });
 
+test('rejects malformed nested citations and validation results', async () => {
+  const base = { question_id: '0x123', answer: 'A', citations: [], validation: { passed: false, verdict: 'UNVERIFIED_REFUND', overall_score: 0, citation_checks: [] } };
+  for (const response of [
+    { ...base, citations: [null] },
+    { ...base, citations: [{ document: 'X', article: 1, clause: '1', excerpt: 'text' }] },
+    { ...base, validation: { ...base.validation, overall_score: '100' } },
+    { ...base, validation: { ...base.validation, citation_checks: [null] } }
+  ]) {
+    const result = await forwardLegalQuestion(request, 'http://service/ask', async () => ({ ok: true, json: async () => response }));
+    assert.equal(result.status, 502);
+  }
+});
+
 test('corpus proxy returns the actual service inventory without fabricated records', async () => {
   const { fetchLegalCorpus } = await import('../app/api/ask-and-settle/legal-proxy.mjs');
   const result = await fetchLegalCorpus('http://service/corpus', async () => ({ ok: true, json: async () => ({ total_documents: 1, total_chunks: 2, corpus_status: 'REVIEW_ASSERTED', records: [{ doc_id: 'TEST' }] }) }));
