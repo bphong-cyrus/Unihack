@@ -53,6 +53,22 @@
       "record_file": "page-003.json"
     },
     {
+      "article": "7",
+      "page": 4,
+      "line_index": 5,
+      "text": "Điều 7_",
+      "confidence": 0.5401002386533296,
+      "record_file": "page-004.json"
+    },
+    {
+      "article": "8",
+      "page": 5,
+      "line_index": 0,
+      "text": "Điều 8",
+      "confidence": 0.9931279405998168,
+      "record_file": "page-005.json"
+    },
+    {
       "article": "9",
       "page": 5,
       "line_index": 13,

@@ -6,7 +6,7 @@ import re
 import unicodedata
 from pathlib import Path
 
-HEADING = re.compile(r'^\s*dieu\s+(\d+)[.,:]\s*', re.IGNORECASE)
+HEADING = re.compile(r'^\s*dieu\s+(\d+)(?:[.,:_]|\s*$)\s*', re.IGNORECASE)
 
 
 def find_headings(directory):

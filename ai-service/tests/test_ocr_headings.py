@@ -46,3 +46,13 @@ class HeadingTests(unittest.TestCase):
             candidates = find_headings(root)['candidates']
             self.assertEqual(candidates[0]['article'], '1')
             self.assertEqual(candidates[0]['text'], 'Đíều 1. Phạm vi')
+
+    def test_recognizes_heading_with_missing_or_misread_punctuation(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            (root / 'source.pdf').write_bytes(b'pdf')
+            record = {'document_id': 'A', 'source_file': 'source.pdf', 'source_sha256': hashlib.sha256(b'pdf').hexdigest(),
+                      'page': 1, 'page_count': 1, 'review_status': 'UNREVIEWED',
+                      'lines': [{'text': 'Điều 7_', 'confidence': 0.5}, {'text': 'Điều 8', 'confidence': 0.5}]}
+            (root / 'page-001.json').write_text(json.dumps(record))
+            self.assertEqual([x['article'] for x in find_headings(root)['candidates']], ['7', '8'])
