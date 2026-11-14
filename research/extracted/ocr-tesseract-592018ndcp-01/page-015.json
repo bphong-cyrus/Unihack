@@ -1,0 +1,839 @@
+{
+  "document_id": "59/2018/NĐ-CP",
+  "source_file": "../../legal-sources/592018ndcp/01.pdf",
+  "source_sha256": "7ac1b46e806ae9290125acb9ac1d535bcea768749d16941e9fae20bbf7343a1a",
+  "page_count": 48,
+  "render_dpi": 150,
+  "engine": "Tesseract 5.5.4 (vie+eng; OEM 1; PSM 3)",
+  "review_status": "UNREVIEWED",
+  "tesseract_version": "5.5.4",
+  "tsv_parser_version": 2,
+  "languages": [
+    "vie",
+    "eng"
+  ],
+  "traineddata_sha256": {
+    "vie": "b6b49293d95d0b6dbd8780174627e82c75be957b6f4ed9862155540d6b00bb45",
+    "eng": "8280aed0782fe27257a68ea10fe7ef324ca0f8d85bd2fd145d1c2b560bcb66ba"
+  },
+  "ocr_engine_mode": 1,
+  "page_segmentation_mode": 3,
+  "thread_limit": 1,
+  "page": 15,
+  "lines": [
+    {
+      "bbox": [
+        [
+          656.0,
+          149.0
+        ],
+        [
+          674.0,
+          149.0
+        ],
+        [
+          674.0,
+          165.0
+        ],
+        [
+          656.0,
+          165.0
+        ]
+      ],
+      "text": "15",
+      "confidence": 0.9202460499999999
+    },
+    {
+      "bbox": [
+        [
+          315.0,
+          222.0
+        ],
+        [
+          1066.0,
+          222.0
+        ],
+        [
+          1066.0,
+          256.0
+        ],
+        [
+          315.0,
+          256.0
+        ]
+      ],
+      "text": "5. Trách nhiệm của Chi cục hải quan noi quản lý địa điểm hàng quá cảnh",
+      "confidence": 0.965612406875
+    },
+    {
+      "bbox": [
+        [
+          261.0,
+          251.0
+        ],
+        [
+          1065.0,
+          251.0
+        ],
+        [
+          1065.0,
+          281.0
+        ],
+        [
+          261.0,
+          281.0
+        ]
+      ],
+      "text": "thực hiện chuyên tải, lưu kho, chia tách, thay đổi phương thức vận chuyển,",
+      "confidence": 0.9650118964285714
+    },
+    {
+      "bbox": [
+        [
+          261.0,
+          286.0
+        ],
+        [
+          694.0,
+          286.0
+        ],
+        [
+          694.0,
+          310.0
+        ],
+        [
+          261.0,
+          310.0
+        ]
+      ],
+      "text": "phương tiện vận tải, đóng chung container",
+      "confidence": 0.96692955
+    },
+    {
+      "bbox": [
+        [
+          313.0,
+          324.0
+        ],
+        [
+          1065.0,
+          324.0
+        ],
+        [
+          1065.0,
+          365.0
+        ],
+        [
+          313.0,
+          365.0
+        ]
+      ],
+      "text": "3) Tiếp nhận văn bản đề nghị theo quy định tại điểm d khoản 3 Điều này",
+      "confidence": 0.9623327
+    },
+    {
+      "bbox": [
+        [
+          261.0,
+          354.0
+        ],
+        [
+          1066.0,
+          354.0
+        ],
+        [
+          1066.0,
+          387.0
+        ],
+        [
+          261.0,
+          387.0
+        ]
+      ],
+      "text": "và kiểm tra các điều kiện quy định tại khoản 9 Điều này. Trường hợp không đủ",
+      "confidence": 0.9626432405882351
+    },
+    {
+      "bbox": [
+        [
+          261.0,
+          382.0
+        ],
+        [
+          1043.0,
+          382.0
+        ],
+        [
+          1043.0,
+          412.0
+        ],
+        [
+          261.0,
+          412.0
+        ]
+      ],
+      "text": "điều kiện quy định, có văn bản thông báo việc không chấp nhận, nêu rõ lý do;",
+      "confidence": 0.9686023847058823
+    },
+    {
+      "bbox": [
+        [
+          312.0,
+          425.0
+        ],
+        [
+          1061.0,
+          425.0
+        ],
+        [
+          1061.0,
+          455.0
+        ],
+        [
+          312.0,
+          455.0
+        ]
+      ],
+      "text": "Trường hợp đủ điều kiện quy định, phê duyệt văn bản đề nghị; trả lại 01",
+      "confidence": 0.96641304125
+    },
+    {
+      "bbox": [
+        [
+          261.0,
+          460.0
+        ],
+        [
+          783.0,
+          460.0
+        ],
+        [
+          783.0,
+          484.0
+        ],
+        [
+          261.0,
+          484.0
+        ]
+      ],
+      "text": "bản chính cho người khai hải quan, lưu 01 bản sao;",
+      "confidence": 0.9690764681818181
+    },
+    {
+      "bbox": [
+        [
+          312.0,
+          496.0
+        ],
+        [
+          1052.0,
+          496.0
+        ],
+        [
+          1052.0,
+          529.0
+        ],
+        [
+          312.0,
+          529.0
+        ]
+      ],
+      "text": "b) Kiém tra tinh trang niém phong hai quan, niém phong hang vén chuyén;",
+      "confidence": 0.9238246971428571
+    },
+    {
+      "bbox": [
+        [
+          312.0,
+          540.0
+        ],
+        [
+          1065.0,
+          540.0
+        ],
+        [
+          1065.0,
+          577.0
+        ],
+        [
+          312.0,
+          577.0
+        ]
+      ],
+      "text": "c) Giám sát hoạt động chuyển tải, lưu kho, chia tách, thay đổi phương",
+      "confidence": 0.9529482714285714
+    },
+    {
+      "bbox": [
+        [
+          259.0,
+          574.0
+        ],
+        [
+          1065.0,
+          574.0
+        ],
+        [
+          1065.0,
+          601.0
+        ],
+        [
+          259.0,
+          601.0
+        ]
+      ],
+      "text": "thức vận chuyển, phương tiện vận tải, đóng chung container và thực hiện",
+      "confidence": 0.9681455246153845
+    },
+    {
+      "bbox": [
+        [
+          260.0,
+          607.0
+        ],
+        [
+          481.0,
+          607.0
+        ],
+        [
+          481.0,
+          630.0
+        ],
+        [
+          260.0,
+          630.0
+        ]
+      ],
+      "text": "niêm phong hải quan;",
+      "confidence": 0.9672957025
+    },
+    {
+      "bbox": [
+        [
+          311.0,
+          640.0
+        ],
+        [
+          1065.0,
+          640.0
+        ],
+        [
+          1065.0,
+          672.0
+        ],
+        [
+          311.0,
+          672.0
+        ]
+      ],
+      "text": "d) Thực hiện thủ tục hải quan đối với hàng hóa vận chuyển theo từng",
+      "confidence": 0.9620933586666667
+    },
+    {
+      "bbox": [
+        [
+          261.0,
+          678.0
+        ],
+        [
+          467.0,
+          678.0
+        ],
+        [
+          467.0,
+          701.0
+        ],
+        [
+          261.0,
+          701.0
+        ]
+      ],
+      "text": "loại hình tương ứng.",
+      "confidence": 0.9688649375
+    },
+    {
+      "bbox": [
+        [
+          312.0,
+          713.0
+        ],
+        [
+          851.0,
+          713.0
+        ],
+        [
+          851.0,
+          743.0
+        ],
+        [
+          312.0,
+          743.0
+        ]
+      ],
+      "text": "6. Trách nhiệm của Chỉ cục Hải quan cửa khẩu xuất:",
+      "confidence": 0.9668284945454546
+    },
+    {
+      "bbox": [
+        [
+          312.0,
+          754.0
+        ],
+        [
+          1065.0,
+          754.0
+        ],
+        [
+          1065.0,
+          788.0
+        ],
+        [
+          312.0,
+          788.0
+        ]
+      ],
+      "text": "a) Kiểm tra các thông tin về tờ khai vận chuyển hoặc chứng từ thay thế",
+      "confidence": 0.966495799375
+    },
+    {
+      "bbox": [
+        [
+          260.0,
+          788.0
+        ],
+        [
+          787.0,
+          788.0
+        ],
+        [
+          787.0,
+          816.0
+        ],
+        [
+          260.0,
+          816.0
+        ]
+      ],
+      "text": "tờ khai trên hệ thống xử lý dữ liệu điện tử hải quan;",
+      "confidence": 0.9694769753846154
+    },
+    {
+      "bbox": [
+        [
+          311.0,
+          831.0
+        ],
+        [
+          966.0,
+          831.0
+        ],
+        [
+          966.0,
+          859.0
+        ],
+        [
+          311.0,
+          859.0
+        ]
+      ],
+      "text": "b) Kiểm tra tình trạng niêm phong hoặc nguyên trạng hàng hóa.",
+      "confidence": 0.9627671999999999
+    },
+    {
+      "bbox": [
+        [
+          311.0,
+          871.0
+        ],
+        [
+          1066.0,
+          871.0
+        ],
+        [
+          1066.0,
+          907.0
+        ],
+        [
+          311.0,
+          907.0
+        ]
+      ],
+      "text": "Trường hợp hàng hóa quá cảnh vận chuyển bằng đường thủy nội địa ra",
+      "confidence": 0.9675806699999999
+    },
+    {
+      "bbox": [
+        [
+          260.0,
+          897.0
+        ],
+        [
+          1065.0,
+          897.0
+        ],
+        [
+          1065.0,
+          938.0
+        ],
+        [
+          260.0,
+          938.0
+        ]
+      ],
+      "text": "nước ngoài, Chi cục Hải quan cửa khẩu xuất căn cứ thông tin ve lộ trình, thời",
+      "confidence": 0.9523877182352942
+    },
+    {
+      "bbox": [
+        [
+          260.0,
+          927.0
+        ],
+        [
+          1065.0,
+          927.0
+        ],
+        [
+          1065.0,
+          961.0
+        ],
+        [
+          260.0,
+          961.0
+        ]
+      ],
+      "text": "gian vận chuyển, các cảnh báo (nếu có) để quyết định việc kiểm tra niêm",
+      "confidence": 0.9604379333333333
+    },
+    {
+      "bbox": [
+        [
+          259.0,
+          957.0
+        ],
+        [
+          829.0,
+          957.0
+        ],
+        [
+          829.0,
+          990.0
+        ],
+        [
+          259.0,
+          990.0
+        ]
+      ],
+      "text": "phong hải quan hoặc niêm phong của hãng vận chuyển;",
+      "confidence": 0.9627147669999999
+    },
+    {
+      "bbox": [
+        [
+          312.0,
+          999.0
+        ],
+        [
+          1007.0,
+          999.0
+        ],
+        [
+          1007.0,
+          1032.0
+        ],
+        [
+          312.0,
+          1032.0
+        ]
+      ],
+      "text": "c) Kiểm tra thực tế hàng hóa trong trường hợp có dấu hiệu vi phạm.",
+      "confidence": 0.9343589886666668
+    },
+    {
+      "bbox": [
+        [
+          312.0,
+          1052.0
+        ],
+        [
+          523.0,
+          1052.0
+        ],
+        [
+          523.0,
+          1074.0
+        ],
+        [
+          312.0,
+          1074.0
+        ]
+      ],
+      "text": "7. Giám sát hải quan",
+      "confidence": 0.969375824
+    },
+    {
+      "bbox": [
+        [
+          312.0,
+          1089.0
+        ],
+        [
+          1066.0,
+          1089.0
+        ],
+        [
+          1066.0,
+          1123.0
+        ],
+        [
+          312.0,
+          1123.0
+        ]
+      ],
+      "text": "a) Hàng hóa quá cảnh phải được niêm phong hải quan hoặc niêm phong",
+      "confidence": 0.9618843671428572
+    },
+    {
+      "bbox": [
+        [
+          260.0,
+          1114.0
+        ],
+        [
+          1065.0,
+          1114.0
+        ],
+        [
+          1065.0,
+          1146.0
+        ],
+        [
+          260.0,
+          1146.0
+        ]
+      ],
+      "text": "của hãng vận chuyển. Trường hợp hàng hóa không thể niêm phong được thì",
+      "confidence": 0.96654904
+    },
+    {
+      "bbox": [
+        [
+          260.0,
+          1146.0
+        ],
+        [
+          1041.0,
+          1146.0
+        ],
+        [
+          1041.0,
+          1176.0
+        ],
+        [
+          260.0,
+          1176.0
+        ]
+      ],
+      "text": "giao người khai hải quan chịu trách nhiệm bảo quản nguyên trạng hàng hóa.",
+      "confidence": 0.9660108507142857
+    },
+    {
+      "bbox": [
+        [
+          312.0,
+          1188.0
+        ],
+        [
+          1066.0,
+          1188.0
+        ],
+        [
+          1066.0,
+          1218.0
+        ],
+        [
+          312.0,
+          1218.0
+        ]
+      ],
+      "text": "Đối với hàng hóa quá cảnh vận chuyển bằng đường thủy nội địa, đường",
+      "confidence": 0.9651323428571428
+    },
+    {
+      "bbox": [
+        [
+          260.0,
+          1210.0
+        ],
+        [
+          1066.0,
+          1210.0
+        ],
+        [
+          1066.0,
+          1252.0
+        ],
+        [
+          260.0,
+          1252.0
+        ]
+      ],
+      "text": "bộ, ngoài niệm phong hải quan hoặc niêm phong của hãng vận chuyển, hoặc",
+      "confidence": 0.9495280235714286
+    },
+    {
+      "bbox": [
+        [
+          260.0,
+          1247.0
+        ],
+        [
+          1066.0,
+          1247.0
+        ],
+        [
+          1066.0,
+          1281.0
+        ],
+        [
+          260.0,
+          1281.0
+        ]
+      ],
+      "text": "hàng hoá quá cảnh không thể niêm phong, cơ quan hải quan sử dụng các",
+      "confidence": 0.9646958553333335
+    },
+    {
+      "bbox": [
+        [
+          260.0,
+          1272.0
+        ],
+        [
+          1067.0,
+          1272.0
+        ],
+        [
+          1067.0,
+          1313.0
+        ],
+        [
+          260.0,
+          1313.0
+        ]
+      ],
+      "text": "phương tiện kỹ thuật khác để giám sát hàng hóa trong quá trình vận chuyển",
+      "confidence": 0.965537526
+    },
+    {
+      "bbox": [
+        [
+          260.0,
+          1307.0
+        ],
+        [
+          712.0,
+          1307.0
+        ],
+        [
+          712.0,
+          1335.0
+        ],
+        [
+          260.0,
+          1335.0
+        ]
+      ],
+      "text": "trên cơ sở kết quả phân tích, đánh giá rủi ro;",
+      "confidence": 0.9686718390909091
+    },
+    {
+      "bbox": [
+        [
+          312.0,
+          1344.0
+        ],
+        [
+          1066.0,
+          1344.0
+        ],
+        [
+          1066.0,
+          1387.0
+        ],
+        [
+          312.0,
+          1387.0
+        ]
+      ],
+      "text": "b) Hàng hóa quá cảnh thuộc Danh mục hàng hóa cấm kinh doanh, cắm",
+      "confidence": 0.9574042235714286
+    },
+    {
+      "bbox": [
+        [
+          261.0,
+          1375.0
+        ],
+        [
+          1066.0,
+          1375.0
+        ],
+        [
+          1066.0,
+          1413.0
+        ],
+        [
+          261.0,
+          1413.0
+        ]
+      ],
+      "text": "xuất khẩu, tạm ngừng xuất khẩu, hàng hóa cắm nhập khẩu, tạm ngừng nhập",
+      "confidence": 0.9479443514285716
+    },
+    {
+      "bbox": [
+        [
+          261.0,
+          1403.0
+        ],
+        [
+          1067.0,
+          1403.0
+        ],
+        [
+          1067.0,
+          1436.0
+        ],
+        [
+          261.0,
+          1436.0
+        ]
+      ],
+      "text": "khẩu; hàng hóa xuất khẩu, nhập khẩu theo giấy phép, hàng hóa có thuế tiêu",
+      "confidence": 0.9661628160000001
+    },
+    {
+      "bbox": [
+        [
+          261.0,
+          1436.0
+        ],
+        [
+          866.0,
+          1436.0
+        ],
+        [
+          866.0,
+          1466.0
+        ],
+        [
+          261.0,
+          1466.0
+        ]
+      ],
+      "text": "thụ đặc biệt phải được giám sát bằng phương tiện kỹ thuật;",
+      "confidence": 0.96120966
+    }
+  ]
+}

@@ -1,0 +1,861 @@
+{
+  "document_id": "69/2018/NĐ-CP",
+  "source_file": "../../legal-sources/692018ndcp/01.pdf",
+  "source_sha256": "cfe9d66c02837d203a0781cb916273fa6c3c6151b52fc6becc6d1c006d96681e",
+  "page_count": 89,
+  "render_dpi": 150,
+  "engine": "Tesseract 5.5.4 (vie+eng; OEM 1; PSM 3)",
+  "review_status": "UNREVIEWED",
+  "tesseract_version": "5.5.4",
+  "tsv_parser_version": 2,
+  "languages": [
+    "vie",
+    "eng"
+  ],
+  "traineddata_sha256": {
+    "vie": "b6b49293d95d0b6dbd8780174627e82c75be957b6f4ed9862155540d6b00bb45",
+    "eng": "8280aed0782fe27257a68ea10fe7ef324ca0f8d85bd2fd145d1c2b560bcb66ba"
+  },
+  "ocr_engine_mode": 1,
+  "page_segmentation_mode": 3,
+  "thread_limit": 1,
+  "page": 13,
+  "lines": [
+    {
+      "bbox": [
+        [
+          665.0,
+          132.0
+        ],
+        [
+          683.0,
+          132.0
+        ],
+        [
+          683.0,
+          148.0
+        ],
+        [
+          665.0,
+          148.0
+        ]
+      ],
+      "text": "13",
+      "confidence": 0.96551224
+    },
+    {
+      "bbox": [
+        [
+          323.0,
+          190.0
+        ],
+        [
+          1080.0,
+          190.0
+        ],
+        [
+          1080.0,
+          228.0
+        ],
+        [
+          323.0,
+          228.0
+        ]
+      ],
+      "text": "e) Chủ tịch Ủy ban nhân dân các tỉnh biên giới tổ chức thực hiện và quản",
+      "confidence": 0.9604840535294117
+    },
+    {
+      "bbox": [
+        [
+          272.0,
+          217.0
+        ],
+        [
+          1079.0,
+          217.0
+        ],
+        [
+          1079.0,
+          256.0
+        ],
+        [
+          272.0,
+          256.0
+        ]
+      ],
+      "text": "lý chặt chẽ hoạt dong tái xuất hàng hóa “qua các cửa khẩu phụ, lối mở biên",
+      "confidence": 0.9338054452941177
+    },
+    {
+      "bbox": [
+        [
+          272.0,
+          245.0
+        ],
+        [
+          1079.0,
+          245.0
+        ],
+        [
+          1079.0,
+          285.0
+        ],
+        [
+          272.0,
+          285.0
+        ]
+      ],
+      "text": "giới theo quy định tại Điều này, không để xảy ra buôn lậu, thẩm lậu. Nếu xảy",
+      "confidence": 0.9636302005882352
+    },
+    {
+      "bbox": [
+        [
+          271.0,
+          278.0
+        ],
+        [
+          1079.0,
+          278.0
+        ],
+        [
+          1079.0,
+          311.0
+        ],
+        [
+          271.0,
+          311.0
+        ]
+      ],
+      "text": "ra tình trạng buôn lậu, thẩm lậu, Chủ tịch Ủy ban nhân dân các tỉnh biên giới",
+      "confidence": 0.9593303376470588
+    },
+    {
+      "bbox": [
+        [
+          272.0,
+          304.0
+        ],
+        [
+          1080.0,
+          304.0
+        ],
+        [
+          1080.0,
+          344.0
+        ],
+        [
+          272.0,
+          344.0
+        ]
+      ],
+      "text": "chịu trách nhiệm trước Thủ tướng Chính phủ và hoạt động tái xuất qua các",
+      "confidence": 0.9677503920000001
+    },
+    {
+      "bbox": [
+        [
+          272.0,
+          340.0
+        ],
+        [
+          838.0,
+          340.0
+        ],
+        [
+          838.0,
+          369.0
+        ],
+        [
+          272.0,
+          369.0
+        ]
+      ],
+      "text": "cửa khẩu phụ, lồi mở biên giới trên địa bàn bị đình chỉ.",
+      "confidence": 0.96538045
+    },
+    {
+      "bbox": [
+        [
+          324.0,
+          385.0
+        ],
+        [
+          1080.0,
+          385.0
+        ],
+        [
+          1080.0,
+          424.0
+        ],
+        [
+          324.0,
+          424.0
+        ]
+      ],
+      "text": "g) Hàng năm, Ủy ban nhân dân các tỉnh biên giới kiểm tra, rà soát tình",
+      "confidence": 0.958908576875
+    },
+    {
+      "bbox": [
+        [
+          272.0,
+          413.0
+        ],
+        [
+          1081.0,
+          413.0
+        ],
+        [
+          1081.0,
+          455.0
+        ],
+        [
+          272.0,
+          455.0
+        ]
+      ],
+      "text": "hình tuân thủ quy định pháp luật của thương nhân để điều chỉnh, bd sung hoặc",
+      "confidence": 0.94577356375
+    },
+    {
+      "bbox": [
+        [
+          272.0,
+          440.0
+        ],
+        [
+          1081.0,
+          440.0
+        ],
+        [
+          1081.0,
+          484.0
+        ],
+        [
+          272.0,
+          484.0
+        ]
+      ],
+      "text": "đưa các thương nhân vi phạm quy định trong hoạt động tạm nhập, tái xuất",
+      "confidence": 0.9663096553333334
+    },
+    {
+      "bbox": [
+        [
+          272.0,
+          465.0
+        ],
+        [
+          1085.0,
+          465.0
+        ],
+        [
+          1085.0,
+          511.0
+        ],
+        [
+          272.0,
+          511.0
+        ]
+      ],
+      "text": "hàng hóa ra khỏi danh sách; tổng hợp, báo cáo Bộ Công Thương đề phối hợp",
+      "confidence": 0.961265278125
+    },
+    {
+      "bbox": [
+        [
+          273.0,
+          507.0
+        ],
+        [
+          378.0,
+          507.0
+        ],
+        [
+          378.0,
+          530.0
+        ],
+        [
+          273.0,
+          530.0
+        ]
+      ],
+      "text": "điều hành.",
+      "confidence": 0.963834
+    },
+    {
+      "bbox": [
+        [
+          325.0,
+          551.0
+        ],
+        [
+          1082.0,
+          551.0
+        ],
+        [
+          1082.0,
+          589.0
+        ],
+        [
+          325.0,
+          589.0
+        ]
+      ],
+      "text": "4. Việc tạm nhập, tái xuất qua các cửa khẩu, địa điểm khác thực hiện",
+      "confidence": 0.968031032
+    },
+    {
+      "bbox": [
+        [
+          273.0,
+          587.0
+        ],
+        [
+          709.0,
+          587.0
+        ],
+        [
+          709.0,
+          614.0
+        ],
+        [
+          273.0,
+          614.0
+        ]
+      ],
+      "text": "theo quyết định của Thủ tướng Chính phủ.",
+      "confidence": 0.9681711199999999
+    },
+    {
+      "bbox": [
+        [
+          326.0,
+          628.0
+        ],
+        [
+          1082.0,
+          628.0
+        ],
+        [
+          1082.0,
+          674.0
+        ],
+        [
+          326.0,
+          674.0
+        ]
+      ],
+      "text": "5. Trường hợp hàng hóa nước ngoài gửi vào kho ngoại quan để xuất",
+      "confidence": 0.9549966864285715
+    },
+    {
+      "bbox": [
+        [
+          274.0,
+          658.0
+        ],
+        [
+          1081.0,
+          658.0
+        ],
+        [
+          1081.0,
+          696.0
+        ],
+        [
+          274.0,
+          696.0
+        ]
+      ],
+      "text": "khẩu, tái xuất qua các. tỉnh biên giới thì cửa khẩu tạm nhập để gửi kho ngoại",
+      "confidence": 0.9439345805882353
+    },
+    {
+      "bbox": [
+        [
+          274.0,
+          689.0
+        ],
+        [
+          1082.0,
+          689.0
+        ],
+        [
+          1082.0,
+          722.0
+        ],
+        [
+          274.0,
+          722.0
+        ]
+      ],
+      "text": "quan và cửa khẩu xuất khẩu, tái xuất hàng hóa qua các tỉnh biên giới thực",
+      "confidence": 0.96920951875
+    },
+    {
+      "bbox": [
+        [
+          274.0,
+          720.0
+        ],
+        [
+          602.0,
+          720.0
+        ],
+        [
+          602.0,
+          750.0
+        ],
+        [
+          274.0,
+          750.0
+        ]
+      ],
+      "text": "hiện theo quy định tại Điều này.",
+      "confidence": 0.9663416628571428
+    },
+    {
+      "bbox": [
+        [
+          326.0,
+          771.0
+        ],
+        [
+          632.0,
+          771.0
+        ],
+        [
+          632.0,
+          799.0
+        ],
+        [
+          326.0,
+          799.0
+        ]
+      ],
+      "text": "Điều 17. Tạm xuất, tái nhập",
+      "confidence": 0.968141695
+    },
+    {
+      "bbox": [
+        [
+          329.0,
+          816.0
+        ],
+        [
+          1082.0,
+          816.0
+        ],
+        [
+          1082.0,
+          853.0
+        ],
+        [
+          329.0,
+          853.0
+        ]
+      ],
+      "text": "1. Thương nhân được tạm xuất, tái nhập hàng hóa để sản xuất, thi công,",
+      "confidence": 0.9544068760000001
+    },
+    {
+      "bbox": [
+        [
+          275.0,
+          849.0
+        ],
+        [
+          1072.0,
+          849.0
+        ],
+        [
+          1072.0,
+          877.0
+        ],
+        [
+          275.0,
+          877.0
+        ]
+      ],
+      "text": "cho thuê, cho mượn hoặc để sử dụng vì mục đích khác theo các quy định sau:",
+      "confidence": 0.9645632129411764
+    },
+    {
+      "bbox": [
+        [
+          327.0,
+          896.0
+        ],
+        [
+          1083.0,
+          896.0
+        ],
+        [
+          1083.0,
+          938.0
+        ],
+        [
+          327.0,
+          938.0
+        ]
+      ],
+      "text": "a) Đối với hàng hóa cấm xuất khẩu, cắm nhập khẩu; hàng hóa tạm ngừng",
+      "confidence": 0.9581335286666668
+    },
+    {
+      "bbox": [
+        [
+          275.0,
+          924.0
+        ],
+        [
+          1083.0,
+          924.0
+        ],
+        [
+          1083.0,
+          967.0
+        ],
+        [
+          275.0,
+          967.0
+        ]
+      ],
+      "text": "xuất khẩu, tạm ngừng nhập khẩu; hàng hóa thuộc diện quản lý bằng biện pháp",
+      "confidence": 0.9674940446666667
+    },
+    {
+      "bbox": [
+        [
+          275.0,
+          954.0
+        ],
+        [
+          1084.0,
+          954.0
+        ],
+        [
+          1084.0,
+          994.0
+        ],
+        [
+          275.0,
+          994.0
+        ]
+      ],
+      "text": "hạn ngạch xuất khẩu, hạn ngạch nhập khẩu, hạn ngạch thuế quan, giấy phép xuất",
+      "confidence": 0.9399527153333334
+    },
+    {
+      "bbox": [
+        [
+          275.0,
+          978.0
+        ],
+        [
+          1085.0,
+          978.0
+        ],
+        [
+          1085.0,
+          1021.0
+        ],
+        [
+          275.0,
+          1021.0
+        ]
+      ],
+      "text": "khẩu, nhập khẩu, trừ Giấy phép xuất khẩu tự động, Giấy phép nhập khẩu tự",
+      "confidence": 0.9573657733333333
+    },
+    {
+      "bbox": [
+        [
+          276.0,
+          1008.0
+        ],
+        [
+          1083.0,
+          1008.0
+        ],
+        [
+          1083.0,
+          1051.0
+        ],
+        [
+          276.0,
+          1051.0
+        ]
+      ],
+      "text": "động, thương nhân phải được Bộ Công Thương. cap Giấy phép tạm xuất, tái",
+      "confidence": 0.9526185607142859
+    },
+    {
+      "bbox": [
+        [
+          276.0,
+          1040.0
+        ],
+        [
+          1082.0,
+          1040.0
+        ],
+        [
+          1082.0,
+          1073.0
+        ],
+        [
+          276.0,
+          1073.0
+        ]
+      ],
+      "text": "nhập. Hồ sơ, thủ tục cấp Giấy phép quy định tại Điều 19, Điều 20 Nghị định này.",
+      "confidence": 0.966267988888889
+    },
+    {
+      "bbox": [
+        [
+          328.0,
+          1089.0
+        ],
+        [
+          1084.0,
+          1089.0
+        ],
+        [
+          1084.0,
+          1124.0
+        ],
+        [
+          328.0,
+          1124.0
+        ]
+      ],
+      "text": "b) Trường hợp hàng hóa không thuộc quy định tại điểm a khoản 1 Điều",
+      "confidence": 0.960265818
+    },
+    {
+      "bbox": [
+        [
+          276.0,
+          1123.0
+        ],
+        [
+          1083.0,
+          1123.0
+        ],
+        [
+          1083.0,
+          1156.0
+        ],
+        [
+          276.0,
+          1156.0
+        ]
+      ],
+      "text": "này, thương nhân thực hiện thủ tục tạm xuất, tái nhập tại cơ quan hải quan,",
+      "confidence": 0.960138225625
+    },
+    {
+      "bbox": [
+        [
+          276.0,
+          1150.0
+        ],
+        [
+          730.0,
+          1150.0
+        ],
+        [
+          730.0,
+          1181.0
+        ],
+        [
+          276.0,
+          1181.0
+        ]
+      ],
+      "text": "không phải có Giấy phép tạm xuất, tái nhập.",
+      "confidence": 0.9665991966666667
+    },
+    {
+      "bbox": [
+        [
+          329.0,
+          1201.0
+        ],
+        [
+          1085.0,
+          1201.0
+        ],
+        [
+          1085.0,
+          1235.0
+        ],
+        [
+          329.0,
+          1235.0
+        ]
+      ],
+      "text": "2. Thương nhân được tạm xuất, tái nhập hàng hóa còn trong thời hạn bảo",
+      "confidence": 0.9693911646666667
+    },
+    {
+      "bbox": [
+        [
+          276.0,
+          1229.0
+        ],
+        [
+          1084.0,
+          1229.0
+        ],
+        [
+          1084.0,
+          1265.0
+        ],
+        [
+          276.0,
+          1265.0
+        ]
+      ],
+      "text": "hành theo hợp đồng nhập khẩu hoặc theo hợp đồng, thỏa thuận bảo hành ký với",
+      "confidence": 0.967936845625
+    },
+    {
+      "bbox": [
+        [
+          277.0,
+          1260.0
+        ],
+        [
+          1085.0,
+          1260.0
+        ],
+        [
+          1085.0,
+          1294.0
+        ],
+        [
+          277.0,
+          1294.0
+        ]
+      ],
+      "text": "nước ngoài để phục vụ mục đích bảo hành, bảo dưỡng, sửa chữa. Thủ tục tạm",
+      "confidence": 0.964709081875
+    },
+    {
+      "bbox": [
+        [
+          277.0,
+          1285.0
+        ],
+        [
+          1085.0,
+          1285.0
+        ],
+        [
+          1085.0,
+          1317.0
+        ],
+        [
+          277.0,
+          1317.0
+        ]
+      ],
+      "text": "xuất, tái nhập thực hiện tại cơ quan hải quan, không phải có Giấy phép tạm xuất,",
+      "confidence": 0.9642999329411766
+    },
+    {
+      "bbox": [
+        [
+          277.0,
+          1323.0
+        ],
+        [
+          362.0,
+          1323.0
+        ],
+        [
+          362.0,
+          1347.0
+        ],
+        [
+          277.0,
+          1347.0
+        ]
+      ],
+      "text": "tái nhập.",
+      "confidence": 0.967067565
+    },
+    {
+      "bbox": [
+        [
+          330.0,
+          1365.0
+        ],
+        [
+          1086.0,
+          1365.0
+        ],
+        [
+          1086.0,
+          1412.0
+        ],
+        [
+          330.0,
+          1412.0
+        ]
+      ],
+      "text": "3. Trường hợp hàng hóa không còn trong thời hạn bảo hành theo hợp đồng",
+      "confidence": 0.9676532426666666
+    },
+    {
+      "bbox": [
+        [
+          278.0,
+          1394.0
+        ],
+        [
+          1087.0,
+          1394.0
+        ],
+        [
+          1087.0,
+          1427.0
+        ],
+        [
+          278.0,
+          1427.0
+        ]
+      ],
+      "text": "nhập khẩu hoặc theo hợp đồng, thỏa thuận bảo hành, việc tạm xuất, tái nhập ra",
+      "confidence": 0.967462249375
+    },
+    {
+      "bbox": [
+        [
+          279.0,
+          1427.0
+        ],
+        [
+          1024.0,
+          1427.0
+        ],
+        [
+          1024.0,
+          1455.0
+        ],
+        [
+          279.0,
+          1455.0
+        ]
+      ],
+      "text": "nước ngoài dé bảo hành, bảo dưỡng, sửa chữa thực hiện theo quy định sau:",
+      "confidence": 0.9657108466666666
+    }
+  ]
+}

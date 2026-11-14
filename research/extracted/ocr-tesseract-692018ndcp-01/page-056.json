@@ -1,0 +1,333 @@
+{
+  "document_id": "69/2018/NĐ-CP",
+  "source_file": "../../legal-sources/692018ndcp/01.pdf",
+  "source_sha256": "cfe9d66c02837d203a0781cb916273fa6c3c6151b52fc6becc6d1c006d96681e",
+  "page_count": 89,
+  "render_dpi": 150,
+  "engine": "Tesseract 5.5.4 (vie+eng; OEM 1; PSM 3)",
+  "review_status": "UNREVIEWED",
+  "tesseract_version": "5.5.4",
+  "tsv_parser_version": 2,
+  "languages": [
+    "vie",
+    "eng"
+  ],
+  "traineddata_sha256": {
+    "vie": "b6b49293d95d0b6dbd8780174627e82c75be957b6f4ed9862155540d6b00bb45",
+    "eng": "8280aed0782fe27257a68ea10fe7ef324ca0f8d85bd2fd145d1c2b560bcb66ba"
+  },
+  "ocr_engine_mode": 1,
+  "page_segmentation_mode": 3,
+  "thread_limit": 1,
+  "page": 56,
+  "lines": [
+    {
+      "bbox": [
+        [
+          328.0,
+          588.0
+        ],
+        [
+          417.0,
+          588.0
+        ],
+        [
+          417.0,
+          605.0
+        ],
+        [
+          328.0,
+          605.0
+        ]
+      ],
+      "text": "amfibole.",
+      "confidence": 0.91013458
+    },
+    {
+      "bbox": [
+        [
+          272.0,
+          190.0
+        ],
+        [
+          1099.0,
+          190.0
+        ],
+        [
+          1099.0,
+          224.0
+        ],
+        [
+          272.0,
+          224.0
+        ]
+      ],
+      "text": "10 | Hóa chất trong Phụ lục III Công ước Rotterdam. Bộ Nông nghiệp và",
+      "confidence": 0.9347304533333333
+    },
+    {
+      "bbox": [
+        [
+          738.0,
+          219.0
+        ],
+        [
+          1058.0,
+          219.0
+        ],
+        [
+          1058.0,
+          242.0
+        ],
+        [
+          738.0,
+          242.0
+        ]
+      ],
+      "text": "Ñ Phát triển nông thôn",
+      "confidence": 0.88489023
+    },
+    {
+      "bbox": [
+        [
+          273.0,
+          254.0
+        ],
+        [
+          1100.0,
+          254.0
+        ],
+        [
+          1100.0,
+          288.0
+        ],
+        [
+          273.0,
+          288.0
+        ]
+      ],
+      "text": "11 | Thuốc bảo vệ thực vật cấm sử dụng tại Việt Nam. Bộ Nông nghiệp và",
+      "confidence": 0.9566894970588236
+    },
+    {
+      "bbox": [
+        [
+          863.0,
+          285.0
+        ],
+        [
+          1058.0,
+          285.0
+        ],
+        [
+          1058.0,
+          306.0
+        ],
+        [
+          863.0,
+          306.0
+        ]
+      ],
+      "text": "Phát triển nông thôn",
+      "confidence": 0.94645111
+    },
+    {
+      "bbox": [
+        [
+          273.0,
+          316.0
+        ],
+        [
+          1100.0,
+          316.0
+        ],
+        [
+          1100.0,
+          355.0
+        ],
+        [
+          273.0,
+          355.0
+        ]
+      ],
+      "text": "12 1a) Mẫu vật động vật, thực vật hoang dã nguy cấp, | Bộ Nông nghiệp và",
+      "confidence": 0.9395718170588236
+    },
+    {
+      "bbox": [
+        [
+          315.0,
+          344.0
+        ],
+        [
+          1058.0,
+          344.0
+        ],
+        [
+          1058.0,
+          382.0
+        ],
+        [
+          315.0,
+          382.0
+        ]
+      ],
+      "text": "| quý, hiếm thuộc Phụ lục I CITES có nguồn gốc từ tự | Phát triển nông thôn",
+      "confidence": 0.9234206905555555
+    },
+    {
+      "bbox": [
+        [
+          327.0,
+          380.0
+        ],
+        [
+          741.0,
+          380.0
+        ],
+        [
+          741.0,
+          404.0
+        ],
+        [
+          327.0,
+          404.0
+        ]
+      ],
+      "text": "nhiên nhập khâu vì mục đích thương mại. *",
+      "confidence": 0.8348665866666667
+    },
+    {
+      "bbox": [
+        [
+          327.0,
+          406.0
+        ],
+        [
+          838.0,
+          406.0
+        ],
+        [
+          838.0,
+          439.0
+        ],
+        [
+          327.0,
+          439.0
+        ]
+      ],
+      "text": "b) Mẫu vật và sản phẩm chế tác của loài: tê giác",
+      "confidence": 0.9595020866666666
+    },
+    {
+      "bbox": [
+        [
+          328.0,
+          436.0
+        ],
+        [
+          838.0,
+          436.0
+        ],
+        [
+          838.0,
+          461.0
+        ],
+        [
+          328.0,
+          461.0
+        ]
+      ],
+      "text": "trắng (Ceratotherium simum), tê giác đen (Diceros",
+      "confidence": 0.9380024485714286
+    },
+    {
+      "bbox": [
+        [
+          328.0,
+          463.0
+        ],
+        [
+          763.0,
+          463.0
+        ],
+        [
+          763.0,
+          487.0
+        ],
+        [
+          328.0,
+          487.0
+        ]
+      ],
+      "text": "bicornis), voi Châu Phi (Loxodonta africana).",
+      "confidence": 0.9360803733333334
+    },
+    {
+      "bbox": [
+        [
+          274.0,
+          490.0
+        ],
+        [
+          1100.0,
+          490.0
+        ],
+        [
+          1100.0,
+          525.0
+        ],
+        [
+          274.0,
+          525.0
+        ]
+      ],
+      "text": "13 | Phé liệu, phế thải, thiết bị làm lạnh sử dụng C.F.C. Bộ Tài nguyên và",
+      "confidence": 0.941868648235294
+    },
+    {
+      "bbox": [
+        [
+          252.0,
+          522.0
+        ],
+        [
+          974.0,
+          522.0
+        ],
+        [
+          974.0,
+          558.0
+        ],
+        [
+          252.0,
+          558.0
+        ]
+      ],
+      "text": "Lo Ỹ Môi trường",
+      "confidence": 0.6521870599999999
+    },
+    {
+      "bbox": [
+        [
+          274.0,
+          553.0
+        ],
+        [
+          993.0,
+          553.0
+        ],
+        [
+          993.0,
+          587.0
+        ],
+        [
+          274.0,
+          587.0
+        ]
+      ],
+      "text": "14 | Sản phẩm, vật liệu có chứa amiăng thuộc nhóm | Bộ Xây dựng",
+      "confidence": 0.9603627493333333
+    }
+  ]
+}

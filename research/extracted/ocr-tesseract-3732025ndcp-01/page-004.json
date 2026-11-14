@@ -1,0 +1,949 @@
+{
+  "document_id": "373/2025/NĐ-CP",
+  "source_file": "../../legal-sources/3732025ndcp/01.pdf",
+  "source_sha256": "6ca9d1a16b5d47c7aa23f06f243dc59bd2e9dda4d70f3f3c892e4254d2c7d914",
+  "page_count": 74,
+  "render_dpi": 150,
+  "engine": "Tesseract 5.5.4 (vie+eng; OEM 1; PSM 3)",
+  "review_status": "UNREVIEWED",
+  "tesseract_version": "5.5.4",
+  "tsv_parser_version": 2,
+  "languages": [
+    "vie",
+    "eng"
+  ],
+  "traineddata_sha256": {
+    "vie": "b6b49293d95d0b6dbd8780174627e82c75be957b6f4ed9862155540d6b00bb45",
+    "eng": "8280aed0782fe27257a68ea10fe7ef324ca0f8d85bd2fd145d1c2b560bcb66ba"
+  },
+  "ocr_engine_mode": 1,
+  "page_segmentation_mode": 3,
+  "thread_limit": 1,
+  "page": 4,
+  "lines": [
+    {
+      "bbox": [
+        [
+          216.0,
+          175.0
+        ],
+        [
+          1136.0,
+          175.0
+        ],
+        [
+          1136.0,
+          215.0
+        ],
+        [
+          216.0,
+          215.0
+        ]
+      ],
+      "text": "việc kể từ ngày nhận được hồ sơ, cơ quan quản lý thuế có trách nhiệm thông",
+      "confidence": 0.9666006688235294
+    },
+    {
+      "bbox": [
+        [
+          216.0,
+          210.0
+        ],
+        [
+          1136.0,
+          210.0
+        ],
+        [
+          1136.0,
+          251.0
+        ],
+        [
+          216.0,
+          251.0
+        ]
+      ],
+      "text": "báo bằng văn bản cho cơ quan đã gửi hồ sơ để bổ sung, điều chỉnh thông",
+      "confidence": 0.9641801088235294
+    },
+    {
+      "bbox": [
+        [
+          216.0,
+          244.0
+        ],
+        [
+          1148.0,
+          244.0
+        ],
+        [
+          1148.0,
+          283.0
+        ],
+        [
+          216.0,
+          283.0
+        ]
+      ],
+      "text": "tin. Trường hợp nhận được văn bản đề nghị bd sung thông tin của cơ quan thuế, `",
+      "confidence": 0.9313556755555555
+    },
+    {
+      "bbox": [
+        [
+          217.0,
+          278.0
+        ],
+        [
+          1137.0,
+          278.0
+        ],
+        [
+          1137.0,
+          312.0
+        ],
+        [
+          217.0,
+          312.0
+        ]
+      ],
+      "text": "cơ quan nhà nước có thẩm quyền cung cấp hồ sơ, thông tin theo đề nghị của cơ",
+      "confidence": 0.9640682433333333
+    },
+    {
+      "bbox": [
+        [
+          217.0,
+          312.0
+        ],
+        [
+          1135.0,
+          312.0
+        ],
+        [
+          1135.0,
+          345.0
+        ],
+        [
+          217.0,
+          345.0
+        ]
+      ],
+      "text": "quan thuế trong thời hạn 05 ngày làm việc kể từ ngày nhận được văn bản. Sau",
+      "confidence": 0.9658349835294118
+    },
+    {
+      "bbox": [
+        [
+          217.0,
+          346.0
+        ],
+        [
+          1135.0,
+          346.0
+        ],
+        [
+          1135.0,
+          385.0
+        ],
+        [
+          217.0,
+          385.0
+        ]
+      ],
+      "text": "khi nhận đủ hồ sơ, thông tin thì cơ quan quản lý thuế thực hiện tính và ban hành",
+      "confidence": 0.9623613299999999
+    },
+    {
+      "bbox": [
+        [
+          216.0,
+          380.0
+        ],
+        [
+          1135.0,
+          380.0
+        ],
+        [
+          1135.0,
+          414.0
+        ],
+        [
+          216.0,
+          414.0
+        ]
+      ],
+      "text": "thông báo nộp tiền theo thời hạn quy định tại các điều tương ứng của Nghị định",
+      "confidence": 0.9685039799999999
+    },
+    {
+      "bbox": [
+        [
+          217.0,
+          426.0
+        ],
+        [
+          265.0,
+          426.0
+        ],
+        [
+          265.0,
+          446.0
+        ],
+        [
+          217.0,
+          446.0
+        ]
+      ],
+      "text": "này.",
+      "confidence": 0.963368
+    },
+    {
+      "bbox": [
+        [
+          277.0,
+          454.0
+        ],
+        [
+          1135.0,
+          454.0
+        ],
+        [
+          1135.0,
+          499.0
+        ],
+        [
+          277.0,
+          499.0
+        ]
+      ],
+      "text": "b.4) Trường hợp cơ quan quản lý thuế thông báo số tiền thuế phải nộp theo",
+      "confidence": 0.9626264875
+    },
+    {
+      "bbox": [
+        [
+          216.0,
+          489.0
+        ],
+        [
+          1134.0,
+          489.0
+        ],
+        [
+          1134.0,
+          536.0
+        ],
+        [
+          216.0,
+          536.0
+        ]
+      ],
+      "text": "văn bản xác định nghĩa vụ phải nộp của cơ quan nhà nước có thắm quyền theo",
+      "confidence": 0.9589731852941177
+    },
+    {
+      "bbox": [
+        [
+          217.0,
+          521.0
+        ],
+        [
+          1134.0,
+          521.0
+        ],
+        [
+          1134.0,
+          565.0
+        ],
+        [
+          217.0,
+          565.0
+        ]
+      ],
+      "text": "quy định tại các điều tương ứng của Nghị định này. Trường hợp thông tin của",
+      "confidence": 0.9676165006249999
+    },
+    {
+      "bbox": [
+        [
+          217.0,
+          555.0
+        ],
+        [
+          1133.0,
+          555.0
+        ],
+        [
+          1133.0,
+          588.0
+        ],
+        [
+          217.0,
+          588.0
+        ]
+      ],
+      "text": "các cơ quan nhà nước có thẳm quyền chuyển đến chưa đủ căn cứ để ban hành",
+      "confidence": 0.9595879352941177
+    },
+    {
+      "bbox": [
+        [
+          216.0,
+          588.0
+        ],
+        [
+          1133.0,
+          588.0
+        ],
+        [
+          1133.0,
+          627.0
+        ],
+        [
+          216.0,
+          627.0
+        ]
+      ],
+      "text": "thông báo nộp thuế, trong thời hạn 05 ngày làm việc kể từ ngày nhận được văn",
+      "confidence": 0.9659014088235294
+    },
+    {
+      "bbox": [
+        [
+          216.0,
+          622.0
+        ],
+        [
+          1132.0,
+          622.0
+        ],
+        [
+          1132.0,
+          660.0
+        ],
+        [
+          216.0,
+          660.0
+        ]
+      ],
+      "text": "bản, cơ quan quản lý thuế có trách nhiệm thông báo bằng văn bản cho cơ quan",
+      "confidence": 0.9667222188235294
+    },
+    {
+      "bbox": [
+        [
+          217.0,
+          655.0
+        ],
+        [
+          1133.0,
+          655.0
+        ],
+        [
+          1133.0,
+          697.0
+        ],
+        [
+          217.0,
+          697.0
+        ]
+      ],
+      "text": "đã gửi hô sơ dé bồ sung, điều chỉnh thông tin. Trường hợp nhận được văn bản",
+      "confidence": 0.9473832388235295
+    },
+    {
+      "bbox": [
+        [
+          216.0,
+          688.0
+        ],
+        [
+          1132.0,
+          688.0
+        ],
+        [
+          1132.0,
+          727.0
+        ],
+        [
+          216.0,
+          727.0
+        ]
+      ],
+      "text": "đề nghị bổ sung thông tin của cơ quan thuế, cơ quan nhà nước có thẩm quyền",
+      "confidence": 0.9543688423529412
+    },
+    {
+      "bbox": [
+        [
+          216.0,
+          722.0
+        ],
+        [
+          1132.0,
+          722.0
+        ],
+        [
+          1132.0,
+          763.0
+        ],
+        [
+          216.0,
+          763.0
+        ]
+      ],
+      "text": "cung cấp hồ sơ, thông tin theo đề nghị của cơ quan thuế trong thời hạn 05 ngày",
+      "confidence": 0.9647503122222222
+    },
+    {
+      "bbox": [
+        [
+          217.0,
+          755.0
+        ],
+        [
+          1133.0,
+          755.0
+        ],
+        [
+          1133.0,
+          796.0
+        ],
+        [
+          217.0,
+          796.0
+        ]
+      ],
+      "text": "làm việc kể từ ngày nhận được văn bản. Sau khi nhận đủ hồ sơ, thông tin thì cơ",
+      "confidence": 0.9639834478947368
+    },
+    {
+      "bbox": [
+        [
+          216.0,
+          789.0
+        ],
+        [
+          1132.0,
+          789.0
+        ],
+        [
+          1132.0,
+          827.0
+        ],
+        [
+          216.0,
+          827.0
+        ]
+      ],
+      "text": "quan quản lý thuế thực hiện ban hành thông báo nộp tiền theo thời hạn quy định",
+      "confidence": 0.967822655882353
+    },
+    {
+      "bbox": [
+        [
+          215.0,
+          822.0
+        ],
+        [
+          718.0,
+          822.0
+        ],
+        [
+          718.0,
+          856.0
+        ],
+        [
+          215.0,
+          856.0
+        ]
+      ],
+      "text": "tại các điều tương ứng của Nghị định này.”",
+      "confidence": 0.966456728888889
+    },
+    {
+      "bbox": [
+        [
+          276.0,
+          847.0
+        ],
+        [
+          1018.0,
+          847.0
+        ],
+        [
+          1018.0,
+          895.0
+        ],
+        [
+          276.0,
+          895.0
+        ]
+      ],
+      "text": "Điều 5. Sửa đổi, bd sung một số khoản của Điều 18 như sau:",
+      "confidence": 0.9495852985714285
+    },
+    {
+      "bbox": [
+        [
+          279.0,
+          901.0
+        ],
+        [
+          706.0,
+          901.0
+        ],
+        [
+          706.0,
+          934.0
+        ],
+        [
+          279.0,
+          934.0
+        ]
+      ],
+      "text": "1. Sửa đồi, bd sung khoản 3 như sau:",
+      "confidence": 0.9386822344444444
+    },
+    {
+      "bbox": [
+        [
+          276.0,
+          940.0
+        ],
+        [
+          1069.0,
+          940.0
+        ],
+        [
+          1069.0,
+          978.0
+        ],
+        [
+          276.0,
+          978.0
+        ]
+      ],
+      "text": "“3. Tiền thuê đắt và khoản tiền người sử dụng đất phải nộp bổ sung:",
+      "confidence": 0.9453300779999999
+    },
+    {
+      "bbox": [
+        [
+          276.0,
+          979.0
+        ],
+        [
+          862.0,
+          979.0
+        ],
+        [
+          862.0,
+          1024.0
+        ],
+        [
+          276.0,
+          1024.0
+        ]
+      ],
+      "text": "a) Đối với trường hợp nộp tiền thuê đất hằng năm:",
+      "confidence": 0.9622437072727275
+    },
+    {
+      "bbox": [
+        [
+          276.0,
+          1020.0
+        ],
+        [
+          1131.0,
+          1020.0
+        ],
+        [
+          1131.0,
+          1058.0
+        ],
+        [
+          276.0,
+          1058.0
+        ]
+      ],
+      "text": "a.1) Thời hạn nộp tiền thuê đất lằn đầu: Cham nhất là 30 ngày, ké từ ngày",
+      "confidence": 0.9397203917647059
+    },
+    {
+      "bbox": [
+        [
+          215.0,
+          1053.0
+        ],
+        [
+          859.0,
+          1053.0
+        ],
+        [
+          859.0,
+          1087.0
+        ],
+        [
+          215.0,
+          1087.0
+        ]
+      ],
+      "text": "ban hành thông báo nộp tiền thuê đất của cơ quan thuế.",
+      "confidence": 0.9552108241666667
+    },
+    {
+      "bbox": [
+        [
+          276.0,
+          1093.0
+        ],
+        [
+          1132.0,
+          1093.0
+        ],
+        [
+          1132.0,
+          1128.0
+        ],
+        [
+          276.0,
+          1128.0
+        ]
+      ],
+      "text": "a.2) Từ năm thứ hai trở đi, người thuê đất được chọn nộp tiền một lằn hoặc",
+      "confidence": 0.9530006723529412
+    },
+    {
+      "bbox": [
+        [
+          215.0,
+          1124.0
+        ],
+        [
+          1133.0,
+          1124.0
+        ],
+        [
+          1133.0,
+          1173.0
+        ],
+        [
+          215.0,
+          1173.0
+        ]
+      ],
+      "text": "hai lần trong năm. Trường hợp người nộp thuế chọn nộp thuế một lần trong",
+      "confidence": 0.9667631726666667
+    },
+    {
+      "bbox": [
+        [
+          215.0,
+          1160.0
+        ],
+        [
+          1134.0,
+          1160.0
+        ],
+        [
+          1134.0,
+          1206.0
+        ],
+        [
+          215.0,
+          1206.0
+        ]
+      ],
+      "text": "năm thì thời hạn nộp thuế là 31 tháng 5. Trường hợp người thuê đất chọn hình",
+      "confidence": 0.9643958452941176
+    },
+    {
+      "bbox": [
+        [
+          214.0,
+          1192.0
+        ],
+        [
+          1135.0,
+          1192.0
+        ],
+        [
+          1135.0,
+          1232.0
+        ],
+        [
+          214.0,
+          1232.0
+        ]
+      ],
+      "text": "thức nộp tiền 2 lần trong năm thì thời han nộp thuế cho từng kỳ như sau: kỳ thứ",
+      "confidence": 0.9528865694736842
+    },
+    {
+      "bbox": [
+        [
+          214.0,
+          1225.0
+        ],
+        [
+          1134.0,
+          1225.0
+        ],
+        [
+          1134.0,
+          1263.0
+        ],
+        [
+          214.0,
+          1263.0
+        ]
+      ],
+      "text": "nhất nộp 50% chậm nhất là ngày 31 tháng 5; kỳ thứ hai nộp đủ phần còn lại",
+      "confidence": 0.9674347394444445
+    },
+    {
+      "bbox": [
+        [
+          214.0,
+          1260.0
+        ],
+        [
+          760.0,
+          1260.0
+        ],
+        [
+          760.0,
+          1294.0
+        ],
+        [
+          214.0,
+          1294.0
+        ]
+      ],
+      "text": "theo thông báo chậm nhất là ngày 31 tháng 10.",
+      "confidence": 0.9674385839999999
+    },
+    {
+      "bbox": [
+        [
+          272.0,
+          1295.0
+        ],
+        [
+          1133.0,
+          1295.0
+        ],
+        [
+          1133.0,
+          1341.0
+        ],
+        [
+          272.0,
+          1341.0
+        ]
+      ],
+      "text": "Đối với trường hợp thuê đất mới mà thời điểm xác định nghĩa vụ tài chính",
+      "confidence": 0.956643338125
+    },
+    {
+      "bbox": [
+        [
+          215.0,
+          1332.0
+        ],
+        [
+          1134.0,
+          1332.0
+        ],
+        [
+          1134.0,
+          1380.0
+        ],
+        [
+          215.0,
+          1380.0
+        ]
+      ],
+      "text": "về tiền thuê đất phải nộp của năm đầu tiên sau ngày 31 tháng 10 thì cơ quan",
+      "confidence": 0.964279065
+    },
+    {
+      "bbox": [
+        [
+          214.0,
+          1365.0
+        ],
+        [
+          979.0,
+          1365.0
+        ],
+        [
+          979.0,
+          1402.0
+        ],
+        [
+          214.0,
+          1402.0
+        ]
+      ],
+      "text": "thuế ra thông báo nộp tiền thuê đất cho thời gian còn lại của năm.",
+      "confidence": 0.9581003266666667
+    },
+    {
+      "bbox": [
+        [
+          275.0,
+          1407.0
+        ],
+        [
+          1132.0,
+          1407.0
+        ],
+        [
+          1132.0,
+          1449.0
+        ],
+        [
+          275.0,
+          1449.0
+        ]
+      ],
+      "text": "a.3) Thời hạn nộp tiền thuê đất đối với hồ sơ khai điều chỉnh của người",
+      "confidence": 0.9638329849999999
+    },
+    {
+      "bbox": [
+        [
+          214.0,
+          1439.0
+        ],
+        [
+          1133.0,
+          1439.0
+        ],
+        [
+          1133.0,
+          1477.0
+        ],
+        [
+          214.0,
+          1477.0
+        ]
+      ],
+      "text": "nộp thuế chậm nhất là 30 ngày, kể từ ngày ban hành thông báo nộp tiền thuê",
+      "confidence": 0.962809245882353
+    },
+    {
+      "bbox": [
+        [
+          215.0,
+          1472.0
+        ],
+        [
+          257.0,
+          1472.0
+        ],
+        [
+          257.0,
+          1498.0
+        ],
+        [
+          215.0,
+          1498.0
+        ]
+      ],
+      "text": "đất.",
+      "confidence": 0.95812447
+    },
+    {
+      "bbox": [
+        [
+          276.0,
+          1513.0
+        ],
+        [
+          1133.0,
+          1513.0
+        ],
+        [
+          1133.0,
+          1554.0
+        ],
+        [
+          276.0,
+          1554.0
+        ]
+      ],
+      "text": "a.4) Thời hạn nộp tiền thuê đất đối với trường hợp cơ quan thuế thông báo",
+      "confidence": 0.963419966875
+    },
+    {
+      "bbox": [
+        [
+          215.0,
+          1545.0
+        ],
+        [
+          1133.0,
+          1545.0
+        ],
+        [
+          1133.0,
+          1588.0
+        ],
+        [
+          215.0,
+          1588.0
+        ]
+      ],
+      "text": "nộp tiền theo văn bản của cơ quan nhà nước có thầm quyên cho phép gia hạn",
+      "confidence": 0.9633866658823529
+    },
+    {
+      "bbox": [
+        [
+          216.0,
+          1579.0
+        ],
+        [
+          1134.0,
+          1579.0
+        ],
+        [
+          1134.0,
+          1619.0
+        ],
+        [
+          216.0,
+          1619.0
+        ]
+      ],
+      "text": "sử dụng đất trong trường hợp chậm đưa đất vào sử dụng hoặc chậm tiền độ sử",
+      "confidence": 0.9570878564705881
+    },
+    {
+      "bbox": [
+        [
+          216.0,
+          1613.0
+        ],
+        [
+          1133.0,
+          1613.0
+        ],
+        [
+          1133.0,
+          1650.0
+        ],
+        [
+          216.0,
+          1650.0
+        ]
+      ],
+      "text": "dụng đất so với tiền độ ghi trong dự án đầu tư, các trường hợp khác điều chỉnh",
+      "confidence": 0.9622392311111111
+    }
+  ]
+}

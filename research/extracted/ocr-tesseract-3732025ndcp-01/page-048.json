@@ -1,0 +1,179 @@
+{
+  "document_id": "373/2025/NĐ-CP",
+  "source_file": "../../legal-sources/3732025ndcp/01.pdf",
+  "source_sha256": "6ca9d1a16b5d47c7aa23f06f243dc59bd2e9dda4d70f3f3c892e4254d2c7d914",
+  "page_count": 74,
+  "render_dpi": 150,
+  "engine": "Tesseract 5.5.4 (vie+eng; OEM 1; PSM 3)",
+  "review_status": "UNREVIEWED",
+  "tesseract_version": "5.5.4",
+  "tsv_parser_version": 2,
+  "languages": [
+    "vie",
+    "eng"
+  ],
+  "traineddata_sha256": {
+    "vie": "b6b49293d95d0b6dbd8780174627e82c75be957b6f4ed9862155540d6b00bb45",
+    "eng": "8280aed0782fe27257a68ea10fe7ef324ca0f8d85bd2fd145d1c2b560bcb66ba"
+  },
+  "ocr_engine_mode": 1,
+  "page_segmentation_mode": 3,
+  "thread_limit": 1,
+  "page": 48,
+  "lines": [
+    {
+      "bbox": [
+        [
+          616.0,
+          96.0
+        ],
+        [
+          643.0,
+          96.0
+        ],
+        [
+          643.0,
+          117.0
+        ],
+        [
+          616.0,
+          117.0
+        ]
+      ],
+      "text": "40",
+      "confidence": 0.9699430099999999
+    },
+    {
+      "bbox": [
+        [
+          219.0,
+          221.0
+        ],
+        [
+          303.0,
+          221.0
+        ],
+        [
+          303.0,
+          238.0
+        ],
+        [
+          219.0,
+          238.0
+        ]
+      ],
+      "text": "Ghi chủ:",
+      "confidence": 0.8433611300000001
+    },
+    {
+      "bbox": [
+        [
+          225.0,
+          245.0
+        ],
+        [
+          1123.0,
+          245.0
+        ],
+        [
+          1123.0,
+          276.0
+        ],
+        [
+          225.0,
+          276.0
+        ]
+      ],
+      "text": "- Chỉ tiêu [1 1]: Tên người nộp thuế là tên người điều hành, doanh nghiệp liên doanh, công ty điều",
+      "confidence": 0.9446111766666667
+    },
+    {
+      "bbox": [
+        [
+          160.0,
+          273.0
+        ],
+        [
+          608.0,
+          273.0
+        ],
+        [
+          608.0,
+          299.0
+        ],
+        [
+          160.0,
+          299.0
+        ]
+      ],
+      "text": "hành chung, Liên doanh Việt - Nga Vietsovpetro",
+      "confidence": 0.9495078262500001
+    },
+    {
+      "bbox": [
+        [
+          219.0,
+          299.0
+        ],
+        [
+          1138.0,
+          299.0
+        ],
+        [
+          1138.0,
+          328.0
+        ],
+        [
+          219.0,
+          328.0
+        ]
+      ],
+      "text": "- Trường hợp một NNT khai thác đồng thời dầu thô, condensate và khí thiên nhiên thì kê khai thành",
+      "confidence": 0.95647396
+    },
+    {
+      "bbox": [
+        [
+          159.0,
+          327.0
+        ],
+        [
+          369.0,
+          327.0
+        ],
+        [
+          369.0,
+          350.0
+        ],
+        [
+          159.0,
+          350.0
+        ]
+      ],
+      "text": "từng tờ khai riêng biệt.",
+      "confidence": 0.9660459459999999
+    },
+    {
+      "bbox": [
+        [
+          218.0,
+          351.0
+        ],
+        [
+          593.0,
+          351.0
+        ],
+        [
+          593.0,
+          378.0
+        ],
+        [
+          218.0,
+          378.0
+        ]
+      ],
+      "text": "- USD: đô la Mỹ; VND: đồng Việt Nam.",
+      "confidence": 0.9562069611111111
+    }
+  ]
+}

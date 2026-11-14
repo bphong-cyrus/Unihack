@@ -1,0 +1,795 @@
+{
+  "document_id": "69/2018/NĐ-CP",
+  "source_file": "../../legal-sources/692018ndcp/01.pdf",
+  "source_sha256": "cfe9d66c02837d203a0781cb916273fa6c3c6151b52fc6becc6d1c006d96681e",
+  "page_count": 89,
+  "render_dpi": 150,
+  "engine": "Tesseract 5.5.4 (vie+eng; OEM 1; PSM 3)",
+  "review_status": "UNREVIEWED",
+  "tesseract_version": "5.5.4",
+  "tsv_parser_version": 2,
+  "languages": [
+    "vie",
+    "eng"
+  ],
+  "traineddata_sha256": {
+    "vie": "b6b49293d95d0b6dbd8780174627e82c75be957b6f4ed9862155540d6b00bb45",
+    "eng": "8280aed0782fe27257a68ea10fe7ef324ca0f8d85bd2fd145d1c2b560bcb66ba"
+  },
+  "ocr_engine_mode": 1,
+  "page_segmentation_mode": 3,
+  "thread_limit": 1,
+  "page": 2,
+  "lines": [
+    {
+      "bbox": [
+        [
+          317.0,
+          195.0
+        ],
+        [
+          607.0,
+          195.0
+        ],
+        [
+          607.0,
+          222.0
+        ],
+        [
+          317.0,
+          222.0
+        ]
+      ],
+      "text": "Điều 2. Đồi tượng áp dụng",
+      "confidence": 0.9499587016666667
+    },
+    {
+      "bbox": [
+        [
+          320.0,
+          248.0
+        ],
+        [
+          620.0,
+          248.0
+        ],
+        [
+          620.0,
+          274.0
+        ],
+        [
+          320.0,
+          274.0
+        ]
+      ],
+      "text": "1. Cơ quan quản lý nhà nước.",
+      "confidence": 0.9654387014285715
+    },
+    {
+      "bbox": [
+        [
+          318.0,
+          296.0
+        ],
+        [
+          836.0,
+          296.0
+        ],
+        [
+          836.0,
+          324.0
+        ],
+        [
+          318.0,
+          324.0
+        ]
+      ],
+      "text": "2. Thương nhân tham gia hoạt động ngoại thương.",
+      "confidence": 0.9680277277777778
+    },
+    {
+      "bbox": [
+        [
+          318.0,
+          346.0
+        ],
+        [
+          987.0,
+          346.0
+        ],
+        [
+          987.0,
+          372.0
+        ],
+        [
+          318.0,
+          372.0
+        ]
+      ],
+      "text": "3. Tổ chức, cá nhân trong nước và nước ngoài khác có liên quan.",
+      "confidence": 0.9683593192857143
+    },
+    {
+      "bbox": [
+        [
+          613.0,
+          406.0
+        ],
+        [
+          728.0,
+          406.0
+        ],
+        [
+          728.0,
+          434.0
+        ],
+        [
+          613.0,
+          434.0
+        ]
+      ],
+      "text": "Chương II",
+      "confidence": 0.956077
+    },
+    {
+      "bbox": [
+        [
+          385.0,
+          427.0
+        ],
+        [
+          958.0,
+          427.0
+        ],
+        [
+          958.0,
+          458.0
+        ],
+        [
+          385.0,
+          458.0
+        ]
+      ],
+      "text": "QUAN LÝ HOẠT ĐỘNG XUẤT KHẢU, NHẬP KHAU",
+      "confidence": 0.93383864375
+    },
+    {
+      "bbox": [
+        [
+          319.0,
+          475.0
+        ],
+        [
+          921.0,
+          475.0
+        ],
+        [
+          921.0,
+          509.0
+        ],
+        [
+          319.0,
+          509.0
+        ]
+      ],
+      "text": "Điều 3. Quyền tự do kinh doanh xuất khẩu, nhập khẩu",
+      "confidence": 0.9642964381818182
+    },
+    {
+      "bbox": [
+        [
+          322.0,
+          521.0
+        ],
+        [
+          1076.0,
+          521.0
+        ],
+        [
+          1076.0,
+          559.0
+        ],
+        [
+          322.0,
+          559.0
+        ]
+      ],
+      "text": "1. Thương nhân Việt Nam không là tổ chức kinh tế có vốn đầu tư nước",
+      "confidence": 0.96366707375
+    },
+    {
+      "bbox": [
+        [
+          268.0,
+          553.0
+        ],
+        [
+          1077.0,
+          553.0
+        ],
+        [
+          1077.0,
+          586.0
+        ],
+        [
+          268.0,
+          586.0
+        ]
+      ],
+      "text": "ngoài được kinh doanh xuất khẩu, nhập khẩu và thực hiện các hoạt động khác",
+      "confidence": 0.9689392846666667
+    },
+    {
+      "bbox": [
+        [
+          268.0,
+          578.0
+        ],
+        [
+          1077.0,
+          578.0
+        ],
+        [
+          1077.0,
+          623.0
+        ],
+        [
+          268.0,
+          623.0
+        ]
+      ],
+      "text": "có liên quan không. phụ thuộc vào ngành, nghề đăng ký kinh doanh, trừ hang",
+      "confidence": 0.9571374399999999
+    },
+    {
+      "bbox": [
+        [
+          268.0,
+          608.0
+        ],
+        [
+          1077.0,
+          608.0
+        ],
+        [
+          1077.0,
+          646.0
+        ],
+        [
+          268.0,
+          646.0
+        ]
+      ],
+      "text": "hóa thuộc Danh mục cắm xuất khẩu, câm nhập khẩu theo quy định tại Nghị",
+      "confidence": 0.9542058973333333
+    },
+    {
+      "bbox": [
+        [
+          268.0,
+          637.0
+        ],
+        [
+          1078.0,
+          637.0
+        ],
+        [
+          1078.0,
+          678.0
+        ],
+        [
+          268.0,
+          678.0
+        ]
+      ],
+      "text": "định này; hàng hóa cấm xuất khẩu, cấm nhập khẩu khác theo quy định của",
+      "confidence": 0.960584116
+    },
+    {
+      "bbox": [
+        [
+          268.0,
+          662.0
+        ],
+        [
+          938.0,
+          662.0
+        ],
+        [
+          938.0,
+          701.0
+        ],
+        [
+          268.0,
+          701.0
+        ]
+      ],
+      "text": "pháp luật; hàng hóa tạm ngừng xuất khẩu, tạm ngừng nhập khẩu.",
+      "confidence": 0.9650066825
+    },
+    {
+      "bbox": [
+        [
+          321.0,
+          717.0
+        ],
+        [
+          1077.0,
+          717.0
+        ],
+        [
+          1077.0,
+          750.0
+        ],
+        [
+          321.0,
+          750.0
+        ]
+      ],
+      "text": "Chi nhánh của thương nhân Việt Nam được thực hiện hoạt động ngoại",
+      "confidence": 0.9633468000000001
+    },
+    {
+      "bbox": [
+        [
+          268.0,
+          750.0
+        ],
+        [
+          678.0,
+          750.0
+        ],
+        [
+          678.0,
+          775.0
+        ],
+        [
+          268.0,
+          775.0
+        ]
+      ],
+      "text": "thương theo ủy quyên của thương nhân.",
+      "confidence": 0.9590601457142857
+    },
+    {
+      "bbox": [
+        [
+          321.0,
+          790.0
+        ],
+        [
+          1079.0,
+          790.0
+        ],
+        [
+          1079.0,
+          831.0
+        ],
+        [
+          321.0,
+          831.0
+        ]
+      ],
+      "text": "2. Tổ chức kinh tế có vốn đầu tư nước ngoài, chỉ nhánh của thương nhân",
+      "confidence": 0.965324906875
+    },
+    {
+      "bbox": [
+        [
+          269.0,
+          817.0
+        ],
+        [
+          1078.0,
+          817.0
+        ],
+        [
+          1078.0,
+          856.0
+        ],
+        [
+          269.0,
+          856.0
+        ]
+      ],
+      "text": "nước ngoài tại Việt Nam khi tiền hành hoạt động xuất khẩu, nhập khẩu thuộc",
+      "confidence": 0.9568761133333333
+    },
+    {
+      "bbox": [
+        [
+          269.0,
+          847.0
+        ],
+        [
+          1079.0,
+          847.0
+        ],
+        [
+          1079.0,
+          892.0
+        ],
+        [
+          269.0,
+          892.0
+        ]
+      ],
+      "text": "phạm vi điều chỉnh của Nghị định này phải thực hiện các cam kết của Việt",
+      "confidence": 0.9668634512500001
+    },
+    {
+      "bbox": [
+        [
+          269.0,
+          878.0
+        ],
+        [
+          1078.0,
+          878.0
+        ],
+        [
+          1078.0,
+          917.0
+        ],
+        [
+          269.0,
+          917.0
+        ]
+      ],
+      "text": "Nam trong các điều ước quốc tế mà Cộng hòa xã hội chủ nghĩa Việt Nam là",
+      "confidence": 0.9687237729411765
+    },
+    {
+      "bbox": [
+        [
+          269.0,
+          899.0
+        ],
+        [
+          1078.0,
+          899.0
+        ],
+        [
+          1078.0,
+          935.0
+        ],
+        [
+          269.0,
+          935.0
+        ]
+      ],
+      "text": "thành viên, Danh mục hàng hóa và lộ trình do Bộ Công Thương công bố,",
+      "confidence": 0.9606903273333335
+    },
+    {
+      "bbox": [
+        [
+          270.0,
+          937.0
+        ],
+        [
+          1079.0,
+          937.0
+        ],
+        [
+          1079.0,
+          966.0
+        ],
+        [
+          270.0,
+          966.0
+        ]
+      ],
+      "text": "đồng thời thực hiện các quy định tại Nghị định này và các quy định pháp luật",
+      "confidence": 0.9676542476470589
+    },
+    {
+      "bbox": [
+        [
+          270.0,
+          971.0
+        ],
+        [
+          456.0,
+          971.0
+        ],
+        [
+          456.0,
+          994.0
+        ],
+        [
+          270.0,
+          994.0
+        ]
+      ],
+      "text": "khác có liên quan.",
+      "confidence": 0.9697987975000001
+    },
+    {
+      "bbox": [
+        [
+          323.0,
+          1007.0
+        ],
+        [
+          1079.0,
+          1007.0
+        ],
+        [
+          1079.0,
+          1049.0
+        ],
+        [
+          323.0,
+          1049.0
+        ]
+      ],
+      "text": "3, Hoạt động xuất khẩu, nhập khẩu của thương nhân nước ngoài không có",
+      "confidence": 0.9670935214285714
+    },
+    {
+      "bbox": [
+        [
+          271.0,
+          1040.0
+        ],
+        [
+          1079.0,
+          1040.0
+        ],
+        [
+          1079.0,
+          1071.0
+        ],
+        [
+          271.0,
+          1071.0
+        ]
+      ],
+      "text": "hiện diện tại Việt Nam, tổ chức, cá nhân khác có liên quan thuộc các nước,",
+      "confidence": 0.967799005625
+    },
+    {
+      "bbox": [
+        [
+          271.0,
+          1067.0
+        ],
+        [
+          1079.0,
+          1067.0
+        ],
+        [
+          1079.0,
+          1098.0
+        ],
+        [
+          271.0,
+          1098.0
+        ]
+      ],
+      "text": "vùng lãnh thổ là thành viên của Tổ chức Thương mại Thế giới và các nước có",
+      "confidence": 0.9599305911764705
+    },
+    {
+      "bbox": [
+        [
+          271.0,
+          1100.0
+        ],
+        [
+          1067.0,
+          1100.0
+        ],
+        [
+          1067.0,
+          1126.0
+        ],
+        [
+          271.0,
+          1126.0
+        ]
+      ],
+      "text": "thỏa thuận song phương với Việt Nam thực hiện theo quy định của Chính phủ.",
+      "confidence": 0.9686090746666668
+    },
+    {
+      "bbox": [
+        [
+          322.0,
+          1143.0
+        ],
+        [
+          740.0,
+          1143.0
+        ],
+        [
+          740.0,
+          1173.0
+        ],
+        [
+          322.0,
+          1173.0
+        ]
+      ],
+      "text": "Điều 4. Thủ tục xuất khẩu, nhập khẩu",
+      "confidence": 0.9627523325
+    },
+    {
+      "bbox": [
+        [
+          301.0,
+          1188.0
+        ],
+        [
+          1080.0,
+          1188.0
+        ],
+        [
+          1080.0,
+          1230.0
+        ],
+        [
+          301.0,
+          1230.0
+        ]
+      ],
+      "text": "mẽ Đối với hàng hóa xuất khẩu, nhập khẩu theo giấy phép, thương nhân",
+      "confidence": 0.9299047421428572
+    },
+    {
+      "bbox": [
+        [
+          271.0,
+          1220.0
+        ],
+        [
+          1058.0,
+          1220.0
+        ],
+        [
+          1058.0,
+          1249.0
+        ],
+        [
+          271.0,
+          1249.0
+        ]
+      ],
+      "text": "xuất khẩu, nhập khẩu phải có giấy phép của bộ, cơ quan ngang bộ liên quan.",
+      "confidence": 0.9672722156250001
+    },
+    {
+      "bbox": [
+        [
+          302.0,
+          1266.0
+        ],
+        [
+          1080.0,
+          1266.0
+        ],
+        [
+          1080.0,
+          1302.0
+        ],
+        [
+          302.0,
+          1302.0
+        ]
+      ],
+      "text": "_ 2. Đối với hàng hóa xuất khẩu, nhập khẩu theo điều kiện, thương nhân",
+      "confidence": 0.9385109206666666
+    },
+    {
+      "bbox": [
+        [
+          272.0,
+          1296.0
+        ],
+        [
+          990.0,
+          1296.0
+        ],
+        [
+          990.0,
+          1325.0
+        ],
+        [
+          272.0,
+          1325.0
+        ]
+      ],
+      "text": "xuất khâu, nhập khâu phải đáp ứng điều kiện theo quy định pháp luật.",
+      "confidence": 0.9620255007142857
+    },
+    {
+      "bbox": [
+        [
+          324.0,
+          1341.0
+        ],
+        [
+          1081.0,
+          1341.0
+        ],
+        [
+          1081.0,
+          1376.0
+        ],
+        [
+          324.0,
+          1376.0
+        ]
+      ],
+      "text": "3. Đối với hàng hóa thuộc Danh mục hàng hóa xuất khẩu, nhập khẩu",
+      "confidence": 0.9664493449999999
+    },
+    {
+      "bbox": [
+        [
+          273.0,
+          1368.0
+        ],
+        [
+          1081.0,
+          1368.0
+        ],
+        [
+          1081.0,
+          1409.0
+        ],
+        [
+          273.0,
+          1409.0
+        ]
+      ],
+      "text": "phải kiểm tra theo quy định tại Điều 65 Luật Quản lý ngoại thương, thương",
+      "confidence": 0.9634954486666668
+    },
+    {
+      "bbox": [
+        [
+          269.0,
+          1399.0
+        ],
+        [
+          1081.0,
+          1399.0
+        ],
+        [
+          1081.0,
+          1438.0
+        ],
+        [
+          269.0,
+          1438.0
+        ]
+      ],
+      "text": "nhân xuất khẩu, nhập khẩu hàng hóa phải chịu sự kiểm tra của cơ quan có",
+      "confidence": 0.969000396875
+    },
+    {
+      "bbox": [
+        [
+          272.0,
+          1430.0
+        ],
+        [
+          648.0,
+          1430.0
+        ],
+        [
+          648.0,
+          1458.0
+        ],
+        [
+          272.0,
+          1458.0
+        ]
+      ],
+      "text": "thẳm quyền theo quy định pháp luật.",
+      "confidence": 0.9538884071428572
+    }
+  ]
+}

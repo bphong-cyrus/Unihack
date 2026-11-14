@@ -1,0 +1,795 @@
+{
+  "document_id": "59/2018/NĐ-CP",
+  "source_file": "../../legal-sources/592018ndcp/01.pdf",
+  "source_sha256": "7ac1b46e806ae9290125acb9ac1d535bcea768749d16941e9fae20bbf7343a1a",
+  "page_count": 48,
+  "render_dpi": 150,
+  "engine": "Tesseract 5.5.4 (vie+eng; OEM 1; PSM 3)",
+  "review_status": "UNREVIEWED",
+  "tesseract_version": "5.5.4",
+  "tsv_parser_version": 2,
+  "languages": [
+    "vie",
+    "eng"
+  ],
+  "traineddata_sha256": {
+    "vie": "b6b49293d95d0b6dbd8780174627e82c75be957b6f4ed9862155540d6b00bb45",
+    "eng": "8280aed0782fe27257a68ea10fe7ef324ca0f8d85bd2fd145d1c2b560bcb66ba"
+  },
+  "ocr_engine_mode": 1,
+  "page_segmentation_mode": 3,
+  "thread_limit": 1,
+  "page": 28,
+  "lines": [
+    {
+      "bbox": [
+        [
+          665.0,
+          139.0
+        ],
+        [
+          685.0,
+          139.0
+        ],
+        [
+          685.0,
+          155.0
+        ],
+        [
+          665.0,
+          155.0
+        ]
+      ],
+      "text": "28",
+      "confidence": 0.9520907599999999
+    },
+    {
+      "bbox": [
+        [
+          326.0,
+          206.0
+        ],
+        [
+          1079.0,
+          206.0
+        ],
+        [
+          1079.0,
+          260.0
+        ],
+        [
+          326.0,
+          260.0
+        ]
+      ],
+      "text": "b) Chậm nhất 30 phút trước khi tàu bay nhập cảnh tại sân bay đầu tiên",
+      "confidence": 0.960879179375
+    },
+    {
+      "bbox": [
+        [
+          276.0,
+          238.0
+        ],
+        [
+          1055.0,
+          238.0
+        ],
+        [
+          1055.0,
+          275.0
+        ],
+        [
+          276.0,
+          275.0
+        ]
+      ],
+      "text": "của Việt Nam đối với các chuyến bay có thời gian bay ngắn hơn 03 giờ bay;",
+      "confidence": 0.9648029288235296
+    },
+    {
+      "bbox": [
+        [
+          328.0,
+          286.0
+        ],
+        [
+          1080.0,
+          286.0
+        ],
+        [
+          1080.0,
+          330.0
+        ],
+        [
+          328.0,
+          330.0
+        ]
+      ],
+      "text": "¢) Thời hạn cung cấp thông tin đặt chỗ của hành khách (PNR) chậm nhất",
+      "confidence": 0.9553738746666666
+    },
+    {
+      "bbox": [
+        [
+          276.0,
+          323.0
+        ],
+        [
+          787.0,
+          323.0
+        ],
+        [
+          787.0,
+          356.0
+        ],
+        [
+          276.0,
+          356.0
+        ]
+      ],
+      "text": "24 giờ trước thời điểm tàu bay dự kiến nhập cảnh.",
+      "confidence": 0.9674727572727274
+    },
+    {
+      "bbox": [
+        [
+          328.0,
+          374.0
+        ],
+        [
+          623.0,
+          374.0
+        ],
+        [
+          623.0,
+          403.0
+        ],
+        [
+          328.0,
+          403.0
+        ]
+      ],
+      "text": "2. Đối với tàu bay xuất cảnh:",
+      "confidence": 0.9642441657142856
+    },
+    {
+      "bbox": [
+        [
+          328.0,
+          420.0
+        ],
+        [
+          1081.0,
+          420.0
+        ],
+        [
+          1081.0,
+          464.0
+        ],
+        [
+          328.0,
+          464.0
+        ]
+      ],
+      "text": "a) Ngay sau khi hãng vận chuyển hoàn thành thủ tục đối với hàng hóa",
+      "confidence": 0.9624372033333334
+    },
+    {
+      "bbox": [
+        [
+          276.0,
+          449.0
+        ],
+        [
+          1081.0,
+          449.0
+        ],
+        [
+          1081.0,
+          493.0
+        ],
+        [
+          276.0,
+          493.0
+        ]
+      ],
+      "text": "xuất khẩu, hành khách xuất, cảnh đến trước thời điểm tàu bay xuất cảnh, riêng",
+      "confidence": 0.9539140279999999
+    },
+    {
+      "bbox": [
+        [
+          276.0,
+          481.0
+        ],
+        [
+          1081.0,
+          481.0
+        ],
+        [
+          1081.0,
+          517.0
+        ],
+        [
+          276.0,
+          517.0
+        ]
+      ],
+      "text": "bản khai hàng hoá xuất khẩu và vận đơn chủ phải nộp trong thời hạn 01 giờ",
+      "confidence": 0.9673004058823529
+    },
+    {
+      "bbox": [
+        [
+          277.0,
+          513.0
+        ],
+        [
+          573.0,
+          513.0
+        ],
+        [
+          573.0,
+          542.0
+        ],
+        [
+          277.0,
+          542.0
+        ]
+      ],
+      "text": "sau khi tàu bay đã xuất cảnh;",
+      "confidence": 0.9670021585714287
+    },
+    {
+      "bbox": [
+        [
+          328.0,
+          556.0
+        ],
+        [
+          1081.0,
+          556.0
+        ],
+        [
+          1081.0,
+          596.0
+        ],
+        [
+          328.0,
+          596.0
+        ]
+      ],
+      "text": "b) Thời hạn cung cấp thông tin đặt chỗ của hành khách (PNR) chậm nhất",
+      "confidence": 0.9499140366666667
+    },
+    {
+      "bbox": [
+        [
+          277.0,
+          589.0
+        ],
+        [
+          782.0,
+          589.0
+        ],
+        [
+          782.0,
+          621.0
+        ],
+        [
+          277.0,
+          621.0
+        ]
+      ],
+      "text": "24 giờ trước thời điểm tàu bay dự kiến xuất cảnh.",
+      "confidence": 0.9689622009090908
+    },
+    {
+      "bbox": [
+        [
+          329.0,
+          642.0
+        ],
+        [
+          612.0,
+          642.0
+        ],
+        [
+          612.0,
+          670.0
+        ],
+        [
+          329.0,
+          670.0
+        ]
+      ],
+      "text": "3. Đối với tàu bay quá cảnh",
+      "confidence": 0.9577577428571429
+    },
+    {
+      "bbox": [
+        [
+          328.0,
+          686.0
+        ],
+        [
+          1081.0,
+          686.0
+        ],
+        [
+          1081.0,
+          731.0
+        ],
+        [
+          328.0,
+          731.0
+        ]
+      ],
+      "text": "Khi nhập cảnh, thực hiện theo quy định tại khoản 1 Điều này; khi xuất",
+      "confidence": 0.9646135553333334
+    },
+    {
+      "bbox": [
+        [
+          278.0,
+          715.0
+        ],
+        [
+          1078.0,
+          715.0
+        ],
+        [
+          1078.0,
+          749.0
+        ],
+        [
+          278.0,
+          749.0
+        ]
+      ],
+      "text": "cảnh, nếu phải khai hải quan thì thực hiện theo quy định tại khoản 2 Điều này.",
+      "confidence": 0.968121781764706
+    },
+    {
+      "bbox": [
+        [
+          329.0,
+          769.0
+        ],
+        [
+          604.0,
+          769.0
+        ],
+        [
+          604.0,
+          799.0
+        ],
+        [
+          329.0,
+          799.0
+        ]
+      ],
+      "text": "4. Thời hạn nộp hồ sơ giấy",
+      "confidence": 0.9675431371428571
+    },
+    {
+      "bbox": [
+        [
+          329.0,
+          816.0
+        ],
+        [
+          1080.0,
+          816.0
+        ],
+        [
+          1080.0,
+          854.0
+        ],
+        [
+          329.0,
+          854.0
+        ]
+      ],
+      "text": "a) Đối với tàu bay nhập cảnh, người khai hải quan nộp cho cơ quan Hải",
+      "confidence": 0.956225146875
+    },
+    {
+      "bbox": [
+        [
+          277.0,
+          846.0
+        ],
+        [
+          1081.0,
+          846.0
+        ],
+        [
+          1081.0,
+          878.0
+        ],
+        [
+          277.0,
+          878.0
+        ]
+      ],
+      "text": "quan, ngay sau khi và chậm nhất 30 phút kể từ khi tàu bay dừng đỗ tại vị trí",
+      "confidence": 0.9675795347368421
+    },
+    {
+      "bbox": [
+        [
+          277.0,
+          883.0
+        ],
+        [
+          372.0,
+          883.0
+        ],
+        [
+          372.0,
+          906.0
+        ],
+        [
+          277.0,
+          906.0
+        ]
+      ],
+      "text": "quy định;",
+      "confidence": 0.968922765
+    },
+    {
+      "bbox": [
+        [
+          328.0,
+          927.0
+        ],
+        [
+          1081.0,
+          927.0
+        ],
+        [
+          1081.0,
+          963.0
+        ],
+        [
+          328.0,
+          963.0
+        ]
+      ],
+      "text": "b) Đồi với tàu bay xuất cảnh, người khai hải quan nộp cho cơ quan hai",
+      "confidence": 0.94833377
+    },
+    {
+      "bbox": [
+        [
+          278.0,
+          954.0
+        ],
+        [
+          1082.0,
+          954.0
+        ],
+        [
+          1082.0,
+          994.0
+        ],
+        [
+          278.0,
+          994.0
+        ]
+      ],
+      "text": "quan ngay sau khi và chậm nhất 30 phút kể từ khi hãng vận chuyên hoàn",
+      "confidence": 0.96250584125
+    },
+    {
+      "bbox": [
+        [
+          277.0,
+          982.0
+        ],
+        [
+          860.0,
+          982.0
+        ],
+        [
+          860.0,
+          1013.0
+        ],
+        [
+          277.0,
+          1013.0
+        ]
+      ],
+      "text": "thành thủ tục hàng hóa xuất khẩu, hành khách xuất cảnh;",
+      "confidence": 0.9645033354545454
+    },
+    {
+      "bbox": [
+        [
+          329.0,
+          1035.0
+        ],
+        [
+          1081.0,
+          1035.0
+        ],
+        [
+          1081.0,
+          1068.0
+        ],
+        [
+          329.0,
+          1068.0
+        ]
+      ],
+      "text": "9) Đồi với tàu bay quá cảnh, người khai hải quan thực hiện theo quy định",
+      "confidence": 0.93217084125
+    },
+    {
+      "bbox": [
+        [
+          277.0,
+          1068.0
+        ],
+        [
+          627.0,
+          1068.0
+        ],
+        [
+          627.0,
+          1091.0
+        ],
+        [
+          277.0,
+          1091.0
+        ]
+      ],
+      "text": "tại điểm a hoặc điềm b khoản này.",
+      "confidence": 0.9019465149999999
+    },
+    {
+      "bbox": [
+        [
+          329.0,
+          1111.0
+        ],
+        [
+          1078.0,
+          1111.0
+        ],
+        [
+          1078.0,
+          1156.0
+        ],
+        [
+          329.0,
+          1156.0
+        ]
+      ],
+      "text": "5. Người khai hải quan nộp hồ sơ quy định tại khoản 1, khoản 2 Điều 61",
+      "confidence": 0.9617809088235293
+    },
+    {
+      "bbox": [
+        [
+          277.0,
+          1141.0
+        ],
+        [
+          1082.0,
+          1141.0
+        ],
+        [
+          1082.0,
+          1175.0
+        ],
+        [
+          277.0,
+          1175.0
+        ]
+      ],
+      "text": "Nghị định này theo định dạng điện tử gửi đến cơ quan Hải quan thông qua",
+      "confidence": 0.9686620050000001
+    },
+    {
+      "bbox": [
+        [
+          277.0,
+          1173.0
+        ],
+        [
+          1081.0,
+          1173.0
+        ],
+        [
+          1081.0,
+          1199.0
+        ],
+        [
+          277.0,
+          1199.0
+        ]
+      ],
+      "text": "Công thông tin một cửa quốc gia; chỉ tiêu thông tin của các chứng từ khai báo",
+      "confidence": 0.9598758429411766
+    },
+    {
+      "bbox": [
+        [
+          276.0,
+          1203.0
+        ],
+        [
+          1080.0,
+          1203.0
+        ],
+        [
+          1080.0,
+          1233.0
+        ],
+        [
+          276.0,
+          1233.0
+        ]
+      ],
+      "text": "nêu trên được thực hiện theo quy định của Bộ Tài chính; trường hợp người",
+      "confidence": 0.9677041319999999
+    },
+    {
+      "bbox": [
+        [
+          276.0,
+          1228.0
+        ],
+        [
+          1082.0,
+          1228.0
+        ],
+        [
+          1082.0,
+          1261.0
+        ],
+        [
+          276.0,
+          1261.0
+        ]
+      ],
+      "text": "khai hải quan không có diy du thong tin về vận don thứ cập thì người phát",
+      "confidence": 0.9286610958823529
+    },
+    {
+      "bbox": [
+        [
+          277.0,
+          1256.0
+        ],
+        [
+          1081.0,
+          1256.0
+        ],
+        [
+          1081.0,
+          1294.0
+        ],
+        [
+          277.0,
+          1294.0
+        ]
+      ],
+      "text": "hành vận đơn thứ cấp gửi thông tin của vận đơn thứ cấp thông qua Cổng",
+      "confidence": 0.96012486
+    },
+    {
+      "bbox": [
+        [
+          277.0,
+          1286.0
+        ],
+        [
+          1024.0,
+          1286.0
+        ],
+        [
+          1024.0,
+          1315.0
+        ],
+        [
+          277.0,
+          1315.0
+        ]
+      ],
+      "text": "thông tin một cửa quoc gia trong thời hạn quy định tại khoản 1 Điều này.",
+      "confidence": 0.956224414375
+    },
+    {
+      "bbox": [
+        [
+          328.0,
+          1337.0
+        ],
+        [
+          1080.0,
+          1337.0
+        ],
+        [
+          1080.0,
+          1370.0
+        ],
+        [
+          328.0,
+          1370.0
+        ]
+      ],
+      "text": "Trường hợp gặp sự cố không thực hiện được các giao dịch điện tử thì",
+      "confidence": 0.9647114660000001
+    },
+    {
+      "bbox": [
+        [
+          276.0,
+          1365.0
+        ],
+        [
+          1082.0,
+          1365.0
+        ],
+        [
+          1082.0,
+          1398.0
+        ],
+        [
+          276.0,
+          1398.0
+        ]
+      ],
+      "text": "người khai hải quan nộp cho cơ quan hải quan hồ sơ giấy theo mẫu chứng từ",
+      "confidence": 0.9600507129411764
+    },
+    {
+      "bbox": [
+        [
+          277.0,
+          1390.0
+        ],
+        [
+          1081.0,
+          1390.0
+        ],
+        [
+          1081.0,
+          1431.0
+        ],
+        [
+          277.0,
+          1431.0
+        ]
+      ],
+      "text": "do Bộ Tài chính quy định, ngay sau khi hệ thống được phục hồi, người khai",
+      "confidence": 0.9673505225
+    },
+    {
+      "bbox": [
+        [
+          277.0,
+          1423.0
+        ],
+        [
+          1073.0,
+          1423.0
+        ],
+        [
+          1073.0,
+          1452.0
+        ],
+        [
+          277.0,
+          1452.0
+        ]
+      ],
+      "text": "hải quan tạo lập và gửi thông tin điện tử lên Cổng thông tin một cửa quoc gia.",
+      "confidence": 0.9601054049999999
+    }
+  ]
+}

@@ -7,6 +7,7 @@
   "engine": "Tesseract 5.5.4 (vie+eng; OEM 1; PSM 3)",
   "review_status": "UNREVIEWED",
   "tesseract_version": "5.5.4",
+  "tsv_parser_version": 2,
   "languages": [
     "vie",
     "eng"
@@ -17,7 +18,7 @@
   },
   "ocr_engine_mode": 1,
   "page_segmentation_mode": 3,
-  "thread_limit": 2,
+  "thread_limit": 1,
   "page": 21,
   "lines": [
     {
@@ -61,8 +62,8 @@
           184.0
         ]
       ],
-      "text": "9 Thuế giá trị gia tăng, thuế thu nhập\n5\t1\t2\t1\t1\t10\t737\t149\t70\t21\t97.012192\tdoanh\n5\t1\t2\t1\t1\t11\t812\t148\t85\t33\t47.958664\tnghiệp theo phương pháp",
-      "confidence": 0.9161956658333333
+      "text": "9 Thuế giá trị gia tăng, thuế thu \"nhập doanh \"nghiệp theo phương pháp",
+      "confidence": 0.8888611821428571
     },
     {
       "bbox": [

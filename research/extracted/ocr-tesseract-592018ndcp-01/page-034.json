@@ -1,0 +1,817 @@
+{
+  "document_id": "59/2018/NĐ-CP",
+  "source_file": "../../legal-sources/592018ndcp/01.pdf",
+  "source_sha256": "7ac1b46e806ae9290125acb9ac1d535bcea768749d16941e9fae20bbf7343a1a",
+  "page_count": 48,
+  "render_dpi": 150,
+  "engine": "Tesseract 5.5.4 (vie+eng; OEM 1; PSM 3)",
+  "review_status": "UNREVIEWED",
+  "tesseract_version": "5.5.4",
+  "tsv_parser_version": 2,
+  "languages": [
+    "vie",
+    "eng"
+  ],
+  "traineddata_sha256": {
+    "vie": "b6b49293d95d0b6dbd8780174627e82c75be957b6f4ed9862155540d6b00bb45",
+    "eng": "8280aed0782fe27257a68ea10fe7ef324ca0f8d85bd2fd145d1c2b560bcb66ba"
+  },
+  "ocr_engine_mode": 1,
+  "page_segmentation_mode": 3,
+  "thread_limit": 1,
+  "page": 34,
+  "lines": [
+    {
+      "bbox": [
+        [
+          663.0,
+          138.0
+        ],
+        [
+          684.0,
+          138.0
+        ],
+        [
+          684.0,
+          154.0
+        ],
+        [
+          663.0,
+          154.0
+        ]
+      ],
+      "text": "34",
+      "confidence": 0.96191406
+    },
+    {
+      "bbox": [
+        [
+          325.0,
+          207.0
+        ],
+        [
+          1079.0,
+          207.0
+        ],
+        [
+          1079.0,
+          248.0
+        ],
+        [
+          325.0,
+          248.0
+        ]
+      ],
+      "text": "d) Trường hợp có yêu cầu bằng văn bản tạm dừng làm thủ tục hải quan từ",
+      "confidence": 0.9629940711764706
+    },
+    {
+      "bbox": [
+        [
+          274.0,
+          237.0
+        ],
+        [
+          1078.0,
+          237.0
+        ],
+        [
+          1078.0,
+          277.0
+        ],
+        [
+          274.0,
+          277.0
+        ]
+      ],
+      "text": "các cơ quan chức năng khác như Cảng vụ hàng hải, Tòa án, cơ quan Công an,",
+      "confidence": 0.9668371847058823
+    },
+    {
+      "bbox": [
+        [
+          274.0,
+          266.0
+        ],
+        [
+          1079.0,
+          266.0
+        ],
+        [
+          1079.0,
+          306.0
+        ],
+        [
+          274.0,
+          306.0
+        ]
+      ],
+      "text": "Biên phòng, cơ quan kiểm dịch, cơ quan Hải quan nơi làm thủ tục tàu biên nhập",
+      "confidence": 0.9656582905882354
+    },
+    {
+      "bbox": [
+        [
+          274.0,
+          297.0
+        ],
+        [
+          999.0,
+          297.0
+        ],
+        [
+          999.0,
+          334.0
+        ],
+        [
+          274.0,
+          334.0
+        ]
+      ],
+      "text": "cảnh, xuất cảnh phối hợp với các cơ quan chức năng xử lý theo quy định.",
+      "confidence": 0.9678117225
+    },
+    {
+      "bbox": [
+        [
+          327.0,
+          342.0
+        ],
+        [
+          1069.0,
+          342.0
+        ],
+        [
+          1069.0,
+          384.0
+        ],
+        [
+          327.0,
+          384.0
+        ]
+      ],
+      "text": "2. Tiếp nhận và xử lý hồ sơ hải quan đi với tàu biển quá cảnh, chuyển cảng",
+      "confidence": 0.9502219305555555
+    },
+    {
+      "bbox": [
+        [
+          327.0,
+          399.0
+        ],
+        [
+          1081.0,
+          399.0
+        ],
+        [
+          1081.0,
+          437.0
+        ],
+        [
+          327.0,
+          437.0
+        ]
+      ],
+      "text": "a) Tại nơi tàu biển nhập cảnh, cơ quan Hải quan thực hiện các công việc",
+      "confidence": 0.9659579943750001
+    },
+    {
+      "bbox": [
+        [
+          275.0,
+          429.0
+        ],
+        [
+          1082.0,
+          429.0
+        ],
+        [
+          1082.0,
+          467.0
+        ],
+        [
+          275.0,
+          467.0
+        ]
+      ],
+      "text": "theo quy định tại khoản 1 Điều này; kiểm tra trên Công thông tin một cửa",
+      "confidence": 0.967727208125
+    },
+    {
+      "bbox": [
+        [
+          276.0,
+          464.0
+        ],
+        [
+          832.0,
+          464.0
+        ],
+        [
+          832.0,
+          498.0
+        ],
+        [
+          276.0,
+          498.0
+        ]
+      ],
+      "text": "quốc gia đề nắm thông tin tàu biển đến cảng, rời cảng.",
+      "confidence": 0.9572900383333333
+    },
+    {
+      "bbox": [
+        [
+          328.0,
+          507.0
+        ],
+        [
+          1082.0,
+          507.0
+        ],
+        [
+          1082.0,
+          548.0
+        ],
+        [
+          328.0,
+          548.0
+        ]
+      ],
+      "text": "Trường hợp tàu biển có kế hoạch chuyển cảng đến một cảng biển khác",
+      "confidence": 0.9594756435714286
+    },
+    {
+      "bbox": [
+        [
+          277.0,
+          542.0
+        ],
+        [
+          1083.0,
+          542.0
+        ],
+        [
+          1083.0,
+          579.0
+        ],
+        [
+          277.0,
+          579.0
+        ]
+      ],
+      "text": "tại Việt Nam, Chỉ cục Hải quan nơi làm thủ tục nhập cảnh hoặc Chi cục Hải",
+      "confidence": 0.9628890270588236
+    },
+    {
+      "bbox": [
+        [
+          278.0,
+          572.0
+        ],
+        [
+          1083.0,
+          572.0
+        ],
+        [
+          1083.0,
+          610.0
+        ],
+        [
+          278.0,
+          610.0
+        ]
+      ],
+      "text": "quan nơi tàu rời đi tiếp nhận thông tin tàu chuyển cảng do cảng vụ hàng hải,",
+      "confidence": 0.96310283
+    },
+    {
+      "bbox": [
+        [
+          278.0,
+          598.0
+        ],
+        [
+          1084.0,
+          598.0
+        ],
+        [
+          1084.0,
+          639.0
+        ],
+        [
+          278.0,
+          639.0
+        ]
+      ],
+      "text": "hãng tàu hoặc đại lý hãng tàu chuyển đến, lập phiếu chuyển hồ sơ tàu chuyển",
+      "confidence": 0.9668490887500001
+    },
+    {
+      "bbox": [
+        [
+          278.0,
+          631.0
+        ],
+        [
+          1084.0,
+          631.0
+        ],
+        [
+          1084.0,
+          669.0
+        ],
+        [
+          278.0,
+          669.0
+        ]
+      ],
+      "text": "cảng theo chỉ tiêu thông tin quy định của Bộ Tài chính gửi đến Chi cục hai",
+      "confidence": 0.9604590111764706
+    },
+    {
+      "bbox": [
+        [
+          279.0,
+          668.0
+        ],
+        [
+          538.0,
+          668.0
+        ],
+        [
+          538.0,
+          700.0
+        ],
+        [
+          279.0,
+          700.0
+        ]
+      ],
+      "text": "quan nơi tàu dự kiến đến.",
+      "confidence": 0.9660642866666668
+    },
+    {
+      "bbox": [
+        [
+          331.0,
+          716.0
+        ],
+        [
+          809.0,
+          716.0
+        ],
+        [
+          809.0,
+          750.0
+        ],
+        [
+          331.0,
+          750.0
+        ]
+      ],
+      "text": "b) Tại nơi tàu đến hoặc nơi tàu biển xuất cảnh:",
+      "confidence": 0.9630798963636363
+    },
+    {
+      "bbox": [
+        [
+          331.0,
+          765.0
+        ],
+        [
+          1085.0,
+          765.0
+        ],
+        [
+          1085.0,
+          801.0
+        ],
+        [
+          331.0,
+          801.0
+        ]
+      ],
+      "text": "Tiếp nhận phiếu chuyển hồ sơ tàu chuyển cảng, phản hồi thông tin cho",
+      "confidence": 0.9584927964285714
+    },
+    {
+      "bbox": [
+        [
+          280.0,
+          798.0
+        ],
+        [
+          1086.0,
+          798.0
+        ],
+        [
+          1086.0,
+          830.0
+        ],
+        [
+          280.0,
+          830.0
+        ]
+      ],
+      "text": "Chỉ cục hải quan nơi lập phiếu và thực hiện thủ tục hải quan tàu biên xuất",
+      "confidence": 0.9567181852941177
+    },
+    {
+      "bbox": [
+        [
+          280.0,
+          830.0
+        ],
+        [
+          700.0,
+          830.0
+        ],
+        [
+          700.0,
+          861.0
+        ],
+        [
+          280.0,
+          861.0
+        ]
+      ],
+      "text": "cảnh theo quy định tại khoản 1 Điều này.",
+      "confidence": 0.9673617733333333
+    },
+    {
+      "bbox": [
+        [
+          332.0,
+          874.0
+        ],
+        [
+          1087.0,
+          874.0
+        ],
+        [
+          1087.0,
+          912.0
+        ],
+        [
+          332.0,
+          912.0
+        ]
+      ],
+      "text": "¢) Trong trường hợp tàu biến tiếp tục có kế hoạch chuyển cảng đến một",
+      "confidence": 0.9256882333333333
+    },
+    {
+      "bbox": [
+        [
+          281.0,
+          911.0
+        ],
+        [
+          999.0,
+          911.0
+        ],
+        [
+          999.0,
+          943.0
+        ],
+        [
+          281.0,
+          943.0
+        ]
+      ],
+      "text": "cảng khác tiếp theo tại Việt Nam thì thực hiện theo điểm a khoản này.",
+      "confidence": 0.9619315946666667
+    },
+    {
+      "bbox": [
+        [
+          333.0,
+          961.0
+        ],
+        [
+          1087.0,
+          961.0
+        ],
+        [
+          1087.0,
+          994.0
+        ],
+        [
+          333.0,
+          994.0
+        ]
+      ],
+      "text": "d) Trường hợp hệ thống gặp sự cố không thực hiện được các giao dịch",
+      "confidence": 0.964229288
+    },
+    {
+      "bbox": [
+        [
+          282.0,
+          993.0
+        ],
+        [
+          880.0,
+          993.0
+        ],
+        [
+          880.0,
+          1022.0
+        ],
+        [
+          282.0,
+          1022.0
+        ]
+      ],
+      "text": "điện tử và trường hợp người khai hải quan nộp hô sơ giây:",
+      "confidence": 0.9658000123076923
+    },
+    {
+      "bbox": [
+        [
+          320.0,
+          1041.0
+        ],
+        [
+          1087.0,
+          1041.0
+        ],
+        [
+          1087.0,
+          1078.0
+        ],
+        [
+          320.0,
+          1078.0
+        ]
+      ],
+      "text": "Co quan Hai quan noi tau nhập cảnh hoặc noi tàu rời đi thực hiện lập",
+      "confidence": 0.93781029625
+    },
+    {
+      "bbox": [
+        [
+          281.0,
+          1069.0
+        ],
+        [
+          1087.0,
+          1069.0
+        ],
+        [
+          1087.0,
+          1101.0
+        ],
+        [
+          281.0,
+          1101.0
+        ]
+      ],
+      "text": "Phiếu chuyển hồ sơ tàu chuyển cảng theo mẫu quy định của Bộ Tài chính;",
+      "confidence": 0.9661259106666666
+    },
+    {
+      "bbox": [
+        [
+          281.0,
+          1096.0
+        ],
+        [
+          1088.0,
+          1096.0
+        ],
+        [
+          1088.0,
+          1130.0
+        ],
+        [
+          281.0,
+          1130.0
+        ]
+      ],
+      "text": "niêm phong cùng bộ hồ sơ theo quy định tại khoản 3 Điều 65 Nghị định này",
+      "confidence": 0.96746604
+    },
+    {
+      "bbox": [
+        [
+          282.0,
+          1123.0
+        ],
+        [
+          1088.0,
+          1123.0
+        ],
+        [
+          1088.0,
+          1163.0
+        ],
+        [
+          282.0,
+          1163.0
+        ]
+      ],
+      "text": "giao người khai hai quan chuyển cho cơ quan Hải quan nơi tàu đến hoặc nơi",
+      "confidence": 0.964309634375
+    },
+    {
+      "bbox": [
+        [
+          282.0,
+          1163.0
+        ],
+        [
+          423.0,
+          1163.0
+        ],
+        [
+          423.0,
+          1182.0
+        ],
+        [
+          282.0,
+          1182.0
+        ]
+      ],
+      "text": "tàu xuất cảnh.",
+      "confidence": 0.9661876933333333
+    },
+    {
+      "bbox": [
+        [
+          334.0,
+          1203.0
+        ],
+        [
+          1089.0,
+          1203.0
+        ],
+        [
+          1089.0,
+          1242.0
+        ],
+        [
+          334.0,
+          1242.0
+        ]
+      ],
+      "text": "Cơ quan Hải quan nơi tàu xuất cảnh hoặc nơi tàu đến tiếp nhận từ người",
+      "confidence": 0.966433463125
+    },
+    {
+      "bbox": [
+        [
+          282.0,
+          1236.0
+        ],
+        [
+          1089.0,
+          1236.0
+        ],
+        [
+          1089.0,
+          1270.0
+        ],
+        [
+          282.0,
+          1270.0
+        ]
+      ],
+      "text": "khai hải quan bộ hồ sơ đã niêm phong do Cơ quan Hải quan nơi tàu nhập",
+      "confidence": 0.9682237688235295
+    },
+    {
+      "bbox": [
+        [
+          283.0,
+          1264.0
+        ],
+        [
+          1090.0,
+          1264.0
+        ],
+        [
+          1090.0,
+          1301.0
+        ],
+        [
+          283.0,
+          1301.0
+        ]
+      ],
+      "text": "cảnh/nơi tàu rời đi chuyên đến, phản hồi thông tin cho cơ quan hải quan nơi",
+      "confidence": 0.963551806875
+    },
+    {
+      "bbox": [
+        [
+          284.0,
+          1290.0
+        ],
+        [
+          1090.0,
+          1290.0
+        ],
+        [
+          1090.0,
+          1325.0
+        ],
+        [
+          284.0,
+          1325.0
+        ]
+      ],
+      "text": "lập phiêu chuyển hồ sơ và thực hiện thủ tục hải quan đối với tàu biển xuất",
+      "confidence": 0.9616169811764705
+    },
+    {
+      "bbox": [
+        [
+          283.0,
+          1330.0
+        ],
+        [
+          484.0,
+          1330.0
+        ],
+        [
+          484.0,
+          1353.0
+        ],
+        [
+          283.0,
+          1353.0
+        ]
+      ],
+      "text": "cảnh theo quy định.",
+      "confidence": 0.9696568475
+    },
+    {
+      "bbox": [
+        [
+          335.0,
+          1377.0
+        ],
+        [
+          750.0,
+          1377.0
+        ],
+        [
+          750.0,
+          1402.0
+        ],
+        [
+          335.0,
+          1402.0
+        ]
+      ],
+      "text": "3. Trách nhiệm của người khai hải quan:",
+      "confidence": 0.96914092125
+    },
+    {
+      "bbox": [
+        [
+          335.0,
+          1419.0
+        ],
+        [
+          1091.0,
+          1419.0
+        ],
+        [
+          1091.0,
+          1457.0
+        ],
+        [
+          335.0,
+          1457.0
+        ]
+      ],
+      "text": "Khai báo thông tin theo quy định khoản 1, khoản 2 Điều 65, Điều 66",
+      "confidence": 0.963682872
+    },
+    {
+      "bbox": [
+        [
+          284.0,
+          1456.0
+        ],
+        [
+          788.0,
+          1456.0
+        ],
+        [
+          788.0,
+          1483.0
+        ],
+        [
+          284.0,
+          1483.0
+        ]
+      ],
+      "text": "Nghị định này khi tàu biển nhập cảnh, xuat cảnh.",
+      "confidence": 0.9582435849999998
+    }
+  ]
+}

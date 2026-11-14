@@ -1,0 +1,817 @@
+{
+  "document_id": "127/2013/NĐ-CP",
+  "source_file": "../../legal-sources/1272013ndcp/01.pdf",
+  "source_sha256": "6b970da9c19ccae81ecbc3385fb53f1fa2375e93ad03643e1f9b4e43ed87e573",
+  "page_count": 49,
+  "render_dpi": 150,
+  "engine": "Tesseract 5.5.4 (vie+eng; OEM 1; PSM 3)",
+  "review_status": "UNREVIEWED",
+  "tesseract_version": "5.5.4",
+  "tsv_parser_version": 2,
+  "languages": [
+    "vie",
+    "eng"
+  ],
+  "traineddata_sha256": {
+    "vie": "b6b49293d95d0b6dbd8780174627e82c75be957b6f4ed9862155540d6b00bb45",
+    "eng": "8280aed0782fe27257a68ea10fe7ef324ca0f8d85bd2fd145d1c2b560bcb66ba"
+  },
+  "ocr_engine_mode": 1,
+  "page_segmentation_mode": 3,
+  "thread_limit": 1,
+  "page": 24,
+  "lines": [
+    {
+      "bbox": [
+        [
+          356.0,
+          203.0
+        ],
+        [
+          581.0,
+          203.0
+        ],
+        [
+          581.0,
+          231.0
+        ],
+        [
+          356.0,
+          231.0
+        ]
+      ],
+      "text": "2. Đối tượng áp dụng:",
+      "confidence": 0.942979692
+    },
+    {
+      "bbox": [
+        [
+          355.0,
+          250.0
+        ],
+        [
+          1102.0,
+          250.0
+        ],
+        [
+          1102.0,
+          280.0
+        ],
+        [
+          355.0,
+          280.0
+        ]
+      ],
+      "text": "a) Tổ chức, cá nhân bị cưỡng chế thi hành quyết định hành chính trong",
+      "confidence": 0.9638089593333333
+    },
+    {
+      "bbox": [
+        [
+          305.0,
+          284.0
+        ],
+        [
+          775.0,
+          284.0
+        ],
+        [
+          775.0,
+          308.0
+        ],
+        [
+          305.0,
+          308.0
+        ]
+      ],
+      "text": "lĩnh vực hải quan theo quy định của pháp luật;",
+      "confidence": 0.966917984
+    },
+    {
+      "bbox": [
+        [
+          354.0,
+          332.0
+        ],
+        [
+          778.0,
+          332.0
+        ],
+        [
+          778.0,
+          356.0
+        ],
+        [
+          354.0,
+          356.0
+        ]
+      ],
+      "text": "b) Cơ quan hải quan, công chức hải quan;",
+      "confidence": 0.9649974744444444
+    },
+    {
+      "bbox": [
+        [
+          354.0,
+          374.0
+        ],
+        [
+          1100.0,
+          374.0
+        ],
+        [
+          1100.0,
+          411.0
+        ],
+        [
+          354.0,
+          411.0
+        ]
+      ],
+      "text": "c) Co quan nha nước, tổ chức, cá nhân khác liên quan đến việc thực hiện",
+      "confidence": 0.9567730618749999
+    },
+    {
+      "bbox": [
+        [
+          303.0,
+          407.0
+        ],
+        [
+          980.0,
+          407.0
+        ],
+        [
+          980.0,
+          431.0
+        ],
+        [
+          303.0,
+          431.0
+        ]
+      ],
+      "text": "cưỡng chê thi hành quyết định hành chính trong lĩnh vực hải quan.",
+      "confidence": 0.9395208476923077
+    },
+    {
+      "bbox": [
+        [
+          353.0,
+          449.0
+        ],
+        [
+          953.0,
+          449.0
+        ],
+        [
+          953.0,
+          478.0
+        ],
+        [
+          353.0,
+          478.0
+        ]
+      ],
+      "text": "3. Các quyết định hành chính trong lĩnh vực hải quan gồm:",
+      "confidence": 0.9673443041666667
+    },
+    {
+      "bbox": [
+        [
+          348.0,
+          492.0
+        ],
+        [
+          1098.0,
+          492.0
+        ],
+        [
+          1098.0,
+          534.0
+        ],
+        [
+          348.0,
+          534.0
+        ]
+      ],
+      "text": "a) Các quyết định hành chính thuế trong lĩnh vực hải quan: Thông báo về",
+      "confidence": 0.9428464046666666
+    },
+    {
+      "bbox": [
+        [
+          302.0,
+          525.0
+        ],
+        [
+          1098.0,
+          525.0
+        ],
+        [
+          1098.0,
+          558.0
+        ],
+        [
+          302.0,
+          558.0
+        ]
+      ],
+      "text": "số tiền thuế nợ và tiền chậm nộp; quyết định ấn \"định thuế; thông báo số tiền",
+      "confidence": 0.9461217605882354
+    },
+    {
+      "bbox": [
+        [
+          301.0,
+          555.0
+        ],
+        [
+          1097.0,
+          555.0
+        ],
+        [
+          1097.0,
+          583.0
+        ],
+        [
+          301.0,
+          583.0
+        ]
+      ],
+      "text": "thuế phải nộp lại do được hoàn cao hơn; các quyết định xử phạt vi phạm hành",
+      "confidence": 0.9694557688235294
+    },
+    {
+      "bbox": [
+        [
+          301.0,
+          583.0
+        ],
+        [
+          687.0,
+          583.0
+        ],
+        [
+          687.0,
+          611.0
+        ],
+        [
+          301.0,
+          611.0
+        ]
+      ],
+      "text": "chính về thuế trong lĩnh vực hải quan;",
+      "confidence": 0.9570787250000001
+    },
+    {
+      "bbox": [
+        [
+          351.0,
+          629.0
+        ],
+        [
+          1096.0,
+          629.0
+        ],
+        [
+          1096.0,
+          657.0
+        ],
+        [
+          351.0,
+          657.0
+        ]
+      ],
+      "text": "b) Các quyết định hành chính khác trong lĩnh vực hải quan gồm các",
+      "confidence": 0.9655879585714285
+    },
+    {
+      "bbox": [
+        [
+          300.0,
+          658.0
+        ],
+        [
+          1096.0,
+          658.0
+        ],
+        [
+          1096.0,
+          686.0
+        ],
+        [
+          300.0,
+          686.0
+        ]
+      ],
+      "text": "quyết định xử phạt vi phạm hành chính trong lĩnh vực hải quan và quyết định",
+      "confidence": 0.96819355375
+    },
+    {
+      "bbox": [
+        [
+          300.0,
+          686.0
+        ],
+        [
+          1096.0,
+          686.0
+        ],
+        [
+          1096.0,
+          715.0
+        ],
+        [
+          300.0,
+          715.0
+        ]
+      ],
+      "text": "áp dụng các biện pháp khắc phục hậu quả theo quy định của pháp luật về xử",
+      "confidence": 0.9672287570588235
+    },
+    {
+      "bbox": [
+        [
+          300.0,
+          720.0
+        ],
+        [
+          775.0,
+          720.0
+        ],
+        [
+          775.0,
+          743.0
+        ],
+        [
+          300.0,
+          743.0
+        ]
+      ],
+      "text": "lý vi phạm hành chính trong lĩnh vực hải quan.",
+      "confidence": 0.965892478
+    },
+    {
+      "bbox": [
+        [
+          350.0,
+          761.0
+        ],
+        [
+          952.0,
+          761.0
+        ],
+        [
+          952.0,
+          789.0
+        ],
+        [
+          350.0,
+          789.0
+        ]
+      ],
+      "text": "4. Đối tượng bị áp dụng các biện pháp cưỡng chế bao gồm:",
+      "confidence": 0.9630008461538462
+    },
+    {
+      "bbox": [
+        [
+          349.0,
+          808.0
+        ],
+        [
+          1094.0,
+          808.0
+        ],
+        [
+          1094.0,
+          840.0
+        ],
+        [
+          349.0,
+          840.0
+        ]
+      ],
+      "text": "a) Người khai hải quan, người nộp thuế có nghĩa vụ chấp hành các quyết",
+      "confidence": 0.9668036753333332
+    },
+    {
+      "bbox": [
+        [
+          299.0,
+          836.0
+        ],
+        [
+          952.0,
+          836.0
+        ],
+        [
+          952.0,
+          865.0
+        ],
+        [
+          299.0,
+          865.0
+        ]
+      ],
+      "text": "định hành chính nêu tại Khoản 3 Điều này mà không chấp hành;",
+      "confidence": 0.9682715976923078
+    },
+    {
+      "bbox": [
+        [
+          348.0,
+          883.0
+        ],
+        [
+          1093.0,
+          883.0
+        ],
+        [
+          1093.0,
+          919.0
+        ],
+        [
+          348.0,
+          919.0
+        ]
+      ],
+      "text": "b) Kho bạc Nhà. nước, ngân hàng, tổ chức tín dụng khác; tổ chức, cá",
+      "confidence": 0.962182816
+    },
+    {
+      "bbox": [
+        [
+          297.0,
+          911.0
+        ],
+        [
+          1092.0,
+          911.0
+        ],
+        [
+          1092.0,
+          945.0
+        ],
+        [
+          297.0,
+          945.0
+        ]
+      ],
+      "text": "nhân đang quản lý tiền lương hoặc thu nhập của cá nhân bị cưỡng chế thi",
+      "confidence": 0.9628635643750001
+    },
+    {
+      "bbox": [
+        [
+          298.0,
+          940.0
+        ],
+        [
+          1092.0,
+          940.0
+        ],
+        [
+          1092.0,
+          978.0
+        ],
+        [
+          298.0,
+          978.0
+        ]
+      ],
+      "text": "hành quyết định hành chính không chấp hành quyết định xử phạt vi phạm",
+      "confidence": 0.9674076964285715
+    },
+    {
+      "bbox": [
+        [
+          297.0,
+          974.0
+        ],
+        [
+          1092.0,
+          974.0
+        ],
+        [
+          1092.0,
+          998.0
+        ],
+        [
+          297.0,
+          998.0
+        ]
+      ],
+      "text": "hành chính về hành vi không trích nộp, khâu trừ tiên của đôi tượng bị cưỡng",
+      "confidence": 0.9438632206249999
+    },
+    {
+      "bbox": [
+        [
+          297.0,
+          999.0
+        ],
+        [
+          1092.0,
+          999.0
+        ],
+        [
+          1092.0,
+          1027.0
+        ],
+        [
+          297.0,
+          1027.0
+        ]
+      ],
+      "text": "chế vào tài khoản thu ngân sách nhà nước hoặc tài khoản tạm giữ của cơ quan",
+      "confidence": 0.964845091764706
+    },
+    {
+      "bbox": [
+        [
+          297.0,
+          1032.0
+        ],
+        [
+          659.0,
+          1032.0
+        ],
+        [
+          659.0,
+          1056.0
+        ],
+        [
+          297.0,
+          1056.0
+        ]
+      ],
+      "text": "hải quan mở tại Kho bạc Nhà nước;",
+      "confidence": 0.9692426962499999
+    },
+    {
+      "bbox": [
+        [
+          348.0,
+          1074.0
+        ],
+        [
+          1091.0,
+          1074.0
+        ],
+        [
+          1091.0,
+          1113.0
+        ],
+        [
+          348.0,
+          1113.0
+        ]
+      ],
+      "text": "c) Người bảo lãnh không thực hiện nghĩa vụ nộp tiền thuế, tiền phạt thay",
+      "confidence": 0.9511725346666666
+    },
+    {
+      "bbox": [
+        [
+          297.0,
+          1102.0
+        ],
+        [
+          1091.0,
+          1102.0
+        ],
+        [
+          1091.0,
+          1136.0
+        ],
+        [
+          297.0,
+          1136.0
+        ]
+      ],
+      "text": "cho người nộp thuế theo thông báo của cơ quan hải quan trong trường hợp",
+      "confidence": 0.9680918893333335
+    },
+    {
+      "bbox": [
+        [
+          296.0,
+          1132.0
+        ],
+        [
+          765.0,
+          1132.0
+        ],
+        [
+          765.0,
+          1160.0
+        ],
+        [
+          296.0,
+          1160.0
+        ]
+      ],
+      "text": "người nộp thuế không nộp tiền thuế, tiền phạt;",
+      "confidence": 0.9554798044444445
+    },
+    {
+      "bbox": [
+        [
+          347.0,
+          1174.0
+        ],
+        [
+          1090.0,
+          1174.0
+        ],
+        [
+          1090.0,
+          1216.0
+        ],
+        [
+          347.0,
+          1216.0
+        ]
+      ],
+      "text": "d) Tổ chức, cá nhân nắm giữ tiền, tài sản của người nộp thuế không chấp",
+      "confidence": 0.957941999375
+    },
+    {
+      "bbox": [
+        [
+          292.0,
+          1208.0
+        ],
+        [
+          1078.0,
+          1208.0
+        ],
+        [
+          1078.0,
+          1241.0
+        ],
+        [
+          292.0,
+          1241.0
+        ]
+      ],
+      "text": "hành quyết định cưỡng chế thu tiền, tài sản của người nộp thuế do họ nắm giữ;",
+      "confidence": 0.9637162235294118
+    },
+    {
+      "bbox": [
+        [
+          347.0,
+          1255.0
+        ],
+        [
+          1090.0,
+          1255.0
+        ],
+        [
+          1090.0,
+          1284.0
+        ],
+        [
+          347.0,
+          1284.0
+        ]
+      ],
+      "text": "d) Tổ chức, cá nhân có liên quan không chấp hành các quyết định xử",
+      "confidence": 0.9623050540000001
+    },
+    {
+      "bbox": [
+        [
+          295.0,
+          1290.0
+        ],
+        [
+          771.0,
+          1290.0
+        ],
+        [
+          771.0,
+          1314.0
+        ],
+        [
+          295.0,
+          1314.0
+        ]
+      ],
+      "text": "phạt vi phạm hành chính của cơ quan hải quan.",
+      "confidence": 0.966378486
+    },
+    {
+      "bbox": [
+        [
+          345.0,
+          1332.0
+        ],
+        [
+          1088.0,
+          1332.0
+        ],
+        [
+          1088.0,
+          1360.0
+        ],
+        [
+          345.0,
+          1360.0
+        ]
+      ],
+      "text": "Điều 26. Trường hợp bị cưỡng chế thi hành quyết định hành chính",
+      "confidence": 0.968313686923077
+    },
+    {
+      "bbox": [
+        [
+          296.0,
+          1367.0
+        ],
+        [
+          548.0,
+          1367.0
+        ],
+        [
+          548.0,
+          1391.0
+        ],
+        [
+          296.0,
+          1391.0
+        ]
+      ],
+      "text": "trong lĩnh vực hải quan",
+      "confidence": 0.968556318
+    },
+    {
+      "bbox": [
+        [
+          348.0,
+          1404.0
+        ],
+        [
+          1086.0,
+          1404.0
+        ],
+        [
+          1086.0,
+          1446.0
+        ],
+        [
+          348.0,
+          1446.0
+        ]
+      ],
+      "text": "1. Đối với các quyết định hành chính thuế trong lĩnh vực hải quan nêu tại",
+      "confidence": 0.967740206875
+    },
+    {
+      "bbox": [
+        [
+          295.0,
+          1438.0
+        ],
+        [
+          1022.0,
+          1438.0
+        ],
+        [
+          1022.0,
+          1466.0
+        ],
+        [
+          295.0,
+          1466.0
+        ]
+      ],
+      "text": "Điểm a Khoản 3 Điều 25 Nghị định này bị cưỡng chế trong trường hợp:",
+      "confidence": 0.9612585246666667
+    },
+    {
+      "bbox": [
+        [
+          1066.0,
+          1504.0
+        ],
+        [
+          1086.0,
+          1504.0
+        ],
+        [
+          1086.0,
+          1519.0
+        ],
+        [
+          1066.0,
+          1519.0
+        ]
+      ],
+      "text": "24",
+      "confidence": 0.96115471
+    }
+  ]
+}

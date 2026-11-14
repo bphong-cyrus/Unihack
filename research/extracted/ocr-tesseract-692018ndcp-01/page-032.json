@@ -1,0 +1,795 @@
+{
+  "document_id": "69/2018/NĐ-CP",
+  "source_file": "../../legal-sources/692018ndcp/01.pdf",
+  "source_sha256": "cfe9d66c02837d203a0781cb916273fa6c3c6151b52fc6becc6d1c006d96681e",
+  "page_count": 89,
+  "render_dpi": 150,
+  "engine": "Tesseract 5.5.4 (vie+eng; OEM 1; PSM 3)",
+  "review_status": "UNREVIEWED",
+  "tesseract_version": "5.5.4",
+  "tsv_parser_version": 2,
+  "languages": [
+    "vie",
+    "eng"
+  ],
+  "traineddata_sha256": {
+    "vie": "b6b49293d95d0b6dbd8780174627e82c75be957b6f4ed9862155540d6b00bb45",
+    "eng": "8280aed0782fe27257a68ea10fe7ef324ca0f8d85bd2fd145d1c2b560bcb66ba"
+  },
+  "ocr_engine_mode": 1,
+  "page_segmentation_mode": 3,
+  "thread_limit": 1,
+  "page": 32,
+  "lines": [
+    {
+      "bbox": [
+        [
+          663.0,
+          126.0
+        ],
+        [
+          683.0,
+          126.0
+        ],
+        [
+          683.0,
+          142.0
+        ],
+        [
+          663.0,
+          142.0
+        ]
+      ],
+      "text": "32",
+      "confidence": 0.96602631
+    },
+    {
+      "bbox": [
+        [
+          321.0,
+          180.0
+        ],
+        [
+          1079.0,
+          180.0
+        ],
+        [
+          1079.0,
+          218.0
+        ],
+        [
+          321.0,
+          218.0
+        ]
+      ],
+      "text": "d) Được nhận tiền thanh toán của bên đặt gia công bằng sản phẩm gia",
+      "confidence": 0.9587947493333333
+    },
+    {
+      "bbox": [
+        [
+          270.0,
+          211.0
+        ],
+        [
+          1079.0,
+          211.0
+        ],
+        [
+          1079.0,
+          251.0
+        ],
+        [
+          270.0,
+          251.0
+        ]
+      ],
+      "text": "công, trừ sản phẩm thuộc Danh mục hàng hóa cam nhập khâu, tam ngừng",
+      "confidence": 0.951058285
+    },
+    {
+      "bbox": [
+        [
+          270.0,
+          243.0
+        ],
+        [
+          1079.0,
+          243.0
+        ],
+        [
+          1079.0,
+          277.0
+        ],
+        [
+          270.0,
+          277.0
+        ]
+      ],
+      "text": "nhập khẩu. Đối với sản phẩm thuộc Danh mục hàng hóa nhập khâu theo giây",
+      "confidence": 0.9555549026666667
+    },
+    {
+      "bbox": [
+        [
+          270.0,
+          269.0
+        ],
+        [
+          1044.0,
+          269.0
+        ],
+        [
+          1044.0,
+          307.0
+        ],
+        [
+          270.0,
+          307.0
+        ]
+      ],
+      "text": "phép, theo điều kiện thì phải tuân thủ các quy định về giây phép, điều kiện.",
+      "confidence": 0.956556656875
+    },
+    {
+      "bbox": [
+        [
+          322.0,
+          320.0
+        ],
+        [
+          1080.0,
+          320.0
+        ],
+        [
+          1080.0,
+          358.0
+        ],
+        [
+          322.0,
+          358.0
+        ]
+      ],
+      "text": "đ) Phải tuân thủ các quy định của pháp luật Việt Nam về hoạt động gia",
+      "confidence": 0.9625468150000001
+    },
+    {
+      "bbox": [
+        [
+          271.0,
+          352.0
+        ],
+        [
+          1080.0,
+          352.0
+        ],
+        [
+          1080.0,
+          393.0
+        ],
+        [
+          271.0,
+          393.0
+        ]
+      ],
+      "text": "cong xuất khẩu, nhập khâu, sản xuất hàng hóa trong nước và các điều khoản",
+      "confidence": 0.9612952019999998
+    },
+    {
+      "bbox": [
+        [
+          271.0,
+          387.0
+        ],
+        [
+          669.0,
+          387.0
+        ],
+        [
+          669.0,
+          414.0
+        ],
+        [
+          271.0,
+          414.0
+        ]
+      ],
+      "text": "của hợp đồng gia công đã được ký kêt.",
+      "confidence": 0.9574439255555555
+    },
+    {
+      "bbox": [
+        [
+          324.0,
+          426.0
+        ],
+        [
+          1080.0,
+          426.0
+        ],
+        [
+          1080.0,
+          466.0
+        ],
+        [
+          324.0,
+          466.0
+        ]
+      ],
+      "text": "e) Làm thủ tục xuất khẩu tại chỗ sản phẩm gia cong; máy móc, thiết bị",
+      "confidence": 0.9614137381250001
+    },
+    {
+      "bbox": [
+        [
+          272.0,
+          460.0
+        ],
+        [
+          1081.0,
+          460.0
+        ],
+        [
+          1081.0,
+          491.0
+        ],
+        [
+          272.0,
+          491.0
+        ]
+      ],
+      "text": "thuê hoặc mượn; nguyên liệu, phụ liệu, vật tư dư thừa; phế phẩm, phê liệu",
+      "confidence": 0.9665442553333334
+    },
+    {
+      "bbox": [
+        [
+          272.0,
+          495.0
+        ],
+        [
+          642.0,
+          495.0
+        ],
+        [
+          642.0,
+          521.0
+        ],
+        [
+          272.0,
+          521.0
+        ]
+      ],
+      "text": "theo ủy nhiệm của bên đặt gia công.",
+      "confidence": 0.9680677025
+    },
+    {
+      "bbox": [
+        [
+          325.0,
+          533.0
+        ],
+        [
+          1080.0,
+          533.0
+        ],
+        [
+          1080.0,
+          570.0
+        ],
+        [
+          325.0,
+          570.0
+        ]
+      ],
+      "text": "3. Điều kiện xuất khẩu, nhập khẩu tại chỗ sản phẩm gia công: máy móc,",
+      "confidence": 0.9666978973333333
+    },
+    {
+      "bbox": [
+        [
+          273.0,
+          564.0
+        ],
+        [
+          1081.0,
+          564.0
+        ],
+        [
+          1081.0,
+          599.0
+        ],
+        [
+          273.0,
+          599.0
+        ]
+      ],
+      "text": "thiết bị thuê hoặc mượn; nguyên liệu, phụ liệu, vật tư dư thừa; phế phẩm, phế",
+      "confidence": 0.967577575625
+    },
+    {
+      "bbox": [
+        [
+          274.0,
+          595.0
+        ],
+        [
+          1082.0,
+          595.0
+        ],
+        [
+          1082.0,
+          629.0
+        ],
+        [
+          274.0,
+          629.0
+        ]
+      ],
+      "text": "liệu quy định tại điểm e khoản 1 và điểm e khoản 2 Điều này được quy định",
+      "confidence": 0.9586664155555554
+    },
+    {
+      "bbox": [
+        [
+          273.0,
+          635.0
+        ],
+        [
+          358.0,
+          635.0
+        ],
+        [
+          358.0,
+          653.0
+        ],
+        [
+          273.0,
+          653.0
+        ]
+      ],
+      "text": "như sau:",
+      "confidence": 0.9616334950000001
+    },
+    {
+      "bbox": [
+        [
+          311.0,
+          672.0
+        ],
+        [
+          1082.0,
+          672.0
+        ],
+        [
+          1082.0,
+          713.0
+        ],
+        [
+          311.0,
+          713.0
+        ]
+      ],
+      "text": "a) Phải tuân thủ quy định về quản lý xuất khẩu, nhập khẩu hàng hóa, về",
+      "confidence": 0.946098843125
+    },
+    {
+      "bbox": [
+        [
+          274.0,
+          707.0
+        ],
+        [
+          934.0,
+          707.0
+        ],
+        [
+          934.0,
+          736.0
+        ],
+        [
+          274.0,
+          736.0
+        ]
+      ],
+      "text": "thuế và các nghĩa vụ tài chính khác theo quy định của pháp luật.",
+      "confidence": 0.9678879042857144
+    },
+    {
+      "bbox": [
+        [
+          326.0,
+          757.0
+        ],
+        [
+          1082.0,
+          757.0
+        ],
+        [
+          1082.0,
+          790.0
+        ],
+        [
+          326.0,
+          790.0
+        ]
+      ],
+      "text": "b) Phải có hợp đồng mua bán ký giữa thương nhân nước ngoài hoặc",
+      "confidence": 0.9657477614285713
+    },
+    {
+      "bbox": [
+        [
+          274.0,
+          781.0
+        ],
+        [
+          1082.0,
+          781.0
+        ],
+        [
+          1082.0,
+          820.0
+        ],
+        [
+          274.0,
+          820.0
+        ]
+      ],
+      "text": "người được ủy quyền hợp pháp của thương nhân nước ngoài với thương nhân",
+      "confidence": 0.9679940242857142
+    },
+    {
+      "bbox": [
+        [
+          275.0,
+          821.0
+        ],
+        [
+          385.0,
+          821.0
+        ],
+        [
+          385.0,
+          844.0
+        ],
+        [
+          275.0,
+          844.0
+        ]
+      ],
+      "text": "nhập khẩu.",
+      "confidence": 0.968755645
+    },
+    {
+      "bbox": [
+        [
+          326.0,
+          864.0
+        ],
+        [
+          653.0,
+          864.0
+        ],
+        [
+          653.0,
+          893.0
+        ],
+        [
+          326.0,
+          893.0
+        ]
+      ],
+      "text": "Điều 43. Gia công chuyển tiếp",
+      "confidence": 0.9647391000000001
+    },
+    {
+      "bbox": [
+        [
+          327.0,
+          911.0
+        ],
+        [
+          982.0,
+          911.0
+        ],
+        [
+          982.0,
+          943.0
+        ],
+        [
+          327.0,
+          943.0
+        ]
+      ],
+      "text": "Thương nhân được quyền gia công chuyển tiếp, cụ thể như sau:",
+      "confidence": 0.953620745
+    },
+    {
+      "bbox": [
+        [
+          330.0,
+          963.0
+        ],
+        [
+          1082.0,
+          963.0
+        ],
+        [
+          1082.0,
+          997.0
+        ],
+        [
+          330.0,
+          997.0
+        ]
+      ],
+      "text": "1. Sản phẩm gia công của hợp đồng gia công này được sử dụng làm",
+      "confidence": 0.9586180326666666
+    },
+    {
+      "bbox": [
+        [
+          276.0,
+          996.0
+        ],
+        [
+          933.0,
+          996.0
+        ],
+        [
+          933.0,
+          1023.0
+        ],
+        [
+          276.0,
+          1023.0
+        ]
+      ],
+      "text": "nguyên liệu gia công cho hợp đồng gia công khác tại Việt Nam.",
+      "confidence": 0.96406739
+    },
+    {
+      "bbox": [
+        [
+          328.0,
+          1043.0
+        ],
+        [
+          1083.0,
+          1043.0
+        ],
+        [
+          1083.0,
+          1074.0
+        ],
+        [
+          328.0,
+          1074.0
+        ]
+      ],
+      "text": "2. Sản phẩm gia công của hợp đồng gia công công đoạn trước được giao",
+      "confidence": 0.9537511866666667
+    },
+    {
+      "bbox": [
+        [
+          276.0,
+          1075.0
+        ],
+        [
+          1085.0,
+          1075.0
+        ],
+        [
+          1085.0,
+          1101.0
+        ],
+        [
+          276.0,
+          1101.0
+        ]
+      ],
+      "text": "cho thương nhân theo chỉ định của bên đặt gia công cho hợp dong gia công",
+      "confidence": 0.968616985
+    },
+    {
+      "bbox": [
+        [
+          276.0,
+          1102.0
+        ],
+        [
+          483.0,
+          1102.0
+        ],
+        [
+          483.0,
+          1130.0
+        ],
+        [
+          276.0,
+          1130.0
+        ]
+      ],
+      "text": "công đoạn tiếp theo.",
+      "confidence": 0.96713322
+    },
+    {
+      "bbox": [
+        [
+          328.0,
+          1150.0
+        ],
+        [
+          984.0,
+          1150.0
+        ],
+        [
+          984.0,
+          1181.0
+        ],
+        [
+          328.0,
+          1181.0
+        ]
+      ],
+      "text": "Điều 44. Thông báo, thanh lý, quyết toán hợp đồng gia công",
+      "confidence": 0.9686753408333334
+    },
+    {
+      "bbox": [
+        [
+          331.0,
+          1200.0
+        ],
+        [
+          1084.0,
+          1200.0
+        ],
+        [
+          1084.0,
+          1236.0
+        ],
+        [
+          331.0,
+          1236.0
+        ]
+      ],
+      "text": "I. Trước khi thực hiện hợp đồng gia công, tổ chức, cá nhân thông báo",
+      "confidence": 0.9458156126666667
+    },
+    {
+      "bbox": [
+        [
+          276.0,
+          1229.0
+        ],
+        [
+          1085.0,
+          1229.0
+        ],
+        [
+          1085.0,
+          1265.0
+        ],
+        [
+          276.0,
+          1265.0
+        ]
+      ],
+      "text": "hợp đồng gia công với cơ quan Hải quan. Khi kết thúc hợp đồng gia công",
+      "confidence": 0.96641367375
+    },
+    {
+      "bbox": [
+        [
+          277.0,
+          1258.0
+        ],
+        [
+          1084.0,
+          1258.0
+        ],
+        [
+          1084.0,
+          1294.0
+        ],
+        [
+          277.0,
+          1294.0
+        ]
+      ],
+      "text": "hoặc hợp đông gia công hét hiệu lực, các bên ký kết hợp đồng gia công phải",
+      "confidence": 0.9577220635294118
+    },
+    {
+      "bbox": [
+        [
+          276.0,
+          1288.0
+        ],
+        [
+          1085.0,
+          1288.0
+        ],
+        [
+          1085.0,
+          1319.0
+        ],
+        [
+          276.0,
+          1319.0
+        ]
+      ],
+      "text": "thanh lý hợp dong và thực hiện báo cáo quyết toán tình hình sử dụng nguyên",
+      "confidence": 0.9672404525
+    },
+    {
+      "bbox": [
+        [
+          278.0,
+          1319.0
+        ],
+        [
+          924.0,
+          1319.0
+        ],
+        [
+          924.0,
+          1347.0
+        ],
+        [
+          278.0,
+          1347.0
+        ]
+      ],
+      "text": "liệu, vật tư, sản phẩm xuất khẩu định kỳ với cơ quan Hải quan.",
+      "confidence": 0.9609213157142856
+    },
+    {
+      "bbox": [
+        [
+          329.0,
+          1362.0
+        ],
+        [
+          1086.0,
+          1362.0
+        ],
+        [
+          1086.0,
+          1399.0
+        ],
+        [
+          329.0,
+          1399.0
+        ]
+      ],
+      "text": "Bộ Tài chính hướng dẫn thủ tục thông báo hợp đồng gia công và quyết",
+      "confidence": 0.9677698306666666
+    },
+    {
+      "bbox": [
+        [
+          278.0,
+          1401.0
+        ],
+        [
+          752.0,
+          1401.0
+        ],
+        [
+          752.0,
+          1426.0
+        ],
+        [
+          278.0,
+          1426.0
+        ]
+      ],
+      "text": "toán hoạt động gia công với cơ quan hải quan.",
+      "confidence": 0.9677370690000001
+    }
+  ]
+}

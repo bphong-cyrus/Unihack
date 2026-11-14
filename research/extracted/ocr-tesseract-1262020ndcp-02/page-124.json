@@ -7,6 +7,7 @@
   "engine": "Tesseract 5.5.4 (vie+eng; OEM 1; PSM 3)",
   "review_status": "UNREVIEWED",
   "tesseract_version": "5.5.4",
+  "tsv_parser_version": 2,
   "languages": [
     "vie",
     "eng"
@@ -17,7 +18,7 @@
   },
   "ocr_engine_mode": 1,
   "page_segmentation_mode": 3,
-  "thread_limit": 2,
+  "thread_limit": 1,
   "page": 124,
   "lines": [
     {

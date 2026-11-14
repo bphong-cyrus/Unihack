@@ -1,0 +1,883 @@
+{
+  "document_id": "59/2018/NĐ-CP",
+  "source_file": "../../legal-sources/592018ndcp/01.pdf",
+  "source_sha256": "7ac1b46e806ae9290125acb9ac1d535bcea768749d16941e9fae20bbf7343a1a",
+  "page_count": 48,
+  "render_dpi": 150,
+  "engine": "Tesseract 5.5.4 (vie+eng; OEM 1; PSM 3)",
+  "review_status": "UNREVIEWED",
+  "tesseract_version": "5.5.4",
+  "tsv_parser_version": 2,
+  "languages": [
+    "vie",
+    "eng"
+  ],
+  "traineddata_sha256": {
+    "vie": "b6b49293d95d0b6dbd8780174627e82c75be957b6f4ed9862155540d6b00bb45",
+    "eng": "8280aed0782fe27257a68ea10fe7ef324ca0f8d85bd2fd145d1c2b560bcb66ba"
+  },
+  "ocr_engine_mode": 1,
+  "page_segmentation_mode": 3,
+  "thread_limit": 1,
+  "page": 33,
+  "lines": [
+    {
+      "bbox": [
+        [
+          653.0,
+          153.0
+        ],
+        [
+          673.0,
+          153.0
+        ],
+        [
+          673.0,
+          169.0
+        ],
+        [
+          653.0,
+          169.0
+        ]
+      ],
+      "text": "33",
+      "confidence": 0.9386434199999999
+    },
+    {
+      "bbox": [
+        [
+          313.0,
+          223.0
+        ],
+        [
+          1068.0,
+          223.0
+        ],
+        [
+          1068.0,
+          263.0
+        ],
+        [
+          313.0,
+          263.0
+        ]
+      ],
+      "text": "b) Các chứng từ nêu tại các điểm a, d, d, e, g, h khoản 1 Điều 65 Nghị",
+      "confidence": 0.9328963705263158
+    },
+    {
+      "bbox": [
+        [
+          262.0,
+          260.0
+        ],
+        [
+          834.0,
+          260.0
+        ],
+        [
+          834.0,
+          289.0
+        ],
+        [
+          262.0,
+          289.0
+        ]
+      ],
+      "text": "định này: Chậm nhất 08 giờ trước khi dự kiên cập cảng.",
+      "confidence": 0.955848395
+    },
+    {
+      "bbox": [
+        [
+          313.0,
+          300.0
+        ],
+        [
+          1069.0,
+          300.0
+        ],
+        [
+          1069.0,
+          332.0
+        ],
+        [
+          313.0,
+          332.0
+        ]
+      ],
+      "text": "4. Người khai hải quan nộp các chứng từ quy định tại khoản 1, khoản 2",
+      "confidence": 0.9682860718749999
+    },
+    {
+      "bbox": [
+        [
+          262.0,
+          323.0
+        ],
+        [
+          1069.0,
+          323.0
+        ],
+        [
+          1069.0,
+          360.0
+        ],
+        [
+          262.0,
+          360.0
+        ]
+      ],
+      "text": "và khoản 3 Điều 65 Nghị định này thông qua Công thông tín một cửa quốc",
+      "confidence": 0.9579305600000001
+    },
+    {
+      "bbox": [
+        [
+          262.0,
+          353.0
+        ],
+        [
+          1068.0,
+          353.0
+        ],
+        [
+          1068.0,
+          394.0
+        ],
+        [
+          262.0,
+          394.0
+        ]
+      ],
+      "text": "gia theo các chỉ tiêu thông tin do Bộ Tài chính quy định. Trường hợp người",
+      "confidence": 0.966008945
+    },
+    {
+      "bbox": [
+        [
+          261.0,
+          386.0
+        ],
+        [
+          1070.0,
+          386.0
+        ],
+        [
+          1070.0,
+          421.0
+        ],
+        [
+          261.0,
+          421.0
+        ]
+      ],
+      "text": "khai hải quan không có đây đủ thông tin về vận đơn thứ cấp thì người phát",
+      "confidence": 0.9672624247058823
+    },
+    {
+      "bbox": [
+        [
+          262.0,
+          410.0
+        ],
+        [
+          1070.0,
+          410.0
+        ],
+        [
+          1070.0,
+          448.0
+        ],
+        [
+          262.0,
+          448.0
+        ]
+      ],
+      "text": "hành vận đơn thứ cấp gửi thông tin của vận đơn thứ cấp thông qua Cổng",
+      "confidence": 0.9620313018750001
+    },
+    {
+      "bbox": [
+        [
+          261.0,
+          440.0
+        ],
+        [
+          1013.0,
+          440.0
+        ],
+        [
+          1013.0,
+          479.0
+        ],
+        [
+          261.0,
+          479.0
+        ]
+      ],
+      "text": "thông tin một cửa quốc gia trong thời hạn quy định tại khoản 1 Điều này.",
+      "confidence": 0.9655957331249999
+    },
+    {
+      "bbox": [
+        [
+          314.0,
+          487.0
+        ],
+        [
+          1070.0,
+          487.0
+        ],
+        [
+          1070.0,
+          521.0
+        ],
+        [
+          314.0,
+          521.0
+        ]
+      ],
+      "text": "Trường hợp hệ thống gặp sự cố không thực hiện được các giao dịch điện",
+      "confidence": 0.9676793960000001
+    },
+    {
+      "bbox": [
+        [
+          262.0,
+          516.0
+        ],
+        [
+          1070.0,
+          516.0
+        ],
+        [
+          1070.0,
+          554.0
+        ],
+        [
+          262.0,
+          554.0
+        ]
+      ],
+      "text": "tử và trường hợp nộp hô sơ giấy thì người khai hải quan nộp cho cơ quan hải",
+      "confidence": 0.9599778138888888
+    },
+    {
+      "bbox": [
+        [
+          263.0,
+          545.0
+        ],
+        [
+          1071.0,
+          545.0
+        ],
+        [
+          1071.0,
+          581.0
+        ],
+        [
+          263.0,
+          581.0
+        ]
+      ],
+      "text": "quan các chứng từ giây tại khoản 1, khoản 2, khoản 3 Điều 65 Nghị định này",
+      "confidence": 0.9561878647058824
+    },
+    {
+      "bbox": [
+        [
+          262.0,
+          574.0
+        ],
+        [
+          1071.0,
+          574.0
+        ],
+        [
+          1071.0,
+          611.0
+        ],
+        [
+          262.0,
+          611.0
+        ]
+      ],
+      "text": "theo quy định của Bộ Tài chính trong thời hạn chậm nhất 02 giờ kê từ khi tàu",
+      "confidence": 0.9670372061111112
+    },
+    {
+      "bbox": [
+        [
+          263.0,
+          603.0
+        ],
+        [
+          1071.0,
+          603.0
+        ],
+        [
+          1071.0,
+          638.0
+        ],
+        [
+          263.0,
+          638.0
+        ]
+      ],
+      "text": "biển đã vào neo đậu tại cầu cảng hoặc 04 giờ kê từ khi tàu đã vào neo đậu tại các",
+      "confidence": 0.9617732009523808
+    },
+    {
+      "bbox": [
+        [
+          263.0,
+          636.0
+        ],
+        [
+          817.0,
+          636.0
+        ],
+        [
+          817.0,
+          665.0
+        ],
+        [
+          263.0,
+          665.0
+        ]
+      ],
+      "text": "trí khác trong vùng nước cảng theo kế hoạch điều động.",
+      "confidence": 0.9309724845454547
+    },
+    {
+      "bbox": [
+        [
+          315.0,
+          674.0
+        ],
+        [
+          1072.0,
+          674.0
+        ],
+        [
+          1072.0,
+          712.0
+        ],
+        [
+          315.0,
+          712.0
+        ]
+      ],
+      "text": "Ngay sau khi hệ thống được phục hồi, người khai hải quan tạo lập và gửi",
+      "confidence": 0.968473729375
+    },
+    {
+      "bbox": [
+        [
+          263.0,
+          707.0
+        ],
+        [
+          814.0,
+          707.0
+        ],
+        [
+          814.0,
+          738.0
+        ],
+        [
+          263.0,
+          738.0
+        ]
+      ],
+      "text": "thông tin điện tử lên Công thông tin một cửa quốc gia.”",
+      "confidence": 0.9085642183333335
+    },
+    {
+      "bbox": [
+        [
+          316.0,
+          748.0
+        ],
+        [
+          762.0,
+          748.0
+        ],
+        [
+          762.0,
+          777.0
+        ],
+        [
+          316.0,
+          777.0
+        ]
+      ],
+      "text": "38. Điều 67 được sửa đổi, bd sung như sau:",
+      "confidence": 0.9358571240000001
+    },
+    {
+      "bbox": [
+        [
+          317.0,
+          791.0
+        ],
+        [
+          798.0,
+          791.0
+        ],
+        [
+          798.0,
+          822.0
+        ],
+        [
+          317.0,
+          822.0
+        ]
+      ],
+      "text": "“Điều 67. Tiếp nhận và xử lý hồ sơ hải quan",
+      "confidence": 0.9631265054545453
+    },
+    {
+      "bbox": [
+        [
+          319.0,
+          826.0
+        ],
+        [
+          1075.0,
+          826.0
+        ],
+        [
+          1075.0,
+          866.0
+        ],
+        [
+          319.0,
+          866.0
+        ]
+      ],
+      "text": "1. Tiếp nhận và xử lý hồ sơ hải quan đối với tàu biển nhập cảnh, xuất",
+      "confidence": 0.9667959682352941
+    },
+    {
+      "bbox": [
+        [
+          265.0,
+          871.0
+        ],
+        [
+          419.0,
+          871.0
+        ],
+        [
+          419.0,
+          896.0
+        ],
+        [
+          265.0,
+          896.0
+        ]
+      ],
+      "text": "cảnh, quá cảnh",
+      "confidence": 0.9655793500000001
+    },
+    {
+      "bbox": [
+        [
+          318.0,
+          896.0
+        ],
+        [
+          1075.0,
+          896.0
+        ],
+        [
+          1075.0,
+          938.0
+        ],
+        [
+          318.0,
+          938.0
+        ]
+      ],
+      "text": "a) Cơ quan Hải quan nơi làm thủ tục tàu biển nhập cảnh, xuất cảnh tiếp",
+      "confidence": 0.95789620375
+    },
+    {
+      "bbox": [
+        [
+          265.0,
+          932.0
+        ],
+        [
+          1076.0,
+          932.0
+        ],
+        [
+          1076.0,
+          967.0
+        ],
+        [
+          265.0,
+          967.0
+        ]
+      ],
+      "text": "nhận, khai thác thông tin khai hải quan trên Cổng thông tin một cửa quốc gia",
+      "confidence": 0.964868486875
+    },
+    {
+      "bbox": [
+        [
+          266.0,
+          968.0
+        ],
+        [
+          684.0,
+          968.0
+        ],
+        [
+          684.0,
+          996.0
+        ],
+        [
+          266.0,
+          996.0
+        ]
+      ],
+      "text": "24 giờ trong ngày và 07 ngày trong tuân.",
+      "confidence": 0.9663792666666667
+    },
+    {
+      "bbox": [
+        [
+          324.0,
+          1005.0
+        ],
+        [
+          1076.0,
+          1005.0
+        ],
+        [
+          1076.0,
+          1038.0
+        ],
+        [
+          324.0,
+          1038.0
+        ]
+      ],
+      "text": "Trường hợp thông tin khai đầy đủ các chỉ tiêu theo quy định thì cơ quan",
+      "confidence": 0.9669955675
+    },
+    {
+      "bbox": [
+        [
+          266.0,
+          1027.0
+        ],
+        [
+          1077.0,
+          1027.0
+        ],
+        [
+          1077.0,
+          1070.0
+        ],
+        [
+          266.0,
+          1070.0
+        ]
+      ],
+      "text": "Hải quan gửi thông báo chap nhận nội dung khai hải quan thông qua Cổng",
+      "confidence": 0.9656035206666667
+    },
+    {
+      "bbox": [
+        [
+          267.0,
+          1071.0
+        ],
+        [
+          548.0,
+          1071.0
+        ],
+        [
+          548.0,
+          1097.0
+        ],
+        [
+          267.0,
+          1097.0
+        ]
+      ],
+      "text": "thông tin một cửa quốc gia.",
+      "confidence": 0.9585197716666666
+    },
+    {
+      "bbox": [
+        [
+          319.0,
+          1100.0
+        ],
+        [
+          1077.0,
+          1100.0
+        ],
+        [
+          1077.0,
+          1142.0
+        ],
+        [
+          319.0,
+          1142.0
+        ]
+      ],
+      "text": "Trường hợp thông tin khai hai quan chưa đầy đủ thi cơ quan Hải quan",
+      "confidence": 0.9572483313333333
+    },
+    {
+      "bbox": [
+        [
+          267.0,
+          1134.0
+        ],
+        [
+          1078.0,
+          1134.0
+        ],
+        [
+          1078.0,
+          1172.0
+        ],
+        [
+          267.0,
+          1172.0
+        ]
+      ],
+      "text": "thông báo lý do chưa tiếp nhận và yêu cầu người khai hải quan khai bồ sung",
+      "confidence": 0.9656014694117647
+    },
+    {
+      "bbox": [
+        [
+          268.0,
+          1164.0
+        ],
+        [
+          721.0,
+          1164.0
+        ],
+        [
+          721.0,
+          1197.0
+        ],
+        [
+          268.0,
+          1197.0
+        ]
+      ],
+      "text": "thông qua Công thông tin một cửa quốc gia;",
+      "confidence": 0.9650034011111112
+    },
+    {
+      "bbox": [
+        [
+          320.0,
+          1205.0
+        ],
+        [
+          1078.0,
+          1205.0
+        ],
+        [
+          1078.0,
+          1240.0
+        ],
+        [
+          320.0,
+          1240.0
+        ]
+      ],
+      "text": "b) Trường hợp có cơ sở xác định trên tàu biển có hàng hóa buôn lậu hoặc",
+      "confidence": 0.9648489699999999
+    },
+    {
+      "bbox": [
+        [
+          269.0,
+          1229.0
+        ],
+        [
+          1079.0,
+          1229.0
+        ],
+        [
+          1079.0,
+          1269.0
+        ],
+        [
+          269.0,
+          1269.0
+        ]
+      ],
+      "text": "vận chuyển trái phép, Chi cục trưởng Chi cục Hải quan quyết định kiểm tra",
+      "confidence": 0.9556677140000001
+    },
+    {
+      "bbox": [
+        [
+          268.0,
+          1259.0
+        ],
+        [
+          1083.0,
+          1259.0
+        ],
+        [
+          1083.0,
+          1298.0
+        ],
+        [
+          268.0,
+          1298.0
+        ]
+      ],
+      "text": "thực tế tàu biển hoặc thực hiện các biện pháp nghiệp vụ khác theo quy định",
+      "confidence": 0.9678991512499999
+    },
+    {
+      "bbox": [
+        [
+          270.0,
+          1304.0
+        ],
+        [
+          412.0,
+          1304.0
+        ],
+        [
+          412.0,
+          1328.0
+        ],
+        [
+          270.0,
+          1328.0
+        ]
+      ],
+      "text": "của pháp luật;",
+      "confidence": 0.9654988333333334
+    },
+    {
+      "bbox": [
+        [
+          289.0,
+          1334.0
+        ],
+        [
+          1081.0,
+          1334.0
+        ],
+        [
+          1081.0,
+          1379.0
+        ],
+        [
+          289.0,
+          1379.0
+        ]
+      ],
+      "text": "9 Trường hợp người khai hải quan nộp hồ sơ giấy: Cơ quan hải quan",
+      "confidence": 0.9357922186666666
+    },
+    {
+      "bbox": [
+        [
+          270.0,
+          1365.0
+        ],
+        [
+          1080.0,
+          1365.0
+        ],
+        [
+          1080.0,
+          1400.0
+        ],
+        [
+          270.0,
+          1400.0
+        ]
+      ],
+      "text": "tiếp nhận hồ sơ, kiểm tra các chứng từ thuộc bộ ho sơ quy định tại Điều 65",
+      "confidence": 0.9535141672222223
+    },
+    {
+      "bbox": [
+        [
+          271.0,
+          1389.0
+        ],
+        [
+          1082.0,
+          1389.0
+        ],
+        [
+          1082.0,
+          1432.0
+        ],
+        [
+          271.0,
+          1432.0
+        ]
+      ],
+      "text": "Nghị định này, thông báo cho cơ quan cảng vụ để làm thủ tục cho phương",
+      "confidence": 0.96634641625
+    },
+    {
+      "bbox": [
+        [
+          271.0,
+          1420.0
+        ],
+        [
+          1082.0,
+          1420.0
+        ],
+        [
+          1082.0,
+          1463.0
+        ],
+        [
+          271.0,
+          1463.0
+        ]
+      ],
+      "text": "tiện nhập cảnh, xuất cảnh. Nếu hồ sơ chưa đầy đủ thì yêu cầu người khai hải",
+      "confidence": 0.9576232682352941
+    },
+    {
+      "bbox": [
+        [
+          272.0,
+          1461.0
+        ],
+        [
+          563.0,
+          1461.0
+        ],
+        [
+          563.0,
+          1488.0
+        ],
+        [
+          272.0,
+          1488.0
+        ]
+      ],
+      "text": "quan bồ sung theo quy định;",
+      "confidence": 0.9254722466666668
+    }
+  ]
+}

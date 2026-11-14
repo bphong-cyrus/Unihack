@@ -1,0 +1,861 @@
+{
+  "document_id": "127/2013/NĐ-CP",
+  "source_file": "../../legal-sources/1272013ndcp/01.pdf",
+  "source_sha256": "6b970da9c19ccae81ecbc3385fb53f1fa2375e93ad03643e1f9b4e43ed87e573",
+  "page_count": 49,
+  "render_dpi": 150,
+  "engine": "Tesseract 5.5.4 (vie+eng; OEM 1; PSM 3)",
+  "review_status": "UNREVIEWED",
+  "tesseract_version": "5.5.4",
+  "tsv_parser_version": 2,
+  "languages": [
+    "vie",
+    "eng"
+  ],
+  "traineddata_sha256": {
+    "vie": "b6b49293d95d0b6dbd8780174627e82c75be957b6f4ed9862155540d6b00bb45",
+    "eng": "8280aed0782fe27257a68ea10fe7ef324ca0f8d85bd2fd145d1c2b560bcb66ba"
+  },
+  "ocr_engine_mode": 1,
+  "page_segmentation_mode": 3,
+  "thread_limit": 1,
+  "page": 22,
+  "lines": [
+    {
+      "bbox": [
+        [
+          362.0,
+          196.0
+        ],
+        [
+          958.0,
+          196.0
+        ],
+        [
+          958.0,
+          225.0
+        ],
+        [
+          362.0,
+          225.0
+        ]
+      ],
+      "text": "Điều 22. Thủ tục xử phạt, thi hành quyết định xử phạt",
+      "confidence": 0.9491162874999999
+    },
+    {
+      "bbox": [
+        [
+          361.0,
+          248.0
+        ],
+        [
+          1108.0,
+          248.0
+        ],
+        [
+          1108.0,
+          276.0
+        ],
+        [
+          361.0,
+          276.0
+        ]
+      ],
+      "text": "Thủ tục xử phạt, thi hành quyết định xử phat vi phạm hành chính trong",
+      "confidence": 0.9506999626666668
+    },
+    {
+      "bbox": [
+        [
+          311.0,
+          282.0
+        ],
+        [
+          1107.0,
+          282.0
+        ],
+        [
+          1107.0,
+          306.0
+        ],
+        [
+          311.0,
+          306.0
+        ]
+      ],
+      "text": "lĩnh vực hải quan thực hiện theo quy định tại Chương IIT Luật xử lý vi phạm",
+      "confidence": 0.9590019500000001
+    },
+    {
+      "bbox": [
+        [
+          311.0,
+          313.0
+        ],
+        [
+          954.0,
+          313.0
+        ],
+        [
+          954.0,
+          336.0
+        ],
+        [
+          311.0,
+          336.0
+        ]
+      ],
+      "text": "hành chính và các quy định tại Mục 3 Chương I Nghị định này.",
+      "confidence": 0.9593418514285714
+    },
+    {
+      "bbox": [
+        [
+          360.0,
+          359.0
+        ],
+        [
+          1106.0,
+          359.0
+        ],
+        [
+          1106.0,
+          388.0
+        ],
+        [
+          360.0,
+          388.0
+        ]
+      ],
+      "text": "Điều 23. Xử lý đối với trường hợp hàng hoá nhập khẩu quá thời hạn",
+      "confidence": 0.9652305766666668
+    },
+    {
+      "bbox": [
+        [
+          310.0,
+          394.0
+        ],
+        [
+          1107.0,
+          394.0
+        ],
+        [
+          1107.0,
+          423.0
+        ],
+        [
+          310.0,
+          423.0
+        ]
+      ],
+      "text": "làm thủ tục hải quan, hàng hóa không có chủ sở hữu, hàng hoá nhập",
+      "confidence": 0.9652283166666666
+    },
+    {
+      "bbox": [
+        [
+          310.0,
+          418.0
+        ],
+        [
+          1076.0,
+          418.0
+        ],
+        [
+          1076.0,
+          448.0
+        ],
+        [
+          310.0,
+          448.0
+        ]
+      ],
+      "text": "khẩu buộc phải đưa ra khỏi lãnh thé Việt Nam hoặc buộc phải tái xuất",
+      "confidence": 0.912102112
+    },
+    {
+      "bbox": [
+        [
+          362.0,
+          470.0
+        ],
+        [
+          1106.0,
+          470.0
+        ],
+        [
+          1106.0,
+          499.0
+        ],
+        [
+          362.0,
+          499.0
+        ]
+      ],
+      "text": "1. Hàng hoá nhập khẩu quá thời hạn 90 (chín mươi) ngày, kể từ ngày",
+      "confidence": 0.965081568
+    },
+    {
+      "bbox": [
+        [
+          308.0,
+          499.0
+        ],
+        [
+          1105.0,
+          499.0
+        ],
+        [
+          1105.0,
+          528.0
+        ],
+        [
+          308.0,
+          528.0
+        ]
+      ],
+      "text": "hàng hoá tới cửa khẩu dỡ hàng mà không có người đến làm thủ tục hải quan",
+      "confidence": 0.9664905
+    },
+    {
+      "bbox": [
+        [
+          308.0,
+          529.0
+        ],
+        [
+          1105.0,
+          529.0
+        ],
+        [
+          1105.0,
+          557.0
+        ],
+        [
+          308.0,
+          557.0
+        ]
+      ],
+      "text": "thì người có thẩm quyền tại các Khoản 3, 4 và 5 Điều 19 Nghị định này phải",
+      "confidence": 0.9466939977777777
+    },
+    {
+      "bbox": [
+        [
+          308.0,
+          559.0
+        ],
+        [
+          1105.0,
+          559.0
+        ],
+        [
+          1105.0,
+          592.0
+        ],
+        [
+          308.0,
+          592.0
+        ]
+      ],
+      "text": "thông báo trên phương tiện thông tin đại chúng và niêm yết công khai tại trụ",
+      "confidence": 0.969337405625
+    },
+    {
+      "bbox": [
+        [
+          309.0,
+          588.0
+        ],
+        [
+          1105.0,
+          588.0
+        ],
+        [
+          1105.0,
+          623.0
+        ],
+        [
+          309.0,
+          623.0
+        ]
+      ],
+      "text": "sở Hải quan. Trong thời hạn 180 (một trăm tám mươi) ngày, kể từ ngày thông",
+      "confidence": 0.9548375325
+    },
+    {
+      "bbox": [
+        [
+          308.0,
+          618.0
+        ],
+        [
+          1104.0,
+          618.0
+        ],
+        [
+          1104.0,
+          651.0
+        ],
+        [
+          308.0,
+          651.0
+        ]
+      ],
+      "text": "báo, nếu không có người đến làm thủ tục hải quan thì người có thầm \"quyên",
+      "confidence": 0.9345715925
+    },
+    {
+      "bbox": [
+        [
+          308.0,
+          647.0
+        ],
+        [
+          1104.0,
+          647.0
+        ],
+        [
+          1104.0,
+          676.0
+        ],
+        [
+          308.0,
+          676.0
+        ]
+      ],
+      "text": "quy định tại các Khoản 3, 4 và 5 Điều 19 Nghị định này phải ra quyết định",
+      "confidence": 0.9672296272222224
+    },
+    {
+      "bbox": [
+        [
+          307.0,
+          682.0
+        ],
+        [
+          855.0,
+          682.0
+        ],
+        [
+          855.0,
+          705.0
+        ],
+        [
+          307.0,
+          705.0
+        ]
+      ],
+      "text": "tịch thu hoặc tiêu hủy tang vật vi phạm theo quy định.",
+      "confidence": 0.9682717325
+    },
+    {
+      "bbox": [
+        [
+          358.0,
+          728.0
+        ],
+        [
+          1104.0,
+          728.0
+        ],
+        [
+          1104.0,
+          765.0
+        ],
+        [
+          358.0,
+          765.0
+        ]
+      ],
+      "text": "2. Trường hợp không xác định được chủ sở hữu của tang vật, phương",
+      "confidence": 0.9668502207142856
+    },
+    {
+      "bbox": [
+        [
+          306.0,
+          756.0
+        ],
+        [
+          1103.0,
+          756.0
+        ],
+        [
+          1103.0,
+          790.0
+        ],
+        [
+          306.0,
+          790.0
+        ]
+      ],
+      "text": "tiện vi phạm, người có thầm quyền quy định tại các Khoản 3, 4 và 5 Điều 19",
+      "confidence": 0.9519505422222223
+    },
+    {
+      "bbox": [
+        [
+          306.0,
+          791.0
+        ],
+        [
+          1102.0,
+          791.0
+        ],
+        [
+          1102.0,
+          815.0
+        ],
+        [
+          306.0,
+          815.0
+        ]
+      ],
+      "text": "Nghị định này phải thông báo về việc này trên phương tiện thông tin đại",
+      "confidence": 0.963686584
+    },
+    {
+      "bbox": [
+        [
+          306.0,
+          816.0
+        ],
+        [
+          1102.0,
+          816.0
+        ],
+        [
+          1102.0,
+          854.0
+        ],
+        [
+          306.0,
+          854.0
+        ]
+      ],
+      "text": "chúng và niêm yết công khai tại trụ sở Hải quan. Sau thời hạn 30 (ba mươi)",
+      "confidence": 0.9662244052941176
+    },
+    {
+      "bbox": [
+        [
+          306.0,
+          845.0
+        ],
+        [
+          1102.0,
+          845.0
+        ],
+        [
+          1102.0,
+          880.0
+        ],
+        [
+          306.0,
+          880.0
+        ]
+      ],
+      "text": "ngày, kể từ ngày thông báo mà vẫn không có người đến nhận thì người có",
+      "confidence": 0.9672926912500001
+    },
+    {
+      "bbox": [
+        [
+          305.0,
+          875.0
+        ],
+        [
+          1103.0,
+          875.0
+        ],
+        [
+          1103.0,
+          904.0
+        ],
+        [
+          305.0,
+          904.0
+        ]
+      ],
+      "text": "thẩm quyền quy định tại các Khoản 3, 4 và 5 Điều 19 Nghị định này phải ra",
+      "confidence": 0.967663913888889
+    },
+    {
+      "bbox": [
+        [
+          306.0,
+          906.0
+        ],
+        [
+          968.0,
+          906.0
+        ],
+        [
+          968.0,
+          933.0
+        ],
+        [
+          306.0,
+          933.0
+        ]
+      ],
+      "text": "quyết định tịch thu hoặc tiêu hủy tang vật vi phạm theo quy định.",
+      "confidence": 0.9666909192857144
+    },
+    {
+      "bbox": [
+        [
+          356.0,
+          955.0
+        ],
+        [
+          1101.0,
+          955.0
+        ],
+        [
+          1101.0,
+          984.0
+        ],
+        [
+          356.0,
+          984.0
+        ]
+      ],
+      "text": "3. Hàng hoá nhập khẩu không đúng giấy phép, hợp đồng, vận tải đơn",
+      "confidence": 0.9686911607142857
+    },
+    {
+      "bbox": [
+        [
+          306.0,
+          985.0
+        ],
+        [
+          1101.0,
+          985.0
+        ],
+        [
+          1101.0,
+          1013.0
+        ],
+        [
+          306.0,
+          1013.0
+        ]
+      ],
+      "text": "hoặc lược khai hàng hoá mà người nhận hàng từ chối nhận, thì xử lý theo quy",
+      "confidence": 0.9632042964705883
+    },
+    {
+      "bbox": [
+        [
+          305.0,
+          1015.0
+        ],
+        [
+          579.0,
+          1015.0
+        ],
+        [
+          579.0,
+          1043.0
+        ],
+        [
+          305.0,
+          1043.0
+        ]
+      ],
+      "text": "định tại Khoản 2 Điều này.",
+      "confidence": 0.9674841700000001
+    },
+    {
+      "bbox": [
+        [
+          355.0,
+          1066.0
+        ],
+        [
+          1101.0,
+          1066.0
+        ],
+        [
+          1101.0,
+          1095.0
+        ],
+        [
+          355.0,
+          1095.0
+        ]
+      ],
+      "text": "4. Quá thời hạn 30 (ba mươi) ngày, kể từ ngày nhận được quyết định xử",
+      "confidence": 0.968002046875
+    },
+    {
+      "bbox": [
+        [
+          305.0,
+          1096.0
+        ],
+        [
+          1101.0,
+          1096.0
+        ],
+        [
+          1101.0,
+          1126.0
+        ],
+        [
+          305.0,
+          1126.0
+        ]
+      ],
+      "text": "phạt của cơ quan hải quan mà hàng hoá vẫn chưa được tái xuất hoặc đưa ra",
+      "confidence": 0.9687930076470588
+    },
+    {
+      "bbox": [
+        [
+          305.0,
+          1126.0
+        ],
+        [
+          1100.0,
+          1126.0
+        ],
+        [
+          1100.0,
+          1154.0
+        ],
+        [
+          305.0,
+          1154.0
+        ]
+      ],
+      "text": "khỏi lãnh thổ Việt Nam hoặc quá cảnh ra khỏi Việt Nam thì người có thẩm",
+      "confidence": 0.95694754625
+    },
+    {
+      "bbox": [
+        [
+          305.0,
+          1155.0
+        ],
+        [
+          1100.0,
+          1155.0
+        ],
+        [
+          1100.0,
+          1185.0
+        ],
+        [
+          305.0,
+          1185.0
+        ]
+      ],
+      "text": "quyền quy định tại các Khoản 3, 4 và 5 Điều 19 Nghị định này phải ra quyết",
+      "confidence": 0.9670366405555555
+    },
+    {
+      "bbox": [
+        [
+          305.0,
+          1190.0
+        ],
+        [
+          1099.0,
+          1190.0
+        ],
+        [
+          1099.0,
+          1214.0
+        ],
+        [
+          305.0,
+          1214.0
+        ]
+      ],
+      "text": "định tịch thu hoặc tiêu hủy tang vật vi phạm theo quy định, trừ trường hợp có",
+      "confidence": 0.967185861764706
+    },
+    {
+      "bbox": [
+        [
+          305.0,
+          1221.0
+        ],
+        [
+          478.0,
+          1221.0
+        ],
+        [
+          478.0,
+          1245.0
+        ],
+        [
+          305.0,
+          1245.0
+        ]
+      ],
+      "text": "lý do chính đáng.",
+      "confidence": 0.96959404
+    },
+    {
+      "bbox": [
+        [
+          354.0,
+          1263.0
+        ],
+        [
+          1098.0,
+          1263.0
+        ],
+        [
+          1098.0,
+          1300.0
+        ],
+        [
+          354.0,
+          1300.0
+        ]
+      ],
+      "text": "Điều 24. Miễn, giảm tiền phạt vi phạm hành chính trong lĩnh vực hải",
+      "confidence": 0.9672965728571428
+    },
+    {
+      "bbox": [
+        [
+          304.0,
+          1297.0
+        ],
+        [
+          937.0,
+          1297.0
+        ],
+        [
+          937.0,
+          1328.0
+        ],
+        [
+          304.0,
+          1328.0
+        ]
+      ],
+      "text": "quan, trình tự thủ tục và thẩm quyền miễn, giảm tiền phạt",
+      "confidence": 0.9670722575
+    },
+    {
+      "bbox": [
+        [
+          356.0,
+          1354.0
+        ],
+        [
+          1098.0,
+          1354.0
+        ],
+        [
+          1098.0,
+          1378.0
+        ],
+        [
+          356.0,
+          1378.0
+        ]
+      ],
+      "text": "1. Cá nhân bị xử phạt vì phạm hành chính trong lĩnh vực hải quan có",
+      "confidence": 0.9641390612499999
+    },
+    {
+      "bbox": [
+        [
+          304.0,
+          1379.0
+        ],
+        [
+          1099.0,
+          1379.0
+        ],
+        [
+          1099.0,
+          1408.0
+        ],
+        [
+          304.0,
+          1408.0
+        ]
+      ],
+      "text": "quyền đề nghị miễn, giảm tiền phạt vi phạm hành chính mà số tiền phạt từ",
+      "confidence": 0.9675190587500001
+    },
+    {
+      "bbox": [
+        [
+          304.0,
+          1409.0
+        ],
+        [
+          1097.0,
+          1409.0
+        ],
+        [
+          1097.0,
+          1438.0
+        ],
+        [
+          304.0,
+          1438.0
+        ]
+      ],
+      "text": "3.000.000 đồng trở lên trong trường hợp gặp khó khăn đặc biệt, đột xuất về",
+      "confidence": 0.9623367813333332
+    },
+    {
+      "bbox": [
+        [
+          303.0,
+          1435.0
+        ],
+        [
+          1089.0,
+          1435.0
+        ],
+        [
+          1089.0,
+          1473.0
+        ],
+        [
+          303.0,
+          1473.0
+        ]
+      ],
+      "text": "kinh tế do thiên tai, hỏa hoạn, thảm họa, tai nạn, dich bệnh, bệnh hiểm nghèo.",
+      "confidence": 0.9646078018750001
+    },
+    {
+      "bbox": [
+        [
+          1076.0,
+          1496.0
+        ],
+        [
+          1096.0,
+          1496.0
+        ],
+        [
+          1096.0,
+          1512.0
+        ],
+        [
+          1076.0,
+          1512.0
+        ]
+      ],
+      "text": "22",
+      "confidence": 0.96069336
+    }
+  ]
+}

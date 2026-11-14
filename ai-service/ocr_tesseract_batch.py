@@ -1,8 +1,6 @@
 """Create source-linked OCR page records with the Tesseract command-line engine."""
 import argparse
-import csv
 import hashlib
-import io
 import os
 import re
 import subprocess
@@ -21,12 +19,21 @@ TSV_COLUMNS = {
 
 
 def parse_tesseract_tsv(contents):
-    reader = csv.DictReader(io.StringIO(contents), delimiter='\t')
-    if not reader.fieldnames or not TSV_COLUMNS.issubset(reader.fieldnames):
+    rows = contents.splitlines()
+    if not rows:
+        raise BatchError('Tesseract TSV is missing required columns')
+    headers = rows[0].lstrip('\ufeff').split('\t')
+    if not TSV_COLUMNS.issubset(headers):
         raise BatchError('Tesseract TSV is missing required columns')
     grouped = {}
     try:
-        for row in reader:
+        for raw_row in rows[1:]:
+            if not raw_row:
+                continue
+            values = raw_row.split('\t', len(headers) - 1)
+            if len(values) != len(headers):
+                raise BatchError('Tesseract TSV contains a row with missing columns')
+            row = dict(zip(headers, values))
             if int(row['level']) != 5:
                 continue
             text = (row.get('text') or '').strip()
@@ -131,6 +138,7 @@ def main():
         hashes = model_hashes(args.tessdata_dir, args.languages)
         metadata = {
             'tesseract_version': version,
+            'tsv_parser_version': 2,
             'languages': args.languages.split('+'),
             'traineddata_sha256': hashes,
             'ocr_engine_mode': args.oem,

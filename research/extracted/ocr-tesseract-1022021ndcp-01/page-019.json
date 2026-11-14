@@ -1,0 +1,861 @@
+{
+  "document_id": "102/2021/NĐ-CP",
+  "source_file": "../../legal-sources/1022021ndcp/01.pdf",
+  "source_sha256": "2d4ea494360877c923ac60a393ea2014cca30fb0172f0676525ccd29f1594f2f",
+  "page_count": 26,
+  "render_dpi": 150,
+  "engine": "Tesseract 5.5.4 (vie+eng; OEM 1; PSM 3)",
+  "review_status": "UNREVIEWED",
+  "tesseract_version": "5.5.4",
+  "tsv_parser_version": 2,
+  "languages": [
+    "vie",
+    "eng"
+  ],
+  "traineddata_sha256": {
+    "vie": "b6b49293d95d0b6dbd8780174627e82c75be957b6f4ed9862155540d6b00bb45",
+    "eng": "8280aed0782fe27257a68ea10fe7ef324ca0f8d85bd2fd145d1c2b560bcb66ba"
+  },
+  "ocr_engine_mode": 1,
+  "page_segmentation_mode": 3,
+  "thread_limit": 1,
+  "page": 19,
+  "lines": [
+    {
+      "bbox": [
+        [
+          657.0,
+          51.0
+        ],
+        [
+          682.0,
+          51.0
+        ],
+        [
+          682.0,
+          72.0
+        ],
+        [
+          657.0,
+          72.0
+        ]
+      ],
+      "text": "19",
+      "confidence": 0.96985153
+    },
+    {
+      "bbox": [
+        [
+          207.0,
+          134.0
+        ],
+        [
+          1130.0,
+          134.0
+        ],
+        [
+          1130.0,
+          172.0
+        ],
+        [
+          207.0,
+          172.0
+        ]
+      ],
+      "text": "phạm hành chính đã kết thúc trong trường hợp đã thực hiện mở rộng diện tích",
+      "confidence": 0.9643521068750001
+    },
+    {
+      "bbox": [
+        [
+          208.0,
+          173.0
+        ],
+        [
+          1129.0,
+          173.0
+        ],
+        [
+          1129.0,
+          201.0
+        ],
+        [
+          208.0,
+          201.0
+        ]
+      ],
+      "text": "dat hoặc xây dựng xong công trình lan chiêm; được xác định là hành vi vi",
+      "confidence": 0.960876288125
+    },
+    {
+      "bbox": [
+        [
+          207.0,
+          208.0
+        ],
+        [
+          938.0,
+          208.0
+        ],
+        [
+          938.0,
+          235.0
+        ],
+        [
+          207.0,
+          235.0
+        ]
+      ],
+      "text": "phạm hành chính đang thực hiện trong các trường hợp còn lại.",
+      "confidence": 0.9675444275000001
+    },
+    {
+      "bbox": [
+        [
+          267.0,
+          262.0
+        ],
+        [
+          1128.0,
+          262.0
+        ],
+        [
+          1128.0,
+          295.0
+        ],
+        [
+          267.0,
+          295.0
+        ]
+      ],
+      "text": "- Hành vi tổ chức, cá nhân tự ý sử dụng nhà, đất thuộc trụ sở làm việc,",
+      "confidence": 0.9637081183333334
+    },
+    {
+      "bbox": [
+        [
+          207.0,
+          301.0
+        ],
+        [
+          1128.0,
+          301.0
+        ],
+        [
+          1128.0,
+          329.0
+        ],
+        [
+          207.0,
+          329.0
+        ]
+      ],
+      "text": "cơ sở hoạt động sự nghiệp của cơ quan, tô chức, đơn vị xác định là hành vi vi",
+      "confidence": 0.9666262815789473
+    },
+    {
+      "bbox": [
+        [
+          206.0,
+          335.0
+        ],
+        [
+          663.0,
+          335.0
+        ],
+        [
+          663.0,
+          362.0
+        ],
+        [
+          206.0,
+          362.0
+        ]
+      ],
+      "text": "phạm hành chính đang được thực hiện.",
+      "confidence": 0.9656809242857142
+    },
+    {
+      "bbox": [
+        [
+          266.0,
+          394.0
+        ],
+        [
+          1129.0,
+          394.0
+        ],
+        [
+          1129.0,
+          421.0
+        ],
+        [
+          266.0,
+          421.0
+        ]
+      ],
+      "text": "e) Hành vi vi phạm hành chính trong lĩnh vực quản lý, sử dụng tài sản",
+      "confidence": 0.95559252625
+    },
+    {
+      "bbox": [
+        [
+          206.0,
+          428.0
+        ],
+        [
+          1128.0,
+          428.0
+        ],
+        [
+          1128.0,
+          455.0
+        ],
+        [
+          206.0,
+          455.0
+        ]
+      ],
+      "text": "công đang được thực hiện là các hành vi quy định tại các Điêu 8, 9, 10, 12,",
+      "confidence": 0.9626875722222222
+    },
+    {
+      "bbox": [
+        [
+          209.0,
+          463.0
+        ],
+        [
+          930.0,
+          463.0
+        ],
+        [
+          930.0,
+          489.0
+        ],
+        [
+          209.0,
+          489.0
+        ]
+      ],
+      "text": "13, 14, 15, 16, 17, 20, 21, 22, 23, 24, 25 và 26 Nghị định này.",
+      "confidence": 0.9648698618749999
+    },
+    {
+      "bbox": [
+        [
+          265.0,
+          521.0
+        ],
+        [
+          1129.0,
+          521.0
+        ],
+        [
+          1129.0,
+          549.0
+        ],
+        [
+          265.0,
+          549.0
+        ]
+      ],
+      "text": "3. Việc xác định hành vi vi phạm hành chính đang thực hiện, hành vi vi",
+      "confidence": 0.9650464406250001
+    },
+    {
+      "bbox": [
+        [
+          205.0,
+          555.0
+        ],
+        [
+          1130.0,
+          555.0
+        ],
+        [
+          1130.0,
+          583.0
+        ],
+        [
+          205.0,
+          583.0
+        ]
+      ],
+      "text": "phạm hành chính đã kết thúc đê tính thời hiệu xử phạt vi phạm hành chính",
+      "confidence": 0.954217483125
+    },
+    {
+      "bbox": [
+        [
+          205.0,
+          590.0
+        ],
+        [
+          1080.0,
+          590.0
+        ],
+        [
+          1080.0,
+          617.0
+        ],
+        [
+          205.0,
+          617.0
+        ]
+      ],
+      "text": "trong lĩnh vực thực hành tiết kiệm, chong lãng phí được quy định như sau:",
+      "confidence": 0.9368529126666665
+    },
+    {
+      "bbox": [
+        [
+          265.0,
+          643.0
+        ],
+        [
+          1129.0,
+          643.0
+        ],
+        [
+          1129.0,
+          676.0
+        ],
+        [
+          265.0,
+          676.0
+        ]
+      ],
+      "text": "a) Hành vi vi phạm hành chính quy định tại khoản 2 Điều 31 Nghị định",
+      "confidence": 0.957217545
+    },
+    {
+      "bbox": [
+        [
+          205.0,
+          677.0
+        ],
+        [
+          1130.0,
+          677.0
+        ],
+        [
+          1130.0,
+          716.0
+        ],
+        [
+          205.0,
+          716.0
+        ]
+      ],
+      "text": "này được xác định là hành vi vi phạm hành chính đã kết thúc trong trường",
+      "confidence": 0.9688058893749999
+    },
+    {
+      "bbox": [
+        [
+          204.0,
+          711.0
+        ],
+        [
+          1130.0,
+          711.0
+        ],
+        [
+          1130.0,
+          744.0
+        ],
+        [
+          204.0,
+          744.0
+        ]
+      ],
+      "text": "hợp đã thực hiện xong việc mua sắm tài sản và giao cho cơ quan, tổ chức, đơn",
+      "confidence": 0.9676713994444444
+    },
+    {
+      "bbox": [
+        [
+          205.0,
+          750.0
+        ],
+        [
+          1130.0,
+          750.0
+        ],
+        [
+          1130.0,
+          778.0
+        ],
+        [
+          205.0,
+          778.0
+        ]
+      ],
+      "text": "vị quản lý, sử dung; được xác định là hành vi vi phạm hành chính đang thực",
+      "confidence": 0.9648667370588235
+    },
+    {
+      "bbox": [
+        [
+          205.0,
+          784.0
+        ],
+        [
+          603.0,
+          784.0
+        ],
+        [
+          603.0,
+          811.0
+        ],
+        [
+          205.0,
+          811.0
+        ]
+      ],
+      "text": "hiện trong các trường hợp còn lại;",
+      "confidence": 0.9690203185714286
+    },
+    {
+      "bbox": [
+        [
+          265.0,
+          837.0
+        ],
+        [
+          1130.0,
+          837.0
+        ],
+        [
+          1130.0,
+          870.0
+        ],
+        [
+          265.0,
+          870.0
+        ]
+      ],
+      "text": "b) Hành vi vi phạm hành chính quy định tại khoản 1 Điều 32 Nghị định",
+      "confidence": 0.964680810625
+    },
+    {
+      "bbox": [
+        [
+          205.0,
+          872.0
+        ],
+        [
+          1129.0,
+          872.0
+        ],
+        [
+          1129.0,
+          904.0
+        ],
+        [
+          205.0,
+          904.0
+        ]
+      ],
+      "text": "này được xác định là hành vi vi phạm hành chính đã kết thúc trong trường",
+      "confidence": 0.9671490475
+    },
+    {
+      "bbox": [
+        [
+          204.0,
+          906.0
+        ],
+        [
+          1129.0,
+          906.0
+        ],
+        [
+          1129.0,
+          938.0
+        ],
+        [
+          204.0,
+          938.0
+        ]
+      ],
+      "text": "hợp đã hoàn thành việc chỉ tiền từ quỹ theo nội dung sai mục đích, tôn chỉ của",
+      "confidence": 0.9650141355555556
+    },
+    {
+      "bbox": [
+        [
+          205.0,
+          946.0
+        ],
+        [
+          1128.0,
+          946.0
+        ],
+        [
+          1128.0,
+          973.0
+        ],
+        [
+          205.0,
+          973.0
+        ]
+      ],
+      "text": "quỹ; được xác định là hành vi vi phạm hành chính đang thực hiện trong các",
+      "confidence": 0.96505160375
+    },
+    {
+      "bbox": [
+        [
+          204.0,
+          980.0
+        ],
+        [
+          429.0,
+          980.0
+        ],
+        [
+          429.0,
+          1007.0
+        ],
+        [
+          204.0,
+          1007.0
+        ]
+      ],
+      "text": "trường hợp còn lại;",
+      "confidence": 0.9680085350000001
+    },
+    {
+      "bbox": [
+        [
+          264.0,
+          1033.0
+        ],
+        [
+          1129.0,
+          1033.0
+        ],
+        [
+          1129.0,
+          1065.0
+        ],
+        [
+          264.0,
+          1065.0
+        ]
+      ],
+      "text": "¢) Hành vi vi phạm hành chính quy định tại khoản 2 Điều 32 Nghị định",
+      "confidence": 0.95428606375
+    },
+    {
+      "bbox": [
+        [
+          204.0,
+          1067.0
+        ],
+        [
+          1129.0,
+          1067.0
+        ],
+        [
+          1129.0,
+          1099.0
+        ],
+        [
+          204.0,
+          1099.0
+        ]
+      ],
+      "text": "này được xác định là hành vi vi phạm hành chính đã kết thúc trong trường",
+      "confidence": 0.96931873125
+    },
+    {
+      "bbox": [
+        [
+          204.0,
+          1100.0
+        ],
+        [
+          1128.0,
+          1100.0
+        ],
+        [
+          1128.0,
+          1132.0
+        ],
+        [
+          204.0,
+          1132.0
+        ]
+      ],
+      "text": "hợp đã hoàn thành việc chi tiền từ quỹ không đúng tiêu chuẩn, quy chuẩn,",
+      "confidence": 0.9613255053333334
+    },
+    {
+      "bbox": [
+        [
+          203.0,
+          1139.0
+        ],
+        [
+          1128.0,
+          1139.0
+        ],
+        [
+          1128.0,
+          1166.0
+        ],
+        [
+          203.0,
+          1166.0
+        ]
+      ],
+      "text": "vượt định mức, đơn giá theo quy định của pháp luật; được xác định là hành vi",
+      "confidence": 0.9654127311764705
+    },
+    {
+      "bbox": [
+        [
+          203.0,
+          1173.0
+        ],
+        [
+          968.0,
+          1173.0
+        ],
+        [
+          968.0,
+          1200.0
+        ],
+        [
+          203.0,
+          1200.0
+        ]
+      ],
+      "text": "vi phạm hành chính đang thực hiện trong các trường hợp còn lại;",
+      "confidence": 0.9670579407692307
+    },
+    {
+      "bbox": [
+        [
+          263.0,
+          1226.0
+        ],
+        [
+          1128.0,
+          1226.0
+        ],
+        [
+          1128.0,
+          1260.0
+        ],
+        [
+          263.0,
+          1260.0
+        ]
+      ],
+      "text": "d) Hành vi vi phạm quy định tại khoản 1 Điều 33 Nghị định này được",
+      "confidence": 0.96401380125
+    },
+    {
+      "bbox": [
+        [
+          203.0,
+          1261.0
+        ],
+        [
+          1127.0,
+          1261.0
+        ],
+        [
+          1127.0,
+          1294.0
+        ],
+        [
+          203.0,
+          1294.0
+        ]
+      ],
+      "text": "xác định là hành vi vi phạm hành chính đã kết thúc trong trường hợp hành vi",
+      "confidence": 0.9646371141176471
+    },
+    {
+      "bbox": [
+        [
+          203.0,
+          1300.0
+        ],
+        [
+          1127.0,
+          1300.0
+        ],
+        [
+          1127.0,
+          1328.0
+        ],
+        [
+          203.0,
+          1328.0
+        ]
+      ],
+      "text": "cản trở trái phép việc thực hiện nghiên cứu, ứng dụng khoa học, công nghệ,",
+      "confidence": 0.9685114286666666
+    },
+    {
+      "bbox": [
+        [
+          202.0,
+          1329.0
+        ],
+        [
+          1128.0,
+          1329.0
+        ],
+        [
+          1128.0,
+          1363.0
+        ],
+        [
+          202.0,
+          1363.0
+        ]
+      ],
+      "text": "thực hiện các dự án sử dụng tài nguyên tái chế đã chấm dứt; được xác định là",
+      "confidence": 0.965944311111111
+    },
+    {
+      "bbox": [
+        [
+          203.0,
+          1370.0
+        ],
+        [
+          1062.0,
+          1370.0
+        ],
+        [
+          1062.0,
+          1397.0
+        ],
+        [
+          203.0,
+          1397.0
+        ]
+      ],
+      "text": "hành vi vi phạm hành chính đang thực hiện trong các trường hợp còn lại;",
+      "confidence": 0.9664350740000001
+    },
+    {
+      "bbox": [
+        [
+          263.0,
+          1424.0
+        ],
+        [
+          1127.0,
+          1424.0
+        ],
+        [
+          1127.0,
+          1458.0
+        ],
+        [
+          263.0,
+          1458.0
+        ]
+      ],
+      "text": "đ) Hành vi vi phạm quy định tại khoản 2 Điều 33 Nghị định này được",
+      "confidence": 0.95962560125
+    },
+    {
+      "bbox": [
+        [
+          203.0,
+          1459.0
+        ],
+        [
+          1127.0,
+          1459.0
+        ],
+        [
+          1127.0,
+          1492.0
+        ],
+        [
+          203.0,
+          1492.0
+        ]
+      ],
+      "text": "xác định là hành vi vi phạm hành chính đã kết thúc trong trường hợp hành vi",
+      "confidence": 0.9678267482352942
+    },
+    {
+      "bbox": [
+        [
+          203.0,
+          1493.0
+        ],
+        [
+          1128.0,
+          1493.0
+        ],
+        [
+          1128.0,
+          1526.0
+        ],
+        [
+          203.0,
+          1526.0
+        ]
+      ],
+      "text": "khai thác, sử dụng tài nguyên không đúng quy hoạch, kế hoạch, quy trình đã",
+      "confidence": 0.9677038973333333
+    },
+    {
+      "bbox": [
+        [
+          203.0,
+          1528.0
+        ],
+        [
+          1128.0,
+          1528.0
+        ],
+        [
+          1128.0,
+          1561.0
+        ],
+        [
+          203.0,
+          1561.0
+        ]
+      ],
+      "text": "chấm dứt; được xác định là hành vi vi phạm hành chính đang thực hiện trong",
+      "confidence": 0.9649234468750001
+    },
+    {
+      "bbox": [
+        [
+          203.0,
+          1568.0
+        ],
+        [
+          474.0,
+          1568.0
+        ],
+        [
+          474.0,
+          1597.0
+        ],
+        [
+          203.0,
+          1597.0
+        ]
+      ],
+      "text": "các trường hợp còn lại;",
+      "confidence": 0.9687573700000001
+    }
+  ]
+}

@@ -1,0 +1,883 @@
+{
+  "document_id": "69/2018/NĐ-CP",
+  "source_file": "../../legal-sources/692018ndcp/01.pdf",
+  "source_sha256": "cfe9d66c02837d203a0781cb916273fa6c3c6151b52fc6becc6d1c006d96681e",
+  "page_count": 89,
+  "render_dpi": 150,
+  "engine": "Tesseract 5.5.4 (vie+eng; OEM 1; PSM 3)",
+  "review_status": "UNREVIEWED",
+  "tesseract_version": "5.5.4",
+  "tsv_parser_version": 2,
+  "languages": [
+    "vie",
+    "eng"
+  ],
+  "traineddata_sha256": {
+    "vie": "b6b49293d95d0b6dbd8780174627e82c75be957b6f4ed9862155540d6b00bb45",
+    "eng": "8280aed0782fe27257a68ea10fe7ef324ca0f8d85bd2fd145d1c2b560bcb66ba"
+  },
+  "ocr_engine_mode": 1,
+  "page_segmentation_mode": 3,
+  "thread_limit": 1,
+  "page": 19,
+  "lines": [
+    {
+      "bbox": [
+        [
+          128.0,
+          176.0
+        ],
+        [
+          135.0,
+          176.0
+        ],
+        [
+          135.0,
+          191.0
+        ],
+        [
+          128.0,
+          191.0
+        ]
+      ],
+      "text": "-",
+      "confidence": 0.23603493
+    },
+    {
+      "bbox": [
+        [
+          663.0,
+          134.0
+        ],
+        [
+          681.0,
+          134.0
+        ],
+        [
+          681.0,
+          150.0
+        ],
+        [
+          663.0,
+          150.0
+        ]
+      ],
+      "text": "19",
+      "confidence": 0.96905098
+    },
+    {
+      "bbox": [
+        [
+          319.0,
+          196.0
+        ],
+        [
+          1075.0,
+          196.0
+        ],
+        [
+          1075.0,
+          228.0
+        ],
+        [
+          319.0,
+          228.0
+        ]
+      ],
+      "text": "e) Kho, bãi phải thuộc sở hữu của doanh nghiệp hoặc do doanh nghiệp",
+      "confidence": 0.94383727
+    },
+    {
+      "bbox": [
+        [
+          267.0,
+          221.0
+        ],
+        [
+          1075.0,
+          221.0
+        ],
+        [
+          1075.0,
+          257.0
+        ],
+        [
+          267.0,
+          257.0
+        ]
+      ],
+      "text": "ký hợp đồng thuê; phải nằm trong khu vực quy hoạch hệ thống kho, bãi phục",
+      "confidence": 0.96741338625
+    },
+    {
+      "bbox": [
+        [
+          268.0,
+          252.0
+        ],
+        [
+          1075.0,
+          252.0
+        ],
+        [
+          1075.0,
+          284.0
+        ],
+        [
+          268.0,
+          284.0
+        ]
+      ],
+      "text": "vụ kinh doanh tạm nhập, tái xuất thực phẩm đông lạnh hoặc trong khu vực do",
+      "confidence": 0.967724961875
+    },
+    {
+      "bbox": [
+        [
+          267.0,
+          278.0
+        ],
+        [
+          1075.0,
+          278.0
+        ],
+        [
+          1075.0,
+          312.0
+        ],
+        [
+          267.0,
+          312.0
+        ]
+      ],
+      "text": "Ủy ban nhân dân tỉnh biên giới quy định sau khi thống nhất với Bộ Quốc",
+      "confidence": 0.968088101875
+    },
+    {
+      "bbox": [
+        [
+          267.0,
+          315.0
+        ],
+        [
+          700.0,
+          315.0
+        ],
+        [
+          700.0,
+          341.0
+        ],
+        [
+          267.0,
+          341.0
+        ]
+      ],
+      "text": "phòng, Bộ Tài chính và Bộ Công Thương.",
+      "confidence": 0.9690544237500001
+    },
+    {
+      "bbox": [
+        [
+          319.0,
+          358.0
+        ],
+        [
+          1075.0,
+          358.0
+        ],
+        [
+          1075.0,
+          390.0
+        ],
+        [
+          319.0,
+          390.0
+        ]
+      ],
+      "text": "Điều 24. Điều kiện kinh doanh tạm nhập, tái xuất hàng hóa có thuế",
+      "confidence": 0.9676128785714286
+    },
+    {
+      "bbox": [
+        [
+          267.0,
+          396.0
+        ],
+        [
+          445.0,
+          396.0
+        ],
+        [
+          445.0,
+          420.0
+        ],
+        [
+          267.0,
+          420.0
+        ]
+      ],
+      "text": "tiêu thụ đặc biệt",
+      "confidence": 0.9689495825000001
+    },
+    {
+      "bbox": [
+        [
+          319.0,
+          438.0
+        ],
+        [
+          1076.0,
+          438.0
+        ],
+        [
+          1076.0,
+          478.0
+        ],
+        [
+          319.0,
+          478.0
+        ]
+      ],
+      "text": "Doanh nghiệp kinh doanh tạm nhập, tái xuất hàng hóa có thuế tiêu thụ",
+      "confidence": 0.9687612485714285
+    },
+    {
+      "bbox": [
+        [
+          268.0,
+          466.0
+        ],
+        [
+          1076.0,
+          466.0
+        ],
+        [
+          1076.0,
+          503.0
+        ],
+        [
+          268.0,
+          503.0
+        ]
+      ],
+      "text": "đặc biệt thuộc Phụ lục VIII Nghị định này phải có sô tiền ký quỹ là 7 tỷ đồng",
+      "confidence": 0.9312105847368422
+    },
+    {
+      "bbox": [
+        [
+          267.0,
+          495.0
+        ],
+        [
+          1076.0,
+          495.0
+        ],
+        [
+          1076.0,
+          538.0
+        ],
+        [
+          267.0,
+          538.0
+        ]
+      ],
+      "text": "Việt Nam nộp tại tổ chức tín dụng trên địa bàn tỉnh, thành phố nơi doanh",
+      "confidence": 0.9610169693749999
+    },
+    {
+      "bbox": [
+        [
+          267.0,
+          524.0
+        ],
+        [
+          1076.0,
+          524.0
+        ],
+        [
+          1076.0,
+          557.0
+        ],
+        [
+          267.0,
+          557.0
+        ]
+      ],
+      "text": "nghiệp được cap Giấy chứng nhận đăng ký kinh doanh hoặc Giấy chứng nhận",
+      "confidence": 0.9494445014285715
+    },
+    {
+      "bbox": [
+        [
+          268.0,
+          561.0
+        ],
+        [
+          500.0,
+          561.0
+        ],
+        [
+          500.0,
+          585.0
+        ],
+        [
+          268.0,
+          585.0
+        ]
+      ],
+      "text": "đăng ký doanh nghiệp.",
+      "confidence": 0.96714014
+    },
+    {
+      "bbox": [
+        [
+          319.0,
+          604.0
+        ],
+        [
+          1075.0,
+          604.0
+        ],
+        [
+          1075.0,
+          635.0
+        ],
+        [
+          319.0,
+          635.0
+        ]
+      ],
+      "text": "Điều 25. Điều kiện kinh doanh tạm nhập, tái xuất hàng hóa đã qua",
+      "confidence": 0.9504279771428571
+    },
+    {
+      "bbox": [
+        [
+          268.0,
+          642.0
+        ],
+        [
+          354.0,
+          642.0
+        ],
+        [
+          354.0,
+          664.0
+        ],
+        [
+          268.0,
+          664.0
+        ]
+      ],
+      "text": "sử dụng",
+      "confidence": 0.968617935
+    },
+    {
+      "bbox": [
+        [
+          319.0,
+          683.0
+        ],
+        [
+          1076.0,
+          683.0
+        ],
+        [
+          1076.0,
+          717.0
+        ],
+        [
+          319.0,
+          717.0
+        ]
+      ],
+      "text": "Doanh nghiệp kinh doanh tạm nhập, tái xuất hàng hóa đã qua sử dụng",
+      "confidence": 0.9676889421428573
+    },
+    {
+      "bbox": [
+        [
+          267.0,
+          711.0
+        ],
+        [
+          1076.0,
+          711.0
+        ],
+        [
+          1076.0,
+          748.0
+        ],
+        [
+          267.0,
+          748.0
+        ]
+      ],
+      "text": "thuộc Phụ lục IX Nghị định này phải có sô tiền ký quỹ là 7 tỷ đồng Việt Nam",
+      "confidence": 0.9565283005263159
+    },
+    {
+      "bbox": [
+        [
+          268.0,
+          740.0
+        ],
+        [
+          1076.0,
+          740.0
+        ],
+        [
+          1076.0,
+          777.0
+        ],
+        [
+          268.0,
+          777.0
+        ]
+      ],
+      "text": "nộp tại tổ chức tín dụng trên địa bàn tỉnh, thành phố. nơi doanh nghiệp được",
+      "confidence": 0.960541311875
+    },
+    {
+      "bbox": [
+        [
+          268.0,
+          769.0
+        ],
+        [
+          1076.0,
+          769.0
+        ],
+        [
+          1076.0,
+          801.0
+        ],
+        [
+          268.0,
+          801.0
+        ]
+      ],
+      "text": "cấp Giấy chứng nhận đăng ký kinh doanh hoặc Giấy chứng nhận đăng ký",
+      "confidence": 0.9684164592857143
+    },
+    {
+      "bbox": [
+        [
+          268.0,
+          806.0
+        ],
+        [
+          412.0,
+          806.0
+        ],
+        [
+          412.0,
+          830.0
+        ],
+        [
+          268.0,
+          830.0
+        ]
+      ],
+      "text": "doanh nghiệp.",
+      "confidence": 0.96830105
+    },
+    {
+      "bbox": [
+        [
+          319.0,
+          849.0
+        ],
+        [
+          822.0,
+          849.0
+        ],
+        [
+          822.0,
+          878.0
+        ],
+        [
+          319.0,
+          878.0
+        ]
+      ],
+      "text": "Điều 26. Mã số kinh doanh tạm nhập, tái xuất",
+      "confidence": 0.967271133
+    },
+    {
+      "bbox": [
+        [
+          323.0,
+          898.0
+        ],
+        [
+          1077.0,
+          898.0
+        ],
+        [
+          1077.0,
+          933.0
+        ],
+        [
+          323.0,
+          933.0
+        ]
+      ],
+      "text": "1. Bộ Công Thương cấp Mã số kinh doanh tạm nhập, tái xuất hàng hóa",
+      "confidence": 0.9667265126666666
+    },
+    {
+      "bbox": [
+        [
+          268.0,
+          926.0
+        ],
+        [
+          1076.0,
+          926.0
+        ],
+        [
+          1076.0,
+          959.0
+        ],
+        [
+          268.0,
+          959.0
+        ]
+      ],
+      "text": "khi doanh nghiệp đáp ứng điều kiện quy định tại Điều 23 hoặc Điều 24 hoặc",
+      "confidence": 0.96606231625
+    },
+    {
+      "bbox": [
+        [
+          269.0,
+          960.0
+        ],
+        [
+          508.0,
+          960.0
+        ],
+        [
+          508.0,
+          988.0
+        ],
+        [
+          269.0,
+          988.0
+        ]
+      ],
+      "text": "Điều 25 Nghị định này.",
+      "confidence": 0.9673675540000001
+    },
+    {
+      "bbox": [
+        [
+          321.0,
+          1005.0
+        ],
+        [
+          1077.0,
+          1005.0
+        ],
+        [
+          1077.0,
+          1038.0
+        ],
+        [
+          321.0,
+          1038.0
+        ]
+      ],
+      "text": "2. Mã số kinh doanh tạm nhập, tái xuất theo quy định tại Điều này là Mã",
+      "confidence": 0.967203315882353
+    },
+    {
+      "bbox": [
+        [
+          269.0,
+          1034.0
+        ],
+        [
+          1076.0,
+          1034.0
+        ],
+        [
+          1076.0,
+          1076.0
+        ],
+        [
+          269.0,
+          1076.0
+        ]
+      ],
+      "text": "số riêng đối với từng nhóm hàng hóa. Doanh nghiệp được cấp Mã số kinh",
+      "confidence": 0.9676958826666666
+    },
+    {
+      "bbox": [
+        [
+          269.0,
+          1066.0
+        ],
+        [
+          1076.0,
+          1066.0
+        ],
+        [
+          1076.0,
+          1095.0
+        ],
+        [
+          269.0,
+          1095.0
+        ]
+      ],
+      "text": "doanh tạm nhập, tái xuất nhóm hàng hóa nào thì được kinh doanh tạm nhập,",
+      "confidence": 0.9681118166666667
+    },
+    {
+      "bbox": [
+        [
+          268.0,
+          1096.0
+        ],
+        [
+          886.0,
+          1096.0
+        ],
+        [
+          886.0,
+          1123.0
+        ],
+        [
+          268.0,
+          1123.0
+        ]
+      ],
+      "text": "tái xuất các mặt hàng thuộc phạm vi của nhóm hàng hóa đó.",
+      "confidence": 0.968010253076923
+    },
+    {
+      "bbox": [
+        [
+          321.0,
+          1142.0
+        ],
+        [
+          1076.0,
+          1142.0
+        ],
+        [
+          1076.0,
+          1178.0
+        ],
+        [
+          321.0,
+          1178.0
+        ]
+      ],
+      "text": "3. Đối với kho, bãi đã được kê khai để chứng minh việc đáp ứng điều",
+      "confidence": 0.9608513206249999
+    },
+    {
+      "bbox": [
+        [
+          269.0,
+          1171.0
+        ],
+        [
+          1077.0,
+          1171.0
+        ],
+        [
+          1077.0,
+          1203.0
+        ],
+        [
+          269.0,
+          1203.0
+        ]
+      ],
+      "text": "kiện kinh doanh và để được cấp Mã số kinh doanh tạm nhập, tái xuất, doanh",
+      "confidence": 0.9668160437500001
+    },
+    {
+      "bbox": [
+        [
+          269.0,
+          1201.0
+        ],
+        [
+          1077.0,
+          1201.0
+        ],
+        [
+          1077.0,
+          1244.0
+        ],
+        [
+          269.0,
+          1244.0
+        ]
+      ],
+      "text": "nghiệp không được cho doanh nghiệp khác thuê lại để sử dung vào mục đích",
+      "confidence": 0.9405426973333333
+    },
+    {
+      "bbox": [
+        [
+          269.0,
+          1229.0
+        ],
+        [
+          1013.0,
+          1229.0
+        ],
+        [
+          1013.0,
+          1261.0
+        ],
+        [
+          269.0,
+          1261.0
+        ]
+      ],
+      "text": "xin cấp Mã số kinh doanh tạm nhập, tái xuất hàng thực phẩm đông lạnh.",
+      "confidence": 0.9654477086666665
+    },
+    {
+      "bbox": [
+        [
+          321.0,
+          1279.0
+        ],
+        [
+          1078.0,
+          1279.0
+        ],
+        [
+          1078.0,
+          1317.0
+        ],
+        [
+          321.0,
+          1317.0
+        ]
+      ],
+      "text": "4. Trường hợp hàng hóa nước ngoài gửi vào kho ngoại quan để xuất",
+      "confidence": 0.9623483835714286
+    },
+    {
+      "bbox": [
+        [
+          270.0,
+          1308.0
+        ],
+        [
+          1077.0,
+          1308.0
+        ],
+        [
+          1077.0,
+          1345.0
+        ],
+        [
+          270.0,
+          1345.0
+        ]
+      ],
+      "text": "khẩu, tái xuất qua các tỉnh biên giới phía Bắc thì chỉ doanh nghiệp có Mã số",
+      "confidence": 0.9667474770588236
+    },
+    {
+      "bbox": [
+        [
+          270.0,
+          1341.0
+        ],
+        [
+          1078.0,
+          1341.0
+        ],
+        [
+          1078.0,
+          1377.0
+        ],
+        [
+          270.0,
+          1377.0
+        ]
+      ],
+      "text": "kinh doanh tạm nhập, tái xuất của nhóm hàng hóa đó mới được đứng tên trên",
+      "confidence": 0.96225167875
+    },
+    {
+      "bbox": [
+        [
+          270.0,
+          1367.0
+        ],
+        [
+          1078.0,
+          1367.0
+        ],
+        [
+          1078.0,
+          1405.0
+        ],
+        [
+          270.0,
+          1405.0
+        ]
+      ],
+      "text": "tờ khai nhập kho ngoại quan và tờ khai xuất kho ngoại quan dé xuất khẩu, tái",
+      "confidence": 0.9620109547058824
+    },
+    {
+      "bbox": [
+        [
+          271.0,
+          1400.0
+        ],
+        [
+          1079.0,
+          1400.0
+        ],
+        [
+          1079.0,
+          1428.0
+        ],
+        [
+          271.0,
+          1428.0
+        ]
+      ],
+      "text": "xuất, Hàng hóa gửi tại kho ngoại quan thực hiện theo quy định của pháp luật",
+      "confidence": 0.962869263125
+    },
+    {
+      "bbox": [
+        [
+          271.0,
+          1429.0
+        ],
+        [
+          394.0,
+          1429.0
+        ],
+        [
+          394.0,
+          1457.0
+        ],
+        [
+          271.0,
+          1457.0
+        ]
+      ],
+      "text": "về hải quan.",
+      "confidence": 0.9523918400000001
+    }
+  ]
+}

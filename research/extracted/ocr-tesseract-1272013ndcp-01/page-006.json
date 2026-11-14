@@ -1,0 +1,817 @@
+{
+  "document_id": "127/2013/NĐ-CP",
+  "source_file": "../../legal-sources/1272013ndcp/01.pdf",
+  "source_sha256": "6b970da9c19ccae81ecbc3385fb53f1fa2375e93ad03643e1f9b4e43ed87e573",
+  "page_count": 49,
+  "render_dpi": 150,
+  "engine": "Tesseract 5.5.4 (vie+eng; OEM 1; PSM 3)",
+  "review_status": "UNREVIEWED",
+  "tesseract_version": "5.5.4",
+  "tsv_parser_version": 2,
+  "languages": [
+    "vie",
+    "eng"
+  ],
+  "traineddata_sha256": {
+    "vie": "b6b49293d95d0b6dbd8780174627e82c75be957b6f4ed9862155540d6b00bb45",
+    "eng": "8280aed0782fe27257a68ea10fe7ef324ca0f8d85bd2fd145d1c2b560bcb66ba"
+  },
+  "ocr_engine_mode": 1,
+  "page_segmentation_mode": 3,
+  "thread_limit": 1,
+  "page": 6,
+  "lines": [
+    {
+      "bbox": [
+        [
+          372.0,
+          197.0
+        ],
+        [
+          1120.0,
+          197.0
+        ],
+        [
+          1120.0,
+          232.0
+        ],
+        [
+          372.0,
+          232.0
+        ]
+      ],
+      "text": "2. Phạt tiền từ 1.000.000 đồng đến 3.000.000 đồng đối với hành vi không",
+      "confidence": 0.955191195
+    },
+    {
+      "bbox": [
+        [
+          319.0,
+          227.0
+        ],
+        [
+          1120.0,
+          227.0
+        ],
+        [
+          1120.0,
+          256.0
+        ],
+        [
+          319.0,
+          256.0
+        ]
+      ],
+      "text": "khai hoặc khai sai so với thực tế về tên hàng, chủng loại, số lượng,",
+      "confidence": 0.968288134
+    },
+    {
+      "bbox": [
+        [
+          318.0,
+          255.0
+        ],
+        [
+          1120.0,
+          255.0
+        ],
+        [
+          1120.0,
+          285.0
+        ],
+        [
+          318.0,
+          285.0
+        ]
+      ],
+      "text": "trọng lượng, chất lượng, trị giá, xuất xứ hàng hoá thuộc một trong các trường",
+      "confidence": 0.9658233279999999
+    },
+    {
+      "bbox": [
+        [
+          318.0,
+          290.0
+        ],
+        [
+          404.0,
+          290.0
+        ],
+        [
+          404.0,
+          314.0
+        ],
+        [
+          318.0,
+          314.0
+        ]
+      ],
+      "text": "hợp sau:",
+      "confidence": 0.963826945
+    },
+    {
+      "bbox": [
+        [
+          370.0,
+          331.0
+        ],
+        [
+          1118.0,
+          331.0
+        ],
+        [
+          1118.0,
+          364.0
+        ],
+        [
+          370.0,
+          364.0
+        ]
+      ],
+      "text": "a) Hàng hoá từ nước ngoài vào cảng trung chuyển, khu phi t#®%é quan",
+      "confidence": 0.910400925
+    },
+    {
+      "bbox": [
+        [
+          317.0,
+          360.0
+        ],
+        [
+          1117.0,
+          360.0
+        ],
+        [
+          1117.0,
+          393.0
+        ],
+        [
+          317.0,
+          393.0
+        ]
+      ],
+      "text": "hoặc từ cảng trung chuyển, khu phi thuế quan ra nước ngoài hoặc từ khu phi",
+      "confidence": 0.960613938125
+    },
+    {
+      "bbox": [
+        [
+          317.0,
+          389.0
+        ],
+        [
+          1118.0,
+          389.0
+        ],
+        [
+          1118.0,
+          421.0
+        ],
+        [
+          317.0,
+          421.0
+        ]
+      ],
+      "text": "thuế quan vào nội địa để gia công, sửa chữa, bảo hành; trừ vi phạm quy định",
+      "confidence": 0.9638054870588236
+    },
+    {
+      "bbox": [
+        [
+          316.0,
+          417.0
+        ],
+        [
+          764.0,
+          417.0
+        ],
+        [
+          764.0,
+          446.0
+        ],
+        [
+          316.0,
+          446.0
+        ]
+      ],
+      "text": "tại Điểm h Khoản 1 Điều 13 Nghị định này;",
+      "confidence": 0.950037971
+    },
+    {
+      "bbox": [
+        [
+          368.0,
+          463.0
+        ],
+        [
+          741.0,
+          463.0
+        ],
+        [
+          741.0,
+          491.0
+        ],
+        [
+          368.0,
+          491.0
+        ]
+      ],
+      "text": "b) Hàng hoá quá cảnh, chuyển khẩu;",
+      "confidence": 0.9535740114285715
+    },
+    {
+      "bbox": [
+        [
+          368.0,
+          508.0
+        ],
+        [
+          939.0,
+          508.0
+        ],
+        [
+          939.0,
+          537.0
+        ],
+        [
+          368.0,
+          537.0
+        ]
+      ],
+      "text": "¢) Hàng hoá sử dụng, tiêu huỷ trong khu phi thuế quan;",
+      "confidence": 0.941856075
+    },
+    {
+      "bbox": [
+        [
+          367.0,
+          553.0
+        ],
+        [
+          1115.0,
+          553.0
+        ],
+        [
+          1115.0,
+          582.0
+        ],
+        [
+          367.0,
+          582.0
+        ]
+      ],
+      "text": "d) Khai không đồng nhất theo quy định giữa tên hàng với các tiêu chí",
+      "confidence": 0.966084452
+    },
+    {
+      "bbox": [
+        [
+          315.0,
+          579.0
+        ],
+        [
+          1115.0,
+          579.0
+        ],
+        [
+          1115.0,
+          625.0
+        ],
+        [
+          315.0,
+          625.0
+        ]
+      ],
+      "text": "của hàng hóa đăng ky trên danh mục nguyên vật liệu nhập khẩu và danh mục",
+      "confidence": 0.9561103343749999
+    },
+    {
+      "bbox": [
+        [
+          315.0,
+          606.0
+        ],
+        [
+          1114.0,
+          606.0
+        ],
+        [
+          1114.0,
+          647.0
+        ],
+        [
+          315.0,
+          647.0
+        ]
+      ],
+      "text": "sản phẩm xuất khẩu hoặc giữa danh mục đăng ký với thực tế quản lý tại",
+      "confidence": 0.9643266
+    },
+    {
+      "bbox": [
+        [
+          314.0,
+          639.0
+        ],
+        [
+          550.0,
+          639.0
+        ],
+        [
+          550.0,
+          667.0
+        ],
+        [
+          314.0,
+          667.0
+        ]
+      ],
+      "text": "doanh nghiệp chế xuất.",
+      "confidence": 0.9646214125
+    },
+    {
+      "bbox": [
+        [
+          366.0,
+          683.0
+        ],
+        [
+          1113.0,
+          683.0
+        ],
+        [
+          1113.0,
+          713.0
+        ],
+        [
+          366.0,
+          713.0
+        ]
+      ],
+      "text": "3. Phạt tiền từ 3.000.000 đồng đến 5.000.000 đồng đối với một trong các",
+      "confidence": 0.9523190478571428
+    },
+    {
+      "bbox": [
+        [
+          313.0,
+          717.0
+        ],
+        [
+          525.0,
+          717.0
+        ],
+        [
+          525.0,
+          740.0
+        ],
+        [
+          313.0,
+          740.0
+        ]
+      ],
+      "text": "hành vi vi phạm sau:",
+      "confidence": 0.9675196539999998
+    },
+    {
+      "bbox": [
+        [
+          365.0,
+          757.0
+        ],
+        [
+          1113.0,
+          757.0
+        ],
+        [
+          1113.0,
+          791.0
+        ],
+        [
+          365.0,
+          791.0
+        ]
+      ],
+      "text": "a) Không khai hoặc khai sai so với thực tế về tên hàng, chủng loại, xuất",
+      "confidence": 0.967947501875
+    },
+    {
+      "bbox": [
+        [
+          312.0,
+          785.0
+        ],
+        [
+          1111.0,
+          785.0
+        ],
+        [
+          1111.0,
+          819.0
+        ],
+        [
+          312.0,
+          819.0
+        ]
+      ],
+      "text": "xứ, sô lượng, trọng lượng, chất lượng, trị giá đối với hàng hóa xuất khẩu,",
+      "confidence": 0.967602128
+    },
+    {
+      "bbox": [
+        [
+          311.0,
+          814.0
+        ],
+        [
+          988.0,
+          814.0
+        ],
+        [
+          988.0,
+          844.0
+        ],
+        [
+          311.0,
+          844.0
+        ]
+      ],
+      "text": "nhập khẩu thuộc đồi tượng miễn thuế theo quy định của pháp luật;",
+      "confidence": 0.9540344407692306
+    },
+    {
+      "bbox": [
+        [
+          364.0,
+          860.0
+        ],
+        [
+          1110.0,
+          860.0
+        ],
+        [
+          1110.0,
+          893.0
+        ],
+        [
+          364.0,
+          893.0
+        ]
+      ],
+      "text": "b) Lập và khai không đúng các nội dung trong hồ sơ thanh khoản, báo",
+      "confidence": 0.9652238606666667
+    },
+    {
+      "bbox": [
+        [
+          311.0,
+          893.0
+        ],
+        [
+          919.0,
+          893.0
+        ],
+        [
+          919.0,
+          918.0
+        ],
+        [
+          311.0,
+          918.0
+        ]
+      ],
+      "text": "cáo về hàng hoá của doanh nghiệp trong khu phi thuê quan;",
+      "confidence": 0.9584104216666667
+    },
+    {
+      "bbox": [
+        [
+          363.0,
+          938.0
+        ],
+        [
+          900.0,
+          938.0
+        ],
+        [
+          900.0,
+          962.0
+        ],
+        [
+          363.0,
+          962.0
+        ]
+      ],
+      "text": "c) Không khai nguyên vật liệu gia công tự cung ứng:",
+      "confidence": 0.8919804927272728
+    },
+    {
+      "bbox": [
+        [
+          362.0,
+          978.0
+        ],
+        [
+          1109.0,
+          978.0
+        ],
+        [
+          1109.0,
+          1008.0
+        ],
+        [
+          362.0,
+          1008.0
+        ]
+      ],
+      "text": "d) Thay đổi địa chỉ cơ sở sản xuất hàng gia công mà không thông báo",
+      "confidence": 0.95601167625
+    },
+    {
+      "bbox": [
+        [
+          310.0,
+          1011.0
+        ],
+        [
+          780.0,
+          1011.0
+        ],
+        [
+          780.0,
+          1035.0
+        ],
+        [
+          310.0,
+          1035.0
+        ]
+      ],
+      "text": "cho cơ quan hải quan theo quy định pháp luật;",
+      "confidence": 0.967773377
+    },
+    {
+      "bbox": [
+        [
+          361.0,
+          1052.0
+        ],
+        [
+          1108.0,
+          1052.0
+        ],
+        [
+          1108.0,
+          1087.0
+        ],
+        [
+          361.0,
+          1087.0
+        ]
+      ],
+      "text": "đ) Khai tăng so với định mức sản xuất sản phẩm gia công; định mức sản",
+      "confidence": 0.960424428125
+    },
+    {
+      "bbox": [
+        [
+          309.0,
+          1081.0
+        ],
+        [
+          1108.0,
+          1081.0
+        ],
+        [
+          1108.0,
+          1114.0
+        ],
+        [
+          309.0,
+          1114.0
+        ]
+      ],
+      "text": "xuất sản phẩm xuất khẩu từ nguyên liệu, vật tư nhập khẩu của doanh nghiệp",
+      "confidence": 0.9670505993333333
+    },
+    {
+      "bbox": [
+        [
+          309.0,
+          1109.0
+        ],
+        [
+          400.0,
+          1109.0
+        ],
+        [
+          400.0,
+          1132.0
+        ],
+        [
+          309.0,
+          1132.0
+        ]
+      ],
+      "text": "chế xuất,",
+      "confidence": 0.89819706
+    },
+    {
+      "bbox": [
+        [
+          360.0,
+          1155.0
+        ],
+        [
+          1106.0,
+          1155.0
+        ],
+        [
+          1106.0,
+          1189.0
+        ],
+        [
+          360.0,
+          1189.0
+        ]
+      ],
+      "text": "4. Phạt tiền từ 20. 000.000 đồng đến 40.000.000 đồng đối với hành vi",
+      "confidence": 0.9573143714285713
+    },
+    {
+      "bbox": [
+        [
+          304.0,
+          1179.0
+        ],
+        [
+          1107.0,
+          1179.0
+        ],
+        [
+          1107.0,
+          1218.0
+        ],
+        [
+          304.0,
+          1218.0
+        ]
+      ],
+      "text": "khai khống về tên hàng, số lượng, trọng lượng, trị giá hàng hoá xuất khẩu; trừ",
+      "confidence": 0.96706440875
+    },
+    {
+      "bbox": [
+        [
+          307.0,
+          1213.0
+        ],
+        [
+          1056.0,
+          1213.0
+        ],
+        [
+          1056.0,
+          1243.0
+        ],
+        [
+          307.0,
+          1243.0
+        ]
+      ],
+      "text": "trường hợp vi phạm quy định tại Điểm e Khoản 1 Điều 13 Nghị định này.",
+      "confidence": 0.9635155093750001
+    },
+    {
+      "bbox": [
+        [
+          359.0,
+          1259.0
+        ],
+        [
+          1105.0,
+          1259.0
+        ],
+        [
+          1105.0,
+          1294.0
+        ],
+        [
+          359.0,
+          1294.0
+        ]
+      ],
+      "text": "5. Vi phạm quy định tại Khoản 3 Điều này mà có hành vi khai sai dẫn",
+      "confidence": 0.9640398623529413
+    },
+    {
+      "bbox": [
+        [
+          307.0,
+          1284.0
+        ],
+        [
+          1104.0,
+          1284.0
+        ],
+        [
+          1104.0,
+          1326.0
+        ],
+        [
+          307.0,
+          1326.0
+        ]
+      ],
+      "text": "đến thiếu số tiền thuế phải nộp hoặc tăng số tiền thuế được miễn, giảm, được",
+      "confidence": 0.946736664375
+    },
+    {
+      "bbox": [
+        [
+          306.0,
+          1317.0
+        ],
+        [
+          1094.0,
+          1317.0
+        ],
+        [
+          1094.0,
+          1348.0
+        ],
+        [
+          306.0,
+          1348.0
+        ]
+      ],
+      "text": "hoàn; gian lận, trồn thuế thì xử phạt theo Điều 8 hoặc Điều 13 Nghị định này.",
+      "confidence": 0.961558954117647
+    },
+    {
+      "bbox": [
+        [
+          357.0,
+          1363.0
+        ],
+        [
+          776.0,
+          1363.0
+        ],
+        [
+          776.0,
+          1391.0
+        ],
+        [
+          357.0,
+          1391.0
+        ]
+      ],
+      "text": "Điều 8. Vi phạm quy định về khai thuế",
+      "confidence": 0.9662755155555556
+    },
+    {
+      "bbox": [
+        [
+          357.0,
+          1408.0
+        ],
+        [
+          1102.0,
+          1408.0
+        ],
+        [
+          1102.0,
+          1446.0
+        ],
+        [
+          357.0,
+          1446.0
+        ]
+      ],
+      "text": "Người nộp thuế có hành vi khai sai dẫn đến thiếu số tiền thuế phải nộp",
+      "confidence": 0.960276100625
+    },
+    {
+      "bbox": [
+        [
+          305.0,
+          1437.0
+        ],
+        [
+          1058.0,
+          1437.0
+        ],
+        [
+          1058.0,
+          1467.0
+        ],
+        [
+          305.0,
+          1467.0
+        ]
+      ],
+      "text": "hoặc tăng số tiền thuế được miễn, giảm, được hoàn thì bị xử phạt như sau:",
+      "confidence": 0.96897492875
+    }
+  ]
+}

@@ -1,0 +1,883 @@
+{
+  "document_id": "127/2013/NĐ-CP",
+  "source_file": "../../legal-sources/1272013ndcp/01.pdf",
+  "source_sha256": "6b970da9c19ccae81ecbc3385fb53f1fa2375e93ad03643e1f9b4e43ed87e573",
+  "page_count": 49,
+  "render_dpi": 150,
+  "engine": "Tesseract 5.5.4 (vie+eng; OEM 1; PSM 3)",
+  "review_status": "UNREVIEWED",
+  "tesseract_version": "5.5.4",
+  "tsv_parser_version": 2,
+  "languages": [
+    "vie",
+    "eng"
+  ],
+  "traineddata_sha256": {
+    "vie": "b6b49293d95d0b6dbd8780174627e82c75be957b6f4ed9862155540d6b00bb45",
+    "eng": "8280aed0782fe27257a68ea10fe7ef324ca0f8d85bd2fd145d1c2b560bcb66ba"
+  },
+  "ocr_engine_mode": 1,
+  "page_segmentation_mode": 3,
+  "thread_limit": 1,
+  "page": 29,
+  "lines": [
+    {
+      "bbox": [
+        [
+          337.0,
+          213.0
+        ],
+        [
+          1081.0,
+          213.0
+        ],
+        [
+          1081.0,
+          247.0
+        ],
+        [
+          337.0,
+          247.0
+        ]
+      ],
+      "text": "Điều 34. Thủ tục gửi văn bản yêu cầu, thông báo, quyết định cưỡng",
+      "confidence": 0.9637579335714286
+    },
+    {
+      "bbox": [
+        [
+          286.0,
+          243.0
+        ],
+        [
+          950.0,
+          243.0
+        ],
+        [
+          950.0,
+          271.0
+        ],
+        [
+          286.0,
+          271.0
+        ]
+      ],
+      "text": "chế đến đối tượng bị cưỡng chế, tổ chức, cá nhân có liên quan",
+      "confidence": 0.9282460942857143
+    },
+    {
+      "bbox": [
+        [
+          304.0,
+          288.0
+        ],
+        [
+          1080.0,
+          288.0
+        ],
+        [
+          1080.0,
+          327.0
+        ],
+        [
+          304.0,
+          327.0
+        ]
+      ],
+      "text": "„1. Văn bản yêu cầu, thông báo, Quyết định cưỡng chế được giao trực",
+      "confidence": 0.9180610114285714
+    },
+    {
+      "bbox": [
+        [
+          285.0,
+          327.0
+        ],
+        [
+          923.0,
+          327.0
+        ],
+        [
+          923.0,
+          351.0
+        ],
+        [
+          285.0,
+          351.0
+        ]
+      ],
+      "text": "tiếp cho đôi tượng bị cưỡng chê, tô chức, cá nhân có liên quan.",
+      "confidence": 0.9558390321428571
+    },
+    {
+      "bbox": [
+        [
+          336.0,
+          372.0
+        ],
+        [
+          1080.0,
+          372.0
+        ],
+        [
+          1080.0,
+          401.0
+        ],
+        [
+          336.0,
+          401.0
+        ]
+      ],
+      "text": "Trường hợp đối tượng nhận là cơ quan, tổ chức thì các văn bản nêu trên",
+      "confidence": 0.9680164281250001
+    },
+    {
+      "bbox": [
+        [
+          284.0,
+          402.0
+        ],
+        [
+          1080.0,
+          402.0
+        ],
+        [
+          1080.0,
+          434.0
+        ],
+        [
+          284.0,
+          434.0
+        ]
+      ],
+      "text": "phải được giao trực tiếp cho người đại diện theo pháp luật hoặc người chịu",
+      "confidence": 0.9676946253333334
+    },
+    {
+      "bbox": [
+        [
+          284.0,
+          430.0
+        ],
+        [
+          1079.0,
+          430.0
+        ],
+        [
+          1079.0,
+          466.0
+        ],
+        [
+          284.0,
+          466.0
+        ]
+      ],
+      "text": "trách nhiệm nhận văn bản của cơ quan, tổ chức đó và phải được những người",
+      "confidence": 0.9680824187499999
+    },
+    {
+      "bbox": [
+        [
+          284.0,
+          465.0
+        ],
+        [
+          721.0,
+          465.0
+        ],
+        [
+          721.0,
+          488.0
+        ],
+        [
+          284.0,
+          488.0
+        ]
+      ],
+      "text": "này ký nhận. ị",
+      "confidence": 0.8734541525
+    },
+    {
+      "bbox": [
+        [
+          335.0,
+          509.0
+        ],
+        [
+          1079.0,
+          509.0
+        ],
+        [
+          1079.0,
+          548.0
+        ],
+        [
+          335.0,
+          548.0
+        ]
+      ],
+      "text": "Trường hợp đối tượng nhận là cá nhân thì các văn bản nêu trên được",
+      "confidence": 0.9674129686666667
+    },
+    {
+      "bbox": [
+        [
+          284.0,
+          537.0
+        ],
+        [
+          1079.0,
+          537.0
+        ],
+        [
+          1079.0,
+          581.0
+        ],
+        [
+          284.0,
+          581.0
+        ]
+      ],
+      "text": "giao trực tiếp và phải được ký nhận hoặc điểm chỉ. Trường hợp đối tượng",
+      "confidence": 0.9676131386666665
+    },
+    {
+      "bbox": [
+        [
+          283.0,
+          566.0
+        ],
+        [
+          1079.0,
+          566.0
+        ],
+        [
+          1079.0,
+          596.0
+        ],
+        [
+          283.0,
+          596.0
+        ]
+      ],
+      "text": "nhận vắng mặt thì các văn bản nêu trên được giao cho một trong số những",
+      "confidence": 0.9685288106250001
+    },
+    {
+      "bbox": [
+        [
+          283.0,
+          600.0
+        ],
+        [
+          1078.0,
+          600.0
+        ],
+        [
+          1078.0,
+          629.0
+        ],
+        [
+          283.0,
+          629.0
+        ]
+      ],
+      "text": "người thân thích có đủ năng lực hành vi dân sự cùng cư trú với người đó, bao",
+      "confidence": 0.9664799116666667
+    },
+    {
+      "bbox": [
+        [
+          283.0,
+          625.0
+        ],
+        [
+          1079.0,
+          625.0
+        ],
+        [
+          1079.0,
+          658.0
+        ],
+        [
+          283.0,
+          658.0
+        ]
+      ],
+      "text": "gồm: vợ, chồng, con, ông, bà, cha, mẹ, bác, chú, cô, cậu, dì, anh, chị, em của",
+      "confidence": 0.9642468947058823
+    },
+    {
+      "bbox": [
+        [
+          283.0,
+          653.0
+        ],
+        [
+          1077.0,
+          653.0
+        ],
+        [
+          1077.0,
+          681.0
+        ],
+        [
+          283.0,
+          681.0
+        ]
+      ],
+      "text": "đối tượng nhận, của vợ hoặc chồng người đó. Việc giao văn bản phải lập",
+      "confidence": 0.9684996686666666
+    },
+    {
+      "bbox": [
+        [
+          283.0,
+          686.0
+        ],
+        [
+          1078.0,
+          686.0
+        ],
+        [
+          1078.0,
+          709.0
+        ],
+        [
+          283.0,
+          709.0
+        ]
+      ],
+      "text": "thành biên bản. Ngày lập biên bản được coi là ngày giao nhận các văn bản",
+      "confidence": 0.96819991125
+    },
+    {
+      "bbox": [
+        [
+          282.0,
+          716.0
+        ],
+        [
+          369.0,
+          716.0
+        ],
+        [
+          369.0,
+          733.0
+        ],
+        [
+          282.0,
+          733.0
+        ]
+      ],
+      "text": "nêu trên.",
+      "confidence": 0.96367779
+    },
+    {
+      "bbox": [
+        [
+          333.0,
+          736.0
+        ],
+        [
+          1077.0,
+          736.0
+        ],
+        [
+          1077.0,
+          791.0
+        ],
+        [
+          333.0,
+          791.0
+        ]
+      ],
+      "text": "Trường hợp đối tượng nhận không of có người thân thích có đủ năng lực",
+      "confidence": 0.927508742
+    },
+    {
+      "bbox": [
+        [
+          282.0,
+          787.0
+        ],
+        [
+          1077.0,
+          787.0
+        ],
+        [
+          1077.0,
+          822.0
+        ],
+        [
+          282.0,
+          822.0
+        ]
+      ],
+      "text": "hành vi dân sự cùng cư trú hoặc có nhưng những người này từ chối nhận hoặc",
+      "confidence": 0.9653974782352941
+    },
+    {
+      "bbox": [
+        [
+          282.0,
+          816.0
+        ],
+        [
+          1077.0,
+          816.0
+        ],
+        [
+          1077.0,
+          855.0
+        ],
+        [
+          282.0,
+          855.0
+        ]
+      ],
+      "text": "đối tượng nhận vắng mặt mà không rõ thời điểm trở về thì phải lập biên bản về",
+      "confidence": 0.9656984516666667
+    },
+    {
+      "bbox": [
+        [
+          281.0,
+          845.0
+        ],
+        [
+          1038.0,
+          845.0
+        ],
+        [
+          1038.0,
+          874.0
+        ],
+        [
+          281.0,
+          874.0
+        ]
+      ],
+      "text": "việc không thực hiện được việc giao nhận, có chữ ký của người chứng kiến.",
+      "confidence": 0.968836656
+    },
+    {
+      "bbox": [
+        [
+          333.0,
+          894.0
+        ],
+        [
+          1076.0,
+          894.0
+        ],
+        [
+          1076.0,
+          928.0
+        ],
+        [
+          333.0,
+          928.0
+        ]
+      ],
+      "text": "2. Trong trường hợp có khó khăn trong việc giao trực tiếp thì việc",
+      "confidence": 0.9687195850000001
+    },
+    {
+      "bbox": [
+        [
+          282.0,
+          923.0
+        ],
+        [
+          1025.0,
+          923.0
+        ],
+        [
+          1025.0,
+          952.0
+        ],
+        [
+          282.0,
+          952.0
+        ]
+      ],
+      "text": "chuyển văn bản được thực hiện bằng thư bảo đảm qua dịch vụ bưu chính.",
+      "confidence": 0.9658162906666666
+    },
+    {
+      "bbox": [
+        [
+          332.0,
+          977.0
+        ],
+        [
+          1075.0,
+          977.0
+        ],
+        [
+          1075.0,
+          1011.0
+        ],
+        [
+          332.0,
+          1011.0
+        ]
+      ],
+      "text": "3. Trong trường hợp không thực hiện được việc gửi văn bản theo Khoản 1,",
+      "confidence": 0.966765894
+    },
+    {
+      "bbox": [
+        [
+          281.0,
+          1001.0
+        ],
+        [
+          1075.0,
+          1001.0
+        ],
+        [
+          1075.0,
+          1036.0
+        ],
+        [
+          281.0,
+          1036.0
+        ]
+      ],
+      "text": "Khoản 2 Điều này thì cơ quan thi hành quyết định cưỡng chế thông báo nội",
+      "confidence": 0.961901675
+    },
+    {
+      "bbox": [
+        [
+          281.0,
+          1030.0
+        ],
+        [
+          1076.0,
+          1030.0
+        ],
+        [
+          1076.0,
+          1065.0
+        ],
+        [
+          281.0,
+          1065.0
+        ]
+      ],
+      "text": "dung văn bản bằng hình thức niêm yết công khai bản chính trong thời gian ít",
+      "confidence": 0.966422405
+    },
+    {
+      "bbox": [
+        [
+          281.0,
+          1059.0
+        ],
+        [
+          1076.0,
+          1059.0
+        ],
+        [
+          1076.0,
+          1094.0
+        ],
+        [
+          281.0,
+          1094.0
+        ]
+      ],
+      "text": "nhất là 05 (năm) ngày tại trụ sở Ủy ban nhân dân xã, phường, thị trấn nơi đặt",
+      "confidence": 0.9682515622222223
+    },
+    {
+      "bbox": [
+        [
+          281.0,
+          1089.0
+        ],
+        [
+          1075.0,
+          1089.0
+        ],
+        [
+          1075.0,
+          1129.0
+        ],
+        [
+          281.0,
+          1129.0
+        ]
+      ],
+      "text": "trụ sở chính của tổ chức hoặc nơi cư trú của người được thông báo và tại nơi",
+      "confidence": 0.9642545016666666
+    },
+    {
+      "bbox": [
+        [
+          281.0,
+          1116.0
+        ],
+        [
+          1030.0,
+          1116.0
+        ],
+        [
+          1030.0,
+          1147.0
+        ],
+        [
+          281.0,
+          1147.0
+        ]
+      ],
+      "text": "ở của người được thông báo nếu xác định được nơi ở cụ thể của người đó.",
+      "confidence": 0.9660762964705882
+    },
+    {
+      "bbox": [
+        [
+          332.0,
+          1168.0
+        ],
+        [
+          1074.0,
+          1168.0
+        ],
+        [
+          1074.0,
+          1208.0
+        ],
+        [
+          332.0,
+          1208.0
+        ]
+      ],
+      "text": "Việc niêm yết công khai phải được lập biên bản, ghi rõ ngày, tháng, năm",
+      "confidence": 0.9670983126666667
+    },
+    {
+      "bbox": [
+        [
+          280.0,
+          1195.0
+        ],
+        [
+          1073.0,
+          1195.0
+        ],
+        [
+          1073.0,
+          1240.0
+        ],
+        [
+          280.0,
+          1240.0
+        ]
+      ],
+      "text": "niêm yết, thời gian niêm yết, nội dung thông báo và người thực hiện niêm yết",
+      "confidence": 0.961071295
+    },
+    {
+      "bbox": [
+        [
+          281.0,
+          1225.0
+        ],
+        [
+          1074.0,
+          1225.0
+        ],
+        [
+          1074.0,
+          1255.0
+        ],
+        [
+          281.0,
+          1255.0
+        ]
+      ],
+      "text": "có xác nhận của chính quyên địa phương. Ngày niêm yết được coi là ngày",
+      "confidence": 0.9563655660000001
+    },
+    {
+      "bbox": [
+        [
+          280.0,
+          1261.0
+        ],
+        [
+          614.0,
+          1261.0
+        ],
+        [
+          614.0,
+          1285.0
+        ],
+        [
+          280.0,
+          1285.0
+        ]
+      ],
+      "text": "thông báo hợp lệ. :",
+      "confidence": 0.87164575
+    },
+    {
+      "bbox": [
+        [
+          332.0,
+          1296.0
+        ],
+        [
+          1074.0,
+          1296.0
+        ],
+        [
+          1074.0,
+          1340.0
+        ],
+        [
+          332.0,
+          1340.0
+        ]
+      ],
+      "text": "4. Trong trường hợp không. thể thực hiện việc thông báo theo các hình",
+      "confidence": 0.9596901928571429
+    },
+    {
+      "bbox": [
+        [
+          280.0,
+          1334.0
+        ],
+        [
+          1074.0,
+          1334.0
+        ],
+        [
+          1074.0,
+          1374.0
+        ],
+        [
+          280.0,
+          1374.0
+        ]
+      ],
+      "text": "thức nêu tại các Khoản 1,2,3 Điều này thì cơ quan thi hành quyết định cưỡng",
+      "confidence": 0.9656052737499999
+    },
+    {
+      "bbox": [
+        [
+          281.0,
+          1360.0
+        ],
+        [
+          1073.0,
+          1360.0
+        ],
+        [
+          1073.0,
+          1401.0
+        ],
+        [
+          281.0,
+          1401.0
+        ]
+      ],
+      "text": "chế thông báo liên tiếp hai lần trên báo, đài phát thanh hoặc đài truyền hình",
+      "confidence": 0.966141783125
+    },
+    {
+      "bbox": [
+        [
+          281.0,
+          1394.0
+        ],
+        [
+          1073.0,
+          1394.0
+        ],
+        [
+          1073.0,
+          1428.0
+        ],
+        [
+          281.0,
+          1428.0
+        ]
+      ],
+      "text": "của trung ương hoặc của tỉnh, thành phố trực thuộc Trung ương nêu xác định",
+      "confidence": 0.9627580760000001
+    },
+    {
+      "bbox": [
+        [
+          281.0,
+          1419.0
+        ],
+        [
+          1073.0,
+          1419.0
+        ],
+        [
+          1073.0,
+          1457.0
+        ],
+        [
+          281.0,
+          1457.0
+        ]
+      ],
+      "text": "đối tượng bị cưỡng chế đang 6 ở tại địa phương đó hoặc website và cổng thông",
+      "confidence": 0.9349894476470588
+    },
+    {
+      "bbox": [
+        [
+          280.0,
+          1451.0
+        ],
+        [
+          767.0,
+          1451.0
+        ],
+        [
+          767.0,
+          1481.0
+        ],
+        [
+          280.0,
+          1481.0
+        ]
+      ],
+      "text": "tin điện tử của cơ quan ra quyết định cưỡng chế.",
+      "confidence": 0.9685029745454545
+    },
+    {
+      "bbox": [
+        [
+          1052.0,
+          1508.0
+        ],
+        [
+          1072.0,
+          1508.0
+        ],
+        [
+          1072.0,
+          1524.0
+        ],
+        [
+          1052.0,
+          1524.0
+        ]
+      ],
+      "text": "29",
+      "confidence": 0.96940651
+    }
+  ]
+}

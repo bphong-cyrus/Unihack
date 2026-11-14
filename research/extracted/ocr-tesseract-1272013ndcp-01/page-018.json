@@ -1,0 +1,861 @@
+{
+  "document_id": "127/2013/NĐ-CP",
+  "source_file": "../../legal-sources/1272013ndcp/01.pdf",
+  "source_sha256": "6b970da9c19ccae81ecbc3385fb53f1fa2375e93ad03643e1f9b4e43ed87e573",
+  "page_count": 49,
+  "render_dpi": 150,
+  "engine": "Tesseract 5.5.4 (vie+eng; OEM 1; PSM 3)",
+  "review_status": "UNREVIEWED",
+  "tesseract_version": "5.5.4",
+  "tsv_parser_version": 2,
+  "languages": [
+    "vie",
+    "eng"
+  ],
+  "traineddata_sha256": {
+    "vie": "b6b49293d95d0b6dbd8780174627e82c75be957b6f4ed9862155540d6b00bb45",
+    "eng": "8280aed0782fe27257a68ea10fe7ef324ca0f8d85bd2fd145d1c2b560bcb66ba"
+  },
+  "ocr_engine_mode": 1,
+  "page_segmentation_mode": 3,
+  "thread_limit": 1,
+  "page": 18,
+  "lines": [
+    {
+      "bbox": [
+        [
+          374.0,
+          199.0
+        ],
+        [
+          1118.0,
+          199.0
+        ],
+        [
+          1118.0,
+          234.0
+        ],
+        [
+          374.0,
+          234.0
+        ]
+      ],
+      "text": "b) Thông đồng, bao che người nộp thuế trồn thuế, gian lận thuế, không",
+      "confidence": 0.9591020650000001
+    },
+    {
+      "bbox": [
+        [
+          322.0,
+          229.0
+        ],
+        [
+          1059.0,
+          229.0
+        ],
+        [
+          1059.0,
+          261.0
+        ],
+        [
+          322.0,
+          261.0
+        ]
+      ],
+      "text": "thực hiện quyết định cưỡng chế hành chính thuế trong lĩnh vực hải quan.",
+      "confidence": 0.9649941307142856
+    },
+    {
+      "bbox": [
+        [
+          685.0,
+          315.0
+        ],
+        [
+          751.0,
+          315.0
+        ],
+        [
+          751.0,
+          338.0
+        ],
+        [
+          685.0,
+          338.0
+        ]
+      ],
+      "text": "Mục3",
+      "confidence": 0.8341507
+    },
+    {
+      "bbox": [
+        [
+          415.0,
+          338.0
+        ],
+        [
+          1021.0,
+          338.0
+        ],
+        [
+          1021.0,
+          369.0
+        ],
+        [
+          415.0,
+          369.0
+        ]
+      ],
+      "text": "CÁC BIỆN PHAP NGAN CHAN VI PHAM HANH CHINH",
+      "confidence": 0.9367822933333333
+    },
+    {
+      "bbox": [
+        [
+          413.0,
+          364.0
+        ],
+        [
+          1022.0,
+          364.0
+        ],
+        [
+          1022.0,
+          399.0
+        ],
+        [
+          413.0,
+          399.0
+        ]
+      ],
+      "text": "VA BAO PAM VIỆC XỬ PHAT VI PHAM HANH CHINH;",
+      "confidence": 0.9402770849999998
+    },
+    {
+      "bbox": [
+        [
+          400.0,
+          391.0
+        ],
+        [
+          1034.0,
+          391.0
+        ],
+        [
+          1034.0,
+          420.0
+        ],
+        [
+          400.0,
+          420.0
+        ]
+      ],
+      "text": "THAM QUYEN, THU TỤC XỬ LÝ VI PHẠM HÀNH CHÍNH",
+      "confidence": 0.9276047909999999
+    },
+    {
+      "bbox": [
+        [
+          369.0,
+          453.0
+        ],
+        [
+          1112.0,
+          453.0
+        ],
+        [
+          1112.0,
+          484.0
+        ],
+        [
+          369.0,
+          484.0
+        ]
+      ],
+      "text": "Điều 17. Áp dụng các biện pháp ngăn chặn vi phạm hành chính và",
+      "confidence": 0.9655299371428571
+    },
+    {
+      "bbox": [
+        [
+          319.0,
+          487.0
+        ],
+        [
+          770.0,
+          487.0
+        ],
+        [
+          770.0,
+          511.0
+        ],
+        [
+          319.0,
+          511.0
+        ]
+      ],
+      "text": "bảo đảm việc xử phạt vi phạm hành chính",
+      "confidence": 0.9679943166666667
+    },
+    {
+      "bbox": [
+        [
+          371.0,
+          537.0
+        ],
+        [
+          1111.0,
+          537.0
+        ],
+        [
+          1111.0,
+          569.0
+        ],
+        [
+          371.0,
+          569.0
+        ]
+      ],
+      "text": "1. Việc áp dụng các biện pháp ngăn chặn vi phạm hành chính và bảo",
+      "confidence": 0.9672914893333333
+    },
+    {
+      "bbox": [
+        [
+          316.0,
+          565.0
+        ],
+        [
+          1110.0,
+          565.0
+        ],
+        [
+          1110.0,
+          592.0
+        ],
+        [
+          316.0,
+          592.0
+        ]
+      ],
+      "text": "đảm việc xử phạt vi phạm hành chính thực hiện theo quy định tại Phần thứ 4",
+      "confidence": 0.9681165805882354
+    },
+    {
+      "bbox": [
+        [
+          315.0,
+          595.0
+        ],
+        [
+          942.0,
+          595.0
+        ],
+        [
+          942.0,
+          621.0
+        ],
+        [
+          315.0,
+          621.0
+        ]
+      ],
+      "text": "Luật xử lý vi phạm hành chính và quy định tại Nghị định này.",
+      "confidence": 0.9691793228571428
+    },
+    {
+      "bbox": [
+        [
+          366.0,
+          644.0
+        ],
+        [
+          1109.0,
+          644.0
+        ],
+        [
+          1109.0,
+          672.0
+        ],
+        [
+          366.0,
+          672.0
+        ]
+      ],
+      "text": "2. Trong một lô hàng có hàng hoá là tang vật vi phạm và hàng hoá không",
+      "confidence": 0.9659377299999999
+    },
+    {
+      "bbox": [
+        [
+          313.0,
+          672.0
+        ],
+        [
+          1106.0,
+          672.0
+        ],
+        [
+          1106.0,
+          705.0
+        ],
+        [
+          313.0,
+          705.0
+        ]
+      ],
+      "text": "phải là tang vật vi phạm thì chỉ được tạm giữ hàng hoá là tang vật vi phạm.",
+      "confidence": 0.9644012911111112
+    },
+    {
+      "bbox": [
+        [
+          314.0,
+          700.0
+        ],
+        [
+          1108.0,
+          700.0
+        ],
+        [
+          1108.0,
+          729.0
+        ],
+        [
+          314.0,
+          729.0
+        ]
+      ],
+      "text": "Trường hợp chưa xác định được có vi phạm xảy ra hay không thì chỉ lấy mẫu",
+      "confidence": 0.9626751976470588
+    },
+    {
+      "bbox": [
+        [
+          313.0,
+          725.0
+        ],
+        [
+          638.0,
+          725.0
+        ],
+        [
+          638.0,
+          753.0
+        ],
+        [
+          313.0,
+          753.0
+        ]
+      ],
+      "text": "hàng hoá dé làm cơ sở xác định.",
+      "confidence": 0.9627432825
+    },
+    {
+      "bbox": [
+        [
+          364.0,
+          775.0
+        ],
+        [
+          1107.0,
+          775.0
+        ],
+        [
+          1107.0,
+          813.0
+        ],
+        [
+          364.0,
+          813.0
+        ]
+      ],
+      "text": "3. Đối với tang vật là ngoại tệ tiền mặt, tiền Việt Nam bằng tiền mặt của",
+      "confidence": 0.9523357388235294
+    },
+    {
+      "bbox": [
+        [
+          312.0,
+          804.0
+        ],
+        [
+          1106.0,
+          804.0
+        ],
+        [
+          1106.0,
+          845.0
+        ],
+        [
+          312.0,
+          845.0
+        ]
+      ],
+      "text": "người xuất cảnh, nhập cảnh bằng hộ chiếu, giấy thông hành thì chỉ tạm giữ số",
+      "confidence": 0.960509810625
+    },
+    {
+      "bbox": [
+        [
+          311.0,
+          832.0
+        ],
+        [
+          1105.0,
+          832.0
+        ],
+        [
+          1105.0,
+          863.0
+        ],
+        [
+          311.0,
+          863.0
+        ]
+      ],
+      "text": "ngoại tệ, tiền Việt Nam bằng tiền mặt vượt quá số ngoại tệ, tiền Việt Nam",
+      "confidence": 0.96058194625
+    },
+    {
+      "bbox": [
+        [
+          310.0,
+          866.0
+        ],
+        [
+          859.0,
+          866.0
+        ],
+        [
+          859.0,
+          892.0
+        ],
+        [
+          310.0,
+          892.0
+        ]
+      ],
+      "text": "không phải khai hải quan theo quy định của pháp luật.",
+      "confidence": 0.9695594863636364
+    },
+    {
+      "bbox": [
+        [
+          362.0,
+          912.0
+        ],
+        [
+          1104.0,
+          912.0
+        ],
+        [
+          1104.0,
+          953.0
+        ],
+        [
+          362.0,
+          953.0
+        ]
+      ],
+      "text": "4. Việc khám phương tiện vận tải, đồ vật của các đối tượng được hưởng",
+      "confidence": 0.9592170760000001
+    },
+    {
+      "bbox": [
+        [
+          310.0,
+          940.0
+        ],
+        [
+          1104.0,
+          940.0
+        ],
+        [
+          1104.0,
+          972.0
+        ],
+        [
+          310.0,
+          972.0
+        ]
+      ],
+      "text": "quyền ưu đãi miễn trừ phải tuân theo các quy định của Điều ước quốc tế mà",
+      "confidence": 0.9666237952941177
+    },
+    {
+      "bbox": [
+        [
+          309.0,
+          969.0
+        ],
+        [
+          1102.0,
+          969.0
+        ],
+        [
+          1102.0,
+          1013.0
+        ],
+        [
+          309.0,
+          1013.0
+        ]
+      ],
+      "text": "Việt Nam đã ký kết hoặc gia nhập. Khi có căn cứ để khẳng định túi ngoại",
+      "confidence": 0.9657010064705882
+    },
+    {
+      "bbox": [
+        [
+          309.0,
+          1002.0
+        ],
+        [
+          1102.0,
+          1002.0
+        ],
+        [
+          1102.0,
+          1036.0
+        ],
+        [
+          309.0,
+          1036.0
+        ]
+      ],
+      "text": "giao, túi lãnh sự bị lạm dụng vào mục đích trái với quy định của Điều ước",
+      "confidence": 0.967511075882353
+    },
+    {
+      "bbox": [
+        [
+          309.0,
+          1026.0
+        ],
+        [
+          1101.0,
+          1026.0
+        ],
+        [
+          1101.0,
+          1068.0
+        ],
+        [
+          309.0,
+          1068.0
+        ]
+      ],
+      "text": "quốc tế về quan hệ ngoại giao, quan hệ lãnh sự mà Việt Nam là thành viên",
+      "confidence": 0.9670156323529412
+    },
+    {
+      "bbox": [
+        [
+          308.0,
+          1060.0
+        ],
+        [
+          1102.0,
+          1060.0
+        ],
+        [
+          1102.0,
+          1089.0
+        ],
+        [
+          308.0,
+          1089.0
+        ]
+      ],
+      "text": "hoặc trong hành lý, phương tiện vận tải có hàng hoá thuộc diện cấm xuất",
+      "confidence": 0.9675242406666666
+    },
+    {
+      "bbox": [
+        [
+          304.0,
+          1080.0
+        ],
+        [
+          1100.0,
+          1080.0
+        ],
+        [
+          1100.0,
+          1122.0
+        ],
+        [
+          304.0,
+          1122.0
+        ]
+      ],
+      "text": "khẩu, cam nhập khẩu hoặc hàng hoá thuộc diện không được hưởng chế độ ưu",
+      "confidence": 0.9446384573333333
+    },
+    {
+      "bbox": [
+        [
+          307.0,
+          1114.0
+        ],
+        [
+          1100.0,
+          1114.0
+        ],
+        [
+          1100.0,
+          1150.0
+        ],
+        [
+          307.0,
+          1150.0
+        ]
+      ],
+      "text": "đãi, miễn trừ theo quy định của pháp luật thì Tổng cục trưởng Tổng cục Hải",
+      "confidence": 0.962944196875
+    },
+    {
+      "bbox": [
+        [
+          307.0,
+          1142.0
+        ],
+        [
+          901.0,
+          1142.0
+        ],
+        [
+          901.0,
+          1174.0
+        ],
+        [
+          307.0,
+          1174.0
+        ]
+      ],
+      "text": "quan quyết định xử lý theo quy định của Điều ước quốc tế.",
+      "confidence": 0.9460011461538462
+    },
+    {
+      "bbox": [
+        [
+          359.0,
+          1193.0
+        ],
+        [
+          1099.0,
+          1193.0
+        ],
+        [
+          1099.0,
+          1228.0
+        ],
+        [
+          359.0,
+          1228.0
+        ]
+      ],
+      "text": "5. Khi phát hiện có dầu hiệu trên thuế, gian lận thuế thì Tổng cục trưởng",
+      "confidence": 0.94638634625
+    },
+    {
+      "bbox": [
+        [
+          306.0,
+          1221.0
+        ],
+        [
+          1098.0,
+          1221.0
+        ],
+        [
+          1098.0,
+          1255.0
+        ],
+        [
+          306.0,
+          1255.0
+        ]
+      ],
+      "text": "Tổng cục Hải quan, Cục trưởng Cục Điều tra chống buôn lậu, Cục trưởng Cục",
+      "confidence": 0.968253682
+    },
+    {
+      "bbox": [
+        [
+          305.0,
+          1251.0
+        ],
+        [
+          1098.0,
+          1251.0
+        ],
+        [
+          1098.0,
+          1288.0
+        ],
+        [
+          305.0,
+          1288.0
+        ]
+      ],
+      "text": "Kiểm tra sau thông quan thuộc Tổng cục Hải quan, Cục trưởng Cục Hải quan,",
+      "confidence": 0.9584266173333335
+    },
+    {
+      "bbox": [
+        [
+          305.0,
+          1284.0
+        ],
+        [
+          1098.0,
+          1284.0
+        ],
+        [
+          1098.0,
+          1326.0
+        ],
+        [
+          305.0,
+          1326.0
+        ]
+      ],
+      "text": "Chỉ cục trưởng Chi cục Hải quan, Chi cục trưởng Chỉ cục kiểm tra sau thông",
+      "confidence": 0.961528315625
+    },
+    {
+      "bbox": [
+        [
+          305.0,
+          1310.0
+        ],
+        [
+          1097.0,
+          1310.0
+        ],
+        [
+          1097.0,
+          1343.0
+        ],
+        [
+          305.0,
+          1343.0
+        ]
+      ],
+      "text": "quan có thẩm quyền quyết định khám nơi cất giấu tài liệu, tang vật, phương",
+      "confidence": 0.965209438
+    },
+    {
+      "bbox": [
+        [
+          305.0,
+          1344.0
+        ],
+        [
+          552.0,
+          1344.0
+        ],
+        [
+          552.0,
+          1367.0
+        ],
+        [
+          305.0,
+          1367.0
+        ]
+      ],
+      "text": "tiện vi phạm hành chính.",
+      "confidence": 0.9663869939999999
+    },
+    {
+      "bbox": [
+        [
+          355.0,
+          1391.0
+        ],
+        [
+          1095.0,
+          1391.0
+        ],
+        [
+          1095.0,
+          1425.0
+        ],
+        [
+          355.0,
+          1425.0
+        ]
+      ],
+      "text": "6. Trong trường hợp có căn cứ cho rằng cá nhân cất giấu ma túy trong",
+      "confidence": 0.9631176574999999
+    },
+    {
+      "bbox": [
+        [
+          304.0,
+          1419.0
+        ],
+        [
+          1095.0,
+          1419.0
+        ],
+        [
+          1095.0,
+          1451.0
+        ],
+        [
+          304.0,
+          1451.0
+        ]
+      ],
+      "text": "người thì việc khám người có thể thực hiện trực tiếp hoặc bằng các phương",
+      "confidence": 0.9676165480000001
+    },
+    {
+      "bbox": [
+        [
+          303.0,
+          1447.0
+        ],
+        [
+          516.0,
+          1447.0
+        ],
+        [
+          516.0,
+          1476.0
+        ],
+        [
+          303.0,
+          1476.0
+        ]
+      ],
+      "text": "tiện, thiết bị kỹ thuật.",
+      "confidence": 0.9682864999999999
+    },
+    {
+      "bbox": [
+        [
+          1075.0,
+          1503.0
+        ],
+        [
+          1092.0,
+          1503.0
+        ],
+        [
+          1092.0,
+          1519.0
+        ],
+        [
+          1075.0,
+          1519.0
+        ]
+      ],
+      "text": "18",
+      "confidence": 0.96804085
+    }
+  ]
+}

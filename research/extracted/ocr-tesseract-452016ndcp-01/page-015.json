@@ -1,0 +1,795 @@
+{
+  "document_id": "45/2016/NĐ-CP",
+  "source_file": "../../legal-sources/452016ndcp/01.pdf",
+  "source_sha256": "482b0a0876dbf69ad02a475fc45878f8a7205ba36c06936d1865c43fc3466543",
+  "page_count": 26,
+  "render_dpi": 150,
+  "engine": "Tesseract 5.5.4 (vie+eng; OEM 1; PSM 3)",
+  "review_status": "UNREVIEWED",
+  "tesseract_version": "5.5.4",
+  "tsv_parser_version": 2,
+  "languages": [
+    "vie",
+    "eng"
+  ],
+  "traineddata_sha256": {
+    "vie": "b6b49293d95d0b6dbd8780174627e82c75be957b6f4ed9862155540d6b00bb45",
+    "eng": "8280aed0782fe27257a68ea10fe7ef324ca0f8d85bd2fd145d1c2b560bcb66ba"
+  },
+  "ocr_engine_mode": 1,
+  "page_segmentation_mode": 3,
+  "thread_limit": 1,
+  "page": 15,
+  "lines": [
+    {
+      "bbox": [
+        [
+          259.0,
+          113.0
+        ],
+        [
+          700.0,
+          113.0
+        ],
+        [
+          700.0,
+          147.0
+        ],
+        [
+          259.0,
+          147.0
+        ]
+      ],
+      "text": "10. Sửa đổi, bd sung Điều 13 như sau:",
+      "confidence": 0.9431418366666668
+    },
+    {
+      "bbox": [
+        [
+          257.0,
+          169.0
+        ],
+        [
+          975.0,
+          169.0
+        ],
+        [
+          975.0,
+          208.0
+        ],
+        [
+          257.0,
+          208.0
+        ]
+      ],
+      "text": "“Điều 13. Xử phạt đối với hành vi trồn thuế, gian lận thuế",
+      "confidence": 0.9565865384615384
+    },
+    {
+      "bbox": [
+        [
+          261.0,
+          228.0
+        ],
+        [
+          1048.0,
+          228.0
+        ],
+        [
+          1048.0,
+          267.0
+        ],
+        [
+          261.0,
+          267.0
+        ]
+      ],
+      "text": "1. Các hành vi trồn thuế, gian lận thuế trong lĩnh vực hải quan gồm:",
+      "confidence": 0.9524547006666667
+    },
+    {
+      "bbox": [
+        [
+          260.0,
+          286.0
+        ],
+        [
+          1116.0,
+          286.0
+        ],
+        [
+          1116.0,
+          334.0
+        ],
+        [
+          260.0,
+          334.0
+        ]
+      ],
+      "text": "a) Sử dụng chứng từ, tài liệu không hợp pháp, không đúng với thực tế",
+      "confidence": 0.9635562546666666
+    },
+    {
+      "bbox": [
+        [
+          202.0,
+          319.0
+        ],
+        [
+          1116.0,
+          319.0
+        ],
+        [
+          1116.0,
+          368.0
+        ],
+        [
+          202.0,
+          368.0
+        ]
+      ],
+      "text": "giao dịch để kê khai thuế; tự ý tẩy xóa, sửa chữa chứng từ dẫn đến thiếu số",
+      "confidence": 0.9508906294444445
+    },
+    {
+      "bbox": [
+        [
+          201.0,
+          358.0
+        ],
+        [
+          1021.0,
+          358.0
+        ],
+        [
+          1021.0,
+          395.0
+        ],
+        [
+          201.0,
+          395.0
+        ]
+      ],
+      "text": "tiền thuế phải nộp hoặc tăng số tiền thuế được miễn, giảm, được hoàn;",
+      "confidence": 0.9646124214285714
+    },
+    {
+      "bbox": [
+        [
+          260.0,
+          413.0
+        ],
+        [
+          1118.0,
+          413.0
+        ],
+        [
+          1118.0,
+          457.0
+        ],
+        [
+          260.0,
+          457.0
+        ]
+      ],
+      "text": "b) Khai sai mã số hàng hóa, thuế suất, mức thuế đối với những mặt hàng",
+      "confidence": 0.965172925625
+    },
+    {
+      "bbox": [
+        [
+          203.0,
+          447.0
+        ],
+        [
+          1073.0,
+          447.0
+        ],
+        [
+          1073.0,
+          487.0
+        ],
+        [
+          203.0,
+          487.0
+        ]
+      ],
+      "text": "đã được cơ quan hải quan hướng dẫn mã số hàng hóa, thuế suất, mức thuế;",
+      "confidence": 0.96847346875
+    },
+    {
+      "bbox": [
+        [
+          263.0,
+          502.0
+        ],
+        [
+          1118.0,
+          502.0
+        ],
+        [
+          1118.0,
+          555.0
+        ],
+        [
+          263.0,
+          555.0
+        ]
+      ],
+      "text": "c) Không khai hoặc khai sai về tên hàng, chủng loại, số lượng, khối",
+      "confidence": 0.9399847457142857
+    },
+    {
+      "bbox": [
+        [
+          205.0,
+          540.0
+        ],
+        [
+          1120.0,
+          540.0
+        ],
+        [
+          1120.0,
+          591.0
+        ],
+        [
+          205.0,
+          591.0
+        ]
+      ],
+      "text": "lượng, chất lượng, trị giá, mã số hàng hóa, thuê suất, mức thuế, xuất xứ hàng",
+      "confidence": 0.96736019625
+    },
+    {
+      "bbox": [
+        [
+          205.0,
+          577.0
+        ],
+        [
+          1119.0,
+          577.0
+        ],
+        [
+          1119.0,
+          621.0
+        ],
+        [
+          205.0,
+          621.0
+        ]
+      ],
+      "text": "hóa xuất khẩu, nhập khẩu mà cơ quan hải quan phát hiện khi thanh tra, kiểm",
+      "confidence": 0.966458063125
+    },
+    {
+      "bbox": [
+        [
+          205.0,
+          616.0
+        ],
+        [
+          1120.0,
+          616.0
+        ],
+        [
+          1120.0,
+          666.0
+        ],
+        [
+          205.0,
+          666.0
+        ]
+      ],
+      "text": "tra sau thông quan nhưng cá nhân, tổ chức vi phạm không tự nguyện nộp đủ",
+      "confidence": 0.9627293093750001
+    },
+    {
+      "bbox": [
+        [
+          206.0,
+          648.0
+        ],
+        [
+          1062.0,
+          648.0
+        ],
+        [
+          1062.0,
+          684.0
+        ],
+        [
+          206.0,
+          684.0
+        ]
+      ],
+      "text": "số tiền thuế phải nộp theo quy định trước thời điểm lập biên bản vi phạm;",
+      "confidence": 0.968901023125
+    },
+    {
+      "bbox": [
+        [
+          265.0,
+          703.0
+        ],
+        [
+          1120.0,
+          703.0
+        ],
+        [
+          1120.0,
+          755.0
+        ],
+        [
+          265.0,
+          755.0
+        ]
+      ],
+      "text": "9 Làm thủ tục xuất khẩu nhưng không xuất khẩu sản phẩm gia công;",
+      "confidence": 0.9418129778571428
+    },
+    {
+      "bbox": [
+        [
+          207.0,
+          739.0
+        ],
+        [
+          1121.0,
+          739.0
+        ],
+        [
+          1121.0,
+          786.0
+        ],
+        [
+          207.0,
+          786.0
+        ]
+      ],
+      "text": "sản phẩm : sản xuất xuất khẩu; sản phẩm xuất khẩu ra nước ngoài của doanh",
+      "confidence": 0.9588176975
+    },
+    {
+      "bbox": [
+        [
+          206.0,
+          774.0
+        ],
+        [
+          397.0,
+          774.0
+        ],
+        [
+          397.0,
+          808.0
+        ],
+        [
+          206.0,
+          808.0
+        ]
+      ],
+      "text": "nghiệp chế xuất;",
+      "confidence": 0.9643003066666667
+    },
+    {
+      "bbox": [
+        [
+          266.0,
+          828.0
+        ],
+        [
+          1121.0,
+          828.0
+        ],
+        [
+          1121.0,
+          876.0
+        ],
+        [
+          266.0,
+          876.0
+        ]
+      ],
+      "text": "đ) Khai nhiều hơn so với thực tế hàng hóa xuất khẩu về chúng loại, số",
+      "confidence": 0.956142674375
+    },
+    {
+      "bbox": [
+        [
+          208.0,
+          860.0
+        ],
+        [
+          1121.0,
+          860.0
+        ],
+        [
+          1121.0,
+          913.0
+        ],
+        [
+          208.0,
+          913.0
+        ]
+      ],
+      "text": "lượng, khối lượng sản phẩm gia công; sản phẩm sản xuất xuất khẩu; sản phẩm",
+      "confidence": 0.9677484993333334
+    },
+    {
+      "bbox": [
+        [
+          207.0,
+          897.0
+        ],
+        [
+          1122.0,
+          897.0
+        ],
+        [
+          1122.0,
+          948.0
+        ],
+        [
+          207.0,
+          948.0
+        ]
+      ],
+      "text": "xuất khẩu ra nước ngoài của doanh nghiệp chế xuất, hàng tái xuất có số thuế",
+      "confidence": 0.96722977125
+    },
+    {
+      "bbox": [
+        [
+          208.0,
+          933.0
+        ],
+        [
+          959.0,
+          933.0
+        ],
+        [
+          959.0,
+          967.0
+        ],
+        [
+          208.0,
+          967.0
+        ]
+      ],
+      "text": "gian lận từ 100.000.000 đồng trở lên mà không phải là tội phạm;",
+      "confidence": 0.9668071330769231
+    },
+    {
+      "bbox": [
+        [
+          266.0,
+          985.0
+        ],
+        [
+          1122.0,
+          985.0
+        ],
+        [
+          1122.0,
+          1036.0
+        ],
+        [
+          266.0,
+          1036.0
+        ]
+      ],
+      "text": "e) Xuất khẩu sản phẩm theo loại hình gia công, sản xuất xuất khẩu hoặc",
+      "confidence": 0.961092346
+    },
+    {
+      "bbox": [
+        [
+          208.0,
+          1021.0
+        ],
+        [
+          1123.0,
+          1021.0
+        ],
+        [
+          1123.0,
+          1075.0
+        ],
+        [
+          208.0,
+          1075.0
+        ]
+      ],
+      "text": "xuất khẩu sản phẩm ra nước ngoài của doanh nghiệp chế xuất mà sản phẩm",
+      "confidence": 0.9558182173333333
+    },
+    {
+      "bbox": [
+        [
+          208.0,
+          1055.0
+        ],
+        [
+          1123.0,
+          1055.0
+        ],
+        [
+          1123.0,
+          1106.0
+        ],
+        [
+          208.0,
+          1106.0
+        ]
+      ],
+      "text": "xuất khẩu không được sản xuất từ nguyên liệu đã nhập Ì khẩu; nhập khẩu sản",
+      "confidence": 0.961750591875
+    },
+    {
+      "bbox": [
+        [
+          208.0,
+          1089.0
+        ],
+        [
+          1123.0,
+          1089.0
+        ],
+        [
+          1123.0,
+          1137.0
+        ],
+        [
+          208.0,
+          1137.0
+        ]
+      ],
+      "text": "phẩm theo loại hình gia công từ nước ngoài mà sản phẩm nhập khẩu không",
+      "confidence": 0.9691069273333333
+    },
+    {
+      "bbox": [
+        [
+          209.0,
+          1124.0
+        ],
+        [
+          708.0,
+          1124.0
+        ],
+        [
+          708.0,
+          1158.0
+        ],
+        [
+          209.0,
+          1158.0
+        ]
+      ],
+      "text": "được sản xuất từ nguyên liệu đã xuất khẩu;",
+      "confidence": 0.9673749188888888
+    },
+    {
+      "bbox": [
+        [
+          267.0,
+          1180.0
+        ],
+        [
+          1123.0,
+          1180.0
+        ],
+        [
+          1123.0,
+          1216.0
+        ],
+        [
+          267.0,
+          1216.0
+        ]
+      ],
+      "text": "g) Sử dụng hàng hóa thuộc đối tượng không chịu thuế, miễn thuế, xét",
+      "confidence": 0.9620616035714284
+    },
+    {
+      "bbox": [
+        [
+          209.0,
+          1213.0
+        ],
+        [
+          1123.0,
+          1213.0
+        ],
+        [
+          1123.0,
+          1249.0
+        ],
+        [
+          209.0,
+          1249.0
+        ]
+      ],
+      "text": "miễn thuế không đúng mục đích mà không khai báo việc chuyển đổi mục đích",
+      "confidence": 0.944728786
+    },
+    {
+      "bbox": [
+        [
+          210.0,
+          1255.0
+        ],
+        [
+          726.0,
+          1255.0
+        ],
+        [
+          726.0,
+          1283.0
+        ],
+        [
+          210.0,
+          1283.0
+        ]
+      ],
+      "text": "sử dụng với cơ quan hải quan theo quy định;",
+      "confidence": 0.9690274120000001
+    },
+    {
+      "bbox": [
+        [
+          268.0,
+          1304.0
+        ],
+        [
+          1123.0,
+          1304.0
+        ],
+        [
+          1123.0,
+          1348.0
+        ],
+        [
+          268.0,
+          1348.0
+        ]
+      ],
+      "text": "h) Không khai hoặc khai sai tên hàng, mã số hàng hóa, chủng loại, số",
+      "confidence": 0.964497956
+    },
+    {
+      "bbox": [
+        [
+          210.0,
+          1339.0
+        ],
+        [
+          1124.0,
+          1339.0
+        ],
+        [
+          1124.0,
+          1387.0
+        ],
+        [
+          210.0,
+          1387.0
+        ]
+      ],
+      "text": "lượng, khối lượng, chất lượng, trị giá, thuế suất, mức thuế, xuất xứ hàng hóa",
+      "confidence": 0.9506472413333334
+    },
+    {
+      "bbox": [
+        [
+          210.0,
+          1375.0
+        ],
+        [
+          720.0,
+          1375.0
+        ],
+        [
+          720.0,
+          1411.0
+        ],
+        [
+          210.0,
+          1411.0
+        ]
+      ],
+      "text": "nhập khẩu từ khu phi thuế quan vào nội địa;",
+      "confidence": 0.947191596
+    },
+    {
+      "bbox": [
+        [
+          269.0,
+          1432.0
+        ],
+        [
+          1123.0,
+          1432.0
+        ],
+        [
+          1123.0,
+          1484.0
+        ],
+        [
+          269.0,
+          1484.0
+        ]
+      ],
+      "text": "1) Không ghi c chép trong số sách kế toán các khoản thu, chi liên quan đến",
+      "confidence": 0.9112306305882352
+    },
+    {
+      "bbox": [
+        [
+          210.0,
+          1464.0
+        ],
+        [
+          621.0,
+          1464.0
+        ],
+        [
+          621.0,
+          1503.0
+        ],
+        [
+          210.0,
+          1503.0
+        ]
+      ],
+      "text": "việc xác định sô tiên thuế phải nộp;",
+      "confidence": 0.96704613625
+    },
+    {
+      "bbox": [
+        [
+          269.0,
+          1524.0
+        ],
+        [
+          916.0,
+          1524.0
+        ],
+        [
+          916.0,
+          1559.0
+        ],
+        [
+          269.0,
+          1559.0
+        ]
+      ],
+      "text": "k) Bán hàng miễn thuế không đúng đối tượng quy định;",
+      "confidence": 0.9632998109090909
+    },
+    {
+      "bbox": [
+        [
+          1102.0,
+          1626.0
+        ],
+        [
+          1123.0,
+          1626.0
+        ],
+        [
+          1123.0,
+          1643.0
+        ],
+        [
+          1102.0,
+          1643.0
+        ]
+      ],
+      "text": "15",
+      "confidence": 0.9696073900000001
+    }
+  ]
+}

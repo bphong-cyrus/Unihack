@@ -1,0 +1,795 @@
+{
+  "document_id": "127/2013/NĐ-CP",
+  "source_file": "../../legal-sources/1272013ndcp/01.pdf",
+  "source_sha256": "6b970da9c19ccae81ecbc3385fb53f1fa2375e93ad03643e1f9b4e43ed87e573",
+  "page_count": 49,
+  "render_dpi": 150,
+  "engine": "Tesseract 5.5.4 (vie+eng; OEM 1; PSM 3)",
+  "review_status": "UNREVIEWED",
+  "tesseract_version": "5.5.4",
+  "tsv_parser_version": 2,
+  "languages": [
+    "vie",
+    "eng"
+  ],
+  "traineddata_sha256": {
+    "vie": "b6b49293d95d0b6dbd8780174627e82c75be957b6f4ed9862155540d6b00bb45",
+    "eng": "8280aed0782fe27257a68ea10fe7ef324ca0f8d85bd2fd145d1c2b560bcb66ba"
+  },
+  "ocr_engine_mode": 1,
+  "page_segmentation_mode": 3,
+  "thread_limit": 1,
+  "page": 26,
+  "lines": [
+    {
+      "bbox": [
+        [
+          359.0,
+          203.0
+        ],
+        [
+          864.0,
+          203.0
+        ],
+        [
+          864.0,
+          232.0
+        ],
+        [
+          359.0,
+          232.0
+        ]
+      ],
+      "text": "Điều 29. Thắm quyền ra quyết định cưỡng chế",
+      "confidence": 0.9457806988888889
+    },
+    {
+      "bbox": [
+        [
+          362.0,
+          253.0
+        ],
+        [
+          1106.0,
+          253.0
+        ],
+        [
+          1106.0,
+          287.0
+        ],
+        [
+          362.0,
+          287.0
+        ]
+      ],
+      "text": "1. Những người sau đây có thẩm quyền ra quyết định cưỡng chế và có",
+      "confidence": 0.9675500786666666
+    },
+    {
+      "bbox": [
+        [
+          303.0,
+          283.0
+        ],
+        [
+          1106.0,
+          283.0
+        ],
+        [
+          1106.0,
+          319.0
+        ],
+        [
+          303.0,
+          319.0
+        ]
+      ],
+      "text": "nhiệm vụ tô chức việc cưỡng chê thi hành quyêt định hành chính của mình và",
+      "confidence": 0.950031656875
+    },
+    {
+      "bbox": [
+        [
+          307.0,
+          316.0
+        ],
+        [
+          443.0,
+          316.0
+        ],
+        [
+          443.0,
+          339.0
+        ],
+        [
+          307.0,
+          339.0
+        ]
+      ],
+      "text": "của cap dudi:",
+      "confidence": 0.9280942533333332
+    },
+    {
+      "bbox": [
+        [
+          358.0,
+          362.0
+        ],
+        [
+          760.0,
+          362.0
+        ],
+        [
+          760.0,
+          391.0
+        ],
+        [
+          358.0,
+          391.0
+        ]
+      ],
+      "text": "a) Tổng cục trưởng Tổng cục Hai quan;",
+      "confidence": 0.96046507
+    },
+    {
+      "bbox": [
+        [
+          357.0,
+          413.0
+        ],
+        [
+          812.0,
+          413.0
+        ],
+        [
+          812.0,
+          442.0
+        ],
+        [
+          357.0,
+          442.0
+        ]
+      ],
+      "text": "b) Cục trưởng Cục Hải quan tỉnh, thành phố;",
+      "confidence": 0.9643712111111111
+    },
+    {
+      "bbox": [
+        [
+          356.0,
+          463.0
+        ],
+        [
+          1067.0,
+          463.0
+        ],
+        [
+          1067.0,
+          493.0
+        ],
+        [
+          356.0,
+          493.0
+        ]
+      ],
+      "text": "¢) Cục trưởng Cục Điều tra chống buôn lậu thuộc Tổng cục Hải quan;",
+      "confidence": 0.9415042178571427
+    },
+    {
+      "bbox": [
+        [
+          356.0,
+          514.0
+        ],
+        [
+          1072.0,
+          514.0
+        ],
+        [
+          1072.0,
+          543.0
+        ],
+        [
+          356.0,
+          543.0
+        ]
+      ],
+      "text": "d) Cục trưởng Cục Kiểm tra sau thông quan thuộc Tổng cục Hải quan;",
+      "confidence": 0.9566360678571428
+    },
+    {
+      "bbox": [
+        [
+          355.0,
+          565.0
+        ],
+        [
+          1101.0,
+          565.0
+        ],
+        [
+          1101.0,
+          592.0
+        ],
+        [
+          355.0,
+          592.0
+        ]
+      ],
+      "text": "đ) Chỉ cục trưởng Chi cục Hải quan, Chi cục trưởng Chi cục kiểm tra sau",
+      "confidence": 0.95575450875
+    },
+    {
+      "bbox": [
+        [
+          303.0,
+          597.0
+        ],
+        [
+          422.0,
+          597.0
+        ],
+        [
+          422.0,
+          620.0
+        ],
+        [
+          303.0,
+          620.0
+        ]
+      ],
+      "text": "thông quan.",
+      "confidence": 0.968143575
+    },
+    {
+      "bbox": [
+        [
+          320.0,
+          642.0
+        ],
+        [
+          1100.0,
+          642.0
+        ],
+        [
+          1100.0,
+          675.0
+        ],
+        [
+          320.0,
+          675.0
+        ]
+      ],
+      "text": "_ 2. Chủ tịch Ủy ban nhân dân tỉnh có thẩm quyền ra quyết định cưỡng chế",
+      "confidence": 0.956730634117647
+    },
+    {
+      "bbox": [
+        [
+          303.0,
+          676.0
+        ],
+        [
+          1100.0,
+          676.0
+        ],
+        [
+          1100.0,
+          700.0
+        ],
+        [
+          303.0,
+          700.0
+        ]
+      ],
+      "text": "đôi với những quyêt định xử phạt vi phạm hành chính trong lĩnh vực hải quan",
+      "confidence": 0.962766895
+    },
+    {
+      "bbox": [
+        [
+          302.0,
+          705.0
+        ],
+        [
+          489.0,
+          705.0
+        ],
+        [
+          489.0,
+          723.0
+        ],
+        [
+          302.0,
+          723.0
+        ]
+      ],
+      "text": "do mình ban hành.",
+      "confidence": 0.9605462625
+    },
+    {
+      "bbox": [
+        [
+          353.0,
+          749.0
+        ],
+        [
+          865.0,
+          749.0
+        ],
+        [
+          865.0,
+          778.0
+        ],
+        [
+          353.0,
+          778.0
+        ]
+      ],
+      "text": "3. Phân định thẳm quyền ra quyết định cưỡng chế:",
+      "confidence": 0.966495391
+    },
+    {
+      "bbox": [
+        [
+          341.0,
+          795.0
+        ],
+        [
+          1098.0,
+          795.0
+        ],
+        [
+          1098.0,
+          837.0
+        ],
+        [
+          341.0,
+          837.0
+        ]
+      ],
+      "text": "_a) Những người có thẩm quyền quy định tại Khoản 1 Điều này có thẩm",
+      "confidence": 0.9350632073333333
+    },
+    {
+      "bbox": [
+        [
+          301.0,
+          828.0
+        ],
+        [
+          1098.0,
+          828.0
+        ],
+        [
+          1098.0,
+          861.0
+        ],
+        [
+          301.0,
+          861.0
+        ]
+      ],
+      "text": "quyền ra quyết định cưỡng chế đối với các quyết định hành chính trong lĩnh",
+      "confidence": 0.9667211046666666
+    },
+    {
+      "bbox": [
+        [
+          300.0,
+          857.0
+        ],
+        [
+          1098.0,
+          857.0
+        ],
+        [
+          1098.0,
+          890.0
+        ],
+        [
+          300.0,
+          890.0
+        ]
+      ],
+      "text": "vực hải quan do mình ban hành hoặc quyết định hành chính do cấp dưới ban",
+      "confidence": 0.967720828125
+    },
+    {
+      "bbox": [
+        [
+          300.0,
+          885.0
+        ],
+        [
+          906.0,
+          885.0
+        ],
+        [
+          906.0,
+          914.0
+        ],
+        [
+          300.0,
+          914.0
+        ]
+      ],
+      "text": "hành nhưng không có thẳm quyền ra quyết định cưỡng chế;",
+      "confidence": 0.9618171763636364
+    },
+    {
+      "bbox": [
+        [
+          351.0,
+          937.0
+        ],
+        [
+          1097.0,
+          937.0
+        ],
+        [
+          1097.0,
+          970.0
+        ],
+        [
+          351.0,
+          970.0
+        ]
+      ],
+      "text": "b) Cục trưởng Cục Hải quan tỉnh, liên tỉnh, thành phố trực thuộc Trung",
+      "confidence": 0.9633867492857143
+    },
+    {
+      "bbox": [
+        [
+          300.0,
+          964.0
+        ],
+        [
+          1096.0,
+          964.0
+        ],
+        [
+          1096.0,
+          998.0
+        ],
+        [
+          300.0,
+          998.0
+        ]
+      ],
+      "text": "ương ra quyết định cưỡng. chế trong trường hợp đối tượng bị cưỡng chế tại",
+      "confidence": 0.9624598906666667
+    },
+    {
+      "bbox": [
+        [
+          299.0,
+          993.0
+        ],
+        [
+          846.0,
+          993.0
+        ],
+        [
+          846.0,
+          1022.0
+        ],
+        [
+          299.0,
+          1022.0
+        ]
+      ],
+      "text": "nhiều Chỉ cục thuộc Cục Hải quan tỉnh, thành phố đó;",
+      "confidence": 0.9458429927272728
+    },
+    {
+      "bbox": [
+        [
+          350.0,
+          1043.0
+        ],
+        [
+          1096.0,
+          1043.0
+        ],
+        [
+          1096.0,
+          1082.0
+        ],
+        [
+          350.0,
+          1082.0
+        ]
+      ],
+      "text": "c) Tổng, cục trưởng Tổng cục Hải quan ra quyết định cưỡng chế trong",
+      "confidence": 0.9480044071428572
+    },
+    {
+      "bbox": [
+        [
+          298.0,
+          1072.0
+        ],
+        [
+          1060.0,
+          1072.0
+        ],
+        [
+          1060.0,
+          1101.0
+        ],
+        [
+          298.0,
+          1101.0
+        ]
+      ],
+      "text": "trường hợp đối tượng bị cưỡng chế tại nhiều Cục Hải quan tỉnh, thành phố.",
+      "confidence": 0.9553626973333332
+    },
+    {
+      "bbox": [
+        [
+          349.0,
+          1122.0
+        ],
+        [
+          1095.0,
+          1122.0
+        ],
+        [
+          1095.0,
+          1162.0
+        ],
+        [
+          349.0,
+          1162.0
+        ]
+      ],
+      "text": "4. Trường hợp cần áp dụng biện pháp cưỡng chế thông báo hóa đơn",
+      "confidence": 0.9662921792857142
+    },
+    {
+      "bbox": [
+        [
+          298.0,
+          1152.0
+        ],
+        [
+          1094.0,
+          1152.0
+        ],
+        [
+          1094.0,
+          1189.0
+        ],
+        [
+          298.0,
+          1189.0
+        ]
+      ],
+      "text": "không còn giá trị sử dụng, thu hồi giấy chứng nhận đăng ký kinh doanh, giấy",
+      "confidence": 0.9587769899999999
+    },
+    {
+      "bbox": [
+        [
+          298.0,
+          1186.0
+        ],
+        [
+          1094.0,
+          1186.0
+        ],
+        [
+          1094.0,
+          1215.0
+        ],
+        [
+          298.0,
+          1215.0
+        ]
+      ],
+      "text": "chứng nhận đăng ký doanh nghiệp, giây phép thành lập và hoạt động, giây",
+      "confidence": 0.9665837857142857
+    },
+    {
+      "bbox": [
+        [
+          298.0,
+          1210.0
+        ],
+        [
+          1094.0,
+          1210.0
+        ],
+        [
+          1094.0,
+          1244.0
+        ],
+        [
+          298.0,
+          1244.0
+        ]
+      ],
+      "text": "phép hành nghề thì cơ quan Hải quan lập hồ sơ, tài liệu và có văn bản thông",
+      "confidence": 0.9673004361111112
+    },
+    {
+      "bbox": [
+        [
+          297.0,
+          1236.0
+        ],
+        [
+          1093.0,
+          1236.0
+        ],
+        [
+          1093.0,
+          1278.0
+        ],
+        [
+          297.0,
+          1278.0
+        ]
+      ],
+      "text": "báo, chuyển giao cho cơ quan thuế quản lý trực tiếp đối tượng bị cưỡng chế",
+      "confidence": 0.9480891499999999
+    },
+    {
+      "bbox": [
+        [
+          297.0,
+          1264.0
+        ],
+        [
+          1094.0,
+          1264.0
+        ],
+        [
+          1094.0,
+          1303.0
+        ],
+        [
+          297.0,
+          1303.0
+        ]
+      ],
+      "text": "hoặc cơ quan có thẩm quyên cấp giây chứng nhận đăng ký kinh doanh, giấy",
+      "confidence": 0.954571014
+    },
+    {
+      "bbox": [
+        [
+          297.0,
+          1303.0
+        ],
+        [
+          1093.0,
+          1303.0
+        ],
+        [
+          1093.0,
+          1327.0
+        ],
+        [
+          297.0,
+          1327.0
+        ]
+      ],
+      "text": "chứng nhận đăng ký doanh nghiệp, giây phép thành lập và hoạt động, giây",
+      "confidence": 0.96845697
+    },
+    {
+      "bbox": [
+        [
+          296.0,
+          1327.0
+        ],
+        [
+          698.0,
+          1327.0
+        ],
+        [
+          698.0,
+          1356.0
+        ],
+        [
+          296.0,
+          1356.0
+        ]
+      ],
+      "text": "phép hành nghề để xử lý theo quy định.",
+      "confidence": 0.9554574088888889
+    },
+    {
+      "bbox": [
+        [
+          348.0,
+          1374.0
+        ],
+        [
+          1092.0,
+          1374.0
+        ],
+        [
+          1092.0,
+          1417.0
+        ],
+        [
+          348.0,
+          1417.0
+        ]
+      ],
+      "text": "5 Người có thẳm quyền cưỡng chế quy định tại Khoản 1, Khoản 2 Điều",
+      "confidence": 0.9488426413333333
+    },
+    {
+      "bbox": [
+        [
+          297.0,
+          1407.0
+        ],
+        [
+          1091.0,
+          1407.0
+        ],
+        [
+          1091.0,
+          1441.0
+        ],
+        [
+          297.0,
+          1441.0
+        ]
+      ],
+      "text": "này có thê giao quyền cho cấp phó. Việc giao quyền chỉ được thực hiện khi",
+      "confidence": 0.967518368125
+    },
+    {
+      "bbox": [
+        [
+          297.0,
+          1436.0
+        ],
+        [
+          1091.0,
+          1436.0
+        ],
+        [
+          1091.0,
+          1466.0
+        ],
+        [
+          297.0,
+          1466.0
+        ]
+      ],
+      "text": "cập trưởng văng mặt và phải thể hiện bằng văn bản, trong đó xác định rõ",
+      "confidence": 0.9424560112499999
+    },
+    {
+      "bbox": [
+        [
+          1070.0,
+          1504.0
+        ],
+        [
+          1090.0,
+          1504.0
+        ],
+        [
+          1090.0,
+          1520.0
+        ],
+        [
+          1070.0,
+          1520.0
+        ]
+      ],
+      "text": "26",
+      "confidence": 0.96979561
+    }
+  ]
+}

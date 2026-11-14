@@ -1,0 +1,839 @@
+{
+  "document_id": "134/2016/NĐ-CP",
+  "source_file": "../../legal-sources/1342016ndcp/01.pdf",
+  "source_sha256": "4fe3832d278d03e6ab53c064c6aa3c60063d372570eaa6b57427b0bd252e5460",
+  "page_count": 78,
+  "render_dpi": 150,
+  "engine": "Tesseract 5.5.4 (vie+eng; OEM 1; PSM 3)",
+  "review_status": "UNREVIEWED",
+  "tesseract_version": "5.5.4",
+  "tsv_parser_version": 2,
+  "languages": [
+    "vie",
+    "eng"
+  ],
+  "traineddata_sha256": {
+    "vie": "b6b49293d95d0b6dbd8780174627e82c75be957b6f4ed9862155540d6b00bb45",
+    "eng": "8280aed0782fe27257a68ea10fe7ef324ca0f8d85bd2fd145d1c2b560bcb66ba"
+  },
+  "ocr_engine_mode": 1,
+  "page_segmentation_mode": 3,
+  "thread_limit": 1,
+  "page": 31,
+  "lines": [
+    {
+      "bbox": [
+        [
+          668.0,
+          138.0
+        ],
+        [
+          686.0,
+          138.0
+        ],
+        [
+          686.0,
+          154.0
+        ],
+        [
+          668.0,
+          154.0
+        ]
+      ],
+      "text": "31",
+      "confidence": 0.92048988
+    },
+    {
+      "bbox": [
+        [
+          330.0,
+          204.0
+        ],
+        [
+          1081.0,
+          204.0
+        ],
+        [
+          1081.0,
+          242.0
+        ],
+        [
+          330.0,
+          242.0
+        ]
+      ],
+      "text": "c) Biên bản xác nhận nguyên nhân thiệt hại của cơ quan chức năng tại địa",
+      "confidence": 0.95343104375
+    },
+    {
+      "bbox": [
+        [
+          279.0,
+          232.0
+        ],
+        [
+          1081.0,
+          232.0
+        ],
+        [
+          1081.0,
+          271.0
+        ],
+        [
+          279.0,
+          271.0
+        ]
+      ],
+      "text": "ban nơi phát sinh thiệt hại (biên bản xác nhận vụ cháy của cơ quan cảnh sát",
+      "confidence": 0.962639608235294
+    },
+    {
+      "bbox": [
+        [
+          279.0,
+          261.0
+        ],
+        [
+          1082.0,
+          261.0
+        ],
+        [
+          1082.0,
+          301.0
+        ],
+        [
+          279.0,
+          301.0
+        ]
+      ],
+      "text": "phòng cháy chữa cháy của địa phương nơi xảy ra vụ cháy; văn bản xác nhận của",
+      "confidence": 0.9682281664705883
+    },
+    {
+      "bbox": [
+        [
+          280.0,
+          288.0
+        ],
+        [
+          1082.0,
+          288.0
+        ],
+        [
+          1082.0,
+          329.0
+        ],
+        [
+          280.0,
+          329.0
+        ]
+      ],
+      "text": "Ủy ban nhân dân cấp huyện về việc thiên tai, hỏa hoạn, tai nạn bất ngờ gây thiệt",
+      "confidence": 0.9533223561111112
+    },
+    {
+      "bbox": [
+        [
+          281.0,
+          321.0
+        ],
+        [
+          921.0,
+          321.0
+        ],
+        [
+          921.0,
+          357.0
+        ],
+        [
+          281.0,
+          357.0
+        ]
+      ],
+      "text": "hại cho nguyên liệu, máy móc, thiết bị nhập khẩu): 01 bản chính.",
+      "confidence": 0.9616429253846155
+    },
+    {
+      "bbox": [
+        [
+          332.0,
+          371.0
+        ],
+        [
+          1083.0,
+          371.0
+        ],
+        [
+          1083.0,
+          410.0
+        ],
+        [
+          332.0,
+          410.0
+        ]
+      ],
+      "text": "Biên bản, văn bản xác nhận nguyên nhân thiệt hại phải được lập trong",
+      "confidence": 0.9687030307142857
+    },
+    {
+      "bbox": [
+        [
+          282.0,
+          405.0
+        ],
+        [
+          731.0,
+          405.0
+        ],
+        [
+          731.0,
+          435.0
+        ],
+        [
+          282.0,
+          435.0
+        ]
+      ],
+      "text": "thời hạn 30 ngày kể từ ngày xảy ra thiệt hại;",
+      "confidence": 0.96650583
+    },
+    {
+      "bbox": [
+        [
+          334.0,
+          448.0
+        ],
+        [
+          1084.0,
+          448.0
+        ],
+        [
+          1084.0,
+          491.0
+        ],
+        [
+          334.0,
+          491.0
+        ]
+      ],
+      "text": "d) Giấy chứng nhận giám định của thương nhân kinh doanh dịch vụ giám",
+      "confidence": 0.9616142764285713
+    },
+    {
+      "bbox": [
+        [
+          284.0,
+          477.0
+        ],
+        [
+          1083.0,
+          477.0
+        ],
+        [
+          1083.0,
+          515.0
+        ],
+        [
+          284.0,
+          515.0
+        ]
+      ],
+      "text": "định về số lượng hàng hóa bị mất mát hoặc tỷ lệ tổn that thực tê của hàng hoá:",
+      "confidence": 0.93054822
+    },
+    {
+      "bbox": [
+        [
+          284.0,
+          519.0
+        ],
+        [
+          465.0,
+          519.0
+        ],
+        [
+          465.0,
+          545.0
+        ],
+        [
+          284.0,
+          545.0
+        ]
+      ],
+      "text": "nộp 01 bản chính.",
+      "confidence": 0.9639968299999999
+    },
+    {
+      "bbox": [
+        [
+          336.0,
+          551.0
+        ],
+        [
+          1087.0,
+          551.0
+        ],
+        [
+          1087.0,
+          593.0
+        ],
+        [
+          336.0,
+          593.0
+        ]
+      ],
+      "text": "Giấy chứng nhận giám định phải được lập trong thời hạn 30 ngày kể từ",
+      "confidence": 0.9516728919999999
+    },
+    {
+      "bbox": [
+        [
+          285.0,
+          587.0
+        ],
+        [
+          768.0,
+          587.0
+        ],
+        [
+          768.0,
+          623.0
+        ],
+        [
+          285.0,
+          623.0
+        ]
+      ],
+      "text": "ngày xảy ra thiên tai, hỏa hoạn, tai nạn bất ngờ.",
+      "confidence": 0.9647738081818182
+    },
+    {
+      "bbox": [
+        [
+          338.0,
+          638.0
+        ],
+        [
+          687.0,
+          638.0
+        ],
+        [
+          687.0,
+          670.0
+        ],
+        [
+          338.0,
+          670.0
+        ]
+      ],
+      "text": "3. Thủ tục, thẳm quyền giảm thuế:",
+      "confidence": 0.9662299242857144
+    },
+    {
+      "bbox": [
+        [
+          338.0,
+          684.0
+        ],
+        [
+          1088.0,
+          684.0
+        ],
+        [
+          1088.0,
+          725.0
+        ],
+        [
+          338.0,
+          725.0
+        ]
+      ],
+      "text": "a) Người nộp thuế nộp hồ sơ cho Chỉ cục Hải quan nơi làm thủ tục hải",
+      "confidence": 0.9650631976470588
+    },
+    {
+      "bbox": [
+        [
+          288.0,
+          713.0
+        ],
+        [
+          1089.0,
+          713.0
+        ],
+        [
+          1089.0,
+          756.0
+        ],
+        [
+          288.0,
+          756.0
+        ]
+      ],
+      "text": "quan tại thời điểm làm thủ tục hai quan hoặc chậm nhật là 30 ngày làm việc",
+      "confidence": 0.9583970688235294
+    },
+    {
+      "bbox": [
+        [
+          287.0,
+          743.0
+        ],
+        [
+          1013.0,
+          743.0
+        ],
+        [
+          1013.0,
+          779.0
+        ],
+        [
+          287.0,
+          779.0
+        ]
+      ],
+      "text": "kể từ ngày có văn bản xác nhận về mức độ hư hỏng, mat mát, thiệt hại;",
+      "confidence": 0.95842032
+    },
+    {
+      "bbox": [
+        [
+          339.0,
+          787.0
+        ],
+        [
+          1090.0,
+          787.0
+        ],
+        [
+          1090.0,
+          828.0
+        ],
+        [
+          339.0,
+          828.0
+        ]
+      ],
+      "text": "b) Trường hợp tại thời điểm làm thủ tục hải quan, người nộp thuế nộp đủ",
+      "confidence": 0.966271023125
+    },
+    {
+      "bbox": [
+        [
+          288.0,
+          816.0
+        ],
+        [
+          1091.0,
+          816.0
+        ],
+        [
+          1091.0,
+          856.0
+        ],
+        [
+          288.0,
+          856.0
+        ]
+      ],
+      "text": "hồ sơ theo quy định, Chi cục Hải quan kiểm tra hồ sơ, kiểm tra thực tế hàng",
+      "confidence": 0.9676615272222222
+    },
+    {
+      "bbox": [
+        [
+          289.0,
+          847.0
+        ],
+        [
+          1091.0,
+          847.0
+        ],
+        [
+          1091.0,
+          885.0
+        ],
+        [
+          289.0,
+          885.0
+        ]
+      ],
+      "text": "hóa, kiểm tra điều kiện giảm thuế và thực hiện giảm thuế trong thời hạn làm",
+      "confidence": 0.9694348137500001
+    },
+    {
+      "bbox": [
+        [
+          289.0,
+          880.0
+        ],
+        [
+          874.0,
+          880.0
+        ],
+        [
+          874.0,
+          913.0
+        ],
+        [
+          289.0,
+          913.0
+        ]
+      ],
+      "text": "thủ tục hải quan theo quy định tại Điều 23 Luật hải quan;",
+      "confidence": 0.969203926153846
+    },
+    {
+      "bbox": [
+        [
+          342.0,
+          927.0
+        ],
+        [
+          1084.0,
+          927.0
+        ],
+        [
+          1084.0,
+          964.0
+        ],
+        [
+          342.0,
+          964.0
+        ]
+      ],
+      "text": "¢) Trường hợp người nộp thuế nộp hd sơ sau thời điểm làm thủ tục hải quan:",
+      "confidence": 0.9493674747058823
+    },
+    {
+      "bbox": [
+        [
+          342.0,
+          978.0
+        ],
+        [
+          1093.0,
+          978.0
+        ],
+        [
+          1093.0,
+          1012.0
+        ],
+        [
+          342.0,
+          1012.0
+        ]
+      ],
+      "text": "Trường hợp hồ sơ đầy đủ theo quy định, Cục Hải quan có trách nhiệm",
+      "confidence": 0.9679135333333333
+    },
+    {
+      "bbox": [
+        [
+          292.0,
+          1002.0
+        ],
+        [
+          1094.0,
+          1002.0
+        ],
+        [
+          1094.0,
+          1046.0
+        ],
+        [
+          292.0,
+          1046.0
+        ]
+      ],
+      "text": "lập hồ sơ, kiểm tra thông tin, thẩm định tính chính xác, đầy đủ của hồ sơ và",
+      "confidence": 0.9626301527777779
+    },
+    {
+      "bbox": [
+        [
+          292.0,
+          1032.0
+        ],
+        [
+          1094.0,
+          1032.0
+        ],
+        [
+          1094.0,
+          1071.0
+        ],
+        [
+          292.0,
+          1071.0
+        ]
+      ],
+      "text": "gửi Tổng cục Hải quan trình Bộ Tài chính quyết định giảm thuế hoặc thông",
+      "confidence": 0.9688251199999999
+    },
+    {
+      "bbox": [
+        [
+          292.0,
+          1056.0
+        ],
+        [
+          1094.0,
+          1056.0
+        ],
+        [
+          1094.0,
+          1104.0
+        ],
+        [
+          292.0,
+          1104.0
+        ]
+      ],
+      "text": "báo cho người nộp thuế biết lý do không thuộc đối tượng giảm thuế, số tiền",
+      "confidence": 0.9664949787500001
+    },
+    {
+      "bbox": [
+        [
+          292.0,
+          1093.0
+        ],
+        [
+          1094.0,
+          1093.0
+        ],
+        [
+          1094.0,
+          1132.0
+        ],
+        [
+          292.0,
+          1132.0
+        ]
+      ],
+      "text": "thuê phải nộp trong thời hạn 15 ngày, kế từ ngày tiếp nhận đây đủ hô sơ. Hô",
+      "confidence": 0.960869665
+    },
+    {
+      "bbox": [
+        [
+          293.0,
+          1118.0
+        ],
+        [
+          1095.0,
+          1118.0
+        ],
+        [
+          1095.0,
+          1157.0
+        ],
+        [
+          293.0,
+          1157.0
+        ]
+      ],
+      "text": "sơ chưa đầy đủ thì cơ quan hải quan thông báo cho người nộp thuế trong thời",
+      "confidence": 0.966162325882353
+    },
+    {
+      "bbox": [
+        [
+          293.0,
+          1154.0
+        ],
+        [
+          799.0,
+          1154.0
+        ],
+        [
+          799.0,
+          1184.0
+        ],
+        [
+          293.0,
+          1184.0
+        ]
+      ],
+      "text": "hạn 03 ngày làm việc, kể từ ngày tiếp nhận ho sơ.",
+      "confidence": 0.965455685
+    },
+    {
+      "bbox": [
+        [
+          345.0,
+          1202.0
+        ],
+        [
+          1096.0,
+          1202.0
+        ],
+        [
+          1096.0,
+          1238.0
+        ],
+        [
+          345.0,
+          1238.0
+        ]
+      ],
+      "text": "Trường hợp cần kiểm tra thực tế đối với hàng hóa đã qua khu vực giám",
+      "confidence": 0.9666236874999999
+    },
+    {
+      "bbox": [
+        [
+          295.0,
+          1226.0
+        ],
+        [
+          1097.0,
+          1226.0
+        ],
+        [
+          1097.0,
+          1268.0
+        ],
+        [
+          295.0,
+          1268.0
+        ]
+      ],
+      "text": "sát hải quan để có đủ căn cứ giải quyết giảm thuế thì ban hành quyết định",
+      "confidence": 0.9602787970588236
+    },
+    {
+      "bbox": [
+        [
+          294.0,
+          1258.0
+        ],
+        [
+          1097.0,
+          1258.0
+        ],
+        [
+          1097.0,
+          1294.0
+        ],
+        [
+          294.0,
+          1294.0
+        ]
+      ],
+      "text": "kiểm tra sau thông quan tại trụ sở người nộp thuế; trên cơ sở đó, thực hiện các",
+      "confidence": 0.9642295294444445
+    },
+    {
+      "bbox": [
+        [
+          295.0,
+          1284.0
+        ],
+        [
+          1097.0,
+          1284.0
+        ],
+        [
+          1097.0,
+          1325.0
+        ],
+        [
+          295.0,
+          1325.0
+        ]
+      ],
+      "text": "công việc quy định tại điểm này trong thời hạn tối đa là 40 ngày kế từ ngày",
+      "confidence": 0.9637804344444444
+    },
+    {
+      "bbox": [
+        [
+          295.0,
+          1327.0
+        ],
+        [
+          443.0,
+          1327.0
+        ],
+        [
+          443.0,
+          1349.0
+        ],
+        [
+          295.0,
+          1349.0
+        ]
+      ],
+      "text": "nhận đủ hô sơ.",
+      "confidence": 0.96841074
+    },
+    {
+      "bbox": [
+        [
+          347.0,
+          1366.0
+        ],
+        [
+          1014.0,
+          1366.0
+        ],
+        [
+          1014.0,
+          1397.0
+        ],
+        [
+          347.0,
+          1397.0
+        ]
+      ],
+      "text": "Điều 33. Hoàn thuế đối với hàng hóa xuất khẩu phải tái nhập",
+      "confidence": 0.9446971069230768
+    },
+    {
+      "bbox": [
+        [
+          351.0,
+          1417.0
+        ],
+        [
+          1100.0,
+          1417.0
+        ],
+        [
+          1100.0,
+          1455.0
+        ],
+        [
+          351.0,
+          1455.0
+        ]
+      ],
+      "text": "1. Hàng hóa xuất khẩu đã nộp thuế xuất khẩu nhưng phải tái nhập được",
+      "confidence": 0.9659717573333334
+    },
+    {
+      "bbox": [
+        [
+          297.0,
+          1446.0
+        ],
+        [
+          927.0,
+          1446.0
+        ],
+        [
+          927.0,
+          1476.0
+        ],
+        [
+          297.0,
+          1476.0
+        ]
+      ],
+      "text": "hoàn thuế xuất khâu và không phải nộp thuế nhập khẩu, gồm:",
+      "confidence": 0.9543470691666666
+    }
+  ]
+}

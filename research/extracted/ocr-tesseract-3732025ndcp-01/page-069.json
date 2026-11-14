@@ -1,0 +1,179 @@
+{
+  "document_id": "373/2025/NĐ-CP",
+  "source_file": "../../legal-sources/3732025ndcp/01.pdf",
+  "source_sha256": "6ca9d1a16b5d47c7aa23f06f243dc59bd2e9dda4d70f3f3c892e4254d2c7d914",
+  "page_count": 74,
+  "render_dpi": 150,
+  "engine": "Tesseract 5.5.4 (vie+eng; OEM 1; PSM 3)",
+  "review_status": "UNREVIEWED",
+  "tesseract_version": "5.5.4",
+  "tsv_parser_version": 2,
+  "languages": [
+    "vie",
+    "eng"
+  ],
+  "traineddata_sha256": {
+    "vie": "b6b49293d95d0b6dbd8780174627e82c75be957b6f4ed9862155540d6b00bb45",
+    "eng": "8280aed0782fe27257a68ea10fe7ef324ca0f8d85bd2fd145d1c2b560bcb66ba"
+  },
+  "ocr_engine_mode": 1,
+  "page_segmentation_mode": 3,
+  "thread_limit": 1,
+  "page": 69,
+  "lines": [
+    {
+      "bbox": [
+        [
+          659.0,
+          62.0
+        ],
+        [
+          670.0,
+          62.0
+        ],
+        [
+          670.0,
+          82.0
+        ],
+        [
+          659.0,
+          82.0
+        ]
+      ],
+      "text": "5",
+      "confidence": 0.96968307
+    },
+    {
+      "bbox": [
+        [
+          250.0,
+          120.0
+        ],
+        [
+          1139.0,
+          120.0
+        ],
+        [
+          1139.0,
+          165.0
+        ],
+        [
+          250.0,
+          165.0
+        ]
+      ],
+      "text": "... (Tên người nộp thuế)... chịu trách nhiệm trước pháp luật về các thông tin nêu",
+      "confidence": 0.9636089325
+    },
+    {
+      "bbox": [
+        [
+          189.0,
+          157.0
+        ],
+        [
+          1139.0,
+          157.0
+        ],
+        [
+          1139.0,
+          192.0
+        ],
+        [
+          189.0,
+          192.0
+        ]
+      ],
+      "text": "trên và cam kết nộp đầy đủ số tiền thuế nợ được gia hạn sau khi hết thời hạn gia hạn nộp",
+      "confidence": 0.9656796990909092
+    },
+    {
+      "bbox": [
+        [
+          188.0,
+          193.0
+        ],
+        [
+          240.0,
+          193.0
+        ],
+        [
+          240.0,
+          212.0
+        ],
+        [
+          188.0,
+          212.0
+        ]
+      ],
+      "text": "thuê.",
+      "confidence": 0.96706726
+    },
+    {
+      "bbox": [
+        [
+          187.0,
+          250.0
+        ],
+        [
+          977.0,
+          250.0
+        ],
+        [
+          977.0,
+          286.0
+        ],
+        [
+          187.0,
+          286.0
+        ]
+      ],
+      "text": "Nơi nhận: NGƯỜI NỘP THUẾ hoặc",
+      "confidence": 0.9460365916666668
+    },
+    {
+      "bbox": [
+        [
+          188.0,
+          281.0
+        ],
+        [
+          1119.0,
+          281.0
+        ],
+        [
+          1119.0,
+          312.0
+        ],
+        [
+          188.0,
+          312.0
+        ]
+      ],
+      "text": "~ Như trên; ĐẠI DIỆN HỢP PHÁP CUA NGƯỜI NOP THUÊ,",
+      "confidence": 0.8801616554545454
+    },
+    {
+      "bbox": [
+        [
+          188.0,
+          313.0
+        ],
+        [
+          1095.0,
+          313.0
+        ],
+        [
+          1095.0,
+          358.0
+        ],
+        [
+          188.0,
+          358.0
+        ]
+      ],
+      "text": "- Tu VT, (Ký, ghi rõ họ tên; chức vu và đóng dau (néu có))",
+      "confidence": 0.775060984
+    }
+  ]
+}

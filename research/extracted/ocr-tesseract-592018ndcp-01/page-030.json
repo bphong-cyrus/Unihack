@@ -1,0 +1,839 @@
+{
+  "document_id": "59/2018/NĐ-CP",
+  "source_file": "../../legal-sources/592018ndcp/01.pdf",
+  "source_sha256": "7ac1b46e806ae9290125acb9ac1d535bcea768749d16941e9fae20bbf7343a1a",
+  "page_count": 48,
+  "render_dpi": 150,
+  "engine": "Tesseract 5.5.4 (vie+eng; OEM 1; PSM 3)",
+  "review_status": "UNREVIEWED",
+  "tesseract_version": "5.5.4",
+  "tsv_parser_version": 2,
+  "languages": [
+    "vie",
+    "eng"
+  ],
+  "traineddata_sha256": {
+    "vie": "b6b49293d95d0b6dbd8780174627e82c75be957b6f4ed9862155540d6b00bb45",
+    "eng": "8280aed0782fe27257a68ea10fe7ef324ca0f8d85bd2fd145d1c2b560bcb66ba"
+  },
+  "ocr_engine_mode": 1,
+  "page_segmentation_mode": 3,
+  "thread_limit": 1,
+  "page": 30,
+  "lines": [
+    {
+      "bbox": [
+        [
+          664.0,
+          134.0
+        ],
+        [
+          685.0,
+          134.0
+        ],
+        [
+          685.0,
+          150.0
+        ],
+        [
+          664.0,
+          150.0
+        ]
+      ],
+      "text": "30",
+      "confidence": 0.96937492
+    },
+    {
+      "bbox": [
+        [
+          324.0,
+          200.0
+        ],
+        [
+          1081.0,
+          200.0
+        ],
+        [
+          1081.0,
+          242.0
+        ],
+        [
+          324.0,
+          242.0
+        ]
+      ],
+      "text": "Trường hợp người khai không bổ sung hồ sơ, thông tin theo yêu cầu, Chỉ",
+      "confidence": 0.952269266
+    },
+    {
+      "bbox": [
+        [
+          273.0,
+          233.0
+        ],
+        [
+          1080.0,
+          233.0
+        ],
+        [
+          1080.0,
+          273.0
+        ],
+        [
+          273.0,
+          273.0
+        ]
+      ],
+      "text": "cục trưởng Chi cục Hải quan quản lý sân bay xử lý theo quy định tại điệm b",
+      "confidence": 0.9581921138888889
+    },
+    {
+      "bbox": [
+        [
+          273.0,
+          278.0
+        ],
+        [
+          384.0,
+          278.0
+        ],
+        [
+          384.0,
+          301.0
+        ],
+        [
+          273.0,
+          301.0
+        ]
+      ],
+      "text": "khoản này;",
+      "confidence": 0.963417245
+    },
+    {
+      "bbox": [
+        [
+          325.0,
+          308.0
+        ],
+        [
+          1082.0,
+          308.0
+        ],
+        [
+          1082.0,
+          351.0
+        ],
+        [
+          325.0,
+          351.0
+        ]
+      ],
+      "text": "b) Chi cục Hải quan quản lý sân bay khai thác thông tin khai hải quan",
+      "confidence": 0.9639328618749999
+    },
+    {
+      "bbox": [
+        [
+          274.0,
+          341.0
+        ],
+        [
+          1082.0,
+          341.0
+        ],
+        [
+          1082.0,
+          376.0
+        ],
+        [
+          274.0,
+          376.0
+        ]
+      ],
+      "text": "trên Cổng thông tin một cửa quốc gia, hoặc thông tin từ hô sơ giây, các thông",
+      "confidence": 0.9587738223529412
+    },
+    {
+      "bbox": [
+        [
+          274.0,
+          375.0
+        ],
+        [
+          696.0,
+          375.0
+        ],
+        [
+          696.0,
+          403.0
+        ],
+        [
+          274.0,
+          403.0
+        ]
+      ],
+      "text": "tin khác để kiểm tra, tổng hợp, phân tích.",
+      "confidence": 0.9604753366666666
+    },
+    {
+      "bbox": [
+        [
+          326.0,
+          412.0
+        ],
+        [
+          1083.0,
+          412.0
+        ],
+        [
+          1083.0,
+          452.0
+        ],
+        [
+          326.0,
+          452.0
+        ]
+      ],
+      "text": "Trường hợp người khai hải quan không bb sung hồ sơ thông tin đầy đủ",
+      "confidence": 0.9610678506666666
+    },
+    {
+      "bbox": [
+        [
+          275.0,
+          444.0
+        ],
+        [
+          1083.0,
+          444.0
+        ],
+        [
+          1083.0,
+          481.0
+        ],
+        [
+          275.0,
+          481.0
+        ]
+      ],
+      "text": "theo quy định hoặc có cơ sở xác định trên tàu bay xuất cảnh, nhập cảnh có",
+      "confidence": 0.9655534947058824
+    },
+    {
+      "bbox": [
+        [
+          275.0,
+          476.0
+        ],
+        [
+          1083.0,
+          476.0
+        ],
+        [
+          1083.0,
+          511.0
+        ],
+        [
+          275.0,
+          511.0
+        ]
+      ],
+      "text": "hàng hóa buôn lậu, vận chuyển trái phép, Chi cục trưởng Chi cuc Hai quan",
+      "confidence": 0.9602155259999999
+    },
+    {
+      "bbox": [
+        [
+          276.0,
+          505.0
+        ],
+        [
+          1083.0,
+          505.0
+        ],
+        [
+          1083.0,
+          548.0
+        ],
+        [
+          276.0,
+          548.0
+        ]
+      ],
+      "text": "quản ly sân bay quyết định bình thức, biện pháp giám sát đôi với tàu bay,",
+      "confidence": 0.964962281875
+    },
+    {
+      "bbox": [
+        [
+          276.0,
+          533.0
+        ],
+        [
+          1084.0,
+          533.0
+        ],
+        [
+          1084.0,
+          565.0
+        ],
+        [
+          276.0,
+          565.0
+        ]
+      ],
+      "text": "kiểm tra thực tế tàu bay, quyết định mức độ kiểm tra hàng hóa, hành lý hoặc",
+      "confidence": 0.9675755005882354
+    },
+    {
+      "bbox": [
+        [
+          276.0,
+          564.0
+        ],
+        [
+          982.0,
+          564.0
+        ],
+        [
+          982.0,
+          595.0
+        ],
+        [
+          276.0,
+          595.0
+        ]
+      ],
+      "text": "thực hiện các biện pháp nghiệp vụ khác theo quy định của pháp luật;",
+      "confidence": 0.9691545435714285
+    },
+    {
+      "bbox": [
+        [
+          334.0,
+          610.0
+        ],
+        [
+          1085.0,
+          610.0
+        ],
+        [
+          1085.0,
+          642.0
+        ],
+        [
+          334.0,
+          642.0
+        ]
+      ],
+      "text": "c) Trường hợp Cảng vụ hàng không, Tòa án, cơ quan Công an và cơ",
+      "confidence": 0.9606898333333334
+    },
+    {
+      "bbox": [
+        [
+          277.0,
+          638.0
+        ],
+        [
+          1085.0,
+          638.0
+        ],
+        [
+          1085.0,
+          671.0
+        ],
+        [
+          277.0,
+          671.0
+        ]
+      ],
+      "text": "quan có thẩm quyền khác có văn bản yêu cầu tạm dừng làm thủ tục hải quan",
+      "confidence": 0.9507688047058823
+    },
+    {
+      "bbox": [
+        [
+          277.0,
+          668.0
+        ],
+        [
+          1085.0,
+          668.0
+        ],
+        [
+          1085.0,
+          699.0
+        ],
+        [
+          277.0,
+          699.0
+        ]
+      ],
+      "text": "đối với tàu bay xuất cảnh, nhập cảnh, Chi cục trưởng Chi cục Hải quan quản",
+      "confidence": 0.962737268125
+    },
+    {
+      "bbox": [
+        [
+          277.0,
+          697.0
+        ],
+        [
+          1085.0,
+          697.0
+        ],
+        [
+          1085.0,
+          728.0
+        ],
+        [
+          277.0,
+          728.0
+        ]
+      ],
+      "text": "lý sân bay phối hợp với các cơ quan chức năng xử lý theo quy định của",
+      "confidence": 0.9689093464705881
+    },
+    {
+      "bbox": [
+        [
+          276.0,
+          733.0
+        ],
+        [
+          377.0,
+          733.0
+        ],
+        [
+          377.0,
+          756.0
+        ],
+        [
+          276.0,
+          756.0
+        ]
+      ],
+      "text": "pháp luật;",
+      "confidence": 0.9659871649999999
+    },
+    {
+      "bbox": [
+        [
+          329.0,
+          768.0
+        ],
+        [
+          1085.0,
+          768.0
+        ],
+        [
+          1085.0,
+          805.0
+        ],
+        [
+          329.0,
+          805.0
+        ]
+      ],
+      "text": "d) Thời hạn làm thủ tục hải quan đối với tàu bay xuất cảnh, nhập cảnh,",
+      "confidence": 0.965062733125
+    },
+    {
+      "bbox": [
+        [
+          277.0,
+          801.0
+        ],
+        [
+          1086.0,
+          801.0
+        ],
+        [
+          1086.0,
+          835.0
+        ],
+        [
+          277.0,
+          835.0
+        ]
+      ],
+      "text": "quá cảnh: không quá 01 giờ kê từ khi người khai hải quan nộp, xuât trình đủ",
+      "confidence": 0.9622085023529412
+    },
+    {
+      "bbox": [
+        [
+          277.0,
+          832.0
+        ],
+        [
+          854.0,
+          832.0
+        ],
+        [
+          854.0,
+          859.0
+        ],
+        [
+          277.0,
+          859.0
+        ]
+      ],
+      "text": "hồ sơ hải quan theo quy định tại Điêu 61 Nghị định này.",
+      "confidence": 0.9553950976923078
+    },
+    {
+      "bbox": [
+        [
+          329.0,
+          874.0
+        ],
+        [
+          1032.0,
+          874.0
+        ],
+        [
+          1032.0,
+          904.0
+        ],
+        [
+          329.0,
+          904.0
+        ]
+      ],
+      "text": "2. Giám sát hải quan đối với tàu bay xuất cảnh, nhập cảnh, quá cảnh",
+      "confidence": 0.9654639853333333
+    },
+    {
+      "bbox": [
+        [
+          329.0,
+          924.0
+        ],
+        [
+          1086.0,
+          924.0
+        ],
+        [
+          1086.0,
+          952.0
+        ],
+        [
+          329.0,
+          952.0
+        ]
+      ],
+      "text": "a) Căn cứ thông tin do doanh nghiệp kinh doanh cảng hàng không thông",
+      "confidence": 0.9645752664285715
+    },
+    {
+      "bbox": [
+        [
+          277.0,
+          951.0
+        ],
+        [
+          1085.0,
+          951.0
+        ],
+        [
+          1085.0,
+          985.0
+        ],
+        [
+          277.0,
+          985.0
+        ]
+      ],
+      "text": "báo theo quy định tại Điều 64 Nghị định này, cơ quan hải quan thực hiện",
+      "confidence": 0.9684190562499999
+    },
+    {
+      "bbox": [
+        [
+          278.0,
+          977.0
+        ],
+        [
+          1086.0,
+          977.0
+        ],
+        [
+          1086.0,
+          1013.0
+        ],
+        [
+          278.0,
+          1013.0
+        ]
+      ],
+      "text": "giám sát đôi với tàu bay xuất cảnh, nhập cảnh, quá cảnh trong suốt quá trình",
+      "confidence": 0.961880058125
+    },
+    {
+      "bbox": [
+        [
+          277.0,
+          1014.0
+        ],
+        [
+          565.0,
+          1014.0
+        ],
+        [
+          565.0,
+          1037.0
+        ],
+        [
+          277.0,
+          1037.0
+        ]
+      ],
+      "text": "tàu bay dừng đô tại sân bay;",
+      "confidence": 0.9663551671428572
+    },
+    {
+      "bbox": [
+        [
+          329.0,
+          1052.0
+        ],
+        [
+          1085.0,
+          1052.0
+        ],
+        [
+          1085.0,
+          1084.0
+        ],
+        [
+          329.0,
+          1084.0
+        ]
+      ],
+      "text": "b) Trong quá trình giám sát, trường hợp xác định có dấu hiệu buôn lậu,",
+      "confidence": 0.9600628506666666
+    },
+    {
+      "bbox": [
+        [
+          277.0,
+          1084.0
+        ],
+        [
+          1085.0,
+          1084.0
+        ],
+        [
+          1085.0,
+          1112.0
+        ],
+        [
+          277.0,
+          1112.0
+        ]
+      ],
+      "text": "vận chuyển trái phép hàng hóa, cơ quan hải quan thực hiện các biện pháp",
+      "confidence": 0.965913244
+    },
+    {
+      "bbox": [
+        [
+          277.0,
+          1113.0
+        ],
+        [
+          881.0,
+          1113.0
+        ],
+        [
+          881.0,
+          1141.0
+        ],
+        [
+          277.0,
+          1141.0
+        ]
+      ],
+      "text": "kiểm tra, ngăn chặn, tạm giữ theo quy định của pháp luật.”",
+      "confidence": 0.9683620333333333
+    },
+    {
+      "bbox": [
+        [
+          329.0,
+          1158.0
+        ],
+        [
+          991.0,
+          1158.0
+        ],
+        [
+          991.0,
+          1187.0
+        ],
+        [
+          329.0,
+          1187.0
+        ]
+      ],
+      "text": "35. Sửa đổi khoản 1, bổ sung các khoản 3 và 4 Điều 64 như sau:",
+      "confidence": 0.9656415800000001
+    },
+    {
+      "bbox": [
+        [
+          329.0,
+          1204.0
+        ],
+        [
+          1083.0,
+          1204.0
+        ],
+        [
+          1083.0,
+          1239.0
+        ],
+        [
+          329.0,
+          1239.0
+        ]
+      ],
+      "text": "“1. Chậm nhất 24 giờ đối với chuyến bay thường lệ hoặc chậm nhất 01",
+      "confidence": 0.9513115126666666
+    },
+    {
+      "bbox": [
+        [
+          277.0,
+          1238.0
+        ],
+        [
+          1086.0,
+          1238.0
+        ],
+        [
+          1086.0,
+          1268.0
+        ],
+        [
+          277.0,
+          1268.0
+        ]
+      ],
+      "text": "giờ đôi với chuyên bay không thường lệ trước khi tàu bay nhập cảnh và trước",
+      "confidence": 0.9688528200000001
+    },
+    {
+      "bbox": [
+        [
+          277.0,
+          1261.0
+        ],
+        [
+          1087.0,
+          1261.0
+        ],
+        [
+          1087.0,
+          1297.0
+        ],
+        [
+          277.0,
+          1297.0
+        ]
+      ],
+      "text": "khi hãng vận chuyên hoàn thành thủ tục hàng không cho hành khách xuất",
+      "confidence": 0.9680639278571428
+    },
+    {
+      "bbox": [
+        [
+          278.0,
+          1295.0
+        ],
+        [
+          1086.0,
+          1295.0
+        ],
+        [
+          1086.0,
+          1326.0
+        ],
+        [
+          278.0,
+          1326.0
+        ]
+      ],
+      "text": "cảnh và hàng hóa xuất khâu, doanh nghiệp kinh doanh cảng hàng không có trách",
+      "confidence": 0.966095174
+    },
+    {
+      "bbox": [
+        [
+          276.0,
+          1325.0
+        ],
+        [
+          1041.0,
+          1325.0
+        ],
+        [
+          1041.0,
+          1350.0
+        ],
+        [
+          276.0,
+          1350.0
+        ]
+      ],
+      "text": "nhiệm cung cấp cho Chí cục Hải quan quản lý sân bay các thông tin sau đây:",
+      "confidence": 0.9663985617647058
+    },
+    {
+      "bbox": [
+        [
+          329.0,
+          1369.0
+        ],
+        [
+          544.0,
+          1369.0
+        ],
+        [
+          544.0,
+          1397.0
+        ],
+        [
+          329.0,
+          1397.0
+        ]
+      ],
+      "text": "a) Quốc tịch tàu bay;",
+      "confidence": 0.9590377800000001
+    },
+    {
+      "bbox": [
+        [
+          329.0,
+          1421.0
+        ],
+        [
+          492.0,
+          1421.0
+        ],
+        [
+          492.0,
+          1444.0
+        ],
+        [
+          329.0,
+          1444.0
+        ]
+      ],
+      "text": "b) Loại tàu bay;",
+      "confidence": 0.9594506275000001
+    }
+  ]
+}

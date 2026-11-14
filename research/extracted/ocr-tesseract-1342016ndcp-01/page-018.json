@@ -1,0 +1,817 @@
+{
+  "document_id": "134/2016/NĐ-CP",
+  "source_file": "../../legal-sources/1342016ndcp/01.pdf",
+  "source_sha256": "4fe3832d278d03e6ab53c064c6aa3c60063d372570eaa6b57427b0bd252e5460",
+  "page_count": 78,
+  "render_dpi": 150,
+  "engine": "Tesseract 5.5.4 (vie+eng; OEM 1; PSM 3)",
+  "review_status": "UNREVIEWED",
+  "tesseract_version": "5.5.4",
+  "tsv_parser_version": 2,
+  "languages": [
+    "vie",
+    "eng"
+  ],
+  "traineddata_sha256": {
+    "vie": "b6b49293d95d0b6dbd8780174627e82c75be957b6f4ed9862155540d6b00bb45",
+    "eng": "8280aed0782fe27257a68ea10fe7ef324ca0f8d85bd2fd145d1c2b560bcb66ba"
+  },
+  "ocr_engine_mode": 1,
+  "page_segmentation_mode": 3,
+  "thread_limit": 1,
+  "page": 18,
+  "lines": [
+    {
+      "bbox": [
+        [
+          670.0,
+          144.0
+        ],
+        [
+          688.0,
+          144.0
+        ],
+        [
+          688.0,
+          160.0
+        ],
+        [
+          670.0,
+          160.0
+        ]
+      ],
+      "text": "18",
+      "confidence": 0.9671107499999999
+    },
+    {
+      "bbox": [
+        [
+          334.0,
+          202.0
+        ],
+        [
+          1078.0,
+          202.0
+        ],
+        [
+          1078.0,
+          247.0
+        ],
+        [
+          334.0,
+          247.0
+        ]
+      ],
+      "text": "4. Hồ sơ, thủ tục miễn thuế thực hiện theo quy định tại Điều 30, Điều 31",
+      "confidence": 0.9653290235294117
+    },
+    {
+      "bbox": [
+        [
+          282.0,
+          255.0
+        ],
+        [
+          433.0,
+          255.0
+        ],
+        [
+          433.0,
+          281.0
+        ],
+        [
+          282.0,
+          281.0
+        ]
+      ],
+      "text": "Nghị định này.",
+      "confidence": 0.9482812766666666
+    },
+    {
+      "bbox": [
+        [
+          336.0,
+          284.0
+        ],
+        [
+          1082.0,
+          284.0
+        ],
+        [
+          1082.0,
+          325.0
+        ],
+        [
+          336.0,
+          325.0
+        ]
+      ],
+      "text": "Điều 19. Miễn thuế hàng hóa nhập khẩu phục vụ nghiên cứu khoa",
+      "confidence": 0.9685377038461539
+    },
+    {
+      "bbox": [
+        [
+          286.0,
+          328.0
+        ],
+        [
+          561.0,
+          328.0
+        ],
+        [
+          561.0,
+          359.0
+        ],
+        [
+          286.0,
+          359.0
+        ]
+      ],
+      "text": "học, phát triển công nghệ",
+      "confidence": 0.955075868
+    },
+    {
+      "bbox": [
+        [
+          341.0,
+          364.0
+        ],
+        [
+          1085.0,
+          364.0
+        ],
+        [
+          1085.0,
+          406.0
+        ],
+        [
+          341.0,
+          406.0
+        ]
+      ],
+      "text": "1. Hàng hóa nhập khẩu để sử dụng trực tiếp cho nghiên cứu khoa học,",
+      "confidence": 0.9643856000000001
+    },
+    {
+      "bbox": [
+        [
+          288.0,
+          389.0
+        ],
+        [
+          1089.0,
+          389.0
+        ],
+        [
+          1089.0,
+          442.0
+        ],
+        [
+          288.0,
+          442.0
+        ]
+      ],
+      "text": "phát triển công nghệ, phát triển hoạt động ươm tạo công nghệ, ươm tạo doanh",
+      "confidence": 0.964465316
+    },
+    {
+      "bbox": [
+        [
+          288.0,
+          422.0
+        ],
+        [
+          1087.0,
+          422.0
+        ],
+        [
+          1087.0,
+          467.0
+        ],
+        [
+          288.0,
+          467.0
+        ]
+      ],
+      "text": "nghiệp khoa học và công nghệ, đổi mới công nghệ được miên thuê nhập khâu",
+      "confidence": 0.9372094780000001
+    },
+    {
+      "bbox": [
+        [
+          289.0,
+          444.0
+        ],
+        [
+          1032.0,
+          444.0
+        ],
+        [
+          1032.0,
+          493.0
+        ],
+        [
+          289.0,
+          493.0
+        ]
+      ],
+      "text": "theo quy định tại khoản 21 Điều 16 Luật thuế xuất khẩu, thuế nhập khẩu.",
+      "confidence": 0.9513183486666666
+    },
+    {
+      "bbox": [
+        [
+          342.0,
+          500.0
+        ],
+        [
+          1090.0,
+          500.0
+        ],
+        [
+          1090.0,
+          538.0
+        ],
+        [
+          342.0,
+          538.0
+        ]
+      ],
+      "text": "2. Căn cứ để xác định hàng hóa trong nước chưa sản xuất được thực hiện",
+      "confidence": 0.965193495625
+    },
+    {
+      "bbox": [
+        [
+          291.0,
+          535.0
+        ],
+        [
+          723.0,
+          535.0
+        ],
+        [
+          723.0,
+          571.0
+        ],
+        [
+          291.0,
+          571.0
+        ]
+      ],
+      "text": "theo quy định của Bộ Kế hoạch và Đầu tư.",
+      "confidence": 0.966435073
+    },
+    {
+      "bbox": [
+        [
+          344.0,
+          582.0
+        ],
+        [
+          1092.0,
+          582.0
+        ],
+        [
+          1092.0,
+          616.0
+        ],
+        [
+          344.0,
+          616.0
+        ]
+      ],
+      "text": "Căn cứ để xác định máy móc, thiết bị, phụ tùng, vật tư chuyên dùng sử",
+      "confidence": 0.96313611625
+    },
+    {
+      "bbox": [
+        [
+          293.0,
+          612.0
+        ],
+        [
+          1093.0,
+          612.0
+        ],
+        [
+          1093.0,
+          649.0
+        ],
+        [
+          293.0,
+          649.0
+        ]
+      ],
+      "text": "dụng trực tiếp cho nghiên cứu khoa học, phát triển công nghệ, phát triền hoạt",
+      "confidence": 0.944827408
+    },
+    {
+      "bbox": [
+        [
+          293.0,
+          641.0
+        ],
+        [
+          1093.0,
+          641.0
+        ],
+        [
+          1093.0,
+          677.0
+        ],
+        [
+          293.0,
+          677.0
+        ]
+      ],
+      "text": "động ươm tạo công nghệ, ươm tạo doanh nghiệp khoa học và công nghệ, đôi",
+      "confidence": 0.9592998859999998
+    },
+    {
+      "bbox": [
+        [
+          294.0,
+          667.0
+        ],
+        [
+          1030.0,
+          667.0
+        ],
+        [
+          1030.0,
+          705.0
+        ],
+        [
+          294.0,
+          705.0
+        ]
+      ],
+      "text": "mới công nghệ thực hiện theo quy định của Bộ Khoa học và Công nghệ.",
+      "confidence": 0.9690926513333333
+    },
+    {
+      "bbox": [
+        [
+          346.0,
+          721.0
+        ],
+        [
+          1094.0,
+          721.0
+        ],
+        [
+          1094.0,
+          752.0
+        ],
+        [
+          346.0,
+          752.0
+        ]
+      ],
+      "text": "3. Danh mục hoặc tiêu chí xác định tài liệu, sách báo khoa học chuyên",
+      "confidence": 0.967884888
+    },
+    {
+      "bbox": [
+        [
+          295.0,
+          748.0
+        ],
+        [
+          1096.0,
+          748.0
+        ],
+        [
+          1096.0,
+          783.0
+        ],
+        [
+          295.0,
+          783.0
+        ]
+      ],
+      "text": "dùng sử dụng trực tiếp cho nghiên cứu khoa học, phát triển công nghệ, phát triển",
+      "confidence": 0.9619794712499999
+    },
+    {
+      "bbox": [
+        [
+          295.0,
+          779.0
+        ],
+        [
+          1095.0,
+          779.0
+        ],
+        [
+          1095.0,
+          811.0
+        ],
+        [
+          295.0,
+          811.0
+        ]
+      ],
+      "text": "hoạt động ươm tạo công nghệ, ươm tạo doanh nghiệp khoa học và công nghệ,",
+      "confidence": 0.9684446813333334
+    },
+    {
+      "bbox": [
+        [
+          296.0,
+          808.0
+        ],
+        [
+          1046.0,
+          808.0
+        ],
+        [
+          1046.0,
+          838.0
+        ],
+        [
+          296.0,
+          838.0
+        ]
+      ],
+      "text": "đổi mới công nghệ thực hiện theo quy định của Bộ Khoa học và Công nghệ.",
+      "confidence": 0.9487043293749999
+    },
+    {
+      "bbox": [
+        [
+          348.0,
+          859.0
+        ],
+        [
+          548.0,
+          859.0
+        ],
+        [
+          548.0,
+          884.0
+        ],
+        [
+          348.0,
+          884.0
+        ]
+      ],
+      "text": "4. Hồ sơ miễn thuế:",
+      "confidence": 0.962353758
+    },
+    {
+      "bbox": [
+        [
+          321.0,
+          908.0
+        ],
+        [
+          1097.0,
+          908.0
+        ],
+        [
+          1097.0,
+          943.0
+        ],
+        [
+          321.0,
+          943.0
+        ]
+      ],
+      "text": "„ Ngoài hồ sơ quy định tại Điều 31 Nghị định này, tùy từng trường hợp cụ",
+      "confidence": 0.9267219952941177
+    },
+    {
+      "bbox": [
+        [
+          297.0,
+          939.0
+        ],
+        [
+          912.0,
+          939.0
+        ],
+        [
+          912.0,
+          967.0
+        ],
+        [
+          297.0,
+          967.0
+        ]
+      ],
+      "text": "thể người nộp thuế phải nộp thêm một trong các giây tờ sau:",
+      "confidence": 0.9689442153846154
+    },
+    {
+      "bbox": [
+        [
+          350.0,
+          985.0
+        ],
+        [
+          1097.0,
+          985.0
+        ],
+        [
+          1097.0,
+          1016.0
+        ],
+        [
+          350.0,
+          1016.0
+        ]
+      ],
+      "text": "a) Quyét dinh về việc thực hiện đề tài, chương trình, dự án, nhiệm vụ",
+      "confidence": 0.9612788346666666
+    },
+    {
+      "bbox": [
+        [
+          298.0,
+          1007.0
+        ],
+        [
+          1098.0,
+          1007.0
+        ],
+        [
+          1098.0,
+          1050.0
+        ],
+        [
+          298.0,
+          1050.0
+        ]
+      ],
+      "text": "nghiên cứu khoa học, phát triển công nghệ và danh mục hàng hóa cần nhập khẩu",
+      "confidence": 0.96432612875
+    },
+    {
+      "bbox": [
+        [
+          298.0,
+          1045.0
+        ],
+        [
+          1099.0,
+          1045.0
+        ],
+        [
+          1099.0,
+          1078.0
+        ],
+        [
+          298.0,
+          1078.0
+        ]
+      ],
+      "text": "đề thực hiện đề tài, chương trình, dự án, nhiệm vụ nghiên cứu khoa học, phát",
+      "confidence": 0.965635818125
+    },
+    {
+      "bbox": [
+        [
+          298.0,
+          1067.0
+        ],
+        [
+          1099.0,
+          1067.0
+        ],
+        [
+          1099.0,
+          1103.0
+        ],
+        [
+          298.0,
+          1103.0
+        ]
+      ],
+      "text": "triển công nghệ của cơ quan nhà nước có thấm quyền theo quy định của Luật",
+      "confidence": 0.923043341875
+    },
+    {
+      "bbox": [
+        [
+          298.0,
+          1099.0
+        ],
+        [
+          1076.0,
+          1099.0
+        ],
+        [
+          1076.0,
+          1129.0
+        ],
+        [
+          298.0,
+          1129.0
+        ]
+      ],
+      "text": "khoa học và công nghệ: 01 bản chụp có đóng dấu sao y bản chính của cơ quan;",
+      "confidence": 0.9530818255555557
+    },
+    {
+      "bbox": [
+        [
+          350.0,
+          1149.0
+        ],
+        [
+          1098.0,
+          1149.0
+        ],
+        [
+          1098.0,
+          1180.0
+        ],
+        [
+          350.0,
+          1180.0
+        ]
+      ],
+      "text": "b) Văn bản xác nhận danh mục hàng hóa để phát triển hoạt động ươm",
+      "confidence": 0.9570551933333333
+    },
+    {
+      "bbox": [
+        [
+          298.0,
+          1177.0
+        ],
+        [
+          1098.0,
+          1177.0
+        ],
+        [
+          1098.0,
+          1213.0
+        ],
+        [
+          298.0,
+          1213.0
+        ]
+      ],
+      "text": "tạo công nghệ, ươm tạo doanh nghiệp khoa học công nghệ của Ủy ban nhân",
+      "confidence": 0.9669539346666667
+    },
+    {
+      "bbox": [
+        [
+          299.0,
+          1212.0
+        ],
+        [
+          1098.0,
+          1212.0
+        ],
+        [
+          1098.0,
+          1237.0
+        ],
+        [
+          299.0,
+          1237.0
+        ]
+      ],
+      "text": "dân tỉnh, thành phố, bộ chủ quản nơi có dự án, cơ sở ươm tạo công nghệ, ươm",
+      "confidence": 0.9661069111111111
+    },
+    {
+      "bbox": [
+        [
+          298.0,
+          1236.0
+        ],
+        [
+          1099.0,
+          1236.0
+        ],
+        [
+          1099.0,
+          1266.0
+        ],
+        [
+          298.0,
+          1266.0
+        ]
+      ],
+      "text": "tạo doanh nghiệp khoa học công nghệ: 01 bản chụp có đóng đấu sao y ban",
+      "confidence": 0.948605165625
+    },
+    {
+      "bbox": [
+        [
+          299.0,
+          1272.0
+        ],
+        [
+          490.0,
+          1272.0
+        ],
+        [
+          490.0,
+          1295.0
+        ],
+        [
+          299.0,
+          1295.0
+        ]
+      ],
+      "text": "chính của cơ quan;",
+      "confidence": 0.9676039299999999
+    },
+    {
+      "bbox": [
+        [
+          352.0,
+          1315.0
+        ],
+        [
+          1099.0,
+          1315.0
+        ],
+        [
+          1099.0,
+          1345.0
+        ],
+        [
+          352.0,
+          1345.0
+        ]
+      ],
+      "text": "¢) Văn bản xác nhận danh mục hàng hóa để phục vụ đổi mới công nghệ",
+      "confidence": 0.9439031649999999
+    },
+    {
+      "bbox": [
+        [
+          299.0,
+          1348.0
+        ],
+        [
+          1100.0,
+          1348.0
+        ],
+        [
+          1100.0,
+          1378.0
+        ],
+        [
+          299.0,
+          1378.0
+        ]
+      ],
+      "text": "của Bộ Khoa học và Công nghệ hoặc cơ quan được Bộ Khoa học và Công",
+      "confidence": 0.967834945
+    },
+    {
+      "bbox": [
+        [
+          300.0,
+          1377.0
+        ],
+        [
+          1019.0,
+          1377.0
+        ],
+        [
+          1019.0,
+          1403.0
+        ],
+        [
+          300.0,
+          1403.0
+        ]
+      ],
+      "text": "nghệ ủy quyền: 01 bản chụp có đóng dâu sao y bản chính của cơ quan.",
+      "confidence": 0.955209675625
+    },
+    {
+      "bbox": [
+        [
+          353.0,
+          1423.0
+        ],
+        [
+          1088.0,
+          1423.0
+        ],
+        [
+          1088.0,
+          1452.0
+        ],
+        [
+          353.0,
+          1452.0
+        ]
+      ],
+      "text": "5. Thủ tục miễn thuế thực hiện theo quy định tại Điều 31 Nghị định này.",
+      "confidence": 0.9685599918750001
+    }
+  ]
+}

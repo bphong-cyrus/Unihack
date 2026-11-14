@@ -1,0 +1,861 @@
+{
+  "document_id": "134/2016/NĐ-CP",
+  "source_file": "../../legal-sources/1342016ndcp/01.pdf",
+  "source_sha256": "4fe3832d278d03e6ab53c064c6aa3c60063d372570eaa6b57427b0bd252e5460",
+  "page_count": 78,
+  "render_dpi": 150,
+  "engine": "Tesseract 5.5.4 (vie+eng; OEM 1; PSM 3)",
+  "review_status": "UNREVIEWED",
+  "tesseract_version": "5.5.4",
+  "tsv_parser_version": 2,
+  "languages": [
+    "vie",
+    "eng"
+  ],
+  "traineddata_sha256": {
+    "vie": "b6b49293d95d0b6dbd8780174627e82c75be957b6f4ed9862155540d6b00bb45",
+    "eng": "8280aed0782fe27257a68ea10fe7ef324ca0f8d85bd2fd145d1c2b560bcb66ba"
+  },
+  "ocr_engine_mode": 1,
+  "page_segmentation_mode": 3,
+  "thread_limit": 1,
+  "page": 12,
+  "lines": [
+    {
+      "bbox": [
+        [
+          671.0,
+          145.0
+        ],
+        [
+          690.0,
+          145.0
+        ],
+        [
+          690.0,
+          161.0
+        ],
+        [
+          671.0,
+          161.0
+        ]
+      ],
+      "text": "12",
+      "confidence": 0.96539383
+    },
+    {
+      "bbox": [
+        [
+          334.0,
+          204.0
+        ],
+        [
+          1081.0,
+          204.0
+        ],
+        [
+          1081.0,
+          264.0
+        ],
+        [
+          334.0,
+          264.0
+        ]
+      ],
+      "text": "©), Nguyên liệu, vật tư, linh kiện nhập khẩu được sử dụng đê gia công,",
+      "confidence": 0.9281157526666667
+    },
+    {
+      "bbox": [
+        [
+          285.0,
+          245.0
+        ],
+        [
+          612.0,
+          245.0
+        ],
+        [
+          612.0,
+          280.0
+        ],
+        [
+          285.0,
+          280.0
+        ]
+      ],
+      "text": "sản xuất sản phẩm đã xuất khẩu.",
+      "confidence": 0.9616991414285714
+    },
+    {
+      "bbox": [
+        [
+          336.0,
+          274.0
+        ],
+        [
+          1085.0,
+          274.0
+        ],
+        [
+          1085.0,
+          324.0
+        ],
+        [
+          336.0,
+          324.0
+        ]
+      ],
+      "text": "Trị giá hoặc lượng nguyên liệu, vật tư, linh kiện nhập khẩu được miễn",
+      "confidence": 0.9578197364285714
+    },
+    {
+      "bbox": [
+        [
+          283.0,
+          302.0
+        ],
+        [
+          1086.0,
+          302.0
+        ],
+        [
+          1086.0,
+          363.0
+        ],
+        [
+          283.0,
+          363.0
+        ]
+      ],
+      "text": "thuế là giá hoặc ong nguyên liệu, vật tư, linh kiện nhập khẩu thực tế",
+      "confidence": 0.83309041
+    },
+    {
+      "bbox": [
+        [
+          288.0,
+          338.0
+        ],
+        [
+          1087.0,
+          338.0
+        ],
+        [
+          1087.0,
+          390.0
+        ],
+        [
+          288.0,
+          390.0
+        ]
+      ],
+      "text": "được sử dụng để sản xuất sản phẩm gia công thực tế xuất khẩu, được xác định",
+      "confidence": 0.9653249494117646
+    },
+    {
+      "bbox": [
+        [
+          284.0,
+          363.0
+        ],
+        [
+          1088.0,
+          363.0
+        ],
+        [
+          1088.0,
+          420.0
+        ],
+        [
+          284.0,
+          420.0
+        ]
+      ],
+      "text": "khi quyết toán việc quản lý, sử dụng nguyên liệu, vật tư khập khẩu để gia",
+      "confidence": 0.961280144375
+    },
+    {
+      "bbox": [
+        [
+          289.0,
+          403.0
+        ],
+        [
+          967.0,
+          403.0
+        ],
+        [
+          967.0,
+          443.0
+        ],
+        [
+          289.0,
+          443.0
+        ]
+      ],
+      "text": "công sản phẩm xuất khẩu theo quy định của pháp luật về hải quan.",
+      "confidence": 0.9639149899999999
+    },
+    {
+      "bbox": [
+        [
+          338.0,
+          444.0
+        ],
+        [
+          1090.0,
+          444.0
+        ],
+        [
+          1090.0,
+          493.0
+        ],
+        [
+          338.0,
+          493.0
+        ]
+      ],
+      "text": "Khi quyết toán, người nộp thuế có trách nhiệm kê khai chính xác, trung",
+      "confidence": 0.9670882085714285
+    },
+    {
+      "bbox": [
+        [
+          291.0,
+          469.0
+        ],
+        [
+          1091.0,
+          469.0
+        ],
+        [
+          1091.0,
+          523.0
+        ],
+        [
+          291.0,
+          523.0
+        ]
+      ],
+      "text": "thực trị giá hoặc lượng \"nguyên liệu, vật tư, linh kiện xuất khẩu thực tế sử",
+      "confidence": 0.930169883125
+    },
+    {
+      "bbox": [
+        [
+          292.0,
+          498.0
+        ],
+        [
+          1091.0,
+          498.0
+        ],
+        [
+          1091.0,
+          546.0
+        ],
+        [
+          292.0,
+          546.0
+        ]
+      ],
+      "text": "dụng để sản xuất sản phẩm gia công thực tế nhập khẩu đã được miễn thuế khi",
+      "confidence": 0.9573768841176471
+    },
+    {
+      "bbox": [
+        [
+          293.0,
+          548.0
+        ],
+        [
+          505.0,
+          548.0
+        ],
+        [
+          505.0,
+          571.0
+        ],
+        [
+          293.0,
+          571.0
+        ]
+      ],
+      "text": "làm thủ tục hải quan.",
+      "confidence": 0.968812562
+    },
+    {
+      "bbox": [
+        [
+          345.0,
+          577.0
+        ],
+        [
+          1094.0,
+          577.0
+        ],
+        [
+          1094.0,
+          622.0
+        ],
+        [
+          345.0,
+          622.0
+        ]
+      ],
+      "text": "3. Thiết bị, máy móc, nguyên liệu, vật tư, linh kiện, sản phẩm gia công",
+      "confidence": 0.955410244
+    },
+    {
+      "bbox": [
+        [
+          294.0,
+          605.0
+        ],
+        [
+          1094.0,
+          605.0
+        ],
+        [
+          1094.0,
+          653.0
+        ],
+        [
+          294.0,
+          653.0
+        ]
+      ],
+      "text": "do phía nước ngoài thanh toán thay tiền công gia công phải nộp thuế nhập",
+      "confidence": 0.9693410433333334
+    },
+    {
+      "bbox": [
+        [
+          294.0,
+          649.0
+        ],
+        [
+          496.0,
+          649.0
+        ],
+        [
+          496.0,
+          675.0
+        ],
+        [
+          294.0,
+          675.0
+        ]
+      ],
+      "text": "khẩu theo quy định.",
+      "confidence": 0.9370418575000001
+    },
+    {
+      "bbox": [
+        [
+          346.0,
+          681.0
+        ],
+        [
+          1096.0,
+          681.0
+        ],
+        [
+          1096.0,
+          727.0
+        ],
+        [
+          346.0,
+          727.0
+        ]
+      ],
+      "text": "4. Phế liệu, phế phẩm và nguyên liệu, vật tư dư thừa đã nhập khẩu dé gia",
+      "confidence": 0.9549280194117649
+    },
+    {
+      "bbox": [
+        [
+          296.0,
+          705.0
+        ],
+        [
+          1095.0,
+          705.0
+        ],
+        [
+          1095.0,
+          755.0
+        ],
+        [
+          296.0,
+          755.0
+        ]
+      ],
+      "text": "công không quá 3% tổng lượng c của từng nguyên liệu, vật tư thực nhập khẩu",
+      "confidence": 0.961794275625
+    },
+    {
+      "bbox": [
+        [
+          295.0,
+          743.0
+        ],
+        [
+          1096.0,
+          743.0
+        ],
+        [
+          1096.0,
+          781.0
+        ],
+        [
+          295.0,
+          781.0
+        ]
+      ],
+      "text": "theo hợp đồng gia công được miễn thuế nhập khẩu khi tiêu thụ nội địa, nhưng",
+      "confidence": 0.967243395
+    },
+    {
+      "bbox": [
+        [
+          296.0,
+          769.0
+        ],
+        [
+          1096.0,
+          769.0
+        ],
+        [
+          1096.0,
+          811.0
+        ],
+        [
+          296.0,
+          811.0
+        ]
+      ],
+      "text": "phải kê khai nộp thuế giá trị gia tăng, thuế tiêu thụ đặc biệt, thuế bảo vệ môi",
+      "confidence": 0.968145896111111
+    },
+    {
+      "bbox": [
+        [
+          296.0,
+          806.0
+        ],
+        [
+          684.0,
+          806.0
+        ],
+        [
+          684.0,
+          834.0
+        ],
+        [
+          296.0,
+          834.0
+        ]
+      ],
+      "text": "trường (nếu có) cho cơ quan hải quan.",
+      "confidence": 0.9639169975
+    },
+    {
+      "bbox": [
+        [
+          349.0,
+          844.0
+        ],
+        [
+          1098.0,
+          844.0
+        ],
+        [
+          1098.0,
+          878.0
+        ],
+        [
+          349.0,
+          878.0
+        ]
+      ],
+      "text": "5. Hồ sơ, thủ tục miễn thuế thực hiện theo quy định tại Điều 31 Nghị",
+      "confidence": 0.9679492525000001
+    },
+    {
+      "bbox": [
+        [
+          297.0,
+          886.0
+        ],
+        [
+          390.0,
+          886.0
+        ],
+        [
+          390.0,
+          908.0
+        ],
+        [
+          297.0,
+          908.0
+        ]
+      ],
+      "text": "định này.",
+      "confidence": 0.969402965
+    },
+    {
+      "bbox": [
+        [
+          348.0,
+          921.0
+        ],
+        [
+          1098.0,
+          921.0
+        ],
+        [
+          1098.0,
+          951.0
+        ],
+        [
+          348.0,
+          951.0
+        ]
+      ],
+      "text": "Điều 11. Miễn thuế đối với hàng hóa xuất khẩu để gia công, sản",
+      "confidence": 0.9584602628571429
+    },
+    {
+      "bbox": [
+        [
+          299.0,
+          954.0
+        ],
+        [
+          578.0,
+          954.0
+        ],
+        [
+          578.0,
+          984.0
+        ],
+        [
+          299.0,
+          984.0
+        ]
+      ],
+      "text": "phẩm gia công nhập khẩu",
+      "confidence": 0.966995742
+    },
+    {
+      "bbox": [
+        [
+          352.0,
+          995.0
+        ],
+        [
+          1098.0,
+          995.0
+        ],
+        [
+          1098.0,
+          1032.0
+        ],
+        [
+          352.0,
+          1032.0
+        ]
+      ],
+      "text": "1. Hàng hóa xuất khẩu để gia công, sản phẩm gia công nhập khẩu theo",
+      "confidence": 0.9312836659999999
+    },
+    {
+      "bbox": [
+        [
+          298.0,
+          1023.0
+        ],
+        [
+          1099.0,
+          1023.0
+        ],
+        [
+          1099.0,
+          1064.0
+        ],
+        [
+          298.0,
+          1064.0
+        ]
+      ],
+      "text": "hợp đồng gia công được miễn thuế xuất khẩu, thuế nhập khẩu theo quy định",
+      "confidence": 0.9651934
+    },
+    {
+      "bbox": [
+        [
+          297.0,
+          1054.0
+        ],
+        [
+          943.0,
+          1054.0
+        ],
+        [
+          943.0,
+          1085.0
+        ],
+        [
+          297.0,
+          1085.0
+        ]
+      ],
+      "text": "tại khoản 6 Điều 16 Luật thuế xuất khẩu, thuế nhập khẩu, gồm:",
+      "confidence": 0.963418066923077
+    },
+    {
+      "bbox": [
+        [
+          350.0,
+          1097.0
+        ],
+        [
+          787.0,
+          1097.0
+        ],
+        [
+          787.0,
+          1134.0
+        ],
+        [
+          350.0,
+          1134.0
+        ]
+      ],
+      "text": "a) Nguyên liệu, vật tư, linh kiện xuất khẩu.",
+      "confidence": 0.9584029055555555
+    },
+    {
+      "bbox": [
+        [
+          350.0,
+          1147.0
+        ],
+        [
+          1100.0,
+          1147.0
+        ],
+        [
+          1100.0,
+          1189.0
+        ],
+        [
+          350.0,
+          1189.0
+        ]
+      ],
+      "text": "Trị giá hoặc lượng nguyên liệu, vật tư, linh kiện đã xuất khẩu tương ứng",
+      "confidence": 0.9617430053333333
+    },
+    {
+      "bbox": [
+        [
+          298.0,
+          1175.0
+        ],
+        [
+          1099.0,
+          1175.0
+        ],
+        [
+          1099.0,
+          1211.0
+        ],
+        [
+          298.0,
+          1211.0
+        ]
+      ],
+      "text": "với san phẩm gia công không nhập khẩu trở lại phải chịu thuế xuất khẩu theo",
+      "confidence": 0.9611451775000001
+    },
+    {
+      "bbox": [
+        [
+          298.0,
+          1205.0
+        ],
+        [
+          895.0,
+          1205.0
+        ],
+        [
+          895.0,
+          1234.0
+        ],
+        [
+          298.0,
+          1234.0
+        ]
+      ],
+      "text": "mức thuế suất của nguyên liệu, vật tư, linh kiện xuất khẩu.",
+      "confidence": 0.9610389766666667
+    },
+    {
+      "bbox": [
+        [
+          350.0,
+          1251.0
+        ],
+        [
+          1098.0,
+          1251.0
+        ],
+        [
+          1098.0,
+          1285.0
+        ],
+        [
+          350.0,
+          1285.0
+        ]
+      ],
+      "text": "Hàng hóa xuất khẩu để gia công là tài nguyên, khoáng sản, sản phẩm có",
+      "confidence": 0.9580158893333334
+    },
+    {
+      "bbox": [
+        [
+          298.0,
+          1280.0
+        ],
+        [
+          1100.0,
+          1280.0
+        ],
+        [
+          1100.0,
+          1324.0
+        ],
+        [
+          298.0,
+          1324.0
+        ]
+      ],
+      "text": "tổng giá trị tài nguyên, khoáng sản cộng với chỉ phí năng lượng chiếm từ 51%",
+      "confidence": 0.95076984875
+    },
+    {
+      "bbox": [
+        [
+          299.0,
+          1306.0
+        ],
+        [
+          1100.0,
+          1306.0
+        ],
+        [
+          1100.0,
+          1346.0
+        ],
+        [
+          299.0,
+          1346.0
+        ]
+      ],
+      "text": "giá thành sản phẩm trở lên và hàng hóa. xuất khẩu để gia công thuộc đối tượng",
+      "confidence": 0.94162242
+    },
+    {
+      "bbox": [
+        [
+          299.0,
+          1338.0
+        ],
+        [
+          881.0,
+          1338.0
+        ],
+        [
+          881.0,
+          1367.0
+        ],
+        [
+          299.0,
+          1367.0
+        ]
+      ],
+      "text": "chịu thuế xuất khẩu thì không được miễn thuế xuất khẩu.",
+      "confidence": 0.9659420918181819
+    },
+    {
+      "bbox": [
+        [
+          350.0,
+          1385.0
+        ],
+        [
+          1100.0,
+          1385.0
+        ],
+        [
+          1100.0,
+          1422.0
+        ],
+        [
+          350.0,
+          1422.0
+        ]
+      ],
+      "text": "Việc xác định sản phẩm có tổng giá trị tài nguyên, khoáng sản cộng với",
+      "confidence": 0.9669854013333334
+    },
+    {
+      "bbox": [
+        [
+          300.0,
+          1414.0
+        ],
+        [
+          1100.0,
+          1414.0
+        ],
+        [
+          1100.0,
+          1454.0
+        ],
+        [
+          300.0,
+          1454.0
+        ]
+      ],
+      "text": "chi phí năng lượng dưới 51% giá thành sản phẩm căn cứ vào quy định về xác",
+      "confidence": 0.9667266482352942
+    },
+    {
+      "bbox": [
+        [
+          300.0,
+          1444.0
+        ],
+        [
+          1101.0,
+          1444.0
+        ],
+        [
+          1101.0,
+          1473.0
+        ],
+        [
+          300.0,
+          1473.0
+        ]
+      ],
+      "text": "định sản phẩm có tổng giá trị tài nguyên, khoáng sản cộng với chỉ phí năng",
+      "confidence": 0.9646003774999999
+    }
+  ]
+}

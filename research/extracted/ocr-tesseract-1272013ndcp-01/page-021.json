@@ -1,0 +1,861 @@
+{
+  "document_id": "127/2013/NĐ-CP",
+  "source_file": "../../legal-sources/1272013ndcp/01.pdf",
+  "source_sha256": "6b970da9c19ccae81ecbc3385fb53f1fa2375e93ad03643e1f9b4e43ed87e573",
+  "page_count": 49,
+  "render_dpi": 150,
+  "engine": "Tesseract 5.5.4 (vie+eng; OEM 1; PSM 3)",
+  "review_status": "UNREVIEWED",
+  "tesseract_version": "5.5.4",
+  "tsv_parser_version": 2,
+  "languages": [
+    "vie",
+    "eng"
+  ],
+  "traineddata_sha256": {
+    "vie": "b6b49293d95d0b6dbd8780174627e82c75be957b6f4ed9862155540d6b00bb45",
+    "eng": "8280aed0782fe27257a68ea10fe7ef324ca0f8d85bd2fd145d1c2b560bcb66ba"
+  },
+  "ocr_engine_mode": 1,
+  "page_segmentation_mode": 3,
+  "thread_limit": 1,
+  "page": 21,
+  "lines": [
+    {
+      "bbox": [
+        [
+          336.0,
+          212.0
+        ],
+        [
+          1080.0,
+          212.0
+        ],
+        [
+          1080.0,
+          242.0
+        ],
+        [
+          336.0,
+          242.0
+        ]
+      ],
+      "text": "Việc giao quyền xử phạt thực hiện theo quy định tại Điều 54 Luật xử lý",
+      "confidence": 0.968005723125
+    },
+    {
+      "bbox": [
+        [
+          285.0,
+          248.0
+        ],
+        [
+          490.0,
+          248.0
+        ],
+        [
+          490.0,
+          272.0
+        ],
+        [
+          285.0,
+          272.0
+        ]
+      ],
+      "text": "vi phạm hành chính.",
+      "confidence": 0.9590412700000001
+    },
+    {
+      "bbox": [
+        [
+          335.0,
+          290.0
+        ],
+        [
+          1080.0,
+          290.0
+        ],
+        [
+          1080.0,
+          320.0
+        ],
+        [
+          335.0,
+          320.0
+        ]
+      ],
+      "text": "Điều 21. Nguyên tắc xác định và phân định thẩm quyền xử phạt vi",
+      "confidence": 0.9680547164285714
+    },
+    {
+      "bbox": [
+        [
+          285.0,
+          325.0
+        ],
+        [
+          926.0,
+          325.0
+        ],
+        [
+          926.0,
+          350.0
+        ],
+        [
+          285.0,
+          350.0
+        ]
+      ],
+      "text": "phạm hành chính và áp dụng biện pháp khắc phục hậu quả",
+      "confidence": 0.9485082616666667
+    },
+    {
+      "bbox": [
+        [
+          337.0,
+          366.0
+        ],
+        [
+          1079.0,
+          366.0
+        ],
+        [
+          1079.0,
+          407.0
+        ],
+        [
+          337.0,
+          407.0
+        ]
+      ],
+      "text": "1. Thẩm quyền xử phạt vi phạm hành chính của những người được quy",
+      "confidence": 0.9416567885714286
+    },
+    {
+      "bbox": [
+        [
+          284.0,
+          401.0
+        ],
+        [
+          1078.0,
+          401.0
+        ],
+        [
+          1078.0,
+          426.0
+        ],
+        [
+          284.0,
+          426.0
+        ]
+      ],
+      "text": "định tại Điều 19 Nghị định này là thắm quyên áp dụng đôi với một hành vi vi",
+      "confidence": 0.9530868955555555
+    },
+    {
+      "bbox": [
+        [
+          282.0,
+          432.0
+        ],
+        [
+          463.0,
+          432.0
+        ],
+        [
+          463.0,
+          456.0
+        ],
+        [
+          282.0,
+          456.0
+        ]
+      ],
+      "text": "phạm hành chính.",
+      "confidence": 0.9626161933333333
+    },
+    {
+      "bbox": [
+        [
+          334.0,
+          475.0
+        ],
+        [
+          1078.0,
+          475.0
+        ],
+        [
+          1078.0,
+          515.0
+        ],
+        [
+          334.0,
+          515.0
+        ]
+      ],
+      "text": "2 Trong trường hợp phạt tiền, thắm quyền xử phạt được xác định căn cứ vào",
+      "confidence": 0.9478574218750001
+    },
+    {
+      "bbox": [
+        [
+          282.0,
+          503.0
+        ],
+        [
+          1025.0,
+          503.0
+        ],
+        [
+          1025.0,
+          533.0
+        ],
+        [
+          282.0,
+          533.0
+        ]
+      ],
+      "text": "mức tối đa của khung tiền phạt quy định đồi với từng hành vi vi phạm cụ thé.",
+      "confidence": 0.9460009422222222
+    },
+    {
+      "bbox": [
+        [
+          334.0,
+          552.0
+        ],
+        [
+          1078.0,
+          552.0
+        ],
+        [
+          1078.0,
+          595.0
+        ],
+        [
+          334.0,
+          595.0
+        ]
+      ],
+      "text": "3. Trong trường hợp vi phạm hành chính thuộc thẳm quyền xử phạt của",
+      "confidence": 0.9542346700000001
+    },
+    {
+      "bbox": [
+        [
+          282.0,
+          580.0
+        ],
+        [
+          1077.0,
+          580.0
+        ],
+        [
+          1077.0,
+          610.0
+        ],
+        [
+          282.0,
+          610.0
+        ]
+      ],
+      "text": "nhiều người, thì việc xử phạt vi phạm hành chính do người thụ lý đầu tiên",
+      "confidence": 0.96786764
+    },
+    {
+      "bbox": [
+        [
+          281.0,
+          615.0
+        ],
+        [
+          381.0,
+          615.0
+        ],
+        [
+          381.0,
+          637.0
+        ],
+        [
+          281.0,
+          637.0
+        ]
+      ],
+      "text": "thực hiện.",
+      "confidence": 0.9682148
+    },
+    {
+      "bbox": [
+        [
+          332.0,
+          657.0
+        ],
+        [
+          1076.0,
+          657.0
+        ],
+        [
+          1076.0,
+          691.0
+        ],
+        [
+          332.0,
+          691.0
+        ]
+      ],
+      "text": "4. Trường hợp xử phạt một người thực hiện nhiều hành vi vi phạm hành",
+      "confidence": 0.9669738959999999
+    },
+    {
+      "bbox": [
+        [
+          281.0,
+          691.0
+        ],
+        [
+          1076.0,
+          691.0
+        ],
+        [
+          1076.0,
+          721.0
+        ],
+        [
+          281.0,
+          721.0
+        ]
+      ],
+      "text": "chính thì thâm quyên xử phạt vi phạm hành chính được xác định theo nguyên",
+      "confidence": 0.9667743326666667
+    },
+    {
+      "bbox": [
+        [
+          281.0,
+          721.0
+        ],
+        [
+          399.0,
+          721.0
+        ],
+        [
+          399.0,
+          744.0
+        ],
+        [
+          281.0,
+          744.0
+        ]
+      ],
+      "text": "tac sau đây:",
+      "confidence": 0.9584194433333334
+    },
+    {
+      "bbox": [
+        [
+          332.0,
+          763.0
+        ],
+        [
+          1076.0,
+          763.0
+        ],
+        [
+          1076.0,
+          796.0
+        ],
+        [
+          332.0,
+          796.0
+        ]
+      ],
+      "text": "a) Nếu hình thức, mức xử phạt, trị giá tang vật, phương tiện vi phạm",
+      "confidence": 0.9634604653333332
+    },
+    {
+      "bbox": [
+        [
+          280.0,
+          791.0
+        ],
+        [
+          1074.0,
+          791.0
+        ],
+        [
+          1074.0,
+          824.0
+        ],
+        [
+          280.0,
+          824.0
+        ]
+      ],
+      "text": "hành chính bị tịch thu, biện pháp khắc phục hậu quả được quy định đối với",
+      "confidence": 0.9622475625
+    },
+    {
+      "bbox": [
+        [
+          280.0,
+          820.0
+        ],
+        [
+          1074.0,
+          820.0
+        ],
+        [
+          1074.0,
+          857.0
+        ],
+        [
+          280.0,
+          857.0
+        ]
+      ],
+      "text": "từng hành vi đều thuộc thẩm quyền của người xử phạt vi phạm hành chính thì",
+      "confidence": 0.966972155625
+    },
+    {
+      "bbox": [
+        [
+          280.0,
+          849.0
+        ],
+        [
+          690.0,
+          849.0
+        ],
+        [
+          690.0,
+          878.0
+        ],
+        [
+          280.0,
+          878.0
+        ]
+      ],
+      "text": "thẩm quyền xử phạt vẫn thuộc người đó;",
+      "confidence": 0.96875810875
+    },
+    {
+      "bbox": [
+        [
+          331.0,
+          898.0
+        ],
+        [
+          1074.0,
+          898.0
+        ],
+        [
+          1074.0,
+          930.0
+        ],
+        [
+          331.0,
+          930.0
+        ]
+      ],
+      "text": "b) Nếu hình thức, mức xử phạt, trị giá tang vật, phương tiện vi phạm",
+      "confidence": 0.9630542346666666
+    },
+    {
+      "bbox": [
+        [
+          280.0,
+          921.0
+        ],
+        [
+          1072.0,
+          921.0
+        ],
+        [
+          1072.0,
+          964.0
+        ],
+        [
+          280.0,
+          964.0
+        ]
+      ],
+      "text": "hành chính bị tịch thu, biện pháp khắc phục hậu quả được quy định đối với",
+      "confidence": 0.958973984375
+    },
+    {
+      "bbox": [
+        [
+          279.0,
+          954.0
+        ],
+        [
+          1074.0,
+          954.0
+        ],
+        [
+          1074.0,
+          987.0
+        ],
+        [
+          279.0,
+          987.0
+        ]
+      ],
+      "text": "một trong các hành vi vượt quá thẩm quyền của người xử phạt vi phạm hành",
+      "confidence": 0.9675768843749999
+    },
+    {
+      "bbox": [
+        [
+          280.0,
+          982.0
+        ],
+        [
+          1044.0,
+          982.0
+        ],
+        [
+          1044.0,
+          1011.0
+        ],
+        [
+          280.0,
+          1011.0
+        ]
+      ],
+      "text": "chính thì người đó phải chuyên vụ vi phạm đến cấp có thẩm quyền xử phạt;",
+      "confidence": 0.963763336875
+    },
+    {
+      "bbox": [
+        [
+          331.0,
+          1026.0
+        ],
+        [
+          1073.0,
+          1026.0
+        ],
+        [
+          1073.0,
+          1063.0
+        ],
+        [
+          331.0,
+          1063.0
+        ]
+      ],
+      "text": "c) Nếu hành vi thuộc thẩm quyền xử phạt vi phạm hành chính của nhiều",
+      "confidence": 0.9641823886666665
+    },
+    {
+      "bbox": [
+        [
+          279.0,
+          1059.0
+        ],
+        [
+          1073.0,
+          1059.0
+        ],
+        [
+          1073.0,
+          1093.0
+        ],
+        [
+          279.0,
+          1093.0
+        ]
+      ],
+      "text": "người thuộc các ngành khác nhau, thì thẩm quyền xử phạt thuộc Chủ tịch Ủy",
+      "confidence": 0.9652176973333333
+    },
+    {
+      "bbox": [
+        [
+          279.0,
+          1089.0
+        ],
+        [
+          895.0,
+          1089.0
+        ],
+        [
+          895.0,
+          1117.0
+        ],
+        [
+          279.0,
+          1117.0
+        ]
+      ],
+      "text": "ban nhân dân cấp có thẳm quyền xử phạt nơi xảy ra vi phạm.",
+      "confidence": 0.9429006842857143
+    },
+    {
+      "bbox": [
+        [
+          331.0,
+          1136.0
+        ],
+        [
+          1073.0,
+          1136.0
+        ],
+        [
+          1073.0,
+          1171.0
+        ],
+        [
+          331.0,
+          1171.0
+        ]
+      ],
+      "text": "5. Mọi hành vi vi phạm pháp luật về hải quan xảy ra trên đất liền, vùng",
+      "confidence": 0.9578123647058823
+    },
+    {
+      "bbox": [
+        [
+          280.0,
+          1165.0
+        ],
+        [
+          1072.0,
+          1165.0
+        ],
+        [
+          1072.0,
+          1196.0
+        ],
+        [
+          280.0,
+          1196.0
+        ]
+      ],
+      "text": "lãnh hải, tiếp giáp lãnh hải, thềm lục địa, vùng đặc quyền kinh tế của nước",
+      "confidence": 0.9691084562500001
+    },
+    {
+      "bbox": [
+        [
+          280.0,
+          1199.0
+        ],
+        [
+          1072.0,
+          1199.0
+        ],
+        [
+          1072.0,
+          1233.0
+        ],
+        [
+          280.0,
+          1233.0
+        ]
+      ],
+      "text": "Cộng hoà xã hội chủ nghĩa Việt Nam thuộc địa bàn quản lý của hải quan nơi",
+      "confidence": 0.9692864352941176
+    },
+    {
+      "bbox": [
+        [
+          279.0,
+          1223.0
+        ],
+        [
+          1072.0,
+          1223.0
+        ],
+        [
+          1072.0,
+          1264.0
+        ],
+        [
+          279.0,
+          1264.0
+        ]
+      ],
+      "text": "nào thì hải quan ở nơi đó có trách nhiệm xử phạt theo thẩm quyền quy định",
+      "confidence": 0.95741206
+    },
+    {
+      "bbox": [
+        [
+          279.0,
+          1253.0
+        ],
+        [
+          1072.0,
+          1253.0
+        ],
+        [
+          1072.0,
+          1286.0
+        ],
+        [
+          279.0,
+          1286.0
+        ]
+      ],
+      "text": "tại Nghị định này; trường hợp do Cục Điều tra chống buôn lậu, Cục Kiểm tra",
+      "confidence": 0.967147703125
+    },
+    {
+      "bbox": [
+        [
+          280.0,
+          1281.0
+        ],
+        [
+          977.0,
+          1281.0
+        ],
+        [
+          977.0,
+          1312.0
+        ],
+        [
+          280.0,
+          1312.0
+        ]
+      ],
+      "text": "sau thông quan phát hiện thì thực hiện việc xử phạt theo thâm quyền.",
+      "confidence": 0.9647571728571428
+    },
+    {
+      "bbox": [
+        [
+          331.0,
+          1330.0
+        ],
+        [
+          1069.0,
+          1330.0
+        ],
+        [
+          1069.0,
+          1365.0
+        ],
+        [
+          331.0,
+          1365.0
+        ]
+      ],
+      "text": "6. Ở những địa điểm dọc biên giới quốc gia, nơi chưa có tổ chức hải",
+      "confidence": 0.94885367375
+    },
+    {
+      "bbox": [
+        [
+          280.0,
+          1360.0
+        ],
+        [
+          1071.0,
+          1360.0
+        ],
+        [
+          1071.0,
+          1396.0
+        ],
+        [
+          280.0,
+          1396.0
+        ]
+      ],
+      "text": "quan thì Bộ đội Biên phòng, Cảnh sát biển đóng tại địa bàn đó có quyền xử",
+      "confidence": 0.9675665235294117
+    },
+    {
+      "bbox": [
+        [
+          278.0,
+          1391.0
+        ],
+        [
+          1070.0,
+          1391.0
+        ],
+        [
+          1070.0,
+          1427.0
+        ],
+        [
+          278.0,
+          1427.0
+        ]
+      ],
+      "text": "phạt theo quy định tại Điều 40 và Điều 41 của Luật xử lý vi phạm hành chính",
+      "confidence": 0.967985838888889
+    },
+    {
+      "bbox": [
+        [
+          279.0,
+          1422.0
+        ],
+        [
+          1068.0,
+          1422.0
+        ],
+        [
+          1068.0,
+          1464.0
+        ],
+        [
+          279.0,
+          1464.0
+        ]
+      ],
+      "text": "đối với các hành vi vì phạm hành chính trong lĩnh vực hải quan quy định tại",
+      "confidence": 0.9557152188235294
+    },
+    {
+      "bbox": [
+        [
+          279.0,
+          1451.0
+        ],
+        [
+          515.0,
+          1451.0
+        ],
+        [
+          515.0,
+          1479.0
+        ],
+        [
+          279.0,
+          1479.0
+        ]
+      ],
+      "text": "Điều 12 Nghị định này.",
+      "confidence": 0.9686409180000001
+    },
+    {
+      "bbox": [
+        [
+          1049.0,
+          1508.0
+        ],
+        [
+          1066.0,
+          1508.0
+        ],
+        [
+          1066.0,
+          1524.0
+        ],
+        [
+          1049.0,
+          1524.0
+        ]
+      ],
+      "text": "21",
+      "confidence": 0.96988342
+    }
+  ]
+}

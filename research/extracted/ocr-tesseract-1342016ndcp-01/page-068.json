@@ -1,0 +1,311 @@
+{
+  "document_id": "134/2016/NĐ-CP",
+  "source_file": "../../legal-sources/1342016ndcp/01.pdf",
+  "source_sha256": "4fe3832d278d03e6ab53c064c6aa3c60063d372570eaa6b57427b0bd252e5460",
+  "page_count": 78,
+  "render_dpi": 150,
+  "engine": "Tesseract 5.5.4 (vie+eng; OEM 1; PSM 3)",
+  "review_status": "UNREVIEWED",
+  "tesseract_version": "5.5.4",
+  "tsv_parser_version": 2,
+  "languages": [
+    "vie",
+    "eng"
+  ],
+  "traineddata_sha256": {
+    "vie": "b6b49293d95d0b6dbd8780174627e82c75be957b6f4ed9862155540d6b00bb45",
+    "eng": "8280aed0782fe27257a68ea10fe7ef324ca0f8d85bd2fd145d1c2b560bcb66ba"
+  },
+  "ocr_engine_mode": 1,
+  "page_segmentation_mode": 3,
+  "thread_limit": 1,
+  "page": 68,
+  "lines": [
+    {
+      "bbox": [
+        [
+          672.0,
+          153.0
+        ],
+        [
+          681.0,
+          153.0
+        ],
+        [
+          681.0,
+          168.0
+        ],
+        [
+          672.0,
+          168.0
+        ]
+      ],
+      "text": "8",
+      "confidence": 0.94511818
+    },
+    {
+      "bbox": [
+        [
+          330.0,
+          205.0
+        ],
+        [
+          1080.0,
+          205.0
+        ],
+        [
+          1080.0,
+          247.0
+        ],
+        [
+          330.0,
+          247.0
+        ]
+      ],
+      "text": "Tổ chức/cá nhân cam kết sử dụng hàng hóa nhập khẩu đúng mục đích đã",
+      "confidence": 0.9586979773333333
+    },
+    {
+      "bbox": [
+        [
+          281.0,
+          234.0
+        ],
+        [
+          1080.0,
+          234.0
+        ],
+        [
+          1080.0,
+          282.0
+        ],
+        [
+          281.0,
+          282.0
+        ]
+      ],
+      "text": "được miễn thuế. Tổ chức/cá nhân sẽ thực hiện đúng quy định hiện hành về",
+      "confidence": 0.9565601313333333
+    },
+    {
+      "bbox": [
+        [
+          281.0,
+          260.0
+        ],
+        [
+          1070.0,
+          260.0
+        ],
+        [
+          1070.0,
+          308.0
+        ],
+        [
+          281.0,
+          308.0
+        ]
+      ],
+      "text": "xuất nhập khẩu hàng hóa và chịu trách nhiệm trước pháp luật về cam kết này.",
+      "confidence": 0.967276578125
+    },
+    {
+      "bbox": [
+        [
+          333.0,
+          315.0
+        ],
+        [
+          1082.0,
+          315.0
+        ],
+        [
+          1082.0,
+          356.0
+        ],
+        [
+          333.0,
+          356.0
+        ]
+      ],
+      "text": "Tổ chức/cá nhân kính đề nghị Cơ quan hải quan ... tiếp nhận thông báo",
+      "confidence": 0.9395090326666667
+    },
+    {
+      "bbox": [
+        [
+          283.0,
+          344.0
+        ],
+        [
+          1083.0,
+          344.0
+        ],
+        [
+          1083.0,
+          385.0
+        ],
+        [
+          283.0,
+          385.0
+        ]
+      ],
+      "text": "danh mục hàng hóa miễn thuế dự kiến nhập khâu cho tổ chức/cá nhân theo",
+      "confidence": 0.9549025066666667
+    },
+    {
+      "bbox": [
+        [
+          284.0,
+          389.0
+        ],
+        [
+          498.0,
+          389.0
+        ],
+        [
+          498.0,
+          416.0
+        ],
+        [
+          284.0,
+          416.0
+        ]
+      ],
+      "text": "quy định hiện hành./.",
+      "confidence": 0.9458954224999999
+    },
+    {
+      "bbox": [
+        [
+          283.0,
+          436.0
+        ],
+        [
+          1119.0,
+          436.0
+        ],
+        [
+          1119.0,
+          488.0
+        ],
+        [
+          283.0,
+          488.0
+        ]
+      ],
+      "text": "Nơi nhận: NGƯỜI ĐẠI DIỆN THEO PHÁP LUẬT CỦA TÓ CHỨC",
+      "confidence": 0.9063632263636363
+    },
+    {
+      "bbox": [
+        [
+          285.0,
+          472.0
+        ],
+        [
+          1048.0,
+          472.0
+        ],
+        [
+          1048.0,
+          523.0
+        ],
+        [
+          285.0,
+          523.0
+        ]
+      ],
+      "text": "- Nhu trên; /CÁ NHÂN (hoặc người được ủy quyền)",
+      "confidence": 0.9247869710000001
+    },
+    {
+      "bbox": [
+        [
+          285.0,
+          502.0
+        ],
+        [
+          944.0,
+          502.0
+        ],
+        [
+          944.0,
+          528.0
+        ],
+        [
+          285.0,
+          528.0
+        ]
+      ],
+      "text": "hàn (Ký tên, đóng dâu)",
+      "confidence": 0.8119276579999999
+    },
+    {
+      "bbox": [
+        [
+          288.0,
+          691.0
+        ],
+        [
+          360.0,
+          691.0
+        ],
+        [
+          360.0,
+          706.0
+        ],
+        [
+          288.0,
+          706.0
+        ]
+      ],
+      "text": "Ghi chit:",
+      "confidence": 0.88015503
+    },
+    {
+      "bbox": [
+        [
+          320.0,
+          703.0
+        ],
+        [
+          813.0,
+          703.0
+        ],
+        [
+          813.0,
+          731.0
+        ],
+        [
+          320.0,
+          731.0
+        ]
+      ],
+      "text": "(1) : Ghi tên tổ chức/cá nhân thông báo danh mục miễn thuế;",
+      "confidence": 0.9407162530769232
+    },
+    {
+      "bbox": [
+        [
+          321.0,
+          724.0
+        ],
+        [
+          943.0,
+          724.0
+        ],
+        [
+          943.0,
+          754.0
+        ],
+        [
+          321.0,
+          754.0
+        ]
+      ],
+      "text": "(2) : Ghi tên co quan hải quan nơi tiếp nhận Thông báo danh mục miễn thuế.",
+      "confidence": 0.937237544117647
+    }
+  ]
+}

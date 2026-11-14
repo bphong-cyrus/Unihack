@@ -38,6 +38,27 @@ class TesseractTsvTests(unittest.TestCase):
         with self.assertRaises(BatchError):
             parse_tesseract_tsv(tsv)
 
+    def test_parse_tsv_preserves_leading_quote_without_merging_next_row(self):
+        tsv = (
+            'level\tpage_num\tblock_num\tpar_num\tline_num\tword_num\tleft\ttop\twidth\theight\tconf\ttext\n'
+            '5\t1\t1\t1\t1\t1\t10\t20\t30\t12\t90.0\t"Cơ\n'
+            '5\t1\t1\t1\t1\t2\t45\t20\t20\t12\t80.0\tquan\n'
+        )
+
+        lines = parse_tesseract_tsv(tsv)
+
+        self.assertEqual([line['text'] for line in lines], ['"Cơ quan'])
+
+    def test_parse_tsv_keeps_tabs_in_text_column(self):
+        tsv = (
+            'level\tpage_num\tblock_num\tpar_num\tline_num\tword_num\tleft\ttop\twidth\theight\tconf\ttext\n'
+            '5\t1\t1\t1\t1\t1\t10\t20\t30\t12\t90.0\tĐiều\t1\n'
+        )
+
+        lines = parse_tesseract_tsv(tsv)
+
+        self.assertEqual([line['text'] for line in lines], ['Điều\t1'])
+
 
 if __name__ == '__main__':
     unittest.main()

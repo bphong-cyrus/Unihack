@@ -1,0 +1,795 @@
+{
+  "document_id": "69/2018/NĐ-CP",
+  "source_file": "../../legal-sources/692018ndcp/01.pdf",
+  "source_sha256": "cfe9d66c02837d203a0781cb916273fa6c3c6151b52fc6becc6d1c006d96681e",
+  "page_count": 89,
+  "render_dpi": 150,
+  "engine": "Tesseract 5.5.4 (vie+eng; OEM 1; PSM 3)",
+  "review_status": "UNREVIEWED",
+  "tesseract_version": "5.5.4",
+  "tsv_parser_version": 2,
+  "languages": [
+    "vie",
+    "eng"
+  ],
+  "traineddata_sha256": {
+    "vie": "b6b49293d95d0b6dbd8780174627e82c75be957b6f4ed9862155540d6b00bb45",
+    "eng": "8280aed0782fe27257a68ea10fe7ef324ca0f8d85bd2fd145d1c2b560bcb66ba"
+  },
+  "ocr_engine_mode": 1,
+  "page_segmentation_mode": 3,
+  "thread_limit": 1,
+  "page": 45,
+  "lines": [
+    {
+      "bbox": [
+        [
+          657.0,
+          136.0
+        ],
+        [
+          677.0,
+          136.0
+        ],
+        [
+          677.0,
+          152.0
+        ],
+        [
+          657.0,
+          152.0
+        ]
+      ],
+      "text": "45",
+      "confidence": 0.9670192
+    },
+    {
+      "bbox": [
+        [
+          317.0,
+          197.0
+        ],
+        [
+          1073.0,
+          197.0
+        ],
+        [
+          1073.0,
+          227.0
+        ],
+        [
+          317.0,
+          227.0
+        ]
+      ],
+      "text": "2. Cơ quan nhà nước, tổ chức, cá nhân không được giao nhiệm vụ áp",
+      "confidence": 0.9679172466666667
+    },
+    {
+      "bbox": [
+        [
+          266.0,
+          227.0
+        ],
+        [
+          1071.0,
+          227.0
+        ],
+        [
+          1071.0,
+          269.0
+        ],
+        [
+          266.0,
+          269.0
+        ]
+      ],
+      "text": "dụng biện pháp quản lý nhà nước về ngoại thương theo quy định tại khoản 1",
+      "confidence": 0.953496761875
+    },
+    {
+      "bbox": [
+        [
+          266.0,
+          258.0
+        ],
+        [
+          1075.0,
+          258.0
+        ],
+        [
+          1075.0,
+          295.0
+        ],
+        [
+          266.0,
+          295.0
+        ]
+      ],
+      "text": "Điều này nếu nhận được thông tin về khả năng khởi kiện, thông báo của cơ",
+      "confidence": 0.9672145706249999
+    },
+    {
+      "bbox": [
+        [
+          266.0,
+          288.0
+        ],
+        [
+          1075.0,
+          288.0
+        ],
+        [
+          1075.0,
+          328.0
+        ],
+        [
+          266.0,
+          328.0
+        ]
+      ],
+      "text": "quan trọng tài hoặc cơ quan tài phán quốc tế có thẩm quyền hoặc thông báo từ",
+      "confidence": 0.9649046870588235
+    },
+    {
+      "bbox": [
+        [
+          266.0,
+          319.0
+        ],
+        [
+          1074.0,
+          319.0
+        ],
+        [
+          1074.0,
+          354.0
+        ],
+        [
+          266.0,
+          354.0
+        ]
+      ],
+      "text": "Chính phủ nước ngoài về việc khởi kiện vụ việc tranh chấp về áp dụng biện",
+      "confidence": 0.966379394375
+    },
+    {
+      "bbox": [
+        [
+          265.0,
+          350.0
+        ],
+        [
+          1074.0,
+          350.0
+        ],
+        [
+          1074.0,
+          393.0
+        ],
+        [
+          265.0,
+          393.0
+        ]
+      ],
+      "text": "pháp quản ly ngoại thương tai cơ quan trọng tài hoặc cơ quan tài phán quốc tế",
+      "confidence": 0.9638716929411764
+    },
+    {
+      "bbox": [
+        [
+          266.0,
+          386.0
+        ],
+        [
+          1075.0,
+          386.0
+        ],
+        [
+          1075.0,
+          417.0
+        ],
+        [
+          266.0,
+          417.0
+        ]
+      ],
+      "text": "có thẳm quyền phải thông báo bằng văn bản kèm theo bản sao toàn bộ thông",
+      "confidence": 0.945001101875
+    },
+    {
+      "bbox": [
+        [
+          265.0,
+          415.0
+        ],
+        [
+          1075.0,
+          415.0
+        ],
+        [
+          1075.0,
+          447.0
+        ],
+        [
+          265.0,
+          447.0
+        ]
+      ],
+      "text": "tin, tài liệu đã nhận trong thời hạn 3 ngày làm việc kể từ ngày nhận được",
+      "confidence": 0.9672301529411764
+    },
+    {
+      "bbox": [
+        [
+          266.0,
+          450.0
+        ],
+        [
+          725.0,
+          450.0
+        ],
+        [
+          725.0,
+          479.0
+        ],
+        [
+          266.0,
+          479.0
+        ]
+      ],
+      "text": "thông báo đó đến một trong các cơ quan sau:",
+      "confidence": 0.9684163429999999
+    },
+    {
+      "bbox": [
+        [
+          319.0,
+          503.0
+        ],
+        [
+          1075.0,
+          503.0
+        ],
+        [
+          1075.0,
+          544.0
+        ],
+        [
+          319.0,
+          544.0
+        ]
+      ],
+      "text": "a) Cơ quan, tô chức, cá nhân được giao nhiệm vụ áp dụng biện pháp",
+      "confidence": 0.9366047766666666
+    },
+    {
+      "bbox": [
+        [
+          267.0,
+          530.0
+        ],
+        [
+          994.0,
+          530.0
+        ],
+        [
+          994.0,
+          564.0
+        ],
+        [
+          267.0,
+          564.0
+        ]
+      ],
+      "text": "quản lý nhà nước về ngoại thương theo quy định tại khoản 1 Điều này.",
+      "confidence": 0.966354786
+    },
+    {
+      "bbox": [
+        [
+          319.0,
+          583.0
+        ],
+        [
+          1074.0,
+          583.0
+        ],
+        [
+          1074.0,
+          623.0
+        ],
+        [
+          319.0,
+          623.0
+        ]
+      ],
+      "text": "b) Cơ quan cấp trên trực tiếp và Cơ quan đầu mối nếu không xác định",
+      "confidence": 0.947183890625
+    },
+    {
+      "bbox": [
+        [
+          267.0,
+          619.0
+        ],
+        [
+          1075.0,
+          619.0
+        ],
+        [
+          1075.0,
+          659.0
+        ],
+        [
+          267.0,
+          659.0
+        ]
+      ],
+      "text": "được cơ quan, tổ chức, cá nhân được giao nhiệm vụ áp dụng biện pháp quản",
+      "confidence": 0.9673561525
+    },
+    {
+      "bbox": [
+        [
+          268.0,
+          646.0
+        ],
+        [
+          938.0,
+          646.0
+        ],
+        [
+          938.0,
+          680.0
+        ],
+        [
+          268.0,
+          680.0
+        ]
+      ],
+      "text": "lý nhà nước về ngoại thương theo quy định tại khoản 1 Điều này.",
+      "confidence": 0.967534495
+    },
+    {
+      "bbox": [
+        [
+          319.0,
+          698.0
+        ],
+        [
+          1076.0,
+          698.0
+        ],
+        [
+          1076.0,
+          739.0
+        ],
+        [
+          319.0,
+          739.0
+        ]
+      ],
+      "text": "3. Trong thời hạn 3 ngày làm việc kể từ ngày nhận được thông báo bằng",
+      "confidence": 0.96446373875
+    },
+    {
+      "bbox": [
+        [
+          267.0,
+          730.0
+        ],
+        [
+          1076.0,
+          730.0
+        ],
+        [
+          1076.0,
+          771.0
+        ],
+        [
+          267.0,
+          771.0
+        ]
+      ],
+      "text": "văn bản theo quy định tại khoản 2 Điều này hoặc thông báo bằng văn bản từ",
+      "confidence": 0.9656300488235294
+    },
+    {
+      "bbox": [
+        [
+          268.0,
+          761.0
+        ],
+        [
+          1075.0,
+          761.0
+        ],
+        [
+          1075.0,
+          795.0
+        ],
+        [
+          268.0,
+          795.0
+        ]
+      ],
+      "text": "nguồn khác, Cơ quan đầu mồi phải gửi văn bản kèm theo bản sao toàn bộ hồ",
+      "confidence": 0.9665891394117646
+    },
+    {
+      "bbox": [
+        [
+          268.0,
+          797.0
+        ],
+        [
+          731.0,
+          797.0
+        ],
+        [
+          731.0,
+          826.0
+        ],
+        [
+          268.0,
+          826.0
+        ]
+      ],
+      "text": "sơ nhận được đến một trong các cơ quan sau:",
+      "confidence": 0.9687148809999999
+    },
+    {
+      "bbox": [
+        [
+          320.0,
+          847.0
+        ],
+        [
+          1023.0,
+          847.0
+        ],
+        [
+          1023.0,
+          879.0
+        ],
+        [
+          320.0,
+          879.0
+        ]
+      ],
+      "text": "a) Cơ quan chủ trì theo quy định tại khoản 1 Điều 59 Nghị định này.",
+      "confidence": 0.9651197631249999
+    },
+    {
+      "bbox": [
+        [
+          320.0,
+          900.0
+        ],
+        [
+          1077.0,
+          900.0
+        ],
+        [
+          1077.0,
+          932.0
+        ],
+        [
+          320.0,
+          932.0
+        ]
+      ],
+      "text": "b) Văn phòng Chính phủ để trình Thủ tướng Chính phủ quyết định Cơ quan",
+      "confidence": 0.9649020833333334
+    },
+    {
+      "bbox": [
+        [
+          268.0,
+          931.0
+        ],
+        [
+          1015.0,
+          931.0
+        ],
+        [
+          1015.0,
+          963.0
+        ],
+        [
+          268.0,
+          963.0
+        ]
+      ],
+      "text": "chủ trì theo quy định tại khoản 2, khoản 3, khoản 4 Điều 59 Nghị định này.",
+      "confidence": 0.967900871764706
+    },
+    {
+      "bbox": [
+        [
+          321.0,
+          985.0
+        ],
+        [
+          1077.0,
+          985.0
+        ],
+        [
+          1077.0,
+          1015.0
+        ],
+        [
+          321.0,
+          1015.0
+        ]
+      ],
+      "text": "4. Trong thời hạn 5 ngày làm việc kể từ ngày nhận được văn bản của Cơ",
+      "confidence": 0.9656431723529412
+    },
+    {
+      "bbox": [
+        [
+          269.0,
+          1015.0
+        ],
+        [
+          1076.0,
+          1015.0
+        ],
+        [
+          1076.0,
+          1048.0
+        ],
+        [
+          269.0,
+          1048.0
+        ]
+      ],
+      "text": "quan đầu mồi theo quy định tại điểm b khoản 3 Điều này, Văn phòng Chính",
+      "confidence": 0.9574756156249999
+    },
+    {
+      "bbox": [
+        [
+          268.0,
+          1048.0
+        ],
+        [
+          993.0,
+          1048.0
+        ],
+        [
+          993.0,
+          1080.0
+        ],
+        [
+          268.0,
+          1080.0
+        ]
+      ],
+      "text": "phủ trình Thủ tướng Chính phủ quyết định phân công Cơ quan chủ trì.",
+      "confidence": 0.9653171278571429
+    },
+    {
+      "bbox": [
+        [
+          321.0,
+          1099.0
+        ],
+        [
+          1077.0,
+          1099.0
+        ],
+        [
+          1077.0,
+          1135.0
+        ],
+        [
+          321.0,
+          1135.0
+        ]
+      ],
+      "text": "Trong thời hạn 3 ngày làm việc sau khi Thủ tướng Chính phủ quyết định",
+      "confidence": 0.9686090793333332
+    },
+    {
+      "bbox": [
+        [
+          269.0,
+          1130.0
+        ],
+        [
+          1077.0,
+          1130.0
+        ],
+        [
+          1077.0,
+          1176.0
+        ],
+        [
+          269.0,
+          1176.0
+        ]
+      ],
+      "text": "phân công Cơ quan chủ trì, Văn phòng Chính phủ gửi thông báo về quyết",
+      "confidence": 0.965543936
+    },
+    {
+      "bbox": [
+        [
+          270.0,
+          1165.0
+        ],
+        [
+          775.0,
+          1165.0
+        ],
+        [
+          775.0,
+          1195.0
+        ],
+        [
+          270.0,
+          1195.0
+        ]
+      ],
+      "text": "định phân cong đến Cơ quan chủ trì để thực hiện.",
+      "confidence": 0.9488484399999999
+    },
+    {
+      "bbox": [
+        [
+          321.0,
+          1215.0
+        ],
+        [
+          1077.0,
+          1215.0
+        ],
+        [
+          1077.0,
+          1247.0
+        ],
+        [
+          321.0,
+          1247.0
+        ]
+      ],
+      "text": "Điều 63. Xây dựng, thực hiện kế hoạch giải quyết vụ việc tranh chấp",
+      "confidence": 0.9683369292857142
+    },
+    {
+      "bbox": [
+        [
+          270.0,
+          1253.0
+        ],
+        [
+          745.0,
+          1253.0
+        ],
+        [
+          745.0,
+          1281.0
+        ],
+        [
+          270.0,
+          1281.0
+        ]
+      ],
+      "text": "về áp dụng biện pháp quản lý ngoại thương",
+      "confidence": 0.9688028722222222
+    },
+    {
+      "bbox": [
+        [
+          325.0,
+          1300.0
+        ],
+        [
+          1077.0,
+          1300.0
+        ],
+        [
+          1077.0,
+          1341.0
+        ],
+        [
+          325.0,
+          1341.0
+        ]
+      ],
+      "text": "1. Cơ quan đầu mồi chủ trì, phối hợp với Cơ quan chủ trì, cơ quan, tổ chức,",
+      "confidence": 0.9471347099999999
+    },
+    {
+      "bbox": [
+        [
+          270.0,
+          1331.0
+        ],
+        [
+          1078.0,
+          1331.0
+        ],
+        [
+          1078.0,
+          1364.0
+        ],
+        [
+          270.0,
+          1364.0
+        ]
+      ],
+      "text": "cá nhân liên quan, luật sư (nếu có) xây dựng Kế hoạch giải quyết tranh chấp về",
+      "confidence": 0.9644635282352941
+    },
+    {
+      "bbox": [
+        [
+          271.0,
+          1365.0
+        ],
+        [
+          1079.0,
+          1365.0
+        ],
+        [
+          1079.0,
+          1406.0
+        ],
+        [
+          271.0,
+          1406.0
+        ]
+      ],
+      "text": "áp dụng biện pháp quản lý ngoại thương trình Thủ tướng Chính phủ, phê duyệt",
+      "confidence": 0.9534964293333332
+    },
+    {
+      "bbox": [
+        [
+          271.0,
+          1395.0
+        ],
+        [
+          1079.0,
+          1395.0
+        ],
+        [
+          1079.0,
+          1429.0
+        ],
+        [
+          271.0,
+          1429.0
+        ]
+      ],
+      "text": "trong thời hạn 35 ngày làm việc kể từ ngày tiếp nhận được thông tin về khả năng",
+      "confidence": 0.9625779927777778
+    },
+    {
+      "bbox": [
+        [
+          271.0,
+          1428.0
+        ],
+        [
+          961.0,
+          1428.0
+        ],
+        [
+          961.0,
+          1459.0
+        ],
+        [
+          271.0,
+          1459.0
+        ]
+      ],
+      "text": "khởi kiện theo quy định tại khoản 1, khoản 2 Điều 62 Nghị định này.",
+      "confidence": 0.9684920146666667
+    }
+  ]
+}

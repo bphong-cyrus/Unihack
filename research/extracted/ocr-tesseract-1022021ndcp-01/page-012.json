@@ -1,0 +1,883 @@
+{
+  "document_id": "102/2021/NĐ-CP",
+  "source_file": "../../legal-sources/1022021ndcp/01.pdf",
+  "source_sha256": "2d4ea494360877c923ac60a393ea2014cca30fb0172f0676525ccd29f1594f2f",
+  "page_count": 26,
+  "render_dpi": 150,
+  "engine": "Tesseract 5.5.4 (vie+eng; OEM 1; PSM 3)",
+  "review_status": "UNREVIEWED",
+  "tesseract_version": "5.5.4",
+  "tsv_parser_version": 2,
+  "languages": [
+    "vie",
+    "eng"
+  ],
+  "traineddata_sha256": {
+    "vie": "b6b49293d95d0b6dbd8780174627e82c75be957b6f4ed9862155540d6b00bb45",
+    "eng": "8280aed0782fe27257a68ea10fe7ef324ca0f8d85bd2fd145d1c2b560bcb66ba"
+  },
+  "ocr_engine_mode": 1,
+  "page_segmentation_mode": 3,
+  "thread_limit": 1,
+  "page": 12,
+  "lines": [
+    {
+      "bbox": [
+        [
+          660.0,
+          45.0
+        ],
+        [
+          684.0,
+          45.0
+        ],
+        [
+          684.0,
+          66.0
+        ],
+        [
+          660.0,
+          66.0
+        ]
+      ],
+      "text": "12",
+      "confidence": 0.96974403
+    },
+    {
+      "bbox": [
+        [
+          271.0,
+          129.0
+        ],
+        [
+          902.0,
+          129.0
+        ],
+        [
+          902.0,
+          162.0
+        ],
+        [
+          271.0,
+          162.0
+        ]
+      ],
+      "text": "đ) Sửa đồi, bồ sung điểm đ, điểm e khoản 10 như sau:",
+      "confidence": 0.9343343992307693
+    },
+    {
+      "bbox": [
+        [
+          271.0,
+          182.0
+        ],
+        [
+          1130.0,
+          182.0
+        ],
+        [
+          1130.0,
+          216.0
+        ],
+        [
+          271.0,
+          216.0
+        ]
+      ],
+      "text": "“đ) Hải đoàn trưởng Hải đoàn Cảnh sát biển; Đoàn trưởng Đoàn trinh",
+      "confidence": 0.9638072207692306
+    },
+    {
+      "bbox": [
+        [
+          212.0,
+          216.0
+        ],
+        [
+          1131.0,
+          216.0
+        ],
+        [
+          1131.0,
+          256.0
+        ],
+        [
+          212.0,
+          256.0
+        ]
+      ],
+      "text": "sát, Đoàn trưởng Đoàn đặc nhiệm phòng chống tội phạm ma túy thuộc Bộ Tư",
+      "confidence": 0.966027668
+    },
+    {
+      "bbox": [
+        [
+          212.0,
+          250.0
+        ],
+        [
+          1129.0,
+          250.0
+        ],
+        [
+          1129.0,
+          289.0
+        ],
+        [
+          212.0,
+          289.0
+        ]
+      ],
+      "text": "lệnh Cảnh sát biển Việt Nam có thẩm quyền xử phạt đối với hành vi vi phạm",
+      "confidence": 0.9642520394117647
+    },
+    {
+      "bbox": [
+        [
+          211.0,
+          284.0
+        ],
+        [
+          1129.0,
+          284.0
+        ],
+        [
+          1129.0,
+          316.0
+        ],
+        [
+          211.0,
+          316.0
+        ]
+      ],
+      "text": "hành chính quy định tại các khoản 1, 2, 3, 4, các điểm b, c, d, đ khoản 5,",
+      "confidence": 0.9534123715789474
+    },
+    {
+      "bbox": [
+        [
+          211.0,
+          307.0
+        ],
+        [
+          914.0,
+          307.0
+        ],
+        [
+          914.0,
+          352.0
+        ],
+        [
+          211.0,
+          352.0
+        ]
+      ],
+      "text": "khoản 7, các điểm b, c và d khoản 8 Điều 13 Nghị định này;",
+      "confidence": 0.94696377
+    },
+    {
+      "bbox": [
+        [
+          271.0,
+          371.0
+        ],
+        [
+          1130.0,
+          371.0
+        ],
+        [
+          1130.0,
+          404.0
+        ],
+        [
+          271.0,
+          404.0
+        ]
+      ],
+      "text": "e) Tư lệnh Vùng Cảnh sát biển, Cục trưởng Cục Nghiệp vụ và Pháp luật",
+      "confidence": 0.9646352533333333
+    },
+    {
+      "bbox": [
+        [
+          211.0,
+          404.0
+        ],
+        [
+          1129.0,
+          404.0
+        ],
+        [
+          1129.0,
+          437.0
+        ],
+        [
+          211.0,
+          437.0
+        ]
+      ],
+      "text": "thuộc Bộ Tư lệnh Cảnh sát biển Việt Nam, Tư lệnh Cảnh sát biển Việt Nam",
+      "confidence": 0.967446636875
+    },
+    {
+      "bbox": [
+        [
+          211.0,
+          437.0
+        ],
+        [
+          1129.0,
+          437.0
+        ],
+        [
+          1129.0,
+          471.0
+        ],
+        [
+          211.0,
+          471.0
+        ]
+      ],
+      "text": "có thẩm quyền xử phat đối với hành vi vi phạm hành chính quy định tại các",
+      "confidence": 0.9566170799999999
+    },
+    {
+      "bbox": [
+        [
+          210.0,
+          471.0
+        ],
+        [
+          1101.0,
+          471.0
+        ],
+        [
+          1101.0,
+          505.0
+        ],
+        [
+          210.0,
+          505.0
+        ]
+      ],
+      "text": "khoản 1, 2, 3, 4, 5, 6, 7, các điểm b, c và d khoản 8 Điều 13 Nghị định này.”",
+      "confidence": 0.9346444376190476
+    },
+    {
+      "bbox": [
+        [
+          271.0,
+          522.0
+        ],
+        [
+          811.0,
+          522.0
+        ],
+        [
+          811.0,
+          555.0
+        ],
+        [
+          271.0,
+          555.0
+        ]
+      ],
+      "text": "8. Bồ sung Điều 33a vào sau Điều 33 như sau:",
+      "confidence": 0.9492319199999999
+    },
+    {
+      "bbox": [
+        [
+          270.0,
+          575.0
+        ],
+        [
+          900.0,
+          575.0
+        ],
+        [
+          900.0,
+          610.0
+        ],
+        [
+          270.0,
+          610.0
+        ]
+      ],
+      "text": "“Điều 33a. Thi hành biện pháp khắc phục hậu quả",
+      "confidence": 0.95977729
+    },
+    {
+      "bbox": [
+        [
+          272.0,
+          628.0
+        ],
+        [
+          1128.0,
+          628.0
+        ],
+        [
+          1128.0,
+          662.0
+        ],
+        [
+          272.0,
+          662.0
+        ]
+      ],
+      "text": "1. Khi cá nhân, tổ chức thi hành biện pháp buộc đưa ra khỏi lãnh thổ",
+      "confidence": 0.9642014412500001
+    },
+    {
+      "bbox": [
+        [
+          209.0,
+          664.0
+        ],
+        [
+          1128.0,
+          664.0
+        ],
+        [
+          1128.0,
+          698.0
+        ],
+        [
+          209.0,
+          698.0
+        ]
+      ],
+      "text": "nước Cộng hòa xã hội chủ nghĩa Việt Nam hoặc buộc tái xuất đối với tang",
+      "confidence": 0.9678316781249999
+    },
+    {
+      "bbox": [
+        [
+          209.0,
+          700.0
+        ],
+        [
+          1128.0,
+          700.0
+        ],
+        [
+          1128.0,
+          730.0
+        ],
+        [
+          209.0,
+          730.0
+        ]
+      ],
+      "text": "vật, phương tiện vi phạm hành chính, cơ quan hải quan thực hiện việc giám",
+      "confidence": 0.968311142
+    },
+    {
+      "bbox": [
+        [
+          209.0,
+          730.0
+        ],
+        [
+          995.0,
+          730.0
+        ],
+        [
+          995.0,
+          762.0
+        ],
+        [
+          209.0,
+          762.0
+        ]
+      ],
+      "text": "sát chặt chẽ từ nơi lưu giữ hàng hóa vi phạm đến cửa khẩu tái xuất.",
+      "confidence": 0.96358927625
+    },
+    {
+      "bbox": [
+        [
+          268.0,
+          779.0
+        ],
+        [
+          1128.0,
+          779.0
+        ],
+        [
+          1128.0,
+          826.0
+        ],
+        [
+          268.0,
+          826.0
+        ]
+      ],
+      "text": "Kết quả giám sát phải được Hải quan cửa khẩu xác nhận bằng văn bản",
+      "confidence": 0.9676846473333334
+    },
+    {
+      "bbox": [
+        [
+          208.0,
+          818.0
+        ],
+        [
+          1129.0,
+          818.0
+        ],
+        [
+          1129.0,
+          851.0
+        ],
+        [
+          208.0,
+          851.0
+        ]
+      ],
+      "text": "hoặc các phương thức điện tử khác và gửi lại cho cơ quan hải quan đã ra",
+      "confidence": 0.9685931394117646
+    },
+    {
+      "bbox": [
+        [
+          209.0,
+          846.0
+        ],
+        [
+          1129.0,
+          846.0
+        ],
+        [
+          1129.0,
+          883.0
+        ],
+        [
+          209.0,
+          883.0
+        ]
+      ],
+      "text": "quyết định xử phạt vi phạm hành chính trong thời hạn 05 (năm) ngày kể từ",
+      "confidence": 0.965528683125
+    },
+    {
+      "bbox": [
+        [
+          208.0,
+          883.0
+        ],
+        [
+          1127.0,
+          883.0
+        ],
+        [
+          1127.0,
+          918.0
+        ],
+        [
+          208.0,
+          918.0
+        ]
+      ],
+      "text": "ngày tang vật, phương tiện vi phạm đã đưa ra khỏi lãnh thổ Việt Nam hoặc tái",
+      "confidence": 0.9662087252941176
+    },
+    {
+      "bbox": [
+        [
+          208.0,
+          913.0
+        ],
+        [
+          509.0,
+          913.0
+        ],
+        [
+          509.0,
+          946.0
+        ],
+        [
+          208.0,
+          946.0
+        ]
+      ],
+      "text": "xuất để lưu hồ sơ vụ việc.",
+      "confidence": 0.9544482971428571
+    },
+    {
+      "bbox": [
+        [
+          268.0,
+          967.0
+        ],
+        [
+          1128.0,
+          967.0
+        ],
+        [
+          1128.0,
+          1007.0
+        ],
+        [
+          268.0,
+          1007.0
+        ]
+      ],
+      "text": "2. Biện pháp buộc đưa ra khỏi lãnh thổ nước \"Cộng hòa xã hội chủ nghĩa",
+      "confidence": 0.9483814475
+    },
+    {
+      "bbox": [
+        [
+          208.0,
+          1000.0
+        ],
+        [
+          1127.0,
+          1000.0
+        ],
+        [
+          1127.0,
+          1036.0
+        ],
+        [
+          208.0,
+          1036.0
+        ]
+      ],
+      "text": "Việt Nam hoặc buộc tái xuất tại cửa khẩu nhập đối với tang vật, phương tiện",
+      "confidence": 0.964088469375
+    },
+    {
+      "bbox": [
+        [
+          208.0,
+          1038.0
+        ],
+        [
+          726.0,
+          1038.0
+        ],
+        [
+          726.0,
+          1066.0
+        ],
+        [
+          208.0,
+          1066.0
+        ]
+      ],
+      "text": "vi phạm hành chính được thực hiện như sau:",
+      "confidence": 0.9647582255555557
+    },
+    {
+      "bbox": [
+        [
+          267.0,
+          1091.0
+        ],
+        [
+          1127.0,
+          1091.0
+        ],
+        [
+          1127.0,
+          1124.0
+        ],
+        [
+          267.0,
+          1124.0
+        ]
+      ],
+      "text": "a) Trường hợp tang vật, phương tiện vi phạm hành chính đang được lưu",
+      "confidence": 0.9654333992857143
+    },
+    {
+      "bbox": [
+        [
+          207.0,
+          1124.0
+        ],
+        [
+          1127.0,
+          1124.0
+        ],
+        [
+          1127.0,
+          1154.0
+        ],
+        [
+          207.0,
+          1154.0
+        ]
+      ],
+      "text": "giữ tại khu vực cửa khâu thì cơ quan hải quan phải thực hiện việc giám sát",
+      "confidence": 0.9696713352941176
+    },
+    {
+      "bbox": [
+        [
+          207.0,
+          1152.0
+        ],
+        [
+          1126.0,
+          1152.0
+        ],
+        [
+          1126.0,
+          1187.0
+        ],
+        [
+          207.0,
+          1187.0
+        ]
+      ],
+      "text": "chặt chẽ để đảm bảo tang vật, phương tiện vi phạm đã đưa ra tại cửa khẩu",
+      "confidence": 0.9674401982352941
+    },
+    {
+      "bbox": [
+        [
+          206.0,
+          1186.0
+        ],
+        [
+          1098.0,
+          1186.0
+        ],
+        [
+          1098.0,
+          1221.0
+        ],
+        [
+          206.0,
+          1221.0
+        ]
+      ],
+      "text": "nhập. Kết quả giám sát được ghi nhận lại tại biên bản để lưu hồ sơ hải quan;",
+      "confidence": 0.9559833488888888
+    },
+    {
+      "bbox": [
+        [
+          265.0,
+          1243.0
+        ],
+        [
+          1125.0,
+          1243.0
+        ],
+        [
+          1125.0,
+          1283.0
+        ],
+        [
+          265.0,
+          1283.0
+        ]
+      ],
+      "text": "b) Trường hợp tang vật, phương tiện vi phạm không còn được lưu giữ tại",
+      "confidence": 0.9647451526666667
+    },
+    {
+      "bbox": [
+        [
+          206.0,
+          1272.0
+        ],
+        [
+          1125.0,
+          1272.0
+        ],
+        [
+          1125.0,
+          1313.0
+        ],
+        [
+          206.0,
+          1313.0
+        ]
+      ],
+      "text": "khu vực cửa khẩu nhập thì cơ quan hải quan giám sát chặt chẽ từ nơi lưu giữ",
+      "confidence": 0.9683867561111111
+    },
+    {
+      "bbox": [
+        [
+          206.0,
+          1306.0
+        ],
+        [
+          1123.0,
+          1306.0
+        ],
+        [
+          1123.0,
+          1345.0
+        ],
+        [
+          206.0,
+          1345.0
+        ]
+      ],
+      "text": "tang vật, phương tiện vi phạm đến cửa khẩu đã nhập để tái xuất. Kết quả giám",
+      "confidence": 0.9603572123529411
+    },
+    {
+      "bbox": [
+        [
+          206.0,
+          1340.0
+        ],
+        [
+          1124.0,
+          1340.0
+        ],
+        [
+          1124.0,
+          1380.0
+        ],
+        [
+          206.0,
+          1380.0
+        ]
+      ],
+      "text": "sát phải được Hải quan cửa khẩu xác nhận bằng văn bản hoặc các phương",
+      "confidence": 0.9685254013333333
+    },
+    {
+      "bbox": [
+        [
+          205.0,
+          1375.0
+        ],
+        [
+          1123.0,
+          1375.0
+        ],
+        [
+          1123.0,
+          1413.0
+        ],
+        [
+          205.0,
+          1413.0
+        ]
+      ],
+      "text": "thức điện tử khác và gửi lại cho cơ quan hải quan đã ra quyết định xử phạt vi",
+      "confidence": 0.967565327368421
+    },
+    {
+      "bbox": [
+        [
+          205.0,
+          1408.0
+        ],
+        [
+          1124.0,
+          1408.0
+        ],
+        [
+          1124.0,
+          1451.0
+        ],
+        [
+          205.0,
+          1451.0
+        ]
+      ],
+      "text": "phạm hành chính trong thời hạn 05 (năm) ngày kể từ ngày tang vật, phương tiện",
+      "confidence": 0.95580802875
+    },
+    {
+      "bbox": [
+        [
+          205.0,
+          1441.0
+        ],
+        [
+          1075.0,
+          1441.0
+        ],
+        [
+          1075.0,
+          1474.0
+        ],
+        [
+          205.0,
+          1474.0
+        ]
+      ],
+      "text": "vi phạm đã đưa ra khỏi lãnh thé Việt Nam hoặc tái xuất dé lưu hồ sơ vụ việc.",
+      "confidence": 0.9567370157894737
+    },
+    {
+      "bbox": [
+        [
+          265.0,
+          1492.0
+        ],
+        [
+          1123.0,
+          1492.0
+        ],
+        [
+          1123.0,
+          1531.0
+        ],
+        [
+          265.0,
+          1531.0
+        ]
+      ],
+      "text": "3. Khi cá nhân, tổ chức thi hành biện pháp buộc thực hiện việc vận",
+      "confidence": 0.9648234913333333
+    },
+    {
+      "bbox": [
+        [
+          205.0,
+          1522.0
+        ],
+        [
+          1122.0,
+          1522.0
+        ],
+        [
+          1122.0,
+          1568.0
+        ],
+        [
+          205.0,
+          1568.0
+        ]
+      ],
+      "text": "chuyển hàng hóa quá cảnh, chuyên cảng, chuyển khẩu, chuyển cửa khẩu,",
+      "confidence": 0.920661735
+    },
+    {
+      "bbox": [
+        [
+          204.0,
+          1558.0
+        ],
+        [
+          1146.0,
+          1558.0
+        ],
+        [
+          1146.0,
+          1594.0
+        ],
+        [
+          204.0,
+          1594.0
+        ]
+      ],
+      "text": "hàng kinh doanh tạm nhập, tái xuất đúng cửa khẩu, tuyến đường quy định thì .",
+      "confidence": 0.943967041875
+    }
+  ]
+}

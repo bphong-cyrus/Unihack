@@ -1,0 +1,949 @@
+{
+  "document_id": "59/2018/NĐ-CP",
+  "source_file": "../../legal-sources/592018ndcp/01.pdf",
+  "source_sha256": "7ac1b46e806ae9290125acb9ac1d535bcea768749d16941e9fae20bbf7343a1a",
+  "page_count": 48,
+  "render_dpi": 150,
+  "engine": "Tesseract 5.5.4 (vie+eng; OEM 1; PSM 3)",
+  "review_status": "UNREVIEWED",
+  "tesseract_version": "5.5.4",
+  "tsv_parser_version": 2,
+  "languages": [
+    "vie",
+    "eng"
+  ],
+  "traineddata_sha256": {
+    "vie": "b6b49293d95d0b6dbd8780174627e82c75be957b6f4ed9862155540d6b00bb45",
+    "eng": "8280aed0782fe27257a68ea10fe7ef324ca0f8d85bd2fd145d1c2b560bcb66ba"
+  },
+  "ocr_engine_mode": 1,
+  "page_segmentation_mode": 3,
+  "thread_limit": 1,
+  "page": 44,
+  "lines": [
+    {
+      "bbox": [
+        [
+          665.0,
+          138.0
+        ],
+        [
+          686.0,
+          138.0
+        ],
+        [
+          686.0,
+          153.0
+        ],
+        [
+          665.0,
+          153.0
+        ]
+      ],
+      "text": "44",
+      "confidence": 0.95130508
+    },
+    {
+      "bbox": [
+        [
+          326.0,
+          211.0
+        ],
+        [
+          1081.0,
+          211.0
+        ],
+        [
+          1081.0,
+          248.0
+        ],
+        [
+          326.0,
+          248.0
+        ]
+      ],
+      "text": "Trường hợp hồ sơ: đầy đủ, hợp lệ thì in tờ khai phương tiện vận tải đường.",
+      "confidence": 0.9060015052941176
+    },
+    {
+      "bbox": [
+        [
+          275.0,
+          231.0
+        ],
+        [
+          1079.0,
+          231.0
+        ],
+        [
+          1079.0,
+          285.0
+        ],
+        [
+          275.0,
+          285.0
+        ]
+      ],
+      "text": "thủy tạm nhập - tái xuất, tờ khai phương tiện tạm xuất - tái nhập từ hệ thống,",
+      "confidence": 0.9593304861111112
+    },
+    {
+      "bbox": [
+        [
+          276.0,
+          269.0
+        ],
+        [
+          1079.0,
+          269.0
+        ],
+        [
+          1079.0,
+          308.0
+        ],
+        [
+          276.0,
+          308.0
+        ]
+      ],
+      "text": "đóng dầu công chức hải quan tiệp nhận và dấu “VIET NAM CUSTOMS”",
+      "confidence": 0.94153683
+    },
+    {
+      "bbox": [
+        [
+          275.0,
+          299.0
+        ],
+        [
+          1080.0,
+          299.0
+        ],
+        [
+          1080.0,
+          338.0
+        ],
+        [
+          275.0,
+          338.0
+        ]
+      ],
+      "text": "theo mẫu do Tổng cục trưởng Téng cục Hải quan ban hành lên tờ khai, giao",
+      "confidence": 0.964924293125
+    },
+    {
+      "bbox": [
+        [
+          276.0,
+          321.0
+        ],
+        [
+          1081.0,
+          321.0
+        ],
+        [
+          1081.0,
+          361.0
+        ],
+        [
+          276.0,
+          361.0
+        ]
+      ],
+      "text": "cho người khai hải quan để làm thủ tục khi tái nhập hoặc tái xuất; lưu hồ sơ tờ",
+      "confidence": 0.9652134868421054
+    },
+    {
+      "bbox": [
+        [
+          276.0,
+          353.0
+        ],
+        [
+          1002.0,
+          353.0
+        ],
+        [
+          1002.0,
+          390.0
+        ],
+        [
+          276.0,
+          390.0
+        ]
+      ],
+      "text": "khai do người khai hải quan nộp khi làm thủ tục tái nhập hoặc tái xuất;",
+      "confidence": 0.9618440581250001
+    },
+    {
+      "bbox": [
+        [
+          327.0,
+          390.0
+        ],
+        [
+          1081.0,
+          390.0
+        ],
+        [
+          1081.0,
+          430.0
+        ],
+        [
+          327.0,
+          430.0
+        ]
+      ],
+      "text": "b) Trong quá trình giám sát, trường hợp xác định có dấu hiệu buôn lậu,",
+      "confidence": 0.9627385606666666
+    },
+    {
+      "bbox": [
+        [
+          276.0,
+          423.0
+        ],
+        [
+          1081.0,
+          423.0
+        ],
+        [
+          1081.0,
+          455.0
+        ],
+        [
+          276.0,
+          455.0
+        ]
+      ],
+      "text": "vận chuyển trái phép hàng hóa, cơ quan hải quan thực hiện các biện pháp",
+      "confidence": 0.9685962679999999
+    },
+    {
+      "bbox": [
+        [
+          276.0,
+          454.0
+        ],
+        [
+          975.0,
+          454.0
+        ],
+        [
+          975.0,
+          483.0
+        ],
+        [
+          276.0,
+          483.0
+        ]
+      ],
+      "text": "kiểm tra, ngăn chặn, tạm giữ, khám xét theo quy định của pháp luật.",
+      "confidence": 0.9677137964285714
+    },
+    {
+      "bbox": [
+        [
+          328.0,
+          485.0
+        ],
+        [
+          1082.0,
+          485.0
+        ],
+        [
+          1082.0,
+          527.0
+        ],
+        [
+          328.0,
+          527.0
+        ]
+      ],
+      "text": "5. Tàu thuyền nước ngoài quá cảnh Việt Nam đến Campuchia, tàu",
+      "confidence": 0.9662890058333333
+    },
+    {
+      "bbox": [
+        [
+          276.0,
+          518.0
+        ],
+        [
+          1082.0,
+          518.0
+        ],
+        [
+          1082.0,
+          555.0
+        ],
+        [
+          276.0,
+          555.0
+        ]
+      ],
+      "text": "thuyền nước ngoài từ Campuchia quá cảnh Việt Nam ra nước ngoài; tàu",
+      "confidence": 0.9674077184615385
+    },
+    {
+      "bbox": [
+        [
+          277.0,
+          543.0
+        ],
+        [
+          1081.0,
+          543.0
+        ],
+        [
+          1081.0,
+          580.0
+        ],
+        [
+          277.0,
+          580.0
+        ]
+      ],
+      "text": "thuyền Việt Nam, tàu thuyền Campuchia có hô hiệu (MO) xuất cảnh, nhập",
+      "confidence": 0.9599871538461539
+    },
+    {
+      "bbox": [
+        [
+          277.0,
+          570.0
+        ],
+        [
+          1082.0,
+          570.0
+        ],
+        [
+          1082.0,
+          610.0
+        ],
+        [
+          277.0,
+          610.0
+        ]
+      ],
+      "text": "cảnh qua đường sông, Tiền, sông Hậu thực hiện theo quy định tại Điều 65,",
+      "confidence": 0.9608931479999999
+    },
+    {
+      "bbox": [
+        [
+          277.0,
+          605.0
+        ],
+        [
+          729.0,
+          605.0
+        ],
+        [
+          729.0,
+          633.0
+        ],
+        [
+          277.0,
+          633.0
+        ]
+      ],
+      "text": "Điều 66, Điều 67 và Điều 68 Nghị định này.",
+      "confidence": 0.967312493
+    },
+    {
+      "bbox": [
+        [
+          328.0,
+          643.0
+        ],
+        [
+          877.0,
+          643.0
+        ],
+        [
+          877.0,
+          669.0
+        ],
+        [
+          328.0,
+          669.0
+        ]
+      ],
+      "text": "6. Giám sát hải quan phương tiện vận tải đường thủy:",
+      "confidence": 0.9694212281818182
+    },
+    {
+      "bbox": [
+        [
+          328.0,
+          677.0
+        ],
+        [
+          1083.0,
+          677.0
+        ],
+        [
+          1083.0,
+          710.0
+        ],
+        [
+          328.0,
+          710.0
+        ]
+      ],
+      "text": "a) Trong địa bàn hoạt động hải quan, cơ quan hải quan sử dụng phương tiện",
+      "confidence": 0.96352508125
+    },
+    {
+      "bbox": [
+        [
+          277.0,
+          702.0
+        ],
+        [
+          1017.0,
+          702.0
+        ],
+        [
+          1017.0,
+          735.0
+        ],
+        [
+          277.0,
+          735.0
+        ]
+      ],
+      "text": "kỹ thuật đề giám sát phương tiện vận tải đường thủy nhập cảnh, xuất cảnh;",
+      "confidence": 0.9599455459999998
+    },
+    {
+      "bbox": [
+        [
+          328.0,
+          737.0
+        ],
+        [
+          1083.0,
+          737.0
+        ],
+        [
+          1083.0,
+          774.0
+        ],
+        [
+          328.0,
+          774.0
+        ]
+      ],
+      "text": "b) Ngoài địa ban hoạt động hải quan, cơ quan công an chủ trì, phối hợp",
+      "confidence": 0.9628975106250001
+    },
+    {
+      "bbox": [
+        [
+          277.0,
+          769.0
+        ],
+        [
+          1083.0,
+          769.0
+        ],
+        [
+          1083.0,
+          802.0
+        ],
+        [
+          277.0,
+          802.0
+        ]
+      ],
+      "text": "các bộ, ngành liên quan tổ chức kiểm tra, giám sát phương tiện vận tải đường",
+      "confidence": 0.96837403875
+    },
+    {
+      "bbox": [
+        [
+          276.0,
+          798.0
+        ],
+        [
+          562.0,
+          798.0
+        ],
+        [
+          562.0,
+          827.0
+        ],
+        [
+          276.0,
+          827.0
+        ]
+      ],
+      "text": "thủy nhập cảnh, xuất cảnh.”",
+      "confidence": 0.9661858999999999
+    },
+    {
+      "bbox": [
+        [
+          328.0,
+          831.0
+        ],
+        [
+          1067.0,
+          831.0
+        ],
+        [
+          1067.0,
+          861.0
+        ],
+        [
+          328.0,
+          861.0
+        ]
+      ],
+      "text": "49. Sửa đổi, bổ sung khoản 2, khoản 3, khoản 5, khoản 6 Điều 81 như sau:",
+      "confidence": 0.95587015
+    },
+    {
+      "bbox": [
+        [
+          328.0,
+          866.0
+        ],
+        [
+          1083.0,
+          866.0
+        ],
+        [
+          1083.0,
+          903.0
+        ],
+        [
+          328.0,
+          903.0
+        ]
+      ],
+      "text": "“2. Phương tiện vận tải của cá nhân, tổ chức vào khu vực biên giới để",
+      "confidence": 0.960286325625
+    },
+    {
+      "bbox": [
+        [
+          277.0,
+          904.0
+        ],
+        [
+          491.0,
+          904.0
+        ],
+        [
+          491.0,
+          927.0
+        ],
+        [
+          277.0,
+          927.0
+        ]
+      ],
+      "text": "giao nhận hàng gôm:",
+      "confidence": 0.9419183525
+    },
+    {
+      "bbox": [
+        [
+          328.0,
+          929.0
+        ],
+        [
+          1084.0,
+          929.0
+        ],
+        [
+          1084.0,
+          969.0
+        ],
+        [
+          328.0,
+          969.0
+        ]
+      ],
+      "text": "a) Xe ô tô tải của nước ngoài vào khu vực cửa khẩu, địa điểm tập kết",
+      "confidence": 0.9622108052941178
+    },
+    {
+      "bbox": [
+        [
+          277.0,
+          960.0
+        ],
+        [
+          1083.0,
+          960.0
+        ],
+        [
+          1083.0,
+          996.0
+        ],
+        [
+          277.0,
+          996.0
+        ]
+      ],
+      "text": "kiểm tra giám sát hàng hoá ở biên: giới thuộc khu kinh tế cửa khẩu để giao",
+      "confidence": 0.9643964176470589
+    },
+    {
+      "bbox": [
+        [
+          276.0,
+          987.0
+        ],
+        [
+          719.0,
+          987.0
+        ],
+        [
+          719.0,
+          1023.0
+        ],
+        [
+          276.0,
+          1023.0
+        ]
+      ],
+      "text": "hàng nhập khẩu hoặc nhận hàng xuất khẩu;",
+      "confidence": 0.9664770787500001
+    },
+    {
+      "bbox": [
+        [
+          328.0,
+          1025.0
+        ],
+        [
+          1083.0,
+          1025.0
+        ],
+        [
+          1083.0,
+          1060.0
+        ],
+        [
+          328.0,
+          1060.0
+        ]
+      ],
+      "text": "b) Xe 6 tô tải của Việt Nam đi qua biên giới để giao hàng xuất khẩu hoặc",
+      "confidence": 0.9607883505555554
+    },
+    {
+      "bbox": [
+        [
+          276.0,
+          1060.0
+        ],
+        [
+          805.0,
+          1060.0
+        ],
+        [
+          805.0,
+          1084.0
+        ],
+        [
+          276.0,
+          1084.0
+        ]
+      ],
+      "text": "nhận hàng nhập khâu sau đó quay trở lại Việt Nam;",
+      "confidence": 0.9681633772727273
+    },
+    {
+      "bbox": [
+        [
+          328.0,
+          1090.0
+        ],
+        [
+          1084.0,
+          1090.0
+        ],
+        [
+          1084.0,
+          1127.0
+        ],
+        [
+          328.0,
+          1127.0
+        ]
+      ],
+      "text": "c) Thuyền, xudng của nước ngoài vào khu vực cửa khẩu địa điểm tập kết",
+      "confidence": 0.9515203706666666
+    },
+    {
+      "bbox": [
+        [
+          276.0,
+          1119.0
+        ],
+        [
+          1083.0,
+          1119.0
+        ],
+        [
+          1083.0,
+          1158.0
+        ],
+        [
+          276.0,
+          1158.0
+        ]
+      ],
+      "text": "kiểm tra giám sát hàng hoá ở biên giới thuộc khu kinh tế cửa khẩu để giao",
+      "confidence": 0.9662804270588236
+    },
+    {
+      "bbox": [
+        [
+          276.0,
+          1149.0
+        ],
+        [
+          719.0,
+          1149.0
+        ],
+        [
+          719.0,
+          1178.0
+        ],
+        [
+          276.0,
+          1178.0
+        ]
+      ],
+      "text": "hàng nhập khẩu hoặc nhận hàng xuất khẩu;",
+      "confidence": 0.9668946375
+    },
+    {
+      "bbox": [
+        [
+          328.0,
+          1184.0
+        ],
+        [
+          1084.0,
+          1184.0
+        ],
+        [
+          1084.0,
+          1219.0
+        ],
+        [
+          328.0,
+          1219.0
+        ]
+      ],
+      "text": "d) Thuyền, xuồng của Việt Nam đi qua biên giới để giao hàng xuất khẩu",
+      "confidence": 0.957367828
+    },
+    {
+      "bbox": [
+        [
+          276.0,
+          1219.0
+        ],
+        [
+          859.0,
+          1219.0
+        ],
+        [
+          859.0,
+          1243.0
+        ],
+        [
+          276.0,
+          1243.0
+        ]
+      ],
+      "text": "hoặc nhận hàng nhập khâu sau đó quay trở lại Việt Nam.",
+      "confidence": 0.9689747708333334
+    },
+    {
+      "bbox": [
+        [
+          328.0,
+          1249.0
+        ],
+        [
+          1083.0,
+          1249.0
+        ],
+        [
+          1083.0,
+          1284.0
+        ],
+        [
+          328.0,
+          1284.0
+        ]
+      ],
+      "text": "Thời gian cho phép phương tiện vận tải quy định tại điểm a, điểm b",
+      "confidence": 0.955021516
+    },
+    {
+      "bbox": [
+        [
+          276.0,
+          1284.0
+        ],
+        [
+          1083.0,
+          1284.0
+        ],
+        [
+          1083.0,
+          1313.0
+        ],
+        [
+          276.0,
+          1313.0
+        ]
+      ],
+      "text": "khoản 2 Điều này giao nhận hàng hóa không vượt quá 48 giờ và thời gian cho",
+      "confidence": 0.9674235005882353
+    },
+    {
+      "bbox": [
+        [
+          276.0,
+          1313.0
+        ],
+        [
+          1083.0,
+          1313.0
+        ],
+        [
+          1083.0,
+          1338.0
+        ],
+        [
+          276.0,
+          1338.0
+        ]
+      ],
+      "text": "phép phương tiện vận tải quy định tại diem c, điểm d khoản 2 Điều này giao",
+      "confidence": 0.9204830758823529
+    },
+    {
+      "bbox": [
+        [
+          276.0,
+          1343.0
+        ],
+        [
+          670.0,
+          1343.0
+        ],
+        [
+          670.0,
+          1366.0
+        ],
+        [
+          276.0,
+          1366.0
+        ]
+      ],
+      "text": "nhận hàng hóa không vượt quá 72 giờ.",
+      "confidence": 0.967002745
+    },
+    {
+      "bbox": [
+        [
+          328.0,
+          1373.0
+        ],
+        [
+          1083.0,
+          1373.0
+        ],
+        [
+          1083.0,
+          1407.0
+        ],
+        [
+          328.0,
+          1407.0
+        ]
+      ],
+      "text": "Đối với các phương tiện thuộc khoản này, người điều khiển xuất trình",
+      "confidence": 0.938290663076923
+    },
+    {
+      "bbox": [
+        [
+          276.0,
+          1403.0
+        ],
+        [
+          1084.0,
+          1403.0
+        ],
+        [
+          1084.0,
+          1441.0
+        ],
+        [
+          276.0,
+          1441.0
+        ]
+      ],
+      "text": "giấy tờ tuỳ thân (giấy phép lái xe hoặc chứng minh thư nhân dân (căn cước",
+      "confidence": 0.947893315625
+    },
+    {
+      "bbox": [
+        [
+          276.0,
+          1431.0
+        ],
+        [
+          1083.0,
+          1431.0
+        ],
+        [
+          1083.0,
+          1470.0
+        ],
+        [
+          276.0,
+          1470.0
+        ]
+      ],
+      "text": "công dân) hoặc hộ chiếu hoặc giấy thông hành, ngày cấp của giấy tờ này),",
+      "confidence": 0.960168538
+    },
+    {
+      "bbox": [
+        [
+          276.0,
+          1460.0
+        ],
+        [
+          1079.0,
+          1460.0
+        ],
+        [
+          1079.0,
+          1489.0
+        ],
+        [
+          276.0,
+          1489.0
+        ]
+      ],
+      "text": "giấy tờ phương tiện cho cơ quan hải quan để kiểm tra, giám sát theo quy định.",
+      "confidence": 0.9621700776470589
+    }
+  ]
+}

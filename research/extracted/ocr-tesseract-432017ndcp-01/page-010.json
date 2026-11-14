@@ -1,0 +1,773 @@
+{
+  "document_id": "43/2017/NĐ-CP",
+  "source_file": "../../legal-sources/432017ndcp/01.pdf",
+  "source_sha256": "e698dcc97d6d39d11dea9c9688b289d36e976e1e9acda2ee15cd2fe93402ab62",
+  "page_count": 36,
+  "render_dpi": 150,
+  "engine": "Tesseract 5.5.4 (vie+eng; OEM 1; PSM 3)",
+  "review_status": "UNREVIEWED",
+  "tesseract_version": "5.5.4",
+  "tsv_parser_version": 2,
+  "languages": [
+    "vie",
+    "eng"
+  ],
+  "traineddata_sha256": {
+    "vie": "b6b49293d95d0b6dbd8780174627e82c75be957b6f4ed9862155540d6b00bb45",
+    "eng": "8280aed0782fe27257a68ea10fe7ef324ca0f8d85bd2fd145d1c2b560bcb66ba"
+  },
+  "ocr_engine_mode": 1,
+  "page_segmentation_mode": 3,
+  "thread_limit": 1,
+  "page": 10,
+  "lines": [
+    {
+      "bbox": [
+        [
+          676.0,
+          130.0
+        ],
+        [
+          696.0,
+          130.0
+        ],
+        [
+          696.0,
+          146.0
+        ],
+        [
+          676.0,
+          146.0
+        ]
+      ],
+      "text": "10",
+      "confidence": 0.96954544
+    },
+    {
+      "bbox": [
+        [
+          337.0,
+          200.0
+        ],
+        [
+          1089.0,
+          200.0
+        ],
+        [
+          1089.0,
+          235.0
+        ],
+        [
+          337.0,
+          235.0
+        ]
+      ],
+      "text": "2. Ghi thành phần định lượng là ghi thành phần kèm định lượng của từng",
+      "confidence": 0.9506074413333334
+    },
+    {
+      "bbox": [
+        [
+          284.0,
+          233.0
+        ],
+        [
+          1090.0,
+          233.0
+        ],
+        [
+          1090.0,
+          270.0
+        ],
+        [
+          284.0,
+          270.0
+        ]
+      ],
+      "text": "thành phần. Tuỳ theo tính chất, trạng thái của hàng hoá, thành phân định lượng",
+      "confidence": 0.9632098046666667
+    },
+    {
+      "bbox": [
+        [
+          286.0,
+          266.0
+        ],
+        [
+          1090.0,
+          266.0
+        ],
+        [
+          1090.0,
+          303.0
+        ],
+        [
+          286.0,
+          303.0
+        ]
+      ],
+      "text": "được ghi là khối lượng của thành phần đó có trong một đơn vị sản phâm hoặc",
+      "confidence": 0.9575422
+    },
+    {
+      "bbox": [
+        [
+          287.0,
+          294.0
+        ],
+        [
+          1090.0,
+          294.0
+        ],
+        [
+          1090.0,
+          339.0
+        ],
+        [
+          287.0,
+          339.0
+        ]
+      ],
+      "text": "ghi theo một trong các tỷ lệ: Khôi lượng với khối lượng; khối lượng với thể tích;",
+      "confidence": 0.9619390241176471
+    },
+    {
+      "bbox": [
+        [
+          286.0,
+          332.0
+        ],
+        [
+          902.0,
+          332.0
+        ],
+        [
+          902.0,
+          369.0
+        ],
+        [
+          286.0,
+          369.0
+        ]
+      ],
+      "text": "thể tích với thể tích; phần trăm khối lượng; phần trăm thê tích.",
+      "confidence": 0.9644421446153845
+    },
+    {
+      "bbox": [
+        [
+          339.0,
+          385.0
+        ],
+        [
+          1091.0,
+          385.0
+        ],
+        [
+          1091.0,
+          421.0
+        ],
+        [
+          339.0,
+          421.0
+        ]
+      ],
+      "text": "Trường hợp thành phần hàng hóa được định lượng bằng các đại lượng đo",
+      "confidence": 0.9679431364285713
+    },
+    {
+      "bbox": [
+        [
+          288.0,
+          421.0
+        ],
+        [
+          1087.0,
+          421.0
+        ],
+        [
+          1087.0,
+          454.0
+        ],
+        [
+          288.0,
+          454.0
+        ]
+      ],
+      "text": "lường phải ghi định lượng theo quy định của pháp luật Việt Nam về đo lường.",
+      "confidence": 0.961677923125
+    },
+    {
+      "bbox": [
+        [
+          340.0,
+          470.0
+        ],
+        [
+          1093.0,
+          470.0
+        ],
+        [
+          1093.0,
+          504.0
+        ],
+        [
+          340.0,
+          504.0
+        ]
+      ],
+      "text": "3. Đối với một số loại hàng hoá, việc ghi thành phần, thành phần định",
+      "confidence": 0.9552445826666667
+    },
+    {
+      "bbox": [
+        [
+          289.0,
+          514.0
+        ],
+        [
+          595.0,
+          514.0
+        ],
+        [
+          595.0,
+          540.0
+        ],
+        [
+          289.0,
+          540.0
+        ]
+      ],
+      "text": "lượng được quy định như sau:",
+      "confidence": 0.96875876
+    },
+    {
+      "bbox": [
+        [
+          341.0,
+          557.0
+        ],
+        [
+          1092.0,
+          557.0
+        ],
+        [
+          1092.0,
+          596.0
+        ],
+        [
+          341.0,
+          596.0
+        ]
+      ],
+      "text": "a) Đối với thực phẩm phải ghi thành phần theo thứ tự từ cao đến thấp về",
+      "confidence": 0.9639900252941176
+    },
+    {
+      "bbox": [
+        [
+          289.0,
+          598.0
+        ],
+        [
+          406.0,
+          598.0
+        ],
+        [
+          406.0,
+          624.0
+        ],
+        [
+          289.0,
+          624.0
+        ]
+      ],
+      "text": "khối lượng.",
+      "confidence": 0.9687942899999998
+    },
+    {
+      "bbox": [
+        [
+          340.0,
+          644.0
+        ],
+        [
+          1094.0,
+          644.0
+        ],
+        [
+          1094.0,
+          677.0
+        ],
+        [
+          340.0,
+          677.0
+        ]
+      ],
+      "text": "Nếu thành phần là chất phụ gia, phải ghi tên nhóm chất phụ gia, tên chất",
+      "confidence": 0.96134530125
+    },
+    {
+      "bbox": [
+        [
+          290.0,
+          678.0
+        ],
+        [
+          1094.0,
+          678.0
+        ],
+        [
+          1094.0,
+          710.0
+        ],
+        [
+          290.0,
+          710.0
+        ]
+      ],
+      "text": "phụ gia hoặc mã số quốc tế INS (nếu có); trường hợp chất phụ gia là hương",
+      "confidence": 0.96312579
+    },
+    {
+      "bbox": [
+        [
+          290.0,
+          709.0
+        ],
+        [
+          1093.0,
+          709.0
+        ],
+        [
+          1093.0,
+          741.0
+        ],
+        [
+          290.0,
+          741.0
+        ]
+      ],
+      "text": "liệu, chất tạo ngọt, chất tạo màu thì phải ghi tên nhóm hương liệu, chất tạo",
+      "confidence": 0.960960436875
+    },
+    {
+      "bbox": [
+        [
+          290.0,
+          742.0
+        ],
+        [
+          1094.0,
+          742.0
+        ],
+        [
+          1094.0,
+          774.0
+        ],
+        [
+          290.0,
+          774.0
+        ]
+      ],
+      "text": "ngọt, chất tạo màu, ghi tên chất (nếu có) và ghi thêm chất đó là chất \"tự",
+      "confidence": 0.9630591900000001
+    },
+    {
+      "bbox": [
+        [
+          290.0,
+          777.0
+        ],
+        [
+          828.0,
+          777.0
+        ],
+        [
+          828.0,
+          805.0
+        ],
+        [
+          290.0,
+          805.0
+        ]
+      ],
+      "text": "nhiên\", \"giống tự nhiên\", \"tổng hợp\" hay \"nhân tạo\";",
+      "confidence": 0.9490399155555557
+    },
+    {
+      "bbox": [
+        [
+          341.0,
+          829.0
+        ],
+        [
+          1094.0,
+          829.0
+        ],
+        [
+          1094.0,
+          859.0
+        ],
+        [
+          341.0,
+          859.0
+        ]
+      ],
+      "text": "b) Đối với thuốc dùng cho người, vắc xin, sinh phẩm y tế, chế phẩm sinh",
+      "confidence": 0.9475986575
+    },
+    {
+      "bbox": [
+        [
+          290.0,
+          858.0
+        ],
+        [
+          1093.0,
+          858.0
+        ],
+        [
+          1093.0,
+          894.0
+        ],
+        [
+          290.0,
+          894.0
+        ]
+      ],
+      "text": "học, thuốc thú y, thuốc bảo vệ thực vật, phải ghi thành phần và hàm lượng các",
+      "confidence": 0.9621926523529412
+    },
+    {
+      "bbox": [
+        [
+          290.0,
+          890.0
+        ],
+        [
+          388.0,
+          890.0
+        ],
+        [
+          388.0,
+          925.0
+        ],
+        [
+          290.0,
+          925.0
+        ]
+      ],
+      "text": "hoạt chất;",
+      "confidence": 0.966508025
+    },
+    {
+      "bbox": [
+        [
+          342.0,
+          947.0
+        ],
+        [
+          1059.0,
+          947.0
+        ],
+        [
+          1059.0,
+          975.0
+        ],
+        [
+          342.0,
+          975.0
+        ]
+      ],
+      "text": "c) Đối với mỹ phẩm phải ghi thành phần bao gồm cả các chất phụ gia;",
+      "confidence": 0.956086949375
+    },
+    {
+      "bbox": [
+        [
+          342.0,
+          1000.0
+        ],
+        [
+          1094.0,
+          1000.0
+        ],
+        [
+          1094.0,
+          1030.0
+        ],
+        [
+          342.0,
+          1030.0
+        ]
+      ],
+      "text": "d) Đối với đồ gia dụng kim khí, đồ dùng được chế tạo từ một loại nguyên",
+      "confidence": 0.9511065988235293
+    },
+    {
+      "bbox": [
+        [
+          290.0,
+          1030.0
+        ],
+        [
+          1093.0,
+          1030.0
+        ],
+        [
+          1093.0,
+          1066.0
+        ],
+        [
+          290.0,
+          1066.0
+        ]
+      ],
+      "text": "liệu chính quyết định giá trị sử dụng thì phải ghi tên thành phần nguyên liệu",
+      "confidence": 0.965490331875
+    },
+    {
+      "bbox": [
+        [
+          290.0,
+          1066.0
+        ],
+        [
+          1092.0,
+          1066.0
+        ],
+        [
+          1092.0,
+          1095.0
+        ],
+        [
+          290.0,
+          1095.0
+        ]
+      ],
+      "text": "chính cùng với tên hàng hoá và không phải ghi thành phần và thành phần",
+      "confidence": 0.9674474786666666
+    },
+    {
+      "bbox": [
+        [
+          290.0,
+          1102.0
+        ],
+        [
+          404.0,
+          1102.0
+        ],
+        [
+          404.0,
+          1124.0
+        ],
+        [
+          290.0,
+          1124.0
+        ]
+      ],
+      "text": "định lượng.",
+      "confidence": 0.96864891
+    },
+    {
+      "bbox": [
+        [
+          340.0,
+          1150.0
+        ],
+        [
+          1091.0,
+          1150.0
+        ],
+        [
+          1091.0,
+          1187.0
+        ],
+        [
+          340.0,
+          1187.0
+        ]
+      ],
+      "text": "4. Thành phần, thành phần định lượng của hàng hoá có cách ghi khác với",
+      "confidence": 0.9599450873333333
+    },
+    {
+      "bbox": [
+        [
+          289.0,
+          1187.0
+        ],
+        [
+          1043.0,
+          1187.0
+        ],
+        [
+          1043.0,
+          1214.0
+        ],
+        [
+          289.0,
+          1214.0
+        ]
+      ],
+      "text": "quy định tại khoản 3 Điều này quy định tại Phụ lục IV của Nghị định này.",
+      "confidence": 0.9552930770588236
+    },
+    {
+      "bbox": [
+        [
+          340.0,
+          1237.0
+        ],
+        [
+          850.0,
+          1237.0
+        ],
+        [
+          850.0,
+          1267.0
+        ],
+        [
+          340.0,
+          1267.0
+        ]
+      ],
+      "text": "Điều 17. Thông số kỹ thuật, thông tin cảnh báo",
+      "confidence": 0.963072717
+    },
+    {
+      "bbox": [
+        [
+          342.0,
+          1291.0
+        ],
+        [
+          1090.0,
+          1291.0
+        ],
+        [
+          1090.0,
+          1323.0
+        ],
+        [
+          342.0,
+          1323.0
+        ]
+      ],
+      "text": "1. Thông số kỹ thuật và dung sai của thông số này (nếu có), thông tin",
+      "confidence": 0.96801349
+    },
+    {
+      "bbox": [
+        [
+          288.0,
+          1329.0
+        ],
+        [
+          1090.0,
+          1329.0
+        ],
+        [
+          1090.0,
+          1360.0
+        ],
+        [
+          288.0,
+          1360.0
+        ]
+      ],
+      "text": "cảnh báo phải tuân thủ quy định của pháp luật có liên quan. Trường hợp",
+      "confidence": 0.9680711213333333
+    },
+    {
+      "bbox": [
+        [
+          287.0,
+          1360.0
+        ],
+        [
+          1090.0,
+          1360.0
+        ],
+        [
+          1090.0,
+          1392.0
+        ],
+        [
+          287.0,
+          1392.0
+        ]
+      ],
+      "text": "không có quy định cụ the, tổ chức, cá nhân chịu trách nhiệm ghi nhãn hàng",
+      "confidence": 0.9540722793749999
+    },
+    {
+      "bbox": [
+        [
+          287.0,
+          1388.0
+        ],
+        [
+          1089.0,
+          1388.0
+        ],
+        [
+          1089.0,
+          1420.0
+        ],
+        [
+          287.0,
+          1420.0
+        ]
+      ],
+      "text": "hóa tự xác định thông số kỹ thuật, dung sai và thông tin cảnh báo. Thông tin",
+      "confidence": 0.9681605658823529
+    },
+    {
+      "bbox": [
+        [
+          287.0,
+          1420.0
+        ],
+        [
+          1089.0,
+          1420.0
+        ],
+        [
+          1089.0,
+          1456.0
+        ],
+        [
+          287.0,
+          1456.0
+        ]
+      ],
+      "text": "cảnh báo ghi trên nhãn bằng chữ, bằng hình ảnh hoặc bằng các Ký hiệu theo",
+      "confidence": 0.952266679375
+    },
+    {
+      "bbox": [
+        [
+          286.0,
+          1457.0
+        ],
+        [
+          682.0,
+          1457.0
+        ],
+        [
+          682.0,
+          1482.0
+        ],
+        [
+          286.0,
+          1482.0
+        ]
+      ],
+      "text": "thông lệ quốc tê và quy định liên quan.",
+      "confidence": 0.9611244211111111
+    }
+  ]
+}

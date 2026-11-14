@@ -1,0 +1,861 @@
+{
+  "document_id": "59/2018/NĐ-CP",
+  "source_file": "../../legal-sources/592018ndcp/01.pdf",
+  "source_sha256": "7ac1b46e806ae9290125acb9ac1d535bcea768749d16941e9fae20bbf7343a1a",
+  "page_count": 48,
+  "render_dpi": 150,
+  "engine": "Tesseract 5.5.4 (vie+eng; OEM 1; PSM 3)",
+  "review_status": "UNREVIEWED",
+  "tesseract_version": "5.5.4",
+  "tsv_parser_version": 2,
+  "languages": [
+    "vie",
+    "eng"
+  ],
+  "traineddata_sha256": {
+    "vie": "b6b49293d95d0b6dbd8780174627e82c75be957b6f4ed9862155540d6b00bb45",
+    "eng": "8280aed0782fe27257a68ea10fe7ef324ca0f8d85bd2fd145d1c2b560bcb66ba"
+  },
+  "ocr_engine_mode": 1,
+  "page_segmentation_mode": 3,
+  "thread_limit": 1,
+  "page": 5,
+  "lines": [
+    {
+      "bbox": [
+        [
+          312.0,
+          221.0
+        ],
+        [
+          1067.0,
+          221.0
+        ],
+        [
+          1067.0,
+          262.0
+        ],
+        [
+          312.0,
+          262.0
+        ]
+      ],
+      "text": "b) Đồi với phương thức vận tải đường ‹ sắt, cửa khẩu xuất là địa điểm xếp",
+      "confidence": 0.8871609141176471
+    },
+    {
+      "bbox": [
+        [
+          260.0,
+          252.0
+        ],
+        [
+          982.0,
+          252.0
+        ],
+        [
+          982.0,
+          282.0
+        ],
+        [
+          260.0,
+          282.0
+        ]
+      ],
+      "text": "hàng tại cửa khẩu đường sắt liên vận quốc tế ghi trên tờ khai hải quan.",
+      "confidence": 0.962313175625
+    },
+    {
+      "bbox": [
+        [
+          289.0,
+          293.0
+        ],
+        [
+          1066.0,
+          293.0
+        ],
+        [
+          1066.0,
+          335.0
+        ],
+        [
+          289.0,
+          335.0
+        ]
+      ],
+      "text": "i c) Đối với phương thức vận tải đường bộ, đường thủy nội địa, cửa khẩu",
+      "confidence": 0.923567395625
+    },
+    {
+      "bbox": [
+        [
+          259.0,
+          327.0
+        ],
+        [
+          1066.0,
+          327.0
+        ],
+        [
+          1066.0,
+          360.0
+        ],
+        [
+          259.0,
+          360.0
+        ]
+      ],
+      "text": "xuất là cửa khẩu biên giới nơi xuất khẩu hàng hóa ra khỏi lãnh thổ Việt Nam",
+      "confidence": 0.9613771941176471
+    },
+    {
+      "bbox": [
+        [
+          259.0,
+          361.0
+        ],
+        [
+          1022.0,
+          361.0
+        ],
+        [
+          1022.0,
+          385.0
+        ],
+        [
+          259.0,
+          385.0
+        ]
+      ],
+      "text": "ghi trên hợp đồng mua bán hàng hóa hoặc các chứng từ khác có liên quan.",
+      "confidence": 0.963303904375
+    },
+    {
+      "bbox": [
+        [
+          310.0,
+          401.0
+        ],
+        [
+          1066.0,
+          401.0
+        ],
+        [
+          1066.0,
+          445.0
+        ],
+        [
+          310.0,
+          445.0
+        ]
+      ],
+      "text": "2. Trị giá hải quan hàng nhập khẩu là giá thực tế phải trả tính đến cửa",
+      "confidence": 0.9654387029411765
+    },
+    {
+      "bbox": [
+        [
+          258.0,
+          430.0
+        ],
+        [
+          1066.0,
+          430.0
+        ],
+        [
+          1066.0,
+          470.0
+        ],
+        [
+          258.0,
+          470.0
+        ]
+      ],
+      "text": "khẩu nhập đầu tiên trên cơ sở áp dung Hiép định chung về thuế quan và",
+      "confidence": 0.9647158912499999
+    },
+    {
+      "bbox": [
+        [
+          258.0,
+          460.0
+        ],
+        [
+          1066.0,
+          460.0
+        ],
+        [
+          1066.0,
+          493.0
+        ],
+        [
+          258.0,
+          493.0
+        ]
+      ],
+      "text": "thương mại hoặc theo các cam kết quốc tế mà Cộng hòa xã hội chủ nghĩa Việt",
+      "confidence": 0.9677794558823529
+    },
+    {
+      "bbox": [
+        [
+          257.0,
+          488.0
+        ],
+        [
+          911.0,
+          488.0
+        ],
+        [
+          911.0,
+          517.0
+        ],
+        [
+          257.0,
+          517.0
+        ]
+      ],
+      "text": "Nam đã ký kết, Cửa khẩu nhập đầu tiên được xác định như sau:",
+      "confidence": 0.9617606685714286
+    },
+    {
+      "bbox": [
+        [
+          309.0,
+          527.0
+        ],
+        [
+          1065.0,
+          527.0
+        ],
+        [
+          1065.0,
+          568.0
+        ],
+        [
+          309.0,
+          568.0
+        ]
+      ],
+      "text": "a) Đối với phương thức vận tải đường biển, đường hàng không, cửa khẩu",
+      "confidence": 0.9551193350000001
+    },
+    {
+      "bbox": [
+        [
+          258.0,
+          567.0
+        ],
+        [
+          745.0,
+          567.0
+        ],
+        [
+          745.0,
+          592.0
+        ],
+        [
+          258.0,
+          592.0
+        ]
+      ],
+      "text": "nhập dau tiên là cảng dỡ hàng ghi trên vận đơn;",
+      "confidence": 0.9583399481818182
+    },
+    {
+      "bbox": [
+        [
+          309.0,
+          605.0
+        ],
+        [
+          1065.0,
+          605.0
+        ],
+        [
+          1065.0,
+          647.0
+        ],
+        [
+          309.0,
+          647.0
+        ]
+      ],
+      "text": "b) Đềi với phương, thức vận tải đường. sắt, cửa khẩu nhập đầu tiên là ga",
+      "confidence": 0.891663485
+    },
+    {
+      "bbox": [
+        [
+          257.0,
+          637.0
+        ],
+        [
+          791.0,
+          637.0
+        ],
+        [
+          791.0,
+          666.0
+        ],
+        [
+          257.0,
+          666.0
+        ]
+      ],
+      "text": "đường sắt liên vận quốc tế ghi trên tờ khai hải quan;",
+      "confidence": 0.9647455024999999
+    },
+    {
+      "bbox": [
+        [
+          309.0,
+          679.0
+        ],
+        [
+          1065.0,
+          679.0
+        ],
+        [
+          1065.0,
+          716.0
+        ],
+        [
+          309.0,
+          716.0
+        ]
+      ],
+      "text": "9): Đối với phương thức vận tải đường bộ, đường thủy nội địa, cửa khẩu",
+      "confidence": 0.9223231779999999
+    },
+    {
+      "bbox": [
+        [
+          257.0,
+          708.0
+        ],
+        [
+          1065.0,
+          708.0
+        ],
+        [
+          1065.0,
+          751.0
+        ],
+        [
+          257.0,
+          751.0
+        ]
+      ],
+      "text": "nhập đầu tiên là cửa khẩu biên giới nơi hàng hóa nhập khẩu đi vào lãnh thổ",
+      "confidence": 0.9549679252941177
+    },
+    {
+      "bbox": [
+        [
+          257.0,
+          744.0
+        ],
+        [
+          625.0,
+          744.0
+        ],
+        [
+          625.0,
+          768.0
+        ],
+        [
+          257.0,
+          768.0
+        ]
+      ],
+      "text": "Việt Nam ghi trên tờ khai hải quan”",
+      "confidence": 0.9587259875
+    },
+    {
+      "bbox": [
+        [
+          309.0,
+          780.0
+        ],
+        [
+          741.0,
+          780.0
+        ],
+        [
+          741.0,
+          816.0
+        ],
+        [
+          309.0,
+          816.0
+        ]
+      ],
+      "text": "9. Điều 21 được sửa đổi, bổ sung như sau:",
+      "confidence": 0.9569297800000001
+    },
+    {
+      "bbox": [
+        [
+          309.0,
+          830.0
+        ],
+        [
+          799.0,
+          830.0
+        ],
+        [
+          799.0,
+          857.0
+        ],
+        [
+          309.0,
+          857.0
+        ]
+      ],
+      "text": "“Điều 21. Kiểm tra, xác định trị giá hải quan",
+      "confidence": 0.956418372
+    },
+    {
+      "bbox": [
+        [
+          311.0,
+          871.0
+        ],
+        [
+          1065.0,
+          871.0
+        ],
+        [
+          1065.0,
+          902.0
+        ],
+        [
+          311.0,
+          902.0
+        ]
+      ],
+      "text": "1. Việc kiểm tra, xác định trị giá hải quan căn cứ trên hồ sơ hải quan, các",
+      "confidence": 0.9682632911111111
+    },
+    {
+      "bbox": [
+        [
+          257.0,
+          902.0
+        ],
+        [
+          745.0,
+          902.0
+        ],
+        [
+          745.0,
+          932.0
+        ],
+        [
+          257.0,
+          932.0
+        ]
+      ],
+      "text": "chứng từ tài liệu có liên quan, thực tế hàng hóa.",
+      "confidence": 0.9637230481818182
+    },
+    {
+      "bbox": [
+        [
+          309.0,
+          948.0
+        ],
+        [
+          1065.0,
+          948.0
+        ],
+        [
+          1065.0,
+          978.0
+        ],
+        [
+          309.0,
+          978.0
+        ]
+      ],
+      "text": "2. Trường hợp đủ cơ sở bác bỏ trị giá khai báo, cơ quan hải quan thông",
+      "confidence": 0.9679569600000001
+    },
+    {
+      "bbox": [
+        [
+          257.0,
+          972.0
+        ],
+        [
+          1066.0,
+          972.0
+        ],
+        [
+          1066.0,
+          1010.0
+        ],
+        [
+          257.0,
+          1010.0
+        ]
+      ],
+      "text": "báo, đề nghị người khai hải quan thực hiện khai bd sung trong thời hạn tối đa",
+      "confidence": 0.9614274594117647
+    },
+    {
+      "bbox": [
+        [
+          257.0,
+          1000.0
+        ],
+        [
+          1066.0,
+          1000.0
+        ],
+        [
+          1066.0,
+          1045.0
+        ],
+        [
+          257.0,
+          1045.0
+        ]
+      ],
+      "text": "05 ngày làm việc kể từ ngày thông báo và giải phóng hàng theo quy định. Nếu",
+      "confidence": 0.9635790023529411
+    },
+    {
+      "bbox": [
+        [
+          256.0,
+          1033.0
+        ],
+        [
+          1066.0,
+          1033.0
+        ],
+        [
+          1066.0,
+          1064.0
+        ],
+        [
+          256.0,
+          1064.0
+        ]
+      ],
+      "text": "người khai hải quan khai bd sung trong thời hạn nêu trên thì cơ quan hải quan",
+      "confidence": 0.956947671764706
+    },
+    {
+      "bbox": [
+        [
+          257.0,
+          1059.0
+        ],
+        [
+          1066.0,
+          1059.0
+        ],
+        [
+          1066.0,
+          1097.0
+        ],
+        [
+          257.0,
+          1097.0
+        ]
+      ],
+      "text": "thông quan hàng hóa theo quy định. Quá thời hạn mà người khai hải quan",
+      "confidence": 0.9682026766666667
+    },
+    {
+      "bbox": [
+        [
+          257.0,
+          1087.0
+        ],
+        [
+          1065.0,
+          1087.0
+        ],
+        [
+          1065.0,
+          1124.0
+        ],
+        [
+          257.0,
+          1124.0
+        ]
+      ],
+      "text": "không khai bổ sung thì cơ quan hai quan thực hiện xác định tri giá, ấn định thuế",
+      "confidence": 0.9317839522222222
+    },
+    {
+      "bbox": [
+        [
+          257.0,
+          1120.0
+        ],
+        [
+          1022.0,
+          1120.0
+        ],
+        [
+          1022.0,
+          1151.0
+        ],
+        [
+          257.0,
+          1151.0
+        ]
+      ],
+      "text": "theo quy định của Luật quản lý thuế để thông quan hàng hóa theo quy định.",
+      "confidence": 0.9645109381250001
+    },
+    {
+      "bbox": [
+        [
+          310.0,
+          1162.0
+        ],
+        [
+          1065.0,
+          1162.0
+        ],
+        [
+          1065.0,
+          1204.0
+        ],
+        [
+          310.0,
+          1204.0
+        ]
+      ],
+      "text": "3. Trường hợp nghỉ vấn về trị giá khai báo, cơ quan hải quan thông báo",
+      "confidence": 0.962856254375
+    },
+    {
+      "bbox": [
+        [
+          258.0,
+          1190.0
+        ],
+        [
+          1066.0,
+          1190.0
+        ],
+        [
+          1066.0,
+          1233.0
+        ],
+        [
+          258.0,
+          1233.0
+        ]
+      ],
+      "text": "cơ sở nghỉ vấn, mức giá, phương pháp do cơ quan hải quan dự kiến xác định",
+      "confidence": 0.9608983341176471
+    },
+    {
+      "bbox": [
+        [
+          258.0,
+          1223.0
+        ],
+        [
+          1067.0,
+          1223.0
+        ],
+        [
+          1067.0,
+          1259.0
+        ],
+        [
+          258.0,
+          1259.0
+        ]
+      ],
+      "text": "và giải phóng hàng hóa theo quy định, người khai hải quan thực hiện tham",
+      "confidence": 0.9670149793333332
+    },
+    {
+      "bbox": [
+        [
+          258.0,
+          1252.0
+        ],
+        [
+          1048.0,
+          1252.0
+        ],
+        [
+          1048.0,
+          1282.0
+        ],
+        [
+          258.0,
+          1282.0
+        ]
+      ],
+      "text": "vấn với cơ quan hải quan nhằm làm rõ về tính chính xác của trị giá khai báo.",
+      "confidence": 0.965771875
+    },
+    {
+      "bbox": [
+        [
+          310.0,
+          1296.0
+        ],
+        [
+          1067.0,
+          1296.0
+        ],
+        [
+          1067.0,
+          1336.0
+        ],
+        [
+          310.0,
+          1336.0
+        ]
+      ],
+      "text": "a) Trường hợp người khai hải quan đồng ý với mức giá, phương pháp do",
+      "confidence": 0.9639790286666667
+    },
+    {
+      "bbox": [
+        [
+          258.0,
+          1324.0
+        ],
+        [
+          1067.0,
+          1324.0
+        ],
+        [
+          1067.0,
+          1362.0
+        ],
+        [
+          258.0,
+          1362.0
+        ]
+      ],
+      "text": "cơ quan hải quan dự kiến xác định thì thực hiện khai bổ sung theo quy định",
+      "confidence": 0.9643574923529411
+    },
+    {
+      "bbox": [
+        [
+          258.0,
+          1353.0
+        ],
+        [
+          1067.0,
+          1353.0
+        ],
+        [
+          1067.0,
+          1391.0
+        ],
+        [
+          258.0,
+          1391.0
+        ]
+      ],
+      "text": "trong thời hạn tôi đa 05 ngày làm việc kể từ ngày đến cơ quan hải quan thực",
+      "confidence": 0.95694394
+    },
+    {
+      "bbox": [
+        [
+          258.0,
+          1385.0
+        ],
+        [
+          1068.0,
+          1385.0
+        ],
+        [
+          1068.0,
+          1416.0
+        ],
+        [
+          258.0,
+          1416.0
+        ]
+      ],
+      "text": "hiện tham vấn, cơ quan hải quan thông quan hàng hóa theo quy định. Trường",
+      "confidence": 0.9658624926666667
+    },
+    {
+      "bbox": [
+        [
+          259.0,
+          1412.0
+        ],
+        [
+          1069.0,
+          1412.0
+        ],
+        [
+          1069.0,
+          1445.0
+        ],
+        [
+          259.0,
+          1445.0
+        ]
+      ],
+      "text": "hợp người khai hải quan không khai bổ sung trong thời hạn nêu trên thì cơ",
+      "confidence": 0.96344177125
+    },
+    {
+      "bbox": [
+        [
+          260.0,
+          1439.0
+        ],
+        [
+          1069.0,
+          1439.0
+        ],
+        [
+          1069.0,
+          1477.0
+        ],
+        [
+          260.0,
+          1477.0
+        ]
+      ],
+      "text": "quan hải quan thực hiện xác định trị giá, ân định thuế theo quy định của Luật",
+      "confidence": 0.9671337099999999
+    },
+    {
+      "bbox": [
+        [
+          260.0,
+          1473.0
+        ],
+        [
+          793.0,
+          1473.0
+        ],
+        [
+          793.0,
+          1503.0
+        ],
+        [
+          260.0,
+          1503.0
+        ]
+      ],
+      "text": "quản lý thuế để thông quan hàng hóa theo quy định.",
+      "confidence": 0.9542967090909091
+    }
+  ]
+}

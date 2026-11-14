@@ -1,0 +1,883 @@
+{
+  "document_id": "59/2018/NĐ-CP",
+  "source_file": "../../legal-sources/592018ndcp/01.pdf",
+  "source_sha256": "7ac1b46e806ae9290125acb9ac1d535bcea768749d16941e9fae20bbf7343a1a",
+  "page_count": 48,
+  "render_dpi": 150,
+  "engine": "Tesseract 5.5.4 (vie+eng; OEM 1; PSM 3)",
+  "review_status": "UNREVIEWED",
+  "tesseract_version": "5.5.4",
+  "tsv_parser_version": 2,
+  "languages": [
+    "vie",
+    "eng"
+  ],
+  "traineddata_sha256": {
+    "vie": "b6b49293d95d0b6dbd8780174627e82c75be957b6f4ed9862155540d6b00bb45",
+    "eng": "8280aed0782fe27257a68ea10fe7ef324ca0f8d85bd2fd145d1c2b560bcb66ba"
+  },
+  "ocr_engine_mode": 1,
+  "page_segmentation_mode": 3,
+  "thread_limit": 1,
+  "page": 9,
+  "lines": [
+    {
+      "bbox": [
+        [
+          313.0,
+          231.0
+        ],
+        [
+          832.0,
+          231.0
+        ],
+        [
+          832.0,
+          255.0
+        ],
+        [
+          313.0,
+          255.0
+        ]
+      ],
+      "text": "h) Hàng hóa khác theo quy định của Bộ Tài chính.",
+      "confidence": 0.9579357436363636
+    },
+    {
+      "bbox": [
+        [
+          313.0,
+          274.0
+        ],
+        [
+          1071.0,
+          274.0
+        ],
+        [
+          1071.0,
+          303.0
+        ],
+        [
+          313.0,
+          303.0
+        ]
+      ],
+      "text": "3. Người khai hải quan phải khai đầy đủ, chính xác, trung thực, rõ ràng",
+      "confidence": 0.9677639406666667
+    },
+    {
+      "bbox": [
+        [
+          260.0,
+          303.0
+        ],
+        [
+          1070.0,
+          303.0
+        ],
+        [
+          1070.0,
+          332.0
+        ],
+        [
+          260.0,
+          332.0
+        ]
+      ],
+      "text": "các tiêu chí trên tờ khai hải quan, tự tính để xác định số thuế, các khoản thu",
+      "confidence": 0.9572116294444445
+    },
+    {
+      "bbox": [
+        [
+          259.0,
+          333.0
+        ],
+        [
+          1069.0,
+          333.0
+        ],
+        [
+          1069.0,
+          361.0
+        ],
+        [
+          259.0,
+          361.0
+        ]
+      ],
+      "text": "khác phải nộp ngân sách nhà nước và chịu trách nhiệm trước pháp luật về các",
+      "confidence": 0.9673823500000001
+    },
+    {
+      "bbox": [
+        [
+          259.0,
+          367.0
+        ],
+        [
+          436.0,
+          367.0
+        ],
+        [
+          436.0,
+          390.0
+        ],
+        [
+          259.0,
+          390.0
+        ]
+      ],
+      "text": "nội dung đã khai.",
+      "confidence": 0.9691683975000001
+    },
+    {
+      "bbox": [
+        [
+          311.0,
+          409.0
+        ],
+        [
+          1069.0,
+          409.0
+        ],
+        [
+          1069.0,
+          442.0
+        ],
+        [
+          311.0,
+          442.0
+        ]
+      ],
+      "text": "Trường hợp hàng hóa xuất khẩu, nhập khẩu thuộc diện phải có giấy phép",
+      "confidence": 0.9670626942857143
+    },
+    {
+      "bbox": [
+        [
+          259.0,
+          438.0
+        ],
+        [
+          1069.0,
+          438.0
+        ],
+        [
+          1069.0,
+          476.0
+        ],
+        [
+          259.0,
+          476.0
+        ]
+      ],
+      "text": "của cơ quan quản lý chuyên ngành thì phải có giấy phép trước khi đăng ký tờ",
+      "confidence": 0.9653621841176471
+    },
+    {
+      "bbox": [
+        [
+          258.0,
+          467.0
+        ],
+        [
+          1069.0,
+          467.0
+        ],
+        [
+          1069.0,
+          510.0
+        ],
+        [
+          258.0,
+          510.0
+        ]
+      ],
+      "text": "khai hải quan và phải khai đầy đủ thông tin giấy phép trên tờ khai hải quan",
+      "confidence": 0.9656174605882353
+    },
+    {
+      "bbox": [
+        [
+          258.0,
+          497.0
+        ],
+        [
+          607.0,
+          497.0
+        ],
+        [
+          607.0,
+          524.0
+        ],
+        [
+          258.0,
+          524.0
+        ]
+      ],
+      "text": "theo hướng dẫn của Bộ Tài chính.",
+      "confidence": 0.9691652371428572
+    },
+    {
+      "bbox": [
+        [
+          316.0,
+          543.0
+        ],
+        [
+          1068.0,
+          543.0
+        ],
+        [
+          1068.0,
+          571.0
+        ],
+        [
+          316.0,
+          571.0
+        ]
+      ],
+      "text": "Khi kiếm tra hồ sơ cơ quan hải quan đủ cơ sở xác định hàng hóa thuộc",
+      "confidence": 0.9557528652941175
+    },
+    {
+      "bbox": [
+        [
+          258.0,
+          571.0
+        ],
+        [
+          1067.0,
+          571.0
+        ],
+        [
+          1067.0,
+          600.0
+        ],
+        [
+          258.0,
+          600.0
+        ]
+      ],
+      "text": "diện phải có giấy phép mà không có giấy phép tại thời điểm đăng ký tờ khai",
+      "confidence": 0.9674149682352942
+    },
+    {
+      "bbox": [
+        [
+          257.0,
+          600.0
+        ],
+        [
+          1068.0,
+          600.0
+        ],
+        [
+          1068.0,
+          629.0
+        ],
+        [
+          257.0,
+          629.0
+        ]
+      ],
+      "text": "thì sẽ bị xử lý theo quy định của pháp luật về xử lý vi phạm hành chính và tờ",
+      "confidence": 0.9670987595
+    },
+    {
+      "bbox": [
+        [
+          257.0,
+          634.0
+        ],
+        [
+          966.0,
+          634.0
+        ],
+        [
+          966.0,
+          658.0
+        ],
+        [
+          257.0,
+          658.0
+        ]
+      ],
+      "text": "khai hải quan đã đăng ký không có giá trị thực biện thủ tục hải quan.",
+      "confidence": 0.9674716237500001
+    },
+    {
+      "bbox": [
+        [
+          310.0,
+          673.0
+        ],
+        [
+          1067.0,
+          673.0
+        ],
+        [
+          1067.0,
+          713.0
+        ],
+        [
+          310.0,
+          713.0
+        ]
+      ],
+      "text": "5 Đối với hàng hóa xuất khẩu, “nhập khẩu thuộc đối tượng không chịu",
+      "confidence": 0.9119871071428572
+    },
+    {
+      "bbox": [
+        [
+          257.0,
+          704.0
+        ],
+        [
+          1066.0,
+          704.0
+        ],
+        [
+          1066.0,
+          738.0
+        ],
+        [
+          257.0,
+          738.0
+        ]
+      ],
+      "text": "thuế xuất khẩu, thuế nhập khẩu, thuế tiêu thụ đặc biệt, thuế giá trị gia tăng,",
+      "confidence": 0.9636005543749999
+    },
+    {
+      "bbox": [
+        [
+          256.0,
+          732.0
+        ],
+        [
+          1066.0,
+          732.0
+        ],
+        [
+          1066.0,
+          762.0
+        ],
+        [
+          256.0,
+          762.0
+        ]
+      ],
+      "text": "thuế bảo vệ môi trường hoặc miễn thuế hoặc áp dụng thuế suất, mức thuế",
+      "confidence": 0.968396448
+    },
+    {
+      "bbox": [
+        [
+          256.0,
+          763.0
+        ],
+        [
+          1067.0,
+          763.0
+        ],
+        [
+          1067.0,
+          801.0
+        ],
+        [
+          256.0,
+          801.0
+        ]
+      ],
+      "text": "tuyệt đối theo hạn ngạch thuế quan và đã được giải phóng hàng hoặc thông",
+      "confidence": 0.9675393726666667
+    },
+    {
+      "bbox": [
+        [
+          256.0,
+          791.0
+        ],
+        [
+          1066.0,
+          791.0
+        ],
+        [
+          1066.0,
+          824.0
+        ],
+        [
+          256.0,
+          824.0
+        ]
+      ],
+      "text": "quan nhưng sau đó có thay đổi về đối tượng không chịu thuế hoặc mục đích",
+      "confidence": 0.96321858
+    },
+    {
+      "bbox": [
+        [
+          256.0,
+          814.0
+        ],
+        [
+          1066.0,
+          814.0
+        ],
+        [
+          1066.0,
+          852.0
+        ],
+        [
+          256.0,
+          852.0
+        ]
+      ],
+      "text": "được miễn thuế; áp dụng thuế suất, mức thuế tuyệt đối theo hạn ngạch thuế",
+      "confidence": 0.9679268699999999
+    },
+    {
+      "bbox": [
+        [
+          256.0,
+          844.0
+        ],
+        [
+          1066.0,
+          844.0
+        ],
+        [
+          1066.0,
+          887.0
+        ],
+        [
+          256.0,
+          887.0
+        ]
+      ],
+      "text": "quan; hàng hóa là nguyên liệu, vật tư, linh kiện nhập khẩu để gia công, sản",
+      "confidence": 0.9656637293750001
+    },
+    {
+      "bbox": [
+        [
+          256.0,
+          873.0
+        ],
+        [
+          1066.0,
+          873.0
+        ],
+        [
+          1066.0,
+          909.0
+        ],
+        [
+          256.0,
+          909.0
+        ]
+      ],
+      "text": "xuất hàng hóa xuất khẩu và hàng hóa tạm nhập - tái xuất đã giải phóng hàng",
+      "confidence": 0.9580102947058823
+    },
+    {
+      "bbox": [
+        [
+          255.0,
+          905.0
+        ],
+        [
+          1066.0,
+          905.0
+        ],
+        [
+          1066.0,
+          938.0
+        ],
+        [
+          255.0,
+          938.0
+        ]
+      ],
+      "text": "hoặc thông quan nhưng sau đó thay đổi mục đích sử dụng, chuyển tiêu thụ nội",
+      "confidence": 0.948295523125
+    },
+    {
+      "bbox": [
+        [
+          256.0,
+          933.0
+        ],
+        [
+          1066.0,
+          933.0
+        ],
+        [
+          1066.0,
+          968.0
+        ],
+        [
+          256.0,
+          968.0
+        ]
+      ],
+      "text": "địa thì phải khai tờ khai hải quan mới. Chính sách quản lý hàng hóa xuất",
+      "confidence": 0.968645635
+    },
+    {
+      "bbox": [
+        [
+          255.0,
+          962.0
+        ],
+        [
+          1066.0,
+          962.0
+        ],
+        [
+          1066.0,
+          992.0
+        ],
+        [
+          255.0,
+          992.0
+        ]
+      ],
+      "text": "khẩu, nhập khẩu; chính sách thuế đối với hàng hóa xuất khẩu, nhập khẩu thực",
+      "confidence": 0.9620965159999999
+    },
+    {
+      "bbox": [
+        [
+          255.0,
+          993.0
+        ],
+        [
+          1066.0,
+          993.0
+        ],
+        [
+          1066.0,
+          1035.0
+        ],
+        [
+          255.0,
+          1035.0
+        ]
+      ],
+      "text": "hiện tại thời điểm đăng ký tờ khai hải quan 1 mới trừ trường hợp đã thực hiện",
+      "confidence": 0.962968113888889
+    },
+    {
+      "bbox": [
+        [
+          256.0,
+          1020.0
+        ],
+        [
+          1066.0,
+          1020.0
+        ],
+        [
+          1066.0,
+          1049.0
+        ],
+        [
+          256.0,
+          1049.0
+        ]
+      ],
+      "text": "đầy đủ chính sách quản lý hàng hóa xuất khẩu, nhập khẩu tại thời điểm đăng",
+      "confidence": 0.9661591
+    },
+    {
+      "bbox": [
+        [
+          255.0,
+          1050.0
+        ],
+        [
+          451.0,
+          1050.0
+        ],
+        [
+          451.0,
+          1078.0
+        ],
+        [
+          255.0,
+          1078.0
+        ]
+      ],
+      "text": "ký tờ khai ban đầu.",
+      "confidence": 0.9669611979999999
+    },
+    {
+      "bbox": [
+        [
+          311.0,
+          1095.0
+        ],
+        [
+          1065.0,
+          1095.0
+        ],
+        [
+          1065.0,
+          1125.0
+        ],
+        [
+          311.0,
+          1125.0
+        ]
+      ],
+      "text": "10. Bộ Tài chính quy định chi tiết việc khai bổ sung, hủy tờ khai hải",
+      "confidence": 0.963265351875
+    },
+    {
+      "bbox": [
+        [
+          256.0,
+          1124.0
+        ],
+        [
+          1066.0,
+          1124.0
+        ],
+        [
+          1066.0,
+          1164.0
+        ],
+        [
+          256.0,
+          1164.0
+        ]
+      ],
+      "text": "quan, đăng ký tờ khai hải quan một lần; khai tờ khai hải quan mới đối với",
+      "confidence": 0.9679461717647058
+    },
+    {
+      "bbox": [
+        [
+          256.0,
+          1153.0
+        ],
+        [
+          1066.0,
+          1153.0
+        ],
+        [
+          1066.0,
+          1183.0
+        ],
+        [
+          256.0,
+          1183.0
+        ]
+      ],
+      "text": "hàng hóa thay đổi mục đích sử dụng, chuyển tiêu thụ nội địa và xử lý trong",
+      "confidence": 0.9673932194117647
+    },
+    {
+      "bbox": [
+        [
+          255.0,
+          1179.0
+        ],
+        [
+          1065.0,
+          1179.0
+        ],
+        [
+          1065.0,
+          1225.0
+        ],
+        [
+          255.0,
+          1225.0
+        ]
+      ],
+      "text": "trường hợp hệ thống › xử lý dữ liệu điện tử hải quan hoặc hệ thống khai hải",
+      "confidence": 0.9629031494444444
+    },
+    {
+      "bbox": [
+        [
+          255.0,
+          1212.0
+        ],
+        [
+          500.0,
+          1212.0
+        ],
+        [
+          500.0,
+          1241.0
+        ],
+        [
+          255.0,
+          1241.0
+        ]
+      ],
+      "text": "quan điện tử gặp sự cb.”",
+      "confidence": 0.9329562866666667
+    },
+    {
+      "bbox": [
+        [
+          310.0,
+          1259.0
+        ],
+        [
+          789.0,
+          1259.0
+        ],
+        [
+          789.0,
+          1288.0
+        ],
+        [
+          310.0,
+          1288.0
+        ]
+      ],
+      "text": "13. Sửa đổi, bd sung khoản 4 Điều 26 như sau:",
+      "confidence": 0.9578026936363636
+    },
+    {
+      "bbox": [
+        [
+          307.0,
+          1306.0
+        ],
+        [
+          1065.0,
+          1306.0
+        ],
+        [
+          1065.0,
+          1339.0
+        ],
+        [
+          307.0,
+          1339.0
+        ]
+      ],
+      "text": "“4. Téng cục trưởng Tổng cục Hải quan căn cứ tiêu chí | phân loại mức độ",
+      "confidence": 0.9362861047058825
+    },
+    {
+      "bbox": [
+        [
+          255.0,
+          1334.0
+        ],
+        [
+          1067.0,
+          1334.0
+        ],
+        [
+          1067.0,
+          1364.0
+        ],
+        [
+          255.0,
+          1364.0
+        ]
+      ],
+      "text": "rủi ro do Bộ trưởng Bộ Tài chính quy định để quyết định kiểm tra hải quan và",
+      "confidence": 0.9669594233333334
+    },
+    {
+      "bbox": [
+        [
+          255.0,
+          1361.0
+        ],
+        [
+          1066.0,
+          1361.0
+        ],
+        [
+          1066.0,
+          1397.0
+        ],
+        [
+          255.0,
+          1397.0
+        ]
+      ],
+      "text": "thông báo trên Hệ thống xử lý dữ liệu điện tử hải quan theo một trong những",
+      "confidence": 0.9684119723529412
+    },
+    {
+      "bbox": [
+        [
+          255.0,
+          1399.0
+        ],
+        [
+          455.0,
+          1399.0
+        ],
+        [
+          455.0,
+          1422.0
+        ],
+        [
+          255.0,
+          1422.0
+        ]
+      ],
+      "text": "hình thức dưới đây:",
+      "confidence": 0.968800315
+    },
+    {
+      "bbox": [
+        [
+          308.0,
+          1440.0
+        ],
+        [
+          1067.0,
+          1440.0
+        ],
+        [
+          1067.0,
+          1469.0
+        ],
+        [
+          308.0,
+          1469.0
+        ]
+      ],
+      "text": "a) Chấp nhận thông tin khai Tờ khai hải quan để quyết định thông quan",
+      "confidence": 0.9613211833333334
+    },
+    {
+      "bbox": [
+        [
+          255.0,
+          1475.0
+        ],
+        [
+          355.0,
+          1475.0
+        ],
+        [
+          355.0,
+          1497.0
+        ],
+        [
+          255.0,
+          1497.0
+        ]
+      ],
+      "text": "hàng hóa;",
+      "confidence": 0.9633467450000001
+    }
+  ]
+}
