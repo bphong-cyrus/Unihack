@@ -1,0 +1,860 @@
+{
+  "document_id": "18/2021/NĐ-CP",
+  "source_file": "../../legal-sources/182021ndcp/01.pdf",
+  "source_sha256": "cb0bf16ab3ee6554929e0d9d2cc4f180f51b8ea10ddd30a37309353edeb050d8",
+  "page_count": 114,
+  "render_dpi": 150,
+  "engine": "Tesseract 5.5.4 (vie+eng; OEM 1; PSM 3)",
+  "review_status": "UNREVIEWED",
+  "tesseract_version": "5.5.4",
+  "languages": [
+    "vie",
+    "eng"
+  ],
+  "traineddata_sha256": {
+    "vie": "b6b49293d95d0b6dbd8780174627e82c75be957b6f4ed9862155540d6b00bb45",
+    "eng": "8280aed0782fe27257a68ea10fe7ef324ca0f8d85bd2fd145d1c2b560bcb66ba"
+  },
+  "ocr_engine_mode": 1,
+  "page_segmentation_mode": 3,
+  "thread_limit": 2,
+  "page": 12,
+  "lines": [
+    {
+      "bbox": [
+        [
+          660.0,
+          55.0
+        ],
+        [
+          684.0,
+          55.0
+        ],
+        [
+          684.0,
+          76.0
+        ],
+        [
+          660.0,
+          76.0
+        ]
+      ],
+      "text": "12",
+      "confidence": 0.9675797300000001
+    },
+    {
+      "bbox": [
+        [
+          268.0,
+          139.0
+        ],
+        [
+          1135.0,
+          139.0
+        ],
+        [
+          1135.0,
+          185.0
+        ],
+        [
+          268.0,
+          185.0
+        ]
+      ],
+      "text": "Người nộp thuế phải nộp thêm các chứng từ sau cho cơ quan bải quan tại",
+      "confidence": 0.960528154375
+    },
+    {
+      "bbox": [
+        [
+          209.0,
+          173.0
+        ],
+        [
+          1095.0,
+          173.0
+        ],
+        [
+          1095.0,
+          208.0
+        ],
+        [
+          209.0,
+          208.0
+        ]
+      ],
+      "text": "thời điểm thông báo cơ sở sản xuất của tổ chức nhận sản xuất, gia công lại:",
+      "confidence": 0.9644058682352942
+    },
+    {
+      "bbox": [
+        [
+          278.0,
+          232.0
+        ],
+        [
+          1136.0,
+          232.0
+        ],
+        [
+          1136.0,
+          272.0
+        ],
+        [
+          278.0,
+          272.0
+        ]
+      ],
+      "text": "Giấy chứng nhận đăng ký doanh nghiệp hoặc Báo cáo tài chính đã được",
+      "confidence": 0.9673733135714285
+    },
+    {
+      "bbox": [
+        [
+          210.0,
+          266.0
+        ],
+        [
+          1137.0,
+          266.0
+        ],
+        [
+          1137.0,
+          301.0
+        ],
+        [
+          210.0,
+          301.0
+        ]
+      ],
+      "text": "kiểm toán tại thời điểm gần nhất của tổ chức nhận sản xuất và của người nộp",
+      "confidence": 0.9691928111764706
+    },
+    {
+      "bbox": [
+        [
+          210.0,
+          301.0
+        ],
+        [
+          584.0,
+          301.0
+        ],
+        [
+          584.0,
+          334.0
+        ],
+        [
+          210.0,
+          334.0
+        ]
+      ],
+      "text": "thuế: 01 bản sao có chứng thực;",
+      "confidence": 0.9691623257142858
+    },
+    {
+      "bbox": [
+        [
+          278.0,
+          360.0
+        ],
+        [
+          1137.0,
+          360.0
+        ],
+        [
+          1137.0,
+          395.0
+        ],
+        [
+          278.0,
+          395.0
+        ]
+      ],
+      "text": "Điều lệ về tổ chức hoạt động của tổ chức nhận sản xuất và của người",
+      "confidence": 0.967813266875
+    },
+    {
+      "bbox": [
+        [
+          211.0,
+          394.0
+        ],
+        [
+          636.0,
+          394.0
+        ],
+        [
+          636.0,
+          428.0
+        ],
+        [
+          211.0,
+          428.0
+        ]
+      ],
+      "text": "nộp thuế: 01 bản sao có chứng thực;",
+      "confidence": 0.9676469425
+    },
+    {
+      "bbox": [
+        [
+          280.0,
+          453.0
+        ],
+        [
+          1137.0,
+          453.0
+        ],
+        [
+          1137.0,
+          493.0
+        ],
+        [
+          280.0,
+          493.0
+        ]
+      ],
+      "text": "Số cổ đông của doanh nghiệp đối với công ty cổ phần hoặc Sổ đăng ký",
+      "confidence": 0.9375140243750001
+    },
+    {
+      "bbox": [
+        [
+          210.0,
+          486.0
+        ],
+        [
+          1138.0,
+          486.0
+        ],
+        [
+          1138.0,
+          525.0
+        ],
+        [
+          210.0,
+          525.0
+        ]
+      ],
+      "text": "thành viên đối với Công ty trách nhiệm hữu hạn hai thành viên trở lên của tô",
+      "confidence": 0.9688103141176471
+    },
+    {
+      "bbox": [
+        [
+          212.0,
+          520.0
+        ],
+        [
+          1030.0,
+          520.0
+        ],
+        [
+          1030.0,
+          556.0
+        ],
+        [
+          212.0,
+          556.0
+        ]
+      ],
+      "text": "chức nhận sản xuất và của người nộp thuế: 01 bản sao có chứng thực.",
+      "confidence": 0.9683497673333333
+    },
+    {
+      "bbox": [
+        [
+          270.0,
+          580.0
+        ],
+        [
+          1136.0,
+          580.0
+        ],
+        [
+          1136.0,
+          618.0
+        ],
+        [
+          270.0,
+          618.0
+        ]
+      ],
+      "text": "Người nộp thuế giao toàn bộ hàng hóa đã nhập khẩu để thuê tổ chức",
+      "confidence": 0.9663323566666666
+    },
+    {
+      "bbox": [
+        [
+          210.0,
+          611.0
+        ],
+        [
+          1135.0,
+          611.0
+        ],
+        [
+          1135.0,
+          659.0
+        ],
+        [
+          210.0,
+          659.0
+        ]
+      ],
+      "text": "nhận sản xuất, gia công lại tại khu phi thuế quan hoặc tại nước ngoài được",
+      "confidence": 0.9639406012499999
+    },
+    {
+      "bbox": [
+        [
+          211.0,
+          647.0
+        ],
+        [
+          1134.0,
+          647.0
+        ],
+        [
+          1134.0,
+          686.0
+        ],
+        [
+          211.0,
+          686.0
+        ]
+      ],
+      "text": "miễn thuế xuất khẩu đối với hàng hóa nhập khẩu giao sản xuất, gia công lại.",
+      "confidence": 0.9605645125
+    },
+    {
+      "bbox": [
+        [
+          212.0,
+          681.0
+        ],
+        [
+          1136.0,
+          681.0
+        ],
+        [
+          1136.0,
+          721.0
+        ],
+        [
+          212.0,
+          721.0
+        ]
+      ],
+      "text": "Sản phẩm thuê sản xuất, gia công tại nước ngoài nhập khẩu trở lại Việt Nam",
+      "confidence": 0.967001023125
+    },
+    {
+      "bbox": [
+        [
+          211.0,
+          715.0
+        ],
+        [
+          1136.0,
+          715.0
+        ],
+        [
+          1136.0,
+          755.0
+        ],
+        [
+          211.0,
+          755.0
+        ]
+      ],
+      "text": "phải nộp thuế nhập khẩu theo quy định tại điểm d khoản 1 Điều 11 Nghị định",
+      "confidence": 0.9496635623529411
+    },
+    {
+      "bbox": [
+        [
+          211.0,
+          748.0
+        ],
+        [
+          1135.0,
+          748.0
+        ],
+        [
+          1135.0,
+          791.0
+        ],
+        [
+          211.0,
+          791.0
+        ]
+      ],
+      "text": "này. Sản phẩm thuê sản xuất, gia công tại khu phi thuế quan nhập khẩu vào",
+      "confidence": 0.96841379625
+    },
+    {
+      "bbox": [
+        [
+          211.0,
+          783.0
+        ],
+        [
+          1135.0,
+          783.0
+        ],
+        [
+          1135.0,
+          833.0
+        ],
+        [
+          211.0,
+          833.0
+        ]
+      ],
+      "text": "nội địa Việt Nam phải nộp thuế nhập khẩu theo quy định tại khoản 2 Điều 22",
+      "confidence": 0.9658320311764705
+    },
+    {
+      "bbox": [
+        [
+          211.0,
+          821.0
+        ],
+        [
+          385.0,
+          821.0
+        ],
+        [
+          385.0,
+          848.0
+        ],
+        [
+          211.0,
+          848.0
+        ]
+      ],
+      "text": "Nghị định này.",
+      "confidence": 0.9657888800000001
+    },
+    {
+      "bbox": [
+        [
+          271.0,
+          875.0
+        ],
+        [
+          1136.0,
+          875.0
+        ],
+        [
+          1136.0,
+          917.0
+        ],
+        [
+          271.0,
+          917.0
+        ]
+      ],
+      "text": "c) Người nop thuế có trách nhiệm thực hiện quyết toán tình hình sử dụng",
+      "confidence": 0.9423085360000001
+    },
+    {
+      "bbox": [
+        [
+          210.0,
+          909.0
+        ],
+        [
+          955.0,
+          909.0
+        ],
+        [
+          955.0,
+          943.0
+        ],
+        [
+          210.0,
+          943.0
+        ]
+      ],
+      "text": "hàng hóa được miễn thuế theo quy định của pháp luật hải quan.",
+      "confidence": 0.9692329346153846
+    },
+    {
+      "bbox": [
+        [
+          244.0,
+          967.0
+        ],
+        [
+          1136.0,
+          967.0
+        ],
+        [
+          1136.0,
+          1007.0
+        ],
+        [
+          244.0,
+          1007.0
+        ]
+      ],
+      "text": "_. d) Lượng hàng hóa nhập khẩu được sử dụng dé sản xuất sản phẩm xuất",
+      "confidence": 0.8984199956250001
+    },
+    {
+      "bbox": [
+        [
+          210.0,
+          1000.0
+        ],
+        [
+          1136.0,
+          1000.0
+        ],
+        [
+          1136.0,
+          1041.0
+        ],
+        [
+          210.0,
+          1041.0
+        ]
+      ],
+      "text": "khâu ra nước ngoài, xuất khẩu vào khu phi thuế quan được miễn thuế là lượng",
+      "confidence": 0.96514534
+    },
+    {
+      "bbox": [
+        [
+          209.0,
+          1033.0
+        ],
+        [
+          1125.0,
+          1033.0
+        ],
+        [
+          1125.0,
+          1069.0
+        ],
+        [
+          209.0,
+          1069.0
+        ]
+      ],
+      "text": "hàng hóa nhập khẩu thực tế được sử dung dé sản xuất sản phẩm đã xuất khẩu.",
+      "confidence": 0.9647410405882353
+    },
+    {
+      "bbox": [
+        [
+          270.0,
+          1092.0
+        ],
+        [
+          1134.0,
+          1092.0
+        ],
+        [
+          1134.0,
+          1133.0
+        ],
+        [
+          270.0,
+          1133.0
+        ]
+      ],
+      "text": "Hàng hóa nhập khẩu được sử dụng dé sản xuất sản phẩm đã xuất khẩu tại",
+      "confidence": 0.966295528125
+    },
+    {
+      "bbox": [
+        [
+          210.0,
+          1126.0
+        ],
+        [
+          1135.0,
+          1126.0
+        ],
+        [
+          1135.0,
+          1166.0
+        ],
+        [
+          210.0,
+          1166.0
+        ]
+      ],
+      "text": "chỗ cho tổ chức, cá nhân trong nội địa (không nằm trong khu phi thuế quan)",
+      "confidence": 0.963345313125
+    },
+    {
+      "bbox": [
+        [
+          210.0,
+          1160.0
+        ],
+        [
+          1135.0,
+          1160.0
+        ],
+        [
+          1135.0,
+          1194.0
+        ],
+        [
+          210.0,
+          1194.0
+        ]
+      ],
+      "text": "và sản phẩm xuất khẩu tại chỗ, sản phẩm nhập khẩu tại chỗ thực hiện theo",
+      "confidence": 0.9666118143750001
+    },
+    {
+      "bbox": [
+        [
+          209.0,
+          1194.0
+        ],
+        [
+          629.0,
+          1194.0
+        ],
+        [
+          629.0,
+          1227.0
+        ],
+        [
+          209.0,
+          1227.0
+        ]
+      ],
+      "text": "quy định tại điểm e, g, h khoản này.",
+      "confidence": 0.9487674033333333
+    },
+    {
+      "bbox": [
+        [
+          269.0,
+          1249.0
+        ],
+        [
+          1135.0,
+          1249.0
+        ],
+        [
+          1135.0,
+          1296.0
+        ],
+        [
+          269.0,
+          1296.0
+        ]
+      ],
+      "text": "đ) Hàng hóa nhập khẩu để sản xuất, sản phẩm sản xuất, phế liệu, phế",
+      "confidence": 0.9436993093333333
+    },
+    {
+      "bbox": [
+        [
+          208.0,
+          1285.0
+        ],
+        [
+          1135.0,
+          1285.0
+        ],
+        [
+          1135.0,
+          1332.0
+        ],
+        [
+          208.0,
+          1332.0
+        ]
+      ],
+      "text": "phẩm tạo thành trong quá trình sản xuất được phép tiêu hủy và thực tế đã tiêu",
+      "confidence": 0.9657538647058824
+    },
+    {
+      "bbox": [
+        [
+          208.0,
+          1321.0
+        ],
+        [
+          971.0,
+          1321.0
+        ],
+        [
+          971.0,
+          1355.0
+        ],
+        [
+          208.0,
+          1355.0
+        ]
+      ],
+      "text": "hủy theo quy định pháp luật hải quan được miễn thuế nhập khẩu.",
+      "confidence": 0.9676924007692308
+    },
+    {
+      "bbox": [
+        [
+          268.0,
+          1379.0
+        ],
+        [
+          1135.0,
+          1379.0
+        ],
+        [
+          1135.0,
+          1425.0
+        ],
+        [
+          268.0,
+          1425.0
+        ]
+      ],
+      "text": "Hàng hóa nhập khấu để sản xuất xuất khẩu nhưng không sử dụng hoặc",
+      "confidence": 0.9557300135714286
+    },
+    {
+      "bbox": [
+        [
+          207.0,
+          1408.0
+        ],
+        [
+          1135.0,
+          1408.0
+        ],
+        [
+          1135.0,
+          1454.0
+        ],
+        [
+          207.0,
+          1454.0
+        ]
+      ],
+      "text": "hàng hóa nhập khẩu đã sử dụng để sản xuất nhưng không xuất khẩu sản phẩm",
+      "confidence": 0.9496781925000001
+    },
+    {
+      "bbox": [
+        [
+          208.0,
+          1446.0
+        ],
+        [
+          1134.0,
+          1446.0
+        ],
+        [
+          1134.0,
+          1491.0
+        ],
+        [
+          208.0,
+          1491.0
+        ]
+      ],
+      "text": "thì không được miễn thuế nhập khẩu, người nộp thuế phải đăng ký tờ khai hải",
+      "confidence": 0.96832958625
+    },
+    {
+      "bbox": [
+        [
+          208.0,
+          1480.0
+        ],
+        [
+          1134.0,
+          1480.0
+        ],
+        [
+          1134.0,
+          1518.0
+        ],
+        [
+          208.0,
+          1518.0
+        ]
+      ],
+      "text": "quan mới và kê khai, nộp thuê với cơ quan hải quan theo mức thuế suất và trị",
+      "confidence": 0.969139495
+    },
+    {
+      "bbox": [
+        [
+          208.0,
+          1511.0
+        ],
+        [
+          1134.0,
+          1511.0
+        ],
+        [
+          1134.0,
+          1560.0
+        ],
+        [
+          208.0,
+          1560.0
+        ]
+      ],
+      "text": "giá tính thuế của hàng hóa nhập khẩu tại thời điểm đăng ký tờ khai hải quan",
+      "confidence": 0.9638475617647059
+    },
+    {
+      "bbox": [
+        [
+          208.0,
+          1545.0
+        ],
+        [
+          1133.0,
+          1545.0
+        ],
+        [
+          1133.0,
+          1580.0
+        ],
+        [
+          208.0,
+          1580.0
+        ]
+      ],
+      "text": "mới, trừ trường hợp làm quà biếu, quà tặng theo quy định tại Điều 8 Nghị",
+      "confidence": 0.967847700625
+    },
+    {
+      "bbox": [
+        [
+          208.0,
+          1583.0
+        ],
+        [
+          316.0,
+          1583.0
+        ],
+        [
+          316.0,
+          1610.0
+        ],
+        [
+          208.0,
+          1610.0
+        ]
+      ],
+      "text": "định này.",
+      "confidence": 0.9699247349999999
+    }
+  ]
+}

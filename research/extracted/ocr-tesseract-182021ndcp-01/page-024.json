@@ -1,0 +1,904 @@
+{
+  "document_id": "18/2021/NĐ-CP",
+  "source_file": "../../legal-sources/182021ndcp/01.pdf",
+  "source_sha256": "cb0bf16ab3ee6554929e0d9d2cc4f180f51b8ea10ddd30a37309353edeb050d8",
+  "page_count": 114,
+  "render_dpi": 150,
+  "engine": "Tesseract 5.5.4 (vie+eng; OEM 1; PSM 3)",
+  "review_status": "UNREVIEWED",
+  "tesseract_version": "5.5.4",
+  "languages": [
+    "vie",
+    "eng"
+  ],
+  "traineddata_sha256": {
+    "vie": "b6b49293d95d0b6dbd8780174627e82c75be957b6f4ed9862155540d6b00bb45",
+    "eng": "8280aed0782fe27257a68ea10fe7ef324ca0f8d85bd2fd145d1c2b560bcb66ba"
+  },
+  "ocr_engine_mode": 1,
+  "page_segmentation_mode": 3,
+  "thread_limit": 2,
+  "page": 24,
+  "lines": [
+    {
+      "bbox": [
+        [
+          660.0,
+          57.0
+        ],
+        [
+          687.0,
+          57.0
+        ],
+        [
+          687.0,
+          77.0
+        ],
+        [
+          660.0,
+          77.0
+        ]
+      ],
+      "text": "24",
+      "confidence": 0.9631675
+    },
+    {
+      "bbox": [
+        [
+          271.0,
+          141.0
+        ],
+        [
+          1136.0,
+          141.0
+        ],
+        [
+          1136.0,
+          176.0
+        ],
+        [
+          271.0,
+          176.0
+        ]
+      ],
+      "text": "b) Trong thời hạn tối đa 10 ngày làm việc kể từ ngày nhận được thông",
+      "confidence": 0.962832150625
+    },
+    {
+      "bbox": [
+        [
+          212.0,
+          175.0
+        ],
+        [
+          1136.0,
+          175.0
+        ],
+        [
+          1136.0,
+          216.0
+        ],
+        [
+          212.0,
+          216.0
+        ]
+      ],
+      "text": "báo của doanh nghiệp chế xuất, Chi cục Hải quan nơi quản lý doanh nghiệp",
+      "confidence": 0.9643116719999999
+    },
+    {
+      "bbox": [
+        [
+          212.0,
+          208.0
+        ],
+        [
+          1138.0,
+          208.0
+        ],
+        [
+          1138.0,
+          244.0
+        ],
+        [
+          212.0,
+          244.0
+        ]
+      ],
+      "text": "chế xuất hoàn thành kiểm tra việc đáp ứng các điều kiện kiểm tra, giám sát",
+      "confidence": 0.9650543206250001
+    },
+    {
+      "bbox": [
+        [
+          212.0,
+          244.0
+        ],
+        [
+          1137.0,
+          244.0
+        ],
+        [
+          1137.0,
+          282.0
+        ],
+        [
+          212.0,
+          282.0
+        ]
+      ],
+      "text": "hải quan quy định tại khoản 1 Điều này và gửi văn bản xác nhận cho doanh",
+      "confidence": 0.9671859694117647
+    },
+    {
+      "bbox": [
+        [
+          212.0,
+          277.0
+        ],
+        [
+          1139.0,
+          277.0
+        ],
+        [
+          1139.0,
+          316.0
+        ],
+        [
+          212.0,
+          316.0
+        ]
+      ],
+      "text": "nghiệp chế xuất theo Mẫu số 26 Phụ lục VII ban hành kèm theo Nghị định",
+      "confidence": 0.956660375
+    },
+    {
+      "bbox": [
+        [
+          212.0,
+          313.0
+        ],
+        [
+          1137.0,
+          313.0
+        ],
+        [
+          1137.0,
+          353.0
+        ],
+        [
+          212.0,
+          353.0
+        ]
+      ],
+      "text": "này về việc đáp ứng hoặc không đáp ứng các điều kiện kiểm tra, giám sát hải",
+      "confidence": 0.9584015341176471
+    },
+    {
+      "bbox": [
+        [
+          213.0,
+          346.0
+        ],
+        [
+          1139.0,
+          346.0
+        ],
+        [
+          1139.0,
+          395.0
+        ],
+        [
+          213.0,
+          395.0
+        ]
+      ],
+      "text": "quan quy định tại khoản 1 Điều này. “Trưởng hợp doanh nghiệp chế xuất nhận",
+      "confidence": 0.9516051173333334
+    },
+    {
+      "bbox": [
+        [
+          213.0,
+          381.0
+        ],
+        [
+          1137.0,
+          381.0
+        ],
+        [
+          1137.0,
+          425.0
+        ],
+        [
+          213.0,
+          425.0
+        ]
+      ],
+      "text": "được văn bản xác nhận không đáp ứng các điều kiện kiểm tra, giám sát hải",
+      "confidence": 0.9676684081249999
+    },
+    {
+      "bbox": [
+        [
+          213.0,
+          413.0
+        ],
+        [
+          1136.0,
+          413.0
+        ],
+        [
+          1136.0,
+          454.0
+        ],
+        [
+          213.0,
+          454.0
+        ]
+      ],
+      "text": "quan, doanh nghiệp tiếp tục hoàn chỉnh các điều kiện kiểm tra, giám sát hải",
+      "confidence": 0.9671863966666666
+    },
+    {
+      "bbox": [
+        [
+          213.0,
+          447.0
+        ],
+        [
+          1138.0,
+          447.0
+        ],
+        [
+          1138.0,
+          482.0
+        ],
+        [
+          213.0,
+          482.0
+        ]
+      ],
+      "text": "quan quy định tại khoản 1 Điều này nhưng không quá 01 năm kể từ ngày",
+      "confidence": 0.9678475325
+    },
+    {
+      "bbox": [
+        [
+          211.0,
+          485.0
+        ],
+        [
+          626.0,
+          485.0
+        ],
+        [
+          626.0,
+          512.0
+        ],
+        [
+          211.0,
+          512.0
+        ]
+      ],
+      "text": "Nghị định này có hiệu lực thi hành.",
+      "confidence": 0.9677675062500001
+    },
+    {
+      "bbox": [
+        [
+          273.0,
+          540.0
+        ],
+        [
+          1138.0,
+          540.0
+        ],
+        [
+          1138.0,
+          580.0
+        ],
+        [
+          273.0,
+          580.0
+        ]
+      ],
+      "text": "c) Khi doanh nghiệp chế xuất đã hoàn chỉnh các điều kiện kiểm tra, giám",
+      "confidence": 0.9448629926666667
+    },
+    {
+      "bbox": [
+        [
+          213.0,
+          574.0
+        ],
+        [
+          1138.0,
+          574.0
+        ],
+        [
+          1138.0,
+          618.0
+        ],
+        [
+          213.0,
+          618.0
+        ]
+      ],
+      "text": "sát hải quan quy định tại khoản 1 Điều này, doanh nghiệp tiếp tục có văn bản",
+      "confidence": 0.9682872811764706
+    },
+    {
+      "bbox": [
+        [
+          212.0,
+          609.0
+        ],
+        [
+          1138.0,
+          609.0
+        ],
+        [
+          1138.0,
+          657.0
+        ],
+        [
+          212.0,
+          657.0
+        ]
+      ],
+      "text": "gửi Chi cục Hải quan nơi quản lý doanh nghiệp chế xuất theo Mẫu số 25 Phụ",
+      "confidence": 0.9666750047058824
+    },
+    {
+      "bbox": [
+        [
+          213.0,
+          642.0
+        ],
+        [
+          1137.0,
+          642.0
+        ],
+        [
+          1137.0,
+          686.0
+        ],
+        [
+          213.0,
+          686.0
+        ]
+      ],
+      "text": "lục VH ban hành kèm theo Nghị định này và đề nghị Chi cục Hải quan nơi",
+      "confidence": 0.9597137182352943
+    },
+    {
+      "bbox": [
+        [
+          212.0,
+          674.0
+        ],
+        [
+          1137.0,
+          674.0
+        ],
+        [
+          1137.0,
+          715.0
+        ],
+        [
+          212.0,
+          715.0
+        ]
+      ],
+      "text": "quản lý doanh nghiệp chế xuất kiểm tra lại các điều kiện kiểm tra, giám sát",
+      "confidence": 0.9672391975
+    },
+    {
+      "bbox": [
+        [
+          212.0,
+          708.0
+        ],
+        [
+          1136.0,
+          708.0
+        ],
+        [
+          1136.0,
+          749.0
+        ],
+        [
+          212.0,
+          749.0
+        ]
+      ],
+      "text": "hải quan quy định tại khoản 1 Điều này. Trong thời hạn tối đa 10 ngày làm",
+      "confidence": 0.9648650311764706
+    },
+    {
+      "bbox": [
+        [
+          212.0,
+          740.0
+        ],
+        [
+          1135.0,
+          740.0
+        ],
+        [
+          1135.0,
+          781.0
+        ],
+        [
+          212.0,
+          781.0
+        ]
+      ],
+      "text": "việc kể từ ngày nhận được văn bản đề nghị của doanh nghiệp chế xuất, Chỉ",
+      "confidence": 0.9630490781250001
+    },
+    {
+      "bbox": [
+        [
+          213.0,
+          776.0
+        ],
+        [
+          1136.0,
+          776.0
+        ],
+        [
+          1136.0,
+          809.0
+        ],
+        [
+          213.0,
+          809.0
+        ]
+      ],
+      "text": "cục Hải quan nơi quản lý doanh nghiệp chế xuất có trách nhiệm hoàn thành",
+      "confidence": 0.9678186706666666
+    },
+    {
+      "bbox": [
+        [
+          212.0,
+          808.0
+        ],
+        [
+          1136.0,
+          808.0
+        ],
+        [
+          1136.0,
+          848.0
+        ],
+        [
+          212.0,
+          848.0
+        ]
+      ],
+      "text": "kiểm tra lại việc đáp ứng các điều kiện kiểm tra, giám sát hải quan và có văn",
+      "confidence": 0.9512391283333334
+    },
+    {
+      "bbox": [
+        [
+          212.0,
+          842.0
+        ],
+        [
+          1136.0,
+          842.0
+        ],
+        [
+          1136.0,
+          881.0
+        ],
+        [
+          212.0,
+          881.0
+        ]
+      ],
+      "text": "bản gửi doanh nghiệp chế xuất theo Mẫu số 26 Phụ lục VH ban hành kèm",
+      "confidence": 0.9604126125000001
+    },
+    {
+      "bbox": [
+        [
+          212.0,
+          878.0
+        ],
+        [
+          1136.0,
+          878.0
+        ],
+        [
+          1136.0,
+          916.0
+        ],
+        [
+          212.0,
+          916.0
+        ]
+      ],
+      "text": "theo Nghị định này về việc đáp ứng hoặc không đáp ứng các điều kiện kiểm",
+      "confidence": 0.9616277025
+    },
+    {
+      "bbox": [
+        [
+          211.0,
+          911.0
+        ],
+        [
+          831.0,
+          911.0
+        ],
+        [
+          831.0,
+          944.0
+        ],
+        [
+          211.0,
+          944.0
+        ]
+      ],
+      "text": "tra, giám sát hải quan quy định tại khoản 1 Điều này.",
+      "confidence": 0.9674185383333334
+    },
+    {
+      "bbox": [
+        [
+          271.0,
+          968.0
+        ],
+        [
+          1136.0,
+          968.0
+        ],
+        [
+          1136.0,
+          1003.0
+        ],
+        [
+          271.0,
+          1003.0
+        ]
+      ],
+      "text": "Doanh nghiệp chế xuất được hoàn chỉnh các điều kiện kiểm tra, giám sát",
+      "confidence": 0.9672096792857142
+    },
+    {
+      "bbox": [
+        [
+          211.0,
+          1002.0
+        ],
+        [
+          1136.0,
+          1002.0
+        ],
+        [
+          1136.0,
+          1039.0
+        ],
+        [
+          211.0,
+          1039.0
+        ]
+      ],
+      "text": "hải quan quy định tại khoản 1 Điều này nhiều lần nhưng không quá thời hạn",
+      "confidence": 0.9659781368749999
+    },
+    {
+      "bbox": [
+        [
+          212.0,
+          1035.0
+        ],
+        [
+          849.0,
+          1035.0
+        ],
+        [
+          849.0,
+          1068.0
+        ],
+        [
+          212.0,
+          1068.0
+        ]
+      ],
+      "text": "01 năm kể từ ngày Nghị định này có hiệu lực thi hành.",
+      "confidence": 0.9571044153846153
+    },
+    {
+      "bbox": [
+        [
+          271.0,
+          1095.0
+        ],
+        [
+          1134.0,
+          1095.0
+        ],
+        [
+          1134.0,
+          1132.0
+        ],
+        [
+          271.0,
+          1132.0
+        ]
+      ],
+      "text": "d) Quá thời hạn 01 năm kế từ ngày Nghị định này có hiệu lực thi hành,",
+      "confidence": 0.9458666011764706
+    },
+    {
+      "bbox": [
+        [
+          211.0,
+          1127.0
+        ],
+        [
+          1135.0,
+          1127.0
+        ],
+        [
+          1135.0,
+          1164.0
+        ],
+        [
+          211.0,
+          1164.0
+        ]
+      ],
+      "text": "doanh nghiệp chế xuất quy định tại khoản này không thực hiện thông báo theo",
+      "confidence": 0.9678156333333332
+    },
+    {
+      "bbox": [
+        [
+          210.0,
+          1161.0
+        ],
+        [
+          1135.0,
+          1161.0
+        ],
+        [
+          1135.0,
+          1202.0
+        ],
+        [
+          210.0,
+          1202.0
+        ]
+      ],
+      "text": "Mẫu số 25 Phụ lục VII ban hành kèm theo Nghị định này hoặc không đáp ứng",
+      "confidence": 0.9650286188235293
+    },
+    {
+      "bbox": [
+        [
+          210.0,
+          1194.0
+        ],
+        [
+          1135.0,
+          1194.0
+        ],
+        [
+          1135.0,
+          1241.0
+        ],
+        [
+          210.0,
+          1241.0
+        ]
+      ],
+      "text": "các điều kiện kiểm tra, giám sát hải quan theo quy định tại khoản 1 Điều này",
+      "confidence": 0.9670105388235295
+    },
+    {
+      "bbox": [
+        [
+          209.0,
+          1228.0
+        ],
+        [
+          1135.0,
+          1228.0
+        ],
+        [
+          1135.0,
+          1263.0
+        ],
+        [
+          209.0,
+          1263.0
+        ]
+      ],
+      "text": "thì không được áp dụng chính sách thuế đối với khu phi thuế quan kể từ ngày",
+      "confidence": 0.9672737582352942
+    },
+    {
+      "bbox": [
+        [
+          210.0,
+          1266.0
+        ],
+        [
+          559.0,
+          1266.0
+        ],
+        [
+          559.0,
+          1293.0
+        ],
+        [
+          210.0,
+          1293.0
+        ]
+      ],
+      "text": "quá thời hạn 01 năm nêu trên.",
+      "confidence": 0.9680812828571428
+    },
+    {
+      "bbox": [
+        [
+          269.0,
+          1322.0
+        ],
+        [
+          1134.0,
+          1322.0
+        ],
+        [
+          1134.0,
+          1355.0
+        ],
+        [
+          269.0,
+          1355.0
+        ]
+      ],
+      "text": "Trường hợp doanh nghiệp sau đó đáp ứng các điều kiện kiểm tra, giám",
+      "confidence": 0.9677712628571429
+    },
+    {
+      "bbox": [
+        [
+          210.0,
+          1355.0
+        ],
+        [
+          1133.0,
+          1355.0
+        ],
+        [
+          1133.0,
+          1389.0
+        ],
+        [
+          210.0,
+          1389.0
+        ]
+      ],
+      "text": "sát hải quan quy định tại khoản 1 Điều này và có văn bản thông báo cho Chi",
+      "confidence": 0.9650365194444446
+    },
+    {
+      "bbox": [
+        [
+          209.0,
+          1389.0
+        ],
+        [
+          1134.0,
+          1389.0
+        ],
+        [
+          1134.0,
+          1425.0
+        ],
+        [
+          209.0,
+          1425.0
+        ]
+      ],
+      "text": "cục Hải quan nơi quản lý doanh nghiệp chế xuất để thực hiện kiểm tra và xác",
+      "confidence": 0.9652711317647059
+    },
+    {
+      "bbox": [
+        [
+          209.0,
+          1417.0
+        ],
+        [
+          1133.0,
+          1417.0
+        ],
+        [
+          1133.0,
+          1458.0
+        ],
+        [
+          209.0,
+          1458.0
+        ]
+      ],
+      "text": "nhận theo quy định tại điểm c khoản này thì được á áp dụng chính sách thuế đối",
+      "confidence": 0.9593037627777778
+    },
+    {
+      "bbox": [
+        [
+          209.0,
+          1454.0
+        ],
+        [
+          1134.0,
+          1454.0
+        ],
+        [
+          1134.0,
+          1495.0
+        ],
+        [
+          209.0,
+          1495.0
+        ]
+      ],
+      "text": "với khu phi thuế quan kể từ ngày Chi cục Hải quan nơi quản lý doanh nghiệp",
+      "confidence": 0.9600316617647059
+    },
+    {
+      "bbox": [
+        [
+          209.0,
+          1487.0
+        ],
+        [
+          1133.0,
+          1487.0
+        ],
+        [
+          1133.0,
+          1532.0
+        ],
+        [
+          209.0,
+          1532.0
+        ]
+      ],
+      "text": "chế xuất có văn bản xác nhận đã đáp ứng các điều kiện kiểm tra, giám sát hải",
+      "confidence": 0.9676142205555556
+    },
+    {
+      "bbox": [
+        [
+          209.0,
+          1521.0
+        ],
+        [
+          691.0,
+          1521.0
+        ],
+        [
+          691.0,
+          1554.0
+        ],
+        [
+          209.0,
+          1554.0
+        ]
+      ],
+      "text": "quan theo quy định tại khoản 1 Điều này.",
+      "confidence": 0.9689173233333332
+    }
+  ]
+}

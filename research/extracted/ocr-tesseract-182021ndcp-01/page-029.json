@@ -1,0 +1,926 @@
+{
+  "document_id": "18/2021/NĐ-CP",
+  "source_file": "../../legal-sources/182021ndcp/01.pdf",
+  "source_sha256": "cb0bf16ab3ee6554929e0d9d2cc4f180f51b8ea10ddd30a37309353edeb050d8",
+  "page_count": 114,
+  "render_dpi": 150,
+  "engine": "Tesseract 5.5.4 (vie+eng; OEM 1; PSM 3)",
+  "review_status": "UNREVIEWED",
+  "tesseract_version": "5.5.4",
+  "languages": [
+    "vie",
+    "eng"
+  ],
+  "traineddata_sha256": {
+    "vie": "b6b49293d95d0b6dbd8780174627e82c75be957b6f4ed9862155540d6b00bb45",
+    "eng": "8280aed0782fe27257a68ea10fe7ef324ca0f8d85bd2fd145d1c2b560bcb66ba"
+  },
+  "ocr_engine_mode": 1,
+  "page_segmentation_mode": 3,
+  "thread_limit": 2,
+  "page": 29,
+  "lines": [
+    {
+      "bbox": [
+        [
+          659.0,
+          47.0
+        ],
+        [
+          687.0,
+          47.0
+        ],
+        [
+          687.0,
+          67.0
+        ],
+        [
+          659.0,
+          67.0
+        ]
+      ],
+      "text": "29",
+      "confidence": 0.96678276
+    },
+    {
+      "bbox": [
+        [
+          271.0,
+          126.0
+        ],
+        [
+          1135.0,
+          126.0
+        ],
+        [
+          1135.0,
+          179.0
+        ],
+        [
+          271.0,
+          179.0
+        ]
+      ],
+      "text": "Trường hợp nhập khẩu hàng hóa miễn thuế theo tổ hợp, dây chuyền,",
+      "confidence": 0.9675382476923076
+    },
+    {
+      "bbox": [
+        [
+          212.0,
+          163.0
+        ],
+        [
+          1137.0,
+          163.0
+        ],
+        [
+          1137.0,
+          207.0
+        ],
+        [
+          212.0,
+          207.0
+        ]
+      ],
+      "text": "người nộp thuế phải làm thủ tục hải quan tại cơ quan hải quan nơi lắp đặt máy",
+      "confidence": 0.9684995688888889
+    },
+    {
+      "bbox": [
+        [
+          212.0,
+          197.0
+        ],
+        [
+          1137.0,
+          197.0
+        ],
+        [
+          1137.0,
+          237.0
+        ],
+        [
+          212.0,
+          237.0
+        ]
+      ],
+      "text": "móc, thiêt bị. Tại thời điểm đăng ký tờ khai hải quan, người nộp thuế kê khai",
+      "confidence": 0.958380698235294
+    },
+    {
+      "bbox": [
+        [
+          213.0,
+          231.0
+        ],
+        [
+          1138.0,
+          231.0
+        ],
+        [
+          1138.0,
+          265.0
+        ],
+        [
+          213.0,
+          265.0
+        ]
+      ],
+      "text": "chi tiết hàng hóa trên tờ khai hải quan. Trường hợp không kê khai chỉ tiết",
+      "confidence": 0.96203512625
+    },
+    {
+      "bbox": [
+        [
+          213.0,
+          266.0
+        ],
+        [
+          1139.0,
+          266.0
+        ],
+        [
+          1139.0,
+          299.0
+        ],
+        [
+          213.0,
+          299.0
+        ]
+      ],
+      "text": "được trên tờ khai hải quan, người nộp thuế lập bảng kê chi tiết về hàng hóa",
+      "confidence": 0.96543733
+    },
+    {
+      "bbox": [
+        [
+          213.0,
+          299.0
+        ],
+        [
+          1138.0,
+          299.0
+        ],
+        [
+          1138.0,
+          332.0
+        ],
+        [
+          213.0,
+          332.0
+        ]
+      ],
+      "text": "nhập khâu theo các chỉ tiêu thông tin quy định tại Mẫu số 04 Phụ lục VIIa ban",
+      "confidence": 0.9427719916666666
+    },
+    {
+      "bbox": [
+        [
+          213.0,
+          334.0
+        ],
+        [
+          1138.0,
+          334.0
+        ],
+        [
+          1138.0,
+          371.0
+        ],
+        [
+          213.0,
+          371.0
+        ]
+      ],
+      "text": "hành kèm theo Nghị định này thông qua Hệ thống xử lý dữ liệu điện tử hoặc",
+      "confidence": 0.9684312076470589
+    },
+    {
+      "bbox": [
+        [
+          213.0,
+          366.0
+        ],
+        [
+          1138.0,
+          366.0
+        ],
+        [
+          1138.0,
+          406.0
+        ],
+        [
+          213.0,
+          406.0
+        ]
+      ],
+      "text": "theo Mẫu số 15 Phụ lục VII ban hành kèm theo Nghị định này và đính kèm tờ",
+      "confidence": 0.9613265983333332
+    },
+    {
+      "bbox": [
+        [
+          211.0,
+          401.0
+        ],
+        [
+          1137.0,
+          401.0
+        ],
+        [
+          1137.0,
+          447.0
+        ],
+        [
+          211.0,
+          447.0
+        ]
+      ],
+      "text": "khai hải quan. Trong thời hạn 15 ngày kế từ ngày kết thúc việc nhập khâu lô",
+      "confidence": 0.9558225694117647
+    },
+    {
+      "bbox": [
+        [
+          211.0,
+          434.0
+        ],
+        [
+          1137.0,
+          434.0
+        ],
+        [
+          1137.0,
+          474.0
+        ],
+        [
+          211.0,
+          474.0
+        ]
+      ],
+      "text": "hàng cuối cùng của mỗi tổ hợp, dây chuyền, người nộp thuế có trách nhiệm",
+      "confidence": 0.9596759833333334
+    },
+    {
+      "bbox": [
+        [
+          211.0,
+          469.0
+        ],
+        [
+          1138.0,
+          469.0
+        ],
+        [
+          1138.0,
+          501.0
+        ],
+        [
+          211.0,
+          501.0
+        ]
+      ],
+      "text": "thông báo cho cơ quan hải quan nơi thông báo Danh mục miễn thuế theo các",
+      "confidence": 0.968021498125
+    },
+    {
+      "bbox": [
+        [
+          212.0,
+          502.0
+        ],
+        [
+          1138.0,
+          502.0
+        ],
+        [
+          1138.0,
+          534.0
+        ],
+        [
+          212.0,
+          534.0
+        ]
+      ],
+      "text": "chỉ tiêu thông tin quy định tại Mẫu số 05 Phụ lục VIIa ban hành kèm theo",
+      "confidence": 0.9489685547058824
+    },
+    {
+      "bbox": [
+        [
+          210.0,
+          536.0
+        ],
+        [
+          1138.0,
+          536.0
+        ],
+        [
+          1138.0,
+          569.0
+        ],
+        [
+          210.0,
+          569.0
+        ]
+      ],
+      "text": "Nghị định này thông qua Hệ thống xử lý dữ liệu điện tử hoặc theo Mẫu số 16",
+      "confidence": 0.9690583116666667
+    },
+    {
+      "bbox": [
+        [
+          211.0,
+          575.0
+        ],
+        [
+          761.0,
+          575.0
+        ],
+        [
+          761.0,
+          603.0
+        ],
+        [
+          211.0,
+          603.0
+        ]
+      ],
+      "text": "Phụ lục VH ban hành kèm theo Nghị định này.",
+      "confidence": 0.958150162
+    },
+    {
+      "bbox": [
+        [
+          272.0,
+          628.0
+        ],
+        [
+          1015.0,
+          628.0
+        ],
+        [
+          1015.0,
+          662.0
+        ],
+        [
+          272.0,
+          662.0
+        ]
+      ],
+      "text": "5. Thủ tục miễn thuế nhập khẩu đối với các trường hợp đặc thù",
+      "confidence": 0.9588547135714285
+    },
+    {
+      "bbox": [
+        [
+          271.0,
+          687.0
+        ],
+        [
+          1138.0,
+          687.0
+        ],
+        [
+          1138.0,
+          731.0
+        ],
+        [
+          271.0,
+          731.0
+        ]
+      ],
+      "text": "a) Người nộp thuế được miễn thuế nhập khẩu đối với hàng hóa nhập",
+      "confidence": 0.9653729892857144
+    },
+    {
+      "bbox": [
+        [
+          207.0,
+          715.0
+        ],
+        [
+          1138.0,
+          715.0
+        ],
+        [
+          1138.0,
+          762.0
+        ],
+        [
+          207.0,
+          762.0
+        ]
+      ],
+      "text": "khẩu để tạo tài sản cố định cho dự án theo quy định tại Điều 16 Luật Thuế",
+      "confidence": 0.9597865383333334
+    },
+    {
+      "bbox": [
+        [
+          211.0,
+          751.0
+        ],
+        [
+          1138.0,
+          751.0
+        ],
+        [
+          1138.0,
+          798.0
+        ],
+        [
+          211.0,
+          798.0
+        ]
+      ],
+      "text": "xuất khẩu, thuế nhập khẩu nhưng không nhập khẩu hàng hóa mà được phép",
+      "confidence": 0.9636717842857142
+    },
+    {
+      "bbox": [
+        [
+          210.0,
+          787.0
+        ],
+        [
+          1137.0,
+          787.0
+        ],
+        [
+          1137.0,
+          822.0
+        ],
+        [
+          210.0,
+          822.0
+        ]
+      ],
+      "text": "tiếp nhận hàng hóa đã được miễn thuế nhập khẩu từ tổ chức, cá nhân khác",
+      "confidence": 0.9683061825
+    },
+    {
+      "bbox": [
+        [
+          211.0,
+          821.0
+        ],
+        [
+          1137.0,
+          821.0
+        ],
+        [
+          1137.0,
+          866.0
+        ],
+        [
+          211.0,
+          866.0
+        ]
+      ],
+      "text": "chuyển nhượng tại Việt Nam thì người nộp thuế thực hiện đăng ký tờ khai hải",
+      "confidence": 0.9610154725
+    },
+    {
+      "bbox": [
+        [
+          211.0,
+          855.0
+        ],
+        [
+          1138.0,
+          855.0
+        ],
+        [
+          1138.0,
+          898.0
+        ],
+        [
+          211.0,
+          898.0
+        ]
+      ],
+      "text": "quan mới đối với hàng hóa nhận chuyển nhượng và được miễn thuế nhập",
+      "confidence": 0.94992545
+    },
+    {
+      "bbox": [
+        [
+          210.0,
+          887.0
+        ],
+        [
+          1137.0,
+          887.0
+        ],
+        [
+          1137.0,
+          933.0
+        ],
+        [
+          210.0,
+          933.0
+        ]
+      ],
+      "text": "khẩu với điều kiện gia chuyén nhượng không bao gồm thuế nhập khấu. Tổ",
+      "confidence": 0.9165192750000002
+    },
+    {
+      "bbox": [
+        [
+          211.0,
+          922.0
+        ],
+        [
+          1137.0,
+          922.0
+        ],
+        [
+          1137.0,
+          960.0
+        ],
+        [
+          211.0,
+          960.0
+        ]
+      ],
+      "text": "chức, cá nhân chuyển nhượng hàng hoá không phải nộp lại số thuế nhập khẩu",
+      "confidence": 0.9662763220000001
+    },
+    {
+      "bbox": [
+        [
+          211.0,
+          956.0
+        ],
+        [
+          376.0,
+          956.0
+        ],
+        [
+          376.0,
+          986.0
+        ],
+        [
+          211.0,
+          986.0
+        ]
+      ],
+      "text": "đã được miễn.",
+      "confidence": 0.9674242666666667
+    },
+    {
+      "bbox": [
+        [
+          270.0,
+          1012.0
+        ],
+        [
+          1136.0,
+          1012.0
+        ],
+        [
+          1136.0,
+          1058.0
+        ],
+        [
+          270.0,
+          1058.0
+        ]
+      ],
+      "text": "b) Tổ chức, cá nhân nhập khẩu ủy thác hoặc trúng thầu nhập khẩu hàng",
+      "confidence": 0.9645023793333333
+    },
+    {
+      "bbox": [
+        [
+          210.0,
+          1043.0
+        ],
+        [
+          1136.0,
+          1043.0
+        ],
+        [
+          1136.0,
+          1086.0
+        ],
+        [
+          210.0,
+          1086.0
+        ]
+      ],
+      "text": "hóa để cung cap cho đối ¡ tượng quy định tại Điều 16 Luật Thuế xuất khẩu,",
+      "confidence": 0.9451479435294118
+    },
+    {
+      "bbox": [
+        [
+          209.0,
+          1078.0
+        ],
+        [
+          1136.0,
+          1078.0
+        ],
+        [
+          1136.0,
+          1125.0
+        ],
+        [
+          209.0,
+          1125.0
+        ]
+      ],
+      "text": "thuế nhập khẩu được miễn thuế nhập khẩu đối với hàng hóa nhập khẩu ủy",
+      "confidence": 0.9639926086666667
+    },
+    {
+      "bbox": [
+        [
+          209.0,
+          1114.0
+        ],
+        [
+          1136.0,
+          1114.0
+        ],
+        [
+          1136.0,
+          1154.0
+        ],
+        [
+          209.0,
+          1154.0
+        ]
+      ],
+      "text": "thác, trúng thầu với điều kiện giá cung cấp hàng hóa theo hợp đồng ủy thác",
+      "confidence": 0.9685075224999999
+    },
+    {
+      "bbox": [
+        [
+          209.0,
+          1136.0
+        ],
+        [
+          1092.0,
+          1136.0
+        ],
+        [
+          1092.0,
+          1181.0
+        ],
+        [
+          209.0,
+          1181.0
+        ]
+      ],
+      "text": "hoặc giá trúng thầu theo quyết định trúng thầu không bao gdm thuê nhập khẩu.",
+      "confidence": 0.9451517526666666
+    },
+    {
+      "bbox": [
+        [
+          269.0,
+          1206.0
+        ],
+        [
+          1134.0,
+          1206.0
+        ],
+        [
+          1134.0,
+          1245.0
+        ],
+        [
+          269.0,
+          1245.0
+        ]
+      ],
+      "text": "e) Công ty cho thuê tài chính nhập khẩu hàng hóa để cung cấp cho đối",
+      "confidence": 0.9314872162500001
+    },
+    {
+      "bbox": [
+        [
+          208.0,
+          1238.0
+        ],
+        [
+          1135.0,
+          1238.0
+        ],
+        [
+          1135.0,
+          1277.0
+        ],
+        [
+          208.0,
+          1277.0
+        ]
+      ],
+      "text": "tượng quy định tại Điều 14, Điều 16, Điều 17, Điều 19, Điều 25 Nghị định",
+      "confidence": 0.9617611418750001
+    },
+    {
+      "bbox": [
+        [
+          209.0,
+          1273.0
+        ],
+        [
+          1135.0,
+          1273.0
+        ],
+        [
+          1135.0,
+          1311.0
+        ],
+        [
+          209.0,
+          1311.0
+        ]
+      ],
+      "text": "này thuê tài chính được miễn thuế nhập khẩu với điều kiện giá cho thuê",
+      "confidence": 0.9669390866666666
+    },
+    {
+      "bbox": [
+        [
+          209.0,
+          1306.0
+        ],
+        [
+          1134.0,
+          1306.0
+        ],
+        [
+          1134.0,
+          1346.0
+        ],
+        [
+          209.0,
+          1346.0
+        ]
+      ],
+      "text": "không bao gồm thuế nhập khẩu. Trường hợp hàng hoá nhập khẩu cho thuê tài",
+      "confidence": 0.9569289193333335
+    },
+    {
+      "bbox": [
+        [
+          209.0,
+          1341.0
+        ],
+        [
+          1134.0,
+          1341.0
+        ],
+        [
+          1134.0,
+          1375.0
+        ],
+        [
+          209.0,
+          1375.0
+        ]
+      ],
+      "text": "chính không sử dụng đúng mục đích miễn thuế thì công ty cho thuê tài chính",
+      "confidence": 0.9675420712499999
+    },
+    {
+      "bbox": [
+        [
+          208.0,
+          1375.0
+        ],
+        [
+          1134.0,
+          1375.0
+        ],
+        [
+          1134.0,
+          1409.0
+        ],
+        [
+          208.0,
+          1409.0
+        ]
+      ],
+      "text": "phải đăng ký tờ khai hải quan mới, nộp thuế tại thời điểm đăng ký tờ khai",
+      "confidence": 0.9689356505882353
+    },
+    {
+      "bbox": [
+        [
+          208.0,
+          1412.0
+        ],
+        [
+          1134.0,
+          1412.0
+        ],
+        [
+          1134.0,
+          1446.0
+        ],
+        [
+          208.0,
+          1446.0
+        ]
+      ],
+      "text": "mới. Trường hợp không đăng ký tờ khai hải quan mới, cơ quan hải quan thực",
+      "confidence": 0.9695935824999999
+    },
+    {
+      "bbox": [
+        [
+          207.0,
+          1440.0
+        ],
+        [
+          586.0,
+          1440.0
+        ],
+        [
+          586.0,
+          1474.0
+        ],
+        [
+          207.0,
+          1474.0
+        ]
+      ],
+      "text": "hiện ấn định thuế theo quy định.",
+      "confidence": 0.96228327
+    },
+    {
+      "bbox": [
+        [
+          268.0,
+          1500.0
+        ],
+        [
+          1132.0,
+          1500.0
+        ],
+        [
+          1132.0,
+          1548.0
+        ],
+        [
+          268.0,
+          1548.0
+        ]
+      ],
+      "text": "d) Trường hợp chuyển nhượng toàn bộ hoặc một phần dự án thuộc đối",
+      "confidence": 0.9582775564285714
+    },
+    {
+      "bbox": [
+        [
+          207.0,
+          1534.0
+        ],
+        [
+          1132.0,
+          1534.0
+        ],
+        [
+          1132.0,
+          1573.0
+        ],
+        [
+          207.0,
+          1573.0
+        ]
+      ],
+      "text": "tượng ưu đãi đầu tư cho tổ chức, cá nhân khác, chủ dự án thông báo các chỉ",
+      "confidence": 0.9671078905555555
+    },
+    {
+      "bbox": [
+        [
+          207.0,
+          1568.0
+        ],
+        [
+          1132.0,
+          1568.0
+        ],
+        [
+          1132.0,
+          1604.0
+        ],
+        [
+          207.0,
+          1604.0
+        ]
+      ],
+      "text": "tiêu thông tin quy định tại Mẫu số 06 Phụ luc VIIa ban hành kèm theo Nghị",
+      "confidence": 0.9511189011764705
+    }
+  ]
+}
