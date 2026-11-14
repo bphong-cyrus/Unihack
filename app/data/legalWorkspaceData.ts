@@ -197,7 +197,11 @@ export function buildFormalMemoHtml(
             (c, idx) =>
               `<p><strong>${idx + 1}. Điều ${escapeHtml(c.article)}, Khoản ${escapeHtml(c.clause)}${c.point ? `, Điểm ${escapeHtml(c.point)}` : ''} — ${escapeHtml(c.document)}</strong>${
                 c.document_title ? ` (${escapeHtml(c.document_title)})` : ""
-              }<br/><em>&ldquo;${escapeHtml(c.excerpt)}&rdquo;</em></p>`
+              }<br/><em>&ldquo;${escapeHtml(c.excerpt)}&rdquo;</em>${
+                assistantMsg?.validation?.citation_checks?.[idx]?.source_url
+                  ? `<br/>Nguồn được khai báo: ${escapeHtml(assistantMsg.validation.citation_checks[idx].source_url as string)}`
+                  : ""
+              }</p>`
           )
           .join("")
       : "<p><em>Chưa có trích dẫn hợp lệ được xác thực cho phiên tra cứu này.</em></p>";
@@ -210,6 +214,8 @@ export function buildFormalMemoHtml(
     <div style="text-align:center;margin:14px 0 16px;">
       <div style="font-weight:800;font-size:14px;color:#0a1c2e;">PHIẾU TRA CỨU THỬ NGHIỆM</div>
       <div style="font-size:11px;color:#64748b;margin-top:2px;">Mã tham chiếu: ${escapeHtml(proofCode)}</div>
+      ${assistantMsg?.validation?.as_of ? `<div>Ngày tra cứu: ${escapeHtml(assistantMsg.validation.as_of)}</div>` : ""}
+      ${assistantMsg?.validation?.snapshot_id ? `<div>Snapshot: ${escapeHtml(assistantMsg.validation.snapshot_id)}</div>` : ""}
     </div>
     <p><strong>I. Tình huống / Yêu cầu tra cứu:</strong><br/>${escapeHtml(question || "Tra cứu nghiệp vụ Xuất Nhập Khẩu")}</p>
     <p><strong>II. Nội dung tra cứu:</strong><br/>${escapeHtml(answer).replace(/\n/g, "<br/>")}</p>
