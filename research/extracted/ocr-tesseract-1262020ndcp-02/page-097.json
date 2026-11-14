@@ -1,0 +1,354 @@
+{
+  "document_id": "126/2020/NĐ-CP",
+  "source_file": "../../legal-sources/1262020ndcp/02.pdf",
+  "source_sha256": "008daa92f4d699b69b9318c4a8e6fa7db8d73453305e1a4f155134656e26847b",
+  "page_count": 147,
+  "render_dpi": 150,
+  "engine": "Tesseract 5.5.4 (vie+eng; OEM 1; PSM 3)",
+  "review_status": "UNREVIEWED",
+  "tesseract_version": "5.5.4",
+  "languages": [
+    "vie",
+    "eng"
+  ],
+  "traineddata_sha256": {
+    "vie": "b6b49293d95d0b6dbd8780174627e82c75be957b6f4ed9862155540d6b00bb45",
+    "eng": "8280aed0782fe27257a68ea10fe7ef324ca0f8d85bd2fd145d1c2b560bcb66ba"
+  },
+  "ocr_engine_mode": 1,
+  "page_segmentation_mode": 3,
+  "thread_limit": 2,
+  "page": 97,
+  "lines": [
+    {
+      "bbox": [
+        [
+          671.0,
+          97.0
+        ],
+        [
+          694.0,
+          97.0
+        ],
+        [
+          694.0,
+          118.0
+        ],
+        [
+          671.0,
+          118.0
+        ]
+      ],
+      "text": "11",
+      "confidence": 0.90429436
+    },
+    {
+      "bbox": [
+        [
+          285.0,
+          167.0
+        ],
+        [
+          1137.0,
+          167.0
+        ],
+        [
+          1137.0,
+          214.0
+        ],
+        [
+          285.0,
+          214.0
+        ]
+      ],
+      "text": "Điều 2. Trong thời gian được gia hạn, cơ quan thuế không tính tiền chậm",
+      "confidence": 0.9655293926666667
+    },
+    {
+      "bbox": [
+        [
+          227.0,
+          202.0
+        ],
+        [
+          1138.0,
+          202.0
+        ],
+        [
+          1138.0,
+          242.0
+        ],
+        [
+          227.0,
+          242.0
+        ]
+      ],
+      "text": "nộp đối với số tiền cấp quyền khai thác khoáng sản được gia hạn. Ngay sau",
+      "confidence": 0.9562633375
+    },
+    {
+      "bbox": [
+        [
+          223.0,
+          235.0
+        ],
+        [
+          1139.0,
+          235.0
+        ],
+        [
+          1139.0,
+          280.0
+        ],
+        [
+          223.0,
+          280.0
+        ]
+      ],
+      "text": "khi hết thời gian gia hạn, ....... (Tên người nộp thuế) phải nộp đây đủ số tiền",
+      "confidence": 0.9515370576470589
+    },
+    {
+      "bbox": [
+        [
+          228.0,
+          271.0
+        ],
+        [
+          1138.0,
+          271.0
+        ],
+        [
+          1138.0,
+          320.0
+        ],
+        [
+          228.0,
+          320.0
+        ]
+      ],
+      "text": "cấp quyền khai thác khoáng sản được gia hạn vào ngân sách nhà nước.",
+      "confidence": 0.9689618028571428
+    },
+    {
+      "bbox": [
+        [
+          228.0,
+          303.0
+        ],
+        [
+          1139.0,
+          303.0
+        ],
+        [
+          1139.0,
+          347.0
+        ],
+        [
+          228.0,
+          347.0
+        ]
+      ],
+      "text": "Trường hop ....... (Tên người nộp thuế) không nộp đầy đủ thì cơ quan thuế sẽ",
+      "confidence": 0.901909995625
+    },
+    {
+      "bbox": [
+        [
+          228.0,
+          337.0
+        ],
+        [
+          1058.0,
+          337.0
+        ],
+        [
+          1058.0,
+          372.0
+        ],
+        [
+          228.0,
+          372.0
+        ]
+      ],
+      "text": "tính tiền chậm nộp và thực hiện cưỡng chế theo quy định của pháp luật.",
+      "confidence": 0.9643932793333333
+    },
+    {
+      "bbox": [
+        [
+          288.0,
+          384.0
+        ],
+        [
+          1141.0,
+          384.0
+        ],
+        [
+          1141.0,
+          418.0
+        ],
+        [
+          288.0,
+          418.0
+        ]
+      ],
+      "text": "Điều 3. Quyết định này có hiệu lực thi hành kể từ ngày ký. ...(Tên người",
+      "confidence": 0.953089054375
+    },
+    {
+      "bbox": [
+        [
+          228.0,
+          419.0
+        ],
+        [
+          1142.0,
+          419.0
+        ],
+        [
+          1142.0,
+          458.0
+        ],
+        [
+          228.0,
+          458.0
+        ]
+      ],
+      "text": "nộp thuê); Trưởng phòng..../Đội trưởng....(các phòng/đội có liên quan) chịu",
+      "confidence": 0.909860456
+    },
+    {
+      "bbox": [
+        [
+          228.0,
+          452.0
+        ],
+        [
+          675.0,
+          452.0
+        ],
+        [
+          675.0,
+          485.0
+        ],
+        [
+          228.0,
+          485.0
+        ]
+      ],
+      "text": "trách nhiệm thi hành Quyết định này./.",
+      "confidence": 0.94522292
+    },
+    {
+      "bbox": [
+        [
+          227.0,
+          532.0
+        ],
+        [
+          1095.0,
+          532.0
+        ],
+        [
+          1095.0,
+          571.0
+        ],
+        [
+          227.0,
+          571.0
+        ]
+      ],
+      "text": "Nơi nhận: THỦ TRUONG CƠ QUAN",
+      "confidence": 0.9440356050000002
+    },
+    {
+      "bbox": [
+        [
+          229.0,
+          562.0
+        ],
+        [
+          1099.0,
+          562.0
+        ],
+        [
+          1099.0,
+          598.0
+        ],
+        [
+          229.0,
+          598.0
+        ]
+      ],
+      "text": "- Như Điều 3; BẠN HÀNH QUYẾT ĐỊNH",
+      "confidence": 0.93875698125
+    },
+    {
+      "bbox": [
+        [
+          229.0,
+          584.0
+        ],
+        [
+          1085.0,
+          584.0
+        ],
+        [
+          1085.0,
+          629.0
+        ],
+        [
+          229.0,
+          629.0
+        ]
+      ],
+      "text": "- Đơn vị liên quan (nếu có); Ký, ghi rõ họ tê 3 đó dối",
+      "confidence": 0.8987940266666666
+    },
+    {
+      "bbox": [
+        [
+          229.0,
+          604.0
+        ],
+        [
+          1106.0,
+          604.0
+        ],
+        [
+          1106.0,
+          666.0
+        ],
+        [
+          229.0,
+          666.0
+        ]
+      ],
+      "text": "- Trang thông tin điện tử của Cục Thuế; (Ký, ghi rõ họ tên và đóng dau)",
+      "confidence": 0.9407100447058824
+    },
+    {
+      "bbox": [
+        [
+          229.0,
+          642.0
+        ],
+        [
+          343.0,
+          642.0
+        ],
+        [
+          343.0,
+          672.0
+        ],
+        [
+          229.0,
+          672.0
+        ]
+      ],
+      "text": "-Lưu: VT, .",
+      "confidence": 0.7455555199999999
+    }
+  ]
+}

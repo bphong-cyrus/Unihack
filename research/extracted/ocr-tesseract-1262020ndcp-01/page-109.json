@@ -1,0 +1,860 @@
+{
+  "document_id": "126/2020/NĐ-CP",
+  "source_file": "../../legal-sources/1262020ndcp/01.pdf",
+  "source_sha256": "310648e80396d267610946458e7fdd71ba87ef538b009d6574ed21514de3f7ca",
+  "page_count": 119,
+  "render_dpi": 150,
+  "engine": "Tesseract 5.5.4 (vie+eng; OEM 1; PSM 3)",
+  "review_status": "UNREVIEWED",
+  "tesseract_version": "5.5.4",
+  "languages": [
+    "vie",
+    "eng"
+  ],
+  "traineddata_sha256": {
+    "vie": "b6b49293d95d0b6dbd8780174627e82c75be957b6f4ed9862155540d6b00bb45",
+    "eng": "8280aed0782fe27257a68ea10fe7ef324ca0f8d85bd2fd145d1c2b560bcb66ba"
+  },
+  "ocr_engine_mode": 1,
+  "page_segmentation_mode": 3,
+  "thread_limit": 2,
+  "page": 109,
+  "lines": [
+    {
+      "bbox": [
+        [
+          687.0,
+          83.0
+        ],
+        [
+          727.0,
+          83.0
+        ],
+        [
+          727.0,
+          103.0
+        ],
+        [
+          687.0,
+          103.0
+        ]
+      ],
+      "text": "109",
+      "confidence": 0.96347916
+    },
+    {
+      "bbox": [
+        [
+          277.0,
+          158.0
+        ],
+        [
+          792.0,
+          158.0
+        ],
+        [
+          792.0,
+          191.0
+        ],
+        [
+          277.0,
+          191.0
+        ]
+      ],
+      "text": "4. Biên bản thanh lý hợp đồng ủy nhiệm thu",
+      "confidence": 0.963720238
+    },
+    {
+      "bbox": [
+        [
+          276.0,
+          209.0
+        ],
+        [
+          1136.0,
+          209.0
+        ],
+        [
+          1136.0,
+          243.0
+        ],
+        [
+          276.0,
+          243.0
+        ]
+      ],
+      "text": "Biên bản thanh lý hợp đồng ủy nhiệm thu được lập theo Mẫu số 02/UNT",
+      "confidence": 0.9578809513333334
+    },
+    {
+      "bbox": [
+        [
+          216.0,
+          249.0
+        ],
+        [
+          1135.0,
+          249.0
+        ],
+        [
+          1135.0,
+          277.0
+        ],
+        [
+          216.0,
+          277.0
+        ]
+      ],
+      "text": "tại Phụ lục III ban hành kèm theo Nghị định này và phải đảm bảo các nội",
+      "confidence": 0.9612615170588235
+    },
+    {
+      "bbox": [
+        [
+          216.0,
+          284.0
+        ],
+        [
+          453.0,
+          284.0
+        ],
+        [
+          453.0,
+          311.0
+        ],
+        [
+          216.0,
+          311.0
+        ]
+      ],
+      "text": "dung chính như sau:",
+      "confidence": 0.967226335
+    },
+    {
+      "bbox": [
+        [
+          275.0,
+          330.0
+        ],
+        [
+          1116.0,
+          330.0
+        ],
+        [
+          1116.0,
+          363.0
+        ],
+        [
+          275.0,
+          363.0
+        ]
+      ],
+      "text": "a) Tình hình thu nộp thuế và các khoản thu khác thuộc ngân sách nhà nước;",
+      "confidence": 0.9640560475
+    },
+    {
+      "bbox": [
+        [
+          275.0,
+          387.0
+        ],
+        [
+          831.0,
+          387.0
+        ],
+        [
+          831.0,
+          415.0
+        ],
+        [
+          275.0,
+          415.0
+        ]
+      ],
+      "text": "b) Tình hình sử dụng biên lai thu, chứng từ thu;",
+      "confidence": 0.9646913554545455
+    },
+    {
+      "bbox": [
+        [
+          275.0,
+          439.0
+        ],
+        [
+          822.0,
+          439.0
+        ],
+        [
+          822.0,
+          467.0
+        ],
+        [
+          275.0,
+          467.0
+        ]
+      ],
+      "text": "¢) Tình hình thanh toán kinh phí ủy nhiệm thu.",
+      "confidence": 0.960257601
+    },
+    {
+      "bbox": [
+        [
+          276.0,
+          492.0
+        ],
+        [
+          778.0,
+          492.0
+        ],
+        [
+          778.0,
+          518.0
+        ],
+        [
+          276.0,
+          518.0
+        ]
+      ],
+      "text": "5. Trách nhiệm của bên được ủy nhiệm thu",
+      "confidence": 0.9666777722222223
+    },
+    {
+      "bbox": [
+        [
+          275.0,
+          537.0
+        ],
+        [
+          1135.0,
+          537.0
+        ],
+        [
+          1135.0,
+          571.0
+        ],
+        [
+          275.0,
+          571.0
+        ]
+      ],
+      "text": "a) Bề trí nhân viên đủ tiêu chuẩn theo quy định của cơ quan quản lý thuế",
+      "confidence": 0.9513476694117649
+    },
+    {
+      "bbox": [
+        [
+          216.0,
+          572.0
+        ],
+        [
+          1135.0,
+          572.0
+        ],
+        [
+          1135.0,
+          610.0
+        ],
+        [
+          216.0,
+          610.0
+        ]
+      ],
+      "text": "để thực hiện hợp đồng ủy nhiệm thu đã ký. Bên được ủy nhiệm thu không",
+      "confidence": 0.96608760875
+    },
+    {
+      "bbox": [
+        [
+          215.0,
+          604.0
+        ],
+        [
+          1135.0,
+          604.0
+        ],
+        [
+          1135.0,
+          638.0
+        ],
+        [
+          215.0,
+          638.0
+        ]
+      ],
+      "text": "được ủy nhiệm lại cho bất cứ bên thứ ba nào việc thực hiện hợp đồng ủy",
+      "confidence": 0.9687391570588235
+    },
+    {
+      "bbox": [
+        [
+          214.0,
+          637.0
+        ],
+        [
+          1135.0,
+          637.0
+        ],
+        [
+          1135.0,
+          677.0
+        ],
+        [
+          214.0,
+          677.0
+        ]
+      ],
+      "text": "nhiệm thu đã ký với cơ quan quản lý thuế. Khi hết thời hạn ủy nhiệm thu hoặc",
+      "confidence": 0.9685728861111111
+    },
+    {
+      "bbox": [
+        [
+          215.0,
+          671.0
+        ],
+        [
+          1134.0,
+          671.0
+        ],
+        [
+          1134.0,
+          704.0
+        ],
+        [
+          215.0,
+          704.0
+        ]
+      ],
+      "text": "trường hợp cham dứt hợp đồng ủy nhiệm thu khi một trong hai bên vi phạm",
+      "confidence": 0.963478189375
+    },
+    {
+      "bbox": [
+        [
+          215.0,
+          704.0
+        ],
+        [
+          1130.0,
+          704.0
+        ],
+        [
+          1130.0,
+          738.0
+        ],
+        [
+          215.0,
+          738.0
+        ]
+      ],
+      "text": "hợp đồng đã ký thì hai bên phải lập Biên bản thanh lý hợp đồng ủy nhiệm thu.",
+      "confidence": 0.966097921111111
+    },
+    {
+      "bbox": [
+        [
+          274.0,
+          757.0
+        ],
+        [
+          1134.0,
+          757.0
+        ],
+        [
+          1134.0,
+          790.0
+        ],
+        [
+          274.0,
+          790.0
+        ]
+      ],
+      "text": "b) Gửi thông báo về việc nộp thuế và các khoản thu khác thuộc ngân",
+      "confidence": 0.9650734146666667
+    },
+    {
+      "bbox": [
+        [
+          215.0,
+          790.0
+        ],
+        [
+          1135.0,
+          790.0
+        ],
+        [
+          1135.0,
+          835.0
+        ],
+        [
+          215.0,
+          835.0
+        ]
+      ],
+      "text": "sách nhà nước; các quyết định truy thu, xử phat; thông báo tiền nợ, tiền phat",
+      "confidence": 0.966869869375
+    },
+    {
+      "bbox": [
+        [
+          215.0,
+          823.0
+        ],
+        [
+          1134.0,
+          823.0
+        ],
+        [
+          1134.0,
+          861.0
+        ],
+        [
+          215.0,
+          861.0
+        ]
+      ],
+      "text": "và tiền chậm nộp theo quy định và đôn đốc người nộp thuế thực hiện nộp vào",
+      "confidence": 0.9686587070588236
+    },
+    {
+      "bbox": [
+        [
+          214.0,
+          856.0
+        ],
+        [
+          1134.0,
+          856.0
+        ],
+        [
+          1134.0,
+          896.0
+        ],
+        [
+          214.0,
+          896.0
+        ]
+      ],
+      "text": "ngân sách nhà nước. Bên được ủy nhiệm thu khi nhận thông báo về việc nộp",
+      "confidence": 0.966652054375
+    },
+    {
+      "bbox": [
+        [
+          214.0,
+          889.0
+        ],
+        [
+          1134.0,
+          889.0
+        ],
+        [
+          1134.0,
+          923.0
+        ],
+        [
+          214.0,
+          923.0
+        ]
+      ],
+      "text": "thuế và các khoản thu khác thuộc ngân sách nhà nước từ cơ quan quản lý thuế",
+      "confidence": 0.9690410105882353
+    },
+    {
+      "bbox": [
+        [
+          214.0,
+          920.0
+        ],
+        [
+          1133.0,
+          920.0
+        ],
+        [
+          1133.0,
+          966.0
+        ],
+        [
+          214.0,
+          966.0
+        ]
+      ],
+      "text": "phải gửi cho người nộp thuế trong vòng 05 ngày kể từ ngày nhận Thông báo;",
+      "confidence": 0.9650113775
+    },
+    {
+      "bbox": [
+        [
+          214.0,
+          957.0
+        ],
+        [
+          1134.0,
+          957.0
+        ],
+        [
+          1134.0,
+          994.0
+        ],
+        [
+          214.0,
+          994.0
+        ]
+      ],
+      "text": "và khi nhận Thông báo tiền nợ, tiền phạt và tiên chậm nộp từ cơ quan quản lý",
+      "confidence": 0.9606587433333335
+    },
+    {
+      "bbox": [
+        [
+          214.0,
+          989.0
+        ],
+        [
+          1134.0,
+          989.0
+        ],
+        [
+          1134.0,
+          1029.0
+        ],
+        [
+          214.0,
+          1029.0
+        ]
+      ],
+      "text": "thuế phải gửi cho người nộp thuế trong vòng 10 ngày làm việc kể từ ngày",
+      "confidence": 0.9645260725
+    },
+    {
+      "bbox": [
+        [
+          214.0,
+          1024.0
+        ],
+        [
+          849.0,
+          1024.0
+        ],
+        [
+          849.0,
+          1057.0
+        ],
+        [
+          214.0,
+          1057.0
+        ]
+      ],
+      "text": "nhận Thông báo và đôn đốc người nộp thuế thực hiện.",
+      "confidence": 0.967876350909091
+    },
+    {
+      "bbox": [
+        [
+          274.0,
+          1076.0
+        ],
+        [
+          1134.0,
+          1076.0
+        ],
+        [
+          1134.0,
+          1113.0
+        ],
+        [
+          274.0,
+          1113.0
+        ]
+      ],
+      "text": "¢) Tổ chức thu tiền thuế và các khoản thu khác thuộc ngân sách nhà nước",
+      "confidence": 0.954512405
+    },
+    {
+      "bbox": [
+        [
+          214.0,
+          1113.0
+        ],
+        [
+          1134.0,
+          1113.0
+        ],
+        [
+          1134.0,
+          1142.0
+        ],
+        [
+          214.0,
+          1142.0
+        ]
+      ],
+      "text": "và cấp biên lai thu, chứng từ thu cho người nộp thuê và quản lý, sử dụng",
+      "confidence": 0.9648046511764705
+    },
+    {
+      "bbox": [
+        [
+          215.0,
+          1147.0
+        ],
+        [
+          604.0,
+          1147.0
+        ],
+        [
+          604.0,
+          1174.0
+        ],
+        [
+          215.0,
+          1174.0
+        ]
+      ],
+      "text": "chứng từ thu theo đúng quy định.",
+      "confidence": 0.9681850642857144
+    },
+    {
+      "bbox": [
+        [
+          274.0,
+          1197.0
+        ],
+        [
+          1135.0,
+          1197.0
+        ],
+        [
+          1135.0,
+          1238.0
+        ],
+        [
+          274.0,
+          1238.0
+        ]
+      ],
+      "text": "c.1) Trường hợp bên được ủy nhiệm thu sử dụng biên lai thu, chứng từ",
+      "confidence": 0.9613252253333333
+    },
+    {
+      "bbox": [
+        [
+          215.0,
+          1225.0
+        ],
+        [
+          1134.0,
+          1225.0
+        ],
+        [
+          1134.0,
+          1265.0
+        ],
+        [
+          215.0,
+          1265.0
+        ]
+      ],
+      "text": "thu do cơ quan quản lý thuế phát hành phải có văn bản đề nghị gửi cơ quan",
+      "confidence": 0.9662713116666666
+    },
+    {
+      "bbox": [
+        [
+          215.0,
+          1261.0
+        ],
+        [
+          534.0,
+          1261.0
+        ],
+        [
+          534.0,
+          1294.0
+        ],
+        [
+          215.0,
+          1294.0
+        ]
+      ],
+      "text": "quản lý thuế theo quy định.",
+      "confidence": 0.9643350483333335
+    },
+    {
+      "bbox": [
+        [
+          274.0,
+          1316.0
+        ],
+        [
+          1133.0,
+          1316.0
+        ],
+        [
+          1133.0,
+          1346.0
+        ],
+        [
+          274.0,
+          1346.0
+        ]
+      ],
+      "text": "c.2) Trường hợp, bên được ủy nhiệm thu tự phát hành biên lai thu, chứng",
+      "confidence": 0.9555992339999999
+    },
+    {
+      "bbox": [
+        [
+          215.0,
+          1350.0
+        ],
+        [
+          1134.0,
+          1350.0
+        ],
+        [
+          1134.0,
+          1385.0
+        ],
+        [
+          215.0,
+          1385.0
+        ]
+      ],
+      "text": "từ thu thì phải thực hiện đăng ký, phát hành, báo cáo tình hình sử dụng chứng",
+      "confidence": 0.9678914994117648
+    },
+    {
+      "bbox": [
+        [
+          214.0,
+          1379.0
+        ],
+        [
+          1093.0,
+          1379.0
+        ],
+        [
+          1093.0,
+          1413.0
+        ],
+        [
+          214.0,
+          1413.0
+        ]
+      ],
+      "text": "từ thu với cơ quan quản lý thuế theo quy định về biên lai thu, chứng từ thu.",
+      "confidence": 0.9637345511111112
+    },
+    {
+      "bbox": [
+        [
+          274.0,
+          1433.0
+        ],
+        [
+          1134.0,
+          1433.0
+        ],
+        [
+          1134.0,
+          1467.0
+        ],
+        [
+          274.0,
+          1467.0
+        ]
+      ],
+      "text": "d) Nộp tiền thuế và các khoản thu khác thuộc ngân sách nhà nước đã thu",
+      "confidence": 0.96441451125
+    },
+    {
+      "bbox": [
+        [
+          215.0,
+          1473.0
+        ],
+        [
+          503.0,
+          1473.0
+        ],
+        [
+          503.0,
+          1500.0
+        ],
+        [
+          215.0,
+          1500.0
+        ]
+      ],
+      "text": "vào ngân sách nhà nước.",
+      "confidence": 0.967943602
+    },
+    {
+      "bbox": [
+        [
+          274.0,
+          1518.0
+        ],
+        [
+          1134.0,
+          1518.0
+        ],
+        [
+          1134.0,
+          1553.0
+        ],
+        [
+          274.0,
+          1553.0
+        ]
+      ],
+      "text": "d.1) Bên được ủy nhiệm thu được cấp mã số thuế đề nộp tiền thuế và các",
+      "confidence": 0.9584900752941178
+    },
+    {
+      "bbox": [
+        [
+          214.0,
+          1557.0
+        ],
+        [
+          1135.0,
+          1557.0
+        ],
+        [
+          1135.0,
+          1592.0
+        ],
+        [
+          214.0,
+          1592.0
+        ]
+      ],
+      "text": "khoản thu khác thuộc ngân sách nhà nước đã thu được vào ngân sách nhà",
+      "confidence": 0.9672240706666666
+    },
+    {
+      "bbox": [
+        [
+          214.0,
+          1593.0
+        ],
+        [
+          617.0,
+          1593.0
+        ],
+        [
+          617.0,
+          1620.0
+        ],
+        [
+          214.0,
+          1620.0
+        ]
+      ],
+      "text": "nước theo hợp đồng ủy nhiệm thu.",
+      "confidence": 0.9602782985714284
+    }
+  ]
+}

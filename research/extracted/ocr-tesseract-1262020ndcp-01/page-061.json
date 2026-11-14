@@ -1,0 +1,838 @@
+{
+  "document_id": "126/2020/NĐ-CP",
+  "source_file": "../../legal-sources/1262020ndcp/01.pdf",
+  "source_sha256": "310648e80396d267610946458e7fdd71ba87ef538b009d6574ed21514de3f7ca",
+  "page_count": 119,
+  "render_dpi": 150,
+  "engine": "Tesseract 5.5.4 (vie+eng; OEM 1; PSM 3)",
+  "review_status": "UNREVIEWED",
+  "tesseract_version": "5.5.4",
+  "languages": [
+    "vie",
+    "eng"
+  ],
+  "traineddata_sha256": {
+    "vie": "b6b49293d95d0b6dbd8780174627e82c75be957b6f4ed9862155540d6b00bb45",
+    "eng": "8280aed0782fe27257a68ea10fe7ef324ca0f8d85bd2fd145d1c2b560bcb66ba"
+  },
+  "ocr_engine_mode": 1,
+  "page_segmentation_mode": 3,
+  "thread_limit": 2,
+  "page": 61,
+  "lines": [
+    {
+      "bbox": [
+        [
+          679.0,
+          64.0
+        ],
+        [
+          704.0,
+          64.0
+        ],
+        [
+          704.0,
+          84.0
+        ],
+        [
+          679.0,
+          84.0
+        ]
+      ],
+      "text": "61",
+      "confidence": 0.94839058
+    },
+    {
+      "bbox": [
+        [
+          267.0,
+          148.0
+        ],
+        [
+          609.0,
+          148.0
+        ],
+        [
+          609.0,
+          175.0
+        ],
+        [
+          267.0,
+          175.0
+        ]
+      ],
+      "text": "3. Trình tự thủ tục khoanh nợ",
+      "confidence": 0.9581831457142858
+    },
+    {
+      "bbox": [
+        [
+          268.0,
+          198.0
+        ],
+        [
+          1125.0,
+          198.0
+        ],
+        [
+          1125.0,
+          247.0
+        ],
+        [
+          268.0,
+          247.0
+        ]
+      ],
+      "text": "a) Đối với các trường hợp được khoanh tiền thuế nợ theo quy định tại",
+      "confidence": 0.9590853799999999
+    },
+    {
+      "bbox": [
+        [
+          209.0,
+          231.0
+        ],
+        [
+          1125.0,
+          231.0
+        ],
+        [
+          1125.0,
+          278.0
+        ],
+        [
+          209.0,
+          278.0
+        ]
+      ],
+      "text": "Điều 83 Luật Quản lý thuế, khi có đầy đủ hồ sơ quy định tại khoản 1 Điều này",
+      "confidence": 0.9641058626315789
+    },
+    {
+      "bbox": [
+        [
+          209.0,
+          267.0
+        ],
+        [
+          1127.0,
+          267.0
+        ],
+        [
+          1127.0,
+          314.0
+        ],
+        [
+          209.0,
+          314.0
+        ]
+      ],
+      "text": "thì thủ trưởng cợ quan quản lý: thuế quản lý trực tiếp người nộp thuế ban hành",
+      "confidence": 0.9464355105882354
+    },
+    {
+      "bbox": [
+        [
+          209.0,
+          308.0
+        ],
+        [
+          1126.0,
+          308.0
+        ],
+        [
+          1126.0,
+          354.0
+        ],
+        [
+          209.0,
+          354.0
+        ]
+      ],
+      "text": "quyết định khoanh nợ theo Mẫu số 01/KN tại Phụ lục III ban hành kèm theo",
+      "confidence": 0.951380428125
+    },
+    {
+      "bbox": [
+        [
+          209.0,
+          339.0
+        ],
+        [
+          1126.0,
+          339.0
+        ],
+        [
+          1126.0,
+          381.0
+        ],
+        [
+          209.0,
+          381.0
+        ]
+      ],
+      "text": "Nghị định này đối với số tiền thuế nợ tại thời điểm bắt đầu của thời gian",
+      "confidence": 0.9683888117647059
+    },
+    {
+      "bbox": [
+        [
+          210.0,
+          379.0
+        ],
+        [
+          698.0,
+          379.0
+        ],
+        [
+          698.0,
+          416.0
+        ],
+        [
+          210.0,
+          416.0
+        ]
+      ],
+      "text": "khoanh nợ quy định tại khoản 2 Điều này.",
+      "confidence": 0.9632029877777778
+    },
+    {
+      "bbox": [
+        [
+          259.0,
+          435.0
+        ],
+        [
+          1126.0,
+          435.0
+        ],
+        [
+          1126.0,
+          485.0
+        ],
+        [
+          259.0,
+          485.0
+        ]
+      ],
+      "text": "b Trường hợp người nộp thuế đã được cơ quan quản lý thuế ban hành",
+      "confidence": 0.9467623399999999
+    },
+    {
+      "bbox": [
+        [
+          211.0,
+          470.0
+        ],
+        [
+          1127.0,
+          470.0
+        ],
+        [
+          1127.0,
+          523.0
+        ],
+        [
+          211.0,
+          523.0
+        ]
+      ],
+      "text": "quyết định khoanh tiền thuế nợ mà Tòa án hủy quyết định tuyên bố một người",
+      "confidence": 0.96423433375
+    },
+    {
+      "bbox": [
+        [
+          212.0,
+          501.0
+        ],
+        [
+          1128.0,
+          501.0
+        ],
+        [
+          1128.0,
+          548.0
+        ],
+        [
+          212.0,
+          548.0
+        ]
+      ],
+      "text": "là đã chết, mắt tích, mất năng lực hành vi dân sự hoặc người nộp thuế tiếp tục",
+      "confidence": 0.9595241588888888
+    },
+    {
+      "bbox": [
+        [
+          211.0,
+          541.0
+        ],
+        [
+          1129.0,
+          541.0
+        ],
+        [
+          1129.0,
+          594.0
+        ],
+        [
+          211.0,
+          594.0
+        ]
+      ],
+      "text": "hoạt động kinh doanh thì cơ quan quản | lý thuế ban hành quyết định chấm dứt",
+      "confidence": 0.9324737135294118
+    },
+    {
+      "bbox": [
+        [
+          212.0,
+          579.0
+        ],
+        [
+          1129.0,
+          579.0
+        ],
+        [
+          1129.0,
+          618.0
+        ],
+        [
+          212.0,
+          618.0
+        ]
+      ],
+      "text": "hiệu lực của quyết định khoanh tiền thuế nợ theo Mẫu số 02/KN tại Phụ lục II",
+      "confidence": 0.9549637247058823
+    },
+    {
+      "bbox": [
+        [
+          212.0,
+          613.0
+        ],
+        [
+          1129.0,
+          613.0
+        ],
+        [
+          1129.0,
+          663.0
+        ],
+        [
+          212.0,
+          663.0
+        ]
+      ],
+      "text": "ban hành kèm theo Nghị, định này. Cơ quan quản lý thuế tính tiền chậm nộp",
+      "confidence": 0.950053090625
+    },
+    {
+      "bbox": [
+        [
+          213.0,
+          649.0
+        ],
+        [
+          1141.0,
+          649.0
+        ],
+        [
+          1141.0,
+          697.0
+        ],
+        [
+          213.0,
+          697.0
+        ]
+      ],
+      "text": "đối với người nộp thuế ké từ ngày, ban hành quyết định chấm dứt hiệu lực của `",
+      "confidence": 0.9446848761111112
+    },
+    {
+      "bbox": [
+        [
+          213.0,
+          682.0
+        ],
+        [
+          1130.0,
+          682.0
+        ],
+        [
+          1130.0,
+          726.0
+        ],
+        [
+          213.0,
+          726.0
+        ]
+      ],
+      "text": "quyết định khoanh tiền thuế nợ đến ngày người nộp thuế nộp đủ số tiền thuế",
+      "confidence": 0.963856511875
+    },
+    {
+      "bbox": [
+        [
+          213.0,
+          731.0
+        ],
+        [
+          537.0,
+          731.0
+        ],
+        [
+          537.0,
+          760.0
+        ],
+        [
+          213.0,
+          760.0
+        ]
+      ],
+      "text": "nợ vào ngân sách nhà nước.",
+      "confidence": 0.9693518433333334
+    },
+    {
+      "bbox": [
+        [
+          274.0,
+          779.0
+        ],
+        [
+          1131.0,
+          779.0
+        ],
+        [
+          1131.0,
+          826.0
+        ],
+        [
+          274.0,
+          826.0
+        ]
+      ],
+      "text": "c) Trường hợp người nộp thuế đã được cơ quan quản lý thuế ban hành",
+      "confidence": 0.9578044633333335
+    },
+    {
+      "bbox": [
+        [
+          215.0,
+          816.0
+        ],
+        [
+          1131.0,
+          816.0
+        ],
+        [
+          1131.0,
+          865.0
+        ],
+        [
+          215.0,
+          865.0
+        ]
+      ],
+      "text": "quyết định khoanh tiền thuế nợ, khi đủ điều kiện xóa nợ theo quy định tại",
+      "confidence": 0.96076487625
+    },
+    {
+      "bbox": [
+        [
+          215.0,
+          849.0
+        ],
+        [
+          1132.0,
+          849.0
+        ],
+        [
+          1132.0,
+          894.0
+        ],
+        [
+          215.0,
+          894.0
+        ]
+      ],
+      "text": "Điều 85 Luật Quản lý thuế thì cơ quan quản lý thuế ban hành quyết định",
+      "confidence": 0.9644381525
+    },
+    {
+      "bbox": [
+        [
+          216.0,
+          885.0
+        ],
+        [
+          1131.0,
+          885.0
+        ],
+        [
+          1131.0,
+          925.0
+        ],
+        [
+          216.0,
+          925.0
+        ]
+      ],
+      "text": "chấm dứt hiệu lực của quyết định khoanh tiền thuế nợ theo Mẫu số 02/KN tại",
+      "confidence": 0.957162765625
+    },
+    {
+      "bbox": [
+        [
+          215.0,
+          926.0
+        ],
+        [
+          1107.0,
+          926.0
+        ],
+        [
+          1107.0,
+          962.0
+        ],
+        [
+          215.0,
+          962.0
+        ]
+      ],
+      "text": "Phụ lục III ban hành kèm theo Nghị định này và thực hiện xóa nợ theo quy định.",
+      "confidence": 0.9489499416666667
+    },
+    {
+      "bbox": [
+        [
+          276.0,
+          986.0
+        ],
+        [
+          1133.0,
+          986.0
+        ],
+        [
+          1133.0,
+          1023.0
+        ],
+        [
+          276.0,
+          1023.0
+        ]
+      ],
+      "text": "d) Trường hợp người nộp thuế là cá nhân, cá nhân kinh doanh, chủ hộ",
+      "confidence": 0.9667655033333333
+    },
+    {
+      "bbox": [
+        [
+          217.0,
+          1021.0
+        ],
+        [
+          1134.0,
+          1021.0
+        ],
+        [
+          1134.0,
+          1059.0
+        ],
+        [
+          217.0,
+          1059.0
+        ]
+      ],
+      "text": "gia đình, chủ hộ kinh doanh, chủ doanh nghiệp tư nhân và công ty trách",
+      "confidence": 0.9691767726666667
+    },
+    {
+      "bbox": [
+        [
+          217.0,
+          1050.0
+        ],
+        [
+          1134.0,
+          1050.0
+        ],
+        [
+          1134.0,
+          1092.0
+        ],
+        [
+          217.0,
+          1092.0
+        ]
+      ],
+      "text": "nhiệm hữu hạn một thành viên đã được khoanh nợ mà cơ quan quản lý thuế",
+      "confidence": 0.956412458125
+    },
+    {
+      "bbox": [
+        [
+          217.0,
+          1092.0
+        ],
+        [
+          1134.0,
+          1092.0
+        ],
+        [
+          1134.0,
+          1131.0
+        ],
+        [
+          217.0,
+          1131.0
+        ]
+      ],
+      "text": "phát hiện người nộp thuế đó thành lập cơ sở kinh doanh, doanh nghiệp khác",
+      "confidence": 0.9231700346666666
+    },
+    {
+      "bbox": [
+        [
+          218.0,
+          1121.0
+        ],
+        [
+          1136.0,
+          1121.0
+        ],
+        [
+          1136.0,
+          1170.0
+        ],
+        [
+          218.0,
+          1170.0
+        ]
+      ],
+      "text": "thì cơ quan quản lý thuế ban hành quyết định chấm dứt hiệu lực của quyết",
+      "confidence": 0.968241545
+    },
+    {
+      "bbox": [
+        [
+          219.0,
+          1162.0
+        ],
+        [
+          1136.0,
+          1162.0
+        ],
+        [
+          1136.0,
+          1197.0
+        ],
+        [
+          219.0,
+          1197.0
+        ]
+      ],
+      "text": "định khoanh tiền thuế nợ theo Mẫu số 02/KN tại Phụ lục III ban hành kèm",
+      "confidence": 0.952949991875
+    },
+    {
+      "bbox": [
+        [
+          219.0,
+          1191.0
+        ],
+        [
+          1136.0,
+          1191.0
+        ],
+        [
+          1136.0,
+          1240.0
+        ],
+        [
+          219.0,
+          1240.0
+        ]
+      ],
+      "text": "theo Nghị định này và thực hiện tính tiền chậm nộp kế từ ngày người nộp thuế",
+      "confidence": 0.9507310888235294
+    },
+    {
+      "bbox": [
+        [
+          220.0,
+          1227.0
+        ],
+        [
+          1136.0,
+          1227.0
+        ],
+        [
+          1136.0,
+          1268.0
+        ],
+        [
+          220.0,
+          1268.0
+        ]
+      ],
+      "text": "được khoanh tiền thuế nợ đến ngày người nộp thuế nộp đủ số tiền thuế nợ vào",
+      "confidence": 0.9621105947058823
+    },
+    {
+      "bbox": [
+        [
+          220.0,
+          1276.0
+        ],
+        [
+          457.0,
+          1276.0
+        ],
+        [
+          457.0,
+          1305.0
+        ],
+        [
+          220.0,
+          1305.0
+        ]
+      ],
+      "text": "ngân sách nhà nước.",
+      "confidence": 0.9670141800000001
+    },
+    {
+      "bbox": [
+        [
+          280.0,
+          1324.0
+        ],
+        [
+          1137.0,
+          1324.0
+        ],
+        [
+          1137.0,
+          1363.0
+        ],
+        [
+          280.0,
+          1363.0
+        ]
+      ],
+      "text": "Điều 24. Xóa nợ tiền thuế, tiền chậm nộp, tiền phạt đối với các",
+      "confidence": 0.968862365
+    },
+    {
+      "bbox": [
+        [
+          222.0,
+          1365.0
+        ],
+        [
+          1120.0,
+          1365.0
+        ],
+        [
+          1120.0,
+          1401.0
+        ],
+        [
+          222.0,
+          1401.0
+        ]
+      ],
+      "text": "trường hợp bị ảnh hưởng do thiên tai, thắm họa, dịch bệnh có phạm vi rộng",
+      "confidence": 0.949052981875
+    },
+    {
+      "bbox": [
+        [
+          284.0,
+          1432.0
+        ],
+        [
+          602.0,
+          1432.0
+        ],
+        [
+          602.0,
+          1461.0
+        ],
+        [
+          284.0,
+          1461.0
+        ]
+      ],
+      "text": "1. Trường hợp được xóa nợ",
+      "confidence": 0.9679679983333334
+    },
+    {
+      "bbox": [
+        [
+          282.0,
+          1483.0
+        ],
+        [
+          1139.0,
+          1483.0
+        ],
+        [
+          1139.0,
+          1523.0
+        ],
+        [
+          282.0,
+          1523.0
+        ]
+      ],
+      "text": "Người nộp thuế bị thiệt hại về vật chất do bị ảnh hưởng bởi thiên tai,",
+      "confidence": 0.96259358875
+    },
+    {
+      "bbox": [
+        [
+          223.0,
+          1520.0
+        ],
+        [
+          1140.0,
+          1520.0
+        ],
+        [
+          1140.0,
+          1562.0
+        ],
+        [
+          223.0,
+          1562.0
+        ]
+      ],
+      "text": "thảm họa, dịch bệnh có phạm vi rộng theo công bố của cơ quan nhà nước có",
+      "confidence": 0.9614734070588236
+    },
+    {
+      "bbox": [
+        [
+          224.0,
+          1561.0
+        ],
+        [
+          475.0,
+          1561.0
+        ],
+        [
+          475.0,
+          1597.0
+        ],
+        [
+          224.0,
+          1597.0
+        ]
+      ],
+      "text": "thẩm quyền. ,",
+      "confidence": 0.72555186
+    }
+  ]
+}

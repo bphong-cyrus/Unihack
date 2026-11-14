@@ -1,0 +1,926 @@
+{
+  "document_id": "126/2020/NĐ-CP",
+  "source_file": "../../legal-sources/1262020ndcp/01.pdf",
+  "source_sha256": "310648e80396d267610946458e7fdd71ba87ef538b009d6574ed21514de3f7ca",
+  "page_count": 119,
+  "render_dpi": 150,
+  "engine": "Tesseract 5.5.4 (vie+eng; OEM 1; PSM 3)",
+  "review_status": "UNREVIEWED",
+  "tesseract_version": "5.5.4",
+  "languages": [
+    "vie",
+    "eng"
+  ],
+  "traineddata_sha256": {
+    "vie": "b6b49293d95d0b6dbd8780174627e82c75be957b6f4ed9862155540d6b00bb45",
+    "eng": "8280aed0782fe27257a68ea10fe7ef324ca0f8d85bd2fd145d1c2b560bcb66ba"
+  },
+  "ocr_engine_mode": 1,
+  "page_segmentation_mode": 3,
+  "thread_limit": 2,
+  "page": 78,
+  "lines": [
+    {
+      "bbox": [
+        [
+          690.0,
+          62.0
+        ],
+        [
+          715.0,
+          62.0
+        ],
+        [
+          715.0,
+          82.0
+        ],
+        [
+          690.0,
+          82.0
+        ]
+      ],
+      "text": "78",
+      "confidence": 0.9700251
+    },
+    {
+      "bbox": [
+        [
+          274.0,
+          137.0
+        ],
+        [
+          1132.0,
+          137.0
+        ],
+        [
+          1132.0,
+          170.0
+        ],
+        [
+          274.0,
+          170.0
+        ]
+      ],
+      "text": "d) Trường hợp người nộp thuế bị cưỡng chế có mở tài khoản tại nhiều tổ",
+      "confidence": 0.964534368125
+    },
+    {
+      "bbox": [
+        [
+          215.0,
+          173.0
+        ],
+        [
+          1133.0,
+          173.0
+        ],
+        [
+          1133.0,
+          205.0
+        ],
+        [
+          215.0,
+          205.0
+        ]
+      ],
+      "text": "chức tín dụng, kho bạc nhà nước khác nhau thì người có thẩm quyền căn cứ",
+      "confidence": 0.950995575
+    },
+    {
+      "bbox": [
+        [
+          215.0,
+          206.0
+        ],
+        [
+          1133.0,
+          206.0
+        ],
+        [
+          1133.0,
+          241.0
+        ],
+        [
+          215.0,
+          241.0
+        ]
+      ],
+      "text": "vào số lượng tài khoản mở tại các tổ chức tín dụng, kho bạc nhà nước dé ban",
+      "confidence": 0.9622905005555554
+    },
+    {
+      "bbox": [
+        [
+          215.0,
+          242.0
+        ],
+        [
+          1133.0,
+          242.0
+        ],
+        [
+          1133.0,
+          284.0
+        ],
+        [
+          215.0,
+          284.0
+        ]
+      ],
+      "text": "hanh quyét dinh cudng ché trích. tiền từ tài khoản đối với một tài khoản hoặc",
+      "confidence": 0.92382904625
+    },
+    {
+      "bbox": [
+        [
+          215.0,
+          277.0
+        ],
+        [
+          1133.0,
+          277.0
+        ],
+        [
+          1133.0,
+          323.0
+        ],
+        [
+          215.0,
+          323.0
+        ]
+      ],
+      "text": "nhiều tài khoản, đồng thời yêu cầu tổ chức tín dụng, kho bạc nhà nước phong",
+      "confidence": 0.967612381875
+    },
+    {
+      "bbox": [
+        [
+          214.0,
+          314.0
+        ],
+        [
+          1132.0,
+          314.0
+        ],
+        [
+          1132.0,
+          355.0
+        ],
+        [
+          214.0,
+          355.0
+        ]
+      ],
+      "text": "tỏa các tài khoản còn lại của người nộp thuế tương ứng với số tiền bị cưỡng",
+      "confidence": 0.9584686452941176
+    },
+    {
+      "bbox": [
+        [
+          214.0,
+          346.0
+        ],
+        [
+          1132.0,
+          346.0
+        ],
+        [
+          1132.0,
+          387.0
+        ],
+        [
+          214.0,
+          387.0
+        ]
+      ],
+      "text": "chế trong trường hợp cần thiết. Trong quá trình thực hiện quyết định, nêu một",
+      "confidence": 0.9658043353333332
+    },
+    {
+      "bbox": [
+        [
+          214.0,
+          385.0
+        ],
+        [
+          1131.0,
+          385.0
+        ],
+        [
+          1131.0,
+          418.0
+        ],
+        [
+          214.0,
+          418.0
+        ]
+      ],
+      "text": "hoặc một số các tổ chức tín dụng, kho bạc nhà nước đã thực hiện trích tiền",
+      "confidence": 0.9683212947058825
+    },
+    {
+      "bbox": [
+        [
+          214.0,
+          420.0
+        ],
+        [
+          1131.0,
+          420.0
+        ],
+        [
+          1131.0,
+          454.0
+        ],
+        [
+          214.0,
+          454.0
+        ]
+      ],
+      "text": "hoặc đã trích đủ số tiền theo quyết định cưỡng chế (có chứng từ nộp tiền vào",
+      "confidence": 0.9683226923529412
+    },
+    {
+      "bbox": [
+        [
+          214.0,
+          456.0
+        ],
+        [
+          1130.0,
+          456.0
+        ],
+        [
+          1130.0,
+          488.0
+        ],
+        [
+          214.0,
+          488.0
+        ]
+      ],
+      "text": "ngân sách nhà nước) thì tổ chức tín dụng hoặc kho bạc nhà nước hoặc người",
+      "confidence": 0.9692149206249999
+    },
+    {
+      "bbox": [
+        [
+          214.0,
+          486.0
+        ],
+        [
+          1132.0,
+          486.0
+        ],
+        [
+          1132.0,
+          526.0
+        ],
+        [
+          214.0,
+          526.0
+        ]
+      ],
+      "text": "nộp thuế thông báo cho cơ quan ban hành quyết định cưỡng chế ngay trong",
+      "confidence": 0.9672081913333334
+    },
+    {
+      "bbox": [
+        [
+          214.0,
+          526.0
+        ],
+        [
+          1132.0,
+          526.0
+        ],
+        [
+          1132.0,
+          559.0
+        ],
+        [
+          214.0,
+          559.0
+        ]
+      ],
+      "text": "ngày trích chuyển. Cơ quan quản lý thuế có trách nhiệm thông báo cho các tổ",
+      "confidence": 0.9671098281249999
+    },
+    {
+      "bbox": [
+        [
+          214.0,
+          566.0
+        ],
+        [
+          1132.0,
+          566.0
+        ],
+        [
+          1132.0,
+          602.0
+        ],
+        [
+          214.0,
+          602.0
+        ]
+      ],
+      "text": "chức tín dụng, kho bạc nhà nước ngay trong ngày nhận được thông báo nộp",
+      "confidence": 0.9638671253333334
+    },
+    {
+      "bbox": [
+        [
+          214.0,
+          596.0
+        ],
+        [
+          1132.0,
+          596.0
+        ],
+        [
+          1132.0,
+          629.0
+        ],
+        [
+          214.0,
+          629.0
+        ]
+      ],
+      "text": "đủ tiền thuế để dừng việc cưỡng chế trích tiền từ tài khoản, phong tỏa",
+      "confidence": 0.9678775593333333
+    },
+    {
+      "bbox": [
+        [
+          214.0,
+          637.0
+        ],
+        [
+          327.0,
+          637.0
+        ],
+        [
+          327.0,
+          658.0
+        ],
+        [
+          214.0,
+          658.0
+        ]
+      ],
+      "text": "tài khoản.",
+      "confidence": 0.96598961
+    },
+    {
+      "bbox": [
+        [
+          274.0,
+          688.0
+        ],
+        [
+          1133.0,
+          688.0
+        ],
+        [
+          1133.0,
+          734.0
+        ],
+        [
+          274.0,
+          734.0
+        ]
+      ],
+      "text": "đ) Quyết định cưỡng chế chấm dứt hiệu lực kể từ ngày người nộp thuế",
+      "confidence": 0.958131434
+    },
+    {
+      "bbox": [
+        [
+          215.0,
+          725.0
+        ],
+        [
+          1133.0,
+          725.0
+        ],
+        [
+          1133.0,
+          764.0
+        ],
+        [
+          215.0,
+          764.0
+        ]
+      ],
+      "text": "đã nộp đủ số tiền thuế nợ bị cưỡng chế vào ngân sách nhà nước hoặc sô tiền",
+      "confidence": 0.9592935177777778
+    },
+    {
+      "bbox": [
+        [
+          214.0,
+          759.0
+        ],
+        [
+          1133.0,
+          759.0
+        ],
+        [
+          1133.0,
+          801.0
+        ],
+        [
+          214.0,
+          801.0
+        ]
+      ],
+      "text": "thuế nợ bị cưỡng chế được cơ quan quản lý thuế ban hành quyết định nộp dần",
+      "confidence": 0.9498158494117648
+    },
+    {
+      "bbox": [
+        [
+          214.0,
+          791.0
+        ],
+        [
+          1133.0,
+          791.0
+        ],
+        [
+          1133.0,
+          831.0
+        ],
+        [
+          214.0,
+          831.0
+        ]
+      ],
+      "text": "tiền thuế nợ hoặc quyết định gia hạn nộp thuế hoặc quyết định miễn tiền chậm",
+      "confidence": 0.965414605
+    },
+    {
+      "bbox": [
+        [
+          214.0,
+          825.0
+        ],
+        [
+          1133.0,
+          825.0
+        ],
+        [
+          1133.0,
+          864.0
+        ],
+        [
+          214.0,
+          864.0
+        ]
+      ],
+      "text": "nộp tiền thuế hoặc thông báo không tính tiền chậm nộp. Cơ quan quản lý thuế",
+      "confidence": 0.9668949499999999
+    },
+    {
+      "bbox": [
+        [
+          214.0,
+          858.0
+        ],
+        [
+          1133.0,
+          858.0
+        ],
+        [
+          1133.0,
+          897.0
+        ],
+        [
+          214.0,
+          897.0
+        ]
+      ],
+      "text": "ban hành quyết định chấm dứt hiệu lực của quyết định cưỡng chế theo Mẫu",
+      "confidence": 0.9561830746666666
+    },
+    {
+      "bbox": [
+        [
+          215.0,
+          892.0
+        ],
+        [
+          900.0,
+          892.0
+        ],
+        [
+          900.0,
+          925.0
+        ],
+        [
+          215.0,
+          925.0
+        ]
+      ],
+      "text": "số 08/CC tại Phụ lục III ban hành kèm theo Nghị định này.",
+      "confidence": 0.9525394146153846
+    },
+    {
+      "bbox": [
+        [
+          274.0,
+          951.0
+        ],
+        [
+          1133.0,
+          951.0
+        ],
+        [
+          1133.0,
+          983.0
+        ],
+        [
+          274.0,
+          983.0
+        ]
+      ],
+      "text": "4. Trách nhiệm của Kho bạc Nhà nước, tổ chức tín dụng nơi tổ chức, cá",
+      "confidence": 0.9678989462500001
+    },
+    {
+      "bbox": [
+        [
+          214.0,
+          989.0
+        ],
+        [
+          596.0,
+          989.0
+        ],
+        [
+          596.0,
+          1015.0
+        ],
+        [
+          214.0,
+          1015.0
+        ]
+      ],
+      "text": "nhân bị cưỡng chê mở tài khoản:",
+      "confidence": 0.9681156928571428
+    },
+    {
+      "bbox": [
+        [
+          274.0,
+          1042.0
+        ],
+        [
+          1132.0,
+          1042.0
+        ],
+        [
+          1132.0,
+          1081.0
+        ],
+        [
+          274.0,
+          1081.0
+        ]
+      ],
+      "text": "a) Trong thời hạn 03 ngày làm việc kế từ ngày nhận được văn bản yêu",
+      "confidence": 0.961661289375
+    },
+    {
+      "bbox": [
+        [
+          214.0,
+          1074.0
+        ],
+        [
+          1132.0,
+          1074.0
+        ],
+        [
+          1132.0,
+          1112.0
+        ],
+        [
+          214.0,
+          1112.0
+        ]
+      ],
+      "text": "cầu cung cấp thông tin của cơ quan ban hành quyết định cưỡng chế theo Mẫu",
+      "confidence": 0.966530580625
+    },
+    {
+      "bbox": [
+        [
+          214.0,
+          1108.0
+        ],
+        [
+          1133.0,
+          1108.0
+        ],
+        [
+          1133.0,
+          1148.0
+        ],
+        [
+          214.0,
+          1148.0
+        ]
+      ],
+      "text": "số 01- 1/CC tại Phụ lục II ban hành kèm theo Nghị định này; kho bạc nhà",
+      "confidence": 0.9587357829411765
+    },
+    {
+      "bbox": [
+        [
+          213.0,
+          1141.0
+        ],
+        [
+          1132.0,
+          1141.0
+        ],
+        [
+          1132.0,
+          1181.0
+        ],
+        [
+          213.0,
+          1181.0
+        ]
+      ],
+      "text": "nước, tổ chức tín dụng phải cung cấp các thông tin cân thiết bang văn bản về",
+      "confidence": 0.9592090952941176
+    },
+    {
+      "bbox": [
+        [
+          214.0,
+          1174.0
+        ],
+        [
+          1132.0,
+          1174.0
+        ],
+        [
+          1132.0,
+          1209.0
+        ],
+        [
+          214.0,
+          1209.0
+        ]
+      ],
+      "text": "số hiệu tài khoản, số dư tại thời điểm cung cấp và các thông tin liên quan khác",
+      "confidence": 0.9575065661111111
+    },
+    {
+      "bbox": [
+        [
+          213.0,
+          1208.0
+        ],
+        [
+          834.0,
+          1208.0
+        ],
+        [
+          834.0,
+          1241.0
+        ],
+        [
+          213.0,
+          1241.0
+        ]
+      ],
+      "text": "của người nộp thuế bị cưỡng chế mở tại đơn vị mình;",
+      "confidence": 0.9689053716666666
+    },
+    {
+      "bbox": [
+        [
+          260.0,
+          1267.0
+        ],
+        [
+          1131.0,
+          1267.0
+        ],
+        [
+          1131.0,
+          1306.0
+        ],
+        [
+          260.0,
+          1306.0
+        ]
+      ],
+      "text": "_b) Ngay sau khi nhận được quyết định cưỡng chế của cơ quan có thẩm",
+      "confidence": 0.9627472086666667
+    },
+    {
+      "bbox": [
+        [
+          213.0,
+          1299.0
+        ],
+        [
+          1132.0,
+          1299.0
+        ],
+        [
+          1132.0,
+          1339.0
+        ],
+        [
+          213.0,
+          1339.0
+        ]
+      ],
+      "text": "quyền kèm theo Lệnh thu ngân sách nhà nước, kho bạc nhà nước, tổ chức tín",
+      "confidence": 0.96708939875
+    },
+    {
+      "bbox": [
+        [
+          213.0,
+          1334.0
+        ],
+        [
+          1131.0,
+          1334.0
+        ],
+        [
+          1131.0,
+          1368.0
+        ],
+        [
+          213.0,
+          1368.0
+        ]
+      ],
+      "text": "dụng có trách nhiệm làm thủ tục trích chuyển số tiền của người nộp thuế bị",
+      "confidence": 0.966237090625
+    },
+    {
+      "bbox": [
+        [
+          213.0,
+          1366.0
+        ],
+        [
+          1130.0,
+          1366.0
+        ],
+        [
+          1130.0,
+          1406.0
+        ],
+        [
+          213.0,
+          1406.0
+        ]
+      ],
+      "text": "cưỡng chế vào tài khoản thu ngân sách nhà nước mở tại kho bạc nhà nước;",
+      "confidence": 0.96365645875
+    },
+    {
+      "bbox": [
+        [
+          214.0,
+          1399.0
+        ],
+        [
+          1130.0,
+          1399.0
+        ],
+        [
+          1130.0,
+          1440.0
+        ],
+        [
+          214.0,
+          1440.0
+        ]
+      ],
+      "text": "đồng thời thông báo cho cơ quan ban hành quyết định cưỡng chế và người",
+      "confidence": 0.9692549846666667
+    },
+    {
+      "bbox": [
+        [
+          214.0,
+          1432.0
+        ],
+        [
+          1132.0,
+          1432.0
+        ],
+        [
+          1132.0,
+          1473.0
+        ],
+        [
+          214.0,
+          1473.0
+        ]
+      ],
+      "text": "nộp thuế bị cưỡng chế biết ngay trong ngày trích chuyển. Trường hợp sô dư",
+      "confidence": 0.9616759900000001
+    },
+    {
+      "bbox": [
+        [
+          214.0,
+          1466.0
+        ],
+        [
+          1130.0,
+          1466.0
+        ],
+        [
+          1130.0,
+          1512.0
+        ],
+        [
+          214.0,
+          1512.0
+        ]
+      ],
+      "text": "trong tài khoản ít hơn số tiền mà người nộp thuế bị cưỡng chế phải nộp thì sau",
+      "confidence": 0.958932635
+    },
+    {
+      "bbox": [
+        [
+          214.0,
+          1499.0
+        ],
+        [
+          1129.0,
+          1499.0
+        ],
+        [
+          1129.0,
+          1539.0
+        ],
+        [
+          214.0,
+          1539.0
+        ]
+      ],
+      "text": "khi trừ đi số dư tối thiểu để duy trì tài khoản, kho bạc nhà nước, tổ chức",
+      "confidence": 0.954191115
+    },
+    {
+      "bbox": [
+        [
+          214.0,
+          1533.0
+        ],
+        [
+          1130.0,
+          1533.0
+        ],
+        [
+          1130.0,
+          1568.0
+        ],
+        [
+          214.0,
+          1568.0
+        ]
+      ],
+      "text": "tín dụng phải trích chuyển số tiền còn lại vào tài khoản của ngân sách",
+      "confidence": 0.9655802206666667
+    },
+    {
+      "bbox": [
+        [
+          214.0,
+          1573.0
+        ],
+        [
+          328.0,
+          1573.0
+        ],
+        [
+          328.0,
+          1598.0
+        ],
+        [
+          214.0,
+          1598.0
+        ]
+      ],
+      "text": "nhà nước;",
+      "confidence": 0.9661532199999999
+    }
+  ]
+}

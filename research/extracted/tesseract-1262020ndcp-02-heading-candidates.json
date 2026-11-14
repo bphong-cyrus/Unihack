@@ -1,0 +1,865 @@
+{
+  "document_id": "126/2020/NĐ-CP",
+  "source_sha256": "008daa92f4d699b69b9318c4a8e6fa7db8d73453305e1a4f155134656e26847b",
+  "page_count": 147,
+  "review_status": "UNREVIEWED",
+  "candidates": [
+    {
+      "article": "8",
+      "page": 1,
+      "line_index": 19,
+      "text": "Điêu 8",
+      "confidence": 0.947698785,
+      "record_file": "page-001.json"
+    },
+    {
+      "article": "8",
+      "page": 1,
+      "line_index": 46,
+      "text": "Điều 8",
+      "confidence": 0.958191375,
+      "record_file": "page-001.json"
+    },
+    {
+      "article": "8",
+      "page": 2,
+      "line_index": 6,
+      "text": "Điêu 8",
+      "confidence": 0.8355067850000001,
+      "record_file": "page-002.json"
+    },
+    {
+      "article": "8",
+      "page": 2,
+      "line_index": 16,
+      "text": "Điều 8",
+      "confidence": 0.9437802500000001,
+      "record_file": "page-002.json"
+    },
+    {
+      "article": "8",
+      "page": 2,
+      "line_index": 26,
+      "text": "Điều 8",
+      "confidence": 0.9327926249999998,
+      "record_file": "page-002.json"
+    },
+    {
+      "article": "8",
+      "page": 2,
+      "line_index": 37,
+      "text": "Điêu 8",
+      "confidence": 0.9020997199999999,
+      "record_file": "page-002.json"
+    },
+    {
+      "article": "8",
+      "page": 2,
+      "line_index": 42,
+      "text": "Điều 8",
+      "confidence": 0.9656631450000001,
+      "record_file": "page-002.json"
+    },
+    {
+      "article": "8",
+      "page": 2,
+      "line_index": 49,
+      "text": "Điều 8",
+      "confidence": 0.95896122,
+      "record_file": "page-002.json"
+    },
+    {
+      "article": "8",
+      "page": 3,
+      "line_index": 10,
+      "text": "Điều 8",
+      "confidence": 0.86838898,
+      "record_file": "page-003.json"
+    },
+    {
+      "article": "8",
+      "page": 3,
+      "line_index": 17,
+      "text": "Điều 8",
+      "confidence": 0.959557345,
+      "record_file": "page-003.json"
+    },
+    {
+      "article": "8",
+      "page": 3,
+      "line_index": 37,
+      "text": "Điêu 8",
+      "confidence": 0.84671772,
+      "record_file": "page-003.json"
+    },
+    {
+      "article": "8",
+      "page": 3,
+      "line_index": 51,
+      "text": "Điều 8",
+      "confidence": 0.7995323550000001,
+      "record_file": "page-003.json"
+    },
+    {
+      "article": "8",
+      "page": 5,
+      "line_index": 31,
+      "text": "Điêu 8",
+      "confidence": 0.94005337,
+      "record_file": "page-005.json"
+    },
+    {
+      "article": "8",
+      "page": 5,
+      "line_index": 44,
+      "text": "Điêu 8",
+      "confidence": 0.80590248,
+      "record_file": "page-005.json"
+    },
+    {
+      "article": "8",
+      "page": 5,
+      "line_index": 51,
+      "text": "Điêu 8",
+      "confidence": 0.9534772100000001,
+      "record_file": "page-005.json"
+    },
+    {
+      "article": "8",
+      "page": 6,
+      "line_index": 10,
+      "text": "Điêu 8",
+      "confidence": 0.886944845,
+      "record_file": "page-006.json"
+    },
+    {
+      "article": "8",
+      "page": 6,
+      "line_index": 32,
+      "text": "Điều 8",
+      "confidence": 0.8729640949999999,
+      "record_file": "page-006.json"
+    },
+    {
+      "article": "8",
+      "page": 6,
+      "line_index": 50,
+      "text": "Điêu 8",
+      "confidence": 0.64525736,
+      "record_file": "page-006.json"
+    },
+    {
+      "article": "8",
+      "page": 7,
+      "line_index": 44,
+      "text": "Điêu 8",
+      "confidence": 0.9443408200000001,
+      "record_file": "page-007.json"
+    },
+    {
+      "article": "8",
+      "page": 8,
+      "line_index": 11,
+      "text": "Điêu 8",
+      "confidence": 0.952598,
+      "record_file": "page-008.json"
+    },
+    {
+      "article": "8",
+      "page": 8,
+      "line_index": 29,
+      "text": "Điều 8",
+      "confidence": 0.92069126,
+      "record_file": "page-008.json"
+    },
+    {
+      "article": "8",
+      "page": 8,
+      "line_index": 41,
+      "text": "Điều 8",
+      "confidence": 0.95449505,
+      "record_file": "page-008.json"
+    },
+    {
+      "article": "8",
+      "page": 12,
+      "line_index": 11,
+      "text": "Điêu 8",
+      "confidence": 0.91854336,
+      "record_file": "page-012.json"
+    },
+    {
+      "article": "8",
+      "page": 12,
+      "line_index": 60,
+      "text": "Điều 8",
+      "confidence": 0.94913105,
+      "record_file": "page-012.json"
+    },
+    {
+      "article": "8",
+      "page": 13,
+      "line_index": 11,
+      "text": "Điều 8",
+      "confidence": 0.9647404850000001,
+      "record_file": "page-013.json"
+    },
+    {
+      "article": "8",
+      "page": 13,
+      "line_index": 29,
+      "text": "Điều 8",
+      "confidence": 0.955533405,
+      "record_file": "page-013.json"
+    },
+    {
+      "article": "8",
+      "page": 15,
+      "line_index": 26,
+      "text": "Điêu 8",
+      "confidence": 0.898717955,
+      "record_file": "page-015.json"
+    },
+    {
+      "article": "8",
+      "page": 15,
+      "line_index": 38,
+      "text": "Điêu 8",
+      "confidence": 0.8500275399999999,
+      "record_file": "page-015.json"
+    },
+    {
+      "article": "8",
+      "page": 16,
+      "line_index": 9,
+      "text": "Điều 8",
+      "confidence": 0.89133213,
+      "record_file": "page-016.json"
+    },
+    {
+      "article": "8",
+      "page": 16,
+      "line_index": 29,
+      "text": "Điều 8",
+      "confidence": 0.9227434149999999,
+      "record_file": "page-016.json"
+    },
+    {
+      "article": "8",
+      "page": 16,
+      "line_index": 34,
+      "text": "Điêu 8",
+      "confidence": 0.896805265,
+      "record_file": "page-016.json"
+    },
+    {
+      "article": "8",
+      "page": 16,
+      "line_index": 40,
+      "text": "Điều 8",
+      "confidence": 0.8446882600000001,
+      "record_file": "page-016.json"
+    },
+    {
+      "article": "8",
+      "page": 16,
+      "line_index": 46,
+      "text": "Điêu 8",
+      "confidence": 0.87367485,
+      "record_file": "page-016.json"
+    },
+    {
+      "article": "8",
+      "page": 17,
+      "line_index": 7,
+      "text": "Điều 8",
+      "confidence": 0.9620249899999999,
+      "record_file": "page-017.json"
+    },
+    {
+      "article": "8",
+      "page": 17,
+      "line_index": 13,
+      "text": "Điệu 8",
+      "confidence": 0.9430537800000001,
+      "record_file": "page-017.json"
+    },
+    {
+      "article": "8",
+      "page": 18,
+      "line_index": 31,
+      "text": "Điều 8",
+      "confidence": 0.91522335,
+      "record_file": "page-018.json"
+    },
+    {
+      "article": "12",
+      "page": 18,
+      "line_index": 36,
+      "text": "Điều 12",
+      "confidence": 0.96831429,
+      "record_file": "page-018.json"
+    },
+    {
+      "article": "8",
+      "page": 19,
+      "line_index": 11,
+      "text": "Điêu 8",
+      "confidence": 0.816579435,
+      "record_file": "page-019.json"
+    },
+    {
+      "article": "8",
+      "page": 19,
+      "line_index": 17,
+      "text": "Điều 8",
+      "confidence": 0.9668661850000001,
+      "record_file": "page-019.json"
+    },
+    {
+      "article": "8",
+      "page": 19,
+      "line_index": 33,
+      "text": "Điêu 8",
+      "confidence": 0.940426255,
+      "record_file": "page-019.json"
+    },
+    {
+      "article": "8",
+      "page": 19,
+      "line_index": 47,
+      "text": "Điêu 8",
+      "confidence": 0.9332800299999999,
+      "record_file": "page-019.json"
+    },
+    {
+      "article": "8",
+      "page": 20,
+      "line_index": 13,
+      "text": "Điêu 8",
+      "confidence": 0.80642563,
+      "record_file": "page-020.json"
+    },
+    {
+      "article": "8",
+      "page": 20,
+      "line_index": 24,
+      "text": "Điêu 8",
+      "confidence": 0.901318895,
+      "record_file": "page-020.json"
+    },
+    {
+      "article": "8",
+      "page": 20,
+      "line_index": 36,
+      "text": "Điêu 8",
+      "confidence": 0.9069137549999999,
+      "record_file": "page-020.json"
+    },
+    {
+      "article": "8",
+      "page": 22,
+      "line_index": 22,
+      "text": "Điều 8",
+      "confidence": 0.956941945,
+      "record_file": "page-022.json"
+    },
+    {
+      "article": "8",
+      "page": 22,
+      "line_index": 30,
+      "text": "Điều 8",
+      "confidence": 0.95940022,
+      "record_file": "page-022.json"
+    },
+    {
+      "article": "8",
+      "page": 22,
+      "line_index": 37,
+      "text": "Điều 8",
+      "confidence": 0.8087312299999999,
+      "record_file": "page-022.json"
+    },
+    {
+      "article": "8",
+      "page": 23,
+      "line_index": 27,
+      "text": "Điêu 8",
+      "confidence": 0.9414922699999999,
+      "record_file": "page-023.json"
+    },
+    {
+      "article": "8",
+      "page": 24,
+      "line_index": 13,
+      "text": "Điều 8",
+      "confidence": 0.9396481700000001,
+      "record_file": "page-024.json"
+    },
+    {
+      "article": "8",
+      "page": 24,
+      "line_index": 24,
+      "text": "Điều 8",
+      "confidence": 0.9627995300000001,
+      "record_file": "page-024.json"
+    },
+    {
+      "article": "8",
+      "page": 25,
+      "line_index": 37,
+      "text": "Điêu 8",
+      "confidence": 0.95341217,
+      "record_file": "page-025.json"
+    },
+    {
+      "article": "9",
+      "page": 26,
+      "line_index": 28,
+      "text": "Điều 9",
+      "confidence": 0.96258854,
+      "record_file": "page-026.json"
+    },
+    {
+      "article": "31",
+      "page": 88,
+      "line_index": 13,
+      "text": "Điều 31",
+      "confidence": 0.9593331950000001,
+      "record_file": "page-088.json"
+    },
+    {
+      "article": "32",
+      "page": 88,
+      "line_index": 24,
+      "text": "Điều 32",
+      "confidence": 0.965528145,
+      "record_file": "page-088.json"
+    },
+    {
+      "article": "33",
+      "page": 88,
+      "line_index": 30,
+      "text": "Điều 33",
+      "confidence": 0.96150959,
+      "record_file": "page-088.json"
+    },
+    {
+      "article": "33",
+      "page": 88,
+      "line_index": 37,
+      "text": "Điều 33",
+      "confidence": 0.9638500199999999,
+      "record_file": "page-088.json"
+    },
+    {
+      "article": "34",
+      "page": 88,
+      "line_index": 43,
+      "text": "Điều 34",
+      "confidence": 0.9611691300000001,
+      "record_file": "page-088.json"
+    },
+    {
+      "article": "35",
+      "page": 88,
+      "line_index": 58,
+      "text": "Điều 35",
+      "confidence": 0.964638365,
+      "record_file": "page-088.json"
+    },
+    {
+      "article": "36",
+      "page": 88,
+      "line_index": 67,
+      "text": "Điều 36",
+      "confidence": 0.9631351850000001,
+      "record_file": "page-088.json"
+    },
+    {
+      "article": "1",
+      "page": 90,
+      "line_index": 16,
+      "text": "Điều 1. Ấn định thuế đối với<ông (bà)/tô chức> có tên sau đây:",
+      "confidence": 0.9189133300000001,
+      "record_file": "page-090.json"
+    },
+    {
+      "article": "2",
+      "page": 91,
+      "line_index": 7,
+      "text": "Điều 2. Quyết định này có hiệu lực kể từ ngày ... tháng ... năm",
+      "confidence": 0.95316662,
+      "record_file": "page-091.json"
+    },
+    {
+      "article": "3",
+      "page": 91,
+      "line_index": 8,
+      "text": "Điều 3. Quyết định này được giao cho ông ba)...",
+      "confidence": 0.915455486,
+      "record_file": "page-091.json"
+    },
+    {
+      "article": "2",
+      "page": 92,
+      "line_index": 16,
+      "text": "Điều 2. Lý do ấn định thuế/sửa đổi, bổ sung Quyết định 4 ấn định thuế...",
+      "confidence": 0.945763678125,
+      "record_file": "page-092.json"
+    },
+    {
+      "article": "3",
+      "page": 92,
+      "line_index": 18,
+      "text": "Điều 3. Số tiền thuế ấn định:",
+      "confidence": 0.7827931328571428,
+      "record_file": "page-092.json"
+    },
+    {
+      "article": "4",
+      "page": 93,
+      "line_index": 0,
+      "text": "Điều 4. (Người nộp thuế...) có trách nhiệm nộp đủ số tiền thuế phải nộp",
+      "confidence": 0.9636997313333333,
+      "record_file": "page-093.json"
+    },
+    {
+      "article": "1",
+      "page": 94,
+      "line_index": 14,
+      "text": "Điều 1. Hủy Quyết định ấn định thuế số.. - ngày.. .. (tên cơ quan",
+      "confidence": 0.9373426153333334,
+      "record_file": "page-094.json"
+    },
+    {
+      "article": "2",
+      "page": 94,
+      "line_index": 17,
+      "text": "Điều 2. Lý do hủy quyết định 4 ấn định thuế:... (Ghi rõ lý do).",
+      "confidence": 0.9274366506666667,
+      "record_file": "page-094.json"
+    },
+    {
+      "article": "3",
+      "page": 94,
+      "line_index": 18,
+      "text": "Điều 3. Quyết định này có hiệu lực kể từ ngày ký, tên người nộp thuế..",
+      "confidence": 0.95649421625,
+      "record_file": "page-094.json"
+    },
+    {
+      "article": "1",
+      "page": 96,
+      "line_index": 20,
+      "text": "Điều 1. ...(Tén người nộp thuế, mã số thuế, địa chi).... được gia hạn nộp",
+      "confidence": 0.9466157479999999,
+      "record_file": "page-096.json"
+    },
+    {
+      "article": "2",
+      "page": 97,
+      "line_index": 1,
+      "text": "Điều 2. Trong thời gian được gia hạn, cơ quan thuế không tính tiền chậm",
+      "confidence": 0.9655293926666667,
+      "record_file": "page-097.json"
+    },
+    {
+      "article": "3",
+      "page": 97,
+      "line_index": 7,
+      "text": "Điều 3. Quyết định này có hiệu lực thi hành kể từ ngày ký. ...(Tên người",
+      "confidence": 0.953089054375,
+      "record_file": "page-097.json"
+    },
+    {
+      "article": "2",
+      "page": 102,
+      "line_index": 26,
+      "text": "Điều 2. Căn cứ vào số tiền thuế nợ được khoanh nêu tại Điều 1, Trưởng",
+      "confidence": 0.964279450625,
+      "record_file": "page-102.json"
+    },
+    {
+      "article": "3",
+      "page": 103,
+      "line_index": 1,
+      "text": "Điều 3. Quyết định này có hiệu lực thi hành từ ngày ký.",
+      "confidence": 0.964999443076923,
+      "record_file": "page-103.json"
+    },
+    {
+      "article": "1",
+      "page": 104,
+      "line_index": 19,
+      "text": "Điều 1. Chấm dứt hiệu lực của Quyết định khoanh tiền thuế nợ số .....",
+      "confidence": 0.94784694,
+      "record_file": "page-104.json"
+    },
+    {
+      "article": "2",
+      "page": 104,
+      "line_index": 23,
+      "text": "Điều 2. Căn cứ quy định tại Điều 1, Trưởng phòng/Đội trưởng ... thực hiện",
+      "confidence": 0.9524078673333334,
+      "record_file": "page-104.json"
+    },
+    {
+      "article": "3",
+      "page": 104,
+      "line_index": 26,
+      "text": "Điều 3. Quyết định này có hiệu lực thi hành từ _ngày ký. ...(Tên người.",
+      "confidence": 0.9080730206666666,
+      "record_file": "page-104.json"
+    },
+    {
+      "article": "1",
+      "page": 105,
+      "line_index": 22,
+      "text": "Điều 1. Cưỡng chế bằng biện pháp trích tiền từ tài khoản/yêu cầu phong",
+      "confidence": 0.9615047950000001,
+      "record_file": "page-105.json"
+    },
+    {
+      "article": "2",
+      "page": 105,
+      "line_index": 32,
+      "text": "Điều 2. ...(Tên người nộp thuế bị cưỡng ché)...phai nghiêm chỉnh thực",
+      "confidence": 0.9257945183333334,
+      "record_file": "page-105.json"
+    },
+    {
+      "article": "3",
+      "page": 106,
+      "line_index": 1,
+      "text": "Điều 3. ...(Tén Kho bạc nhà nước/Tổ chức tín dụng)... có trách nhiệm",
+      "confidence": 0.9159761346153846,
+      "record_file": "page-106.json"
+    },
+    {
+      "article": "4",
+      "page": 106,
+      "line_index": 12,
+      "text": "Điều 4. Quyết định vảy có hiệu lực thi hành trong thời hạn 30 ngày, kể",
+      "confidence": 0.9129439356250001,
+      "record_file": "page-106.json"
+    },
+    {
+      "article": "1",
+      "page": 108,
+      "line_index": 22,
+      "text": "Điều 1. Cưỡng chế bằng biện pháp khấu trừ một phần tiền lương hoặc",
+      "confidence": 0.9628795192857141,
+      "record_file": "page-108.json"
+    },
+    {
+      "article": "2",
+      "page": 108,
+      "line_index": 29,
+      "text": "Điều 2. ...(Tên cơ quan, tổ chức quản lý tiền lương hoặc thu nhập) ..",
+      "confidence": 0.926341726,
+      "record_file": "page-108.json"
+    },
+    {
+      "article": "3",
+      "page": 109,
+      "line_index": 1,
+      "text": "Điều 3. ...(Tên người nộp thuế bị cưỡng chế)... phải nghiêm chỉnh thực",
+      "confidence": 0.9370500115384616,
+      "record_file": "page-109.json"
+    },
+    {
+      "article": "4",
+      "page": 109,
+      "line_index": 3,
+      "text": "Điều 4. Quyết định này có hiệu lực thi hành trong thời hạn 01 năm, kể từ",
+      "confidence": 0.9519673835294118,
+      "record_file": "page-109.json"
+    },
+    {
+      "article": "1",
+      "page": 110,
+      "line_index": 22,
+      "text": "Điều 1. Cưỡng chế bằng biện pháp dừng làm thủ tục hải quan đối với",
+      "confidence": 0.9643559313333334,
+      "record_file": "page-110.json"
+    },
+    {
+      "article": "2",
+      "page": 110,
+      "line_index": 29,
+      "text": "Điều 2. ...(Tên người nộp thuế bị cưỡng ché) ... phải nghiêm chỉnh thực",
+      "confidence": 0.9401236507142857,
+      "record_file": "page-110.json"
+    },
+    {
+      "article": "3",
+      "page": 111,
+      "line_index": 1,
+      "text": "Điều 3. Quyết định này có hiệu lực thi hành trong thời hạn 01 _năm kể từ",
+      "confidence": 0.9549687735294117,
+      "record_file": "page-111.json"
+    },
+    {
+      "article": "1",
+      "page": 112,
+      "line_index": 19,
+      "text": "Điều 1. Tạm dừng áp dụng biện pháp cưỡng chế dừng làm thủ tục hải",
+      "confidence": 0.9549155479999999,
+      "record_file": "page-112.json"
+    },
+    {
+      "article": "2",
+      "page": 112,
+      "line_index": 22,
+      "text": "Điều 2. Quyết định này có hiệu lực thi hành kề từ ngày ... tháng .... năm",
+      "confidence": 0.9366967323529412,
+      "record_file": "page-112.json"
+    },
+    {
+      "article": "1",
+      "page": 113,
+      "line_index": 23,
+      "text": "Điều 1. Cưỡng chế bằng biện pháp ngừng sử dụng hóa đơn đối với:",
+      "confidence": 0.9564417707142857,
+      "record_file": "page-113.json"
+    },
+    {
+      "article": "2",
+      "page": 113,
+      "line_index": 33,
+      "text": "Điều 2. ...(Tên người nộp thuế bị cưỡng ché).. .phải nghiêm chính thực",
+      "confidence": 0.9237929084615385,
+      "record_file": "page-113.json"
+    },
+    {
+      "article": "3",
+      "page": 114,
+      "line_index": 1,
+      "text": "Điều 3. Quyết định này có hiệu lực thi hành trong thời hạn 01 năm, kể từ",
+      "confidence": 0.9641471547058825,
+      "record_file": "page-114.json"
+    },
+    {
+      "article": "1",
+      "page": 117,
+      "line_index": 22,
+      "text": "Điều 1. Cưỡng chế bằng biện pháp kê biên tài sản, bán đấu giá tài sản kê",
+      "confidence": 0.9581902082352941,
+      "record_file": "page-117.json"
+    },
+    {
+      "article": "2",
+      "page": 117,
+      "line_index": 31,
+      "text": "Điều 2. ..(Tên người nộp thuế bị cưỡng chê)... phải nghiêm chỉnh thực",
+      "confidence": 0.917930716923077,
+      "record_file": "page-117.json"
+    },
+    {
+      "article": "1",
+      "page": 119,
+      "line_index": 22,
+      "text": "Điều 1. Cưỡng chế bằng biện pháp thu tiền, tài sản khác của đối tượng bị",
+      "confidence": 0.9634961556249999,
+      "record_file": "page-119.json"
+    },
+    {
+      "article": "2",
+      "page": 119,
+      "line_index": 31,
+      "text": "Điều 2. ... (Tên người nộp thuế bị cưỡng chê)... ...(Tên tổ chức/cá",
+      "confidence": 0.8413037769230769,
+      "record_file": "page-119.json"
+    },
+    {
+      "article": "3",
+      "page": 120,
+      "line_index": 1,
+      "text": "Điều 3. Quyết định này có hiệu lực thi hành trong thời hạn 01 năm, kể từ",
+      "confidence": 0.9507690429411766,
+      "record_file": "page-120.json"
+    },
+    {
+      "article": "2",
+      "page": 123,
+      "line_index": 29,
+      "text": "Điều 2. đa người nộp thuê bị cưỡng chế)... -: (Tên cá nhân, tổ",
+      "confidence": 0.7851684999999999,
+      "record_file": "page-123.json"
+    },
+    {
+      "article": "3",
+      "page": 123,
+      "line_index": 31,
+      "text": "Điều 3. Quyết định này có hiệu lực kể từ ngày ....(),",
+      "confidence": 0.9080426891666667,
+      "record_file": "page-123.json"
+    },
+    {
+      "article": "1",
+      "page": 127,
+      "line_index": 1,
+      "text": "Điều 1. Phạm vi uỷ nhiệm thu",
+      "confidence": 0.95987406,
+      "record_file": "page-127.json"
+    },
+    {
+      "article": "2",
+      "page": 127,
+      "line_index": 15,
+      "text": "Điều 2. Trách nhiệm và quyền hạn của bên uỷ nhiệm thu trong việc",
+      "confidence": 0.9675440921428572,
+      "record_file": "page-127.json"
+    },
+    {
+      "article": "3",
+      "page": 128,
+      "line_index": 1,
+      "text": "Điều 3. Trách nhiệm và quyền hạn của bên được uy nhiệm thu trong",
+      "confidence": 0.9585056421428572,
+      "record_file": "page-128.json"
+    },
+    {
+      "article": "4",
+      "page": 128,
+      "line_index": 23,
+      "text": "Điều 4. Kinh phi uj nhiệm thu",
+      "confidence": 0.9445884371428572,
+      "record_file": "page-128.json"
+    },
+    {
+      "article": "5",
+      "page": 128,
+      "line_index": 31,
+      "text": "Điều 5. Thời hạn uỷ nhiệm thu",
+      "confidence": 0.9589512514285714,
+      "record_file": "page-128.json"
+    },
+    {
+      "article": "6",
+      "page": 128,
+      "line_index": 34,
+      "text": "Điều 6. BS sung, gia hạn và thanh lý hợp đồng",
+      "confidence": 0.9534154863636364,
+      "record_file": "page-128.json"
+    },
+    {
+      "article": "7",
+      "page": 129,
+      "line_index": 10,
+      "text": "Điều 7. Xử lý tranh chấp",
+      "confidence": 0.9676323316666666,
+      "record_file": "page-129.json"
+    },
+    {
+      "article": "8",
+      "page": 129,
+      "line_index": 15,
+      "text": "Điều 8. Điều khoản thi hành",
+      "confidence": 0.9555171083333334,
+      "record_file": "page-129.json"
+    }
+  ],
+  "limitations": "Heuristic headings may be missing or refer to amendments; verify against original pages."
+}

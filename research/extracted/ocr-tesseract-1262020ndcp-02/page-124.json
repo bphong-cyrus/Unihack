@@ -1,0 +1,266 @@
+{
+  "document_id": "126/2020/NĐ-CP",
+  "source_file": "../../legal-sources/1262020ndcp/02.pdf",
+  "source_sha256": "008daa92f4d699b69b9318c4a8e6fa7db8d73453305e1a4f155134656e26847b",
+  "page_count": 147,
+  "render_dpi": 150,
+  "engine": "Tesseract 5.5.4 (vie+eng; OEM 1; PSM 3)",
+  "review_status": "UNREVIEWED",
+  "tesseract_version": "5.5.4",
+  "languages": [
+    "vie",
+    "eng"
+  ],
+  "traineddata_sha256": {
+    "vie": "b6b49293d95d0b6dbd8780174627e82c75be957b6f4ed9862155540d6b00bb45",
+    "eng": "8280aed0782fe27257a68ea10fe7ef324ca0f8d85bd2fd145d1c2b560bcb66ba"
+  },
+  "ocr_engine_mode": 1,
+  "page_segmentation_mode": 3,
+  "thread_limit": 2,
+  "page": 124,
+  "lines": [
+    {
+      "bbox": [
+        [
+          684.0,
+          96.0
+        ],
+        [
+          710.0,
+          96.0
+        ],
+        [
+          710.0,
+          117.0
+        ],
+        [
+          684.0,
+          117.0
+        ]
+      ],
+      "text": "38",
+      "confidence": 0.96792465
+    },
+    {
+      "bbox": [
+        [
+          300.0,
+          167.0
+        ],
+        [
+          1133.0,
+          167.0
+        ],
+        [
+          1133.0,
+          201.0
+        ],
+        [
+          300.0,
+          201.0
+        ]
+      ],
+      "text": "Quyết định này được gửi cho ông (bà)/tổ chức .................. để thực hiện.",
+      "confidence": 0.8459315792307691
+    },
+    {
+      "bbox": [
+        [
+          301.0,
+          214.0
+        ],
+        [
+          647.0,
+          214.0
+        ],
+        [
+          647.0,
+          247.0
+        ],
+        [
+          301.0,
+          247.0
+        ]
+      ],
+      "text": "Quyết định này được gửi cho:",
+      "confidence": 0.9684121966666668
+    },
+    {
+      "bbox": [
+        [
+          241.0,
+          403.0
+        ],
+        [
+          1104.0,
+          403.0
+        ],
+        [
+          1104.0,
+          436.0
+        ],
+        [
+          241.0,
+          436.0
+        ]
+      ],
+      "text": "Nginhậm THỦ TRƯỞNG CƠ QUAN",
+      "confidence": 0.85129007
+    },
+    {
+      "bbox": [
+        [
+          242.0,
+          436.0
+        ],
+        [
+          1108.0,
+          436.0
+        ],
+        [
+          1108.0,
+          470.0
+        ],
+        [
+          242.0,
+          470.0
+        ]
+      ],
+      "text": "- Như Điều 2, Dieu 3; BẠN HÀNH QUYẾT ĐỊNH",
+      "confidence": 0.9361608889999999
+    },
+    {
+      "bbox": [
+        [
+          242.0,
+          454.0
+        ],
+        [
+          1095.0,
+          454.0
+        ],
+        [
+          1095.0,
+          488.0
+        ],
+        [
+          242.0,
+          488.0
+        ]
+      ],
+      "text": "- ..... (để phối hợp); ñ mm _—_",
+      "confidence": 0.648403045
+    },
+    {
+      "bbox": [
+        [
+          242.0,
+          472.0
+        ],
+        [
+          1115.0,
+          472.0
+        ],
+        [
+          1115.0,
+          515.0
+        ],
+        [
+          242.0,
+          515.0
+        ]
+      ],
+      "text": "- Trang thông tin điện tử Cục Thuế/hải quan; Ky, ghi rõ họ tên và đóng đầu)",
+      "confidence": 0.9048579588235295
+    },
+    {
+      "bbox": [
+        [
+          299.0,
+          1457.0
+        ],
+        [
+          390.0,
+          1457.0
+        ],
+        [
+          390.0,
+          1474.0
+        ],
+        [
+          299.0,
+          1474.0
+        ]
+      ],
+      "text": "Ghi chú:",
+      "confidence": 0.9432607300000001
+    },
+    {
+      "bbox": [
+        [
+          298.0,
+          1479.0
+        ],
+        [
+          1152.0,
+          1479.0
+        ],
+        [
+          1152.0,
+          1518.0
+        ],
+        [
+          298.0,
+          1518.0
+        ]
+      ],
+      "text": "(1) Ngày đối tượng bị cưỡng chế nộp đủ số tiền thuế nợ vào ngân sách nhà nước;",
+      "confidence": 0.9667819522222222
+    },
+    {
+      "bbox": [
+        [
+          238.0,
+          1507.0
+        ],
+        [
+          1153.0,
+          1507.0
+        ],
+        [
+          1153.0,
+          1546.0
+        ],
+        [
+          238.0,
+          1546.0
+        ]
+      ],
+      "text": "hoặc ngày cơ quan quản | lý thuế ban hành quyết định nộp dần hoặc quyết định gia hạn nộp",
+      "confidence": 0.949880794
+    },
+    {
+      "bbox": [
+        [
+          238.0,
+          1536.0
+        ],
+        [
+          1076.0,
+          1536.0
+        ],
+        [
+          1076.0,
+          1567.0
+        ],
+        [
+          238.0,
+          1567.0
+        ]
+      ],
+      "text": "thuế hoặc quyết định miễn tiền chậm nộp hoặc thông báo không tính tiền chậm nộp.",
+      "confidence": 0.964450069375
+    }
+  ]
+}

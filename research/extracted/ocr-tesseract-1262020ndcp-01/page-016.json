@@ -1,0 +1,882 @@
+{
+  "document_id": "126/2020/NĐ-CP",
+  "source_file": "../../legal-sources/1262020ndcp/01.pdf",
+  "source_sha256": "310648e80396d267610946458e7fdd71ba87ef538b009d6574ed21514de3f7ca",
+  "page_count": 119,
+  "render_dpi": 150,
+  "engine": "Tesseract 5.5.4 (vie+eng; OEM 1; PSM 3)",
+  "review_status": "UNREVIEWED",
+  "tesseract_version": "5.5.4",
+  "languages": [
+    "vie",
+    "eng"
+  ],
+  "traineddata_sha256": {
+    "vie": "b6b49293d95d0b6dbd8780174627e82c75be957b6f4ed9862155540d6b00bb45",
+    "eng": "8280aed0782fe27257a68ea10fe7ef324ca0f8d85bd2fd145d1c2b560bcb66ba"
+  },
+  "ocr_engine_mode": 1,
+  "page_segmentation_mode": 3,
+  "thread_limit": 2,
+  "page": 16,
+  "lines": [
+    {
+      "bbox": [
+        [
+          684.0,
+          63.0
+        ],
+        [
+          709.0,
+          63.0
+        ],
+        [
+          709.0,
+          84.0
+        ],
+        [
+          684.0,
+          84.0
+        ]
+      ],
+      "text": "16",
+      "confidence": 0.96677803
+    },
+    {
+      "bbox": [
+        [
+          268.0,
+          138.0
+        ],
+        [
+          1127.0,
+          138.0
+        ],
+        [
+          1127.0,
+          174.0
+        ],
+        [
+          268.0,
+          174.0
+        ]
+      ],
+      "text": "n) Thuế giá trị gia tăng, thuế thu nhập doanh nghiệp của tổ chức, cá nhân",
+      "confidence": 0.9641542387500001
+    },
+    {
+      "bbox": [
+        [
+          208.0,
+          177.0
+        ],
+        [
+          1126.0,
+          177.0
+        ],
+        [
+          1126.0,
+          210.0
+        ],
+        [
+          208.0,
+          210.0
+        ]
+      ],
+      "text": "nước ngoài kinh doanh tại Việt Nam hoặc có thu nhập tại Việt Nam (sau đây",
+      "confidence": 0.96629357375
+    },
+    {
+      "bbox": [
+        [
+          209.0,
+          205.0
+        ],
+        [
+          1126.0,
+          205.0
+        ],
+        [
+          1126.0,
+          245.0
+        ],
+        [
+          209.0,
+          245.0
+        ]
+      ],
+      "text": "gọi là nhà thầu nước ngoài) áp dụng theo phương pháp trực tiếp; thuế thu",
+      "confidence": 0.9677746886666667
+    },
+    {
+      "bbox": [
+        [
+          209.0,
+          239.0
+        ],
+        [
+          1125.0,
+          239.0
+        ],
+        [
+          1125.0,
+          283.0
+        ],
+        [
+          209.0,
+          283.0
+        ]
+      ],
+      "text": "nhập doanh nghiệp của nhà thâu nước ngoài áp dụng theo phương pháp hỗn",
+      "confidence": 0.9691317528571429
+    },
+    {
+      "bbox": [
+        [
+          209.0,
+          273.0
+        ],
+        [
+          1124.0,
+          273.0
+        ],
+        [
+          1124.0,
+          313.0
+        ],
+        [
+          209.0,
+          313.0
+        ]
+      ],
+      "text": "hợp khi bên Việt Nam thanh toán tiền cho nhà thầu nước ngoài. Trường hợp",
+      "confidence": 0.9672476653333334
+    },
+    {
+      "bbox": [
+        [
+          209.0,
+          306.0
+        ],
+        [
+          1125.0,
+          306.0
+        ],
+        [
+          1125.0,
+          345.0
+        ],
+        [
+          209.0,
+          345.0
+        ]
+      ],
+      "text": "bên Việt Nam thanh toán tiền cho nhà thầu nước ngoài nhiều lần trong tháng",
+      "confidence": 0.9670882213333334
+    },
+    {
+      "bbox": [
+        [
+          210.0,
+          340.0
+        ],
+        [
+          994.0,
+          340.0
+        ],
+        [
+          994.0,
+          374.0
+        ],
+        [
+          210.0,
+          374.0
+        ]
+      ],
+      "text": "thì được khai theo tháng thay cho việc khai theo từng lần phát sinh.",
+      "confidence": 0.965088815
+    },
+    {
+      "bbox": [
+        [
+          270.0,
+          398.0
+        ],
+        [
+          1126.0,
+          398.0
+        ],
+        [
+          1126.0,
+          432.0
+        ],
+        [
+          270.0,
+          432.0
+        ]
+      ],
+      "text": "o) Thuế thu nhập doanh nghiệp từ hoạt động chuyển nhượng vốn của nhà",
+      "confidence": 0.9597454564285713
+    },
+    {
+      "bbox": [
+        [
+          209.0,
+          439.0
+        ],
+        [
+          404.0,
+          439.0
+        ],
+        [
+          404.0,
+          466.0
+        ],
+        [
+          209.0,
+          466.0
+        ]
+      ],
+      "text": "thâu nước ngoài.",
+      "confidence": 0.9384453833333333
+    },
+    {
+      "bbox": [
+        [
+          269.0,
+          490.0
+        ],
+        [
+          1126.0,
+          490.0
+        ],
+        [
+          1126.0,
+          529.0
+        ],
+        [
+          269.0,
+          529.0
+        ]
+      ],
+      "text": "p) Thuế thu nhập doanh nghiệp đối với thu nhập từ chuyển nhượng",
+      "confidence": 0.9646435484615384
+    },
+    {
+      "bbox": [
+        [
+          210.0,
+          530.0
+        ],
+        [
+          646.0,
+          530.0
+        ],
+        [
+          646.0,
+          557.0
+        ],
+        [
+          210.0,
+          557.0
+        ]
+      ],
+      "text": "quyên lợi tham gia hợp đồng dâu khí.",
+      "confidence": 0.95415735125
+    },
+    {
+      "bbox": [
+        [
+          270.0,
+          582.0
+        ],
+        [
+          1126.0,
+          582.0
+        ],
+        [
+          1126.0,
+          629.0
+        ],
+        [
+          270.0,
+          629.0
+        ]
+      ],
+      "text": "Bên chuyên nhượng quyền lợi tham gia hợp đồng dầu khí có trách nhiệm",
+      "confidence": 0.9581347114285714
+    },
+    {
+      "bbox": [
+        [
+          210.0,
+          615.0
+        ],
+        [
+          1125.0,
+          615.0
+        ],
+        [
+          1125.0,
+          653.0
+        ],
+        [
+          210.0,
+          653.0
+        ]
+      ],
+      "text": "kê khai, nộp thuế đối với thu nhập từ chuyển nhượng quyền lợi tham gia hợp",
+      "confidence": 0.96143569
+    },
+    {
+      "bbox": [
+        [
+          211.0,
+          648.0
+        ],
+        [
+          1126.0,
+          648.0
+        ],
+        [
+          1126.0,
+          687.0
+        ],
+        [
+          211.0,
+          687.0
+        ]
+      ],
+      "text": "đồng dầu khí. Trường hợp chuyển nhượng làm thay đổi chủ sở hữu của nhà",
+      "confidence": 0.9489179073333334
+    },
+    {
+      "bbox": [
+        [
+          210.0,
+          681.0
+        ],
+        [
+          1125.0,
+          681.0
+        ],
+        [
+          1125.0,
+          720.0
+        ],
+        [
+          210.0,
+          720.0
+        ]
+      ],
+      "text": "thầu đang nắm giữ quyền lợi tham gia trong hợp đồng dầu khí tại Việt Nam,",
+      "confidence": 0.962870363125
+    },
+    {
+      "bbox": [
+        [
+          210.0,
+          715.0
+        ],
+        [
+          1126.0,
+          715.0
+        ],
+        [
+          1126.0,
+          748.0
+        ],
+        [
+          210.0,
+          748.0
+        ]
+      ],
+      "text": "nhà thầu đứng tên trong hợp đồng dau khí tại Việt Nam có trách nhiệm thông",
+      "confidence": 0.963421363125
+    },
+    {
+      "bbox": [
+        [
+          211.0,
+          748.0
+        ],
+        [
+          1126.0,
+          748.0
+        ],
+        [
+          1126.0,
+          781.0
+        ],
+        [
+          211.0,
+          781.0
+        ]
+      ],
+      "text": "báo với cơ quan thuế khi phát sinh hoạt động chuyển nhượng và kê khai, nộp",
+      "confidence": 0.9668653887499999
+    },
+    {
+      "bbox": [
+        [
+          211.0,
+          782.0
+        ],
+        [
+          1127.0,
+          782.0
+        ],
+        [
+          1127.0,
+          815.0
+        ],
+        [
+          211.0,
+          815.0
+        ]
+      ],
+      "text": "thuế thay cho bên chuyển nhượng đối với phần thu nhập phát sinh có liên",
+      "confidence": 0.9658242953333334
+    },
+    {
+      "bbox": [
+        [
+          211.0,
+          816.0
+        ],
+        [
+          845.0,
+          816.0
+        ],
+        [
+          845.0,
+          848.0
+        ],
+        [
+          211.0,
+          848.0
+        ]
+      ],
+      "text": "quan đến hợp đồng dầu khí ở Việt Nam theo quy định.",
+      "confidence": 0.9568349841666667
+    },
+    {
+      "bbox": [
+        [
+          271.0,
+          873.0
+        ],
+        [
+          1089.0,
+          873.0
+        ],
+        [
+          1089.0,
+          906.0
+        ],
+        [
+          271.0,
+          906.0
+        ]
+      ],
+      "text": "q) Tién hoa hồng dầu, khí; tiền thu về đọc và sử dụng tài liệu dầu, khí.",
+      "confidence": 0.9479852688235294
+    },
+    {
+      "bbox": [
+        [
+          270.0,
+          931.0
+        ],
+        [
+          1127.0,
+          931.0
+        ],
+        [
+          1127.0,
+          964.0
+        ],
+        [
+          270.0,
+          964.0
+        ]
+      ],
+      "text": "r) Khoản phụ thu và thuế thu nhập doanh nghiệp tạm tính từ tiền kết dư",
+      "confidence": 0.965434760625
+    },
+    {
+      "bbox": [
+        [
+          211.0,
+          964.0
+        ],
+        [
+          1126.0,
+          964.0
+        ],
+        [
+          1126.0,
+          997.0
+        ],
+        [
+          211.0,
+          997.0
+        ]
+      ],
+      "text": "của phần dầu để lại của hoạt động dầu khí của Liên doanh Vietsovpetro tại",
+      "confidence": 0.9598367400000001
+    },
+    {
+      "bbox": [
+        [
+          210.0,
+          998.0
+        ],
+        [
+          1126.0,
+          998.0
+        ],
+        [
+          1126.0,
+          1031.0
+        ],
+        [
+          210.0,
+          1031.0
+        ]
+      ],
+      "text": "Lô 09.1 chậm nhất là ngày thứ 10 kể từ ngày Hội đồng Liên doanh quyết định",
+      "confidence": 0.9621477647058824
+    },
+    {
+      "bbox": [
+        [
+          211.0,
+          1031.0
+        ],
+        [
+          1126.0,
+          1031.0
+        ],
+        [
+          1126.0,
+          1065.0
+        ],
+        [
+          211.0,
+          1065.0
+        ]
+      ],
+      "text": "số tiền kết du của phần dau dé lại theo Nghị quyết từng kỳ họp Hội đồng Liên",
+      "confidence": 0.9565840944444445
+    },
+    {
+      "bbox": [
+        [
+          211.0,
+          1070.0
+        ],
+        [
+          902.0,
+          1070.0
+        ],
+        [
+          902.0,
+          1097.0
+        ],
+        [
+          211.0,
+          1097.0
+        ]
+      ],
+      "text": "doanh nhưng không chậm hơn ngày 31 tháng 12 hàng năm.",
+      "confidence": 0.9674108472727272
+    },
+    {
+      "bbox": [
+        [
+          271.0,
+          1118.0
+        ],
+        [
+          1126.0,
+          1118.0
+        ],
+        [
+          1126.0,
+          1156.0
+        ],
+        [
+          271.0,
+          1156.0
+        ]
+      ],
+      "text": "s) Khai tạm tính sản lượng dầu khí khai thác và tỷ lệ tạm nộp thuế chậm",
+      "confidence": 0.9606437817647059
+    },
+    {
+      "bbox": [
+        [
+          211.0,
+          1155.0
+        ],
+        [
+          824.0,
+          1155.0
+        ],
+        [
+          824.0,
+          1188.0
+        ],
+        [
+          211.0,
+          1188.0
+        ]
+      ],
+      "text": "nhất là ngày 01 tháng 12 của kỳ tính thuế năm trước.",
+      "confidence": 0.9669325199999999
+    },
+    {
+      "bbox": [
+        [
+          229.0,
+          1213.0
+        ],
+        [
+          1127.0,
+          1213.0
+        ],
+        [
+          1127.0,
+          1251.0
+        ],
+        [
+          229.0,
+          1251.0
+        ]
+      ],
+      "text": "<< Cồ tức, lợi nhuận được chia cho phần vốn nhà nước đầu tư tại công ty",
+      "confidence": 0.9112290947058824
+    },
+    {
+      "bbox": [
+        [
+          211.0,
+          1247.0
+        ],
+        [
+          1128.0,
+          1247.0
+        ],
+        [
+          1128.0,
+          1281.0
+        ],
+        [
+          211.0,
+          1281.0
+        ]
+      ],
+      "text": "cổ phần, công ty trách nhiệm hữu hạn hai thành viên trở lên do bộ, cơ quan",
+      "confidence": 0.9667541941176471
+    },
+    {
+      "bbox": [
+        [
+          210.0,
+          1286.0
+        ],
+        [
+          1128.0,
+          1286.0
+        ],
+        [
+          1128.0,
+          1318.0
+        ],
+        [
+          210.0,
+          1318.0
+        ]
+      ],
+      "text": "ngang bộ, cơ quan trực thuộc Chính phủ, địa phương làm đại diện chủ sở hữu",
+      "confidence": 0.965771656875
+    },
+    {
+      "bbox": [
+        [
+          211.0,
+          1314.0
+        ],
+        [
+          1128.0,
+          1314.0
+        ],
+        [
+          1128.0,
+          1348.0
+        ],
+        [
+          211.0,
+          1348.0
+        ]
+      ],
+      "text": "phần vốn của nhà nước khi công ty cổ phần, công ty trách nhiệm hữu hạn hai",
+      "confidence": 0.9626521947058825
+    },
+    {
+      "bbox": [
+        [
+          211.0,
+          1348.0
+        ],
+        [
+          822.0,
+          1348.0
+        ],
+        [
+          822.0,
+          1379.0
+        ],
+        [
+          211.0,
+          1379.0
+        ]
+      ],
+      "text": "thành viên trở lên thực hiện chi trả cd tức, lợi nhuận.",
+      "confidence": 0.9615383024999999
+    },
+    {
+      "bbox": [
+        [
+          270.0,
+          1402.0
+        ],
+        [
+          1128.0,
+          1402.0
+        ],
+        [
+          1128.0,
+          1443.0
+        ],
+        [
+          270.0,
+          1443.0
+        ]
+      ],
+      "text": "Người đại diện phần vốn của nhà nước tại công ty cổ phần, công ty trách",
+      "confidence": 0.9634291693750001
+    },
+    {
+      "bbox": [
+        [
+          212.0,
+          1439.0
+        ],
+        [
+          1128.0,
+          1439.0
+        ],
+        [
+          1128.0,
+          1472.0
+        ],
+        [
+          212.0,
+          1472.0
+        ]
+      ],
+      "text": "nhiệm hữu hạn hai thành viên trở lên có vốn góp của nhà nước có trách nhiệm",
+      "confidence": 0.9669775929411765
+    },
+    {
+      "bbox": [
+        [
+          212.0,
+          1472.0
+        ],
+        [
+          1129.0,
+          1472.0
+        ],
+        [
+          1129.0,
+          1506.0
+        ],
+        [
+          212.0,
+          1506.0
+        ]
+      ],
+      "text": "biểu quyết chỉ trả cd tức, lợi nhuận khi có đủ các điều kiện theo quy định của",
+      "confidence": 0.9616266044444444
+    },
+    {
+      "bbox": [
+        [
+          212.0,
+          1506.0
+        ],
+        [
+          1128.0,
+          1506.0
+        ],
+        [
+          1128.0,
+          1539.0
+        ],
+        [
+          212.0,
+          1539.0
+        ]
+      ],
+      "text": "Luật Doanh nghiệp, đồng thời đề nghị, đôn đốc công ty cổ phần, công ty trách",
+      "confidence": 0.9497816175
+    },
+    {
+      "bbox": [
+        [
+          212.0,
+          1539.0
+        ],
+        [
+          1129.0,
+          1539.0
+        ],
+        [
+          1129.0,
+          1581.0
+        ],
+        [
+          212.0,
+          1581.0
+        ]
+      ],
+      "text": "nhiệm hữu hạn hai thành viên trở lên nộp phần cổ tức, lợi nhuận được chia",
+      "confidence": 0.9579597906249999
+    },
+    {
+      "bbox": [
+        [
+          213.0,
+          1578.0
+        ],
+        [
+          1030.0,
+          1578.0
+        ],
+        [
+          1030.0,
+          1606.0
+        ],
+        [
+          213.0,
+          1606.0
+        ]
+      ],
+      "text": "cho phân von góp của nhà nước vê ngân sách nhà nước theo quy định.",
+      "confidence": 0.9411782893333335
+    }
+  ]
+}

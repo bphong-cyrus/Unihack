@@ -1,0 +1,860 @@
+{
+  "document_id": "126/2020/NĐ-CP",
+  "source_file": "../../legal-sources/1262020ndcp/01.pdf",
+  "source_sha256": "310648e80396d267610946458e7fdd71ba87ef538b009d6574ed21514de3f7ca",
+  "page_count": 119,
+  "render_dpi": 150,
+  "engine": "Tesseract 5.5.4 (vie+eng; OEM 1; PSM 3)",
+  "review_status": "UNREVIEWED",
+  "tesseract_version": "5.5.4",
+  "languages": [
+    "vie",
+    "eng"
+  ],
+  "traineddata_sha256": {
+    "vie": "b6b49293d95d0b6dbd8780174627e82c75be957b6f4ed9862155540d6b00bb45",
+    "eng": "8280aed0782fe27257a68ea10fe7ef324ca0f8d85bd2fd145d1c2b560bcb66ba"
+  },
+  "ocr_engine_mode": 1,
+  "page_segmentation_mode": 3,
+  "thread_limit": 2,
+  "page": 4,
+  "lines": [
+    {
+      "bbox": [
+        [
+          274.0,
+          149.0
+        ],
+        [
+          1134.0,
+          149.0
+        ],
+        [
+          1134.0,
+          182.0
+        ],
+        [
+          274.0,
+          182.0
+        ]
+      ],
+      "text": "2. Nội dung quản lý thu đối với các khoản thu khác thuộc ngân sách",
+      "confidence": 0.968410564
+    },
+    {
+      "bbox": [
+        [
+          214.0,
+          190.0
+        ],
+        [
+          330.0,
+          190.0
+        ],
+        [
+          330.0,
+          210.0
+        ],
+        [
+          214.0,
+          210.0
+        ]
+      ],
+      "text": "nhà nước:",
+      "confidence": 0.96712883
+    },
+    {
+      "bbox": [
+        [
+          274.0,
+          247.0
+        ],
+        [
+          1132.0,
+          247.0
+        ],
+        [
+          1132.0,
+          275.0
+        ],
+        [
+          274.0,
+          275.0
+        ]
+      ],
+      "text": "a) Người nộp khoản thu khác thuộc ngân sách nhà nước có trách nhiệm",
+      "confidence": 0.9627136385714286
+    },
+    {
+      "bbox": [
+        [
+          214.0,
+          276.0
+        ],
+        [
+          1131.0,
+          276.0
+        ],
+        [
+          1131.0,
+          309.0
+        ],
+        [
+          214.0,
+          309.0
+        ]
+      ],
+      "text": "thực hiện nộp tiền vào ngân sách nhà nước theo đúng thời hạn nội dung ghi",
+      "confidence": 0.9610076475
+    },
+    {
+      "bbox": [
+        [
+          214.0,
+          309.0
+        ],
+        [
+          1132.0,
+          309.0
+        ],
+        [
+          1132.0,
+          342.0
+        ],
+        [
+          214.0,
+          342.0
+        ]
+      ],
+      "text": "trên văn bản của cơ quan nhà nước có thẩm quyền được giao nhiệm vụ xác",
+      "confidence": 0.957679414375
+    },
+    {
+      "bbox": [
+        [
+          214.0,
+          348.0
+        ],
+        [
+          1133.0,
+          348.0
+        ],
+        [
+          1133.0,
+          382.0
+        ],
+        [
+          214.0,
+          382.0
+        ]
+      ],
+      "text": "định quản lý thu. Trường hợp người nộp khoản thu khác thuộc ngân sách nhà",
+      "confidence": 0.9671918393333334
+    },
+    {
+      "bbox": [
+        [
+          214.0,
+          377.0
+        ],
+        [
+          1132.0,
+          377.0
+        ],
+        [
+          1132.0,
+          421.0
+        ],
+        [
+          214.0,
+          421.0
+        ]
+      ],
+      "text": "nước không thực hiện nộp tiền đủ tiền vào ngân sách nhà nước hoặc nộp tiền",
+      "confidence": 0.96896241125
+    },
+    {
+      "bbox": [
+        [
+          214.0,
+          410.0
+        ],
+        [
+          1132.0,
+          410.0
+        ],
+        [
+          1132.0,
+          450.0
+        ],
+        [
+          214.0,
+          450.0
+        ]
+      ],
+      "text": "không đúng thời hạn được ghi trên văn bản của cơ quan nhà nước có thẩm",
+      "confidence": 0.95727249125
+    },
+    {
+      "bbox": [
+        [
+          214.0,
+          444.0
+        ],
+        [
+          1133.0,
+          444.0
+        ],
+        [
+          1133.0,
+          478.0
+        ],
+        [
+          214.0,
+          478.0
+        ]
+      ],
+      "text": "quyên thì phải nộp tiền chậm nộp và chấp hành các quyết định cưỡng chế theo",
+      "confidence": 0.9675596143749999
+    },
+    {
+      "bbox": [
+        [
+          214.0,
+          485.0
+        ],
+        [
+          324.0,
+          485.0
+        ],
+        [
+          324.0,
+          511.0
+        ],
+        [
+          214.0,
+          511.0
+        ]
+      ],
+      "text": "quy định.",
+      "confidence": 0.969287335
+    },
+    {
+      "bbox": [
+        [
+          274.0,
+          536.0
+        ],
+        [
+          1134.0,
+          536.0
+        ],
+        [
+          1134.0,
+          575.0
+        ],
+        [
+          274.0,
+          575.0
+        ]
+      ],
+      "text": "b) Cơ quan nhà nước có thẩm quyền được giao nhiệm vụ quản lý khoản",
+      "confidence": 0.9648227886666667
+    },
+    {
+      "bbox": [
+        [
+          213.0,
+          569.0
+        ],
+        [
+          1134.0,
+          569.0
+        ],
+        [
+          1134.0,
+          608.0
+        ],
+        [
+          213.0,
+          608.0
+        ]
+      ],
+      "text": "thu khác thuộc ngân sách nhà nước có trách nhiệm: tiếp nhận hồ sơ, xác định",
+      "confidence": 0.966974039375
+    },
+    {
+      "bbox": [
+        [
+          214.0,
+          603.0
+        ],
+        [
+          1133.0,
+          603.0
+        ],
+        [
+          1133.0,
+          636.0
+        ],
+        [
+          214.0,
+          636.0
+        ]
+      ],
+      "text": "đầy đủ, chính xác số tiền phải nộp vào ngân sách nhà nước của người nộp",
+      "confidence": 0.968415388125
+    },
+    {
+      "bbox": [
+        [
+          213.0,
+          642.0
+        ],
+        [
+          1133.0,
+          642.0
+        ],
+        [
+          1133.0,
+          670.0
+        ],
+        [
+          213.0,
+          670.0
+        ]
+      ],
+      "text": "khoản thu khác thuộc ngân sách nhà nước, ban hành văn bản gửi người nộp",
+      "confidence": 0.9667160399999999
+    },
+    {
+      "bbox": [
+        [
+          213.0,
+          676.0
+        ],
+        [
+          1134.0,
+          676.0
+        ],
+        [
+          1134.0,
+          703.0
+        ],
+        [
+          213.0,
+          703.0
+        ]
+      ],
+      "text": "khoản thu khác thuộc ngân sách nhà nước (trong đó ghi rõ nội dung khoản",
+      "confidence": 0.96469014
+    },
+    {
+      "bbox": [
+        [
+          213.0,
+          704.0
+        ],
+        [
+          1133.0,
+          704.0
+        ],
+        [
+          1133.0,
+          737.0
+        ],
+        [
+          213.0,
+          737.0
+        ]
+      ],
+      "text": "thu, số tiền phải nộp vào ngân sách nhà nước và thời hạn phải nộp vào ngân",
+      "confidence": 0.9692649494117647
+    },
+    {
+      "bbox": [
+        [
+          214.0,
+          737.0
+        ],
+        [
+          1133.0,
+          737.0
+        ],
+        [
+          1133.0,
+          770.0
+        ],
+        [
+          214.0,
+          770.0
+        ]
+      ],
+      "text": "sách nhà nước), đồng thời gửi cơ quan quan lý thuế tại địa bàn nơi phát sinh",
+      "confidence": 0.9660542029411764
+    },
+    {
+      "bbox": [
+        [
+          213.0,
+          771.0
+        ],
+        [
+          1133.0,
+          771.0
+        ],
+        [
+          1133.0,
+          803.0
+        ],
+        [
+          213.0,
+          803.0
+        ]
+      ],
+      "text": "khoản thu khác thuộc ngân sách nhà nước để thực hiện đôn đốc và cưỡng chế",
+      "confidence": 0.95896253625
+    },
+    {
+      "bbox": [
+        [
+          213.0,
+          804.0
+        ],
+        [
+          474.0,
+          804.0
+        ],
+        [
+          474.0,
+          837.0
+        ],
+        [
+          213.0,
+          837.0
+        ]
+      ],
+      "text": "về thuế theo quy định.",
+      "confidence": 0.9628563820000001
+    },
+    {
+      "bbox": [
+        [
+          273.0,
+          862.0
+        ],
+        [
+          1015.0,
+          862.0
+        ],
+        [
+          1015.0,
+          896.0
+        ],
+        [
+          273.0,
+          896.0
+        ]
+      ],
+      "text": "c) Về nộp, nộp dần và gia hạn nộp tiền vào ngân sách nhà nước",
+      "confidence": 0.9591795413333333
+    },
+    {
+      "bbox": [
+        [
+          234.0,
+          927.0
+        ],
+        [
+          1132.0,
+          927.0
+        ],
+        [
+          1132.0,
+          960.0
+        ],
+        [
+          234.0,
+          960.0
+        ]
+      ],
+      "text": "_. Người nộp khoản thu khác thuộc ngân sách nhà nước có trách nhiệm nộp",
+      "confidence": 0.9430610373333335
+    },
+    {
+      "bbox": [
+        [
+          213.0,
+          961.0
+        ],
+        [
+          1132.0,
+          961.0
+        ],
+        [
+          1132.0,
+          988.0
+        ],
+        [
+          213.0,
+          988.0
+        ]
+      ],
+      "text": "tiên vào ngân sách nhà nước chậm nhât là ngày cuôi cùng của thời hạn nộp hô",
+      "confidence": 0.9573491994117647
+    },
+    {
+      "bbox": [
+        [
+          214.0,
+          988.0
+        ],
+        [
+          1133.0,
+          988.0
+        ],
+        [
+          1133.0,
+          1021.0
+        ],
+        [
+          214.0,
+          1021.0
+        ]
+      ],
+      "text": "sơ khai hoặc thời hạn ghi trên thông báo của cơ quan có thẳm quyền, trừ một",
+      "confidence": 0.9446672017647059
+    },
+    {
+      "bbox": [
+        [
+          214.0,
+          1022.0
+        ],
+        [
+          1131.0,
+          1022.0
+        ],
+        [
+          1131.0,
+          1055.0
+        ],
+        [
+          214.0,
+          1055.0
+        ]
+      ],
+      "text": "số trường hợp cụ thể quy định tại Nghị định này. Trường hợp khai bổ sung,",
+      "confidence": 0.96305317375
+    },
+    {
+      "bbox": [
+        [
+          213.0,
+          1055.0
+        ],
+        [
+          937.0,
+          1055.0
+        ],
+        [
+          937.0,
+          1089.0
+        ],
+        [
+          213.0,
+          1089.0
+        ]
+      ],
+      "text": "thời hạn nộp là thời hạn nộp hồ sơ khai của kỳ nộp có sai, sót.",
+      "confidence": 0.9657589581249999
+    },
+    {
+      "bbox": [
+        [
+          273.0,
+          1114.0
+        ],
+        [
+          1132.0,
+          1114.0
+        ],
+        [
+          1132.0,
+          1153.0
+        ],
+        [
+          273.0,
+          1153.0
+        ]
+      ],
+      "text": "Địa điểm và hình thức nộp thực hiện theo quy định tại Điều 56 của Luật",
+      "confidence": 0.967366524375
+    },
+    {
+      "bbox": [
+        [
+          213.0,
+          1154.0
+        ],
+        [
+          371.0,
+          1154.0
+        ],
+        [
+          371.0,
+          1181.0
+        ],
+        [
+          213.0,
+          1181.0
+        ]
+      ],
+      "text": "Quản lý thuê.",
+      "confidence": 0.9639828
+    },
+    {
+      "bbox": [
+        [
+          272.0,
+          1206.0
+        ],
+        [
+          1132.0,
+          1206.0
+        ],
+        [
+          1132.0,
+          1245.0
+        ],
+        [
+          272.0,
+          1245.0
+        ]
+      ],
+      "text": "Ngày xác định đã nộp tiền vào ngân sách nhà nước thực hiện theo quy",
+      "confidence": 0.9670578813333333
+    },
+    {
+      "bbox": [
+        [
+          213.0,
+          1240.0
+        ],
+        [
+          1133.0,
+          1240.0
+        ],
+        [
+          1133.0,
+          1279.0
+        ],
+        [
+          213.0,
+          1279.0
+        ]
+      ],
+      "text": "định tại Điều 58 của Luật Quản lý thuế. Việc nộp dần tiền vào ngân sách nhà",
+      "confidence": 0.9438846464705882
+    },
+    {
+      "bbox": [
+        [
+          212.0,
+          1270.0
+        ],
+        [
+          1131.0,
+          1270.0
+        ],
+        [
+          1131.0,
+          1311.0
+        ],
+        [
+          212.0,
+          1311.0
+        ]
+      ],
+      "text": "nước do thủ trưởng cơ quan có thẩm quyền quản lý trực tiếp khoản thu xem",
+      "confidence": 0.9654377368749999
+    },
+    {
+      "bbox": [
+        [
+          213.0,
+          1307.0
+        ],
+        [
+          896.0,
+          1307.0
+        ],
+        [
+          896.0,
+          1340.0
+        ],
+        [
+          213.0,
+          1340.0
+        ]
+      ],
+      "text": "xét theo quy định tại khoản 5 Điều 124 Luật Quản lý thuế.",
+      "confidence": 0.9679037815384617
+    },
+    {
+      "bbox": [
+        [
+          272.0,
+          1366.0
+        ],
+        [
+          1132.0,
+          1366.0
+        ],
+        [
+          1132.0,
+          1399.0
+        ],
+        [
+          272.0,
+          1399.0
+        ]
+      ],
+      "text": "Việc gia hạn nộp tiền vào ngân sách nhà nước thực hiện theo quy định",
+      "confidence": 0.969477208
+    },
+    {
+      "bbox": [
+        [
+          213.0,
+          1400.0
+        ],
+        [
+          1131.0,
+          1400.0
+        ],
+        [
+          1131.0,
+          1444.0
+        ],
+        [
+          213.0,
+          1444.0
+        ]
+      ],
+      "text": "tại Điều 62 Luật Quản lý thuế. Trường hợp được gia hạn, người nộp không bị",
+      "confidence": 0.9683136612500001
+    },
+    {
+      "bbox": [
+        [
+          213.0,
+          1432.0
+        ],
+        [
+          1132.0,
+          1432.0
+        ],
+        [
+          1132.0,
+          1472.0
+        ],
+        [
+          213.0,
+          1472.0
+        ]
+      ],
+      "text": "phạt và không phải nộp tiền chậm nộp tính trên số tiền nợ trong thời gian gia",
+      "confidence": 0.966169725882353
+    },
+    {
+      "bbox": [
+        [
+          213.0,
+          1466.0
+        ],
+        [
+          1131.0,
+          1466.0
+        ],
+        [
+          1131.0,
+          1505.0
+        ],
+        [
+          213.0,
+          1505.0
+        ]
+      ],
+      "text": "hạn nộp tiền vào ngân sách nhà nước. Đối với các khoản thu do cơ quan quản",
+      "confidence": 0.9628579794117647
+    },
+    {
+      "bbox": [
+        [
+          214.0,
+          1499.0
+        ],
+        [
+          1131.0,
+          1499.0
+        ],
+        [
+          1131.0,
+          1538.0
+        ],
+        [
+          214.0,
+          1538.0
+        ]
+      ],
+      "text": "lý thuế quản lý thu, thủ trưởng cơ quan quản lý. thuế quản lý trực tiếp khoản",
+      "confidence": 0.9619883547058824
+    },
+    {
+      "bbox": [
+        [
+          214.0,
+          1532.0
+        ],
+        [
+          1131.0,
+          1532.0
+        ],
+        [
+          1131.0,
+          1565.0
+        ],
+        [
+          214.0,
+          1565.0
+        ]
+      ],
+      "text": "thu căn cứ hồ sơ gia han nộp dé quyết định số tiền được gia han, thời gian gia",
+      "confidence": 0.9639484442105264
+    },
+    {
+      "bbox": [
+        [
+          214.0,
+          1565.0
+        ],
+        [
+          1130.0,
+          1565.0
+        ],
+        [
+          1130.0,
+          1599.0
+        ],
+        [
+          214.0,
+          1599.0
+        ]
+      ],
+      "text": "hạn nộp. Đối với các khoản thu không do cơ quan quản lý thuế quản lý thu,",
+      "confidence": 0.9632192141176471
+    }
+  ]
+}

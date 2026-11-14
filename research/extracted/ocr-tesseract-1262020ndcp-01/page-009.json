@@ -1,0 +1,794 @@
+{
+  "document_id": "126/2020/NĐ-CP",
+  "source_file": "../../legal-sources/1262020ndcp/01.pdf",
+  "source_sha256": "310648e80396d267610946458e7fdd71ba87ef538b009d6574ed21514de3f7ca",
+  "page_count": 119,
+  "render_dpi": 150,
+  "engine": "Tesseract 5.5.4 (vie+eng; OEM 1; PSM 3)",
+  "review_status": "UNREVIEWED",
+  "tesseract_version": "5.5.4",
+  "languages": [
+    "vie",
+    "eng"
+  ],
+  "traineddata_sha256": {
+    "vie": "b6b49293d95d0b6dbd8780174627e82c75be957b6f4ed9862155540d6b00bb45",
+    "eng": "8280aed0782fe27257a68ea10fe7ef324ca0f8d85bd2fd145d1c2b560bcb66ba"
+  },
+  "ocr_engine_mode": 1,
+  "page_segmentation_mode": 3,
+  "thread_limit": 2,
+  "page": 9,
+  "lines": [
+    {
+      "bbox": [
+        [
+          265.0,
+          142.0
+        ],
+        [
+          1125.0,
+          142.0
+        ],
+        [
+          1125.0,
+          182.0
+        ],
+        [
+          265.0,
+          182.0
+        ]
+      ],
+      "text": "b) Người nộp thuế có nhiều hoạt động kinh doanh trong đó có hoạt động",
+      "confidence": 0.965571604
+    },
+    {
+      "bbox": [
+        [
+          206.0,
+          173.0
+        ],
+        [
+          1125.0,
+          173.0
+        ],
+        [
+          1125.0,
+          215.0
+        ],
+        [
+          206.0,
+          215.0
+        ]
+      ],
+      "text": "mua bán, chế tác vàng, bạc, đá quý thì phải lập hồ sơ khai thuế giá trị gia tăng",
+      "confidence": 0.96520605
+    },
+    {
+      "bbox": [
+        [
+          206.0,
+          210.0
+        ],
+        [
+          861.0,
+          210.0
+        ],
+        [
+          861.0,
+          243.0
+        ],
+        [
+          206.0,
+          243.0
+        ]
+      ],
+      "text": "riêng cho hoạt động mua bán, chế tác vàng, bạc, đá quý.",
+      "confidence": 0.965866485
+    },
+    {
+      "bbox": [
+        [
+          265.0,
+          265.0
+        ],
+        [
+          1125.0,
+          265.0
+        ],
+        [
+          1125.0,
+          307.0
+        ],
+        [
+          265.0,
+          307.0
+        ]
+      ],
+      "text": "c) Người nộp thuế có khoản thu hộ do cơ quan nhà nước có thẩm quyền",
+      "confidence": 0.9206930124999999
+    },
+    {
+      "bbox": [
+        [
+          207.0,
+          305.0
+        ],
+        [
+          1087.0,
+          305.0
+        ],
+        [
+          1087.0,
+          336.0
+        ],
+        [
+          207.0,
+          336.0
+        ]
+      ],
+      "text": "giao thì phải lập hồ sơ khai thuê giá trị gia tăng riêng cho hoạt động thu hộ.",
+      "confidence": 0.9624572194444444
+    },
+    {
+      "bbox": [
+        [
+          265.0,
+          359.0
+        ],
+        [
+          1125.0,
+          359.0
+        ],
+        [
+          1125.0,
+          394.0
+        ],
+        [
+          265.0,
+          394.0
+        ]
+      ],
+      "text": "d) Người nộp thuế đang hoạt động có dự án đầu tư thuộc diện được hoàn",
+      "confidence": 0.96370415125
+    },
+    {
+      "bbox": [
+        [
+          206.0,
+          393.0
+        ],
+        [
+          1125.0,
+          393.0
+        ],
+        [
+          1125.0,
+          433.0
+        ],
+        [
+          206.0,
+          433.0
+        ]
+      ],
+      "text": "thuế giá trị gia tăng thì phải lập hồ sơ khai thuế giá trị gia tăng riêng cho từng",
+      "confidence": 0.9666862252631578
+    },
+    {
+      "bbox": [
+        [
+          206.0,
+          426.0
+        ],
+        [
+          1125.0,
+          426.0
+        ],
+        [
+          1125.0,
+          464.0
+        ],
+        [
+          206.0,
+          464.0
+        ]
+      ],
+      "text": "dự án đầu tư; đồng thời phải bù trừ số thuế giá trị gia tăng của hàng hóa, dịch",
+      "confidence": 0.967345114736842
+    },
+    {
+      "bbox": [
+        [
+          206.0,
+          459.0
+        ],
+        [
+          1125.0,
+          459.0
+        ],
+        [
+          1125.0,
+          501.0
+        ],
+        [
+          206.0,
+          501.0
+        ]
+      ],
+      "text": "vụ mua vào sử dụng cho từng dự án đầu tư với số thuế giá trị gia tăng phải",
+      "confidence": 0.9645423236842104
+    },
+    {
+      "bbox": [
+        [
+          206.0,
+          492.0
+        ],
+        [
+          1070.0,
+          492.0
+        ],
+        [
+          1070.0,
+          528.0
+        ],
+        [
+          206.0,
+          528.0
+        ]
+      ],
+      "text": "nộp (nếu có) của hoạt động, kinh doanh đang thực hiện cùng kỳ tính thuế.",
+      "confidence": 0.966997294
+    },
+    {
+      "bbox": [
+        [
+          265.0,
+          552.0
+        ],
+        [
+          1125.0,
+          552.0
+        ],
+        [
+          1125.0,
+          589.0
+        ],
+        [
+          265.0,
+          589.0
+        ]
+      ],
+      "text": "đ) Người nộp thuế được giao quản lý hợp đồng hợp tác kinh doanh với",
+      "confidence": 0.96507064
+    },
+    {
+      "bbox": [
+        [
+          205.0,
+          583.0
+        ],
+        [
+          1126.0,
+          583.0
+        ],
+        [
+          1126.0,
+          624.0
+        ],
+        [
+          205.0,
+          624.0
+        ]
+      ],
+      "text": "tổ chức nhưng không thành lập pháp nhân riêng thì thực hiện khai thuế riêng",
+      "confidence": 0.9687295993333334
+    },
+    {
+      "bbox": [
+        [
+          206.0,
+          617.0
+        ],
+        [
+          1126.0,
+          617.0
+        ],
+        [
+          1126.0,
+          652.0
+        ],
+        [
+          206.0,
+          652.0
+        ]
+      ],
+      "text": "đối với hợp đồng hợp tác kinh doanh theo thỏa thuận tại hợp đồng hợp tác",
+      "confidence": 0.9689084200000001
+    },
+    {
+      "bbox": [
+        [
+          206.0,
+          659.0
+        ],
+        [
+          342.0,
+          659.0
+        ],
+        [
+          342.0,
+          679.0
+        ],
+        [
+          206.0,
+          679.0
+        ]
+      ],
+      "text": "kinh doanh.",
+      "confidence": 0.9663886650000001
+    },
+    {
+      "bbox": [
+        [
+          266.0,
+          709.0
+        ],
+        [
+          1125.0,
+          709.0
+        ],
+        [
+          1125.0,
+          743.0
+        ],
+        [
+          266.0,
+          743.0
+        ]
+      ],
+      "text": "3. Người nộp thuế không phải nộp hồ sơ khai thuế trong các trường hợp",
+      "confidence": 0.9672933866666668
+    },
+    {
+      "bbox": [
+        [
+          207.0,
+          750.0
+        ],
+        [
+          300.0,
+          750.0
+        ],
+        [
+          300.0,
+          777.0
+        ],
+        [
+          207.0,
+          777.0
+        ]
+      ],
+      "text": "sau đây:",
+      "confidence": 0.96684521
+    },
+    {
+      "bbox": [
+        [
+          265.0,
+          801.0
+        ],
+        [
+          1127.0,
+          801.0
+        ],
+        [
+          1127.0,
+          841.0
+        ],
+        [
+          265.0,
+          841.0
+        ]
+      ],
+      "text": "a) Người nộp thuế chỉ có hoạt động, kinh doanh thuộc đối tượng không",
+      "confidence": 0.9657818692857143
+    },
+    {
+      "bbox": [
+        [
+          206.0,
+          834.0
+        ],
+        [
+          1005.0,
+          834.0
+        ],
+        [
+          1005.0,
+          869.0
+        ],
+        [
+          206.0,
+          869.0
+        ]
+      ],
+      "text": "chịu thuế theo quy định của pháp luật về thuế đối với từng loại thuế.",
+      "confidence": 0.9607526586666667
+    },
+    {
+      "bbox": [
+        [
+          265.0,
+          892.0
+        ],
+        [
+          1126.0,
+          892.0
+        ],
+        [
+          1126.0,
+          927.0
+        ],
+        [
+          265.0,
+          927.0
+        ]
+      ],
+      "text": "b) Cá nhân có thu nhập được miễn thuế theo quy định của pháp luật về",
+      "confidence": 0.9624576175
+    },
+    {
+      "bbox": [
+        [
+          206.0,
+          926.0
+        ],
+        [
+          1125.0,
+          926.0
+        ],
+        [
+          1125.0,
+          966.0
+        ],
+        [
+          206.0,
+          966.0
+        ]
+      ],
+      "text": "thuế thu nhập cá nhân và quy định tại điểm b khoản 2 Điều 79 Luật Quản lý",
+      "confidence": 0.9593534733333334
+    },
+    {
+      "bbox": [
+        [
+          205.0,
+          959.0
+        ],
+        [
+          1126.0,
+          959.0
+        ],
+        [
+          1126.0,
+          993.0
+        ],
+        [
+          205.0,
+          993.0
+        ]
+      ],
+      "text": "thuế trừ cá nhân nhận thừa kế, quà tặng là bất động sản; chuyển nhượng bất",
+      "confidence": 0.967611140625
+    },
+    {
+      "bbox": [
+        [
+          206.0,
+          1001.0
+        ],
+        [
+          316.0,
+          1001.0
+        ],
+        [
+          316.0,
+          1027.0
+        ],
+        [
+          206.0,
+          1027.0
+        ]
+      ],
+      "text": "động sản.",
+      "confidence": 0.9629518899999999
+    },
+    {
+      "bbox": [
+        [
+          265.0,
+          1051.0
+        ],
+        [
+          1146.0,
+          1051.0
+        ],
+        [
+          1146.0,
+          1095.0
+        ],
+        [
+          265.0,
+          1095.0
+        ]
+      ],
+      "text": "¢) Doanh nghiệp chế xuất chỉ có hoạt động xuất khẩu thì không phải nộp -",
+      "confidence": 0.8684181162500001
+    },
+    {
+      "bbox": [
+        [
+          206.0,
+          1085.0
+        ],
+        [
+          569.0,
+          1085.0
+        ],
+        [
+          569.0,
+          1118.0
+        ],
+        [
+          206.0,
+          1118.0
+        ]
+      ],
+      "text": "hồ sơ khai thuế giá trị gia tăng.",
+      "confidence": 0.9612788575000001
+    },
+    {
+      "bbox": [
+        [
+          239.0,
+          1143.0
+        ],
+        [
+          1126.0,
+          1143.0
+        ],
+        [
+          1126.0,
+          1180.0
+        ],
+        [
+          239.0,
+          1180.0
+        ]
+      ],
+      "text": "_.đ) Người nộp thuế tạm ngừng hoạt động, kinh doanh theo quy định tại",
+      "confidence": 0.9216525635714287
+    },
+    {
+      "bbox": [
+        [
+          207.0,
+          1182.0
+        ],
+        [
+          466.0,
+          1182.0
+        ],
+        [
+          466.0,
+          1208.0
+        ],
+        [
+          207.0,
+          1208.0
+        ]
+      ],
+      "text": "Điêu 4 Nghị định này.",
+      "confidence": 0.952104904
+    },
+    {
+      "bbox": [
+        [
+          266.0,
+          1232.0
+        ],
+        [
+          1126.0,
+          1232.0
+        ],
+        [
+          1126.0,
+          1272.0
+        ],
+        [
+          266.0,
+          1272.0
+        ]
+      ],
+      "text": "d) Người nộp thuế nộp hồ sơ chấm dứt hiệu lực mã số thuế, trừ trường",
+      "confidence": 0.961362433125
+    },
+    {
+      "bbox": [
+        [
+          207.0,
+          1271.0
+        ],
+        [
+          1126.0,
+          1271.0
+        ],
+        [
+          1126.0,
+          1306.0
+        ],
+        [
+          207.0,
+          1306.0
+        ]
+      ],
+      "text": "hợp châm dứt hoạt động, châm dứt hợp đồng, tô chức lại doanh nghiệp theo",
+      "confidence": 0.9649921739999999
+    },
+    {
+      "bbox": [
+        [
+          207.0,
+          1306.0
+        ],
+        [
+          784.0,
+          1306.0
+        ],
+        [
+          784.0,
+          1334.0
+        ],
+        [
+          207.0,
+          1334.0
+        ]
+      ],
+      "text": "quy định của khoản 4 Điều 44 Luật Quản lý thuê.",
+      "confidence": 0.964906109090909
+    },
+    {
+      "bbox": [
+        [
+          266.0,
+          1358.0
+        ],
+        [
+          1126.0,
+          1358.0
+        ],
+        [
+          1126.0,
+          1399.0
+        ],
+        [
+          266.0,
+          1399.0
+        ]
+      ],
+      "text": "4. Người nộp thuế được nộp hồ sơ khai bổ sung cho từng hồ sơ khai thuế",
+      "confidence": 0.965942512352941
+    },
+    {
+      "bbox": [
+        [
+          208.0,
+          1394.0
+        ],
+        [
+          1126.0,
+          1394.0
+        ],
+        [
+          1126.0,
+          1432.0
+        ],
+        [
+          208.0,
+          1432.0
+        ]
+      ],
+      "text": "có sai, sót theo quy định tại Điều 47 Luật Quản lý thuê va theo mẫu quy định",
+      "confidence": 0.9566755244444444
+    },
+    {
+      "bbox": [
+        [
+          208.0,
+          1432.0
+        ],
+        [
+          998.0,
+          1432.0
+        ],
+        [
+          998.0,
+          1461.0
+        ],
+        [
+          208.0,
+          1461.0
+        ]
+      ],
+      "text": "của Bộ trưởng Bộ Tài chính. Người nộp thuê khai bo sung như sau:",
+      "confidence": 0.9647909035714285
+    },
+    {
+      "bbox": [
+        [
+          267.0,
+          1485.0
+        ],
+        [
+          1126.0,
+          1485.0
+        ],
+        [
+          1126.0,
+          1526.0
+        ],
+        [
+          267.0,
+          1526.0
+        ]
+      ],
+      "text": "a) Trường hợp khai bổ sung không làm thay đổi nghĩa vụ thuế thì chỉ",
+      "confidence": 0.9656000633333334
+    },
+    {
+      "bbox": [
+        [
+          207.0,
+          1525.0
+        ],
+        [
+          1126.0,
+          1525.0
+        ],
+        [
+          1126.0,
+          1560.0
+        ],
+        [
+          207.0,
+          1560.0
+        ]
+      ],
+      "text": "phải nộp Bản giải trình khai bo sung và các tài liệu có liên quan, không phải",
+      "confidence": 0.9552196194117647
+    },
+    {
+      "bbox": [
+        [
+          208.0,
+          1561.0
+        ],
+        [
+          455.0,
+          1561.0
+        ],
+        [
+          455.0,
+          1589.0
+        ],
+        [
+          208.0,
+          1589.0
+        ]
+      ],
+      "text": "nộp Tờ khai bô sung.",
+      "confidence": 0.9656196
+    }
+  ]
+}

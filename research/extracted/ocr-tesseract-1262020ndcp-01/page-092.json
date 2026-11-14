@@ -1,0 +1,882 @@
+{
+  "document_id": "126/2020/NĐ-CP",
+  "source_file": "../../legal-sources/1262020ndcp/01.pdf",
+  "source_sha256": "310648e80396d267610946458e7fdd71ba87ef538b009d6574ed21514de3f7ca",
+  "page_count": 119,
+  "render_dpi": 150,
+  "engine": "Tesseract 5.5.4 (vie+eng; OEM 1; PSM 3)",
+  "review_status": "UNREVIEWED",
+  "tesseract_version": "5.5.4",
+  "languages": [
+    "vie",
+    "eng"
+  ],
+  "traineddata_sha256": {
+    "vie": "b6b49293d95d0b6dbd8780174627e82c75be957b6f4ed9862155540d6b00bb45",
+    "eng": "8280aed0782fe27257a68ea10fe7ef324ca0f8d85bd2fd145d1c2b560bcb66ba"
+  },
+  "ocr_engine_mode": 1,
+  "page_segmentation_mode": 3,
+  "thread_limit": 2,
+  "page": 92,
+  "lines": [
+    {
+      "bbox": [
+        [
+          704.0,
+          56.0
+        ],
+        [
+          731.0,
+          56.0
+        ],
+        [
+          731.0,
+          76.0
+        ],
+        [
+          704.0,
+          76.0
+        ]
+      ],
+      "text": "92",
+      "confidence": 0.94687523
+    },
+    {
+      "bbox": [
+        [
+          289.0,
+          131.0
+        ],
+        [
+          1054.0,
+          131.0
+        ],
+        [
+          1054.0,
+          169.0
+        ],
+        [
+          289.0,
+          169.0
+        ]
+      ],
+      "text": "3. Xác mình thông tin về tài sản của người nộp thuế bị cưỡng chế",
+      "confidence": 0.9653659493333333
+    },
+    {
+      "bbox": [
+        [
+          288.0,
+          190.0
+        ],
+        [
+          1145.0,
+          190.0
+        ],
+        [
+          1145.0,
+          228.0
+        ],
+        [
+          288.0,
+          228.0
+        ]
+      ],
+      "text": "a) Cơ quan quản lý thuế có quyền gửi văn bản cho người nộp thuế bị",
+      "confidence": 0.95879330125
+    },
+    {
+      "bbox": [
+        [
+          229.0,
+          220.0
+        ],
+        [
+          1147.0,
+          220.0
+        ],
+        [
+          1147.0,
+          262.0
+        ],
+        [
+          229.0,
+          262.0
+        ]
+      ],
+      "text": "cưỡng chế, cơ quan đăng ký quyền sở hữu tài sản, cơ quan đăng ký giao dịch",
+      "confidence": 0.9683214076470589
+    },
+    {
+      "bbox": [
+        [
+          228.0,
+          255.0
+        ],
+        [
+          1145.0,
+          255.0
+        ],
+        [
+          1145.0,
+          301.0
+        ],
+        [
+          228.0,
+          301.0
+        ]
+      ],
+      "text": "bảo đảm và các tổ chức, cá nhân liên quan để xác minh về tài sản của người",
+      "confidence": 0.964944648888889
+    },
+    {
+      "bbox": [
+        [
+          227.0,
+          287.0
+        ],
+        [
+          494.0,
+          287.0
+        ],
+        [
+          494.0,
+          321.0
+        ],
+        [
+          227.0,
+          321.0
+        ]
+      ],
+      "text": "nộp thuế bị cưỡng chế.",
+      "confidence": 0.9619228839999999
+    },
+    {
+      "bbox": [
+        [
+          286.0,
+          349.0
+        ],
+        [
+          1144.0,
+          349.0
+        ],
+        [
+          1144.0,
+          389.0
+        ],
+        [
+          286.0,
+          389.0
+        ]
+      ],
+      "text": "b) Cơ quan quản lý thuế có quyền xác minh về tài sản của người nộp",
+      "confidence": 0.96306932
+    },
+    {
+      "bbox": [
+        [
+          227.0,
+          378.0
+        ],
+        [
+          1145.0,
+          378.0
+        ],
+        [
+          1145.0,
+          421.0
+        ],
+        [
+          227.0,
+          421.0
+        ]
+      ],
+      "text": "thuế bị cưỡng chế tại địa bàn nơi người nộp thuế bị cưỡng chế đóng trụ sở",
+      "confidence": 0.9688974370588235
+    },
+    {
+      "bbox": [
+        [
+          226.0,
+          417.0
+        ],
+        [
+          1144.0,
+          417.0
+        ],
+        [
+          1144.0,
+          456.0
+        ],
+        [
+          226.0,
+          456.0
+        ]
+      ],
+      "text": "kinh doanh hoặc cư trú, cơ quan đăng ký quyền sở hữu tài sản, cơ quan đăng",
+      "confidence": 0.9682481488235294
+    },
+    {
+      "bbox": [
+        [
+          225.0,
+          450.0
+        ],
+        [
+          1144.0,
+          450.0
+        ],
+        [
+          1144.0,
+          486.0
+        ],
+        [
+          225.0,
+          486.0
+        ]
+      ],
+      "text": "ký giao dịch bảo đảm và các tổ chức, cá nhân liên quan. Sau khi xác minh về",
+      "confidence": 0.9686610372222222
+    },
+    {
+      "bbox": [
+        [
+          224.0,
+          483.0
+        ],
+        [
+          1144.0,
+          483.0
+        ],
+        [
+          1144.0,
+          523.0
+        ],
+        [
+          224.0,
+          523.0
+        ]
+      ],
+      "text": "tài sản của người nộp thuế bị cưỡng chế tại các địa điểm nêu trên, cơ quan",
+      "confidence": 0.9678958582352941
+    },
+    {
+      "bbox": [
+        [
+          225.0,
+          514.0
+        ],
+        [
+          1143.0,
+          514.0
+        ],
+        [
+          1143.0,
+          553.0
+        ],
+        [
+          225.0,
+          553.0
+        ]
+      ],
+      "text": "quản lý thuế phải xác định số tiền có khả năng thu vào ngân sách nhà nước",
+      "confidence": 0.967509885882353
+    },
+    {
+      "bbox": [
+        [
+          224.0,
+          551.0
+        ],
+        [
+          1142.0,
+          551.0
+        ],
+        [
+          1142.0,
+          588.0
+        ],
+        [
+          224.0,
+          588.0
+        ]
+      ],
+      "text": "thông qua áp dụng biện pháp cưỡng chế này bằng việc dự tính giá trị tài sản",
+      "confidence": 0.9667742964705883
+    },
+    {
+      "bbox": [
+        [
+          223.0,
+          581.0
+        ],
+        [
+          505.0,
+          581.0
+        ],
+        [
+          505.0,
+          614.0
+        ],
+        [
+          223.0,
+          614.0
+        ]
+      ],
+      "text": "này sau khi bán đầu giá.",
+      "confidence": 0.9559897
+    },
+    {
+      "bbox": [
+        [
+          282.0,
+          642.0
+        ],
+        [
+          1141.0,
+          642.0
+        ],
+        [
+          1141.0,
+          679.0
+        ],
+        [
+          282.0,
+          679.0
+        ]
+      ],
+      "text": "¢) Thông tin xác minh bao gồm: Các tài sản đã xác minh, giá trị tài sản",
+      "confidence": 0.9481170252941176
+    },
+    {
+      "bbox": [
+        [
+          222.0,
+          675.0
+        ],
+        [
+          1141.0,
+          675.0
+        ],
+        [
+          1141.0,
+          719.0
+        ],
+        [
+          222.0,
+          719.0
+        ]
+      ],
+      "text": "đã xác minh được phản ánh trên số sách kế toán của người nộp thuế bị cưỡng",
+      "confidence": 0.9577759052941177
+    },
+    {
+      "bbox": [
+        [
+          222.0,
+          704.0
+        ],
+        [
+          1140.0,
+          704.0
+        ],
+        [
+          1140.0,
+          748.0
+        ],
+        [
+          222.0,
+          748.0
+        ]
+      ],
+      "text": "chế, kết quả sản xuất kinh doanh (đối với cơ sở sản xuất kinh doanh, dịch vụ)",
+      "confidence": 0.9654361717647058
+    },
+    {
+      "bbox": [
+        [
+          221.0,
+          738.0
+        ],
+        [
+          1140.0,
+          738.0
+        ],
+        [
+          1140.0,
+          779.0
+        ],
+        [
+          221.0,
+          779.0
+        ]
+      ],
+      "text": "hoặc điều kiện kinh tế (đối với cá nhân không kinh doanh). Đối với tài sản",
+      "confidence": 0.964605421875
+    },
+    {
+      "bbox": [
+        [
+          220.0,
+          776.0
+        ],
+        [
+          1140.0,
+          776.0
+        ],
+        [
+          1140.0,
+          820.0
+        ],
+        [
+          220.0,
+          820.0
+        ]
+      ],
+      "text": "thuộc diện phải đăng ký, chuyển quyền sở hữu tài sản cần căn cứ vào hợp",
+      "confidence": 0.968349481875
+    },
+    {
+      "bbox": [
+        [
+          220.0,
+          804.0
+        ],
+        [
+          1139.0,
+          804.0
+        ],
+        [
+          1139.0,
+          848.0
+        ],
+        [
+          220.0,
+          848.0
+        ]
+      ],
+      "text": "đồng mua bán, chuyển đổi, chuyển nhượng hoặc tặng cho, giấy chứng nhận",
+      "confidence": 0.9484099646153846
+    },
+    {
+      "bbox": [
+        [
+          220.0,
+          837.0
+        ],
+        [
+          1139.0,
+          837.0
+        ],
+        [
+          1139.0,
+          882.0
+        ],
+        [
+          220.0,
+          882.0
+        ]
+      ],
+      "text": "về quyền sở hữu tài sản thì việc xác minh thông qua chủ sở hữu, chính quyền",
+      "confidence": 0.9686779388235294
+    },
+    {
+      "bbox": [
+        [
+          220.0,
+          876.0
+        ],
+        [
+          1139.0,
+          876.0
+        ],
+        [
+          1139.0,
+          913.0
+        ],
+        [
+          220.0,
+          913.0
+        ]
+      ],
+      "text": "địa phương, cơ quan chức năng hoặc người làm chứng như xác nhận của",
+      "confidence": 0.9679960735714285
+    },
+    {
+      "bbox": [
+        [
+          219.0,
+          907.0
+        ],
+        [
+          1124.0,
+          907.0
+        ],
+        [
+          1124.0,
+          946.0
+        ],
+        [
+          219.0,
+          946.0
+        ]
+      ],
+      "text": "người bán, của chính quyền địa phương, cơ quan chức năng về việc mua bán.",
+      "confidence": 0.9672037046666668
+    },
+    {
+      "bbox": [
+        [
+          236.0,
+          969.0
+        ],
+        [
+          1137.0,
+          969.0
+        ],
+        [
+          1137.0,
+          1007.0
+        ],
+        [
+          236.0,
+          1007.0
+        ]
+      ],
+      "text": "„ d) Sau khi xác minh, phải lập biên bản ghi rõ cam kết của người cung",
+      "confidence": 0.8767990564705882
+    },
+    {
+      "bbox": [
+        [
+          218.0,
+          1002.0
+        ],
+        [
+          376.0,
+          1002.0
+        ],
+        [
+          376.0,
+          1029.0
+        ],
+        [
+          218.0,
+          1029.0
+        ]
+      ],
+      "text": "cấp thông tin.",
+      "confidence": 0.8451489233333334
+    },
+    {
+      "bbox": [
+        [
+          277.0,
+          1060.0
+        ],
+        [
+          1135.0,
+          1060.0
+        ],
+        [
+          1135.0,
+          1101.0
+        ],
+        [
+          277.0,
+          1101.0
+        ]
+      ],
+      "text": "d) Các thông tin xác minh đối với tài sản thuộc diện phải đăng ký,",
+      "confidence": 0.958632584
+    },
+    {
+      "bbox": [
+        [
+          217.0,
+          1093.0
+        ],
+        [
+          1135.0,
+          1093.0
+        ],
+        [
+          1135.0,
+          1132.0
+        ],
+        [
+          217.0,
+          1132.0
+        ]
+      ],
+      "text": "chuyên quyên sở hữu tài sản phải thông báo rộng rãi dé người có quyền, nghĩa",
+      "confidence": 0.954320716875
+    },
+    {
+      "bbox": [
+        [
+          216.0,
+          1127.0
+        ],
+        [
+          767.0,
+          1127.0
+        ],
+        [
+          767.0,
+          1160.0
+        ],
+        [
+          216.0,
+          1160.0
+        ]
+      ],
+      "text": "vụ liên quan được biết và bảo vệ lợi ích của họ.",
+      "confidence": 0.9677962608333333
+    },
+    {
+      "bbox": [
+        [
+          275.0,
+          1180.0
+        ],
+        [
+          1134.0,
+          1180.0
+        ],
+        [
+          1134.0,
+          1223.0
+        ],
+        [
+          275.0,
+          1223.0
+        ]
+      ],
+      "text": "e) Đối với tài sản đã được cầm có, thé chấp hợp pháp thuộc diện được kê",
+      "confidence": 0.9537479223529413
+    },
+    {
+      "bbox": [
+        [
+          214.0,
+          1216.0
+        ],
+        [
+          1133.0,
+          1216.0
+        ],
+        [
+          1133.0,
+          1257.0
+        ],
+        [
+          214.0,
+          1257.0
+        ]
+      ],
+      "text": "biên thì cơ quan, tổ chức tiến hành kê biên phải thông báo cho người nhận",
+      "confidence": 0.962794151875
+    },
+    {
+      "bbox": [
+        [
+          214.0,
+          1246.0
+        ],
+        [
+          1133.0,
+          1246.0
+        ],
+        [
+          1133.0,
+          1291.0
+        ],
+        [
+          214.0,
+          1291.0
+        ]
+      ],
+      "text": "cầm có, thé chấp biết nghĩa vụ của người nộp thuế bị cưỡng chế và yêu cầu",
+      "confidence": 0.9574778835294119
+    },
+    {
+      "bbox": [
+        [
+          213.0,
+          1281.0
+        ],
+        [
+          1131.0,
+          1281.0
+        ],
+        [
+          1131.0,
+          1323.0
+        ],
+        [
+          213.0,
+          1323.0
+        ]
+      ],
+      "text": "người nhận cầm cố, thé chấp cung cấp hồ sơ, chứng từ liên quan đến việc cằm",
+      "confidence": 0.9539302794117647
+    },
+    {
+      "bbox": [
+        [
+          214.0,
+          1313.0
+        ],
+        [
+          1131.0,
+          1313.0
+        ],
+        [
+          1131.0,
+          1363.0
+        ],
+        [
+          214.0,
+          1363.0
+        ]
+      ],
+      "text": "có, thé chấp tài sản của người nộp thuế bị cưỡng chế kịp thời cho cơ quan tiền",
+      "confidence": 0.9481984916666666
+    },
+    {
+      "bbox": [
+        [
+          213.0,
+          1352.0
+        ],
+        [
+          1131.0,
+          1352.0
+        ],
+        [
+          1131.0,
+          1393.0
+        ],
+        [
+          213.0,
+          1393.0
+        ]
+      ],
+      "text": "hành kê biên tài sản khi người cam cố, thế chấp thanh toán nghĩa vụ theo hợp",
+      "confidence": 0.9482744811764706
+    },
+    {
+      "bbox": [
+        [
+          214.0,
+          1385.0
+        ],
+        [
+          481.0,
+          1385.0
+        ],
+        [
+          481.0,
+          1415.0
+        ],
+        [
+          214.0,
+          1415.0
+        ]
+      ],
+      "text": "đồng câm cô, thế chấp.",
+      "confidence": 0.91582593
+    },
+    {
+      "bbox": [
+        [
+          273.0,
+          1441.0
+        ],
+        [
+          1129.0,
+          1441.0
+        ],
+        [
+          1129.0,
+          1484.0
+        ],
+        [
+          273.0,
+          1484.0
+        ]
+      ],
+      "text": "g) Trường hợp đối với cá nhân quy định tại điểm b khoản 1 Điều này",
+      "confidence": 0.9523040912499999
+    },
+    {
+      "bbox": [
+        [
+          213.0,
+          1476.0
+        ],
+        [
+          1128.0,
+          1476.0
+        ],
+        [
+          1128.0,
+          1511.0
+        ],
+        [
+          213.0,
+          1511.0
+        ]
+      ],
+      "text": "hoặc trường hợp sau 05 ngày làm việc ké từ ngày gửi văn bản xác minh về tài",
+      "confidence": 0.965343293888889
+    },
+    {
+      "bbox": [
+        [
+          214.0,
+          1507.0
+        ],
+        [
+          1126.0,
+          1507.0
+        ],
+        [
+          1126.0,
+          1555.0
+        ],
+        [
+          214.0,
+          1555.0
+        ]
+      ],
+      "text": "sản cho người nộp thuế bị cưỡng chế, cơ quan đăng ký quyền sở hữu tài sản,",
+      "confidence": 0.9685826017647059
+    },
+    {
+      "bbox": [
+        [
+          213.0,
+          1544.0
+        ],
+        [
+          1126.0,
+          1544.0
+        ],
+        [
+          1126.0,
+          1585.0
+        ],
+        [
+          213.0,
+          1585.0
+        ]
+      ],
+      "text": "cơ quan đăng ký giao dịch bảo đảm và các tổ chức, cá nhân liên quan không",
+      "confidence": 0.9677411017647058
+    }
+  ]
+}
