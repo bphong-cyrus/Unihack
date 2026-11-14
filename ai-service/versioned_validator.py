@@ -7,7 +7,7 @@ def validate_snapshot_citations(citations, snapshot, as_of):
         return {'passed': False, 'verdict': 'UNVERIFIED_REFUND', 'settlement_eligible': False,
                 'corpus_status': 'REVIEW_ASSERTED', 'overall_score': 0.0,
                 'citation_checks': [], 'fail_reason': 'NO_CITATION_PROVIDED',
-                'snapshot_id': snapshot.snapshot_id, 'as_of': as_of.isoformat()}
+                'snapshot_id': snapshot.snapshot_id, 'snapshot_sha256': snapshot.snapshot_sha256, 'as_of': as_of.isoformat()}
 
     checks = []
     scores = []
@@ -43,4 +43,4 @@ def validate_snapshot_citations(citations, snapshot, as_of):
     return {'passed': passed, 'verdict': 'VERIFIED_RELEASE' if passed else 'UNVERIFIED_REFUND',
             'settlement_eligible': False, 'corpus_status': 'REVIEW_ASSERTED',
             'overall_score': round(sum(scores) / len(scores), 2), 'citation_checks': checks,
-            'snapshot_id': snapshot.snapshot_id, 'as_of': as_of.isoformat()}
+            'snapshot_id': snapshot.snapshot_id, 'snapshot_sha256': snapshot.snapshot_sha256, 'as_of': as_of.isoformat()}

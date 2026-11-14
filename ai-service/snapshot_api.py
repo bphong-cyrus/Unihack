@@ -33,7 +33,7 @@ def corpus_response(snapshot):
                                                 'reviewed_versions': 0})
         doc['total_versions'] += 1
         doc['reviewed_versions'] += int(item.reviewed)
-    return {'snapshot_id': snapshot.snapshot_id, 'corpus_status': 'REVIEW_ASSERTED',
+    return {'snapshot_id': snapshot.snapshot_id, 'snapshot_sha256': snapshot.snapshot_sha256, 'corpus_status': 'REVIEW_ASSERTED',
             'total_documents': snapshot.document_count, 'total_chunks': snapshot.provision_count,
             'reviewed_chunks': snapshot.reviewed_count, 'records': list(docs.values()),
             'domain': 'Import-Export & Vietnam Customs Law'}
@@ -59,7 +59,7 @@ def ask_snapshot(req, snapshot):
     def digest(value):
         return '0x' + hashlib.sha256(value.encode('utf-8')).hexdigest()
     return {'question_id': req.question_id, 'tier': req.tier, 'answer': answer, 'citations': citations,
-            'validation': validation, 'snapshot_id': snapshot.snapshot_id, 'as_of': as_of.isoformat(),
+            'validation': validation, 'snapshot_id': snapshot.snapshot_id, 'snapshot_sha256': snapshot.snapshot_sha256, 'as_of': as_of.isoformat(),
             'answer_method': 'EXTRACTIVE', 'payment_status': 'DISABLED',
             'hashes': {'question_hash': digest(req.question), 'answer_hash': digest(answer),
                        'citations_hash': digest(json.dumps(citations, ensure_ascii=False)),

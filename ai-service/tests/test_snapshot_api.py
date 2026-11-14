@@ -61,6 +61,16 @@ class SnapshotApiTests(unittest.TestCase):
         self.assertEqual(corpus['snapshot_id'], 'test-snapshot')
         self.assertEqual(corpus['total_documents'], 1)
 
+    def test_snapshot_manifest_hash_is_consistent_across_endpoints(self):
+        expected = hashlib.sha256(self.manifest.read_bytes()).hexdigest()
+        ask = main.ask_legal_question(main.AskRequest(question='Hồ sơ hải quan tờ khai', as_of='2023-01-01'))
+        validation = main.validate_endpoint(main.ValidateRequest(citations=[], as_of='2023-01-01'))
+        self.assertEqual(ask['snapshot_sha256'], expected)
+        self.assertEqual(validation['snapshot_sha256'], expected)
+        self.assertEqual(main.get_corpus()['snapshot_sha256'], expected)
+        self.manifest.write_text(self.manifest.read_text() + ' ')
+        self.assertNotEqual(main.get_corpus()['snapshot_sha256'], expected)
+
     def test_configured_bad_manifest_never_falls_back_to_demo(self):
         self.manifest.write_text('{}')
         for call in [lambda: main.get_corpus(), lambda: main.validate_endpoint(main.ValidateRequest(citations=[])),

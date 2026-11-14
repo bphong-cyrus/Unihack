@@ -17,6 +17,7 @@ def main():
         return 1
     print(json.dumps({
         'snapshot_id': snapshot.snapshot_id,
+        'snapshot_sha256': snapshot.snapshot_sha256,
         'documents': snapshot.document_count,
         'provisions': snapshot.provision_count,
         'reviewed_provisions': snapshot.reviewed_count,

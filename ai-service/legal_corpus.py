@@ -79,6 +79,7 @@ class CorpusSnapshot:
     snapshot_id: str
     document_count: int
     provisions: tuple[Provision, ...]
+    snapshot_sha256: str
     _index: object = field(init=False, repr=False, compare=False)
 
     def __post_init__(self):
@@ -158,7 +159,8 @@ def _read_provision(record, document_id, title, source_url, digest):
 def load_snapshot(manifest_path):
     path = Path(manifest_path).resolve()
     try:
-        data = json.loads(path.read_text(encoding='utf-8'))
+        manifest_bytes = path.read_bytes()
+        data = json.loads(manifest_bytes.decode('utf-8'))
         if not isinstance(data, dict):
             raise CorpusError('manifest must be an object')
         snapshot_id = _required_string(data, 'snapshot_id')
@@ -183,6 +185,6 @@ def load_snapshot(manifest_path):
             for left, right in zip(versions, versions[1:]):
                 if left.effective_until is None or left.effective_until > right.effective_from:
                     raise CorpusError('overlapping provision versions')
-        return CorpusSnapshot(snapshot_id, len(seen), tuple(items))
+        return CorpusSnapshot(snapshot_id, len(seen), tuple(items), sha256(manifest_bytes).hexdigest())
     except (OSError, UnicodeError, json.JSONDecodeError, AttributeError, TypeError) as error:
         raise CorpusError('invalid snapshot manifest') from error
