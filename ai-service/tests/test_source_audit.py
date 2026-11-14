@@ -16,8 +16,11 @@ class SourceAuditTests(unittest.TestCase):
             (root / 'file.pdf').write_bytes(b'original')
             manifest = root / 'manifest.json'
             manifest.write_text(json.dumps({'documents': [
-                {'document_id': 'A', 'attachments': [{'file': 'file.pdf', 'bytes': 8, 'sha256': hashlib.sha256(b'original').hexdigest()}]},
-                {'document_id': 'B', 'attachments': []}]}))
+                {'document_id': 'A', 'metadata_url': 'https://vanban.chinhphu.vn/?docid=1',
+                 'identity_check': 'matched_metadata', 'attachments': [{'file': 'file.pdf',
+                 'url': 'https://datafiles.chinhphu.vn/files/file.pdf', 'bytes': 8,
+                 'sha256': hashlib.sha256(b'original').hexdigest()}]},
+                {'document_id': 'B', 'metadata_url': None, 'identity_check': 'unverified', 'attachments': []}]}))
             report = audit_sources(manifest)
             self.assertEqual(report['files_ok'], 1)
             self.assertEqual(report['documents_without_attachments'], ['B'])
@@ -40,3 +43,44 @@ class SourceAuditTests(unittest.TestCase):
                     manifest.write_text(json.dumps({'documents': documents}))
                     with self.assertRaises(ValueError):
                         audit_sources(manifest)
+
+    def test_audit_rejects_nonofficial_attachment_and_metadata_urls(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            (root / 'file.pdf').write_bytes(b'original')
+            manifest = root / 'manifest.json'
+            manifest.write_text(json.dumps({'documents': [{
+                'document_id': 'A', 'metadata_url': 'https://example.org/document',
+                'identity_check': 'matched_metadata', 'attachments': [{
+                    'file': 'file.pdf', 'url': 'http://downloads.example.org/file.pdf',
+                    'bytes': 8, 'sha256': hashlib.sha256(b'original').hexdigest()}]}]}))
+            reasons = {error['reason'] for error in audit_sources(manifest)['errors']}
+            self.assertIn('NON_OFFICIAL_METADATA_URL', reasons)
+            self.assertIn('NON_OFFICIAL_ATTACHMENT_URL', reasons)
+
+    def test_audit_rejects_attachments_without_matched_official_metadata(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            (root / 'file.pdf').write_bytes(b'original')
+            manifest = root / 'manifest.json'
+            manifest.write_text(json.dumps({'documents': [{
+                'document_id': 'A', 'metadata_url': 'https://vanban.chinhphu.vn/?docid=1',
+                'identity_check': 'unverified', 'attachments': [{
+                    'file': 'file.pdf', 'url': 'https://datafiles.chinhphu.vn/files/file.pdf',
+                    'bytes': 8, 'sha256': hashlib.sha256(b'original').hexdigest()}]}]}))
+            reasons = {error['reason'] for error in audit_sources(manifest)['errors']}
+            self.assertIn('METADATA_IDENTITY_UNVERIFIED', reasons)
+
+    def test_audit_reports_malformed_source_urls_without_crashing(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            (root / 'file.pdf').write_bytes(b'original')
+            manifest = root / 'manifest.json'
+            manifest.write_text(json.dumps({'documents': [{
+                'document_id': 'A', 'metadata_url': 'https://[invalid',
+                'identity_check': 'matched_metadata', 'attachments': [{
+                    'file': 'file.pdf', 'url': 'https://[invalid',
+                    'bytes': 8, 'sha256': hashlib.sha256(b'original').hexdigest()}]}]}))
+            reasons = {error['reason'] for error in audit_sources(manifest)['errors']}
+            self.assertIn('NON_OFFICIAL_METADATA_URL', reasons)
+            self.assertIn('NON_OFFICIAL_ATTACHMENT_URL', reasons)

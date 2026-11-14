@@ -55,7 +55,7 @@ Các tệp gốc được tải từ liên kết đính kèm trên trang metadat
 
 ## Quan hệ cần rà soát
 
-Chạy `python3 ai-service/source_audit.py research/legal-sources/manifest.json` từ thư mục dự án để kiểm tra kích thước, SHA-256 và liệt kê văn bản chưa có tệp. Lệnh trả mã 1 khi thiếu tệp hoặc văn bản không có tệp đính kèm; hiện `53/2026/VBHN-TT-BTC` chưa có tệp. Kiểm tra này không xác minh chữ ký số, nội dung hay hiệu lực pháp luật.
+Chạy `python3 ai-service/source_audit.py research/legal-sources/manifest.json` từ thư mục dự án để kiểm tra kích thước, SHA-256, HTTPS/hostname thuộc các cổng chính thức đã khai báo, cờ khớp metadata và liệt kê văn bản chưa có tệp. Lệnh trả mã 1 khi có lỗi nguồn hoặc văn bản không có tệp đính kèm; hiện `53/2026/VBHN-TT-BTC` chưa có tệp. Allowlist và cờ khớp metadata chỉ kiểm tra dữ liệu khai báo; lệnh không xác minh chữ ký số, nội dung hay hiệu lực pháp luật.
 
 - Nghị định 167/2025/NĐ-CP sửa đổi Nghị định 08/2015/NĐ-CP; Nghị định 182/2025/NĐ-CP sửa đổi Nghị định 134/2016/NĐ-CP (đã sửa đổi bởi Nghị định 18/2021/NĐ-CP).
 - Thông tư 23/2025/TT-BCT sửa đổi Thông tư 05/2018/TT-BCT và 38/2018/TT-BCT; Thông tư 03/2023/TT-BCT sửa đổi Thông tư 22/2016/TT-BCT.

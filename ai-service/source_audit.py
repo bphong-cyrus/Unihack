@@ -3,6 +3,22 @@ import argparse
 import hashlib
 import json
 from pathlib import Path
+from urllib.parse import urlparse
+
+
+_OFFICIAL_DOMAINS = ('chinhphu.vn', 'vbpl.vn', 'moj.gov.vn', 'moit.gov.vn')
+
+
+def _is_official_https_url(value):
+    if not isinstance(value, str):
+        return False
+    try:
+        parsed = urlparse(value)
+    except ValueError:
+        return False
+    host = (parsed.hostname or '').lower().rstrip('.')
+    return (parsed.scheme == 'https' and host and not parsed.username and not parsed.password
+            and any(host == domain or host.endswith('.' + domain) for domain in _OFFICIAL_DOMAINS))
 
 
 def audit_sources(manifest):
@@ -23,8 +39,16 @@ def audit_sources(manifest):
             raise ValueError('attachments must be a list')
         if not document['attachments']:
             report['documents_without_attachments'].append(document['document_id'])
+        else:
+            if not _is_official_https_url(document.get('metadata_url')):
+                report['errors'].append({'document_id': document_id, 'reason': 'NON_OFFICIAL_METADATA_URL'})
+            if document.get('identity_check') != 'matched_metadata':
+                report['errors'].append({'document_id': document_id, 'reason': 'METADATA_IDENTITY_UNVERIFIED'})
         for attachment in document['attachments']:
             name = attachment['file']
+            if not _is_official_https_url(attachment.get('url')):
+                report['errors'].append({'document_id': document_id, 'file': name,
+                                         'reason': 'NON_OFFICIAL_ATTACHMENT_URL'})
             source = (path.parent / name).resolve()
             if not source.is_relative_to(path.parent):
                 report['errors'].append({'file': name, 'reason': 'PATH_OUTSIDE_ROOT'})
