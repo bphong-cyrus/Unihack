@@ -1,0 +1,769 @@
+{
+  "document_id": "373/2025/NĐ-CP",
+  "source_sha256": "6ca9d1a16b5d47c7aa23f06f243dc59bd2e9dda4d70f3f3c892e4254d2c7d914",
+  "page_count": 74,
+  "review_status": "UNREVIEWED",
+  "candidates": [
+    {
+      "article": "1",
+      "page": 1,
+      "line_index": 61,
+      "text": "Điều 1. Sửa đổi, bổ sung một số điểm; khoản của Điều 9 như sau:",
+      "confidence": 0.5183348496074297,
+      "record_file": "page-001.json"
+    },
+    {
+      "article": "2",
+      "page": 2,
+      "line_index": 8,
+      "text": "Điều 2. Sửa đổi, bổ sung điểm b khoản 6 Điều 10 như sau:",
+      "confidence": 0.5485927386897522,
+      "record_file": "page-002.json"
+    },
+    {
+      "article": "3",
+      "page": 2,
+      "line_index": 11,
+      "text": "Điều 3. Sửa đổi, bổ sung điểm b.2 khoản 8 Điều Il như sau:",
+      "confidence": 0.49533429206234325,
+      "record_file": "page-002.json"
+    },
+    {
+      "article": "4",
+      "page": 2,
+      "line_index": 30,
+      "text": "Điều 4. Sửa đổi, bổ sung một số điểm, khoản của Điều 13 như sau:",
+      "confidence": 0.8348114570660751,
+      "record_file": "page-002.json"
+    },
+    {
+      "article": "5",
+      "page": 4,
+      "line_index": 40,
+      "text": "Điều 5. Sửa đổi, bổ",
+      "confidence": 0.7372865976515588,
+      "record_file": "page-004.json"
+    },
+    {
+      "article": "6",
+      "page": 5,
+      "line_index": 59,
+      "text": "Điều 6. Sửa đổi, bổ sung điểm a khoản 1 Điều 20 như sau:",
+      "confidence": 0.7293942765314267,
+      "record_file": "page-005.json"
+    },
+    {
+      "article": "7",
+      "page": 5,
+      "line_index": 63,
+      "text": "Điều 7. Sửa đổi, bổ sung một số khoản của Điều 41 như sau:",
+      "confidence": 0.8735487173508886,
+      "record_file": "page-005.json"
+    },
+    {
+      "article": "8",
+      "page": 6,
+      "line_index": 7,
+      "text": "Điều 8. Bãi bỏ cụm từ tại một số đỉều của Nghị định số 126/2020/NĐ -",
+      "confidence": 0.7740732790037974,
+      "record_file": "page-006.json"
+    },
+    {
+      "article": "9",
+      "page": 6,
+      "line_index": 12,
+      "text": "Điều 9. Bãi bỏ một số điểm, một số khoản tại một số điều của Nghị",
+      "confidence": 0.8075323723457628,
+      "record_file": "page-006.json"
+    },
+    {
+      "article": "10",
+      "page": 6,
+      "line_index": 17,
+      "text": "Điều 10. Sửa đổi, bổ sung Phụ Iục I",
+      "confidence": 0.8316422487296196,
+      "record_file": "page-006.json"
+    },
+    {
+      "article": "11",
+      "page": 7,
+      "line_index": 8,
+      "text": "Điều 11, Sửa đổi, bổ sung Phụ lục II -",
+      "confidence": 0.7685753530283554,
+      "record_file": "page-007.json"
+    },
+    {
+      "article": "12",
+      "page": 7,
+      "line_index": 21,
+      "text": "Điều 12, Sửa đổi, bổ sung Phụ lục III",
+      "confidence": 0.622599147099925,
+      "record_file": "page-007.json"
+    },
+    {
+      "article": "13",
+      "page": 7,
+      "line_index": 40,
+      "text": "Điều 13. Điều khoản thi hành",
+      "confidence": 0.7706369812820097,
+      "record_file": "page-007.json"
+    },
+    {
+      "article": "8",
+      "page": 9,
+      "line_index": 23,
+      "text": "Điều 8",
+      "confidence": 0.9888835272523209,
+      "record_file": "page-009.json"
+    },
+    {
+      "article": "8",
+      "page": 9,
+      "line_index": 60,
+      "text": "Điều 8",
+      "confidence": 0.9962594603974806,
+      "record_file": "page-009.json"
+    },
+    {
+      "article": "8",
+      "page": 9,
+      "line_index": 69,
+      "text": "Điều 8",
+      "confidence": 0.6947293732597726,
+      "record_file": "page-009.json"
+    },
+    {
+      "article": "8",
+      "page": 10,
+      "line_index": 4,
+      "text": "Điều 8",
+      "confidence": 0.9983343524164787,
+      "record_file": "page-010.json"
+    },
+    {
+      "article": "8",
+      "page": 10,
+      "line_index": 32,
+      "text": "Điều 8",
+      "confidence": 0.9983879409047132,
+      "record_file": "page-010.json"
+    },
+    {
+      "article": "8",
+      "page": 10,
+      "line_index": 45,
+      "text": "Điều 8",
+      "confidence": 0.9955521909615582,
+      "record_file": "page-010.json"
+    },
+    {
+      "article": "8",
+      "page": 10,
+      "line_index": 58,
+      "text": "Điều 8",
+      "confidence": 0.9970456073434475,
+      "record_file": "page-010.json"
+    },
+    {
+      "article": "8",
+      "page": 10,
+      "line_index": 71,
+      "text": "Điều 8",
+      "confidence": 0.9973107836074268,
+      "record_file": "page-010.json"
+    },
+    {
+      "article": "8",
+      "page": 11,
+      "line_index": 10,
+      "text": "Điều 8",
+      "confidence": 0.7522457290643239,
+      "record_file": "page-011.json"
+    },
+    {
+      "article": "8",
+      "page": 11,
+      "line_index": 15,
+      "text": "Điều 8",
+      "confidence": 0.9926124846468056,
+      "record_file": "page-011.json"
+    },
+    {
+      "article": "8",
+      "page": 11,
+      "line_index": 22,
+      "text": "Điều 8",
+      "confidence": 0.997841608915092,
+      "record_file": "page-011.json"
+    },
+    {
+      "article": "8",
+      "page": 11,
+      "line_index": 37,
+      "text": "Điều 8",
+      "confidence": 0.6528984161745429,
+      "record_file": "page-011.json"
+    },
+    {
+      "article": "8",
+      "page": 12,
+      "line_index": 67,
+      "text": "Điều 8",
+      "confidence": 0.8439014696028702,
+      "record_file": "page-012.json"
+    },
+    {
+      "article": "8",
+      "page": 13,
+      "line_index": 18,
+      "text": "Điều 8",
+      "confidence": 0.9945447803972313,
+      "record_file": "page-013.json"
+    },
+    {
+      "article": "8",
+      "page": 13,
+      "line_index": 24,
+      "text": "Điều 8",
+      "confidence": 0.9987257643871134,
+      "record_file": "page-013.json"
+    },
+    {
+      "article": "8",
+      "page": 13,
+      "line_index": 36,
+      "text": "Điều 8",
+      "confidence": 0.9629467104515241,
+      "record_file": "page-013.json"
+    },
+    {
+      "article": "8",
+      "page": 13,
+      "line_index": 76,
+      "text": "Điều 8",
+      "confidence": 0.9931448379070531,
+      "record_file": "page-013.json"
+    },
+    {
+      "article": "8",
+      "page": 14,
+      "line_index": 22,
+      "text": "Điều 8",
+      "confidence": 0.9783686536934525,
+      "record_file": "page-014.json"
+    },
+    {
+      "article": "8",
+      "page": 15,
+      "line_index": 4,
+      "text": "Điều 8",
+      "confidence": 0.9986724097601819,
+      "record_file": "page-015.json"
+    },
+    {
+      "article": "8",
+      "page": 15,
+      "line_index": 27,
+      "text": "Điều 8",
+      "confidence": 0.7456555164858473,
+      "record_file": "page-015.json"
+    },
+    {
+      "article": "8",
+      "page": 15,
+      "line_index": 54,
+      "text": "Điều 8",
+      "confidence": 0.9955476603926112,
+      "record_file": "page-015.json"
+    },
+    {
+      "article": "8",
+      "page": 15,
+      "line_index": 71,
+      "text": "Điều 8",
+      "confidence": 0.9973347809285238,
+      "record_file": "page-015.json"
+    },
+    {
+      "article": "8",
+      "page": 16,
+      "line_index": 65,
+      "text": "Điều 8",
+      "confidence": 0.9841650469729872,
+      "record_file": "page-016.json"
+    },
+    {
+      "article": "8",
+      "page": 19,
+      "line_index": 50,
+      "text": "Điều 8",
+      "confidence": 0.9981244800961766,
+      "record_file": "page-019.json"
+    },
+    {
+      "article": "8",
+      "page": 20,
+      "line_index": 22,
+      "text": "Điều 8",
+      "confidence": 0.9955176942381619,
+      "record_file": "page-020.json"
+    },
+    {
+      "article": "8",
+      "page": 20,
+      "line_index": 39,
+      "text": "Điều 8",
+      "confidence": 0.9810522363867313,
+      "record_file": "page-020.json"
+    },
+    {
+      "article": "8",
+      "page": 20,
+      "line_index": 58,
+      "text": "Điều 8",
+      "confidence": 0.8879885883100309,
+      "record_file": "page-020.json"
+    },
+    {
+      "article": "8",
+      "page": 20,
+      "line_index": 81,
+      "text": "Điều 8",
+      "confidence": 0.9895382854327662,
+      "record_file": "page-020.json"
+    },
+    {
+      "article": "8",
+      "page": 21,
+      "line_index": 12,
+      "text": "Điều 8",
+      "confidence": 0.5217023987156122,
+      "record_file": "page-021.json"
+    },
+    {
+      "article": "8",
+      "page": 21,
+      "line_index": 40,
+      "text": "Điều 8",
+      "confidence": 0.9916341890137561,
+      "record_file": "page-021.json"
+    },
+    {
+      "article": "8",
+      "page": 21,
+      "line_index": 73,
+      "text": "Điều 8",
+      "confidence": 0.8335138527359809,
+      "record_file": "page-021.json"
+    },
+    {
+      "article": "8",
+      "page": 22,
+      "line_index": 30,
+      "text": "Điều 8",
+      "confidence": 0.984564113532484,
+      "record_file": "page-022.json"
+    },
+    {
+      "article": "8",
+      "page": 22,
+      "line_index": 48,
+      "text": "Điều 8",
+      "confidence": 0.7636788056497547,
+      "record_file": "page-022.json"
+    },
+    {
+      "article": "8",
+      "page": 23,
+      "line_index": 4,
+      "text": "Điều 8",
+      "confidence": 0.9302140184990387,
+      "record_file": "page-023.json"
+    },
+    {
+      "article": "8",
+      "page": 23,
+      "line_index": 36,
+      "text": "Điều 8",
+      "confidence": 0.9945321112544838,
+      "record_file": "page-023.json"
+    },
+    {
+      "article": "8",
+      "page": 23,
+      "line_index": 44,
+      "text": "Điều 8",
+      "confidence": 0.982322875716922,
+      "record_file": "page-023.json"
+    },
+    {
+      "article": "8",
+      "page": 23,
+      "line_index": 55,
+      "text": "Điều 8",
+      "confidence": 0.9973743233139074,
+      "record_file": "page-023.json"
+    },
+    {
+      "article": "8",
+      "page": 23,
+      "line_index": 60,
+      "text": "Điều 8",
+      "confidence": 0.990913766415504,
+      "record_file": "page-023.json"
+    },
+    {
+      "article": "8",
+      "page": 24,
+      "line_index": 5,
+      "text": "Điều 8",
+      "confidence": 0.9763313510479655,
+      "record_file": "page-024.json"
+    },
+    {
+      "article": "8",
+      "page": 25,
+      "line_index": 18,
+      "text": "Điều 8",
+      "confidence": 0.9962371301599019,
+      "record_file": "page-025.json"
+    },
+    {
+      "article": "12",
+      "page": 25,
+      "line_index": 23,
+      "text": "Điều 12",
+      "confidence": 0.8365843709588271,
+      "record_file": "page-025.json"
+    },
+    {
+      "article": "8",
+      "page": 25,
+      "line_index": 53,
+      "text": "Điều 8",
+      "confidence": 0.9956274296651715,
+      "record_file": "page-025.json"
+    },
+    {
+      "article": "8",
+      "page": 25,
+      "line_index": 66,
+      "text": "Điều 8",
+      "confidence": 0.9821806220531397,
+      "record_file": "page-025.json"
+    },
+    {
+      "article": "8",
+      "page": 26,
+      "line_index": 26,
+      "text": "Điều 8",
+      "confidence": 0.9969945988896745,
+      "record_file": "page-026.json"
+    },
+    {
+      "article": "8",
+      "page": 26,
+      "line_index": 48,
+      "text": "Điều 8",
+      "confidence": 0.997968711322635,
+      "record_file": "page-026.json"
+    },
+    {
+      "article": "8",
+      "page": 26,
+      "line_index": 63,
+      "text": "Điều 8",
+      "confidence": 0.9980532462476165,
+      "record_file": "page-026.json"
+    },
+    {
+      "article": "8",
+      "page": 26,
+      "line_index": 78,
+      "text": "Điều 8",
+      "confidence": 0.9829118675286987,
+      "record_file": "page-026.json"
+    },
+    {
+      "article": "8",
+      "page": 27,
+      "line_index": 19,
+      "text": "Điều 8",
+      "confidence": 0.9221546962448821,
+      "record_file": "page-027.json"
+    },
+    {
+      "article": "8",
+      "page": 27,
+      "line_index": 36,
+      "text": "Điều 8",
+      "confidence": 0.6183833689160261,
+      "record_file": "page-027.json"
+    },
+    {
+      "article": "8",
+      "page": 27,
+      "line_index": 66,
+      "text": "Điều 8",
+      "confidence": 0.8694605979996475,
+      "record_file": "page-027.json"
+    },
+    {
+      "article": "8",
+      "page": 28,
+      "line_index": 57,
+      "text": "Điều 8",
+      "confidence": 0.9844876391469577,
+      "record_file": "page-028.json"
+    },
+    {
+      "article": "8",
+      "page": 28,
+      "line_index": 66,
+      "text": "Điều 8",
+      "confidence": 0.9971070717127671,
+      "record_file": "page-028.json"
+    },
+    {
+      "article": "8",
+      "page": 29,
+      "line_index": 23,
+      "text": "Điều 8",
+      "confidence": 0.9959080674758055,
+      "record_file": "page-029.json"
+    },
+    {
+      "article": "8",
+      "page": 29,
+      "line_index": 39,
+      "text": "Điều 8",
+      "confidence": 0.9986296184969993,
+      "record_file": "page-029.json"
+    },
+    {
+      "article": "8",
+      "page": 29,
+      "line_index": 54,
+      "text": "Điều 8",
+      "confidence": 0.9971776571453871,
+      "record_file": "page-029.json"
+    },
+    {
+      "article": "8",
+      "page": 30,
+      "line_index": 62,
+      "text": "Điều 8",
+      "confidence": 0.9988633345848872,
+      "record_file": "page-030.json"
+    },
+    {
+      "article": "8",
+      "page": 31,
+      "line_index": 11,
+      "text": "Điều 8",
+      "confidence": 0.9961328751343453,
+      "record_file": "page-031.json"
+    },
+    {
+      "article": "9",
+      "page": 31,
+      "line_index": 23,
+      "text": "Điều 9",
+      "confidence": 0.7933692024998588,
+      "record_file": "page-031.json"
+    },
+    {
+      "article": "13",
+      "page": 61,
+      "line_index": 12,
+      "text": "Điều 13",
+      "confidence": 0.9981458499306637,
+      "record_file": "page-061.json"
+    },
+    {
+      "article": "16",
+      "page": 65,
+      "line_index": 16,
+      "text": "Điều 16",
+      "confidence": 0.9620454983558359,
+      "record_file": "page-065.json"
+    },
+    {
+      "article": "17",
+      "page": 65,
+      "line_index": 26,
+      "text": "Điều 17",
+      "confidence": 0.9895391444251664,
+      "record_file": "page-065.json"
+    },
+    {
+      "article": "17",
+      "page": 65,
+      "line_index": 32,
+      "text": "Điều 17",
+      "confidence": 0.9530989628437353,
+      "record_file": "page-065.json"
+    },
+    {
+      "article": "20",
+      "page": 65,
+      "line_index": 37,
+      "text": "Điều 20",
+      "confidence": 0.9945837376882062,
+      "record_file": "page-065.json"
+    },
+    {
+      "article": "21",
+      "page": 65,
+      "line_index": 49,
+      "text": "Điều 21",
+      "confidence": 0.9458087289783053,
+      "record_file": "page-065.json"
+    },
+    {
+      "article": "21",
+      "page": 65,
+      "line_index": 58,
+      "text": "Điều 21",
+      "confidence": 0.9778791412221558,
+      "record_file": "page-065.json"
+    },
+    {
+      "article": "23",
+      "page": 65,
+      "line_index": 66,
+      "text": "Điều 23",
+      "confidence": 0.9030728317393745,
+      "record_file": "page-065.json"
+    },
+    {
+      "article": "23",
+      "page": 65,
+      "line_index": 71,
+      "text": "Điều 23",
+      "confidence": 0.9981713562335277,
+      "record_file": "page-065.json"
+    },
+    {
+      "article": "31",
+      "page": 65,
+      "line_index": 84,
+      "text": "Điều 31",
+      "confidence": 0.9526266475221645,
+      "record_file": "page-065.json"
+    },
+    {
+      "article": "32",
+      "page": 66,
+      "line_index": 3,
+      "text": "Điều 32",
+      "confidence": 0.9651105468694765,
+      "record_file": "page-066.json"
+    },
+    {
+      "article": "33",
+      "page": 66,
+      "line_index": 14,
+      "text": "Điều 33",
+      "confidence": 0.9870584267479328,
+      "record_file": "page-066.json"
+    },
+    {
+      "article": "33",
+      "page": 66,
+      "line_index": 27,
+      "text": "Điều 33",
+      "confidence": 0.8889779075337816,
+      "record_file": "page-066.json"
+    },
+    {
+      "article": "34",
+      "page": 66,
+      "line_index": 36,
+      "text": "Điều 34",
+      "confidence": 0.7670918658784284,
+      "record_file": "page-066.json"
+    },
+    {
+      "article": "35",
+      "page": 66,
+      "line_index": 55,
+      "text": "Điều 35",
+      "confidence": 0.9859110203628807,
+      "record_file": "page-066.json"
+    },
+    {
+      "article": "36",
+      "page": 66,
+      "line_index": 68,
+      "text": "Điều 36",
+      "confidence": 0.7344131723377104,
+      "record_file": "page-066.json"
+    },
+    {
+      "article": "37",
+      "page": 66,
+      "line_index": 77,
+      "text": "Điều 37",
+      "confidence": 0.9984187222818356,
+      "record_file": "page-066.json"
+    },
+    {
+      "article": "37",
+      "page": 66,
+      "line_index": 84,
+      "text": "Điều 37",
+      "confidence": 0.9930685964277286,
+      "record_file": "page-066.json"
+    },
+    {
+      "article": "39",
+      "page": 67,
+      "line_index": 8,
+      "text": "Điều 39",
+      "confidence": 0.998555954149731,
+      "record_file": "page-067.json"
+    },
+    {
+      "article": "39",
+      "page": 67,
+      "line_index": 14,
+      "text": "Điều 39",
+      "confidence": 0.9988523689101289,
+      "record_file": "page-067.json"
+    },
+    {
+      "article": "39",
+      "page": 67,
+      "line_index": 19,
+      "text": "Điều 39",
+      "confidence": 0.7848849419136559,
+      "record_file": "page-067.json"
+    },
+    {
+      "article": "39",
+      "page": 67,
+      "line_index": 33,
+      "text": "Điều 39",
+      "confidence": 0.9987661419413518,
+      "record_file": "page-067.json"
+    },
+    {
+      "article": "39",
+      "page": 67,
+      "line_index": 36,
+      "text": "Điều 39",
+      "confidence": 0.8526565383115879,
+      "record_file": "page-067.json"
+    },
+    {
+      "article": "41",
+      "page": 67,
+      "line_index": 47,
+      "text": "Điều 41",
+      "confidence": 0.9961489188530611,
+      "record_file": "page-067.json"
+    }
+  ],
+  "limitations": "Heuristic headings may be missing or refer to amendments; verify against original pages."
+}
