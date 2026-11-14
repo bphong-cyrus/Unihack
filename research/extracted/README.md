@@ -20,4 +20,4 @@ Với Thông tư 11/2020/TT-BCT, `ocr-112020ttbct-01/` và `ocr-112020ttbct-02/`
 
 `312018ndcp-heading-candidates.json` là chỉ mục tương tự cho Nghị định 31/2018/NĐ-CP. Có 35 dòng ứng viên mang số 1–35; trong đó hai dòng 7 và 8 có dấu câu bị OCR đọc sai hoặc bỏ sót. Kết quả có thể thiếu hoặc nhầm dòng và chưa được đối chiếu bản gốc hay rà soát hiệu lực.
 
-`1282020ndcp-heading-candidates.json` là chỉ mục tương tự cho Nghị định 128/2020/NĐ-CP. Có 38 dòng ứng viên mang số 1–37, trong đó số 28 xuất hiện hai lần và phải được kiểm tra với trang gốc. Chỉ mục này chưa được duyệt, không xác nhận cấu trúc văn bản hoặc hiệu lực.
+`1282020ndcp-heading-candidates.json` là chỉ mục tương tự cho Nghị định 128/2020/NĐ-CP. Có 37 dòng ứng viên mang số 1–37. Dòng OCR dẫn chiếu nhiều điều tại trang 34 không còn được tính là tiêu đề. Chỉ mục này chưa được duyệt, không xác nhận cấu trúc văn bản hoặc hiệu lực.

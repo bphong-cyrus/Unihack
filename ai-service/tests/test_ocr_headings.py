@@ -56,3 +56,14 @@ class HeadingTests(unittest.TestCase):
                       'lines': [{'text': 'Điều 7_', 'confidence': 0.5}, {'text': 'Điều 8', 'confidence': 0.5}]}
             (root / 'page-001.json').write_text(json.dumps(record))
             self.assertEqual([x['article'] for x in find_headings(root)['candidates']], ['7', '8'])
+
+    def test_references_to_multiple_articles_are_not_heading_candidates(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            (root / 'source.pdf').write_bytes(b'pdf')
+            record = {'document_id': 'A', 'source_file': 'source.pdf', 'source_sha256': hashlib.sha256(b'pdf').hexdigest(),
+                      'page': 1, 'page_count': 1, 'review_status': 'UNREVIEWED',
+                      'lines': [{'text': 'Điều 28, 29, 30 Nghị định này', 'confidence': 0.7},
+                                {'text': 'Điều 28. Thẩm quyền xử phạt', 'confidence': 0.8}]}
+            (root / 'page-001.json').write_text(json.dumps(record))
+            self.assertEqual([x['line_index'] for x in find_headings(root)['candidates']], [1])
