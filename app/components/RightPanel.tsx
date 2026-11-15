@@ -75,7 +75,6 @@ export default function RightPanel({
   onConnectExpert
 }: RightPanelProps) {
   const editorRef = useRef<HTMLDivElement>(null);
-  const [copiedTx, setCopiedTx] = useState<string>("");
   const [copiedMemo, setCopiedMemo] = useState<boolean>(false);
 
   useEffect(() => {
@@ -100,8 +99,6 @@ export default function RightPanel({
     ? 100
     : 0;
 
-  const onchain = activeAssistantMsg?.onchain;
-
   function applyFormat(cmd: string) {
     if (typeof document !== "undefined") {
       document.execCommand(cmd, false);
@@ -114,14 +111,6 @@ export default function RightPanel({
       navigator.clipboard.writeText(text);
       setCopiedMemo(true);
       setTimeout(() => setCopiedMemo(false), 1800);
-    }
-  }
-
-  function handleCopyHash(val: string, label: string) {
-    if (val && navigator.clipboard) {
-      navigator.clipboard.writeText(val);
-      setCopiedTx(label);
-      setTimeout(() => setCopiedTx(""), 1600);
     }
   }
 
@@ -268,17 +257,17 @@ export default function RightPanel({
                         style={{
                           fontSize: 10.5,
                           fontWeight: 700,
-                          padding: "2px 7px",
+                          padding: "2px 8px",
                           borderRadius: 999,
                           background:
-                            currentCheck && !currentCheck.is_in_force ? "#fee2e2" : "#e0f2fe",
+                            currentCheck && !currentCheck.is_in_force ? "#fee2e2" : "#ecfdf5",
                           color:
-                            currentCheck && !currentCheck.is_in_force ? "#991b1b" : "#0369a1"
+                            currentCheck && !currentCheck.is_in_force ? "#991b1b" : "#047857"
                         }}
                       >
                         {currentCheck && !currentCheck.is_in_force
-                          ? "Chưa có dữ liệu phù hợp"
-                          : "Phù hợp dữ liệu đã nhập"}
+                          ? "Hết hiệu lực"
+                          : "Đang có hiệu lực"}
                       </span>
                     </div>
 
@@ -288,81 +277,9 @@ export default function RightPanel({
                     </div>
                   </div>
 
-                  {/* 4-Gate Deterministic Validator Breakdown */}
-                  {currentCheck && (
-                    <div
-                      style={{
-                        background: "#f8fafc",
-                        border: "1px solid #e2e8f0",
-                        borderRadius: 10,
-                        padding: "10px 12px",
-                        marginBottom: 12
-                      }}
-                    >
-                      <div
-                        style={{
-                          fontSize: 10.5,
-                          fontWeight: 700,
-                          color: "#64748b",
-                          textTransform: "uppercase",
-                          letterSpacing: "0.04em",
-                          marginBottom: 7
-                        }}
-                      >
-                        4 Chốt chặn Deterministic Validator
-                      </div>
-                      <div
-                        style={{
-                          display: "grid",
-                          gridTemplateColumns: "1fr 1fr",
-                          gap: 6,
-                          fontSize: 11.5
-                        }}
-                      >
-                        <div style={{ color: currentCheck.doc_exists ? "#047857" : "#b91c1c" }}>
-                          {currentCheck.doc_exists ? "✓" : "✕"} Tồn tại VB (25%)
-                        </div>
-                        <div
-                          style={{
-                            color: currentCheck.article_clause_exists ? "#047857" : "#b91c1c"
-                          }}
-                        >
-                          {currentCheck.article_clause_exists ? "✓" : "✕"} Đúng Điều/Khoản (25%)
-                        </div>
-                        <div style={{ color: currentCheck.is_in_force ? "#047857" : "#b91c1c" }}>
-                          {currentCheck.is_in_force ? "✓" : "✕"} Trạng thái theo dữ liệu (20%)
-                        </div>
-                        <div
-                          style={{
-                            color:
-                              currentCheck.excerpt_similarity >= 0.9 ? "#047857" : "#b91c1c"
-                          }}
-                        >
-                          {currentCheck.excerpt_similarity >= 0.9 ? "✓" : "✕"} Nguyên văn{" "}
-                          {Math.round(currentCheck.excerpt_similarity * 100)}% (≥90%)
-                        </div>
-                      </div>
-                      {currentCheck.fail_reason && (
-                        <div
-                          className="font-mono"
-                          style={{
-                            marginTop: 7,
-                            fontSize: 11,
-                            color: "#991b1b",
-                            background: "#fef2f2",
-                            padding: "4px 7px",
-                            borderRadius: 6
-                          }}
-                        >
-                          Lý do từ chối: {currentCheck.fail_reason}
-                        </div>
-                      )}
-                    </div>
-                  )}
-
                   {currentCheck?.source_url && currentCheck.source_url.startsWith("https://") && (
                     <p style={{ fontSize: 12, margin: "0 0 12px" }}>
-                      <a href={currentCheck.source_url} target="_blank" rel="noreferrer">Xem nguồn được khai báo ↗</a>
+                      <a href={currentCheck.source_url} target="_blank" rel="noreferrer">Xem nguồn văn bản gốc ↗</a>
                       {activeAssistantMsg?.validation?.as_of && ` · Ngày tra cứu: ${activeAssistantMsg.validation.as_of}`}
                     </p>
                   )}
@@ -378,7 +295,7 @@ export default function RightPanel({
                         textTransform: "uppercase"
                       }}
                     >
-                      Nguyên văn Điều/Khoản trong Corpus:
+                      Trích lục văn bản pháp luật:
                     </div>
                     {currentCheck?.raw_text ? (
                       <div>
@@ -423,107 +340,8 @@ export default function RightPanel({
                   }}
                 >
                   {activeAssistantMsg
-                    ? "Không có trích dẫn phù hợp trong dữ liệu mẫu. Không có giao dịch thanh toán."
-                    : "Chọn một câu hỏi hoặc gửi tra cứu mới để đối chiếu nguyên văn Điều/Khoản tại đây."}
-                </div>
-              )}
-            </div>
-
-            {/* Dark Slate On-chain Proof Footer */}
-            <div className="dark-audit-footer">
-              <div
-                style={{
-                  display: "flex",
-                  justifyContent: "space-between",
-                  alignItems: "center",
-                  marginBottom: 5
-                }}
-              >
-                <span className="font-mono" style={{ color: "#94a3b8" }}>
-                  Source: AskPay_XNK_Corpus
-                </span>
-                <span
-                  style={{
-                    color:
-                      onchain?.mode === "LIVE_AVALANCHE"
-                        ? "#34d399"
-                        : onchain?.mode === "SAMPLE_SHOWCASE"
-                        ? "#60a5fa"
-                        : "#fbbf24",
-                    fontWeight: 600
-                  }}
-                >
-                  {onchain?.mode === "LIVE_AVALANCHE"
-                    ? "Verified by L1 Node (663010)"
-                    : onchain?.mode === "SAMPLE_SHOWCASE"
-                    ? "Dữ liệu mẫu đối chiếu"
-                    : "Simulated Preview Mode"}
-                </span>
-              </div>
-
-              {onchain ? (
-                <div style={{ display: "flex", flexDirection: "column", gap: 3 }}>
-                  <div
-                    style={{
-                      display: "flex",
-                      justifyContent: "space-between",
-                      alignItems: "center",
-                      gap: 8
-                    }}
-                  >
-                    <span className="font-mono" style={{ color: "#e2e8f0", fontSize: 11 }}>
-                      L1 Tx: {onchain.l1ReceiptTxHash.slice(0, 12)}...
-                      {onchain.l1ReceiptTxHash.slice(-6)}
-                    </span>
-                    <button
-                      type="button"
-                      onClick={() => handleCopyHash(onchain.l1ReceiptTxHash, "l1")}
-                      style={{
-                        background: "rgba(255,255,255,0.08)",
-                        border: "none",
-                        color: "#cbd5e1",
-                        fontSize: 10.5,
-                        padding: "2px 6px",
-                        borderRadius: 4,
-                        cursor: "pointer"
-                      }}
-                    >
-                      {copiedTx === "l1" ? "Đã chép" : "Copy"}
-                    </button>
-                  </div>
-                  <div
-                    style={{
-                      display: "flex",
-                      justifyContent: "space-between",
-                      alignItems: "center",
-                      gap: 8
-                    }}
-                  >
-                    <span className="font-mono" style={{ color: "#94a3b8", fontSize: 11 }}>
-                      Fuji:{" "}
-                      {onchain.mode === "LIVE_AVALANCHE" && !onchain.escrowTxHash
-                        ? "Ghi biên lai L1 (Chưa ký ví)"
-                        : onchain.settlementStatus === "RELEASED_TO_TREASURY"
-                        ? "Giải ngân Escrow"
-                        : "Hoàn tiền 100%"}
-                    </span>
-                    {onchain.mode === "LIVE_AVALANCHE" &&
-                      Boolean(onchain.escrowTxHash) &&
-                      onchain.fujiSettlementTxHash.startsWith("0x") && (
-                        <a
-                          href={`https://testnet.snowtrace.io/tx/${onchain.fujiSettlementTxHash}`}
-                          target="_blank"
-                          rel="noreferrer"
-                          style={{ color: "#38bdf8", fontSize: 11, textDecoration: "none" }}
-                        >
-                          Snowtrace ↗
-                        </a>
-                      )}
-                  </div>
-                </div>
-              ) : (
-                <div className="font-mono" style={{ color: "#64748b", fontSize: 11 }}>
-                  Escrow Contract: 0xb4fc75...2108
+                    ? "Không tìm thấy trích dẫn phù hợp hoặc văn bản đã hết hiệu lực. Giao dịch sẽ được hoàn phí tự động."
+                    : "Chọn một câu hỏi hoặc gửi tra cứu mới để đối chiếu trích dẫn pháp luật tại đây."}
                 </div>
               )}
             </div>

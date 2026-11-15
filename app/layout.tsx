@@ -15,9 +15,9 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata = {
-  title: "AskPay XNK — Trợ lý Pháp luật Hải quan & Xuất Nhập Khẩu On-chain",
+  title: "AskPay — Nền tảng Trợ lý & Tư vấn Pháp lý Thông minh",
   description:
-    "Tra cứu pháp luật Hải quan, mã HS, C/O và thuế XNK theo mô hình Pay-per-Answer bảo chứng bằng Smart Contract Escrow trên Avalanche."
+    "AskPay — Nền tảng tra cứu, đối chiếu văn bản pháp luật và kết nối chuyên gia tư vấn theo mô hình Pay-per-Answer."
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
