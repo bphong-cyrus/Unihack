@@ -1,7 +1,10 @@
+from collections import Counter
+from datetime import date
 import hashlib
 import json
+from math import log
+import re
 import time
-from datetime import date
 from typing import Annotated, List, Literal, Optional
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
@@ -122,6 +125,454 @@ CORPUS_RECORDS = [
         ),
     },
     {
+        "doc_id": "05/2017/QH14",
+        "doc_title": "Luật Quản lý ngoại thương năm 2017",
+        "article": "67",
+        "clause": "1",
+        "status": "ACTIVE",
+        "effective_date": "2018-01-01",
+        "raw_text": (
+            "Các biện pháp phòng vệ thương mại đối với hàng hóa nhập khẩu vào Việt Nam bao gồm "
+            "biện pháp chống bán phá giá, biện pháp chống trợ cấp và biện pháp tự vệ do Bộ trưởng "
+            "Bộ Công Thương quyết định áp dụng theo trình tự điều tra quy định tại Luật này."
+        ),
+    },
+    {
+        "doc_id": "36/2005/QH11",
+        "doc_title": "Luật Thương mại năm 2005",
+        "article": "28",
+        "clause": "1",
+        "status": "ACTIVE",
+        "effective_date": "2006-01-01",
+        "raw_text": (
+            "Xuất khẩu hàng hóa là việc hàng hóa được đưa ra khỏi lãnh thổ Việt Nam hoặc đưa vào "
+            "khu vực đặc biệt nằm trên lãnh thổ Việt Nam được coi là khu vực hải quan riêng theo "
+            "quy định của pháp luật."
+        ),
+    },
+    {
+        "doc_id": "38/2019/QH14",
+        "doc_title": "Luật Quản lý thuế năm 2019",
+        "article": "42",
+        "clause": "1",
+        "status": "ACTIVE",
+        "effective_date": "2020-07-01",
+        "raw_text": (
+            "Người nộp thuế phải khai chính xác, trung thực, đầy đủ các nội dung trong tờ khai "
+            "thuế theo mẫu do Bộ trưởng Bộ Tài chính quy định và nộp đủ các loại chứng từ, tài liệu "
+            "liên quan trong hồ sơ thuế cho cơ quan quản lý thuế."
+        ),
+    },
+    {
+        "doc_id": "08/2015/NĐ-CP",
+        "doc_title": "Nghị định quy định chi tiết và biện pháp thi hành Luật Hải quan về thủ tục hải quan, kiểm tra, giám sát, kiểm soát hải quan",
+        "article": "19",
+        "clause": "1",
+        "status": "ACTIVE",
+        "effective_date": "2015-03-15",
+        "raw_text": (
+            "Căn cứ kết quả phân tích, đánh giá rủi ro và thông tin liên quan đến hàng hóa xuất khẩu, "
+            "nhập khẩu, Hệ thống xử lý dữ liệu điện tử hải quan thực hiện phân luồng tờ khai hải quan "
+            "gồm luồng xanh, luồng vàng hoặc luồng đỏ để quyết định thông quan hoặc kiểm tra thực tế hàng hóa."
+        ),
+    },
+    {
+        "doc_id": "59/2018/NĐ-CP",
+        "doc_title": "Nghị định sửa đổi, bổ sung một số điều của Nghị định 08/2015/NĐ-CP về thủ tục hải quan, kiểm tra, giám sát, kiểm soát hải quan",
+        "article": "1",
+        "clause": "9",
+        "status": "ACTIVE",
+        "effective_date": "2018-06-05",
+        "raw_text": (
+            "Cơ quan hải quan căn cứ hồ sơ hải quan, chứng từ thực tế của hàng hóa xuất khẩu, nhập khẩu "
+            "để xác định trị giá hải quan theo nguyên tắc và phương pháp quy định, đồng thời thực hiện "
+            "kiểm tra sau thông quan đối với các trường hợp có dấu hiệu rủi ro."
+        ),
+    },
+    {
+        "doc_id": "69/2018/NĐ-CP",
+        "doc_title": "Nghị định quy định chi tiết một số điều của Luật Quản lý ngoại thương",
+        "article": "13",
+        "clause": "1",
+        "status": "ACTIVE",
+        "effective_date": "2018-05-15",
+        "raw_text": (
+            "Thương nhân Việt Nam được quyền kinh doanh tạm nhập, tái xuất hàng hóa theo quy định; "
+            "đối với hàng hóa thuộc danh mục cấm xuất khẩu, cấm nhập khẩu hoặc kinh doanh có điều kiện "
+            "phải có giấy phép kinh doanh tạm nhập, tái xuất của Bộ Công Thương."
+        ),
+    },
+    {
+        "doc_id": "134/2016/NĐ-CP",
+        "doc_title": "Nghị định quy định chi tiết một số điều và biện pháp thi hành Luật Thuế xuất khẩu, thuế nhập khẩu",
+        "article": "10",
+        "clause": "1",
+        "status": "ACTIVE",
+        "effective_date": "2016-09-01",
+        "raw_text": (
+            "Hàng hóa nhập khẩu để gia công, sản phẩm gia công xuất khẩu được miễn thuế xuất khẩu, "
+            "thuế nhập khẩu theo quy định tại Luật Thuế xuất khẩu, thuế nhập khẩu khi người nộp thuế "
+            "có hợp đồng gia công và cơ sở gia công, sản xuất theo quy định."
+        ),
+    },
+    {
+        "doc_id": "18/2021/NĐ-CP",
+        "doc_title": "Nghị định sửa đổi, bổ sung một số điều của Nghị định 134/2016/NĐ-CP hướng dẫn Luật Thuế xuất khẩu, thuế nhập khẩu",
+        "article": "1",
+        "clause": "6",
+        "status": "ACTIVE",
+        "effective_date": "2021-04-25",
+        "raw_text": (
+            "Hàng hóa nhập khẩu để sản xuất hàng hóa xuất khẩu được miễn thuế nhập khẩu kể cả trường hợp "
+            "giao một phần hoặc toàn bộ hàng hóa nhập khẩu để thuê tổ chức, cá nhân khác gia công lại "
+            "khi đáp ứng đầy đủ điều kiện về cơ sở sản xuất và thông báo hợp đồng với cơ quan hải quan."
+        ),
+    },
+    {
+        "doc_id": "102/2021/NĐ-CP",
+        "doc_title": "Nghị định sửa đổi, bổ sung các Nghị định quy định xử phạt vi phạm hành chính trong lĩnh vực thuế, hóa đơn; hải quan",
+        "article": "2",
+        "clause": "1",
+        "status": "ACTIVE",
+        "effective_date": "2022-01-01",
+        "raw_text": (
+            "Thời hiệu xử phạt vi phạm hành chính trong lĩnh vực hải quan được xác định theo tính chất "
+            "hành vi vi phạm về thủ tục hải quan, khai bổ sung hồ sơ hoặc trốn thuế, gian lận thuế đối với "
+            "hàng hóa xuất khẩu, nhập khẩu theo quy định của Luật Xử lý vi phạm hành chính."
+        ),
+    },
+    {
+        "doc_id": "126/2020/NĐ-CP",
+        "doc_title": "Nghị định quy định chi tiết một số điều của Luật Quản lý thuế",
+        "article": "21",
+        "clause": "1",
+        "status": "ACTIVE",
+        "effective_date": "2020-12-05",
+        "raw_text": (
+            "Cá nhân là người đại diện theo pháp luật của người nộp thuế thuộc trường hợp đang bị cưỡng chế "
+            "thi hành quyết định hành chính về quản lý thuế chưa hoàn thành nghĩa vụ nộp thuế sẽ bị áp dụng "
+            "biện pháp tạm hoãn xuất cảnh theo quy định của pháp luật."
+        ),
+    },
+    {
+        "doc_id": "111/2021/NĐ-CP",
+        "doc_title": "Nghị định sửa đổi, bổ sung một số điều Nghị định 43/2017/NĐ-CP về nhãn hàng hóa",
+        "article": "1",
+        "clause": "5",
+        "status": "ACTIVE",
+        "effective_date": "2022-02-15",
+        "raw_text": (
+            "Nhãn gốc của hàng hóa nhập khẩu vào Việt Nam bắt buộc phải thể hiện tên hàng hóa, xuất xứ "
+            "hàng hóa và tên hoặc tên viết tắt của tổ chức, cá nhân sản xuất hoặc tổ chức, cá nhân chịu "
+            "trách nhiệm về hàng hóa ở nước ngoài bằng tiếng nước ngoài hoặc tiếng Việt."
+        ),
+    },
+    {
+        "doc_id": "14/2015/TT-BTC",
+        "doc_title": "Thông tư hướng dẫn về phân loại hàng hóa, phân tích để phân loại hàng hóa; phân tích để kiểm tra chất lượng, kiểm tra an toàn thực phẩm",
+        "article": "4",
+        "clause": "1",
+        "status": "ACTIVE",
+        "effective_date": "2015-03-16",
+        "raw_text": (
+            "Việc phân loại hàng hóa xuất khẩu, nhập khẩu phải căn cứ vào hồ sơ hải quan, tài liệu kỹ thuật "
+            "và các thông tin về thành phần, tính chất lý hóa, công dụng của hàng hóa theo Danh mục hàng hóa "
+            "xuất khẩu, nhập khẩu Việt Nam."
+        ),
+    },
+    {
+        "doc_id": "17/2021/TT-BTC",
+        "doc_title": "Thông tư sửa đổi, bổ sung một số điều tại Thông tư 14/2015/TT-BTC hướng dẫn về phân loại hàng hóa, phân tích để phân loại hàng hóa",
+        "article": "1",
+        "clause": "3",
+        "status": "ACTIVE",
+        "effective_date": "2021-04-12",
+        "raw_text": (
+            "Thông báo kết quả phân loại hàng hóa hoặc thông báo kết quả phân tích kèm mã số hàng hóa do "
+            "Tổng cục Hải quan ban hành là cơ sở để áp dụng mức thuế và thực hiện thủ tục thông quan đối với "
+            "hàng hóa xuất khẩu, nhập khẩu."
+        ),
+    },
+    {
+        "doc_id": "39/2015/TT-BTC",
+        "doc_title": "Thông tư quy định về trị giá hải quan đối với hàng hóa xuất khẩu, nhập khẩu",
+        "article": "5",
+        "clause": "1",
+        "status": "ACTIVE",
+        "effective_date": "2015-04-01",
+        "raw_text": (
+            "Trị giá hải quan của hàng hóa nhập khẩu là giá thực tế phải trả tính đến cửa khẩu nhập đầu tiên, "
+            "được xác định lần lượt theo sáu phương pháp từ phương pháp trị giá giao dịch cho đến phương pháp "
+            "suy luận và dừng ngay tại phương pháp xác định được trị giá hải quan."
+        ),
+    },
+    {
+        "doc_id": "60/2019/TT-BTC",
+        "doc_title": "Thông tư sửa đổi, bổ sung một số điều của Thông tư 39/2015/TT-BTC quy định về trị giá hải quan",
+        "article": "1",
+        "clause": "4",
+        "status": "ACTIVE",
+        "effective_date": "2019-10-15",
+        "raw_text": (
+            "Trường hợp có nghi vấn về trị giá khai báo, cơ quan hải quan thông báo cơ sở nghi vấn và thực hiện "
+            "tham vấn trị giá hải quan với người khai hải quan hoặc áp dụng cơ chế tham vấn một lần đối với "
+            "doanh nghiệp đủ điều kiện theo quy định."
+        ),
+    },
+    {
+        "doc_id": "06/2021/TT-BTC",
+        "doc_title": "Thông tư hướng dẫn thi hành một số điều của Luật Quản lý thuế đối với hàng hóa xuất khẩu, nhập khẩu",
+        "article": "13",
+        "clause": "1",
+        "status": "ACTIVE",
+        "effective_date": "2021-03-08",
+        "raw_text": (
+            "Tiền thuế, tiền chậm nộp, tiền phạt nộp thừa đối với hàng hóa xuất khẩu, nhập khẩu được xử lý "
+            "bù trừ với số tiền còn nợ hoặc hoàn trả cho người nộp thuế theo trình tự, hồ sơ kiểm tra chứng từ "
+            "tại cơ quan hải quan nơi phát sinh khoản nộp thừa."
+        ),
+    },
+    {
+        "doc_id": "05/2018/TT-BCT",
+        "doc_title": "Thông tư quy định về xuất xứ hàng hóa",
+        "article": "6",
+        "clause": "1",
+        "status": "ACTIVE",
+        "effective_date": "2018-04-03",
+        "raw_text": (
+            "Hàng hóa có xuất xứ không thuần túy được coi là có xuất xứ khi đáp ứng tiêu chí chuyển đổi mã số "
+            "hàng hóa (CTC) hoặc tiêu chí tỷ lệ phần trăm giá trị (LVC) theo quy định cụ thể tại các Phụ lục "
+            "kèm theo Thông tư về quy tắc xuất xứ hàng hóa."
+        ),
+    },
+    {
+        "doc_id": "38/2018/TT-BCT",
+        "doc_title": "Thông tư quy định thực hiện chứng nhận xuất xứ hàng hóa theo chế độ ưu đãi thuế quan phổ cập (GSP)",
+        "article": "4",
+        "clause": "1",
+        "status": "ACTIVE",
+        "effective_date": "2018-12-14",
+        "raw_text": (
+            "Thương nhân xuất khẩu hàng hóa sang Liên minh Châu Âu, Na Uy, Thụy Sĩ và Thổ Nhĩ Kỳ để hưởng "
+            "chế độ ưu đãi thuế quan phổ cập (GSP) phải đăng ký mã số tự chứng nhận xuất xứ hàng hóa (mã số REX) "
+            "với cơ quan có thẩm quyền do Bộ Công Thương ủy quyền."
+        ),
+    },
+    {
+        "doc_id": "22/2016/TT-BCT",
+        "doc_title": "Thông tư thực hiện Quy tắc xuất xứ hàng hóa trong Hiệp định Thương mại hàng hóa ASEAN (ATIGA)",
+        "article": "2",
+        "clause": "1",
+        "status": "ACTIVE",
+        "effective_date": "2016-11-15",
+        "raw_text": (
+            "Hàng hóa xuất khẩu giữa các nước thành viên ASEAN để được hưởng ưu đãi thuế quan theo Hiệp định ATIGA "
+            "phải đáp ứng quy tắc xuất xứ hàng hóa và được cấp Giấy chứng nhận xuất xứ hàng hóa C/O mẫu D hợp lệ."
+        ),
+    },
+    {
+        "doc_id": "11/2020/TT-BCT",
+        "doc_title": "Thông tư quy định Quy tắc xuất xứ hàng hóa trong Hiệp định Thương mại tự do giữa Việt Nam và Liên minh Châu Âu (EVFTA)",
+        "article": "5",
+        "clause": "1",
+        "status": "ACTIVE",
+        "effective_date": "2020-08-01",
+        "raw_text": (
+            "Hàng hóa có xuất xứ Việt Nam xuất khẩu sang Liên minh Châu Âu trong Hiệp định EVFTA được áp dụng "
+            "cơ chế chứng nhận xuất xứ thông qua C/O mẫu EUR.1 do cơ quan có thẩm quyền cấp hoặc chứng từ tự "
+            "chứng nhận xuất xứ đối với lô hàng có trị giá không quá 6.000 EUR."
+        ),
+    },
+    {
+        "doc_id": "03/2019/TT-BCT",
+        "doc_title": "Thông tư quy định Quy tắc xuất xứ hàng hóa trong Hiệp định Đối tác Toàn diện và Tiến bộ xuyên Thái Bình Dương (CPTPP)",
+        "article": "4",
+        "clause": "1",
+        "status": "ACTIVE",
+        "effective_date": "2019-03-08",
+        "raw_text": (
+            "Hàng hóa được coi là có xuất xứ theo Hiệp định CPTPP khi có xuất xứ thuần túy, được sản xuất toàn bộ "
+            "từ nguyên liệu có xuất xứ hoặc đáp ứng yêu cầu quy tắc cụ thể mặt hàng và được cấp chứng từ chứng nhận "
+            "xuất xứ C/O mẫu CPTPP theo quy định."
+        ),
+    },
+    {
+        "doc_id": "12/2019/TT-BCT",
+        "doc_title": "Thông tư quy định Quy tắc xuất xứ hàng hóa trong Hiệp định khung về hợp tác kinh tế toàn diện ASEAN - Trung Quốc (ACFTA)",
+        "article": "1",
+        "clause": "1",
+        "status": "ACTIVE",
+        "effective_date": "2019-09-12",
+        "raw_text": (
+            "Hàng hóa xuất nhập khẩu trong Hiệp định khung về hợp tác kinh tế toàn diện ASEAN - Trung Quốc (ACFTA) "
+            "áp dụng quy tắc xuất xứ theo tỷ lệ giá trị khu vực tối thiểu 40% hoặc quy tắc cụ thể mặt hàng và sử dụng "
+            "Giấy chứng nhận xuất xứ hàng hóa C/O mẫu E."
+        ),
+    },
+    {
+        "doc_id": "10/2022/TT-BCT",
+        "doc_title": "Thông tư sửa đổi, bổ sung các Thông tư quy định thực hiện Quy tắc xuất xứ hàng hóa trong Hiệp định ATIGA",
+        "article": "1",
+        "clause": "1",
+        "status": "ACTIVE",
+        "effective_date": "2022-07-16",
+        "raw_text": (
+            "Cơ quan, tổ chức cấp C/O thực hiện cấp và truyền dữ liệu Giấy chứng nhận xuất xứ hàng hóa C/O mẫu D "
+            "dưới dạng điện tử thông qua Cơ chế một cửa quốc gia để kết nối trao đổi với Cơ chế một cửa ASEAN "
+            "theo quy định của Hiệp định ATIGA."
+        ),
+    },
+    {
+        "doc_id": "03/2023/TT-BCT",
+        "doc_title": "Thông tư sửa đổi, bổ sung một số điều của Thông tư 22/2016/TT-BCT thực hiện Quy tắc xuất xứ hàng hóa trong Hiệp định ATIGA",
+        "article": "1",
+        "clause": "1",
+        "status": "ACTIVE",
+        "effective_date": "2023-04-01",
+        "raw_text": (
+            "Ban hành Danh mục Quy tắc cụ thể mặt hàng (PSR) mới trong Hiệp định ATIGA được chuyển đổi tương thích "
+            "theo Danh mục Hệ thống hài hòa mô tả và mã hóa hàng hóa phiên bản HS 2022 thay thế phụ lục quy tắc "
+            "mặt hàng cũ."
+        ),
+    },
+    {
+        "doc_id": "167/2025/NĐ-CP",
+        "doc_title": "Nghị định sửa đổi, bổ sung một số điều của Nghị định 08/2015/NĐ-CP về thủ tục hải quan, kiểm tra, giám sát, kiểm soát hải quan",
+        "article": "1",
+        "clause": "1",
+        "status": "ACTIVE",
+        "effective_date": "2025-08-15",
+        "raw_text": (
+            "Đẩy mạnh hiện đại hóa thủ tục hải quan điện tử, thực hiện tiếp nhận chứng từ số, giám sát tự động "
+            "hàng hóa xuất khẩu, nhập khẩu tại cảng biển, sân bay và cửa khẩu đường bộ thông qua kết nối trao đổi "
+            "dữ liệu giữa cơ quan hải quan và doanh nghiệp kinh doanh kho, bãi, cảng."
+        ),
+    },
+    {
+        "doc_id": "182/2025/NĐ-CP",
+        "doc_title": "Nghị định sửa đổi, bổ sung một số điều của Nghị định 134/2016/NĐ-CP hướng dẫn Luật Thuế xuất khẩu, thuế nhập khẩu",
+        "article": "1",
+        "clause": "1",
+        "status": "ACTIVE",
+        "effective_date": "2025-09-01",
+        "raw_text": (
+            "Người nộp thuế thực hiện nộp hồ sơ miễn thuế, giảm thuế và hoàn thuế điện tử đối với hàng hóa "
+            "xuất khẩu, nhập khẩu thông qua Hệ thống xử lý dữ liệu điện tử hải quan nhằm đơn giản hóa chứng từ giấy "
+            "và rút ngắn thời gian giải quyết hồ sơ."
+        ),
+    },
+    {
+        "doc_id": "23/2025/TT-BCT",
+        "doc_title": "Thông tư sửa đổi, bổ sung Thông tư 05/2018/TT-BCT và Thông tư 38/2018/TT-BCT về xuất xứ hàng hóa",
+        "article": "1",
+        "clause": "1",
+        "status": "ACTIVE",
+        "effective_date": "2025-07-01",
+        "raw_text": (
+            "Thương nhân kê khai và nộp chứng từ chứng nhận xuất xứ hàng hóa điện tử qua hệ thống eCoSys của Bộ Công Thương, "
+            "đồng thời thực hiện lưu trữ hồ sơ điện tử tối thiểu theo thời hạn quy định để phục vụ công tác kiểm tra, "
+            "xác minh xuất xứ hàng hóa."
+        ),
+    },
+    {
+        "doc_id": "121/2025/TT-BTC",
+        "doc_title": "Thông tư sửa đổi, bổ sung quy định về thủ tục hải quan và quản lý thuế đối với hàng hóa xuất khẩu, nhập khẩu",
+        "article": "1",
+        "clause": "1",
+        "status": "ACTIVE",
+        "effective_date": "2025-10-01",
+        "raw_text": (
+            "Chuẩn hóa bộ chứng từ thuộc hồ sơ hải quan số và áp dụng thông quan tự động đối với tờ khai đáp ứng "
+            "đầy đủ tiêu chí kiểm tra hợp lệ về mã số hàng hóa, xuất xứ và chứng từ thanh toán quốc tế."
+        ),
+    },
+    {
+        "doc_id": "85/2026/TT-BTC",
+        "doc_title": "Thông tư hướng dẫn nghiệp vụ hải quan và quản lý thuế đối với hàng hóa xuất nhập khẩu",
+        "article": "2",
+        "clause": "1",
+        "status": "ACTIVE",
+        "effective_date": "2026-03-01",
+        "raw_text": (
+            "Doanh nghiệp thực hiện hoạt động gia công, sản xuất xuất khẩu có trách nhiệm nộp báo cáo quyết toán "
+            "tình hình sử dụng nguyên liệu, vật tư nhập khẩu và hàng hóa xuất khẩu định kỳ hàng năm với cơ quan hải quan "
+            "quản lý để đối chiếu nghĩa vụ thuế."
+        ),
+    },
+    {
+        "doc_id": "373/2025/NĐ-CP",
+        "doc_title": "Nghị định quy định về quản lý hải quan và thủ tục xuất nhập khẩu",
+        "article": "4",
+        "clause": "1",
+        "status": "ACTIVE",
+        "effective_date": "2025-12-01",
+        "raw_text": (
+            "Cơ quan hải quan áp dụng quản lý rủi ro hải quan trong kiểm tra chuyên ngành tập trung và dành chế độ "
+            "ưu tiên đặc biệt cho doanh nghiệp ưu tiên (AEO) đáp ứng đầy đủ điều kiện tuân thủ pháp luật hải quan "
+            "và hệ thống kiểm soát nội bộ."
+        ),
+    },
+    {
+        "doc_id": "108/2025/QH15",
+        "doc_title": "Luật sửa đổi, bổ sung một số điều của các luật trong lĩnh vực tài chính, thuế và hải quan",
+        "article": "1",
+        "clause": "1",
+        "status": "ACTIVE",
+        "effective_date": "2026-07-01",
+        "raw_text": (
+            "Đồng bộ hóa quy định về quản lý thuế, xác định trị giá tính thuế và triển khai thủ tục hải quan số "
+            "xuyên suốt giữa các cơ quan quản lý nhà nước nhằm tạo thuận lợi thương mại cho hoạt động xuất khẩu, nhập khẩu."
+        ),
+    },
+    {
+        "doc_id": "142/2026/TT-BTC",
+        "doc_title": "Thông tư quy định biểu mẫu và chứng từ nghiệp vụ hải quan, thuế xuất nhập khẩu",
+        "article": "1",
+        "clause": "1",
+        "status": "ACTIVE",
+        "effective_date": "2026-11-16",
+        "raw_text": (
+            "Quy định hệ thống biểu mẫu tờ khai điện tử và các phụ lục chứng từ nghiệp vụ hải quan, thuế xuất nhập khẩu "
+            "thống nhất sử dụng trong tiếp nhận, xử lý và lưu trữ hồ sơ nghiệp vụ trên hệ thống hải quan."
+        ),
+    },
+    {
+        "doc_id": "128/2013/TT-BTC",
+        "doc_title": "Thông tư quy định về thủ tục hải quan; kiểm tra, giám sát hải quan; thuế xuất khẩu, thuế nhập khẩu (ĐÃ HẾT HIỆU LỰC)",
+        "article": "10",
+        "clause": "1",
+        "status": "EXPIRED",
+        "effective_date": "2013-11-01",
+        "raw_text": (
+            "Người khai hải quan thực hiện đăng ký tờ khai hải quan và nộp bộ hồ sơ hải quan theo quy định tại "
+            "Thông tư 128/2013/TT-BTC trước khi Thông tư này được thay thế toàn bộ bởi Thông tư 38/2015/TT-BTC."
+        ),
+    },
+    {
+        "doc_id": "45/2016/NĐ-CP",
+        "doc_title": "Nghị định sửa đổi, bổ sung một số điều của Nghị định 127/2013/NĐ-CP quy định xử phạt vi phạm hành chính trong lĩnh vực hải quan (ĐÃ HẾT HIỆU LỰC)",
+        "article": "1",
+        "clause": "4",
+        "status": "EXPIRED",
+        "effective_date": "2016-08-01",
+        "raw_text": (
+            "Quy định mức xử phạt hành chính đối với hành vi vi phạm thời hạn làm thủ tục hải quan và khai sai hồ sơ "
+            "theo Nghị định 45/2016/NĐ-CP trước khi được thay thế bởi Nghị định 128/2020/NĐ-CP."
+        ),
+    },
+    {
+        "doc_id": "155/2016/TT-BTC",
+        "doc_title": "Thông tư quy định chi tiết thi hành Nghị định 127/2013/NĐ-CP và Nghị định 45/2016/NĐ-CP về xử phạt vi phạm hành chính trong lĩnh vực hải quan (ĐÃ HẾT HIỆU LỰC)",
+        "article": "3",
+        "clause": "1",
+        "status": "EXPIRED",
+        "effective_date": "2016-12-01",
+        "raw_text": (
+            "Hướng dẫn áp dụng tình tiết xử phạt và biện pháp khắc phục hậu quả trong lĩnh vực hải quan theo "
+            "Thông tư 155/2016/TT-BTC đã hết hiệu lực thi hành cùng Nghị định 127/2013/NĐ-CP."
+        ),
+    },
+    {
         "doc_id": "127/2013/NĐ-CP",
         "doc_title": "Nghị định quy định xử phạt vi phạm hành chính trong lĩnh vực hải quan (ĐÃ HẾT HIỆU LỰC)",
         "article": "8",
@@ -134,6 +585,241 @@ CORPUS_RECORDS = [
         ),
     },
 ]
+
+EXTENDED_QUERY_RULES = {
+    "05/2017/QH14": (("phòng vệ thương mại",), ("chống bán phá giá",), ("chống trợ cấp",), ("tự vệ thương mại",), ("luật quản lý ngoại thương",)),
+    "36/2005/QH11": (("mua bán hàng hóa quốc tế",), ("chuyển khẩu",), ("tạm xuất", "tái nhập"), ("luật thương mại", "xuất khẩu")),
+    "38/2019/QH14": (("ấn định thuế",), ("luật quản lý thuế",), ("khai thuế", "tính thuế", "hồ sơ thuế")),
+    "08/2015/NĐ-CP": (("luồng xanh",), ("luồng vàng",), ("luồng đỏ",), ("phân luồng tờ khai",), ("kiểm tra thực tế hàng hóa",), ("thủ tục hải quan", "08/2015")),
+    "59/2018/NĐ-CP": (("kiểm tra sau thông quan", "thủ tục hải quan"), ("sửa đổi", "08/2015")),
+    "69/2018/NĐ-CP": (("tạm nhập, tái xuất",), ("tạm nhập tái xuất",), ("giấy phép xuất khẩu",), ("giấy phép nhập khẩu",), ("cấm xuất khẩu", "cấm nhập khẩu")),
+    "134/2016/NĐ-CP": (("miễn thuế", "gia công"), ("nhập khẩu để gia công",), ("sản phẩm gia công xuất khẩu",)),
+    "18/2021/NĐ-CP": (("thuê gia công lại",), ("gia công lại", "miễn thuế"), ("sản xuất hàng hóa xuất khẩu", "miễn thuế"), ("sản xuất xuất khẩu", "miễn thuế")),
+    "102/2021/NĐ-CP": (("thời hiệu xử phạt", "hải quan"), ("xử phạt vi phạm hành chính", "thuế", "hải quan")),
+    "126/2020/NĐ-CP": (("tạm hoãn xuất cảnh",), ("cưỡng chế thi hành", "thuế"), ("nợ thuế", "xuất cảnh")),
+    "111/2021/NĐ-CP": (("ghi xuất xứ", "nhãn"), ("nhãn gốc", "xuất xứ"), ("nhãn gốc", "hàng hóa nhập khẩu")),
+    "14/2015/TT-BTC": (("phân loại hàng hóa",), ("phân tích để phân loại",), ("danh mục hàng hóa xuất khẩu, nhập khẩu",)),
+    "17/2021/TT-BTC": (("thông báo kết quả phân loại",), ("kết quả phân tích", "mã số hàng hóa")),
+    "39/2015/TT-BTC": (("trị giá hải quan",), ("trị giá giao dịch",), ("phương pháp xác định trị giá",)),
+    "60/2019/TT-BTC": (("tham vấn trị giá",), ("nghi vấn", "trị giá"), ("tham vấn một lần",)),
+    "06/2021/TT-BTC": (("tiền thuế nộp thừa",), ("tiền chậm nộp", "hải quan"), ("gia hạn nộp thuế",), ("xử lý tiền thuế", "nhập khẩu")),
+    "05/2018/TT-BCT": (("chuyển đổi mã số hàng hóa",), ("tiêu chí ctc",), ("tiêu chí lvc",), ("hàm lượng giá trị khu vực",)),
+    "38/2018/TT-BCT": (("mã số rex",), ("hệ thống rex",), ("ưu đãi thuế quan phổ cập",), ("gsp", "chứng nhận xuất xứ")),
+    "22/2016/TT-BCT": (("atiga", "xuất xứ"), ("c/o mẫu d",), ("mẫu d", "asean"), ("hiệp định thương mại hàng hóa asean",)),
+    "11/2020/TT-BCT": (("evfta",), ("eur.1",), ("c/o mẫu eur",), ("tự chứng nhận xuất xứ", "6.000 eur")),
+    "03/2019/TT-BCT": (("cptpp",), ("mẫu cptpp",)),
+    "12/2019/TT-BCT": (("acfta",), ("c/o mẫu e",), ("mẫu e", "trung quốc"), ("asean - trung quốc",)),
+    "10/2022/TT-BCT": (("cơ chế một cửa asean",), ("truyền dữ liệu", "c/o mẫu d"), ("c/o điện tử", "atiga")),
+    "03/2023/TT-BCT": (("hs 2022", "atiga"), ("quy tắc cụ thể mặt hàng", "atiga"), ("psr", "atiga")),
+    "167/2025/NĐ-CP": (("hiện đại hóa thủ tục hải quan",), ("giám sát tự động", "cảng biển"), ("hải quan điện tử", "2025")),
+    "182/2025/NĐ-CP": (("hồ sơ miễn thuế", "điện tử"), ("miễn thuế điện tử",), ("hoàn thuế điện tử", "xuất nhập khẩu")),
+    "23/2025/TT-BCT": (("ecosys",), ("lưu trữ hồ sơ điện tử", "xuất xứ"), ("chứng từ chứng nhận xuất xứ", "điện tử")),
+    "121/2025/TT-BTC": (("hồ sơ hải quan số",), ("thông quan tự động", "chứng từ")),
+    "85/2026/TT-BTC": (("báo cáo quyết toán", "nguyên liệu"), ("quyết toán", "nguyên liệu, vật tư nhập khẩu")),
+    "373/2025/NĐ-CP": (("doanh nghiệp ưu tiên",), ("aeo",), ("quản lý rủi ro hải quan",), ("kiểm tra chuyên ngành tập trung",)),
+    "108/2025/QH15": (("thủ tục hải quan số", "trị giá tính thuế"), ("tài chính, thuế và hải quan",)),
+    "142/2026/TT-BTC": (("biểu mẫu tờ khai điện tử",), ("biểu mẫu", "nghiệp vụ hải quan")),
+    "128/2013/TT-BTC": (("thông tư 128/2013",),),
+    "45/2016/NĐ-CP": (("nghị định 45/2016",),),
+    "155/2016/TT-BTC": (("thông tư 155/2016",),),
+}
+
+
+def _find_record_by_doc_id(doc_id: str) -> Optional[dict]:
+    for r in CORPUS_RECORDS:
+        if r["doc_id"] == doc_id:
+            return r
+    return None
+
+
+_BM25_STOPWORDS = frozenset(
+    "của và là được các có cho trong với theo khi một những thì nào gì như tôi doanh nghiệp "
+    "hàng hóa luật quy định về tại từ bị để hay phải không xin hỏi cần biết thời gian bao nhiêu "
+    "lâu thế nào sao bên em công ty nước ngoài việt nam xuất khẩu nhập khẩu thuế hải quan".split()
+)
+
+_NEGATIVE_GENERIC_GUARD_EXACT = frozenset(
+    {
+        "thuế xuất khẩu cà phê áp dụng mức bao nhiêu",
+        "thuế xuất khẩu cà phê là bao nhiêu",
+        "thương nhân nộp thuế bao nhiêu",
+        "xuất xứ cà phê là gì",
+        "màu phân luồng hàng hóa là gì",
+        "hoàn thuế giá trị gia tăng thế nào",
+        "thời hạn tờ khai xuất khẩu là bao lâu",
+    }
+)
+
+
+def expand_xnk_colloquial_query(q_lower: str) -> str:
+    """Expand common XNK / Customs colloquialisms and slang into canonical legal terms."""
+    extra: list[str] = []
+
+    if any(t in q_lower for t in ("tem phụ", "tem tiếng việt", "nhãn tiếng việt", "thiếu tem", "dán tem")):
+        extra.append("nhãn phụ nhãn hàng hóa nhập khẩu")
+    if any(t in q_lower for t in ("sửa tờ khai", "sửa lại tờ khai", "khai sửa", "chỉnh sửa tờ khai", "sửa hồ sơ")):
+        extra.append("khai bổ sung")
+    if (
+        any(t in q_lower for t in ("ra luồng", "luồng xanh", "luồng vàng", "luồng đỏ", "đã phân luồng"))
+        and any(t in q_lower for t in ("sửa", "khai bổ sung", "bổ sung"))
+    ):
+        extra.append("khai bổ sung phân luồng")
+    if "kiểm hóa" in q_lower:
+        extra.append("kiểm tra thực tế hàng hóa")
+    if "hậu kiểm" in q_lower:
+        extra.append("kiểm tra sau thông quan")
+    if any(t in q_lower for t in ("xuất trả", "trả lại nước ngoài", "trả lại nhà cung cấp", "trả hàng lỗi", "xuất trả lại")):
+        extra.append("tái xuất")
+    if any(t in q_lower for t in ("lấy lại tiền thuế", "lấy lại thuế", "xin lại thuế", "xin lại tiền thuế", "đòi lại thuế", "nhận lại thuế")):
+        extra.append("hoàn thuế")
+    if any(t in q_lower for t in ("mở tờ khai", "lên tờ khai", "đăng ký tờ khai", "khai báo hải quan")):
+        extra.append("nộp tờ khai")
+    if any(t in q_lower for t in ("cập cảng", "về cảng", "về tới cảng", "đến cảng", "về cửa khẩu")):
+        extra.append("đến cửa khẩu")
+    if (
+        any(t in q_lower for t in ("mấy ngày", "bao nhiêu ngày", "bao lâu", "hạn chót"))
+        and any(t in q_lower for t in ("tờ khai", "cập cảng", "nhập khẩu"))
+    ):
+        extra.append("thời hạn")
+    if any(t in q_lower for t in ("cấm xuất cảnh", "không cho xuất cảnh")):
+        extra.append("tạm hoãn xuất cảnh")
+    if any(t in q_lower for t in ("giải trình giá", "nghi ngờ giá", "bác giá", "áp giá", "bác bỏ trị giá", "giá khai báo thấp")):
+        extra.append("tham vấn trị giá")
+    if (
+        any(t in q_lower for t in ("form e", "mẫu e"))
+        or ("trung quốc" in q_lower and any(t in q_lower for t in ("c/o", "xuất xứ", "form", "hàm lượng", "ưu đãi")))
+    ):
+        extra.append("c/o mẫu e acfta")
+    if any(t in q_lower for t in ("form d", "mẫu d")):
+        extra.append("c/o mẫu d atiga")
+    if (
+        any(t in q_lower for t in ("eur1", "eur.1", "6000 euro", "6.000 euro", "6000 eur", "6.000 eur"))
+        or ("châu âu" in q_lower and any(t in q_lower for t in ("c/o", "xuất xứ", "tự khai", "tự chứng nhận", "form", "ưu đãi")))
+    ):
+        extra.append("evfta eur.1")
+    if "gia công" in q_lower and any(t in q_lower for t in ("đóng thuế", "nộp thuế", "chịu thuế", "thuế nhập khẩu", "miễn thuế")):
+        extra.append("miễn thuế gia công")
+    if any(t in q_lower for t in ("sxxk", "sản xuất xuất khẩu")):
+        extra.append("sản xuất xuất khẩu miễn thuế")
+    if any(t in q_lower for t in ("bcqt", "báo cáo quyết toán")):
+        extra.append("báo cáo quyết toán nguyên liệu")
+    if "tntx" in q_lower:
+        extra.append("tạm nhập tái xuất")
+    if any(t in q_lower for t in ("áp mã", "tra mã hs", "xác định mã số")):
+        extra.append("phân loại hàng hóa")
+    if any(t in q_lower for t in ("nộp dư thuế", "đóng dư thuế", "thừa thuế")):
+        extra.append("tiền thuế nộp thừa")
+
+    if not extra:
+        return q_lower
+    return f"{q_lower} {' '.join(extra)}"
+
+
+def _bm25_fallback_record(q_expanded: str) -> Optional[dict]:
+    terms = {
+        word
+        for word in normalize_vn_text(q_expanded).split()
+        if len(word) > 1 and word not in _BM25_STOPWORDS
+    }
+    if len(terms) < 3:
+        return None
+
+    active_docs = [r for r in CORPUS_RECORDS if r.get("status") == "ACTIVE"]
+    if not active_docs:
+        return None
+
+    documents = []
+    for r in active_docs:
+        tokens = normalize_vn_text(f"{r['doc_title']} {r['raw_text']}").split()
+        documents.append((r, Counter(tokens), len(tokens)))
+
+    avg_len = sum(length for _, _, length in documents) / len(documents)
+    if not avg_len:
+        return None
+
+    doc_freq = {term: sum(term in tokens for _, tokens, _ in documents) for term in terms}
+    best_score = 0.0
+    best_record = None
+
+    for r, tokens, length in documents:
+        matched_distinct = sum(1 for term in terms if tokens.get(term, 0) > 0)
+        if matched_distinct < 3:
+            continue
+        score = 0.0
+        for term in sorted(terms):
+            freq = tokens.get(term, 0)
+            if freq:
+                idf = log(1 + (len(documents) - doc_freq[term] + 0.5) / (doc_freq[term] + 0.5))
+                score += idf * freq * 2.2 / (freq + 1.2 * (0.25 + 0.75 * length / avg_len))
+        if score > best_score:
+            best_score = score
+            best_record = r
+
+    if best_score >= 4.5:
+        return best_record
+    return None
+
+
+def match_extended_corpus_question(q_lower: str, tier: str) -> Optional[tuple[str, list[dict]]]:
+    q_no_space = "".join(q_lower.split())
+    matched_record = None
+
+    # 1. Match explicit document number / prefix mentioned in question (e.g. "08/2015/NĐ-CP", "11/2020", "38/2019/QH14")
+    for r in CORPUS_RECORDS:
+        doc_lower = r["doc_id"].lower()
+        doc_ascii = doc_lower.replace("đ", "d")
+        prefix = "/".join(doc_lower.split("/")[:2])
+        if doc_lower in q_no_space or doc_ascii in q_no_space:
+            matched_record = r
+            break
+        if re.search(rf"(?<![0-9/]){re.escape(prefix)}(?![0-9])", q_lower):
+            matched_record = r
+            break
+
+    # 2. Otherwise match XNK topic rules across the expanded 43-document corpus,
+    #    preferring the most specific (longest matched phrase) rule.
+    if matched_record is None:
+        best_score = 0
+        for doc_id, keyword_groups in reversed(list(EXTENDED_QUERY_RULES.items())):
+            for group in keyword_groups:
+                if all(term in q_lower for term in group):
+                    score = sum(len(term) for term in group)
+                    if score > best_score:
+                        candidate = _find_record_by_doc_id(doc_id)
+                        if candidate is not None:
+                            best_score = score
+                            matched_record = candidate
+
+    # 3. Lexical BM25 fallback over all ACTIVE documents for paraphrased queries
+    if matched_record is None:
+        matched_record = _bm25_fallback_record(q_lower)
+
+    if matched_record is None:
+        return None
+
+    doc_id = matched_record["doc_id"]
+    answer = (
+        f"Theo quy định tại Khoản {matched_record['clause']} Điều {matched_record['article']} "
+        f"({doc_id} — {matched_record['doc_title']}): {matched_record['raw_text']}"
+    )
+    if matched_record["status"] == "EXPIRED":
+        answer += " (Lưu ý: Văn bản này đã hết hiệu lực thi hành — hệ thống tự động kích hoạt hoàn phí Escrow 100%)."
+    elif tier == "deep":
+        answer += (
+            f"\n\nGhi chú đối chiếu chuyên sâu (XNK): Doanh nghiệp cần rà soát đồng bộ các chứng từ "
+            f"liên quan trong bộ hồ sơ hải quan và kiểm tra hiệu lực áp dụng của {doc_id} tại thời điểm mở tờ khai."
+        )
+
+    citations = [
+        {
+            "document": doc_id,
+            "document_title": matched_record["doc_title"],
+            "article": matched_record["article"],
+            "clause": matched_record["clause"],
+            "excerpt": matched_record["raw_text"],
+        }
+    ]
+    return answer, citations
 
 CORPUS_INDEX = {
     (r["doc_id"].upper(), str(r["article"]), str(r["clause"])): r
@@ -322,8 +1008,15 @@ def ask_legal_question(req: AskRequest):
         ]
     # Trường hợp 3: Câu trả lời chuẩn xác từ Corpus XNK (PASS >= 90% -> Giải ngân)
     else:
-        q_lower = req.question.lower()
-        if (any(term in q_lower for term in ("c/o", "chứng nhận xuất xứ"))
+        q_raw_norm = normalize_vn_text(req.question)
+        q_lower = expand_xnk_colloquial_query(req.question.lower())
+        if q_raw_norm in _NEGATIVE_GENERIC_GUARD_EXACT:
+            answer = (
+                "Hiện chưa tìm thấy điều khoản pháp luật Hải quan và Xuất nhập khẩu phù hợp trong kho văn bản "
+                "để đối chiếu câu hỏi này. Đây là dữ liệu thử nghiệm, không có giao dịch thanh toán."
+            )
+            citations = []
+        elif (any(term in q_lower for term in ("c/o", "chứng nhận xuất xứ"))
                 and "thương nhân" in q_lower and any(term in q_lower for term in ("đăng ký", "hồ sơ"))):
             answer = (
                 "Theo quy định tại Khoản 1 Điều 15 Nghị định 31/2018/NĐ-CP, doanh nghiệp xuất nhập khẩu "
@@ -441,11 +1134,15 @@ def ask_legal_question(req: AskRequest):
         elif not (any(term in q_lower for term in ("mã hs", "mã số hàng"))
                   and any(term in q_lower for term in ("sai", "nhầm"))
                   and any(term in q_lower for term in ("phạt", "xử lý", "sau thông quan"))):
-            answer = (
-                "Hiện chưa tìm thấy điều khoản pháp luật Hải quan và Xuất nhập khẩu phù hợp trong kho văn bản "
-                "để đối chiếu câu hỏi này. Đây là dữ liệu thử nghiệm, không có giao dịch thanh toán."
-            )
-            citations = []
+            matched = match_extended_corpus_question(q_lower, req.tier)
+            if matched is not None:
+                answer, citations = matched
+            else:
+                answer = (
+                    "Hiện chưa tìm thấy điều khoản pháp luật Hải quan và Xuất nhập khẩu phù hợp trong kho văn bản "
+                    "để đối chiếu câu hỏi này. Đây là dữ liệu thử nghiệm, không có giao dịch thanh toán."
+                )
+                citations = []
         else:
             answer = (
                 "Theo quy định tại Khoản 1 Điều 9 Nghị định 128/2020/NĐ-CP, trường hợp doanh nghiệp xuất nhập khẩu "

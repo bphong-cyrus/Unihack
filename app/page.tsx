@@ -1552,23 +1552,6 @@ export default function AskPayWorkspacePage() {
               <div style={{ display: "flex", alignItems: "center", gap: 6 }}>
                 <button
                   type="button"
-                  onClick={() => setShowDocsModal(true)}
-                  style={{
-                    padding: "5px 10px",
-                    borderRadius: 8,
-                    border: "1px solid #e2e8f0",
-                    background: "#f8fafc",
-                    color: "#334155",
-                    fontSize: 12,
-                    fontWeight: 600,
-                    cursor: "pointer"
-                  }}
-                >
-                  {corpus ? `${corpus.total_documents} văn bản pháp luật` : "Kho văn bản"}
-                </button>
-
-                <button
-                  type="button"
                   onClick={() => setRightOpen(!rightOpen)}
                   className="icon-btn"
                   title="Đóng/Mở bảng đối chiếu bên phải"
