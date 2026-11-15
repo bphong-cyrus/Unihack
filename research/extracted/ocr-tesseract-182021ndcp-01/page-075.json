@@ -1,0 +1,509 @@
+{
+  "document_id": "18/2021/NĐ-CP",
+  "source_file": "../../legal-sources/182021ndcp/01.pdf",
+  "source_sha256": "cb0bf16ab3ee6554929e0d9d2cc4f180f51b8ea10ddd30a37309353edeb050d8",
+  "page_count": 114,
+  "render_dpi": 150,
+  "engine": "Tesseract 5.5.4 (vie+eng; OEM 1; PSM 3)",
+  "review_status": "UNREVIEWED",
+  "tesseract_version": "5.5.4",
+  "tsv_parser_version": 2,
+  "languages": [
+    "vie",
+    "eng"
+  ],
+  "traineddata_sha256": {
+    "vie": "b6b49293d95d0b6dbd8780174627e82c75be957b6f4ed9862155540d6b00bb45",
+    "eng": "8280aed0782fe27257a68ea10fe7ef324ca0f8d85bd2fd145d1c2b560bcb66ba"
+  },
+  "ocr_engine_mode": 1,
+  "page_segmentation_mode": 3,
+  "thread_limit": 1,
+  "page": 75,
+  "lines": [
+    {
+      "bbox": [
+        [
+          652.0,
+          21.0
+        ],
+        [
+          679.0,
+          21.0
+        ],
+        [
+          679.0,
+          41.0
+        ],
+        [
+          652.0,
+          41.0
+        ]
+      ],
+      "text": "36",
+      "confidence": 0.95362503
+    },
+    {
+      "bbox": [
+        [
+          566.0,
+          122.0
+        ],
+        [
+          767.0,
+          122.0
+        ],
+        [
+          767.0,
+          143.0
+        ],
+        [
+          566.0,
+          143.0
+        ]
+      ],
+      "text": "INSTRUCTION",
+      "confidence": 0.88671448
+    },
+    {
+      "bbox": [
+        [
+          285.0,
+          201.0
+        ],
+        [
+          1127.0,
+          201.0
+        ],
+        [
+          1127.0,
+          228.0
+        ],
+        [
+          285.0,
+          228.0
+        ]
+      ],
+      "text": "The Quota book is used to purchase commodities at Duty Free Shops in",
+      "confidence": 0.9274241407692307
+    },
+    {
+      "bbox": [
+        [
+          285.0,
+          234.0
+        ],
+        [
+          643.0,
+          234.0
+        ],
+        [
+          643.0,
+          255.0
+        ],
+        [
+          285.0,
+          255.0
+        ]
+      ],
+      "text": "Viet Nam within mission term.",
+      "confidence": 0.9358238080000001
+    },
+    {
+      "bbox": [
+        [
+          286.0,
+          280.0
+        ],
+        [
+          1126.0,
+          280.0
+        ],
+        [
+          1126.0,
+          307.0
+        ],
+        [
+          286.0,
+          307.0
+        ]
+      ],
+      "text": "The quota book is also used when the user of the quota book (the person",
+      "confidence": 0.9292246753333333
+    },
+    {
+      "bbox": [
+        [
+          286.0,
+          313.0
+        ],
+        [
+          1126.0,
+          313.0
+        ],
+        [
+          1126.0,
+          341.0
+        ],
+        [
+          286.0,
+          341.0
+        ]
+      ],
+      "text": "to whom the quota book is issued) Imports commodities by",
+      "confidence": 0.925950179
+    },
+    {
+      "bbox": [
+        [
+          286.0,
+          346.0
+        ],
+        [
+          1127.0,
+          346.0
+        ],
+        [
+          1127.0,
+          374.0
+        ],
+        [
+          286.0,
+          374.0
+        ]
+      ],
+      "text": "himself/herself or authorises the other to import commodities into Viet",
+      "confidence": 0.9595367519999999
+    },
+    {
+      "bbox": [
+        [
+          286.0,
+          379.0
+        ],
+        [
+          348.0,
+          379.0
+        ],
+        [
+          348.0,
+          400.0
+        ],
+        [
+          286.0,
+          400.0
+        ]
+      ],
+      "text": "Nam.",
+      "confidence": 0.95918091
+    },
+    {
+      "bbox": [
+        [
+          290.0,
+          424.0
+        ],
+        [
+          1126.0,
+          424.0
+        ],
+        [
+          1126.0,
+          452.0
+        ],
+        [
+          290.0,
+          452.0
+        ]
+      ],
+      "text": "To purchase commodities at Duty Free Shops in Viet Nam, the",
+      "confidence": 0.9639554972727273
+    },
+    {
+      "bbox": [
+        [
+          290.0,
+          457.0
+        ],
+        [
+          581.0,
+          457.0
+        ],
+        [
+          581.0,
+          484.0
+        ],
+        [
+          290.0,
+          484.0
+        ]
+      ],
+      "text": "followings are presented:",
+      "confidence": 0.9636737333333333
+    },
+    {
+      "bbox": [
+        [
+          290.0,
+          490.0
+        ],
+        [
+          509.0,
+          490.0
+        ],
+        [
+          509.0,
+          517.0
+        ],
+        [
+          290.0,
+          517.0
+        ]
+      ],
+      "text": "a. The quota book.",
+      "confidence": 0.96755762
+    },
+    {
+      "bbox": [
+        [
+          290.0,
+          523.0
+        ],
+        [
+          1126.0,
+          523.0
+        ],
+        [
+          1126.0,
+          551.0
+        ],
+        [
+          290.0,
+          551.0
+        ]
+      ],
+      "text": "b. LD Card which is granted by the Directorate of State Protocol",
+      "confidence": 0.9502142991666667
+    },
+    {
+      "bbox": [
+        [
+          291.0,
+          556.0
+        ],
+        [
+          614.0,
+          556.0
+        ],
+        [
+          614.0,
+          583.0
+        ],
+        [
+          291.0,
+          583.0
+        ]
+      ],
+      "text": "Ministry of Foreign Affairs.",
+      "confidence": 0.9670476549999999
+    },
+    {
+      "bbox": [
+        [
+          287.0,
+          601.0
+        ],
+        [
+          1126.0,
+          601.0
+        ],
+        [
+          1126.0,
+          629.0
+        ],
+        [
+          287.0,
+          629.0
+        ]
+      ],
+      "text": "If the book is lost, the user is requested to inform immediately to the",
+      "confidence": 0.9664294449999999
+    },
+    {
+      "bbox": [
+        [
+          287.0,
+          634.0
+        ],
+        [
+          969.0,
+          634.0
+        ],
+        [
+          969.0,
+          662.0
+        ],
+        [
+          287.0,
+          662.0
+        ]
+      ],
+      "text": "Directorate of State Protocol — Ministry of Foreign Affairs.",
+      "confidence": 0.9569457822222222
+    },
+    {
+      "bbox": [
+        [
+          287.0,
+          679.0
+        ],
+        [
+          1127.0,
+          679.0
+        ],
+        [
+          1127.0,
+          707.0
+        ],
+        [
+          287.0,
+          707.0
+        ]
+      ],
+      "text": "When completing the mission term, the user should return the quota",
+      "confidence": 0.9419574118181818
+    },
+    {
+      "bbox": [
+        [
+          287.0,
+          712.0
+        ],
+        [
+          1106.0,
+          712.0
+        ],
+        [
+          1106.0,
+          740.0
+        ],
+        [
+          287.0,
+          740.0
+        ]
+      ],
+      "text": "book to the Directorate of State Protocol — Ministry of Foreign Affairs.",
+      "confidence": 0.9568487233333333
+    },
+    {
+      "bbox": [
+        [
+          288.0,
+          757.0
+        ],
+        [
+          1126.0,
+          757.0
+        ],
+        [
+          1126.0,
+          785.0
+        ],
+        [
+          288.0,
+          785.0
+        ]
+      ],
+      "text": "This book includes 6 pages, is numbered from 1 to 6 (except for the",
+      "confidence": 0.9636455807142856
+    },
+    {
+      "bbox": [
+        [
+          288.0,
+          790.0
+        ],
+        [
+          964.0,
+          790.0
+        ],
+        [
+          964.0,
+          818.0
+        ],
+        [
+          288.0,
+          818.0
+        ]
+      ],
+      "text": "cover page) and printed on A5 size; the cover page is blue.",
+      "confidence": 0.9671503766666666
+    },
+    {
+      "bbox": [
+        [
+          288.0,
+          835.0
+        ],
+        [
+          1040.0,
+          835.0
+        ],
+        [
+          1040.0,
+          863.0
+        ],
+        [
+          288.0,
+          863.0
+        ]
+      ],
+      "text": "This book is attached with stamps of alcohol, beer and cigarettes.",
+      "confidence": 0.9638442918181818
+    },
+    {
+      "bbox": [
+        [
+          288.0,
+          880.0
+        ],
+        [
+          1129.0,
+          880.0
+        ],
+        [
+          1129.0,
+          909.0
+        ],
+        [
+          288.0,
+          909.0
+        ]
+      ],
+      "text": "The Ministry of Finance prints, issues, manages and uses the quota",
+      "confidence": 0.9635922718181819
+    },
+    {
+      "bbox": [
+        [
+          288.0,
+          913.0
+        ],
+        [
+          352.0,
+          913.0
+        ],
+        [
+          352.0,
+          933.0
+        ],
+        [
+          288.0,
+          933.0
+        ]
+      ],
+      "text": "book.",
+      "confidence": 0.96235962
+    }
+  ]
+}

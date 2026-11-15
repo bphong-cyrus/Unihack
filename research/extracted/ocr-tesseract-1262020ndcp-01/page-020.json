@@ -1,0 +1,861 @@
+{
+  "document_id": "126/2020/NĐ-CP",
+  "source_file": "../../legal-sources/1262020ndcp/01.pdf",
+  "source_sha256": "310648e80396d267610946458e7fdd71ba87ef538b009d6574ed21514de3f7ca",
+  "page_count": 119,
+  "render_dpi": 150,
+  "engine": "Tesseract 5.5.4 (vie+eng; OEM 1; PSM 3)",
+  "review_status": "UNREVIEWED",
+  "tesseract_version": "5.5.4",
+  "tsv_parser_version": 2,
+  "languages": [
+    "vie",
+    "eng"
+  ],
+  "traineddata_sha256": {
+    "vie": "b6b49293d95d0b6dbd8780174627e82c75be957b6f4ed9862155540d6b00bb45",
+    "eng": "8280aed0782fe27257a68ea10fe7ef324ca0f8d85bd2fd145d1c2b560bcb66ba"
+  },
+  "ocr_engine_mode": 1,
+  "page_segmentation_mode": 3,
+  "thread_limit": 1,
+  "page": 20,
+  "lines": [
+    {
+      "bbox": [
+        [
+          686.0,
+          59.0
+        ],
+        [
+          713.0,
+          59.0
+        ],
+        [
+          713.0,
+          80.0
+        ],
+        [
+          686.0,
+          80.0
+        ]
+      ],
+      "text": "20",
+      "confidence": 0.97008026
+    },
+    {
+      "bbox": [
+        [
+          272.0,
+          134.0
+        ],
+        [
+          1130.0,
+          134.0
+        ],
+        [
+          1130.0,
+          169.0
+        ],
+        [
+          272.0,
+          169.0
+        ]
+      ],
+      "text": "d.3) Cá nhân cư trú có thu nhập từ tiền lương, tiền công trực tiếp khai",
+      "confidence": 0.9635846125
+    },
+    {
+      "bbox": [
+        [
+          213.0,
+          171.0
+        ],
+        [
+          1130.0,
+          171.0
+        ],
+        [
+          1130.0,
+          204.0
+        ],
+        [
+          213.0,
+          204.0
+        ]
+      ],
+      "text": "quyết toán thuế thu nhập cá nhân với cơ quan thuế trong các trường hợp",
+      "confidence": 0.9682959593333333
+    },
+    {
+      "bbox": [
+        [
+          214.0,
+          212.0
+        ],
+        [
+          307.0,
+          212.0
+        ],
+        [
+          307.0,
+          239.0
+        ],
+        [
+          214.0,
+          239.0
+        ]
+      ],
+      "text": "sau đây:",
+      "confidence": 0.9688907649999998
+    },
+    {
+      "bbox": [
+        [
+          273.0,
+          265.0
+        ],
+        [
+          1127.0,
+          265.0
+        ],
+        [
+          1127.0,
+          299.0
+        ],
+        [
+          273.0,
+          299.0
+        ]
+      ],
+      "text": "Có số thuế phải nộp thêm hoặc có số thuế nộp thừa đề nghị hoàn hoặc bù",
+      "confidence": 0.9682809047058824
+    },
+    {
+      "bbox": [
+        [
+          213.0,
+          301.0
+        ],
+        [
+          1127.0,
+          301.0
+        ],
+        [
+          1127.0,
+          335.0
+        ],
+        [
+          213.0,
+          335.0
+        ]
+      ],
+      "text": "trừ vào kỳ khai thuế tiếp theo, trừ các trường hợp sau: cá nhân có số thuế phải",
+      "confidence": 0.9686753977777778
+    },
+    {
+      "bbox": [
+        [
+          213.0,
+          337.0
+        ],
+        [
+          1128.0,
+          337.0
+        ],
+        [
+          1128.0,
+          370.0
+        ],
+        [
+          213.0,
+          370.0
+        ]
+      ],
+      "text": "nộp thêm sau quyết toán của từng năm từ 50.000 đồng trở xuống: cá nhân có",
+      "confidence": 0.965114116875
+    },
+    {
+      "bbox": [
+        [
+          214.0,
+          372.0
+        ],
+        [
+          1128.0,
+          372.0
+        ],
+        [
+          1128.0,
+          406.0
+        ],
+        [
+          214.0,
+          406.0
+        ]
+      ],
+      "text": "số thuế phải nộp nhỏ hơn số thuế đã tạm nộp mà không có yêu cầu hoàn thuế",
+      "confidence": 0.9677742283333334
+    },
+    {
+      "bbox": [
+        [
+          214.0,
+          408.0
+        ],
+        [
+          1129.0,
+          408.0
+        ],
+        [
+          1129.0,
+          441.0
+        ],
+        [
+          214.0,
+          441.0
+        ]
+      ],
+      "text": "hoặc bù trừ vào kỳ khai thuế tiếp theo; cá nhân có thu nhập từ tiền lương, tiền",
+      "confidence": 0.9692612994444444
+    },
+    {
+      "bbox": [
+        [
+          214.0,
+          444.0
+        ],
+        [
+          1128.0,
+          444.0
+        ],
+        [
+          1128.0,
+          477.0
+        ],
+        [
+          214.0,
+          477.0
+        ]
+      ],
+      "text": "công ký hợp đồng lao động từ 03 tháng trở lên tại một đơn vị, đồng thời có",
+      "confidence": 0.9686963744444443
+    },
+    {
+      "bbox": [
+        [
+          213.0,
+          485.0
+        ],
+        [
+          1129.0,
+          485.0
+        ],
+        [
+          1129.0,
+          512.0
+        ],
+        [
+          213.0,
+          512.0
+        ]
+      ],
+      "text": "thu nhập vãng lai ở các nơi khác bình quân tháng trong năm không quá 10",
+      "confidence": 0.966846819375
+    },
+    {
+      "bbox": [
+        [
+          213.0,
+          514.0
+        ],
+        [
+          1129.0,
+          514.0
+        ],
+        [
+          1129.0,
+          547.0
+        ],
+        [
+          213.0,
+          547.0
+        ]
+      ],
+      "text": "triệu đồng và đã được khấu trừ thuế thu nhập cá nhân theo tỷ lệ 10% nếu",
+      "confidence": 0.9679946805882352
+    },
+    {
+      "bbox": [
+        [
+          214.0,
+          550.0
+        ],
+        [
+          1128.0,
+          550.0
+        ],
+        [
+          1128.0,
+          583.0
+        ],
+        [
+          214.0,
+          583.0
+        ]
+      ],
+      "text": "không có yêu cầu thì không phải quyết toán thuế đối với phần thu nhập này;",
+      "confidence": 0.9676927756249999
+    },
+    {
+      "bbox": [
+        [
+          214.0,
+          585.0
+        ],
+        [
+          1129.0,
+          585.0
+        ],
+        [
+          1129.0,
+          617.0
+        ],
+        [
+          214.0,
+          617.0
+        ]
+      ],
+      "text": "cá nhân được người sử dụng lao động mua bảo hiểm nhân thọ (trừ bảo hiểm",
+      "confidence": 0.967534755625
+    },
+    {
+      "bbox": [
+        [
+          214.0,
+          620.0
+        ],
+        [
+          1128.0,
+          620.0
+        ],
+        [
+          1128.0,
+          653.0
+        ],
+        [
+          214.0,
+          653.0
+        ]
+      ],
+      "text": "hưu trí tự nguyện), bảo hiểm không bắt buộc khác có tích lũy về phí bảo hiểm",
+      "confidence": 0.9554190694117648
+    },
+    {
+      "bbox": [
+        [
+          214.0,
+          655.0
+        ],
+        [
+          1129.0,
+          655.0
+        ],
+        [
+          1129.0,
+          688.0
+        ],
+        [
+          214.0,
+          688.0
+        ]
+      ],
+      "text": "mà người sử dụng lao động hoặc doanh nghiệp bảo hiểm đã khấu trừ thuế thu",
+      "confidence": 0.96204919375
+    },
+    {
+      "bbox": [
+        [
+          214.0,
+          690.0
+        ],
+        [
+          1130.0,
+          690.0
+        ],
+        [
+          1130.0,
+          723.0
+        ],
+        [
+          214.0,
+          723.0
+        ]
+      ],
+      "text": "nhập cá nhân theo tỷ lệ 10% trên khoản tiền phí bảo hiểm tương ứng với phần",
+      "confidence": 0.9676323923529412
+    },
+    {
+      "bbox": [
+        [
+          214.0,
+          731.0
+        ],
+        [
+          1129.0,
+          731.0
+        ],
+        [
+          1129.0,
+          758.0
+        ],
+        [
+          214.0,
+          758.0
+        ]
+      ],
+      "text": "người sử dụng lao động mua hoặc đóng góp cho người lao động thì người lao",
+      "confidence": 0.96726557625
+    },
+    {
+      "bbox": [
+        [
+          214.0,
+          761.0
+        ],
+        [
+          1121.0,
+          761.0
+        ],
+        [
+          1121.0,
+          793.0
+        ],
+        [
+          214.0,
+          793.0
+        ]
+      ],
+      "text": "động không phải quyết toán thuế thu nhập cá nhân đối với phần thu nhập này.",
+      "confidence": 0.96504818
+    },
+    {
+      "bbox": [
+        [
+          274.0,
+          821.0
+        ],
+        [
+          1129.0,
+          821.0
+        ],
+        [
+          1129.0,
+          853.0
+        ],
+        [
+          274.0,
+          853.0
+        ]
+      ],
+      "text": "Cá nhân có mặt tại Việt Nam tính trong năm dương lịch đầu tiên dưới",
+      "confidence": 0.9684013606666667
+    },
+    {
+      "bbox": [
+        [
+          218.0,
+          862.0
+        ],
+        [
+          1128.0,
+          862.0
+        ],
+        [
+          1128.0,
+          889.0
+        ],
+        [
+          218.0,
+          889.0
+        ]
+      ],
+      "text": "183 ngày, nhưng tinh trong 12 tháng liên tục kê từ ngày đâu tiên có mặt tại",
+      "confidence": 0.9578997852941177
+    },
+    {
+      "bbox": [
+        [
+          214.0,
+          897.0
+        ],
+        [
+          592.0,
+          897.0
+        ],
+        [
+          592.0,
+          924.0
+        ],
+        [
+          214.0,
+          924.0
+        ]
+      ],
+      "text": "Việt Nam là từ 183 ngày trở lên.",
+      "confidence": 0.96851735125
+    },
+    {
+      "bbox": [
+        [
+          274.0,
+          952.0
+        ],
+        [
+          1129.0,
+          952.0
+        ],
+        [
+          1129.0,
+          984.0
+        ],
+        [
+          274.0,
+          984.0
+        ]
+      ],
+      "text": "Cá nhân là người nước ngoài kết thúc hợp đồng làm việc tại Việt Nam",
+      "confidence": 0.9664767606666667
+    },
+    {
+      "bbox": [
+        [
+          214.0,
+          986.0
+        ],
+        [
+          1130.0,
+          986.0
+        ],
+        [
+          1130.0,
+          1020.0
+        ],
+        [
+          214.0,
+          1020.0
+        ]
+      ],
+      "text": "khai quyết toán thuế với cơ quan thuế trước khi xuất cảnh. Trường hợp cá",
+      "confidence": 0.9683257499999999
+    },
+    {
+      "bbox": [
+        [
+          214.0,
+          1022.0
+        ],
+        [
+          1129.0,
+          1022.0
+        ],
+        [
+          1129.0,
+          1055.0
+        ],
+        [
+          214.0,
+          1055.0
+        ]
+      ],
+      "text": "nhân chưa làm thủ tục quyết toán thuế với cơ quan thuế thì thực hiện ủy",
+      "confidence": 0.9686117506249999
+    },
+    {
+      "bbox": [
+        [
+          214.0,
+          1057.0
+        ],
+        [
+          1129.0,
+          1057.0
+        ],
+        [
+          1129.0,
+          1090.0
+        ],
+        [
+          214.0,
+          1090.0
+        ]
+      ],
+      "text": "quyền cho tổ chức trả thu nhập hoặc tổ chức, cá nhân khác quyết toán thuế",
+      "confidence": 0.968250053125
+    },
+    {
+      "bbox": [
+        [
+          213.0,
+          1092.0
+        ],
+        [
+          1129.0,
+          1092.0
+        ],
+        [
+          1129.0,
+          1126.0
+        ],
+        [
+          213.0,
+          1126.0
+        ]
+      ],
+      "text": "theo quy định về quyết toán thuế đối với cá nhân. Trường hợp tổ chức trả thu",
+      "confidence": 0.9614135423529412
+    },
+    {
+      "bbox": [
+        [
+          214.0,
+          1127.0
+        ],
+        [
+          1130.0,
+          1127.0
+        ],
+        [
+          1130.0,
+          1161.0
+        ],
+        [
+          214.0,
+          1161.0
+        ]
+      ],
+      "text": "nhập hoặc tổ chức, cá nhân khác nhận ủy quyền quyết toán thì phải chịu trách",
+      "confidence": 0.968522653125
+    },
+    {
+      "bbox": [
+        [
+          214.0,
+          1163.0
+        ],
+        [
+          1129.0,
+          1163.0
+        ],
+        [
+          1129.0,
+          1196.0
+        ],
+        [
+          214.0,
+          1196.0
+        ]
+      ],
+      "text": "nhiệm về số thuế thu nhập cá nhân phải nộp thêm hoặc được hoàn trả số thuế",
+      "confidence": 0.9688900794117647
+    },
+    {
+      "bbox": [
+        [
+          214.0,
+          1204.0
+        ],
+        [
+          468.0,
+          1204.0
+        ],
+        [
+          468.0,
+          1230.0
+        ],
+        [
+          214.0,
+          1230.0
+        ]
+      ],
+      "text": "nộp thừa của cá nhân.",
+      "confidence": 0.9678513480000001
+    },
+    {
+      "bbox": [
+        [
+          274.0,
+          1258.0
+        ],
+        [
+          1129.0,
+          1258.0
+        ],
+        [
+          1129.0,
+          1291.0
+        ],
+        [
+          274.0,
+          1291.0
+        ]
+      ],
+      "text": "Cá nhân cư trú có thu nhập từ tiền lương, tiền công đồng thời thuộc diện",
+      "confidence": 0.96544956125
+    },
+    {
+      "bbox": [
+        [
+          214.0,
+          1293.0
+        ],
+        [
+          1130.0,
+          1293.0
+        ],
+        [
+          1130.0,
+          1327.0
+        ],
+        [
+          214.0,
+          1327.0
+        ]
+      ],
+      "text": "xét giảm thuế do thiên tai, hod hoạn, tai nạn, bệnh hiểm nghèo ảnh hưởng đến",
+      "confidence": 0.953061958125
+    },
+    {
+      "bbox": [
+        [
+          214.0,
+          1329.0
+        ],
+        [
+          1130.0,
+          1329.0
+        ],
+        [
+          1130.0,
+          1363.0
+        ],
+        [
+          214.0,
+          1363.0
+        ]
+      ],
+      "text": "khả năng nộp thuế thì không ủy quyền cho tổ chức, cá nhân trả thu nhập quyết",
+      "confidence": 0.96885455
+    },
+    {
+      "bbox": [
+        [
+          214.0,
+          1364.0
+        ],
+        [
+          1131.0,
+          1364.0
+        ],
+        [
+          1131.0,
+          1398.0
+        ],
+        [
+          214.0,
+          1398.0
+        ]
+      ],
+      "text": "toán thuế thay mà phải trực tiếp khai quyết toán với cơ quan thuế theo",
+      "confidence": 0.9681881506666667
+    },
+    {
+      "bbox": [
+        [
+          214.0,
+          1405.0
+        ],
+        [
+          323.0,
+          1405.0
+        ],
+        [
+          323.0,
+          1432.0
+        ],
+        [
+          214.0,
+          1432.0
+        ]
+      ],
+      "text": "quy định.",
+      "confidence": 0.96217804
+    },
+    {
+      "bbox": [
+        [
+          274.0,
+          1466.0
+        ],
+        [
+          1131.0,
+          1466.0
+        ],
+        [
+          1131.0,
+          1494.0
+        ],
+        [
+          274.0,
+          1494.0
+        ]
+      ],
+      "text": "đ) Các khoản phí thuộc ngân sách nhà nước (trừ phí do cơ quan đại diện",
+      "confidence": 0.966369294375
+    },
+    {
+      "bbox": [
+        [
+          215.0,
+          1501.0
+        ],
+        [
+          1131.0,
+          1501.0
+        ],
+        [
+          1131.0,
+          1528.0
+        ],
+        [
+          215.0,
+          1528.0
+        ]
+      ],
+      "text": "nước Cộng hòa xã hội chủ nghĩa Việt Nam ở nước ngoài thực hiện thu theo",
+      "confidence": 0.96545704
+    },
+    {
+      "bbox": [
+        [
+          216.0,
+          1536.0
+        ],
+        [
+          828.0,
+          1536.0
+        ],
+        [
+          828.0,
+          1564.0
+        ],
+        [
+          216.0,
+          1564.0
+        ]
+      ],
+      "text": "quy định tại Điều 12 Nghị định này và phí hải quan).",
+      "confidence": 0.9656769824999999
+    }
+  ]
+}

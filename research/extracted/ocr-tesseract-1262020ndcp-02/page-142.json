@@ -1,0 +1,1103 @@
+{
+  "document_id": "126/2020/NĐ-CP",
+  "source_file": "../../legal-sources/1262020ndcp/02.pdf",
+  "source_sha256": "008daa92f4d699b69b9318c4a8e6fa7db8d73453305e1a4f155134656e26847b",
+  "page_count": 147,
+  "render_dpi": 150,
+  "engine": "Tesseract 5.5.4 (vie+eng; OEM 1; PSM 3)",
+  "review_status": "UNREVIEWED",
+  "tesseract_version": "5.5.4",
+  "tsv_parser_version": 2,
+  "languages": [
+    "vie",
+    "eng"
+  ],
+  "traineddata_sha256": {
+    "vie": "b6b49293d95d0b6dbd8780174627e82c75be957b6f4ed9862155540d6b00bb45",
+    "eng": "8280aed0782fe27257a68ea10fe7ef324ca0f8d85bd2fd145d1c2b560bcb66ba"
+  },
+  "ocr_engine_mode": 1,
+  "page_segmentation_mode": 3,
+  "thread_limit": 1,
+  "page": 142,
+  "lines": [
+    {
+      "bbox": [
+        [
+          653.0,
+          114.0
+        ],
+        [
+          680.0,
+          114.0
+        ],
+        [
+          680.0,
+          135.0
+        ],
+        [
+          653.0,
+          135.0
+        ]
+      ],
+      "text": "56",
+      "confidence": 0.9640033
+    },
+    {
+      "bbox": [
+        [
+          192.0,
+          361.0
+        ],
+        [
+          212.0,
+          361.0
+        ],
+        [
+          212.0,
+          385.0
+        ],
+        [
+          192.0,
+          385.0
+        ]
+      ],
+      "text": "b",
+      "confidence": 0.93069809
+    },
+    {
+      "bbox": [
+        [
+          248.0,
+          180.0
+        ],
+        [
+          1139.0,
+          180.0
+        ],
+        [
+          1139.0,
+          220.0
+        ],
+        [
+          248.0,
+          220.0
+        ]
+      ],
+      "text": "Hồ sơ xác định giá giao dịch liên kết của người nộp thuế bao gồm Hồ sơ quốc gia, Hồ sơ",
+      "confidence": 0.9657516742857143
+    },
+    {
+      "bbox": [
+        [
+          248.0,
+          209.0
+        ],
+        [
+          1139.0,
+          209.0
+        ],
+        [
+          1139.0,
+          245.0
+        ],
+        [
+          248.0,
+          245.0
+        ]
+      ],
+      "text": "toàn cầu và Báo cáo lợi nhuận liên quắc gia (nếu có) theo yêu cầu của văn bản quy phạm",
+      "confidence": 0.9649628905000001
+    },
+    {
+      "bbox": [
+        [
+          248.0,
+          238.0
+        ],
+        [
+          1137.0,
+          238.0
+        ],
+        [
+          1137.0,
+          275.0
+        ],
+        [
+          248.0,
+          275.0
+        ]
+      ],
+      "text": "pháp luật quy định về quản lý thuế đối với doanh nghiệp có giao dịch liên kết cho 03",
+      "confidence": 0.9684525547368422
+    },
+    {
+      "bbox": [
+        [
+          248.0,
+          268.0
+        ],
+        [
+          1073.0,
+          268.0
+        ],
+        [
+          1073.0,
+          298.0
+        ],
+        [
+          248.0,
+          298.0
+        ]
+      ],
+      "text": "năm liền kề trước năm người nộp thuế nộp hồ sơ đề nghị áp dụng APA chính thức.",
+      "confidence": 0.9523181877777778
+    },
+    {
+      "bbox": [
+        [
+          249.0,
+          307.0
+        ],
+        [
+          1138.0,
+          307.0
+        ],
+        [
+          1138.0,
+          353.0
+        ],
+        [
+          249.0,
+          353.0
+        ]
+      ],
+      "text": "Trường hợp người nộp thuế được thành lập chưa đủ 03 năm tính đến thời điểm nộp hồ",
+      "confidence": 0.9670998811111111
+    },
+    {
+      "bbox": [
+        [
+          250.0,
+          336.0
+        ],
+        [
+          1138.0,
+          336.0
+        ],
+        [
+          1138.0,
+          367.0
+        ],
+        [
+          250.0,
+          367.0
+        ]
+      ],
+      "text": "sơ đề nghị áp dụng APA chính thức thì sử dụng báo cáo tài chính đã được kiểm toán độc",
+      "confidence": 0.9638553045
+    },
+    {
+      "bbox": [
+        [
+          250.0,
+          365.0
+        ],
+        [
+          1139.0,
+          365.0
+        ],
+        [
+          1139.0,
+          397.0
+        ],
+        [
+          250.0,
+          397.0
+        ]
+      ],
+      "text": "lập, báo cáo thường niên và tờ khai quyết toán thuế thu nhập doanh nghiệp, Hồ sơ xác",
+      "confidence": 0.9627308605555556
+    },
+    {
+      "bbox": [
+        [
+          250.0,
+          396.0
+        ],
+        [
+          785.0,
+          396.0
+        ],
+        [
+          785.0,
+          426.0
+        ],
+        [
+          250.0,
+          426.0
+        ]
+      ],
+      "text": "định giá giao dịch liên kết cho thời gian đã hoạt động.",
+      "confidence": 0.9646375658333334
+    },
+    {
+      "bbox": [
+        [
+          250.0,
+          434.0
+        ],
+        [
+          1140.0,
+          434.0
+        ],
+        [
+          1140.0,
+          467.0
+        ],
+        [
+          250.0,
+          467.0
+        ]
+      ],
+      "text": "Báo cáo tài chính đã được kiểm toán độc lập, báo cáo thường niên và tờ khai quyết toán",
+      "confidence": 0.9690958363157895
+    },
+    {
+      "bbox": [
+        [
+          250.0,
+          463.0
+        ],
+        [
+          1140.0,
+          463.0
+        ],
+        [
+          1140.0,
+          503.0
+        ],
+        [
+          250.0,
+          503.0
+        ]
+      ],
+      "text": "thuế thu nhập doanh nghiệp của tập đoàn hoặc các bên liên kết có liên quan đến giao",
+      "confidence": 0.9666973999999999
+    },
+    {
+      "bbox": [
+        [
+          250.0,
+          492.0
+        ],
+        [
+          1141.0,
+          492.0
+        ],
+        [
+          1141.0,
+          533.0
+        ],
+        [
+          250.0,
+          533.0
+        ]
+      ],
+      "text": "dịch đề nghị áp dụng APA của người nộp thuế trong 03 năm liền trước năm người nộp",
+      "confidence": 0.9650340933333332
+    },
+    {
+      "bbox": [
+        [
+          250.0,
+          523.0
+        ],
+        [
+          625.0,
+          523.0
+        ],
+        [
+          625.0,
+          552.0
+        ],
+        [
+          250.0,
+          552.0
+        ]
+      ],
+      "text": "thuế nộp hồ sơ đề nghị áp dụng APA.",
+      "confidence": 0.9515510322222223
+    },
+    {
+      "bbox": [
+        [
+          251.0,
+          567.0
+        ],
+        [
+          1142.0,
+          567.0
+        ],
+        [
+          1142.0,
+          603.0
+        ],
+        [
+          251.0,
+          603.0
+        ]
+      ],
+      "text": "Kết quả sản xuất kinh doanh theo phân ngành chi tiết cho từng lĩnh vực hoạt động hoặc",
+      "confidence": 0.9668405183333333
+    },
+    {
+      "bbox": [
+        [
+          251.0,
+          594.0
+        ],
+        [
+          1142.0,
+          594.0
+        ],
+        [
+          1142.0,
+          641.0
+        ],
+        [
+          251.0,
+          641.0
+        ]
+      ],
+      "text": "dòng sản phẩm trong trường hợp báo cáo tài chính của người nộp thuế, tập đoàn hoặc",
+      "confidence": 0.9679032617647059
+    },
+    {
+      "bbox": [
+        [
+          251.0,
+          624.0
+        ],
+        [
+          1142.0,
+          624.0
+        ],
+        [
+          1142.0,
+          654.0
+        ],
+        [
+          251.0,
+          654.0
+        ]
+      ],
+      "text": "các bên liên kết có liên quan đến giao dịch đề nghị áp dụng APA của người nộp thuế",
+      "confidence": 0.9639184842105263
+    },
+    {
+      "bbox": [
+        [
+          251.0,
+          660.0
+        ],
+        [
+          525.0,
+          660.0
+        ],
+        [
+          525.0,
+          685.0
+        ],
+        [
+          251.0,
+          685.0
+        ]
+      ],
+      "text": "phản ánh các thông tin này.",
+      "confidence": 0.9672299966666666
+    },
+    {
+      "bbox": [
+        [
+          195.0,
+          738.0
+        ],
+        [
+          214.0,
+          738.0
+        ],
+        [
+          214.0,
+          761.0
+        ],
+        [
+          195.0,
+          761.0
+        ]
+      ],
+      "text": "d",
+      "confidence": 0.49557476
+    },
+    {
+      "bbox": [
+        [
+          252.0,
+          699.0
+        ],
+        [
+          1143.0,
+          699.0
+        ],
+        [
+          1143.0,
+          733.0
+        ],
+        [
+          252.0,
+          733.0
+        ]
+      ],
+      "text": "Các thông tin, kế hoạch có liên quan khác về thị trường và tài chính, bao gồm nhưng",
+      "confidence": 0.9375209505555556
+    },
+    {
+      "bbox": [
+        [
+          252.0,
+          727.0
+        ],
+        [
+          1143.0,
+          727.0
+        ],
+        [
+          1143.0,
+          761.0
+        ],
+        [
+          252.0,
+          761.0
+        ]
+      ],
+      "text": "không hạn chế đối với kế hoạch đầu tư mở rộng, tái cơ cấu hoạt động sản xuất kinh",
+      "confidence": 0.9384410757894736
+    },
+    {
+      "bbox": [
+        [
+          252.0,
+          756.0
+        ],
+        [
+          730.0,
+          756.0
+        ],
+        [
+          730.0,
+          786.0
+        ],
+        [
+          252.0,
+          786.0
+        ]
+      ],
+      "text": "doanh của người nộp thuế hoặc các bên liên kết.",
+      "confidence": 0.9600664739999999
+    },
+    {
+      "bbox": [
+        [
+          252.0,
+          803.0
+        ],
+        [
+          731.0,
+          803.0
+        ],
+        [
+          731.0,
+          834.0
+        ],
+        [
+          252.0,
+          834.0
+        ]
+      ],
+      "text": "Phương pháp xác định giá của giao dịch liên kết",
+      "confidence": 0.96853245
+    },
+    {
+      "bbox": [
+        [
+          252.0,
+          841.0
+        ],
+        [
+          1142.0,
+          841.0
+        ],
+        [
+          1142.0,
+          883.0
+        ],
+        [
+          252.0,
+          883.0
+        ]
+      ],
+      "text": "Thông tin về phương pháp xác định giá của giao dịch liên kết được đề xuất áp dụng,",
+      "confidence": 0.9677734411111111
+    },
+    {
+      "bbox": [
+        [
+          252.0,
+          869.0
+        ],
+        [
+          1143.0,
+          869.0
+        ],
+        [
+          1143.0,
+          911.0
+        ],
+        [
+          252.0,
+          911.0
+        ]
+      ],
+      "text": "nguồn dữ liệu, thông tin làm cơ sở phân tích so sánh, cách thức tính toán mức giá sản",
+      "confidence": 0.9660123768421053
+    },
+    {
+      "bbox": [
+        [
+          252.0,
+          898.0
+        ],
+        [
+          1109.0,
+          898.0
+        ],
+        [
+          1109.0,
+          930.0
+        ],
+        [
+          252.0,
+          930.0
+        ]
+      ],
+      "text": "phẩm, tỷ suất lợi nhuận liên quan đến giao dịch liên kết thuộc phạm vi APA bao gdm:",
+      "confidence": 0.9606705977777779
+    },
+    {
+      "bbox": [
+        [
+          196.0,
+          984.0
+        ],
+        [
+          215.0,
+          984.0
+        ],
+        [
+          215.0,
+          1007.0
+        ],
+        [
+          196.0,
+          1007.0
+        ]
+      ],
+      "text": "a)",
+      "confidence": 0.7165798200000001
+    },
+    {
+      "bbox": [
+        [
+          252.0,
+          944.0
+        ],
+        [
+          1144.0,
+          944.0
+        ],
+        [
+          1144.0,
+          975.0
+        ],
+        [
+          252.0,
+          975.0
+        ]
+      ],
+      "text": "Phân tích chi tiết về phương pháp xác định giá được đề xuất áp dụng đối với giao dịch thuộc",
+      "confidence": 0.964285924
+    },
+    {
+      "bbox": [
+        [
+          252.0,
+          977.0
+        ],
+        [
+          1144.0,
+          977.0
+        ],
+        [
+          1144.0,
+          1009.0
+        ],
+        [
+          252.0,
+          1009.0
+        ]
+      ],
+      "text": "phạm vi APA; lý do lựa chọn và chứng minh việc áp dụng phương pháp xác định giá này sẽ",
+      "confidence": 0.962389813
+    },
+    {
+      "bbox": [
+        [
+          252.0,
+          1002.0
+        ],
+        [
+          992.0,
+          1002.0
+        ],
+        [
+          992.0,
+          1032.0
+        ],
+        [
+          252.0,
+          1032.0
+        ]
+      ],
+      "text": "đưa đến kết quả phù hợp nhất liên quan đến các giao dịch thuộc phạm vi APA;",
+      "confidence": 0.9557099205882352
+    },
+    {
+      "bbox": [
+        [
+          196.0,
+          1086.0
+        ],
+        [
+          215.0,
+          1086.0
+        ],
+        [
+          215.0,
+          1109.0
+        ],
+        [
+          196.0,
+          1109.0
+        ]
+      ],
+      "text": "b",
+      "confidence": 0.91327667
+    },
+    {
+      "bbox": [
+        [
+          253.0,
+          1050.0
+        ],
+        [
+          1143.0,
+          1050.0
+        ],
+        [
+          1143.0,
+          1076.0
+        ],
+        [
+          253.0,
+          1076.0
+        ]
+      ],
+      "text": "Phân tích chỉ tiết các dữ liệu làm cơ sở so sánh, lý do lựa chọn dữ liệu so sánh và giải",
+      "confidence": 0.9684752518181818
+    },
+    {
+      "bbox": [
+        [
+          253.0,
+          1079.0
+        ],
+        [
+          1143.0,
+          1079.0
+        ],
+        [
+          1143.0,
+          1115.0
+        ],
+        [
+          253.0,
+          1115.0
+        ]
+      ],
+      "text": "thích sự phù hợp, sự tương thích của dữ liệu với phương pháp xác định giá đã xác định;",
+      "confidence": 0.9689564352631579
+    },
+    {
+      "bbox": [
+        [
+          253.0,
+          1104.0
+        ],
+        [
+          1114.0,
+          1104.0
+        ],
+        [
+          1114.0,
+          1133.0
+        ],
+        [
+          253.0,
+          1133.0
+        ]
+      ],
+      "text": "các điều chỉnh loại trừ khác biệt trọng yếu khi thực hiện phân tích để so sánh (nếu có);",
+      "confidence": 0.9600808836842105
+    },
+    {
+      "bbox": [
+        [
+          197.0,
+          1218.0
+        ],
+        [
+          215.0,
+          1218.0
+        ],
+        [
+          215.0,
+          1241.0
+        ],
+        [
+          197.0,
+          1241.0
+        ]
+      ],
+      "text": ")",
+      "confidence": 0.7211998
+    },
+    {
+      "bbox": [
+        [
+          253.0,
+          1149.0
+        ],
+        [
+          1145.0,
+          1149.0
+        ],
+        [
+          1145.0,
+          1182.0
+        ],
+        [
+          253.0,
+          1182.0
+        ]
+      ],
+      "text": "Thuyét minh cách thức thực hiện phương pháp xác định giá của giao dịch liên kết thuộc",
+      "confidence": 0.9626540323529411
+    },
+    {
+      "bbox": [
+        [
+          253.0,
+          1180.0
+        ],
+        [
+          1145.0,
+          1180.0
+        ],
+        [
+          1145.0,
+          1222.0
+        ],
+        [
+          253.0,
+          1222.0
+        ]
+      ],
+      "text": "phạm vi APA trong thời gian áp dụng APA lương ứng với các thông tin tài chính từ giao",
+      "confidence": 0.9549461373684209
+    },
+    {
+      "bbox": [
+        [
+          254.0,
+          1208.0
+        ],
+        [
+          1146.0,
+          1208.0
+        ],
+        [
+          1146.0,
+          1249.0
+        ],
+        [
+          254.0,
+          1249.0
+        ]
+      ],
+      "text": "dịch liên kết, bao gồm nhưng không hạn chế đối với việc xác định, tính toán mức giá, tỷ",
+      "confidence": 0.9608985705263159
+    },
+    {
+      "bbox": [
+        [
+          254.0,
+          1235.0
+        ],
+        [
+          1146.0,
+          1235.0
+        ],
+        [
+          1146.0,
+          1266.0
+        ],
+        [
+          254.0,
+          1266.0
+        ]
+      ],
+      "text": "suất lợi nhuận và dự kiến tác động đến số liệu doanh thu, chỉ phí từ giao dịch liên kết",
+      "confidence": 0.966126415
+    },
+    {
+      "bbox": [
+        [
+          253.0,
+          1272.0
+        ],
+        [
+          460.0,
+          1272.0
+        ],
+        [
+          460.0,
+          1296.0
+        ],
+        [
+          253.0,
+          1296.0
+        ]
+      ],
+      "text": "thuộc phạm vi APA;",
+      "confidence": 0.942665365
+    },
+    {
+      "bbox": [
+        [
+          198.0,
+          1421.0
+        ],
+        [
+          217.0,
+          1421.0
+        ],
+        [
+          217.0,
+          1444.0
+        ],
+        [
+          198.0,
+          1444.0
+        ]
+      ],
+      "text": "d",
+      "confidence": 0.57394905
+    },
+    {
+      "bbox": [
+        [
+          250.0,
+          1310.0
+        ],
+        [
+          1146.0,
+          1310.0
+        ],
+        [
+          1146.0,
+          1357.0
+        ],
+        [
+          250.0,
+          1357.0
+        ]
+      ],
+      "text": "Thuyét minh và áp dụng phương pháp xác định giá của giao dich liên kết được đề xuất",
+      "confidence": 0.9568035705555556
+    },
+    {
+      "bbox": [
+        [
+          254.0,
+          1338.0
+        ],
+        [
+          1145.0,
+          1338.0
+        ],
+        [
+          1145.0,
+          1371.0
+        ],
+        [
+          254.0,
+          1371.0
+        ]
+      ],
+      "text": "đối với thông tin dữ liệu tài chính thực tế của người nộp thuế trong thời gian từ 03 đến",
+      "confidence": 0.9663137285000001
+    },
+    {
+      "bbox": [
+        [
+          254.0,
+          1367.0
+        ],
+        [
+          1146.0,
+          1367.0
+        ],
+        [
+          1146.0,
+          1409.0
+        ],
+        [
+          254.0,
+          1409.0
+        ]
+      ],
+      "text": "05 năm trước thời điểm đề nghị áp dụng APA, tượng. ứng với thời gian đề nghị áp dụng",
+      "confidence": 0.9591712142105263
+    },
+    {
+      "bbox": [
+        [
+          254.0,
+          1396.0
+        ],
+        [
+          1147.0,
+          1396.0
+        ],
+        [
+          1147.0,
+          1441.0
+        ],
+        [
+          254.0,
+          1441.0
+        ]
+      ],
+      "text": "APA nếu phương pháp xác định giá của giao dịch liên kết được đề xuất khác với phương",
+      "confidence": 0.9573771166666667
+    },
+    {
+      "bbox": [
+        [
+          254.0,
+          1424.0
+        ],
+        [
+          1146.0,
+          1424.0
+        ],
+        [
+          1146.0,
+          1456.0
+        ],
+        [
+          254.0,
+          1456.0
+        ]
+      ],
+      "text": "pháp xác định giá của giao dịch liên kết đã sử dụng cho thời gian trước. Nếu người nộp",
+      "confidence": 0.9673209515789474
+    },
+    {
+      "bbox": [
+        [
+          254.0,
+          1452.0
+        ],
+        [
+          1146.0,
+          1452.0
+        ],
+        [
+          1146.0,
+          1490.0
+        ],
+        [
+          254.0,
+          1490.0
+        ]
+      ],
+      "text": "thuế được thành lập chưa đủ 03 năm tính đến thời điểm nộp hd sơ đề nghị áp dung APA",
+      "confidence": 0.9272391980000001
+    },
+    {
+      "bbox": [
+        [
+          255.0,
+          1480.0
+        ],
+        [
+          1147.0,
+          1480.0
+        ],
+        [
+          1147.0,
+          1512.0
+        ],
+        [
+          255.0,
+          1512.0
+        ]
+      ],
+      "text": "chính thức thi áp dung phương pháp xác định giá của giao dịch liên kết được đề xuất cho",
+      "confidence": 0.966711747368421
+    },
+    {
+      "bbox": [
+        [
+          255.0,
+          1518.0
+        ],
+        [
+          485.0,
+          1518.0
+        ],
+        [
+          485.0,
+          1542.0
+        ],
+        [
+          255.0,
+          1542.0
+        ]
+      ],
+      "text": "thời gian đã hoạt động;",
+      "confidence": 0.9625257260000001
+    }
+  ]
+}

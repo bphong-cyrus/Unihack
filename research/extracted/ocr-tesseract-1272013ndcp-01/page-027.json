@@ -1,0 +1,883 @@
+{
+  "document_id": "127/2013/NĐ-CP",
+  "source_file": "../../legal-sources/1272013ndcp/01.pdf",
+  "source_sha256": "6b970da9c19ccae81ecbc3385fb53f1fa2375e93ad03643e1f9b4e43ed87e573",
+  "page_count": 49,
+  "render_dpi": 150,
+  "engine": "Tesseract 5.5.4 (vie+eng; OEM 1; PSM 3)",
+  "review_status": "UNREVIEWED",
+  "tesseract_version": "5.5.4",
+  "tsv_parser_version": 2,
+  "languages": [
+    "vie",
+    "eng"
+  ],
+  "traineddata_sha256": {
+    "vie": "b6b49293d95d0b6dbd8780174627e82c75be957b6f4ed9862155540d6b00bb45",
+    "eng": "8280aed0782fe27257a68ea10fe7ef324ca0f8d85bd2fd145d1c2b560bcb66ba"
+  },
+  "ocr_engine_mode": 1,
+  "page_segmentation_mode": 3,
+  "thread_limit": 1,
+  "page": 27,
+  "lines": [
+    {
+      "bbox": [
+        [
+          288.0,
+          210.0
+        ],
+        [
+          1081.0,
+          210.0
+        ],
+        [
+          1081.0,
+          252.0
+        ],
+        [
+          288.0,
+          252.0
+        ]
+      ],
+      "text": "phạm vi, nội dung, thời hạn giao quyền. Cấp phó được giao quyền phải chịu",
+      "confidence": 0.9658986573333332
+    },
+    {
+      "bbox": [
+        [
+          289.0,
+          241.0
+        ],
+        [
+          1081.0,
+          241.0
+        ],
+        [
+          1081.0,
+          280.0
+        ],
+        [
+          289.0,
+          280.0
+        ]
+      ],
+      "text": "trách nhiệm về quyết định của mình trước cấp trưởng và trước pháp luật.",
+      "confidence": 0.9677984507142857
+    },
+    {
+      "bbox": [
+        [
+          288.0,
+          267.0
+        ],
+        [
+          1081.0,
+          267.0
+        ],
+        [
+          1081.0,
+          300.0
+        ],
+        [
+          288.0,
+          300.0
+        ]
+      ],
+      "text": "Người được giao quyên không được giao quyền, ủy quyền tiếp cho bất kỳ cá",
+      "confidence": 0.9383139793333334
+    },
+    {
+      "bbox": [
+        [
+          288.0,
+          305.0
+        ],
+        [
+          439.0,
+          305.0
+        ],
+        [
+          439.0,
+          324.0
+        ],
+        [
+          288.0,
+          324.0
+        ]
+      ],
+      "text": "nhân nào khác.",
+      "confidence": 0.9691351333333335
+    },
+    {
+      "bbox": [
+        [
+          339.0,
+          346.0
+        ],
+        [
+          670.0,
+          346.0
+        ],
+        [
+          670.0,
+          375.0
+        ],
+        [
+          339.0,
+          375.0
+        ]
+      ],
+      "text": "Điều 30. Quyết định cưỡng chế",
+      "confidence": 0.9668102783333334
+    },
+    {
+      "bbox": [
+        [
+          341.0,
+          392.0
+        ],
+        [
+          1080.0,
+          392.0
+        ],
+        [
+          1080.0,
+          426.0
+        ],
+        [
+          341.0,
+          426.0
+        ]
+      ],
+      "text": "1. Việc cưỡng chế thi hành quyết định hành chính trong lĩnh vực hải",
+      "confidence": 0.9651359235714287
+    },
+    {
+      "bbox": [
+        [
+          287.0,
+          419.0
+        ],
+        [
+          1081.0,
+          419.0
+        ],
+        [
+          1081.0,
+          457.0
+        ],
+        [
+          287.0,
+          457.0
+        ]
+      ],
+      "text": "quan chỉ được thực hiện khi có quyết định cưỡng chế của người có thẩm",
+      "confidence": 0.9631887060000001
+    },
+    {
+      "bbox": [
+        [
+          287.0,
+          452.0
+        ],
+        [
+          718.0,
+          452.0
+        ],
+        [
+          718.0,
+          481.0
+        ],
+        [
+          287.0,
+          481.0
+        ]
+      ],
+      "text": "quyên quy định tại Điều 29 Nghị định này.",
+      "confidence": 0.9609805122222222
+    },
+    {
+      "bbox": [
+        [
+          339.0,
+          497.0
+        ],
+        [
+          1080.0,
+          497.0
+        ],
+        [
+          1080.0,
+          534.0
+        ],
+        [
+          339.0,
+          534.0
+        ]
+      ],
+      "text": "2. Quyết định cưỡng chế thi hành quyết định hành chính trong lĩnh vực",
+      "confidence": 0.9612295978571429
+    },
+    {
+      "bbox": [
+        [
+          287.0,
+          524.0
+        ],
+        [
+          1081.0,
+          524.0
+        ],
+        [
+          1081.0,
+          560.0
+        ],
+        [
+          287.0,
+          560.0
+        ]
+      ],
+      "text": "hải quan bao gồm những nội dung sau: ngày, tháng, năm ra quyết định; căn cứ",
+      "confidence": 0.9676654756249999
+    },
+    {
+      "bbox": [
+        [
+          287.0,
+          553.0
+        ],
+        [
+          1080.0,
+          553.0
+        ],
+        [
+          1080.0,
+          597.0
+        ],
+        [
+          287.0,
+          597.0
+        ]
+      ],
+      "text": "ra quyết định; họ tên, chức vụ, đơn vị công tác của người ra quyết định; họ",
+      "confidence": 0.9583057882352942
+    },
+    {
+      "bbox": [
+        [
+          286.0,
+          582.0
+        ],
+        [
+          1080.0,
+          582.0
+        ],
+        [
+          1080.0,
+          618.0
+        ],
+        [
+          286.0,
+          618.0
+        ]
+      ],
+      "text": "tên, nơi cư trú, trụ sở của đối tượng bị cưỡng chế; lý do cưỡng chế; biện pháp",
+      "confidence": 0.9664961661111111
+    },
+    {
+      "bbox": [
+        [
+          287.0,
+          610.0
+        ],
+        [
+          1080.0,
+          610.0
+        ],
+        [
+          1080.0,
+          646.0
+        ],
+        [
+          287.0,
+          646.0
+        ]
+      ],
+      "text": "cưỡng chế; thời gian, địa điểm thực hiện; cơ quan chủ trì thực hiện quyết định",
+      "confidence": 0.9675744781250001
+    },
+    {
+      "bbox": [
+        [
+          286.0,
+          639.0
+        ],
+        [
+          1079.0,
+          639.0
+        ],
+        [
+          1079.0,
+          675.0
+        ],
+        [
+          286.0,
+          675.0
+        ]
+      ],
+      "text": "cưỡng chế; cơ quan có trách nhiệm phối hợp; chữ ký của người ra quyết định,",
+      "confidence": 0.966093631875
+    },
+    {
+      "bbox": [
+        [
+          286.0,
+          670.0
+        ],
+        [
+          595.0,
+          670.0
+        ],
+        [
+          595.0,
+          698.0
+        ],
+        [
+          286.0,
+          698.0
+        ]
+      ],
+      "text": "dấu của cơ quan ra quyết định:",
+      "confidence": 0.9636817499999999
+    },
+    {
+      "bbox": [
+        [
+          338.0,
+          715.0
+        ],
+        [
+          1079.0,
+          715.0
+        ],
+        [
+          1079.0,
+          753.0
+        ],
+        [
+          338.0,
+          753.0
+        ]
+      ],
+      "text": "3. Quyết định cưỡng chế thi hành quyết định hành chính trong lĩnh vực",
+      "confidence": 0.9644426028571429
+    },
+    {
+      "bbox": [
+        [
+          286.0,
+          743.0
+        ],
+        [
+          1079.0,
+          743.0
+        ],
+        [
+          1079.0,
+          776.0
+        ],
+        [
+          286.0,
+          776.0
+        ]
+      ],
+      "text": "hải quan phải được gửi cho đối tượng bị cưỡng chế, tổ chức, cá nhân liên",
+      "confidence": 0.956048861875
+    },
+    {
+      "bbox": [
+        [
+          286.0,
+          771.0
+        ],
+        [
+          1079.0,
+          771.0
+        ],
+        [
+          1079.0,
+          807.0
+        ],
+        [
+          286.0,
+          807.0
+        ]
+      ],
+      "text": "quan trong thời hạn 05 (năm) ngày trước khi thực hiện cưỡng chế; trường hợp",
+      "confidence": 0.96602123
+    },
+    {
+      "bbox": [
+        [
+          286.0,
+          800.0
+        ],
+        [
+          1078.0,
+          800.0
+        ],
+        [
+          1078.0,
+          840.0
+        ],
+        [
+          286.0,
+          840.0
+        ]
+      ],
+      "text": "cưỡng chế bằng biện pháp quy định tại Khoản 5 Điều 27 Nghị định này thì",
+      "confidence": 0.964481048125
+    },
+    {
+      "bbox": [
+        [
+          286.0,
+          828.0
+        ],
+        [
+          1078.0,
+          828.0
+        ],
+        [
+          1078.0,
+          863.0
+        ],
+        [
+          286.0,
+          863.0
+        ]
+      ],
+      "text": "quyết định phải được gửi cho Chủ tịch Ủy ban nhân dân xã, phường, thị trấn",
+      "confidence": 0.9687964725
+    },
+    {
+      "bbox": [
+        [
+          285.0,
+          859.0
+        ],
+        [
+          734.0,
+          859.0
+        ],
+        [
+          734.0,
+          887.0
+        ],
+        [
+          285.0,
+          887.0
+        ]
+      ],
+      "text": "nơi thực hiện cưỡng chế trước khi thực hiện.",
+      "confidence": 0.9688257266666668
+    },
+    {
+      "bbox": [
+        [
+          336.0,
+          904.0
+        ],
+        [
+          768.0,
+          904.0
+        ],
+        [
+          768.0,
+          933.0
+        ],
+        [
+          336.0,
+          933.0
+        ]
+      ],
+      "text": "Điều 31. Thi hành quyết định cưỡng chế",
+      "confidence": 0.95943009375
+    },
+    {
+      "bbox": [
+        [
+          339.0,
+          950.0
+        ],
+        [
+          1078.0,
+          950.0
+        ],
+        [
+          1078.0,
+          984.0
+        ],
+        [
+          339.0,
+          984.0
+        ]
+      ],
+      "text": "1. Người ra quyết định cưỡng chế thi hành quyết định hành chính trong",
+      "confidence": 0.9652049357142858
+    },
+    {
+      "bbox": [
+        [
+          286.0,
+          978.0
+        ],
+        [
+          1035.0,
+          978.0
+        ],
+        [
+          1035.0,
+          1009.0
+        ],
+        [
+          286.0,
+          1009.0
+        ]
+      ],
+      "text": "lĩnh vực hải quan có nhiệm vụ tổ chức thực hiện quyết định cưỡng chế đó.",
+      "confidence": 0.966380948125
+    },
+    {
+      "bbox": [
+        [
+          335.0,
+          1025.0
+        ],
+        [
+          1077.0,
+          1025.0
+        ],
+        [
+          1077.0,
+          1067.0
+        ],
+        [
+          335.0,
+          1067.0
+        ]
+      ],
+      "text": "Người ra quyết định cưỡng chế thi hành quyết định hành chính trong lĩnh",
+      "confidence": 0.9667673057142858
+    },
+    {
+      "bbox": [
+        [
+          285.0,
+          1053.0
+        ],
+        [
+          1077.0,
+          1053.0
+        ],
+        [
+          1077.0,
+          1093.0
+        ],
+        [
+          285.0,
+          1093.0
+        ]
+      ],
+      "text": "vực hải quan có trách nhiệm gửi ngay quyết định cưỡng chế cho các tô chức,",
+      "confidence": 0.954827504375
+    },
+    {
+      "bbox": [
+        [
+          285.0,
+          1082.0
+        ],
+        [
+          1077.0,
+          1082.0
+        ],
+        [
+          1077.0,
+          1117.0
+        ],
+        [
+          285.0,
+          1117.0
+        ]
+      ],
+      "text": "cá nhân liên quan và tổ chức thực hiện việc cưỡng chế thi hành quyết định",
+      "confidence": 0.964491820625
+    },
+    {
+      "bbox": [
+        [
+          284.0,
+          1112.0
+        ],
+        [
+          666.0,
+          1112.0
+        ],
+        [
+          666.0,
+          1141.0
+        ],
+        [
+          284.0,
+          1141.0
+        ]
+      ],
+      "text": "hành chính của mình và của cấp dưới.",
+      "confidence": 0.96762969125
+    },
+    {
+      "bbox": [
+        [
+          336.0,
+          1159.0
+        ],
+        [
+          1077.0,
+          1159.0
+        ],
+        [
+          1077.0,
+          1199.0
+        ],
+        [
+          336.0,
+          1199.0
+        ]
+      ],
+      "text": "2. Tổ chức, cá nhân nhận được quyết định cưỡng chế phải nghiêm chỉnh",
+      "confidence": 0.9617072242857144
+    },
+    {
+      "bbox": [
+        [
+          285.0,
+          1188.0
+        ],
+        [
+          1077.0,
+          1188.0
+        ],
+        [
+          1077.0,
+          1221.0
+        ],
+        [
+          285.0,
+          1221.0
+        ]
+      ],
+      "text": "chấp hành quyết định cưỡng chế và phải chịu mọi chi phí về việc tô chức thực",
+      "confidence": 0.9642747229411764
+    },
+    {
+      "bbox": [
+        [
+          285.0,
+          1217.0
+        ],
+        [
+          590.0,
+          1217.0
+        ],
+        [
+          590.0,
+          1247.0
+        ],
+        [
+          285.0,
+          1247.0
+        ]
+      ],
+      "text": "hiện các biện pháp cưỡng chế.",
+      "confidence": 0.9525404966666667
+    },
+    {
+      "bbox": [
+        [
+          336.0,
+          1262.0
+        ],
+        [
+          1076.0,
+          1262.0
+        ],
+        [
+          1076.0,
+          1294.0
+        ],
+        [
+          336.0,
+          1294.0
+        ]
+      ],
+      "text": "3. Ủy ban nhân dân xã, phường, thị trấn nơi có đối tượng bị cưỡng chế có",
+      "confidence": 0.9644997952941177
+    },
+    {
+      "bbox": [
+        [
+          284.0,
+          1293.0
+        ],
+        [
+          1076.0,
+          1293.0
+        ],
+        [
+          1076.0,
+          1327.0
+        ],
+        [
+          284.0,
+          1327.0
+        ]
+      ],
+      "text": "trách nhiệm chỉ đạo các cơ quan liên quan phối hợp với cơ quan bải quan thực",
+      "confidence": 0.9617290082352941
+    },
+    {
+      "bbox": [
+        [
+          285.0,
+          1323.0
+        ],
+        [
+          1039.0,
+          1323.0
+        ],
+        [
+          1039.0,
+          1352.0
+        ],
+        [
+          285.0,
+          1352.0
+        ]
+      ],
+      "text": "hiện việc cưỡng chế thi hành quyết định hành chính trong lĩnh vực hải quan.",
+      "confidence": 0.9626188306666666
+    },
+    {
+      "bbox": [
+        [
+          336.0,
+          1374.0
+        ],
+        [
+          1075.0,
+          1374.0
+        ],
+        [
+          1075.0,
+          1403.0
+        ],
+        [
+          336.0,
+          1403.0
+        ]
+      ],
+      "text": "4. Lực lượng công an nhân dân có trách nhiệm bảo đảm trật tự, an toàn",
+      "confidence": 0.956630190625
+    },
+    {
+      "bbox": [
+        [
+          285.0,
+          1399.0
+        ],
+        [
+          1076.0,
+          1399.0
+        ],
+        [
+          1076.0,
+          1443.0
+        ],
+        [
+          285.0,
+          1443.0
+        ]
+      ],
+      "text": "và hỗ trợ cơ quan hải quan trong quá trình cưỡng chế khi có yêu cầu của",
+      "confidence": 0.923125215882353
+    },
+    {
+      "bbox": [
+        [
+          285.0,
+          1428.0
+        ],
+        [
+          1075.0,
+          1428.0
+        ],
+        [
+          1075.0,
+          1460.0
+        ],
+        [
+          285.0,
+          1460.0
+        ]
+      ],
+      "text": "người ra quyết định cưỡng chế thi hành quyết định hành chính trong lĩnh vực",
+      "confidence": 0.9542213186666666
+    },
+    {
+      "bbox": [
+        [
+          285.0,
+          1465.0
+        ],
+        [
+          376.0,
+          1465.0
+        ],
+        [
+          376.0,
+          1489.0
+        ],
+        [
+          285.0,
+          1489.0
+        ]
+      ],
+      "text": "hải quan.",
+      "confidence": 0.96736687
+    },
+    {
+      "bbox": [
+        [
+          1054.0,
+          1506.0
+        ],
+        [
+          1075.0,
+          1506.0
+        ],
+        [
+          1075.0,
+          1522.0
+        ],
+        [
+          1054.0,
+          1522.0
+        ]
+      ],
+      "text": "27",
+      "confidence": 0.96546875
+    }
+  ]
+}

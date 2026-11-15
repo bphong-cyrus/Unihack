@@ -1,0 +1,839 @@
+{
+  "document_id": "102/2021/NĐ-CP",
+  "source_file": "../../legal-sources/1022021ndcp/01.pdf",
+  "source_sha256": "2d4ea494360877c923ac60a393ea2014cca30fb0172f0676525ccd29f1594f2f",
+  "page_count": 26,
+  "render_dpi": 150,
+  "engine": "Tesseract 5.5.4 (vie+eng; OEM 1; PSM 3)",
+  "review_status": "UNREVIEWED",
+  "tesseract_version": "5.5.4",
+  "tsv_parser_version": 2,
+  "languages": [
+    "vie",
+    "eng"
+  ],
+  "traineddata_sha256": {
+    "vie": "b6b49293d95d0b6dbd8780174627e82c75be957b6f4ed9862155540d6b00bb45",
+    "eng": "8280aed0782fe27257a68ea10fe7ef324ca0f8d85bd2fd145d1c2b560bcb66ba"
+  },
+  "ocr_engine_mode": 1,
+  "page_segmentation_mode": 3,
+  "thread_limit": 1,
+  "page": 16,
+  "lines": [
+    {
+      "bbox": [
+        [
+          657.0,
+          51.0
+        ],
+        [
+          681.0,
+          51.0
+        ],
+        [
+          681.0,
+          72.0
+        ],
+        [
+          657.0,
+          72.0
+        ]
+      ],
+      "text": "16",
+      "confidence": 0.96594475
+    },
+    {
+      "bbox": [
+        [
+          267.0,
+          135.0
+        ],
+        [
+          1124.0,
+          135.0
+        ],
+        [
+          1124.0,
+          167.0
+        ],
+        [
+          267.0,
+          167.0
+        ]
+      ],
+      "text": "4. Thời hiệu xử phạt vi phạm hành chính đối với lĩnh vực kinh doanh x4 số:",
+      "confidence": 0.9468550817647058
+    },
+    {
+      "bbox": [
+        [
+          268.0,
+          195.0
+        ],
+        [
+          1127.0,
+          195.0
+        ],
+        [
+          1127.0,
+          227.0
+        ],
+        [
+          268.0,
+          227.0
+        ]
+      ],
+      "text": "a) Thời hiệu xử phạt vi phạm hành chính trong lĩnh vực kinh doanh xổ số",
+      "confidence": 0.96409828625
+    },
+    {
+      "bbox": [
+        [
+          209.0,
+          234.0
+        ],
+        [
+          329.0,
+          234.0
+        ],
+        [
+          329.0,
+          256.0
+        ],
+        [
+          209.0,
+          256.0
+        ]
+      ],
+      "text": "là 01 năm.",
+      "confidence": 0.9618666066666667
+    },
+    {
+      "bbox": [
+        [
+          267.0,
+          289.0
+        ],
+        [
+          1126.0,
+          289.0
+        ],
+        [
+          1126.0,
+          323.0
+        ],
+        [
+          267.0,
+          323.0
+        ]
+      ],
+      "text": "b) Đối với hành vi vi phạm hành chính trong lĩnh vực kinh doanh xổ số",
+      "confidence": 0.9579790975
+    },
+    {
+      "bbox": [
+        [
+          208.0,
+          325.0
+        ],
+        [
+          1125.0,
+          325.0
+        ],
+        [
+          1125.0,
+          373.0
+        ],
+        [
+          208.0,
+          373.0
+        ]
+      ],
+      "text": "đang được thực hiện thì thời hiệu được tính từ ngày người có thẩm quyền thi",
+      "confidence": 0.95071989
+    },
+    {
+      "bbox": [
+        [
+          208.0,
+          359.0
+        ],
+        [
+          1126.0,
+          359.0
+        ],
+        [
+          1126.0,
+          404.0
+        ],
+        [
+          208.0,
+          404.0
+        ]
+      ],
+      "text": "hành công vụ phát hiện hành vi vi phạm. Đối với hành vi vi phạm hành chính",
+      "confidence": 0.9524138635294118
+    },
+    {
+      "bbox": [
+        [
+          208.0,
+          392.0
+        ],
+        [
+          1125.0,
+          392.0
+        ],
+        [
+          1125.0,
+          435.0
+        ],
+        [
+          208.0,
+          435.0
+        ]
+      ],
+      "text": "đã kết thúc thì thời hiệu được tính từ ngày chấm dứt hành vi vi phạm. Thời",
+      "confidence": 0.9656474923529411
+    },
+    {
+      "bbox": [
+        [
+          208.0,
+          427.0
+        ],
+        [
+          1125.0,
+          427.0
+        ],
+        [
+          1125.0,
+          462.0
+        ],
+        [
+          208.0,
+          462.0
+        ]
+      ],
+      "text": "điểm chấm dứt hành vi vi phạm để tính thời hiệu xử phạt đối với một số hành",
+      "confidence": 0.9637041261111111
+    },
+    {
+      "bbox": [
+        [
+          207.0,
+          467.0
+        ],
+        [
+          950.0,
+          467.0
+        ],
+        [
+          950.0,
+          496.0
+        ],
+        [
+          207.0,
+          496.0
+        ]
+      ],
+      "text": "vi vi phạm tại Chương 3 Nghị định này được quy định như sau:",
+      "confidence": 0.9649354057142857
+    },
+    {
+      "bbox": [
+        [
+          266.0,
+          521.0
+        ],
+        [
+          1125.0,
+          521.0
+        ],
+        [
+          1125.0,
+          564.0
+        ],
+        [
+          266.0,
+          564.0
+        ]
+      ],
+      "text": "- Đối với hành vi sửa chữa, tẩy xoá làm thay đổi nội dung Giấy chứng",
+      "confidence": 0.962016405625
+    },
+    {
+      "bbox": [
+        [
+          206.0,
+          556.0
+        ],
+        [
+          1125.0,
+          556.0
+        ],
+        [
+          1125.0,
+          601.0
+        ],
+        [
+          206.0,
+          601.0
+        ]
+      ],
+      "text": "nhận đủ điều kiện kinh doanh, các tài liệu trong hồ sơ đã được làm đại lý xô",
+      "confidence": 0.9682013644444445
+    },
+    {
+      "bbox": [
+        [
+          206.0,
+          590.0
+        ],
+        [
+          1125.0,
+          590.0
+        ],
+        [
+          1125.0,
+          632.0
+        ],
+        [
+          206.0,
+          632.0
+        ]
+      ],
+      "text": "số quy định tại khoản 1 Điều 35 và khoản 1 Điều 41 Nghị định này nếu không",
+      "confidence": 0.9673248966666667
+    },
+    {
+      "bbox": [
+        [
+          205.0,
+          626.0
+        ],
+        [
+          1125.0,
+          626.0
+        ],
+        [
+          1125.0,
+          668.0
+        ],
+        [
+          205.0,
+          668.0
+        ]
+      ],
+      "text": "xác định được ngày sửa chữa, tẩy xoá làm thay đổi nội dung Giấy chứng nhận",
+      "confidence": 0.96013054375
+    },
+    {
+      "bbox": [
+        [
+          206.0,
+          658.0
+        ],
+        [
+          1123.0,
+          658.0
+        ],
+        [
+          1123.0,
+          695.0
+        ],
+        [
+          206.0,
+          695.0
+        ]
+      ],
+      "text": "đủ điều kiện kinh doanh, các tài liệu trong hồ sơ đã được làm đại lý xổ số thì",
+      "confidence": 0.9511294915789474
+    },
+    {
+      "bbox": [
+        [
+          205.0,
+          693.0
+        ],
+        [
+          1124.0,
+          693.0
+        ],
+        [
+          1124.0,
+          735.0
+        ],
+        [
+          205.0,
+          735.0
+        ]
+      ],
+      "text": "thời điểm chấm dứt hành vi vi phạm là ngày phát hiện Giấy chứng nhận đủ",
+      "confidence": 0.96401578375
+    },
+    {
+      "bbox": [
+        [
+          205.0,
+          727.0
+        ],
+        [
+          965.0,
+          727.0
+        ],
+        [
+          965.0,
+          769.0
+        ],
+        [
+          205.0,
+          769.0
+        ]
+      ],
+      "text": "điều kiện kinh doanh bị sửa chữa, tẩy xóa làm thay đổi nội dung:",
+      "confidence": 0.942690887142857
+    },
+    {
+      "bbox": [
+        [
+          265.0,
+          787.0
+        ],
+        [
+          1124.0,
+          787.0
+        ],
+        [
+          1124.0,
+          829.0
+        ],
+        [
+          265.0,
+          829.0
+        ]
+      ],
+      "text": "- Đối với hành vi không xây dựng và ban hành quy chế quy định chỉ tiết",
+      "confidence": 0.9510869735294117
+    },
+    {
+      "bbox": [
+        [
+          205.0,
+          822.0
+        ],
+        [
+          1124.0,
+          822.0
+        ],
+        [
+          1124.0,
+          865.0
+        ],
+        [
+          205.0,
+          865.0
+        ]
+      ],
+      "text": "quy trình tổ chức thu hồi vé xô sô không tiêu thụ hết, không xây dựng và công",
+      "confidence": 0.9661203538888888
+    },
+    {
+      "bbox": [
+        [
+          204.0,
+          856.0
+        ],
+        [
+          1122.0,
+          856.0
+        ],
+        [
+          1122.0,
+          902.0
+        ],
+        [
+          204.0,
+          902.0
+        ]
+      ],
+      "text": "bố công khai thể lệ quay số mở thưởng, không ban hành Quy chế quản lý,",
+      "confidence": 0.9602864637499999
+    },
+    {
+      "bbox": [
+        [
+          204.0,
+          895.0
+        ],
+        [
+          1119.0,
+          895.0
+        ],
+        [
+          1119.0,
+          930.0
+        ],
+        [
+          204.0,
+          930.0
+        ]
+      ],
+      "text": "khai thác dữ liệu máy chủ kinh doanh xô số điện toán quy định tại khoản 1",
+      "confidence": 0.9549321876470589
+    },
+    {
+      "bbox": [
+        [
+          204.0,
+          924.0
+        ],
+        [
+          1122.0,
+          924.0
+        ],
+        [
+          1122.0,
+          968.0
+        ],
+        [
+          204.0,
+          968.0
+        ]
+      ],
+      "text": "Điều 40, khoản 1 Điều 44 và khoản 1 Điều 49 Nghị định này, thời điểm chấm",
+      "confidence": 0.9638883782352942
+    },
+    {
+      "bbox": [
+        [
+          205.0,
+          962.0
+        ],
+        [
+          1122.0,
+          962.0
+        ],
+        [
+          1122.0,
+          1004.0
+        ],
+        [
+          205.0,
+          1004.0
+        ]
+      ],
+      "text": "dứt hành vi vi phạm là ngày thực hiện ban hành quy chế quy định chỉ tiết quy",
+      "confidence": 0.962764205
+    },
+    {
+      "bbox": [
+        [
+          204.0,
+          993.0
+        ],
+        [
+          1122.0,
+          993.0
+        ],
+        [
+          1122.0,
+          1033.0
+        ],
+        [
+          204.0,
+          1033.0
+        ]
+      ],
+      "text": "trình tổ chức thu hồi vé xổ số không tiêu thụ hết, công bố công khai thể lệ",
+      "confidence": 0.962097938888889
+    },
+    {
+      "bbox": [
+        [
+          204.0,
+          1028.0
+        ],
+        [
+          1123.0,
+          1028.0
+        ],
+        [
+          1123.0,
+          1072.0
+        ],
+        [
+          204.0,
+          1072.0
+        ]
+      ],
+      "text": "quay số mở thưởng, ban hành Quy chế quản lý, khai thác dữ liệu máy chủ",
+      "confidence": 0.9633100043749999
+    },
+    {
+      "bbox": [
+        [
+          204.0,
+          1068.0
+        ],
+        [
+          527.0,
+          1068.0
+        ],
+        [
+          527.0,
+          1095.0
+        ],
+        [
+          204.0,
+          1095.0
+        ]
+      ],
+      "text": "kinh doanh xô sô điện toán;",
+      "confidence": 0.9678223433333334
+    },
+    {
+      "bbox": [
+        [
+          263.0,
+          1123.0
+        ],
+        [
+          1119.0,
+          1123.0
+        ],
+        [
+          1119.0,
+          1164.0
+        ],
+        [
+          263.0,
+          1164.0
+        ]
+      ],
+      "text": "- Đối với hành vi vi phạm quỷ định về chế độ báo cáo quy định tại Điều 51",
+      "confidence": 0.9547920347368423
+    },
+    {
+      "bbox": [
+        [
+          203.0,
+          1158.0
+        ],
+        [
+          1093.0,
+          1158.0
+        ],
+        [
+          1093.0,
+          1193.0
+        ],
+        [
+          203.0,
+          1193.0
+        ]
+      ],
+      "text": "Nghị định này, thời điểm chấm dứt hành vi vi phạm là ngày thực hiện báo cáo.",
+      "confidence": 0.9629810211764707
+    },
+    {
+      "bbox": [
+        [
+          263.0,
+          1218.0
+        ],
+        [
+          1122.0,
+          1218.0
+        ],
+        [
+          1122.0,
+          1252.0
+        ],
+        [
+          263.0,
+          1252.0
+        ]
+      ],
+      "text": "5. Xác định mức phạt tiền đối với một hành vi vi phạm hành chính cụ thể",
+      "confidence": 0.967831451764706
+    },
+    {
+      "bbox": [
+        [
+          203.0,
+          1257.0
+        ],
+        [
+          858.0,
+          1257.0
+        ],
+        [
+          858.0,
+          1285.0
+        ],
+        [
+          203.0,
+          1285.0
+        ]
+      ],
+      "text": "trong trường hợp có nhiêu tình tiết tăng nặng, giảm nhẹ:",
+      "confidence": 0.9644423818181818
+    },
+    {
+      "bbox": [
+        [
+          262.0,
+          1312.0
+        ],
+        [
+          1121.0,
+          1312.0
+        ],
+        [
+          1121.0,
+          1353.0
+        ],
+        [
+          262.0,
+          1353.0
+        ]
+      ],
+      "text": "a) Khi xác định mức phạt tiền đối với tổ chức, cá nhân vi phạm vừa có",
+      "confidence": 0.9630669717647058
+    },
+    {
+      "bbox": [
+        [
+          202.0,
+          1345.0
+        ],
+        [
+          1121.0,
+          1345.0
+        ],
+        [
+          1121.0,
+          1392.0
+        ],
+        [
+          202.0,
+          1392.0
+        ]
+      ],
+      "text": "tình tiết tăng nặng, vừa có tình tiết \"giảm nhẹ thì được giảm trừ tình tiết tăng",
+      "confidence": 0.932851324117647
+    },
+    {
+      "bbox": [
+        [
+          202.0,
+          1381.0
+        ],
+        [
+          1121.0,
+          1381.0
+        ],
+        [
+          1121.0,
+          1414.0
+        ],
+        [
+          202.0,
+          1414.0
+        ]
+      ],
+      "text": "nặng theo nguyên tắc một tình tiết giảm nhẹ được giảm trừ một tình tiết",
+      "confidence": 0.9684337666666667
+    },
+    {
+      "bbox": [
+        [
+          201.0,
+          1420.0
+        ],
+        [
+          322.0,
+          1420.0
+        ],
+        [
+          322.0,
+          1446.0
+        ],
+        [
+          201.0,
+          1446.0
+        ]
+      ],
+      "text": "tăng nặng.",
+      "confidence": 0.9672157250000001
+    },
+    {
+      "bbox": [
+        [
+          261.0,
+          1473.0
+        ],
+        [
+          1120.0,
+          1473.0
+        ],
+        [
+          1120.0,
+          1516.0
+        ],
+        [
+          261.0,
+          1516.0
+        ]
+      ],
+      "text": "b) Mức phat | tiền cụ thể đối với một hành vi vi phạm là mức trung bình",
+      "confidence": 0.9630825211111111
+    },
+    {
+      "bbox": [
+        [
+          202.0,
+          1507.0
+        ],
+        [
+          1119.0,
+          1507.0
+        ],
+        [
+          1119.0,
+          1548.0
+        ],
+        [
+          202.0,
+          1548.0
+        ]
+      ],
+      "text": "của khung phạt tiền được quy định đối với hành vi đó. Nếu có tình tiết giảm",
+      "confidence": 0.9653589270588234
+    },
+    {
+      "bbox": [
+        [
+          201.0,
+          1541.0
+        ],
+        [
+          1120.0,
+          1541.0
+        ],
+        [
+          1120.0,
+          1576.0
+        ],
+        [
+          201.0,
+          1576.0
+        ]
+      ],
+      "text": "nhẹ, thì mỗi tình tiết được giảm 10% mức tiền phạt trung bình của khung tiền",
+      "confidence": 0.9641572943750001
+    }
+  ]
+}

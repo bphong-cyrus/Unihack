@@ -1,0 +1,905 @@
+{
+  "document_id": "126/2020/NĐ-CP",
+  "source_file": "../../legal-sources/1262020ndcp/01.pdf",
+  "source_sha256": "310648e80396d267610946458e7fdd71ba87ef538b009d6574ed21514de3f7ca",
+  "page_count": 119,
+  "render_dpi": 150,
+  "engine": "Tesseract 5.5.4 (vie+eng; OEM 1; PSM 3)",
+  "review_status": "UNREVIEWED",
+  "tesseract_version": "5.5.4",
+  "tsv_parser_version": 2,
+  "languages": [
+    "vie",
+    "eng"
+  ],
+  "traineddata_sha256": {
+    "vie": "b6b49293d95d0b6dbd8780174627e82c75be957b6f4ed9862155540d6b00bb45",
+    "eng": "8280aed0782fe27257a68ea10fe7ef324ca0f8d85bd2fd145d1c2b560bcb66ba"
+  },
+  "ocr_engine_mode": 1,
+  "page_segmentation_mode": 3,
+  "thread_limit": 1,
+  "page": 2,
+  "lines": [
+    {
+      "bbox": [
+        [
+          259.0,
+          135.0
+        ],
+        [
+          1117.0,
+          135.0
+        ],
+        [
+          1117.0,
+          177.0
+        ],
+        [
+          259.0,
+          177.0
+        ]
+      ],
+      "text": "Điều 4. Quần lý thuế đối với người nộp thuế trong thời gian tạm",
+      "confidence": 0.9632859471428571
+    },
+    {
+      "bbox": [
+        [
+          202.0,
+          182.0
+        ],
+        [
+          568.0,
+          182.0
+        ],
+        [
+          568.0,
+          215.0
+        ],
+        [
+          202.0,
+          215.0
+        ]
+      ],
+      "text": "ngừng hoạt động, kinh doanh",
+      "confidence": 0.966340862
+    },
+    {
+      "bbox": [
+        [
+          261.0,
+          220.0
+        ],
+        [
+          1118.0,
+          220.0
+        ],
+        [
+          1118.0,
+          265.0
+        ],
+        [
+          261.0,
+          265.0
+        ]
+      ],
+      "text": "Người nộp thuế thực hiện thông báo khi tạm ngừng hoạt động, kinh",
+      "confidence": 0.9654577046153847
+    },
+    {
+      "bbox": [
+        [
+          203.0,
+          257.0
+        ],
+        [
+          1043.0,
+          257.0
+        ],
+        [
+          1043.0,
+          297.0
+        ],
+        [
+          203.0,
+          297.0
+        ]
+      ],
+      "text": "doanh theo quy định tại Dieu 37 Luật Quản lý thuế và các quy định sau:",
+      "confidence": 0.948375191875
+    },
+    {
+      "bbox": [
+        [
+          267.0,
+          305.0
+        ],
+        [
+          1120.0,
+          305.0
+        ],
+        [
+          1120.0,
+          344.0
+        ],
+        [
+          267.0,
+          344.0
+        ]
+      ],
+      "text": "1. Căn cứ xác định thời gian người nộp thuế tạm ngừng hoạt động,",
+      "confidence": 0.9675436678571429
+    },
+    {
+      "bbox": [
+        [
+          204.0,
+          355.0
+        ],
+        [
+          342.0,
+          355.0
+        ],
+        [
+          342.0,
+          377.0
+        ],
+        [
+          204.0,
+          377.0
+        ]
+      ],
+      "text": "kinh doanh:",
+      "confidence": 0.966090015
+    },
+    {
+      "bbox": [
+        [
+          266.0,
+          390.0
+        ],
+        [
+          1121.0,
+          390.0
+        ],
+        [
+          1121.0,
+          433.0
+        ],
+        [
+          266.0,
+          433.0
+        ]
+      ],
+      "text": "a) Đồi với người nộp thuế đăng ký thuế cùng với đăng ký doanh nghiệp,",
+      "confidence": 0.9536824493333333
+    },
+    {
+      "bbox": [
+        [
+          207.0,
+          425.0
+        ],
+        [
+          1122.0,
+          425.0
+        ],
+        [
+          1122.0,
+          467.0
+        ],
+        [
+          207.0,
+          467.0
+        ]
+      ],
+      "text": "đăng ký hợp tác xã, đăng ký kinh doanh theo quy định tại khoản 1 Điều 37",
+      "confidence": 0.9629672564705882
+    },
+    {
+      "bbox": [
+        [
+          207.0,
+          458.0
+        ],
+        [
+          1123.0,
+          458.0
+        ],
+        [
+          1123.0,
+          499.0
+        ],
+        [
+          207.0,
+          499.0
+        ]
+      ],
+      "text": "Luật Quản lý thuế là thời gian tạm ngừng kinh doanh của doanh nghiệp, hợp",
+      "confidence": 0.9684874266666665
+    },
+    {
+      "bbox": [
+        [
+          207.0,
+          491.0
+        ],
+        [
+          1123.0,
+          491.0
+        ],
+        [
+          1123.0,
+          531.0
+        ],
+        [
+          207.0,
+          531.0
+        ]
+      ],
+      "text": "tác xã được cơ quan đăng ký kinh doanh, cơ quan đăng ký hợp tác xã ghi",
+      "confidence": 0.9670687594117646
+    },
+    {
+      "bbox": [
+        [
+          208.0,
+          526.0
+        ],
+        [
+          1125.0,
+          526.0
+        ],
+        [
+          1125.0,
+          567.0
+        ],
+        [
+          208.0,
+          567.0
+        ]
+      ],
+      "text": "nhận trên Hệ thống thông tin quốc gia về đăng ký doanh nghiệp, đăng ký hợp",
+      "confidence": 0.9679895456250001
+    },
+    {
+      "bbox": [
+        [
+          208.0,
+          558.0
+        ],
+        [
+          1126.0,
+          558.0
+        ],
+        [
+          1126.0,
+          599.0
+        ],
+        [
+          208.0,
+          599.0
+        ]
+      ],
+      "text": "tác xã. Cơ quan đăng ký kinh doanh, cơ quan đăng ký hợp tác xã gửi thông tin",
+      "confidence": 0.9670051833333333
+    },
+    {
+      "bbox": [
+        [
+          210.0,
+          594.0
+        ],
+        [
+          1127.0,
+          594.0
+        ],
+        [
+          1127.0,
+          634.0
+        ],
+        [
+          210.0,
+          634.0
+        ]
+      ],
+      "text": "đăng ký tạm ngùng kinh doanh của doanh nghiệp, hợp tác xã cho cơ quan",
+      "confidence": 0.9566165153333333
+    },
+    {
+      "bbox": [
+        [
+          210.0,
+          622.0
+        ],
+        [
+          1127.0,
+          622.0
+        ],
+        [
+          1127.0,
+          667.0
+        ],
+        [
+          210.0,
+          667.0
+        ]
+      ],
+      "text": "thuế bằng phương thức điện tử qua hệ thống trao đổi thông tin về đăng ký",
+      "confidence": 0.967382874375
+    },
+    {
+      "bbox": [
+        [
+          210.0,
+          654.0
+        ],
+        [
+          1129.0,
+          654.0
+        ],
+        [
+          1129.0,
+          699.0
+        ],
+        [
+          210.0,
+          699.0
+        ]
+      ],
+      "text": "kinh doanh và đăng ký thuế trong thời hạn 01 ngày làm việc hoặc chậm nhất",
+      "confidence": 0.967394255625
+    },
+    {
+      "bbox": [
+        [
+          212.0,
+          695.0
+        ],
+        [
+          1129.0,
+          695.0
+        ],
+        [
+          1129.0,
+          735.0
+        ],
+        [
+          212.0,
+          735.0
+        ]
+      ],
+      "text": "là ngày làm việc tiếp theo kể từ ngày cơ quan đăng ký kinh doanh, cơ quan",
+      "confidence": 0.961087228235294
+    },
+    {
+      "bbox": [
+        [
+          212.0,
+          723.0
+        ],
+        [
+          1128.0,
+          723.0
+        ],
+        [
+          1128.0,
+          769.0
+        ],
+        [
+          212.0,
+          769.0
+        ]
+      ],
+      "text": "đăng ký hợp tác xã ghi nhận trên Hệ thống thông tin quốc gia về đăng ký",
+      "confidence": 0.9678049017647059
+    },
+    {
+      "bbox": [
+        [
+          213.0,
+          771.0
+        ],
+        [
+          612.0,
+          771.0
+        ],
+        [
+          612.0,
+          801.0
+        ],
+        [
+          213.0,
+          801.0
+        ]
+      ],
+      "text": "doanh nghiệp, đăng ký hợp tác xã.",
+      "confidence": 0.9683104057142857
+    },
+    {
+      "bbox": [
+        [
+          273.0,
+          805.0
+        ],
+        [
+          1130.0,
+          805.0
+        ],
+        [
+          1130.0,
+          852.0
+        ],
+        [
+          273.0,
+          852.0
+        ]
+      ],
+      "text": "b) Đối với người nộp thuế được cơ quan Nhà nước có thẩm quyền chấp",
+      "confidence": 0.9646674466666667
+    },
+    {
+      "bbox": [
+        [
+          214.0,
+          846.0
+        ],
+        [
+          1132.0,
+          846.0
+        ],
+        [
+          1132.0,
+          885.0
+        ],
+        [
+          214.0,
+          885.0
+        ]
+      ],
+      "text": "thuận, thông báo hoặc yêu cầu tạm ngừng hoạt động, kinh doanh theo quy",
+      "confidence": 0.9661257057142858
+    },
+    {
+      "bbox": [
+        [
+          216.0,
+          879.0
+        ],
+        [
+          1132.0,
+          879.0
+        ],
+        [
+          1132.0,
+          919.0
+        ],
+        [
+          216.0,
+          919.0
+        ]
+      ],
+      "text": "định tại khoản 1 Điều 37 Luật Quản lý thuế là thời gian được ghi trên văn bản",
+      "confidence": 0.9570189877777778
+    },
+    {
+      "bbox": [
+        [
+          216.0,
+          906.0
+        ],
+        [
+          1133.0,
+          906.0
+        ],
+        [
+          1133.0,
+          954.0
+        ],
+        [
+          216.0,
+          954.0
+        ]
+      ],
+      "text": "do cơ quan nhà nước có thẩm quyền cấp. Cơ quan nhà nước có thẩm quyền",
+      "confidence": 0.9650928168749999
+    },
+    {
+      "bbox": [
+        [
+          217.0,
+          941.0
+        ],
+        [
+          1133.0,
+          941.0
+        ],
+        [
+          1133.0,
+          987.0
+        ],
+        [
+          217.0,
+          987.0
+        ]
+      ],
+      "text": "gửi văn bản cho cơ quan thuê quản lý trực tiếp người nộp thuê chậm nhất",
+      "confidence": 0.955001115625
+    },
+    {
+      "bbox": [
+        [
+          216.0,
+          982.0
+        ],
+        [
+          936.0,
+          982.0
+        ],
+        [
+          936.0,
+          1020.0
+        ],
+        [
+          216.0,
+          1020.0
+        ]
+      ],
+      "text": "trong thời hạn 03 ngày làm việc kể từ ngày ban hành văn bản.",
+      "confidence": 0.9672218042857142
+    },
+    {
+      "bbox": [
+        [
+          277.0,
+          1025.0
+        ],
+        [
+          1133.0,
+          1025.0
+        ],
+        [
+          1133.0,
+          1070.0
+        ],
+        [
+          277.0,
+          1070.0
+        ]
+      ],
+      "text": "c) Đối với người nộp thuế là tổ chức, hộ kinh doanh, cá nhân kinh doanh",
+      "confidence": 0.93812926875
+    },
+    {
+      "bbox": [
+        [
+          218.0,
+          1059.0
+        ],
+        [
+          1133.0,
+          1059.0
+        ],
+        [
+          1133.0,
+          1104.0
+        ],
+        [
+          218.0,
+          1104.0
+        ]
+      ],
+      "text": "không thuộc diện đăng ký kinh doanh theo quy định tại khoản 2 Điều 37 Luật",
+      "confidence": 0.9677849487499999
+    },
+    {
+      "bbox": [
+        [
+          219.0,
+          1091.0
+        ],
+        [
+          1133.0,
+          1091.0
+        ],
+        [
+          1133.0,
+          1138.0
+        ],
+        [
+          219.0,
+          1138.0
+        ]
+      ],
+      "text": "Quản lý thuế thì thực hiện thông báo tạm ngừng hoạt động, kinh doanh đến cơ",
+      "confidence": 0.968691998125
+    },
+    {
+      "bbox": [
+        [
+          219.0,
+          1131.0
+        ],
+        [
+          1134.0,
+          1131.0
+        ],
+        [
+          1134.0,
+          1176.0
+        ],
+        [
+          219.0,
+          1176.0
+        ]
+      ],
+      "text": "quan thuế quản lý trực tiếp chậm nhất là 01 ngày làm việc trước khi tạm",
+      "confidence": 0.968919125
+    },
+    {
+      "bbox": [
+        [
+          220.0,
+          1164.0
+        ],
+        [
+          1135.0,
+          1164.0
+        ],
+        [
+          1135.0,
+          1205.0
+        ],
+        [
+          220.0,
+          1205.0
+        ]
+      ],
+      "text": "ngừng hoạt động, kinh doanh. Cơ quan thuế có thông báo xác nhận gửi người",
+      "confidence": 0.9657109313333333
+    },
+    {
+      "bbox": [
+        [
+          221.0,
+          1197.0
+        ],
+        [
+          1137.0,
+          1197.0
+        ],
+        [
+          1137.0,
+          1239.0
+        ],
+        [
+          221.0,
+          1239.0
+        ]
+      ],
+      "text": "nộp thuế về thời gian người nộp thuế đăng ký tạm ngừng hoạt động, kinh",
+      "confidence": 0.9687110806666667
+    },
+    {
+      "bbox": [
+        [
+          222.0,
+          1229.0
+        ],
+        [
+          1138.0,
+          1229.0
+        ],
+        [
+          1138.0,
+          1270.0
+        ],
+        [
+          222.0,
+          1270.0
+        ]
+      ],
+      "text": "doanh chậm nhất trong thời hạn 02 ngày làm việc kể từ ngày nhận được thông",
+      "confidence": 0.965761495
+    },
+    {
+      "bbox": [
+        [
+          222.0,
+          1264.0
+        ],
+        [
+          1139.0,
+          1264.0
+        ],
+        [
+          1139.0,
+          1304.0
+        ],
+        [
+          222.0,
+          1304.0
+        ]
+      ],
+      "text": "báo của người nộp thuế. Người nộp thuế được tạm ngừng hoạt động, kinh",
+      "confidence": 0.9680874742857144
+    },
+    {
+      "bbox": [
+        [
+          223.0,
+          1292.0
+        ],
+        [
+          1139.0,
+          1292.0
+        ],
+        [
+          1139.0,
+          1338.0
+        ],
+        [
+          223.0,
+          1338.0
+        ]
+      ],
+      "text": "doanh không quá 1 năm đối với 1 lần đăng ký. Trường hợp người nộp thuế là",
+      "confidence": 0.964801935882353
+    },
+    {
+      "bbox": [
+        [
+          223.0,
+          1333.0
+        ],
+        [
+          1139.0,
+          1333.0
+        ],
+        [
+          1139.0,
+          1371.0
+        ],
+        [
+          223.0,
+          1371.0
+        ]
+      ],
+      "text": "tổ chức, tổng thời gian tạm ngừng hoạt động, kinh doanh không quá 2 năm",
+      "confidence": 0.9669376326666667
+    },
+    {
+      "bbox": [
+        [
+          225.0,
+          1370.0
+        ],
+        [
+          580.0,
+          1370.0
+        ],
+        [
+          580.0,
+          1404.0
+        ],
+        [
+          225.0,
+          1404.0
+        ]
+      ],
+      "text": "đối với 2 lần đăng ký liên tiếp.",
+      "confidence": 0.9678780275
+    },
+    {
+      "bbox": [
+        [
+          285.0,
+          1417.0
+        ],
+        [
+          1087.0,
+          1417.0
+        ],
+        [
+          1087.0,
+          1454.0
+        ],
+        [
+          285.0,
+          1454.0
+        ]
+      ],
+      "text": "2. Trong thời gian người nộp thuế tạm ngừng hoạt động, kinh doanh:",
+      "confidence": 0.9678579361538461
+    },
+    {
+      "bbox": [
+        [
+          286.0,
+          1464.0
+        ],
+        [
+          1140.0,
+          1464.0
+        ],
+        [
+          1140.0,
+          1505.0
+        ],
+        [
+          286.0,
+          1505.0
+        ]
+      ],
+      "text": "a) Người nộp thuế không phải nộp hồ sơ khai thuế, trừ trường hợp người",
+      "confidence": 0.9637527606666666
+    },
+    {
+      "bbox": [
+        [
+          227.0,
+          1499.0
+        ],
+        [
+          1141.0,
+          1499.0
+        ],
+        [
+          1141.0,
+          1540.0
+        ],
+        [
+          227.0,
+          1540.0
+        ]
+      ],
+      "text": "nộp thuế tạm ngừng hoạt động, kinh doanh không trọn tháng, quý, năm dương",
+      "confidence": 0.9668849507142856
+    },
+    {
+      "bbox": [
+        [
+          229.0,
+          1526.0
+        ],
+        [
+          1143.0,
+          1526.0
+        ],
+        [
+          1143.0,
+          1573.0
+        ],
+        [
+          229.0,
+          1573.0
+        ]
+      ],
+      "text": "lịch hoặc năm tài chính thì vẫn phải nộp hồ sơ khai thuế tháng, quý; hồ sơ",
+      "confidence": 0.9679470499999999
+    },
+    {
+      "bbox": [
+        [
+          229.0,
+          1574.0
+        ],
+        [
+          414.0,
+          1574.0
+        ],
+        [
+          414.0,
+          1608.0
+        ],
+        [
+          229.0,
+          1608.0
+        ]
+      ],
+      "text": "quyết toán năm.",
+      "confidence": 0.9673318733333334
+    }
+  ]
+}

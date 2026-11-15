@@ -1,0 +1,795 @@
+{
+  "document_id": "59/2018/NĐ-CP",
+  "source_file": "../../legal-sources/592018ndcp/01.pdf",
+  "source_sha256": "7ac1b46e806ae9290125acb9ac1d535bcea768749d16941e9fae20bbf7343a1a",
+  "page_count": 48,
+  "render_dpi": 150,
+  "engine": "Tesseract 5.5.4 (vie+eng; OEM 1; PSM 3)",
+  "review_status": "UNREVIEWED",
+  "tesseract_version": "5.5.4",
+  "tsv_parser_version": 2,
+  "languages": [
+    "vie",
+    "eng"
+  ],
+  "traineddata_sha256": {
+    "vie": "b6b49293d95d0b6dbd8780174627e82c75be957b6f4ed9862155540d6b00bb45",
+    "eng": "8280aed0782fe27257a68ea10fe7ef324ca0f8d85bd2fd145d1c2b560bcb66ba"
+  },
+  "ocr_engine_mode": 1,
+  "page_segmentation_mode": 3,
+  "thread_limit": 1,
+  "page": 19,
+  "lines": [
+    {
+      "bbox": [
+        [
+          656.0,
+          150.0
+        ],
+        [
+          675.0,
+          150.0
+        ],
+        [
+          675.0,
+          166.0
+        ],
+        [
+          656.0,
+          166.0
+        ]
+      ],
+      "text": "19",
+      "confidence": 0.96786591
+    },
+    {
+      "bbox": [
+        [
+          315.0,
+          223.0
+        ],
+        [
+          1068.0,
+          223.0
+        ],
+        [
+          1068.0,
+          258.0
+        ],
+        [
+          315.0,
+          258.0
+        ]
+      ],
+      "text": "¢) Niêm phong hải quan đối với phương tiện chứa hàng trong trường hợp",
+      "confidence": 0.9341109521428572
+    },
+    {
+      "bbox": [
+        [
+          261.0,
+          251.0
+        ],
+        [
+          1069.0,
+          251.0
+        ],
+        [
+          1069.0,
+          288.0
+        ],
+        [
+          261.0,
+          288.0
+        ]
+      ],
+      "text": "hàng hóa trung chuyên được vận chuyển giữa các bến cảng trong cùng một",
+      "confidence": 0.9673820450000001
+    },
+    {
+      "bbox": [
+        [
+          262.0,
+          285.0
+        ],
+        [
+          1068.0,
+          285.0
+        ],
+        [
+          1068.0,
+          316.0
+        ],
+        [
+          262.0,
+          316.0
+        ]
+      ],
+      "text": "cảng biên va trong trường hợp phương tiện chứa hàng không còn nguyên",
+      "confidence": 0.9505105338461539
+    },
+    {
+      "bbox": [
+        [
+          261.0,
+          317.0
+        ],
+        [
+          611.0,
+          317.0
+        ],
+        [
+          611.0,
+          342.0
+        ],
+        [
+          261.0,
+          342.0
+        ]
+      ],
+      "text": "niêm phong của hãng vận chuyên;",
+      "confidence": 0.96461291
+    },
+    {
+      "bbox": [
+        [
+          320.0,
+          356.0
+        ],
+        [
+          1016.0,
+          356.0
+        ],
+        [
+          1016.0,
+          389.0
+        ],
+        [
+          320.0,
+          389.0
+        ]
+      ],
+      "text": "d) Kiểm tra thực tế hàng hóa trong trường hợp có dấu hiệu vi phạm.",
+      "confidence": 0.9467118226666666
+    },
+    {
+      "bbox": [
+        [
+          316.0,
+          404.0
+        ],
+        [
+          865.0,
+          404.0
+        ],
+        [
+          865.0,
+          435.0
+        ],
+        [
+          316.0,
+          435.0
+        ]
+      ],
+      "text": "10. Trách nhiệm của Chỉ cục Hải quan cửa khẩu xuất:",
+      "confidence": 0.9616934209090909
+    },
+    {
+      "bbox": [
+        [
+          314.0,
+          444.0
+        ],
+        [
+          1067.0,
+          444.0
+        ],
+        [
+          1067.0,
+          488.0
+        ],
+        [
+          314.0,
+          488.0
+        ]
+      ],
+      "text": "a) Kiểm tra các thông tin trên Tờ khai vận chuyển hoặc chứng từ thay thế",
+      "confidence": 0.9596824037499999
+    },
+    {
+      "bbox": [
+        [
+          261.0,
+          486.0
+        ],
+        [
+          788.0,
+          486.0
+        ],
+        [
+          788.0,
+          512.0
+        ],
+        [
+          261.0,
+          512.0
+        ]
+      ],
+      "text": "tờ khai trên hệ thống xử lý dữ liệu điện tử bải quan;",
+      "confidence": 0.9560149861538463
+    },
+    {
+      "bbox": [
+        [
+          313.0,
+          533.0
+        ],
+        [
+          1069.0,
+          533.0
+        ],
+        [
+          1069.0,
+          569.0
+        ],
+        [
+          313.0,
+          569.0
+        ]
+      ],
+      "text": "b) Kiểm tra tình trạng niêm phong hải quan hoặc niêm phong của hãng",
+      "confidence": 0.958551532142857
+    },
+    {
+      "bbox": [
+        [
+          261.0,
+          553.0
+        ],
+        [
+          1069.0,
+          553.0
+        ],
+        [
+          1069.0,
+          592.0
+        ],
+        [
+          261.0,
+          592.0
+        ]
+      ],
+      "text": "vận chuyển hoặc nguyên trạng hàng hóa trong trường hợp hàng hóa không thể",
+      "confidence": 0.9656506357142858
+    },
+    {
+      "bbox": [
+        [
+          261.0,
+          598.0
+        ],
+        [
+          389.0,
+          598.0
+        ],
+        [
+          389.0,
+          622.0
+        ],
+        [
+          261.0,
+          622.0
+        ]
+      ],
+      "text": "niêm phong;",
+      "confidence": 0.94834534
+    },
+    {
+      "bbox": [
+        [
+          314.0,
+          638.0
+        ],
+        [
+          1069.0,
+          638.0
+        ],
+        [
+          1069.0,
+          676.0
+        ],
+        [
+          314.0,
+          676.0
+        ]
+      ],
+      "text": "e) Thực hiện việc giám sát hàng hóa trung chuyển xếp lên phương tiện",
+      "confidence": 0.9359327728571429
+    },
+    {
+      "bbox": [
+        [
+          262.0,
+          672.0
+        ],
+        [
+          566.0,
+          672.0
+        ],
+        [
+          566.0,
+          700.0
+        ],
+        [
+          262.0,
+          700.0
+        ]
+      ],
+      "text": "vận tải để xuất ra nước ngoài;",
+      "confidence": 0.94161705
+    },
+    {
+      "bbox": [
+        [
+          315.0,
+          717.0
+        ],
+        [
+          1011.0,
+          717.0
+        ],
+        [
+          1011.0,
+          750.0
+        ],
+        [
+          315.0,
+          750.0
+        ]
+      ],
+      "text": "d) Kiểm tra thực tế hàng hóa trong trường hợp có dấu hiệu vi phạm.",
+      "confidence": 0.9588378859999999
+    },
+    {
+      "bbox": [
+        [
+          314.0,
+          769.0
+        ],
+        [
+          729.0,
+          769.0
+        ],
+        [
+          729.0,
+          800.0
+        ],
+        [
+          314.0,
+          800.0
+        ]
+      ],
+      "text": "Bộ Tài chính quy định cu thể Điều nay.”",
+      "confidence": 0.9646672144444445
+    },
+    {
+      "bbox": [
+        [
+          315.0,
+          818.0
+        ],
+        [
+          890.0,
+          818.0
+        ],
+        [
+          890.0,
+          849.0
+        ],
+        [
+          315.0,
+          849.0
+        ]
+      ],
+      "text": "21. Sửa đồi, bổ sung khoản 1, khoản 4 Điều 48 như sau:",
+      "confidence": 0.944581973076923
+    },
+    {
+      "bbox": [
+        [
+          315.0,
+          868.0
+        ],
+        [
+          1070.0,
+          868.0
+        ],
+        [
+          1070.0,
+          905.0
+        ],
+        [
+          315.0,
+          905.0
+        ]
+      ],
+      "text": "“1. Các hình thức tái xuất hàng hóa nhập khẩu đã hoàn thành thủ tục hải",
+      "confidence": 0.953515458125
+    },
+    {
+      "bbox": [
+        [
+          263.0,
+          906.0
+        ],
+        [
+          412.0,
+          906.0
+        ],
+        [
+          412.0,
+          930.0
+        ],
+        [
+          263.0,
+          930.0
+        ]
+      ],
+      "text": "quan bao gồm:",
+      "confidence": 0.9110242466666666
+    },
+    {
+      "bbox": [
+        [
+          315.0,
+          950.0
+        ],
+        [
+          663.0,
+          950.0
+        ],
+        [
+          663.0,
+          980.0
+        ],
+        [
+          315.0,
+          980.0
+        ]
+      ],
+      "text": "a) Tái xuất để trả cho khách hàng;",
+      "confidence": 0.9594125775000001
+    },
+    {
+      "bbox": [
+        [
+          316.0,
+          994.0
+        ],
+        [
+          989.0,
+          994.0
+        ],
+        [
+          989.0,
+          1030.0
+        ],
+        [
+          316.0,
+          1030.0
+        ]
+      ],
+      "text": "b) Tái xuất sang nước thứ ba hoặc tái xuất vào khu phi thuế quan.",
+      "confidence": 0.9653574413333332
+    },
+    {
+      "bbox": [
+        [
+          316.0,
+          1030.0
+        ],
+        [
+          1072.0,
+          1030.0
+        ],
+        [
+          1072.0,
+          1071.0
+        ],
+        [
+          316.0,
+          1071.0
+        ]
+      ],
+      "text": "4. Trường hợp hàng hóa (trừ ma túy, vũ khí, tài liệu phản động, hóa chất",
+      "confidence": 0.9650924781249999
+    },
+    {
+      "bbox": [
+        [
+          264.0,
+          1059.0
+        ],
+        [
+          1072.0,
+          1059.0
+        ],
+        [
+          1072.0,
+          1101.0
+        ],
+        [
+          264.0,
+          1101.0
+        ]
+      ],
+      "text": "độc bảng I theo công ước cấm vũ khí hóa học) chưa làm thủ tục nhập khẩu",
+      "confidence": 0.9584968747058824
+    },
+    {
+      "bbox": [
+        [
+          264.0,
+          1097.0
+        ],
+        [
+          1071.0,
+          1097.0
+        ],
+        [
+          1071.0,
+          1129.0
+        ],
+        [
+          264.0,
+          1129.0
+        ]
+      ],
+      "text": "hoặc đã đăng ký tờ khai hải quan nhưng chưa hoàn thành thủ tục hải quan,",
+      "confidence": 0.96935910125
+    },
+    {
+      "bbox": [
+        [
+          264.0,
+          1120.0
+        ],
+        [
+          1071.0,
+          1120.0
+        ],
+        [
+          1071.0,
+          1162.0
+        ],
+        [
+          264.0,
+          1162.0
+        ]
+      ],
+      "text": "đang nằm trong khu vực giám sát hải quan nhưng do gửi nhằm lẫn, thất lạc,",
+      "confidence": 0.9547728218749999
+    },
+    {
+      "bbox": [
+        [
+          264.0,
+          1153.0
+        ],
+        [
+          1073.0,
+          1153.0
+        ],
+        [
+          1073.0,
+          1187.0
+        ],
+        [
+          264.0,
+          1187.0
+        ]
+      ],
+      "text": "không có người nhận hoặc bị từ chối nhận, néu người vận tải hoặc chủ hàng",
+      "confidence": 0.955913815625
+    },
+    {
+      "bbox": [
+        [
+          265.0,
+          1178.0
+        ],
+        [
+          1072.0,
+          1178.0
+        ],
+        [
+          1072.0,
+          1214.0
+        ],
+        [
+          265.0,
+          1214.0
+        ]
+      ],
+      "text": "có văn bản đề nghị được tái xuất (trong đó nêu rõ lý do nhằm lẫn, thất lạc",
+      "confidence": 0.9571741661111111
+    },
+    {
+      "bbox": [
+        [
+          264.0,
+          1209.0
+        ],
+        [
+          1072.0,
+          1209.0
+        ],
+        [
+          1072.0,
+          1244.0
+        ],
+        [
+          264.0,
+          1244.0
+        ]
+      ],
+      "text": "hoặc từ chối nhận) hoặc hàng hóa buộc tái xuất theo Quyết định của cơ quan",
+      "confidence": 0.9686769612499999
+    },
+    {
+      "bbox": [
+        [
+          265.0,
+          1241.0
+        ],
+        [
+          1073.0,
+          1241.0
+        ],
+        [
+          1073.0,
+          1279.0
+        ],
+        [
+          265.0,
+          1279.0
+        ]
+      ],
+      "text": "có thắm quyền thì Chi cục trưởng Chỉ cục Hải quan nơi hàng hóa đang được",
+      "confidence": 0.962850155
+    },
+    {
+      "bbox": [
+        [
+          265.0,
+          1265.0
+        ],
+        [
+          1073.0,
+          1265.0
+        ],
+        [
+          1073.0,
+          1304.0
+        ],
+        [
+          265.0,
+          1304.0
+        ]
+      ],
+      "text": "lưu giữ tổ chức giám sát hàng hóa cho đến khi thực xuất ra khỏi lãnh thổ",
+      "confidence": 0.9648386605882354
+    },
+    {
+      "bbox": [
+        [
+          265.0,
+          1302.0
+        ],
+        [
+          626.0,
+          1302.0
+        ],
+        [
+          626.0,
+          1332.0
+        ],
+        [
+          265.0,
+          1332.0
+        ]
+      ],
+      "text": "Việt Nam ngay tại cửa khẩu nhập.”",
+      "confidence": 0.9660506442857142
+    },
+    {
+      "bbox": [
+        [
+          319.0,
+          1342.0
+        ],
+        [
+          762.0,
+          1342.0
+        ],
+        [
+          762.0,
+          1371.0
+        ],
+        [
+          319.0,
+          1371.0
+        ]
+      ],
+      "text": "22. Điều 49 được sửa đổi, bd sung như sau:",
+      "confidence": 0.9615835180000001
+    },
+    {
+      "bbox": [
+        [
+          319.0,
+          1377.0
+        ],
+        [
+          1074.0,
+          1377.0
+        ],
+        [
+          1074.0,
+          1420.0
+        ],
+        [
+          319.0,
+          1420.0
+        ]
+      ],
+      "text": "“1. Phương tiện quay vòng theo phương thức tạm nhập, đái xuất hoặc",
+      "confidence": 0.948617113076923
+    },
+    {
+      "bbox": [
+        [
+          266.0,
+          1409.0
+        ],
+        [
+          967.0,
+          1409.0
+        ],
+        [
+          967.0,
+          1444.0
+        ],
+        [
+          266.0,
+          1444.0
+        ]
+      ],
+      "text": "tạm xuất, tái nhập để chứa hàng hóa xuất khâu, nhập khẩu bao gồm:",
+      "confidence": 0.9559404199999999
+    },
+    {
+      "bbox": [
+        [
+          320.0,
+          1457.0
+        ],
+        [
+          790.0,
+          1457.0
+        ],
+        [
+          790.0,
+          1486.0
+        ],
+        [
+          320.0,
+          1486.0
+        ]
+      ],
+      "text": "a) Container rỗng có hoặc không có móc treo;",
+      "confidence": 0.9529688066666666
+    }
+  ]
+}

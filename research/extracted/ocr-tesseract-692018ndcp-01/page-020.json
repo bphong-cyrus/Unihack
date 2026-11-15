@@ -1,0 +1,817 @@
+{
+  "document_id": "69/2018/NĐ-CP",
+  "source_file": "../../legal-sources/692018ndcp/01.pdf",
+  "source_sha256": "cfe9d66c02837d203a0781cb916273fa6c3c6151b52fc6becc6d1c006d96681e",
+  "page_count": 89,
+  "render_dpi": 150,
+  "engine": "Tesseract 5.5.4 (vie+eng; OEM 1; PSM 3)",
+  "review_status": "UNREVIEWED",
+  "tesseract_version": "5.5.4",
+  "tsv_parser_version": 2,
+  "languages": [
+    "vie",
+    "eng"
+  ],
+  "traineddata_sha256": {
+    "vie": "b6b49293d95d0b6dbd8780174627e82c75be957b6f4ed9862155540d6b00bb45",
+    "eng": "8280aed0782fe27257a68ea10fe7ef324ca0f8d85bd2fd145d1c2b560bcb66ba"
+  },
+  "ocr_engine_mode": 1,
+  "page_segmentation_mode": 3,
+  "thread_limit": 1,
+  "page": 20,
+  "lines": [
+    {
+      "bbox": [
+        [
+          661.0,
+          125.0
+        ],
+        [
+          682.0,
+          125.0
+        ],
+        [
+          682.0,
+          141.0
+        ],
+        [
+          661.0,
+          141.0
+        ]
+      ],
+      "text": "20",
+      "confidence": 0.9698571
+    },
+    {
+      "bbox": [
+        [
+          322.0,
+          178.0
+        ],
+        [
+          1078.0,
+          178.0
+        ],
+        [
+          1078.0,
+          218.0
+        ],
+        [
+          322.0,
+          218.0
+        ]
+      ],
+      "text": "5. Hoạt động kinh doanh tạm nhập, tái xuất hàng hóa thuộc Phụ lục VII,",
+      "confidence": 0.9567267813333333
+    },
+    {
+      "bbox": [
+        [
+          270.0,
+          214.0
+        ],
+        [
+          1080.0,
+          214.0
+        ],
+        [
+          1080.0,
+          249.0
+        ],
+        [
+          270.0,
+          249.0
+        ]
+      ],
+      "text": "VIII, IX Nghị định này, trong đó doanh nghiệp không thực hiện tái xuất qua",
+      "confidence": 0.939465358
+    },
+    {
+      "bbox": [
+        [
+          270.0,
+          238.0
+        ],
+        [
+          1078.0,
+          238.0
+        ],
+        [
+          1078.0,
+          277.0
+        ],
+        [
+          270.0,
+          277.0
+        ]
+      ],
+      "text": "các cửa khẩu biên giới phía Bắc không thuộc loại hình kinh doanh tạm nhập,",
+      "confidence": 0.9622303053333333
+    },
+    {
+      "bbox": [
+        [
+          270.0,
+          273.0
+        ],
+        [
+          1078.0,
+          273.0
+        ],
+        [
+          1078.0,
+          306.0
+        ],
+        [
+          270.0,
+          306.0
+        ]
+      ],
+      "text": "tái xuất có điều kiện và không phải có Mã số kinh doanh tạm nhập, tái xuất.",
+      "confidence": 0.9322930188235294
+    },
+    {
+      "bbox": [
+        [
+          270.0,
+          303.0
+        ],
+        [
+          1079.0,
+          303.0
+        ],
+        [
+          1079.0,
+          339.0
+        ],
+        [
+          270.0,
+          339.0
+        ]
+      ],
+      "text": "Trong trường hợp cần thiết đáp ứng yêu cầu quản lý, Bộ Công Thương báo",
+      "confidence": 0.9679268553333332
+    },
+    {
+      "bbox": [
+        [
+          271.0,
+          330.0
+        ],
+        [
+          1080.0,
+          330.0
+        ],
+        [
+          1080.0,
+          366.0
+        ],
+        [
+          271.0,
+          366.0
+        ]
+      ],
+      "text": "cáo Thủ tướng Chính phủ áp dụng quy định về cấp Mã số kinh doanh tạm",
+      "confidence": 0.966843714375
+    },
+    {
+      "bbox": [
+        [
+          272.0,
+          363.0
+        ],
+        [
+          1080.0,
+          363.0
+        ],
+        [
+          1080.0,
+          398.0
+        ],
+        [
+          272.0,
+          398.0
+        ]
+      ],
+      "text": "nhập, tái xuất đối với trường hợp doanh nghiệp thực hiện kinh doanh tạm",
+      "confidence": 0.9674749864285715
+    },
+    {
+      "bbox": [
+        [
+          272.0,
+          389.0
+        ],
+        [
+          1080.0,
+          389.0
+        ],
+        [
+          1080.0,
+          428.0
+        ],
+        [
+          272.0,
+          428.0
+        ]
+      ],
+      "text": "nhập, tái xuất, gửi kho ngoại quan để xuất khẩu, tái xuất qua các cửa khâu",
+      "confidence": 0.9670539943750001
+    },
+    {
+      "bbox": [
+        [
+          272.0,
+          424.0
+        ],
+        [
+          599.0,
+          424.0
+        ],
+        [
+          599.0,
+          457.0
+        ],
+        [
+          272.0,
+          457.0
+        ]
+      ],
+      "text": "biên giới không thuộc phía Bắc.",
+      "confidence": 0.9688765466666667
+    },
+    {
+      "bbox": [
+        [
+          324.0,
+          469.0
+        ],
+        [
+          1061.0,
+          469.0
+        ],
+        [
+          1061.0,
+          506.0
+        ],
+        [
+          324.0,
+          506.0
+        ]
+      ],
+      "text": "Điều 27. Hồ sơ, quy trình cấp Mã số kinh doanh tạm nhập, tái xuất",
+      "confidence": 0.968158782
+    },
+    {
+      "bbox": [
+        [
+          328.0,
+          523.0
+        ],
+        [
+          1082.0,
+          523.0
+        ],
+        [
+          1082.0,
+          557.0
+        ],
+        [
+          328.0,
+          557.0
+        ]
+      ],
+      "text": "1. Doanh nghiệp gửi 1 bộ hồ sơ đề nghị cấp Mã số kinh doanh tạm nhập,",
+      "confidence": 0.96877418
+    },
+    {
+      "bbox": [
+        [
+          274.0,
+          548.0
+        ],
+        [
+          1083.0,
+          548.0
+        ],
+        [
+          1083.0,
+          593.0
+        ],
+        [
+          274.0,
+          593.0
+        ]
+      ],
+      "text": "tái xuất trực tiếp hoặc qua đường bưu điện hoặc trực tuyến (nêu có áp dụng)",
+      "confidence": 0.9677148775000001
+    },
+    {
+      "bbox": [
+        [
+          274.0,
+          591.0
+        ],
+        [
+          674.0,
+          591.0
+        ],
+        [
+          674.0,
+          617.0
+        ],
+        [
+          274.0,
+          617.0
+        ]
+      ],
+      "text": "đến Bộ Công Thương. Ho sơ bao gôm:",
+      "confidence": 0.95207308875
+    },
+    {
+      "bbox": [
+        [
+          327.0,
+          632.0
+        ],
+        [
+          1075.0,
+          632.0
+        ],
+        [
+          1075.0,
+          669.0
+        ],
+        [
+          327.0,
+          669.0
+        ]
+      ],
+      "text": "a) Văn bản đề nghị cấp Mã số kinh doanh tạm nhập, tái xuất: 1 bản chính.",
+      "confidence": 0.9616971005882352
+    },
+    {
+      "bbox": [
+        [
+          327.0,
+          685.0
+        ],
+        [
+          1084.0,
+          685.0
+        ],
+        [
+          1084.0,
+          722.0
+        ],
+        [
+          327.0,
+          722.0
+        ]
+      ],
+      "text": "b) Giấy chứng nhận đăng ký kinh doanh hoặc Giấy chứng nhận đăng ký",
+      "confidence": 0.9608838092857143
+    },
+    {
+      "bbox": [
+        [
+          276.0,
+          720.0
+        ],
+        [
+          852.0,
+          720.0
+        ],
+        [
+          852.0,
+          749.0
+        ],
+        [
+          276.0,
+          749.0
+        ]
+      ],
+      "text": "doanh nghiệp: 1 bản sao có đóng dâu của doanh nghiệp.",
+      "confidence": 0.9639302181818181
+    },
+    {
+      "bbox": [
+        [
+          294.0,
+          763.0
+        ],
+        [
+          1085.0,
+          763.0
+        ],
+        [
+          1085.0,
+          806.0
+        ],
+        [
+          294.0,
+          806.0
+        ]
+      ],
+      "text": "A ¢) Văn ban của tổ chức tin dụng xác nhận về việc doanh nghiệp nộp số",
+      "confidence": 0.8930080576470587
+    },
+    {
+      "bbox": [
+        [
+          276.0,
+          798.0
+        ],
+        [
+          1084.0,
+          798.0
+        ],
+        [
+          1084.0,
+          830.0
+        ],
+        [
+          276.0,
+          830.0
+        ]
+      ],
+      "text": "tiền ký quỹ theo quy định tại khoản 1 Điều 23 hoặc Điều 24 hoặc Điều 25",
+      "confidence": 0.9572250770588235
+    },
+    {
+      "bbox": [
+        [
+          277.0,
+          834.0
+        ],
+        [
+          563.0,
+          834.0
+        ],
+        [
+          563.0,
+          859.0
+        ],
+        [
+          277.0,
+          859.0
+        ]
+      ],
+      "text": "Nghị định này: 1 bản chính.",
+      "confidence": 0.9680869933333334
+    },
+    {
+      "bbox": [
+        [
+          330.0,
+          874.0
+        ],
+        [
+          1087.0,
+          874.0
+        ],
+        [
+          1087.0,
+          910.0
+        ],
+        [
+          330.0,
+          910.0
+        ]
+      ],
+      "text": "d) Tài liệu chứng minh doanh nghiệp sở hữu kho, bãi hoặc hợp đồng",
+      "confidence": 0.9621671835714287
+    },
+    {
+      "bbox": [
+        [
+          277.0,
+          901.0
+        ],
+        [
+          1086.0,
+          901.0
+        ],
+        [
+          1086.0,
+          939.0
+        ],
+        [
+          277.0,
+          939.0
+        ]
+      ],
+      "text": "thuê kho, bãi phục vụ kinh doanh tạm nhập, tái xuất thực phẩm đông lạnh",
+      "confidence": 0.9687466079999999
+    },
+    {
+      "bbox": [
+        [
+          277.0,
+          935.0
+        ],
+        [
+          1087.0,
+          935.0
+        ],
+        [
+          1087.0,
+          970.0
+        ],
+        [
+          277.0,
+          970.0
+        ]
+      ],
+      "text": "theo quy định tại khoản 2 Điều 23 Nghị định này: 1 bản sao có đóng dấu của",
+      "confidence": 0.9617626572222222
+    },
+    {
+      "bbox": [
+        [
+          278.0,
+          976.0
+        ],
+        [
+          422.0,
+          976.0
+        ],
+        [
+          422.0,
+          998.0
+        ],
+        [
+          278.0,
+          998.0
+        ]
+      ],
+      "text": "doanh nghiệp.",
+      "confidence": 0.96707447
+    },
+    {
+      "bbox": [
+        [
+          295.0,
+          1019.0
+        ],
+        [
+          1087.0,
+          1019.0
+        ],
+        [
+          1087.0,
+          1055.0
+        ],
+        [
+          295.0,
+          1055.0
+        ]
+      ],
+      "text": ". d) Văn bản của cơ quan điện lực nơi doanh nghiệp có kho, bãi xác nhận",
+      "confidence": 0.9337294711764705
+    },
+    {
+      "bbox": [
+        [
+          279.0,
+          1049.0
+        ],
+        [
+          1087.0,
+          1049.0
+        ],
+        [
+          1087.0,
+          1078.0
+        ],
+        [
+          279.0,
+          1078.0
+        ]
+      ],
+      "text": "về việc kho, bãi có đủ nguồn điện lưới đề vận bành các công-ten-nơ lạnh theo",
+      "confidence": 0.95824927875
+    },
+    {
+      "bbox": [
+        [
+          280.0,
+          1085.0
+        ],
+        [
+          509.0,
+          1085.0
+        ],
+        [
+          509.0,
+          1105.0
+        ],
+        [
+          280.0,
+          1105.0
+        ]
+      ],
+      "text": "sức chứa: 1 bản chính.",
+      "confidence": 0.96906218
+    },
+    {
+      "bbox": [
+        [
+          331.0,
+          1126.0
+        ],
+        [
+          1088.0,
+          1126.0
+        ],
+        [
+          1088.0,
+          1165.0
+        ],
+        [
+          331.0,
+          1165.0
+        ]
+      ],
+      "text": "Trường hợp doanh nghiệp xin cấp Mã số kinh doanh tạm nhập, tái xuất",
+      "confidence": 0.9604104842857143
+    },
+    {
+      "bbox": [
+        [
+          280.0,
+          1159.0
+        ],
+        [
+          1089.0,
+          1159.0
+        ],
+        [
+          1089.0,
+          1199.0
+        ],
+        [
+          280.0,
+          1199.0
+        ]
+      ],
+      "text": "hàng hóa có thuê tiêu thụ đặc biệt hoặc hàng hóa đã qua sử dụng thì không.",
+      "confidence": 0.9606539335294119
+    },
+    {
+      "bbox": [
+        [
+          280.0,
+          1189.0
+        ],
+        [
+          943.0,
+          1189.0
+        ],
+        [
+          943.0,
+          1220.0
+        ],
+        [
+          280.0,
+          1220.0
+        ]
+      ],
+      "text": "phải nộp các giây tờ nêu tại điểm d và điểm đ khoản 1 Điều này.",
+      "confidence": 0.95873360625
+    },
+    {
+      "bbox": [
+        [
+          332.0,
+          1240.0
+        ],
+        [
+          1088.0,
+          1240.0
+        ],
+        [
+          1088.0,
+          1280.0
+        ],
+        [
+          332.0,
+          1280.0
+        ]
+      ],
+      "text": "2. Trường hợp hồ sơ chưa đầy đủ, đúng quy định, trong thời hạn 3 ngày",
+      "confidence": 0.964479366875
+    },
+    {
+      "bbox": [
+        [
+          281.0,
+          1270.0
+        ],
+        [
+          1089.0,
+          1270.0
+        ],
+        [
+          1089.0,
+          1307.0
+        ],
+        [
+          281.0,
+          1307.0
+        ]
+      ],
+      "text": "làm việc, kê từ ngày tiếp nhận hô sơ của doanh nghiệp, Bộ Công Thương có",
+      "confidence": 0.957281885
+    },
+    {
+      "bbox": [
+        [
+          280.0,
+          1304.0
+        ],
+        [
+          774.0,
+          1304.0
+        ],
+        [
+          774.0,
+          1330.0
+        ],
+        [
+          280.0,
+          1330.0
+        ]
+      ],
+      "text": "văn bản yêu cầu doanh nghiệp hoàn thiện hô sơ.",
+      "confidence": 0.967403358
+    },
+    {
+      "bbox": [
+        [
+          334.0,
+          1344.0
+        ],
+        [
+          1090.0,
+          1344.0
+        ],
+        [
+          1090.0,
+          1381.0
+        ],
+        [
+          334.0,
+          1381.0
+        ]
+      ],
+      "text": "3. Đối với Mã số kinh doanh tạm nhập, tái xuất hàng thực phẩm dong",
+      "confidence": 0.964264858
+    },
+    {
+      "bbox": [
+        [
+          282.0,
+          1378.0
+        ],
+        [
+          1089.0,
+          1378.0
+        ],
+        [
+          1089.0,
+          1414.0
+        ],
+        [
+          282.0,
+          1414.0
+        ]
+      ],
+      "text": "lạnh, trong thời hạn 7 ngày làm việc, kê từ ngày nhận được hồ sơ day du,",
+      "confidence": 0.9367700876470587
+    },
+    {
+      "bbox": [
+        [
+          282.0,
+          1408.0
+        ],
+        [
+          1090.0,
+          1408.0
+        ],
+        [
+          1090.0,
+          1441.0
+        ],
+        [
+          282.0,
+          1441.0
+        ]
+      ],
+      "text": "đúng quy định, Bộ Công Thương tiên hành kiểm tra hoặc ủy quyền cho",
+      "confidence": 0.956692865
+    }
+  ]
+}

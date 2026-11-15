@@ -1,0 +1,905 @@
+{
+  "document_id": "59/2018/NĐ-CP",
+  "source_file": "../../legal-sources/592018ndcp/01.pdf",
+  "source_sha256": "7ac1b46e806ae9290125acb9ac1d535bcea768749d16941e9fae20bbf7343a1a",
+  "page_count": 48,
+  "render_dpi": 150,
+  "engine": "Tesseract 5.5.4 (vie+eng; OEM 1; PSM 3)",
+  "review_status": "UNREVIEWED",
+  "tesseract_version": "5.5.4",
+  "tsv_parser_version": 2,
+  "languages": [
+    "vie",
+    "eng"
+  ],
+  "traineddata_sha256": {
+    "vie": "b6b49293d95d0b6dbd8780174627e82c75be957b6f4ed9862155540d6b00bb45",
+    "eng": "8280aed0782fe27257a68ea10fe7ef324ca0f8d85bd2fd145d1c2b560bcb66ba"
+  },
+  "ocr_engine_mode": 1,
+  "page_segmentation_mode": 3,
+  "thread_limit": 1,
+  "page": 40,
+  "lines": [
+    {
+      "bbox": [
+        [
+          666.0,
+          139.0
+        ],
+        [
+          687.0,
+          139.0
+        ],
+        [
+          687.0,
+          155.0
+        ],
+        [
+          666.0,
+          155.0
+        ]
+      ],
+      "text": "40",
+      "confidence": 0.9694016999999999
+    },
+    {
+      "bbox": [
+        [
+          328.0,
+          211.0
+        ],
+        [
+          773.0,
+          211.0
+        ],
+        [
+          773.0,
+          246.0
+        ],
+        [
+          328.0,
+          246.0
+        ]
+      ],
+      "text": "46. Điều 77 được sửa đổi, bổ sung như sau:",
+      "confidence": 0.965333915
+    },
+    {
+      "bbox": [
+        [
+          329.0,
+          246.0
+        ],
+        [
+          1082.0,
+          246.0
+        ],
+        [
+          1082.0,
+          285.0
+        ],
+        [
+          329.0,
+          285.0
+        ]
+      ],
+      "text": "“Điều 77. Thủ tục hải quan, kiểm tra, giám sát hải quan đối với ô tô,",
+      "confidence": 0.961977295625
+    },
+    {
+      "bbox": [
+        [
+          279.0,
+          286.0
+        ],
+        [
+          716.0,
+          286.0
+        ],
+        [
+          716.0,
+          316.0
+        ],
+        [
+          279.0,
+          316.0
+        ]
+      ],
+      "text": "mô tô, xe gắn máy xuất cảnh, nhập cảnh",
+      "confidence": 0.9679444211111111
+    },
+    {
+      "bbox": [
+        [
+          332.0,
+          328.0
+        ],
+        [
+          702.0,
+          328.0
+        ],
+        [
+          702.0,
+          353.0
+        ],
+        [
+          332.0,
+          353.0
+        ]
+      ],
+      "text": "1. Trách nhiệm người khai hải quan:",
+      "confidence": 0.9691803400000001
+    },
+    {
+      "bbox": [
+        [
+          330.0,
+          360.0
+        ],
+        [
+          1083.0,
+          360.0
+        ],
+        [
+          1083.0,
+          396.0
+        ],
+        [
+          330.0,
+          396.0
+        ]
+      ],
+      "text": "a) Khai và ký tên vào tờ khai phương tiện vận tải đường bộ tạm nhập -",
+      "confidence": 0.9577002805882353
+    },
+    {
+      "bbox": [
+        [
+          278.0,
+          385.0
+        ],
+        [
+          1084.0,
+          385.0
+        ],
+        [
+          1084.0,
+          428.0
+        ],
+        [
+          278.0,
+          428.0
+        ]
+      ],
+      "text": "tái xuất, tạm xuất - tái nhập theo mẫu quy định của Bộ Tài chính; nộp và xuất",
+      "confidence": 0.9580113311111111
+    },
+    {
+      "bbox": [
+        [
+          278.0,
+          418.0
+        ],
+        [
+          1084.0,
+          418.0
+        ],
+        [
+          1084.0,
+          454.0
+        ],
+        [
+          278.0,
+          454.0
+        ]
+      ],
+      "text": "trình bộ hồ sơ hải quan theo quy định tại Điều 74, Điều 75, Điều 76 Nghị định",
+      "confidence": 0.9660366905555555
+    },
+    {
+      "bbox": [
+        [
+          279.0,
+          448.0
+        ],
+        [
+          1059.0,
+          448.0
+        ],
+        [
+          1059.0,
+          483.0
+        ],
+        [
+          279.0,
+          483.0
+        ]
+      ],
+      "text": "này. Đưa phương tiện vào vị trí kiểm tra theo yêu cầu của cơ quan hải quan;",
+      "confidence": 0.95265275
+    },
+    {
+      "bbox": [
+        [
+          331.0,
+          485.0
+        ],
+        [
+          1085.0,
+          485.0
+        ],
+        [
+          1085.0,
+          522.0
+        ],
+        [
+          331.0,
+          522.0
+        ]
+      ],
+      "text": "b) Trường hợp khi tái xuất hoặc tái nhập mà người khai hải quan không",
+      "confidence": 0.9643059193333333
+    },
+    {
+      "bbox": [
+        [
+          279.0,
+          516.0
+        ],
+        [
+          1085.0,
+          516.0
+        ],
+        [
+          1085.0,
+          555.0
+        ],
+        [
+          279.0,
+          555.0
+        ]
+      ],
+      "text": "xuất trình được tờ khai tạm nhập — đái xuất, tờ khai tạm xuất — tái nhập có xác",
+      "confidence": 0.9507157084210526
+    },
+    {
+      "bbox": [
+        [
+          280.0,
+          545.0
+        ],
+        [
+          1086.0,
+          545.0
+        ],
+        [
+          1086.0,
+          578.0
+        ],
+        [
+          280.0,
+          578.0
+        ]
+      ],
+      "text": "nhận của Chỉ cục Hải quan cửa khẩu thì phải giải trình và khai báo lại trên tờ",
+      "confidence": 0.9661227455555556
+    },
+    {
+      "bbox": [
+        [
+          280.0,
+          575.0
+        ],
+        [
+          820.0,
+          575.0
+        ],
+        [
+          820.0,
+          607.0
+        ],
+        [
+          280.0,
+          607.0
+        ]
+      ],
+      "text": "khai tạm nhập — tái xuất, tờ khai tạm xuất — tái nhập.",
+      "confidence": 0.945576616923077
+    },
+    {
+      "bbox": [
+        [
+          332.0,
+          621.0
+        ],
+        [
+          675.0,
+          621.0
+        ],
+        [
+          675.0,
+          645.0
+        ],
+        [
+          332.0,
+          645.0
+        ]
+      ],
+      "text": "2. Trách nhiệm cơ quan hải quan:",
+      "confidence": 0.9684641785714286
+    },
+    {
+      "bbox": [
+        [
+          332.0,
+          650.0
+        ],
+        [
+          1086.0,
+          650.0
+        ],
+        [
+          1086.0,
+          690.0
+        ],
+        [
+          332.0,
+          690.0
+        ]
+      ],
+      "text": "a) Tiép nhận hồ sơ hải quan do người khai hải quan nộp, xuất trình, nhập",
+      "confidence": 0.960987534375
+    },
+    {
+      "bbox": [
+        [
+          280.0,
+          683.0
+        ],
+        [
+          1024.0,
+          683.0
+        ],
+        [
+          1024.0,
+          715.0
+        ],
+        [
+          280.0,
+          715.0
+        ]
+      ],
+      "text": "thông tin vào hệ thong phan mềm quản lý phương tiện vận tải đường bộ;",
+      "confidence": 0.9677117193333333
+    },
+    {
+      "bbox": [
+        [
+          333.0,
+          718.0
+        ],
+        [
+          1086.0,
+          718.0
+        ],
+        [
+          1086.0,
+          757.0
+        ],
+        [
+          333.0,
+          757.0
+        ]
+      ],
+      "text": "b) Kiểm tra hồ sơ; kiểm tra nội dung các chứng từ trong bộ hồ sơ hải",
+      "confidence": 0.9637804129411766
+    },
+    {
+      "bbox": [
+        [
+          281.0,
+          751.0
+        ],
+        [
+          1088.0,
+          751.0
+        ],
+        [
+          1088.0,
+          787.0
+        ],
+        [
+          281.0,
+          787.0
+        ]
+      ],
+      "text": "quan theo quy định tại Điều 74, Điều 75 Nghị định này và theo quy định của",
+      "confidence": 0.9669998576470589
+    },
+    {
+      "bbox": [
+        [
+          281.0,
+          782.0
+        ],
+        [
+          934.0,
+          782.0
+        ],
+        [
+          934.0,
+          811.0
+        ],
+        [
+          281.0,
+          811.0
+        ]
+      ],
+      "text": "Chính phủ về quản lý xe cơ giới nước ngoài đưa vào Việt Nam;",
+      "confidence": 0.9661138314285713
+    },
+    {
+      "bbox": [
+        [
+          333.0,
+          814.0
+        ],
+        [
+          1087.0,
+          814.0
+        ],
+        [
+          1087.0,
+          855.0
+        ],
+        [
+          333.0,
+          855.0
+        ]
+      ],
+      "text": "e) Trường hợp hồ sơ, giầy tờ chưa đầy đủ, hợp lệ thì từ chối tiếp nhận",
+      "confidence": 0.9516953870588235
+    },
+    {
+      "bbox": [
+        [
+          282.0,
+          844.0
+        ],
+        [
+          1087.0,
+          844.0
+        ],
+        [
+          1087.0,
+          879.0
+        ],
+        [
+          282.0,
+          879.0
+        ]
+      ],
+      "text": "đăng ký hồ sơ, thông báo rõ lý do không tiếp nhận và những thiếu sót cần bổ",
+      "confidence": 0.964654176111111
+    },
+    {
+      "bbox": [
+        [
+          282.0,
+          884.0
+        ],
+        [
+          589.0,
+          884.0
+        ],
+        [
+          589.0,
+          908.0
+        ],
+        [
+          282.0,
+          908.0
+        ]
+      ],
+      "text": "sung cho người khai hải quan;",
+      "confidence": 0.9686795666666665
+    },
+    {
+      "bbox": [
+        [
+          333.0,
+          917.0
+        ],
+        [
+          1087.0,
+          917.0
+        ],
+        [
+          1087.0,
+          952.0
+        ],
+        [
+          333.0,
+          952.0
+        ]
+      ],
+      "text": "d) Trường hợp hồ sơ đây đủ, hợp lệ thì in tờ khai phương tiện tạm nhập -",
+      "confidence": 0.9507252244444444
+    },
+    {
+      "bbox": [
+        [
+          281.0,
+          946.0
+        ],
+        [
+          1088.0,
+          946.0
+        ],
+        [
+          1088.0,
+          978.0
+        ],
+        [
+          281.0,
+          978.0
+        ]
+      ],
+      "text": "tái xuất, tờ khai phương tiện tạm xuất - tái nhập từ hệ thông, đóng dâu công",
+      "confidence": 0.9605170652941176
+    },
+    {
+      "bbox": [
+        [
+          282.0,
+          974.0
+        ],
+        [
+          1088.0,
+          974.0
+        ],
+        [
+          1088.0,
+          1009.0
+        ],
+        [
+          282.0,
+          1009.0
+        ]
+      ],
+      "text": "chức hải quan tiếp nhận và dấu “VIET NAM CUSTOMS?” theo mẫu do",
+      "confidence": 0.899626793076923
+    },
+    {
+      "bbox": [
+        [
+          282.0,
+          1003.0
+        ],
+        [
+          1088.0,
+          1003.0
+        ],
+        [
+          1088.0,
+          1041.0
+        ],
+        [
+          282.0,
+          1041.0
+        ]
+      ],
+      "text": "Tong cục trưởng Tổng cục Hải quan ban hành lên tờ khai, giao cho người",
+      "confidence": 0.9617156113333334
+    },
+    {
+      "bbox": [
+        [
+          282.0,
+          1030.0
+        ],
+        [
+          1088.0,
+          1030.0
+        ],
+        [
+          1088.0,
+          1066.0
+        ],
+        [
+          282.0,
+          1066.0
+        ]
+      ],
+      "text": "khai hải quan dé làm thủ tục khi tái nhập hoặc tái xuất; lưu hỗ sơ tờ khai do",
+      "confidence": 0.9297156242105262
+    },
+    {
+      "bbox": [
+        [
+          282.0,
+          1063.0
+        ],
+        [
+          926.0,
+          1063.0
+        ],
+        [
+          926.0,
+          1090.0
+        ],
+        [
+          282.0,
+          1090.0
+        ]
+      ],
+      "text": "người khai hải quan nộp khi làm thủ tục tái nhập hoặc tái xuât;",
+      "confidence": 0.9588321799999998
+    },
+    {
+      "bbox": [
+        [
+          334.0,
+          1098.0
+        ],
+        [
+          1089.0,
+          1098.0
+        ],
+        [
+          1089.0,
+          1133.0
+        ],
+        [
+          334.0,
+          1133.0
+        ]
+      ],
+      "text": "đ) Trường hợp không sử dụng được phần mềm quản lý phương tiện vận",
+      "confidence": 0.9628310007142856
+    },
+    {
+      "bbox": [
+        [
+          281.0,
+          1130.0
+        ],
+        [
+          1088.0,
+          1130.0
+        ],
+        [
+          1088.0,
+          1162.0
+        ],
+        [
+          281.0,
+          1162.0
+        ]
+      ],
+      "text": "tải đường bộ, cơ quan hải quan cấp phát miễn phí tờ khai phương tiện vận tải",
+      "confidence": 0.96143035
+    },
+    {
+      "bbox": [
+        [
+          282.0,
+          1159.0
+        ],
+        [
+          1089.0,
+          1159.0
+        ],
+        [
+          1089.0,
+          1187.0
+        ],
+        [
+          282.0,
+          1187.0
+        ]
+      ],
+      "text": "cho người khai hải quan; hướng dẫn người khai hải quan khai thông tin vào tờ",
+      "confidence": 0.967279768125
+    },
+    {
+      "bbox": [
+        [
+          282.0,
+          1192.0
+        ],
+        [
+          537.0,
+          1192.0
+        ],
+        [
+          537.0,
+          1216.0
+        ],
+        [
+          282.0,
+          1216.0
+        ]
+      ],
+      "text": "khai phương tiện vận tải;",
+      "confidence": 0.9674291819999999
+    },
+    {
+      "bbox": [
+        [
+          334.0,
+          1223.0
+        ],
+        [
+          1090.0,
+          1223.0
+        ],
+        [
+          1090.0,
+          1261.0
+        ],
+        [
+          334.0,
+          1261.0
+        ]
+      ],
+      "text": "e) Cơ quan hải quan thực hiện quản lý rủi ro để kiểm tra hồ sơ, kiểm tra",
+      "confidence": 0.948006745
+    },
+    {
+      "bbox": [
+        [
+          282.0,
+          1257.0
+        ],
+        [
+          1089.0,
+          1257.0
+        ],
+        [
+          1089.0,
+          1290.0
+        ],
+        [
+          282.0,
+          1290.0
+        ]
+      ],
+      "text": "thực tê, xác nhận tạm nhập, tái xuất hoặc tạm xuất, tái nhập đôi với ô tô, mô",
+      "confidence": 0.9484385394444445
+    },
+    {
+      "bbox": [
+        [
+          282.0,
+          1289.0
+        ],
+        [
+          661.0,
+          1289.0
+        ],
+        [
+          661.0,
+          1314.0
+        ],
+        [
+          282.0,
+          1314.0
+        ]
+      ],
+      "text": "tô, xe gan máy nhập cảnh, xuat cảnh.",
+      "confidence": 0.9563581474999999
+    },
+    {
+      "bbox": [
+        [
+          334.0,
+          1323.0
+        ],
+        [
+          979.0,
+          1323.0
+        ],
+        [
+          979.0,
+          1352.0
+        ],
+        [
+          334.0,
+          1352.0
+        ]
+      ],
+      "text": "3. Kiểm tra hải quan đối với phương tiện xuất cảnh, nhập cảnh",
+      "confidence": 0.9617419430769231
+    },
+    {
+      "bbox": [
+        [
+          334.0,
+          1365.0
+        ],
+        [
+          1090.0,
+          1365.0
+        ],
+        [
+          1090.0,
+          1391.0
+        ],
+        [
+          334.0,
+          1391.0
+        ]
+      ],
+      "text": "Trên cơ sở thực hiện quản lý rủi ro, hoặc trường hợp có cơ sở xác định",
+      "confidence": 0.9691471100000001
+    },
+    {
+      "bbox": [
+        [
+          283.0,
+          1394.0
+        ],
+        [
+          1090.0,
+          1394.0
+        ],
+        [
+          1090.0,
+          1426.0
+        ],
+        [
+          283.0,
+          1426.0
+        ]
+      ],
+      "text": "trên phương tiện có hàng hóa buôn lậu hoặc vận chuyên trái phép, Chi cục",
+      "confidence": 0.9505236973333333
+    },
+    {
+      "bbox": [
+        [
+          283.0,
+          1423.0
+        ],
+        [
+          1090.0,
+          1423.0
+        ],
+        [
+          1090.0,
+          1450.0
+        ],
+        [
+          283.0,
+          1450.0
+        ]
+      ],
+      "text": "trưởng Chi cục Hải quan quyết định kiểm tra thực tế phương tiện hoặc thực",
+      "confidence": 0.9511514033333333
+    },
+    {
+      "bbox": [
+        [
+          283.0,
+          1453.0
+        ],
+        [
+          935.0,
+          1453.0
+        ],
+        [
+          935.0,
+          1479.0
+        ],
+        [
+          283.0,
+          1479.0
+        ]
+      ],
+      "text": "hiện các biện pháp nghiệp vụ khác theo quy định của pháp luật.",
+      "confidence": 0.9686940423076923
+    }
+  ]
+}

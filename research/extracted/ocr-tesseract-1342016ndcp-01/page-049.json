@@ -1,0 +1,157 @@
+{
+  "document_id": "134/2016/NĐ-CP",
+  "source_file": "../../legal-sources/1342016ndcp/01.pdf",
+  "source_sha256": "4fe3832d278d03e6ab53c064c6aa3c60063d372570eaa6b57427b0bd252e5460",
+  "page_count": 78,
+  "render_dpi": 150,
+  "engine": "Tesseract 5.5.4 (vie+eng; OEM 1; PSM 3)",
+  "review_status": "UNREVIEWED",
+  "tesseract_version": "5.5.4",
+  "tsv_parser_version": 2,
+  "languages": [
+    "vie",
+    "eng"
+  ],
+  "traineddata_sha256": {
+    "vie": "b6b49293d95d0b6dbd8780174627e82c75be957b6f4ed9862155540d6b00bb45",
+    "eng": "8280aed0782fe27257a68ea10fe7ef324ca0f8d85bd2fd145d1c2b560bcb66ba"
+  },
+  "ocr_engine_mode": 1,
+  "page_segmentation_mode": 3,
+  "thread_limit": 1,
+  "page": 49,
+  "lines": [
+    {
+      "bbox": [
+        [
+          619.0,
+          248.0
+        ],
+        [
+          1049.0,
+          248.0
+        ],
+        [
+          1049.0,
+          284.0
+        ],
+        [
+          619.0,
+          284.0
+        ]
+      ],
+      "text": "đới HÀNG HÓA MUA BÁN TRAO ĐỎI",
+      "confidence": 0.8793145814285716
+    },
+    {
+      "bbox": [
+        [
+          618.0,
+          273.0
+        ],
+        [
+          811.0,
+          273.0
+        ],
+        [
+          811.0,
+          318.0
+        ],
+        [
+          618.0,
+          318.0
+        ]
+      ],
+      "text": "J DAN BIEN GIỚI",
+      "confidence": 0.7908968175
+    },
+    {
+      "bbox": [
+        [
+          337.0,
+          433.0
+        ],
+        [
+          1071.0,
+          433.0
+        ],
+        [
+          1071.0,
+          469.0
+        ],
+        [
+          337.0,
+          469.0
+        ]
+      ],
+      "text": "Cu dân biên giới là công dân Việt Nam có hộ khẩu thường trú tại các",
+      "confidence": 0.965741038125
+    },
+    {
+      "bbox": [
+        [
+          271.0,
+          461.0
+        ],
+        [
+          1071.0,
+          461.0
+        ],
+        [
+          1071.0,
+          499.0
+        ],
+        [
+          271.0,
+          499.0
+        ]
+      ],
+      "text": "khu vực biên giới, người có giây phép của cơ quan công an tỉnh biên giới cho",
+      "confidence": 0.9645435652941177
+    },
+    {
+      "bbox": [
+        [
+          271.0,
+          489.0
+        ],
+        [
+          1071.0,
+          489.0
+        ],
+        [
+          1071.0,
+          520.0
+        ],
+        [
+          271.0,
+          520.0
+        ]
+      ],
+      "text": "cư trú ở khu vực biên giới được miễn thuế với trị giá hải quan không quá",
+      "confidence": 0.9685027052941176
+    },
+    {
+      "bbox": [
+        [
+          271.0,
+          511.0
+        ],
+        [
+          953.0,
+          511.0
+        ],
+        [
+          953.0,
+          548.0
+        ],
+        [
+          271.0,
+          548.0
+        ]
+      ],
+      "text": "2.000.000 đồng/1người/ 1 ngày/1 lượt và không quá 4 lượt/1 tháng.",
+      "confidence": 0.92854676
+    }
+  ]
+}

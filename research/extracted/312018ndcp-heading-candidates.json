@@ -1,0 +1,289 @@
+{
+  "document_id": "31/2018/NĐ-CP",
+  "source_sha256": "129a530f46096b72c04453e47c977a33a17c5761ba032525b4f776fef9d0c103",
+  "page_count": 29,
+  "review_status": "UNREVIEWED",
+  "candidates": [
+    {
+      "article": "1",
+      "page": 1,
+      "line_index": 30,
+      "text": "Điều 1. Phạm vi điều chỉnh",
+      "confidence": 0.7213982065968482,
+      "record_file": "page-001.json"
+    },
+    {
+      "article": "2",
+      "page": 1,
+      "line_index": 34,
+      "text": "Điều 2. Đối tượng áp dụng",
+      "confidence": 0.9082111388808836,
+      "record_file": "page-001.json"
+    },
+    {
+      "article": "3",
+      "page": 1,
+      "line_index": 37,
+      "text": "Điều 3. Giải thích từ ngữ",
+      "confidence": 0.9898216186289571,
+      "record_file": "page-001.json"
+    },
+    {
+      "article": "4",
+      "page": 3,
+      "line_index": 26,
+      "text": "Điều 4. Quy tắc xuất xứ ưu đãi theo Điều ước",
+      "confidence": 0.7267950931806925,
+      "record_file": "page-003.json"
+    },
+    {
+      "article": "5",
+      "page": 3,
+      "line_index": 36,
+      "text": "Điều 5. Quy tắc xuất xứ ưu đãi theo chế độ ưu đãi thuế quan",
+      "confidence": 0.7194828213172236,
+      "record_file": "page-003.json"
+    },
+    {
+      "article": "6",
+      "page": 3,
+      "line_index": 47,
+      "text": "Điều 6. Hàng hoá có xuất xứ",
+      "confidence": 0.7774307011154566,
+      "record_file": "page-003.json"
+    },
+    {
+      "article": "7",
+      "page": 4,
+      "line_index": 5,
+      "text": "Điều 7_",
+      "confidence": 0.5401002386533296,
+      "record_file": "page-004.json"
+    },
+    {
+      "article": "8",
+      "page": 5,
+      "line_index": 0,
+      "text": "Điều 8",
+      "confidence": 0.9931279405998168,
+      "record_file": "page-005.json"
+    },
+    {
+      "article": "9",
+      "page": 5,
+      "line_index": 13,
+      "text": "Điều 9. Công đoạn gia",
+      "confidence": 0.9719475517965904,
+      "record_file": "page-005.json"
+    },
+    {
+      "article": "10",
+      "page": 5,
+      "line_index": 60,
+      "text": "Điều 10. Xác định xuất xứ của bao bì, phụ kiện, phụ",
+      "confidence": 0.875824363813173,
+      "record_file": "page-005.json"
+    },
+    {
+      "article": "11",
+      "page": 6,
+      "line_index": 35,
+      "text": "Điều 11. Tỷ lệ nguyên liệu không đáp ứng tiêu chí chuyển đổi mã số",
+      "confidence": 0.7275207033718779,
+      "record_file": "page-006.json"
+    },
+    {
+      "article": "12",
+      "page": 7,
+      "line_index": 0,
+      "text": "Đỉều 12. Các yếu tố gián tiếp",
+      "confidence": 0.6675730716106165,
+      "record_file": "page-007.json"
+    },
+    {
+      "article": "13",
+      "page": 7,
+      "line_index": 37,
+      "text": "Điều 13.",
+      "confidence": 0.886902936618014,
+      "record_file": "page-007.json"
+    },
+    {
+      "article": "14",
+      "page": 8,
+      "line_index": 20,
+      "text": "Điều 14.",
+      "confidence": 0.885675678937055,
+      "record_file": "page-008.json"
+    },
+    {
+      "article": "15",
+      "page": 8,
+      "line_index": 46,
+      "text": "Điều 15. Hồ sơ cấp Giấy chứng nhận xuất xứ",
+      "confidence": 0.8832483987251062,
+      "record_file": "page-008.json"
+    },
+    {
+      "article": "16",
+      "page": 11,
+      "line_index": 0,
+      "text": "Điều 16. Quy trình khai báo và cấp Giấy chứng nhận xuất xứ",
+      "confidence": 0.6862542513997668,
+      "record_file": "page-011.json"
+    },
+    {
+      "article": "17",
+      "page": 12,
+      "line_index": 26,
+      "text": "Đỉều 17. Giấy chứng nhận xuất xứ",
+      "confidence": 0.8378788344076326,
+      "record_file": "page-012.json"
+    },
+    {
+      "article": "18",
+      "page": 12,
+      "line_index": 55,
+      "text": "Điều 18. Cấp lại Giấy chứng nhận xuất xứ",
+      "confidence": 0.7999809352200612,
+      "record_file": "page-012.json"
+    },
+    {
+      "article": "19",
+      "page": 14,
+      "line_index": 34,
+      "text": "Điều 19. Cấp Giấy chứng nhận hàng hóa không thay đổi xuất xứ",
+      "confidence": 0.7982029802131445,
+      "record_file": "page-014.json"
+    },
+    {
+      "article": "20",
+      "page": 15,
+      "line_index": 23,
+      "text": "Điều 20. Cấp Giấy chứng nhận xuất xứ hàng hóa giáp",
+      "confidence": 0.6047762322675803,
+      "record_file": "page-015.json"
+    },
+    {
+      "article": "21",
+      "page": 16,
+      "line_index": 7,
+      "text": "Điều 21. Từ chối cấp Giấy chứng nhận xuất xứ hàng hóa",
+      "confidence": 0.8394224863698182,
+      "record_file": "page-016.json"
+    },
+    {
+      "article": "22",
+      "page": 16,
+      "line_index": 56,
+      "text": "Điều 22. Thu hồi Giấy chứng nhận xuất xứ hàng hóa đã cấp",
+      "confidence": 0.558123485836154,
+      "record_file": "page-016.json"
+    },
+    {
+      "article": "23",
+      "page": 17,
+      "line_index": 20,
+      "text": "Điều 23. Trách nhiệm của cơ quan, tổ chức cấp Giấy chứng nhận",
+      "confidence": 0.5742836029674431,
+      "record_file": "page-017.json"
+    },
+    {
+      "article": "24",
+      "page": 17,
+      "line_index": 52,
+      "text": "Điều 24. Trách nhiệm của thương nhân đề nghị cấp Giấy",
+      "confidence": 0.6143854610907722,
+      "record_file": "page-017.json"
+    },
+    {
+      "article": "25",
+      "page": 18,
+      "line_index": 42,
+      "text": "Điều 25. Tự chứng nhận xuất xứ",
+      "confidence": 0.9797168653244066,
+      "record_file": "page-018.json"
+    },
+    {
+      "article": "26",
+      "page": 18,
+      "line_index": 52,
+      "text": "Điều 26. Chứng từ chứng nhận xuất xứ",
+      "confidence": 0.5821126479629894,
+      "record_file": "page-018.json"
+    },
+    {
+      "article": "27",
+      "page": 19,
+      "line_index": 28,
+      "text": "Điều 27.Xác định trước xuất xứ hàng hóa nhập khẩu",
+      "confidence": 0.8844593296515741,
+      "record_file": "page-019.json"
+    },
+    {
+      "article": "28",
+      "page": 19,
+      "line_index": 34,
+      "text": "Đíều 28. Kiểm tra, xác minh xuất xứ",
+      "confidence": 0.5887677142457075,
+      "record_file": "page-019.json"
+    },
+    {
+      "article": "29",
+      "page": 20,
+      "line_index": 57,
+      "text": "Điều 29. Biện pháp chống gian lận xuất xứ",
+      "confidence": 0.5841966680387932,
+      "record_file": "page-020.json"
+    },
+    {
+      "article": "30",
+      "page": 21,
+      "line_index": 57,
+      "text": "Điều 30. Lưu trữ hồ sơ",
+      "confidence": 0.8976849509993282,
+      "record_file": "page-021.json"
+    },
+    {
+      "article": "31",
+      "page": 22,
+      "line_index": 39,
+      "text": "Điều 31. Nhiệm vụ, quyền hạn của Bộ",
+      "confidence": 0.8151983977368287,
+      "record_file": "page-022.json"
+    },
+    {
+      "article": "32",
+      "page": 23,
+      "line_index": 13,
+      "text": "Điều 32. Nhiệm vụ,",
+      "confidence": 0.8962545040981843,
+      "record_file": "page-023.json"
+    },
+    {
+      "article": "33",
+      "page": 23,
+      "line_index": 33,
+      "text": "Điều 33. Trách nhiệm của các bộ, cơ",
+      "confidence": 0.8333959643069832,
+      "record_file": "page-023.json"
+    },
+    {
+      "article": "34",
+      "page": 23,
+      "line_index": 46,
+      "text": "Điều 34. Hiệu Iực thi hành",
+      "confidence": 0.8933717816942974,
+      "record_file": "page-023.json"
+    },
+    {
+      "article": "35",
+      "page": 24,
+      "line_index": 1,
+      "text": "Điều 35. Trách nhiệm thi hành",
+      "confidence": 0.8982016571105363,
+      "record_file": "page-024.json"
+    }
+  ],
+  "limitations": "Heuristic headings may be missing or refer to amendments; verify against original pages."
+}

@@ -1,0 +1,817 @@
+{
+  "document_id": "126/2020/NĐ-CP",
+  "source_file": "../../legal-sources/1262020ndcp/01.pdf",
+  "source_sha256": "310648e80396d267610946458e7fdd71ba87ef538b009d6574ed21514de3f7ca",
+  "page_count": 119,
+  "render_dpi": 150,
+  "engine": "Tesseract 5.5.4 (vie+eng; OEM 1; PSM 3)",
+  "review_status": "UNREVIEWED",
+  "tesseract_version": "5.5.4",
+  "tsv_parser_version": 2,
+  "languages": [
+    "vie",
+    "eng"
+  ],
+  "traineddata_sha256": {
+    "vie": "b6b49293d95d0b6dbd8780174627e82c75be957b6f4ed9862155540d6b00bb45",
+    "eng": "8280aed0782fe27257a68ea10fe7ef324ca0f8d85bd2fd145d1c2b560bcb66ba"
+  },
+  "ocr_engine_mode": 1,
+  "page_segmentation_mode": 3,
+  "thread_limit": 1,
+  "page": 112,
+  "lines": [
+    {
+      "bbox": [
+        [
+          696.0,
+          58.0
+        ],
+        [
+          734.0,
+          58.0
+        ],
+        [
+          734.0,
+          78.0
+        ],
+        [
+          696.0,
+          78.0
+        ]
+      ],
+      "text": "112",
+      "confidence": 0.96898117
+    },
+    {
+      "bbox": [
+        [
+          284.0,
+          130.0
+        ],
+        [
+          1141.0,
+          130.0
+        ],
+        [
+          1141.0,
+          168.0
+        ],
+        [
+          284.0,
+          168.0
+        ]
+      ],
+      "text": "đ) Kiểm tra tình hình thu, nộp tiền thuế và các khoản thu khác thuộc",
+      "confidence": 0.9626177526666667
+    },
+    {
+      "bbox": [
+        [
+          225.0,
+          170.0
+        ],
+        [
+          1142.0,
+          170.0
+        ],
+        [
+          1142.0,
+          204.0
+        ],
+        [
+          225.0,
+          204.0
+        ]
+      ],
+      "text": "ngân sách nhà nước; tình hình sử dụng và quản lý biên lai thu, chứng từ thu",
+      "confidence": 0.9640209335294118
+    },
+    {
+      "bbox": [
+        [
+          224.0,
+          205.0
+        ],
+        [
+          548.0,
+          205.0
+        ],
+        [
+          548.0,
+          233.0
+        ],
+        [
+          224.0,
+          233.0
+        ]
+      ],
+      "text": "của bên được ủy nhiệm thu.",
+      "confidence": 0.9673547616666667
+    },
+    {
+      "bbox": [
+        [
+          284.0,
+          266.0
+        ],
+        [
+          577.0,
+          266.0
+        ],
+        [
+          577.0,
+          294.0
+        ],
+        [
+          284.0,
+          294.0
+        ]
+      ],
+      "text": "7. Kinh phí ủy nhiệm thu",
+      "confidence": 0.9674530016666667
+    },
+    {
+      "bbox": [
+        [
+          282.0,
+          324.0
+        ],
+        [
+          1141.0,
+          324.0
+        ],
+        [
+          1141.0,
+          360.0
+        ],
+        [
+          282.0,
+          360.0
+        ]
+      ],
+      "text": "a) Kinh phí ủy nhiệm thu từ nguồn ngân sách nhà nước cấp cho cơ quan",
+      "confidence": 0.9648460525
+    },
+    {
+      "bbox": [
+        [
+          223.0,
+          356.0
+        ],
+        [
+          1141.0,
+          356.0
+        ],
+        [
+          1141.0,
+          399.0
+        ],
+        [
+          223.0,
+          399.0
+        ]
+      ],
+      "text": "quản lý thuế. Thủ trưởng cơ quan quản lý thuế được chỉ định thầu theo quy",
+      "confidence": 0.94920775
+    },
+    {
+      "bbox": [
+        [
+          223.0,
+          391.0
+        ],
+        [
+          1141.0,
+          391.0
+        ],
+        [
+          1141.0,
+          433.0
+        ],
+        [
+          223.0,
+          433.0
+        ]
+      ],
+      "text": "định và ký hợp đồng trực tiếp với tổ chức được uỷ nhiệm thu được chỉ định",
+      "confidence": 0.9679621929411765
+    },
+    {
+      "bbox": [
+        [
+          222.0,
+          425.0
+        ],
+        [
+          1140.0,
+          425.0
+        ],
+        [
+          1140.0,
+          468.0
+        ],
+        [
+          222.0,
+          468.0
+        ]
+      ],
+      "text": "thầu. Bộ Tài chính hướng dẫn cụ thể nội dung chi, mức chi, quản lý, sử dụng,",
+      "confidence": 0.9565848188235293
+    },
+    {
+      "bbox": [
+        [
+          221.0,
+          461.0
+        ],
+        [
+          831.0,
+          461.0
+        ],
+        [
+          831.0,
+          497.0
+        ],
+        [
+          221.0,
+          497.0
+        ]
+      ],
+      "text": "thanh toán, quyết toán nguồn kinh phí ủy nhiệm thu.",
+      "confidence": 0.969014351
+    },
+    {
+      "bbox": [
+        [
+          280.0,
+          526.0
+        ],
+        [
+          1139.0,
+          526.0
+        ],
+        [
+          1139.0,
+          565.0
+        ],
+        [
+          280.0,
+          565.0
+        ]
+      ],
+      "text": "b) Việc chi trả kinh phí ủy nhiệm thu phải được thực hiện đúng đối",
+      "confidence": 0.965230224
+    },
+    {
+      "bbox": [
+        [
+          220.0,
+          558.0
+        ],
+        [
+          1139.0,
+          558.0
+        ],
+        [
+          1139.0,
+          594.0
+        ],
+        [
+          220.0,
+          594.0
+        ]
+      ],
+      "text": "tượng, đúng địa bàn và thanh toán bằng chuyển khoản thông qua tài khoản",
+      "confidence": 0.9652186528571428
+    },
+    {
+      "bbox": [
+        [
+          220.0,
+          595.0
+        ],
+        [
+          1138.0,
+          595.0
+        ],
+        [
+          1138.0,
+          634.0
+        ],
+        [
+          220.0,
+          634.0
+        ]
+      ],
+      "text": "của bên được ủy nhiệm thu tại ngân hàng, kho bạc nhà nước; không thực hiện",
+      "confidence": 0.968127145625
+    },
+    {
+      "bbox": [
+        [
+          220.0,
+          628.0
+        ],
+        [
+          1138.0,
+          628.0
+        ],
+        [
+          1138.0,
+          676.0
+        ],
+        [
+          220.0,
+          676.0
+        ]
+      ],
+      "text": "thanh toán kinh phí ủy nhiệm thu bằng tiền mặt. Cơ quan quản lý thuế phải. trả",
+      "confidence": 0.9523877088235294
+    },
+    {
+      "bbox": [
+        [
+          220.0,
+          664.0
+        ],
+        [
+          1138.0,
+          664.0
+        ],
+        [
+          1138.0,
+          701.0
+        ],
+        [
+          220.0,
+          701.0
+        ]
+      ],
+      "text": "kinh phí cho bên được uỷ nhiệm thu trên cơ sở được quy định tại Hợp đồng",
+      "confidence": 0.9658785476470588
+    },
+    {
+      "bbox": [
+        [
+          220.0,
+          696.0
+        ],
+        [
+          1118.0,
+          696.0
+        ],
+        [
+          1118.0,
+          733.0
+        ],
+        [
+          220.0,
+          733.0
+        ]
+      ],
+      "text": "ủy nhiệm thu và số tiền người nộp thuế đã thực nộp vào ngân sách nhà nước.",
+      "confidence": 0.9649628229411765
+    },
+    {
+      "bbox": [
+        [
+          277.0,
+          755.0
+        ],
+        [
+          1137.0,
+          755.0
+        ],
+        [
+          1137.0,
+          795.0
+        ],
+        [
+          277.0,
+          795.0
+        ]
+      ],
+      "text": "Điều 40. Mua thông tin, tài liệu, dữ liệu của các đơn vị cung cấp để",
+      "confidence": 0.96370114375
+    },
+    {
+      "bbox": [
+        [
+          219.0,
+          793.0
+        ],
+        [
+          591.0,
+          793.0
+        ],
+        [
+          591.0,
+          824.0
+        ],
+        [
+          219.0,
+          824.0
+        ]
+      ],
+      "text": "phục vụ công tác quản lý thuế",
+      "confidence": 0.9637654342857143
+    },
+    {
+      "bbox": [
+        [
+          280.0,
+          853.0
+        ],
+        [
+          1136.0,
+          853.0
+        ],
+        [
+          1136.0,
+          894.0
+        ],
+        [
+          280.0,
+          894.0
+        ]
+      ],
+      "text": "1. Mua thông tin, tài liệu, dữ liệu để phục vụ công tác quản lý thuế, xử lý",
+      "confidence": 0.9646120872222222
+    },
+    {
+      "bbox": [
+        [
+          217.0,
+          887.0
+        ],
+        [
+          1137.0,
+          887.0
+        ],
+        [
+          1137.0,
+          925.0
+        ],
+        [
+          217.0,
+          925.0
+        ]
+      ],
+      "text": "các hành vi vi phạm pháp luật về thuế, pháp luật về hải quan là việc cơ quan",
+      "confidence": 0.9626868527777778
+    },
+    {
+      "bbox": [
+        [
+          217.0,
+          920.0
+        ],
+        [
+          1136.0,
+          920.0
+        ],
+        [
+          1136.0,
+          963.0
+        ],
+        [
+          217.0,
+          963.0
+        ]
+      ],
+      "text": "quản lý thuế mua của các tổ chức, cá nhân trong nước, ngoài nước các thông",
+      "confidence": 0.967361684375
+    },
+    {
+      "bbox": [
+        [
+          216.0,
+          959.0
+        ],
+        [
+          1135.0,
+          959.0
+        ],
+        [
+          1135.0,
+          997.0
+        ],
+        [
+          216.0,
+          997.0
+        ]
+      ],
+      "text": "tin, tài liệu, dữ liệu mà cơ quan quản lý thuế hoặc cơ quan nhà nước khác",
+      "confidence": 0.9668882535294118
+    },
+    {
+      "bbox": [
+        [
+          216.0,
+          992.0
+        ],
+        [
+          1134.0,
+          992.0
+        ],
+        [
+          1134.0,
+          1035.0
+        ],
+        [
+          216.0,
+          1035.0
+        ]
+      ],
+      "text": "không có hoặc không cung cấp theo quy định của pháp luật hoặc thông tin, tài",
+      "confidence": 0.9658512693749999
+    },
+    {
+      "bbox": [
+        [
+          216.0,
+          1028.0
+        ],
+        [
+          1134.0,
+          1028.0
+        ],
+        [
+          1134.0,
+          1065.0
+        ],
+        [
+          216.0,
+          1065.0
+        ]
+      ],
+      "text": "liệu, dữ liệu ma cơ quan nhà nước có thẩm quyền cung cấp nhưng không đáp",
+      "confidence": 0.959657374375
+    },
+    {
+      "bbox": [
+        [
+          215.0,
+          1060.0
+        ],
+        [
+          734.0,
+          1060.0
+        ],
+        [
+          734.0,
+          1095.0
+        ],
+        [
+          215.0,
+          1095.0
+        ]
+      ],
+      "text": "ứng được yêu cầu của công tác quản lý thuế.",
+      "confidence": 0.951306466
+    },
+    {
+      "bbox": [
+        [
+          274.0,
+          1124.0
+        ],
+        [
+          1133.0,
+          1124.0
+        ],
+        [
+          1133.0,
+          1165.0
+        ],
+        [
+          274.0,
+          1165.0
+        ]
+      ],
+      "text": "2. Việc mua thông tin, tài liệu, dữ liệu của cơ quan quản lý thuế để phục",
+      "confidence": 0.9653349258823529
+    },
+    {
+      "bbox": [
+        [
+          214.0,
+          1158.0
+        ],
+        [
+          922.0,
+          1158.0
+        ],
+        [
+          922.0,
+          1191.0
+        ],
+        [
+          214.0,
+          1191.0
+        ]
+      ],
+      "text": "vụ hoạt động thường xuyên và các nhu cầu phát sinh, cụ thể:",
+      "confidence": 0.9671996307692308
+    },
+    {
+      "bbox": [
+        [
+          273.0,
+          1219.0
+        ],
+        [
+          1133.0,
+          1219.0
+        ],
+        [
+          1133.0,
+          1256.0
+        ],
+        [
+          273.0,
+          1256.0
+        ]
+      ],
+      "text": "a) Mua cơ sở dữ liệu thương mại phục vụ cho công tác quản lý thuế",
+      "confidence": 0.96265492
+    },
+    {
+      "bbox": [
+        [
+          213.0,
+          1250.0
+        ],
+        [
+          1132.0,
+          1250.0
+        ],
+        [
+          1132.0,
+          1290.0
+        ],
+        [
+          213.0,
+          1290.0
+        ]
+      ],
+      "text": "thường xuyên bao gồm: Hoạt động quản lý thuế doanh nghiệp lớn; hoạt động",
+      "confidence": 0.96875455
+    },
+    {
+      "bbox": [
+        [
+          213.0,
+          1284.0
+        ],
+        [
+          1132.0,
+          1284.0
+        ],
+        [
+          1132.0,
+          1325.0
+        ],
+        [
+          213.0,
+          1325.0
+        ]
+      ],
+      "text": "quản lý thuế doanh | nghiệp vừa và nhỏ và hộ kinh doanh, cá nhân; hoạt động",
+      "confidence": 0.922498621764706
+    },
+    {
+      "bbox": [
+        [
+          213.0,
+          1320.0
+        ],
+        [
+          1131.0,
+          1320.0
+        ],
+        [
+          1131.0,
+          1362.0
+        ],
+        [
+          213.0,
+          1362.0
+        ]
+      ],
+      "text": "thỏa thuận trước về phương pháp xác định giá tính thuế; hoạt động quản lý",
+      "confidence": 0.967523922
+    },
+    {
+      "bbox": [
+        [
+          212.0,
+          1353.0
+        ],
+        [
+          1131.0,
+          1353.0
+        ],
+        [
+          1131.0,
+          1398.0
+        ],
+        [
+          212.0,
+          1398.0
+        ]
+      ],
+      "text": "thuế về doanh nghiệp có phát sinh giao dich liên kết và các hoạt động quản lý",
+      "confidence": 0.9518694588235295
+    },
+    {
+      "bbox": [
+        [
+          212.0,
+          1388.0
+        ],
+        [
+          630.0,
+          1388.0
+        ],
+        [
+          630.0,
+          1424.0
+        ],
+        [
+          212.0,
+          1424.0
+        ]
+      ],
+      "text": "thuế khác của cơ quan quản lý thuế.",
+      "confidence": 0.96257744875
+    },
+    {
+      "bbox": [
+        [
+          273.0,
+          1454.0
+        ],
+        [
+          1130.0,
+          1454.0
+        ],
+        [
+          1130.0,
+          1497.0
+        ],
+        [
+          273.0,
+          1497.0
+        ]
+      ],
+      "text": "b) Mua thông tin, tài liệu, dữ liệu theo các vụ việc phát sinh trong quá",
+      "confidence": 0.9658345518750001
+    },
+    {
+      "bbox": [
+        [
+          213.0,
+          1484.0
+        ],
+        [
+          1128.0,
+          1484.0
+        ],
+        [
+          1128.0,
+          1523.0
+        ],
+        [
+          213.0,
+          1523.0
+        ]
+      ],
+      "text": "trình quản lý thuế bao gồm các hoạt động: Kê khai, ấn định, thanh tra, kiểm",
+      "confidence": 0.968488721875
+    },
+    {
+      "bbox": [
+        [
+          213.0,
+          1524.0
+        ],
+        [
+          940.0,
+          1524.0
+        ],
+        [
+          940.0,
+          1557.0
+        ],
+        [
+          213.0,
+          1557.0
+        ]
+      ],
+      "text": "tra và các vụ việc phát sinh khác trong hoạt động quản lý thuế.",
+      "confidence": 0.9670355614285714
+    }
+  ]
+}

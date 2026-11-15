@@ -1,17 +1,15 @@
 import hashlib
 import json
-import re
 import time
-import unicodedata
-from typing import List, Optional
-from fastapi import FastAPI
+from datetime import date
+from typing import Annotated, List, Literal, Optional
+from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
-from pydantic import BaseModel
+from pydantic import BaseModel, StringConstraints
 
-try:
-    from rapidfuzz import fuzz
-except ImportError:
-    fuzz = None
+from citation_text import normalize_vn_text, compute_excerpt_similarity
+from snapshot_api import ask_snapshot, configured_snapshot, corpus_response, query_date
+from versioned_validator import validate_snapshot_citations
 
 app = FastAPI(
     title="AskPay XNK — LegalIR / LegalQA & Citation Validator API",
@@ -133,33 +131,6 @@ CORPUS_INDEX = {
 # ==============================================================================
 # 2. DETERMINISTIC CITATION VALIDATOR (Chuẩn >= 90% Excerpt Match)
 # ==============================================================================
-def normalize_vn_text(text: str) -> str:
-    if not text:
-        return ""
-    text = unicodedata.normalize("NFC", text).lower()
-    text = re.sub(r"[^\w\s]", " ", text, flags=re.UNICODE)
-    text = re.sub(r"\s+", " ", text).strip()
-    return text
-
-
-def compute_excerpt_similarity(excerpt: str, source_text: str) -> float:
-    norm_excerpt = normalize_vn_text(excerpt)
-    norm_source = normalize_vn_text(source_text)
-
-    if len(norm_excerpt.split()) < 8 or not norm_source:
-        return 0.0
-
-    if norm_excerpt in norm_source:
-        return 1.0
-
-    if fuzz is not None:
-        return round(fuzz.partial_ratio(norm_excerpt, norm_source) / 100.0, 4)
-
-    # Fallback nếu chưa cài rapidfuzz: tính tỉ lệ từ trùng khớp liên tiếp
-    ex_words = norm_excerpt.split()
-    src_words = set(norm_source.split())
-    matched = sum(1 for w in ex_words if w in src_words)
-    return round(matched / len(ex_words), 4)
 
 
 def validate_citations(citations: list[dict]) -> dict:
@@ -167,6 +138,8 @@ def validate_citations(citations: list[dict]) -> dict:
         return {
             "passed": False,
             "verdict": "UNVERIFIED_REFUND",
+            "settlement_eligible": False,
+            "corpus_status": "DEMO_UNVERIFIED",
             "overall_score": 0.0,
             "citation_checks": [],
             "fail_reason": "NO_CITATION_PROVIDED",
@@ -177,13 +150,15 @@ def validate_citations(citations: list[dict]) -> dict:
     total_scores = []
 
     for c in citations:
-        doc_id = str(c.get("document", "")).strip().upper()
+        doc_id = ''.join(str(c.get("document", "")).upper().split())
         article = str(c.get("article", "")).strip()
         clause = str(c.get("clause", "")).strip()
+        point = str(c.get("point", "")).strip()
         excerpt = str(c.get("excerpt", "")).strip()
 
         doc_exists = any(k[0] == doc_id for k in CORPUS_INDEX.keys())
-        record = CORPUS_INDEX.get((doc_id, article, clause))
+        # The demo corpus records clauses only; it cannot verify a named point.
+        record = CORPUS_INDEX.get((doc_id, article, clause)) if not point else None
         art_clause_exists = record is not None
         is_in_force = bool(record and record.get("status") == "ACTIVE")
         similarity = (
@@ -219,11 +194,13 @@ def validate_citations(citations: list[dict]) -> dict:
                 "document": doc_id,
                 "article": article,
                 "clause": clause,
+                "point": point,
                 "doc_exists": doc_exists,
                 "article_clause_exists": art_clause_exists,
                 "is_in_force": is_in_force,
                 "excerpt_similarity": similarity,
                 "threshold_required": 0.90,
+                "raw_text": record["raw_text"] if record else "",
                 "status": "PASS" if passed_this else "FAIL",
                 "fail_reason": fail_reason,
             }
@@ -232,6 +209,8 @@ def validate_citations(citations: list[dict]) -> dict:
     return {
         "passed": all_passed,
         "verdict": "VERIFIED_RELEASE" if all_passed else "UNVERIFIED_REFUND",
+        "settlement_eligible": False,
+        "corpus_status": "DEMO_UNVERIFIED",
         "overall_score": round(sum(total_scores) / len(total_scores), 2),
         "citation_checks": checks,
     }
@@ -244,26 +223,52 @@ def sha256_hex(data: str) -> str:
 # ==============================================================================
 # 3. API MODELS & ENDPOINTS
 # ==============================================================================
+class ValidateRequest(BaseModel):
+    citations: list[dict]
+    as_of: Optional[date] = None
+
+
 class AskRequest(BaseModel):
     question_id: Optional[str] = "0x00"
-    question: str
-    tier: str = "quick"
-    domain: str = "import_export_customs"
+    question: Annotated[str, StringConstraints(strip_whitespace=True, min_length=1)]
+    tier: Literal["quick", "deep"] = "quick"
+    domain: Literal["import_export_customs"] = "import_export_customs"
     simulate_hallucination: bool = False
     simulate_expired_law: bool = False
+    as_of: Optional[date] = None
 
 
 @app.get("/api/v1/legal/corpus")
 def get_corpus():
+    snapshot = configured_snapshot()
+    if snapshot is not None:
+        return corpus_response(snapshot)
     return {
-        "total_documents": len(CORPUS_RECORDS),
+        "total_documents": len({r["doc_id"] for r in CORPUS_RECORDS}),
+        "total_chunks": len(CORPUS_RECORDS),
+        "corpus_status": "DEMO_UNVERIFIED",
         "domain": "Import-Export & Vietnam Customs Law",
         "records": CORPUS_RECORDS,
     }
 
 
+@app.post("/api/v1/legal/validate")
+def validate_endpoint(req: ValidateRequest):
+    snapshot = configured_snapshot()
+    if snapshot is not None:
+        return validate_snapshot_citations(req.citations, snapshot, query_date(req.as_of))
+    if req.as_of is not None:
+        raise HTTPException(status_code=400, detail="Dữ liệu demo không hỗ trợ tra cứu theo ngày.")
+    return validate_citations(req.citations)
+
+
 @app.post("/api/v1/legal/ask")
 def ask_legal_question(req: AskRequest):
+    snapshot = configured_snapshot()
+    if snapshot is not None:
+        return ask_snapshot(req, snapshot)
+    if req.as_of is not None:
+        raise HTTPException(status_code=400, detail="Dữ liệu demo không hỗ trợ tra cứu theo ngày.")
     start_time = time.time()
 
     # Trường hợp 1: Giả lập AI trích dẫn văn bản đã hết hiệu lực (để demo Auto-Refund)
@@ -305,12 +310,8 @@ def ask_legal_question(req: AskRequest):
     # Trường hợp 3: Câu trả lời chuẩn xác từ Corpus XNK (PASS >= 90% -> Giải ngân)
     else:
         q_lower = req.question.lower()
-        xnk_keywords = [
-            "hải quan", "xuất khẩu", "nhập khẩu", "xnk", "mã hs", "hs",
-            "c/o", "xuất xứ", "tờ khai", "thông quan", "thuế", "tái xuất",
-            "hàng hóa", "kiểm tra sau thông quan", "thương nhân", "bổ sung", "phạt"
-        ]
-        if "c/o" in q_lower or "xuất xứ" in q_lower or "thương nhân" in q_lower:
+        if (any(term in q_lower for term in ("c/o", "chứng nhận xuất xứ"))
+                and "thương nhân" in q_lower and any(term in q_lower for term in ("đăng ký", "hồ sơ"))):
             answer = (
                 "Theo quy định tại Khoản 1 Điều 15 Nghị định 31/2018/NĐ-CP, doanh nghiệp xuất nhập khẩu "
                 "đề nghị cấp Giấy chứng nhận xuất xứ hàng hóa (C/O) lần đầu bắt buộc phải đăng ký Hồ sơ thương nhân "
@@ -329,7 +330,7 @@ def ask_legal_question(req: AskRequest):
                     ),
                 }
             ]
-        elif "hoàn thuế" in q_lower or "tái xuất" in q_lower:
+        elif "hoàn thuế" in q_lower and "nhập khẩu" in q_lower and "tái xuất" in q_lower:
             answer = (
                 "Theo Khoản 1 Điều 19 Luật Thuế xuất khẩu, thuế nhập khẩu 2016 (Luật số 107/2016/QH13), "
                 "doanh nghiệp đã nộp thuế nhập khẩu nhưng hàng hóa nhập khẩu phải tái xuất sẽ được hoàn thuế "
@@ -349,7 +350,7 @@ def ask_legal_question(req: AskRequest):
                     ),
                 }
             ]
-        elif "thời hạn" in q_lower and "tờ khai" in q_lower:
+        elif "thời hạn" in q_lower and "tờ khai" in q_lower and "nhập khẩu" in q_lower:
             answer = (
                 "Theo Điểm b Khoản 1 Điều 25 Luật Hải quan 2014 (Luật số 54/2014/QH13), đối với hàng hóa "
                 "nhập khẩu, người khai hải quan phải nộp tờ khai hải quan trước ngày hàng hóa đến cửa khẩu "
@@ -367,7 +368,7 @@ def ask_legal_question(req: AskRequest):
                     ),
                 }
             ]
-        elif "khai bổ sung" in q_lower or "phân luồng" in q_lower:
+        elif "khai bổ sung" in q_lower and "phân luồng" in q_lower:
             answer = (
                 "Theo Khoản 7 Điều 1 Thông tư 39/2018/TT-BTC, người khai hải quan được phép khai bổ sung "
                 "hồ sơ hải quan sau khi Hệ thống phân luồng tờ khai nhưng trước thời điểm cơ quan hải quan "
@@ -386,10 +387,12 @@ def ask_legal_question(req: AskRequest):
                     ),
                 }
             ]
-        elif not any(kw in q_lower for kw in xnk_keywords):
+        elif not (any(term in q_lower for term in ("mã hs", "mã số hàng"))
+                  and any(term in q_lower for term in ("sai", "nhầm"))
+                  and any(term in q_lower for term in ("phạt", "xử lý"))):
             answer = (
                 "Hiện chưa tìm thấy điều khoản pháp luật Hải quan và Xuất nhập khẩu phù hợp trong kho văn bản "
-                "để xác thực câu hỏi này. Theo cam kết, toàn bộ phí tra cứu của bạn sẽ được hoàn lại 100%."
+                "để đối chiếu câu hỏi này. Đây là dữ liệu thử nghiệm, không có giao dịch thanh toán."
             )
             citations = []
         else:

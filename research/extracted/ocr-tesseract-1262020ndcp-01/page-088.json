@@ -1,0 +1,905 @@
+{
+  "document_id": "126/2020/NĐ-CP",
+  "source_file": "../../legal-sources/1262020ndcp/01.pdf",
+  "source_sha256": "310648e80396d267610946458e7fdd71ba87ef538b009d6574ed21514de3f7ca",
+  "page_count": 119,
+  "render_dpi": 150,
+  "engine": "Tesseract 5.5.4 (vie+eng; OEM 1; PSM 3)",
+  "review_status": "UNREVIEWED",
+  "tesseract_version": "5.5.4",
+  "tsv_parser_version": 2,
+  "languages": [
+    "vie",
+    "eng"
+  ],
+  "traineddata_sha256": {
+    "vie": "b6b49293d95d0b6dbd8780174627e82c75be957b6f4ed9862155540d6b00bb45",
+    "eng": "8280aed0782fe27257a68ea10fe7ef324ca0f8d85bd2fd145d1c2b560bcb66ba"
+  },
+  "ocr_engine_mode": 1,
+  "page_segmentation_mode": 3,
+  "thread_limit": 1,
+  "page": 88,
+  "lines": [
+    {
+      "bbox": [
+        [
+          704.0,
+          62.0
+        ],
+        [
+          730.0,
+          62.0
+        ],
+        [
+          730.0,
+          83.0
+        ],
+        [
+          704.0,
+          83.0
+        ]
+      ],
+      "text": "88",
+      "confidence": 0.96129242
+    },
+    {
+      "bbox": [
+        [
+          290.0,
+          139.0
+        ],
+        [
+          1147.0,
+          139.0
+        ],
+        [
+          1147.0,
+          174.0
+        ],
+        [
+          290.0,
+          174.0
+        ]
+      ],
+      "text": "c.1) Quyết định cưỡng chế được gửi bằng phương thức điện tử đối với",
+      "confidence": 0.9617428157142857
+    },
+    {
+      "bbox": [
+        [
+          230.0,
+          173.0
+        ],
+        [
+          1147.0,
+          173.0
+        ],
+        [
+          1147.0,
+          208.0
+        ],
+        [
+          230.0,
+          208.0
+        ]
+      ],
+      "text": "trường hợp đủ điều kiện thực hiện giao dịch điện tử trong lĩnh vực quản lý",
+      "confidence": 0.96599463875
+    },
+    {
+      "bbox": [
+        [
+          230.0,
+          206.0
+        ],
+        [
+          1148.0,
+          206.0
+        ],
+        [
+          1148.0,
+          247.0
+        ],
+        [
+          230.0,
+          247.0
+        ]
+      ],
+      "text": "thuế, trường hợp chưa đủ điều kiện thực hiện giao dịch điện tử trong lĩnh vực",
+      "confidence": 0.968138953125
+    },
+    {
+      "bbox": [
+        [
+          231.0,
+          241.0
+        ],
+        [
+          1149.0,
+          241.0
+        ],
+        [
+          1149.0,
+          276.0
+        ],
+        [
+          231.0,
+          276.0
+        ]
+      ],
+      "text": "quản lý thuế thì quyết định cưỡng chế được gửi bằng thư bảo đảm qua đường",
+      "confidence": 0.96513549375
+    },
+    {
+      "bbox": [
+        [
+          230.0,
+          275.0
+        ],
+        [
+          578.0,
+          275.0
+        ],
+        [
+          578.0,
+          308.0
+        ],
+        [
+          230.0,
+          308.0
+        ]
+      ],
+      "text": "bưu chính hoặc giao trực tiếp.",
+      "confidence": 0.96110162
+    },
+    {
+      "bbox": [
+        [
+          289.0,
+          330.0
+        ],
+        [
+          1146.0,
+          330.0
+        ],
+        [
+          1146.0,
+          371.0
+        ],
+        [
+          289.0,
+          371.0
+        ]
+      ],
+      "text": "©.2) Trường hợp quyết định được giao trực tiếp mà tổ chức, cá nhân bị",
+      "confidence": 0.948704542
+    },
+    {
+      "bbox": [
+        [
+          231.0,
+          362.0
+        ],
+        [
+          1147.0,
+          362.0
+        ],
+        [
+          1147.0,
+          398.0
+        ],
+        [
+          231.0,
+          398.0
+        ]
+      ],
+      "text": "cưỡng chế không nhận thì người có thẩm quyền hoặc công chức thuế có trách",
+      "confidence": 0.956082214
+    },
+    {
+      "bbox": [
+        [
+          230.0,
+          396.0
+        ],
+        [
+          1146.0,
+          396.0
+        ],
+        [
+          1146.0,
+          439.0
+        ],
+        [
+          230.0,
+          439.0
+        ]
+      ],
+      "text": "nhiệm giao quyết định cưỡng chế lập biên bản về việc tổ chức, cá nhân bị",
+      "confidence": 0.96699781375
+    },
+    {
+      "bbox": [
+        [
+          230.0,
+          429.0
+        ],
+        [
+          1147.0,
+          429.0
+        ],
+        [
+          1147.0,
+          473.0
+        ],
+        [
+          230.0,
+          473.0
+        ]
+      ],
+      "text": "cưỡng chế không nhận quyết định, có xác nhận của chính quyên địa phương",
+      "confidence": 0.9628954478571429
+    },
+    {
+      "bbox": [
+        [
+          229.0,
+          463.0
+        ],
+        [
+          1146.0,
+          463.0
+        ],
+        [
+          1146.0,
+          500.0
+        ],
+        [
+          229.0,
+          500.0
+        ]
+      ],
+      "text": "nơi tổ chức, cá nhân có địa chỉ đăng ký với cơ quan quản lý thuế thì được coi",
+      "confidence": 0.9595181647368421
+    },
+    {
+      "bbox": [
+        [
+          230.0,
+          496.0
+        ],
+        [
+          546.0,
+          496.0
+        ],
+        [
+          546.0,
+          530.0
+        ],
+        [
+          230.0,
+          530.0
+        ]
+      ],
+      "text": "là quyết định đã được giao.",
+      "confidence": 0.9661452866666668
+    },
+    {
+      "bbox": [
+        [
+          289.0,
+          558.0
+        ],
+        [
+          1144.0,
+          558.0
+        ],
+        [
+          1144.0,
+          591.0
+        ],
+        [
+          289.0,
+          591.0
+        ]
+      ],
+      "text": "c.3) Trường hợp gửi qua bưu điện bằng hình thức bảo đảm, nếu sau thời",
+      "confidence": 0.95965097
+    },
+    {
+      "bbox": [
+        [
+          228.0,
+          588.0
+        ],
+        [
+          1144.0,
+          588.0
+        ],
+        [
+          1144.0,
+          633.0
+        ],
+        [
+          228.0,
+          633.0
+        ]
+      ],
+      "text": "hạn 10 ngày, kể từ ngày quyết định cưỡng chế đã được gửi qua đường bưu",
+      "confidence": 0.960167895
+    },
+    {
+      "bbox": [
+        [
+          228.0,
+          621.0
+        ],
+        [
+          1143.0,
+          621.0
+        ],
+        [
+          1143.0,
+          662.0
+        ],
+        [
+          228.0,
+          662.0
+        ]
+      ],
+      "text": "điện đến lần thứ ba mà bị trả lại do tổ chức, cá nhân bị cưỡng chế không",
+      "confidence": 0.9684062477777777
+    },
+    {
+      "bbox": [
+        [
+          223.0,
+          655.0
+        ],
+        [
+          1143.0,
+          655.0
+        ],
+        [
+          1143.0,
+          694.0
+        ],
+        [
+          223.0,
+          694.0
+        ]
+      ],
+      "text": "nhận; quyết định cưỡng chế đã được niêm yết tại trụ sở của tổ chức hoặc nơi",
+      "confidence": 0.9665607088235295
+    },
+    {
+      "bbox": [
+        [
+          227.0,
+          690.0
+        ],
+        [
+          1142.0,
+          690.0
+        ],
+        [
+          1142.0,
+          732.0
+        ],
+        [
+          227.0,
+          732.0
+        ]
+      ],
+      "text": "cư trú của cá nhân bị cưỡng chế hoặc có căn cứ cho rằng người nộp thuế bị",
+      "confidence": 0.9689246872222221
+    },
+    {
+      "bbox": [
+        [
+          226.0,
+          722.0
+        ],
+        [
+          1143.0,
+          722.0
+        ],
+        [
+          1143.0,
+          764.0
+        ],
+        [
+          226.0,
+          764.0
+        ]
+      ],
+      "text": "cưỡng chế trồn tránh không nhận quyết định cưỡng chế thì được coi là quyết",
+      "confidence": 0.9600021813333334
+    },
+    {
+      "bbox": [
+        [
+          226.0,
+          761.0
+        ],
+        [
+          443.0,
+          761.0
+        ],
+        [
+          443.0,
+          789.0
+        ],
+        [
+          226.0,
+          789.0
+        ]
+      ],
+      "text": "định đã được giao.",
+      "confidence": 0.9688755975000001
+    },
+    {
+      "bbox": [
+        [
+          285.0,
+          815.0
+        ],
+        [
+          1141.0,
+          815.0
+        ],
+        [
+          1141.0,
+          856.0
+        ],
+        [
+          285.0,
+          856.0
+        ]
+      ],
+      "text": "d) Quyết định cưỡng chế chấm dứt hiệu lực kể từ ngày người nộp thuế",
+      "confidence": 0.962581624
+    },
+    {
+      "bbox": [
+        [
+          225.0,
+          848.0
+        ],
+        [
+          1142.0,
+          848.0
+        ],
+        [
+          1142.0,
+          887.0
+        ],
+        [
+          225.0,
+          887.0
+        ]
+      ],
+      "text": "đã nộp đủ số tiền thuế nợ bị cưỡng chế vào ngân sách nhà nước hoặc số tiền",
+      "confidence": 0.9683373772222222
+    },
+    {
+      "bbox": [
+        [
+          224.0,
+          880.0
+        ],
+        [
+          1141.0,
+          880.0
+        ],
+        [
+          1141.0,
+          923.0
+        ],
+        [
+          224.0,
+          923.0
+        ]
+      ],
+      "text": "thuế nợ bị cưỡng chế được cơ quan thuế ban hành quyết định nộp dan tiền",
+      "confidence": 0.9637784687500001
+    },
+    {
+      "bbox": [
+        [
+          224.0,
+          914.0
+        ],
+        [
+          1140.0,
+          914.0
+        ],
+        [
+          1140.0,
+          958.0
+        ],
+        [
+          224.0,
+          958.0
+        ]
+      ],
+      "text": "thuế nợ hoặc quyết định gia hạn nộp thuế hoặc quyết định miễn tiền chậm nộp",
+      "confidence": 0.968006361875
+    },
+    {
+      "bbox": [
+        [
+          223.0,
+          947.0
+        ],
+        [
+          1140.0,
+          947.0
+        ],
+        [
+          1140.0,
+          988.0
+        ],
+        [
+          223.0,
+          988.0
+        ]
+      ],
+      "text": "tiền thuế hoặc thông báo không tính tiền chậm nộp. Cơ quan thuế ban hành",
+      "confidence": 0.9688081359999999
+    },
+    {
+      "bbox": [
+        [
+          223.0,
+          981.0
+        ],
+        [
+          1139.0,
+          981.0
+        ],
+        [
+          1139.0,
+          1021.0
+        ],
+        [
+          223.0,
+          1021.0
+        ]
+      ],
+      "text": "quyết định chấm dứt hiệu lực của quyết định cưỡng chế theo Mẫu số 08/CC",
+      "confidence": 0.9618166966666667
+    },
+    {
+      "bbox": [
+        [
+          222.0,
+          1019.0
+        ],
+        [
+          792.0,
+          1019.0
+        ],
+        [
+          792.0,
+          1054.0
+        ],
+        [
+          222.0,
+          1054.0
+        ]
+      ],
+      "text": "tại Phụ lục III ban hành kèm theo Nghị định này.",
+      "confidence": 0.9574501509090909
+    },
+    {
+      "bbox": [
+        [
+          282.0,
+          1079.0
+        ],
+        [
+          1138.0,
+          1079.0
+        ],
+        [
+          1138.0,
+          1118.0
+        ],
+        [
+          282.0,
+          1118.0
+        ]
+      ],
+      "text": "4. Trình tự, thủ tục thực hiện biện pháp cưỡng chế ngừng sử dụng",
+      "confidence": 0.9673072807142857
+    },
+    {
+      "bbox": [
+        [
+          222.0,
+          1111.0
+        ],
+        [
+          317.0,
+          1111.0
+        ],
+        [
+          317.0,
+          1133.0
+        ],
+        [
+          222.0,
+          1133.0
+        ]
+      ],
+      "text": "hoá đơn",
+      "confidence": 0.9616344799999998
+    },
+    {
+      "bbox": [
+        [
+          281.0,
+          1171.0
+        ],
+        [
+          1137.0,
+          1171.0
+        ],
+        [
+          1137.0,
+          1209.0
+        ],
+        [
+          281.0,
+          1209.0
+        ]
+      ],
+      "text": "a) Ngay trong ngay ban hanh quyét dinh cudng ché co quan thué phai",
+      "confidence": 0.92341878
+    },
+    {
+      "bbox": [
+        [
+          221.0,
+          1203.0
+        ],
+        [
+          1137.0,
+          1203.0
+        ],
+        [
+          1137.0,
+          1247.0
+        ],
+        [
+          221.0,
+          1247.0
+        ]
+      ],
+      "text": "đăng tải quyết định cưỡng chế và thông báo ngừng sử dụng hóa đơn trên trang",
+      "confidence": 0.967362413125
+    },
+    {
+      "bbox": [
+        [
+          220.0,
+          1232.0
+        ],
+        [
+          1136.0,
+          1232.0
+        ],
+        [
+          1136.0,
+          1279.0
+        ],
+        [
+          220.0,
+          1279.0
+        ]
+      ],
+      "text": "thông tin điện tử ngành thuế hoặc đăng tải trên phương tiện thông tin đại",
+      "confidence": 0.9675864766666668
+    },
+    {
+      "bbox": [
+        [
+          220.0,
+          1271.0
+        ],
+        [
+          906.0,
+          1271.0
+        ],
+        [
+          906.0,
+          1306.0
+        ],
+        [
+          220.0,
+          1306.0
+        ]
+      ],
+      "text": "chúng trong thời hạn 24 giờ kể từ khi ban hành quyêt định.",
+      "confidence": 0.9556525600000001
+    },
+    {
+      "bbox": [
+        [
+          279.0,
+          1330.0
+        ],
+        [
+          1137.0,
+          1330.0
+        ],
+        [
+          1137.0,
+          1368.0
+        ],
+        [
+          279.0,
+          1368.0
+        ]
+      ],
+      "text": "b) Trong thời gian thực hiện biện pháp cưỡng chế này, cơ quan thuế",
+      "confidence": 0.9661272978571428
+    },
+    {
+      "bbox": [
+        [
+          219.0,
+          1359.0
+        ],
+        [
+          1137.0,
+          1359.0
+        ],
+        [
+          1137.0,
+          1403.0
+        ],
+        [
+          219.0,
+          1403.0
+        ]
+      ],
+      "text": "không tiếp nhận hồ sơ thông báo phát hành hóa đơn của tổ chức, cá nhân đang",
+      "confidence": 0.9673752229411764
+    },
+    {
+      "bbox": [
+        [
+          220.0,
+          1393.0
+        ],
+        [
+          1136.0,
+          1393.0
+        ],
+        [
+          1136.0,
+          1435.0
+        ],
+        [
+          220.0,
+          1435.0
+        ]
+      ],
+      "text": "bị cưỡng chế, không cấp mã đối với hóa đơn điện tử có mã của cơ quan thuế,",
+      "confidence": 0.9528753105555556
+    },
+    {
+      "bbox": [
+        [
+          219.0,
+          1426.0
+        ],
+        [
+          1136.0,
+          1426.0
+        ],
+        [
+          1136.0,
+          1469.0
+        ],
+        [
+          219.0,
+          1469.0
+        ]
+      ],
+      "text": "không cấp hóa đơn, không bán hóa đơn cho người nộp thuế đang bị cưỡng",
+      "confidence": 0.9677237946666668
+    },
+    {
+      "bbox": [
+        [
+          220.0,
+          1458.0
+        ],
+        [
+          910.0,
+          1458.0
+        ],
+        [
+          910.0,
+          1499.0
+        ],
+        [
+          220.0,
+          1499.0
+        ]
+      ],
+      "text": "chế (trừ trường hợp quy định tại điểm d khoản 4 Điều này).",
+      "confidence": 0.9603253392307692
+    },
+    {
+      "bbox": [
+        [
+          278.0,
+          1517.0
+        ],
+        [
+          1135.0,
+          1517.0
+        ],
+        [
+          1135.0,
+          1563.0
+        ],
+        [
+          278.0,
+          1563.0
+        ]
+      ],
+      "text": "¢) Cơ quan thuế ban hành quyết định chấm dứt việc thực hiện biện pháp",
+      "confidence": 0.9403136193333332
+    },
+    {
+      "bbox": [
+        [
+          220.0,
+          1554.0
+        ],
+        [
+          1134.0,
+          1554.0
+        ],
+        [
+          1134.0,
+          1587.0
+        ],
+        [
+          220.0,
+          1587.0
+        ]
+      ],
+      "text": "cưỡng chê này kèm theo thông báo tiếp tục sử dụng hóa đơn theo Mẫu số 04-2/CC",
+      "confidence": 0.9620417664705883
+    },
+    {
+      "bbox": [
+        [
+          219.0,
+          1587.0
+        ],
+        [
+          1134.0,
+          1587.0
+        ],
+        [
+          1134.0,
+          1625.0
+        ],
+        [
+          219.0,
+          1625.0
+        ]
+      ],
+      "text": "tại Phụ lục III ban hành kèm theo Nghị định này. Ngay trong ngày ban hành",
+      "confidence": 0.9615520725000001
+    }
+  ]
+}

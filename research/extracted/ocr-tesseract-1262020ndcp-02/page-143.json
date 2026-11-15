@@ -1,0 +1,971 @@
+{
+  "document_id": "126/2020/NĐ-CP",
+  "source_file": "../../legal-sources/1262020ndcp/02.pdf",
+  "source_sha256": "008daa92f4d699b69b9318c4a8e6fa7db8d73453305e1a4f155134656e26847b",
+  "page_count": 147,
+  "render_dpi": 150,
+  "engine": "Tesseract 5.5.4 (vie+eng; OEM 1; PSM 3)",
+  "review_status": "UNREVIEWED",
+  "tesseract_version": "5.5.4",
+  "tsv_parser_version": 2,
+  "languages": [
+    "vie",
+    "eng"
+  ],
+  "traineddata_sha256": {
+    "vie": "b6b49293d95d0b6dbd8780174627e82c75be957b6f4ed9862155540d6b00bb45",
+    "eng": "8280aed0782fe27257a68ea10fe7ef324ca0f8d85bd2fd145d1c2b560bcb66ba"
+  },
+  "ocr_engine_mode": 1,
+  "page_segmentation_mode": 3,
+  "thread_limit": 1,
+  "page": 143,
+  "lines": [
+    {
+      "bbox": [
+        [
+          633.0,
+          92.0
+        ],
+        [
+          659.0,
+          92.0
+        ],
+        [
+          659.0,
+          112.0
+        ],
+        [
+          633.0,
+          112.0
+        ]
+      ],
+      "text": "57",
+      "confidence": 0.94763954
+    },
+    {
+      "bbox": [
+        [
+          173.0,
+          197.0
+        ],
+        [
+          192.0,
+          197.0
+        ],
+        [
+          192.0,
+          220.0
+        ],
+        [
+          173.0,
+          220.0
+        ]
+      ],
+      "text": "đ)",
+      "confidence": 0.39680210000000005
+    },
+    {
+      "bbox": [
+        [
+          228.0,
+          159.0
+        ],
+        [
+          1118.0,
+          159.0
+        ],
+        [
+          1118.0,
+          198.0
+        ],
+        [
+          228.0,
+          198.0
+        ]
+      ],
+      "text": "Thông tin chung về các phương pháp xác định giá của giao dịch liên kết được người nộp",
+      "confidence": 0.9682918222222221
+    },
+    {
+      "bbox": [
+        [
+          228.0,
+          188.0
+        ],
+        [
+          1119.0,
+          188.0
+        ],
+        [
+          1119.0,
+          217.0
+        ],
+        [
+          228.0,
+          217.0
+        ]
+      ],
+      "text": "thuế và các bên liên kết trong tập đoàn áp dụng đối với các giao dịch liên kết khác tương",
+      "confidence": 0.96905986
+    },
+    {
+      "bbox": [
+        [
+          228.0,
+          223.0
+        ],
+        [
+          602.0,
+          223.0
+        ],
+        [
+          602.0,
+          247.0
+        ],
+        [
+          228.0,
+          247.0
+        ]
+      ],
+      "text": "tự như giao dịch thuộc phạm vi APA;",
+      "confidence": 0.95963666
+    },
+    {
+      "bbox": [
+        [
+          172.0,
+          332.0
+        ],
+        [
+          190.0,
+          332.0
+        ],
+        [
+          190.0,
+          355.0
+        ],
+        [
+          172.0,
+          355.0
+        ]
+      ],
+      "text": "9)",
+      "confidence": 0.73895668
+    },
+    {
+      "bbox": [
+        [
+          229.0,
+          266.0
+        ],
+        [
+          1118.0,
+          266.0
+        ],
+        [
+          1118.0,
+          298.0
+        ],
+        [
+          229.0,
+          298.0
+        ]
+      ],
+      "text": "Trường hợp người nộp thuế thực hiện các giao dịch kinh doanh với các bên độc lập",
+      "confidence": 0.9567293776470588
+    },
+    {
+      "bbox": [
+        [
+          229.0,
+          293.0
+        ],
+        [
+          1119.0,
+          293.0
+        ],
+        [
+          1119.0,
+          337.0
+        ],
+        [
+          229.0,
+          337.0
+        ]
+      ],
+      "text": "tương tự như các giao dịch kinh doanh với các bên liên kết thuộc diện đề nghị áp dụng",
+      "confidence": 0.9648576268421053
+    },
+    {
+      "bbox": [
+        [
+          229.0,
+          323.0
+        ],
+        [
+          1119.0,
+          323.0
+        ],
+        [
+          1119.0,
+          361.0
+        ],
+        [
+          229.0,
+          361.0
+        ]
+      ],
+      "text": "APA thì người nộp thuế phải cung cấp thông tin chi tiết về quy mô và giải thích về cách",
+      "confidence": 0.9613665155
+    },
+    {
+      "bbox": [
+        [
+          229.0,
+          352.0
+        ],
+        [
+          1119.0,
+          352.0
+        ],
+        [
+          1119.0,
+          386.0
+        ],
+        [
+          229.0,
+          386.0
+        ]
+      ],
+      "text": "xác định giá của giao dịch độc lập này. Nếu không lựa chọn các giao dịch độc lập này",
+      "confidence": 0.9639558968421053
+    },
+    {
+      "bbox": [
+        [
+          229.0,
+          382.0
+        ],
+        [
+          1110.0,
+          382.0
+        ],
+        [
+          1110.0,
+          412.0
+        ],
+        [
+          229.0,
+          412.0
+        ]
+      ],
+      "text": "làm đối tượng phân tích so sánh thì người nộp thuế phải giải thích lý do không lựa chọn.",
+      "confidence": 0.966956904736842
+    },
+    {
+      "bbox": [
+        [
+          229.0,
+          429.0
+        ],
+        [
+          1120.0,
+          429.0
+        ],
+        [
+          1120.0,
+          469.0
+        ],
+        [
+          229.0,
+          469.0
+        ]
+      ],
+      "text": "Các giả định quan trọng có ảnh hưởng trọng yếu hoặc làm thay đổi đáng kể các nội dung",
+      "confidence": 0.9566728968421053
+    },
+    {
+      "bbox": [
+        [
+          229.0,
+          457.0
+        ],
+        [
+          760.0,
+          457.0
+        ],
+        [
+          760.0,
+          487.0
+        ],
+        [
+          229.0,
+          487.0
+        ]
+      ],
+      "text": "cam kết và quá trình thực thi APA, chủ yếu bao gồm:",
+      "confidence": 0.9601422650000001
+    },
+    {
+      "bbox": [
+        [
+          172.0,
+          514.0
+        ],
+        [
+          190.0,
+          514.0
+        ],
+        [
+          190.0,
+          537.0
+        ],
+        [
+          172.0,
+          537.0
+        ]
+      ],
+      "text": "a)",
+      "confidence": 0.74512657
+    },
+    {
+      "bbox": [
+        [
+          229.0,
+          504.0
+        ],
+        [
+          925.0,
+          504.0
+        ],
+        [
+          925.0,
+          534.0
+        ],
+        [
+          229.0,
+          534.0
+        ]
+      ],
+      "text": "Thay đổi về cơ cầu vốn góp của các bên liên kết tham gia trong APA;",
+      "confidence": 0.9494488099999999
+    },
+    {
+      "bbox": [
+        [
+          171.0,
+          604.0
+        ],
+        [
+          191.0,
+          604.0
+        ],
+        [
+          191.0,
+          628.0
+        ],
+        [
+          171.0,
+          628.0
+        ]
+      ],
+      "text": "b",
+      "confidence": 0.92987755
+    },
+    {
+      "bbox": [
+        [
+          229.0,
+          552.0
+        ],
+        [
+          1121.0,
+          552.0
+        ],
+        [
+          1121.0,
+          583.0
+        ],
+        [
+          229.0,
+          583.0
+        ]
+      ],
+      "text": "Thay đổi về chức năng hoạt động kinh doanh, tài sản đầu tư sử dụng cho hoạt động kinh",
+      "confidence": 0.9601533068421052
+    },
+    {
+      "bbox": [
+        [
+          229.0,
+          580.0
+        ],
+        [
+          1120.0,
+          580.0
+        ],
+        [
+          1120.0,
+          635.0
+        ],
+        [
+          229.0,
+          635.0
+        ]
+      ],
+      "text": "doanh và rủi ro mà người nop, thué phải chịu trong kinh doanh, bao gồm nhưng hong",
+      "confidence": 0.8982022582352941
+    },
+    {
+      "bbox": [
+        [
+          229.0,
+          611.0
+        ],
+        [
+          1095.0,
+          611.0
+        ],
+        [
+          1095.0,
+          646.0
+        ],
+        [
+          229.0,
+          646.0
+        ]
+      ],
+      "text": "han ché đối với người nộp thuế phát triển thêm tài sản vô hình, tài sản sở hữu trí tuệ;.",
+      "confidence": 0.957107532
+    },
+    {
+      "bbox": [
+        [
+          229.0,
+          639.0
+        ],
+        [
+          665.0,
+          639.0
+        ],
+        [
+          665.0,
+          670.0
+        ],
+        [
+          229.0,
+          670.0
+        ]
+      ],
+      "text": "thay đổi về phương pháp hạch toán kế toán;",
+      "confidence": 0.9643579711111111
+    },
+    {
+      "bbox": [
+        [
+          229.0,
+          684.0
+        ],
+        [
+          893.0,
+          684.0
+        ],
+        [
+          893.0,
+          716.0
+        ],
+        [
+          229.0,
+          716.0
+        ]
+      ],
+      "text": "Thay đổi về chính sách thuế, thay đi về chế độ quản lý ngoại hối;",
+      "confidence": 0.9404159280000001
+    },
+    {
+      "bbox": [
+        [
+          172.0,
+          769.0
+        ],
+        [
+          192.0,
+          769.0
+        ],
+        [
+          192.0,
+          792.0
+        ],
+        [
+          172.0,
+          792.0
+        ]
+      ],
+      "text": "d)",
+      "confidence": 0.8794902
+    },
+    {
+      "bbox": [
+        [
+          229.0,
+          731.0
+        ],
+        [
+          1121.0,
+          731.0
+        ],
+        [
+          1121.0,
+          772.0
+        ],
+        [
+          229.0,
+          772.0
+        ]
+      ],
+      "text": "Thay đổi về cấp phép kinh doanh, thị trường và các cơ chế chính sách của nhà nước có",
+      "confidence": 0.9629654931578948
+    },
+    {
+      "bbox": [
+        [
+          229.0,
+          759.0
+        ],
+        [
+          1122.0,
+          759.0
+        ],
+        [
+          1122.0,
+          816.0
+        ],
+        [
+          229.0,
+          816.0
+        ]
+      ],
+      "text": "tác động đến người nộp thuế, bao gồm nhưng không hạn chế đối với các vấn đề như cấm",
+      "confidence": 0.9469560521052632
+    },
+    {
+      "bbox": [
+        [
+          230.0,
+          790.0
+        ],
+        [
+          744.0,
+          790.0
+        ],
+        [
+          744.0,
+          820.0
+        ],
+        [
+          230.0,
+          820.0
+        ]
+      ],
+      "text": "lưu hành sản phẩm, sản phẩm bị thu hồi, tiêu hủy...",
+      "confidence": 0.9521651327272729
+    },
+    {
+      "bbox": [
+        [
+          230.0,
+          835.0
+        ],
+        [
+          1121.0,
+          835.0
+        ],
+        [
+          1121.0,
+          870.0
+        ],
+        [
+          230.0,
+          870.0
+        ]
+      ],
+      "text": "Thông tin mô tả về việc thực hiện nghĩa vụ thuế thu nhập doanh nghiệp tại địa bàn,",
+      "confidence": 0.9638141811111112
+    },
+    {
+      "bbox": [
+        [
+          230.0,
+          862.0
+        ],
+        [
+          1123.0,
+          862.0
+        ],
+        [
+          1123.0,
+          897.0
+        ],
+        [
+          230.0,
+          897.0
+        ]
+      ],
+      "text": "vùng, khu vực lãnh thổ là nơi có liên quan đến giao dịch thuộc phạm ' vi APA và mi liên",
+      "confidence": 0.9517365919047619
+    },
+    {
+      "bbox": [
+        [
+          231.0,
+          890.0
+        ],
+        [
+          1122.0,
+          890.0
+        ],
+        [
+          1122.0,
+          928.0
+        ],
+        [
+          231.0,
+          928.0
+        ]
+      ],
+      "text": "quan giữa quy định nội. luật và Hiệp định thuế có liên quan, bao gồm cả phạm vi, bối",
+      "confidence": 0.9507304173684211
+    },
+    {
+      "bbox": [
+        [
+          230.0,
+          920.0
+        ],
+        [
+          993.0,
+          920.0
+        ],
+        [
+          993.0,
+          953.0
+        ],
+        [
+          230.0,
+          953.0
+        ]
+      ],
+      "text": "cảnh phát sinh đánh thuế trùng hoặc không phát sinh nghĩa vụ thuế (nếu có).",
+      "confidence": 0.968862264
+    },
+    {
+      "bbox": [
+        [
+          173.0,
+          1005.0
+        ],
+        [
+          195.0,
+          1005.0
+        ],
+        [
+          195.0,
+          1023.0
+        ],
+        [
+          173.0,
+          1023.0
+        ]
+      ],
+      "text": "10",
+      "confidence": 0.96912514
+    },
+    {
+      "bbox": [
+        [
+          230.0,
+          965.0
+        ],
+        [
+          1123.0,
+          965.0
+        ],
+        [
+          1123.0,
+          1006.0
+        ],
+        [
+          230.0,
+          1006.0
+        ]
+      ],
+      "text": "Bản chụp những nội dung chính của các APA đã ký kết mà người nộp thuế và các bên",
+      "confidence": 0.961366022631579
+    },
+    {
+      "bbox": [
+        [
+          231.0,
+          996.0
+        ],
+        [
+          1123.0,
+          996.0
+        ],
+        [
+          1123.0,
+          1027.0
+        ],
+        [
+          231.0,
+          1027.0
+        ]
+      ],
+      "text": "liên kết áp dụng đối với các giao dịch liên kết tương tự các giao dịch thuộc phạm vi",
+      "confidence": 0.9661220078947368
+    },
+    {
+      "bbox": [
+        [
+          231.0,
+          1033.0
+        ],
+        [
+          285.0,
+          1033.0
+        ],
+        [
+          285.0,
+          1051.0
+        ],
+        [
+          231.0,
+          1051.0
+        ]
+      ],
+      "text": "APA.",
+      "confidence": 0.9172242
+    },
+    {
+      "bbox": [
+        [
+          174.0,
+          1109.0
+        ],
+        [
+          193.0,
+          1109.0
+        ],
+        [
+          193.0,
+          1126.0
+        ],
+        [
+          174.0,
+          1126.0
+        ]
+      ],
+      "text": "11",
+      "confidence": 0.9214563
+    },
+    {
+      "bbox": [
+        [
+          231.0,
+          1068.0
+        ],
+        [
+          1124.0,
+          1068.0
+        ],
+        [
+          1124.0,
+          1108.0
+        ],
+        [
+          231.0,
+          1108.0
+        ]
+      ],
+      "text": "Ban chụp các hợp đồng, thỏa thuận pháp lý giữa người nộp thuế và các bên liên kết có",
+      "confidence": 0.9661198231578946
+    },
+    {
+      "bbox": [
+        [
+          231.0,
+          1097.0
+        ],
+        [
+          1124.0,
+          1097.0
+        ],
+        [
+          1124.0,
+          1134.0
+        ],
+        [
+          231.0,
+          1134.0
+        ]
+      ],
+      "text": "ảnh hưởng đến giao dịch thuộc phạm vi APA như thỏa thuận về quyền sở hữu, sử dụng,",
+      "confidence": 0.9652223805555554
+    },
+    {
+      "bbox": [
+        [
+          231.0,
+          1122.0
+        ],
+        [
+          858.0,
+          1122.0
+        ],
+        [
+          858.0,
+          1159.0
+        ],
+        [
+          231.0,
+          1159.0
+        ]
+      ],
+      "text": "mua, bán, phân phối hàng hóa, dịch vụ, nghiên cứu phát triển.",
+      "confidence": 0.9255321149999999
+    },
+    {
+      "bbox": [
+        [
+          175.0,
+          1240.0
+        ],
+        [
+          196.0,
+          1240.0
+        ],
+        [
+          196.0,
+          1257.0
+        ],
+        [
+          175.0,
+          1257.0
+        ]
+      ],
+      "text": "12",
+      "confidence": 0.96916084
+    },
+    {
+      "bbox": [
+        [
+          232.0,
+          1170.0
+        ],
+        [
+          1124.0,
+          1170.0
+        ],
+        [
+          1124.0,
+          1215.0
+        ],
+        [
+          232.0,
+          1215.0
+        ]
+      ],
+      "text": "Các thông tin liên quan nào khác về giao dịch liên kết như các vấn đề về thuế khác, các",
+      "confidence": 0.9650238175
+    },
+    {
+      "bbox": [
+        [
+          231.0,
+          1199.0
+        ],
+        [
+          1124.0,
+          1199.0
+        ],
+        [
+          1124.0,
+          1238.0
+        ],
+        [
+          231.0,
+          1238.0
+        ]
+      ],
+      "text": "vấn đề về thuế quốc tế như ưu đãi thuế, kết luận về các cuộc thanh tra (bao gồm cả thanh",
+      "confidence": 0.96675184
+    },
+    {
+      "bbox": [
+        [
+          231.0,
+          1226.0
+        ],
+        [
+          1125.0,
+          1226.0
+        ],
+        [
+          1125.0,
+          1274.0
+        ],
+        [
+          231.0,
+          1274.0
+        ]
+      ],
+      "text": "tra về giá chuyển nhượng, thông tin về các cuộc thanh tra đang được thực hiện (bao gồm",
+      "confidence": 0.9538017483333334
+    },
+    {
+      "bbox": [
+        [
+          232.0,
+          1256.0
+        ],
+        [
+          1124.0,
+          1256.0
+        ],
+        [
+          1124.0,
+          1297.0
+        ],
+        [
+          232.0,
+          1297.0
+        ]
+      ],
+      "text": "cả thanh tra về giá chuyên nhượng), các quyết định, thông báo về việc thực hiện thủ tục",
+      "confidence": 0.9661291855555555
+    },
+    {
+      "bbox": [
+        [
+          232.0,
+          1287.0
+        ],
+        [
+          783.0,
+          1287.0
+        ],
+        [
+          783.0,
+          1318.0
+        ],
+        [
+          232.0,
+          1318.0
+        ]
+      ],
+      "text": "thỏa thuận song phương thuộc Hiệp định thuế (nếu có).",
+      "confidence": 0.96714061
+    }
+  ]
+}

@@ -1,0 +1,311 @@
+{
+  "document_id": "126/2020/NĐ-CP",
+  "source_file": "../../legal-sources/1262020ndcp/02.pdf",
+  "source_sha256": "008daa92f4d699b69b9318c4a8e6fa7db8d73453305e1a4f155134656e26847b",
+  "page_count": 147,
+  "render_dpi": 150,
+  "engine": "Tesseract 5.5.4 (vie+eng; OEM 1; PSM 3)",
+  "review_status": "UNREVIEWED",
+  "tesseract_version": "5.5.4",
+  "tsv_parser_version": 2,
+  "languages": [
+    "vie",
+    "eng"
+  ],
+  "traineddata_sha256": {
+    "vie": "b6b49293d95d0b6dbd8780174627e82c75be957b6f4ed9862155540d6b00bb45",
+    "eng": "8280aed0782fe27257a68ea10fe7ef324ca0f8d85bd2fd145d1c2b560bcb66ba"
+  },
+  "ocr_engine_mode": 1,
+  "page_segmentation_mode": 3,
+  "thread_limit": 1,
+  "page": 133,
+  "lines": [
+    {
+      "bbox": [
+        [
+          687.0,
+          94.0
+        ],
+        [
+          714.0,
+          94.0
+        ],
+        [
+          714.0,
+          115.0
+        ],
+        [
+          687.0,
+          115.0
+        ]
+      ],
+      "text": "47",
+      "confidence": 0.9695205699999999
+    },
+    {
+      "bbox": [
+        [
+          303.0,
+          165.0
+        ],
+        [
+          1157.0,
+          165.0
+        ],
+        [
+          1157.0,
+          201.0
+        ],
+        [
+          303.0,
+          201.0
+        ]
+      ],
+      "text": "b) Về nguyên nhân, biện pháp xử lý số tiền thù lao bên uỷ nhiệm thu còn",
+      "confidence": 0.9657558629411765
+    },
+    {
+      "bbox": [
+        [
+          243.0,
+          209.0
+        ],
+        [
+          1158.0,
+          209.0
+        ],
+        [
+          1158.0,
+          241.0
+        ],
+        [
+          243.0,
+          241.0
+        ]
+      ],
+      "text": "phải thanh toán cho bên được uỷ nhiệm thu (chưa thanh toán cho bên được uỷ",
+      "confidence": 0.9680228937500001
+    },
+    {
+      "bbox": [
+        [
+          244.0,
+          249.0
+        ],
+        [
+          378.0,
+          249.0
+        ],
+        [
+          378.0,
+          276.0
+        ],
+        [
+          244.0,
+          276.0
+        ]
+      ],
+      "text": "nhiệm thu):",
+      "confidence": 0.9669926449999999
+    },
+    {
+      "bbox": [
+        [
+          304.0,
+          398.0
+        ],
+        [
+          1158.0,
+          398.0
+        ],
+        [
+          1158.0,
+          434.0
+        ],
+        [
+          304.0,
+          434.0
+        ]
+      ],
+      "text": "4. Các vấn đề khác (nếu có): Hành vi vi phạm hợp đồng của các bên,",
+      "confidence": 0.967601075625
+    },
+    {
+      "bbox": [
+        [
+          244.0,
+          439.0
+        ],
+        [
+          1033.0,
+          439.0
+        ],
+        [
+          1033.0,
+          472.0
+        ],
+        [
+          244.0,
+          472.0
+        ]
+      ],
+      "text": "trách nhiệm của các bên trong việc giải quyết các vấn đề còn tồn tai",
+      "confidence": 0.9610753479999999
+    },
+    {
+      "bbox": [
+        [
+          305.0,
+          490.0
+        ],
+        [
+          1159.0,
+          490.0
+        ],
+        [
+          1159.0,
+          526.0
+        ],
+        [
+          305.0,
+          526.0
+        ]
+      ],
+      "text": "Sau khi thanh lý Hợp đồng, bên uỷ nhiệm thu phát hiện bên được uỷ",
+      "confidence": 0.9676806333333334
+    },
+    {
+      "bbox": [
+        [
+          244.0,
+          528.0
+        ],
+        [
+          1159.0,
+          528.0
+        ],
+        [
+          1159.0,
+          564.0
+        ],
+        [
+          244.0,
+          564.0
+        ]
+      ],
+      "text": "nhiệm thu vi phạm Hợp đồng trong quá trình thực hiện thì xử lý theo quy định",
+      "confidence": 0.9682926617647059
+    },
+    {
+      "bbox": [
+        [
+          303.0,
+          669.0
+        ],
+        [
+          1158.0,
+          669.0
+        ],
+        [
+          1158.0,
+          704.0
+        ],
+        [
+          303.0,
+          704.0
+        ]
+      ],
+      "text": "Biên bản này gồm có............ trang, được lập thành......... bản có giá trị",
+      "confidence": 0.9266033015384616
+    },
+    {
+      "bbox": [
+        [
+          243.0,
+          708.0
+        ],
+        [
+          707.0,
+          708.0
+        ],
+        [
+          707.0,
+          740.0
+        ],
+        [
+          243.0,
+          740.0
+        ]
+      ],
+      "text": "pháp lý như nhau, mỗi bên giữ .... bản./.",
+      "confidence": 0.9416705822222222
+    },
+    {
+      "bbox": [
+        [
+          303.0,
+          800.0
+        ],
+        [
+          1115.0,
+          800.0
+        ],
+        [
+          1115.0,
+          842.0
+        ],
+        [
+          303.0,
+          842.0
+        ]
+      ],
+      "text": "BEN UY NHIEM THU BEN ĐƯỢC UY NHIEM THU",
+      "confidence": 0.9331255844444445
+    },
+    {
+      "bbox": [
+        [
+          283.0,
+          837.0
+        ],
+        [
+          1134.0,
+          837.0
+        ],
+        [
+          1134.0,
+          878.0
+        ],
+        [
+          283.0,
+          878.0
+        ]
+      ],
+      "text": "(Chức danh người đại diện) (Chức danh người đại diện - nêu có)",
+      "confidence": 0.9385930738461539
+    },
+    {
+      "bbox": [
+        [
+          262.0,
+          872.0
+        ],
+        [
+          1155.0,
+          872.0
+        ],
+        [
+          1155.0,
+          902.0
+        ],
+        [
+          262.0,
+          902.0
+        ]
+      ],
+      "text": "(Ký, ghi rõ họ tên và đóng dau) (Ký, ghi rõ họ tên và đóng dau - nếu có)",
+      "confidence": 0.9466636736842104
+    }
+  ]
+}

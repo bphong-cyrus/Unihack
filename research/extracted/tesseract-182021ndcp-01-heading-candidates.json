@@ -1,0 +1,30 @@
+{
+  "document_id": "18/2021/NĐ-CP",
+  "source_sha256": "cb0bf16ab3ee6554929e0d9d2cc4f180f51b8ea10ddd30a37309353edeb050d8",
+  "page_count": 114,
+  "review_status": "UNREVIEWED",
+  "candidates": [
+    {
+      "article": "1",
+      "page": 1,
+      "line_index": 28,
+      "text": "Điều 1. Sửa đổi, bổ sung một số điều của Nghị định số 134/2016/NĐ-CP",
+      "confidence": 0.9435600221428571,
+      "record_file": "page-001.json",
+      "source_verified": true,
+      "heading_scope": "article of 18/2021/NĐ-CP"
+    },
+    {
+      "article": "2",
+      "page": 37,
+      "line_index": 7,
+      "text": "Điều 2. Tổ chức thực hiện",
+      "confidence": 0.9652593483333334,
+      "record_file": "page-037.json",
+      "source_verified": true,
+      "heading_scope": "article of 18/2021/NĐ-CP"
+    }
+  ],
+  "limitations": "Đã đối chiếu ảnh gốc trang 1 và 37 cho Điều 1–2. Các dòng nhắc số điều trong phần sửa đổi và Điều 1–3 của biểu mẫu phụ lục không phải heading cấp văn bản 18/2021 nên không đưa vào candidates. OCR vẫn UNREVIEWED; đối chiếu bản gốc trước khi dùng pháp lý.",
+  "index_scope": "Chỉ mục các điều khoản thuộc chính văn bản 18/2021/NĐ-CP; loại tham chiếu tới điều của văn bản được sửa đổi và điều xuất hiện trong biểu mẫu phụ lục."
+}

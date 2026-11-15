@@ -1,0 +1,509 @@
+{
+  "document_id": "373/2025/NĐ-CP",
+  "source_file": "../../legal-sources/3732025ndcp/01.pdf",
+  "source_sha256": "6ca9d1a16b5d47c7aa23f06f243dc59bd2e9dda4d70f3f3c892e4254d2c7d914",
+  "page_count": 74,
+  "render_dpi": 150,
+  "engine": "Tesseract 5.5.4 (vie+eng; OEM 1; PSM 3)",
+  "review_status": "UNREVIEWED",
+  "tesseract_version": "5.5.4",
+  "tsv_parser_version": 2,
+  "languages": [
+    "vie",
+    "eng"
+  ],
+  "traineddata_sha256": {
+    "vie": "b6b49293d95d0b6dbd8780174627e82c75be957b6f4ed9862155540d6b00bb45",
+    "eng": "8280aed0782fe27257a68ea10fe7ef324ca0f8d85bd2fd145d1c2b560bcb66ba"
+  },
+  "ocr_engine_mode": 1,
+  "page_segmentation_mode": 3,
+  "thread_limit": 1,
+  "page": 43,
+  "lines": [
+    {
+      "bbox": [
+        [
+          646.0,
+          85.0
+        ],
+        [
+          672.0,
+          85.0
+        ],
+        [
+          672.0,
+          105.0
+        ],
+        [
+          646.0,
+          105.0
+        ]
+      ],
+      "text": "35",
+      "confidence": 0.96077095
+    },
+    {
+      "bbox": [
+        [
+          231.0,
+          201.0
+        ],
+        [
+          742.0,
+          201.0
+        ],
+        [
+          742.0,
+          241.0
+        ],
+        [
+          231.0,
+          241.0
+        ]
+      ],
+      "text": "1 Điền X vào ô nếu lần đầu khai thuế trong kỳ tính thuế.",
+      "confidence": 0.9537349171428572
+    },
+    {
+      "bbox": [
+        [
+          230.0,
+          227.0
+        ],
+        [
+          1148.0,
+          227.0
+        ],
+        [
+          1148.0,
+          265.0
+        ],
+        [
+          230.0,
+          265.0
+        ]
+      ],
+      "text": "2 Điền đầy đủ mã số thuế của bên Việt Nam khẩu trừ và khai thuế thay cho tổ chức nhận tái bảo hiểm",
+      "confidence": 0.9527650708333333
+    },
+    {
+      "bbox": [
+        [
+          170.0,
+          265.0
+        ],
+        [
+          279.0,
+          265.0
+        ],
+        [
+          279.0,
+          291.0
+        ],
+        [
+          170.0,
+          291.0
+        ]
+      ],
+      "text": "nước ngoài.",
+      "confidence": 0.96859505
+    },
+    {
+      "bbox": [
+        [
+          231.0,
+          285.0
+        ],
+        [
+          1147.0,
+          285.0
+        ],
+        [
+          1147.0,
+          317.0
+        ],
+        [
+          231.0,
+          317.0
+        ]
+      ],
+      "text": "3 Điền tên của đại lý thuế, nếu trong trường hợp khai thuế thu nhập doanh nghiệp đối với tổ chức",
+      "confidence": 0.9643891209523809
+    },
+    {
+      "bbox": [
+        [
+          171.0,
+          313.0
+        ],
+        [
+          1119.0,
+          313.0
+        ],
+        [
+          1119.0,
+          349.0
+        ],
+        [
+          171.0,
+          349.0
+        ]
+      ],
+      "text": "nhận tái bảo hiểm thông qua đại lý thuế. ñ",
+      "confidence": 0.914706177
+    },
+    {
+      "bbox": [
+        [
+          231.0,
+          339.0
+        ],
+        [
+          1119.0,
+          339.0
+        ],
+        [
+          1119.0,
+          371.0
+        ],
+        [
+          231.0,
+          371.0
+        ]
+      ],
+      "text": "* Điền đầy đủ mã sô thuế của đại lý thuế (nếu có). ¡",
+      "confidence": 0.9431865328571429
+    },
+    {
+      "bbox": [
+        [
+          232.0,
+          366.0
+        ],
+        [
+          1010.0,
+          366.0
+        ],
+        [
+          1010.0,
+          400.0
+        ],
+        [
+          232.0,
+          400.0
+        ]
+      ],
+      "text": "5 Điền số tiền phát sinh trong quý tính thuế tương ứng với hướng dẫn tại cột Chỉ tiêu.",
+      "confidence": 0.9314433452631579
+    },
+    {
+      "bbox": [
+        [
+          232.0,
+          389.0
+        ],
+        [
+          1078.0,
+          389.0
+        ],
+        [
+          1078.0,
+          424.0
+        ],
+        [
+          232.0,
+          424.0
+        ]
+      ],
+      "text": "6 Điền số tiền lũy kế phát sinh trong năm tính thuế tương ứng với hướng dẫn tại cột Chỉ tiêu.",
+      "confidence": 0.9505750209523811
+    },
+    {
+      "bbox": [
+        [
+          232.0,
+          415.0
+        ],
+        [
+          1147.0,
+          415.0
+        ],
+        [
+          1147.0,
+          447.0
+        ],
+        [
+          232.0,
+          447.0
+        ]
+      ],
+      "text": "7 Tổng doanh thu tại chỉ tiêu [09] bằng doanh thu từ hoạt động tái bảo hiểm (tại chỉ tiêu [10]) cộng",
+      "confidence": 0.951192634090909
+    },
+    {
+      "bbox": [
+        [
+          171.0,
+          451.0
+        ],
+        [
+          515.0,
+          451.0
+        ],
+        [
+          515.0,
+          480.0
+        ],
+        [
+          171.0,
+          480.0
+        ]
+      ],
+      "text": "với doanh thu khác (tai chỉ tiêu [11]).",
+      "confidence": 0.9583534725
+    },
+    {
+      "bbox": [
+        [
+          232.0,
+          473.0
+        ],
+        [
+          1146.0,
+          473.0
+        ],
+        [
+          1146.0,
+          514.0
+        ],
+        [
+          232.0,
+          514.0
+        ]
+      ],
+      "text": "8 Các khoản giảm trừ doanh thu (tại chỉ tiêu [12]) bằng các khoản thu hộ (tại chỉ tiêu [13]) cộng \\ với",
+      "confidence": 0.9492025986956523
+    },
+    {
+      "bbox": [
+        [
+          171.0,
+          504.0
+        ],
+        [
+          515.0,
+          504.0
+        ],
+        [
+          515.0,
+          525.0
+        ],
+        [
+          171.0,
+          525.0
+        ]
+      ],
+      "text": "các khoản chi khác (tại chỉ tiêu [14]).",
+      "confidence": 0.9524460612500001
+    },
+    {
+      "bbox": [
+        [
+          231.0,
+          513.0
+        ],
+        [
+          1147.0,
+          513.0
+        ],
+        [
+          1147.0,
+          572.0
+        ],
+        [
+          231.0,
+          572.0
+        ]
+      ],
+      "text": "9 Doanh thu chịu thuế thu nhập doanh nghiệp (tại chỉ tiêu [15]) bằng tổng doanh thu (tại chi tiêu I0)",
+      "confidence": 0.9293279152380953
+    },
+    {
+      "bbox": [
+        [
+          169.0,
+          556.0
+        ],
+        [
+          667.0,
+          556.0
+        ],
+        [
+          667.0,
+          578.0
+        ],
+        [
+          169.0,
+          578.0
+        ]
+      ],
+      "text": "trừ đi các khoản giảm trừ doanh thu (tại chỉ tiêu [12]).",
+      "confidence": 0.9589716583333334
+    },
+    {
+      "bbox": [
+        [
+          231.0,
+          568.0
+        ],
+        [
+          1146.0,
+          568.0
+        ],
+        [
+          1146.0,
+          614.0
+        ],
+        [
+          231.0,
+          614.0
+        ]
+      ],
+      "text": "10 Thuế thu nhập doanh nghiệp phát sinh trong kỳ (tại chỉ tiêu [17]) bằng doanh thu chịu thuế thu",
+      "confidence": 0.9466748420000001
+    },
+    {
+      "bbox": [
+        [
+          169.0,
+          605.0
+        ],
+        [
+          1146.0,
+          605.0
+        ],
+        [
+          1146.0,
+          632.0
+        ],
+        [
+          169.0,
+          632.0
+        ]
+      ],
+      "text": "nhập doanh nghiệp (tai chỉ tiêu [15]) nhân Tỷ lệ (%) thuế thu nhập doanh nghiệp tính trên doanh thu chịu",
+      "confidence": 0.959858811904762
+    },
+    {
+      "bbox": [
+        [
+          169.0,
+          635.0
+        ],
+        [
+          378.0,
+          635.0
+        ],
+        [
+          378.0,
+          661.0
+        ],
+        [
+          169.0,
+          661.0
+        ]
+      ],
+      "text": "thuê (tại chỉ tiêu [16]).",
+      "confidence": 0.954434524
+    },
+    {
+      "bbox": [
+        [
+          232.0,
+          656.0
+        ],
+        [
+          1146.0,
+          656.0
+        ],
+        [
+          1146.0,
+          694.0
+        ],
+        [
+          232.0,
+          694.0
+        ]
+      ],
+      "text": "1! Số thuế miễn giảm trong kỳ (tại chỉ tiêu [18]) bằng Số thuế miễn, giảm theo Hiệp định tránh đẳnh",
+      "confidence": 0.9364356442857142
+    },
+    {
+      "bbox": [
+        [
+          169.0,
+          683.0
+        ],
+        [
+          921.0,
+          683.0
+        ],
+        [
+          921.0,
+          714.0
+        ],
+        [
+          169.0,
+          714.0
+        ]
+      ],
+      "text": "thuế hai lần (tại chỉ tiêu [19]) cộng với số thuế miễn, giảm khác (tại chỉ tiêu [20]).",
+      "confidence": 0.9540611855555556
+    },
+    {
+      "bbox": [
+        [
+          231.0,
+          696.0
+        ],
+        [
+          1146.0,
+          696.0
+        ],
+        [
+          1146.0,
+          749.0
+        ],
+        [
+          231.0,
+          749.0
+        ]
+      ],
+      "text": "12 Số thuế phải nộp trong kỳ (tại chỉ tiêu [21]) bằng Thuế thu nhập doanh nghiệp phát sinh trong kỳ",
+      "confidence": 0.9494026509523809
+    },
+    {
+      "bbox": [
+        [
+          169.0,
+          736.0
+        ],
+        [
+          811.0,
+          736.0
+        ],
+        [
+          811.0,
+          763.0
+        ],
+        [
+          169.0,
+          763.0
+        ]
+      ],
+      "text": "(tại chỉ tiêu [17]) trừ đi số thuế miễn, giảm trong kỳ (tại chỉ tiêu [18]).",
+      "confidence": 0.9499684949999999
+    }
+  ]
+}

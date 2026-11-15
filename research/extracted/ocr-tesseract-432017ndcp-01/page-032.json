@@ -1,0 +1,24 @@
+{
+  "document_id": "43/2017/NĐ-CP",
+  "source_file": "../../legal-sources/432017ndcp/01.pdf",
+  "source_sha256": "e698dcc97d6d39d11dea9c9688b289d36e976e1e9acda2ee15cd2fe93402ab62",
+  "page_count": 36,
+  "render_dpi": 150,
+  "engine": "Tesseract 5.5.4 (vie+eng; OEM 1; PSM 3)",
+  "review_status": "UNREVIEWED",
+  "tesseract_version": "5.5.4",
+  "tsv_parser_version": 2,
+  "languages": [
+    "vie",
+    "eng"
+  ],
+  "traineddata_sha256": {
+    "vie": "b6b49293d95d0b6dbd8780174627e82c75be957b6f4ed9862155540d6b00bb45",
+    "eng": "8280aed0782fe27257a68ea10fe7ef324ca0f8d85bd2fd145d1c2b560bcb66ba"
+  },
+  "ocr_engine_mode": 1,
+  "page_segmentation_mode": 3,
+  "thread_limit": 1,
+  "page": 32,
+  "lines": []
+}

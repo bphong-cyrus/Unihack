@@ -1,0 +1,861 @@
+{
+  "document_id": "126/2020/NĐ-CP",
+  "source_file": "../../legal-sources/1262020ndcp/01.pdf",
+  "source_sha256": "310648e80396d267610946458e7fdd71ba87ef538b009d6574ed21514de3f7ca",
+  "page_count": 119,
+  "render_dpi": 150,
+  "engine": "Tesseract 5.5.4 (vie+eng; OEM 1; PSM 3)",
+  "review_status": "UNREVIEWED",
+  "tesseract_version": "5.5.4",
+  "tsv_parser_version": 2,
+  "languages": [
+    "vie",
+    "eng"
+  ],
+  "traineddata_sha256": {
+    "vie": "b6b49293d95d0b6dbd8780174627e82c75be957b6f4ed9862155540d6b00bb45",
+    "eng": "8280aed0782fe27257a68ea10fe7ef324ca0f8d85bd2fd145d1c2b560bcb66ba"
+  },
+  "ocr_engine_mode": 1,
+  "page_segmentation_mode": 3,
+  "thread_limit": 1,
+  "page": 11,
+  "lines": [
+    {
+      "bbox": [
+        [
+          676.0,
+          67.0
+        ],
+        [
+          698.0,
+          67.0
+        ],
+        [
+          698.0,
+          88.0
+        ],
+        [
+          676.0,
+          88.0
+        ]
+      ],
+      "text": "11",
+      "confidence": 0.90464157
+    },
+    {
+      "bbox": [
+        [
+          260.0,
+          133.0
+        ],
+        [
+          1120.0,
+          133.0
+        ],
+        [
+          1120.0,
+          185.0
+        ],
+        [
+          260.0,
+          185.0
+        ]
+      ],
+      "text": "d) Tổ chức khai thuế thay và nộp thuế thay cho cá nhân nhận cổ tức bằng",
+      "confidence": 0.9629342505882353
+    },
+    {
+      "bbox": [
+        [
+          202.0,
+          173.0
+        ],
+        [
+          1121.0,
+          173.0
+        ],
+        [
+          1121.0,
+          220.0
+        ],
+        [
+          202.0,
+          220.0
+        ]
+      ],
+      "text": "chứng khoán; cá nhân là cổ đông hiện hữu nhận thưởng bằng chứng khoán; cá",
+      "confidence": 0.9547268533333333
+    },
+    {
+      "bbox": [
+        [
+          202.0,
+          206.0
+        ],
+        [
+          1121.0,
+          206.0
+        ],
+        [
+          1121.0,
+          254.0
+        ],
+        [
+          202.0,
+          254.0
+        ]
+      ],
+      "text": "nhân được ghi nhận phần vốn tăng thêm do lợi tức ghi tăng vốn; cá nhân góp",
+      "confidence": 0.9678416082352941
+    },
+    {
+      "bbox": [
+        [
+          203.0,
+          238.0
+        ],
+        [
+          1122.0,
+          238.0
+        ],
+        [
+          1122.0,
+          289.0
+        ],
+        [
+          203.0,
+          289.0
+        ]
+      ],
+      "text": "vốn bằng bất động sản, phần vốn góp, chứng khoán. Thời điểm khai thuế thay",
+      "confidence": 0.9587249146666665
+    },
+    {
+      "bbox": [
+        [
+          203.0,
+          276.0
+        ],
+        [
+          1122.0,
+          276.0
+        ],
+        [
+          1122.0,
+          325.0
+        ],
+        [
+          203.0,
+          325.0
+        ]
+      ],
+      "text": "và nộp thuế thay được thực hiện khi cá nhân phát sinh chuyển nhượng chứng",
+      "confidence": 0.9685875686666666
+    },
+    {
+      "bbox": [
+        [
+          205.0,
+          314.0
+        ],
+        [
+          934.0,
+          314.0
+        ],
+        [
+          934.0,
+          358.0
+        ],
+        [
+          205.0,
+          358.0
+        ]
+      ],
+      "text": "khoán cùng loại, chuyển nhượng vốn, rút vốn. Cụ thể như sau:",
+      "confidence": 0.9419303958333335
+    },
+    {
+      "bbox": [
+        [
+          265.0,
+          368.0
+        ],
+        [
+          1124.0,
+          368.0
+        ],
+        [
+          1124.0,
+          419.0
+        ],
+        [
+          265.0,
+          419.0
+        ]
+      ],
+      "text": "d.1) Déi với cá nhân nhận cb tức bằng chứng khoán; cá nhân là cổ đông",
+      "confidence": 0.94464384125
+    },
+    {
+      "bbox": [
+        [
+          207.0,
+          401.0
+        ],
+        [
+          1124.0,
+          401.0
+        ],
+        [
+          1124.0,
+          453.0
+        ],
+        [
+          207.0,
+          453.0
+        ]
+      ],
+      "text": "hiện hữu nhận thưởng bằng chứng khoán thì tổ chức có trách nhiệm khai thuế",
+      "confidence": 0.9664512926666666
+    },
+    {
+      "bbox": [
+        [
+          206.0,
+          440.0
+        ],
+        [
+          1125.0,
+          440.0
+        ],
+        [
+          1125.0,
+          489.0
+        ],
+        [
+          206.0,
+          489.0
+        ]
+      ],
+      "text": "thay và nộp thuế thay cho cá nhân đối với thu nhập từ đầu tư vốn khi cá nhân",
+      "confidence": 0.96118277
+    },
+    {
+      "bbox": [
+        [
+          208.0,
+          488.0
+        ],
+        [
+          768.0,
+          488.0
+        ],
+        [
+          768.0,
+          524.0
+        ],
+        [
+          208.0,
+          524.0
+        ]
+      ],
+      "text": "chuyển nhượng chứng khoán cùng loại như sau:",
+      "confidence": 0.9629817975
+    },
+    {
+      "bbox": [
+        [
+          268.0,
+          537.0
+        ],
+        [
+          1128.0,
+          537.0
+        ],
+        [
+          1128.0,
+          580.0
+        ],
+        [
+          268.0,
+          580.0
+        ]
+      ],
+      "text": "Đối với chứng khoán thong qua hệ thống giao dịch trên Sở giao dịch",
+      "confidence": 0.9399596557142857
+    },
+    {
+      "bbox": [
+        [
+          210.0,
+          572.0
+        ],
+        [
+          1129.0,
+          572.0
+        ],
+        [
+          1129.0,
+          618.0
+        ],
+        [
+          210.0,
+          618.0
+        ]
+      ],
+      "text": "chứng khoán thì tổ chức khai thuế thay và nộp thuế thay là công ty chứng",
+      "confidence": 0.96701274875
+    },
+    {
+      "bbox": [
+        [
+          210.0,
+          607.0
+        ],
+        [
+          1130.0,
+          607.0
+        ],
+        [
+          1130.0,
+          652.0
+        ],
+        [
+          210.0,
+          652.0
+        ]
+      ],
+      "text": "khoán, ngân hàng thương mại nơi cá nhân mở tài khoản lưu ký, công ty quản",
+      "confidence": 0.9681132743749999
+    },
+    {
+      "bbox": [
+        [
+          212.0,
+          647.0
+        ],
+        [
+          728.0,
+          647.0
+        ],
+        [
+          728.0,
+          689.0
+        ],
+        [
+          212.0,
+          689.0
+        ]
+      ],
+      "text": "lý quỹ nơi cá nhân ủy thác danh mục đầu tư.",
+      "confidence": 0.9682956345454545
+    },
+    {
+      "bbox": [
+        [
+          272.0,
+          702.0
+        ],
+        [
+          1131.0,
+          702.0
+        ],
+        [
+          1131.0,
+          744.0
+        ],
+        [
+          272.0,
+          744.0
+        ]
+      ],
+      "text": "Đối với chứng khoán không thông qua hệ thống giao dịch trên Sở giao",
+      "confidence": 0.9465845707142857
+    },
+    {
+      "bbox": [
+        [
+          214.0,
+          736.0
+        ],
+        [
+          1132.0,
+          736.0
+        ],
+        [
+          1132.0,
+          782.0
+        ],
+        [
+          214.0,
+          782.0
+        ]
+      ],
+      "text": "dịch chứng khoán thì tổ chức khai thuế thay và nộp thuế thay như sau: chứng",
+      "confidence": 0.967998141875
+    },
+    {
+      "bbox": [
+        [
+          214.0,
+          772.0
+        ],
+        [
+          1133.0,
+          772.0
+        ],
+        [
+          1133.0,
+          815.0
+        ],
+        [
+          214.0,
+          815.0
+        ]
+      ],
+      "text": "khoán của công ty đại chúng đã đăng ký chứng khoán tập trung tại Trung tâm",
+      "confidence": 0.968138533125
+    },
+    {
+      "bbox": [
+        [
+          215.0,
+          804.0
+        ],
+        [
+          1134.0,
+          804.0
+        ],
+        [
+          1134.0,
+          852.0
+        ],
+        [
+          215.0,
+          852.0
+        ]
+      ],
+      "text": "lưu ký chứng khoán thì tổ chức khai thuế thay và nộp thuế thay là công ty",
+      "confidence": 0.9685238523529413
+    },
+    {
+      "bbox": [
+        [
+          216.0,
+          841.0
+        ],
+        [
+          1135.0,
+          841.0
+        ],
+        [
+          1135.0,
+          887.0
+        ],
+        [
+          216.0,
+          887.0
+        ]
+      ],
+      "text": "chứng khoán, ngân hàng thương mại nơi cá nhân mở tài khoản lưu ký chứng",
+      "confidence": 0.9687477919999999
+    },
+    {
+      "bbox": [
+        [
+          216.0,
+          869.0
+        ],
+        [
+          1135.0,
+          869.0
+        ],
+        [
+          1135.0,
+          919.0
+        ],
+        [
+          216.0,
+          919.0
+        ]
+      ],
+      "text": "khoán; chứng khoán của công ty cổ phần chưa là công ty đại chúng nhưng tổ",
+      "confidence": 0.9670263531250001
+    },
+    {
+      "bbox": [
+        [
+          217.0,
+          905.0
+        ],
+        [
+          1136.0,
+          905.0
+        ],
+        [
+          1136.0,
+          956.0
+        ],
+        [
+          217.0,
+          956.0
+        ]
+      ],
+      "text": "chức phát hành chứng khoán ủy quyền cho công ty chứng khoán quản lý danh",
+      "confidence": 0.9687205146666666
+    },
+    {
+      "bbox": [
+        [
+          218.0,
+          945.0
+        ],
+        [
+          1137.0,
+          945.0
+        ],
+        [
+          1137.0,
+          989.0
+        ],
+        [
+          218.0,
+          989.0
+        ]
+      ],
+      "text": "sách cổ đông thì tổ chức khai thuế thay và nộp thuế thay là công ty chứng",
+      "confidence": 0.9681166070588236
+    },
+    {
+      "bbox": [
+        [
+          218.0,
+          975.0
+        ],
+        [
+          1137.0,
+          975.0
+        ],
+        [
+          1137.0,
+          1023.0
+        ],
+        [
+          218.0,
+          1023.0
+        ]
+      ],
+      "text": "khoán được ủy quyền quản lý danh sách cổ dong; chứng khoán không thuộc",
+      "confidence": 0.9568280964285714
+    },
+    {
+      "bbox": [
+        [
+          218.0,
+          1007.0
+        ],
+        [
+          1138.0,
+          1007.0
+        ],
+        [
+          1138.0,
+          1060.0
+        ],
+        [
+          218.0,
+          1060.0
+        ]
+      ],
+      "text": "trường hợp quy định nêu tại đoạn này thì tổ chức khai thuế thay và nộp thuế",
+      "confidence": 0.9684469964705882
+    },
+    {
+      "bbox": [
+        [
+          219.0,
+          1060.0
+        ],
+        [
+          679.0,
+          1060.0
+        ],
+        [
+          679.0,
+          1095.0
+        ],
+        [
+          219.0,
+          1095.0
+        ]
+      ],
+      "text": "thay là tổ chức phát hành chứng khoán.",
+      "confidence": 0.9692080125
+    },
+    {
+      "bbox": [
+        [
+          281.0,
+          1107.0
+        ],
+        [
+          1139.0,
+          1107.0
+        ],
+        [
+          1139.0,
+          1160.0
+        ],
+        [
+          281.0,
+          1160.0
+        ]
+      ],
+      "text": "d.2) Đối với cá nhân được ghi nhận phần vốn tăng thêm do lợi tức ghỉ",
+      "confidence": 0.948875194375
+    },
+    {
+      "bbox": [
+        [
+          222.0,
+          1142.0
+        ],
+        [
+          1140.0,
+          1142.0
+        ],
+        [
+          1140.0,
+          1189.0
+        ],
+        [
+          222.0,
+          1189.0
+        ]
+      ],
+      "text": "tăng vốn thì tô chức nơi cá nhân có vốn góp có trách nhiệm khai thuê thay,",
+      "confidence": 0.9645085317647059
+    },
+    {
+      "bbox": [
+        [
+          223.0,
+          1171.0
+        ],
+        [
+          1142.0,
+          1171.0
+        ],
+        [
+          1142.0,
+          1223.0
+        ],
+        [
+          223.0,
+          1223.0
+        ]
+      ],
+      "text": "nộp thuế thay cho cá nhân đối với thu nhập từ đầu tư vốn khi cá nhân chuyên",
+      "confidence": 0.9520887950000001
+    },
+    {
+      "bbox": [
+        [
+          224.0,
+          1228.0
+        ],
+        [
+          469.0,
+          1228.0
+        ],
+        [
+          469.0,
+          1257.0
+        ],
+        [
+          224.0,
+          1257.0
+        ]
+      ],
+      "text": "nhượng vôn, rút vôn.",
+      "confidence": 0.9310184875
+    },
+    {
+      "bbox": [
+        [
+          285.0,
+          1268.0
+        ],
+        [
+          1144.0,
+          1268.0
+        ],
+        [
+          1144.0,
+          1317.0
+        ],
+        [
+          285.0,
+          1317.0
+        ]
+      ],
+      "text": "d.3) Đối với cá nhân góp vốn bằng bất động sản, phần vốn góp, chứng",
+      "confidence": 0.9483829026666668
+    },
+    {
+      "bbox": [
+        [
+          226.0,
+          1303.0
+        ],
+        [
+          1144.0,
+          1303.0
+        ],
+        [
+          1144.0,
+          1348.0
+        ],
+        [
+          226.0,
+          1348.0
+        ]
+      ],
+      "text": "khoán thì tổ chức nơi cá nhân góp vốn có trách nhiệm khai thuế thay, nộp",
+      "confidence": 0.9619917487499999
+    },
+    {
+      "bbox": [
+        [
+          227.0,
+          1339.0
+        ],
+        [
+          1145.0,
+          1339.0
+        ],
+        [
+          1145.0,
+          1387.0
+        ],
+        [
+          227.0,
+          1387.0
+        ]
+      ],
+      "text": "thuế thay cho cá nhân đối với thu nhập từ chuyển nhượng bất động sản, thu",
+      "confidence": 0.962073446875
+    },
+    {
+      "bbox": [
+        [
+          228.0,
+          1379.0
+        ],
+        [
+          1058.0,
+          1379.0
+        ],
+        [
+          1058.0,
+          1424.0
+        ],
+        [
+          228.0,
+          1424.0
+        ]
+      ],
+      "text": "nhập từ chuyển nhượng vốn, thu nhập từ chuyển nhượng chứng khoán.",
+      "confidence": 0.9537805174999999
+    },
+    {
+      "bbox": [
+        [
+          289.0,
+          1437.0
+        ],
+        [
+          1146.0,
+          1437.0
+        ],
+        [
+          1146.0,
+          1483.0
+        ],
+        [
+          289.0,
+          1483.0
+        ]
+      ],
+      "text": "d.4) Trường hợp tổ chức khai thuế thay, nỘp thuế thay theo quy định tại",
+      "confidence": 0.9606177733333334
+    },
+    {
+      "bbox": [
+        [
+          230.0,
+          1472.0
+        ],
+        [
+          1148.0,
+          1472.0
+        ],
+        [
+          1148.0,
+          1516.0
+        ],
+        [
+          230.0,
+          1516.0
+        ]
+      ],
+      "text": "điểm d.1, d2, d.3 khoản này đã giải thê, phá sản mà chưa thực hiện khai thuê",
+      "confidence": 0.9579300335294118
+    },
+    {
+      "bbox": [
+        [
+          230.0,
+          1502.0
+        ],
+        [
+          1149.0,
+          1502.0
+        ],
+        [
+          1149.0,
+          1555.0
+        ],
+        [
+          230.0,
+          1555.0
+        ]
+      ],
+      "text": "thay, nộp thuế thay cho cá nhân thì cá nhân có trách nhiệm khai thuế, nộp",
+      "confidence": 0.96807434125
+    },
+    {
+      "bbox": [
+        [
+          231.0,
+          1559.0
+        ],
+        [
+          455.0,
+          1559.0
+        ],
+        [
+          455.0,
+          1588.0
+        ],
+        [
+          231.0,
+          1588.0
+        ]
+      ],
+      "text": "thuế theo quy định.",
+      "confidence": 0.9687341899999999
+    }
+  ]
+}

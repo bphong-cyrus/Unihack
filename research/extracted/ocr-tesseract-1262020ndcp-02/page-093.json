@@ -1,0 +1,399 @@
+{
+  "document_id": "126/2020/NĐ-CP",
+  "source_file": "../../legal-sources/1262020ndcp/02.pdf",
+  "source_sha256": "008daa92f4d699b69b9318c4a8e6fa7db8d73453305e1a4f155134656e26847b",
+  "page_count": 147,
+  "render_dpi": 150,
+  "engine": "Tesseract 5.5.4 (vie+eng; OEM 1; PSM 3)",
+  "review_status": "UNREVIEWED",
+  "tesseract_version": "5.5.4",
+  "tsv_parser_version": 2,
+  "languages": [
+    "vie",
+    "eng"
+  ],
+  "traineddata_sha256": {
+    "vie": "b6b49293d95d0b6dbd8780174627e82c75be957b6f4ed9862155540d6b00bb45",
+    "eng": "8280aed0782fe27257a68ea10fe7ef324ca0f8d85bd2fd145d1c2b560bcb66ba"
+  },
+  "ocr_engine_mode": 1,
+  "page_segmentation_mode": 3,
+  "thread_limit": 1,
+  "page": 93,
+  "lines": [
+    {
+      "bbox": [
+        [
+          292.0,
+          167.0
+        ],
+        [
+          1142.0,
+          167.0
+        ],
+        [
+          1142.0,
+          201.0
+        ],
+        [
+          292.0,
+          201.0
+        ]
+      ],
+      "text": "Điều 4. (Người nộp thuế...) có trách nhiệm nộp đủ số tiền thuế phải nộp",
+      "confidence": 0.9636997313333333
+    },
+    {
+      "bbox": [
+        [
+          233.0,
+          201.0
+        ],
+        [
+          1142.0,
+          201.0
+        ],
+        [
+          1142.0,
+          235.0
+        ],
+        [
+          233.0,
+          235.0
+        ]
+      ],
+      "text": "nêu tại Điều 3 Quyết định này, tiền chậm nộp (nếu có) theo quy định tại",
+      "confidence": 0.96589331125
+    },
+    {
+      "bbox": [
+        [
+          234.0,
+          235.0
+        ],
+        [
+          1144.0,
+          235.0
+        ],
+        [
+          1144.0,
+          268.0
+        ],
+        [
+          234.0,
+          268.0
+        ]
+      ],
+      "text": "khoản 2 Điều 59 Luật Quản lý thuế số 38/2019/QH14 vào tài khoản.... tại",
+      "confidence": 0.9620460464285715
+    },
+    {
+      "bbox": [
+        [
+          234.0,
+          269.0
+        ],
+        [
+          1145.0,
+          269.0
+        ],
+        [
+          1145.0,
+          303.0
+        ],
+        [
+          234.0,
+          303.0
+        ]
+      ],
+      "text": "Kho bạc Nhà nước... (Trường hợp sau khi sửa đổi, bd sung phát sinh số tiền",
+      "confidence": 0.958485799375
+    },
+    {
+      "bbox": [
+        [
+          233.0,
+          303.0
+        ],
+        [
+          1084.0,
+          303.0
+        ],
+        [
+          1084.0,
+          338.0
+        ],
+        [
+          233.0,
+          338.0
+        ]
+      ],
+      "text": "thuế nộp thừa thì ghi rõ số tiền thuế nộp thừa chỉ tiết theo từng loại thuế).",
+      "confidence": 0.9639751429411766
+    },
+    {
+      "bbox": [
+        [
+          293.0,
+          350.0
+        ],
+        [
+          1146.0,
+          350.0
+        ],
+        [
+          1146.0,
+          384.0
+        ],
+        [
+          293.0,
+          384.0
+        ]
+      ],
+      "text": "Thời hạn nộp số tiền thuế ấn định thực hiện theo quy định tại điểm a",
+      "confidence": 0.9596541131249999
+    },
+    {
+      "bbox": [
+        [
+          234.0,
+          384.0
+        ],
+        [
+          1146.0,
+          384.0
+        ],
+        [
+          1146.0,
+          418.0
+        ],
+        [
+          234.0,
+          418.0
+        ]
+      ],
+      "text": "khoản 4 Điều 55 Luật Quản lý thuế số 38/2019/QH14, khoản 6 Điều 17 Nghị",
+      "confidence": 0.9668744300000001
+    },
+    {
+      "bbox": [
+        [
+          235.0,
+          418.0
+        ],
+        [
+          1147.0,
+          418.0
+        ],
+        [
+          1147.0,
+          453.0
+        ],
+        [
+          235.0,
+          453.0
+        ]
+      ],
+      "text": "định số ... ngày ... tháng ... năm 2020 quy định chỉ tiết một số điều của Luật",
+      "confidence": 0.9505990344444445
+    },
+    {
+      "bbox": [
+        [
+          235.0,
+          453.0
+        ],
+        [
+          399.0,
+          453.0
+        ],
+        [
+          399.0,
+          486.0
+        ],
+        [
+          235.0,
+          486.0
+        ]
+      ],
+      "text": "Quản lý thuế/.",
+      "confidence": 0.9297489166666666
+    },
+    {
+      "bbox": [
+        [
+          233.0,
+          545.0
+        ],
+        [
+          1056.0,
+          545.0
+        ],
+        [
+          1056.0,
+          583.0
+        ],
+        [
+          233.0,
+          583.0
+        ]
+      ],
+      "text": "Noinhgn: THỦ TRƯỞNG DON VỊ",
+      "confidence": 0.8874481660000001
+    },
+    {
+      "bbox": [
+        [
+          235.0,
+          580.0
+        ],
+        [
+          1069.0,
+          580.0
+        ],
+        [
+          1069.0,
+          615.0
+        ],
+        [
+          235.0,
+          615.0
+        ]
+      ],
+      "text": "- Tên người nộp thuê; (Ký, ghi rõ họ tên, đóng dầu)",
+      "confidence": 0.9306159333333334
+    },
+    {
+      "bbox": [
+        [
+          235.0,
+          621.0
+        ],
+        [
+          496.0,
+          621.0
+        ],
+        [
+          496.0,
+          653.0
+        ],
+        [
+          235.0,
+          653.0
+        ]
+      ],
+      "text": "- Lưu: VT, đơn vị soạn thảo.",
+      "confidence": 0.94072282
+    },
+    {
+      "bbox": [
+        [
+          297.0,
+          1460.0
+        ],
+        [
+          387.0,
+          1460.0
+        ],
+        [
+          387.0,
+          1479.0
+        ],
+        [
+          297.0,
+          1479.0
+        ]
+      ],
+      "text": "Ghi chú:",
+      "confidence": 0.8401959250000001
+    },
+    {
+      "bbox": [
+        [
+          297.0,
+          1480.0
+        ],
+        [
+          1150.0,
+          1480.0
+        ],
+        [
+          1150.0,
+          1524.0
+        ],
+        [
+          297.0,
+          1524.0
+        ]
+      ],
+      "text": "le Mẫu này áp dụng chung cho trường hợp cơ quan hải quan ban hành quyết định ấn",
+      "confidence": 0.9262319516666667
+    },
+    {
+      "bbox": [
+        [
+          237.0,
+          1510.0
+        ],
+        [
+          752.0,
+          1510.0
+        ],
+        [
+          752.0,
+          1548.0
+        ],
+        [
+          237.0,
+          1548.0
+        ]
+      ],
+      "text": "định thuế; sửa đổi, bd sung quyết định ấn định thuế.",
+      "confidence": 0.9330758463636363
+    },
+    {
+      "bbox": [
+        [
+          296.0,
+          1537.0
+        ],
+        [
+          1149.0,
+          1537.0
+        ],
+        [
+          1149.0,
+          1583.0
+        ],
+        [
+          296.0,
+          1583.0
+        ]
+      ],
+      "text": "2) Trường hợp ân định thuế thuộc nhiều tờ khai phải ghi ¢ chi tiết số tiền thuế theo",
+      "confidence": 0.9487580894736842
+    },
+    {
+      "bbox": [
+        [
+          237.0,
+          1566.0
+        ],
+        [
+          1094.0,
+          1566.0
+        ],
+        [
+          1094.0,
+          1598.0
+        ],
+        [
+          237.0,
+          1598.0
+        ]
+      ],
+      "text": "từng loại thuế chỉ tiết theo từng tờ khai vào phụ lục đính kèm quyết định ấn định thuế.",
+      "confidence": 0.9668380294736842
+    }
+  ]
+}

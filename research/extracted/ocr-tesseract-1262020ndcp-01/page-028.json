@@ -1,0 +1,839 @@
+{
+  "document_id": "126/2020/NĐ-CP",
+  "source_file": "../../legal-sources/1262020ndcp/01.pdf",
+  "source_sha256": "310648e80396d267610946458e7fdd71ba87ef538b009d6574ed21514de3f7ca",
+  "page_count": 119,
+  "render_dpi": 150,
+  "engine": "Tesseract 5.5.4 (vie+eng; OEM 1; PSM 3)",
+  "review_status": "UNREVIEWED",
+  "tesseract_version": "5.5.4",
+  "tsv_parser_version": 2,
+  "languages": [
+    "vie",
+    "eng"
+  ],
+  "traineddata_sha256": {
+    "vie": "b6b49293d95d0b6dbd8780174627e82c75be957b6f4ed9862155540d6b00bb45",
+    "eng": "8280aed0782fe27257a68ea10fe7ef324ca0f8d85bd2fd145d1c2b560bcb66ba"
+  },
+  "ocr_engine_mode": 1,
+  "page_segmentation_mode": 3,
+  "thread_limit": 1,
+  "page": 28,
+  "lines": [
+    {
+      "bbox": [
+        [
+          681.0,
+          60.0
+        ],
+        [
+          707.0,
+          60.0
+        ],
+        [
+          707.0,
+          81.0
+        ],
+        [
+          681.0,
+          81.0
+        ]
+      ],
+      "text": "28",
+      "confidence": 0.9628466
+    },
+    {
+      "bbox": [
+        [
+          266.0,
+          138.0
+        ],
+        [
+          1125.0,
+          138.0
+        ],
+        [
+          1125.0,
+          172.0
+        ],
+        [
+          266.0,
+          172.0
+        ]
+      ],
+      "text": "e) Lợi nhuận sau thuế còn lại sau khi trích lập các quỹ (trừ lợi nhuận sau",
+      "confidence": 0.9507649529411765
+    },
+    {
+      "bbox": [
+        [
+          207.0,
+          175.0
+        ],
+        [
+          629.0,
+          175.0
+        ],
+        [
+          629.0,
+          208.0
+        ],
+        [
+          207.0,
+          208.0
+        ]
+      ],
+      "text": "thuế của hoạt động xổ số điện toán).",
+      "confidence": 0.9485547162500001
+    },
+    {
+      "bbox": [
+        [
+          268.0,
+          236.0
+        ],
+        [
+          1124.0,
+          236.0
+        ],
+        [
+          1124.0,
+          270.0
+        ],
+        [
+          268.0,
+          270.0
+        ]
+      ],
+      "text": "3. Địa điểm nộp hồ sơ khai thuế đối với hộ kinh doanh, cá nhân kinh",
+      "confidence": 0.96813486625
+    },
+    {
+      "bbox": [
+        [
+          209.0,
+          272.0
+        ],
+        [
+          1122.0,
+          272.0
+        ],
+        [
+          1122.0,
+          307.0
+        ],
+        [
+          209.0,
+          307.0
+        ]
+      ],
+      "text": "doanh có hoạt động sản xuất, kinh doanh ở nhiều địa ban theo quy định tại",
+      "confidence": 0.9679727425
+    },
+    {
+      "bbox": [
+        [
+          209.0,
+          308.0
+        ],
+        [
+          1122.0,
+          308.0
+        ],
+        [
+          1122.0,
+          342.0
+        ],
+        [
+          209.0,
+          342.0
+        ]
+      ],
+      "text": "điểm a, điểm b khoản 4 Điều 45 Luật Quản lý thuế là cơ quan thuế nơi có",
+      "confidence": 0.9589380305555557
+    },
+    {
+      "bbox": [
+        [
+          208.0,
+          348.0
+        ],
+        [
+          578.0,
+          348.0
+        ],
+        [
+          578.0,
+          381.0
+        ],
+        [
+          208.0,
+          381.0
+        ]
+      ],
+      "text": "hoạt động sản xuất, kinh doanh.",
+      "confidence": 0.9669980016666666
+    },
+    {
+      "bbox": [
+        [
+          268.0,
+          406.0
+        ],
+        [
+          1123.0,
+          406.0
+        ],
+        [
+          1123.0,
+          442.0
+        ],
+        [
+          268.0,
+          442.0
+        ]
+      ],
+      "text": "4. Địa điểm nộp hồ sơ khai thuế bảo vệ môi trường đối với xăng dầu,",
+      "confidence": 0.966499449375
+    },
+    {
+      "bbox": [
+        [
+          209.0,
+          451.0
+        ],
+        [
+          653.0,
+          451.0
+        ],
+        [
+          653.0,
+          477.0
+        ],
+        [
+          209.0,
+          477.0
+        ]
+      ],
+      "text": "than khai thác và tiêu thụ than nội địa.",
+      "confidence": 0.9681945022222221
+    },
+    {
+      "bbox": [
+        [
+          269.0,
+          507.0
+        ],
+        [
+          507.0,
+          507.0
+        ],
+        [
+          507.0,
+          541.0
+        ],
+        [
+          269.0,
+          541.0
+        ]
+      ],
+      "text": "a) Đối với xăng dầu:",
+      "confidence": 0.935871506
+    },
+    {
+      "bbox": [
+        [
+          270.0,
+          565.0
+        ],
+        [
+          1126.0,
+          565.0
+        ],
+        [
+          1126.0,
+          602.0
+        ],
+        [
+          270.0,
+          602.0
+        ]
+      ],
+      "text": "a.1) Thương nhân đầu mối trực tiếp nhập khẩu, sản xuất, pha chế xăng",
+      "confidence": 0.9583120842857142
+    },
+    {
+      "bbox": [
+        [
+          210.0,
+          603.0
+        ],
+        [
+          1126.0,
+          603.0
+        ],
+        [
+          1126.0,
+          639.0
+        ],
+        [
+          210.0,
+          639.0
+        ]
+      ],
+      "text": "dầu nộp hồ sơ khai thuế đến cơ quan thuế quản lý trực tiếp đối với lượng xăng",
+      "confidence": 0.964960256111111
+    },
+    {
+      "bbox": [
+        [
+          211.0,
+          639.0
+        ],
+        [
+          1126.0,
+          639.0
+        ],
+        [
+          1126.0,
+          675.0
+        ],
+        [
+          211.0,
+          675.0
+        ]
+      ],
+      "text": "dầu do các thương nhân đầu mối trực tiếp xuất, bán bao gồm xuất dé tiêu",
+      "confidence": 0.962946763125
+    },
+    {
+      "bbox": [
+        [
+          211.0,
+          676.0
+        ],
+        [
+          1126.0,
+          676.0
+        ],
+        [
+          1126.0,
+          722.0
+        ],
+        [
+          211.0,
+          722.0
+        ]
+      ],
+      "text": "dùng nội bộ, xuất để trao đổi sản phẩm hàng hoá khác, xuất trả hàng nhập",
+      "confidence": 0.9655444575
+    },
+    {
+      "bbox": [
+        [
+          211.0,
+          715.0
+        ],
+        [
+          1127.0,
+          715.0
+        ],
+        [
+          1127.0,
+          753.0
+        ],
+        [
+          211.0,
+          753.0
+        ]
+      ],
+      "text": "khẩu ủy thác, bán cho tổ chức, cá nhân khác không phải là các đơn vị phụ",
+      "confidence": 0.968752301764706
+    },
+    {
+      "bbox": [
+        [
+          211.0,
+          748.0
+        ],
+        [
+          1127.0,
+          748.0
+        ],
+        [
+          1127.0,
+          799.0
+        ],
+        [
+          211.0,
+          799.0
+        ]
+      ],
+      "text": "thuộc, công ty con theo quy định tại Luật Doanh nghiệp của thương nhân đầu",
+      "confidence": 0.9683412833333334
+    },
+    {
+      "bbox": [
+        [
+          212.0,
+          784.0
+        ],
+        [
+          1127.0,
+          784.0
+        ],
+        [
+          1127.0,
+          835.0
+        ],
+        [
+          212.0,
+          835.0
+        ]
+      ],
+      "text": "mỗi: trừ lượng xăng dầu xuất bán và nhập khẩu ủy thác cho thương nhân đầu",
+      "confidence": 0.94859672125
+    },
+    {
+      "bbox": [
+        [
+          212.0,
+          826.0
+        ],
+        [
+          325.0,
+          826.0
+        ],
+        [
+          325.0,
+          853.0
+        ],
+        [
+          212.0,
+          853.0
+        ]
+      ],
+      "text": "mối khác.",
+      "confidence": 0.9507611850000001
+    },
+    {
+      "bbox": [
+        [
+          271.0,
+          888.0
+        ],
+        [
+          1128.0,
+          888.0
+        ],
+        [
+          1128.0,
+          919.0
+        ],
+        [
+          271.0,
+          919.0
+        ]
+      ],
+      "text": "Các công ty con theo quy định tại Luật Doanh nghiệp của thương nhân",
+      "confidence": 0.9683187421428571
+    },
+    {
+      "bbox": [
+        [
+          213.0,
+          924.0
+        ],
+        [
+          1128.0,
+          924.0
+        ],
+        [
+          1128.0,
+          955.0
+        ],
+        [
+          213.0,
+          955.0
+        ]
+      ],
+      "text": "đầu mối hoặc các đơn vị phụ thuộc của các công ty con, các đơn vị phụ thuộc",
+      "confidence": 0.9615520644444444
+    },
+    {
+      "bbox": [
+        [
+          213.0,
+          956.0
+        ],
+        [
+          1128.0,
+          956.0
+        ],
+        [
+          1128.0,
+          992.0
+        ],
+        [
+          213.0,
+          992.0
+        ]
+      ],
+      "text": "của thương nhân đầu mối nộp hồ sơ khai thuế đến cơ quan thuế quản lý trực",
+      "confidence": 0.9511165799999999
+    },
+    {
+      "bbox": [
+        [
+          213.0,
+          994.0
+        ],
+        [
+          1129.0,
+          994.0
+        ],
+        [
+          1129.0,
+          1037.0
+        ],
+        [
+          213.0,
+          1037.0
+        ]
+      ],
+      "text": "tiếp đối với lượng xăng dầu xuất, bán cho tổ chức, cá nhân khác không phải là",
+      "confidence": 0.9641800288235294
+    },
+    {
+      "bbox": [
+        [
+          214.0,
+          1028.0
+        ],
+        [
+          1129.0,
+          1028.0
+        ],
+        [
+          1129.0,
+          1066.0
+        ],
+        [
+          214.0,
+          1066.0
+        ]
+      ],
+      "text": "công ty con theo quy định tại Luật Doanh nghiệp của thương nhân đầu mối và",
+      "confidence": 0.964992113125
+    },
+    {
+      "bbox": [
+        [
+          214.0,
+          1075.0
+        ],
+        [
+          607.0,
+          1075.0
+        ],
+        [
+          607.0,
+          1102.0
+        ],
+        [
+          214.0,
+          1102.0
+        ]
+      ],
+      "text": "đơn vị phụ thuộc của công ty con.",
+      "confidence": 0.967787735
+    },
+    {
+      "bbox": [
+        [
+          273.0,
+          1123.0
+        ],
+        [
+          1129.0,
+          1123.0
+        ],
+        [
+          1129.0,
+          1161.0
+        ],
+        [
+          273.0,
+          1161.0
+        ]
+      ],
+      "text": "a.2) Thương nhân đầu mối hoặc “công ty con theo quy định tại Luật",
+      "confidence": 0.9125458521428571
+    },
+    {
+      "bbox": [
+        [
+          213.0,
+          1156.0
+        ],
+        [
+          1129.0,
+          1156.0
+        ],
+        [
+          1129.0,
+          1191.0
+        ],
+        [
+          213.0,
+          1191.0
+        ]
+      ],
+      "text": "Doanh nghiệp của thương nhân đầu mối có đơn vị phụ thuộc kinh doanh tại",
+      "confidence": 0.966225632
+    },
+    {
+      "bbox": [
+        [
+          213.0,
+          1190.0
+        ],
+        [
+          1130.0,
+          1190.0
+        ],
+        [
+          1130.0,
+          1231.0
+        ],
+        [
+          213.0,
+          1231.0
+        ]
+      ],
+      "text": "địa phương khác tỉnh, thành phố trực thuộc trung ương với nơi thương nhân",
+      "confidence": 0.9648826935714285
+    },
+    {
+      "bbox": [
+        [
+          213.0,
+          1223.0
+        ],
+        [
+          1130.0,
+          1223.0
+        ],
+        [
+          1130.0,
+          1262.0
+        ],
+        [
+          213.0,
+          1262.0
+        ]
+      ],
+      "text": "đầu mối, công ty con của thương nhân đầu mối đóng trụ sở mà đơn vị phụ",
+      "confidence": 0.9584161835294118
+    },
+    {
+      "bbox": [
+        [
+          213.0,
+          1255.0
+        ],
+        [
+          1130.0,
+          1255.0
+        ],
+        [
+          1130.0,
+          1296.0
+        ],
+        [
+          213.0,
+          1296.0
+        ]
+      ],
+      "text": "thuộc không hạch toán kế toán để khai riêng được thuế bảo vệ môi trường thì",
+      "confidence": 0.9563385237500001
+    },
+    {
+      "bbox": [
+        [
+          214.0,
+          1288.0
+        ],
+        [
+          1130.0,
+          1288.0
+        ],
+        [
+          1130.0,
+          1331.0
+        ],
+        [
+          214.0,
+          1331.0
+        ]
+      ],
+      "text": "thương nhân đầu mối, công ty con của thương nhân đầu mối thực hiện khai",
+      "confidence": 0.9532078586666667
+    },
+    {
+      "bbox": [
+        [
+          214.0,
+          1321.0
+        ],
+        [
+          1130.0,
+          1321.0
+        ],
+        [
+          1130.0,
+          1358.0
+        ],
+        [
+          214.0,
+          1358.0
+        ]
+      ],
+      "text": "thuế bảo vệ môi trường đến cơ quan thuế quản lý trực tiếp; tính thuế, phân bổ",
+      "confidence": 0.9652719311764706
+    },
+    {
+      "bbox": [
+        [
+          214.0,
+          1359.0
+        ],
+        [
+          1130.0,
+          1359.0
+        ],
+        [
+          1130.0,
+          1392.0
+        ],
+        [
+          214.0,
+          1392.0
+        ]
+      ],
+      "text": "nghĩa vụ thuế phải nộp cho từng địa phương nơi có đơn vị phụ thuộc đóng trụ",
+      "confidence": 0.9670217482352941
+    },
+    {
+      "bbox": [
+        [
+          216.0,
+          1396.0
+        ],
+        [
+          748.0,
+          1396.0
+        ],
+        [
+          748.0,
+          1425.0
+        ],
+        [
+          216.0,
+          1425.0
+        ]
+      ],
+      "text": "sở theo quy định của Bộ trưởng Bộ Tài chính.",
+      "confidence": 0.9669080959999999
+    },
+    {
+      "bbox": [
+        [
+          275.0,
+          1444.0
+        ],
+        [
+          789.0,
+          1444.0
+        ],
+        [
+          789.0,
+          1476.0
+        ],
+        [
+          275.0,
+          1476.0
+        ]
+      ],
+      "text": "b) Đối với than khai thác và tiêu thụ nội địa:",
+      "confidence": 0.9577308863636363
+    },
+    {
+      "bbox": [
+        [
+          275.0,
+          1498.0
+        ],
+        [
+          1131.0,
+          1498.0
+        ],
+        [
+          1131.0,
+          1528.0
+        ],
+        [
+          275.0,
+          1528.0
+        ]
+      ],
+      "text": "Doanh nghiệp có hoạt động khai thác và tiêu thụ than nội địa thông qua",
+      "confidence": 0.9678426659999999
+    },
+    {
+      "bbox": [
+        [
+          217.0,
+          1531.0
+        ],
+        [
+          1130.0,
+          1531.0
+        ],
+        [
+          1130.0,
+          1568.0
+        ],
+        [
+          217.0,
+          1568.0
+        ]
+      ],
+      "text": "hình thức quản lý và giao cho các công ty con hoặc đơn vị phụ thuộc khai",
+      "confidence": 0.9685828129411764
+    },
+    {
+      "bbox": [
+        [
+          217.0,
+          1565.0
+        ],
+        [
+          1131.0,
+          1565.0
+        ],
+        [
+          1131.0,
+          1595.0
+        ],
+        [
+          217.0,
+          1595.0
+        ]
+      ],
+      "text": "thác, chế biến và tiêu thụ thì công ty con hoặc đơn vị phụ thuộc được doanh",
+      "confidence": 0.9675109776470587
+    }
+  ]
+}

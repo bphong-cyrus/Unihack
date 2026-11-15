@@ -1,0 +1,329 @@
+{
+  "document_id": "134/2016/NĐ-CP",
+  "source_sha256": "4fe3832d278d03e6ab53c064c6aa3c60063d372570eaa6b57427b0bd252e5460",
+  "page_count": 78,
+  "review_status": "UNREVIEWED",
+  "candidates": [
+    {
+      "article": "1",
+      "page": 1,
+      "line_index": 49,
+      "text": "Điều 1. Phạm vi điều chỉnh, đối tượng áp dụng",
+      "confidence": 0.7399202204720152,
+      "record_file": "page-001.json"
+    },
+    {
+      "article": "2",
+      "page": 2,
+      "line_index": 0,
+      "text": "Điều 2. Đối tượng chịu thuế",
+      "confidence": 0.6320399592576178,
+      "record_file": "page-002.json"
+    },
+    {
+      "article": "3",
+      "page": 2,
+      "line_index": 25,
+      "text": "Điều 3. Áp dụng thuế suất đối với hàng hóa xuất khẩu, nhập khẩu",
+      "confidence": 0.6523779800402842,
+      "record_file": "page-002.json"
+    },
+    {
+      "article": "4",
+      "page": 2,
+      "line_index": 37,
+      "text": "Điều 4. Thời hạn nộp thuế, bảo lãnh, đặt cọc số tiền thuế phải nộp",
+      "confidence": 0.7475194396552429,
+      "record_file": "page-002.json"
+    },
+    {
+      "article": "5",
+      "page": 3,
+      "line_index": 56,
+      "text": "Điều 5. Miễn thuế đối với",
+      "confidence": 0.9344458603435305,
+      "record_file": "page-003.json"
+    },
+    {
+      "article": "6",
+      "page": 6,
+      "line_index": 43,
+      "text": "Điều 6. Miễn thuế đối với hành lý của",
+      "confidence": 0.9116105458161765,
+      "record_file": "page-006.json"
+    },
+    {
+      "article": "7",
+      "page": 7,
+      "line_index": 61,
+      "text": "Điều 7. Miễn thuế đối với tài sản di chuyển",
+      "confidence": 0.8531840420373348,
+      "record_file": "page-007.json"
+    },
+    {
+      "article": "8",
+      "page": 9,
+      "line_index": 0,
+      "text": "Điều 8. Miễn thuế đối với quà",
+      "confidence": 0.7650794510688148,
+      "record_file": "page-009.json"
+    },
+    {
+      "article": "9",
+      "page": 10,
+      "line_index": 18,
+      "text": "Điều 9. Miễn thuế đối với hàng hóa mua bán, trao đổi cỉa cư dân",
+      "confidence": 0.4920945714049157,
+      "record_file": "page-010.json"
+    },
+    {
+      "article": "10",
+      "page": 10,
+      "line_index": 40,
+      "text": "Điều 10. Miễn thuế đối với",
+      "confidence": 0.7889053944997455,
+      "record_file": "page-010.json"
+    },
+    {
+      "article": "11",
+      "page": 12,
+      "line_index": 47,
+      "text": "Điều 11",
+      "confidence": 0.7117598179283683,
+      "record_file": "page-012.json"
+    },
+    {
+      "article": "12",
+      "page": 14,
+      "line_index": 1,
+      "text": "Điều 12, Miễn thuế đối với hàng hóa nhập khẩu để sản xuất",
+      "confidence": 0.5221342555508638,
+      "record_file": "page-014.json"
+    },
+    {
+      "article": "13",
+      "page": 14,
+      "line_index": 59,
+      "text": "Điều 13. Miễn thuế đối với",
+      "confidence": 0.8887818105334554,
+      "record_file": "page-014.json"
+    },
+    {
+      "article": "14",
+      "page": 15,
+      "line_index": 46,
+      "text": "Điều 14. Miễn thuế",
+      "confidence": 0.7286913720223381,
+      "record_file": "page-015.json"
+    },
+    {
+      "article": "15",
+      "page": 16,
+      "line_index": 12,
+      "text": "Điều 15. Miễn thuế nhập khẩu đối với",
+      "confidence": 0.7189626138048663,
+      "record_file": "page-016.json"
+    },
+    {
+      "article": "16",
+      "page": 17,
+      "line_index": 3,
+      "text": "Điều 16. Miễn thuế",
+      "confidence": 0.7550602274038978,
+      "record_file": "page-017.json"
+    },
+    {
+      "article": "17",
+      "page": 17,
+      "line_index": 16,
+      "text": "Điều 17. Mỉễn thuế",
+      "confidence": 0.7527916587868083,
+      "record_file": "page-017.json"
+    },
+    {
+      "article": "18",
+      "page": 17,
+      "line_index": 34,
+      "text": "Điều 18. Miễn thuế đối với giống cây",
+      "confidence": 0.9063266599892931,
+      "record_file": "page-017.json"
+    },
+    {
+      "article": "19",
+      "page": 18,
+      "line_index": 6,
+      "text": "Điều 19: Miễn thuế hàng hóa nhập khẩu phục vụ",
+      "confidence": 0.567704117397467,
+      "record_file": "page-018.json"
+    },
+    {
+      "article": "20",
+      "page": 19,
+      "line_index": 1,
+      "text": "Điều 20. Miễn thuế đối với",
+      "confidence": 0.8250417003547362,
+      "record_file": "page-019.json"
+    },
+    {
+      "article": "21",
+      "page": 20,
+      "line_index": 18,
+      "text": "Điều 21. Miễn thuế ",
+      "confidence": 0.7251060955478887,
+      "record_file": "page-020.json"
+    },
+    {
+      "article": "22",
+      "page": 20,
+      "line_index": 35,
+      "text": "Điều 22. Miễn thuế",
+      "confidence": 0.8565957973641817,
+      "record_file": "page-020.json"
+    },
+    {
+      "article": "23",
+      "page": 20,
+      "line_index": 58,
+      "text": "Điều 23. Miễn thuế nguyên liệu, vật tư, linh kiện nhập khẩu để sản",
+      "confidence": 0.6684864358483277,
+      "record_file": "page-020.json"
+    },
+    {
+      "article": "24",
+      "page": 21,
+      "line_index": 16,
+      "text": "Điều 24. Miễn thuế nguyên liệu, vật",
+      "confidence": 0.7922539845520301,
+      "record_file": "page-021.json"
+    },
+    {
+      "article": "25",
+      "page": 21,
+      "line_index": 35,
+      "text": "Điều 25. Miễn thuế",
+      "confidence": 0.5702767520244862,
+      "record_file": "page-021.json"
+    },
+    {
+      "article": "26",
+      "page": 22,
+      "line_index": 1,
+      "text": "Điều 26. Miễn thuế",
+      "confidence": 0.9871404960933512,
+      "record_file": "page-022.json"
+    },
+    {
+      "article": "27",
+      "page": 22,
+      "line_index": 32,
+      "text": "Điều 27. Miễn thuế nhập khẩu đối với",
+      "confidence": 0.6826613016425058,
+      "record_file": "page-022.json"
+    },
+    {
+      "article": "28",
+      "page": 23,
+      "line_index": 1,
+      "text": "Điều 28. Miễn thuế đối với",
+      "confidence": 0.8007581881664297,
+      "record_file": "page-023.json"
+    },
+    {
+      "article": "29",
+      "page": 24,
+      "line_index": 36,
+      "text": "Điều 29 Miễn thuế đối với",
+      "confidence": 0.8035722049293574,
+      "record_file": "page-024.json"
+    },
+    {
+      "article": "30",
+      "page": 25,
+      "line_index": 49,
+      "text": "Điều 30. Thông báo Danh mục hàng hóa miễn thuế dự kiến nhập",
+      "confidence": 0.6740858973192488,
+      "record_file": "page-025.json"
+    },
+    {
+      "article": "31",
+      "page": 28,
+      "line_index": 39,
+      "text": "Điều 31. Hồ sơ, thủ tục miễn thuế khi làm thủ tục hải quan",
+      "confidence": 0.7102854393557824,
+      "record_file": "page-028.json"
+    },
+    {
+      "article": "32",
+      "page": 30,
+      "line_index": 37,
+      "text": "Điều 32. Giảm thuế xuất khẩu, thuế nhập khẩu",
+      "confidence": 0.8090579794735341,
+      "record_file": "page-030.json"
+    },
+    {
+      "article": "33",
+      "page": 31,
+      "line_index": 55,
+      "text": "Điều 33. Hoàn thuế đối với",
+      "confidence": 0.9900898146035637,
+      "record_file": "page-031.json"
+    },
+    {
+      "article": "34",
+      "page": 33,
+      "line_index": 8,
+      "text": "Điều 34. Hoàn thuế đối với",
+      "confidence": 0.8943075690472331,
+      "record_file": "page-033.json"
+    },
+    {
+      "article": "35",
+      "page": 34,
+      "line_index": 52,
+      "text": "Điều 35. Hoàn thuế đối với máy móc, thiết bị, dụng cụ, phương tiện",
+      "confidence": 0.7881220118162597,
+      "record_file": "page-034.json"
+    },
+    {
+      "article": "36",
+      "page": 35,
+      "line_index": 21,
+      "text": "Điều 36. Hoàn thuế đối với",
+      "confidence": 0.8839835046255834,
+      "record_file": "page-035.json"
+    },
+    {
+      "article": "37",
+      "page": 37,
+      "line_index": 34,
+      "text": "Điều 37. Hoàn thuế đối vói trường hợp",
+      "confidence": 0.7889385036855575,
+      "record_file": "page-037.json"
+    },
+    {
+      "article": "38",
+      "page": 38,
+      "line_index": 22,
+      "text": "Điều 38. Hiệu lực thi hành",
+      "confidence": 0.8396033032260455,
+      "record_file": "page-038.json"
+    },
+    {
+      "article": "39",
+      "page": 38,
+      "line_index": 35,
+      "text": "Điều 39. Điều khoản",
+      "confidence": 0.820034558947918,
+      "record_file": "page-038.json"
+    },
+    {
+      "article": "40",
+      "page": 38,
+      "line_index": 54,
+      "text": "Điều 40. Trách nhiệm thi hành",
+      "confidence": 0.9500220092363443,
+      "record_file": "page-038.json"
+    }
+  ],
+  "limitations": "Heuristic headings may be missing or refer to amendments; verify against original pages."
+}

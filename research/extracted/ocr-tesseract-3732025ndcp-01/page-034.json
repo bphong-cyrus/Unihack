@@ -1,0 +1,245 @@
+{
+  "document_id": "373/2025/NĐ-CP",
+  "source_file": "../../legal-sources/3732025ndcp/01.pdf",
+  "source_sha256": "6ca9d1a16b5d47c7aa23f06f243dc59bd2e9dda4d70f3f3c892e4254d2c7d914",
+  "page_count": 74,
+  "render_dpi": 150,
+  "engine": "Tesseract 5.5.4 (vie+eng; OEM 1; PSM 3)",
+  "review_status": "UNREVIEWED",
+  "tesseract_version": "5.5.4",
+  "tsv_parser_version": 2,
+  "languages": [
+    "vie",
+    "eng"
+  ],
+  "traineddata_sha256": {
+    "vie": "b6b49293d95d0b6dbd8780174627e82c75be957b6f4ed9862155540d6b00bb45",
+    "eng": "8280aed0782fe27257a68ea10fe7ef324ca0f8d85bd2fd145d1c2b560bcb66ba"
+  },
+  "ocr_engine_mode": 1,
+  "page_segmentation_mode": 3,
+  "thread_limit": 1,
+  "page": 34,
+  "lines": [
+    {
+      "bbox": [
+        [
+          864.0,
+          64.0
+        ],
+        [
+          892.0,
+          64.0
+        ],
+        [
+          892.0,
+          85.0
+        ],
+        [
+          864.0,
+          85.0
+        ]
+      ],
+      "text": "26",
+      "confidence": 0.9525087000000001
+    },
+    {
+      "bbox": [
+        [
+          142.0,
+          128.0
+        ],
+        [
+          219.0,
+          128.0
+        ],
+        [
+          219.0,
+          143.0
+        ],
+        [
+          142.0,
+          143.0
+        ]
+      ],
+      "text": "Ghichú:",
+      "confidence": 0.8413046300000001
+    },
+    {
+      "bbox": [
+        [
+          144.0,
+          146.0
+        ],
+        [
+          1671.0,
+          146.0
+        ],
+        [
+          1671.0,
+          186.0
+        ],
+        [
+          144.0,
+          186.0
+        ]
+      ],
+      "text": "1. Chi tiêu [09], [10], [1 1]: Khai thông tin của don vị phụ thuộc, địa điểm kính doanh có hoạt động san xuất, gia công hàng hoá chịu thuế: TTDB hoặc cung ứng dich vụ chịu thuế TTĐB",
+      "confidence": 0.9057215628205129
+    },
+    {
+      "bbox": [
+        [
+          81.0,
+          174.0
+        ],
+        [
+          1670.0,
+          174.0
+        ],
+        [
+          1670.0,
+          211.0
+        ],
+        [
+          81.0,
+          211.0
+        ]
+      ],
+      "text": "(trừ hoạt động kinh doanh xổ số điện toán) tại địa phương khác tỉnh nơi đóng trụ sở chính theo quy định tại điểm d khoản 1 Điều 11 Nghị định số 126/2020/NĐ-CP ngày 19/10/2020 của Chính",
+      "confidence": 0.9584210383783784
+    },
+    {
+      "bbox": [
+        [
+          80.0,
+          195.0
+        ],
+        [
+          1671.0,
+          195.0
+        ],
+        [
+          1671.0,
+          235.0
+        ],
+        [
+          80.0,
+          235.0
+        ]
+      ],
+      "text": "phủ. Trường hợp có nhiều đơn vi phụ thuộc, địa điểm kinh doanh đóng trên nhiều xã/phường/đặc khu do Thuế tỉnh quản lý thì chọn 1 đơn vị đại diện để kê khai vào chỉ tiêu này. Trường hợp",
+      "confidence": 0.9483782058974358
+    },
+    {
+      "bbox": [
+        [
+          80.0,
+          221.0
+        ],
+        [
+          1670.0,
+          221.0
+        ],
+        [
+          1670.0,
+          247.0
+        ],
+        [
+          80.0,
+          247.0
+        ]
+      ],
+      "text": "có nhiều đơn vị phụ thuộc, địa điểm kinh doanh đóng trên nhiều xã/phường/đặc khu do Thuế cơ sở quản lý thì chọn 1 đơn vị đại diện cho xã/phường/đặc khu do Thuế cơ sở quản lý đề kê khai",
+      "confidence": 0.95140063725
+    },
+    {
+      "bbox": [
+        [
+          80.0,
+          246.0
+        ],
+        [
+          219.0,
+          246.0
+        ],
+        [
+          219.0,
+          276.0
+        ],
+        [
+          80.0,
+          276.0
+        ]
+      ],
+      "text": "vào chỉ tiêu ! này.",
+      "confidence": 0.822925886
+    },
+    {
+      "bbox": [
+        [
+          140.0,
+          269.0
+        ],
+        [
+          748.0,
+          269.0
+        ],
+        [
+          748.0,
+          302.0
+        ],
+        [
+          140.0,
+          302.0
+        ]
+      ],
+      "text": "2. Tổng cộng cột (10) tại mục A phải bằng tổng cộng cột (17) tại mục B.",
+      "confidence": 0.9509876652941177
+    },
+    {
+      "bbox": [
+        [
+          140.0,
+          293.0
+        ],
+        [
+          1025.0,
+          293.0
+        ],
+        [
+          1025.0,
+          318.0
+        ],
+        [
+          140.0,
+          318.0
+        ]
+      ],
+      "text": "3. Tổng cộng cột (8) tại mục A = Tổng cộng cột (13) Bảng I và cột (12) Bang II trên bảng kê 01-2/TTĐB.",
+      "confidence": 0.9473491925
+    },
+    {
+      "bbox": [
+        [
+          139.0,
+          318.0
+        ],
+        [
+          622.0,
+          318.0
+        ],
+        [
+          622.0,
+          342.0
+        ],
+        [
+          139.0,
+          342.0
+        ]
+      ],
+      "text": "4, Nội dung nêu trong dấu <> chỉ là giải thích hoặc ví dụ.",
+      "confidence": 0.9576845871428573
+    }
+  ]
+}

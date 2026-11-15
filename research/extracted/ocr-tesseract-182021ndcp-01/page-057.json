@@ -1,0 +1,267 @@
+{
+  "document_id": "18/2021/NĐ-CP",
+  "source_file": "../../legal-sources/182021ndcp/01.pdf",
+  "source_sha256": "cb0bf16ab3ee6554929e0d9d2cc4f180f51b8ea10ddd30a37309353edeb050d8",
+  "page_count": 114,
+  "render_dpi": 150,
+  "engine": "Tesseract 5.5.4 (vie+eng; OEM 1; PSM 3)",
+  "review_status": "UNREVIEWED",
+  "tesseract_version": "5.5.4",
+  "tsv_parser_version": 2,
+  "languages": [
+    "vie",
+    "eng"
+  ],
+  "traineddata_sha256": {
+    "vie": "b6b49293d95d0b6dbd8780174627e82c75be957b6f4ed9862155540d6b00bb45",
+    "eng": "8280aed0782fe27257a68ea10fe7ef324ca0f8d85bd2fd145d1c2b560bcb66ba"
+  },
+  "ocr_engine_mode": 1,
+  "page_segmentation_mode": 3,
+  "thread_limit": 1,
+  "page": 57,
+  "lines": [
+    {
+      "bbox": [
+        [
+          653.0,
+          51.0
+        ],
+        [
+          676.0,
+          51.0
+        ],
+        [
+          676.0,
+          72.0
+        ],
+        [
+          653.0,
+          72.0
+        ]
+      ],
+      "text": "18",
+      "confidence": 0.96712158
+    },
+    {
+      "bbox": [
+        [
+          267.0,
+          146.0
+        ],
+        [
+          934.0,
+          146.0
+        ],
+        [
+          934.0,
+          179.0
+        ],
+        [
+          267.0,
+          179.0
+        ]
+      ],
+      "text": "Xác nhận của cơ quan sở hữu Số định mức miễn thuế:",
+      "confidence": 0.9674308775000001
+    },
+    {
+      "bbox": [
+        [
+          267.0,
+          205.0
+        ],
+        [
+          1115.0,
+          205.0
+        ],
+        [
+          1115.0,
+          240.0
+        ],
+        [
+          267.0,
+          240.0
+        ]
+      ],
+      "text": "Cơ quan/Mission:...............................nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn nen set",
+      "confidence": 0.2332650375
+    },
+    {
+      "bbox": [
+        [
+          267.0,
+          263.0
+        ],
+        [
+          1116.0,
+          263.0
+        ],
+        [
+          1116.0,
+          296.0
+        ],
+        [
+          267.0,
+          296.0
+        ]
+      ],
+      "text": "Địa chỉ/Address:........................................nnnnnnnnnnnnnnnnnnnnnn nen nnnnnnnnnn nen tren",
+      "confidence": 0.16727423333333336
+    },
+    {
+      "bbox": [
+        [
+          267.0,
+          320.0
+        ],
+        [
+          1115.0,
+          320.0
+        ],
+        [
+          1115.0,
+          356.0
+        ],
+        [
+          267.0,
+          356.0
+        ]
+      ],
+      "text": "Điện thoại/Telephone:........................................GGGGGGnnnnnnnnnnnnnennensensn nen",
+      "confidence": 0.3669654600000001
+    },
+    {
+      "bbox": [
+        [
+          268.0,
+          376.0
+        ],
+        [
+          1112.0,
+          376.0
+        ],
+        [
+          1112.0,
+          410.0
+        ],
+        [
+          268.0,
+          410.0
+        ]
+      ],
+      "text": "Số lượng biên chế của cơ quan/Number of staff members:........................",
+      "confidence": 0.937963181
+    },
+    {
+      "bbox": [
+        [
+          679.0,
+          475.0
+        ],
+        [
+          997.0,
+          475.0
+        ],
+        [
+          997.0,
+          503.0
+        ],
+        [
+          679.0,
+          503.0
+        ]
+      ],
+      "text": "..., ngày ..: tháng ... năm ...",
+      "confidence": 0.8385912428571429
+    },
+    {
+      "bbox": [
+        [
+          684.0,
+          503.0
+        ],
+        [
+          991.0,
+          503.0
+        ],
+        [
+          991.0,
+          536.0
+        ],
+        [
+          684.0,
+          536.0
+        ]
+      ],
+      "text": "Người đứng đầu cơ quan",
+      "confidence": 0.9694389659999999
+    },
+    {
+      "bbox": [
+        [
+          729.0,
+          536.0
+        ],
+        [
+          947.0,
+          536.0
+        ],
+        [
+          947.0,
+          568.0
+        ],
+        [
+          729.0,
+          568.0
+        ]
+      ],
+      "text": "(Ký tên, đóng dấu)",
+      "confidence": 0.9637622450000001
+    },
+    {
+      "bbox": [
+        [
+          716.0,
+          575.0
+        ],
+        [
+          961.0,
+          575.0
+        ],
+        [
+          961.0,
+          596.0
+        ],
+        [
+          716.0,
+          596.0
+        ]
+      ],
+      "text": "The Head of Mission",
+      "confidence": 0.9278964425000001
+    },
+    {
+      "bbox": [
+        [
+          722.0,
+          608.0
+        ],
+        [
+          955.0,
+          608.0
+        ],
+        [
+          955.0,
+          635.0
+        ],
+        [
+          722.0,
+          635.0
+        ]
+      ],
+      "text": "(Signed and Sealed)",
+      "confidence": 0.9261535133333332
+    }
+  ]
+}

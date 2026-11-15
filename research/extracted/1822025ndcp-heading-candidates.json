@@ -1,0 +1,33 @@
+{
+  "document_id": "182/2025/NĐ-CP",
+  "source_sha256": "7d40bb6ad447f9661b471e97ccb31deba06fec42049cfafc4865ba9874f061f5",
+  "page_count": 4,
+  "review_status": "UNREVIEWED",
+  "candidates": [
+    {
+      "article": "1",
+      "page": 1,
+      "line_index": 59,
+      "text": "Điều 1. Sửa đổi, bổ sung một số đỉều của Nghị định số 134/2016/NĐ-CP",
+      "confidence": 0.7271120606689551,
+      "record_file": "page-001.json"
+    },
+    {
+      "article": "2",
+      "page": 3,
+      "line_index": 24,
+      "text": "Điều 2. Thay thế, bãi bỏ một số từ, cụm từ, khoản, điều của Nghị định",
+      "confidence": 0.7783914540844785,
+      "record_file": "page-003.json"
+    },
+    {
+      "article": "3",
+      "page": 3,
+      "line_index": 58,
+      "text": "Đỉều 3. Điều khoản thi hành",
+      "confidence": 0.7593363177803438,
+      "record_file": "page-003.json"
+    }
+  ],
+  "limitations": "Heuristic headings may be missing or refer to amendments; verify against original pages."
+}

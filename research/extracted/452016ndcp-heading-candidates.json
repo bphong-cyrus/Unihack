@@ -1,0 +1,49 @@
+{
+  "document_id": "45/2016/NĐ-CP",
+  "source_sha256": "482b0a0876dbf69ad02a475fc45878f8a7205ba36c06936d1865c43fc3466543",
+  "page_count": 26,
+  "review_status": "UNREVIEWED",
+  "candidates": [
+    {
+      "article": "1",
+      "page": 1,
+      "line_index": 52,
+      "text": "Điều 1. Sửa đổi, bổ sung một số Điều của Nghị định số 127/2013/NĐ-CP",
+      "confidence": 0.5706654722780407,
+      "record_file": "page-001.json"
+    },
+    {
+      "article": "2",
+      "page": 25,
+      "line_index": 46,
+      "text": "Điều 2. Bãi bỏ Điều 23 Nghị định số 127/2013/NĐ-CP ngày 15",
+      "confidence": 0.8613881411154101,
+      "record_file": "page-025.json"
+    },
+    {
+      "article": "3",
+      "page": 25,
+      "line_index": 49,
+      "text": "Điều 3. Hiệu lực",
+      "confidence": 0.42110148923371477,
+      "record_file": "page-025.json"
+    },
+    {
+      "article": "4",
+      "page": 25,
+      "line_index": 53,
+      "text": "Điều 4. Điều khoản chuyển tiếp",
+      "confidence": 0.7146052021417527,
+      "record_file": "page-025.json"
+    },
+    {
+      "article": "5",
+      "page": 25,
+      "line_index": 59,
+      "text": "Điều 5. Trách nhiệm hướng dẫn, thi hành",
+      "confidence": 0.7025381604734962,
+      "record_file": "page-025.json"
+    }
+  ],
+  "limitations": "Heuristic headings may be missing or refer to amendments; verify against original pages."
+}

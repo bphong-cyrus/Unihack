@@ -1,0 +1,905 @@
+{
+  "document_id": "127/2013/NĐ-CP",
+  "source_file": "../../legal-sources/1272013ndcp/01.pdf",
+  "source_sha256": "6b970da9c19ccae81ecbc3385fb53f1fa2375e93ad03643e1f9b4e43ed87e573",
+  "page_count": 49,
+  "render_dpi": 150,
+  "engine": "Tesseract 5.5.4 (vie+eng; OEM 1; PSM 3)",
+  "review_status": "UNREVIEWED",
+  "tesseract_version": "5.5.4",
+  "tsv_parser_version": 2,
+  "languages": [
+    "vie",
+    "eng"
+  ],
+  "traineddata_sha256": {
+    "vie": "b6b49293d95d0b6dbd8780174627e82c75be957b6f4ed9862155540d6b00bb45",
+    "eng": "8280aed0782fe27257a68ea10fe7ef324ca0f8d85bd2fd145d1c2b560bcb66ba"
+  },
+  "ocr_engine_mode": 1,
+  "page_segmentation_mode": 3,
+  "thread_limit": 1,
+  "page": 30,
+  "lines": [
+    {
+      "bbox": [
+        [
+          354.0,
+          199.0
+        ],
+        [
+          1102.0,
+          199.0
+        ],
+        [
+          1102.0,
+          228.0
+        ],
+        [
+          354.0,
+          228.0
+        ]
+      ],
+      "text": "Điều 35. Nguyên tắc áp dụng các biện pháp cưỡng chế thi hành",
+      "confidence": 0.9652202492307691
+    },
+    {
+      "bbox": [
+        [
+          304.0,
+          228.0
+        ],
+        [
+          809.0,
+          228.0
+        ],
+        [
+          809.0,
+          257.0
+        ],
+        [
+          304.0,
+          257.0
+        ]
+      ],
+      "text": "quyết định hành chính trong lĩnh vực hải quan",
+      "confidence": 0.9684339977777777
+    },
+    {
+      "bbox": [
+        [
+          357.0,
+          274.0
+        ],
+        [
+          1101.0,
+          274.0
+        ],
+        [
+          1101.0,
+          302.0
+        ],
+        [
+          357.0,
+          302.0
+        ]
+      ],
+      "text": "1. Chỉ được áp dụng các biện pháp cưỡng chế thi hành quyết định hành",
+      "confidence": 0.9673076473333334
+    },
+    {
+      "bbox": [
+        [
+          303.0,
+          302.0
+        ],
+        [
+          1100.0,
+          302.0
+        ],
+        [
+          1100.0,
+          331.0
+        ],
+        [
+          303.0,
+          331.0
+        ]
+      ],
+      "text": "chính trong lĩnh vực hải quan đối với các trường hợp quy định tại Điều 26",
+      "confidence": 0.968516245
+    },
+    {
+      "bbox": [
+        [
+          302.0,
+          336.0
+        ],
+        [
+          453.0,
+          336.0
+        ],
+        [
+          453.0,
+          360.0
+        ],
+        [
+          302.0,
+          360.0
+        ]
+      ],
+      "text": "Nghị định này.",
+      "confidence": 0.9644621
+    },
+    {
+      "bbox": [
+        [
+          353.0,
+          376.0
+        ],
+        [
+          1100.0,
+          376.0
+        ],
+        [
+          1100.0,
+          405.0
+        ],
+        [
+          353.0,
+          405.0
+        ]
+      ],
+      "text": "2. Các biện pháp cưỡng chế thi hành quyết định hành chính thuế trong",
+      "confidence": 0.9676892842857141
+    },
+    {
+      "bbox": [
+        [
+          302.0,
+          406.0
+        ],
+        [
+          1100.0,
+          406.0
+        ],
+        [
+          1100.0,
+          439.0
+        ],
+        [
+          302.0,
+          439.0
+        ]
+      ],
+      "text": "lĩnh vực hải quan được áp dụng theo quy định từ Mục 2 đến Mục 7 Chương",
+      "confidence": 0.9680387023529411
+    },
+    {
+      "bbox": [
+        [
+          301.0,
+          434.0
+        ],
+        [
+          1099.0,
+          434.0
+        ],
+        [
+          1099.0,
+          468.0
+        ],
+        [
+          301.0,
+          468.0
+        ]
+      ],
+      "text": "này. Trường hợp đã ra quyết định cưỡng chế bằng biện pháp tiếp theo mà có",
+      "confidence": 0.96720662
+    },
+    {
+      "bbox": [
+        [
+          301.0,
+          463.0
+        ],
+        [
+          1099.0,
+          463.0
+        ],
+        [
+          1099.0,
+          497.0
+        ],
+        [
+          301.0,
+          497.0
+        ]
+      ],
+      "text": "thông tin, điều kiện để thực hiện biện pháp cưỡng chế trước đó thì người ra",
+      "confidence": 0.9626259706250001
+    },
+    {
+      "bbox": [
+        [
+          301.0,
+          492.0
+        ],
+        [
+          1098.0,
+          492.0
+        ],
+        [
+          1098.0,
+          525.0
+        ],
+        [
+          301.0,
+          525.0
+        ]
+      ],
+      "text": "quyết định cưỡng chế có quyền quyết định thực hiện biện pháp cưỡng chế",
+      "confidence": 0.9592017314285713
+    },
+    {
+      "bbox": [
+        [
+          300.0,
+          521.0
+        ],
+        [
+          777.0,
+          521.0
+        ],
+        [
+          777.0,
+          549.0
+        ],
+        [
+          300.0,
+          549.0
+        ]
+      ],
+      "text": "trước dé bảo dam thu đủ số tiền thuế, tiền phạt.",
+      "confidence": 0.9611612772727273
+    },
+    {
+      "bbox": [
+        [
+          350.0,
+          566.0
+        ],
+        [
+          1098.0,
+          566.0
+        ],
+        [
+          1098.0,
+          599.0
+        ],
+        [
+          350.0,
+          599.0
+        ]
+      ],
+      "text": "Trường hợp người nộp thuế chưa chấp hành quyết định hành chính thuế",
+      "confidence": 0.9678859892307693
+    },
+    {
+      "bbox": [
+        [
+          300.0,
+          594.0
+        ],
+        [
+          1097.0,
+          594.0
+        ],
+        [
+          1097.0,
+          628.0
+        ],
+        [
+          300.0,
+          628.0
+        ]
+      ],
+      "text": "mà có hành vi bỏ trốn, tẩu tán tài sản thì người có thẩm quyền Ta quyết định",
+      "confidence": 0.9423057772222222
+    },
+    {
+      "bbox": [
+        [
+          299.0,
+          623.0
+        ],
+        [
+          1097.0,
+          623.0
+        ],
+        [
+          1097.0,
+          661.0
+        ],
+        [
+          299.0,
+          661.0
+        ]
+      ],
+      "text": "cưỡng chế có quyền quyết định áp dụng biện pháp cưỡng chế phù hợp để",
+      "confidence": 0.967243724
+    },
+    {
+      "bbox": [
+        [
+          299.0,
+          651.0
+        ],
+        [
+          1097.0,
+          651.0
+        ],
+        [
+          1097.0,
+          684.0
+        ],
+        [
+          299.0,
+          684.0
+        ]
+      ],
+      "text": "dam bảo thu hồi tiền thuế, tiền phạt kip thời cho ngân sách nha nước, không",
+      "confidence": 0.9666391274999999
+    },
+    {
+      "bbox": [
+        [
+          299.0,
+          676.0
+        ],
+        [
+          563.0,
+          676.0
+        ],
+        [
+          563.0,
+          712.0
+        ],
+        [
+          299.0,
+          712.0
+        ]
+      ],
+      "text": "cần phải áp dụng lần lượt.",
+      "confidence": 0.9614442950000001
+    },
+    {
+      "bbox": [
+        [
+          349.0,
+          724.0
+        ],
+        [
+          1096.0,
+          724.0
+        ],
+        [
+          1096.0,
+          753.0
+        ],
+        [
+          349.0,
+          753.0
+        ]
+      ],
+      "text": "3. Đối với trường hợp áp dụng các biện pháp cưỡng chế thi hành quyết",
+      "confidence": 0.9599129946666668
+    },
+    {
+      "bbox": [
+        [
+          298.0,
+          754.0
+        ],
+        [
+          1094.0,
+          754.0
+        ],
+        [
+          1094.0,
+          786.0
+        ],
+        [
+          298.0,
+          786.0
+        ]
+      ],
+      "text": "định hành chính khác trong lĩnh vực hải quan quy định tại Điểm b Khoản 3",
+      "confidence": 0.9648177575
+    },
+    {
+      "bbox": [
+        [
+          298.0,
+          778.0
+        ],
+        [
+          1096.0,
+          778.0
+        ],
+        [
+          1096.0,
+          819.0
+        ],
+        [
+          298.0,
+          819.0
+        ]
+      ],
+      "text": "Điều 25 Nghị định này, người có thẩm quyền ra quyết định cưỡng chế căn cứ",
+      "confidence": 0.9637906074999999
+    },
+    {
+      "bbox": [
+        [
+          297.0,
+          810.0
+        ],
+        [
+          1095.0,
+          810.0
+        ],
+        [
+          1095.0,
+          844.0
+        ],
+        [
+          297.0,
+          844.0
+        ]
+      ],
+      "text": "vào nội dung, tính chất, mức độ, điều kiện thi hành quyết định cưỡng chế của",
+      "confidence": 0.9620063168749999
+    },
+    {
+      "bbox": [
+        [
+          297.0,
+          839.0
+        ],
+        [
+          1094.0,
+          839.0
+        ],
+        [
+          1094.0,
+          876.0
+        ],
+        [
+          297.0,
+          876.0
+        ]
+      ],
+      "text": "đối tượng bị cưỡng chế và tình hình thực tế ở địa phương để quyết định áp",
+      "confidence": 0.9526525470588234
+    },
+    {
+      "bbox": [
+        [
+          297.0,
+          867.0
+        ],
+        [
+          980.0,
+          867.0
+        ],
+        [
+          980.0,
+          896.0
+        ],
+        [
+          297.0,
+          896.0
+        ]
+      ],
+      "text": "dụng biện pháp cưỡng chế phù hợp quy định tại Khoản 1 Điều này.",
+      "confidence": 0.9655153807142857
+    },
+    {
+      "bbox": [
+        [
+          347.0,
+          912.0
+        ],
+        [
+          1094.0,
+          912.0
+        ],
+        [
+          1094.0,
+          945.0
+        ],
+        [
+          347.0,
+          945.0
+        ]
+      ],
+      "text": "4. Chưa thực hiện biện pháp cưỡng chế thi hành quyết định hành chính",
+      "confidence": 0.96438991
+    },
+    {
+      "bbox": [
+        [
+          296.0,
+          941.0
+        ],
+        [
+          1093.0,
+          941.0
+        ],
+        [
+          1093.0,
+          975.0
+        ],
+        [
+          296.0,
+          975.0
+        ]
+      ],
+      "text": "thuế trong lĩnh vực hải quan đối với trường hợp người nộp thuế được cơ quan",
+      "confidence": 0.96641408
+    },
+    {
+      "bbox": [
+        [
+          296.0,
+          966.0
+        ],
+        [
+          1092.0,
+          966.0
+        ],
+        [
+          1092.0,
+          1007.0
+        ],
+        [
+          296.0,
+          1007.0
+        ]
+      ],
+      "text": "quản lý thuế cho phép nộp dần tiền nợ thuế trong thời hạn không quá mười",
+      "confidence": 0.965762543125
+    },
+    {
+      "bbox": [
+        [
+          296.0,
+          999.0
+        ],
+        [
+          889.0,
+          999.0
+        ],
+        [
+          889.0,
+          1028.0
+        ],
+        [
+          296.0,
+          1028.0
+        ]
+      ],
+      "text": "hai tháng, kể từ ngày bắt đầu của thời hạn cưỡng chế thuế.",
+      "confidence": 0.9633858307692307
+    },
+    {
+      "bbox": [
+        [
+          347.0,
+          1045.0
+        ],
+        [
+          1091.0,
+          1045.0
+        ],
+        [
+          1091.0,
+          1078.0
+        ],
+        [
+          347.0,
+          1078.0
+        ]
+      ],
+      "text": "5. Việc kê biên tài sản phải thực hiện vào ban ngày (từ 8 giờ đến 17 giờ).",
+      "confidence": 0.9638401327777778
+    },
+    {
+      "bbox": [
+        [
+          295.0,
+          1073.0
+        ],
+        [
+          1007.0,
+          1073.0
+        ],
+        [
+          1007.0,
+          1101.0
+        ],
+        [
+          295.0,
+          1101.0
+        ]
+      ],
+      "text": "Không tổ chức thực hiện kê biên 15 ngày trước và sau tết nguyên đán.",
+      "confidence": 0.9671152399999999
+    },
+    {
+      "bbox": [
+        [
+          346.0,
+          1118.0
+        ],
+        [
+          1092.0,
+          1118.0
+        ],
+        [
+          1092.0,
+          1147.0
+        ],
+        [
+          346.0,
+          1147.0
+        ]
+      ],
+      "text": "Điều 36. Bảo đầm thi hành quyết định cưỡng chế thi hành quyết",
+      "confidence": 0.9588556915384615
+    },
+    {
+      "bbox": [
+        [
+          295.0,
+          1152.0
+        ],
+        [
+          471.0,
+          1152.0
+        ],
+        [
+          471.0,
+          1176.0
+        ],
+        [
+          295.0,
+          1176.0
+        ]
+      ],
+      "text": "định hành chính",
+      "confidence": 0.9681382233333333
+    },
+    {
+      "bbox": [
+        [
+          348.0,
+          1192.0
+        ],
+        [
+          1095.0,
+          1192.0
+        ],
+        [
+          1095.0,
+          1230.0
+        ],
+        [
+          348.0,
+          1230.0
+        ]
+      ],
+      "text": "1.Khi có quyết định áp dụng biện pháp cưỡng chế thi hành quyết định",
+      "confidence": 0.9555433328571429
+    },
+    {
+      "bbox": [
+        [
+          295.0,
+          1217.0
+        ],
+        [
+          1090.0,
+          1217.0
+        ],
+        [
+          1090.0,
+          1259.0
+        ],
+        [
+          295.0,
+          1259.0
+        ]
+      ],
+      "text": "hành chính, nếu có dấu hiệu cho thấy đối tượng bị cưỡng chế có hành vi tẩu",
+      "confidence": 0.9176784864705883
+    },
+    {
+      "bbox": [
+        [
+          294.0,
+          1251.0
+        ],
+        [
+          1090.0,
+          1251.0
+        ],
+        [
+          1090.0,
+          1285.0
+        ],
+        [
+          294.0,
+          1285.0
+        ]
+      ],
+      "text": "tán hoặc làm hư hại tiền bạc, tài sản thì người đã ra quyết định cưỡng chế có",
+      "confidence": 0.9647621927777777
+    },
+    {
+      "bbox": [
+        [
+          294.0,
+          1280.0
+        ],
+        [
+          1089.0,
+          1280.0
+        ],
+        [
+          1089.0,
+          1313.0
+        ],
+        [
+          294.0,
+          1313.0
+        ]
+      ],
+      "text": "quyền yêu cầu các cơ quan tổ chức hữu quan, chính quyên địa phương nơi cá",
+      "confidence": 0.967913694375
+    },
+    {
+      "bbox": [
+        [
+          294.0,
+          1309.0
+        ],
+        [
+          1090.0,
+          1309.0
+        ],
+        [
+          1090.0,
+          1342.0
+        ],
+        [
+          294.0,
+          1342.0
+        ]
+      ],
+      "text": "nhân bị cưỡng chế cư trú hoặc công tác, tổ chức bị cưỡng chế đóng trụ sở",
+      "confidence": 0.9678811188235293
+    },
+    {
+      "bbox": [
+        [
+          294.0,
+          1338.0
+        ],
+        [
+          1065.0,
+          1338.0
+        ],
+        [
+          1065.0,
+          1366.0
+        ],
+        [
+          294.0,
+          1366.0
+        ]
+      ],
+      "text": "thực hiện biện pháp phong toa nhằm ngăn chặn việc tau tán tiền bạc, tài sản.",
+      "confidence": 0.933150093125
+    },
+    {
+      "bbox": [
+        [
+          345.0,
+          1379.0
+        ],
+        [
+          1088.0,
+          1379.0
+        ],
+        [
+          1088.0,
+          1417.0
+        ],
+        [
+          345.0,
+          1417.0
+        ]
+      ],
+      "text": "2. Trường hợp đối tượng bị cưỡng chế có hành vi chồng đối không thực",
+      "confidence": 0.9313516039999999
+    },
+    {
+      "bbox": [
+        [
+          294.0,
+          1409.0
+        ],
+        [
+          1088.0,
+          1409.0
+        ],
+        [
+          1088.0,
+          1446.0
+        ],
+        [
+          294.0,
+          1446.0
+        ]
+      ],
+      "text": "hiện quyết định cưỡng chế thì người đã ra quyết định cưỡng chế có quyên huy",
+      "confidence": 0.961861625625
+    },
+    {
+      "bbox": [
+        [
+          293.0,
+          1441.0
+        ],
+        [
+          912.0,
+          1441.0
+        ],
+        [
+          912.0,
+          1471.0
+        ],
+        [
+          293.0,
+          1471.0
+        ]
+      ],
+      "text": "động lực lượng, phương tiện dé bảo đảm thi hành cưỡng chế.",
+      "confidence": 0.9645707825
+    },
+    {
+      "bbox": [
+        [
+          1067.0,
+          1499.0
+        ],
+        [
+          1087.0,
+          1499.0
+        ],
+        [
+          1087.0,
+          1514.0
+        ],
+        [
+          1067.0,
+          1514.0
+        ]
+      ],
+      "text": "30",
+      "confidence": 0.9687326
+    }
+  ]
+}

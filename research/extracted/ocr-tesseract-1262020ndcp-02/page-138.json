@@ -1,0 +1,1037 @@
+{
+  "document_id": "126/2020/NĐ-CP",
+  "source_file": "../../legal-sources/1262020ndcp/02.pdf",
+  "source_sha256": "008daa92f4d699b69b9318c4a8e6fa7db8d73453305e1a4f155134656e26847b",
+  "page_count": 147,
+  "render_dpi": 150,
+  "engine": "Tesseract 5.5.4 (vie+eng; OEM 1; PSM 3)",
+  "review_status": "UNREVIEWED",
+  "tesseract_version": "5.5.4",
+  "tsv_parser_version": 2,
+  "languages": [
+    "vie",
+    "eng"
+  ],
+  "traineddata_sha256": {
+    "vie": "b6b49293d95d0b6dbd8780174627e82c75be957b6f4ed9862155540d6b00bb45",
+    "eng": "8280aed0782fe27257a68ea10fe7ef324ca0f8d85bd2fd145d1c2b560bcb66ba"
+  },
+  "ocr_engine_mode": 1,
+  "page_segmentation_mode": 3,
+  "thread_limit": 1,
+  "page": 138,
+  "lines": [
+    {
+      "bbox": [
+        [
+          652.0,
+          112.0
+        ],
+        [
+          680.0,
+          112.0
+        ],
+        [
+          680.0,
+          134.0
+        ],
+        [
+          652.0,
+          134.0
+        ]
+      ],
+      "text": "52",
+      "confidence": 0.9606219500000001
+    },
+    {
+      "bbox": [
+        [
+          211.0,
+          183.0
+        ],
+        [
+          302.0,
+          183.0
+        ],
+        [
+          302.0,
+          203.0
+        ],
+        [
+          211.0,
+          203.0
+        ]
+      ],
+      "text": "Ghi chú:",
+      "confidence": 0.92653301
+    },
+    {
+      "bbox": [
+        [
+          211.0,
+          192.0
+        ],
+        [
+          1122.0,
+          192.0
+        ],
+        [
+          1122.0,
+          235.0
+        ],
+        [
+          211.0,
+          235.0
+        ]
+      ],
+      "text": "- Trường hợp có nhiều hơn 01 giao dịch đề nghị áp dụng APA, đề nghị khai bổ sung theo",
+      "confidence": 0.9575797079999999
+    },
+    {
+      "bbox": [
+        [
+          211.0,
+          237.0
+        ],
+        [
+          453.0,
+          237.0
+        ],
+        [
+          453.0,
+          265.0
+        ],
+        [
+          211.0,
+          265.0
+        ]
+      ],
+      "text": "hướng dẫn tại mục [11].",
+      "confidence": 0.9675532219999999
+    },
+    {
+      "bbox": [
+        [
+          213.0,
+          251.0
+        ],
+        [
+          1124.0,
+          251.0
+        ],
+        [
+          1124.0,
+          295.0
+        ],
+        [
+          213.0,
+          295.0
+        ]
+      ],
+      "text": "- [13] Cá nhân làm việc cho người nộp thuế, đại diện cho người nộp thuế tham gia tham",
+      "confidence": 0.9633214368421052
+    },
+    {
+      "bbox": [
+        [
+          213.0,
+          290.0
+        ],
+        [
+          507.0,
+          290.0
+        ],
+        [
+          507.0,
+          321.0
+        ],
+        [
+          213.0,
+          321.0
+        ]
+      ],
+      "text": "vấn APA với Tổng cục Thuế.",
+      "confidence": 0.9501813516666668
+    },
+    {
+      "bbox": [
+        [
+          214.0,
+          309.0
+        ],
+        [
+          1124.0,
+          309.0
+        ],
+        [
+          1124.0,
+          353.0
+        ],
+        [
+          214.0,
+          353.0
+        ]
+      ],
+      "text": "- [15] Tổ chức hoặc cá nhân cung cấp dịch vụ tư vấn chuyên môn và kỹ thuật cho người",
+      "confidence": 0.9506820215
+    },
+    {
+      "bbox": [
+        [
+          214.0,
+          348.0
+        ],
+        [
+          615.0,
+          348.0
+        ],
+        [
+          615.0,
+          383.0
+        ],
+        [
+          214.0,
+          383.0
+        ]
+      ],
+      "text": "nộp thuế trong quá trình tham vần APA.",
+      "confidence": 0.9052599825000001
+    },
+    {
+      "bbox": [
+        [
+          216.0,
+          376.0
+        ],
+        [
+          964.0,
+          376.0
+        ],
+        [
+          964.0,
+          409.0
+        ],
+        [
+          216.0,
+          409.0
+        ]
+      ],
+      "text": "- Chỉ tiết các thông tin, tài liệu được yêu câu gửi kèm tại mục [16] như sau:",
+      "confidence": 0.9583459611111111
+    },
+    {
+      "bbox": [
+        [
+          186.0,
+          433.0
+        ],
+        [
+          794.0,
+          433.0
+        ],
+        [
+          794.0,
+          463.0
+        ],
+        [
+          186.0,
+          463.0
+        ]
+      ],
+      "text": "STT Thông tin, tài liệu",
+      "confidence": 0.932848298
+    },
+    {
+      "bbox": [
+        [
+          205.0,
+          457.0
+        ],
+        [
+          1143.0,
+          457.0
+        ],
+        [
+          1143.0,
+          506.0
+        ],
+        [
+          205.0,
+          506.0
+        ]
+      ],
+      "text": "1 Tên, dia chỉ người nộp thuê dự kiên nộp hồ sơ APA và tên, địa chỉ các bên tham gia giao",
+      "confidence": 0.9483489681818181
+    },
+    {
+      "bbox": [
+        [
+          258.0,
+          494.0
+        ],
+        [
+          389.0,
+          494.0
+        ],
+        [
+          389.0,
+          523.0
+        ],
+        [
+          258.0,
+          523.0
+        ]
+      ],
+      "text": "dịch liên kết;",
+      "confidence": 0.8882205466666666
+    },
+    {
+      "bbox": [
+        [
+          259.0,
+          517.0
+        ],
+        [
+          1145.0,
+          517.0
+        ],
+        [
+          1145.0,
+          557.0
+        ],
+        [
+          259.0,
+          557.0
+        ]
+      ],
+      "text": "Loại hình APA đề nghị áp dụng; tên các quốc gia hoặc vùng lãnh thô có liên quan trong",
+      "confidence": 0.9597071463157896
+    },
+    {
+      "bbox": [
+        [
+          259.0,
+          549.0
+        ],
+        [
+          899.0,
+          549.0
+        ],
+        [
+          899.0,
+          582.0
+        ],
+        [
+          259.0,
+          582.0
+        ]
+      ],
+      "text": "trường hợp đề nghị áp dụng APA song phương hoặc đa phương;",
+      "confidence": 0.9440359366666666
+    },
+    {
+      "bbox": [
+        [
+          260.0,
+          574.0
+        ],
+        [
+          1145.0,
+          574.0
+        ],
+        [
+          1145.0,
+          616.0
+        ],
+        [
+          260.0,
+          616.0
+        ]
+      ],
+      "text": "Mô tả về các giao dịch liên kết thuộc phạm vi APA, các giao dịch liên kết ngoài phạm vi",
+      "confidence": 0.9621109255
+    },
+    {
+      "bbox": [
+        [
+          206.0,
+          604.0
+        ],
+        [
+          1146.0,
+          604.0
+        ],
+        [
+          1146.0,
+          648.0
+        ],
+        [
+          206.0,
+          648.0
+        ]
+      ],
+      "text": "3 | APA (nếu có) và giải thích lý do lựa chọn giao dịch áp dụng APA, lý do loại trừ các",
+      "confidence": 0.9389652404545454
+    },
+    {
+      "bbox": [
+        [
+          261.0,
+          644.0
+        ],
+        [
+          494.0,
+          644.0
+        ],
+        [
+          494.0,
+          670.0
+        ],
+        [
+          261.0,
+          670.0
+        ]
+      ],
+      "text": "giao dịch liên ket khác:",
+      "confidence": 0.947718354
+    },
+    {
+      "bbox": [
+        [
+          206.0,
+          668.0
+        ],
+        [
+          633.0,
+          668.0
+        ],
+        [
+          633.0,
+          704.0
+        ],
+        [
+          206.0,
+          704.0
+        ]
+      ],
+      "text": "4 | Quy mô giá trị của giao dịch liên kết;",
+      "confidence": 0.9181232872727273
+    },
+    {
+      "bbox": [
+        [
+          207.0,
+          698.0
+        ],
+        [
+          589.0,
+          698.0
+        ],
+        [
+          589.0,
+          733.0
+        ],
+        [
+          207.0,
+          733.0
+        ]
+      ],
+      "text": "5 | Thời gian dự kiến áp dụng APA;",
+      "confidence": 0.9223706311111112
+    },
+    {
+      "bbox": [
+        [
+          262.0,
+          723.0
+        ],
+        [
+          1148.0,
+          723.0
+        ],
+        [
+          1148.0,
+          762.0
+        ],
+        [
+          262.0,
+          762.0
+        ]
+      ],
+      "text": "Phân tích chức năng, tài sản và rủi ro phải chịu trong quá trình kinh doanh của người nộp thuê",
+      "confidence": 0.9563206255
+    },
+    {
+      "bbox": [
+        [
+          262.0,
+          755.0
+        ],
+        [
+          908.0,
+          755.0
+        ],
+        [
+          908.0,
+          784.0
+        ],
+        [
+          262.0,
+          784.0
+        ]
+      ],
+      "text": "và các bên liên kết tham gia thực hiện giao dịch thuộc phạm vi APA;",
+      "confidence": 0.960093222
+    },
+    {
+      "bbox": [
+        [
+          263.0,
+          776.0
+        ],
+        [
+          1149.0,
+          776.0
+        ],
+        [
+          1149.0,
+          817.0
+        ],
+        [
+          263.0,
+          817.0
+        ]
+      ],
+      "text": "Phương pháp xác định giá giao dịch liên kết được đề xuất, bao gồm cả các nội dung về",
+      "confidence": 0.9622574063157895
+    },
+    {
+      "bbox": [
+        [
+          263.0,
+          810.0
+        ],
+        [
+          1150.0,
+          810.0
+        ],
+        [
+          1150.0,
+          847.0
+        ],
+        [
+          263.0,
+          847.0
+        ]
+      ],
+      "text": "phân tích so sánh, dữ liệu so sánh, phương pháp tính, khoảng giá trị giao dịch độc lập,",
+      "confidence": 0.9682935894444443
+    },
+    {
+      "bbox": [
+        [
+          265.0,
+          839.0
+        ],
+        [
+          1151.0,
+          839.0
+        ],
+        [
+          1151.0,
+          872.0
+        ],
+        [
+          265.0,
+          872.0
+        ]
+      ],
+      "text": "các điều chỉnh trọng yếu (nếu có), biên độ hoặc mức tỷ suất lợi nhuận/mức giá đề xuất",
+      "confidence": 0.9580713366666666
+    },
+    {
+      "bbox": [
+        [
+          581.0,
+          871.0
+        ],
+        [
+          588.0,
+          871.0
+        ],
+        [
+          588.0,
+          880.0
+        ],
+        [
+          581.0,
+          880.0
+        ]
+      ],
+      "text": "A",
+      "confidence": 0.46364967
+    },
+    {
+      "bbox": [
+        [
+          265.0,
+          864.0
+        ],
+        [
+          1080.0,
+          864.0
+        ],
+        [
+          1080.0,
+          904.0
+        ],
+        [
+          265.0,
+          904.0
+        ]
+      ],
+      "text": "áp dung đối với các giao dich đề nghị áp dung APA trong giai đoạn đề nghị APA;",
+      "confidence": 0.9552868366666667
+    },
+    {
+      "bbox": [
+        [
+          265.0,
+          896.0
+        ],
+        [
+          1152.0,
+          896.0
+        ],
+        [
+          1152.0,
+          932.0
+        ],
+        [
+          265.0,
+          932.0
+        ]
+      ],
+      "text": "Các giả định quan trọng có ảnh hưởng trọng yếu và đáng kê đến các quy định về điêu",
+      "confidence": 0.9444571399999999
+    },
+    {
+      "bbox": [
+        [
+          265.0,
+          937.0
+        ],
+        [
+          458.0,
+          937.0
+        ],
+        [
+          458.0,
+          961.0
+        ],
+        [
+          265.0,
+          961.0
+        ]
+      ],
+      "text": "kiện áp dụng APA;",
+      "confidence": 0.940998
+    },
+    {
+      "bbox": [
+        [
+          266.0,
+          955.0
+        ],
+        [
+          1152.0,
+          955.0
+        ],
+        [
+          1152.0,
+          991.0
+        ],
+        [
+          266.0,
+          991.0
+        ]
+      ],
+      "text": "Thông tin khái quát về phạm vi, quy mô hoạt động chung của doanh nghiệp và giao dịch",
+      "confidence": 0.968102455
+    },
+    {
+      "bbox": [
+        [
+          267.0,
+          980.0
+        ],
+        [
+          1152.0,
+          980.0
+        ],
+        [
+          1152.0,
+          1018.0
+        ],
+        [
+          267.0,
+          1018.0
+        ]
+      ],
+      "text": "liên kết của người nộp thuế; thông tin về hoạt động của tập đoàn kinh tế bao gồm nhưng",
+      "confidence": 0.9658266694736842
+    },
+    {
+      "bbox": [
+        [
+          212.0,
+          1008.0
+        ],
+        [
+          1152.0,
+          1008.0
+        ],
+        [
+          1152.0,
+          1052.0
+        ],
+        [
+          212.0,
+          1052.0
+        ]
+      ],
+      "text": "9 | không hạn chế đối với: ngành nghề, vốn, cơ cấu, quy mô kinh doanh nói chung và hoạt",
+      "confidence": 0.9483967635
+    },
+    {
+      "bbox": [
+        [
+          267.0,
+          1037.0
+        ],
+        [
+          1153.0,
+          1037.0
+        ],
+        [
+          1153.0,
+          1077.0
+        ],
+        [
+          267.0,
+          1077.0
+        ]
+      ],
+      "text": "động của tập đoàn tại Việt Nam nói riêng; thông tin về các bên liên kết có liên quan đến",
+      "confidence": 0.964565865
+    },
+    {
+      "bbox": [
+        [
+          268.0,
+          1076.0
+        ],
+        [
+          738.0,
+          1076.0
+        ],
+        [
+          738.0,
+          1106.0
+        ],
+        [
+          268.0,
+          1106.0
+        ]
+      ],
+      "text": "giao dịch dự kiến thuộc phạm vi áp dụng APA;",
+      "confidence": 0.961850798
+    },
+    {
+      "bbox": [
+        [
+          268.0,
+          1100.0
+        ],
+        [
+          1154.0,
+          1100.0
+        ],
+        [
+          1154.0,
+          1135.0
+        ],
+        [
+          268.0,
+          1135.0
+        ]
+      ],
+      "text": "Thông tin tóm tắt các nội dung chính về kết quả các cuộc thanh tra thuê đã thực hiện tại",
+      "confidence": 0.9616868645
+    },
+    {
+      "bbox": [
+        [
+          268.0,
+          1124.0
+        ],
+        [
+          1155.0,
+          1124.0
+        ],
+        [
+          1155.0,
+          1163.0
+        ],
+        [
+          268.0,
+          1163.0
+        ]
+      ],
+      "text": "trụ sở người nộp thuế; kết quả các cuộc thanh tra thuế hoặc điều chỉnh về thuế nếu có",
+      "confidence": 0.9673701073684211
+    },
+    {
+      "bbox": [
+        [
+          209.0,
+          1153.0
+        ],
+        [
+          1156.0,
+          1153.0
+        ],
+        [
+          1156.0,
+          1196.0
+        ],
+        [
+          209.0,
+          1196.0
+        ]
+      ],
+      "text": "10 | của cơ quan thuế đối tác đối với bên liên kết có ảnh hưởng đến giao dịch liên kết thuộc",
+      "confidence": 0.9460845727272726
+    },
+    {
+      "bbox": [
+        [
+          269.0,
+          1181.0
+        ],
+        [
+          1157.0,
+          1181.0
+        ],
+        [
+          1157.0,
+          1222.0
+        ],
+        [
+          269.0,
+          1222.0
+        ]
+      ],
+      "text": "phạm vi đề nghị áp dụng APA cho giai đoạn 05 năm trước thời điểm đề nghị tham vấn",
+      "confidence": 0.9636185821052631
+    },
+    {
+      "bbox": [
+        [
+          269.0,
+          1228.0
+        ],
+        [
+          326.0,
+          1228.0
+        ],
+        [
+          326.0,
+          1249.0
+        ],
+        [
+          269.0,
+          1249.0
+        ]
+      ],
+      "text": "APA;",
+      "confidence": 0.9371820099999999
+    },
+    {
+      "bbox": [
+        [
+          270.0,
+          1246.0
+        ],
+        [
+          1158.0,
+          1246.0
+        ],
+        [
+          1158.0,
+          1277.0
+        ],
+        [
+          270.0,
+          1277.0
+        ]
+      ],
+      "text": "Các APA về những giao dịch liên kêt tương tự đã ký hoặc đã dé nghị với các cơ quan",
+      "confidence": 0.9506455265
+    },
+    {
+      "bbox": [
+        [
+          211.0,
+          1273.0
+        ],
+        [
+          1155.0,
+          1273.0
+        ],
+        [
+          1155.0,
+          1307.0
+        ],
+        [
+          211.0,
+          1307.0
+        ]
+      ],
+      "text": "\" thuế nước ngoài (nếu có); quan điểm của cơ quan thuế nước ngoài có liên quan (nêu cd);",
+      "confidence": 0.9485649384210526
+    },
+    {
+      "bbox": [
+        [
+          212.0,
+          1303.0
+        ],
+        [
+          1159.0,
+          1303.0
+        ],
+        [
+          1159.0,
+          1349.0
+        ],
+        [
+          212.0,
+          1349.0
+        ]
+      ],
+      "text": "12 Hồ sơ xác định giá giao dịch liên kết của NNT cho 03 năm tài chính trước thời điêm đê",
+      "confidence": 0.9575154257142857
+    },
+    {
+      "bbox": [
+        [
+          271.0,
+          1337.0
+        ],
+        [
+          477.0,
+          1337.0
+        ],
+        [
+          477.0,
+          1368.0
+        ],
+        [
+          271.0,
+          1368.0
+        ]
+      ],
+      "text": "nghị tham vấn APA;",
+      "confidence": 0.9459758575000001
+    },
+    {
+      "bbox": [
+        [
+          212.0,
+          1363.0
+        ],
+        [
+          672.0,
+          1363.0
+        ],
+        [
+          672.0,
+          1401.0
+        ],
+        [
+          212.0,
+          1401.0
+        ]
+      ],
+      "text": "13 | Thời gian dự kiến nộp ho sơ chính thức;",
+      "confidence": 0.9493955709090909
+    },
+    {
+      "bbox": [
+        [
+          273.0,
+          1384.0
+        ],
+        [
+          1160.0,
+          1384.0
+        ],
+        [
+          1160.0,
+          1432.0
+        ],
+        [
+          273.0,
+          1432.0
+        ]
+      ],
+      "text": "Các vẫn đề khác có ảnh hưởng đến việc thực hiện APA, bao gồm nhưng không hạn chê",
+      "confidence": 0.9556296888888889
+    },
+    {
+      "bbox": [
+        [
+          213.0,
+          1415.0
+        ],
+        [
+          1160.0,
+          1415.0
+        ],
+        [
+          1160.0,
+          1458.0
+        ],
+        [
+          213.0,
+          1458.0
+        ]
+      ],
+      "text": "14 | đối với thông tin về phân tích thị trường chiến lược kinh doanh, các vấn đề về cơ chế",
+      "confidence": 0.9569495133333333
+    },
+    {
+      "bbox": [
+        [
+          273.0,
+          1452.0
+        ],
+        [
+          779.0,
+          1452.0
+        ],
+        [
+          779.0,
+          1482.0
+        ],
+        [
+          273.0,
+          1482.0
+        ]
+      ],
+      "text": "chính sách, các ảnh hưởng đến nghĩa vụ thuế khác.",
+      "confidence": 0.9570164029999999
+    }
+  ]
+}

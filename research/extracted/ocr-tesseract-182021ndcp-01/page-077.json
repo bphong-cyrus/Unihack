@@ -1,0 +1,751 @@
+{
+  "document_id": "18/2021/NĐ-CP",
+  "source_file": "../../legal-sources/182021ndcp/01.pdf",
+  "source_sha256": "cb0bf16ab3ee6554929e0d9d2cc4f180f51b8ea10ddd30a37309353edeb050d8",
+  "page_count": 114,
+  "render_dpi": 150,
+  "engine": "Tesseract 5.5.4 (vie+eng; OEM 1; PSM 3)",
+  "review_status": "UNREVIEWED",
+  "tesseract_version": "5.5.4",
+  "tsv_parser_version": 2,
+  "languages": [
+    "vie",
+    "eng"
+  ],
+  "traineddata_sha256": {
+    "vie": "b6b49293d95d0b6dbd8780174627e82c75be957b6f4ed9862155540d6b00bb45",
+    "eng": "8280aed0782fe27257a68ea10fe7ef324ca0f8d85bd2fd145d1c2b560bcb66ba"
+  },
+  "ocr_engine_mode": 1,
+  "page_segmentation_mode": 3,
+  "thread_limit": 1,
+  "page": 77,
+  "lines": [
+    {
+      "bbox": [
+        [
+          650.0,
+          54.0
+        ],
+        [
+          676.0,
+          54.0
+        ],
+        [
+          676.0,
+          75.0
+        ],
+        [
+          650.0,
+          75.0
+        ]
+      ],
+      "text": "38",
+      "confidence": 0.9676352699999999
+    },
+    {
+      "bbox": [
+        [
+          231.0,
+          148.0
+        ],
+        [
+          1095.0,
+          148.0
+        ],
+        [
+          1095.0,
+          182.0
+        ],
+        [
+          231.0,
+          182.0
+        ]
+      ],
+      "text": "THEO DÕI ĐỊNH LƯỢNG MIỄN THUÊ MẶT HÀNG XE Ô TÔ, XE",
+      "confidence": 0.9407581191666666
+    },
+    {
+      "bbox": [
+        [
+          259.0,
+          183.0
+        ],
+        [
+          1067.0,
+          183.0
+        ],
+        [
+          1067.0,
+          214.0
+        ],
+        [
+          259.0,
+          214.0
+        ]
+      ],
+      "text": "HAI BÁNH GẮN MÁY/THE QUOTA OF DUTY-FREE GOODS",
+      "confidence": 0.9230149274999999
+    },
+    {
+      "bbox": [
+        [
+          440.0,
+          221.0
+        ],
+        [
+          887.0,
+          221.0
+        ],
+        [
+          887.0,
+          247.0
+        ],
+        [
+          440.0,
+          247.0
+        ]
+      ],
+      "text": "(AUTOMOBILE, MOTORCYCLE)",
+      "confidence": 0.918591345
+    },
+    {
+      "bbox": [
+        [
+          273.0,
+          248.0
+        ],
+        [
+          1080.0,
+          248.0
+        ],
+        [
+          1080.0,
+          281.0
+        ],
+        [
+          273.0,
+          281.0
+        ]
+      ],
+      "text": "1. Giấy tạm nhập khẩu số/Number of permit for temporary import ......",
+      "confidence": 0.9166192750000001
+    },
+    {
+      "bbox": [
+        [
+          212.0,
+          286.0
+        ],
+        [
+          1105.0,
+          286.0
+        ],
+        [
+          1105.0,
+          319.0
+        ],
+        [
+          212.0,
+          319.0
+        ]
+      ],
+      "text": "ngày/dated ............. của Cục Hải quan tỉnh, thành phố/Issued by Provincial",
+      "confidence": 0.8477989045454545
+    },
+    {
+      "bbox": [
+        [
+          271.0,
+          383.0
+        ],
+        [
+          862.0,
+          383.0
+        ],
+        [
+          862.0,
+          421.0
+        ],
+        [
+          271.0,
+          421.0
+        ]
+      ],
+      "text": "Số lượng/Quantity:............ xe ô tô/Automobile(s);",
+      "confidence": 0.897950776
+    },
+    {
+      "bbox": [
+        [
+          485.0,
+          419.0
+        ],
+        [
+          1018.0,
+          419.0
+        ],
+        [
+          1018.0,
+          454.0
+        ],
+        [
+          485.0,
+          454.0
+        ]
+      ],
+      "text": "[ETP xe hai bánh gan máy/Motorcycle(s).",
+      "confidence": 0.8148647433333334
+    },
+    {
+      "bbox": [
+        [
+          215.0,
+          482.0
+        ],
+        [
+          1130.0,
+          482.0
+        ],
+        [
+          1130.0,
+          515.0
+        ],
+        [
+          215.0,
+          515.0
+        ]
+      ],
+      "text": "Đóng dấu treo của cơ quan Hải quan nơi cấp Giấy tạm nhập khẩu/Hanging seal",
+      "confidence": 0.9575451866666667
+    },
+    {
+      "bbox": [
+        [
+          219.0,
+          521.0
+        ],
+        [
+          1128.0,
+          521.0
+        ],
+        [
+          1128.0,
+          548.0
+        ],
+        [
+          219.0,
+          548.0
+        ]
+      ],
+      "text": "of Customs Department By which the permit for temporary import was issued",
+      "confidence": 0.9669213541666666
+    },
+    {
+      "bbox": [
+        [
+          270.0,
+          635.0
+        ],
+        [
+          1096.0,
+          635.0
+        ],
+        [
+          1096.0,
+          668.0
+        ],
+        [
+          270.0,
+          668.0
+        ]
+      ],
+      "text": "2. Giấy tạm nhập khẩu số/Number of permit for temporary import.........",
+      "confidence": 0.9298396218181818
+    },
+    {
+      "bbox": [
+        [
+          211.0,
+          673.0
+        ],
+        [
+          1124.0,
+          673.0
+        ],
+        [
+          1124.0,
+          706.0
+        ],
+        [
+          211.0,
+          706.0
+        ]
+      ],
+      "text": "ngay/dated........... của Cục Hai quan tinh, thành phế/ Issued by Provincial or",
+      "confidence": 0.9323220508333333
+    },
+    {
+      "bbox": [
+        [
+          582.0,
+          775.0
+        ],
+        [
+          863.0,
+          775.0
+        ],
+        [
+          863.0,
+          808.0
+        ],
+        [
+          582.0,
+          808.0
+        ]
+      ],
+      "text": "„xe ô tô/Automobile(s);",
+      "confidence": 0.6770332600000001
+    },
+    {
+      "bbox": [
+        [
+          577.0,
+          808.0
+        ],
+        [
+          1019.0,
+          808.0
+        ],
+        [
+          1019.0,
+          834.0
+        ],
+        [
+          577.0,
+          834.0
+        ]
+      ],
+      "text": "...xe hai bánh gắn máy/Motorcycle(s).",
+      "confidence": 0.938992324
+    },
+    {
+      "bbox": [
+        [
+          216.0,
+          866.0
+        ],
+        [
+          1131.0,
+          866.0
+        ],
+        [
+          1131.0,
+          901.0
+        ],
+        [
+          216.0,
+          901.0
+        ]
+      ],
+      "text": "Đóng dấu treo của cơ quan Hải quan nơi cấp Giấy tạm nhập khẩu/Hanging seal",
+      "confidence": 0.9570252233333334
+    },
+    {
+      "bbox": [
+        [
+          220.0,
+          904.0
+        ],
+        [
+          1129.0,
+          904.0
+        ],
+        [
+          1129.0,
+          934.0
+        ],
+        [
+          220.0,
+          934.0
+        ]
+      ],
+      "text": "of Customs Department By which the permit for temporary import was issued",
+      "confidence": 0.9651220266666667
+    },
+    {
+      "bbox": [
+        [
+          271.0,
+          982.0
+        ],
+        [
+          1097.0,
+          982.0
+        ],
+        [
+          1097.0,
+          1023.0
+        ],
+        [
+          271.0,
+          1023.0
+        ]
+      ],
+      "text": "3. Giấy tam nhập khẩu số/Number of permit for temporary import.........",
+      "confidence": 0.9314659254545454
+    },
+    {
+      "bbox": [
+        [
+          211.0,
+          1020.0
+        ],
+        [
+          1125.0,
+          1020.0
+        ],
+        [
+          1125.0,
+          1050.0
+        ],
+        [
+          211.0,
+          1050.0
+        ]
+      ],
+      "text": "ngày/dated........... của Cục Hải quan tỉnh, thành phô/ Issued by Provincial or",
+      "confidence": 0.9354431791666667
+    },
+    {
+      "bbox": [
+        [
+          212.0,
+          1052.0
+        ],
+        [
+          649.0,
+          1052.0
+        ],
+        [
+          649.0,
+          1085.0
+        ],
+        [
+          212.0,
+          1085.0
+        ]
+      ],
+      "text": "Municipal Customs Department o£....",
+      "confidence": 0.91466259
+    },
+    {
+      "bbox": [
+        [
+          582.0,
+          1089.0
+        ],
+        [
+          863.0,
+          1089.0
+        ],
+        [
+          863.0,
+          1121.0
+        ],
+        [
+          582.0,
+          1121.0
+        ]
+      ],
+      "text": "...xe 6 tô/Automobile(s);",
+      "confidence": 0.8089376066666667
+    },
+    {
+      "bbox": [
+        [
+          577.0,
+          1121.0
+        ],
+        [
+          1013.0,
+          1121.0
+        ],
+        [
+          1013.0,
+          1149.0
+        ],
+        [
+          577.0,
+          1149.0
+        ]
+      ],
+      "text": "...xe hai bánh gan máy/Motorcycle(s)",
+      "confidence": 0.930886734
+    },
+    {
+      "bbox": [
+        [
+          216.0,
+          1181.0
+        ],
+        [
+          1131.0,
+          1181.0
+        ],
+        [
+          1131.0,
+          1215.0
+        ],
+        [
+          216.0,
+          1215.0
+        ]
+      ],
+      "text": "Đóng dau treo của cơ quan Hải quan nơi cấp Giấy tạm nhập khẩu/Hanging seal",
+      "confidence": 0.9620597893333334
+    },
+    {
+      "bbox": [
+        [
+          219.0,
+          1215.0
+        ],
+        [
+          1129.0,
+          1215.0
+        ],
+        [
+          1129.0,
+          1248.0
+        ],
+        [
+          219.0,
+          1248.0
+        ]
+      ],
+      "text": "of Customs Department By which the permit for temporary import was issued",
+      "confidence": 0.9501347800000001
+    },
+    {
+      "bbox": [
+        [
+          208.0,
+          1263.0
+        ],
+        [
+          323.0,
+          1263.0
+        ],
+        [
+          323.0,
+          1291.0
+        ],
+        [
+          208.0,
+          1291.0
+        ]
+      ],
+      "text": "Ghi chu: i",
+      "confidence": 0.7440516533333333
+    },
+    {
+      "bbox": [
+        [
+          212.0,
+          1289.0
+        ],
+        [
+          1136.0,
+          1289.0
+        ],
+        [
+          1136.0,
+          1325.0
+        ],
+        [
+          212.0,
+          1325.0
+        ]
+      ],
+      "text": "- Người kê nhiệm chỉ được tam nhập khẩu xe 6 tô, xe hai bánh gắn máy khi người tiền",
+      "confidence": 0.9576316149999999
+    },
+    {
+      "bbox": [
+        [
+          212.0,
+          1318.0
+        ],
+        [
+          1136.0,
+          1318.0
+        ],
+        [
+          1136.0,
+          1350.0
+        ],
+        [
+          212.0,
+          1350.0
+        ]
+      ],
+      "text": "nhiệm đã hoàn thành thủ tục tái xuất hoặc tiêu hủy hoặc chuyển nhượng xe ô tô, xe hai bánh",
+      "confidence": 0.9639223755
+    },
+    {
+      "bbox": [
+        [
+          212.0,
+          1348.0
+        ],
+        [
+          1135.0,
+          1348.0
+        ],
+        [
+          1135.0,
+          1385.0
+        ],
+        [
+          212.0,
+          1385.0
+        ]
+      ],
+      "text": "gắn máy theo quy định. Trường hợp người kế nhiệm nhận chuyển nhượng xe ô tô của người",
+      "confidence": 0.9575591066666667
+    },
+    {
+      "bbox": [
+        [
+          211.0,
+          1374.0
+        ],
+        [
+          1135.0,
+          1374.0
+        ],
+        [
+          1135.0,
+          1415.0
+        ],
+        [
+          211.0,
+          1415.0
+        ]
+      ],
+      "text": "tiền nhiệm, Bộ Ngoại giao thực hiện cấp tiêu chuẩn tạm nhập khẩu tại số định mức miễn",
+      "confidence": 0.9573935877777778
+    },
+    {
+      "bbox": [
+        [
+          211.0,
+          1405.0
+        ],
+        [
+          1136.0,
+          1405.0
+        ],
+        [
+          1136.0,
+          1438.0
+        ],
+        [
+          211.0,
+          1438.0
+        ]
+      ],
+      "text": "thuê khi xe ô tô tạm nhập khẩu của người tiên nhiệm chưa hoàn thành thủ tục chuyển",
+      "confidence": 0.9510159472222223
+    },
+    {
+      "bbox": [
+        [
+          212.0,
+          1434.0
+        ],
+        [
+          1136.0,
+          1434.0
+        ],
+        [
+          1136.0,
+          1466.0
+        ],
+        [
+          212.0,
+          1466.0
+        ]
+      ],
+      "text": "nhượng theo quy định, Bộ Ngoại giao ghi thông tin về người tiền nhiệm, thông tin về xe của",
+      "confidence": 0.9505393057894738
+    },
+    {
+      "bbox": [
+        [
+          212.0,
+          1463.0
+        ],
+        [
+          883.0,
+          1463.0
+        ],
+        [
+          883.0,
+          1495.0
+        ],
+        [
+          212.0,
+          1495.0
+        ]
+      ],
+      "text": "người tiền nhiệm trên trang bị chú của số định mức hàng miễn thuế.",
+      "confidence": 0.9589514
+    },
+    {
+      "bbox": [
+        [
+          212.0,
+          1492.0
+        ],
+        [
+          1136.0,
+          1492.0
+        ],
+        [
+          1136.0,
+          1525.0
+        ],
+        [
+          212.0,
+          1525.0
+        ]
+      ],
+      "text": "- Cục Hải quan tỉnh, thành phố khi cập nhật thông tin Giấy tạm nhập khẩu tại trang này, thực",
+      "confidence": 0.9621070899999999
+    },
+    {
+      "bbox": [
+        [
+          212.0,
+          1520.0
+        ],
+        [
+          513.0,
+          1520.0
+        ],
+        [
+          513.0,
+          1547.0
+        ],
+        [
+          212.0,
+          1547.0
+        ]
+      ],
+      "text": "hiện đóng dấu treo của đơn vị.",
+      "confidence": 0.9575373614285715
+    }
+  ]
+}

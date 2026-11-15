@@ -1,0 +1,883 @@
+{
+  "document_id": "59/2018/NĐ-CP",
+  "source_file": "../../legal-sources/592018ndcp/01.pdf",
+  "source_sha256": "7ac1b46e806ae9290125acb9ac1d535bcea768749d16941e9fae20bbf7343a1a",
+  "page_count": 48,
+  "render_dpi": 150,
+  "engine": "Tesseract 5.5.4 (vie+eng; OEM 1; PSM 3)",
+  "review_status": "UNREVIEWED",
+  "tesseract_version": "5.5.4",
+  "tsv_parser_version": 2,
+  "languages": [
+    "vie",
+    "eng"
+  ],
+  "traineddata_sha256": {
+    "vie": "b6b49293d95d0b6dbd8780174627e82c75be957b6f4ed9862155540d6b00bb45",
+    "eng": "8280aed0782fe27257a68ea10fe7ef324ca0f8d85bd2fd145d1c2b560bcb66ba"
+  },
+  "ocr_engine_mode": 1,
+  "page_segmentation_mode": 3,
+  "thread_limit": 1,
+  "page": 29,
+  "lines": [
+    {
+      "bbox": [
+        [
+          656.0,
+          147.0
+        ],
+        [
+          677.0,
+          147.0
+        ],
+        [
+          677.0,
+          164.0
+        ],
+        [
+          656.0,
+          164.0
+        ]
+      ],
+      "text": "29",
+      "confidence": 0.96618919
+    },
+    {
+      "bbox": [
+        [
+          316.0,
+          222.0
+        ],
+        [
+          1071.0,
+          222.0
+        ],
+        [
+          1071.0,
+          256.0
+        ],
+        [
+          316.0,
+          256.0
+        ]
+      ],
+      "text": "6. Thông tin, hồ sơ hải quan đối với tàu bay xuất cảnh, nhập cảnh, quá",
+      "confidence": 0.9356004274999999
+    },
+    {
+      "bbox": [
+        [
+          264.0,
+          251.0
+        ],
+        [
+          1069.0,
+          251.0
+        ],
+        [
+          1069.0,
+          286.0
+        ],
+        [
+          264.0,
+          286.0
+        ]
+      ],
+      "text": "cảnh khi có thay đổi phải được người khai hải quan gửi bổ sung, sửa đổi",
+      "confidence": 0.960544796875
+    },
+    {
+      "bbox": [
+        [
+          262.0,
+          280.0
+        ],
+        [
+          1069.0,
+          280.0
+        ],
+        [
+          1069.0,
+          315.0
+        ],
+        [
+          262.0,
+          315.0
+        ]
+      ],
+      "text": "thông qua Cổng thông tin một cửa quốc gia. Thời hạn gửi thông tin sửa đổi",
+      "confidence": 0.9517813725000001
+    },
+    {
+      "bbox": [
+        [
+          262.0,
+          311.0
+        ],
+        [
+          348.0,
+          311.0
+        ],
+        [
+          348.0,
+          339.0
+        ],
+        [
+          262.0,
+          339.0
+        ]
+      ],
+      "text": "bd sung:",
+      "confidence": 0.8875854100000001
+    },
+    {
+      "bbox": [
+        [
+          280.0,
+          355.0
+        ],
+        [
+          1069.0,
+          355.0
+        ],
+        [
+          1069.0,
+          390.0
+        ],
+        [
+          280.0,
+          390.0
+        ]
+      ],
+      "text": "i a) Trước hoặc ngay sau khi tàu bay nhập cảnh dừng đỗ tại vị trí quy định",
+      "confidence": 0.9369106722222221
+    },
+    {
+      "bbox": [
+        [
+          262.0,
+          384.0
+        ],
+        [
+          1068.0,
+          384.0
+        ],
+        [
+          1068.0,
+          419.0
+        ],
+        [
+          262.0,
+          419.0
+        ]
+      ],
+      "text": "đôi với chứng từ quy định khoản 1 Điều 61 Nghị định này, trừ thông tin tại",
+      "confidence": 0.961950144117647
+    },
+    {
+      "bbox": [
+        [
+          262.0,
+          414.0
+        ],
+        [
+          1068.0,
+          414.0
+        ],
+        [
+          1068.0,
+          442.0
+        ],
+        [
+          262.0,
+          442.0
+        ]
+      ],
+      "text": "điểm b khoản 1 Điều 61 Nghị định này phải gửi trước hoặc sau khi tàu bay",
+      "confidence": 0.9622051870588235
+    },
+    {
+      "bbox": [
+        [
+          261.0,
+          442.0
+        ],
+        [
+          1068.0,
+          442.0
+        ],
+        [
+          1068.0,
+          472.0
+        ],
+        [
+          261.0,
+          472.0
+        ]
+      ],
+      "text": "nhập cảnh và thông tin tại điểm e khoản 1 Điều 61 Nghị định này phải gửi",
+      "confidence": 0.9569233888235295
+    },
+    {
+      "bbox": [
+        [
+          262.0,
+          472.0
+        ],
+        [
+          803.0,
+          472.0
+        ],
+        [
+          803.0,
+          501.0
+        ],
+        [
+          262.0,
+          501.0
+        ]
+      ],
+      "text": "chậm nhất 08 giờ trước thời điểm tàu bay nhập cảnh;",
+      "confidence": 0.9676441463636364
+    },
+    {
+      "bbox": [
+        [
+          313.0,
+          516.0
+        ],
+        [
+          1068.0,
+          516.0
+        ],
+        [
+          1068.0,
+          559.0
+        ],
+        [
+          313.0,
+          559.0
+        ]
+      ],
+      "text": "Người khai hải quan nộp cho cơ quan hải quan các giấy tờ giải trình,",
+      "confidence": 0.9682386580000001
+    },
+    {
+      "bbox": [
+        [
+          262.0,
+          544.0
+        ],
+        [
+          1068.0,
+          544.0
+        ],
+        [
+          1068.0,
+          575.0
+        ],
+        [
+          262.0,
+          575.0
+        ]
+      ],
+      "text": "chứng minh việc sửa đổi, bổ sung chứng từ tại điểm b khoản 1 Điều 61 Nghị",
+      "confidence": 0.9486654847058824
+    },
+    {
+      "bbox": [
+        [
+          261.0,
+          581.0
+        ],
+        [
+          356.0,
+          581.0
+        ],
+        [
+          356.0,
+          604.0
+        ],
+        [
+          261.0,
+          604.0
+        ]
+      ],
+      "text": "định này;",
+      "confidence": 0.96304367
+    },
+    {
+      "bbox": [
+        [
+          313.0,
+          618.0
+        ],
+        [
+          1068.0,
+          618.0
+        ],
+        [
+          1068.0,
+          651.0
+        ],
+        [
+          313.0,
+          651.0
+        ]
+      ],
+      "text": "b) Trước thời điểm tàu bay xuất cảnh đối với chứng từ quy định tại",
+      "confidence": 0.9658193679999999
+    },
+    {
+      "bbox": [
+        [
+          260.0,
+          645.0
+        ],
+        [
+          1065.0,
+          645.0
+        ],
+        [
+          1065.0,
+          686.0
+        ],
+        [
+          260.0,
+          686.0
+        ]
+      ],
+      "text": "khoản 2 Điều 61 Nghị định này, trừ thông tin tại điểm a khoản 2 Điều 61",
+      "confidence": 0.9632485911764707
+    },
+    {
+      "bbox": [
+        [
+          260.0,
+          674.0
+        ],
+        [
+          1069.0,
+          674.0
+        ],
+        [
+          1069.0,
+          715.0
+        ],
+        [
+          260.0,
+          715.0
+        ]
+      ],
+      "text": "Nghị định này phải được gửi trong 24 giờ kể từ khi tàu bay xuất cảnh và",
+      "confidence": 0.9613492452941176
+    },
+    {
+      "bbox": [
+        [
+          261.0,
+          703.0
+        ],
+        [
+          1067.0,
+          703.0
+        ],
+        [
+          1067.0,
+          740.0
+        ],
+        [
+          261.0,
+          740.0
+        ]
+      ],
+      "text": "thông tin tại điểm đ khoản 2 Điều 61 Nghị định này phải gửi chậm nhất 08",
+      "confidence": 0.9627882205882352
+    },
+    {
+      "bbox": [
+        [
+          261.0,
+          735.0
+        ],
+        [
+          695.0,
+          735.0
+        ],
+        [
+          695.0,
+          765.0
+        ],
+        [
+          261.0,
+          765.0
+        ]
+      ],
+      "text": "giờ trước thời điểm chuyến bay xuất cảnh;",
+      "confidence": 0.9404963599999999
+    },
+    {
+      "bbox": [
+        [
+          312.0,
+          777.0
+        ],
+        [
+          1067.0,
+          777.0
+        ],
+        [
+          1067.0,
+          813.0
+        ],
+        [
+          312.0,
+          813.0
+        ]
+      ],
+      "text": "Người khai hải quan nộp cho cơ quan hải quan các giấy tờ giải trình,",
+      "confidence": 0.9684967453333334
+    },
+    {
+      "bbox": [
+        [
+          261.0,
+          805.0
+        ],
+        [
+          1067.0,
+          805.0
+        ],
+        [
+          1067.0,
+          838.0
+        ],
+        [
+          261.0,
+          838.0
+        ]
+      ],
+      "text": "chứng minh việc sửa đổi, bổ sung chứng từ tại điểm a khoản 2 Điều 61 Nghị",
+      "confidence": 0.94497946
+    },
+    {
+      "bbox": [
+        [
+          261.0,
+          843.0
+        ],
+        [
+          355.0,
+          843.0
+        ],
+        [
+          355.0,
+          865.0
+        ],
+        [
+          261.0,
+          865.0
+        ]
+      ],
+      "text": "định này;",
+      "confidence": 0.967606355
+    },
+    {
+      "bbox": [
+        [
+          313.0,
+          878.0
+        ],
+        [
+          1068.0,
+          878.0
+        ],
+        [
+          1068.0,
+          914.0
+        ],
+        [
+          313.0,
+          914.0
+        ]
+      ],
+      "text": "c) Đối với tàu bay quá cảnh thực hiện theo quy định tại điểm a khoản",
+      "confidence": 0.9457894125
+    },
+    {
+      "bbox": [
+        [
+          260.0,
+          908.0
+        ],
+        [
+          948.0,
+          908.0
+        ],
+        [
+          948.0,
+          940.0
+        ],
+        [
+          260.0,
+          940.0
+        ]
+      ],
+      "text": "này khi nhập cảnh, thực hiện theo điểm b khoản này khi xuất cảnh.",
+      "confidence": 0.959030112857143
+    },
+    {
+      "bbox": [
+        [
+          313.0,
+          952.0
+        ],
+        [
+          1067.0,
+          952.0
+        ],
+        [
+          1067.0,
+          984.0
+        ],
+        [
+          313.0,
+          984.0
+        ]
+      ],
+      "text": "7. Xử lý thông tin khai sửa đổi, bd sung đối với hồ sơ tàu bay xuất cảnh,",
+      "confidence": 0.9581286955555555
+    },
+    {
+      "bbox": [
+        [
+          260.0,
+          990.0
+        ],
+        [
+          469.0,
+          990.0
+        ],
+        [
+          469.0,
+          1014.0
+        ],
+        [
+          260.0,
+          1014.0
+        ]
+      ],
+      "text": "nhập cảnh, quá cảnh",
+      "confidence": 0.969424705
+    },
+    {
+      "bbox": [
+        [
+          313.0,
+          1025.0
+        ],
+        [
+          1067.0,
+          1025.0
+        ],
+        [
+          1067.0,
+          1068.0
+        ],
+        [
+          313.0,
+          1068.0
+        ]
+      ],
+      "text": "a) Cổng thông tin một cửa quốc gia tiếp nhận thông tin khai sửa đổi, bổ",
+      "confidence": 0.9541225525
+    },
+    {
+      "bbox": [
+        [
+          261.0,
+          1055.0
+        ],
+        [
+          1068.0,
+          1055.0
+        ],
+        [
+          1068.0,
+          1094.0
+        ],
+        [
+          261.0,
+          1094.0
+        ]
+      ],
+      "text": "sung và phản hồi tự động cho người khai hải quan đối với các chứng từ quy",
+      "confidence": 0.9591559594117648
+    },
+    {
+      "bbox": [
+        [
+          260.0,
+          1086.0
+        ],
+        [
+          793.0,
+          1086.0
+        ],
+        [
+          793.0,
+          1115.0
+        ],
+        [
+          260.0,
+          1115.0
+        ]
+      ],
+      "text": "định tại khoản 1 và khoản 2 Điều 61 Nghị định này;",
+      "confidence": 0.9686315666666667
+    },
+    {
+      "bbox": [
+        [
+          313.0,
+          1128.0
+        ],
+        [
+          1068.0,
+          1128.0
+        ],
+        [
+          1068.0,
+          1160.0
+        ],
+        [
+          313.0,
+          1160.0
+        ]
+      ],
+      "text": "b) Cơ quan Hải quan nơi làm thủ tục tàu bay nhập cảnh, xuất cảnh, quá",
+      "confidence": 0.9647630562499999
+    },
+    {
+      "bbox": [
+        [
+          261.0,
+          1157.0
+        ],
+        [
+          1068.0,
+          1157.0
+        ],
+        [
+          1068.0,
+          1199.0
+        ],
+        [
+          261.0,
+          1199.0
+        ]
+      ],
+      "text": "cảnh khai thác các thông tin được sửa đổi, bổ sung trên Cổng. thông tin một",
+      "confidence": 0.954904409375
+    },
+    {
+      "bbox": [
+        [
+          261.0,
+          1185.0
+        ],
+        [
+          1068.0,
+          1185.0
+        ],
+        [
+          1068.0,
+          1221.0
+        ],
+        [
+          261.0,
+          1221.0
+        ]
+      ],
+      "text": "cửa quốc gia để áp dụng các biện pháp quản lý, giám sát, kiểm tra đối với",
+      "confidence": 0.9662269370588236
+    },
+    {
+      "bbox": [
+        [
+          260.0,
+          1219.0
+        ],
+        [
+          1069.0,
+          1219.0
+        ],
+        [
+          1069.0,
+          1257.0
+        ],
+        [
+          260.0,
+          1257.0
+        ]
+      ],
+      "text": "phương tiện, hàng hoá theo quy định và cung cap thông tin cho các đơn vị, cơ",
+      "confidence": 0.9672732423529412
+    },
+    {
+      "bbox": [
+        [
+          261.0,
+          1247.0
+        ],
+        [
+          813.0,
+          1247.0
+        ],
+        [
+          813.0,
+          1277.0
+        ],
+        [
+          261.0,
+          1277.0
+        ]
+      ],
+      "text": "quan chức năng dé thực hiện nghiệp vụ có liên quan”.",
+      "confidence": 0.9603851800000001
+    },
+    {
+      "bbox": [
+        [
+          314.0,
+          1291.0
+        ],
+        [
+          888.0,
+          1291.0
+        ],
+        [
+          888.0,
+          1321.0
+        ],
+        [
+          314.0,
+          1321.0
+        ]
+      ],
+      "text": "34. Sửa đổi, bổ sung khoản 1, khoản 2 Điều 63 như sau:",
+      "confidence": 0.9516925069230768
+    },
+    {
+      "bbox": [
+        [
+          313.0,
+          1336.0
+        ],
+        [
+          1065.0,
+          1336.0
+        ],
+        [
+          1065.0,
+          1367.0
+        ],
+        [
+          313.0,
+          1367.0
+        ]
+      ],
+      "text": "“1. Tiếp nhận xử lý hồ sơ đối với tàu bay xuất cảnh, nhập cảnh, quá cảnh",
+      "confidence": 0.9639727011764705
+    },
+    {
+      "bbox": [
+        [
+          314.0,
+          1379.0
+        ],
+        [
+          1069.0,
+          1379.0
+        ],
+        [
+          1069.0,
+          1420.0
+        ],
+        [
+          314.0,
+          1420.0
+        ]
+      ],
+      "text": "a) Cổng thông tin một cửa quốc gia tiếp nhận thông tin khai và phản hồi",
+      "confidence": 0.955871371875
+    },
+    {
+      "bbox": [
+        [
+          261.0,
+          1412.0
+        ],
+        [
+          1070.0,
+          1412.0
+        ],
+        [
+          1070.0,
+          1445.0
+        ],
+        [
+          261.0,
+          1445.0
+        ]
+      ],
+      "text": "tự động thông báo chấp nhận nội dung khai hải quan trong trường hợp thông",
+      "confidence": 0.9674217586666667
+    },
+    {
+      "bbox": [
+        [
+          261.0,
+          1437.0
+        ],
+        [
+          1070.0,
+          1437.0
+        ],
+        [
+          1070.0,
+          1473.0
+        ],
+        [
+          261.0,
+          1473.0
+        ]
+      ],
+      "text": "tin khai hải quan đầy đủ hoặc yêu cau người khai hải quan bổ sung hồ sơ",
+      "confidence": 0.9636630923529412
+    },
+    {
+      "bbox": [
+        [
+          261.0,
+          1469.0
+        ],
+        [
+          723.0,
+          1469.0
+        ],
+        [
+          723.0,
+          1499.0
+        ],
+        [
+          261.0,
+          1499.0
+        ]
+      ],
+      "text": "trong trường hợp thông tin khai chưa đây đủ.",
+      "confidence": 0.9494383911111112
+    }
+  ]
+}

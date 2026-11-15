@@ -1,0 +1,861 @@
+{
+  "document_id": "126/2020/NĐ-CP",
+  "source_file": "../../legal-sources/1262020ndcp/01.pdf",
+  "source_sha256": "310648e80396d267610946458e7fdd71ba87ef538b009d6574ed21514de3f7ca",
+  "page_count": 119,
+  "render_dpi": 150,
+  "engine": "Tesseract 5.5.4 (vie+eng; OEM 1; PSM 3)",
+  "review_status": "UNREVIEWED",
+  "tesseract_version": "5.5.4",
+  "tsv_parser_version": 2,
+  "languages": [
+    "vie",
+    "eng"
+  ],
+  "traineddata_sha256": {
+    "vie": "b6b49293d95d0b6dbd8780174627e82c75be957b6f4ed9862155540d6b00bb45",
+    "eng": "8280aed0782fe27257a68ea10fe7ef324ca0f8d85bd2fd145d1c2b560bcb66ba"
+  },
+  "ocr_engine_mode": 1,
+  "page_segmentation_mode": 3,
+  "thread_limit": 1,
+  "page": 110,
+  "lines": [
+    {
+      "bbox": [
+        [
+          691.0,
+          68.0
+        ],
+        [
+          730.0,
+          68.0
+        ],
+        [
+          730.0,
+          88.0
+        ],
+        [
+          691.0,
+          88.0
+        ]
+      ],
+      "text": "110",
+      "confidence": 0.96473923
+    },
+    {
+      "bbox": [
+        [
+          279.0,
+          144.0
+        ],
+        [
+          1136.0,
+          144.0
+        ],
+        [
+          1136.0,
+          177.0
+        ],
+        [
+          279.0,
+          177.0
+        ]
+      ],
+      "text": "d.2) Bên được ủy nhiệm thu có trách nhiệm nộp đầy đủ, kịp thời tiền",
+      "confidence": 0.9603716126666667
+    },
+    {
+      "bbox": [
+        [
+          219.0,
+          178.0
+        ],
+        [
+          1138.0,
+          178.0
+        ],
+        [
+          1138.0,
+          212.0
+        ],
+        [
+          219.0,
+          212.0
+        ]
+      ],
+      "text": "thuế và các khoản thu khác thuộc ngân sách nhà nước đã thu được vào ngân",
+      "confidence": 0.965321669375
+    },
+    {
+      "bbox": [
+        [
+          220.0,
+          219.0
+        ],
+        [
+          1137.0,
+          219.0
+        ],
+        [
+          1137.0,
+          247.0
+        ],
+        [
+          220.0,
+          247.0
+        ]
+      ],
+      "text": "sách nhà nước tại kho bạc nhà nước hoặc ngân hàng thương mại nơi kho bạc",
+      "confidence": 0.96738947375
+    },
+    {
+      "bbox": [
+        [
+          219.0,
+          249.0
+        ],
+        [
+          1137.0,
+          249.0
+        ],
+        [
+          1137.0,
+          283.0
+        ],
+        [
+          219.0,
+          283.0
+        ]
+      ],
+      "text": "nhà nước mở tài khoản. Số tiền phải nộp vào ngân sách nhà nước là tổng số",
+      "confidence": 0.9646723970588235
+    },
+    {
+      "bbox": [
+        [
+          219.0,
+          284.0
+        ],
+        [
+          793.0,
+          284.0
+        ],
+        [
+          793.0,
+          317.0
+        ],
+        [
+          219.0,
+          317.0
+        ]
+      ],
+      "text": "tiền đã ghi thu trên các biên lai thu, chứng từ thu.",
+      "confidence": 0.9610018524999999
+    },
+    {
+      "bbox": [
+        [
+          278.0,
+          344.0
+        ],
+        [
+          1137.0,
+          344.0
+        ],
+        [
+          1137.0,
+          378.0
+        ],
+        [
+          278.0,
+          378.0
+        ]
+      ],
+      "text": "d.3) Khi nộp tiền thuế và các khoản thu khác thuộc ngân sách nhà nước",
+      "confidence": 0.9588123019999999
+    },
+    {
+      "bbox": [
+        [
+          219.0,
+          385.0
+        ],
+        [
+          1137.0,
+          385.0
+        ],
+        [
+          1137.0,
+          413.0
+        ],
+        [
+          219.0,
+          413.0
+        ]
+      ],
+      "text": "đã thu được vào ngân sách nhà nước tại kho bạc nhà nước hoặc ngân hàng",
+      "confidence": 0.963859610625
+    },
+    {
+      "bbox": [
+        [
+          218.0,
+          420.0
+        ],
+        [
+          1136.0,
+          420.0
+        ],
+        [
+          1136.0,
+          448.0
+        ],
+        [
+          218.0,
+          448.0
+        ]
+      ],
+      "text": "thương mại nơi kho bạc nhà nước mở tài khoản, bên được ủy nhiệm thu phải",
+      "confidence": 0.967167669375
+    },
+    {
+      "bbox": [
+        [
+          219.0,
+          452.0
+        ],
+        [
+          1137.0,
+          452.0
+        ],
+        [
+          1137.0,
+          494.0
+        ],
+        [
+          219.0,
+          494.0
+        ]
+      ],
+      "text": "lập bảng kê biên lai thu, chứng từ thu và lập chứng từ nộp ngân sách nhà",
+      "confidence": 0.9673035076470587
+    },
+    {
+      "bbox": [
+        [
+          219.0,
+          485.0
+        ],
+        [
+          1137.0,
+          485.0
+        ],
+        [
+          1137.0,
+          525.0
+        ],
+        [
+          219.0,
+          525.0
+        ]
+      ],
+      "text": "nước. Kho bạc nhà nước chuyển. chứng từ cho cơ quan quản lý thuế về số tiền",
+      "confidence": 0.9660277111764706
+    },
+    {
+      "bbox": [
+        [
+          218.0,
+          520.0
+        ],
+        [
+          846.0,
+          520.0
+        ],
+        [
+          846.0,
+          553.0
+        ],
+        [
+          218.0,
+          553.0
+        ]
+      ],
+      "text": "bên được ủy nhiệm thu đã nộp để theo dõi và quản lý.",
+      "confidence": 0.9661775030769231
+    },
+    {
+      "bbox": [
+        [
+          278.0,
+          580.0
+        ],
+        [
+          1136.0,
+          580.0
+        ],
+        [
+          1136.0,
+          613.0
+        ],
+        [
+          278.0,
+          613.0
+        ]
+      ],
+      "text": "d.4) Bên được ủy nhiệm thu phải nộp tiền thuế và các khoản thu khác",
+      "confidence": 0.9657976233333333
+    },
+    {
+      "bbox": [
+        [
+          218.0,
+          621.0
+        ],
+        [
+          1137.0,
+          621.0
+        ],
+        [
+          1137.0,
+          655.0
+        ],
+        [
+          218.0,
+          655.0
+        ]
+      ],
+      "text": "thuộc ngân sách nhà nước đã thu được vào ngân sách nhà nước ngay trong",
+      "confidence": 0.9661474106666667
+    },
+    {
+      "bbox": [
+        [
+          217.0,
+          650.0
+        ],
+        [
+          1137.0,
+          650.0
+        ],
+        [
+          1137.0,
+          690.0
+        ],
+        [
+          217.0,
+          690.0
+        ]
+      ],
+      "text": "ngày làm việc. Trường hợp thu tiền sau 16 giờ của ngày làm việc thì nộp tiền",
+      "confidence": 0.9685999329411764
+    },
+    {
+      "bbox": [
+        [
+          217.0,
+          685.0
+        ],
+        [
+          1137.0,
+          685.0
+        ],
+        [
+          1137.0,
+          717.0
+        ],
+        [
+          217.0,
+          717.0
+        ]
+      ],
+      "text": "thuế và các khoản thu khác thuộc ngân sách nhà nước đã thu được chậm nhất",
+      "confidence": 0.96797586875
+    },
+    {
+      "bbox": [
+        [
+          217.0,
+          720.0
+        ],
+        [
+          1136.0,
+          720.0
+        ],
+        [
+          1136.0,
+          753.0
+        ],
+        [
+          217.0,
+          753.0
+        ]
+      ],
+      "text": "trước 10 giờ ngày làm việc tiếp theo. Trường hợp thu tiền vào ngày nghỉ,",
+      "confidence": 0.9608849319999999
+    },
+    {
+      "bbox": [
+        [
+          217.0,
+          755.0
+        ],
+        [
+          1137.0,
+          755.0
+        ],
+        [
+          1137.0,
+          788.0
+        ],
+        [
+          217.0,
+          788.0
+        ]
+      ],
+      "text": "ngày lễ thì phải nộp tiền vào ngân sách nhà nước ngay trong ngày làm việc",
+      "confidence": 0.96836367125
+    },
+    {
+      "bbox": [
+        [
+          216.0,
+          790.0
+        ],
+        [
+          1136.0,
+          790.0
+        ],
+        [
+          1136.0,
+          823.0
+        ],
+        [
+          216.0,
+          823.0
+        ]
+      ],
+      "text": "tiếp theo. Đối với địa ban thu là các xã vùng sâu, vùng xa, đi lại khó khăn thì",
+      "confidence": 0.9603483147368422
+    },
+    {
+      "bbox": [
+        [
+          217.0,
+          821.0
+        ],
+        [
+          1136.0,
+          821.0
+        ],
+        [
+          1136.0,
+          862.0
+        ],
+        [
+          217.0,
+          862.0
+        ]
+      ],
+      "text": "Cục trưởng Cục Thuế, Cục trưởng Cục Hải quan xem xét quyết định thời gian",
+      "confidence": 0.9664261266666666
+    },
+    {
+      "bbox": [
+        [
+          217.0,
+          860.0
+        ],
+        [
+          1137.0,
+          860.0
+        ],
+        [
+          1137.0,
+          892.0
+        ],
+        [
+          217.0,
+          892.0
+        ]
+      ],
+      "text": "bên được uỷ nhiệm thu phải nộp tiền vào kho bạc nhà nước nhưng tối đa",
+      "confidence": 0.965233229375
+    },
+    {
+      "bbox": [
+        [
+          217.0,
+          895.0
+        ],
+        [
+          863.0,
+          895.0
+        ],
+        [
+          863.0,
+          927.0
+        ],
+        [
+          217.0,
+          927.0
+        ]
+      ],
+      "text": "không quá 05 ngày kể từ ngày thu tiền thuế, phí, lệ phí.",
+      "confidence": 0.9627602107692307
+    },
+    {
+      "bbox": [
+        [
+          277.0,
+          954.0
+        ],
+        [
+          1137.0,
+          954.0
+        ],
+        [
+          1137.0,
+          987.0
+        ],
+        [
+          277.0,
+          987.0
+        ]
+      ],
+      "text": "đ) Quyết toán số tiền thuế và các khoản thu khác thuộc ngân sách nhà",
+      "confidence": 0.9596270459999999
+    },
+    {
+      "bbox": [
+        [
+          217.0,
+          995.0
+        ],
+        [
+          1063.0,
+          995.0
+        ],
+        [
+          1063.0,
+          1022.0
+        ],
+        [
+          217.0,
+          1022.0
+        ]
+      ],
+      "text": "nước đã thu được và biên lai thu, chứng từ thu với cơ quan quản lý thuê.",
+      "confidence": 0.964702175882353
+    },
+    {
+      "bbox": [
+        [
+          277.0,
+          1049.0
+        ],
+        [
+          661.0,
+          1049.0
+        ],
+        [
+          661.0,
+          1082.0
+        ],
+        [
+          277.0,
+          1082.0
+        ]
+      ],
+      "text": "đ.1) Quyết toán số tiền thu được.",
+      "confidence": 0.9521177771428572
+    },
+    {
+      "bbox": [
+        [
+          277.0,
+          1110.0
+        ],
+        [
+          1136.0,
+          1110.0
+        ],
+        [
+          1136.0,
+          1142.0
+        ],
+        [
+          277.0,
+          1142.0
+        ]
+      ],
+      "text": "Chậm nhất ngày 05 của tháng sau, bên được ủy nhiệm thu phải lập báo",
+      "confidence": 0.9629669846666665
+    },
+    {
+      "bbox": [
+        [
+          217.0,
+          1145.0
+        ],
+        [
+          1137.0,
+          1145.0
+        ],
+        [
+          1137.0,
+          1177.0
+        ],
+        [
+          217.0,
+          1177.0
+        ]
+      ],
+      "text": "cáo số tiền thuế và các khoản thu khác thuộc ngân sách nhà nước đã thu, đã",
+      "confidence": 0.9659465076470588
+    },
+    {
+      "bbox": [
+        [
+          217.0,
+          1180.0
+        ],
+        [
+          1137.0,
+          1180.0
+        ],
+        [
+          1137.0,
+          1213.0
+        ],
+        [
+          217.0,
+          1213.0
+        ]
+      ],
+      "text": "nộp của tháng trước gửi cơ quan quản lý thuế theo Mẫu số 03/UNT tại Phụ",
+      "confidence": 0.963749188125
+    },
+    {
+      "bbox": [
+        [
+          217.0,
+          1216.0
+        ],
+        [
+          1137.0,
+          1216.0
+        ],
+        [
+          1137.0,
+          1248.0
+        ],
+        [
+          217.0,
+          1248.0
+        ]
+      ],
+      "text": "lục III ban hành kèm theo Nghị định này. Cơ quan quản lý thuế nhận được",
+      "confidence": 0.960527325
+    },
+    {
+      "bbox": [
+        [
+          217.0,
+          1250.0
+        ],
+        [
+          1136.0,
+          1250.0
+        ],
+        [
+          1136.0,
+          1283.0
+        ],
+        [
+          217.0,
+          1283.0
+        ]
+      ],
+      "text": "báo cáo thu nộp của bên được ủy nhiệm thu phải kiểm tra cụ thể bảng kê biên",
+      "confidence": 0.9655557683333333
+    },
+    {
+      "bbox": [
+        [
+          218.0,
+          1285.0
+        ],
+        [
+          1137.0,
+          1285.0
+        ],
+        [
+          1137.0,
+          1318.0
+        ],
+        [
+          218.0,
+          1318.0
+        ]
+      ],
+      "text": "lai thu, chứng từ thu đã sử dụng, số tiền thuế và các khoản thu khác thuộc",
+      "confidence": 0.9684875976470589
+    },
+    {
+      "bbox": [
+        [
+          217.0,
+          1320.0
+        ],
+        [
+          1137.0,
+          1320.0
+        ],
+        [
+          1137.0,
+          1354.0
+        ],
+        [
+          217.0,
+          1354.0
+        ]
+      ],
+      "text": "ngân sách nhà nước đã thu và đã nộp vào ngân sách, đối chiếu với số tiền thuế",
+      "confidence": 0.9656329594444445
+    },
+    {
+      "bbox": [
+        [
+          218.0,
+          1361.0
+        ],
+        [
+          1137.0,
+          1361.0
+        ],
+        [
+          1137.0,
+          1389.0
+        ],
+        [
+          218.0,
+          1389.0
+        ]
+      ],
+      "text": "và các khoản thu khác thuộc ngân sách nhà nước đã thực nộp có xác nhận của",
+      "confidence": 0.9679479805882353
+    },
+    {
+      "bbox": [
+        [
+          218.0,
+          1391.0
+        ],
+        [
+          1136.0,
+          1391.0
+        ],
+        [
+          1136.0,
+          1423.0
+        ],
+        [
+          218.0,
+          1423.0
+        ]
+      ],
+      "text": "kho bạc nhà nước, nếu có số chênh lệch phải lập biên bản xác định rõ nguyên",
+      "confidence": 0.9683224847058824
+    },
+    {
+      "bbox": [
+        [
+          218.0,
+          1426.0
+        ],
+        [
+          592.0,
+          1426.0
+        ],
+        [
+          592.0,
+          1458.0
+        ],
+        [
+          218.0,
+          1458.0
+        ]
+      ],
+      "text": "nhân để quy trách nhiệm cụ thể.",
+      "confidence": 0.9462546857142857
+    },
+    {
+      "bbox": [
+        [
+          278.0,
+          1485.0
+        ],
+        [
+          1137.0,
+          1485.0
+        ],
+        [
+          1137.0,
+          1518.0
+        ],
+        [
+          278.0,
+          1518.0
+        ]
+      ],
+      "text": "Chậm nhất là ngày 15 của quý sau, cơ quan thuế lập báo cáo kết quả",
+      "confidence": 0.966692014375
+    },
+    {
+      "bbox": [
+        [
+          219.0,
+          1525.0
+        ],
+        [
+          1136.0,
+          1525.0
+        ],
+        [
+          1136.0,
+          1553.0
+        ],
+        [
+          219.0,
+          1553.0
+        ]
+      ],
+      "text": "thu ngân sách nhà nước thông qua tô chức được ủy nhiệm thu theo Mau",
+      "confidence": 0.9647326813333332
+    },
+    {
+      "bbox": [
+        [
+          219.0,
+          1556.0
+        ],
+        [
+          927.0,
+          1556.0
+        ],
+        [
+          927.0,
+          1587.0
+        ],
+        [
+          219.0,
+          1587.0
+        ]
+      ],
+      "text": "số 04/UNT tại Phụ lục III ban hành kèm theo Nghị định này.",
+      "confidence": 0.95132958
+    }
+  ]
+}

@@ -1,0 +1,861 @@
+{
+  "document_id": "126/2020/NĐ-CP",
+  "source_file": "../../legal-sources/1262020ndcp/01.pdf",
+  "source_sha256": "310648e80396d267610946458e7fdd71ba87ef538b009d6574ed21514de3f7ca",
+  "page_count": 119,
+  "render_dpi": 150,
+  "engine": "Tesseract 5.5.4 (vie+eng; OEM 1; PSM 3)",
+  "review_status": "UNREVIEWED",
+  "tesseract_version": "5.5.4",
+  "tsv_parser_version": 2,
+  "languages": [
+    "vie",
+    "eng"
+  ],
+  "traineddata_sha256": {
+    "vie": "b6b49293d95d0b6dbd8780174627e82c75be957b6f4ed9862155540d6b00bb45",
+    "eng": "8280aed0782fe27257a68ea10fe7ef324ca0f8d85bd2fd145d1c2b560bcb66ba"
+  },
+  "ocr_engine_mode": 1,
+  "page_segmentation_mode": 3,
+  "thread_limit": 1,
+  "page": 10,
+  "lines": [
+    {
+      "bbox": [
+        [
+          674.0,
+          58.0
+        ],
+        [
+          698.0,
+          58.0
+        ],
+        [
+          698.0,
+          79.0
+        ],
+        [
+          674.0,
+          79.0
+        ]
+      ],
+      "text": "10",
+      "confidence": 0.9693476099999999
+    },
+    {
+      "bbox": [
+        [
+          257.0,
+          125.0
+        ],
+        [
+          1117.0,
+          125.0
+        ],
+        [
+          1117.0,
+          175.0
+        ],
+        [
+          257.0,
+          175.0
+        ]
+      ],
+      "text": "Trường hợp chưa nộp hồ sơ khai quyết toán thuế năm thì người nộp thuế",
+      "confidence": 0.968897196
+    },
+    {
+      "bbox": [
+        [
+          199.0,
+          160.0
+        ],
+        [
+          1117.0,
+          160.0
+        ],
+        [
+          1117.0,
+          211.0
+        ],
+        [
+          199.0,
+          211.0
+        ]
+      ],
+      "text": "khai bổ sung hồ sơ khai thuế của tháng, quý có sai, sót, đồng thời tổng hợp số",
+      "confidence": 0.9648955488888888
+    },
+    {
+      "bbox": [
+        [
+          201.0,
+          203.0
+        ],
+        [
+          828.0,
+          203.0
+        ],
+        [
+          828.0,
+          247.0
+        ],
+        [
+          201.0,
+          247.0
+        ]
+      ],
+      "text": "liệu khai bổ sung vào hồ sơ khai quyết toán thuế năm.",
+      "confidence": 0.9524169658333334
+    },
+    {
+      "bbox": [
+        [
+          261.0,
+          257.0
+        ],
+        [
+          1118.0,
+          257.0
+        ],
+        [
+          1118.0,
+          306.0
+        ],
+        [
+          261.0,
+          306.0
+        ]
+      ],
+      "text": "Trường hợp đã nộp hồ sơ khai quyết toán thuế năm thì chỉ khai bổ sung",
+      "confidence": 0.962471003125
+    },
+    {
+      "bbox": [
+        [
+          203.0,
+          291.0
+        ],
+        [
+          1118.0,
+          291.0
+        ],
+        [
+          1118.0,
+          340.0
+        ],
+        [
+          203.0,
+          340.0
+        ]
+      ],
+      "text": "hồ sơ khai quyết toán thuế năm; riêng trường hợp khai bd sung tờ khai quyết",
+      "confidence": 0.9653515962500001
+    },
+    {
+      "bbox": [
+        [
+          204.0,
+          328.0
+        ],
+        [
+          1119.0,
+          328.0
+        ],
+        [
+          1119.0,
+          374.0
+        ],
+        [
+          204.0,
+          374.0
+        ]
+      ],
+      "text": "toán thuế thu nhập cá nhân đối với tổ chức, cá nhân trả thu nhập từ tiền lương,",
+      "confidence": 0.9683312055555556
+    },
+    {
+      "bbox": [
+        [
+          205.0,
+          366.0
+        ],
+        [
+          1121.0,
+          366.0
+        ],
+        [
+          1121.0,
+          411.0
+        ],
+        [
+          205.0,
+          411.0
+        ]
+      ],
+      "text": "tiền công thì đồng thời phải khai bổ sung tờ khai tháng, quý có sai, sot",
+      "confidence": 0.962216063125
+    },
+    {
+      "bbox": [
+        [
+          205.0,
+          420.0
+        ],
+        [
+          332.0,
+          420.0
+        ],
+        [
+          332.0,
+          447.0
+        ],
+        [
+          205.0,
+          447.0
+        ]
+      ],
+      "text": "tương ứng.",
+      "confidence": 0.9658269899999999
+    },
+    {
+      "bbox": [
+        [
+          267.0,
+          460.0
+        ],
+        [
+          1123.0,
+          460.0
+        ],
+        [
+          1123.0,
+          507.0
+        ],
+        [
+          267.0,
+          507.0
+        ]
+      ],
+      "text": "b) Người nộp thuế khai bổ sung dẫn đến tăng số thuế phải nộp hoặc giảm",
+      "confidence": 0.961164998125
+    },
+    {
+      "bbox": [
+        [
+          209.0,
+          491.0
+        ],
+        [
+          1124.0,
+          491.0
+        ],
+        [
+          1124.0,
+          538.0
+        ],
+        [
+          209.0,
+          538.0
+        ]
+      ],
+      "text": "số thuế đã được ngân sách nhà nước hoàn trả thì phải nộp đủ số tiền thuế phải",
+      "confidence": 0.9666556427777777
+    },
+    {
+      "bbox": [
+        [
+          209.0,
+          530.0
+        ],
+        [
+          1126.0,
+          530.0
+        ],
+        [
+          1126.0,
+          578.0
+        ],
+        [
+          209.0,
+          578.0
+        ]
+      ],
+      "text": "nộp tăng thêm hoặc số tiền thuế đã được hoàn thừa và tiền chậm nộp vào ngân",
+      "confidence": 0.9693788717647058
+    },
+    {
+      "bbox": [
+        [
+          210.0,
+          576.0
+        ],
+        [
+          486.0,
+          576.0
+        ],
+        [
+          486.0,
+          608.0
+        ],
+        [
+          210.0,
+          608.0
+        ]
+      ],
+      "text": "sách nhà nước (nếu có).",
+      "confidence": 0.9650765819999999
+    },
+    {
+      "bbox": [
+        [
+          270.0,
+          623.0
+        ],
+        [
+          1128.0,
+          623.0
+        ],
+        [
+          1128.0,
+          669.0
+        ],
+        [
+          270.0,
+          669.0
+        ]
+      ],
+      "text": "Trường hợp khai bổ sung chỉ làm tăng hoặc giảm số thuế giá trị gia tăng",
+      "confidence": 0.95684866125
+    },
+    {
+      "bbox": [
+        [
+          212.0,
+          660.0
+        ],
+        [
+          1128.0,
+          660.0
+        ],
+        [
+          1128.0,
+          704.0
+        ],
+        [
+          212.0,
+          704.0
+        ]
+      ],
+      "text": "còn được khấu trừ chuyên kỳ sau thì phải kê khai vào kỳ tính thuê hiện tại.",
+      "confidence": 0.9681895488235294
+    },
+    {
+      "bbox": [
+        [
+          212.0,
+          691.0
+        ],
+        [
+          1129.0,
+          691.0
+        ],
+        [
+          1129.0,
+          741.0
+        ],
+        [
+          212.0,
+          741.0
+        ]
+      ],
+      "text": "Người nộp thuế chỉ được khai bổ sung tăng số thuê giá trị gia tăng đề nghị",
+      "confidence": 0.9596654364705883
+    },
+    {
+      "bbox": [
+        [
+          214.0,
+          723.0
+        ],
+        [
+          1130.0,
+          723.0
+        ],
+        [
+          1130.0,
+          772.0
+        ],
+        [
+          214.0,
+          772.0
+        ]
+      ],
+      "text": "hoàn khi chưa nộp hồ sơ khai thuế của kỳ tính thuê tiếp theo và chưa nộp hồ",
+      "confidence": 0.9687020833333332
+    },
+    {
+      "bbox": [
+        [
+          216.0,
+          774.0
+        ],
+        [
+          462.0,
+          774.0
+        ],
+        [
+          462.0,
+          809.0
+        ],
+        [
+          216.0,
+          809.0
+        ]
+      ],
+      "text": "sơ đề nghị hoàn thuế.",
+      "confidence": 0.958996582
+    },
+    {
+      "bbox": [
+        [
+          276.0,
+          822.0
+        ],
+        [
+          1131.0,
+          822.0
+        ],
+        [
+          1131.0,
+          865.0
+        ],
+        [
+          276.0,
+          865.0
+        ]
+      ],
+      "text": "5. Tổ chức, cá nhân thực hiện khai thuế thay, nộp thuế thay cho người",
+      "confidence": 0.961403372
+    },
+    {
+      "bbox": [
+        [
+          217.0,
+          859.0
+        ],
+        [
+          1132.0,
+          859.0
+        ],
+        [
+          1132.0,
+          905.0
+        ],
+        [
+          217.0,
+          905.0
+        ]
+      ],
+      "text": "nộp thuế phải có trách nhiệm thực hiện đầy đủ các quy định vê khai thuê, nộp",
+      "confidence": 0.9552643000000001
+    },
+    {
+      "bbox": [
+        [
+          217.0,
+          896.0
+        ],
+        [
+          1038.0,
+          896.0
+        ],
+        [
+          1038.0,
+          938.0
+        ],
+        [
+          217.0,
+          938.0
+        ]
+      ],
+      "text": "thuế như quy định đối với người nộp thuê tại Nghị định này, bao gồm:",
+      "confidence": 0.9579359339999999
+    },
+    {
+      "bbox": [
+        [
+          279.0,
+          951.0
+        ],
+        [
+          1134.0,
+          951.0
+        ],
+        [
+          1134.0,
+          999.0
+        ],
+        [
+          279.0,
+          999.0
+        ]
+      ],
+      "text": "a) Tổ chức, cá nhân thực hiện khai thuế thay, nộp thuế thay cho người",
+      "confidence": 0.9684479626666667
+    },
+    {
+      "bbox": [
+        [
+          220.0,
+          997.0
+        ],
+        [
+          748.0,
+          997.0
+        ],
+        [
+          748.0,
+          1034.0
+        ],
+        [
+          220.0,
+          1034.0
+        ]
+      ],
+      "text": "nộp thuế theo quy định của pháp luật về thuê.",
+      "confidence": 0.964134004
+    },
+    {
+      "bbox": [
+        [
+          280.0,
+          1042.0
+        ],
+        [
+          1137.0,
+          1042.0
+        ],
+        [
+          1137.0,
+          1093.0
+        ],
+        [
+          280.0,
+          1093.0
+        ]
+      ],
+      "text": "b) Tổ chức tín dụng hoặc bên thứ ba được tổ chức tín dụng ủy quyền",
+      "confidence": 0.963586686875
+    },
+    {
+      "bbox": [
+        [
+          222.0,
+          1078.0
+        ],
+        [
+          1137.0,
+          1078.0
+        ],
+        [
+          1137.0,
+          1123.0
+        ],
+        [
+          222.0,
+          1123.0
+        ]
+      ],
+      "text": "khai thác tài sản bảo đảm thực hiện khai thuế giá trị gia tăng, thuế thu nhập",
+      "confidence": 0.9641023611764706
+    },
+    {
+      "bbox": [
+        [
+          223.0,
+          1117.0
+        ],
+        [
+          1139.0,
+          1117.0
+        ],
+        [
+          1139.0,
+          1163.0
+        ],
+        [
+          223.0,
+          1163.0
+        ]
+      ],
+      "text": "doanh nghiệp, thuế thu nhập cá nhân đối với hoạt động khai thác tài sản bảo",
+      "confidence": 0.9656373825
+    },
+    {
+      "bbox": [
+        [
+          224.0,
+          1153.0
+        ],
+        [
+          1094.0,
+          1153.0
+        ],
+        [
+          1094.0,
+          1197.0
+        ],
+        [
+          224.0,
+          1197.0
+        ]
+      ],
+      "text": "đảm trong thời gian chờ xử lý thay cho người nộp thuế có tài sản đảm bảo.",
+      "confidence": 0.9659973205882353
+    },
+    {
+      "bbox": [
+        [
+          284.0,
+          1206.0
+        ],
+        [
+          1141.0,
+          1206.0
+        ],
+        [
+          1141.0,
+          1257.0
+        ],
+        [
+          284.0,
+          1257.0
+        ]
+      ],
+      "text": "e) Tổ chức hợp tác kinh doanh với cá nhân thì cá nhân không trực tiếp",
+      "confidence": 0.93181338375
+    },
+    {
+      "bbox": [
+        [
+          225.0,
+          1244.0
+        ],
+        [
+          1142.0,
+          1244.0
+        ],
+        [
+          1142.0,
+          1287.0
+        ],
+        [
+          225.0,
+          1287.0
+        ]
+      ],
+      "text": "khai thuế. Tổ chức có trách nhiệm khai thuế giá trị gia tăng đối với toàn bộ",
+      "confidence": 0.9647630847058823
+    },
+    {
+      "bbox": [
+        [
+          226.0,
+          1276.0
+        ],
+        [
+          1143.0,
+          1276.0
+        ],
+        [
+          1143.0,
+          1322.0
+        ],
+        [
+          226.0,
+          1322.0
+        ]
+      ],
+      "text": "doanh thu của hoạt động hợp tác kinh doanh theo quy định của pháp luật về",
+      "confidence": 0.9671906749999999
+    },
+    {
+      "bbox": [
+        [
+          227.0,
+          1311.0
+        ],
+        [
+          1144.0,
+          1311.0
+        ],
+        [
+          1144.0,
+          1361.0
+        ],
+        [
+          227.0,
+          1361.0
+        ]
+      ],
+      "text": "thuế và quản lý thuế của tổ chức mà không phân biệt hình thức phân chia kết",
+      "confidence": 0.966798235882353
+    },
+    {
+      "bbox": [
+        [
+          229.0,
+          1349.0
+        ],
+        [
+          1145.0,
+          1349.0
+        ],
+        [
+          1145.0,
+          1398.0
+        ],
+        [
+          229.0,
+          1398.0
+        ]
+      ],
+      "text": "quả hợp tác kinh doanh, đồng thời khai thay và nộp thay thuế thu nhập cá",
+      "confidence": 0.965247049375
+    },
+    {
+      "bbox": [
+        [
+          229.0,
+          1387.0
+        ],
+        [
+          1146.0,
+          1387.0
+        ],
+        [
+          1146.0,
+          1427.0
+        ],
+        [
+          229.0,
+          1427.0
+        ]
+      ],
+      "text": "nhân cho cá nhân hợp tác kinh doanh. Trường hợp tổ chức hợp tác kinh doanh",
+      "confidence": 0.967694105
+    },
+    {
+      "bbox": [
+        [
+          230.0,
+          1422.0
+        ],
+        [
+          1145.0,
+          1422.0
+        ],
+        [
+          1145.0,
+          1461.0
+        ],
+        [
+          230.0,
+          1461.0
+        ]
+      ],
+      "text": "với cá nhân là hộ kinh doanh, cá nhân kinh doanh theo quy định tại khoản 5",
+      "confidence": 0.9683847676470588
+    },
+    {
+      "bbox": [
+        [
+          231.0,
+          1456.0
+        ],
+        [
+          1148.0,
+          1456.0
+        ],
+        [
+          1148.0,
+          1498.0
+        ],
+        [
+          231.0,
+          1498.0
+        ]
+      ],
+      "text": "Điều 51 Luật Quản lý thuế, mà cá nhân có ngành nghề đang hoạt động cùng",
+      "confidence": 0.9683165793749999
+    },
+    {
+      "bbox": [
+        [
+          232.0,
+          1490.0
+        ],
+        [
+          1149.0,
+          1490.0
+        ],
+        [
+          1149.0,
+          1535.0
+        ],
+        [
+          232.0,
+          1535.0
+        ]
+      ],
+      "text": "với ngành nghề hợp tác kinh doanh với tổ chức thì tổ chức và cá nhân tự",
+      "confidence": 0.9679726329411765
+    },
+    {
+      "bbox": [
+        [
+          233.0,
+          1526.0
+        ],
+        [
+          1149.0,
+          1526.0
+        ],
+        [
+          1149.0,
+          1570.0
+        ],
+        [
+          233.0,
+          1570.0
+        ]
+      ],
+      "text": "thực hiện khai thuế tương ứng với kết quả thực tế hợp tác kinh doanh theo",
+      "confidence": 0.968146415
+    },
+    {
+      "bbox": [
+        [
+          235.0,
+          1578.0
+        ],
+        [
+          342.0,
+          1578.0
+        ],
+        [
+          342.0,
+          1607.0
+        ],
+        [
+          235.0,
+          1607.0
+        ]
+      ],
+      "text": "quy định.",
+      "confidence": 0.9694512550000001
+    }
+  ]
+}

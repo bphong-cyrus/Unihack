@@ -1,0 +1,905 @@
+{
+  "document_id": "59/2018/NĐ-CP",
+  "source_file": "../../legal-sources/592018ndcp/01.pdf",
+  "source_sha256": "7ac1b46e806ae9290125acb9ac1d535bcea768749d16941e9fae20bbf7343a1a",
+  "page_count": 48,
+  "render_dpi": 150,
+  "engine": "Tesseract 5.5.4 (vie+eng; OEM 1; PSM 3)",
+  "review_status": "UNREVIEWED",
+  "tesseract_version": "5.5.4",
+  "tsv_parser_version": 2,
+  "languages": [
+    "vie",
+    "eng"
+  ],
+  "traineddata_sha256": {
+    "vie": "b6b49293d95d0b6dbd8780174627e82c75be957b6f4ed9862155540d6b00bb45",
+    "eng": "8280aed0782fe27257a68ea10fe7ef324ca0f8d85bd2fd145d1c2b560bcb66ba"
+  },
+  "ocr_engine_mode": 1,
+  "page_segmentation_mode": 3,
+  "thread_limit": 1,
+  "page": 16,
+  "lines": [
+    {
+      "bbox": [
+        [
+          665.0,
+          136.0
+        ],
+        [
+          684.0,
+          136.0
+        ],
+        [
+          684.0,
+          153.0
+        ],
+        [
+          665.0,
+          153.0
+        ]
+      ],
+      "text": "16",
+      "confidence": 0.96509201
+    },
+    {
+      "bbox": [
+        [
+          326.0,
+          204.0
+        ],
+        [
+          1076.0,
+          204.0
+        ],
+        [
+          1076.0,
+          247.0
+        ],
+        [
+          326.0,
+          247.0
+        ]
+      ],
+      "text": "¢) Hàng hóa quá cảnh là vũ khí, đạn dược, vật liệu nổ và hàng hóa có độ",
+      "confidence": 0.959227325
+    },
+    {
+      "bbox": [
+        [
+          274.0,
+          235.0
+        ],
+        [
+          1077.0,
+          235.0
+        ],
+        [
+          1077.0,
+          277.0
+        ],
+        [
+          274.0,
+          277.0
+        ]
+      ],
+      "text": "nguy hiểm cao phải được giám sát bằng phương tiện kỹ thuật hoặc được giám",
+      "confidence": 0.9675804746666666
+    },
+    {
+      "bbox": [
+        [
+          276.0,
+          275.0
+        ],
+        [
+          661.0,
+          275.0
+        ],
+        [
+          661.0,
+          304.0
+        ],
+        [
+          276.0,
+          304.0
+        ]
+      ],
+      "text": "sát trực tiếp bằng công chức hải quan.",
+      "confidence": 0.96800093625
+    },
+    {
+      "bbox": [
+        [
+          328.0,
+          315.0
+        ],
+        [
+          1078.0,
+          315.0
+        ],
+        [
+          1078.0,
+          354.0
+        ],
+        [
+          328.0,
+          354.0
+        ]
+      ],
+      "text": "8. Trong trường hợp bất khả kháng mà không bảo đảm được nguyên",
+      "confidence": 0.9667792861538461
+    },
+    {
+      "bbox": [
+        [
+          276.0,
+          345.0
+        ],
+        [
+          1079.0,
+          345.0
+        ],
+        [
+          1079.0,
+          384.0
+        ],
+        [
+          276.0,
+          384.0
+        ]
+      ],
+      "text": "trạng hàng hóa, niêm phong hải quan, niêm phong của hãng vận chuyên hoặc",
+      "confidence": 0.9599488935714285
+    },
+    {
+      "bbox": [
+        [
+          276.0,
+          374.0
+        ],
+        [
+          1079.0,
+          374.0
+        ],
+        [
+          1079.0,
+          413.0
+        ],
+        [
+          276.0,
+          413.0
+        ]
+      ],
+      "text": "không vận chuyển hàng hóa theo đúng tuyên đường, thời gian thì người khai",
+      "confidence": 0.9665966300000001
+    },
+    {
+      "bbox": [
+        [
+          276.0,
+          403.0
+        ],
+        [
+          1080.0,
+          403.0
+        ],
+        [
+          1080.0,
+          442.0
+        ],
+        [
+          276.0,
+          442.0
+        ]
+      ],
+      "text": "hải quan, sau khi áp dụng các biện pháp cần thiết đề hạn chế và ngăn ngừa tôn",
+      "confidence": 0.96648301
+    },
+    {
+      "bbox": [
+        [
+          277.0,
+          431.0
+        ],
+        [
+          1080.0,
+          431.0
+        ],
+        [
+          1080.0,
+          470.0
+        ],
+        [
+          277.0,
+          470.0
+        ]
+      ],
+      "text": "thất xảy ra phải thông báo ngay với cơ quan hải quan để xử lý; trường hợp",
+      "confidence": 0.966930205882353
+    },
+    {
+      "bbox": [
+        [
+          273.0,
+          462.0
+        ],
+        [
+          1081.0,
+          462.0
+        ],
+        [
+          1081.0,
+          504.0
+        ],
+        [
+          273.0,
+          504.0
+        ]
+      ],
+      "text": "không thể thông báo ngay với cơ quan hải quan thì tùy theo địa bàn thích hợp",
+      "confidence": 0.954649101764706
+    },
+    {
+      "bbox": [
+        [
+          277.0,
+          487.0
+        ],
+        [
+          1081.0,
+          487.0
+        ],
+        [
+          1081.0,
+          528.0
+        ],
+        [
+          277.0,
+          528.0
+        ]
+      ],
+      "text": "thông báo với cơ quan công an, bộ đội biên phòng, cảnh sát biên để xác nhận",
+      "confidence": 0.9650928811764706
+    },
+    {
+      "bbox": [
+        [
+          278.0,
+          529.0
+        ],
+        [
+          656.0,
+          529.0
+        ],
+        [
+          656.0,
+          556.0
+        ],
+        [
+          278.0,
+          556.0
+        ]
+      ],
+      "text": "và xử lý theo quy định của pháp luật.",
+      "confidence": 0.9622385988888889
+    },
+    {
+      "bbox": [
+        [
+          330.0,
+          563.0
+        ],
+        [
+          1083.0,
+          563.0
+        ],
+        [
+          1083.0,
+          604.0
+        ],
+        [
+          330.0,
+          604.0
+        ]
+      ],
+      "text": "9. Việc chuyển tải, lưu kho, thay đổi phương thức vận chuyển, phương",
+      "confidence": 0.9481401769230768
+    },
+    {
+      "bbox": [
+        [
+          279.0,
+          599.0
+        ],
+        [
+          1083.0,
+          599.0
+        ],
+        [
+          1083.0,
+          635.0
+        ],
+        [
+          279.0,
+          635.0
+        ]
+      ],
+      "text": "tiện vận tải; chia tách, đóng chung container, toa xe chở hàng giữa hàng quá",
+      "confidence": 0.9680320686666667
+    },
+    {
+      "bbox": [
+        [
+          279.0,
+          626.0
+        ],
+        [
+          1083.0,
+          626.0
+        ],
+        [
+          1083.0,
+          662.0
+        ],
+        [
+          279.0,
+          662.0
+        ]
+      ],
+      "text": "cảnh với hàng hóa dự kiến nhập khẩu hoặc với hàng xuất khẩu đã làm xong",
+      "confidence": 0.954422345
+    },
+    {
+      "bbox": [
+        [
+          278.0,
+          657.0
+        ],
+        [
+          1083.0,
+          657.0
+        ],
+        [
+          1083.0,
+          691.0
+        ],
+        [
+          278.0,
+          691.0
+        ]
+      ],
+      "text": "thủ tục hải quan, hàng quá cảnh khác để xuất khẩu hoặc hàng quá cảnh đóng",
+      "confidence": 0.96201264375
+    },
+    {
+      "bbox": [
+        [
+          280.0,
+          687.0
+        ],
+        [
+          1083.0,
+          687.0
+        ],
+        [
+          1083.0,
+          719.0
+        ],
+        [
+          280.0,
+          719.0
+        ]
+      ],
+      "text": "chung với hàng hoá xuất khẩu, nhập khẩu gửi qua dịch vụ bưu chính, dịch vụ",
+      "confidence": 0.9616466287500001
+    },
+    {
+      "bbox": [
+        [
+          280.0,
+          711.0
+        ],
+        [
+          1083.0,
+          711.0
+        ],
+        [
+          1083.0,
+          750.0
+        ],
+        [
+          280.0,
+          750.0
+        ]
+      ],
+      "text": "chuyên phát nhanh được thực hiện tại khu vực cửa khẩu nhập, cửa khẩu xuất,",
+      "confidence": 0.9588792166666668
+    },
+    {
+      "bbox": [
+        [
+          280.0,
+          741.0
+        ],
+        [
+          1084.0,
+          741.0
+        ],
+        [
+          1084.0,
+          778.0
+        ],
+        [
+          280.0,
+          778.0
+        ]
+      ],
+      "text": "kho ngoại quan, địa điểm thu gom hàng lẻ (kho CFS), địa điểm làm thủ tục",
+      "confidence": 0.9613103868749999
+    },
+    {
+      "bbox": [
+        [
+          280.0,
+          774.0
+        ],
+        [
+          1084.0,
+          774.0
+        ],
+        [
+          1084.0,
+          807.0
+        ],
+        [
+          280.0,
+          807.0
+        ]
+      ],
+      "text": "hai quan tại cảng, xuất khẩu, nhập khẩu được thành lập trong nội địa (cảng",
+      "confidence": 0.9504380540000001
+    },
+    {
+      "bbox": [
+        [
+          280.0,
+          800.0
+        ],
+        [
+          1085.0,
+          800.0
+        ],
+        [
+          1085.0,
+          835.0
+        ],
+        [
+          280.0,
+          835.0
+        ]
+      ],
+      "text": "cạn), địa điểm tập kết kiểm tra giám sát tập trung đối với hàng bưu chính, địa",
+      "confidence": 0.9535289323529412
+    },
+    {
+      "bbox": [
+        [
+          281.0,
+          828.0
+        ],
+        [
+          1042.0,
+          828.0
+        ],
+        [
+          1042.0,
+          863.0
+        ],
+        [
+          281.0,
+          863.0
+        ]
+      ],
+      "text": "điểm tập kết, kiểm tra, giám sát tập trung đối với hàng chuyển phát nhanh.",
+      "confidence": 0.9551994526666667
+    },
+    {
+      "bbox": [
+        [
+          333.0,
+          877.0
+        ],
+        [
+          1084.0,
+          877.0
+        ],
+        [
+          1084.0,
+          912.0
+        ],
+        [
+          333.0,
+          912.0
+        ]
+      ],
+      "text": "Vị trí kho ngoại quan, kho CFS, cảng cạn, địa điểm tập kết kiểm tra giám",
+      "confidence": 0.96374831625
+    },
+    {
+      "bbox": [
+        [
+          282.0,
+          907.0
+        ],
+        [
+          1085.0,
+          907.0
+        ],
+        [
+          1085.0,
+          942.0
+        ],
+        [
+          282.0,
+          942.0
+        ]
+      ],
+      "text": "sát tập trung đối với hàng bưu chính, địa điểm tập kết, kiểm tra, giám sát tập",
+      "confidence": 0.9642105147058823
+    },
+    {
+      "bbox": [
+        [
+          281.0,
+          939.0
+        ],
+        [
+          1085.0,
+          939.0
+        ],
+        [
+          1085.0,
+          970.0
+        ],
+        [
+          281.0,
+          970.0
+        ]
+      ],
+      "text": "trung đối với hang chuyển phát nhanh quy định tại khoản này phù hợp với",
+      "confidence": 0.9585655719999999
+    },
+    {
+      "bbox": [
+        [
+          281.0,
+          970.0
+        ],
+        [
+          937.0,
+          970.0
+        ],
+        [
+          937.0,
+          1000.0
+        ],
+        [
+          281.0,
+          1000.0
+        ]
+      ],
+      "text": "tuyến đường quá cảnh theo quy định của Bộ Giao thông vận tải.",
+      "confidence": 0.9665084784615384
+    },
+    {
+      "bbox": [
+        [
+          312.0,
+          1018.0
+        ],
+        [
+          1086.0,
+          1018.0
+        ],
+        [
+          1086.0,
+          1054.0
+        ],
+        [
+          312.0,
+          1054.0
+        ]
+      ],
+      "text": "„ 10. Hàng hóa quá cảnh đóng chung container, toa xe chở hàng với hàng",
+      "confidence": 0.9360691833333334
+    },
+    {
+      "bbox": [
+        [
+          282.0,
+          1038.0
+        ],
+        [
+          1086.0,
+          1038.0
+        ],
+        [
+          1086.0,
+          1076.0
+        ],
+        [
+          282.0,
+          1076.0
+        ]
+      ],
+      "text": "xuất khẩu đã làm xong thủ tục hải quan, hàng hoá dự kiến nhập khẩu, hàng",
+      "confidence": 0.9679841181250001
+    },
+    {
+      "bbox": [
+        [
+          282.0,
+          1073.0
+        ],
+        [
+          1086.0,
+          1073.0
+        ],
+        [
+          1086.0,
+          1109.0
+        ],
+        [
+          282.0,
+          1109.0
+        ]
+      ],
+      "text": "hoá quá cảnh đóng chung hàng hoá xuất khẩu, nhập khẩu gửi qua dịch vụ bưu",
+      "confidence": 0.968032540625
+    },
+    {
+      "bbox": [
+        [
+          282.0,
+          1101.0
+        ],
+        [
+          958.0,
+          1101.0
+        ],
+        [
+          958.0,
+          1134.0
+        ],
+        [
+          282.0,
+          1134.0
+        ]
+      ],
+      "text": "chính, dịch vụ chuyển phát nhanh phải đáp ứng các điều kiện sau:",
+      "confidence": 0.9582238938461538
+    },
+    {
+      "bbox": [
+        [
+          334.0,
+          1149.0
+        ],
+        [
+          1087.0,
+          1149.0
+        ],
+        [
+          1087.0,
+          1185.0
+        ],
+        [
+          334.0,
+          1185.0
+        ]
+      ],
+      "text": "a) Hàng hóa phải được đóng gói riêng biệt (kiện, thùng, bao bi...) để",
+      "confidence": 0.9552735785714286
+    },
+    {
+      "bbox": [
+        [
+          282.0,
+          1180.0
+        ],
+        [
+          1030.0,
+          1180.0
+        ],
+        [
+          1030.0,
+          1215.0
+        ],
+        [
+          282.0,
+          1215.0
+        ]
+      ],
+      "text": "phân biệt hàng hóa quá cảnh đóng chung với hàng nhập khẩu, xuất khẩu;",
+      "confidence": 0.9682509135714286
+    },
+    {
+      "bbox": [
+        [
+          335.0,
+          1231.0
+        ],
+        [
+          1088.0,
+          1231.0
+        ],
+        [
+          1088.0,
+          1264.0
+        ],
+        [
+          335.0,
+          1264.0
+        ]
+      ],
+      "text": "b) Hàng hóa quá cảnh không thuộc trường hợp phải có giấy phép quá",
+      "confidence": 0.9449887364285714
+    },
+    {
+      "bbox": [
+        [
+          284.0,
+          1264.0
+        ],
+        [
+          1087.0,
+          1264.0
+        ],
+        [
+          1087.0,
+          1302.0
+        ],
+        [
+          284.0,
+          1302.0
+        ]
+      ],
+      "text": "cảnh theo quy định của pháp luật hoặc không thuộc mặt hàng là rượu, bia,",
+      "confidence": 0.967732392
+    },
+    {
+      "bbox": [
+        [
+          283.0,
+          1299.0
+        ],
+        [
+          370.0,
+          1299.0
+        ],
+        [
+          370.0,
+          1321.0
+        ],
+        [
+          283.0,
+          1321.0
+        ]
+      ],
+      "text": "thuôc lá;",
+      "confidence": 0.9447241600000001
+    },
+    {
+      "bbox": [
+        [
+          336.0,
+          1342.0
+        ],
+        [
+          1089.0,
+          1342.0
+        ],
+        [
+          1089.0,
+          1372.0
+        ],
+        [
+          336.0,
+          1372.0
+        ]
+      ],
+      "text": "c) Hàng hoá dự kiến nhập khẩu khi đóng chung container, toa xe chở",
+      "confidence": 0.9630644271428571
+    },
+    {
+      "bbox": [
+        [
+          284.0,
+          1368.0
+        ],
+        [
+          1088.0,
+          1368.0
+        ],
+        [
+          1088.0,
+          1410.0
+        ],
+        [
+          284.0,
+          1410.0
+        ]
+      ],
+      "text": "hàng với hàng quá cảnh khi chia tách tại các địa điểm (trừ cửa khẩu nhập) quy",
+      "confidence": 0.9661163341176472
+    },
+    {
+      "bbox": [
+        [
+          284.0,
+          1392.0
+        ],
+        [
+          1088.0,
+          1392.0
+        ],
+        [
+          1088.0,
+          1430.0
+        ],
+        [
+          284.0,
+          1430.0
+        ]
+      ],
+      "text": "định tại khoản 9 Điều này không thuộc danh mục hàng hoá nhập khẩu phải",
+      "confidence": 0.9666319573333334
+    },
+    {
+      "bbox": [
+        [
+          285.0,
+          1430.0
+        ],
+        [
+          1089.0,
+          1430.0
+        ],
+        [
+          1089.0,
+          1459.0
+        ],
+        [
+          285.0,
+          1459.0
+        ]
+      ],
+      "text": "làm thủ tục hải quan tại cửa khẩu nhập theo quy định của Thủ tướng Chính",
+      "confidence": 0.968098015625
+    },
+    {
+      "bbox": [
+        [
+          284.0,
+          1466.0
+        ],
+        [
+          328.0,
+          1466.0
+        ],
+        [
+          328.0,
+          1489.0
+        ],
+        [
+          284.0,
+          1489.0
+        ]
+      ],
+      "text": "phủ;",
+      "confidence": 0.96550888
+    }
+  ]
+}

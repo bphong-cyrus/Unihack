@@ -1,0 +1,817 @@
+{
+  "document_id": "126/2020/NĐ-CP",
+  "source_file": "../../legal-sources/1262020ndcp/01.pdf",
+  "source_sha256": "310648e80396d267610946458e7fdd71ba87ef538b009d6574ed21514de3f7ca",
+  "page_count": 119,
+  "render_dpi": 150,
+  "engine": "Tesseract 5.5.4 (vie+eng; OEM 1; PSM 3)",
+  "review_status": "UNREVIEWED",
+  "tesseract_version": "5.5.4",
+  "tsv_parser_version": 2,
+  "languages": [
+    "vie",
+    "eng"
+  ],
+  "traineddata_sha256": {
+    "vie": "b6b49293d95d0b6dbd8780174627e82c75be957b6f4ed9862155540d6b00bb45",
+    "eng": "8280aed0782fe27257a68ea10fe7ef324ca0f8d85bd2fd145d1c2b560bcb66ba"
+  },
+  "ocr_engine_mode": 1,
+  "page_segmentation_mode": 3,
+  "thread_limit": 1,
+  "page": 3,
+  "lines": [
+    {
+      "bbox": [
+        [
+          272.0,
+          157.0
+        ],
+        [
+          1133.0,
+          157.0
+        ],
+        [
+          1133.0,
+          196.0
+        ],
+        [
+          272.0,
+          196.0
+        ]
+      ],
+      "text": "b) Hộ kinh doanh, cá nhân kinh doanh nộp thuế theo phương pháp khoán",
+      "confidence": 0.965812547142857
+    },
+    {
+      "bbox": [
+        [
+          212.0,
+          197.0
+        ],
+        [
+          1133.0,
+          197.0
+        ],
+        [
+          1133.0,
+          231.0
+        ],
+        [
+          212.0,
+          231.0
+        ]
+      ],
+      "text": "tạm ngừng hoạt động, kinh doanh được cơ quan thuê xác định lại nghĩa vụ",
+      "confidence": 0.9670975146666666
+    },
+    {
+      "bbox": [
+        [
+          212.0,
+          231.0
+        ],
+        [
+          852.0,
+          231.0
+        ],
+        [
+          852.0,
+          259.0
+        ],
+        [
+          212.0,
+          259.0
+        ]
+      ],
+      "text": "thuê khoán theo quy định của Bộ trưởng Bộ Tài chính.",
+      "confidence": 0.9678786463636362
+    },
+    {
+      "bbox": [
+        [
+          271.0,
+          284.0
+        ],
+        [
+          1132.0,
+          284.0
+        ],
+        [
+          1132.0,
+          318.0
+        ],
+        [
+          271.0,
+          318.0
+        ]
+      ],
+      "text": "c) Người nộp thuế không được sử dụng hóa đơn và không phải nộp báo",
+      "confidence": 0.9655913546666668
+    },
+    {
+      "bbox": [
+        [
+          212.0,
+          317.0
+        ],
+        [
+          1132.0,
+          317.0
+        ],
+        [
+          1132.0,
+          351.0
+        ],
+        [
+          212.0,
+          351.0
+        ]
+      ],
+      "text": "cáo tình hình sử dụng hóa đơn. Trường hợp người nộp thuế được cơ quan",
+      "confidence": 0.9678104353333333
+    },
+    {
+      "bbox": [
+        [
+          211.0,
+          351.0
+        ],
+        [
+          1132.0,
+          351.0
+        ],
+        [
+          1132.0,
+          385.0
+        ],
+        [
+          211.0,
+          385.0
+        ]
+      ],
+      "text": "thuế chấp thuận sử dụng hoá đơn theo quy định của pháp luật về hoá đơn thì",
+      "confidence": 0.9689065588235293
+    },
+    {
+      "bbox": [
+        [
+          211.0,
+          385.0
+        ],
+        [
+          1113.0,
+          385.0
+        ],
+        [
+          1113.0,
+          419.0
+        ],
+        [
+          211.0,
+          419.0
+        ]
+      ],
+      "text": "phải nộp hồ sơ khai thuế, nộp báo cáo tình hình sử dụng hoá đơn theo quy định.",
+      "confidence": 0.9624871238888889
+    },
+    {
+      "bbox": [
+        [
+          271.0,
+          443.0
+        ],
+        [
+          1132.0,
+          443.0
+        ],
+        [
+          1132.0,
+          483.0
+        ],
+        [
+          271.0,
+          483.0
+        ]
+      ],
+      "text": "d) Người nộp thuế phải chấp hành các quyết định, thông báo của cơ quan",
+      "confidence": 0.964757432
+    },
+    {
+      "bbox": [
+        [
+          211.0,
+          476.0
+        ],
+        [
+          1132.0,
+          476.0
+        ],
+        [
+          1132.0,
+          511.0
+        ],
+        [
+          211.0,
+          511.0
+        ]
+      ],
+      "text": "quản lý thuế về đôn đốc thu nợ, cưỡng chế thi hành quyết định hành chính về",
+      "confidence": 0.9658070229411764
+    },
+    {
+      "bbox": [
+        [
+          210.0,
+          510.0
+        ],
+        [
+          1132.0,
+          510.0
+        ],
+        [
+          1132.0,
+          555.0
+        ],
+        [
+          210.0,
+          555.0
+        ]
+      ],
+      "text": "quản lý thuế, thanh tra, kiểm tra việc chấp hành pháp luật thuế và xử lý hành",
+      "confidence": 0.9647422647058823
+    },
+    {
+      "bbox": [
+        [
+          210.0,
+          543.0
+        ],
+        [
+          1104.0,
+          543.0
+        ],
+        [
+          1104.0,
+          578.0
+        ],
+        [
+          210.0,
+          578.0
+        ]
+      ],
+      "text": "vi vi phạm hành chính về quản lý thuế theo quy định của Luật Quản lý thuế.",
+      "confidence": 0.9573329064705882
+    },
+    {
+      "bbox": [
+        [
+          270.0,
+          599.0
+        ],
+        [
+          1133.0,
+          599.0
+        ],
+        [
+          1133.0,
+          638.0
+        ],
+        [
+          270.0,
+          638.0
+        ]
+      ],
+      "text": "3. Người nộp thuế tiếp tục hoạt động, kinh doanh trở lại đúng thời hạn đã",
+      "confidence": 0.96875441125
+    },
+    {
+      "bbox": [
+        [
+          210.0,
+          641.0
+        ],
+        [
+          1132.0,
+          641.0
+        ],
+        [
+          1132.0,
+          670.0
+        ],
+        [
+          210.0,
+          670.0
+        ]
+      ],
+      "text": "đăng ký thì không phải thông báo với cơ quan nơi đã đăng ký tạm ngừng hoạt",
+      "confidence": 0.9401761164705883
+    },
+    {
+      "bbox": [
+        [
+          210.0,
+          676.0
+        ],
+        [
+          590.0,
+          676.0
+        ],
+        [
+          590.0,
+          703.0
+        ],
+        [
+          210.0,
+          703.0
+        ]
+      ],
+      "text": "động, kinh doanh theo quy định.",
+      "confidence": 0.9656957483333334
+    },
+    {
+      "bbox": [
+        [
+          269.0,
+          728.0
+        ],
+        [
+          1132.0,
+          728.0
+        ],
+        [
+          1132.0,
+          762.0
+        ],
+        [
+          269.0,
+          762.0
+        ]
+      ],
+      "text": "Trường hợp người nộp thuế hoạt động, kinh doanh trở lại trước thời hạn",
+      "confidence": 0.9683018607142857
+    },
+    {
+      "bbox": [
+        [
+          209.0,
+          767.0
+        ],
+        [
+          1132.0,
+          767.0
+        ],
+        [
+          1132.0,
+          801.0
+        ],
+        [
+          209.0,
+          801.0
+        ]
+      ],
+      "text": "thì phải thông báo với cơ quan nơi đã đăng ký tạm ngùng hoạt động, kinh",
+      "confidence": 0.948670965
+    },
+    {
+      "bbox": [
+        [
+          210.0,
+          794.0
+        ],
+        [
+          1131.0,
+          794.0
+        ],
+        [
+          1131.0,
+          841.0
+        ],
+        [
+          210.0,
+          841.0
+        ]
+      ],
+      "text": "doanh và phải thực hiện đầy đủ các quy định về thuế, nộp hồ sơ khai thuế,",
+      "confidence": 0.9652800929411763
+    },
+    {
+      "bbox": [
+        [
+          209.0,
+          834.0
+        ],
+        [
+          842.0,
+          834.0
+        ],
+        [
+          842.0,
+          864.0
+        ],
+        [
+          209.0,
+          864.0
+        ]
+      ],
+      "text": "nộp báo cáo tình hình sử dụng hóa đơn theo quy định.",
+      "confidence": 0.9681070316666667
+    },
+    {
+      "bbox": [
+        [
+          269.0,
+          886.0
+        ],
+        [
+          1128.0,
+          886.0
+        ],
+        [
+          1128.0,
+          926.0
+        ],
+        [
+          269.0,
+          926.0
+        ]
+      ],
+      "text": "Đối với người nộp thuế thuộc trường hợp quy định tại điểm c khoản 1",
+      "confidence": 0.9568242133333333
+    },
+    {
+      "bbox": [
+        [
+          210.0,
+          920.0
+        ],
+        [
+          1131.0,
+          920.0
+        ],
+        [
+          1131.0,
+          959.0
+        ],
+        [
+          210.0,
+          959.0
+        ]
+      ],
+      "text": "Điều này thì thực hiện thông báo đến cơ quan thuế quản lý trực tiếp chậm",
+      "confidence": 0.96782804
+    },
+    {
+      "bbox": [
+        [
+          209.0,
+          955.0
+        ],
+        [
+          1131.0,
+          955.0
+        ],
+        [
+          1131.0,
+          988.0
+        ],
+        [
+          209.0,
+          988.0
+        ]
+      ],
+      "text": "nhất là 01 ngày làm việc trước khi tiếp tục hoạt động, kinh doanh trở lại trước",
+      "confidence": 0.96731461
+    },
+    {
+      "bbox": [
+        [
+          209.0,
+          995.0
+        ],
+        [
+          311.0,
+          995.0
+        ],
+        [
+          311.0,
+          1021.0
+        ],
+        [
+          209.0,
+          1021.0
+        ]
+      ],
+      "text": "thời hạn.",
+      "confidence": 0.9696860100000001
+    },
+    {
+      "bbox": [
+        [
+          269.0,
+          1045.0
+        ],
+        [
+          1131.0,
+          1045.0
+        ],
+        [
+          1131.0,
+          1084.0
+        ],
+        [
+          269.0,
+          1084.0
+        ]
+      ],
+      "text": "4. Người nộp thuế đăng ký thuế trực tiếp với cơ quan thuế không được",
+      "confidence": 0.9648603706666666
+    },
+    {
+      "bbox": [
+        [
+          210.0,
+          1079.0
+        ],
+        [
+          1131.0,
+          1079.0
+        ],
+        [
+          1131.0,
+          1125.0
+        ],
+        [
+          210.0,
+          1125.0
+        ]
+      ],
+      "text": "đăng ký tạm ngừng hoạt động, kinh doanh khi cơ quan thuế đã có Thông báo",
+      "confidence": 0.96863922625
+    },
+    {
+      "bbox": [
+        [
+          209.0,
+          1113.0
+        ],
+        [
+          951.0,
+          1113.0
+        ],
+        [
+          951.0,
+          1146.0
+        ],
+        [
+          209.0,
+          1146.0
+        ]
+      ],
+      "text": "về việc người nộp thuế không hoạt động tại địa chỉ đã đăng ký.",
+      "confidence": 0.9684709721428572
+    },
+    {
+      "bbox": [
+        [
+          269.0,
+          1172.0
+        ],
+        [
+          1102.0,
+          1172.0
+        ],
+        [
+          1102.0,
+          1204.0
+        ],
+        [
+          269.0,
+          1204.0
+        ]
+      ],
+      "text": "Điều 5. Quần lý thu các khoản thu khác thuộc ngân sách nhà nước",
+      "confidence": 0.9645346442857143
+    },
+    {
+      "bbox": [
+        [
+          273.0,
+          1232.0
+        ],
+        [
+          1131.0,
+          1232.0
+        ],
+        [
+          1131.0,
+          1266.0
+        ],
+        [
+          273.0,
+          1266.0
+        ]
+      ],
+      "text": "1. Việc quần lý thu các khoản thu khác thuộc ngân sách nhà nước theo",
+      "confidence": 0.9491975640000001
+    },
+    {
+      "bbox": [
+        [
+          210.0,
+          1261.0
+        ],
+        [
+          1132.0,
+          1261.0
+        ],
+        [
+          1132.0,
+          1303.0
+        ],
+        [
+          210.0,
+          1303.0
+        ]
+      ],
+      "text": "quy định tại khoản 2, khoản 3 Điều 3 và khoản 4 Điều 151 của Luật Quản lý",
+      "confidence": 0.9670110538888889
+    },
+    {
+      "bbox": [
+        [
+          209.0,
+          1295.0
+        ],
+        [
+          743.0,
+          1295.0
+        ],
+        [
+          743.0,
+          1329.0
+        ],
+        [
+          209.0,
+          1329.0
+        ]
+      ],
+      "text": "thuế được thực hiện theo nguyên tắc như sau:",
+      "confidence": 0.9663798100000001
+    },
+    {
+      "bbox": [
+        [
+          270.0,
+          1353.0
+        ],
+        [
+          1132.0,
+          1353.0
+        ],
+        [
+          1132.0,
+          1400.0
+        ],
+        [
+          270.0,
+          1400.0
+        ]
+      ],
+      "text": "a) Trường hợp tại các văn bản quy phạm pháp luật quy định đối với từng",
+      "confidence": 0.9641447775
+    },
+    {
+      "bbox": [
+        [
+          210.0,
+          1389.0
+        ],
+        [
+          1132.0,
+          1389.0
+        ],
+        [
+          1132.0,
+          1425.0
+        ],
+        [
+          210.0,
+          1425.0
+        ]
+      ],
+      "text": "khoản thu có quy định về nội dung quản lý thu thì thực hiện theo \"quy định",
+      "confidence": 0.949904645882353
+    },
+    {
+      "bbox": [
+        [
+          210.0,
+          1421.0
+        ],
+        [
+          1131.0,
+          1421.0
+        ],
+        [
+          1131.0,
+          1456.0
+        ],
+        [
+          210.0,
+          1456.0
+        ]
+      ],
+      "text": "tại văn bản đó, trừ trường hợp được quy định tại Luật Quản lý thuế và Nghị",
+      "confidence": 0.9687493988235295
+    },
+    {
+      "bbox": [
+        [
+          210.0,
+          1464.0
+        ],
+        [
+          318.0,
+          1464.0
+        ],
+        [
+          318.0,
+          1491.0
+        ],
+        [
+          210.0,
+          1491.0
+        ]
+      ],
+      "text": "định này.",
+      "confidence": 0.969878655
+    },
+    {
+      "bbox": [
+        [
+          270.0,
+          1514.0
+        ],
+        [
+          1133.0,
+          1514.0
+        ],
+        [
+          1133.0,
+          1555.0
+        ],
+        [
+          270.0,
+          1555.0
+        ]
+      ],
+      "text": "b) Trường hợp tại các văn bản quy phạm pháp luật quy định đối với từng",
+      "confidence": 0.9647365000000001
+    },
+    {
+      "bbox": [
+        [
+          210.0,
+          1554.0
+        ],
+        [
+          1133.0,
+          1554.0
+        ],
+        [
+          1133.0,
+          1589.0
+        ],
+        [
+          210.0,
+          1589.0
+        ]
+      ],
+      "text": "khoản thu không quy định ve nội dung quản lý thu thì thực hiện theo quy định",
+      "confidence": 0.9624695711764706
+    },
+    {
+      "bbox": [
+        [
+          210.0,
+          1590.0
+        ],
+        [
+          462.0,
+          1590.0
+        ],
+        [
+          462.0,
+          1617.0
+        ],
+        [
+          210.0,
+          1617.0
+        ]
+      ],
+      "text": "tại khoản 2 Điêu này.",
+      "confidence": 0.936162276
+    }
+  ]
+}

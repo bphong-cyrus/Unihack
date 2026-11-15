@@ -1,0 +1,305 @@
+{
+  "document_id": "128/2020/NĐ-CP",
+  "source_sha256": "76c09dc2006de464217953328ede89bcb7914250c9c0c86fab01e1cf76e23fb8",
+  "page_count": 45,
+  "review_status": "UNREVIEWED",
+  "candidates": [
+    {
+      "article": "1",
+      "page": 1,
+      "line_index": 36,
+      "text": "Điều 1. Phạm vi điều chỉnh",
+      "confidence": 0.7192510928526633,
+      "record_file": "page-001.json"
+    },
+    {
+      "article": "2",
+      "page": 2,
+      "line_index": 11,
+      "text": "Điều 2. Đối tượng áp dụng",
+      "confidence": 0.7909138747432265,
+      "record_file": "page-002.json"
+    },
+    {
+      "article": "3",
+      "page": 2,
+      "line_index": 39,
+      "text": "Điều 3. Tình tiết giảm nhẹ",
+      "confidence": 0.8489631715268038,
+      "record_file": "page-002.json"
+    },
+    {
+      "article": "4",
+      "page": 3,
+      "line_index": 0,
+      "text": "Điều 4. Thời hiệu xử phạt vi",
+      "confidence": 0.8569616785841514,
+      "record_file": "page-003.json"
+    },
+    {
+      "article": "5",
+      "page": 3,
+      "line_index": 31,
+      "text": "Điều 5. Hình thức xử phạt, biện pháp khắc phục hậu",
+      "confidence": 0.7353730581179574,
+      "record_file": "page-003.json"
+    },
+    {
+      "article": "6",
+      "page": 5,
+      "line_index": 1,
+      "text": "Điều 6. Những trường hợp không xử phạt vi phạm hành chính trong",
+      "confidence": 0.70308389828868,
+      "record_file": "page-005.json"
+    },
+    {
+      "article": "7",
+      "page": 5,
+      "line_index": 55,
+      "text": "Điều 7. Vi phạm quy định về thời hạn làm thủ tục hải quan, nộp hồ",
+      "confidence": 0.7860734581795391,
+      "record_file": "page-005.json"
+    },
+    {
+      "article": "8",
+      "page": 8,
+      "line_index": 26,
+      "text": "Điều 8. Vi phạm quy định về khai hải quan",
+      "confidence": 0.6696004995957229,
+      "record_file": "page-008.json"
+    },
+    {
+      "article": "9",
+      "page": 10,
+      "line_index": 14,
+      "text": "Điều 9. Vi phạm quy định về khai thuế dẫn đến thiếu số tiền thuế",
+      "confidence": 0.8369967804437178,
+      "record_file": "page-010.json"
+    },
+    {
+      "article": "10",
+      "page": 12,
+      "line_index": 14,
+      "text": "Điều 10.",
+      "confidence": 0.6492377893789572,
+      "record_file": "page-012.json"
+    },
+    {
+      "article": "11",
+      "page": 14,
+      "line_index": 31,
+      "text": "Điều 11. Vi phạm quy định về kiểm tra hải quan, thanh tra",
+      "confidence": 0.7354620283685321,
+      "record_file": "page-014.json"
+    },
+    {
+      "article": "12",
+      "page": 17,
+      "line_index": 15,
+      "text": "Điều 12. Vi phạm quy định về giám sát hải quan",
+      "confidence": 0.7742983318603129,
+      "record_file": "page-017.json"
+    },
+    {
+      "article": "13",
+      "page": 19,
+      "line_index": 26,
+      "text": "Điều 13. Vi phạm quy định về kiểm soát hải quan",
+      "confidence": 0.7208805311201258,
+      "record_file": "page-019.json"
+    },
+    {
+      "article": "14",
+      "page": 21,
+      "line_index": 15,
+      "text": "Điều 14. Xử phạt đối với hành vi trốn thuế",
+      "confidence": 0.7113473431986819,
+      "record_file": "page-021.json"
+    },
+    {
+      "article": "15",
+      "page": 22,
+      "line_index": 36,
+      "text": "Điều 15. Vi phạm quy định về xuất khẩu, nhập khẩu, vận chuyển",
+      "confidence": 0.6995929437611609,
+      "record_file": "page-022.json"
+    },
+    {
+      "article": "16",
+      "page": 24,
+      "line_index": 1,
+      "text": "Điều 16. Xuất khẩu, nhập khẩu, kinh doanh tạm nhập, tái xuất,",
+      "confidence": 0.45910689046630093,
+      "record_file": "page-024.json"
+    },
+    {
+      "article": "17",
+      "page": 24,
+      "line_index": 48,
+      "text": "Điều 17. Xuất khẩu, nhập khẩu, kinh doanh tạm nhập, tái xuất;",
+      "confidence": 0.47423940556552185,
+      "record_file": "page-024.json"
+    },
+    {
+      "article": "18",
+      "page": 25,
+      "line_index": 29,
+      "text": "Điều 18. Vi phạm quy định về xuất khẩu, nhập khẩu hàng hóa theo",
+      "confidence": 0.8619919525056715,
+      "record_file": "page-025.json"
+    },
+    {
+      "article": "19",
+      "page": 26,
+      "line_index": 30,
+      "text": "Điều 19. Vi phạm quy định về xuất khẩu, nhập khẩu hàng hóa thuộc",
+      "confidence": 0.8521554762538522,
+      "record_file": "page-026.json"
+    },
+    {
+      "article": "20",
+      "page": 27,
+      "line_index": 1,
+      "text": "Điều 20. Vi phạm quy định về tạm nhập, tái xuất, tạm xuất; tái nhập",
+      "confidence": 0.6113038485671565,
+      "record_file": "page-027.json"
+    },
+    {
+      "article": "21",
+      "page": 28,
+      "line_index": 34,
+      "text": "Điều 21. Vi phạm quy định về quá cảnh, chuyển khẩu",
+      "confidence": 0.777726665518693,
+      "record_file": "page-028.json"
+    },
+    {
+      "article": "22",
+      "page": 29,
+      "line_index": 32,
+      "text": "Điều 22. Vi phạm quy định về ghi nhãn hàng hóa nhập khẩu",
+      "confidence": 0.8418248527405279,
+      "record_file": "page-029.json"
+    },
+    {
+      "article": "23",
+      "page": 31,
+      "line_index": 1,
+      "text": "Điều 23. Vi phạm quy định về quản lý kho ngoại quan, kho bảo thuế,",
+      "confidence": 0.8058574625183089,
+      "record_file": "page-031.json"
+    },
+    {
+      "article": "24",
+      "page": 32,
+      "line_index": 42,
+      "text": "Điều 24. Vi phạm quy định về quản lý hàng hóa xuất khẩu, nhập",
+      "confidence": 0.4894514767421682,
+      "record_file": "page-032.json"
+    },
+    {
+      "article": "25",
+      "page": 33,
+      "line_index": 33,
+      "text": "Điều 25. Vi phạm quy định liên quan đến cưỡng chế thi hành",
+      "confidence": 0.6182311873247704,
+      "record_file": "page-033.json"
+    },
+    {
+      "article": "26",
+      "page": 34,
+      "line_index": 5,
+      "text": "Điều 26. Áp dụng các biện pháp ngăn chặn vi phạm hành chính và",
+      "confidence": 0.5643732723694148,
+      "record_file": "page-034.json"
+    },
+    {
+      "article": "27",
+      "page": 34,
+      "line_index": 27,
+      "text": "Điều 27. Thẩm quyền lập biên bản vi phạm hành chính",
+      "confidence": 0.628994248709662,
+      "record_file": "page-034.json"
+    },
+    {
+      "article": "28",
+      "page": 34,
+      "line_index": 50,
+      "text": "Điều 28. Thẩm quyền xử phạt của Chủ tịch Ủy ban nhân dân các cấp",
+      "confidence": 0.7534600102287866,
+      "record_file": "page-034.json"
+    },
+    {
+      "article": "29",
+      "page": 35,
+      "line_index": 14,
+      "text": "Điều 29. Thẩm quyền xử phạt vi phạm hành chính của hải quan",
+      "confidence": 0.583938750802905,
+      "record_file": "page-035.json"
+    },
+    {
+      "article": "30",
+      "page": 36,
+      "line_index": 47,
+      "text": "Điều 30. Thẩm",
+      "confidence": 0.9545306625552522,
+      "record_file": "page-036.json"
+    },
+    {
+      "article": "31",
+      "page": 37,
+      "line_index": 27,
+      "text": "Điều 31. Thẩm quyền xử phạt của Cảnh sát biển",
+      "confidence": 0.6595585880136926,
+      "record_file": "page-037.json"
+    },
+    {
+      "article": "32",
+      "page": 39,
+      "line_index": 5,
+      "text": "Điều 32. Nguyên tắc xác định và",
+      "confidence": 0.8044317964714829,
+      "record_file": "page-039.json"
+    },
+    {
+      "article": "33",
+      "page": 42,
+      "line_index": 30,
+      "text": "Điều 33. Thủ tục xử phạt, thi hành quyết định xử phạt",
+      "confidence": 0.6309549473091818,
+      "record_file": "page-042.json"
+    },
+    {
+      "article": "34",
+      "page": 42,
+      "line_index": 51,
+      "text": "Điều 34. Miễn, giảm tiền phạt vi phạm hành chính trong lĩnh vực hải quan",
+      "confidence": 0.7487670131822782,
+      "record_file": "page-042.json"
+    },
+    {
+      "article": "35",
+      "page": 44,
+      "line_index": 11,
+      "text": "Điều 35. Hiệu Iực thi hành",
+      "confidence": 0.7633665300812277,
+      "record_file": "page-044.json"
+    },
+    {
+      "article": "36",
+      "page": 44,
+      "line_index": 29,
+      "text": "Điều 36. Điều khoản chuyển tiếp",
+      "confidence": 0.9032206055116202,
+      "record_file": "page-044.json"
+    },
+    {
+      "article": "37",
+      "page": 44,
+      "line_index": 47,
+      "text": "Điều 37. Trách nhiệm thi hành",
+      "confidence": 0.8322540663579073,
+      "record_file": "page-044.json"
+    }
+  ],
+  "limitations": "Heuristic headings may be missing or refer to amendments; verify against original pages."
+}

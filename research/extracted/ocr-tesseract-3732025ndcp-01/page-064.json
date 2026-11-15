@@ -1,0 +1,333 @@
+{
+  "document_id": "373/2025/NĐ-CP",
+  "source_file": "../../legal-sources/3732025ndcp/01.pdf",
+  "source_sha256": "6ca9d1a16b5d47c7aa23f06f243dc59bd2e9dda4d70f3f3c892e4254d2c7d914",
+  "page_count": 74,
+  "render_dpi": 150,
+  "engine": "Tesseract 5.5.4 (vie+eng; OEM 1; PSM 3)",
+  "review_status": "UNREVIEWED",
+  "tesseract_version": "5.5.4",
+  "tsv_parser_version": 2,
+  "languages": [
+    "vie",
+    "eng"
+  ],
+  "traineddata_sha256": {
+    "vie": "b6b49293d95d0b6dbd8780174627e82c75be957b6f4ed9862155540d6b00bb45",
+    "eng": "8280aed0782fe27257a68ea10fe7ef324ca0f8d85bd2fd145d1c2b560bcb66ba"
+  },
+  "ocr_engine_mode": 1,
+  "page_segmentation_mode": 3,
+  "thread_limit": 1,
+  "page": 64,
+  "lines": [
+    {
+      "bbox": [
+        [
+          1126.0,
+          27.0
+        ],
+        [
+          1128.0,
+          27.0
+        ],
+        [
+          1128.0,
+          92.0
+        ],
+        [
+          1126.0,
+          92.0
+        ]
+      ],
+      "text": "|",
+      "confidence": 0.90784317
+    },
+    {
+      "bbox": [
+        [
+          235.0,
+          120.0
+        ],
+        [
+          1114.0,
+          120.0
+        ],
+        [
+          1114.0,
+          158.0
+        ],
+        [
+          235.0,
+          158.0
+        ]
+      ],
+      "text": "5. Đất, mặt nước dùng vào mục đích khác: .....................-cceeeeeneeeesnensee re: >",
+      "confidence": 0.7980898091666667
+    },
+    {
+      "bbox": [
+        [
+          234.0,
+          167.0
+        ],
+        [
+          748.0,
+          167.0
+        ],
+        [
+          748.0,
+          199.0
+        ],
+        [
+          234.0,
+          199.0
+        ]
+      ],
+      "text": "<Trường hợp phải nộp thuế thu nhập cá nhân>:",
+      "confidence": 0.9547835888888889
+    },
+    {
+      "bbox": [
+        [
+          234.0,
+          206.0
+        ],
+        [
+          787.0,
+          206.0
+        ],
+        [
+          787.0,
+          244.0
+        ],
+        [
+          234.0,
+          244.0
+        ]
+      ],
+      "text": "Lấy thông tin trên tờ khai thuế của người nộp thuế.",
+      "confidence": 0.9584202027272727
+    },
+    {
+      "bbox": [
+        [
+          235.0,
+          257.0
+        ],
+        [
+          1125.0,
+          257.0
+        ],
+        [
+          1125.0,
+          290.0
+        ],
+        [
+          235.0,
+          290.0
+        ]
+      ],
+      "text": "IV. Thời gian sử dụng dat vào mục đích thuộc đôi tượng phải nộp tiên thuê",
+      "confidence": 0.941145286875
+    },
+    {
+      "bbox": [
+        [
+          175.0,
+          284.0
+        ],
+        [
+          1124.0,
+          284.0
+        ],
+        [
+          1124.0,
+          321.0
+        ],
+        [
+          175.0,
+          321.0
+        ]
+      ],
+      "text": "đất theo quy định của Luật Đắt đai: .....................seeneeenennnneeeeeeeee nen nen",
+      "confidence": 0.6731690781818181
+    },
+    {
+      "bbox": [
+        [
+          235.0,
+          318.0
+        ],
+        [
+          1125.0,
+          318.0
+        ],
+        [
+          1125.0,
+          369.0
+        ],
+        [
+          235.0,
+          369.0
+        ]
+      ],
+      "text": "Cơ quan thuế đề nghị <Tén cơ quan cung cấp thông tin> cung cấp thông tin nêu",
+      "confidence": 0.9501355517647059
+    },
+    {
+      "bbox": [
+        [
+          175.0,
+          359.0
+        ],
+        [
+          1125.0,
+          359.0
+        ],
+        [
+          1125.0,
+          397.0
+        ],
+        [
+          175.0,
+          397.0
+        ]
+      ],
+      "text": "trên cho cơ quan thuế chậm nhất là 03 ngày làm việc kể từ ngày nhận được văn bản của",
+      "confidence": 0.9652474215
+    },
+    {
+      "bbox": [
+        [
+          176.0,
+          386.0
+        ],
+        [
+          1124.0,
+          386.0
+        ],
+        [
+          1124.0,
+          433.0
+        ],
+        [
+          176.0,
+          433.0
+        ]
+      ],
+      "text": "cơ quan thuế dé có can cứ xác định <tiền thuê đất hoặc thuế thu nhập cá nhân> phải nộp",
+      "confidence": 0.944446563
+    },
+    {
+      "bbox": [
+        [
+          176.0,
+          423.0
+        ],
+        [
+          748.0,
+          423.0
+        ],
+        [
+          748.0,
+          454.0
+        ],
+        [
+          176.0,
+          454.0
+        ]
+      ],
+      "text": "và ban hành Thông báo nộp tiền cho người nộp thuế.",
+      "confidence": 0.9597175390909091
+    },
+    {
+      "bbox": [
+        [
+          236.0,
+          466.0
+        ],
+        [
+          675.0,
+          466.0
+        ],
+        [
+          675.0,
+          497.0
+        ],
+        [
+          236.0,
+          497.0
+        ]
+      ],
+      "text": "Trân trọng cảm ơn sự phối hợp công tác.",
+      "confidence": 0.9696202011111111
+    },
+    {
+      "bbox": [
+        [
+          185.0,
+          553.0
+        ],
+        [
+          1072.0,
+          553.0
+        ],
+        [
+          1072.0,
+          590.0
+        ],
+        [
+          185.0,
+          590.0
+        ]
+      ],
+      "text": "Noi nhận: THỦ TRƯỚNG CƠ QUAN THUÊ",
+      "confidence": 0.9216137485714286
+    },
+    {
+      "bbox": [
+        [
+          184.0,
+          579.0
+        ],
+        [
+          1026.0,
+          579.0
+        ],
+        [
+          1026.0,
+          633.0
+        ],
+        [
+          184.0,
+          633.0
+        ]
+      ],
+      "text": "- Như tren: (Ký, ghi rõ họ tên, đóng dấu)",
+      "confidence": 0.8519974659999999
+    },
+    {
+      "bbox": [
+        [
+          186.0,
+          618.0
+        ],
+        [
+          372.0,
+          618.0
+        ],
+        [
+          372.0,
+          632.0
+        ],
+        [
+          186.0,
+          632.0
+        ]
+      ],
+      "text": "-Lưu: mm",
+      "confidence": 0.615145645
+    }
+  ]
+}

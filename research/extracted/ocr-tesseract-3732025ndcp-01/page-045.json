@@ -1,0 +1,157 @@
+{
+  "document_id": "373/2025/NĐ-CP",
+  "source_file": "../../legal-sources/3732025ndcp/01.pdf",
+  "source_sha256": "6ca9d1a16b5d47c7aa23f06f243dc59bd2e9dda4d70f3f3c892e4254d2c7d914",
+  "page_count": 74,
+  "render_dpi": 150,
+  "engine": "Tesseract 5.5.4 (vie+eng; OEM 1; PSM 3)",
+  "review_status": "UNREVIEWED",
+  "tesseract_version": "5.5.4",
+  "tsv_parser_version": 2,
+  "languages": [
+    "vie",
+    "eng"
+  ],
+  "traineddata_sha256": {
+    "vie": "b6b49293d95d0b6dbd8780174627e82c75be957b6f4ed9862155540d6b00bb45",
+    "eng": "8280aed0782fe27257a68ea10fe7ef324ca0f8d85bd2fd145d1c2b560bcb66ba"
+  },
+  "ocr_engine_mode": 1,
+  "page_segmentation_mode": 3,
+  "thread_limit": 1,
+  "page": 45,
+  "lines": [
+    {
+      "bbox": [
+        [
+          859.0,
+          105.0
+        ],
+        [
+          886.0,
+          105.0
+        ],
+        [
+          886.0,
+          126.0
+        ],
+        [
+          859.0,
+          126.0
+        ]
+      ],
+      "text": "37",
+      "confidence": 0.95706741
+    },
+    {
+      "bbox": [
+        [
+          173.0,
+          167.0
+        ],
+        [
+          1231.0,
+          167.0
+        ],
+        [
+          1231.0,
+          201.0
+        ],
+        [
+          173.0,
+          201.0
+        ]
+      ],
+      "text": "“Tôi cam đoan số liệu khai trên là đúng và hoàn toàn chịu trách nhiệm trước pháp luật về những số liệu đã khai.",
+      "confidence": 0.9440400741666667
+    },
+    {
+      "bbox": [
+        [
+          135.0,
+          239.0
+        ],
+        [
+          1452.0,
+          239.0
+        ],
+        [
+          1452.0,
+          276.0
+        ],
+        [
+          135.0,
+          276.0
+        ]
+      ],
+      "text": "NHÂN VIÊN ĐẠILÝ THUÊ SỔ He , ngày.....tháng ......năm.......",
+      "confidence": 0.6182483111111111
+    },
+    {
+      "bbox": [
+        [
+          135.0,
+          266.0
+        ],
+        [
+          1527.0,
+          266.0
+        ],
+        [
+          1527.0,
+          307.0
+        ],
+        [
+          135.0,
+          307.0
+        ]
+      ],
+      "text": "Họ và tên:....... _. .. NGƯỜI NỘP THUÊ hoặc .",
+      "confidence": 0.6457611230000001
+    },
+    {
+      "bbox": [
+        [
+          136.0,
+          301.0
+        ],
+        [
+          1532.0,
+          301.0
+        ],
+        [
+          1532.0,
+          331.0
+        ],
+        [
+          136.0,
+          331.0
+        ]
+      ],
+      "text": "Chứng chỉ hành nghề sb:....... ĐẠI DIỆN HỢP PHAP CUA NGƯỜI NỘP THUÊ,",
+      "confidence": 0.9134766515384617
+    },
+    {
+      "bbox": [
+        [
+          960.0,
+          327.0
+        ],
+        [
+          1566.0,
+          327.0
+        ],
+        [
+          1566.0,
+          356.0
+        ],
+        [
+          960.0,
+          356.0
+        ]
+      ],
+      "text": "(Ký, ghi rõ họ tên; chức vụ và đóng dấu (nếu có)/Ký điện tử)",
+      "confidence": 0.9352966471428572
+    }
+  ]
+}

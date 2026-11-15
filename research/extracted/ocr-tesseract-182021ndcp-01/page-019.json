@@ -1,0 +1,839 @@
+{
+  "document_id": "18/2021/NĐ-CP",
+  "source_file": "../../legal-sources/182021ndcp/01.pdf",
+  "source_sha256": "cb0bf16ab3ee6554929e0d9d2cc4f180f51b8ea10ddd30a37309353edeb050d8",
+  "page_count": 114,
+  "render_dpi": 150,
+  "engine": "Tesseract 5.5.4 (vie+eng; OEM 1; PSM 3)",
+  "review_status": "UNREVIEWED",
+  "tesseract_version": "5.5.4",
+  "tsv_parser_version": 2,
+  "languages": [
+    "vie",
+    "eng"
+  ],
+  "traineddata_sha256": {
+    "vie": "b6b49293d95d0b6dbd8780174627e82c75be957b6f4ed9862155540d6b00bb45",
+    "eng": "8280aed0782fe27257a68ea10fe7ef324ca0f8d85bd2fd145d1c2b560bcb66ba"
+  },
+  "ocr_engine_mode": 1,
+  "page_segmentation_mode": 3,
+  "thread_limit": 1,
+  "page": 19,
+  "lines": [
+    {
+      "bbox": [
+        [
+          663.0,
+          45.0
+        ],
+        [
+          687.0,
+          45.0
+        ],
+        [
+          687.0,
+          66.0
+        ],
+        [
+          663.0,
+          66.0
+        ]
+      ],
+      "text": "19",
+      "confidence": 0.9690879099999999
+    },
+    {
+      "bbox": [
+        [
+          272.0,
+          130.0
+        ],
+        [
+          1138.0,
+          130.0
+        ],
+        [
+          1138.0,
+          169.0
+        ],
+        [
+          272.0,
+          169.0
+        ]
+      ],
+      "text": "Cơ quan hải quan căn cứ hồ sơ thông báo Danh mục miễn thuế, danh",
+      "confidence": 0.968378474
+    },
+    {
+      "bbox": [
+        [
+          213.0,
+          163.0
+        ],
+        [
+          1139.0,
+          163.0
+        ],
+        [
+          1139.0,
+          202.0
+        ],
+        [
+          213.0,
+          202.0
+        ]
+      ],
+      "text": "sách hộ gia đình, hộ kinh doanh, cá nhân hỗ trợ đầu tư, trồng sản phẩm nông",
+      "confidence": 0.9524796782352941
+    },
+    {
+      "bbox": [
+        [
+          213.0,
+          196.0
+        ],
+        [
+          1140.0,
+          196.0
+        ],
+        [
+          1140.0,
+          234.0
+        ],
+        [
+          213.0,
+          234.0
+        ]
+      ],
+      "text": "sản tại các tỉnh của Campuchia tiếp giáp biên giới Việt Nam do Ủy ban nhân",
+      "confidence": 0.96830523125
+    },
+    {
+      "bbox": [
+        [
+          213.0,
+          230.0
+        ],
+        [
+          1140.0,
+          230.0
+        ],
+        [
+          1140.0,
+          276.0
+        ],
+        [
+          213.0,
+          276.0
+        ]
+      ],
+      "text": "dân cấp tỉnh nơi hộ gia đình, hộ kinh doanh, cá nhân cư trú công bồ hàng",
+      "confidence": 0.9402444070588235
+    },
+    {
+      "bbox": [
+        [
+          214.0,
+          263.0
+        ],
+        [
+          1140.0,
+          263.0
+        ],
+        [
+          1140.0,
+          298.0
+        ],
+        [
+          214.0,
+          298.0
+        ]
+      ],
+      "text": "năm, kiểm tra, đối chiều với hàng hoá thực tế nhập khẩu dé xử lý miễn thuế",
+      "confidence": 0.9498572805882353
+    },
+    {
+      "bbox": [
+        [
+          214.0,
+          297.0
+        ],
+        [
+          674.0,
+          297.0
+        ],
+        [
+          674.0,
+          331.0
+        ],
+        [
+          214.0,
+          331.0
+        ]
+      ],
+      "text": "nhập khẩu cho từng lô hàng nhập khẩu.",
+      "confidence": 0.9640976225
+    },
+    {
+      "bbox": [
+        [
+          273.0,
+          357.0
+        ],
+        [
+          1141.0,
+          357.0
+        ],
+        [
+          1141.0,
+          396.0
+        ],
+        [
+          273.0,
+          396.0
+        ]
+      ],
+      "text": "Ủy ban nhân dân các tỉnh tiếp giáp biên giới Việt Nam — Campuchia",
+      "confidence": 0.9599799499999999
+    },
+    {
+      "bbox": [
+        [
+          213.0,
+          391.0
+        ],
+        [
+          1141.0,
+          391.0
+        ],
+        [
+          1141.0,
+          431.0
+        ],
+        [
+          213.0,
+          431.0
+        ]
+      ],
+      "text": "công bố danh sách hộ gia đình, hộ kinh doanh, cá nhân cư trú tại tỉnh có hoạt",
+      "confidence": 0.9661375811111111
+    },
+    {
+      "bbox": [
+        [
+          212.0,
+          424.0
+        ],
+        [
+          1141.0,
+          424.0
+        ],
+        [
+          1141.0,
+          464.0
+        ],
+        [
+          212.0,
+          464.0
+        ]
+      ],
+      "text": "động đầu tư, trồng sản phẩm nông sản tại các tinh của Campuchia tiếp giáp",
+      "confidence": 0.9678210393333333
+    },
+    {
+      "bbox": [
+        [
+          211.0,
+          459.0
+        ],
+        [
+          1141.0,
+          459.0
+        ],
+        [
+          1141.0,
+          491.0
+        ],
+        [
+          211.0,
+          491.0
+        ]
+      ],
+      "text": "biên giới Việt Nam hàng năm theo Mẫu số 11 Phụ lục VII ban hành kèm theo",
+      "confidence": 0.9627207811764706
+    },
+    {
+      "bbox": [
+        [
+          211.0,
+          493.0
+        ],
+        [
+          1141.0,
+          493.0
+        ],
+        [
+          1141.0,
+          527.0
+        ],
+        [
+          211.0,
+          527.0
+        ]
+      ],
+      "text": "Nghị định này trên trang thông tin điện tử của Ủy ban nhân dân tỉnh; đồng",
+      "confidence": 0.967460288125
+    },
+    {
+      "bbox": [
+        [
+          211.0,
+          524.0
+        ],
+        [
+          1140.0,
+          524.0
+        ],
+        [
+          1140.0,
+          570.0
+        ],
+        [
+          211.0,
+          570.0
+        ]
+      ],
+      "text": "thời gửi Cục Hải quan tỉnh và các Chi cục Hải quan quản lý cửa khẩu thuộc",
+      "confidence": 0.965073175882353
+    },
+    {
+      "bbox": [
+        [
+          212.0,
+          560.0
+        ],
+        [
+          1141.0,
+          560.0
+        ],
+        [
+          1141.0,
+          599.0
+        ],
+        [
+          212.0,
+          599.0
+        ]
+      ],
+      "text": "các tỉnh tiếp giáp biên giới \"Campuchia. Trường hợp có sự thay đổi các tiêu",
+      "confidence": 0.930212614
+    },
+    {
+      "bbox": [
+        [
+          212.0,
+          594.0
+        ],
+        [
+          1135.0,
+          594.0
+        ],
+        [
+          1135.0,
+          628.0
+        ],
+        [
+          212.0,
+          628.0
+        ]
+      ],
+      "text": "chí trong văn bản đã công bố phải ban hành văn bản điều chỉnh cho phù hợp.”",
+      "confidence": 0.9625759523529411
+    },
+    {
+      "bbox": [
+        [
+          274.0,
+          653.0
+        ],
+        [
+          633.0,
+          653.0
+        ],
+        [
+          633.0,
+          685.0
+        ],
+        [
+          274.0,
+          685.0
+        ]
+      ],
+      "text": "10. Bồ sung Điều 28a như sau:",
+      "confidence": 0.9602294814285713
+    },
+    {
+      "bbox": [
+        [
+          271.0,
+          711.0
+        ],
+        [
+          1139.0,
+          711.0
+        ],
+        [
+          1139.0,
+          745.0
+        ],
+        [
+          271.0,
+          745.0
+        ]
+      ],
+      "text": "“Điều 28a. Điều kiện kiểm tra, giám sát hải quan và áp dụng chính",
+      "confidence": 0.9669331035714286
+    },
+    {
+      "bbox": [
+        [
+          211.0,
+          745.0
+        ],
+        [
+          984.0,
+          745.0
+        ],
+        [
+          984.0,
+          779.0
+        ],
+        [
+          211.0,
+          779.0
+        ]
+      ],
+      "text": "sách thuế đối với doanh nghiệp chế xuất là khu phi thuế quan",
+      "confidence": 0.9686960723076922
+    },
+    {
+      "bbox": [
+        [
+          274.0,
+          803.0
+        ],
+        [
+          1140.0,
+          803.0
+        ],
+        [
+          1140.0,
+          847.0
+        ],
+        [
+          274.0,
+          847.0
+        ]
+      ],
+      "text": "1. Điều kiện kiểm tra, giám sát hải quan đối với doanh nghiệp chế xuất là",
+      "confidence": 0.966585540625
+    },
+    {
+      "bbox": [
+        [
+          211.0,
+          843.0
+        ],
+        [
+          836.0,
+          843.0
+        ],
+        [
+          836.0,
+          870.0
+        ],
+        [
+          211.0,
+          870.0
+        ]
+      ],
+      "text": "khu phi thuê quan phải đáp ứng đủ các điều kiện sau:",
+      "confidence": 0.9624379608333333
+    },
+    {
+      "bbox": [
+        [
+          271.0,
+          897.0
+        ],
+        [
+          1138.0,
+          897.0
+        ],
+        [
+          1138.0,
+          936.0
+        ],
+        [
+          271.0,
+          936.0
+        ]
+      ],
+      "text": "a) Có hàng rào cứng ngăn cách với khu vực bên ngoài; có công/cửa Ta,",
+      "confidence": 0.942117886
+    },
+    {
+      "bbox": [
+        [
+          210.0,
+          931.0
+        ],
+        [
+          1140.0,
+          931.0
+        ],
+        [
+          1140.0,
+          964.0
+        ],
+        [
+          210.0,
+          964.0
+        ]
+      ],
+      "text": "vào đảm bảo việc đưa hàng hóa ra, vào doanh nghiệp chế xuất chỉ qua",
+      "confidence": 0.9668786313333334
+    },
+    {
+      "bbox": [
+        [
+          211.0,
+          963.0
+        ],
+        [
+          323.0,
+          963.0
+        ],
+        [
+          323.0,
+          995.0
+        ],
+        [
+          211.0,
+          995.0
+        ]
+      ],
+      "text": "cổng/cửa.",
+      "confidence": 0.5275091599999999
+    },
+    {
+      "bbox": [
+        [
+          270.0,
+          1021.0
+        ],
+        [
+          1139.0,
+          1021.0
+        ],
+        [
+          1139.0,
+          1068.0
+        ],
+        [
+          270.0,
+          1068.0
+        ]
+      ],
+      "text": "b Có hệ thống ca-mê-ra quan sát được các vị trí tại cổng/cửa ra, vào và",
+      "confidence": 0.9229520262500001
+    },
+    {
+      "bbox": [
+        [
+          211.0,
+          1056.0
+        ],
+        [
+          1139.0,
+          1056.0
+        ],
+        [
+          1139.0,
+          1097.0
+        ],
+        [
+          211.0,
+          1097.0
+        ]
+      ],
+      "text": "các vị trí lưu giữ hàng hóa ở tat cả các thời điểm trong ngày (24/24 giờ, bao",
+      "confidence": 0.9641643616666665
+    },
+    {
+      "bbox": [
+        [
+          210.0,
+          1088.0
+        ],
+        [
+          1139.0,
+          1088.0
+        ],
+        [
+          1139.0,
+          1122.0
+        ],
+        [
+          210.0,
+          1122.0
+        ]
+      ],
+      "text": "gồm cả ngày nghỉ, ngày 18); dữ liệu hình ảnh ca-mê-ra được kết nối trực tuyến",
+      "confidence": 0.9497904056250001
+    },
+    {
+      "bbox": [
+        [
+          210.0,
+          1127.0
+        ],
+        [
+          1138.0,
+          1127.0
+        ],
+        [
+          1138.0,
+          1159.0
+        ],
+        [
+          210.0,
+          1159.0
+        ]
+      ],
+      "text": "với cơ quan hải quan quản lý doanh nghiệp và được lưu giữ tại doanh nghiệp",
+      "confidence": 0.9672482256249999
+    },
+    {
+      "bbox": [
+        [
+          211.0,
+          1154.0
+        ],
+        [
+          529.0,
+          1154.0
+        ],
+        [
+          529.0,
+          1188.0
+        ],
+        [
+          211.0,
+          1188.0
+        ]
+      ],
+      "text": "chế xuất tối thiểu 12 tháng.",
+      "confidence": 0.9062442816666667
+    },
+    {
+      "bbox": [
+        [
+          269.0,
+          1212.0
+        ],
+        [
+          1138.0,
+          1212.0
+        ],
+        [
+          1138.0,
+          1252.0
+        ],
+        [
+          269.0,
+          1252.0
+        ]
+      ],
+      "text": "Tổng cục trưởng Tổng cục Hải quan có trách nhiệm ban hành định dạng",
+      "confidence": 0.952618082142857
+    },
+    {
+      "bbox": [
+        [
+          209.0,
+          1246.0
+        ],
+        [
+          1138.0,
+          1246.0
+        ],
+        [
+          1138.0,
+          1283.0
+        ],
+        [
+          209.0,
+          1283.0
+        ]
+      ],
+      "text": "thông điệp dữ liệu trao đổi giữa cơ quan hải quan và doanh nghiệp về hệ",
+      "confidence": 0.961743315625
+    },
+    {
+      "bbox": [
+        [
+          209.0,
+          1279.0
+        ],
+        [
+          1079.0,
+          1279.0
+        ],
+        [
+          1079.0,
+          1314.0
+        ],
+        [
+          209.0,
+          1314.0
+        ]
+      ],
+      "text": "thống ca-mê-ra giám sát dé thực hiện theo quy định tại điểm b khoản này.",
+      "confidence": 0.9537686113333332
+    },
+    {
+      "bbox": [
+        [
+          269.0,
+          1336.0
+        ],
+        [
+          1137.0,
+          1336.0
+        ],
+        [
+          1137.0,
+          1383.0
+        ],
+        [
+          269.0,
+          1383.0
+        ]
+      ],
+      "text": "¢) Có phần mềm quản lý hàng hóa nhập khẩu thuộc đối tượng không",
+      "confidence": 0.946466985
+    },
+    {
+      "bbox": [
+        [
+          209.0,
+          1372.0
+        ],
+        [
+          1136.0,
+          1372.0
+        ],
+        [
+          1136.0,
+          1423.0
+        ],
+        [
+          209.0,
+          1423.0
+        ]
+      ],
+      "text": "chịu thuế của doanh nghiệp chế xuất để'báo cáo quyết toán nhập- xuât- tôn vê",
+      "confidence": 0.9416275380000001
+    },
+    {
+      "bbox": [
+        [
+          208.0,
+          1407.0
+        ],
+        [
+          1096.0,
+          1407.0
+        ],
+        [
+          1096.0,
+          1441.0
+        ],
+        [
+          208.0,
+          1441.0
+        ]
+      ],
+      "text": "tình hình sử dụng hàng hóa nhập khẩu theo quy định pháp luật về hải quan.",
+      "confidence": 0.963222389375
+    },
+    {
+      "bbox": [
+        [
+          268.0,
+          1465.0
+        ],
+        [
+          1136.0,
+          1465.0
+        ],
+        [
+          1136.0,
+          1506.0
+        ],
+        [
+          268.0,
+          1506.0
+        ]
+      ],
+      "text": "2. Thủ tục kiểm tra, xác nhận khả năng đáp ứng điều kiện kiểm tra, giám",
+      "confidence": 0.96007486375
+    },
+    {
+      "bbox": [
+        [
+          209.0,
+          1499.0
+        ],
+        [
+          1136.0,
+          1499.0
+        ],
+        [
+          1136.0,
+          1542.0
+        ],
+        [
+          209.0,
+          1542.0
+        ]
+      ],
+      "text": "sát hải quan đối với doanh nghiệp chế xuất, nhà đầu tư thực hiện dự án đầu tư",
+      "confidence": 0.96793374
+    },
+    {
+      "bbox": [
+        [
+          208.0,
+          1533.0
+        ],
+        [
+          582.0,
+          1533.0
+        ],
+        [
+          582.0,
+          1566.0
+        ],
+        [
+          208.0,
+          1566.0
+        ]
+      ],
+      "text": "đăng ký doanh nghiệp chế xuất:",
+      "confidence": 0.9678457633333334
+    }
+  ]
+}

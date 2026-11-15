@@ -1,0 +1,817 @@
+{
+  "document_id": "126/2020/NĐ-CP",
+  "source_file": "../../legal-sources/1262020ndcp/01.pdf",
+  "source_sha256": "310648e80396d267610946458e7fdd71ba87ef538b009d6574ed21514de3f7ca",
+  "page_count": 119,
+  "render_dpi": 150,
+  "engine": "Tesseract 5.5.4 (vie+eng; OEM 1; PSM 3)",
+  "review_status": "UNREVIEWED",
+  "tesseract_version": "5.5.4",
+  "tsv_parser_version": 2,
+  "languages": [
+    "vie",
+    "eng"
+  ],
+  "traineddata_sha256": {
+    "vie": "b6b49293d95d0b6dbd8780174627e82c75be957b6f4ed9862155540d6b00bb45",
+    "eng": "8280aed0782fe27257a68ea10fe7ef324ca0f8d85bd2fd145d1c2b560bcb66ba"
+  },
+  "ocr_engine_mode": 1,
+  "page_segmentation_mode": 3,
+  "thread_limit": 1,
+  "page": 69,
+  "lines": [
+    {
+      "bbox": [
+        [
+          687.0,
+          62.0
+        ],
+        [
+          713.0,
+          62.0
+        ],
+        [
+          713.0,
+          82.0
+        ],
+        [
+          687.0,
+          82.0
+        ]
+      ],
+      "text": "69",
+      "confidence": 0.96763206
+    },
+    {
+      "bbox": [
+        [
+          274.0,
+          132.0
+        ],
+        [
+          1132.0,
+          132.0
+        ],
+        [
+          1132.0,
+          176.0
+        ],
+        [
+          274.0,
+          176.0
+        ]
+      ],
+      "text": "Điều 27. Trách nhiệm cung cấp thông tin của tổ chức, cá nhân có",
+      "confidence": 0.9658035500000001
+    },
+    {
+      "bbox": [
+        [
+          216.0,
+          190.0
+        ],
+        [
+          329.0,
+          190.0
+        ],
+        [
+          329.0,
+          216.0
+        ],
+        [
+          216.0,
+          216.0
+        ]
+      ],
+      "text": "liên quan",
+      "confidence": 0.9606016900000001
+    },
+    {
+      "bbox": [
+        [
+          279.0,
+          218.0
+        ],
+        [
+          1135.0,
+          218.0
+        ],
+        [
+          1135.0,
+          269.0
+        ],
+        [
+          279.0,
+          269.0
+        ]
+      ],
+      "text": "1. Tổ chức kinh doanh dịch vụ làm thủ tục về thuế, dịch vụ kế toán; tổ",
+      "confidence": 0.9667489129411764
+    },
+    {
+      "bbox": [
+        [
+          218.0,
+          254.0
+        ],
+        [
+          1137.0,
+          254.0
+        ],
+        [
+          1137.0,
+          307.0
+        ],
+        [
+          218.0,
+          307.0
+        ]
+      ],
+      "text": "chức nhận ủy thác xuất khẩu, nhập khẩu; người được ủy quyền, bảo lãnh và",
+      "confidence": 0.9673113
+    },
+    {
+      "bbox": [
+        [
+          218.0,
+          294.0
+        ],
+        [
+          1137.0,
+          294.0
+        ],
+        [
+          1137.0,
+          345.0
+        ],
+        [
+          218.0,
+          345.0
+        ]
+      ],
+      "text": "nộp thuế thay cho người nộp thuế; công ty kiểm toán độc lập có trách nhiệm",
+      "confidence": 0.9676007025
+    },
+    {
+      "bbox": [
+        [
+          219.0,
+          327.0
+        ],
+        [
+          1137.0,
+          327.0
+        ],
+        [
+          1137.0,
+          378.0
+        ],
+        [
+          219.0,
+          378.0
+        ]
+      ],
+      "text": "cung cấp thông tin liên quan đến thỏa thuận với người nộp thuế và tài liệu làm",
+      "confidence": 0.9647254994117647
+    },
+    {
+      "bbox": [
+        [
+          220.0,
+          359.0
+        ],
+        [
+          1138.0,
+          359.0
+        ],
+        [
+          1138.0,
+          409.0
+        ],
+        [
+          220.0,
+          409.0
+        ]
+      ],
+      "text": "căn cứ xác định nghĩa vụ thuế theo quy định tại Luật Quản lý thuế và pháp",
+      "confidence": 0.9686526670588236
+    },
+    {
+      "bbox": [
+        [
+          221.0,
+          389.0
+        ],
+        [
+          1062.0,
+          389.0
+        ],
+        [
+          1062.0,
+          447.0
+        ],
+        [
+          221.0,
+          447.0
+        ]
+      ],
+      "text": "luật có liên quan khi có yêu cầu bằng văn bản của cơ quan quản lý thuế.",
+      "confidence": 0.9666788176470589
+    },
+    {
+      "bbox": [
+        [
+          281.0,
+          452.0
+        ],
+        [
+          1141.0,
+          452.0
+        ],
+        [
+          1141.0,
+          500.0
+        ],
+        [
+          281.0,
+          500.0
+        ]
+      ],
+      "text": "2. Các tổ chức, cá nhân là đối tác kinh doanh hoặc khách hàng của người",
+      "confidence": 0.967653244375
+    },
+    {
+      "bbox": [
+        [
+          222.0,
+          486.0
+        ],
+        [
+          1142.0,
+          486.0
+        ],
+        [
+          1142.0,
+          541.0
+        ],
+        [
+          222.0,
+          541.0
+        ]
+      ],
+      "text": "nộp thuế có trách nhiệm cung cấp thông tin liên quan đến người nộp thuế theo",
+      "confidence": 0.9681747631250001
+    },
+    {
+      "bbox": [
+        [
+          224.0,
+          519.0
+        ],
+        [
+          1143.0,
+          519.0
+        ],
+        [
+          1143.0,
+          576.0
+        ],
+        [
+          224.0,
+          576.0
+        ]
+      ],
+      "text": "quy định tại Luật Quản lý thuế và pháp luật có liên quan khi có yêu cầu bằng",
+      "confidence": 0.9691613255555555
+    },
+    {
+      "bbox": [
+        [
+          224.0,
+          567.0
+        ],
+        [
+          622.0,
+          567.0
+        ],
+        [
+          622.0,
+          606.0
+        ],
+        [
+          224.0,
+          606.0
+        ]
+      ],
+      "text": "văn bản của cơ quan quản lý thuế.",
+      "confidence": 0.9586393825
+    },
+    {
+      "bbox": [
+        [
+          285.0,
+          620.0
+        ],
+        [
+          1146.0,
+          620.0
+        ],
+        [
+          1146.0,
+          665.0
+        ],
+        [
+          285.0,
+          665.0
+        ]
+      ],
+      "text": "3. Phòng Thương mại và Công nghiệp Việt Nam có trách nhiệm cung,",
+      "confidence": 0.9574903761538462
+    },
+    {
+      "bbox": [
+        [
+          227.0,
+          652.0
+        ],
+        [
+          1146.0,
+          652.0
+        ],
+        [
+          1146.0,
+          703.0
+        ],
+        [
+          227.0,
+          703.0
+        ]
+      ],
+      "text": "cấp thông tin liên quan đến việc cấp giấy chứng nhận xuất xứ hàng hóa xuất",
+      "confidence": 0.921680985
+    },
+    {
+      "bbox": [
+        [
+          227.0,
+          687.0
+        ],
+        [
+          1145.0,
+          687.0
+        ],
+        [
+          1145.0,
+          733.0
+        ],
+        [
+          227.0,
+          733.0
+        ]
+      ],
+      "text": "khẩu của Việt Nam ra nước ngoài theo định kỳ hàng tháng và chậm nhất ngày 5",
+      "confidence": 0.9657647870588235
+    },
+    {
+      "bbox": [
+        [
+          228.0,
+          739.0
+        ],
+        [
+          394.0,
+          739.0
+        ],
+        [
+          394.0,
+          769.0
+        ],
+        [
+          228.0,
+          769.0
+        ]
+      ],
+      "text": "đầu tháng sau.",
+      "confidence": 0.96598338
+    },
+    {
+      "bbox": [
+        [
+          289.0,
+          776.0
+        ],
+        [
+          1149.0,
+          776.0
+        ],
+        [
+          1149.0,
+          824.0
+        ],
+        [
+          289.0,
+          824.0
+        ]
+      ],
+      "text": "4. Tổ chức, cá nhân chi trả thu nhập có trách nhiệm cung, cấp thông tin",
+      "confidence": 0.9608094031250001
+    },
+    {
+      "bbox": [
+        [
+          230.0,
+          813.0
+        ],
+        [
+          1150.0,
+          813.0
+        ],
+        [
+          1150.0,
+          860.0
+        ],
+        [
+          230.0,
+          860.0
+        ]
+      ],
+      "text": "về chi trả thu nhập và số tiền thuê khâu trừ của người nộp thuê khi quyết toán",
+      "confidence": 0.9207964483333333
+    },
+    {
+      "bbox": [
+        [
+          231.0,
+          845.0
+        ],
+        [
+          885.0,
+          845.0
+        ],
+        [
+          885.0,
+          894.0
+        ],
+        [
+          231.0,
+          894.0
+        ]
+      ],
+      "text": "thuế năm hoặc khi có yêu câu của cơ quan quản lý thuế.",
+      "confidence": 0.9665083069230769
+    },
+    {
+      "bbox": [
+        [
+          293.0,
+          902.0
+        ],
+        [
+          1152.0,
+          902.0
+        ],
+        [
+          1152.0,
+          961.0
+        ],
+        [
+          293.0,
+          961.0
+        ]
+      ],
+      "text": "5. Cơ quan có thẩm quyền chịu trách nhiệm cung cấp thông tin trước khi",
+      "confidence": 0.9626270133333334
+    },
+    {
+      "bbox": [
+        [
+          233.0,
+          937.0
+        ],
+        [
+          1153.0,
+          937.0
+        ],
+        [
+          1153.0,
+          990.0
+        ],
+        [
+          233.0,
+          990.0
+        ]
+      ],
+      "text": "bán đấu giá về hàng hóa có nguồn gốc nhập khâu thuộc đối tượng mien thuê,",
+      "confidence": 0.9571873993750001
+    },
+    {
+      "bbox": [
+        [
+          234.0,
+          980.0
+        ],
+        [
+          990.0,
+          980.0
+        ],
+        [
+          990.0,
+          1026.0
+        ],
+        [
+          234.0,
+          1026.0
+        ]
+      ],
+      "text": "không chịu thuê cho cơ quan hải quan để thực hiện ân định thuê.",
+      "confidence": 0.9660762342857143
+    },
+    {
+      "bbox": [
+        [
+          295.0,
+          1035.0
+        ],
+        [
+          1155.0,
+          1035.0
+        ],
+        [
+          1155.0,
+          1079.0
+        ],
+        [
+          295.0,
+          1079.0
+        ]
+      ],
+      "text": "6. Các tổ chức, cá nhân khác có trách nhiệm cung, cấp thông tin theo quy",
+      "confidence": 0.9531792025
+    },
+    {
+      "bbox": [
+        [
+          237.0,
+          1080.0
+        ],
+        [
+          851.0,
+          1080.0
+        ],
+        [
+          851.0,
+          1118.0
+        ],
+        [
+          237.0,
+          1118.0
+        ]
+      ],
+      "text": "định tại Luật Quản lý thuê và pháp luật có liên quan.",
+      "confidence": 0.9678370599999999
+    },
+    {
+      "bbox": [
+        [
+          298.0,
+          1129.0
+        ],
+        [
+          1158.0,
+          1129.0
+        ],
+        [
+          1158.0,
+          1172.0
+        ],
+        [
+          298.0,
+          1172.0
+        ]
+      ],
+      "text": "7. Đối với thông tin cung cấp theo yêu cầu bằng văn bản của cơ quan",
+      "confidence": 0.9672579337499999
+    },
+    {
+      "bbox": [
+        [
+          241.0,
+          1163.0
+        ],
+        [
+          1159.0,
+          1163.0
+        ],
+        [
+          1159.0,
+          1213.0
+        ],
+        [
+          241.0,
+          1213.0
+        ]
+      ],
+      "text": "quản lý thuế, tổ chức, cá nhân có trách nhiệm cung, cấp thông tin cho cơ quan",
+      "confidence": 0.9661298829411764
+    },
+    {
+      "bbox": [
+        [
+          241.0,
+          1195.0
+        ],
+        [
+          1159.0,
+          1195.0
+        ],
+        [
+          1159.0,
+          1247.0
+        ],
+        [
+          241.0,
+          1247.0
+        ]
+      ],
+      "text": "quản lý thuế chậm nhất trong thời hạn 10 ngày, kể từ ngày nhận được văn bản",
+      "confidence": 0.9655529164705883
+    },
+    {
+      "bbox": [
+        [
+          241.0,
+          1228.0
+        ],
+        [
+          862.0,
+          1228.0
+        ],
+        [
+          862.0,
+          1282.0
+        ],
+        [
+          241.0,
+          1282.0
+        ]
+      ],
+      "text": "yêu cầu cung cấp thông tin của cơ quan quản lý thuế.",
+      "confidence": 0.9631352875
+    },
+    {
+      "bbox": [
+        [
+          302.0,
+          1287.0
+        ],
+        [
+          1161.0,
+          1287.0
+        ],
+        [
+          1161.0,
+          1334.0
+        ],
+        [
+          302.0,
+          1334.0
+        ]
+      ],
+      "text": "Điều 28. Trách nhiệm của cơ quan quản lý nhà nước, tổ chức, cá",
+      "confidence": 0.9603612778571429
+    },
+    {
+      "bbox": [
+        [
+          245.0,
+          1336.0
+        ],
+        [
+          677.0,
+          1336.0
+        ],
+        [
+          677.0,
+          1373.0
+        ],
+        [
+          245.0,
+          1373.0
+        ]
+      ],
+      "text": "nhân trong việc cung cấp thông tin",
+      "confidence": 0.9647669014285714
+    },
+    {
+      "bbox": [
+        [
+          308.0,
+          1380.0
+        ],
+        [
+          1163.0,
+          1380.0
+        ],
+        [
+          1163.0,
+          1431.0
+        ],
+        [
+          308.0,
+          1431.0
+        ]
+      ],
+      "text": "1. Khi cơ quan quản lý thuế yêu cầu cơ quan quản lý nhà nước, tổ chức,",
+      "confidence": 0.964748634117647
+    },
+    {
+      "bbox": [
+        [
+          248.0,
+          1418.0
+        ],
+        [
+          1165.0,
+          1418.0
+        ],
+        [
+          1165.0,
+          1465.0
+        ],
+        [
+          248.0,
+          1465.0
+        ]
+      ],
+      "text": "cá nhân có trách nhiệm cung cấp thông tin theo quy định tại Điều 15 và khoản 2,",
+      "confidence": 0.9661843961111112
+    },
+    {
+      "bbox": [
+        [
+          249.0,
+          1451.0
+        ],
+        [
+          1167.0,
+          1451.0
+        ],
+        [
+          1167.0,
+          1500.0
+        ],
+        [
+          249.0,
+          1500.0
+        ]
+      ],
+      "text": "khoản 4 Điều 98 Luật Quản lý thuế thì cơ quan quản lý nhà nước, tổ chức, cá",
+      "confidence": 0.9666106922222223
+    },
+    {
+      "bbox": [
+        [
+          250.0,
+          1487.0
+        ],
+        [
+          1167.0,
+          1487.0
+        ],
+        [
+          1167.0,
+          1540.0
+        ],
+        [
+          250.0,
+          1540.0
+        ]
+      ],
+      "text": "nhân phải cung cấp đầy đủ, đúng thời hạn theo nội dung yêu cầu của cơ quan",
+      "confidence": 0.9606335852941177
+    },
+    {
+      "bbox": [
+        [
+          251.0,
+          1540.0
+        ],
+        [
+          401.0,
+          1540.0
+        ],
+        [
+          401.0,
+          1577.0
+        ],
+        [
+          251.0,
+          1577.0
+        ]
+      ],
+      "text": "quản lý thuế.",
+      "confidence": 0.9573835233333334
+    }
+  ]
+}

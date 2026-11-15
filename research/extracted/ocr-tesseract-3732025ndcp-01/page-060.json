@@ -1,0 +1,245 @@
+{
+  "document_id": "373/2025/NĐ-CP",
+  "source_file": "../../legal-sources/3732025ndcp/01.pdf",
+  "source_sha256": "6ca9d1a16b5d47c7aa23f06f243dc59bd2e9dda4d70f3f3c892e4254d2c7d914",
+  "page_count": 74,
+  "render_dpi": 150,
+  "engine": "Tesseract 5.5.4 (vie+eng; OEM 1; PSM 3)",
+  "review_status": "UNREVIEWED",
+  "tesseract_version": "5.5.4",
+  "tsv_parser_version": 2,
+  "languages": [
+    "vie",
+    "eng"
+  ],
+  "traineddata_sha256": {
+    "vie": "b6b49293d95d0b6dbd8780174627e82c75be957b6f4ed9862155540d6b00bb45",
+    "eng": "8280aed0782fe27257a68ea10fe7ef324ca0f8d85bd2fd145d1c2b560bcb66ba"
+  },
+  "ocr_engine_mode": 1,
+  "page_segmentation_mode": 3,
+  "thread_limit": 1,
+  "page": 60,
+  "lines": [
+    {
+      "bbox": [
+        [
+          863.0,
+          93.0
+        ],
+        [
+          889.0,
+          93.0
+        ],
+        [
+          889.0,
+          114.0
+        ],
+        [
+          863.0,
+          114.0
+        ]
+      ],
+      "text": "52",
+      "confidence": 0.94523285
+    },
+    {
+      "bbox": [
+        [
+          198.0,
+          551.0
+        ],
+        [
+          1128.0,
+          551.0
+        ],
+        [
+          1128.0,
+          583.0
+        ],
+        [
+          198.0,
+          583.0
+        ]
+      ],
+      "text": "Tôi cam đoan số liệu khai trên là đúng và chịu trách nhiệm trước pháp luật về số liệu đã khai.",
+      "confidence": 0.9577922495238096
+    },
+    {
+      "bbox": [
+        [
+          1189.0,
+          603.0
+        ],
+        [
+          1565.0,
+          603.0
+        ],
+        [
+          1565.0,
+          635.0
+        ],
+        [
+          1189.0,
+          635.0
+        ]
+      ],
+      "text": "[RS , ngay..... thdng....... nam.........",
+      "confidence": 0.6369770200000001
+    },
+    {
+      "bbox": [
+        [
+          198.0,
+          634.0
+        ],
+        [
+          1521.0,
+          634.0
+        ],
+        [
+          1521.0,
+          666.0
+        ],
+        [
+          198.0,
+          666.0
+        ]
+      ],
+      "text": "NHAN VIEN DAI LY THUE i NGƯỜI NOP THUÊ hoặc",
+      "confidence": 0.810840782
+    },
+    {
+      "bbox": [
+        [
+          1128.0,
+          666.0
+        ],
+        [
+          1634.0,
+          666.0
+        ],
+        [
+          1634.0,
+          695.0
+        ],
+        [
+          1128.0,
+          695.0
+        ]
+      ],
+      "text": "ĐẠI DIỆN HỢP PHÁP CUA NGƯỜI NOP THUẾ,",
+      "confidence": 0.903189925
+    },
+    {
+      "bbox": [
+        [
+          1159.0,
+          695.0
+        ],
+        [
+          1602.0,
+          695.0
+        ],
+        [
+          1602.0,
+          724.0
+        ],
+        [
+          1159.0,
+          724.0
+        ]
+      ],
+      "text": "(Ký tên, đóng dấu, ghi rõ họ tên và chức vụ)",
+      "confidence": 0.9257425318181818
+    },
+    {
+      "bbox": [
+        [
+          198.0,
+          688.0
+        ],
+        [
+          439.0,
+          688.0
+        ],
+        [
+          439.0,
+          720.0
+        ],
+        [
+          198.0,
+          720.0
+        ]
+      ],
+      "text": "Chứng chỉ hành nghệ sô",
+      "confidence": 0.88642624
+    },
+    {
+      "bbox": [
+        [
+          169.0,
+          977.0
+        ],
+        [
+          259.0,
+          977.0
+        ],
+        [
+          259.0,
+          995.0
+        ],
+        [
+          169.0,
+          995.0
+        ]
+      ],
+      "text": "Ghỉ chú:",
+      "confidence": 0.8985918050000001
+    },
+    {
+      "bbox": [
+        [
+          174.0,
+          1000.0
+        ],
+        [
+          853.0,
+          1000.0
+        ],
+        [
+          853.0,
+          1028.0
+        ],
+        [
+          174.0,
+          1028.0
+        ]
+      ],
+      "text": "- Chỉ tiêu [05]: Tên người nộp thuế là Tập đoàn Dầu khí Việt Nam (Lô...).",
+      "confidence": 0.932540213125
+    },
+    {
+      "bbox": [
+        [
+          173.0,
+          1027.0
+        ],
+        [
+          1302.0,
+          1027.0
+        ],
+        [
+          1302.0,
+          1054.0
+        ],
+        [
+          173.0,
+          1054.0
+        ]
+      ],
+      "text": "- Trường hợp một NNT khai thác đồng thời dầu thô, condensate và khí thiên nhiên thì kê khai thành từng tờ khai riêng biệt.",
+      "confidence": 0.9584508356000001
+    }
+  ]
+}

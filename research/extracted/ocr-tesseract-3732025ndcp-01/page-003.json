@@ -1,0 +1,949 @@
+{
+  "document_id": "373/2025/NĐ-CP",
+  "source_file": "../../legal-sources/3732025ndcp/01.pdf",
+  "source_sha256": "6ca9d1a16b5d47c7aa23f06f243dc59bd2e9dda4d70f3f3c892e4254d2c7d914",
+  "page_count": 74,
+  "render_dpi": 150,
+  "engine": "Tesseract 5.5.4 (vie+eng; OEM 1; PSM 3)",
+  "review_status": "UNREVIEWED",
+  "tesseract_version": "5.5.4",
+  "tsv_parser_version": 2,
+  "languages": [
+    "vie",
+    "eng"
+  ],
+  "traineddata_sha256": {
+    "vie": "b6b49293d95d0b6dbd8780174627e82c75be957b6f4ed9862155540d6b00bb45",
+    "eng": "8280aed0782fe27257a68ea10fe7ef324ca0f8d85bd2fd145d1c2b560bcb66ba"
+  },
+  "ocr_engine_mode": 1,
+  "page_segmentation_mode": 3,
+  "thread_limit": 1,
+  "page": 3,
+  "lines": [
+    {
+      "bbox": [
+        [
+          219.0,
+          174.0
+        ],
+        [
+          1135.0,
+          174.0
+        ],
+        [
+          1135.0,
+          221.0
+        ],
+        [
+          219.0,
+          221.0
+        ]
+      ],
+      "text": "05 ngày làm việc đối với tiền sử dụng đất và khoản phải nộp bd sung của hộ",
+      "confidence": 0.96006084
+    },
+    {
+      "bbox": [
+        [
+          219.0,
+          212.0
+        ],
+        [
+          1135.0,
+          212.0
+        ],
+        [
+          1135.0,
+          255.0
+        ],
+        [
+          219.0,
+          255.0
+        ]
+      ],
+      "text": "gia đình, cá nhân (trừ cá nhân là người gốc Việt Nam định cư ở nước ngoài);",
+      "confidence": 0.9634531035294118
+    },
+    {
+      "bbox": [
+        [
+          219.0,
+          245.0
+        ],
+        [
+          1136.0,
+          245.0
+        ],
+        [
+          1136.0,
+          283.0
+        ],
+        [
+          219.0,
+          283.0
+        ]
+      ],
+      "text": "05 ngày làm việc đối với tiền thuê đất và khoản phải nộp bồ sung; 03 ngày làm",
+      "confidence": 0.9592953488888889
+    },
+    {
+      "bbox": [
+        [
+          218.0,
+          278.0
+        ],
+        [
+          1136.0,
+          278.0
+        ],
+        [
+          1136.0,
+          318.0
+        ],
+        [
+          218.0,
+          318.0
+        ]
+      ],
+      "text": "việc đối với thuế thu nhập cá nhân từ chuyển nhượng bất động sản, từ nhận",
+      "confidence": 0.951400023125
+    },
+    {
+      "bbox": [
+        [
+          217.0,
+          312.0
+        ],
+        [
+          892.0,
+          312.0
+        ],
+        [
+          892.0,
+          347.0
+        ],
+        [
+          217.0,
+          347.0
+        ]
+      ],
+      "text": "thừa kế, quà tặng là bất động sản, lệ phí trước bạ nhà, đắt.",
+      "confidence": 0.9604714092857144
+    },
+    {
+      "bbox": [
+        [
+          276.0,
+          353.0
+        ],
+        [
+          1136.0,
+          353.0
+        ],
+        [
+          1136.0,
+          394.0
+        ],
+        [
+          276.0,
+          394.0
+        ]
+      ],
+      "text": "b) Chậm nhất là 07 ngày làm việc kế từ ngày nhận được văn bản xác định",
+      "confidence": 0.9581316464705882
+    },
+    {
+      "bbox": [
+        [
+          217.0,
+          387.0
+        ],
+        [
+          1136.0,
+          387.0
+        ],
+        [
+          1136.0,
+          426.0
+        ],
+        [
+          217.0,
+          426.0
+        ]
+      ],
+      "text": "các khoản mà người thuê đất, người sử dung dat được trừ vào tiền thuê đất, tiền",
+      "confidence": 0.9655445594117648
+    },
+    {
+      "bbox": [
+        [
+          217.0,
+          420.0
+        ],
+        [
+          1135.0,
+          420.0
+        ],
+        [
+          1135.0,
+          461.0
+        ],
+        [
+          217.0,
+          461.0
+        ]
+      ],
+      "text": "sử dụng đất phải nộp của Ủy ban nhân dân cấp xã hoặc cơ quan chuyên môn",
+      "confidence": 0.9633497352941176
+    },
+    {
+      "bbox": [
+        [
+          216.0,
+          454.0
+        ],
+        [
+          1135.0,
+          454.0
+        ],
+        [
+          1135.0,
+          494.0
+        ],
+        [
+          216.0,
+          494.0
+        ]
+      ],
+      "text": "thuộc Ủy ban nhân dân cấp tỉnh theo quy định. Ủy ban nhân dân cap xã hoặc",
+      "confidence": 0.9668292564705883
+    },
+    {
+      "bbox": [
+        [
+          216.0,
+          489.0
+        ],
+        [
+          1136.0,
+          489.0
+        ],
+        [
+          1136.0,
+          522.0
+        ],
+        [
+          216.0,
+          522.0
+        ]
+      ],
+      "text": "cơ quan chuyên môn thuộc Ủy ban nhân dân cấp tỉnh phải xác định các khoản",
+      "confidence": 0.9675968462500001
+    },
+    {
+      "bbox": [
+        [
+          216.0,
+          522.0
+        ],
+        [
+          1136.0,
+          522.0
+        ],
+        [
+          1136.0,
+          556.0
+        ],
+        [
+          216.0,
+          556.0
+        ]
+      ],
+      "text": "mà người nộp thuế được trừ vào tiền thuê đất, tiên sử dụng đất phải nộp gửi cơ",
+      "confidence": 0.9440731005555556
+    },
+    {
+      "bbox": [
+        [
+          216.0,
+          556.0
+        ],
+        [
+          1136.0,
+          556.0
+        ],
+        [
+          1136.0,
+          589.0
+        ],
+        [
+          216.0,
+          589.0
+        ]
+      ],
+      "text": "quan thuế chậm nhất 05 ngày làm việc kể từ ngày nhận được hồ sơ do Văn",
+      "confidence": 0.9683782635294118
+    },
+    {
+      "bbox": [
+        [
+          216.0,
+          590.0
+        ],
+        [
+          1136.0,
+          590.0
+        ],
+        [
+          1136.0,
+          634.0
+        ],
+        [
+          216.0,
+          634.0
+        ]
+      ],
+      "text": "phòng đăng ký đất đai hoặc cơ quan có chức năng quản lý đất đai hoặc bộ phận",
+      "confidence": 0.9644303844444444
+    },
+    {
+      "bbox": [
+        [
+          216.0,
+          623.0
+        ],
+        [
+          583.0,
+          623.0
+        ],
+        [
+          583.0,
+          656.0
+        ],
+        [
+          216.0,
+          656.0
+        ]
+      ],
+      "text": "một cửa liên thông chuyển đến.",
+      "confidence": 0.9418106983333332
+    },
+    {
+      "bbox": [
+        [
+          276.0,
+          663.0
+        ],
+        [
+          1136.0,
+          663.0
+        ],
+        [
+          1136.0,
+          702.0
+        ],
+        [
+          276.0,
+          702.0
+        ]
+      ],
+      "text": "c) Chậm nhất là 03 ngày làm việc kể từ ngày nhận hồ sơ khai thuế của",
+      "confidence": 0.9586273005882353
+    },
+    {
+      "bbox": [
+        [
+          216.0,
+          696.0
+        ],
+        [
+          1136.0,
+          696.0
+        ],
+        [
+          1136.0,
+          736.0
+        ],
+        [
+          216.0,
+          736.0
+        ]
+      ],
+      "text": "người nộp thuế, cơ quan thuế có văn bản theo Mẫu số 01/CCTT-TĐMN tại Phụ",
+      "confidence": 0.9592386113333333
+    },
+    {
+      "bbox": [
+        [
+          216.0,
+          731.0
+        ],
+        [
+          1136.0,
+          731.0
+        ],
+        [
+          1136.0,
+          764.0
+        ],
+        [
+          216.0,
+          764.0
+        ]
+      ],
+      "text": "lục II ban hành kèm theo Nghị định này gửi cơ quan nhà nước có thẩm quyền",
+      "confidence": 0.9577087405882354
+    },
+    {
+      "bbox": [
+        [
+          216.0,
+          764.0
+        ],
+        [
+          1135.0,
+          764.0
+        ],
+        [
+          1135.0,
+          802.0
+        ],
+        [
+          216.0,
+          802.0
+        ]
+      ],
+      "text": "theo quy định tại Điều 44 Nghị định số 103/2024/NĐ-CP ngày 30 tháng 7 năm",
+      "confidence": 0.9681892086666667
+    },
+    {
+      "bbox": [
+        [
+          217.0,
+          797.0
+        ],
+        [
+          1136.0,
+          797.0
+        ],
+        [
+          1136.0,
+          840.0
+        ],
+        [
+          217.0,
+          840.0
+        ]
+      ],
+      "text": "2024 của Chính phủ để cung cấp thông tin địa chính làm căn cứ ban hành thông",
+      "confidence": 0.9541683605882354
+    },
+    {
+      "bbox": [
+        [
+          216.0,
+          830.0
+        ],
+        [
+          1136.0,
+          830.0
+        ],
+        [
+          1136.0,
+          863.0
+        ],
+        [
+          216.0,
+          863.0
+        ]
+      ],
+      "text": "báo nộp tiền gửi cho người nộp thuế theo quy định tại điểm a, điểm b khoản",
+      "confidence": 0.9588738435294119
+    },
+    {
+      "bbox": [
+        [
+          216.0,
+          870.0
+        ],
+        [
+          264.0,
+          870.0
+        ],
+        [
+          264.0,
+          896.0
+        ],
+        [
+          216.0,
+          896.0
+        ]
+      ],
+      "text": "này.",
+      "confidence": 0.9660154
+    },
+    {
+      "bbox": [
+        [
+          276.0,
+          903.0
+        ],
+        [
+          1136.0,
+          903.0
+        ],
+        [
+          1136.0,
+          943.0
+        ],
+        [
+          276.0,
+          943.0
+        ]
+      ],
+      "text": "d) Chậm nhất là ngày 30 tháng 4 hằng năm, cơ quan thuế ban hành thông",
+      "confidence": 0.96081806625
+    },
+    {
+      "bbox": [
+        [
+          216.0,
+          934.0
+        ],
+        [
+          1136.0,
+          934.0
+        ],
+        [
+          1136.0,
+          981.0
+        ],
+        [
+          216.0,
+          981.0
+        ]
+      ],
+      "text": "báo nộp tiền thuê đất gửi cho người nộp thuế trong trường hợp thuê đất trả tiền",
+      "confidence": 0.9544992252941177
+    },
+    {
+      "bbox": [
+        [
+          216.0,
+          970.0
+        ],
+        [
+          1137.0,
+          970.0
+        ],
+        [
+          1137.0,
+          1014.0
+        ],
+        [
+          216.0,
+          1014.0
+        ]
+      ],
+      "text": "hằng năm. Trường hợp cơ quan nhà nước có thẩm quyền điều chỉnh các căn cứ",
+      "confidence": 0.96585662375
+    },
+    {
+      "bbox": [
+        [
+          216.0,
+          1003.0
+        ],
+        [
+          1136.0,
+          1003.0
+        ],
+        [
+          1136.0,
+          1041.0
+        ],
+        [
+          216.0,
+          1041.0
+        ]
+      ],
+      "text": "xác định tiền thuê đất thì cơ quan thuế tính lại tiền thuê đất phải nộp và thông",
+      "confidence": 0.9673022594444444
+    },
+    {
+      "bbox": [
+        [
+          217.0,
+          1037.0
+        ],
+        [
+          637.0,
+          1037.0
+        ],
+        [
+          637.0,
+          1070.0
+        ],
+        [
+          217.0,
+          1070.0
+        ]
+      ],
+      "text": "báo cho người nộp thuế thực hiện.”.",
+      "confidence": 0.9386654557142856
+    },
+    {
+      "bbox": [
+        [
+          276.0,
+          1076.0
+        ],
+        [
+          708.0,
+          1076.0
+        ],
+        [
+          708.0,
+          1109.0
+        ],
+        [
+          276.0,
+          1109.0
+        ]
+      ],
+      "text": "4. Sửa đối, bổ sung khoản 8 như sau:",
+      "confidence": 0.9317832777777778
+    },
+    {
+      "bbox": [
+        [
+          276.0,
+          1116.0
+        ],
+        [
+          1137.0,
+          1116.0
+        ],
+        [
+          1137.0,
+          1153.0
+        ],
+        [
+          276.0,
+          1153.0
+        ]
+      ],
+      "text": "“8. Trường hợp cơ quan thuế tiếp nhận phiéu chuyển thông tin đề xác định",
+      "confidence": 0.9499376359999999
+    },
+    {
+      "bbox": [
+        [
+          216.0,
+          1148.0
+        ],
+        [
+          1137.0,
+          1148.0
+        ],
+        [
+          1137.0,
+          1187.0
+        ],
+        [
+          216.0,
+          1187.0
+        ]
+      ],
+      "text": "nghĩa vụ tài chính về đất đai, quyêt định, thông báo, văn ban của cơ quan nhà",
+      "confidence": 0.9593420364705882
+    },
+    {
+      "bbox": [
+        [
+          216.0,
+          1181.0
+        ],
+        [
+          1137.0,
+          1181.0
+        ],
+        [
+          1137.0,
+          1220.0
+        ],
+        [
+          216.0,
+          1220.0
+        ]
+      ],
+      "text": "nước có thẩm quyền không hợp pháp, không đầy đủ theo quy định thì thời hạn",
+      "confidence": 0.9614832343749999
+    },
+    {
+      "bbox": [
+        [
+          217.0,
+          1214.0
+        ],
+        [
+          1136.0,
+          1214.0
+        ],
+        [
+          1136.0,
+          1248.0
+        ],
+        [
+          217.0,
+          1248.0
+        ]
+      ],
+      "text": "cơ quan thuế có văn bản gửi cơ quan nhà nước có thẩm quyền dé điều chỉnh,",
+      "confidence": 0.9520131147058823
+    },
+    {
+      "bbox": [
+        [
+          216.0,
+          1247.0
+        ],
+        [
+          604.0,
+          1247.0
+        ],
+        [
+          604.0,
+          1280.0
+        ],
+        [
+          216.0,
+          1280.0
+        ]
+      ],
+      "text": "bd sung thông tin cụ thé như sau:",
+      "confidence": 0.948847875
+    },
+    {
+      "bbox": [
+        [
+          276.0,
+          1288.0
+        ],
+        [
+          1138.0,
+          1288.0
+        ],
+        [
+          1138.0,
+          1326.0
+        ],
+        [
+          276.0,
+          1326.0
+        ]
+      ],
+      "text": "a) Cham nhất là 05 _ ngày làm việc kể từ ngày nhận được hồ sơ, cơ quan thuế",
+      "confidence": 0.9256838310526316
+    },
+    {
+      "bbox": [
+        [
+          217.0,
+          1321.0
+        ],
+        [
+          1138.0,
+          1321.0
+        ],
+        [
+          1138.0,
+          1360.0
+        ],
+        [
+          217.0,
+          1360.0
+        ]
+      ],
+      "text": "có văn bản theo Mẫu số 01/CCTT- ĐĐTCQ tai Phụ lục II kèm theo Nghị định",
+      "confidence": 0.95109319375
+    },
+    {
+      "bbox": [
+        [
+          217.0,
+          1356.0
+        ],
+        [
+          1136.0,
+          1356.0
+        ],
+        [
+          1136.0,
+          1390.0
+        ],
+        [
+          217.0,
+          1390.0
+        ]
+      ],
+      "text": "này gửi cho cơ quan nhà nước có thẳm quyền dé điều chỉnh, bd sung thông tin.",
+      "confidence": 0.94933797
+    },
+    {
+      "bbox": [
+        [
+          277.0,
+          1395.0
+        ],
+        [
+          1138.0,
+          1395.0
+        ],
+        [
+          1138.0,
+          1434.0
+        ],
+        [
+          277.0,
+          1434.0
+        ]
+      ],
+      "text": "b) Chậm nhất là 05 ngày làm việc kể từ ngày nhận được văn bản của cơ",
+      "confidence": 0.9631772476470588
+    },
+    {
+      "bbox": [
+        [
+          217.0,
+          1428.0
+        ],
+        [
+          1138.0,
+          1428.0
+        ],
+        [
+          1138.0,
+          1464.0
+        ],
+        [
+          217.0,
+          1464.0
+        ]
+      ],
+      "text": "quan thuế, cơ quan nhà nước có thắm quyền thực hiện điều chỉnh, bổ sung",
+      "confidence": 0.9448585913333334
+    },
+    {
+      "bbox": [
+        [
+          217.0,
+          1464.0
+        ],
+        [
+          637.0,
+          1464.0
+        ],
+        [
+          637.0,
+          1496.0
+        ],
+        [
+          217.0,
+          1496.0
+        ]
+      ],
+      "text": "thông tin và gửi cho cơ quan thuế”.",
+      "confidence": 0.85850820625
+    },
+    {
+      "bbox": [
+        [
+          278.0,
+          1502.0
+        ],
+        [
+          978.0,
+          1502.0
+        ],
+        [
+          978.0,
+          1536.0
+        ],
+        [
+          278.0,
+          1536.0
+        ]
+      ],
+      "text": "5. Sửa đổi, bổ sung điểm b.3 và điểm b.4 khoán 11 như sau:",
+      "confidence": 0.8963227492857142
+    },
+    {
+      "bbox": [
+        [
+          277.0,
+          1544.0
+        ],
+        [
+          1138.0,
+          1544.0
+        ],
+        [
+          1138.0,
+          1583.0
+        ],
+        [
+          277.0,
+          1583.0
+        ]
+      ],
+      "text": "“b.3) Trường hợp thông tin của các cơ quan nhà nước có thẩm quyền",
+      "confidence": 0.962910315
+    },
+    {
+      "bbox": [
+        [
+          217.0,
+          1576.0
+        ],
+        [
+          1138.0,
+          1576.0
+        ],
+        [
+          1138.0,
+          1616.0
+        ],
+        [
+          217.0,
+          1616.0
+        ]
+      ],
+      "text": "chuyển đến chưa đủ thành phần, chưa đủ thông tin hoặc cơ quan quản lý thuế",
+      "confidence": 0.959593070625
+    },
+    {
+      "bbox": [
+        [
+          217.0,
+          1616.0
+        ],
+        [
+          1138.0,
+          1616.0
+        ],
+        [
+          1138.0,
+          1645.0
+        ],
+        [
+          217.0,
+          1645.0
+        ]
+      ],
+      "text": "phát hiện thông tin không đúng với thực tê thì trong thời hạn 05 ngày làm",
+      "confidence": 0.966317734375
+    }
+  ]
+}

@@ -1,0 +1,245 @@
+{
+  "document_id": "18/2021/NĐ-CP",
+  "source_file": "../../legal-sources/182021ndcp/02.pdf",
+  "source_sha256": "710a1398c611658b5b4a43fccba500048d8a39fcd8f8aba6e18b6867f3fb1bed",
+  "page_count": 52,
+  "render_dpi": 150,
+  "engine": "Tesseract 5.5.4 (vie+eng; OEM 1; PSM 3)",
+  "review_status": "UNREVIEWED",
+  "tesseract_version": "5.5.4",
+  "tsv_parser_version": 2,
+  "languages": [
+    "vie",
+    "eng"
+  ],
+  "traineddata_sha256": {
+    "vie": "b6b49293d95d0b6dbd8780174627e82c75be957b6f4ed9862155540d6b00bb45",
+    "eng": "8280aed0782fe27257a68ea10fe7ef324ca0f8d85bd2fd145d1c2b560bcb66ba"
+  },
+  "ocr_engine_mode": 1,
+  "page_segmentation_mode": 3,
+  "thread_limit": 1,
+  "page": 12,
+  "lines": [
+    {
+      "bbox": [
+        [
+          658.0,
+          46.0
+        ],
+        [
+          685.0,
+          46.0
+        ],
+        [
+          685.0,
+          66.0
+        ],
+        [
+          658.0,
+          66.0
+        ]
+      ],
+      "text": "87",
+      "confidence": 0.95903114
+    },
+    {
+      "bbox": [
+        [
+          275.0,
+          112.0
+        ],
+        [
+          1127.0,
+          112.0
+        ],
+        [
+          1127.0,
+          146.0
+        ],
+        [
+          275.0,
+          146.0
+        ]
+      ],
+      "text": "Tổ chức/cá nhân... cam kết chịu trách nhiệm trước pháp luật về tính",
+      "confidence": 0.9626561084615385
+    },
+    {
+      "bbox": [
+        [
+          217.0,
+          147.0
+        ],
+        [
+          1127.0,
+          147.0
+        ],
+        [
+          1127.0,
+          194.0
+        ],
+        [
+          217.0,
+          194.0
+        ]
+      ],
+      "text": "chính xác, trung thực của các thông tin, tài liệu khai báo với cơ quan hải quan",
+      "confidence": 0.9679906188235293
+    },
+    {
+      "bbox": [
+        [
+          216.0,
+          179.0
+        ],
+        [
+          1127.0,
+          179.0
+        ],
+        [
+          1127.0,
+          213.0
+        ],
+        [
+          216.0,
+          213.0
+        ]
+      ],
+      "text": "và lưu giữ các tài liệu có liên quan để xuất trình cơ quan hai quan khi thực",
+      "confidence": 0.9555148622222223
+    },
+    {
+      "bbox": [
+        [
+          217.0,
+          212.0
+        ],
+        [
+          509.0,
+          212.0
+        ],
+        [
+          509.0,
+          243.0
+        ],
+        [
+          217.0,
+          243.0
+        ]
+      ],
+      "text": "hiện thanh tra, kiểm tra./.",
+      "confidence": 0.9186298980000001
+    },
+    {
+      "bbox": [
+        [
+          216.0,
+          280.0
+        ],
+        [
+          1026.0,
+          280.0
+        ],
+        [
+          1026.0,
+          318.0
+        ],
+        [
+          216.0,
+          318.0
+        ]
+      ],
+      "text": "Nơi nhận: NGƯỜI ĐẠI DIỆN THEO PHÁP LUẬT",
+      "confidence": 0.9331773649999999
+    },
+    {
+      "bbox": [
+        [
+          218.0,
+          307.0
+        ],
+        [
+          1113.0,
+          307.0
+        ],
+        [
+          1113.0,
+          357.0
+        ],
+        [
+          218.0,
+          357.0
+        ]
+      ],
+      "text": "TÂN fren CUA TÔ CHỨC/CÁ NHÂN (hoặc người được ủy quyền)",
+      "confidence": 0.7770008581818182
+    },
+    {
+      "bbox": [
+        [
+          607.0,
+          347.0
+        ],
+        [
+          940.0,
+          347.0
+        ],
+        [
+          940.0,
+          379.0
+        ],
+        [
+          607.0,
+          379.0
+        ]
+      ],
+      "text": "(Ký, ghi rõ họ tên, đóng dấu)",
+      "confidence": 0.9132819471428572
+    },
+    {
+      "bbox": [
+        [
+          223.0,
+          1510.0
+        ],
+        [
+          479.0,
+          1510.0
+        ],
+        [
+          479.0,
+          1538.0
+        ],
+        [
+          223.0,
+          1538.0
+        ]
+      ],
+      "text": "Ghi chú: i",
+      "confidence": 0.6363392133333334
+    },
+    {
+      "bbox": [
+        [
+          222.0,
+          1531.0
+        ],
+        [
+          512.0,
+          1531.0
+        ],
+        [
+          512.0,
+          1562.0
+        ],
+        [
+          222.0,
+          1562.0
+        ]
+      ],
+      "text": "( Đối với cá nhân: Bỏ trống.",
+      "confidence": 0.9014059271428572
+    }
+  ]
+}

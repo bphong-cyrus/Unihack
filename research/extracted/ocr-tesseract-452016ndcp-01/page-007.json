@@ -1,0 +1,817 @@
+{
+  "document_id": "45/2016/NĐ-CP",
+  "source_file": "../../legal-sources/452016ndcp/01.pdf",
+  "source_sha256": "482b0a0876dbf69ad02a475fc45878f8a7205ba36c06936d1865c43fc3466543",
+  "page_count": 26,
+  "render_dpi": 150,
+  "engine": "Tesseract 5.5.4 (vie+eng; OEM 1; PSM 3)",
+  "review_status": "UNREVIEWED",
+  "tesseract_version": "5.5.4",
+  "tsv_parser_version": 2,
+  "languages": [
+    "vie",
+    "eng"
+  ],
+  "traineddata_sha256": {
+    "vie": "b6b49293d95d0b6dbd8780174627e82c75be957b6f4ed9862155540d6b00bb45",
+    "eng": "8280aed0782fe27257a68ea10fe7ef324ca0f8d85bd2fd145d1c2b560bcb66ba"
+  },
+  "ocr_engine_mode": 1,
+  "page_segmentation_mode": 3,
+  "thread_limit": 1,
+  "page": 7,
+  "lines": [
+    {
+      "bbox": [
+        [
+          257.0,
+          119.0
+        ],
+        [
+          670.0,
+          119.0
+        ],
+        [
+          670.0,
+          153.0
+        ],
+        [
+          257.0,
+          153.0
+        ]
+      ],
+      "text": "5. Sửa đổi, bd sung Điều 8 như sau:",
+      "confidence": 0.9264006633333333
+    },
+    {
+      "bbox": [
+        [
+          256.0,
+          178.0
+        ],
+        [
+          750.0,
+          178.0
+        ],
+        [
+          750.0,
+          214.0
+        ],
+        [
+          256.0,
+          214.0
+        ]
+      ],
+      "text": "“Điều 8. Vi phạm quy định về khai thuế",
+      "confidence": 0.9541634277777777
+    },
+    {
+      "bbox": [
+        [
+          256.0,
+          235.0
+        ],
+        [
+          1115.0,
+          235.0
+        ],
+        [
+          1115.0,
+          286.0
+        ],
+        [
+          256.0,
+          286.0
+        ]
+      ],
+      "text": "Người nộp thuế có hành vi khai sai dẫn đến thiếu số tiền thuế phải nộp",
+      "confidence": 0.9498820837499999
+    },
+    {
+      "bbox": [
+        [
+          199.0,
+          273.0
+        ],
+        [
+          1115.0,
+          273.0
+        ],
+        [
+          1115.0,
+          320.0
+        ],
+        [
+          199.0,
+          320.0
+        ]
+      ],
+      "text": "hoặc tăng sô tiền. thuế được miễn, giảm, hoàn, không thu thì ngoài việc nộp",
+      "confidence": 0.9371660346666666
+    },
+    {
+      "bbox": [
+        [
+          200.0,
+          307.0
+        ],
+        [
+          999.0,
+          307.0
+        ],
+        [
+          999.0,
+          340.0
+        ],
+        [
+          200.0,
+          340.0
+        ]
+      ],
+      "text": "đủ số tiền thuế, tiền chậm nộp theo quy định còn bị xử phạt như sau:",
+      "confidence": 0.9683679625
+    },
+    {
+      "bbox": [
+        [
+          262.0,
+          358.0
+        ],
+        [
+          1116.0,
+          358.0
+        ],
+        [
+          1116.0,
+          401.0
+        ],
+        [
+          262.0,
+          401.0
+        ]
+      ],
+      "text": "1. Phạt 10% số tiền thuế khai thiếu hoặc số tiền thuế được miễn, giảm,",
+      "confidence": 0.9634516706666666
+    },
+    {
+      "bbox": [
+        [
+          201.0,
+          395.0
+        ],
+        [
+          1117.0,
+          395.0
+        ],
+        [
+          1117.0,
+          433.0
+        ],
+        [
+          201.0,
+          433.0
+        ]
+      ],
+      "text": "hoàn, không thu thuế cao hơn so với quy định của pháp luật về thuế đôi với",
+      "confidence": 0.9651943788235293
+    },
+    {
+      "bbox": [
+        [
+          201.0,
+          438.0
+        ],
+        [
+          610.0,
+          438.0
+        ],
+        [
+          610.0,
+          467.0
+        ],
+        [
+          201.0,
+          467.0
+        ]
+      ],
+      "text": "một trong các hành vi vi phạm sau:",
+      "confidence": 0.9672814925000001
+    },
+    {
+      "bbox": [
+        [
+          261.0,
+          488.0
+        ],
+        [
+          1118.0,
+          488.0
+        ],
+        [
+          1118.0,
+          526.0
+        ],
+        [
+          261.0,
+          526.0
+        ]
+      ],
+      "text": "a) Trường hợp người nộp thuế tự phát hiện và khai bd sung hd so khai",
+      "confidence": 0.949672045625
+    },
+    {
+      "bbox": [
+        [
+          202.0,
+          524.0
+        ],
+        [
+          1118.0,
+          524.0
+        ],
+        [
+          1118.0,
+          564.0
+        ],
+        [
+          202.0,
+          564.0
+        ]
+      ],
+      "text": "thuế quá 60 (sáu mươi) ngày, kể từ ngày thông quan hàng hóa nhưng trước",
+      "confidence": 0.9660616146666666
+    },
+    {
+      "bbox": [
+        [
+          203.0,
+          558.0
+        ],
+        [
+          991.0,
+          558.0
+        ],
+        [
+          991.0,
+          594.0
+        ],
+        [
+          203.0,
+          594.0
+        ]
+      ],
+      "text": "khi cơ quan hải quan quyết định kiểm tra sau thông quan, thanh tra;",
+      "confidence": 0.9670055064285714
+    },
+    {
+      "bbox": [
+        [
+          261.0,
+          610.0
+        ],
+        [
+          1119.0,
+          610.0
+        ],
+        [
+          1119.0,
+          666.0
+        ],
+        [
+          261.0,
+          666.0
+        ]
+      ],
+      "text": "b) Không khai hoặc khai. sai về tên hàng, chủng loại, số lượng, khối",
+      "confidence": 0.9193233092857143
+    },
+    {
+      "bbox": [
+        [
+          205.0,
+          647.0
+        ],
+        [
+          1121.0,
+          647.0
+        ],
+        [
+          1121.0,
+          690.0
+        ],
+        [
+          205.0,
+          690.0
+        ]
+      ],
+      "text": "lượng, chất lượng, trị giá, mã số hàng hóa, thuế suất, mức thuế, xuất xứ hàng",
+      "confidence": 0.956748829375
+    },
+    {
+      "bbox": [
+        [
+          204.0,
+          681.0
+        ],
+        [
+          1121.0,
+          681.0
+        ],
+        [
+          1121.0,
+          727.0
+        ],
+        [
+          204.0,
+          727.0
+        ]
+      ],
+      "text": "hóa xuất khẩu, nhập khẩu trong quá trình làm thủ tục hải quan đối với hàng",
+      "confidence": 0.96801211875
+    },
+    {
+      "bbox": [
+        [
+          204.0,
+          713.0
+        ],
+        [
+          1121.0,
+          713.0
+        ],
+        [
+          1121.0,
+          766.0
+        ],
+        [
+          204.0,
+          766.0
+        ]
+      ],
+      "text": "hóa xuất khẩu, nhập khẩu nhưng người nộp thuế đã tự phát hiện và khai bo",
+      "confidence": 0.95851583875
+    },
+    {
+      "bbox": [
+        [
+          205.0,
+          747.0
+        ],
+        [
+          1122.0,
+          747.0
+        ],
+        [
+          1122.0,
+          784.0
+        ],
+        [
+          205.0,
+          784.0
+        ]
+      ],
+      "text": "sung hồ sơ khai thuế sau thời điểm cơ quan hải quan kiêm tra trực tiếp hồ sơ",
+      "confidence": 0.957444788888889
+    },
+    {
+      "bbox": [
+        [
+          204.0,
+          783.0
+        ],
+        [
+          785.0,
+          783.0
+        ],
+        [
+          785.0,
+          818.0
+        ],
+        [
+          204.0,
+          818.0
+        ]
+      ],
+      "text": "hải quan và trước thời điểm thông quan hàng hóa.",
+      "confidence": 0.962611085
+    },
+    {
+      "bbox": [
+        [
+          264.0,
+          836.0
+        ],
+        [
+          1121.0,
+          836.0
+        ],
+        [
+          1121.0,
+          889.0
+        ],
+        [
+          264.0,
+          889.0
+        ]
+      ],
+      "text": "2. Phạt 20% số tiền thuế khai thiếu hoặc số tiền thuế được miễn, giảm,",
+      "confidence": 0.9619517206666666
+    },
+    {
+      "bbox": [
+        [
+          201.0,
+          872.0
+        ],
+        [
+          1121.0,
+          872.0
+        ],
+        [
+          1121.0,
+          923.0
+        ],
+        [
+          201.0,
+          923.0
+        ]
+      ],
+      "text": "không thu thuế, được hoàn cao hơn so với quy định của pháp luật về thuế đối",
+      "confidence": 0.9602502123529412
+    },
+    {
+      "bbox": [
+        [
+          206.0,
+          914.0
+        ],
+        [
+          660.0,
+          914.0
+        ],
+        [
+          660.0,
+          943.0
+        ],
+        [
+          206.0,
+          943.0
+        ]
+      ],
+      "text": "với một trong các hành vi vi phạm sau:",
+      "confidence": 0.9668879788888889
+    },
+    {
+      "bbox": [
+        [
+          265.0,
+          947.0
+        ],
+        [
+          1122.0,
+          947.0
+        ],
+        [
+          1122.0,
+          1017.0
+        ],
+        [
+          265.0,
+          1017.0
+        ]
+      ],
+      "text": "a) Không khai hoặc khai sai về tên hàng, chủng loại, số lượng, khối",
+      "confidence": 0.94717246
+    },
+    {
+      "bbox": [
+        [
+          207.0,
+          997.0
+        ],
+        [
+          1123.0,
+          997.0
+        ],
+        [
+          1123.0,
+          1043.0
+        ],
+        [
+          207.0,
+          1043.0
+        ]
+      ],
+      "text": "lượng, chất lượng, trị giá, mã số hàng hóa, thuê suất, mức thuế, xuất xứ hàng",
+      "confidence": 0.963970225625
+    },
+    {
+      "bbox": [
+        [
+          206.0,
+          1034.0
+        ],
+        [
+          1123.0,
+          1034.0
+        ],
+        [
+          1123.0,
+          1067.0
+        ],
+        [
+          206.0,
+          1067.0
+        ]
+      ],
+      "text": "hóa xuất khẩu, nhập khẩu mà cơ quan hải quan phát hiện trong quá trình làm",
+      "confidence": 0.967208729375
+    },
+    {
+      "bbox": [
+        [
+          206.0,
+          1068.0
+        ],
+        [
+          1122.0,
+          1068.0
+        ],
+        [
+          1122.0,
+          1113.0
+        ],
+        [
+          206.0,
+          1113.0
+        ]
+      ],
+      "text": "thủ tục hải quan hoặc trường hợp cơ quan hải quan phát hiện khi thanh tra,",
+      "confidence": 0.9677023556250001
+    },
+    {
+      "bbox": [
+        [
+          207.0,
+          1100.0
+        ],
+        [
+          1124.0,
+          1100.0
+        ],
+        [
+          1124.0,
+          1147.0
+        ],
+        [
+          207.0,
+          1147.0
+        ]
+      ],
+      "text": "kiểm tra sau thông quan nhưng cá nhân, tổ chức vi phạm đã tự nguyện nộp đủ",
+      "confidence": 0.9570327088235295
+    },
+    {
+      "bbox": [
+        [
+          208.0,
+          1132.0
+        ],
+        [
+          1065.0,
+          1132.0
+        ],
+        [
+          1065.0,
+          1168.0
+        ],
+        [
+          208.0,
+          1168.0
+        ]
+      ],
+      "text": "số tiền thuế phải nộp theo quy định trước thời điểm lập biên bản vi phạm;",
+      "confidence": 0.967309819375
+    },
+    {
+      "bbox": [
+        [
+          266.0,
+          1186.0
+        ],
+        [
+          1004.0,
+          1186.0
+        ],
+        [
+          1004.0,
+          1228.0
+        ],
+        [
+          266.0,
+          1228.0
+        ]
+      ],
+      "text": "b) Khai sai về đối tượng không chịu thuế; đối tượng miễn thuế;",
+      "confidence": 0.9606969046153846
+    },
+    {
+      "bbox": [
+        [
+          267.0,
+          1250.0
+        ],
+        [
+          1088.0,
+          1250.0
+        ],
+        [
+          1088.0,
+          1285.0
+        ],
+        [
+          267.0,
+          1285.0
+        ]
+      ],
+      "text": "c) Sử dụng hàng hóa trong hạn ngạch thuế quan không đúng quy định;",
+      "confidence": 0.9626200364285715
+    },
+    {
+      "bbox": [
+        [
+          267.0,
+          1303.0
+        ],
+        [
+          1124.0,
+          1303.0
+        ],
+        [
+          1124.0,
+          1358.0
+        ],
+        [
+          267.0,
+          1358.0
+        ]
+      ],
+      "text": "d) Lập và khai không đúng các nội dung trong hồ sơ miễn thuế, hồ sơ xét",
+      "confidence": 0.9609863688235294
+    },
+    {
+      "bbox": [
+        [
+          209.0,
+          1340.0
+        ],
+        [
+          1125.0,
+          1340.0
+        ],
+        [
+          1125.0,
+          1378.0
+        ],
+        [
+          209.0,
+          1378.0
+        ]
+      ],
+      "text": "miễn, giảm thuế, hoàn thuế, không thu thuế, hồ sơ xử lý tiền thuế, tiền phạt",
+      "confidence": 0.960501095625
+    },
+    {
+      "bbox": [
+        [
+          209.0,
+          1385.0
+        ],
+        [
+          318.0,
+          1385.0
+        ],
+        [
+          318.0,
+          1413.0
+        ],
+        [
+          209.0,
+          1413.0
+        ]
+      ],
+      "text": "nộp thừa;",
+      "confidence": 0.9676503750000001
+    },
+    {
+      "bbox": [
+        [
+          269.0,
+          1429.0
+        ],
+        [
+          1124.0,
+          1429.0
+        ],
+        [
+          1124.0,
+          1475.0
+        ],
+        [
+          269.0,
+          1475.0
+        ]
+      ],
+      "text": "đ) Vi phạm quy định về quản lý nguyên liệu, vật tư, máy móc, thiết bị,",
+      "confidence": 0.956048354375
+    },
+    {
+      "bbox": [
+        [
+          211.0,
+          1464.0
+        ],
+        [
+          1125.0,
+          1464.0
+        ],
+        [
+          1125.0,
+          1518.0
+        ],
+        [
+          211.0,
+          1518.0
+        ]
+      ],
+      "text": "sản phẩm gia công, sản xuất xuất khau, chế xuất dẫn đến hàng hóa thực tế tồn",
+      "confidence": 0.9553402382352941
+    },
+    {
+      "bbox": [
+        [
+          210.0,
+          1499.0
+        ],
+        [
+          1125.0,
+          1499.0
+        ],
+        [
+          1125.0,
+          1538.0
+        ],
+        [
+          210.0,
+          1538.0
+        ]
+      ],
+      "text": "kho thiếu so với chứng từ kế toán, sb kế toán, hồ sơ hàng hóa xuất khẩu, nhập",
+      "confidence": 0.9614680433333334
+    },
+    {
+      "bbox": [
+        [
+          210.0,
+          1532.0
+        ],
+        [
+          1125.0,
+          1532.0
+        ],
+        [
+          1125.0,
+          1575.0
+        ],
+        [
+          210.0,
+          1575.0
+        ]
+      ],
+      "text": "khẩu mà không thuộc trường hợp quy định tại các Điểm d, đ, e và Điểm g",
+      "confidence": 0.9542689829411765
+    },
+    {
+      "bbox": [
+        [
+          210.0,
+          1569.0
+        ],
+        [
+          591.0,
+          1569.0
+        ],
+        [
+          591.0,
+          1602.0
+        ],
+        [
+          210.0,
+          1602.0
+        ]
+      ],
+      "text": "Khoản 1 Điều 13 Nghị định này;",
+      "confidence": 0.9681808028571429
+    }
+  ]
+}

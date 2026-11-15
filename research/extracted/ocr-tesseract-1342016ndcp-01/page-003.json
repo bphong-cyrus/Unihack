@@ -1,0 +1,839 @@
+{
+  "document_id": "134/2016/NĐ-CP",
+  "source_file": "../../legal-sources/1342016ndcp/01.pdf",
+  "source_sha256": "4fe3832d278d03e6ab53c064c6aa3c60063d372570eaa6b57427b0bd252e5460",
+  "page_count": 78,
+  "render_dpi": 150,
+  "engine": "Tesseract 5.5.4 (vie+eng; OEM 1; PSM 3)",
+  "review_status": "UNREVIEWED",
+  "tesseract_version": "5.5.4",
+  "tsv_parser_version": 2,
+  "languages": [
+    "vie",
+    "eng"
+  ],
+  "traineddata_sha256": {
+    "vie": "b6b49293d95d0b6dbd8780174627e82c75be957b6f4ed9862155540d6b00bb45",
+    "eng": "8280aed0782fe27257a68ea10fe7ef324ca0f8d85bd2fd145d1c2b560bcb66ba"
+  },
+  "ocr_engine_mode": 1,
+  "page_segmentation_mode": 3,
+  "thread_limit": 1,
+  "page": 3,
+  "lines": [
+    {
+      "bbox": [
+        [
+          327.0,
+          218.0
+        ],
+        [
+          1080.0,
+          218.0
+        ],
+        [
+          1080.0,
+          252.0
+        ],
+        [
+          327.0,
+          252.0
+        ]
+      ],
+      "text": "a) Bảo lãnh riêng là việc tổ chức tín dụng hoạt động theo quy định của",
+      "confidence": 0.96854765
+    },
+    {
+      "bbox": [
+        [
+          275.0,
+          244.0
+        ],
+        [
+          1079.0,
+          244.0
+        ],
+        [
+          1079.0,
+          281.0
+        ],
+        [
+          275.0,
+          281.0
+        ]
+      ],
+      "text": "Luật các tổ chức tín dụng cam kết bảo lãnh thực hiện đây đủ nghĩa vụ nộp số",
+      "confidence": 0.9666730961111111
+    },
+    {
+      "bbox": [
+        [
+          275.0,
+          274.0
+        ],
+        [
+          957.0,
+          274.0
+        ],
+        [
+          957.0,
+          304.0
+        ],
+        [
+          275.0,
+          304.0
+        ]
+      ],
+      "text": "tiền thuế cho một tờ khai hải quan hàng hoá xuất khẩu, nhập khâu;",
+      "confidence": 0.9517734907142859
+    },
+    {
+      "bbox": [
+        [
+          327.0,
+          326.0
+        ],
+        [
+          1080.0,
+          326.0
+        ],
+        [
+          1080.0,
+          360.0
+        ],
+        [
+          327.0,
+          360.0
+        ]
+      ],
+      "text": "b) Bảo lãnh chung là việc tổ chức tín dụng hoạt động theo quy định của",
+      "confidence": 0.9631318675
+    },
+    {
+      "bbox": [
+        [
+          275.0,
+          352.0
+        ],
+        [
+          1079.0,
+          352.0
+        ],
+        [
+          1079.0,
+          390.0
+        ],
+        [
+          275.0,
+          390.0
+        ]
+      ],
+      "text": "Luật các tổ chức tín dụng cam kết bảo lãnh thực hiện đây đủ nghĩa vụ nộp số",
+      "confidence": 0.9671716511111111
+    },
+    {
+      "bbox": [
+        [
+          275.0,
+          382.0
+        ],
+        [
+          1078.0,
+          382.0
+        ],
+        [
+          1078.0,
+          413.0
+        ],
+        [
+          275.0,
+          413.0
+        ]
+      ],
+      "text": "tiền thuế cho hai tờ khai hải quan hàng hoá xuất khẩu, nhập khẩu trở lên tại",
+      "confidence": 0.9664869641176472
+    },
+    {
+      "bbox": [
+        [
+          275.0,
+          414.0
+        ],
+        [
+          1079.0,
+          414.0
+        ],
+        [
+          1079.0,
+          441.0
+        ],
+        [
+          275.0,
+          441.0
+        ]
+      ],
+      "text": "một hoặc nhiều Chi cục Hải quan. Bảo lãnh chung được trừ lùi, khôi phục",
+      "confidence": 0.9643346006666667
+    },
+    {
+      "bbox": [
+        [
+          275.0,
+          442.0
+        ],
+        [
+          626.0,
+          442.0
+        ],
+        [
+          626.0,
+          470.0
+        ],
+        [
+          275.0,
+          470.0
+        ]
+      ],
+      "text": "tương ứng với số tiền thuế đã nộp;",
+      "confidence": 0.9666453262500001
+    },
+    {
+      "bbox": [
+        [
+          326.0,
+          492.0
+        ],
+        [
+          1080.0,
+          492.0
+        ],
+        [
+          1080.0,
+          525.0
+        ],
+        [
+          326.0,
+          525.0
+        ]
+      ],
+      "text": "¢) Trường hợp tổ chức tín dụng nhận bảo lãnh riêng hoặc bảo lãnh chung",
+      "confidence": 0.9495063126666667
+    },
+    {
+      "bbox": [
+        [
+          271.0,
+          518.0
+        ],
+        [
+          1079.0,
+          518.0
+        ],
+        [
+          1079.0,
+          558.0
+        ],
+        [
+          271.0,
+          558.0
+        ]
+      ],
+      "text": "nhưng hết thời hạn bảo lãnh đối với từng tờ khai mà người nộp thuế chưa nộp",
+      "confidence": 0.9628023841176472
+    },
+    {
+      "bbox": [
+        [
+          274.0,
+          549.0
+        ],
+        [
+          1079.0,
+          549.0
+        ],
+        [
+          1079.0,
+          586.0
+        ],
+        [
+          274.0,
+          586.0
+        ]
+      ],
+      "text": "thuế và tiền chậm nộp (nếu có), tổ chức tín dụng nhận bảo lãnh có trách",
+      "confidence": 0.968440475
+    },
+    {
+      "bbox": [
+        [
+          275.0,
+          577.0
+        ],
+        [
+          1080.0,
+          577.0
+        ],
+        [
+          1080.0,
+          611.0
+        ],
+        [
+          275.0,
+          611.0
+        ]
+      ],
+      "text": "nhiệm nộp đủ tiên thuế, tiền chậm nộp thay người nộp thuế vào ngân sách nhà",
+      "confidence": 0.9582929987500001
+    },
+    {
+      "bbox": [
+        [
+          275.0,
+          607.0
+        ],
+        [
+          1079.0,
+          607.0
+        ],
+        [
+          1079.0,
+          635.0
+        ],
+        [
+          275.0,
+          635.0
+        ]
+      ],
+      "text": "nước trên cơ sở thông tin trên hệ thống xử lý dữ liệu điện tử hải quan hoặc",
+      "confidence": 0.9656983272222222
+    },
+    {
+      "bbox": [
+        [
+          274.0,
+          641.0
+        ],
+        [
+          605.0,
+          641.0
+        ],
+        [
+          605.0,
+          664.0
+        ],
+        [
+          274.0,
+          664.0
+        ]
+      ],
+      "text": "thông báo của cơ quan hải quan;",
+      "confidence": 0.9672600457142857
+    },
+    {
+      "bbox": [
+        [
+          326.0,
+          684.0
+        ],
+        [
+          1080.0,
+          684.0
+        ],
+        [
+          1080.0,
+          717.0
+        ],
+        [
+          326.0,
+          717.0
+        ]
+      ],
+      "text": "d) Nội dung thư bảo lãnh, việc nộp thư bảo lãnh và kiểm tra, theo dõi, xử",
+      "confidence": 0.9630834247058823
+    },
+    {
+      "bbox": [
+        [
+          275.0,
+          712.0
+        ],
+        [
+          991.0,
+          712.0
+        ],
+        [
+          991.0,
+          742.0
+        ],
+        [
+          275.0,
+          742.0
+        ]
+      ],
+      "text": "lý thư bảo lãnh thực hiện theo quy định của pháp luật về quản lý thuế.",
+      "confidence": 0.96701542375
+    },
+    {
+      "bbox": [
+        [
+          327.0,
+          757.0
+        ],
+        [
+          1079.0,
+          757.0
+        ],
+        [
+          1079.0,
+          806.0
+        ],
+        [
+          327.0,
+          806.0
+        ]
+      ],
+      "text": "3. Trường hợp sử dụng hình thức đặt cọc tiền thuế nhập khẩu đối với",
+      "confidence": 0.9683866166666667
+    },
+    {
+      "bbox": [
+        [
+          275.0,
+          790.0
+        ],
+        [
+          1079.0,
+          790.0
+        ],
+        [
+          1079.0,
+          829.0
+        ],
+        [
+          275.0,
+          829.0
+        ]
+      ],
+      "text": "hàng hóa kinh doanh tạm nhập, tái xuất trong thời hạn tạm nhập, tái xuất (bao",
+      "confidence": 0.968468241875
+    },
+    {
+      "bbox": [
+        [
+          275.0,
+          819.0
+        ],
+        [
+          1079.0,
+          819.0
+        ],
+        [
+          1079.0,
+          864.0
+        ],
+        [
+          275.0,
+          864.0
+        ]
+      ],
+      "text": "gồm cả thời gian gia hạn), \"người nộp thuế phải nộp một khoản tiền tương",
+      "confidence": 0.9573118226666666
+    },
+    {
+      "bbox": [
+        [
+          275.0,
+          847.0
+        ],
+        [
+          1078.0,
+          847.0
+        ],
+        [
+          1078.0,
+          879.0
+        ],
+        [
+          275.0,
+          879.0
+        ]
+      ],
+      "text": "đương số tiền thuế nhập khẩu của hàng hóa tạm nhập vào tài khoản tiền gửi",
+      "confidence": 0.968064133125
+    },
+    {
+      "bbox": [
+        [
+          275.0,
+          883.0
+        ],
+        [
+          721.0,
+          883.0
+        ],
+        [
+          721.0,
+          907.0
+        ],
+        [
+          275.0,
+          907.0
+        ]
+      ],
+      "text": "của cơ quan hải quan tại Kho bạc nhà nước.",
+      "confidence": 0.968008957
+    },
+    {
+      "bbox": [
+        [
+          326.0,
+          925.0
+        ],
+        [
+          1079.0,
+          925.0
+        ],
+        [
+          1079.0,
+          967.0
+        ],
+        [
+          326.0,
+          967.0
+        ]
+      ],
+      "text": "Việc hoàn trả tiền đặt cọc thực hiện như quy định về hoàn trả tiền thuế,",
+      "confidence": 0.9685995525
+    },
+    {
+      "bbox": [
+        [
+          274.0,
+          953.0
+        ],
+        [
+          1078.0,
+          953.0
+        ],
+        [
+          1078.0,
+          986.0
+        ],
+        [
+          274.0,
+          986.0
+        ]
+      ],
+      "text": "tiền chậm nộp, tiền phạt nộp thừa theo quy định của pháp luật về quản lý thuế.",
+      "confidence": 0.9619198747058825
+    },
+    {
+      "bbox": [
+        [
+          326.0,
+          1005.0
+        ],
+        [
+          1079.0,
+          1005.0
+        ],
+        [
+          1079.0,
+          1050.0
+        ],
+        [
+          326.0,
+          1050.0
+        ]
+      ],
+      "text": "4. Đối với hàng hóa kinh doanh tạm nhập tái xuất, quá thời hạn lưu giữ,",
+      "confidence": 0.9675799806250001
+    },
+    {
+      "bbox": [
+        [
+          275.0,
+          1036.0
+        ],
+        [
+          1080.0,
+          1036.0
+        ],
+        [
+          1080.0,
+          1075.0
+        ],
+        [
+          275.0,
+          1075.0
+        ]
+      ],
+      "text": "doanh nghiệp chưa tái xuất hàng hóa ra khỏi Việt Nam thì cơ quan hải quan",
+      "confidence": 0.9674139887500001
+    },
+    {
+      "bbox": [
+        [
+          275.0,
+          1064.0
+        ],
+        [
+          1080.0,
+          1064.0
+        ],
+        [
+          1080.0,
+          1098.0
+        ],
+        [
+          275.0,
+          1098.0
+        ]
+      ],
+      "text": "chuyển số tiền đặt cọc từ tài khoản tiền gửi của cơ quan hải quan vào ngân",
+      "confidence": 0.9491965211764706
+    },
+    {
+      "bbox": [
+        [
+          276.0,
+          1089.0
+        ],
+        [
+          1080.0,
+          1089.0
+        ],
+        [
+          1080.0,
+          1130.0
+        ],
+        [
+          276.0,
+          1130.0
+        ]
+      ],
+      "text": "sách nhà nước; đối với trường, hợp bảo lãnh thì tổ chức tín dụng có trách",
+      "confidence": 0.9506064218749999
+    },
+    {
+      "bbox": [
+        [
+          275.0,
+          1119.0
+        ],
+        [
+          1081.0,
+          1119.0
+        ],
+        [
+          1081.0,
+          1151.0
+        ],
+        [
+          275.0,
+          1151.0
+        ]
+      ],
+      "text": "nhiệm nộp số tiền tương ứng với số tiền thuế nhập khẩu vào ngân sách nhà",
+      "confidence": 0.968307165625
+    },
+    {
+      "bbox": [
+        [
+          275.0,
+          1149.0
+        ],
+        [
+          1080.0,
+          1149.0
+        ],
+        [
+          1080.0,
+          1179.0
+        ],
+        [
+          275.0,
+          1179.0
+        ]
+      ],
+      "text": "nước trên cơ sở thông tin trên hệ thống xử lý dữ liệu điện tử hải quan hoặc",
+      "confidence": 0.9669754877777779
+    },
+    {
+      "bbox": [
+        [
+          274.0,
+          1184.0
+        ],
+        [
+          605.0,
+          1184.0
+        ],
+        [
+          605.0,
+          1208.0
+        ],
+        [
+          274.0,
+          1208.0
+        ]
+      ],
+      "text": "thông báo của cơ quan hải quan.",
+      "confidence": 0.9690975185714287
+    },
+    {
+      "bbox": [
+        [
+          620.0,
+          1234.0
+        ],
+        [
+          734.0,
+          1234.0
+        ],
+        [
+          734.0,
+          1262.0
+        ],
+        [
+          620.0,
+          1262.0
+        ]
+      ],
+      "text": "Chương H",
+      "confidence": 0.92044964
+    },
+    {
+      "bbox": [
+        [
+          455.0,
+          1256.0
+        ],
+        [
+          902.0,
+          1256.0
+        ],
+        [
+          902.0,
+          1284.0
+        ],
+        [
+          455.0,
+          1284.0
+        ]
+      ],
+      "text": "MIỄN THUẾ, GIAM THUẾ, HOÀN THUÊ",
+      "confidence": 0.8972248466666667
+    },
+    {
+      "bbox": [
+        [
+          328.0,
+          1301.0
+        ],
+        [
+          1081.0,
+          1301.0
+        ],
+        [
+          1081.0,
+          1342.0
+        ],
+        [
+          328.0,
+          1342.0
+        ]
+      ],
+      "text": "Điều 5. Miễn thuế đối với hàng hoá của tổ chức, cá nhân nước ngoài",
+      "confidence": 0.9681775706666668
+    },
+    {
+      "bbox": [
+        [
+          277.0,
+          1333.0
+        ],
+        [
+          667.0,
+          1333.0
+        ],
+        [
+          667.0,
+          1362.0
+        ],
+        [
+          277.0,
+          1362.0
+        ]
+      ],
+      "text": "được hưởng quyền ưu đãi, miễn trừ",
+      "confidence": 0.966984517142857
+    },
+    {
+      "bbox": [
+        [
+          331.0,
+          1375.0
+        ],
+        [
+          1081.0,
+          1375.0
+        ],
+        [
+          1081.0,
+          1418.0
+        ],
+        [
+          331.0,
+          1418.0
+        ]
+      ],
+      "text": "1. Hàng hóa của tổ chức, cá nhân nước ngoài được hưởng. quyền ưu đãi,",
+      "confidence": 0.9482226260000001
+    },
+    {
+      "bbox": [
+        [
+          277.0,
+          1403.0
+        ],
+        [
+          1083.0,
+          1403.0
+        ],
+        [
+          1083.0,
+          1444.0
+        ],
+        [
+          277.0,
+          1444.0
+        ]
+      ],
+      "text": "miễn trừ được miễn thuế nhập khẩu theo quy định tại khoản 1 Điều 16 Luật",
+      "confidence": 0.9543893149999999
+    },
+    {
+      "bbox": [
+        [
+          277.0,
+          1436.0
+        ],
+        [
+          661.0,
+          1436.0
+        ],
+        [
+          661.0,
+          1465.0
+        ],
+        [
+          277.0,
+          1465.0
+        ]
+      ],
+      "text": "thuế xuất khẩu, thuế nhập khẩu, gồm:",
+      "confidence": 0.9635790242857142
+    }
+  ]
+}

@@ -1,0 +1,883 @@
+{
+  "document_id": "126/2020/NĐ-CP",
+  "source_file": "../../legal-sources/1262020ndcp/01.pdf",
+  "source_sha256": "310648e80396d267610946458e7fdd71ba87ef538b009d6574ed21514de3f7ca",
+  "page_count": 119,
+  "render_dpi": 150,
+  "engine": "Tesseract 5.5.4 (vie+eng; OEM 1; PSM 3)",
+  "review_status": "UNREVIEWED",
+  "tesseract_version": "5.5.4",
+  "tsv_parser_version": 2,
+  "languages": [
+    "vie",
+    "eng"
+  ],
+  "traineddata_sha256": {
+    "vie": "b6b49293d95d0b6dbd8780174627e82c75be957b6f4ed9862155540d6b00bb45",
+    "eng": "8280aed0782fe27257a68ea10fe7ef324ca0f8d85bd2fd145d1c2b560bcb66ba"
+  },
+  "ocr_engine_mode": 1,
+  "page_segmentation_mode": 3,
+  "thread_limit": 1,
+  "page": 87,
+  "lines": [
+    {
+      "bbox": [
+        [
+          702.0,
+          69.0
+        ],
+        [
+          729.0,
+          69.0
+        ],
+        [
+          729.0,
+          89.0
+        ],
+        [
+          702.0,
+          89.0
+        ]
+      ],
+      "text": "87",
+      "confidence": 0.96274193
+    },
+    {
+      "bbox": [
+        [
+          286.0,
+          145.0
+        ],
+        [
+          1146.0,
+          145.0
+        ],
+        [
+          1146.0,
+          184.0
+        ],
+        [
+          286.0,
+          184.0
+        ]
+      ],
+      "text": "a.2) Tai thong báo ngừng sử dụng hóa đơn cần ghi rõ: Căn cứ ra thông",
+      "confidence": 0.958665480625
+    },
+    {
+      "bbox": [
+        [
+          228.0,
+          175.0
+        ],
+        [
+          1146.0,
+          175.0
+        ],
+        [
+          1146.0,
+          224.0
+        ],
+        [
+          228.0,
+          224.0
+        ]
+      ],
+      "text": "báo; tên, địa chỉ, mã số thuế của người nộp thuế bị cưỡng chế; lý do ngừng sử",
+      "confidence": 0.9675255838888889
+    },
+    {
+      "bbox": [
+        [
+          227.0,
+          216.0
+        ],
+        [
+          1145.0,
+          216.0
+        ],
+        [
+          1145.0,
+          248.0
+        ],
+        [
+          227.0,
+          248.0
+        ]
+      ],
+      "text": "dụng hóa đơn; ký hiệu mẫu, ký hiệu, số hóa đơn ngừng sử dụng, ngày ngừng",
+      "confidence": 0.9673781300000001
+    },
+    {
+      "bbox": [
+        [
+          226.0,
+          254.0
+        ],
+        [
+          425.0,
+          254.0
+        ],
+        [
+          425.0,
+          281.0
+        ],
+        [
+          226.0,
+          281.0
+        ]
+      ],
+      "text": "sử dụng hoá đơn.",
+      "confidence": 0.967662335
+    },
+    {
+      "bbox": [
+        [
+          284.0,
+          311.0
+        ],
+        [
+          1144.0,
+          311.0
+        ],
+        [
+          1144.0,
+          344.0
+        ],
+        [
+          284.0,
+          344.0
+        ]
+      ],
+      "text": "a.3) Thủ trưởng cơ quan quản lý thuế, Cục trưởng Cục Kiểm tra sau",
+      "confidence": 0.9649888078571428
+    },
+    {
+      "bbox": [
+        [
+          224.0,
+          346.0
+        ],
+        [
+          1144.0,
+          346.0
+        ],
+        [
+          1144.0,
+          380.0
+        ],
+        [
+          224.0,
+          380.0
+        ]
+      ],
+      "text": "thông quan, Cục trưởng Cục Điều tra chống buôn lậu thuộc Tổng cục Hải",
+      "confidence": 0.9675535185714286
+    },
+    {
+      "bbox": [
+        [
+          224.0,
+          380.0
+        ],
+        [
+          1144.0,
+          380.0
+        ],
+        [
+          1144.0,
+          415.0
+        ],
+        [
+          224.0,
+          415.0
+        ]
+      ],
+      "text": "quan, Chủ tịch Ủy ban nhân dân cấp huyện, cấp tỉnh có thẩm quyền ban hành",
+      "confidence": 0.9572423268750001
+    },
+    {
+      "bbox": [
+        [
+          224.0,
+          415.0
+        ],
+        [
+          1143.0,
+          415.0
+        ],
+        [
+          1143.0,
+          451.0
+        ],
+        [
+          224.0,
+          451.0
+        ]
+      ],
+      "text": "quyết định cưỡng chế đối với các quyết định hành chính về quản lý thuế do",
+      "confidence": 0.9689946268749999
+    },
+    {
+      "bbox": [
+        [
+          223.0,
+          452.0
+        ],
+        [
+          1142.0,
+          452.0
+        ],
+        [
+          1142.0,
+          486.0
+        ],
+        [
+          223.0,
+          486.0
+        ]
+      ],
+      "text": "mình ban hành hoặc cấp dưới ban hành nhưng không có thẩm quyền cưỡng",
+      "confidence": 0.9659796142857143
+    },
+    {
+      "bbox": [
+        [
+          223.0,
+          486.0
+        ],
+        [
+          1142.0,
+          486.0
+        ],
+        [
+          1142.0,
+          521.0
+        ],
+        [
+          223.0,
+          521.0
+        ]
+      ],
+      "text": "chế hoặc cấp dưới có thẩm quyền ra quyết định cưỡng chế nhưng không đủ",
+      "confidence": 0.9482319746666668
+    },
+    {
+      "bbox": [
+        [
+          223.0,
+          522.0
+        ],
+        [
+          1141.0,
+          522.0
+        ],
+        [
+          1141.0,
+          556.0
+        ],
+        [
+          223.0,
+          556.0
+        ]
+      ],
+      "text": "điều kiện về lực lượng, phương tiện để tổ chức thi hành quyết định cưỡng chế",
+      "confidence": 0.959620195
+    },
+    {
+      "bbox": [
+        [
+          222.0,
+          558.0
+        ],
+        [
+          1141.0,
+          558.0
+        ],
+        [
+          1141.0,
+          592.0
+        ],
+        [
+          222.0,
+          592.0
+        ]
+      ],
+      "text": "và có văn bản đề nghị cấp trên ra quyết định cưỡng chế. Trường hợp cấp",
+      "confidence": 0.9684981924999999
+    },
+    {
+      "bbox": [
+        [
+          222.0,
+          593.0
+        ],
+        [
+          1142.0,
+          593.0
+        ],
+        [
+          1142.0,
+          627.0
+        ],
+        [
+          222.0,
+          627.0
+        ]
+      ],
+      "text": "trưởng vắng mặt có thể giao quyền cho cấp phó xem xét ban hành quyết định",
+      "confidence": 0.9685598506249999
+    },
+    {
+      "bbox": [
+        [
+          222.0,
+          628.0
+        ],
+        [
+          1141.0,
+          628.0
+        ],
+        [
+          1141.0,
+          662.0
+        ],
+        [
+          222.0,
+          662.0
+        ]
+      ],
+      "text": "cưỡng chế, việc giao quyền được thực hiện bằng văn bản theo Mẫu số 09/CC",
+      "confidence": 0.9616915480000001
+    },
+    {
+      "bbox": [
+        [
+          221.0,
+          664.0
+        ],
+        [
+          1141.0,
+          664.0
+        ],
+        [
+          1141.0,
+          698.0
+        ],
+        [
+          221.0,
+          698.0
+        ]
+      ],
+      "text": "tai Phụ lục III ban hành kèm theo Nghị định này, cấp phó được giao quyền",
+      "confidence": 0.963856586875
+    },
+    {
+      "bbox": [
+        [
+          220.0,
+          699.0
+        ],
+        [
+          1141.0,
+          699.0
+        ],
+        [
+          1141.0,
+          733.0
+        ],
+        [
+          220.0,
+          733.0
+        ]
+      ],
+      "text": "phải chịu trách nhiệm về quyết định của mình trước cấp trưởng và trước pháp",
+      "confidence": 0.9676806493333333
+    },
+    {
+      "bbox": [
+        [
+          221.0,
+          734.0
+        ],
+        [
+          1141.0,
+          734.0
+        ],
+        [
+          1141.0,
+          768.0
+        ],
+        [
+          221.0,
+          768.0
+        ]
+      ],
+      "text": "luật. Người được giao quyền không được giao quyền tiếp cho bất kỳ cá nhân",
+      "confidence": 0.9682770853333333
+    },
+    {
+      "bbox": [
+        [
+          220.0,
+          775.0
+        ],
+        [
+          330.0,
+          775.0
+        ],
+        [
+          330.0,
+          796.0
+        ],
+        [
+          220.0,
+          796.0
+        ]
+      ],
+      "text": "nào khác.",
+      "confidence": 0.96858654
+    },
+    {
+      "bbox": [
+        [
+          279.0,
+          829.0
+        ],
+        [
+          1001.0,
+          829.0
+        ],
+        [
+          1001.0,
+          863.0
+        ],
+        [
+          279.0,
+          863.0
+        ]
+      ],
+      "text": "b) Quyết định cưỡng chế được ban hành tại các thời điểm sau",
+      "confidence": 0.9546867484615384
+    },
+    {
+      "bbox": [
+        [
+          279.0,
+          890.0
+        ],
+        [
+          1140.0,
+          890.0
+        ],
+        [
+          1140.0,
+          931.0
+        ],
+        [
+          279.0,
+          931.0
+        ]
+      ],
+      "text": "b.1) Ngay sau ngày hết thời hiệu của quyết định cưỡng chế trích tiền từ",
+      "confidence": 0.965546854
+    },
+    {
+      "bbox": [
+        [
+          219.0,
+          926.0
+        ],
+        [
+          1140.0,
+          926.0
+        ],
+        [
+          1140.0,
+          971.0
+        ],
+        [
+          219.0,
+          971.0
+        ]
+      ],
+      "text": "tài khoản, phong tỏa tài khoản của người nộp thuế bị cưỡng chế; quyết định",
+      "confidence": 0.9664442806666667
+    },
+    {
+      "bbox": [
+        [
+          220.0,
+          959.0
+        ],
+        [
+          1140.0,
+          959.0
+        ],
+        [
+          1140.0,
+          995.0
+        ],
+        [
+          220.0,
+          995.0
+        ]
+      ],
+      "text": "cưỡng chế khấu trừ một phần tiền lương hoặc thu nhập đối với cá nhân; quyết",
+      "confidence": 0.964240275625
+    },
+    {
+      "bbox": [
+        [
+          220.0,
+          995.0
+        ],
+        [
+          1139.0,
+          995.0
+        ],
+        [
+          1139.0,
+          1038.0
+        ],
+        [
+          220.0,
+          1038.0
+        ]
+      ],
+      "text": "định cưỡng chế dừng làm thủ tục hải quan (nếu có) hoặc ngay sau ngày đủ",
+      "confidence": 0.96137618
+    },
+    {
+      "bbox": [
+        [
+          220.0,
+          1029.0
+        ],
+        [
+          1137.0,
+          1029.0
+        ],
+        [
+          1137.0,
+          1071.0
+        ],
+        [
+          220.0,
+          1071.0
+        ]
+      ],
+      "text": "điều kiện chuyển biện pháp cưỡng chế theo quy định tại khoản 3 Điều 125",
+      "confidence": 0.9684657293333333
+    },
+    {
+      "bbox": [
+        [
+          218.0,
+          1066.0
+        ],
+        [
+          436.0,
+          1066.0
+        ],
+        [
+          436.0,
+          1098.0
+        ],
+        [
+          218.0,
+          1098.0
+        ]
+      ],
+      "text": "Luật Quản lý thuế.",
+      "confidence": 0.9641269675
+    },
+    {
+      "bbox": [
+        [
+          277.0,
+          1126.0
+        ],
+        [
+          1138.0,
+          1126.0
+        ],
+        [
+          1138.0,
+          1167.0
+        ],
+        [
+          277.0,
+          1167.0
+        ]
+      ],
+      "text": "b.2) Trường hợp quyết định cưỡng chế ngừng sử dụng hóa đơn hết hiệu",
+      "confidence": 0.9349219664285715
+    },
+    {
+      "bbox": [
+        [
+          219.0,
+          1160.0
+        ],
+        [
+          1137.0,
+          1160.0
+        ],
+        [
+          1137.0,
+          1203.0
+        ],
+        [
+          219.0,
+          1203.0
+        ]
+      ],
+      "text": "lực mà người nộp thuế chưa nộp di số tiền thuế nợ vào ngân sách nhà nước,",
+      "confidence": 0.9657042970588234
+    },
+    {
+      "bbox": [
+        [
+          218.0,
+          1194.0
+        ],
+        [
+          1137.0,
+          1194.0
+        ],
+        [
+          1137.0,
+          1235.0
+        ],
+        [
+          218.0,
+          1235.0
+        ]
+      ],
+      "text": "nếu không đủ điều kiện áp dụng các biện pháp cưỡng chế tiếp theo hoặc áp",
+      "confidence": 0.9684060956249999
+    },
+    {
+      "bbox": [
+        [
+          218.0,
+          1230.0
+        ],
+        [
+          1138.0,
+          1230.0
+        ],
+        [
+          1138.0,
+          1269.0
+        ],
+        [
+          218.0,
+          1269.0
+        ]
+      ],
+      "text": "dụng biện pháp cưỡng chế ngừng sử dụng hóa đơn mà có hiệu quả thì cơ quan",
+      "confidence": 0.9675865394117648
+    },
+    {
+      "bbox": [
+        [
+          218.0,
+          1264.0
+        ],
+        [
+          1137.0,
+          1264.0
+        ],
+        [
+          1137.0,
+          1307.0
+        ],
+        [
+          218.0,
+          1307.0
+        ]
+      ],
+      "text": "quản lý thuế tiếp tục áp dụng biện _pháp cưỡng chế có hiệu quả. Trường hợp",
+      "confidence": 0.9522894368750001
+    },
+    {
+      "bbox": [
+        [
+          218.0,
+          1301.0
+        ],
+        [
+          1137.0,
+          1301.0
+        ],
+        [
+          1137.0,
+          1340.0
+        ],
+        [
+          218.0,
+          1340.0
+        ]
+      ],
+      "text": "đang áp dụng biện pháp cưỡng chế này mà có thông tin, điều kiện thực hiện",
+      "confidence": 0.96742896125
+    },
+    {
+      "bbox": [
+        [
+          218.0,
+          1335.0
+        ],
+        [
+          1137.0,
+          1335.0
+        ],
+        [
+          1137.0,
+          1372.0
+        ],
+        [
+          218.0,
+          1372.0
+        ]
+      ],
+      "text": "biện pháp cưỡng chế trước hoặc biện pháp cưỡng chế tiếp theo hiệu quả hơn",
+      "confidence": 0.9669820353333333
+    },
+    {
+      "bbox": [
+        [
+          217.0,
+          1367.0
+        ],
+        [
+          1136.0,
+          1367.0
+        ],
+        [
+          1136.0,
+          1415.0
+        ],
+        [
+          217.0,
+          1415.0
+        ]
+      ],
+      "text": "thì cơ quan quản lý thuế đồng thời áp dung biện pháp cưỡng chế trước hoặc",
+      "confidence": 0.953295711875
+    },
+    {
+      "bbox": [
+        [
+          218.0,
+          1406.0
+        ],
+        [
+          1091.0,
+          1406.0
+        ],
+        [
+          1091.0,
+          1442.0
+        ],
+        [
+          218.0,
+          1442.0
+        ]
+      ],
+      "text": "biện pháp cưỡng chế tiếp theo dé thu tiền thuế nợ vào ngân sách nhà nước.",
+      "confidence": 0.953571195625
+    },
+    {
+      "bbox": [
+        [
+          276.0,
+          1466.0
+        ],
+        [
+          1135.0,
+          1466.0
+        ],
+        [
+          1135.0,
+          1509.0
+        ],
+        [
+          276.0,
+          1509.0
+        ]
+      ],
+      "text": "¢) Quyết định cưỡng chế ngừng sử dung hóa don được gửi cho tổ chức,",
+      "confidence": 0.9538435373333333
+    },
+    {
+      "bbox": [
+        [
+          218.0,
+          1504.0
+        ],
+        [
+          1135.0,
+          1504.0
+        ],
+        [
+          1135.0,
+          1543.0
+        ],
+        [
+          218.0,
+          1543.0
+        ]
+      ],
+      "text": "cá nhân có liên quan và người nộp thuế bị cưỡng chế ngay trong ngày ban",
+      "confidence": 0.9650182587499999
+    },
+    {
+      "bbox": [
+        [
+          217.0,
+          1537.0
+        ],
+        [
+          1136.0,
+          1537.0
+        ],
+        [
+          1136.0,
+          1578.0
+        ],
+        [
+          217.0,
+          1578.0
+        ]
+      ],
+      "text": "hành quyết định cưỡng chế và được cập nhật trên trang thông tin điện tử của",
+      "confidence": 0.968226773125
+    },
+    {
+      "bbox": [
+        [
+          217.0,
+          1573.0
+        ],
+        [
+          351.0,
+          1573.0
+        ],
+        [
+          351.0,
+          1605.0
+        ],
+        [
+          217.0,
+          1605.0
+        ]
+      ],
+      "text": "ngành thuế.",
+      "confidence": 0.9598416900000001
+    }
+  ]
+}

@@ -1,0 +1,267 @@
+{
+  "document_id": "18/2021/NĐ-CP",
+  "source_file": "../../legal-sources/182021ndcp/01.pdf",
+  "source_sha256": "cb0bf16ab3ee6554929e0d9d2cc4f180f51b8ea10ddd30a37309353edeb050d8",
+  "page_count": 114,
+  "render_dpi": 150,
+  "engine": "Tesseract 5.5.4 (vie+eng; OEM 1; PSM 3)",
+  "review_status": "UNREVIEWED",
+  "tesseract_version": "5.5.4",
+  "tsv_parser_version": 2,
+  "languages": [
+    "vie",
+    "eng"
+  ],
+  "traineddata_sha256": {
+    "vie": "b6b49293d95d0b6dbd8780174627e82c75be957b6f4ed9862155540d6b00bb45",
+    "eng": "8280aed0782fe27257a68ea10fe7ef324ca0f8d85bd2fd145d1c2b560bcb66ba"
+  },
+  "ocr_engine_mode": 1,
+  "page_segmentation_mode": 3,
+  "thread_limit": 1,
+  "page": 114,
+  "lines": [
+    {
+      "bbox": [
+        [
+          656.0,
+          34.0
+        ],
+        [
+          682.0,
+          34.0
+        ],
+        [
+          682.0,
+          54.0
+        ],
+        [
+          656.0,
+          54.0
+        ]
+      ],
+      "text": "75",
+      "confidence": 0.9617399600000001
+    },
+    {
+      "bbox": [
+        [
+          272.0,
+          116.0
+        ],
+        [
+          420.0,
+          116.0
+        ],
+        [
+          420.0,
+          150.0
+        ],
+        [
+          272.0,
+          150.0
+        ]
+      ],
+      "text": "Bằng chữ: ...",
+      "confidence": 0.9225603466666666
+    },
+    {
+      "bbox": [
+        [
+          273.0,
+          163.0
+        ],
+        [
+          1121.0,
+          163.0
+        ],
+        [
+          1121.0,
+          197.0
+        ],
+        [
+          273.0,
+          197.0
+        ]
+      ],
+      "text": "Điều 2. Quyết định này có hiệu lực kể từ ngày ký. (Tên người nộp thuê);",
+      "confidence": 0.9656655831250001
+    },
+    {
+      "bbox": [
+        [
+          216.0,
+          202.0
+        ],
+        [
+          1123.0,
+          202.0
+        ],
+        [
+          1123.0,
+          235.0
+        ],
+        [
+          216.0,
+          235.0
+        ]
+      ],
+      "text": "(các đơn vị có liên quan của cơ quan hải quan) chịu trách nhiệm thi hành",
+      "confidence": 0.967634158125
+    },
+    {
+      "bbox": [
+        [
+          215.0,
+          236.0
+        ],
+        [
+          415.0,
+          236.0
+        ],
+        [
+          415.0,
+          262.0
+        ],
+        [
+          215.0,
+          262.0
+        ]
+      ],
+      "text": "Quyêt định này./.",
+      "confidence": 0.9263406099999999
+    },
+    {
+      "bbox": [
+        [
+          214.0,
+          316.0
+        ],
+        [
+          1034.0,
+          316.0
+        ],
+        [
+          1034.0,
+          364.0
+        ],
+        [
+          214.0,
+          364.0
+        ]
+      ],
+      "text": "Nok vids NGƯỜI RA QUYET ĐỊNH",
+      "confidence": 0.71167726
+    },
+    {
+      "bbox": [
+        [
+          216.0,
+          349.0
+        ],
+        [
+          1076.0,
+          349.0
+        ],
+        [
+          1076.0,
+          367.0
+        ],
+        [
+          216.0,
+          367.0
+        ]
+      ],
+      "text": "- Như Điều 2; , _ ˆ , NE 4",
+      "confidence": 0.7198450679999999
+    },
+    {
+      "bbox": [
+        [
+          216.0,
+          354.0
+        ],
+        [
+          1097.0,
+          354.0
+        ],
+        [
+          1097.0,
+          393.0
+        ],
+        [
+          216.0,
+          393.0
+        ]
+      ],
+      "text": "Ti VỀ (Ký, ghi rõ họ tên, chức vụ và đóng dau)",
+      "confidence": 0.8315520266666667
+    },
+    {
+      "bbox": [
+        [
+          223.0,
+          1454.0
+        ],
+        [
+          313.0,
+          1454.0
+        ],
+        [
+          313.0,
+          1472.0
+        ],
+        [
+          223.0,
+          1472.0
+        ]
+      ],
+      "text": "Ghi chú:",
+      "confidence": 0.8803342449999999
+    },
+    {
+      "bbox": [
+        [
+          222.0,
+          1476.0
+        ],
+        [
+          1108.0,
+          1476.0
+        ],
+        [
+          1108.0,
+          1505.0
+        ],
+        [
+          222.0,
+          1505.0
+        ]
+      ],
+      "text": "® Trường hợp giảm thuế trong thông quan thuộc thẳm quyền của Chỉ cục trưởng Chỉ cục",
+      "confidence": 0.9422827335294117
+    },
+    {
+      "bbox": [
+        [
+          222.0,
+          1510.0
+        ],
+        [
+          742.0,
+          1510.0
+        ],
+        [
+          742.0,
+          1534.0
+        ],
+        [
+          222.0,
+          1534.0
+        ]
+      ],
+      "text": "Hai quan: Ghi “Chi cục trưởng Chi cục Hải quan...”.",
+      "confidence": 0.9464059899999999
+    }
+  ]
+}

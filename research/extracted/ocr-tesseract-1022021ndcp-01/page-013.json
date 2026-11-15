@@ -1,0 +1,905 @@
+{
+  "document_id": "102/2021/NĐ-CP",
+  "source_file": "../../legal-sources/1022021ndcp/01.pdf",
+  "source_sha256": "2d4ea494360877c923ac60a393ea2014cca30fb0172f0676525ccd29f1594f2f",
+  "page_count": 26,
+  "render_dpi": 150,
+  "engine": "Tesseract 5.5.4 (vie+eng; OEM 1; PSM 3)",
+  "review_status": "UNREVIEWED",
+  "tesseract_version": "5.5.4",
+  "tsv_parser_version": 2,
+  "languages": [
+    "vie",
+    "eng"
+  ],
+  "traineddata_sha256": {
+    "vie": "b6b49293d95d0b6dbd8780174627e82c75be957b6f4ed9862155540d6b00bb45",
+    "eng": "8280aed0782fe27257a68ea10fe7ef324ca0f8d85bd2fd145d1c2b560bcb66ba"
+  },
+  "ocr_engine_mode": 1,
+  "page_segmentation_mode": 3,
+  "thread_limit": 1,
+  "page": 13,
+  "lines": [
+    {
+      "bbox": [
+        [
+          659.0,
+          53.0
+        ],
+        [
+          682.0,
+          53.0
+        ],
+        [
+          682.0,
+          74.0
+        ],
+        [
+          659.0,
+          74.0
+        ]
+      ],
+      "text": "13",
+      "confidence": 0.9619678500000001
+    },
+    {
+      "bbox": [
+        [
+          209.0,
+          137.0
+        ],
+        [
+          1133.0,
+          137.0
+        ],
+        [
+          1133.0,
+          170.0
+        ],
+        [
+          209.0,
+          170.0
+        ]
+      ],
+      "text": "Chỉ cục Hải quan nơi vận chuyển đi có trách nhiệm giám sát hàng hóa vận",
+      "confidence": 0.96450943
+    },
+    {
+      "bbox": [
+        [
+          209.0,
+          170.0
+        ],
+        [
+          1132.0,
+          170.0
+        ],
+        [
+          1132.0,
+          204.0
+        ],
+        [
+          209.0,
+          204.0
+        ]
+      ],
+      "text": "chuyển đi và phối hợp với Chỉ cục Hải quan cửa khẩu nơi hàng hóa vận",
+      "confidence": 0.9644987781250001
+    },
+    {
+      "bbox": [
+        [
+          209.0,
+          204.0
+        ],
+        [
+          1132.0,
+          204.0
+        ],
+        [
+          1132.0,
+          237.0
+        ],
+        [
+          209.0,
+          237.0
+        ]
+      ],
+      "text": "chuyển đến hoặc các cơ quan liên quan để hàng hóa được vận chuyển đảm",
+      "confidence": 0.9678000126666666
+    },
+    {
+      "bbox": [
+        [
+          208.0,
+          238.0
+        ],
+        [
+          768.0,
+          238.0
+        ],
+        [
+          768.0,
+          271.0
+        ],
+        [
+          208.0,
+          271.0
+        ]
+      ],
+      "text": "bảo đúng tuyến đường, cửa khẩu theo quy định.",
+      "confidence": 0.9656763444444444
+    },
+    {
+      "bbox": [
+        [
+          268.0,
+          292.0
+        ],
+        [
+          1131.0,
+          292.0
+        ],
+        [
+          1131.0,
+          325.0
+        ],
+        [
+          268.0,
+          325.0
+        ]
+      ],
+      "text": "4. Khi thi hành biện pháp buộc loại bỏ bao bì, nhãn hàng hóa đã thay đổi",
+      "confidence": 0.9665551023529412
+    },
+    {
+      "bbox": [
+        [
+          209.0,
+          326.0
+        ],
+        [
+          1131.0,
+          326.0
+        ],
+        [
+          1131.0,
+          359.0
+        ],
+        [
+          209.0,
+          359.0
+        ]
+      ],
+      "text": "do hành vi vi phạm, cá nhân, tổ chức vi phạm hành chính có thể thực hiện",
+      "confidence": 0.9660397823529412
+    },
+    {
+      "bbox": [
+        [
+          208.0,
+          359.0
+        ],
+        [
+          1131.0,
+          359.0
+        ],
+        [
+          1131.0,
+          392.0
+        ],
+        [
+          208.0,
+          392.0
+        ]
+      ],
+      "text": "bằng các hình thức: gỡ bỏ, hủy bỏ và phải làm lại bao bì, nhãn hàng hóa đúng",
+      "confidence": 0.9660485211111112
+    },
+    {
+      "bbox": [
+        [
+          208.0,
+          393.0
+        ],
+        [
+          468.0,
+          393.0
+        ],
+        [
+          468.0,
+          426.0
+        ],
+        [
+          208.0,
+          426.0
+        ]
+      ],
+      "text": "nguyên trạng ban đầu.",
+      "confidence": 0.96581171
+    },
+    {
+      "bbox": [
+        [
+          267.0,
+          447.0
+        ],
+        [
+          1131.0,
+          447.0
+        ],
+        [
+          1131.0,
+          480.0
+        ],
+        [
+          267.0,
+          480.0
+        ]
+      ],
+      "text": "Khi thi hành biện pháp buộc loại bỏ yếu tố vi phạm trên nhãn hàng hóa",
+      "confidence": 0.9587886043749999
+    },
+    {
+      "bbox": [
+        [
+          207.0,
+          481.0
+        ],
+        [
+          1132.0,
+          481.0
+        ],
+        [
+          1132.0,
+          514.0
+        ],
+        [
+          207.0,
+          514.0
+        ]
+      ],
+      "text": "trước khi đưa hàng hóa ra khỏi lãnh thổ nước Cộng hòa xã hội chủ nghĩa Việt",
+      "confidence": 0.9620370811764707
+    },
+    {
+      "bbox": [
+        [
+          207.0,
+          515.0
+        ],
+        [
+          1132.0,
+          515.0
+        ],
+        [
+          1132.0,
+          548.0
+        ],
+        [
+          207.0,
+          548.0
+        ]
+      ],
+      "text": "Nam, cá nhân, tổ chức vi phạm hành chính có thể thực hiện bằng các hình",
+      "confidence": 0.966141425
+    },
+    {
+      "bbox": [
+        [
+          207.0,
+          549.0
+        ],
+        [
+          1000.0,
+          549.0
+        ],
+        [
+          1000.0,
+          581.0
+        ],
+        [
+          207.0,
+          581.0
+        ]
+      ],
+      "text": "thức: xóa bỏ, gỡ bỏ, hủy bỏ các yếu tố vi phạm trên nhãn hàng hóa.",
+      "confidence": 0.9614059068749999
+    },
+    {
+      "bbox": [
+        [
+          268.0,
+          603.0
+        ],
+        [
+          1131.0,
+          603.0
+        ],
+        [
+          1131.0,
+          642.0
+        ],
+        [
+          268.0,
+          642.0
+        ]
+      ],
+      "text": "5. Khi thi hành biện pháp buộc tiêu hủy hàng hóa, vật phẩm gây hại cho",
+      "confidence": 0.9649525356249999
+    },
+    {
+      "bbox": [
+        [
+          208.0,
+          636.0
+        ],
+        [
+          1131.0,
+          636.0
+        ],
+        [
+          1131.0,
+          680.0
+        ],
+        [
+          208.0,
+          680.0
+        ]
+      ],
+      "text": "sức khỏe con người, vật nuôi, cây trồng và môi trường, văn hóa phẩm có nội",
+      "confidence": 0.968545293125
+    },
+    {
+      "bbox": [
+        [
+          207.0,
+          670.0
+        ],
+        [
+          1131.0,
+          670.0
+        ],
+        [
+          1131.0,
+          703.0
+        ],
+        [
+          207.0,
+          703.0
+        ]
+      ],
+      "text": "dung độc hại, cá nhân, tổ chức vi phạm hành chính căn cứ vào tính chất, đặc",
+      "confidence": 0.9676076105882352
+    },
+    {
+      "bbox": [
+        [
+          207.0,
+          703.0
+        ],
+        [
+          1131.0,
+          703.0
+        ],
+        [
+          1131.0,
+          736.0
+        ],
+        [
+          207.0,
+          736.0
+        ]
+      ],
+      "text": "điểm của hàng hoá, vật phẩm và yêu cầu đảm bảo vệ sinh môi trường để thực",
+      "confidence": 0.9673981300000001
+    },
+    {
+      "bbox": [
+        [
+          207.0,
+          737.0
+        ],
+        [
+          1131.0,
+          737.0
+        ],
+        [
+          1131.0,
+          769.0
+        ],
+        [
+          207.0,
+          769.0
+        ]
+      ],
+      "text": "hiện tiêu hủy theo các hình thức sau đây: sử dụng hóa chất, sử dụng biện pháp",
+      "confidence": 0.9683859976470589
+    },
+    {
+      "bbox": [
+        [
+          208.0,
+          770.0
+        ],
+        [
+          1132.0,
+          770.0
+        ],
+        [
+          1132.0,
+          803.0
+        ],
+        [
+          208.0,
+          803.0
+        ]
+      ],
+      "text": "cơ học, hủy đốt, hủy chôn, hình thức khác theo quy định của pháp luật. Cơ",
+      "confidence": 0.96461106875
+    },
+    {
+      "bbox": [
+        [
+          207.0,
+          804.0
+        ],
+        [
+          1131.0,
+          804.0
+        ],
+        [
+          1131.0,
+          837.0
+        ],
+        [
+          207.0,
+          837.0
+        ]
+      ],
+      "text": "quan hải quan giám sát việc tiêu hủy trực tiếp hoặc giám sát bằng các phương",
+      "confidence": 0.96880960375
+    },
+    {
+      "bbox": [
+        [
+          207.0,
+          837.0
+        ],
+        [
+          527.0,
+          837.0
+        ],
+        [
+          527.0,
+          869.0
+        ],
+        [
+          207.0,
+          869.0
+        ]
+      ],
+      "text": "tiện kỹ thuật khác (nếu có).",
+      "confidence": 0.9676306933333332
+    },
+    {
+      "bbox": [
+        [
+          267.0,
+          891.0
+        ],
+        [
+          1130.0,
+          891.0
+        ],
+        [
+          1130.0,
+          929.0
+        ],
+        [
+          267.0,
+          929.0
+        ]
+      ],
+      "text": "Cá nhân, tổ chức vi phạm hành chính thực hiện việc tiêu hủy hàng hoá,",
+      "confidence": 0.9670169466666667
+    },
+    {
+      "bbox": [
+        [
+          206.0,
+          926.0
+        ],
+        [
+          1130.0,
+          926.0
+        ],
+        [
+          1130.0,
+          958.0
+        ],
+        [
+          206.0,
+          958.0
+        ]
+      ],
+      "text": "vật phẩm phải lập biên bản tiêu hủy theo mẫu được ban hành kèm theo Nghị",
+      "confidence": 0.9669501256249999
+    },
+    {
+      "bbox": [
+        [
+          207.0,
+          958.0
+        ],
+        [
+          1130.0,
+          958.0
+        ],
+        [
+          1130.0,
+          992.0
+        ],
+        [
+          207.0,
+          992.0
+        ]
+      ],
+      "text": "định quy định chỉ tiết một số điều và biện pháp thi hành Luật Xử lý vi phạm",
+      "confidence": 0.9617645733333333
+    },
+    {
+      "bbox": [
+        [
+          206.0,
+          997.0
+        ],
+        [
+          342.0,
+          997.0
+        ],
+        [
+          342.0,
+          1018.0
+        ],
+        [
+          206.0,
+          1018.0
+        ]
+      ],
+      "text": "hành chính.",
+      "confidence": 0.967034115
+    },
+    {
+      "bbox": [
+        [
+          265.0,
+          1046.0
+        ],
+        [
+          1130.0,
+          1046.0
+        ],
+        [
+          1130.0,
+          1079.0
+        ],
+        [
+          265.0,
+          1079.0
+        ]
+      ],
+      "text": "Biên bản tiêu hủy phải có chữ ký của các thành phần tham gia tiêu hủy",
+      "confidence": 0.96740745125
+    },
+    {
+      "bbox": [
+        [
+          206.0,
+          1085.0
+        ],
+        [
+          1130.0,
+          1085.0
+        ],
+        [
+          1130.0,
+          1112.0
+        ],
+        [
+          206.0,
+          1112.0
+        ]
+      ],
+      "text": "và đại diện cơ quan hải quan giám sát việc tiêu hủy. Sau khi tiêu hủy, cá nhân,",
+      "confidence": 0.9686972255555556
+    },
+    {
+      "bbox": [
+        [
+          205.0,
+          1112.0
+        ],
+        [
+          1131.0,
+          1112.0
+        ],
+        [
+          1131.0,
+          1145.0
+        ],
+        [
+          205.0,
+          1145.0
+        ]
+      ],
+      "text": "tổ chức vi phạm phải nộp 01 biên bản tiêu hủy và các chứng từ liên quan đến",
+      "confidence": 0.9686349822222222
+    },
+    {
+      "bbox": [
+        [
+          206.0,
+          1146.0
+        ],
+        [
+          1130.0,
+          1146.0
+        ],
+        [
+          1130.0,
+          1178.0
+        ],
+        [
+          206.0,
+          1178.0
+        ]
+      ],
+      "text": "việc tiêu hủy cho cơ quan hải quan đã ra quyết định xử phạt vi phạm hành",
+      "confidence": 0.9650458358823529
+    },
+    {
+      "bbox": [
+        [
+          206.0,
+          1179.0
+        ],
+        [
+          871.0,
+          1179.0
+        ],
+        [
+          871.0,
+          1211.0
+        ],
+        [
+          206.0,
+          1211.0
+        ]
+      ],
+      "text": "chính, trong thời hạn 05 (năm) ngày ké từ ngày tiêu hủy.",
+      "confidence": 0.9630662475000001
+    },
+    {
+      "bbox": [
+        [
+          265.0,
+          1232.0
+        ],
+        [
+          1129.0,
+          1232.0
+        ],
+        [
+          1129.0,
+          1271.0
+        ],
+        [
+          265.0,
+          1271.0
+        ]
+      ],
+      "text": "6. Khi thi hành biện pháp buộc nộp lại số tiền bằng trị giá tang vật đã bị",
+      "confidence": 0.9618463416666667
+    },
+    {
+      "bbox": [
+        [
+          205.0,
+          1267.0
+        ],
+        [
+          1129.0,
+          1267.0
+        ],
+        [
+          1129.0,
+          1308.0
+        ],
+        [
+          205.0,
+          1308.0
+        ]
+      ],
+      "text": "tiêu thụ, tâu tán, tiêu hủy trái quy định của pháp luật, cá nhân, tô chức vi",
+      "confidence": 0.96122175
+    },
+    {
+      "bbox": [
+        [
+          205.0,
+          1304.0
+        ],
+        [
+          1130.0,
+          1304.0
+        ],
+        [
+          1130.0,
+          1333.0
+        ],
+        [
+          205.0,
+          1333.0
+        ]
+      ],
+      "text": "phạm hành chính thực hiện nộp lại so tiên tương ứng ghi trên quyết định",
+      "confidence": 0.90449258
+    },
+    {
+      "bbox": [
+        [
+          205.0,
+          1339.0
+        ],
+        [
+          299.0,
+          1339.0
+        ],
+        [
+          299.0,
+          1366.0
+        ],
+        [
+          205.0,
+          1366.0
+        ]
+      ],
+      "text": "xử phạt.",
+      "confidence": 0.96540024
+    },
+    {
+      "bbox": [
+        [
+          265.0,
+          1393.0
+        ],
+        [
+          1129.0,
+          1393.0
+        ],
+        [
+          1129.0,
+          1437.0
+        ],
+        [
+          265.0,
+          1437.0
+        ]
+      ],
+      "text": "7. Cá nhân, tổ chức thi hành biện pháp buộc nộp đủ số tiền thuế trồn, số",
+      "confidence": 0.9603115482352941
+    },
+    {
+      "bbox": [
+        [
+          205.0,
+          1426.0
+        ],
+        [
+          1130.0,
+          1426.0
+        ],
+        [
+          1130.0,
+          1466.0
+        ],
+        [
+          205.0,
+          1466.0
+        ]
+      ],
+      "text": "tiền thuế thiếu; buộc nộp đủ số tiền thuế đã được miên, giảm, hoàn, không thu",
+      "confidence": 0.932993363125
+    },
+    {
+      "bbox": [
+        [
+          205.0,
+          1461.0
+        ],
+        [
+          1130.0,
+          1461.0
+        ],
+        [
+          1130.0,
+          1494.0
+        ],
+        [
+          205.0,
+          1494.0
+        ]
+      ],
+      "text": "không đúng được ghi trên quyết định ấn định thuế vào tài khoản của Kho bạc",
+      "confidence": 0.96664514125
+    },
+    {
+      "bbox": [
+        [
+          204.0,
+          1494.0
+        ],
+        [
+          1130.0,
+          1494.0
+        ],
+        [
+          1130.0,
+          1528.0
+        ],
+        [
+          204.0,
+          1528.0
+        ]
+      ],
+      "text": "Nhà nước và nộp 01 bản chụp giấy nộp tiền (nếu nộp tiền mặt) cho cơ quan",
+      "confidence": 0.9666889152941177
+    },
+    {
+      "bbox": [
+        [
+          205.0,
+          1528.0
+        ],
+        [
+          1130.0,
+          1528.0
+        ],
+        [
+          1130.0,
+          1561.0
+        ],
+        [
+          205.0,
+          1561.0
+        ]
+      ],
+      "text": "hải quan đã ra quyết định xử phạt vi phạm hành chính theo dõi, lưu hồ",
+      "confidence": 0.969226760625
+    },
+    {
+      "bbox": [
+        [
+          206.0,
+          1567.0
+        ],
+        [
+          331.0,
+          1567.0
+        ],
+        [
+          331.0,
+          1593.0
+        ],
+        [
+          206.0,
+          1593.0
+        ]
+      ],
+      "text": "sơ vụ việc.",
+      "confidence": 0.9220090499999999
+    }
+  ]
+}

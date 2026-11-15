@@ -1,0 +1,883 @@
+{
+  "document_id": "126/2020/NĐ-CP",
+  "source_file": "../../legal-sources/1262020ndcp/01.pdf",
+  "source_sha256": "310648e80396d267610946458e7fdd71ba87ef538b009d6574ed21514de3f7ca",
+  "page_count": 119,
+  "render_dpi": 150,
+  "engine": "Tesseract 5.5.4 (vie+eng; OEM 1; PSM 3)",
+  "review_status": "UNREVIEWED",
+  "tesseract_version": "5.5.4",
+  "tsv_parser_version": 2,
+  "languages": [
+    "vie",
+    "eng"
+  ],
+  "traineddata_sha256": {
+    "vie": "b6b49293d95d0b6dbd8780174627e82c75be957b6f4ed9862155540d6b00bb45",
+    "eng": "8280aed0782fe27257a68ea10fe7ef324ca0f8d85bd2fd145d1c2b560bcb66ba"
+  },
+  "ocr_engine_mode": 1,
+  "page_segmentation_mode": 3,
+  "thread_limit": 1,
+  "page": 65,
+  "lines": [
+    {
+      "bbox": [
+        [
+          677.0,
+          65.0
+        ],
+        [
+          702.0,
+          65.0
+        ],
+        [
+          702.0,
+          85.0
+        ],
+        [
+          677.0,
+          85.0
+        ]
+      ],
+      "text": "65",
+      "confidence": 0.96697479
+    },
+    {
+      "bbox": [
+        [
+          263.0,
+          142.0
+        ],
+        [
+          1122.0,
+          142.0
+        ],
+        [
+          1122.0,
+          182.0
+        ],
+        [
+          263.0,
+          182.0
+        ]
+      ],
+      "text": "c.2) Việc trao đổi thông tin doanh nghiệp được thực hiện thông qua",
+      "confidence": 0.9469496153846154
+    },
+    {
+      "bbox": [
+        [
+          204.0,
+          173.0
+        ],
+        [
+          1122.0,
+          173.0
+        ],
+        [
+          1122.0,
+          216.0
+        ],
+        [
+          204.0,
+          216.0
+        ]
+      ],
+      "text": "mạng điện tử kết nối giữa hệ thống thông tin thuế và hệ thống thông tin quốc",
+      "confidence": 0.9657375288235295
+    },
+    {
+      "bbox": [
+        [
+          204.0,
+          214.0
+        ],
+        [
+          781.0,
+          214.0
+        ],
+        [
+          781.0,
+          245.0
+        ],
+        [
+          204.0,
+          245.0
+        ]
+      ],
+      "text": "gia về đăng ký doanh nghiệp, đăng ký hợp tác xã.",
+      "confidence": 0.964243239090909
+    },
+    {
+      "bbox": [
+        [
+          263.0,
+          258.0
+        ],
+        [
+          1122.0,
+          258.0
+        ],
+        [
+          1122.0,
+          300.0
+        ],
+        [
+          263.0,
+          300.0
+        ]
+      ],
+      "text": "c.3) Trong trường hợp cần thiết theo nhu cầu quản lý và sử dụng thông",
+      "confidence": 0.9620523326666667
+    },
+    {
+      "bbox": [
+        [
+          203.0,
+          291.0
+        ],
+        [
+          1122.0,
+          291.0
+        ],
+        [
+          1122.0,
+          333.0
+        ],
+        [
+          203.0,
+          333.0
+        ]
+      ],
+      "text": "tin hoặc do yêu tố kỹ thuật, các bên có thể trao đổi thông tin qua thư điện tử",
+      "confidence": 0.9665720321052632
+    },
+    {
+      "bbox": [
+        [
+          203.0,
+          328.0
+        ],
+        [
+          998.0,
+          328.0
+        ],
+        [
+          998.0,
+          365.0
+        ],
+        [
+          203.0,
+          365.0
+        ]
+      ],
+      "text": "(email), truyền tập tin (file) dữ liệu điện tử hoặc các hình thức khác.",
+      "confidence": 0.9638101678571429
+    },
+    {
+      "bbox": [
+        [
+          263.0,
+          377.0
+        ],
+        [
+          1094.0,
+          377.0
+        ],
+        [
+          1094.0,
+          410.0
+        ],
+        [
+          263.0,
+          410.0
+        ]
+      ],
+      "text": "c.4) Việc trao đổi thông tin được thực hiện tự động theo thời gian thực.",
+      "confidence": 0.9366401813333333
+    },
+    {
+      "bbox": [
+        [
+          263.0,
+          424.0
+        ],
+        [
+          1122.0,
+          424.0
+        ],
+        [
+          1122.0,
+          471.0
+        ],
+        [
+          263.0,
+          471.0
+        ]
+      ],
+      "text": "c.5) Théng tin trao đổi giữa cơ quan quản lý thuế và cơ \"quan đăng ký",
+      "confidence": 0.937083855
+    },
+    {
+      "bbox": [
+        [
+          204.0,
+          458.0
+        ],
+        [
+          981.0,
+          458.0
+        ],
+        [
+          981.0,
+          494.0
+        ],
+        [
+          204.0,
+          494.0
+        ]
+      ],
+      "text": "kinh doanh có giá trị pháp lý như thông tin trao đổi bằng bản giấy.",
+      "confidence": 0.9590140119999999
+    },
+    {
+      "bbox": [
+        [
+          594.0,
+          530.0
+        ],
+        [
+          734.0,
+          530.0
+        ],
+        [
+          734.0,
+          564.0
+        ],
+        [
+          594.0,
+          564.0
+        ]
+      ],
+      "text": "Chương VI",
+      "confidence": 0.830211525
+    },
+    {
+      "bbox": [
+        [
+          293.0,
+          556.0
+        ],
+        [
+          1034.0,
+          556.0
+        ],
+        [
+          1034.0,
+          599.0
+        ],
+        [
+          293.0,
+          599.0
+        ]
+      ],
+      "text": "TRACH NHIEM CUNG CAP THONG TIN, CONG KHAI",
+      "confidence": 0.9299356475
+    },
+    {
+      "bbox": [
+        [
+          337.0,
+          591.0
+        ],
+        [
+          990.0,
+          591.0
+        ],
+        [
+          990.0,
+          630.0
+        ],
+        [
+          337.0,
+          630.0
+        ]
+      ],
+      "text": "THONG TIN NGƯỜI NOP THUE VA NHIEM VU,",
+      "confidence": 0.86604174625
+    },
+    {
+      "bbox": [
+        [
+          342.0,
+          625.0
+        ],
+        [
+          986.0,
+          625.0
+        ],
+        [
+          986.0,
+          659.0
+        ],
+        [
+          342.0,
+          659.0
+        ]
+      ],
+      "text": "QUYEN HAN CUA NGAN HANG THUONG MAI",
+      "confidence": 0.9465301728571428
+    },
+    {
+      "bbox": [
+        [
+          264.0,
+          684.0
+        ],
+        [
+          1123.0,
+          684.0
+        ],
+        [
+          1123.0,
+          717.0
+        ],
+        [
+          264.0,
+          717.0
+        ]
+      ],
+      "text": "Điều 26. Trách nhiệm cung cấp thông tin của cơ quan quản lý nhà nước",
+      "confidence": 0.9652544706666667
+    },
+    {
+      "bbox": [
+        [
+          268.0,
+          738.0
+        ],
+        [
+          1124.0,
+          738.0
+        ],
+        [
+          1124.0,
+          775.0
+        ],
+        [
+          268.0,
+          775.0
+        ]
+      ],
+      "text": "1. Các cơ quan quản lý nhà nước có trách nhiệm cung cấp thông tin về",
+      "confidence": 0.965853883125
+    },
+    {
+      "bbox": [
+        [
+          206.0,
+          774.0
+        ],
+        [
+          992.0,
+          774.0
+        ],
+        [
+          992.0,
+          810.0
+        ],
+        [
+          206.0,
+          810.0
+        ]
+      ],
+      "text": "người nộp thuế cho cơ quan quản lý thuế trong các trường hợp sau:",
+      "confidence": 0.968904235
+    },
+    {
+      "bbox": [
+        [
+          266.0,
+          835.0
+        ],
+        [
+          1125.0,
+          835.0
+        ],
+        [
+          1125.0,
+          873.0
+        ],
+        [
+          266.0,
+          873.0
+        ]
+      ],
+      "text": "a) Cơ quan đăng ký kinh doanh, cơ quan đăng ký hợp tác xã gửi thông",
+      "confidence": 0.9662744487499999
+    },
+    {
+      "bbox": [
+        [
+          206.0,
+          865.0
+        ],
+        [
+          1124.0,
+          865.0
+        ],
+        [
+          1124.0,
+          905.0
+        ],
+        [
+          206.0,
+          905.0
+        ]
+      ],
+      "text": "tin cấp mới; thay đổi; tạm ngừng kinh doanh; tiếp tục hoạt động sau tạm",
+      "confidence": 0.9384233273333333
+    },
+    {
+      "bbox": [
+        [
+          206.0,
+          896.0
+        ],
+        [
+          1125.0,
+          896.0
+        ],
+        [
+          1125.0,
+          935.0
+        ],
+        [
+          206.0,
+          935.0
+        ]
+      ],
+      "text": "ngừng kinh doanh; thu hồi giấy chứng nhận đăng ký doanh nghiệp, giấy",
+      "confidence": 0.9671360846153847
+    },
+    {
+      "bbox": [
+        [
+          207.0,
+          936.0
+        ],
+        [
+          1126.0,
+          936.0
+        ],
+        [
+          1126.0,
+          978.0
+        ],
+        [
+          207.0,
+          978.0
+        ]
+      ],
+      "text": "chứng nhận đăng ký hợp tác xã; khôi phục tình trạng pháp lý sau khi bị thu",
+      "confidence": 0.9685537952941177
+    },
+    {
+      "bbox": [
+        [
+          207.0,
+          967.0
+        ],
+        [
+          1126.0,
+          967.0
+        ],
+        [
+          1126.0,
+          1001.0
+        ],
+        [
+          207.0,
+          1001.0
+        ]
+      ],
+      "text": "hồi giấy chứng nhận; giải thể, phá sản và xử phạt vi phạm trong lĩnh vực đăng",
+      "confidence": 0.9678426347058823
+    },
+    {
+      "bbox": [
+        [
+          207.0,
+          1000.0
+        ],
+        [
+          1126.0,
+          1000.0
+        ],
+        [
+          1126.0,
+          1047.0
+        ],
+        [
+          207.0,
+          1047.0
+        ]
+      ],
+      "text": "ký doanh nghiệp, đăng ký hợp tác xã của doanh nghiệp, hợp tác xã cho cơ",
+      "confidence": 0.9687039325000001
+    },
+    {
+      "bbox": [
+        [
+          207.0,
+          1030.0
+        ],
+        [
+          1126.0,
+          1030.0
+        ],
+        [
+          1126.0,
+          1084.0
+        ],
+        [
+          207.0,
+          1084.0
+        ]
+      ],
+      "text": "quan thuế bằng phương thức điện tử qua hệ thống trao đổi thông tin về đăng",
+      "confidence": 0.955654679375
+    },
+    {
+      "bbox": [
+        [
+          207.0,
+          1067.0
+        ],
+        [
+          1126.0,
+          1067.0
+        ],
+        [
+          1126.0,
+          1106.0
+        ],
+        [
+          207.0,
+          1106.0
+        ]
+      ],
+      "text": "ký kinh doanh và đăng ký thuế trong thời hạn 01 ngày làm việc hoặc chậm",
+      "confidence": 0.9676221887500001
+    },
+    {
+      "bbox": [
+        [
+          207.0,
+          1100.0
+        ],
+        [
+          1126.0,
+          1100.0
+        ],
+        [
+          1126.0,
+          1138.0
+        ],
+        [
+          207.0,
+          1138.0
+        ]
+      ],
+      "text": "nhất là ngày làm việc tiếp theo kể từ ngày cơ quan đăng ký kinh doanh, cơ",
+      "confidence": 0.9674361635294118
+    },
+    {
+      "bbox": [
+        [
+          208.0,
+          1130.0
+        ],
+        [
+          1125.0,
+          1130.0
+        ],
+        [
+          1125.0,
+          1168.0
+        ],
+        [
+          208.0,
+          1168.0
+        ]
+      ],
+      "text": "quan đăng ký hợp tác xã ghi nhận trên Hệ thống thông tin quốc gia về đăng ký",
+      "confidence": 0.9680438966666667
+    },
+    {
+      "bbox": [
+        [
+          208.0,
+          1172.0
+        ],
+        [
+          608.0,
+          1172.0
+        ],
+        [
+          608.0,
+          1200.0
+        ],
+        [
+          208.0,
+          1200.0
+        ]
+      ],
+      "text": "doanh nghiệp, đăng ký hợp tác xã.",
+      "confidence": 0.9680687185714285
+    },
+    {
+      "bbox": [
+        [
+          267.0,
+          1220.0
+        ],
+        [
+          1126.0,
+          1220.0
+        ],
+        [
+          1126.0,
+          1263.0
+        ],
+        [
+          267.0,
+          1263.0
+        ]
+      ],
+      "text": "b) Cơ quan quản lý nhà nước có thắm quyền (trừ quy định tai điểm a",
+      "confidence": 0.9472769981249999
+    },
+    {
+      "bbox": [
+        [
+          208.0,
+          1254.0
+        ],
+        [
+          1126.0,
+          1254.0
+        ],
+        [
+          1126.0,
+          1295.0
+        ],
+        [
+          208.0,
+          1295.0
+        ]
+      ],
+      "text": "khoản này) gửi thông tin cấp mới; thay đổi; tạm ngừng kinh doanh; tiếp tục",
+      "confidence": 0.9516973320000001
+    },
+    {
+      "bbox": [
+        [
+          208.0,
+          1289.0
+        ],
+        [
+          1126.0,
+          1289.0
+        ],
+        [
+          1126.0,
+          1334.0
+        ],
+        [
+          208.0,
+          1334.0
+        ]
+      ],
+      "text": "hoạt động sau tạm ngừng kinh doanh; thu hồi giấy chứng nhận đăng ký kinh",
+      "confidence": 0.9665432033333333
+    },
+    {
+      "bbox": [
+        [
+          209.0,
+          1325.0
+        ],
+        [
+          1127.0,
+          1325.0
+        ],
+        [
+          1127.0,
+          1365.0
+        ],
+        [
+          209.0,
+          1365.0
+        ]
+      ],
+      "text": "doanh, giây phép hành nghề, giấy phép thành lập và hoạt động, giây chứng",
+      "confidence": 0.9662648549999999
+    },
+    {
+      "bbox": [
+        [
+          209.0,
+          1356.0
+        ],
+        [
+          1126.0,
+          1356.0
+        ],
+        [
+          1126.0,
+          1398.0
+        ],
+        [
+          209.0,
+          1398.0
+        ]
+      ],
+      "text": "nhận đăng ký đầu tư; khôi phục tình trạng pháp lý sau khi bị thu hồi giây",
+      "confidence": 0.9653754247058823
+    },
+    {
+      "bbox": [
+        [
+          210.0,
+          1389.0
+        ],
+        [
+          1126.0,
+          1389.0
+        ],
+        [
+          1126.0,
+          1432.0
+        ],
+        [
+          210.0,
+          1432.0
+        ]
+      ],
+      "text": "chứng nhận hoặc giấy phép của người nộp thuế cho Cục Thuế tỉnh, thành phố",
+      "confidence": 0.9618231606666667
+    },
+    {
+      "bbox": [
+        [
+          210.0,
+          1426.0
+        ],
+        [
+          1124.0,
+          1426.0
+        ],
+        [
+          1124.0,
+          1473.0
+        ],
+        [
+          210.0,
+          1473.0
+        ]
+      ],
+      "text": "nơi người nộp thuế đóng trụ sở bằng phương thức điện tử trong thời hạn 01",
+      "confidence": 0.96788022
+    },
+    {
+      "bbox": [
+        [
+          210.0,
+          1458.0
+        ],
+        [
+          1128.0,
+          1458.0
+        ],
+        [
+          1128.0,
+          1498.0
+        ],
+        [
+          210.0,
+          1498.0
+        ]
+      ],
+      "text": "ngày làm việc hoặc chậm nhất là ngày làm việc tiếp theo kể từ ngày ghi nhận",
+      "confidence": 0.9629610358823528
+    },
+    {
+      "bbox": [
+        [
+          210.0,
+          1492.0
+        ],
+        [
+          1127.0,
+          1492.0
+        ],
+        [
+          1127.0,
+          1538.0
+        ],
+        [
+          210.0,
+          1538.0
+        ]
+      ],
+      "text": "trên Hệ thống của cơ quan quản lý nhà nước có thẩm quyền hoặc trong thời",
+      "confidence": 0.9643135887500001
+    },
+    {
+      "bbox": [
+        [
+          210.0,
+          1526.0
+        ],
+        [
+          1129.0,
+          1526.0
+        ],
+        [
+          1129.0,
+          1563.0
+        ],
+        [
+          210.0,
+          1563.0
+        ]
+      ],
+      "text": "hạn 07 ngày làm việc đối với trường hợp chưa truyền nhận thông tin bằng",
+      "confidence": 0.9664185233333333
+    },
+    {
+      "bbox": [
+        [
+          211.0,
+          1570.0
+        ],
+        [
+          454.0,
+          1570.0
+        ],
+        [
+          454.0,
+          1598.0
+        ],
+        [
+          211.0,
+          1598.0
+        ]
+      ],
+      "text": "phương thức điện tử.",
+      "confidence": 0.9693391975
+    }
+  ]
+}

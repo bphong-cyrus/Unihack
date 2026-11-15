@@ -1,0 +1,861 @@
+{
+  "document_id": "126/2020/NĐ-CP",
+  "source_file": "../../legal-sources/1262020ndcp/01.pdf",
+  "source_sha256": "310648e80396d267610946458e7fdd71ba87ef538b009d6574ed21514de3f7ca",
+  "page_count": 119,
+  "render_dpi": 150,
+  "engine": "Tesseract 5.5.4 (vie+eng; OEM 1; PSM 3)",
+  "review_status": "UNREVIEWED",
+  "tesseract_version": "5.5.4",
+  "tsv_parser_version": 2,
+  "languages": [
+    "vie",
+    "eng"
+  ],
+  "traineddata_sha256": {
+    "vie": "b6b49293d95d0b6dbd8780174627e82c75be957b6f4ed9862155540d6b00bb45",
+    "eng": "8280aed0782fe27257a68ea10fe7ef324ca0f8d85bd2fd145d1c2b560bcb66ba"
+  },
+  "ocr_engine_mode": 1,
+  "page_segmentation_mode": 3,
+  "thread_limit": 1,
+  "page": 32,
+  "lines": [
+    {
+      "bbox": [
+        [
+          687.0,
+          60.0
+        ],
+        [
+          714.0,
+          60.0
+        ],
+        [
+          714.0,
+          80.0
+        ],
+        [
+          687.0,
+          80.0
+        ]
+      ],
+      "text": "32",
+      "confidence": 0.96367294
+    },
+    {
+      "bbox": [
+        [
+          214.0,
+          134.0
+        ],
+        [
+          1131.0,
+          134.0
+        ],
+        [
+          1131.0,
+          169.0
+        ],
+        [
+          214.0,
+          169.0
+        ]
+      ],
+      "text": "gắn liền trên đất theo quy định của pháp luật về nhà ở; cá nhân khai bổ sung",
+      "confidence": 0.9676599883333332
+    },
+    {
+      "bbox": [
+        [
+          214.0,
+          169.0
+        ],
+        [
+          1130.0,
+          169.0
+        ],
+        [
+          1130.0,
+          213.0
+        ],
+        [
+          214.0,
+          213.0
+        ]
+      ],
+      "text": "hồ sơ khai thuế chuyển nhượng | bất động sản trong trường hợp hồ sơ khai thuế",
+      "confidence": 0.9059892782352941
+    },
+    {
+      "bbox": [
+        [
+          215.0,
+          204.0
+        ],
+        [
+          1130.0,
+          204.0
+        ],
+        [
+          1130.0,
+          244.0
+        ],
+        [
+          215.0,
+          244.0
+        ]
+      ],
+      "text": "lần đầu đã hoàn thành thủ tục cấp Giấy chứng nhận quyên sử dụng đất, quyền",
+      "confidence": 0.9476649662500001
+    },
+    {
+      "bbox": [
+        [
+          215.0,
+          234.0
+        ],
+        [
+          1130.0,
+          234.0
+        ],
+        [
+          1130.0,
+          277.0
+        ],
+        [
+          215.0,
+          277.0
+        ]
+      ],
+      "text": "sở hữu nhà ở và tai sản gắn liền trên đất, cá nhân ủy quyên quản lý bất động",
+      "confidence": 0.9579425899999999
+    },
+    {
+      "bbox": [
+        [
+          215.0,
+          272.0
+        ],
+        [
+          1128.0,
+          272.0
+        ],
+        [
+          1128.0,
+          313.0
+        ],
+        [
+          215.0,
+          313.0
+        ]
+      ],
+      "text": "sản là người nộp thuế theo quy định của \"pháp luật thuế thu nhập cá nhân nộp",
+      "confidence": 0.9317618088235293
+    },
+    {
+      "bbox": [
+        [
+          214.0,
+          307.0
+        ],
+        [
+          825.0,
+          307.0
+        ],
+        [
+          825.0,
+          341.0
+        ],
+        [
+          214.0,
+          341.0
+        ]
+      ],
+      "text": "hồ sơ khai thuế tại cơ quan thuế nơi có bắt động sản.",
+      "confidence": 0.9600556876923078
+    },
+    {
+      "bbox": [
+        [
+          266.0,
+          353.0
+        ],
+        [
+          1129.0,
+          353.0
+        ],
+        [
+          1129.0,
+          400.0
+        ],
+        [
+          266.0,
+          400.0
+        ]
+      ],
+      "text": "3) Cá nhân có thu nhập từ chuyển nhượng, nhận thừa kế, quà tặng là",
+      "confidence": 0.9473800106666667
+    },
+    {
+      "bbox": [
+        [
+          214.0,
+          406.0
+        ],
+        [
+          1129.0,
+          406.0
+        ],
+        [
+          1129.0,
+          435.0
+        ],
+        [
+          214.0,
+          435.0
+        ]
+      ],
+      "text": "bất động sản tại nước ngoài nộp hô sơ khai thuê tại cơ quan thuê nơi cá nhân",
+      "confidence": 0.965043058888889
+    },
+    {
+      "bbox": [
+        [
+          215.0,
+          443.0
+        ],
+        [
+          288.0,
+          443.0
+        ],
+        [
+          288.0,
+          464.0
+        ],
+        [
+          215.0,
+          464.0
+        ]
+      ],
+      "text": "cư trú.",
+      "confidence": 0.9663884
+    },
+    {
+      "bbox": [
+        [
+          274.0,
+          494.0
+        ],
+        [
+          1130.0,
+          494.0
+        ],
+        [
+          1130.0,
+          535.0
+        ],
+        [
+          274.0,
+          535.0
+        ]
+      ],
+      "text": "e) Lệ phí trước bạ nhà, đất: Tổ chức, cá nhân khi đăng ký quyền sử dụng",
+      "confidence": 0.9615318741176471
+    },
+    {
+      "bbox": [
+        [
+          216.0,
+          529.0
+        ],
+        [
+          1130.0,
+          529.0
+        ],
+        [
+          1130.0,
+          569.0
+        ],
+        [
+          216.0,
+          569.0
+        ]
+      ],
+      "text": "đất, quyền sở hữu nhà và tài sản khác gắn liền với đất (bao gồm trường hợp",
+      "confidence": 0.9675223
+    },
+    {
+      "bbox": [
+        [
+          215.0,
+          563.0
+        ],
+        [
+          1130.0,
+          563.0
+        ],
+        [
+          1130.0,
+          597.0
+        ],
+        [
+          215.0,
+          597.0
+        ]
+      ],
+      "text": "thuộc diện miễn lệ phí trước bạ) nộp hồ sơ khai lệ phí trước bạ tại cơ quan",
+      "confidence": 0.9677701483333334
+    },
+    {
+      "bbox": [
+        [
+          215.0,
+          597.0
+        ],
+        [
+          1001.0,
+          597.0
+        ],
+        [
+          1001.0,
+          632.0
+        ],
+        [
+          215.0,
+          632.0
+        ]
+      ],
+      "text": "tiếp nhận hồ sơ theo cơ chế một cửa liên thông nơi có bất động sản.",
+      "confidence": 0.9594846687499999
+    },
+    {
+      "bbox": [
+        [
+          276.0,
+          656.0
+        ],
+        [
+          1131.0,
+          656.0
+        ],
+        [
+          1131.0,
+          690.0
+        ],
+        [
+          276.0,
+          690.0
+        ]
+      ],
+      "text": "8. Địa điểm nộp hồ sơ khai thuế đối với người nộp thuế là cá nhân có",
+      "confidence": 0.9680990629411765
+    },
+    {
+      "bbox": [
+        [
+          215.0,
+          690.0
+        ],
+        [
+          1130.0,
+          690.0
+        ],
+        [
+          1130.0,
+          725.0
+        ],
+        [
+          215.0,
+          725.0
+        ]
+      ],
+      "text": "phát sinh nghĩa vụ thuế đối với thu nhập từ tiền lương, tiền công thuộc loại",
+      "confidence": 0.9672062925
+    },
+    {
+      "bbox": [
+        [
+          215.0,
+          725.0
+        ],
+        [
+          1130.0,
+          725.0
+        ],
+        [
+          1130.0,
+          759.0
+        ],
+        [
+          215.0,
+          759.0
+        ]
+      ],
+      "text": "phải quyết toán thuế thu nhập cá nhân theo quy định tại điểm d khoản 4",
+      "confidence": 0.964819135
+    },
+    {
+      "bbox": [
+        [
+          216.0,
+          760.0
+        ],
+        [
+          631.0,
+          760.0
+        ],
+        [
+          631.0,
+          793.0
+        ],
+        [
+          216.0,
+          793.0
+        ]
+      ],
+      "text": "Điều 45 Luật Quản lý thuế như sau:",
+      "confidence": 0.96284708
+    },
+    {
+      "bbox": [
+        [
+          276.0,
+          819.0
+        ],
+        [
+          1130.0,
+          819.0
+        ],
+        [
+          1130.0,
+          858.0
+        ],
+        [
+          276.0,
+          858.0
+        ]
+      ],
+      "text": "a) Cá nhân trực tiếp khai thuế theo tháng hoặc quý theo quy định tại",
+      "confidence": 0.966032454
+    },
+    {
+      "bbox": [
+        [
+          216.0,
+          854.0
+        ],
+        [
+          782.0,
+          854.0
+        ],
+        [
+          782.0,
+          886.0
+        ],
+        [
+          216.0,
+          886.0
+        ]
+      ],
+      "text": "khoản 1 Điều 8, Điều 9 Nghị định này, bao gồm:",
+      "confidence": 0.9671332136363635
+    },
+    {
+      "bbox": [
+        [
+          276.0,
+          911.0
+        ],
+        [
+          1133.0,
+          911.0
+        ],
+        [
+          1133.0,
+          946.0
+        ],
+        [
+          276.0,
+          946.0
+        ]
+      ],
+      "text": "a.1) Cá nhân cu trú có thu nhập từ tiền lương, tiền công do tổ chức, cá",
+      "confidence": 0.9612432770588236
+    },
+    {
+      "bbox": [
+        [
+          216.0,
+          941.0
+        ],
+        [
+          1131.0,
+          941.0
+        ],
+        [
+          1131.0,
+          988.0
+        ],
+        [
+          216.0,
+          988.0
+        ]
+      ],
+      "text": "nhân tại Việt Nam trả thuộc diện chịu thuế thu nhập cá nhân nhưng chưa khấu",
+      "confidence": 0.9654313612500001
+    },
+    {
+      "bbox": [
+        [
+          216.0,
+          979.0
+        ],
+        [
+          1131.0,
+          979.0
+        ],
+        [
+          1131.0,
+          1014.0
+        ],
+        [
+          216.0,
+          1014.0
+        ]
+      ],
+      "text": "trừ thuế thì cá nhân nộp hồ sơ khai thuế đến cơ quan thuế trực tiếp quản lý tổ",
+      "confidence": 0.9677505289473685
+    },
+    {
+      "bbox": [
+        [
+          217.0,
+          1021.0
+        ],
+        [
+          529.0,
+          1021.0
+        ],
+        [
+          529.0,
+          1048.0
+        ],
+        [
+          217.0,
+          1048.0
+        ]
+      ],
+      "text": "chức, cá nhân trả thu nhập.",
+      "confidence": 0.9684642016666668
+    },
+    {
+      "bbox": [
+        [
+          276.0,
+          1073.0
+        ],
+        [
+          1130.0,
+          1073.0
+        ],
+        [
+          1130.0,
+          1112.0
+        ],
+        [
+          276.0,
+          1112.0
+        ]
+      ],
+      "text": "a.2) Cá nhân cư trú có thu nhập từ tiền lương, tiền công trả từ nước ngoài",
+      "confidence": 0.9652956964705882
+    },
+    {
+      "bbox": [
+        [
+          216.0,
+          1106.0
+        ],
+        [
+          1132.0,
+          1106.0
+        ],
+        [
+          1132.0,
+          1140.0
+        ],
+        [
+          216.0,
+          1140.0
+        ]
+      ],
+      "text": "thì cá nhân nộp hồ sơ khai thuế đến cơ quan thuế quản lý nơi cá nhân phát",
+      "confidence": 0.9661511444444444
+    },
+    {
+      "bbox": [
+        [
+          216.0,
+          1145.0
+        ],
+        [
+          1132.0,
+          1145.0
+        ],
+        [
+          1132.0,
+          1178.0
+        ],
+        [
+          216.0,
+          1178.0
+        ]
+      ],
+      "text": "sinh công việc tại Việt Nam. Trường hợp nơi phát sinh công việc của cá nhân",
+      "confidence": 0.967538904375
+    },
+    {
+      "bbox": [
+        [
+          216.0,
+          1169.0
+        ],
+        [
+          1133.0,
+          1169.0
+        ],
+        [
+          1133.0,
+          1210.0
+        ],
+        [
+          216.0,
+          1210.0
+        ]
+      ],
+      "text": "không ở tại Việt Nam thì cá nhân nộp hồ sơ khai thuế đến cơ quan thuế nơi cá",
+      "confidence": 0.9674180184210526
+    },
+    {
+      "bbox": [
+        [
+          216.0,
+          1213.0
+        ],
+        [
+          355.0,
+          1213.0
+        ],
+        [
+          355.0,
+          1234.0
+        ],
+        [
+          216.0,
+          1234.0
+        ]
+      ],
+      "text": "nhân cư trú.",
+      "confidence": 0.9671915666666666
+    },
+    {
+      "bbox": [
+        [
+          276.0,
+          1264.0
+        ],
+        [
+          1132.0,
+          1264.0
+        ],
+        [
+          1132.0,
+          1304.0
+        ],
+        [
+          276.0,
+          1304.0
+        ]
+      ],
+      "text": "b) Cá nhân trực tiếp khai quyết toán thuế theo quy định tại khoản 6 Điều 8",
+      "confidence": 0.9649874164705882
+    },
+    {
+      "bbox": [
+        [
+          216.0,
+          1304.0
+        ],
+        [
+          498.0,
+          1304.0
+        ],
+        [
+          498.0,
+          1331.0
+        ],
+        [
+          216.0,
+          1331.0
+        ]
+      ],
+      "text": "Nghị định này bao gom:",
+      "confidence": 0.9550210699999999
+    },
+    {
+      "bbox": [
+        [
+          276.0,
+          1356.0
+        ],
+        [
+          1133.0,
+          1356.0
+        ],
+        [
+          1133.0,
+          1390.0
+        ],
+        [
+          276.0,
+          1390.0
+        ]
+      ],
+      "text": "b.1) Cá nhân cư trú có thu nhập tiền lương, tiền công tại một nơi và",
+      "confidence": 0.964200596875
+    },
+    {
+      "bbox": [
+        [
+          217.0,
+          1390.0
+        ],
+        [
+          1134.0,
+          1390.0
+        ],
+        [
+          1134.0,
+          1428.0
+        ],
+        [
+          217.0,
+          1428.0
+        ]
+      ],
+      "text": "thuộc diện tự khai thuế trong năm thì nộp hồ sơ khai quyết toán thuế tại cơ",
+      "confidence": 0.966690385882353
+    },
+    {
+      "bbox": [
+        [
+          199.0,
+          1422.0
+        ],
+        [
+          1133.0,
+          1422.0
+        ],
+        [
+          1133.0,
+          1461.0
+        ],
+        [
+          199.0,
+          1461.0
+        ]
+      ],
+      "text": "- quan thuế nơi cá nhân trực tiếp khai thuế trong năm theo quy định tại điểm a",
+      "confidence": 0.9482306544444445
+    },
+    {
+      "bbox": [
+        [
+          218.0,
+          1456.0
+        ],
+        [
+          1132.0,
+          1456.0
+        ],
+        [
+          1132.0,
+          1495.0
+        ],
+        [
+          218.0,
+          1495.0
+        ]
+      ],
+      "text": "khoản này. Trường hợp cá nhân có thu nhập tiền lương, tiền công tại hai nơi",
+      "confidence": 0.952285419375
+    },
+    {
+      "bbox": [
+        [
+          218.0,
+          1489.0
+        ],
+        [
+          1133.0,
+          1489.0
+        ],
+        [
+          1133.0,
+          1528.0
+        ],
+        [
+          218.0,
+          1528.0
+        ]
+      ],
+      "text": "trở lên bao gồm cả trường hợp vừa có thu nhập thuộc diện khai trực tiếp, vừa",
+      "confidence": 0.9560610470588234
+    },
+    {
+      "bbox": [
+        [
+          219.0,
+          1519.0
+        ],
+        [
+          1133.0,
+          1519.0
+        ],
+        [
+          1133.0,
+          1566.0
+        ],
+        [
+          219.0,
+          1566.0
+        ]
+      ],
+      "text": "có thu nhập do tổ chức chỉ trả đã khấu trừ thì cá nhân nộp hồ sơ khai quyết",
+      "confidence": 0.9628592436842105
+    },
+    {
+      "bbox": [
+        [
+          219.0,
+          1556.0
+        ],
+        [
+          1133.0,
+          1556.0
+        ],
+        [
+          1133.0,
+          1590.0
+        ],
+        [
+          219.0,
+          1590.0
+        ]
+      ],
+      "text": "toán thuế tại cơ quan thuế nơi có nguồn thu nhập lớn nhất trong năm. Trường",
+      "confidence": 0.9671290775
+    }
+  ]
+}

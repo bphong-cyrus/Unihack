@@ -1,0 +1,905 @@
+{
+  "document_id": "126/2020/NĐ-CP",
+  "source_file": "../../legal-sources/1262020ndcp/01.pdf",
+  "source_sha256": "310648e80396d267610946458e7fdd71ba87ef538b009d6574ed21514de3f7ca",
+  "page_count": 119,
+  "render_dpi": 150,
+  "engine": "Tesseract 5.5.4 (vie+eng; OEM 1; PSM 3)",
+  "review_status": "UNREVIEWED",
+  "tesseract_version": "5.5.4",
+  "tsv_parser_version": 2,
+  "languages": [
+    "vie",
+    "eng"
+  ],
+  "traineddata_sha256": {
+    "vie": "b6b49293d95d0b6dbd8780174627e82c75be957b6f4ed9862155540d6b00bb45",
+    "eng": "8280aed0782fe27257a68ea10fe7ef324ca0f8d85bd2fd145d1c2b560bcb66ba"
+  },
+  "ocr_engine_mode": 1,
+  "page_segmentation_mode": 3,
+  "thread_limit": 1,
+  "page": 66,
+  "lines": [
+    {
+      "bbox": [
+        [
+          687.0,
+          58.0
+        ],
+        [
+          714.0,
+          58.0
+        ],
+        [
+          714.0,
+          79.0
+        ],
+        [
+          687.0,
+          79.0
+        ]
+      ],
+      "text": "66",
+      "confidence": 0.96729752
+    },
+    {
+      "bbox": [
+        [
+          273.0,
+          133.0
+        ],
+        [
+          1131.0,
+          133.0
+        ],
+        [
+          1131.0,
+          176.0
+        ],
+        [
+          273.0,
+          176.0
+        ]
+      ],
+      "text": "2. Cơ quan quản lý nhà nước có trách nhiệm cung cấp thông tin cho cơ",
+      "confidence": 0.96614959375
+    },
+    {
+      "bbox": [
+        [
+          214.0,
+          176.0
+        ],
+        [
+          612.0,
+          176.0
+        ],
+        [
+          612.0,
+          205.0
+        ],
+        [
+          214.0,
+          205.0
+        ]
+      ],
+      "text": "quan quản lý thuê, cụ thê như sau:",
+      "confidence": 0.96861530375
+    },
+    {
+      "bbox": [
+        [
+          274.0,
+          229.0
+        ],
+        [
+          579.0,
+          229.0
+        ],
+        [
+          579.0,
+          263.0
+        ],
+        [
+          274.0,
+          263.0
+        ]
+      ],
+      "text": "a) Các thông tin cung cấp:",
+      "confidence": 0.9549547333333334
+    },
+    {
+      "bbox": [
+        [
+          271.0,
+          279.0
+        ],
+        [
+          1132.0,
+          279.0
+        ],
+        [
+          1132.0,
+          328.0
+        ],
+        [
+          271.0,
+          328.0
+        ]
+      ],
+      "text": "a.1) Bộ Xây dựng và cơ quan quản lý nhà nước về nhà ở cung cấp thông",
+      "confidence": 0.9625813117647058
+    },
+    {
+      "bbox": [
+        [
+          214.0,
+          319.0
+        ],
+        [
+          1132.0,
+          319.0
+        ],
+        [
+          1132.0,
+          359.0
+        ],
+        [
+          214.0,
+          359.0
+        ]
+      ],
+      "text": "tin về quản lý, sử dụng và sở hữu nhà của tổ chức, hộ gia đình, hộ kinh doanh,",
+      "confidence": 0.9678766757894737
+    },
+    {
+      "bbox": [
+        [
+          216.0,
+          353.0
+        ],
+        [
+          1133.0,
+          353.0
+        ],
+        [
+          1133.0,
+          387.0
+        ],
+        [
+          216.0,
+          387.0
+        ]
+      ],
+      "text": "cá nhân, cá nhân kinh doanh và cung cấp các thông tin khác quy định tại Luật",
+      "confidence": 0.9676840352941177
+    },
+    {
+      "bbox": [
+        [
+          216.0,
+          389.0
+        ],
+        [
+          672.0,
+          389.0
+        ],
+        [
+          672.0,
+          423.0
+        ],
+        [
+          216.0,
+          423.0
+        ]
+      ],
+      "text": "Quản lý thuế và pháp luật có liên quan.",
+      "confidence": 0.9649028088888889
+    },
+    {
+      "bbox": [
+        [
+          276.0,
+          442.0
+        ],
+        [
+          1133.0,
+          442.0
+        ],
+        [
+          1133.0,
+          486.0
+        ],
+        [
+          276.0,
+          486.0
+        ]
+      ],
+      "text": "a.2) Bộ Tài nguyên và Môi trường và cơ quan quản lý nhà nước về đất,",
+      "confidence": 0.965325223125
+    },
+    {
+      "bbox": [
+        [
+          216.0,
+          477.0
+        ],
+        [
+          1134.0,
+          477.0
+        ],
+        [
+          1134.0,
+          521.0
+        ],
+        [
+          216.0,
+          521.0
+        ]
+      ],
+      "text": "tài nguyên cung cap thông tin về sử dụng đất, thông tin đối. với các khoản thu",
+      "confidence": 0.9502389711764707
+    },
+    {
+      "bbox": [
+        [
+          217.0,
+          510.0
+        ],
+        [
+          1135.0,
+          510.0
+        ],
+        [
+          1135.0,
+          549.0
+        ],
+        [
+          217.0,
+          549.0
+        ]
+      ],
+      "text": "liên quan đến đắt dai, tài sản gắn liền với đất, thông tin giấy phép cấp quyền",
+      "confidence": 0.941071341764706
+    },
+    {
+      "bbox": [
+        [
+          216.0,
+          544.0
+        ],
+        [
+          1135.0,
+          544.0
+        ],
+        [
+          1135.0,
+          587.0
+        ],
+        [
+          216.0,
+          587.0
+        ]
+      ],
+      "text": "khai thác tài nguyên, sản lượng khai thác trong năm theo từng \"giấy phép và",
+      "confidence": 0.9286746206666666
+    },
+    {
+      "bbox": [
+        [
+          217.0,
+          577.0
+        ],
+        [
+          1135.0,
+          577.0
+        ],
+        [
+          1135.0,
+          632.0
+        ],
+        [
+          217.0,
+          632.0
+        ]
+      ],
+      "text": "cung cấp các thông tin khác theo quy định tại Luật Quản lý thuế và pháp luật",
+      "confidence": 0.965154481764706
+    },
+    {
+      "bbox": [
+        [
+          217.0,
+          622.0
+        ],
+        [
+          366.0,
+          622.0
+        ],
+        [
+          366.0,
+          648.0
+        ],
+        [
+          217.0,
+          648.0
+        ]
+      ],
+      "text": "có liên quan.",
+      "confidence": 0.9681489066666665
+    },
+    {
+      "bbox": [
+        [
+          278.0,
+          668.0
+        ],
+        [
+          1135.0,
+          668.0
+        ],
+        [
+          1135.0,
+          712.0
+        ],
+        [
+          278.0,
+          712.0
+        ]
+      ],
+      "text": "a.3) Bộ Công an và các cơ quan quản lý nhà nước trực thuộc cung cấp,",
+      "confidence": 0.9617106875
+    },
+    {
+      "bbox": [
+        [
+          217.0,
+          701.0
+        ],
+        [
+          1135.0,
+          701.0
+        ],
+        [
+          1135.0,
+          746.0
+        ],
+        [
+          217.0,
+          746.0
+        ]
+      ],
+      "text": "trao đối thông tin liên quan đến đấu tranh phòng, chống tội phạm về thuế;",
+      "confidence": 0.950122584
+    },
+    {
+      "bbox": [
+        [
+          218.0,
+          735.0
+        ],
+        [
+          1136.0,
+          735.0
+        ],
+        [
+          1136.0,
+          782.0
+        ],
+        [
+          218.0,
+          782.0
+        ]
+      ],
+      "text": "cung cấp thông tin về xuất cảnh, nhập cảnh và thông tin về đăng ký, quản lý",
+      "confidence": 0.9676918788235294
+    },
+    {
+      "bbox": [
+        [
+          218.0,
+          769.0
+        ],
+        [
+          1136.0,
+          769.0
+        ],
+        [
+          1136.0,
+          808.0
+        ],
+        [
+          218.0,
+          808.0
+        ]
+      ],
+      "text": "phương tiện giao thông của tổ chức, cá nhân và cung cấp các thông tin khác",
+      "confidence": 0.967124213125
+    },
+    {
+      "bbox": [
+        [
+          218.0,
+          800.0
+        ],
+        [
+          941.0,
+          800.0
+        ],
+        [
+          941.0,
+          840.0
+        ],
+        [
+          218.0,
+          840.0
+        ]
+      ],
+      "text": "theo quy định tại Luật Quản lý thuế và pháp luật có liên quan.",
+      "confidence": 0.9628271007142857
+    },
+    {
+      "bbox": [
+        [
+          279.0,
+          861.0
+        ],
+        [
+          1137.0,
+          861.0
+        ],
+        [
+          1137.0,
+          914.0
+        ],
+        [
+          279.0,
+          914.0
+        ]
+      ],
+      "text": "4.4) Bộ Công Thương và cơ quan quản lý nhà nước về thương mại có",
+      "confidence": 0.9358350493333334
+    },
+    {
+      "bbox": [
+        [
+          219.0,
+          893.0
+        ],
+        [
+          1137.0,
+          893.0
+        ],
+        [
+          1137.0,
+          937.0
+        ],
+        [
+          219.0,
+          937.0
+        ]
+      ],
+      "text": "trách nhiệm cung cap thông tin về chính sách quản lý hàng hóa xuất khẩu,",
+      "confidence": 0.9651859946666668
+    },
+    {
+      "bbox": [
+        [
+          220.0,
+          926.0
+        ],
+        [
+          1137.0,
+          926.0
+        ],
+        [
+          1137.0,
+          971.0
+        ],
+        [
+          220.0,
+          971.0
+        ]
+      ],
+      "text": "nhập khẩu, quá cảnh của Việt Nam và nước ngoài, chuyển khẩu, tạm nhập, tái",
+      "confidence": 0.9565213786666666
+    },
+    {
+      "bbox": [
+        [
+          220.0,
+          965.0
+        ],
+        [
+          1138.0,
+          965.0
+        ],
+        [
+          1138.0,
+          1008.0
+        ],
+        [
+          220.0,
+          1008.0
+        ]
+      ],
+      "text": "xuất, tạm xuất, tái nhập, tình hình xử lý vi phạm hành chính trong các lĩnh",
+      "confidence": 0.968757681875
+    },
+    {
+      "bbox": [
+        [
+          220.0,
+          994.0
+        ],
+        [
+          1139.0,
+          994.0
+        ],
+        [
+          1139.0,
+          1040.0
+        ],
+        [
+          220.0,
+          1040.0
+        ]
+      ],
+      "text": "vực quản lý chuyên ngành; thông tin quản lý thị trường về phòng, chống, xử",
+      "confidence": 0.9648014273333334
+    },
+    {
+      "bbox": [
+        [
+          222.0,
+          1017.0
+        ],
+        [
+          1137.0,
+          1017.0
+        ],
+        [
+          1137.0,
+          1071.0
+        ],
+        [
+          222.0,
+          1071.0
+        ]
+      ],
+      "text": "lý các hành vi kinh doanh hàng hóa nhập lậu; sản xuất, buôn bán hàng giả,",
+      "confidence": 0.9613607325
+    },
+    {
+      "bbox": [
+        [
+          221.0,
+          1059.0
+        ],
+        [
+          1139.0,
+          1059.0
+        ],
+        [
+          1139.0,
+          1110.0
+        ],
+        [
+          221.0,
+          1110.0
+        ]
+      ],
+      "text": "hàng cấm, hàng hóa không rõ nguồn gốc xuất xứ; hành vi xâm phạm quyên sở",
+      "confidence": 0.963209305
+    },
+    {
+      "bbox": [
+        [
+          221.0,
+          1096.0
+        ],
+        [
+          1140.0,
+          1096.0
+        ],
+        [
+          1140.0,
+          1133.0
+        ],
+        [
+          221.0,
+          1133.0
+        ]
+      ],
+      "text": "hữu trí tuệ; hành vi vi phạm pháp luật về chất lượng, đo lường, giá, an toàn",
+      "confidence": 0.9586021558823529
+    },
+    {
+      "bbox": [
+        [
+          221.0,
+          1133.0
+        ],
+        [
+          1139.0,
+          1133.0
+        ],
+        [
+          1139.0,
+          1176.0
+        ],
+        [
+          221.0,
+          1176.0
+        ]
+      ],
+      "text": "thực phẩm và gian lận thương mại; hành vi vi phạm pháp luật về bảo vệ",
+      "confidence": 0.960181956875
+    },
+    {
+      "bbox": [
+        [
+          222.0,
+          1161.0
+        ],
+        [
+          1140.0,
+          1161.0
+        ],
+        [
+          1140.0,
+          1203.0
+        ],
+        [
+          222.0,
+          1203.0
+        ]
+      ],
+      "text": "quyền lợi người tiêu dùng: hoạt động thương mại điện tử, nhượng quyền",
+      "confidence": 0.9662589861538461
+    },
+    {
+      "bbox": [
+        [
+          222.0,
+          1201.0
+        ],
+        [
+          1140.0,
+          1201.0
+        ],
+        [
+          1140.0,
+          1233.0
+        ],
+        [
+          222.0,
+          1233.0
+        ]
+      ],
+      "text": "thương mại, nội dung thông tin giây phép hoạt động thương mại điện tử,",
+      "confidence": 0.9663713528571429
+    },
+    {
+      "bbox": [
+        [
+          223.0,
+          1227.0
+        ],
+        [
+          1140.0,
+          1227.0
+        ],
+        [
+          1140.0,
+          1267.0
+        ],
+        [
+          223.0,
+          1267.0
+        ]
+      ],
+      "text": "nhượng quyền thương mại, thông tin liên quan trong quản lý thuế đối với tổ",
+      "confidence": 0.96241767
+    },
+    {
+      "bbox": [
+        [
+          223.0,
+          1262.0
+        ],
+        [
+          1140.0,
+          1262.0
+        ],
+        [
+          1140.0,
+          1305.0
+        ],
+        [
+          223.0,
+          1305.0
+        ]
+      ],
+      "text": "chức, cá nhân có hoạt động thương mại điện tử, nhượng quyền thương mại;",
+      "confidence": 0.9671881757142857
+    },
+    {
+      "bbox": [
+        [
+          223.0,
+          1295.0
+        ],
+        [
+          1141.0,
+          1295.0
+        ],
+        [
+          1141.0,
+          1335.0
+        ],
+        [
+          223.0,
+          1335.0
+        ]
+      ],
+      "text": "thông tin về các hoạt động chống bán phá giá, chống trợ cap, tự vệ, chống lần",
+      "confidence": 0.9590699452941176
+    },
+    {
+      "bbox": [
+        [
+          223.0,
+          1335.0
+        ],
+        [
+          1141.0,
+          1335.0
+        ],
+        [
+          1141.0,
+          1367.0
+        ],
+        [
+          223.0,
+          1367.0
+        ]
+      ],
+      "text": "tránh biện pháp phòng vệ thương mại và cung cấp thông tin khác theo quy",
+      "confidence": 0.963854534
+    },
+    {
+      "bbox": [
+        [
+          225.0,
+          1366.0
+        ],
+        [
+          836.0,
+          1366.0
+        ],
+        [
+          836.0,
+          1399.0
+        ],
+        [
+          225.0,
+          1399.0
+        ]
+      ],
+      "text": "định tại Luật Quản lý thuế và pháp luật có liên quan.",
+      "confidence": 0.9687874675
+    },
+    {
+      "bbox": [
+        [
+          286.0,
+          1413.0
+        ],
+        [
+          1141.0,
+          1413.0
+        ],
+        [
+          1141.0,
+          1456.0
+        ],
+        [
+          286.0,
+          1456.0
+        ]
+      ],
+      "text": "a.5) Ngân hàng Nhà nước Việt Nam phối hợp Bộ Tài chính chỉ đạo,",
+      "confidence": 0.9643047650000001
+    },
+    {
+      "bbox": [
+        [
+          226.0,
+          1448.0
+        ],
+        [
+          1141.0,
+          1448.0
+        ],
+        [
+          1141.0,
+          1484.0
+        ],
+        [
+          226.0,
+          1484.0
+        ]
+      ],
+      "text": "hướng dẫn ngân hàng thương mại, tổ chức tín dụng, tổ chức cung ứng dịch vụ",
+      "confidence": 0.966548968125
+    },
+    {
+      "bbox": [
+        [
+          227.0,
+          1485.0
+        ],
+        [
+          1142.0,
+          1485.0
+        ],
+        [
+          1142.0,
+          1532.0
+        ],
+        [
+          227.0,
+          1532.0
+        ]
+      ],
+      "text": "trung gian, thanh toán được Ngân hàng Nhà nước Việt Nam cấp phép trong",
+      "confidence": 0.9230730485714286
+    },
+    {
+      "bbox": [
+        [
+          227.0,
+          1512.0
+        ],
+        [
+          1141.0,
+          1512.0
+        ],
+        [
+          1141.0,
+          1553.0
+        ],
+        [
+          227.0,
+          1553.0
+        ]
+      ],
+      "text": "việc kết nối, cung cấp thông tin với co quan quản lý thuế liên quan đến giao",
+      "confidence": 0.9613770652941176
+    },
+    {
+      "bbox": [
+        [
+          228.0,
+          1546.0
+        ],
+        [
+          1141.0,
+          1546.0
+        ],
+        [
+          1141.0,
+          1587.0
+        ],
+        [
+          228.0,
+          1587.0
+        ]
+      ],
+      "text": "dịch qua ngân hàng của tô chức, cá nhân và phối hợp với cơ quan quản lý",
+      "confidence": 0.9685818076470589
+    }
+  ]
+}

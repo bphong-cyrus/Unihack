@@ -1,0 +1,357 @@
+{
+  "document_id": "126/2020/NĐ-CP",
+  "source_sha256": "310648e80396d267610946458e7fdd71ba87ef538b009d6574ed21514de3f7ca",
+  "page_count": 119,
+  "review_status": "UNREVIEWED",
+  "candidates": [
+    {
+      "article": "1",
+      "page": 1,
+      "line_index": 17,
+      "text": "Điều 1. Phạm vi điều chính",
+      "confidence": 0.9113793433333335,
+      "record_file": "page-001.json",
+      "source_verified": true
+    },
+    {
+      "article": "2",
+      "page": 1,
+      "line_index": 24,
+      "text": "Điều 2. Đối tượng áp dụng",
+      "confidence": 0.9604468533333334,
+      "record_file": "page-001.json",
+      "source_verified": true
+    },
+    {
+      "article": "3",
+      "page": 1,
+      "line_index": 28,
+      "text": "Điều 3. Giải thích từ ngữ",
+      "confidence": 0.9670436083333334,
+      "record_file": "page-001.json",
+      "source_verified": true
+    },
+    {
+      "article": "4",
+      "page": 2,
+      "line_index": 0,
+      "text": "Điều 4. Quần lý thuế đối với người nộp thuế trong thời gian tạm",
+      "confidence": 0.9632859471428571,
+      "record_file": "page-002.json"
+    },
+    {
+      "article": "5",
+      "page": 3,
+      "line_index": 25,
+      "text": "Điều 5. Quần lý thu các khoản thu khác thuộc ngân sách nhà nước",
+      "confidence": 0.9645346442857143,
+      "record_file": "page-003.json"
+    },
+    {
+      "article": "6",
+      "page": 7,
+      "line_index": 0,
+      "text": "Điều 6. Đăng ký thuế",
+      "confidence": 0.9687790820000001,
+      "record_file": "page-007.json"
+    },
+    {
+      "article": "7",
+      "page": 8,
+      "line_index": 6,
+      "text": "Điều 7. Hồ sơ khai thuế",
+      "confidence": 0.9627083449999999,
+      "record_file": "page-008.json"
+    },
+    {
+      "article": "8",
+      "page": 12,
+      "line_index": 30,
+      "text": "Điều 8. Các loại thuế khai theo tháng, khai theo quý, khai theo năm,",
+      "confidence": 0.9666116935714285,
+      "record_file": "page-012.json"
+    },
+    {
+      "article": "9",
+      "page": 21,
+      "line_index": 19,
+      "text": "Điều 9. Tiêu chí khai thuế theo quý đối với thuế giá trị gia tăng và",
+      "confidence": 0.962913365625,
+      "record_file": "page-021.json"
+    },
+    {
+      "article": "10",
+      "page": 22,
+      "line_index": 31,
+      "text": "Điều 10. Thời hạn nộp hồ sơ khai thuế cửa các khoản thu về đất, lệ",
+      "confidence": 0.9621526968749999,
+      "record_file": "page-022.json"
+    },
+    {
+      "article": "11",
+      "page": 26,
+      "line_index": 4,
+      "text": "Điều 11. Địa điểm nộp hồ sơ khai thuế",
+      "confidence": 0.9615344155555556,
+      "record_file": "page-026.json"
+    },
+    {
+      "article": "12",
+      "page": 33,
+      "line_index": 31,
+      "text": "Điều 12. Khai phí, lệ phí và các khoản thu khác do cơ quan đại diện",
+      "confidence": 0.96810663875,
+      "record_file": "page-033.json"
+    },
+    {
+      "article": "13",
+      "page": 34,
+      "line_index": 12,
+      "text": "Điều 13. Các trường hợp cơ quan quản lý thuế tính thuế, thông báo",
+      "confidence": 0.9678577521428572,
+      "record_file": "page-034.json"
+    },
+    {
+      "article": "14",
+      "page": 41,
+      "line_index": 12,
+      "text": "Điều 14. Trường hợp ấn định thuế",
+      "confidence": 0.9668038185714285,
+      "record_file": "page-041.json"
+    },
+    {
+      "article": "15",
+      "page": 42,
+      "line_index": 13,
+      "text": "Điều 15. Căn cứ ấn định thuế",
+      "confidence": 0.9620144985714286,
+      "record_file": "page-042.json"
+    },
+    {
+      "article": "16",
+      "page": 44,
+      "line_index": 3,
+      "text": "Điều 16. Thắm quyền, thú tục, quyết định ấn định thuế",
+      "confidence": 0.9662318354545455,
+      "record_file": "page-044.json"
+    },
+    {
+      "article": "17",
+      "page": 44,
+      "line_index": 32,
+      "text": "Điều 17. Án định thuế đối với hàng hóa xuất khẩu, nhập khẩu",
+      "confidence": 0.9621119515384615,
+      "record_file": "page-044.json"
+    },
+    {
+      "article": "18",
+      "page": 51,
+      "line_index": 7,
+      "text": "Điều 18. Thời hạn nộp thuế đối với các khoản thu thuộc ngân sách",
+      "confidence": 0.9655855235714286,
+      "record_file": "page-051.json"
+    },
+    {
+      "article": "19",
+      "page": 55,
+      "line_index": 22,
+      "text": "Điều 19. Gia hạn nộp thuế trong trường hợp đặc biệt",
+      "confidence": 0.9670314027272728,
+      "record_file": "page-055.json"
+    },
+    {
+      "article": "20",
+      "page": 55,
+      "line_index": 29,
+      "text": "Điều 20. Gia hạn nộp tiền cấp quyền khai thác khoáng sản khi có",
+      "confidence": 0.9647075928571428,
+      "record_file": "page-055.json"
+    },
+    {
+      "article": "21",
+      "page": 57,
+      "line_index": 3,
+      "text": "Điều 21. Hoàn thành nghĩa vụ nộp thuế trong trường hợp xuất cảnh",
+      "confidence": 0.96729819,
+      "record_file": "page-057.json"
+    },
+    {
+      "article": "22",
+      "page": 58,
+      "line_index": 19,
+      "text": "Điều 22. Phân loại hd sơ hoàn thuế đối với hàng hoá xuất khẩu,",
+      "confidence": 0.9597401207142857,
+      "record_file": "page-058.json"
+    },
+    {
+      "article": "23",
+      "page": 59,
+      "line_index": 5,
+      "text": "Điều 23. Thú tục, hồ sơ, thời gian khoanh nợ",
+      "confidence": 0.9492605749999999,
+      "record_file": "page-059.json"
+    },
+    {
+      "article": "24",
+      "page": 61,
+      "line_index": 31,
+      "text": "Điều 24. Xóa nợ tiền thuế, tiền chậm nộp, tiền phạt đối với các",
+      "confidence": 0.968862365,
+      "record_file": "page-061.json"
+    },
+    {
+      "article": "25",
+      "page": 62,
+      "line_index": 15,
+      "text": "Điều 25. Phối hợp giữa cơ quan quản lý thuế và cơ quan đăng ký",
+      "confidence": 0.9215815433333334,
+      "record_file": "page-062.json"
+    },
+    {
+      "article": "27",
+      "page": 69,
+      "line_index": 1,
+      "text": "Điều 27. Trách nhiệm cung cấp thông tin của tổ chức, cá nhân có",
+      "confidence": 0.9658035500000001,
+      "record_file": "page-069.json"
+    },
+    {
+      "article": "28",
+      "page": 69,
+      "line_index": 29,
+      "text": "Điều 28. Trách nhiệm của cơ quan quản lý nhà nước, tổ chức, cá",
+      "confidence": 0.9603612778571429,
+      "record_file": "page-069.json"
+    },
+    {
+      "article": "29",
+      "page": 70,
+      "line_index": 8,
+      "text": "Điều 29. Công khai thông tin người nộp thuế",
+      "confidence": 0.9677113433333333,
+      "record_file": "page-070.json"
+    },
+    {
+      "article": "30",
+      "page": 71,
+      "line_index": 23,
+      "text": "Điều 30. Nhiệm vụ, quyền hạn của ngân hàng thương mại, tổ chức",
+      "confidence": 0.9675304238461538,
+      "record_file": "page-071.json"
+    },
+    {
+      "article": "31",
+      "page": 74,
+      "line_index": 35,
+      "text": "Điều 31. Cưỡng chế bằng biện pháp trích tiền từ tài khoản, phong",
+      "confidence": 0.9622846092307692,
+      "record_file": "page-074.json",
+      "source_verified": true
+    },
+    {
+      "article": "32",
+      "page": 79,
+      "line_index": 12,
+      "text": "Điều 32. Cưỡng chế bằng biện pháp khấu trừ một phần tiền lương",
+      "confidence": 0.9550808830769232,
+      "record_file": "page-079.json"
+    },
+    {
+      "article": "33",
+      "page": 82,
+      "line_index": 19,
+      "text": "Điều 33. Cưỡng chế bằng biện pháp dừng làm thủ tục hải quan đối",
+      "confidence": 0.9628284721428573,
+      "record_file": "page-082.json"
+    },
+    {
+      "article": "34",
+      "page": 86,
+      "line_index": 1,
+      "text": "Điều 34. Cưỡng chế bằng biện pháp ngừng sử dụng hóa đơn",
+      "confidence": 0.9618815483333333,
+      "record_file": "page-086.json"
+    },
+    {
+      "article": "35",
+      "page": 90,
+      "line_index": 1,
+      "text": "Điều 35. Cưỡng chế bằng biện pháp kê biên tài sản, bán đấu giá tài",
+      "confidence": 0.95711766,
+      "record_file": "page-090.json"
+    },
+    {
+      "article": "36",
+      "page": 100,
+      "line_index": 26,
+      "text": "Điều 36. Cưỡng chế bằng biện pháp thu tiền, tài sản khác của người",
+      "confidence": 0.9634980285714286,
+      "record_file": "page-100.json"
+    },
+    {
+      "article": "37",
+      "page": 104,
+      "line_index": 34,
+      "text": "Điều 37. Cưỡng chế bằng biện pháp thu hồi giấy chứng nhận đăng",
+      "confidence": 0.9624807253846153,
+      "record_file": "page-104.json"
+    },
+    {
+      "article": "38",
+      "page": 106,
+      "line_index": 32,
+      "text": "Điều 38. Quy định về doanh nghiệp ưu tiên trong lĩnh vực hải quan",
+      "confidence": 0.9678802935714285,
+      "record_file": "page-106.json"
+    },
+    {
+      "article": "39",
+      "page": 107,
+      "line_index": 32,
+      "text": "Điều 39. Ủy nhiệm thu thuế và các khoản thu khác thuộc ngân sách",
+      "confidence": 0.9652212742857144,
+      "record_file": "page-107.json"
+    },
+    {
+      "article": "40",
+      "page": 112,
+      "line_index": 16,
+      "text": "Điều 40. Mua thông tin, tài liệu, dữ liệu của các đơn vị cung cấp để",
+      "confidence": 0.96370114375,
+      "record_file": "page-112.json"
+    },
+    {
+      "article": "41",
+      "page": 113,
+      "line_index": 20,
+      "text": "Điều 41. Việc á áp dụng cơ chế thỏa thuận trước về phương pháp xác",
+      "confidence": 0.9598113006666666,
+      "record_file": "page-113.json"
+    },
+    {
+      "article": "42",
+      "page": 116,
+      "line_index": 29,
+      "text": "Điều 42. Hiệu lực thi hành",
+      "confidence": 0.9624571850000001,
+      "record_file": "page-116.json"
+    },
+    {
+      "article": "43",
+      "page": 118,
+      "line_index": 17,
+      "text": "Điều 43. Quy định chuyển tiếp",
+      "confidence": 0.9585827383333333,
+      "record_file": "page-118.json"
+    },
+    {
+      "article": "44",
+      "page": 118,
+      "line_index": 32,
+      "text": "Điều 44. Trách nhiệm thi hành",
+      "confidence": 0.9638041833333334,
+      "record_file": "page-118.json"
+    }
+  ],
+  "limitations": "Only candidate article headings in the decree body are retained. The page 1 headings for Articles 1–3 and page 74 heading for Article 31 were manually checked against the official PDF and marked source_verified. All other retained candidates remain heuristic and may be incorrect; the index is not exhaustive and may miss headings. References to articles in the body and appendix form/template clauses are excluded."
+}

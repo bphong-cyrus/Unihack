@@ -1,0 +1,927 @@
+{
+  "document_id": "126/2020/NĐ-CP",
+  "source_file": "../../legal-sources/1262020ndcp/01.pdf",
+  "source_sha256": "310648e80396d267610946458e7fdd71ba87ef538b009d6574ed21514de3f7ca",
+  "page_count": 119,
+  "render_dpi": 150,
+  "engine": "Tesseract 5.5.4 (vie+eng; OEM 1; PSM 3)",
+  "review_status": "UNREVIEWED",
+  "tesseract_version": "5.5.4",
+  "tsv_parser_version": 2,
+  "languages": [
+    "vie",
+    "eng"
+  ],
+  "traineddata_sha256": {
+    "vie": "b6b49293d95d0b6dbd8780174627e82c75be957b6f4ed9862155540d6b00bb45",
+    "eng": "8280aed0782fe27257a68ea10fe7ef324ca0f8d85bd2fd145d1c2b560bcb66ba"
+  },
+  "ocr_engine_mode": 1,
+  "page_segmentation_mode": 3,
+  "thread_limit": 1,
+  "page": 68,
+  "lines": [
+    {
+      "bbox": [
+        [
+          680.0,
+          56.0
+        ],
+        [
+          707.0,
+          56.0
+        ],
+        [
+          707.0,
+          76.0
+        ],
+        [
+          680.0,
+          76.0
+        ]
+      ],
+      "text": "68",
+      "confidence": 0.96691513
+    },
+    {
+      "bbox": [
+        [
+          267.0,
+          127.0
+        ],
+        [
+          1122.0,
+          127.0
+        ],
+        [
+          1122.0,
+          170.0
+        ],
+        [
+          267.0,
+          170.0
+        ]
+      ],
+      "text": "a.11) Cơ quan thanh tra cung cấp thông tin liên quan đến gửi biên bản",
+      "confidence": 0.9609716193333334
+    },
+    {
+      "bbox": [
+        [
+          208.0,
+          157.0
+        ],
+        [
+          1125.0,
+          157.0
+        ],
+        [
+          1125.0,
+          204.0
+        ],
+        [
+          208.0,
+          204.0
+        ]
+      ],
+      "text": "hoặc kết luận thanh tra việc chấp hành pháp luật thuế của người nộp thuế",
+      "confidence": 0.9691858426666665
+    },
+    {
+      "bbox": [
+        [
+          208.0,
+          196.0
+        ],
+        [
+          1126.0,
+          196.0
+        ],
+        [
+          1126.0,
+          238.0
+        ],
+        [
+          208.0,
+          238.0
+        ]
+      ],
+      "text": "trong trường hợp trực tiếp thanh tra người nộp thuế theo quy định của Luật",
+      "confidence": 0.9685009766666667
+    },
+    {
+      "bbox": [
+        [
+          209.0,
+          234.0
+        ],
+        [
+          581.0,
+          234.0
+        ],
+        [
+          581.0,
+          268.0
+        ],
+        [
+          209.0,
+          268.0
+        ]
+      ],
+      "text": "Thanh tra và Luật Quản lý thuế.",
+      "confidence": 0.9664783242857142
+    },
+    {
+      "bbox": [
+        [
+          270.0,
+          273.0
+        ],
+        [
+          1127.0,
+          273.0
+        ],
+        [
+          1127.0,
+          322.0
+        ],
+        [
+          270.0,
+          322.0
+        ]
+      ],
+      "text": "a.12) Cơ quan kiểm toán cung cấp thông tin, tài liệu liên quan đến việc",
+      "confidence": 0.9642905019999999
+    },
+    {
+      "bbox": [
+        [
+          210.0,
+          312.0
+        ],
+        [
+          1128.0,
+          312.0
+        ],
+        [
+          1128.0,
+          354.0
+        ],
+        [
+          210.0,
+          354.0
+        ]
+      ],
+      "text": "thực hiện nghĩa vụ thuê của người nộp thuê theo quy định của Luật Kiêm toán",
+      "confidence": 0.943121886875
+    },
+    {
+      "bbox": [
+        [
+          212.0,
+          355.0
+        ],
+        [
+          579.0,
+          355.0
+        ],
+        [
+          579.0,
+          383.0
+        ],
+        [
+          212.0,
+          383.0
+        ]
+      ],
+      "text": "nhà nước và Luật Quản lý thuê.",
+      "confidence": 0.9675433242857142
+    },
+    {
+      "bbox": [
+        [
+          272.0,
+          389.0
+        ],
+        [
+          1128.0,
+          389.0
+        ],
+        [
+          1128.0,
+          434.0
+        ],
+        [
+          272.0,
+          434.0
+        ]
+      ],
+      "text": "a.13) Cơ quan tòa án, cơ quan trọng tài cung cấp thông tin về bản án,",
+      "confidence": 0.964322113125
+    },
+    {
+      "bbox": [
+        [
+          213.0,
+          427.0
+        ],
+        [
+          1129.0,
+          427.0
+        ],
+        [
+          1129.0,
+          469.0
+        ],
+        [
+          213.0,
+          469.0
+        ]
+      ],
+      "text": "quyết định của tòa án, trọng tài về việc chấm dứt hoạt động của dự án dau tư,",
+      "confidence": 0.9605327827777778
+    },
+    {
+      "bbox": [
+        [
+          213.0,
+          458.0
+        ],
+        [
+          1131.0,
+          458.0
+        ],
+        [
+          1131.0,
+          503.0
+        ],
+        [
+          213.0,
+          503.0
+        ]
+      ],
+      "text": "phá sản đối với doanh nghiệp và hợp tác xã và cung cấp thông tin khác theo",
+      "confidence": 0.9683575535294118
+    },
+    {
+      "bbox": [
+        [
+          214.0,
+          499.0
+        ],
+        [
+          877.0,
+          499.0
+        ],
+        [
+          877.0,
+          535.0
+        ],
+        [
+          214.0,
+          535.0
+        ]
+      ],
+      "text": "quy định tại Luật Quản lý thuê và pháp luật có liên quan.",
+      "confidence": 0.968836886923077
+    },
+    {
+      "bbox": [
+        [
+          274.0,
+          536.0
+        ],
+        [
+          1132.0,
+          536.0
+        ],
+        [
+          1132.0,
+          582.0
+        ],
+        [
+          274.0,
+          582.0
+        ]
+      ],
+      "text": "a.14) Tổng cục Thống kê cung cấp thông tin các báo cáo kết quả các",
+      "confidence": 0.9639295146666668
+    },
+    {
+      "bbox": [
+        [
+          216.0,
+          573.0
+        ],
+        [
+          1133.0,
+          573.0
+        ],
+        [
+          1133.0,
+          615.0
+        ],
+        [
+          216.0,
+          615.0
+        ]
+      ],
+      "text": "cuộc điều tra thống kê liên quan đến người nộp thuế và cơ sở kinh doanh; các",
+      "confidence": 0.967703745882353
+    },
+    {
+      "bbox": [
+        [
+          216.0,
+          604.0
+        ],
+        [
+          1134.0,
+          604.0
+        ],
+        [
+          1134.0,
+          649.0
+        ],
+        [
+          216.0,
+          649.0
+        ]
+      ],
+      "text": "báo cáo phân tích chuyên đề liên quan đến người nộp thuế và cơ sở kinh",
+      "confidence": 0.9682080737500001
+    },
+    {
+      "bbox": [
+        [
+          217.0,
+          639.0
+        ],
+        [
+          1134.0,
+          639.0
+        ],
+        [
+          1134.0,
+          680.0
+        ],
+        [
+          217.0,
+          680.0
+        ]
+      ],
+      "text": "doanh; các thông tin thống kê kinh tế vĩ mô; thông tin thống kê khác liên quan",
+      "confidence": 0.9482835435294118
+    },
+    {
+      "bbox": [
+        [
+          218.0,
+          669.0
+        ],
+        [
+          1135.0,
+          669.0
+        ],
+        [
+          1135.0,
+          715.0
+        ],
+        [
+          218.0,
+          715.0
+        ]
+      ],
+      "text": "đến người nộp thuế và cơ sở kinh doanh; các Danh mục chuẩn cấp quốc gia",
+      "confidence": 0.96708026875
+    },
+    {
+      "bbox": [
+        [
+          218.0,
+          703.0
+        ],
+        [
+          1136.0,
+          703.0
+        ],
+        [
+          1136.0,
+          748.0
+        ],
+        [
+          218.0,
+          748.0
+        ]
+      ],
+      "text": "và cung cấp thông tin khác theo quy định tại Luật Quản lý thuế và pháp luật",
+      "confidence": 0.9673139423529412
+    },
+    {
+      "bbox": [
+        [
+          219.0,
+          756.0
+        ],
+        [
+          367.0,
+          756.0
+        ],
+        [
+          367.0,
+          781.0
+        ],
+        [
+          219.0,
+          781.0
+        ]
+      ],
+      "text": "có liên quan.",
+      "confidence": 0.9665218566666666
+    },
+    {
+      "bbox": [
+        [
+          280.0,
+          785.0
+        ],
+        [
+          1136.0,
+          785.0
+        ],
+        [
+          1136.0,
+          830.0
+        ],
+        [
+          280.0,
+          830.0
+        ]
+      ],
+      "text": "a.15) Cơ quan Bảo hiểm xã hội cung cấp thông tin về số lượng người lao",
+      "confidence": 0.963428238125
+    },
+    {
+      "bbox": [
+        [
+          221.0,
+          817.0
+        ],
+        [
+          1137.0,
+          817.0
+        ],
+        [
+          1137.0,
+          863.0
+        ],
+        [
+          221.0,
+          863.0
+        ]
+      ],
+      "text": "động tham gia các loại bảo hiểm xã hội, bảo hiểm y tế, bảo hiểm tai nạn và sô",
+      "confidence": 0.9295832268421051
+    },
+    {
+      "bbox": [
+        [
+          221.0,
+          865.0
+        ],
+        [
+          598.0,
+          865.0
+        ],
+        [
+          598.0,
+          896.0
+        ],
+        [
+          221.0,
+          896.0
+        ]
+      ],
+      "text": "nợ chưa đóng các loại bảo hiem.",
+      "confidence": 0.8521259528571429
+    },
+    {
+      "bbox": [
+        [
+          281.0,
+          903.0
+        ],
+        [
+          1140.0,
+          903.0
+        ],
+        [
+          1140.0,
+          943.0
+        ],
+        [
+          281.0,
+          943.0
+        ]
+      ],
+      "text": "a.16) Ban quản lý khu kinh tế, khu công nghệ cao có trách nhiệm cung",
+      "confidence": 0.9643387080000001
+    },
+    {
+      "bbox": [
+        [
+          222.0,
+          931.0
+        ],
+        [
+          1139.0,
+          931.0
+        ],
+        [
+          1139.0,
+          978.0
+        ],
+        [
+          222.0,
+          978.0
+        ]
+      ],
+      "text": "cấp thông tin về số tiền thuê đất, thuê mặt nước, tiền sử dụng đất của tổ chức,",
+      "confidence": 0.9663439655555556
+    },
+    {
+      "bbox": [
+        [
+          223.0,
+          965.0
+        ],
+        [
+          1140.0,
+          965.0
+        ],
+        [
+          1140.0,
+          1008.0
+        ],
+        [
+          223.0,
+          1008.0
+        ]
+      ],
+      "text": "cá nhân được Nhà nước giao đất, cho thuê đất trong khu kinh tế, khu công",
+      "confidence": 0.967285856875
+    },
+    {
+      "bbox": [
+        [
+          223.0,
+          1000.0
+        ],
+        [
+          908.0,
+          1000.0
+        ],
+        [
+          908.0,
+          1045.0
+        ],
+        [
+          223.0,
+          1045.0
+        ]
+      ],
+      "text": "nghệ cao phải nộp, đã nộp, còn phải nộp cho cơ quan thuế.",
+      "confidence": 0.9687190592307693
+    },
+    {
+      "bbox": [
+        [
+          284.0,
+          1050.0
+        ],
+        [
+          1141.0,
+          1050.0
+        ],
+        [
+          1141.0,
+          1091.0
+        ],
+        [
+          284.0,
+          1091.0
+        ]
+      ],
+      "text": "a.17) Cơ quan quản lý nhà nước có khoản nộp ngân sách nhà nước từ",
+      "confidence": 0.965395518
+    },
+    {
+      "bbox": [
+        [
+          224.0,
+          1082.0
+        ],
+        [
+          1143.0,
+          1082.0
+        ],
+        [
+          1143.0,
+          1121.0
+        ],
+        [
+          224.0,
+          1121.0
+        ]
+      ],
+      "text": "bán tài sản trên đất, chuyển nhượng quyền sử dụng đất và từ việc quản lý, sử",
+      "confidence": 0.963356004117647
+    },
+    {
+      "bbox": [
+        [
+          225.0,
+          1116.0
+        ],
+        [
+          1143.0,
+          1116.0
+        ],
+        [
+          1143.0,
+          1159.0
+        ],
+        [
+          225.0,
+          1159.0
+        ]
+      ],
+      "text": "dụng, khai thác tài sản công vào mục đích kinh doanh, cho thuê, liên doanh,",
+      "confidence": 0.9687448373333334
+    },
+    {
+      "bbox": [
+        [
+          226.0,
+          1150.0
+        ],
+        [
+          1145.0,
+          1150.0
+        ],
+        [
+          1145.0,
+          1190.0
+        ],
+        [
+          226.0,
+          1190.0
+        ]
+      ],
+      "text": "liên kết, sau khi thực hiện nghĩa vụ thuế, phí, lệ phí theo quy định của Luật",
+      "confidence": 0.9667365947058824
+    },
+    {
+      "bbox": [
+        [
+          226.0,
+          1184.0
+        ],
+        [
+          1144.0,
+          1184.0
+        ],
+        [
+          1144.0,
+          1225.0
+        ],
+        [
+          226.0,
+          1225.0
+        ]
+      ],
+      "text": "Quản lý tài sản công có trách nhiệm cung cấp thông tin liên quan khoản nộp",
+      "confidence": 0.966451468125
+    },
+    {
+      "bbox": [
+        [
+          227.0,
+          1229.0
+        ],
+        [
+          465.0,
+          1229.0
+        ],
+        [
+          465.0,
+          1259.0
+        ],
+        [
+          227.0,
+          1259.0
+        ]
+      ],
+      "text": "ngân sách nhà nước.",
+      "confidence": 0.9696231449999999
+    },
+    {
+      "bbox": [
+        [
+          289.0,
+          1259.0
+        ],
+        [
+          1146.0,
+          1259.0
+        ],
+        [
+          1146.0,
+          1308.0
+        ],
+        [
+          289.0,
+          1308.0
+        ]
+      ],
+      "text": "a.18) Cơ quan khác của nhà nước có liên quan đến người nộp thuế có",
+      "confidence": 0.9662167859999999
+    },
+    {
+      "bbox": [
+        [
+          229.0,
+          1299.0
+        ],
+        [
+          1146.0,
+          1299.0
+        ],
+        [
+          1146.0,
+          1341.0
+        ],
+        [
+          229.0,
+          1341.0
+        ]
+      ],
+      "text": "trách nhiệm cung cap thông tin của người nộp thuế theo yêu câu theo quy",
+      "confidence": 0.9646823726666667
+    },
+    {
+      "bbox": [
+        [
+          231.0,
+          1338.0
+        ],
+        [
+          842.0,
+          1338.0
+        ],
+        [
+          842.0,
+          1372.0
+        ],
+        [
+          231.0,
+          1372.0
+        ]
+      ],
+      "text": "định tại Luật Quản lý thuê và pháp luật có liên quan.",
+      "confidence": 0.9688259975
+    },
+    {
+      "bbox": [
+        [
+          291.0,
+          1374.0
+        ],
+        [
+          1109.0,
+          1374.0
+        ],
+        [
+          1109.0,
+          1420.0
+        ],
+        [
+          291.0,
+          1420.0
+        ]
+      ],
+      "text": "b) Hình thức cung cấp thông tin: Theo phương thức điện tử hoặc giấy.",
+      "confidence": 0.9625813992857143
+    },
+    {
+      "bbox": [
+        [
+          293.0,
+          1427.0
+        ],
+        [
+          1148.0,
+          1427.0
+        ],
+        [
+          1148.0,
+          1468.0
+        ],
+        [
+          293.0,
+          1468.0
+        ]
+      ],
+      "text": "c) Bộ Tài chính chủ trì, các bộ, ngành và cơ quan quản lý nhà nước theo",
+      "confidence": 0.9628585270588235
+    },
+    {
+      "bbox": [
+        [
+          235.0,
+          1454.0
+        ],
+        [
+          1149.0,
+          1454.0
+        ],
+        [
+          1149.0,
+          1503.0
+        ],
+        [
+          235.0,
+          1503.0
+        ]
+      ],
+      "text": "quy định tại điểm a khoản này có trách nhiệm phối hợp với Bộ Tài chính để",
+      "confidence": 0.9561121370588235
+    },
+    {
+      "bbox": [
+        [
+          235.0,
+          1491.0
+        ],
+        [
+          1148.0,
+          1491.0
+        ],
+        [
+          1148.0,
+          1536.0
+        ],
+        [
+          235.0,
+          1536.0
+        ]
+      ],
+      "text": "xây dựng Quy chế trao đồi, cung cấp thông tin và phối hợp công tác giữa Bộ",
+      "confidence": 0.9554602423529411
+    },
+    {
+      "bbox": [
+        [
+          236.0,
+          1521.0
+        ],
+        [
+          1149.0,
+          1521.0
+        ],
+        [
+          1149.0,
+          1566.0
+        ],
+        [
+          236.0,
+          1566.0
+        ]
+      ],
+      "text": "Tài chính với từng đơn vị để quy định nội dung, thời han, hình thức cung cấp",
+      "confidence": 0.9599646305882352
+    },
+    {
+      "bbox": [
+        [
+          236.0,
+          1576.0
+        ],
+        [
+          345.0,
+          1576.0
+        ],
+        [
+          345.0,
+          1603.0
+        ],
+        [
+          236.0,
+          1603.0
+        ]
+      ],
+      "text": "thông tin.",
+      "confidence": 0.9649538400000001
+    }
+  ]
+}

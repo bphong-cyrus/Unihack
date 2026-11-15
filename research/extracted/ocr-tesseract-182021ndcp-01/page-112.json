@@ -1,0 +1,355 @@
+{
+  "document_id": "18/2021/NĐ-CP",
+  "source_file": "../../legal-sources/182021ndcp/01.pdf",
+  "source_sha256": "cb0bf16ab3ee6554929e0d9d2cc4f180f51b8ea10ddd30a37309353edeb050d8",
+  "page_count": 114,
+  "render_dpi": 150,
+  "engine": "Tesseract 5.5.4 (vie+eng; OEM 1; PSM 3)",
+  "review_status": "UNREVIEWED",
+  "tesseract_version": "5.5.4",
+  "tsv_parser_version": 2,
+  "languages": [
+    "vie",
+    "eng"
+  ],
+  "traineddata_sha256": {
+    "vie": "b6b49293d95d0b6dbd8780174627e82c75be957b6f4ed9862155540d6b00bb45",
+    "eng": "8280aed0782fe27257a68ea10fe7ef324ca0f8d85bd2fd145d1c2b560bcb66ba"
+  },
+  "ocr_engine_mode": 1,
+  "page_segmentation_mode": 3,
+  "thread_limit": 1,
+  "page": 112,
+  "lines": [
+    {
+      "bbox": [
+        [
+          903.0,
+          84.0
+        ],
+        [
+          928.0,
+          84.0
+        ],
+        [
+          928.0,
+          103.0
+        ],
+        [
+          903.0,
+          103.0
+        ]
+      ],
+      "text": "73",
+      "confidence": 0.95392052
+    },
+    {
+      "bbox": [
+        [
+          1452.0,
+          149.0
+        ],
+        [
+          1574.0,
+          149.0
+        ],
+        [
+          1574.0,
+          175.0
+        ],
+        [
+          1452.0,
+          175.0
+        ]
+      ],
+      "text": "Mẫu số 11",
+      "confidence": 0.9399685933333332
+    },
+    {
+      "bbox": [
+        [
+          273.0,
+          202.0
+        ],
+        [
+          1559.0,
+          202.0
+        ],
+        [
+          1559.0,
+          239.0
+        ],
+        [
+          273.0,
+          239.0
+        ]
+      ],
+      "text": "DANH SÁCH CÁ NHÂN/HỘ GIA ĐÌNH, HỘ KINH DOANH ĐẦU TƯ, TRÒNG SAN PHAM NÔNG SAN",
+      "confidence": 0.940487699375
+    },
+    {
+      "bbox": [
+        [
+          327.0,
+          241.0
+        ],
+        [
+          456.0,
+          241.0
+        ],
+        [
+          456.0,
+          272.0
+        ],
+        [
+          327.0,
+          272.0
+        ]
+      ],
+      "text": "TAI TINH",
+      "confidence": 0.9636402150000001
+    },
+    {
+      "bbox": [
+        [
+          521.0,
+          238.0
+        ],
+        [
+          1454.0,
+          238.0
+        ],
+        [
+          1454.0,
+          270.0
+        ],
+        [
+          521.0,
+          270.0
+        ]
+      ],
+      "text": "CUA CAMPUCHIA TIẾP GIAP TỈNH ... BIEN GIỚI CUA VIET NAM NĂM",
+      "confidence": 0.9467124174999999
+    },
+    {
+      "bbox": [
+        [
+          480.0,
+          271.0
+        ],
+        [
+          1353.0,
+          271.0
+        ],
+        [
+          1353.0,
+          304.0
+        ],
+        [
+          480.0,
+          304.0
+        ]
+      ],
+      "text": "(Kèm theo văn bản số... ngay ... tháng ... năm... của Ủy ban nhân dân tinh ...)",
+      "confidence": 0.9101756817647059
+    },
+    {
+      "bbox": [
+        [
+          233.0,
+          377.0
+        ],
+        [
+          1453.0,
+          377.0
+        ],
+        [
+          1453.0,
+          430.0
+        ],
+        [
+          233.0,
+          430.0
+        ]
+      ],
+      "text": "Tên cá nhân/đại | oI Tên sản phẩm nông | Diện tích | Diện tích đầu tư dự | Dự kiến sản lượn",
+      "confidence": 0.8999823956521741
+    },
+    {
+      "bbox": [
+        [
+          148.0,
+          410.0
+        ],
+        [
+          1603.0,
+          410.0
+        ],
+        [
+          1603.0,
+          458.0
+        ],
+        [
+          148.0,
+          458.0
+        ]
+      ],
+      "text": "STT | diện hộ gia đình, cư trú) sản đầu tư, trồng tại | đầu tư hiện kiến mở rộng trong | sản phẩm nhập khâu | Ghi chú",
+      "confidence": 0.9334684303448274
+    },
+    {
+      "bbox": [
+        [
+          244.0,
+          447.0
+        ],
+        [
+          1476.0,
+          447.0
+        ],
+        [
+          1476.0,
+          485.0
+        ],
+        [
+          244.0,
+          485.0
+        ]
+      ],
+      "text": "hộ kinh doanh Campuchia tại nam... về Việt Nam năm ...",
+      "confidence": 0.9282677027272728
+    },
+    {
+      "bbox": [
+        [
+          220.0,
+          845.0
+        ],
+        [
+          308.0,
+          845.0
+        ],
+        [
+          308.0,
+          863.0
+        ],
+        [
+          220.0,
+          863.0
+        ]
+      ],
+      "text": "Ghi chú:",
+      "confidence": 0.9477388000000001
+    },
+    {
+      "bbox": [
+        [
+          218.0,
+          867.0
+        ],
+        [
+          878.0,
+          867.0
+        ],
+        [
+          878.0,
+          895.0
+        ],
+        [
+          218.0,
+          895.0
+        ]
+      ],
+      "text": "() Nơi thường trú hoặc nơi tạm trú theo quy định tại Nghị định số",
+      "confidence": 0.9486014766666667
+    },
+    {
+      "bbox": [
+        [
+          218.0,
+          904.0
+        ],
+        [
+          879.0,
+          904.0
+        ],
+        [
+          879.0,
+          927.0
+        ],
+        [
+          218.0,
+          927.0
+        ]
+      ],
+      "text": "31/2014/NĐ-CP ngày 18 tháng 4 năm 2014 của Chính phủ và văn",
+      "confidence": 0.9681119416666667
+    },
+    {
+      "bbox": [
+        [
+          217.0,
+          932.0
+        ],
+        [
+          600.0,
+          932.0
+        ],
+        [
+          600.0,
+          959.0
+        ],
+        [
+          217.0,
+          959.0
+        ]
+      ],
+      "text": "bản sửa đổi, bổ sung; thay thể (nếu có).",
+      "confidence": 0.9368025433333333
+    },
+    {
+      "bbox": [
+        [
+          1031.0,
+          846.0
+        ],
+        [
+          1399.0,
+          846.0
+        ],
+        [
+          1399.0,
+          884.0
+        ],
+        [
+          1031.0,
+          884.0
+        ]
+      ],
+      "text": "TM. UY BAN NHÂN DAN -",
+      "confidence": 0.82438289
+    },
+    {
+      "bbox": [
+        [
+          965.0,
+          885.0
+        ],
+        [
+          1419.0,
+          885.0
+        ],
+        [
+          1419.0,
+          913.0
+        ],
+        [
+          965.0,
+          913.0
+        ]
+      ],
+      "text": "(Ky, ghi rõ họ tên, chức vụ và đóng daw)",
+      "confidence": 0.945262642
+    }
+  ]
+}

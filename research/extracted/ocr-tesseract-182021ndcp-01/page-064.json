@@ -1,0 +1,69 @@
+{
+  "document_id": "18/2021/NĐ-CP",
+  "source_file": "../../legal-sources/182021ndcp/01.pdf",
+  "source_sha256": "cb0bf16ab3ee6554929e0d9d2cc4f180f51b8ea10ddd30a37309353edeb050d8",
+  "page_count": 114,
+  "render_dpi": 150,
+  "engine": "Tesseract 5.5.4 (vie+eng; OEM 1; PSM 3)",
+  "review_status": "UNREVIEWED",
+  "tesseract_version": "5.5.4",
+  "tsv_parser_version": 2,
+  "languages": [
+    "vie",
+    "eng"
+  ],
+  "traineddata_sha256": {
+    "vie": "b6b49293d95d0b6dbd8780174627e82c75be957b6f4ed9862155540d6b00bb45",
+    "eng": "8280aed0782fe27257a68ea10fe7ef324ca0f8d85bd2fd145d1c2b560bcb66ba"
+  },
+  "ocr_engine_mode": 1,
+  "page_segmentation_mode": 3,
+  "thread_limit": 1,
+  "page": 64,
+  "lines": [
+    {
+      "bbox": [
+        [
+          646.0,
+          50.0
+        ],
+        [
+          672.0,
+          50.0
+        ],
+        [
+          672.0,
+          70.0
+        ],
+        [
+          646.0,
+          70.0
+        ]
+      ],
+      "text": "25",
+      "confidence": 0.96743004
+    },
+    {
+      "bbox": [
+        [
+          468.0,
+          146.0
+        ],
+        [
+          791.0,
+          146.0
+        ],
+        [
+          791.0,
+          178.0
+        ],
+        [
+          468.0,
+          178.0
+        ]
+      ],
+      "text": "BỊ CHÚ/OBSERVATION",
+      "confidence": 0.9239430999999999
+    }
+  ]
+}

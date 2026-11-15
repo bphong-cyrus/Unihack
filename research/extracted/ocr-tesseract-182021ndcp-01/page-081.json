@@ -1,0 +1,553 @@
+{
+  "document_id": "18/2021/NĐ-CP",
+  "source_file": "../../legal-sources/182021ndcp/01.pdf",
+  "source_sha256": "cb0bf16ab3ee6554929e0d9d2cc4f180f51b8ea10ddd30a37309353edeb050d8",
+  "page_count": 114,
+  "render_dpi": 150,
+  "engine": "Tesseract 5.5.4 (vie+eng; OEM 1; PSM 3)",
+  "review_status": "UNREVIEWED",
+  "tesseract_version": "5.5.4",
+  "tsv_parser_version": 2,
+  "languages": [
+    "vie",
+    "eng"
+  ],
+  "traineddata_sha256": {
+    "vie": "b6b49293d95d0b6dbd8780174627e82c75be957b6f4ed9862155540d6b00bb45",
+    "eng": "8280aed0782fe27257a68ea10fe7ef324ca0f8d85bd2fd145d1c2b560bcb66ba"
+  },
+  "ocr_engine_mode": 1,
+  "page_segmentation_mode": 3,
+  "thread_limit": 1,
+  "page": 81,
+  "lines": [
+    {
+      "bbox": [
+        [
+          648.0,
+          48.0
+        ],
+        [
+          675.0,
+          48.0
+        ],
+        [
+          675.0,
+          68.0
+        ],
+        [
+          648.0,
+          68.0
+        ]
+      ],
+      "text": "42",
+      "confidence": 0.9670099600000001
+    },
+    {
+      "bbox": [
+        [
+          573.0,
+          142.0
+        ],
+        [
+          751.0,
+          142.0
+        ],
+        [
+          751.0,
+          170.0
+        ],
+        [
+          573.0,
+          170.0
+        ]
+      ],
+      "text": "HƯỚNG DẪN",
+      "confidence": 0.96672478
+    },
+    {
+      "bbox": [
+        [
+          265.0,
+          220.0
+        ],
+        [
+          1116.0,
+          220.0
+        ],
+        [
+          1116.0,
+          260.0
+        ],
+        [
+          265.0,
+          260.0
+        ]
+      ],
+      "text": "Số định mức miễn thuế được sử dụng khi người được cấp Số tự nhập",
+      "confidence": 0.9383904046666666
+    },
+    {
+      "bbox": [
+        [
+          264.0,
+          260.0
+        ],
+        [
+          874.0,
+          260.0
+        ],
+        [
+          874.0,
+          287.0
+        ],
+        [
+          264.0,
+          287.0
+        ]
+      ],
+      "text": "khâu hay ủy thác nhập khâu hàng hóa vào Việt Nam.",
+      "confidence": 0.9666330436363637
+    },
+    {
+      "bbox": [
+        [
+          264.0,
+          312.0
+        ],
+        [
+          1117.0,
+          312.0
+        ],
+        [
+          1117.0,
+          350.0
+        ],
+        [
+          264.0,
+          350.0
+        ]
+      ],
+      "text": "Khi mất Sổ, cơ quan được cấp Số cần thông báo ngay cho Cục Hải quan",
+      "confidence": 0.9366426706250001
+    },
+    {
+      "bbox": [
+        [
+          264.0,
+          351.0
+        ],
+        [
+          575.0,
+          351.0
+        ],
+        [
+          575.0,
+          378.0
+        ],
+        [
+          264.0,
+          378.0
+        ]
+      ],
+      "text": "tỉnh, thành phô nơi cap S6.",
+      "confidence": 0.92696677
+    },
+    {
+      "bbox": [
+        [
+          264.0,
+          402.0
+        ],
+        [
+          1117.0,
+          402.0
+        ],
+        [
+          1117.0,
+          445.0
+        ],
+        [
+          264.0,
+          445.0
+        ]
+      ],
+      "text": "Khi thay Số mới, cơ quan được cấp Số phải gửi trả Sổ định mức miễn",
+      "confidence": 0.9201229949999999
+    },
+    {
+      "bbox": [
+        [
+          264.0,
+          435.0
+        ],
+        [
+          881.0,
+          435.0
+        ],
+        [
+          881.0,
+          469.0
+        ],
+        [
+          264.0,
+          469.0
+        ]
+      ],
+      "text": "thuế này về Cục Hải quan tỉnh, thành phố nơi cấp sẻ.",
+      "confidence": 0.9666117791666666
+    },
+    {
+      "bbox": [
+        [
+          265.0,
+          493.0
+        ],
+        [
+          1120.0,
+          493.0
+        ],
+        [
+          1120.0,
+          531.0
+        ],
+        [
+          265.0,
+          531.0
+        ]
+      ],
+      "text": "Sổ này gồm 8 trang được đánh số từ trang 1 đến trang 8 (trừ trang bìa),",
+      "confidence": 0.9584991099999999
+    },
+    {
+      "bbox": [
+        [
+          265.0,
+          532.0
+        ],
+        [
+          774.0,
+          532.0
+        ],
+        [
+          774.0,
+          559.0
+        ],
+        [
+          265.0,
+          559.0
+        ]
+      ],
+      "text": "được in trên khô A5, trang bìa có màu vàng.",
+      "confidence": 0.965447502
+    },
+    {
+      "bbox": [
+        [
+          266.0,
+          583.0
+        ],
+        [
+          769.0,
+          583.0
+        ],
+        [
+          769.0,
+          616.0
+        ],
+        [
+          266.0,
+          616.0
+        ]
+      ],
+      "text": "Số này kèm phụ lục tem rượu, bia, thuốc lá.",
+      "confidence": 0.9460181589999999
+    },
+    {
+      "bbox": [
+        [
+          265.0,
+          642.0
+        ],
+        [
+          1064.0,
+          642.0
+        ],
+        [
+          1064.0,
+          674.0
+        ],
+        [
+          265.0,
+          674.0
+        ]
+      ],
+      "text": "Bộ Tài chính in, phát hành, quản lý, sử dụng Sổ định mức miễn thuế.",
+      "confidence": 0.9563117779999999
+    },
+    {
+      "bbox": [
+        [
+          564.0,
+          726.0
+        ],
+        [
+          765.0,
+          726.0
+        ],
+        [
+          765.0,
+          747.0
+        ],
+        [
+          564.0,
+          747.0
+        ]
+      ],
+      "text": "INSTRUCTION",
+      "confidence": 0.91826683
+    },
+    {
+      "bbox": [
+        [
+          266.0,
+          802.0
+        ],
+        [
+          1119.0,
+          802.0
+        ],
+        [
+          1119.0,
+          831.0
+        ],
+        [
+          266.0,
+          831.0
+        ]
+      ],
+      "text": "The quota book is also used when the user of the quota book (the person",
+      "confidence": 0.9327646893333333
+    },
+    {
+      "bbox": [
+        [
+          265.0,
+          835.0
+        ],
+        [
+          1119.0,
+          835.0
+        ],
+        [
+          1119.0,
+          863.0
+        ],
+        [
+          265.0,
+          863.0
+        ]
+      ],
+      "text": "to whom the quota book is issued) imports commodities by",
+      "confidence": 0.929169532
+    },
+    {
+      "bbox": [
+        [
+          266.0,
+          867.0
+        ],
+        [
+          1112.0,
+          867.0
+        ],
+        [
+          1112.0,
+          896.0
+        ],
+        [
+          266.0,
+          896.0
+        ]
+      ],
+      "text": "himself/herself or authorizes the other import commodities into Vietnam.",
+      "confidence": 0.9633032555555556
+    },
+    {
+      "bbox": [
+        [
+          266.0,
+          925.0
+        ],
+        [
+          1120.0,
+          925.0
+        ],
+        [
+          1120.0,
+          954.0
+        ],
+        [
+          266.0,
+          954.0
+        ]
+      ],
+      "text": "If the book is lost, the user is requested to inform immediately to the",
+      "confidence": 0.9649618685714286
+    },
+    {
+      "bbox": [
+        [
+          266.0,
+          957.0
+        ],
+        [
+          800.0,
+          957.0
+        ],
+        [
+          800.0,
+          986.0
+        ],
+        [
+          266.0,
+          986.0
+        ]
+      ],
+      "text": "Provincial or Municipal Customs Department.",
+      "confidence": 0.966251814
+    },
+    {
+      "bbox": [
+        [
+          266.0,
+          1014.0
+        ],
+        [
+          1120.0,
+          1014.0
+        ],
+        [
+          1120.0,
+          1044.0
+        ],
+        [
+          266.0,
+          1044.0
+        ]
+      ],
+      "text": "If change the book, the user should return the quota book to the",
+      "confidence": 0.9654808930769231
+    },
+    {
+      "bbox": [
+        [
+          266.0,
+          1047.0
+        ],
+        [
+          800.0,
+          1047.0
+        ],
+        [
+          800.0,
+          1076.0
+        ],
+        [
+          266.0,
+          1076.0
+        ]
+      ],
+      "text": "Provincial or Municipal Customs Department.",
+      "confidence": 0.9651766660000001
+    },
+    {
+      "bbox": [
+        [
+          266.0,
+          1103.0
+        ],
+        [
+          1120.0,
+          1103.0
+        ],
+        [
+          1120.0,
+          1134.0
+        ],
+        [
+          266.0,
+          1134.0
+        ]
+      ],
+      "text": "This book includes 8 pages, is numbered from 1 to 8 (except for the",
+      "confidence": 0.9606054749999999
+    },
+    {
+      "bbox": [
+        [
+          267.0,
+          1137.0
+        ],
+        [
+          975.0,
+          1137.0
+        ],
+        [
+          975.0,
+          1167.0
+        ],
+        [
+          267.0,
+          1167.0
+        ]
+      ],
+      "text": "cover page) and printed on A5 size; the cover page is yellow.",
+      "confidence": 0.9596710925
+    },
+    {
+      "bbox": [
+        [
+          266.0,
+          1193.0
+        ],
+        [
+          1021.0,
+          1193.0
+        ],
+        [
+          1021.0,
+          1224.0
+        ],
+        [
+          266.0,
+          1224.0
+        ]
+      ],
+      "text": "This book is attached with stamps of alcohol, beer and cigarettes.",
+      "confidence": 0.9572885763636364
+    },
+    {
+      "bbox": [
+        [
+          266.0,
+          1250.0
+        ],
+        [
+          1112.0,
+          1250.0
+        ],
+        [
+          1112.0,
+          1283.0
+        ],
+        [
+          266.0,
+          1283.0
+        ]
+      ],
+      "text": "The Ministry of Finance prints, issues, manages and uses the quota book.",
+      "confidence": 0.9626883825
+    }
+  ]
+}

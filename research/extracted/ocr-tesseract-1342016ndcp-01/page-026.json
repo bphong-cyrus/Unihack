@@ -1,0 +1,861 @@
+{
+  "document_id": "134/2016/NĐ-CP",
+  "source_file": "../../legal-sources/1342016ndcp/01.pdf",
+  "source_sha256": "4fe3832d278d03e6ab53c064c6aa3c60063d372570eaa6b57427b0bd252e5460",
+  "page_count": 78,
+  "render_dpi": 150,
+  "engine": "Tesseract 5.5.4 (vie+eng; OEM 1; PSM 3)",
+  "review_status": "UNREVIEWED",
+  "tesseract_version": "5.5.4",
+  "tsv_parser_version": 2,
+  "languages": [
+    "vie",
+    "eng"
+  ],
+  "traineddata_sha256": {
+    "vie": "b6b49293d95d0b6dbd8780174627e82c75be957b6f4ed9862155540d6b00bb45",
+    "eng": "8280aed0782fe27257a68ea10fe7ef324ca0f8d85bd2fd145d1c2b560bcb66ba"
+  },
+  "ocr_engine_mode": 1,
+  "page_segmentation_mode": 3,
+  "thread_limit": 1,
+  "page": 26,
+  "lines": [
+    {
+      "bbox": [
+        [
+          680.0,
+          138.0
+        ],
+        [
+          701.0,
+          138.0
+        ],
+        [
+          701.0,
+          154.0
+        ],
+        [
+          680.0,
+          154.0
+        ]
+      ],
+      "text": "26",
+      "confidence": 0.96979401
+    },
+    {
+      "bbox": [
+        [
+          291.0,
+          204.0
+        ],
+        [
+          1091.0,
+          204.0
+        ],
+        [
+          1091.0,
+          240.0
+        ],
+        [
+          291.0,
+          240.0
+        ]
+      ],
+      "text": "khẩu, nhập khẩu miễn thuế. Trường hợp chủ dự án không trực tiếp nhập khẩu",
+      "confidence": 0.9464528040000001
+    },
+    {
+      "bbox": [
+        [
+          291.0,
+          229.0
+        ],
+        [
+          1091.0,
+          229.0
+        ],
+        [
+          1091.0,
+          271.0
+        ],
+        [
+          291.0,
+          271.0
+        ]
+      ],
+      "text": "hàng hoá miễn thuế mà nhà thầu chính hoặc nhà thầu phụ hoặc công ty cho",
+      "confidence": 0.9539827931249999
+    },
+    {
+      "bbox": [
+        [
+          292.0,
+          261.0
+        ],
+        [
+          1092.0,
+          261.0
+        ],
+        [
+          1092.0,
+          295.0
+        ],
+        [
+          292.0,
+          295.0
+        ]
+      ],
+      "text": "thuê tài chính nhập khẩu hàng hóa thì nhà thầu, công ty cho thuê tài chính sử",
+      "confidence": 0.9682924652941176
+    },
+    {
+      "bbox": [
+        [
+          292.0,
+          291.0
+        ],
+        [
+          1060.0,
+          291.0
+        ],
+        [
+          1060.0,
+          325.0
+        ],
+        [
+          292.0,
+          325.0
+        ]
+      ],
+      "text": "dụng danh mục miễn thuế do chủ dự án đã thông báo với cơ quan hải quan;",
+      "confidence": 0.9686784317647059
+    },
+    {
+      "bbox": [
+        [
+          344.0,
+          339.0
+        ],
+        [
+          1093.0,
+          339.0
+        ],
+        [
+          1093.0,
+          376.0
+        ],
+        [
+          344.0,
+          376.0
+        ]
+      ],
+      "text": "b) Hàng hóa phải thuộc đối tượng được miễn thuế theo quy định tại một",
+      "confidence": 0.9610089826666668
+    },
+    {
+      "bbox": [
+        [
+          293.0,
+          367.0
+        ],
+        [
+          1092.0,
+          367.0
+        ],
+        [
+          1092.0,
+          405.0
+        ],
+        [
+          293.0,
+          405.0
+        ]
+      ],
+      "text": "trong các trường hợp quy định tại khoản 11, khoản 12, khoản 13, khoản 14,",
+      "confidence": 0.9686122946666665
+    },
+    {
+      "bbox": [
+        [
+          293.0,
+          399.0
+        ],
+        [
+          1093.0,
+          399.0
+        ],
+        [
+          1093.0,
+          431.0
+        ],
+        [
+          293.0,
+          431.0
+        ]
+      ],
+      "text": "khoản 15, khoản 16 và khoản 18 Điều 16 Luật thuế xuất khâu, thuê nhập",
+      "confidence": 0.96174498
+    },
+    {
+      "bbox": [
+        [
+          294.0,
+          428.0
+        ],
+        [
+          1094.0,
+          428.0
+        ],
+        [
+          1094.0,
+          461.0
+        ],
+        [
+          294.0,
+          461.0
+        ]
+      ],
+      "text": "khẩu; và phù hợp với ngành nghề, lĩnh vực đầu tư, mục tiêu, quy mô, công",
+      "confidence": 0.967712483125
+    },
+    {
+      "bbox": [
+        [
+          294.0,
+          449.0
+        ],
+        [
+          1013.0,
+          449.0
+        ],
+        [
+          1013.0,
+          488.0
+        ],
+        [
+          294.0,
+          488.0
+        ]
+      ],
+      "text": "suất của dự án, cơ sở sản xuất, hoạt động sử dụng hàng hóa miên thuế;",
+      "confidence": 0.963381604375
+    },
+    {
+      "bbox": [
+        [
+          346.0,
+          505.0
+        ],
+        [
+          1095.0,
+          505.0
+        ],
+        [
+          1095.0,
+          544.0
+        ],
+        [
+          346.0,
+          544.0
+        ]
+      ],
+      "text": "c) Danh mục miễn thuế được xây dụng một lần cho dự án, cơ sở sản",
+      "confidence": 0.9642723412499999
+    },
+    {
+      "bbox": [
+        [
+          295.0,
+          533.0
+        ],
+        [
+          1095.0,
+          533.0
+        ],
+        [
+          1095.0,
+          570.0
+        ],
+        [
+          295.0,
+          570.0
+        ]
+      ],
+      "text": "xuất, hoạt động sử dụng hàng hóa miễn thuế, hoặc xây dựng theo từng giai",
+      "confidence": 0.9656398006666668
+    },
+    {
+      "bbox": [
+        [
+          295.0,
+          564.0
+        ],
+        [
+          1096.0,
+          564.0
+        ],
+        [
+          1096.0,
+          596.0
+        ],
+        [
+          295.0,
+          596.0
+        ]
+      ],
+      "text": "đoạn, từng hạng mục, từng tổ hợp, dây chuyền phù hợp với thực tê và hô so",
+      "confidence": 0.9492676317647059
+    },
+    {
+      "bbox": [
+        [
+          294.0,
+          594.0
+        ],
+        [
+          1096.0,
+          594.0
+        ],
+        [
+          1096.0,
+          624.0
+        ],
+        [
+          294.0,
+          624.0
+        ]
+      ],
+      "text": "tài liệu thực hiện dự án, cơ sở sản xuất, hoạt động sử dụng hàng hóa miễn",
+      "confidence": 0.9544423900000001
+    },
+    {
+      "bbox": [
+        [
+          295.0,
+          626.0
+        ],
+        [
+          631.0,
+          626.0
+        ],
+        [
+          631.0,
+          653.0
+        ],
+        [
+          295.0,
+          653.0
+        ]
+      ],
+      "text": "thuế, sau đây gọi chung là dự án.",
+      "confidence": 0.9677805225
+    },
+    {
+      "bbox": [
+        [
+          348.0,
+          671.0
+        ],
+        [
+          826.0,
+          671.0
+        ],
+        [
+          826.0,
+          702.0
+        ],
+        [
+          348.0,
+          702.0
+        ]
+      ],
+      "text": "3. Hồ sơ thông báo Danh mục miễn thuế, gồm:",
+      "confidence": 0.9690293360000001
+    },
+    {
+      "bbox": [
+        [
+          347.0,
+          720.0
+        ],
+        [
+          1098.0,
+          720.0
+        ],
+        [
+          1098.0,
+          757.0
+        ],
+        [
+          347.0,
+          757.0
+        ]
+      ],
+      "text": "a) Công văn thông báo Danh mục miễn thuế nêu rõ cơ sở xác định hàng",
+      "confidence": 0.959163951875
+    },
+    {
+      "bbox": [
+        [
+          295.0,
+          752.0
+        ],
+        [
+          1097.0,
+          752.0
+        ],
+        [
+          1097.0,
+          778.0
+        ],
+        [
+          295.0,
+          778.0
+        ]
+      ],
+      "text": "hóa miễn thuế theo Mẫu số 05 tại Phụ lục VII ban hành kèm theo Nghị định",
+      "confidence": 0.96640098
+    },
+    {
+      "bbox": [
+        [
+          296.0,
+          786.0
+        ],
+        [
+          484.0,
+          786.0
+        ],
+        [
+          484.0,
+          810.0
+        ],
+        [
+          296.0,
+          810.0
+        ]
+      ],
+      "text": "này: 01 bản chính;",
+      "confidence": 0.9693508900000001
+    },
+    {
+      "bbox": [
+        [
+          347.0,
+          824.0
+        ],
+        [
+          1098.0,
+          824.0
+        ],
+        [
+          1098.0,
+          865.0
+        ],
+        [
+          347.0,
+          865.0
+        ]
+      ],
+      "text": "b) Danh mục miễn thuế gửi qua Hệ thống xử lý dữ liệu điện tử của cơ",
+      "confidence": 0.9620523511764705
+    },
+    {
+      "bbox": [
+        [
+          297.0,
+          861.0
+        ],
+        [
+          1098.0,
+          861.0
+        ],
+        [
+          1098.0,
+          893.0
+        ],
+        [
+          297.0,
+          893.0
+        ]
+      ],
+      "text": "quan hải quan. Trường hợp hệ thông gặp sự cô hoặc thông báo Danh mục",
+      "confidence": 0.967460384
+    },
+    {
+      "bbox": [
+        [
+          296.0,
+          889.0
+        ],
+        [
+          1098.0,
+          889.0
+        ],
+        [
+          1098.0,
+          916.0
+        ],
+        [
+          296.0,
+          916.0
+        ]
+      ],
+      "text": "miễn thuế bằng giấy: Danh mục miễn thuê theo Mẫu sô 06 tại Phụ lục VII ban",
+      "confidence": 0.9611861147058823
+    },
+    {
+      "bbox": [
+        [
+          296.0,
+          913.0
+        ],
+        [
+          1098.0,
+          913.0
+        ],
+        [
+          1098.0,
+          949.0
+        ],
+        [
+          296.0,
+          949.0
+        ]
+      ],
+      "text": "hành kèm theo Nghị định này: 02 bản chính, Phiếu theo dõi trừ lùi theo Mẫu",
+      "confidence": 0.9653316318749999
+    },
+    {
+      "bbox": [
+        [
+          297.0,
+          947.0
+        ],
+        [
+          1013.0,
+          947.0
+        ],
+        [
+          1013.0,
+          971.0
+        ],
+        [
+          297.0,
+          971.0
+        ]
+      ],
+      "text": "số 07 tại Phụ lục VII ban hành kèm theo Nghị định này: 01 bản chính;",
+      "confidence": 0.965788435
+    },
+    {
+      "bbox": [
+        [
+          349.0,
+          992.0
+        ],
+        [
+          1099.0,
+          992.0
+        ],
+        [
+          1099.0,
+          1027.0
+        ],
+        [
+          349.0,
+          1027.0
+        ]
+      ],
+      "text": "c) Giấy chứng nhận đăng ký đầu tư, giấy chứng nhận đăng ký doanh",
+      "confidence": 0.9578163978571429
+    },
+    {
+      "bbox": [
+        [
+          296.0,
+          1020.0
+        ],
+        [
+          1099.0,
+          1020.0
+        ],
+        [
+          1099.0,
+          1052.0
+        ],
+        [
+          296.0,
+          1052.0
+        ]
+      ],
+      "text": "nghiệp hoặc giấy tờ có giá trị tương đương, trừ trường hợp. miễn thuế quy",
+      "confidence": 0.9574053333333333
+    },
+    {
+      "bbox": [
+        [
+          297.0,
+          1050.0
+        ],
+        [
+          1098.0,
+          1050.0
+        ],
+        [
+          1098.0,
+          1082.0
+        ],
+        [
+          297.0,
+          1082.0
+        ]
+      ],
+      "text": "định tại khoản 15 Điều 16 Luật thuế xuất khẩu, thuế nhập khẩu: 01 bản chụp",
+      "confidence": 0.965912866875
+    },
+    {
+      "bbox": [
+        [
+          297.0,
+          1081.0
+        ],
+        [
+          723.0,
+          1081.0
+        ],
+        [
+          723.0,
+          1109.0
+        ],
+        [
+          297.0,
+          1109.0
+        ]
+      ],
+      "text": "có đóng dấu sao y bản chính của cơ quan;",
+      "confidence": 0.947510857
+    },
+    {
+      "bbox": [
+        [
+          349.0,
+          1130.0
+        ],
+        [
+          1098.0,
+          1130.0
+        ],
+        [
+          1098.0,
+          1163.0
+        ],
+        [
+          349.0,
+          1163.0
+        ]
+      ],
+      "text": "d) Bản trích lục luận chứng kinh tế kỹ thuật hoặc tài liệu kỹ thuật hoặc",
+      "confidence": 0.96365151875
+    },
+    {
+      "bbox": [
+        [
+          298.0,
+          1162.0
+        ],
+        [
+          1097.0,
+          1162.0
+        ],
+        [
+          1097.0,
+          1187.0
+        ],
+        [
+          298.0,
+          1187.0
+        ]
+      ],
+      "text": "bản thuyết minh dự án: 01 bản chụp có đóng dau sao y bản chính của cơ quan;",
+      "confidence": 0.9643555883333335
+    },
+    {
+      "bbox": [
+        [
+          350.0,
+          1209.0
+        ],
+        [
+          1100.0,
+          1209.0
+        ],
+        [
+          1100.0,
+          1241.0
+        ],
+        [
+          350.0,
+          1241.0
+        ]
+      ],
+      "text": "đ) Giấy chứng nhận doanh nghiệp công nghệ cao, doanh nghiệp khoa học",
+      "confidence": 0.9634172176923077
+    },
+    {
+      "bbox": [
+        [
+          297.0,
+          1232.0
+        ],
+        [
+          1099.0,
+          1232.0
+        ],
+        [
+          1099.0,
+          1269.0
+        ],
+        [
+          297.0,
+          1269.0
+        ]
+      ],
+      "text": "và công nghệ, tô chức khoa học và công nghệ của cơ quan có thẩm quyền đối",
+      "confidence": 0.96311781
+    },
+    {
+      "bbox": [
+        [
+          298.0,
+          1264.0
+        ],
+        [
+          1100.0,
+          1264.0
+        ],
+        [
+          1100.0,
+          1295.0
+        ],
+        [
+          298.0,
+          1295.0
+        ]
+      ],
+      "text": "với doanh nghiệp công nghệ cao, doanh nghiệp khoa học và công nghệ, tổ chức",
+      "confidence": 0.9686863513333333
+    },
+    {
+      "bbox": [
+        [
+          298.0,
+          1294.0
+        ],
+        [
+          1077.0,
+          1294.0
+        ],
+        [
+          1077.0,
+          1323.0
+        ],
+        [
+          298.0,
+          1323.0
+        ]
+      ],
+      "text": "khoa học và công nghệ: 01 bản chụp có đóng dấu sao y bản chính của cơ quan;",
+      "confidence": 0.9653521644444445
+    },
+    {
+      "bbox": [
+        [
+          350.0,
+          1344.0
+        ],
+        [
+          1100.0,
+          1344.0
+        ],
+        [
+          1100.0,
+          1374.0
+        ],
+        [
+          350.0,
+          1374.0
+        ]
+      ],
+      "text": "e) Giấy chứng nhận đủ điều kiện sản xuất trang thiết bị y tế hoặc giấy tờ có",
+      "confidence": 0.9594607288888889
+    },
+    {
+      "bbox": [
+        [
+          299.0,
+          1373.0
+        ],
+        [
+          1100.0,
+          1373.0
+        ],
+        [
+          1100.0,
+          1407.0
+        ],
+        [
+          299.0,
+          1407.0
+        ]
+      ],
+      "text": "giá trị tương đương theo quy định của pháp luật về quản lý trang thiết bị y tế đối",
+      "confidence": 0.9545923336842105
+    },
+    {
+      "bbox": [
+        [
+          298.0,
+          1402.0
+        ],
+        [
+          1100.0,
+          1402.0
+        ],
+        [
+          1100.0,
+          1436.0
+        ],
+        [
+          298.0,
+          1436.0
+        ]
+      ],
+      "text": "với trường hợp miên thuê quy định tại khoản 14 Điều 16 Luật thuế xuất khẩu,",
+      "confidence": 0.960755391875
+    },
+    {
+      "bbox": [
+        [
+          298.0,
+          1431.0
+        ],
+        [
+          1001.0,
+          1431.0
+        ],
+        [
+          1001.0,
+          1460.0
+        ],
+        [
+          298.0,
+          1460.0
+        ]
+      ],
+      "text": "thuế nhập khẩu: 01 bản chụp có đóng dầu sao y bản chính của cơ quan;",
+      "confidence": 0.950429283125
+    }
+  ]
+}

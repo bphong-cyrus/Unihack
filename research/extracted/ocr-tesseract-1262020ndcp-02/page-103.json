@@ -1,0 +1,245 @@
+{
+  "document_id": "126/2020/NĐ-CP",
+  "source_file": "../../legal-sources/1262020ndcp/02.pdf",
+  "source_sha256": "008daa92f4d699b69b9318c4a8e6fa7db8d73453305e1a4f155134656e26847b",
+  "page_count": 147,
+  "render_dpi": 150,
+  "engine": "Tesseract 5.5.4 (vie+eng; OEM 1; PSM 3)",
+  "review_status": "UNREVIEWED",
+  "tesseract_version": "5.5.4",
+  "tsv_parser_version": 2,
+  "languages": [
+    "vie",
+    "eng"
+  ],
+  "traineddata_sha256": {
+    "vie": "b6b49293d95d0b6dbd8780174627e82c75be957b6f4ed9862155540d6b00bb45",
+    "eng": "8280aed0782fe27257a68ea10fe7ef324ca0f8d85bd2fd145d1c2b560bcb66ba"
+  },
+  "ocr_engine_mode": 1,
+  "page_segmentation_mode": 3,
+  "thread_limit": 1,
+  "page": 103,
+  "lines": [
+    {
+      "bbox": [
+        [
+          674.0,
+          95.0
+        ],
+        [
+          698.0,
+          95.0
+        ],
+        [
+          698.0,
+          115.0
+        ],
+        [
+          674.0,
+          115.0
+        ]
+      ],
+      "text": "17",
+      "confidence": 0.96651741
+    },
+    {
+      "bbox": [
+        [
+          288.0,
+          168.0
+        ],
+        [
+          937.0,
+          168.0
+        ],
+        [
+          937.0,
+          210.0
+        ],
+        [
+          288.0,
+          210.0
+        ]
+      ],
+      "text": "Điều 3. Quyết định này có hiệu lực thi hành từ ngày ký.",
+      "confidence": 0.964999443076923
+    },
+    {
+      "bbox": [
+        [
+          289.0,
+          217.0
+        ],
+        [
+          1142.0,
+          217.0
+        ],
+        [
+          1142.0,
+          257.0
+        ],
+        [
+          289.0,
+          257.0
+        ]
+      ],
+      "text": "Trưởng phòng/Đội trưởng (...bô phận đề nghị khoanh tiền thuế nợ)...,",
+      "confidence": 0.8643044763636364
+    },
+    {
+      "bbox": [
+        [
+          231.0,
+          261.0
+        ],
+        [
+          1144.0,
+          261.0
+        ],
+        [
+          1144.0,
+          295.0
+        ],
+        [
+          231.0,
+          295.0
+        ]
+      ],
+      "text": "Trưởng phòng/Đội trưởng ...... (bộ phận nghiệp vụ có liên quan khác)... chịu",
+      "confidence": 0.917396913076923
+    },
+    {
+      "bbox": [
+        [
+          231.0,
+          298.0
+        ],
+        [
+          679.0,
+          298.0
+        ],
+        [
+          679.0,
+          331.0
+        ],
+        [
+          231.0,
+          331.0
+        ]
+      ],
+      "text": "trách nhiệm thi hành Quyết định này./.",
+      "confidence": 0.9381100371428572
+    },
+    {
+      "bbox": [
+        [
+          244.0,
+          388.0
+        ],
+        [
+          1125.0,
+          388.0
+        ],
+        [
+          1125.0,
+          444.0
+        ],
+        [
+          244.0,
+          444.0
+        ]
+      ],
+      "text": "Noi nhận, THỦ TRƯỞNG CƠ QUAN",
+      "confidence": 0.8158405166666667
+    },
+    {
+      "bbox": [
+        [
+          245.0,
+          421.0
+        ],
+        [
+          1021.0,
+          421.0
+        ],
+        [
+          1021.0,
+          446.0
+        ],
+        [
+          245.0,
+          446.0
+        ]
+      ],
+      "text": "- Như Điêu 3; À É",
+      "confidence": 0.8250769233333334
+    },
+    {
+      "bbox": [
+        [
+          246.0,
+          424.0
+        ],
+        [
+          1129.0,
+          424.0
+        ],
+        [
+          1129.0,
+          473.0
+        ],
+        [
+          246.0,
+          473.0
+        ]
+      ],
+      "text": "- Các tổ chức, cá nhân có liên quan...; BẠN HÀNH QUYET ĐỊNH",
+      "confidence": 0.942440216923077
+    },
+    {
+      "bbox": [
+        [
+          246.0,
+          460.0
+        ],
+        [
+          1122.0,
+          460.0
+        ],
+        [
+          1122.0,
+          501.0
+        ],
+        [
+          246.0,
+          501.0
+        ]
+      ],
+      "text": "- Trang thông tin điện tử Cục Thué/Cuc Hải quan; (Ký, ghi rõ họ tên, đóng dau)",
+      "confidence": 0.9486508264705882
+    },
+    {
+      "bbox": [
+        [
+          246.0,
+          502.0
+        ],
+        [
+          379.0,
+          502.0
+        ],
+        [
+          379.0,
+          532.0
+        ],
+        [
+          246.0,
+          532.0
+        ]
+      ],
+      "text": "- Lưu: VT, ....",
+      "confidence": 0.82381739
+    }
+  ]
+}

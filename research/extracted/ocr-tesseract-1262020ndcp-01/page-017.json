@@ -1,0 +1,905 @@
+{
+  "document_id": "126/2020/NĐ-CP",
+  "source_file": "../../legal-sources/1262020ndcp/01.pdf",
+  "source_sha256": "310648e80396d267610946458e7fdd71ba87ef538b009d6574ed21514de3f7ca",
+  "page_count": 119,
+  "render_dpi": 150,
+  "engine": "Tesseract 5.5.4 (vie+eng; OEM 1; PSM 3)",
+  "review_status": "UNREVIEWED",
+  "tesseract_version": "5.5.4",
+  "tsv_parser_version": 2,
+  "languages": [
+    "vie",
+    "eng"
+  ],
+  "traineddata_sha256": {
+    "vie": "b6b49293d95d0b6dbd8780174627e82c75be957b6f4ed9862155540d6b00bb45",
+    "eng": "8280aed0782fe27257a68ea10fe7ef324ca0f8d85bd2fd145d1c2b560bcb66ba"
+  },
+  "ocr_engine_mode": 1,
+  "page_segmentation_mode": 3,
+  "thread_limit": 1,
+  "page": 17,
+  "lines": [
+    {
+      "bbox": [
+        [
+          683.0,
+          69.0
+        ],
+        [
+          707.0,
+          69.0
+        ],
+        [
+          707.0,
+          89.0
+        ],
+        [
+          683.0,
+          89.0
+        ]
+      ],
+      "text": "17",
+      "confidence": 0.96492867
+    },
+    {
+      "bbox": [
+        [
+          265.0,
+          145.0
+        ],
+        [
+          1126.0,
+          145.0
+        ],
+        [
+          1126.0,
+          184.0
+        ],
+        [
+          265.0,
+          184.0
+        ]
+      ],
+      "text": "Trường hợp công ty cổ phần, công ty trách nhiệm hữu hạn hai thành viên",
+      "confidence": 0.9613915413333334
+    },
+    {
+      "bbox": [
+        [
+          207.0,
+          176.0
+        ],
+        [
+          1125.0,
+          176.0
+        ],
+        [
+          1125.0,
+          215.0
+        ],
+        [
+          207.0,
+          215.0
+        ]
+      ],
+      "text": "trở lên có vôn góp của nhà nước vi phạm thời hạn chia cb tức, lợi nhuận theo",
+      "confidence": 0.9601325616666666
+    },
+    {
+      "bbox": [
+        [
+          207.0,
+          210.0
+        ],
+        [
+          1125.0,
+          210.0
+        ],
+        [
+          1125.0,
+          248.0
+        ],
+        [
+          207.0,
+          248.0
+        ]
+      ],
+      "text": "quy định của Luật Doanh nghiệp thì người đại diện phần vốn của nhà nước có",
+      "confidence": 0.968540668125
+    },
+    {
+      "bbox": [
+        [
+          207.0,
+          243.0
+        ],
+        [
+          1125.0,
+          243.0
+        ],
+        [
+          1125.0,
+          284.0
+        ],
+        [
+          207.0,
+          284.0
+        ]
+      ],
+      "text": "trách nhiệm báo cáo Bộ Tài chính và cơ quan đại diện phần vốn của nhà nước",
+      "confidence": 0.9570822641176471
+    },
+    {
+      "bbox": [
+        [
+          207.0,
+          276.0
+        ],
+        [
+          1126.0,
+          276.0
+        ],
+        [
+          1126.0,
+          312.0
+        ],
+        [
+          207.0,
+          312.0
+        ]
+      ],
+      "text": "tai công ty cổ phần, công ty trách nhiệm hữu hạn hai thành viên trở lên để xử",
+      "confidence": 0.9579825799999999
+    },
+    {
+      "bbox": [
+        [
+          208.0,
+          318.0
+        ],
+        [
+          566.0,
+          318.0
+        ],
+        [
+          566.0,
+          346.0
+        ],
+        [
+          208.0,
+          346.0
+        ]
+      ],
+      "text": "lý theo quy định của pháp luật.",
+      "confidence": 0.9684137585714286
+    },
+    {
+      "bbox": [
+        [
+          267.0,
+          368.0
+        ],
+        [
+          1125.0,
+          368.0
+        ],
+        [
+          1125.0,
+          410.0
+        ],
+        [
+          267.0,
+          410.0
+        ]
+      ],
+      "text": "5. Khai theo từng lần xuất bán đối với hoạt động khai thác, xuất bán dầu",
+      "confidence": 0.9597452637499999
+    },
+    {
+      "bbox": [
+        [
+          207.0,
+          402.0
+        ],
+        [
+          1126.0,
+          402.0
+        ],
+        [
+          1126.0,
+          447.0
+        ],
+        [
+          207.0,
+          447.0
+        ]
+      ],
+      "text": "thô, bao gồm: Thuế tài nguyên; thuế thu nhập doanh nghiệp; thuế đặc biệt và",
+      "confidence": 0.965820648
+    },
+    {
+      "bbox": [
+        [
+          207.0,
+          437.0
+        ],
+        [
+          1125.0,
+          437.0
+        ],
+        [
+          1125.0,
+          477.0
+        ],
+        [
+          207.0,
+          477.0
+        ]
+      ],
+      "text": "khoản phụ thu khi giá dầu thô biến động tăng của Liên doanh _Vietsovpetro tại",
+      "confidence": 0.949483962
+    },
+    {
+      "bbox": [
+        [
+          206.0,
+          469.0
+        ],
+        [
+          1126.0,
+          469.0
+        ],
+        [
+          1126.0,
+          508.0
+        ],
+        [
+          206.0,
+          508.0
+        ]
+      ],
+      "text": "Lô 09.1; tiền lãi dầu nước chủ nhà được chia. Thời hạn nộp hồ sơ khai thuế và",
+      "confidence": 0.9671592705555555
+    },
+    {
+      "bbox": [
+        [
+          207.0,
+          491.0
+        ],
+        [
+          1126.0,
+          491.0
+        ],
+        [
+          1126.0,
+          543.0
+        ],
+        [
+          207.0,
+          543.0
+        ]
+      ],
+      "text": "các khoản thu khác quy định tại khoản này theo từng lần xuất bán là 35 ngày",
+      "confidence": 0.9426714588235295
+    },
+    {
+      "bbox": [
+        [
+          207.0,
+          535.0
+        ],
+        [
+          1125.0,
+          535.0
+        ],
+        [
+          1125.0,
+          577.0
+        ],
+        [
+          207.0,
+          577.0
+        ]
+      ],
+      "text": "kế từ ngày xuất bán dầu thô (bao gồm dầu thô xuất bán trong nước và dầu thô",
+      "confidence": 0.9602861105555556
+    },
+    {
+      "bbox": [
+        [
+          207.0,
+          568.0
+        ],
+        [
+          1126.0,
+          568.0
+        ],
+        [
+          1126.0,
+          604.0
+        ],
+        [
+          207.0,
+          604.0
+        ]
+      ],
+      "text": "xuất khẩu). Ngày xuất bán là ngày hoàn thành việc xuất dầu thô tại điểm",
+      "confidence": 0.9667110793333333
+    },
+    {
+      "bbox": [
+        [
+          207.0,
+          610.0
+        ],
+        [
+          326.0,
+          610.0
+        ],
+        [
+          326.0,
+          637.0
+        ],
+        [
+          207.0,
+          637.0
+        ]
+      ],
+      "text": "giao nhận.",
+      "confidence": 0.96948383
+    },
+    {
+      "bbox": [
+        [
+          267.0,
+          660.0
+        ],
+        [
+          1125.0,
+          660.0
+        ],
+        [
+          1125.0,
+          699.0
+        ],
+        [
+          267.0,
+          699.0
+        ]
+      ],
+      "text": "6. Các loại thuế, khoản thu khai quyết toán năm và quyết toán đến thời",
+      "confidence": 0.9662046913333333
+    },
+    {
+      "bbox": [
+        [
+          207.0,
+          693.0
+        ],
+        [
+          1125.0,
+          693.0
+        ],
+        [
+          1125.0,
+          733.0
+        ],
+        [
+          207.0,
+          733.0
+        ]
+      ],
+      "text": "điểm giải thể, phá sản, chấm dứt hoạt động, chấm dứt hợp đồng hoặc tổ chức",
+      "confidence": 0.962430518125
+    },
+    {
+      "bbox": [
+        [
+          208.0,
+          728.0
+        ],
+        [
+          1125.0,
+          728.0
+        ],
+        [
+          1125.0,
+          768.0
+        ],
+        [
+          208.0,
+          768.0
+        ]
+      ],
+      "text": "lại doanh nghiệp. Trường hợp chuyên đổi loại hình doanh nghiệp (không bao",
+      "confidence": 0.9449245692307692
+    },
+    {
+      "bbox": [
+        [
+          207.0,
+          760.0
+        ],
+        [
+          1126.0,
+          760.0
+        ],
+        [
+          1126.0,
+          801.0
+        ],
+        [
+          207.0,
+          801.0
+        ]
+      ],
+      "text": "gồm doanh nghiệp nhà nước cô phần hóa) mà doanh nghiệp chuyển đổi kế",
+      "confidence": 0.961532205
+    },
+    {
+      "bbox": [
+        [
+          207.0,
+          794.0
+        ],
+        [
+          1126.0,
+          794.0
+        ],
+        [
+          1126.0,
+          836.0
+        ],
+        [
+          207.0,
+          836.0
+        ]
+      ],
+      "text": "thừa toàn bộ nghĩa vụ về thuế của doanh nghiệp được chuyển đổi thì không",
+      "confidence": 0.952742066
+    },
+    {
+      "bbox": [
+        [
+          207.0,
+          827.0
+        ],
+        [
+          1126.0,
+          827.0
+        ],
+        [
+          1126.0,
+          867.0
+        ],
+        [
+          207.0,
+          867.0
+        ]
+      ],
+      "text": "phải khai quyết toán thuế đến thời điểm có quyết định về việc chuyển",
+      "confidence": 0.9669846614285714
+    },
+    {
+      "bbox": [
+        [
+          207.0,
+          860.0
+        ],
+        [
+          1126.0,
+          860.0
+        ],
+        [
+          1126.0,
+          895.0
+        ],
+        [
+          207.0,
+          895.0
+        ]
+      ],
+      "text": "đổi doanh nghiệp, doanh nghiệp khai quyết toán khi kết thúc năm. Cụ thể",
+      "confidence": 0.9688101621428572
+    },
+    {
+      "bbox": [
+        [
+          207.0,
+          902.0
+        ],
+        [
+          304.0,
+          902.0
+        ],
+        [
+          304.0,
+          922.0
+        ],
+        [
+          207.0,
+          922.0
+        ]
+      ],
+      "text": "như sau:",
+      "confidence": 0.9670046600000001
+    },
+    {
+      "bbox": [
+        [
+          267.0,
+          954.0
+        ],
+        [
+          492.0,
+          954.0
+        ],
+        [
+          492.0,
+          986.0
+        ],
+        [
+          267.0,
+          986.0
+        ]
+      ],
+      "text": "a) Thuế tài nguyên.",
+      "confidence": 0.9538796225
+    },
+    {
+      "bbox": [
+        [
+          266.0,
+          1011.0
+        ],
+        [
+          1127.0,
+          1011.0
+        ],
+        [
+          1127.0,
+          1050.0
+        ],
+        [
+          266.0,
+          1050.0
+        ]
+      ],
+      "text": "b) Thuế thu \"nhập doanh nghiệp (trừ thuế thu nhập doanh nghiệp từ",
+      "confidence": 0.9058196376923077
+    },
+    {
+      "bbox": [
+        [
+          208.0,
+          1044.0
+        ],
+        [
+          1126.0,
+          1044.0
+        ],
+        [
+          1126.0,
+          1082.0
+        ],
+        [
+          208.0,
+          1082.0
+        ]
+      ],
+      "text": "chuyển nhượng vốn của nhà thầu nước ngoài; thuế thu nhập doanh nghiệp kê",
+      "confidence": 0.9478795564285715
+    },
+    {
+      "bbox": [
+        [
+          207.0,
+          1077.0
+        ],
+        [
+          1126.0,
+          1077.0
+        ],
+        [
+          1126.0,
+          1116.0
+        ],
+        [
+          207.0,
+          1116.0
+        ]
+      ],
+      "text": "khai theo phương pháp tỷ lệ trên doanh thu theo từng lần phát sinh hoặc theo",
+      "confidence": 0.9537090625000001
+    },
+    {
+      "bbox": [
+        [
+          207.0,
+          1110.0
+        ],
+        [
+          1126.0,
+          1110.0
+        ],
+        [
+          1126.0,
+          1158.0
+        ],
+        [
+          207.0,
+          1158.0
+        ]
+      ],
+      "text": "tháng theo quy định tại điểm đ khoản 4 Điều này). Người nộp thuế phải tự xác",
+      "confidence": 0.9624101441176469
+    },
+    {
+      "bbox": [
+        [
+          208.0,
+          1142.0
+        ],
+        [
+          1126.0,
+          1142.0
+        ],
+        [
+          1126.0,
+          1182.0
+        ],
+        [
+          208.0,
+          1182.0
+        ]
+      ],
+      "text": "định số thuê thu nhập doanh nghiệp tạm nộp quý (bao gôm cả tạm phân bổ số",
+      "confidence": 0.9470879717647058
+    },
+    {
+      "bbox": [
+        [
+          207.0,
+          1178.0
+        ],
+        [
+          1127.0,
+          1178.0
+        ],
+        [
+          1127.0,
+          1221.0
+        ],
+        [
+          207.0,
+          1221.0
+        ]
+      ],
+      "text": "thuế thu nhập doanh nghiệp cho địa bàn cấp tỉnh nơi có đơn vị phụ thuộc, địa",
+      "confidence": 0.9573055994117646
+    },
+    {
+      "bbox": [
+        [
+          208.0,
+          1209.0
+        ],
+        [
+          1126.0,
+          1209.0
+        ],
+        [
+          1126.0,
+          1248.0
+        ],
+        [
+          208.0,
+          1248.0
+        ]
+      ],
+      "text": "điểm kinh doanh, nơi có bất động sản chuyển nhượng khác với nơi người nộp",
+      "confidence": 0.9666328833333334
+    },
+    {
+      "bbox": [
+        [
+          208.0,
+          1242.0
+        ],
+        [
+          1126.0,
+          1242.0
+        ],
+        [
+          1126.0,
+          1276.0
+        ],
+        [
+          208.0,
+          1276.0
+        ]
+      ],
+      "text": "thuế đóng trụ sở chính) và được trừ số thuế đã tạm nộp với số phải nộp theo",
+      "confidence": 0.9687341294444444
+    },
+    {
+      "bbox": [
+        [
+          209.0,
+          1277.0
+        ],
+        [
+          449.0,
+          1277.0
+        ],
+        [
+          449.0,
+          1310.0
+        ],
+        [
+          209.0,
+          1310.0
+        ]
+      ],
+      "text": "quyết toán thuế năm.",
+      "confidence": 0.967018585
+    },
+    {
+      "bbox": [
+        [
+          267.0,
+          1336.0
+        ],
+        [
+          1127.0,
+          1336.0
+        ],
+        [
+          1127.0,
+          1375.0
+        ],
+        [
+          267.0,
+          1375.0
+        ]
+      ],
+      "text": "Người nộp thuế thuộc diện lập báo cáo tài chính quý theo quy định của",
+      "confidence": 0.9650102620000002
+    },
+    {
+      "bbox": [
+        [
+          209.0,
+          1374.0
+        ],
+        [
+          1127.0,
+          1374.0
+        ],
+        [
+          1127.0,
+          1409.0
+        ],
+        [
+          209.0,
+          1409.0
+        ]
+      ],
+      "text": "pháp luật về kê toán căn cứ vào báo cáo tài chính quý và các quy định của",
+      "confidence": 0.9619315088888888
+    },
+    {
+      "bbox": [
+        [
+          208.0,
+          1408.0
+        ],
+        [
+          1077.0,
+          1408.0
+        ],
+        [
+          1077.0,
+          1437.0
+        ],
+        [
+          208.0,
+          1437.0
+        ]
+      ],
+      "text": "pháp luật vê thuê dé xác định sô thuê thu nhập doanh nghiệp tạm nộp quý.",
+      "confidence": 0.954958663125
+    },
+    {
+      "bbox": [
+        [
+          267.0,
+          1462.0
+        ],
+        [
+          1127.0,
+          1462.0
+        ],
+        [
+          1127.0,
+          1501.0
+        ],
+        [
+          267.0,
+          1501.0
+        ]
+      ],
+      "text": "Người nộp thuế không thuộc diện lập báo cáo tài chính quý theo quy",
+      "confidence": 0.9672778257142857
+    },
+    {
+      "bbox": [
+        [
+          209.0,
+          1495.0
+        ],
+        [
+          1128.0,
+          1495.0
+        ],
+        [
+          1128.0,
+          1535.0
+        ],
+        [
+          209.0,
+          1535.0
+        ]
+      ],
+      "text": "định của pháp luật về kế toán căn cứ vào kết quả sản xuất, kinh doanh quý và",
+      "confidence": 0.9681518377777778
+    },
+    {
+      "bbox": [
+        [
+          209.0,
+          1529.0
+        ],
+        [
+          1127.0,
+          1529.0
+        ],
+        [
+          1127.0,
+          1564.0
+        ],
+        [
+          209.0,
+          1564.0
+        ]
+      ],
+      "text": "các quy định của pháp luật về thuế để xác định số thuế thu nhập doanh nghiệp",
+      "confidence": 0.9665835341176471
+    },
+    {
+      "bbox": [
+        [
+          209.0,
+          1571.0
+        ],
+        [
+          360.0,
+          1571.0
+        ],
+        [
+          360.0,
+          1598.0
+        ],
+        [
+          209.0,
+          1598.0
+        ]
+      ],
+      "text": "tạm nộp quý.",
+      "confidence": 0.9665917966666666
+    }
+  ]
+}

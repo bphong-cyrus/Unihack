@@ -1,0 +1,839 @@
+{
+  "document_id": "126/2020/NĐ-CP",
+  "source_file": "../../legal-sources/1262020ndcp/01.pdf",
+  "source_sha256": "310648e80396d267610946458e7fdd71ba87ef538b009d6574ed21514de3f7ca",
+  "page_count": 119,
+  "render_dpi": 150,
+  "engine": "Tesseract 5.5.4 (vie+eng; OEM 1; PSM 3)",
+  "review_status": "UNREVIEWED",
+  "tesseract_version": "5.5.4",
+  "tsv_parser_version": 2,
+  "languages": [
+    "vie",
+    "eng"
+  ],
+  "traineddata_sha256": {
+    "vie": "b6b49293d95d0b6dbd8780174627e82c75be957b6f4ed9862155540d6b00bb45",
+    "eng": "8280aed0782fe27257a68ea10fe7ef324ca0f8d85bd2fd145d1c2b560bcb66ba"
+  },
+  "ocr_engine_mode": 1,
+  "page_segmentation_mode": 3,
+  "thread_limit": 1,
+  "page": 21,
+  "lines": [
+    {
+      "bbox": [
+        [
+          680.0,
+          69.0
+        ],
+        [
+          704.0,
+          69.0
+        ],
+        [
+          704.0,
+          89.0
+        ],
+        [
+          680.0,
+          89.0
+        ]
+      ],
+      "text": "21",
+      "confidence": 0.96290726
+    },
+    {
+      "bbox": [
+        [
+          266.0,
+          145.0
+        ],
+        [
+          1125.0,
+          145.0
+        ],
+        [
+          1125.0,
+          184.0
+        ],
+        [
+          266.0,
+          184.0
+        ]
+      ],
+      "text": "9 Thuế giá trị gia tăng, thuế thu \"nhập doanh \"nghiệp theo phương pháp",
+      "confidence": 0.8888611821428571
+    },
+    {
+      "bbox": [
+        [
+          208.0,
+          175.0
+        ],
+        [
+          1124.0,
+          175.0
+        ],
+        [
+          1124.0,
+          212.0
+        ],
+        [
+          208.0,
+          212.0
+        ]
+      ],
+      "text": "trực tiép của nhà thầu nước ngoài quyết toán khi kết thúc hợp đồng nhà thầu;",
+      "confidence": 0.95880348625
+    },
+    {
+      "bbox": [
+        [
+          208.0,
+          208.0
+        ],
+        [
+          1125.0,
+          208.0
+        ],
+        [
+          1125.0,
+          251.0
+        ],
+        [
+          208.0,
+          251.0
+        ]
+      ],
+      "text": "thuế thu nhập doanh nghiệp theo phương pháp hỗn hợp của nhà thầu nước",
+      "confidence": 0.962360152142857
+    },
+    {
+      "bbox": [
+        [
+          208.0,
+          243.0
+        ],
+        [
+          1125.0,
+          243.0
+        ],
+        [
+          1125.0,
+          282.0
+        ],
+        [
+          208.0,
+          282.0
+        ]
+      ],
+      "text": "ngoài quyết toán khi kết thúc hợp đồng nhà thầu; thuế thu nhập doanh nghiệp",
+      "confidence": 0.9676372693333333
+    },
+    {
+      "bbox": [
+        [
+          208.0,
+          276.0
+        ],
+        [
+          1056.0,
+          276.0
+        ],
+        [
+          1056.0,
+          312.0
+        ],
+        [
+          208.0,
+          312.0
+        ]
+      ],
+      "text": "theo phương pháp kê khai của nhà thầu nước ngoài quyết toán theo năm.",
+      "confidence": 0.9695060792857143
+    },
+    {
+      "bbox": [
+        [
+          267.0,
+          337.0
+        ],
+        [
+          1124.0,
+          337.0
+        ],
+        [
+          1124.0,
+          378.0
+        ],
+        [
+          267.0,
+          378.0
+        ]
+      ],
+      "text": "g) Thuế thu nhập doanh nghiệp của hãng vận tải nước ngoài tạm nộp quý",
+      "confidence": 0.9645872806666667
+    },
+    {
+      "bbox": [
+        [
+          208.0,
+          371.0
+        ],
+        [
+          1126.0,
+          371.0
+        ],
+        [
+          1126.0,
+          413.0
+        ],
+        [
+          208.0,
+          413.0
+        ]
+      ],
+      "text": "và khai quyết toán năm. Tổng số thuế thu nhập doanh nghiệp đã tạm nộp của",
+      "confidence": 0.96616470875
+    },
+    {
+      "bbox": [
+        [
+          209.0,
+          404.0
+        ],
+        [
+          1125.0,
+          404.0
+        ],
+        [
+          1125.0,
+          447.0
+        ],
+        [
+          209.0,
+          447.0
+        ]
+      ],
+      "text": "03 quý đầu năm tính thuế không được thấp hơn 75% số thuế thu nhập doanh",
+      "confidence": 0.9555956274999999
+    },
+    {
+      "bbox": [
+        [
+          208.0,
+          439.0
+        ],
+        [
+          1125.0,
+          439.0
+        ],
+        [
+          1125.0,
+          487.0
+        ],
+        [
+          208.0,
+          487.0
+        ]
+      ],
+      "text": "nghiệp phải nộp theo quyết toán năm. Trường hợp người nộp thuế nộp thiếu",
+      "confidence": 0.955667777857143
+    },
+    {
+      "bbox": [
+        [
+          209.0,
+          474.0
+        ],
+        [
+          1126.0,
+          474.0
+        ],
+        [
+          1126.0,
+          519.0
+        ],
+        [
+          209.0,
+          519.0
+        ]
+      ],
+      "text": "so với. số thuế phải tạm nộp 03 quý đầu năm thì phải nộp tiền chậm nộp tính",
+      "confidence": 0.9498163683333333
+    },
+    {
+      "bbox": [
+        [
+          208.0,
+          511.0
+        ],
+        [
+          1126.0,
+          511.0
+        ],
+        [
+          1126.0,
+          550.0
+        ],
+        [
+          208.0,
+          550.0
+        ]
+      ],
+      "text": "trên số thuế nộp thiếu kể từ ngày tiếp sau ngày cuối cùng của thời hạn tạm",
+      "confidence": 0.9555387029411766
+    },
+    {
+      "bbox": [
+        [
+          208.0,
+          544.0
+        ],
+        [
+          1126.0,
+          544.0
+        ],
+        [
+          1126.0,
+          581.0
+        ],
+        [
+          208.0,
+          581.0
+        ]
+      ],
+      "text": "nộp thuế thu nhập doanh nghiệp quý 03 đến ngày nộp số thuế còn thiếu vào",
+      "confidence": 0.9645320649999999
+    },
+    {
+      "bbox": [
+        [
+          208.0,
+          589.0
+        ],
+        [
+          445.0,
+          589.0
+        ],
+        [
+          445.0,
+          616.0
+        ],
+        [
+          208.0,
+          616.0
+        ]
+      ],
+      "text": "ngân sách nhà nước.",
+      "confidence": 0.9657305150000001
+    },
+    {
+      "bbox": [
+        [
+          267.0,
+          640.0
+        ],
+        [
+          1126.0,
+          640.0
+        ],
+        [
+          1126.0,
+          675.0
+        ],
+        [
+          267.0,
+          675.0
+        ]
+      ],
+      "text": "h) Thuế tài nguyên, thuế thu nhập doanh nghiệp, tiền lãi dầu khí nước",
+      "confidence": 0.9639078592857143
+    },
+    {
+      "bbox": [
+        [
+          209.0,
+          675.0
+        ],
+        [
+          1127.0,
+          675.0
+        ],
+        [
+          1127.0,
+          709.0
+        ],
+        [
+          209.0,
+          709.0
+        ]
+      ],
+      "text": "chủ nhà được chia đối với hoạt động khai thác, xuất bán dầu thô và khí thiên",
+      "confidence": 0.9670059529411765
+    },
+    {
+      "bbox": [
+        [
+          209.0,
+          710.0
+        ],
+        [
+          1127.0,
+          710.0
+        ],
+        [
+          1127.0,
+          745.0
+        ],
+        [
+          209.0,
+          745.0
+        ]
+      ],
+      "text": "nhiên; khoản phụ thu khi giá dầu thô biến động tăng: điều chỉnh thuế đặc biệt",
+      "confidence": 0.96488264125
+    },
+    {
+      "bbox": [
+        [
+          209.0,
+          746.0
+        ],
+        [
+          1127.0,
+          746.0
+        ],
+        [
+          1127.0,
+          779.0
+        ],
+        [
+          209.0,
+          779.0
+        ]
+      ],
+      "text": "đối với hoạt động khai thác, xuất bán khí thiên nhiên của Liên doanh",
+      "confidence": 0.9693370392857141
+    },
+    {
+      "bbox": [
+        [
+          209.0,
+          788.0
+        ],
+        [
+          500.0,
+          788.0
+        ],
+        [
+          500.0,
+          815.0
+        ],
+        [
+          209.0,
+          815.0
+        ]
+      ],
+      "text": "Vietsovpetro tại Lô 09.1.",
+      "confidence": 0.9541064850000001
+    },
+    {
+      "bbox": [
+        [
+          268.0,
+          840.0
+        ],
+        [
+          1126.0,
+          840.0
+        ],
+        [
+          1126.0,
+          874.0
+        ],
+        [
+          268.0,
+          874.0
+        ]
+      ],
+      "text": "Điều 9. Tiêu chí khai thuế theo quý đối với thuế giá trị gia tăng và",
+      "confidence": 0.962913365625
+    },
+    {
+      "bbox": [
+        [
+          209.0,
+          878.0
+        ],
+        [
+          488.0,
+          878.0
+        ],
+        [
+          488.0,
+          910.0
+        ],
+        [
+          209.0,
+          910.0
+        ]
+      ],
+      "text": "thuế thu nhập cá nhân",
+      "confidence": 0.969018082
+    },
+    {
+      "bbox": [
+        [
+          271.0,
+          937.0
+        ],
+        [
+          617.0,
+          937.0
+        ],
+        [
+          617.0,
+          968.0
+        ],
+        [
+          271.0,
+          968.0
+        ]
+      ],
+      "text": "1. Tiêu chí khai thuế theo quý",
+      "confidence": 0.9675704742857143
+    },
+    {
+      "bbox": [
+        [
+          269.0,
+          994.0
+        ],
+        [
+          896.0,
+          994.0
+        ],
+        [
+          896.0,
+          1030.0
+        ],
+        [
+          269.0,
+          1030.0
+        ]
+      ],
+      "text": "a) Khai thuế giá trị gia tăng theo quý áp dụng đối với:",
+      "confidence": 0.9564453538461538
+    },
+    {
+      "bbox": [
+        [
+          269.0,
+          1055.0
+        ],
+        [
+          1128.0,
+          1055.0
+        ],
+        [
+          1128.0,
+          1098.0
+        ],
+        [
+          269.0,
+          1098.0
+        ]
+      ],
+      "text": "a.l) Người nộp thuế thuộc diện khai thuế giá trị gia tăng theo tháng được",
+      "confidence": 0.954529084
+    },
+    {
+      "bbox": [
+        [
+          210.0,
+          1089.0
+        ],
+        [
+          1128.0,
+          1089.0
+        ],
+        [
+          1128.0,
+          1131.0
+        ],
+        [
+          210.0,
+          1131.0
+        ]
+      ],
+      "text": "quy định tại điểm a khoản 1 Điều 8 Nghị định này nếu có tổng doanh thu bán",
+      "confidence": 0.9649560627777777
+    },
+    {
+      "bbox": [
+        [
+          210.0,
+          1122.0
+        ],
+        [
+          1128.0,
+          1122.0
+        ],
+        [
+          1128.0,
+          1165.0
+        ],
+        [
+          210.0,
+          1165.0
+        ]
+      ],
+      "text": "hàng hoá và cung cấp dịch vụ của năm trước liền kề từ 50 tỷ đồng trở xuống",
+      "confidence": 0.9636817255555554
+    },
+    {
+      "bbox": [
+        [
+          210.0,
+          1160.0
+        ],
+        [
+          1129.0,
+          1160.0
+        ],
+        [
+          1129.0,
+          1201.0
+        ],
+        [
+          210.0,
+          1201.0
+        ]
+      ],
+      "text": "thì được khai thuế giá trị gia tăng theo quý. Doanh thu bán hàng hóa, cung",
+      "confidence": 0.964429298125
+    },
+    {
+      "bbox": [
+        [
+          211.0,
+          1192.0
+        ],
+        [
+          1129.0,
+          1192.0
+        ],
+        [
+          1129.0,
+          1228.0
+        ],
+        [
+          211.0,
+          1228.0
+        ]
+      ],
+      "text": "cấp dịch vụ được xác định là tổng doanh thu trên các tờ khai thuế giá trị gia",
+      "confidence": 0.9668875494444444
+    },
+    {
+      "bbox": [
+        [
+          210.0,
+          1230.0
+        ],
+        [
+          767.0,
+          1230.0
+        ],
+        [
+          767.0,
+          1263.0
+        ],
+        [
+          210.0,
+          1263.0
+        ]
+      ],
+      "text": "tăng của các kỳ tính thuế trong năm dương lịch.",
+      "confidence": 0.968202491
+    },
+    {
+      "bbox": [
+        [
+          270.0,
+          1288.0
+        ],
+        [
+          1129.0,
+          1288.0
+        ],
+        [
+          1129.0,
+          1323.0
+        ],
+        [
+          270.0,
+          1323.0
+        ]
+      ],
+      "text": "Trường hợp người nộp thuế thực hiện khai thuế tập trung tại trụ sở chính",
+      "confidence": 0.9682735246666667
+    },
+    {
+      "bbox": [
+        [
+          211.0,
+          1325.0
+        ],
+        [
+          1129.0,
+          1325.0
+        ],
+        [
+          1129.0,
+          1359.0
+        ],
+        [
+          211.0,
+          1359.0
+        ]
+      ],
+      "text": "cho đơn vị phụ thuộc, địa điểm kinh doanh thì doanh thu bán hàng hóa, cung",
+      "confidence": 0.9653964912499999
+    },
+    {
+      "bbox": [
+        [
+          212.0,
+          1359.0
+        ],
+        [
+          1125.0,
+          1359.0
+        ],
+        [
+          1125.0,
+          1394.0
+        ],
+        [
+          212.0,
+          1394.0
+        ]
+      ],
+      "text": "cấp dịch vụ bao gdm cả doanh thu của đơn vị phụ thuộc, địa điểm kinh doanh.",
+      "confidence": 0.96219972
+    },
+    {
+      "bbox": [
+        [
+          271.0,
+          1420.0
+        ],
+        [
+          1129.0,
+          1420.0
+        ],
+        [
+          1129.0,
+          1454.0
+        ],
+        [
+          271.0,
+          1454.0
+        ]
+      ],
+      "text": "a.2) Trường hợp người nộp thuế mới bắt đầu hoạt động, kinh doanh thì",
+      "confidence": 0.9636066928571428
+    },
+    {
+      "bbox": [
+        [
+          212.0,
+          1455.0
+        ],
+        [
+          1129.0,
+          1455.0
+        ],
+        [
+          1129.0,
+          1497.0
+        ],
+        [
+          212.0,
+          1497.0
+        ]
+      ],
+      "text": "được lựa chọn khai thuế giá trị gia tăng theo quý. Sau khi sản xuất kinh doanh",
+      "confidence": 0.9641627988235294
+    },
+    {
+      "bbox": [
+        [
+          213.0,
+          1491.0
+        ],
+        [
+          1130.0,
+          1491.0
+        ],
+        [
+          1130.0,
+          1526.0
+        ],
+        [
+          213.0,
+          1526.0
+        ]
+      ],
+      "text": "đủ 12 tháng thì từ năm dương lịch liền kề tiếp theo năm đã đủ 12 tháng sẽ căn",
+      "confidence": 0.9678605010526315
+    },
+    {
+      "bbox": [
+        [
+          213.0,
+          1525.0
+        ],
+        [
+          1130.0,
+          1525.0
+        ],
+        [
+          1130.0,
+          1559.0
+        ],
+        [
+          213.0,
+          1559.0
+        ]
+      ],
+      "text": "cứ theo mức doanh thu của năm dương lịch trước liền kề (đủ 12 tháng) để",
+      "confidence": 0.9589087406250001
+    },
+    {
+      "bbox": [
+        [
+          212.0,
+          1557.0
+        ],
+        [
+          1011.0,
+          1557.0
+        ],
+        [
+          1011.0,
+          1600.0
+        ],
+        [
+          212.0,
+          1600.0
+        ]
+      ],
+      "text": "thực hiện khai thuế giá trị gia tăng theo kỳ tính thuế tháng hoặc quý.",
+      "confidence": 0.9660985673333333
+    }
+  ]
+}

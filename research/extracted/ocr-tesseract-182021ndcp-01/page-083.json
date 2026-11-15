@@ -1,0 +1,663 @@
+{
+  "document_id": "18/2021/NĐ-CP",
+  "source_file": "../../legal-sources/182021ndcp/01.pdf",
+  "source_sha256": "cb0bf16ab3ee6554929e0d9d2cc4f180f51b8ea10ddd30a37309353edeb050d8",
+  "page_count": 114,
+  "render_dpi": 150,
+  "engine": "Tesseract 5.5.4 (vie+eng; OEM 1; PSM 3)",
+  "review_status": "UNREVIEWED",
+  "tesseract_version": "5.5.4",
+  "tsv_parser_version": 2,
+  "languages": [
+    "vie",
+    "eng"
+  ],
+  "traineddata_sha256": {
+    "vie": "b6b49293d95d0b6dbd8780174627e82c75be957b6f4ed9862155540d6b00bb45",
+    "eng": "8280aed0782fe27257a68ea10fe7ef324ca0f8d85bd2fd145d1c2b560bcb66ba"
+  },
+  "ocr_engine_mode": 1,
+  "page_segmentation_mode": 3,
+  "thread_limit": 1,
+  "page": 83,
+  "lines": [
+    {
+      "bbox": [
+        [
+          649.0,
+          51.0
+        ],
+        [
+          676.0,
+          51.0
+        ],
+        [
+          676.0,
+          71.0
+        ],
+        [
+          649.0,
+          71.0
+        ]
+      ],
+      "text": "44",
+      "confidence": 0.93925217
+    },
+    {
+      "bbox": [
+        [
+          301.0,
+          145.0
+        ],
+        [
+          1060.0,
+          145.0
+        ],
+        [
+          1060.0,
+          184.0
+        ],
+        [
+          301.0,
+          184.0
+        ]
+      ],
+      "text": "XÁC NHAN CUA CỤC HAI QUAN TINH, THÀNH PHO _",
+      "confidence": 0.883546257
+    },
+    {
+      "bbox": [
+        [
+          259.0,
+          179.0
+        ],
+        [
+          1065.0,
+          179.0
+        ],
+        [
+          1065.0,
+          212.0
+        ],
+        [
+          259.0,
+          212.0
+        ]
+      ],
+      "text": "VE THAN PHAN VA TIEU CHUAN MUA HANG MIEN THUE",
+      "confidence": 0.94638429
+    },
+    {
+      "bbox": [
+        [
+          280.0,
+          217.0
+        ],
+        [
+          1044.0,
+          217.0
+        ],
+        [
+          1044.0,
+          244.0
+        ],
+        [
+          280.0,
+          244.0
+        ]
+      ],
+      "text": "Certification of the Provincial or Municipal Customs Department.",
+      "confidence": 0.964646995
+    },
+    {
+      "bbox": [
+        [
+          266.0,
+          316.0
+        ],
+        [
+          359.0,
+          316.0
+        ],
+        [
+          359.0,
+          337.0
+        ],
+        [
+          266.0,
+          337.0
+        ]
+      ],
+      "text": "Mission",
+      "confidence": 0.95013756
+    },
+    {
+      "bbox": [
+        [
+          267.0,
+          360.0
+        ],
+        [
+          1113.0,
+          360.0
+        ],
+        [
+          1113.0,
+          392.0
+        ],
+        [
+          267.0,
+          392.0
+        ]
+      ],
+      "text": "băn. nan HH",
+      "confidence": 0.17636416333333332
+    },
+    {
+      "bbox": [
+        [
+          266.0,
+          398.0
+        ],
+        [
+          573.0,
+          398.0
+        ],
+        [
+          573.0,
+          420.0
+        ],
+        [
+          266.0,
+          420.0
+        ]
+      ],
+      "text": "Number of Staff Members",
+      "confidence": 0.92142975
+    },
+    {
+      "bbox": [
+        [
+          267.0,
+          442.0
+        ],
+        [
+          1101.0,
+          442.0
+        ],
+        [
+          1101.0,
+          474.0
+        ],
+        [
+          267.0,
+          474.0
+        ]
+      ],
+      "text": "Được hưởng ưu đãi theo Điều ước ...... hoặc thỏa thuận......từ ngày......",
+      "confidence": 0.9325835291666665
+    },
+    {
+      "bbox": [
+        [
+          266.0,
+          481.0
+        ],
+        [
+          1101.0,
+          481.0
+        ],
+        [
+          1101.0,
+          508.0
+        ],
+        [
+          266.0,
+          508.0
+        ]
+      ],
+      "text": "Enjoys the privileges and immunities under......... date....................",
+      "confidence": 0.8383642371428571
+    },
+    {
+      "bbox": [
+        [
+          208.0,
+          522.0
+        ],
+        [
+          1118.0,
+          522.0
+        ],
+        [
+          1118.0,
+          553.0
+        ],
+        [
+          208.0,
+          553.0
+        ]
+      ],
+      "text": "Chủng loại và định lượng được nhập khẩu, tạm nhập khẩu, mua hàng miễn",
+      "confidence": 0.9619347221428572
+    },
+    {
+      "bbox": [
+        [
+          208.0,
+          553.0
+        ],
+        [
+          1118.0,
+          553.0
+        ],
+        [
+          1118.0,
+          587.0
+        ],
+        [
+          208.0,
+          587.0
+        ]
+      ],
+      "text": "thuế theo Điều ước/thỏa thuận/Quyết định của Thủ tướng Chính phủ phê",
+      "confidence": 0.9593313283333333
+    },
+    {
+      "bbox": [
+        [
+          208.0,
+          587.0
+        ],
+        [
+          1118.0,
+          587.0
+        ],
+        [
+          1118.0,
+          620.0
+        ],
+        [
+          208.0,
+          620.0
+        ]
+      ],
+      "text": "duyệt chủng loại và định lượng hàng hóa nhập khẩu miễn thuế theo Điều ước",
+      "confidence": 0.9677926840000001
+    },
+    {
+      "bbox": [
+        [
+          208.0,
+          619.0
+        ],
+        [
+          1118.0,
+          619.0
+        ],
+        [
+          1118.0,
+          653.0
+        ],
+        [
+          208.0,
+          653.0
+        ]
+      ],
+      "text": "quốc tế/thỏa thuận giữa Chính phủ Việt Nam với tổ chức phi chính phủ nước",
+      "confidence": 0.960032054
+    },
+    {
+      "bbox": [
+        [
+          208.0,
+          651.0
+        ],
+        [
+          338.0,
+          651.0
+        ],
+        [
+          338.0,
+          684.0
+        ],
+        [
+          208.0,
+          684.0
+        ]
+      ],
+      "text": "ngoài gồm:",
+      "confidence": 0.967323
+    },
+    {
+      "bbox": [
+        [
+          267.0,
+          703.0
+        ],
+        [
+          1117.0,
+          703.0
+        ],
+        [
+          1117.0,
+          731.0
+        ],
+        [
+          267.0,
+          731.0
+        ]
+      ],
+      "text": "The list and quota of duty-free goods allowed to be imported,",
+      "confidence": 0.955169039090909
+    },
+    {
+      "bbox": [
+        [
+          208.0,
+          735.0
+        ],
+        [
+          1118.0,
+          735.0
+        ],
+        [
+          1118.0,
+          764.0
+        ],
+        [
+          208.0,
+          764.0
+        ]
+      ],
+      "text": "temporarily imported, purchased as stipulated in Treaties/Agreements/Prime",
+      "confidence": 0.9539385457142857
+    },
+    {
+      "bbox": [
+        [
+          208.0,
+          768.0
+        ],
+        [
+          1118.0,
+          768.0
+        ],
+        [
+          1118.0,
+          797.0
+        ],
+        [
+          208.0,
+          797.0
+        ]
+      ],
+      "text": "Minister's Decisions approving the list and quota of duty-free imported goods",
+      "confidence": 0.9667735772727274
+    },
+    {
+      "bbox": [
+        [
+          209.0,
+          801.0
+        ],
+        [
+          1122.0,
+          801.0
+        ],
+        [
+          1122.0,
+          828.0
+        ],
+        [
+          209.0,
+          828.0
+        ]
+      ],
+      "text": "according to International Treaties/Agreements between the Government of",
+      "confidence": 0.95534246375
+    },
+    {
+      "bbox": [
+        [
+          208.0,
+          833.0
+        ],
+        [
+          951.0,
+          833.0
+        ],
+        [
+          951.0,
+          862.0
+        ],
+        [
+          208.0,
+          862.0
+        ]
+      ],
+      "text": "Viet Nam and foreign non-government organizations consist of:",
+      "confidence": 0.9537574000000001
+    },
+    {
+      "bbox": [
+        [
+          309.0,
+          885.0
+        ],
+        [
+          1118.0,
+          885.0
+        ],
+        [
+          1118.0,
+          933.0
+        ],
+        [
+          309.0,
+          933.0
+        ]
+      ],
+      "text": "Oto/Automobile ~~ LL... Chiếc/vehicle(s)",
+      "confidence": 0.49224232
+    },
+    {
+      "bbox": [
+        [
+          309.0,
+          925.0
+        ],
+        [
+          1119.0,
+          925.0
+        ],
+        [
+          1119.0,
+          958.0
+        ],
+        [
+          309.0,
+          958.0
+        ]
+      ],
+      "text": "Xehaibánh gan máy/Motoroycle ............. Chiếc/vehicle(s)",
+      "confidence": 0.700024236
+    },
+    {
+      "bbox": [
+        [
+          308.0,
+          961.0
+        ],
+        [
+          1119.0,
+          961.0
+        ],
+        [
+          1119.0,
+          991.0
+        ],
+        [
+          308.0,
+          991.0
+        ]
+      ],
+      "text": "Rượu/Wine, alcohol _- Lit/Quy/liter(s)/quarter",
+      "confidence": 0.84177452
+    },
+    {
+      "bbox": [
+        [
+          260.0,
+          961.0
+        ],
+        [
+          294.0,
+          961.0
+        ],
+        [
+          294.0,
+          1078.0
+        ],
+        [
+          260.0,
+          1078.0
+        ]
+      ],
+      "text": "aA oll",
+      "confidence": 0.262763445
+    },
+    {
+      "bbox": [
+        [
+          309.0,
+          990.0
+        ],
+        [
+          1119.0,
+          990.0
+        ],
+        [
+          1119.0,
+          1029.0
+        ],
+        [
+          309.0,
+          1029.0
+        ]
+      ],
+      "text": "Bia/Beer ...Lit/Quy/liter(s)/quarter",
+      "confidence": 0.825897065
+    },
+    {
+      "bbox": [
+        [
+          309.0,
+          1026.0
+        ],
+        [
+          1120.0,
+          1026.0
+        ],
+        [
+          1120.0,
+          1056.0
+        ],
+        [
+          309.0,
+          1056.0
+        ]
+      ],
+      "text": "Thuốc 1á/Cigarette ...Tat/Quy/carton(s)/quarter",
+      "confidence": 0.8643964633333333
+    },
+    {
+      "bbox": [
+        [
+          308.0,
+          1058.0
+        ],
+        [
+          568.0,
+          1058.0
+        ],
+        [
+          568.0,
+          1084.0
+        ],
+        [
+          308.0,
+          1084.0
+        ]
+      ],
+      "text": "Hang hóa khác/Others",
+      "confidence": 0.9377808133333333
+    },
+    {
+      "bbox": [
+        [
+          645.0,
+          1192.0
+        ],
+        [
+          963.0,
+          1192.0
+        ],
+        [
+          963.0,
+          1219.0
+        ],
+        [
+          645.0,
+          1219.0
+        ]
+      ],
+      "text": "..., NgAy ... tháng ... năm ...",
+      "confidence": 0.820041767142857
+    },
+    {
+      "bbox": [
+        [
+          545.0,
+          1221.0
+        ],
+        [
+          1064.0,
+          1221.0
+        ],
+        [
+          1064.0,
+          1254.0
+        ],
+        [
+          545.0,
+          1254.0
+        ]
+      ],
+      "text": "Cục trưởng Cục Hải quan tỉnh, thành phố",
+      "confidence": 0.9572471625
+    },
+    {
+      "bbox": [
+        [
+          489.0,
+          1255.0
+        ],
+        [
+          1120.0,
+          1255.0
+        ],
+        [
+          1120.0,
+          1287.0
+        ],
+        [
+          489.0,
+          1287.0
+        ]
+      ],
+      "text": "Chief of Provincial or Municipal Customs Department",
+      "confidence": 0.9660479857142857
+    }
+  ]
+}

@@ -1,0 +1,861 @@
+{
+  "document_id": "126/2020/NĐ-CP",
+  "source_file": "../../legal-sources/1262020ndcp/01.pdf",
+  "source_sha256": "310648e80396d267610946458e7fdd71ba87ef538b009d6574ed21514de3f7ca",
+  "page_count": 119,
+  "render_dpi": 150,
+  "engine": "Tesseract 5.5.4 (vie+eng; OEM 1; PSM 3)",
+  "review_status": "UNREVIEWED",
+  "tesseract_version": "5.5.4",
+  "tsv_parser_version": 2,
+  "languages": [
+    "vie",
+    "eng"
+  ],
+  "traineddata_sha256": {
+    "vie": "b6b49293d95d0b6dbd8780174627e82c75be957b6f4ed9862155540d6b00bb45",
+    "eng": "8280aed0782fe27257a68ea10fe7ef324ca0f8d85bd2fd145d1c2b560bcb66ba"
+  },
+  "ocr_engine_mode": 1,
+  "page_segmentation_mode": 3,
+  "thread_limit": 1,
+  "page": 107,
+  "lines": [
+    {
+      "bbox": [
+        [
+          695.0,
+          66.0
+        ],
+        [
+          734.0,
+          66.0
+        ],
+        [
+          734.0,
+          87.0
+        ],
+        [
+          695.0,
+          87.0
+        ]
+      ],
+      "text": "107",
+      "confidence": 0.9674962600000001
+    },
+    {
+      "bbox": [
+        [
+          288.0,
+          142.0
+        ],
+        [
+          1144.0,
+          142.0
+        ],
+        [
+          1144.0,
+          175.0
+        ],
+        [
+          288.0,
+          175.0
+        ]
+      ],
+      "text": "1. Chế độ ưu tiên đối với doanh nghiệp: Được hoàn thuế trước, kiểm tra",
+      "confidence": 0.9681665406666666
+    },
+    {
+      "bbox": [
+        [
+          227.0,
+          176.0
+        ],
+        [
+          1143.0,
+          176.0
+        ],
+        [
+          1143.0,
+          215.0
+        ],
+        [
+          227.0,
+          215.0
+        ]
+      ],
+      "text": "sau, được thực hiện nộp thuế cho tờ khai hải quan đã thông quan hoặc giải",
+      "confidence": 0.967393575
+    },
+    {
+      "bbox": [
+        [
+          225.0,
+          210.0
+        ],
+        [
+          1143.0,
+          210.0
+        ],
+        [
+          1143.0,
+          248.0
+        ],
+        [
+          225.0,
+          248.0
+        ]
+      ],
+      "text": "phóng hàng hóa trong tháng chậm nhất vào ngày thứ mười của tháng kê tiếp",
+      "confidence": 0.967235874
+    },
+    {
+      "bbox": [
+        [
+          225.0,
+          243.0
+        ],
+        [
+          1059.0,
+          243.0
+        ],
+        [
+          1059.0,
+          276.0
+        ],
+        [
+          225.0,
+          276.0
+        ]
+      ],
+      "text": "theo quy định tại khoản 2 Điều 9 Luật Thuế xuất khẩu, thuế nhập khâu.",
+      "confidence": 0.9624665826666665
+    },
+    {
+      "bbox": [
+        [
+          284.0,
+          301.0
+        ],
+        [
+          971.0,
+          301.0
+        ],
+        [
+          971.0,
+          334.0
+        ],
+        [
+          284.0,
+          334.0
+        ]
+      ],
+      "text": "2. Thỏa thuận công nhận lẫn nhau về doanh nghiệp ưu tiên",
+      "confidence": 0.9691350375000001
+    },
+    {
+      "bbox": [
+        [
+          283.0,
+          361.0
+        ],
+        [
+          1143.0,
+          361.0
+        ],
+        [
+          1143.0,
+          399.0
+        ],
+        [
+          283.0,
+          399.0
+        ]
+      ],
+      "text": "a) Bộ trưởng Bộ Tài chính ký thỏa thuận công nhận lẫn nhau về doanh",
+      "confidence": 0.9637963193333333
+    },
+    {
+      "bbox": [
+        [
+          223.0,
+          394.0
+        ],
+        [
+          1143.0,
+          394.0
+        ],
+        [
+          1143.0,
+          432.0
+        ],
+        [
+          223.0,
+          432.0
+        ]
+      ],
+      "text": "nghiệp ưu tiên trong lĩnh vực hải quan theo quy định của pháp luật về ký kết",
+      "confidence": 0.9683208647058824
+    },
+    {
+      "bbox": [
+        [
+          224.0,
+          426.0
+        ],
+        [
+          595.0,
+          426.0
+        ],
+        [
+          595.0,
+          459.0
+        ],
+        [
+          224.0,
+          459.0
+        ]
+      ],
+      "text": "và thực hiện thoả thuận quốc tế.",
+      "confidence": 0.9653145285714286
+    },
+    {
+      "bbox": [
+        [
+          282.0,
+          488.0
+        ],
+        [
+          1141.0,
+          488.0
+        ],
+        [
+          1141.0,
+          526.0
+        ],
+        [
+          282.0,
+          526.0
+        ]
+      ],
+      "text": "b) Doanh nghiệp ưu tiên của nước có ký thỏa thuận công nhận lẫn nhau",
+      "confidence": 0.9660842580000001
+    },
+    {
+      "bbox": [
+        [
+          222.0,
+          518.0
+        ],
+        [
+          1141.0,
+          518.0
+        ],
+        [
+          1141.0,
+          553.0
+        ],
+        [
+          222.0,
+          553.0
+        ]
+      ],
+      "text": "về doanh nghiệp ưu tiên với Việt Nam được áp dụng các biện pháp ưu tiên về",
+      "confidence": 0.9681824982352941
+    },
+    {
+      "bbox": [
+        [
+          222.0,
+          552.0
+        ],
+        [
+          1140.0,
+          552.0
+        ],
+        [
+          1140.0,
+          585.0
+        ],
+        [
+          222.0,
+          585.0
+        ]
+      ],
+      "text": "thủ tục hải quan, thủ tục thuế theo thỏa thuận đã ký. Danh sách các doanh",
+      "confidence": 0.968217740625
+    },
+    {
+      "bbox": [
+        [
+          222.0,
+          585.0
+        ],
+        [
+          1141.0,
+          585.0
+        ],
+        [
+          1141.0,
+          623.0
+        ],
+        [
+          222.0,
+          623.0
+        ]
+      ],
+      "text": "nghiệp ưu tiên của nước đối tác được hưởng chế độ ưu tiên được quy định cụ",
+      "confidence": 0.96599485
+    },
+    {
+      "bbox": [
+        [
+          221.0,
+          617.0
+        ],
+        [
+          429.0,
+          617.0
+        ],
+        [
+          429.0,
+          649.0
+        ],
+        [
+          221.0,
+          649.0
+        ]
+      ],
+      "text": "thể tại thỏa thuận.",
+      "confidence": 0.9662724125
+    },
+    {
+      "bbox": [
+        [
+          281.0,
+          682.0
+        ],
+        [
+          657.0,
+          682.0
+        ],
+        [
+          657.0,
+          710.0
+        ],
+        [
+          281.0,
+          710.0
+        ]
+      ],
+      "text": "3. Quản lý doanh nghiệp ưu tiên",
+      "confidence": 0.9666530157142857
+    },
+    {
+      "bbox": [
+        [
+          280.0,
+          734.0
+        ],
+        [
+          1140.0,
+          734.0
+        ],
+        [
+          1140.0,
+          775.0
+        ],
+        [
+          280.0,
+          775.0
+        ]
+      ],
+      "text": "a) Tổng cục Hải quan thực hiện biện pháp: Thẩm định thực tế tại trụ sở",
+      "confidence": 0.952444883125
+    },
+    {
+      "bbox": [
+        [
+          221.0,
+          769.0
+        ],
+        [
+          1140.0,
+          769.0
+        ],
+        [
+          1140.0,
+          809.0
+        ],
+        [
+          221.0,
+          809.0
+        ]
+      ],
+      "text": "doanh nghiệp định kỳ hoặc đột xuất; kiểm tra sau thông quan theo quy định",
+      "confidence": 0.9691648913333333
+    },
+    {
+      "bbox": [
+        [
+          220.0,
+          802.0
+        ],
+        [
+          1139.0,
+          802.0
+        ],
+        [
+          1139.0,
+          842.0
+        ],
+        [
+          220.0,
+          842.0
+        ]
+      ],
+      "text": "tại khoản 3 Điều 78 Luật Hải quan không quá một lần trong ba năm liên tục",
+      "confidence": 0.9684695070588235
+    },
+    {
+      "bbox": [
+        [
+          220.0,
+          835.0
+        ],
+        [
+          1139.0,
+          835.0
+        ],
+        [
+          1139.0,
+          872.0
+        ],
+        [
+          220.0,
+          872.0
+        ]
+      ],
+      "text": "kế từ ngày được Tổng cục trưởng Tổng cục Hải quan công nhận hoặc gia hạn",
+      "confidence": 0.9554529943750001
+    },
+    {
+      "bbox": [
+        [
+          220.0,
+          868.0
+        ],
+        [
+          1139.0,
+          868.0
+        ],
+        [
+          1139.0,
+          904.0
+        ],
+        [
+          220.0,
+          904.0
+        ]
+      ],
+      "text": "chế độ ưu tiên, có biện pháp giám sát và đánh giá việc duy trì điều kiện doanh",
+      "confidence": 0.9693200733333334
+    },
+    {
+      "bbox": [
+        [
+          219.0,
+          904.0
+        ],
+        [
+          1138.0,
+          904.0
+        ],
+        [
+          1138.0,
+          937.0
+        ],
+        [
+          219.0,
+          937.0
+        ]
+      ],
+      "text": "nghiệp ưu tiên sau khi được công nhận để gia hạn, tạm đình chỉ, đình chỉ",
+      "confidence": 0.96804490125
+    },
+    {
+      "bbox": [
+        [
+          219.0,
+          937.0
+        ],
+        [
+          1137.0,
+          937.0
+        ],
+        [
+          1137.0,
+          974.0
+        ],
+        [
+          219.0,
+          974.0
+        ]
+      ],
+      "text": "doanh nghiệp ưu tiên theo quy định; kiểm tra sau thông quan theo quy định tại",
+      "confidence": 0.964050925625
+    },
+    {
+      "bbox": [
+        [
+          219.0,
+          969.0
+        ],
+        [
+          1137.0,
+          969.0
+        ],
+        [
+          1137.0,
+          1009.0
+        ],
+        [
+          219.0,
+          1009.0
+        ]
+      ],
+      "text": "khoản 1, khoản 2 Điều 78 Luật Hải quan khi xác định có dấu hiệu vi phạm",
+      "confidence": 0.9681006076470589
+    },
+    {
+      "bbox": [
+        [
+          218.0,
+          991.0
+        ],
+        [
+          689.0,
+          991.0
+        ],
+        [
+          689.0,
+          1036.0
+        ],
+        [
+          218.0,
+          1036.0
+        ]
+      ],
+      "text": "pháp luật về hải quan, pháp luật về thuế.",
+      "confidence": 0.9653038855555556
+    },
+    {
+      "bbox": [
+        [
+          277.0,
+          1063.0
+        ],
+        [
+          1136.0,
+          1063.0
+        ],
+        [
+          1136.0,
+          1102.0
+        ],
+        [
+          277.0,
+          1102.0
+        ]
+      ],
+      "text": "b) Doanh nghiệp ưu tiên phải theo dõi, kiểm soát, quản lý được toàn bộ",
+      "confidence": 0.954203642
+    },
+    {
+      "bbox": [
+        [
+          218.0,
+          1092.0
+        ],
+        [
+          1136.0,
+          1092.0
+        ],
+        [
+          1136.0,
+          1142.0
+        ],
+        [
+          218.0,
+          1142.0
+        ]
+      ],
+      "text": "quá trình sử dụng nguyên liệu, vật tư nhập khẩu, hàng hóa xuất khẩu, nhập",
+      "confidence": 0.9683827053333333
+    },
+    {
+      "bbox": [
+        [
+          217.0,
+          1126.0
+        ],
+        [
+          1136.0,
+          1126.0
+        ],
+        [
+          1136.0,
+          1168.0
+        ],
+        [
+          217.0,
+          1168.0
+        ]
+      ],
+      "text": "khẩu, có hệ thống công nghệ thông tin nôi mạng với cơ quan hải quan, đảm",
+      "confidence": 0.9670505862500001
+    },
+    {
+      "bbox": [
+        [
+          217.0,
+          1159.0
+        ],
+        [
+          1136.0,
+          1159.0
+        ],
+        [
+          1136.0,
+          1197.0
+        ],
+        [
+          217.0,
+          1197.0
+        ]
+      ],
+      "text": "bảo cung cấp hồ sơ, chứng từ, tài liệu, số liệu trên hệ thống, số liệu trong quá",
+      "confidence": 0.9635782699999998
+    },
+    {
+      "bbox": [
+        [
+          217.0,
+          1194.0
+        ],
+        [
+          1135.0,
+          1194.0
+        ],
+        [
+          1135.0,
+          1232.0
+        ],
+        [
+          217.0,
+          1232.0
+        ]
+      ],
+      "text": "khứ, sô liệu theo giai đoạn Gối đa 05 năm kể từ ngày đăng ký tờ khai hải",
+      "confidence": 0.945137185
+    },
+    {
+      "bbox": [
+        [
+          217.0,
+          1225.0
+        ],
+        [
+          1135.0,
+          1225.0
+        ],
+        [
+          1135.0,
+          1265.0
+        ],
+        [
+          217.0,
+          1265.0
+        ]
+      ],
+      "text": "quan) về hàng hóa xuất khẩu, nhập khẩu để cơ quan hải quan có cơ sở so",
+      "confidence": 0.9666199764705883
+    },
+    {
+      "bbox": [
+        [
+          217.0,
+          1258.0
+        ],
+        [
+          1134.0,
+          1258.0
+        ],
+        [
+          1134.0,
+          1299.0
+        ],
+        [
+          217.0,
+          1299.0
+        ]
+      ],
+      "text": "sánh, đối chiều, kiểm tra và doanh nghiệp chịu trách nhiệm chứng minh tính",
+      "confidence": 0.9542664392857144
+    },
+    {
+      "bbox": [
+        [
+          217.0,
+          1292.0
+        ],
+        [
+          1121.0,
+          1292.0
+        ],
+        [
+          1121.0,
+          1330.0
+        ],
+        [
+          217.0,
+          1330.0
+        ]
+      ],
+      "text": "đầy đủ, chính xác của số liệu doanh nghiệp đã khai báo với cơ quan hải quan.",
+      "confidence": 0.9678319517647058
+    },
+    {
+      "bbox": [
+        [
+          274.0,
+          1351.0
+        ],
+        [
+          1132.0,
+          1351.0
+        ],
+        [
+          1132.0,
+          1390.0
+        ],
+        [
+          274.0,
+          1390.0
+        ]
+      ],
+      "text": "Điều 39. Ủy nhiệm thu thuế và các khoản thu khác thuộc ngân sách",
+      "confidence": 0.9652212742857144
+    },
+    {
+      "bbox": [
+        [
+          217.0,
+          1388.0
+        ],
+        [
+          790.0,
+          1388.0
+        ],
+        [
+          790.0,
+          1422.0
+        ],
+        [
+          217.0,
+          1422.0
+        ]
+      ],
+      "text": "nhà nước do cơ quan quần lý thuế quản lý thu",
+      "confidence": 0.9496359736363637
+    },
+    {
+      "bbox": [
+        [
+          278.0,
+          1450.0
+        ],
+        [
+          647.0,
+          1450.0
+        ],
+        [
+          647.0,
+          1478.0
+        ],
+        [
+          278.0,
+          1478.0
+        ]
+      ],
+      "text": "1. Các trường hợp uỷ nhiệm thu",
+      "confidence": 0.9531930200000001
+    },
+    {
+      "bbox": [
+        [
+          275.0,
+          1505.0
+        ],
+        [
+          1132.0,
+          1505.0
+        ],
+        [
+          1132.0,
+          1543.0
+        ],
+        [
+          275.0,
+          1543.0
+        ]
+      ],
+      "text": "a) Cơ quan quản lý thuế uỷ nhiệm cho tổ chức, cơ quan quản lý nhà nước",
+      "confidence": 0.965377448235294
+    },
+    {
+      "bbox": [
+        [
+          215.0,
+          1538.0
+        ],
+        [
+          1131.0,
+          1538.0
+        ],
+        [
+          1131.0,
+          1574.0
+        ],
+        [
+          215.0,
+          1574.0
+        ]
+      ],
+      "text": "thu các khoản thuế và các khoản thu khác thuộc ngân sách nhà nước đối với",
+      "confidence": 0.966744275
+    },
+    {
+      "bbox": [
+        [
+          215.0,
+          1576.0
+        ],
+        [
+          638.0,
+          1576.0
+        ],
+        [
+          638.0,
+          1604.0
+        ],
+        [
+          215.0,
+          1604.0
+        ]
+      ],
+      "text": "cá nhân, hộ gia đình, hộ kinh doanh.",
+      "confidence": 0.96868419625
+    }
+  ]
+}

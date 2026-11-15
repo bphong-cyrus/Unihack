@@ -1,0 +1,905 @@
+{
+  "document_id": "126/2020/NĐ-CP",
+  "source_file": "../../legal-sources/1262020ndcp/01.pdf",
+  "source_sha256": "310648e80396d267610946458e7fdd71ba87ef538b009d6574ed21514de3f7ca",
+  "page_count": 119,
+  "render_dpi": 150,
+  "engine": "Tesseract 5.5.4 (vie+eng; OEM 1; PSM 3)",
+  "review_status": "UNREVIEWED",
+  "tesseract_version": "5.5.4",
+  "tsv_parser_version": 2,
+  "languages": [
+    "vie",
+    "eng"
+  ],
+  "traineddata_sha256": {
+    "vie": "b6b49293d95d0b6dbd8780174627e82c75be957b6f4ed9862155540d6b00bb45",
+    "eng": "8280aed0782fe27257a68ea10fe7ef324ca0f8d85bd2fd145d1c2b560bcb66ba"
+  },
+  "ocr_engine_mode": 1,
+  "page_segmentation_mode": 3,
+  "thread_limit": 1,
+  "page": 48,
+  "lines": [
+    {
+      "bbox": [
+        [
+          531.0,
+          45.0
+        ],
+        [
+          532.0,
+          45.0
+        ],
+        [
+          532.0,
+          58.0
+        ],
+        [
+          531.0,
+          58.0
+        ]
+      ],
+      "text": "|",
+      "confidence": 0.89901955
+    },
+    {
+      "bbox": [
+        [
+          531.0,
+          66.0
+        ],
+        [
+          723.0,
+          66.0
+        ],
+        [
+          723.0,
+          110.0
+        ],
+        [
+          531.0,
+          110.0
+        ]
+      ],
+      "text": "! 48",
+      "confidence": 0.714752465
+    },
+    {
+      "bbox": [
+        [
+          281.0,
+          138.0
+        ],
+        [
+          1139.0,
+          138.0
+        ],
+        [
+          1139.0,
+          184.0
+        ],
+        [
+          281.0,
+          184.0
+        ]
+      ],
+      "text": "Trường hop tờ khai hải quan nhập khẩu lần đầu la hàng hóa không thuộc",
+      "confidence": 0.9573656866666667
+    },
+    {
+      "bbox": [
+        [
+          221.0,
+          170.0
+        ],
+        [
+          1138.0,
+          170.0
+        ],
+        [
+          1138.0,
+          215.0
+        ],
+        [
+          221.0,
+          215.0
+        ]
+      ],
+      "text": "đối tượng chịu thuế hoặc không có sô liệu về số tiền thuế hoặc tờ khai hải",
+      "confidence": 0.9576014123529412
+    },
+    {
+      "bbox": [
+        [
+          221.0,
+          210.0
+        ],
+        [
+          1137.0,
+          210.0
+        ],
+        [
+          1137.0,
+          256.0
+        ],
+        [
+          221.0,
+          256.0
+        ]
+      ],
+      "text": "quan đã bị hủy theo quy định của pháp luật về hải quan hoặc không có tờ khai",
+      "confidence": 0.9690463388888889
+    },
+    {
+      "bbox": [
+        [
+          220.0,
+          243.0
+        ],
+        [
+          1137.0,
+          243.0
+        ],
+        [
+          1137.0,
+          288.0
+        ],
+        [
+          220.0,
+          288.0
+        ]
+      ],
+      "text": "hải quan, cơ quan hải quan căn cứ vào tên hàng, chủng loại, trị giá, mã số,",
+      "confidence": 0.9645115617647059
+    },
+    {
+      "bbox": [
+        [
+          220.0,
+          269.0
+        ],
+        [
+          1136.0,
+          269.0
+        ],
+        [
+          1136.0,
+          314.0
+        ],
+        [
+          220.0,
+          314.0
+        ]
+      ],
+      "text": "xuất xứ, mức thuế, phương pháp tính thuế của hàng hóa giống hệt hoặc hàng",
+      "confidence": 0.9676639606666666
+    },
+    {
+      "bbox": [
+        [
+          220.0,
+          304.0
+        ],
+        [
+          1135.0,
+          304.0
+        ],
+        [
+          1135.0,
+          352.0
+        ],
+        [
+          220.0,
+          352.0
+        ]
+      ],
+      "text": "hóa tương tự đang được lưu trữ tại cơ sở dữ liệu của cơ quan hải quan để thực",
+      "confidence": 0.9638479578947369
+    },
+    {
+      "bbox": [
+        [
+          220.0,
+          336.0
+        ],
+        [
+          1134.0,
+          336.0
+        ],
+        [
+          1134.0,
+          383.0
+        ],
+        [
+          220.0,
+          383.0
+        ]
+      ],
+      "text": "hiện & ân định thuế. Tỷ giá tính thuế áp dụng tỷ giá tại thời điểm ban hành",
+      "confidence": 0.9518072011111112
+    },
+    {
+      "bbox": [
+        [
+          220.0,
+          372.0
+        ],
+        [
+          501.0,
+          372.0
+        ],
+        [
+          501.0,
+          405.0
+        ],
+        [
+          220.0,
+          405.0
+        ]
+      ],
+      "text": "quyết định ấn định thuế.",
+      "confidence": 0.9603231500000001
+    },
+    {
+      "bbox": [
+        [
+          278.0,
+          424.0
+        ],
+        [
+          1135.0,
+          424.0
+        ],
+        [
+          1135.0,
+          464.0
+        ],
+        [
+          278.0,
+          464.0
+        ]
+      ],
+      "text": "¢) Xác định số tiền thuế chênh lệch giữa số tiền thuế phải nộp với số tiền",
+      "confidence": 0.9566311423529412
+    },
+    {
+      "bbox": [
+        [
+          219.0,
+          456.0
+        ],
+        [
+          594.0,
+          456.0
+        ],
+        [
+          594.0,
+          498.0
+        ],
+        [
+          219.0,
+          498.0
+        ]
+      ],
+      "text": "thuế do người khai thuế đã khai.",
+      "confidence": 0.9692380728571428
+    },
+    {
+      "bbox": [
+        [
+          278.0,
+          508.0
+        ],
+        [
+          631.0,
+          508.0
+        ],
+        [
+          631.0,
+          542.0
+        ],
+        [
+          278.0,
+          542.0
+        ]
+      ],
+      "text": "d) Xác định thời hạn nộp thuế.",
+      "confidence": 0.9578489357142856
+    },
+    {
+      "bbox": [
+        [
+          277.0,
+          558.0
+        ],
+        [
+          1134.0,
+          558.0
+        ],
+        [
+          1134.0,
+          598.0
+        ],
+        [
+          277.0,
+          598.0
+        ]
+      ],
+      "text": "d) Lập biên bản dé làm cơ sở ấn định thuế, trừ các trường hợp sau đây",
+      "confidence": 0.9642198623529411
+    },
+    {
+      "bbox": [
+        [
+          217.0,
+          595.0
+        ],
+        [
+          446.0,
+          595.0
+        ],
+        [
+          446.0,
+          623.0
+        ],
+        [
+          217.0,
+          623.0
+        ]
+      ],
+      "text": "không lập biên bản:",
+      "confidence": 0.9680628775
+    },
+    {
+      "bbox": [
+        [
+          276.0,
+          641.0
+        ],
+        [
+          1133.0,
+          641.0
+        ],
+        [
+          1133.0,
+          687.0
+        ],
+        [
+          276.0,
+          687.0
+        ]
+      ],
+      "text": "Người khai thuế không tự tính được số tiền thuế phải nộp; cơ quan hải",
+      "confidence": 0.9647805693333333
+    },
+    {
+      "bbox": [
+        [
+          217.0,
+          674.0
+        ],
+        [
+          1132.0,
+          674.0
+        ],
+        [
+          1132.0,
+          720.0
+        ],
+        [
+          217.0,
+          720.0
+        ]
+      ],
+      "text": "quan thực hiện â ấn định thuế theo kết luận của cơ quan thanh tra, kiểm tra,",
+      "confidence": 0.9573158982352941
+    },
+    {
+      "bbox": [
+        [
+          216.0,
+          706.0
+        ],
+        [
+          1132.0,
+          706.0
+        ],
+        [
+          1132.0,
+          754.0
+        ],
+        [
+          216.0,
+          754.0
+        ]
+      ],
+      "text": "kiểm toán hoặc cơ quan khác có thẩm quyền sau khi thanh tra, kiểm tra, kiểm",
+      "confidence": 0.943207098125
+    },
+    {
+      "bbox": [
+        [
+          215.0,
+          743.0
+        ],
+        [
+          1132.0,
+          743.0
+        ],
+        [
+          1132.0,
+          790.0
+        ],
+        [
+          215.0,
+          790.0
+        ]
+      ],
+      "text": "toán tại trụ sở người khai thuế, trong bản kết luận đã xác định chính xác số",
+      "confidence": 0.9463655
+    },
+    {
+      "bbox": [
+        [
+          214.0,
+          773.0
+        ],
+        [
+          1132.0,
+          773.0
+        ],
+        [
+          1132.0,
+          815.0
+        ],
+        [
+          214.0,
+          815.0
+        ]
+      ],
+      "text": "tiền thuế phải ấn định; hàng hóa nhập khẩu thuộc đối tượng miễn thuế, không",
+      "confidence": 0.9623569786666667
+    },
+    {
+      "bbox": [
+        [
+          215.0,
+          807.0
+        ],
+        [
+          1131.0,
+          807.0
+        ],
+        [
+          1131.0,
+          845.0
+        ],
+        [
+          215.0,
+          845.0
+        ]
+      ],
+      "text": "chịu thuế là tài sản đảm bảo các khoản vay theo quy định tại điểm m khoản 4",
+      "confidence": 0.9597421611111112
+    },
+    {
+      "bbox": [
+        [
+          214.0,
+          839.0
+        ],
+        [
+          1131.0,
+          839.0
+        ],
+        [
+          1131.0,
+          887.0
+        ],
+        [
+          214.0,
+          887.0
+        ]
+      ],
+      "text": "Điều này; hàng hóa nhập khẩu chưa hoàn thành thủ tục hải quan bị kê biên để",
+      "confidence": 0.9600253705882353
+    },
+    {
+      "bbox": [
+        [
+          214.0,
+          873.0
+        ],
+        [
+          1131.0,
+          873.0
+        ],
+        [
+          1131.0,
+          915.0
+        ],
+        [
+          214.0,
+          915.0
+        ]
+      ],
+      "text": "bán đấu giá theo quyết định của cơ quan có thẳm quyền hoặc bản án, quyết",
+      "confidence": 0.9619354962500001
+    },
+    {
+      "bbox": [
+        [
+          214.0,
+          909.0
+        ],
+        [
+          1130.0,
+          909.0
+        ],
+        [
+          1130.0,
+          945.0
+        ],
+        [
+          214.0,
+          945.0
+        ]
+      ],
+      "text": "định của Tòa án thuộc đối tượng phải nộp thuế theo quy định tại điểm | khoản 4",
+      "confidence": 0.9525203538888889
+    },
+    {
+      "bbox": [
+        [
+          214.0,
+          939.0
+        ],
+        [
+          325.0,
+          939.0
+        ],
+        [
+          325.0,
+          972.0
+        ],
+        [
+          214.0,
+          972.0
+        ]
+      ],
+      "text": "Điều này.",
+      "confidence": 0.9667363349999999
+    },
+    {
+      "bbox": [
+        [
+          273.0,
+          1000.0
+        ],
+        [
+          1130.0,
+          1000.0
+        ],
+        [
+          1130.0,
+          1038.0
+        ],
+        [
+          273.0,
+          1038.0
+        ]
+      ],
+      "text": "e) Thông báo bằng văn bản theo Mẫu số 01/TBXNK tại Phụ lục II ban",
+      "confidence": 0.9541058673333334
+    },
+    {
+      "bbox": [
+        [
+          212.0,
+          1038.0
+        ],
+        [
+          1128.0,
+          1038.0
+        ],
+        [
+          1128.0,
+          1081.0
+        ],
+        [
+          212.0,
+          1081.0
+        ]
+      ],
+      "text": "hành kèm theo Nghị định này cho người khai thuế hoặc người được người",
+      "confidence": 0.9679495357142857
+    },
+    {
+      "bbox": [
+        [
+          208.0,
+          1067.0
+        ],
+        [
+          1129.0,
+          1067.0
+        ],
+        [
+          1129.0,
+          1119.0
+        ],
+        [
+          208.0,
+          1119.0
+        ]
+      ],
+      "text": "khai thuế ủy quyên, người bảo lãnh, người nộp thuế thay cho người khai thuế",
+      "confidence": 0.9604515086666667
+    },
+    {
+      "bbox": [
+        [
+          212.0,
+          1100.0
+        ],
+        [
+          1133.0,
+          1100.0
+        ],
+        [
+          1133.0,
+          1154.0
+        ],
+        [
+          212.0,
+          1154.0
+        ]
+      ],
+      "text": "về căn cứ pháp lý ấn định thuế, phương pháp tính thuế, số tiền thuế ấn định",
+      "confidence": 0.9630366564705882
+    },
+    {
+      "bbox": [
+        [
+          211.0,
+          1135.0
+        ],
+        [
+          1128.0,
+          1135.0
+        ],
+        [
+          1128.0,
+          1175.0
+        ],
+        [
+          211.0,
+          1175.0
+        ]
+      ],
+      "text": "chỉ tiết theo từng loại thuế, thời hạn nộp tiền thuế ấn định, thời hạn tính tiền",
+      "confidence": 0.9640333017647059
+    },
+    {
+      "bbox": [
+        [
+          211.0,
+          1171.0
+        ],
+        [
+          447.0,
+          1171.0
+        ],
+        [
+          447.0,
+          1204.0
+        ],
+        [
+          211.0,
+          1204.0
+        ]
+      ],
+      "text": "chậm nộp, tiền phạt.",
+      "confidence": 0.9680609325
+    },
+    {
+      "bbox": [
+        [
+          269.0,
+          1235.0
+        ],
+        [
+          1127.0,
+          1235.0
+        ],
+        [
+          1127.0,
+          1276.0
+        ],
+        [
+          269.0,
+          1276.0
+        ]
+      ],
+      "text": "Trường hợp cơ quan hải quan thực hiện â ấn định thuế căn cứ vào văn bản",
+      "confidence": 0.9593816464705882
+    },
+    {
+      "bbox": [
+        [
+          209.0,
+          1262.0
+        ],
+        [
+          1126.0,
+          1262.0
+        ],
+        [
+          1126.0,
+          1304.0
+        ],
+        [
+          209.0,
+          1304.0
+        ]
+      ],
+      "text": "kết luận của cơ quan có thẩm quyền theo quy định tại điểm h khoản 1 Điều 52",
+      "confidence": 0.9615554983333332
+    },
+    {
+      "bbox": [
+        [
+          209.0,
+          1299.0
+        ],
+        [
+          1126.0,
+          1299.0
+        ],
+        [
+          1126.0,
+          1347.0
+        ],
+        [
+          209.0,
+          1347.0
+        ]
+      ],
+      "text": "Luật Quản lý thuế, điểm n khoản 4 Điều này trong thông báo gửi cho người",
+      "confidence": 0.9638374774999999
+    },
+    {
+      "bbox": [
+        [
+          205.0,
+          1332.0
+        ],
+        [
+          1125.0,
+          1332.0
+        ],
+        [
+          1125.0,
+          1378.0
+        ],
+        [
+          205.0,
+          1378.0
+        ]
+      ],
+      "text": "khai thuế ghi rõ lý do â ấn định thuế theo văn bản kết luận của cơ quan có thẩm",
+      "confidence": 0.9340407235000001
+    },
+    {
+      "bbox": [
+        [
+          209.0,
+          1365.0
+        ],
+        [
+          892.0,
+          1365.0
+        ],
+        [
+          892.0,
+          1404.0
+        ],
+        [
+          209.0,
+          1404.0
+        ]
+      ],
+      "text": "quyền, số tiền thuế ấn định, thời hạn nộp tiền thuế ấn định.",
+      "confidence": 0.968281566923077
+    },
+    {
+      "bbox": [
+        [
+          267.0,
+          1427.0
+        ],
+        [
+          1125.0,
+          1427.0
+        ],
+        [
+          1125.0,
+          1470.0
+        ],
+        [
+          267.0,
+          1470.0
+        ]
+      ],
+      "text": "Trường. hợp cơ quan hải quan thực hiện â ấn định thuế căn cứ vào kết quả",
+      "confidence": 0.9500482847058823
+    },
+    {
+      "bbox": [
+        [
+          208.0,
+          1460.0
+        ],
+        [
+          1124.0,
+          1460.0
+        ],
+        [
+          1124.0,
+          1507.0
+        ],
+        [
+          208.0,
+          1507.0
+        ]
+      ],
+      "text": "thanh tra, kiểm tra, kiểm tra sau thông quan tại trụ sở người khai thuế, lý do",
+      "confidence": 0.9667490564705882
+    },
+    {
+      "bbox": [
+        [
+          209.0,
+          1492.0
+        ],
+        [
+          1124.0,
+          1492.0
+        ],
+        [
+          1124.0,
+          1535.0
+        ],
+        [
+          209.0,
+          1535.0
+        ]
+      ],
+      "text": "ấn định thuế, căn cứ pháp lý ấn định thuế, thời hạn nộp tiền thuế ấn định đã",
+      "confidence": 0.9666352833333334
+    },
+    {
+      "bbox": [
+        [
+          209.0,
+          1529.0
+        ],
+        [
+          1087.0,
+          1529.0
+        ],
+        [
+          1087.0,
+          1570.0
+        ],
+        [
+          209.0,
+          1570.0
+        ]
+      ],
+      "text": "ghi rõ trong kết luận thanh tra, kiểm tra thì không phải thực hiện thông báo.",
+      "confidence": 0.964507970625
+    }
+  ]
+}

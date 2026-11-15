@@ -1,0 +1,883 @@
+{
+  "document_id": "126/2020/NĐ-CP",
+  "source_file": "../../legal-sources/1262020ndcp/01.pdf",
+  "source_sha256": "310648e80396d267610946458e7fdd71ba87ef538b009d6574ed21514de3f7ca",
+  "page_count": 119,
+  "render_dpi": 150,
+  "engine": "Tesseract 5.5.4 (vie+eng; OEM 1; PSM 3)",
+  "review_status": "UNREVIEWED",
+  "tesseract_version": "5.5.4",
+  "tsv_parser_version": 2,
+  "languages": [
+    "vie",
+    "eng"
+  ],
+  "traineddata_sha256": {
+    "vie": "b6b49293d95d0b6dbd8780174627e82c75be957b6f4ed9862155540d6b00bb45",
+    "eng": "8280aed0782fe27257a68ea10fe7ef324ca0f8d85bd2fd145d1c2b560bcb66ba"
+  },
+  "ocr_engine_mode": 1,
+  "page_segmentation_mode": 3,
+  "thread_limit": 1,
+  "page": 29,
+  "lines": [
+    {
+      "bbox": [
+        [
+          683.0,
+          66.0
+        ],
+        [
+          710.0,
+          66.0
+        ],
+        [
+          710.0,
+          87.0
+        ],
+        [
+          683.0,
+          87.0
+        ]
+      ],
+      "text": "29",
+      "confidence": 0.9530558
+    },
+    {
+      "bbox": [
+        [
+          211.0,
+          141.0
+        ],
+        [
+          1128.0,
+          141.0
+        ],
+        [
+          1128.0,
+          183.0
+        ],
+        [
+          211.0,
+          183.0
+        ]
+      ],
+      "text": "nghiệp giao thực hiện nhiệm vụ tiêu thụ than thực hiện khai thuế cho toàn bộ",
+      "confidence": 0.968918138125
+    },
+    {
+      "bbox": [
+        [
+          211.0,
+          177.0
+        ],
+        [
+          1127.0,
+          177.0
+        ],
+        [
+          1127.0,
+          216.0
+        ],
+        [
+          211.0,
+          216.0
+        ]
+      ],
+      "text": "số thuế bảo vệ môi trường phát sinh đối với than thu mua của các công ty khai",
+      "confidence": 0.9522351111111113
+    },
+    {
+      "bbox": [
+        [
+          210.0,
+          209.0
+        ],
+        [
+          1128.0,
+          209.0
+        ],
+        [
+          1128.0,
+          250.0
+        ],
+        [
+          210.0,
+          250.0
+        ]
+      ],
+      "text": "thác than va nộp: hồ sơ khai thuế đến cơ quan thuế quản lý trực tiếp kèm theo",
+      "confidence": 0.9448356483333333
+    },
+    {
+      "bbox": [
+        [
+          210.0,
+          244.0
+        ],
+        [
+          1128.0,
+          244.0
+        ],
+        [
+          1128.0,
+          278.0
+        ],
+        [
+          210.0,
+          278.0
+        ]
+      ],
+      "text": "Bảng xác định sô thuế phải nộp cho từng địa phương nơi có công ty khai thác",
+      "confidence": 0.9644048123529412
+    },
+    {
+      "bbox": [
+        [
+          210.0,
+          282.0
+        ],
+        [
+          909.0,
+          282.0
+        ],
+        [
+          909.0,
+          311.0
+        ],
+        [
+          210.0,
+          311.0
+        ]
+      ],
+      "text": "than đóng trụ sở theo quy định của Bộ trưởng Bộ Tài chính.",
+      "confidence": 0.9675782946153846
+    },
+    {
+      "bbox": [
+        [
+          270.0,
+          336.0
+        ],
+        [
+          1126.0,
+          336.0
+        ],
+        [
+          1126.0,
+          376.0
+        ],
+        [
+          270.0,
+          376.0
+        ]
+      ],
+      "text": "5. Địa điểm nộp hồ sơ khai thuế đối với các trường hợp quy định tại",
+      "confidence": 0.967281828125
+    },
+    {
+      "bbox": [
+        [
+          210.0,
+          369.0
+        ],
+        [
+          1126.0,
+          369.0
+        ],
+        [
+          1126.0,
+          403.0
+        ],
+        [
+          210.0,
+          403.0
+        ]
+      ],
+      "text": "điểm e khoản 1, điểm đ khoản 2, điểm q, r, s khoản 4 và khoản 5 Điều 8 Nghị",
+      "confidence": 0.9526866915000001
+    },
+    {
+      "bbox": [
+        [
+          210.0,
+          413.0
+        ],
+        [
+          317.0,
+          413.0
+        ],
+        [
+          317.0,
+          439.0
+        ],
+        [
+          210.0,
+          439.0
+        ]
+      ],
+      "text": "định này:",
+      "confidence": 0.9675992600000001
+    },
+    {
+      "bbox": [
+        [
+          268.0,
+          464.0
+        ],
+        [
+          1126.0,
+          464.0
+        ],
+        [
+          1126.0,
+          498.0
+        ],
+        [
+          268.0,
+          498.0
+        ]
+      ],
+      "text": "Người điều hành, doanh nghiệp liên doanh, công ty điều hành chung nộp",
+      "confidence": 0.9689400246153846
+    },
+    {
+      "bbox": [
+        [
+          210.0,
+          500.0
+        ],
+        [
+          1128.0,
+          500.0
+        ],
+        [
+          1128.0,
+          538.0
+        ],
+        [
+          210.0,
+          538.0
+        ]
+      ],
+      "text": "hồ sơ khai thuế và các khoản thu khác thuộc ngân sách nhà nước phát sinh",
+      "confidence": 0.96835843125
+    },
+    {
+      "bbox": [
+        [
+          209.0,
+          533.0
+        ],
+        [
+          1128.0,
+          533.0
+        ],
+        [
+          1128.0,
+          574.0
+        ],
+        [
+          209.0,
+          574.0
+        ]
+      ],
+      "text": "từ hoạt động tìm kiếm thăm dò, phát triển mỏ và khai thác dầu khí tại cơ quan",
+      "confidence": 0.9617937166666667
+    },
+    {
+      "bbox": [
+        [
+          210.0,
+          568.0
+        ],
+        [
+          643.0,
+          568.0
+        ],
+        [
+          643.0,
+          602.0
+        ],
+        [
+          210.0,
+          602.0
+        ]
+      ],
+      "text": "thuế quản lý trực tiếp người nộp thuế",
+      "confidence": 0.9658655724999999
+    },
+    {
+      "bbox": [
+        [
+          269.0,
+          624.0
+        ],
+        [
+          1128.0,
+          624.0
+        ],
+        [
+          1128.0,
+          665.0
+        ],
+        [
+          269.0,
+          665.0
+        ]
+      ],
+      "text": "Công ty mẹ - Tập đoàn Dầu khí Việt Nam nộp hồ sơ khai các khoản thu",
+      "confidence": 0.9632170652941175
+    },
+    {
+      "bbox": [
+        [
+          210.0,
+          661.0
+        ],
+        [
+          1129.0,
+          661.0
+        ],
+        [
+          1129.0,
+          699.0
+        ],
+        [
+          210.0,
+          699.0
+        ]
+      ],
+      "text": "thuộc ngân sách nhà nước phát sinh từ hoạt động dầu khí theo quy định của",
+      "confidence": 0.967684760625
+    },
+    {
+      "bbox": [
+        [
+          211.0,
+          693.0
+        ],
+        [
+          1127.0,
+          693.0
+        ],
+        [
+          1127.0,
+          737.0
+        ],
+        [
+          211.0,
+          737.0
+        ]
+      ],
+      "text": "Chính phủ tại quy chế quản lý tài chính của Công ty mẹ - Tập đoàn Dầu khí",
+      "confidence": 0.9568164861111111
+    },
+    {
+      "bbox": [
+        [
+          211.0,
+          727.0
+        ],
+        [
+          909.0,
+          727.0
+        ],
+        [
+          909.0,
+          761.0
+        ],
+        [
+          211.0,
+          761.0
+        ]
+      ],
+      "text": "Việt Nam tại cơ quan thuế quản lý trực tiếp người nộp thuế.",
+      "confidence": 0.9661019730769231
+    },
+    {
+      "bbox": [
+        [
+          270.0,
+          779.0
+        ],
+        [
+          1128.0,
+          779.0
+        ],
+        [
+          1128.0,
+          813.0
+        ],
+        [
+          270.0,
+          813.0
+        ]
+      ],
+      "text": "6. Địa điểm nộp hồ sơ khai thuế đối với người nộp thuế có phát sinh",
+      "confidence": 0.9681704375
+    },
+    {
+      "bbox": [
+        [
+          210.0,
+          813.0
+        ],
+        [
+          1128.0,
+          813.0
+        ],
+        [
+          1128.0,
+          852.0
+        ],
+        [
+          210.0,
+          852.0
+        ]
+      ],
+      "text": "nghĩa vụ thuế đối với các loại thuế khai và nộp theo từng lần phát sinh theo",
+      "confidence": 0.9663418176470588
+    },
+    {
+      "bbox": [
+        [
+          211.0,
+          846.0
+        ],
+        [
+          1129.0,
+          846.0
+        ],
+        [
+          1129.0,
+          887.0
+        ],
+        [
+          211.0,
+          887.0
+        ]
+      ],
+      "text": "quy định tại điểm b khoản 4 Điều 45 Luật Quản lý thuế tại cơ quan thuế quản",
+      "confidence": 0.9620863388888888
+    },
+    {
+      "bbox": [
+        [
+          211.0,
+          881.0
+        ],
+        [
+          672.0,
+          881.0
+        ],
+        [
+          672.0,
+          914.0
+        ],
+        [
+          211.0,
+          914.0
+        ]
+      ],
+      "text": "lý trực tiếp, trừ các trường hợp sau đây:",
+      "confidence": 0.9668271644444445
+    },
+    {
+      "bbox": [
+        [
+          269.0,
+          932.0
+        ],
+        [
+          1128.0,
+          932.0
+        ],
+        [
+          1128.0,
+          971.0
+        ],
+        [
+          269.0,
+          971.0
+        ]
+      ],
+      "text": "a) Hồ sơ khai thuế của các trường hợp quy định tại điểm a, d, e, k khoản 4",
+      "confidence": 0.9528751005263157
+    },
+    {
+      "bbox": [
+        [
+          210.0,
+          966.0
+        ],
+        [
+          1128.0,
+          966.0
+        ],
+        [
+          1128.0,
+          1009.0
+        ],
+        [
+          210.0,
+          1009.0
+        ]
+      ],
+      "text": "Điều 8 Nghị định này nộp tại cơ quan thuê trên địa bàn nơi phát sinh hoạt",
+      "confidence": 0.9584238117647059
+    },
+    {
+      "bbox": [
+        [
+          210.0,
+          998.0
+        ],
+        [
+          1128.0,
+          998.0
+        ],
+        [
+          1128.0,
+          1033.0
+        ],
+        [
+          210.0,
+          1033.0
+        ]
+      ],
+      "text": "động kinh doanh hoặc nơi phát sinh nghĩa vụ thuế khác với địa bàn cấp tỉnh",
+      "confidence": 0.9679589175
+    },
+    {
+      "bbox": [
+        [
+          210.0,
+          1033.0
+        ],
+        [
+          650.0,
+          1033.0
+        ],
+        [
+          650.0,
+          1066.0
+        ],
+        [
+          210.0,
+          1066.0
+        ]
+      ],
+      "text": "nơi người nộp thuế đóng trụ sở chính.",
+      "confidence": 0.9691235349999999
+    },
+    {
+      "bbox": [
+        [
+          238.0,
+          1084.0
+        ],
+        [
+          1127.0,
+          1084.0
+        ],
+        [
+          1127.0,
+          1123.0
+        ],
+        [
+          238.0,
+          1123.0
+        ]
+      ],
+      "text": "_._b) Hồ sơ khai thuế đối với hàng hóa xuất khẩu, nhập khẩu quy định tại",
+      "confidence": 0.922687249375
+    },
+    {
+      "bbox": [
+        [
+          211.0,
+          1122.0
+        ],
+        [
+          1129.0,
+          1122.0
+        ],
+        [
+          1129.0,
+          1150.0
+        ],
+        [
+          211.0,
+          1150.0
+        ]
+      ],
+      "text": "điểm c khoản 4 Điều 8 Nghị định này nộp tại cơ quan hải quan nơi đăng ký tờ",
+      "confidence": 0.9606506678947369
+    },
+    {
+      "bbox": [
+        [
+          210.0,
+          1157.0
+        ],
+        [
+          373.0,
+          1157.0
+        ],
+        [
+          373.0,
+          1184.0
+        ],
+        [
+          210.0,
+          1184.0
+        ]
+      ],
+      "text": "khai hải quan.",
+      "confidence": 0.9695792166666667
+    },
+    {
+      "bbox": [
+        [
+          270.0,
+          1198.0
+        ],
+        [
+          1128.0,
+          1198.0
+        ],
+        [
+          1128.0,
+          1244.0
+        ],
+        [
+          270.0,
+          1244.0
+        ]
+      ],
+      "text": "Trường hợp hàng hóa xuất khẩu, nhập khẩu phải kê khai tờ khai hải quan",
+      "confidence": 0.9600822766666667
+    },
+    {
+      "bbox": [
+        [
+          211.0,
+          1234.0
+        ],
+        [
+          1129.0,
+          1234.0
+        ],
+        [
+          1129.0,
+          1274.0
+        ],
+        [
+          211.0,
+          1274.0
+        ]
+      ],
+      "text": "mới thuộc các trường hợp phải nộp thuế ở khâu xuất khẩu, nhập khẩu trên tờ",
+      "confidence": 0.96482936
+    },
+    {
+      "bbox": [
+        [
+          211.0,
+          1269.0
+        ],
+        [
+          1129.0,
+          1269.0
+        ],
+        [
+          1129.0,
+          1302.0
+        ],
+        [
+          211.0,
+          1302.0
+        ]
+      ],
+      "text": "khai hải quan mới thì hồ sơ khai thuế nộp tại cơ quan hải quan nơi đăng ký tờ",
+      "confidence": 0.969062207368421
+    },
+    {
+      "bbox": [
+        [
+          211.0,
+          1303.0
+        ],
+        [
+          616.0,
+          1303.0
+        ],
+        [
+          616.0,
+          1340.0
+        ],
+        [
+          211.0,
+          1340.0
+        ]
+      ],
+      "text": "khai xuất khẩu, nhập khẩu lần đầu.",
+      "confidence": 0.9674293842857142
+    },
+    {
+      "bbox": [
+        [
+          270.0,
+          1355.0
+        ],
+        [
+          1128.0,
+          1355.0
+        ],
+        [
+          1128.0,
+          1396.0
+        ],
+        [
+          270.0,
+          1396.0
+        ]
+      ],
+      "text": "c) Hồ sơ khai thuế thu nhập doanh nghiệp đối với hoạt động chuyển",
+      "confidence": 0.9486196785714286
+    },
+    {
+      "bbox": [
+        [
+          211.0,
+          1389.0
+        ],
+        [
+          1128.0,
+          1389.0
+        ],
+        [
+          1128.0,
+          1429.0
+        ],
+        [
+          211.0,
+          1429.0
+        ]
+      ],
+      "text": "nhượng vốn của nhà thầu nước ngoài tại cơ quan thuế quản lý trực tiếp doanh",
+      "confidence": 0.964564394375
+    },
+    {
+      "bbox": [
+        [
+          211.0,
+          1423.0
+        ],
+        [
+          1128.0,
+          1423.0
+        ],
+        [
+          1128.0,
+          1463.0
+        ],
+        [
+          211.0,
+          1463.0
+        ]
+      ],
+      "text": "nghiệp nơi nhà thầu nước ngoài đầu tư vốn (bao gồm cả trường hợp tô chức,",
+      "confidence": 0.9674903906250001
+    },
+    {
+      "bbox": [
+        [
+          211.0,
+          1457.0
+        ],
+        [
+          1130.0,
+          1457.0
+        ],
+        [
+          1130.0,
+          1498.0
+        ],
+        [
+          211.0,
+          1498.0
+        ]
+      ],
+      "text": "cá nhân nhận chuyển nhượng vốn khai thay cho nhà thầu nước ngoài và",
+      "confidence": 0.9689971707142857
+    },
+    {
+      "bbox": [
+        [
+          211.0,
+          1491.0
+        ],
+        [
+          1129.0,
+          1491.0
+        ],
+        [
+          1129.0,
+          1531.0
+        ],
+        [
+          211.0,
+          1531.0
+        ]
+      ],
+      "text": "trường hợp tổ chức thành lập theo pháp luật Việt Nam nơi nhà thầu nước",
+      "confidence": 0.9671640173333335
+    },
+    {
+      "bbox": [
+        [
+          212.0,
+          1524.0
+        ],
+        [
+          1129.0,
+          1524.0
+        ],
+        [
+          1129.0,
+          1559.0
+        ],
+        [
+          212.0,
+          1559.0
+        ]
+      ],
+      "text": "ngoài đầu tư vốn khai thay nếu tổ chức, cá nhân nhận chuyển nhượng vốn",
+      "confidence": 0.9666459826666666
+    },
+    {
+      "bbox": [
+        [
+          212.0,
+          1560.0
+        ],
+        [
+          557.0,
+          1560.0
+        ],
+        [
+          557.0,
+          1593.0
+        ],
+        [
+          212.0,
+          1593.0
+        ]
+      ],
+      "text": "cũng là nhà thầu nước ngoài).",
+      "confidence": 0.9678238399999999
+    }
+  ]
+}

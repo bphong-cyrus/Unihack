@@ -1,0 +1,839 @@
+{
+  "document_id": "126/2020/NĐ-CP",
+  "source_file": "../../legal-sources/1262020ndcp/01.pdf",
+  "source_sha256": "310648e80396d267610946458e7fdd71ba87ef538b009d6574ed21514de3f7ca",
+  "page_count": 119,
+  "render_dpi": 150,
+  "engine": "Tesseract 5.5.4 (vie+eng; OEM 1; PSM 3)",
+  "review_status": "UNREVIEWED",
+  "tesseract_version": "5.5.4",
+  "tsv_parser_version": 2,
+  "languages": [
+    "vie",
+    "eng"
+  ],
+  "traineddata_sha256": {
+    "vie": "b6b49293d95d0b6dbd8780174627e82c75be957b6f4ed9862155540d6b00bb45",
+    "eng": "8280aed0782fe27257a68ea10fe7ef324ca0f8d85bd2fd145d1c2b560bcb66ba"
+  },
+  "ocr_engine_mode": 1,
+  "page_segmentation_mode": 3,
+  "thread_limit": 1,
+  "page": 70,
+  "lines": [
+    {
+      "bbox": [
+        [
+          689.0,
+          59.0
+        ],
+        [
+          715.0,
+          59.0
+        ],
+        [
+          715.0,
+          79.0
+        ],
+        [
+          689.0,
+          79.0
+        ]
+      ],
+      "text": "70",
+      "confidence": 0.96736687
+    },
+    {
+      "bbox": [
+        [
+          274.0,
+          135.0
+        ],
+        [
+          1131.0,
+          135.0
+        ],
+        [
+          1131.0,
+          175.0
+        ],
+        [
+          274.0,
+          175.0
+        ]
+      ],
+      "text": "2. Các cơ quan quản lý nhà nước, tổ chức, cá nhân phải chịu trách nhiệm",
+      "confidence": 0.9641850425
+    },
+    {
+      "bbox": [
+        [
+          215.0,
+          167.0
+        ],
+        [
+          1132.0,
+          167.0
+        ],
+        [
+          1132.0,
+          209.0
+        ],
+        [
+          215.0,
+          209.0
+        ]
+      ],
+      "text": "về việc không cung cap thông tin đúng thời hạn hoặc cung cấp thông tin",
+      "confidence": 0.9651745713333334
+    },
+    {
+      "bbox": [
+        [
+          215.0,
+          200.0
+        ],
+        [
+          1133.0,
+          200.0
+        ],
+        [
+          1133.0,
+          242.0
+        ],
+        [
+          215.0,
+          242.0
+        ]
+      ],
+      "text": "không đầy đủ khi cơ quan quản lý thuế có yêu cầu làm ảnh hưởng đến việc",
+      "confidence": 0.9572771141176472
+    },
+    {
+      "bbox": [
+        [
+          215.0,
+          233.0
+        ],
+        [
+          1133.0,
+          233.0
+        ],
+        [
+          1133.0,
+          269.0
+        ],
+        [
+          215.0,
+          269.0
+        ]
+      ],
+      "text": "xác định nghĩa vụ thuê hoặc thời gian giải quyết hoàn thuế, miễn, giảm thuế",
+      "confidence": 0.9633685553333333
+    },
+    {
+      "bbox": [
+        [
+          216.0,
+          268.0
+        ],
+        [
+          1132.0,
+          268.0
+        ],
+        [
+          1132.0,
+          309.0
+        ],
+        [
+          216.0,
+          309.0
+        ]
+      ],
+      "text": "của người nộp thuế trong trường hợp phát sinh việc bồi thường cho người",
+      "confidence": 0.9682568635714286
+    },
+    {
+      "bbox": [
+        [
+          215.0,
+          301.0
+        ],
+        [
+          1134.0,
+          301.0
+        ],
+        [
+          1134.0,
+          337.0
+        ],
+        [
+          215.0,
+          337.0
+        ]
+      ],
+      "text": "nộp thuế theo quy định tại khoản 2 Điều 61 và khoản 3 Điều 75 Luật Quản",
+      "confidence": 0.9665270505882353
+    },
+    {
+      "bbox": [
+        [
+          216.0,
+          337.0
+        ],
+        [
+          302.0,
+          337.0
+        ],
+        [
+          302.0,
+          370.0
+        ],
+        [
+          216.0,
+          370.0
+        ]
+      ],
+      "text": "lý thuế.",
+      "confidence": 0.930536805
+    },
+    {
+      "bbox": [
+        [
+          276.0,
+          385.0
+        ],
+        [
+          830.0,
+          385.0
+        ],
+        [
+          830.0,
+          419.0
+        ],
+        [
+          276.0,
+          419.0
+        ]
+      ],
+      "text": "Điều 29. Công khai thông tin người nộp thuế",
+      "confidence": 0.9677113433333333
+    },
+    {
+      "bbox": [
+        [
+          279.0,
+          434.0
+        ],
+        [
+          1133.0,
+          434.0
+        ],
+        [
+          1133.0,
+          469.0
+        ],
+        [
+          279.0,
+          469.0
+        ]
+      ],
+      "text": "1. Cơ quan quản lý thuế công khai thông tin về người nộp thuế trong các",
+      "confidence": 0.965331163125
+    },
+    {
+      "bbox": [
+        [
+          216.0,
+          476.0
+        ],
+        [
+          400.0,
+          476.0
+        ],
+        [
+          400.0,
+          503.0
+        ],
+        [
+          216.0,
+          503.0
+        ]
+      ],
+      "text": "trường hợp sau:",
+      "confidence": 0.9683663666666666
+    },
+    {
+      "bbox": [
+        [
+          276.0,
+          517.0
+        ],
+        [
+          1134.0,
+          517.0
+        ],
+        [
+          1134.0,
+          562.0
+        ],
+        [
+          276.0,
+          562.0
+        ]
+      ],
+      "text": "a) Trốn thuế, tiếp tay cho hành vi trốn thuế, chiếm đoạt tiền thuế, vi",
+      "confidence": 0.9311982573333333
+    },
+    {
+      "bbox": [
+        [
+          216.0,
+          557.0
+        ],
+        [
+          1135.0,
+          557.0
+        ],
+        [
+          1135.0,
+          592.0
+        ],
+        [
+          216.0,
+          592.0
+        ]
+      ],
+      "text": "phạm pháp luật về thuê roi bỏ tron khỏi trụ sở kinh doanh; phát hành, sử dung",
+      "confidence": 0.957545664117647
+    },
+    {
+      "bbox": [
+        [
+          216.0,
+          592.0
+        ],
+        [
+          476.0,
+          592.0
+        ],
+        [
+          476.0,
+          620.0
+        ],
+        [
+          216.0,
+          620.0
+        ]
+      ],
+      "text": "bất hợp pháp hóa đơn.",
+      "confidence": 0.954286484
+    },
+    {
+      "bbox": [
+        [
+          276.0,
+          634.0
+        ],
+        [
+          1135.0,
+          634.0
+        ],
+        [
+          1135.0,
+          674.0
+        ],
+        [
+          276.0,
+          674.0
+        ]
+      ],
+      "text": "b) Không nộp hồ sơ khai thuế sau 90 ngày, kể từ ngày hết thời hạn nộp",
+      "confidence": 0.9627542623529411
+    },
+    {
+      "bbox": [
+        [
+          216.0,
+          668.0
+        ],
+        [
+          911.0,
+          668.0
+        ],
+        [
+          911.0,
+          702.0
+        ],
+        [
+          216.0,
+          702.0
+        ]
+      ],
+      "text": "hồ sơ khai thuế theo quy định của pháp luật thuế hiện hành.",
+      "confidence": 0.9654050376923077
+    },
+    {
+      "bbox": [
+        [
+          260.0,
+          717.0
+        ],
+        [
+          1135.0,
+          717.0
+        ],
+        [
+          1135.0,
+          758.0
+        ],
+        [
+          260.0,
+          758.0
+        ]
+      ],
+      "text": "i c) Ngừng hoạt động, chưa hoàn thành thủ tục chấm dứt hiệu lực mã số",
+      "confidence": 0.88982288
+    },
+    {
+      "bbox": [
+        [
+          216.0,
+          757.0
+        ],
+        [
+          741.0,
+          757.0
+        ],
+        [
+          741.0,
+          785.0
+        ],
+        [
+          216.0,
+          785.0
+        ]
+      ],
+      "text": "thuê, không hoạt động tại địa chỉ đã đăng ký.",
+      "confidence": 0.968647239
+    },
+    {
+      "bbox": [
+        [
+          277.0,
+          800.0
+        ],
+        [
+          1136.0,
+          800.0
+        ],
+        [
+          1136.0,
+          841.0
+        ],
+        [
+          277.0,
+          841.0
+        ]
+      ],
+      "text": "d) Các hành vi vi phạm pháp luật về thuế của người nộp thuế làm ảnh",
+      "confidence": 0.96378856125
+    },
+    {
+      "bbox": [
+        [
+          217.0,
+          835.0
+        ],
+        [
+          977.0,
+          835.0
+        ],
+        [
+          977.0,
+          868.0
+        ],
+        [
+          217.0,
+          868.0
+        ]
+      ],
+      "text": "hướng đến quyền lợi và nghĩa vụ thuế của tổ chức, cá nhân khác.",
+      "confidence": 0.9630443942857143
+    },
+    {
+      "bbox": [
+        [
+          277.0,
+          884.0
+        ],
+        [
+          1136.0,
+          884.0
+        ],
+        [
+          1136.0,
+          923.0
+        ],
+        [
+          277.0,
+          923.0
+        ]
+      ],
+      "text": "đ) Không thực hiện các yêu cầu của cơ quan quản lý thuế theo quy định",
+      "confidence": 0.9641374731250001
+    },
+    {
+      "bbox": [
+        [
+          218.0,
+          914.0
+        ],
+        [
+          1137.0,
+          914.0
+        ],
+        [
+          1137.0,
+          962.0
+        ],
+        [
+          218.0,
+          962.0
+        ]
+      ],
+      "text": "của pháp luật như: Từ chối không \"cung cấp thông tin tài liệu cho cơ quan",
+      "confidence": 0.929874851875
+    },
+    {
+      "bbox": [
+        [
+          218.0,
+          951.0
+        ],
+        [
+          1136.0,
+          951.0
+        ],
+        [
+          1136.0,
+          984.0
+        ],
+        [
+          218.0,
+          984.0
+        ]
+      ],
+      "text": "quản lý thuế, không chấp hành quyết định kiểm tra, thanh tra và các yêu cầu",
+      "confidence": 0.968426785625
+    },
+    {
+      "bbox": [
+        [
+          217.0,
+          985.0
+        ],
+        [
+          910.0,
+          985.0
+        ],
+        [
+          910.0,
+          1017.0
+        ],
+        [
+          217.0,
+          1017.0
+        ]
+      ],
+      "text": "khác của cơ quan quản lý thuế theo quy định của pháp luật.",
+      "confidence": 0.9686041138461539
+    },
+    {
+      "bbox": [
+        [
+          278.0,
+          1034.0
+        ],
+        [
+          1098.0,
+          1034.0
+        ],
+        [
+          1098.0,
+          1067.0
+        ],
+        [
+          278.0,
+          1067.0
+        ]
+      ],
+      "text": "e) Chống, ngăn cản công chức thuế, công chức hải quan thi hành công vụ.",
+      "confidence": 0.9609805033333333
+    },
+    {
+      "bbox": [
+        [
+          278.0,
+          1083.0
+        ],
+        [
+          1136.0,
+          1083.0
+        ],
+        [
+          1136.0,
+          1117.0
+        ],
+        [
+          278.0,
+          1117.0
+        ]
+      ],
+      "text": "g) Quá 90 ngày kể từ ngày hết thời hạn nộp thuế và các khoản thu khác",
+      "confidence": 0.9637768594117646
+    },
+    {
+      "bbox": [
+        [
+          217.0,
+          1117.0
+        ],
+        [
+          1137.0,
+          1117.0
+        ],
+        [
+          1137.0,
+          1156.0
+        ],
+        [
+          217.0,
+          1156.0
+        ]
+      ],
+      "text": "thuộc ngân sách nhà nước hoặc hết thời hạn chấp hành các quyết định hành",
+      "confidence": 0.9675541186666666
+    },
+    {
+      "bbox": [
+        [
+          218.0,
+          1151.0
+        ],
+        [
+          1137.0,
+          1151.0
+        ],
+        [
+          1137.0,
+          1184.0
+        ],
+        [
+          218.0,
+          1184.0
+        ]
+      ],
+      "text": "chính về quản lý thuế mà người nộp thuế hoặc người bảo lãnh không tự",
+      "confidence": 0.9690631213333333
+    },
+    {
+      "bbox": [
+        [
+          218.0,
+          1185.0
+        ],
+        [
+          438.0,
+          1185.0
+        ],
+        [
+          438.0,
+          1217.0
+        ],
+        [
+          218.0,
+          1217.0
+        ]
+      ],
+      "text": "nguyện chấp hành.",
+      "confidence": 0.9636525466666668
+    },
+    {
+      "bbox": [
+        [
+          277.0,
+          1234.0
+        ],
+        [
+          1137.0,
+          1234.0
+        ],
+        [
+          1137.0,
+          1273.0
+        ],
+        [
+          277.0,
+          1273.0
+        ]
+      ],
+      "text": "h) Cá nhân, tổ chức không chấp hành các quyết định hành chính về quản",
+      "confidence": 0.9660070186666667
+    },
+    {
+      "bbox": [
+        [
+          219.0,
+          1267.0
+        ],
+        [
+          757.0,
+          1267.0
+        ],
+        [
+          757.0,
+          1300.0
+        ],
+        [
+          219.0,
+          1300.0
+        ]
+      ],
+      "text": "lý thuế mà có hành vi phát tán tài sản, bỏ trốn.",
+      "confidence": 0.9490016991666665
+    },
+    {
+      "bbox": [
+        [
+          279.0,
+          1323.0
+        ],
+        [
+          1049.0,
+          1323.0
+        ],
+        [
+          1049.0,
+          1351.0
+        ],
+        [
+          279.0,
+          1351.0
+        ]
+      ],
+      "text": "1) Các thông tin khác được công khai theo quy định của pháp luật.",
+      "confidence": 0.9691331371428571
+    },
+    {
+      "bbox": [
+        [
+          280.0,
+          1374.0
+        ],
+        [
+          690.0,
+          1374.0
+        ],
+        [
+          690.0,
+          1400.0
+        ],
+        [
+          280.0,
+          1400.0
+        ]
+      ],
+      "text": "2. Nội dung và hình thức công khai",
+      "confidence": 0.96849599
+    },
+    {
+      "bbox": [
+        [
+          281.0,
+          1423.0
+        ],
+        [
+          539.0,
+          1423.0
+        ],
+        [
+          539.0,
+          1450.0
+        ],
+        [
+          281.0,
+          1450.0
+        ]
+      ],
+      "text": "a) Nội dung công khai",
+      "confidence": 0.96128546
+    },
+    {
+      "bbox": [
+        [
+          280.0,
+          1468.0
+        ],
+        [
+          1135.0,
+          1468.0
+        ],
+        [
+          1135.0,
+          1506.0
+        ],
+        [
+          280.0,
+          1506.0
+        ]
+      ],
+      "text": "Thông tin công khai bao gồm: Mã số thuế, tên người nộp thuế, địa chỉ, lý",
+      "confidence": 0.9514935918749999
+    },
+    {
+      "bbox": [
+        [
+          222.0,
+          1501.0
+        ],
+        [
+          1136.0,
+          1501.0
+        ],
+        [
+          1136.0,
+          1543.0
+        ],
+        [
+          222.0,
+          1543.0
+        ]
+      ],
+      "text": "do công khai. Tùy theo từng trường hợp cụ thể cơ quan quản lý thuê có thể",
+      "confidence": 0.9568385176470587
+    },
+    {
+      "bbox": [
+        [
+          222.0,
+          1540.0
+        ],
+        [
+          1038.0,
+          1540.0
+        ],
+        [
+          1038.0,
+          1568.0
+        ],
+        [
+          222.0,
+          1568.0
+        ]
+      ],
+      "text": "công khai chi tiệt thêm một sô thông tin liên quan của người nộp thuê.",
+      "confidence": 0.9471259553333333
+    }
+  ]
+}

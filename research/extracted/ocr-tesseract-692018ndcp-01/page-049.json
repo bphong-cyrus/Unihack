@@ -1,0 +1,861 @@
+{
+  "document_id": "69/2018/NĐ-CP",
+  "source_file": "../../legal-sources/692018ndcp/01.pdf",
+  "source_sha256": "cfe9d66c02837d203a0781cb916273fa6c3c6151b52fc6becc6d1c006d96681e",
+  "page_count": 89,
+  "render_dpi": 150,
+  "engine": "Tesseract 5.5.4 (vie+eng; OEM 1; PSM 3)",
+  "review_status": "UNREVIEWED",
+  "tesseract_version": "5.5.4",
+  "tsv_parser_version": 2,
+  "languages": [
+    "vie",
+    "eng"
+  ],
+  "traineddata_sha256": {
+    "vie": "b6b49293d95d0b6dbd8780174627e82c75be957b6f4ed9862155540d6b00bb45",
+    "eng": "8280aed0782fe27257a68ea10fe7ef324ca0f8d85bd2fd145d1c2b560bcb66ba"
+  },
+  "ocr_engine_mode": 1,
+  "page_segmentation_mode": 3,
+  "thread_limit": 1,
+  "page": 49,
+  "lines": [
+    {
+      "bbox": [
+        [
+          659.0,
+          132.0
+        ],
+        [
+          680.0,
+          132.0
+        ],
+        [
+          680.0,
+          149.0
+        ],
+        [
+          659.0,
+          149.0
+        ]
+      ],
+      "text": "49",
+      "confidence": 0.96973549
+    },
+    {
+      "bbox": [
+        [
+          319.0,
+          190.0
+        ],
+        [
+          1075.0,
+          190.0
+        ],
+        [
+          1075.0,
+          223.0
+        ],
+        [
+          319.0,
+          223.0
+        ]
+      ],
+      "text": "c) Có khả năng phát sinh vụ việc tranh chấp liên quan đến áp dụng biện",
+      "confidence": 0.95632676625
+    },
+    {
+      "bbox": [
+        [
+          266.0,
+          228.0
+        ],
+        [
+          548.0,
+          228.0
+        ],
+        [
+          548.0,
+          253.0
+        ],
+        [
+          266.0,
+          253.0
+        ]
+      ],
+      "text": "pháp quản lý ngoại thương.",
+      "confidence": 0.968364348
+    },
+    {
+      "bbox": [
+        [
+          319.0,
+          266.0
+        ],
+        [
+          1075.0,
+          266.0
+        ],
+        [
+          1075.0,
+          301.0
+        ],
+        [
+          319.0,
+          301.0
+        ]
+      ],
+      "text": "2. Trong thời hạn 3 ngày làm việc kể từ ngày nhận được thông báo bằng",
+      "confidence": 0.96251800125
+    },
+    {
+      "bbox": [
+        [
+          266.0,
+          296.0
+        ],
+        [
+          1075.0,
+          296.0
+        ],
+        [
+          1075.0,
+          334.0
+        ],
+        [
+          266.0,
+          334.0
+        ]
+      ],
+      "text": "văn bản theo quy định tại khoản 1 Điều này hoặc thông báo bằng văn bản từ",
+      "confidence": 0.9680715676470588
+    },
+    {
+      "bbox": [
+        [
+          266.0,
+          324.0
+        ],
+        [
+          1075.0,
+          324.0
+        ],
+        [
+          1075.0,
+          358.0
+        ],
+        [
+          266.0,
+          358.0
+        ]
+      ],
+      "text": "nguồn khác, Cơ quan đầu mối phải gửi văn bản kèm theo bản sao toàn bộ hồ",
+      "confidence": 0.9662131276470588
+    },
+    {
+      "bbox": [
+        [
+          267.0,
+          357.0
+        ],
+        [
+          730.0,
+          357.0
+        ],
+        [
+          730.0,
+          385.0
+        ],
+        [
+          267.0,
+          385.0
+        ]
+      ],
+      "text": "sơ nhận được đến một trong các cơ quan sau:",
+      "confidence": 0.9689691769999998
+    },
+    {
+      "bbox": [
+        [
+          319.0,
+          401.0
+        ],
+        [
+          1022.0,
+          401.0
+        ],
+        [
+          1022.0,
+          433.0
+        ],
+        [
+          319.0,
+          433.0
+        ]
+      ],
+      "text": "a) Cơ quan chủ trì theo quy định tại khoản 1 Điều 59 Nghị định này.",
+      "confidence": 0.966414104375
+    },
+    {
+      "bbox": [
+        [
+          319.0,
+          447.0
+        ],
+        [
+          1076.0,
+          447.0
+        ],
+        [
+          1076.0,
+          481.0
+        ],
+        [
+          319.0,
+          481.0
+        ]
+      ],
+      "text": "b) Văn phòng Chính phủ để trình Thủ tướng Chính phủ quyết định Cơ quan",
+      "confidence": 0.9561228646666667
+    },
+    {
+      "bbox": [
+        [
+          267.0,
+          477.0
+        ],
+        [
+          1014.0,
+          477.0
+        ],
+        [
+          1014.0,
+          509.0
+        ],
+        [
+          267.0,
+          509.0
+        ]
+      ],
+      "text": "chủ trì theo quy định tại khoản 2, khoản 3, khoản 4 Điều 59 Nghị định này.",
+      "confidence": 0.9672414847058823
+    },
+    {
+      "bbox": [
+        [
+          319.0,
+          525.0
+        ],
+        [
+          1076.0,
+          525.0
+        ],
+        [
+          1076.0,
+          565.0
+        ],
+        [
+          319.0,
+          565.0
+        ]
+      ],
+      "text": "3. \"Trong thời hạn 5 ngày làm việc kể từ ngày nhận được văn bản của Cơ",
+      "confidence": 0.9497481770588236
+    },
+    {
+      "bbox": [
+        [
+          268.0,
+          553.0
+        ],
+        [
+          1075.0,
+          553.0
+        ],
+        [
+          1075.0,
+          587.0
+        ],
+        [
+          268.0,
+          587.0
+        ]
+      ],
+      "text": "quan đầu môi theo quy định tại điểm b khoản 2 Điều này, Văn phòng Chính",
+      "confidence": 0.96207450375
+    },
+    {
+      "bbox": [
+        [
+          267.0,
+          582.0
+        ],
+        [
+          992.0,
+          582.0
+        ],
+        [
+          992.0,
+          614.0
+        ],
+        [
+          267.0,
+          614.0
+        ]
+      ],
+      "text": "phủ trình Thủ tướng Chính phủ quyết định phân công Cơ quan chủ trì.",
+      "confidence": 0.9667681564285715
+    },
+    {
+      "bbox": [
+        [
+          319.0,
+          627.0
+        ],
+        [
+          1076.0,
+          627.0
+        ],
+        [
+          1076.0,
+          660.0
+        ],
+        [
+          319.0,
+          660.0
+        ]
+      ],
+      "text": "Trong thời hạn 3 ngày làm việc sau khi Thủ tướng Chính phủ quyết định",
+      "confidence": 0.9670011386666667
+    },
+    {
+      "bbox": [
+        [
+          267.0,
+          655.0
+        ],
+        [
+          1076.0,
+          655.0
+        ],
+        [
+          1076.0,
+          690.0
+        ],
+        [
+          267.0,
+          690.0
+        ]
+      ],
+      "text": "phân công Cơ quan chủ trì, Văn phòng Chính phủ gửi thông báo về quyết",
+      "confidence": 0.9603329966666666
+    },
+    {
+      "bbox": [
+        [
+          268.0,
+          687.0
+        ],
+        [
+          943.0,
+          687.0
+        ],
+        [
+          943.0,
+          717.0
+        ],
+        [
+          268.0,
+          717.0
+        ]
+      ],
+      "text": "định phân công Cơ quan chủ trì đến Cơ quan chủ trì dé thực hiện.",
+      "confidence": 0.9650137986666667
+    },
+    {
+      "bbox": [
+        [
+          320.0,
+          734.0
+        ],
+        [
+          1076.0,
+          734.0
+        ],
+        [
+          1076.0,
+          773.0
+        ],
+        [
+          320.0,
+          773.0
+        ]
+      ],
+      "text": "4. Cơ quan nhà nước, tổ chức, cá nhân được giao nhiệm vụ thực hiện",
+      "confidence": 0.9686165566666667
+    },
+    {
+      "bbox": [
+        [
+          268.0,
+          759.0
+        ],
+        [
+          1076.0,
+          759.0
+        ],
+        [
+          1076.0,
+          801.0
+        ],
+        [
+          268.0,
+          801.0
+        ]
+      ],
+      "text": "biện pháp quản lý nhà nước về ngoại thương trong quá trình tham vấn với",
+      "confidence": 0.9668696793333333
+    },
+    {
+      "bbox": [
+        [
+          268.0,
+          789.0
+        ],
+        [
+          1076.0,
+          789.0
+        ],
+        [
+          1076.0,
+          828.0
+        ],
+        [
+          268.0,
+          828.0
+        ]
+      ],
+      "text": "Chính phủ nước ngoài phải thường xuyên thông báo tình hình kết quả tham",
+      "confidence": 0.9681992078571429
+    },
+    {
+      "bbox": [
+        [
+          268.0,
+          817.0
+        ],
+        [
+          1076.0,
+          817.0
+        ],
+        [
+          1076.0,
+          858.0
+        ],
+        [
+          268.0,
+          858.0
+        ]
+      ],
+      "text": "vấn cho Cơ quan đầu môi, các cơ quan nhà nước có thẩm quyền để phối hợp",
+      "confidence": 0.9559814347058824
+    },
+    {
+      "bbox": [
+        [
+          268.0,
+          849.0
+        ],
+        [
+          607.0,
+          849.0
+        ],
+        [
+          607.0,
+          878.0
+        ],
+        [
+          268.0,
+          878.0
+        ]
+      ],
+      "text": "theo tiền trình giải quyết vụ việc.",
+      "confidence": 0.9627216242857142
+    },
+    {
+      "bbox": [
+        [
+          321.0,
+          893.0
+        ],
+        [
+          1077.0,
+          893.0
+        ],
+        [
+          1077.0,
+          929.0
+        ],
+        [
+          321.0,
+          929.0
+        ]
+      ],
+      "text": "5. Trong quá trình tham vấn với Chính phủ nước ngoài, nếu phù hợp, cơ",
+      "confidence": 0.9652493433333333
+    },
+    {
+      "bbox": [
+        [
+          268.0,
+          925.0
+        ],
+        [
+          1076.0,
+          925.0
+        ],
+        [
+          1076.0,
+          959.0
+        ],
+        [
+          268.0,
+          959.0
+        ]
+      ],
+      "text": "quan nhà nước, tổ chức, cá nhân được giao nhiệm vụ thực hiện biện pháp",
+      "confidence": 0.9651807153333334
+    },
+    {
+      "bbox": [
+        [
+          268.0,
+          953.0
+        ],
+        [
+          1076.0,
+          953.0
+        ],
+        [
+          1076.0,
+          989.0
+        ],
+        [
+          268.0,
+          989.0
+        ]
+      ],
+      "text": "quản lý nhà nước về ngoại thương tiền hành việc thương lượng, hòa giải với",
+      "confidence": 0.9228962266666667
+    },
+    {
+      "bbox": [
+        [
+          268.0,
+          979.0
+        ],
+        [
+          1076.0,
+          979.0
+        ],
+        [
+          1076.0,
+          1015.0
+        ],
+        [
+          268.0,
+          1015.0
+        ]
+      ],
+      "text": "Chính phủ nước ngoài theo phương án đã được cơ quan cấp trên trực tiếp phê",
+      "confidence": 0.9684369137500001
+    },
+    {
+      "bbox": [
+        [
+          269.0,
+          1009.0
+        ],
+        [
+          743.0,
+          1009.0
+        ],
+        [
+          743.0,
+          1041.0
+        ],
+        [
+          269.0,
+          1041.0
+        ]
+      ],
+      "text": "duyệt sau khi có ý kiến của Cơ quan đầu mối.",
+      "confidence": 0.9678593245454546
+    },
+    {
+      "bbox": [
+        [
+          321.0,
+          1054.0
+        ],
+        [
+          1076.0,
+          1054.0
+        ],
+        [
+          1076.0,
+          1086.0
+        ],
+        [
+          321.0,
+          1086.0
+        ]
+      ],
+      "text": "Điều 69. Xây dựng, thực hiện kế hoạch giải quyết vụ việc tranh chấp",
+      "confidence": 0.9693664942857143
+    },
+    {
+      "bbox": [
+        [
+          269.0,
+          1088.0
+        ],
+        [
+          745.0,
+          1088.0
+        ],
+        [
+          745.0,
+          1117.0
+        ],
+        [
+          269.0,
+          1117.0
+        ]
+      ],
+      "text": "về áp dụng biện pháp quần lý ngoại thương",
+      "confidence": 0.96364769
+    },
+    {
+      "bbox": [
+        [
+          323.0,
+          1130.0
+        ],
+        [
+          1077.0,
+          1130.0
+        ],
+        [
+          1077.0,
+          1169.0
+        ],
+        [
+          323.0,
+          1169.0
+        ]
+      ],
+      "text": "1. Cơ quan đầu mối chủ trì, phối hợp với Cơ quan chủ trì, cơ quan, tổ",
+      "confidence": 0.9616538523529412
+    },
+    {
+      "bbox": [
+        [
+          269.0,
+          1160.0
+        ],
+        [
+          1077.0,
+          1160.0
+        ],
+        [
+          1077.0,
+          1197.0
+        ],
+        [
+          269.0,
+          1197.0
+        ]
+      ],
+      "text": "chức, cá nhân liên quan, luật sư (nếu có) xây dựng Kế hoạch giải quyết tranh",
+      "confidence": 0.9674806793749999
+    },
+    {
+      "bbox": [
+        [
+          269.0,
+          1191.0
+        ],
+        [
+          1077.0,
+          1191.0
+        ],
+        [
+          1077.0,
+          1227.0
+        ],
+        [
+          269.0,
+          1227.0
+        ]
+      ],
+      "text": "chấp về áp dụng biện pháp quản lý ngoại thương trình Thủ tướng Chính phủ",
+      "confidence": 0.9682110859999998
+    },
+    {
+      "bbox": [
+        [
+          269.0,
+          1217.0
+        ],
+        [
+          1077.0,
+          1217.0
+        ],
+        [
+          1077.0,
+          1260.0
+        ],
+        [
+          269.0,
+          1260.0
+        ]
+      ],
+      "text": "phê duyệt trong thời hạn 20 ngày làm việc kể từ ngày kết thúc quá trình tham",
+      "confidence": 0.9652950382352941
+    },
+    {
+      "bbox": [
+        [
+          269.0,
+          1249.0
+        ],
+        [
+          733.0,
+          1249.0
+        ],
+        [
+          733.0,
+          1278.0
+        ],
+        [
+          269.0,
+          1278.0
+        ]
+      ],
+      "text": "vấn theo quy định tại Điều 67 Nghị định này.",
+      "confidence": 0.966666092
+    },
+    {
+      "bbox": [
+        [
+          322.0,
+          1293.0
+        ],
+        [
+          1077.0,
+          1293.0
+        ],
+        [
+          1077.0,
+          1329.0
+        ],
+        [
+          322.0,
+          1329.0
+        ]
+      ],
+      "text": "2. Việc xây dựng, điều chỉnh, thực hiện Kế hoạch giải quyết vụ việc",
+      "confidence": 0.967423755
+    },
+    {
+      "bbox": [
+        [
+          269.0,
+          1325.0
+        ],
+        [
+          1077.0,
+          1325.0
+        ],
+        [
+          1077.0,
+          1359.0
+        ],
+        [
+          269.0,
+          1359.0
+        ]
+      ],
+      "text": "tranh chấp về áp dụng biện pháp quản lý ngoại thương thực hiện theo quy",
+      "confidence": 0.968197
+    },
+    {
+      "bbox": [
+        [
+          270.0,
+          1352.0
+        ],
+        [
+          970.0,
+          1352.0
+        ],
+        [
+          970.0,
+          1383.0
+        ],
+        [
+          270.0,
+          1383.0
+        ]
+      ],
+      "text": "định tại khoản 2, khoản 3, khoản 4, khoản 5 Điều 63 Nghị định này.",
+      "confidence": 0.9670563933333333
+    },
+    {
+      "bbox": [
+        [
+          322.0,
+          1399.0
+        ],
+        [
+          1078.0,
+          1399.0
+        ],
+        [
+          1078.0,
+          1430.0
+        ],
+        [
+          322.0,
+          1430.0
+        ]
+      ],
+      "text": "3. Kế hoạch giải quyết vụ việc tranh chấp về áp dụng biện pháp quản lý",
+      "confidence": 0.967889095
+    },
+    {
+      "bbox": [
+        [
+          271.0,
+          1429.0
+        ],
+        [
+          739.0,
+          1429.0
+        ],
+        [
+          739.0,
+          1460.0
+        ],
+        [
+          271.0,
+          1460.0
+        ]
+      ],
+      "text": "ngoại thương được bảo quản theo chế độ mật.",
+      "confidence": 0.9692155022222222
+    }
+  ]
+}

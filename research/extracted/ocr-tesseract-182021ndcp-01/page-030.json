@@ -1,0 +1,927 @@
+{
+  "document_id": "18/2021/NĐ-CP",
+  "source_file": "../../legal-sources/182021ndcp/01.pdf",
+  "source_sha256": "cb0bf16ab3ee6554929e0d9d2cc4f180f51b8ea10ddd30a37309353edeb050d8",
+  "page_count": 114,
+  "render_dpi": 150,
+  "engine": "Tesseract 5.5.4 (vie+eng; OEM 1; PSM 3)",
+  "review_status": "UNREVIEWED",
+  "tesseract_version": "5.5.4",
+  "tsv_parser_version": 2,
+  "languages": [
+    "vie",
+    "eng"
+  ],
+  "traineddata_sha256": {
+    "vie": "b6b49293d95d0b6dbd8780174627e82c75be957b6f4ed9862155540d6b00bb45",
+    "eng": "8280aed0782fe27257a68ea10fe7ef324ca0f8d85bd2fd145d1c2b560bcb66ba"
+  },
+  "ocr_engine_mode": 1,
+  "page_segmentation_mode": 3,
+  "thread_limit": 1,
+  "page": 30,
+  "lines": [
+    {
+      "bbox": [
+        [
+          657.0,
+          60.0
+        ],
+        [
+          685.0,
+          60.0
+        ],
+        [
+          685.0,
+          81.0
+        ],
+        [
+          657.0,
+          81.0
+        ]
+      ],
+      "text": "30",
+      "confidence": 0.95223145
+    },
+    {
+      "bbox": [
+        [
+          211.0,
+          139.0
+        ],
+        [
+          1133.0,
+          139.0
+        ],
+        [
+          1133.0,
+          181.0
+        ],
+        [
+          211.0,
+          181.0
+        ]
+      ],
+      "text": "định này thông qua Hệ thống xử lý dữ liệu điện tử hoặc theo Mẫu số 17 Phụ",
+      "confidence": 0.96785768
+    },
+    {
+      "bbox": [
+        [
+          211.0,
+          181.0
+        ],
+        [
+          1134.0,
+          181.0
+        ],
+        [
+          1134.0,
+          216.0
+        ],
+        [
+          211.0,
+          216.0
+        ]
+      ],
+      "text": "lục VII ban hành kèm theo Nghị định này cho cơ quan hải quan nơi tiếp nhận",
+      "confidence": 0.9631059399999999
+    },
+    {
+      "bbox": [
+        [
+          210.0,
+          211.0
+        ],
+        [
+          1134.0,
+          211.0
+        ],
+        [
+          1134.0,
+          256.0
+        ],
+        [
+          210.0,
+          256.0
+        ]
+      ],
+      "text": "thông báo Danh mục miễn thuế trước khi chuyển nhượng dự án và không phải",
+      "confidence": 0.9635277293333334
+    },
+    {
+      "bbox": [
+        [
+          211.0,
+          244.0
+        ],
+        [
+          1135.0,
+          244.0
+        ],
+        [
+          1135.0,
+          282.0
+        ],
+        [
+          211.0,
+          282.0
+        ]
+      ],
+      "text": "nộp lại số tiền thuế nhập khẩu đã được miễn đối với hàng hóa chuyển nhượng",
+      "confidence": 0.9658302825
+    },
+    {
+      "bbox": [
+        [
+          210.0,
+          279.0
+        ],
+        [
+          1135.0,
+          279.0
+        ],
+        [
+          1135.0,
+          321.0
+        ],
+        [
+          210.0,
+          321.0
+        ]
+      ],
+      "text": "theo dự án. Tổ chức, cá nhân nhận chuyển nhượng dự án phải đăng ký tờ khai",
+      "confidence": 0.9481406217647058
+    },
+    {
+      "bbox": [
+        [
+          211.0,
+          313.0
+        ],
+        [
+          1135.0,
+          313.0
+        ],
+        [
+          1135.0,
+          355.0
+        ],
+        [
+          211.0,
+          355.0
+        ]
+      ],
+      "text": "hải quan mới đối với hàng hóa nhận chuyển nhượng và được miễn thuế nhập",
+      "confidence": 0.9666873173333334
+    },
+    {
+      "bbox": [
+        [
+          211.0,
+          346.0
+        ],
+        [
+          1136.0,
+          346.0
+        ],
+        [
+          1136.0,
+          389.0
+        ],
+        [
+          211.0,
+          389.0
+        ]
+      ],
+      "text": "khẩu nếu ¡ đáp ứng đủ các điều kiện sau: Tại thời điểm chuyển nhượng, dự án",
+      "confidence": 0.9642479982352942
+    },
+    {
+      "bbox": [
+        [
+          211.0,
+          380.0
+        ],
+        [
+          1135.0,
+          380.0
+        ],
+        [
+          1135.0,
+          423.0
+        ],
+        [
+          211.0,
+          423.0
+        ]
+      ],
+      "text": "đầu tư vẫn thuộc đối tượng được hưởng ưu đãi đầu tư; giá chuyển nhượng",
+      "confidence": 0.9657890733333333
+    },
+    {
+      "bbox": [
+        [
+          211.0,
+          416.0
+        ],
+        [
+          1135.0,
+          416.0
+        ],
+        [
+          1135.0,
+          459.0
+        ],
+        [
+          211.0,
+          459.0
+        ]
+      ],
+      "text": "hàng hóa không bao gôm thuế nhập khẩu; tổ chức, cá nhân nhận chuyển",
+      "confidence": 0.9604207321428571
+    },
+    {
+      "bbox": [
+        [
+          211.0,
+          449.0
+        ],
+        [
+          1135.0,
+          449.0
+        ],
+        [
+          1135.0,
+          487.0
+        ],
+        [
+          211.0,
+          487.0
+        ]
+      ],
+      "text": "nhượng là chủ đầu tư của dự án chuyển nhượng được ghi tại Giấy chứng nhận",
+      "confidence": 0.956234330625
+    },
+    {
+      "bbox": [
+        [
+          212.0,
+          482.0
+        ],
+        [
+          852.0,
+          482.0
+        ],
+        [
+          852.0,
+          518.0
+        ],
+        [
+          212.0,
+          518.0
+        ]
+      ],
+      "text": "đầu tư điều chỉnh hoặc văn bản có giá trị tương đương.",
+      "confidence": 0.9687416283333334
+    },
+    {
+      "bbox": [
+        [
+          271.0,
+          543.0
+        ],
+        [
+          1135.0,
+          543.0
+        ],
+        [
+          1135.0,
+          582.0
+        ],
+        [
+          271.0,
+          582.0
+        ]
+      ],
+      "text": "Cơ quan hải quan nơi tiếp nhận Danh Tục miễn thuế của chủ dự án",
+      "confidence": 0.9359225686666668
+    },
+    {
+      "bbox": [
+        [
+          212.0,
+          575.0
+        ],
+        [
+          1135.0,
+          575.0
+        ],
+        [
+          1135.0,
+          615.0
+        ],
+        [
+          212.0,
+          615.0
+        ]
+      ],
+      "text": "chuyên nhượng dừng sử dụng Danh mục miễn thuế trên Hệ thống hoặc thu",
+      "confidence": 0.9531926521428571
+    },
+    {
+      "bbox": [
+        [
+          211.0,
+          609.0
+        ],
+        [
+          1135.0,
+          609.0
+        ],
+        [
+          1135.0,
+          650.0
+        ],
+        [
+          211.0,
+          650.0
+        ]
+      ],
+      "text": "hồi Danh mục miễn thuế bản giấy và Phiều theo dõi trừ lùi của chủ dự án",
+      "confidence": 0.9469934711764707
+    },
+    {
+      "bbox": [
+        [
+          212.0,
+          642.0
+        ],
+        [
+          1135.0,
+          642.0
+        ],
+        [
+          1135.0,
+          685.0
+        ],
+        [
+          212.0,
+          685.0
+        ]
+      ],
+      "text": "chuyển nhượng: tiếp nhận Danh mục miễn thuế đối với số lượng hàng hóa",
+      "confidence": 0.9663636171428571
+    },
+    {
+      "bbox": [
+        [
+          212.0,
+          676.0
+        ],
+        [
+          756.0,
+          676.0
+        ],
+        [
+          756.0,
+          710.0
+        ],
+        [
+          212.0,
+          710.0
+        ]
+      ],
+      "text": "chủ dự án chuyên nhượng chưa nhập khẩu hết.",
+      "confidence": 0.9201474166666667
+    },
+    {
+      "bbox": [
+        [
+          271.0,
+          735.0
+        ],
+        [
+          1132.0,
+          735.0
+        ],
+        [
+          1132.0,
+          780.0
+        ],
+        [
+          271.0,
+          780.0
+        ]
+      ],
+      "text": "Trường hợp chuyển nhượng toàn bộ dự án nhưng chủ dự án chưa nhập",
+      "confidence": 0.9588558028571428
+    },
+    {
+      "bbox": [
+        [
+          211.0,
+          768.0
+        ],
+        [
+          1132.0,
+          768.0
+        ],
+        [
+          1132.0,
+          814.0
+        ],
+        [
+          211.0,
+          814.0
+        ]
+      ],
+      "text": "khẩu hết hàng hóa theo Danh mục miễn thuế hoặc chuyển nhượng một phan",
+      "confidence": 0.960723495
+    },
+    {
+      "bbox": [
+        [
+          211.0,
+          799.0
+        ],
+        [
+          1133.0,
+          799.0
+        ],
+        [
+          1133.0,
+          845.0
+        ],
+        [
+          211.0,
+          845.0
+        ]
+      ],
+      "text": "dự án nhưng chủ dự án chưa nhập khẩu hết hàng hóa theo Danh mục miễn",
+      "confidence": 0.9660353806249999
+    },
+    {
+      "bbox": [
+        [
+          210.0,
+          835.0
+        ],
+        [
+          1134.0,
+          835.0
+        ],
+        [
+          1134.0,
+          879.0
+        ],
+        [
+          210.0,
+          879.0
+        ]
+      ],
+      "text": "thuế thuộc phần dự án chuyển nhượng, tổ chức, cá nhân nhận chuyển nhượng.",
+      "confidence": 0.9515779992857142
+    },
+    {
+      "bbox": [
+        [
+          210.0,
+          870.0
+        ],
+        [
+          1134.0,
+          870.0
+        ],
+        [
+          1134.0,
+          904.0
+        ],
+        [
+          210.0,
+          904.0
+        ]
+      ],
+      "text": "thông báo Danh mục miễn thuế đối với hàng hóa chưa nhập khẩu hết thuộc dự",
+      "confidence": 0.96548638375
+    },
+    {
+      "bbox": [
+        [
+          211.0,
+          903.0
+        ],
+        [
+          633.0,
+          903.0
+        ],
+        [
+          633.0,
+          936.0
+        ],
+        [
+          211.0,
+          936.0
+        ]
+      ],
+      "text": "án hoặc phần dự án chuyển nhượng.",
+      "confidence": 0.9689047685714286
+    },
+    {
+      "bbox": [
+        [
+          271.0,
+          962.0
+        ],
+        [
+          1134.0,
+          962.0
+        ],
+        [
+          1134.0,
+          1002.0
+        ],
+        [
+          271.0,
+          1002.0
+        ]
+      ],
+      "text": "Trường hợp chuyển nhượng một phần dự án mà chủ dự án chưa nhập",
+      "confidence": 0.9410033321428571
+    },
+    {
+      "bbox": [
+        [
+          211.0,
+          995.0
+        ],
+        [
+          1134.0,
+          995.0
+        ],
+        [
+          1134.0,
+          1035.0
+        ],
+        [
+          211.0,
+          1035.0
+        ]
+      ],
+      "text": "khẩu hết hàng hóa theo Danh mục miễn thuế thuộc phần dự án tiếp tục thực",
+      "confidence": 0.968990435625
+    },
+    {
+      "bbox": [
+        [
+          210.0,
+          1029.0
+        ],
+        [
+          1134.0,
+          1029.0
+        ],
+        [
+          1134.0,
+          1069.0
+        ],
+        [
+          210.0,
+          1069.0
+        ]
+      ],
+      "text": "hiện, chủ dự án chuyển nhượng thực hiện thông báo Danh mục miễn thuế",
+      "confidence": 0.9661715807142857
+    },
+    {
+      "bbox": [
+        [
+          211.0,
+          1063.0
+        ],
+        [
+          1134.0,
+          1063.0
+        ],
+        [
+          1134.0,
+          1097.0
+        ],
+        [
+          211.0,
+          1097.0
+        ]
+      ],
+      "text": "đối với số lượng hàng hóa chưa nhập khẩu hết thuộc phần dự án tiếp tục",
+      "confidence": 0.9688587387500001
+    },
+    {
+      "bbox": [
+        [
+          210.0,
+          1102.0
+        ],
+        [
+          326.0,
+          1102.0
+        ],
+        [
+          326.0,
+          1128.0
+        ],
+        [
+          210.0,
+          1128.0
+        ]
+      ],
+      "text": "thực hiện.",
+      "confidence": 0.96809582
+    },
+    {
+      "bbox": [
+        [
+          270.0,
+          1155.0
+        ],
+        [
+          1133.0,
+          1155.0
+        ],
+        [
+          1133.0,
+          1188.0
+        ],
+        [
+          270.0,
+          1188.0
+        ]
+      ],
+      "text": "đ) Hàng hóa nhập khẩu đã được miễn thuế nhập khẩu dé tạo tài sản cố",
+      "confidence": 0.9545191425
+    },
+    {
+      "bbox": [
+        [
+          210.0,
+          1188.0
+        ],
+        [
+          1134.0,
+          1188.0
+        ],
+        [
+          1134.0,
+          1227.0
+        ],
+        [
+          210.0,
+          1227.0
+        ]
+      ],
+      "text": "định của dự án ưu đãi đầu tư được sử dụng cho dự án ưu đãi đầu tư khác của",
+      "confidence": 0.9676816030000001
+    },
+    {
+      "bbox": [
+        [
+          210.0,
+          1221.0
+        ],
+        [
+          1134.0,
+          1221.0
+        ],
+        [
+          1134.0,
+          1261.0
+        ],
+        [
+          210.0,
+          1261.0
+        ]
+      ],
+      "text": "cùng chủ dự án thì chủ đầu tư đăng ký tờ khai hải quan mới đối với số hàng",
+      "confidence": 0.9677198505263158
+    },
+    {
+      "bbox": [
+        [
+          209.0,
+          1255.0
+        ],
+        [
+          1132.0,
+          1255.0
+        ],
+        [
+          1132.0,
+          1288.0
+        ],
+        [
+          209.0,
+          1288.0
+        ]
+      ],
+      "text": "hóa điều chuyển và được miễn thuế nhập khẩu nếu đáp ứng các điều kiện sau:",
+      "confidence": 0.96477227625
+    },
+    {
+      "bbox": [
+        [
+          210.0,
+          1289.0
+        ],
+        [
+          1133.0,
+          1289.0
+        ],
+        [
+          1133.0,
+          1328.0
+        ],
+        [
+          210.0,
+          1328.0
+        ]
+      ],
+      "text": "Giá của hàng hóa nhập khẩu được điều chuyển không bao gồm thuế nhập",
+      "confidence": 0.9607086671428572
+    },
+    {
+      "bbox": [
+        [
+          209.0,
+          1322.0
+        ],
+        [
+          1134.0,
+          1322.0
+        ],
+        [
+          1134.0,
+          1362.0
+        ],
+        [
+          209.0,
+          1362.0
+        ]
+      ],
+      "text": "khẩu; phù hợp với lĩnh vực, quy mô của dự án ưu đãi đầu tư tiếp nhận; đáp",
+      "confidence": 0.9627516166666666
+    },
+    {
+      "bbox": [
+        [
+          209.0,
+          1356.0
+        ],
+        [
+          1134.0,
+          1356.0
+        ],
+        [
+          1134.0,
+          1394.0
+        ],
+        [
+          209.0,
+          1394.0
+        ]
+      ],
+      "text": "ứng quy định về tài sản cố định; có tên trong Danh mục miễn thuế của dự án",
+      "confidence": 0.9660290116666667
+    },
+    {
+      "bbox": [
+        [
+          209.0,
+          1389.0
+        ],
+        [
+          739.0,
+          1389.0
+        ],
+        [
+          739.0,
+          1423.0
+        ],
+        [
+          209.0,
+          1423.0
+        ]
+      ],
+      "text": "tiếp nhận đã thông báo cho cơ quan hải quan.",
+      "confidence": 0.9687803799999999
+    },
+    {
+      "bbox": [
+        [
+          269.0,
+          1447.0
+        ],
+        [
+          1132.0,
+          1447.0
+        ],
+        [
+          1132.0,
+          1481.0
+        ],
+        [
+          269.0,
+          1481.0
+        ]
+      ],
+      "text": "Hàng hóa tiếp nhận được trừ lùi trên Danh mục miễn thuế của dự án tiếp",
+      "confidence": 0.966717115
+    },
+    {
+      "bbox": [
+        [
+          209.0,
+          1481.0
+        ],
+        [
+          1133.0,
+          1481.0
+        ],
+        [
+          1133.0,
+          1520.0
+        ],
+        [
+          209.0,
+          1520.0
+        ]
+      ],
+      "text": "nhận đã thông báo với cơ quan hải quan. Chủ dự án điều chuyển được nhập",
+      "confidence": 0.9503482674999999
+    },
+    {
+      "bbox": [
+        [
+          209.0,
+          1511.0
+        ],
+        [
+          1132.0,
+          1511.0
+        ],
+        [
+          1132.0,
+          1557.0
+        ],
+        [
+          209.0,
+          1557.0
+        ]
+      ],
+      "text": "khẩu bổ sung số lượng hàng hóa thay thế hàng hóa đã điều chuyển. Chủ dự án",
+      "confidence": 0.964992375882353
+    },
+    {
+      "bbox": [
+        [
+          210.0,
+          1547.0
+        ],
+        [
+          1132.0,
+          1547.0
+        ],
+        [
+          1132.0,
+          1581.0
+        ],
+        [
+          210.0,
+          1581.0
+        ]
+      ],
+      "text": "điều chuyển thực hiện thông báo bd sung Danh mục miễn thuê theo quy định",
+      "confidence": 0.9462173826666667
+    },
+    {
+      "bbox": [
+        [
+          209.0,
+          1581.0
+        ],
+        [
+          620.0,
+          1581.0
+        ],
+        [
+          620.0,
+          1614.0
+        ],
+        [
+          209.0,
+          1614.0
+        ]
+      ],
+      "text": "tại khoản 5 Điều 30 Nghị định này.",
+      "confidence": 0.9658322237499999
+    }
+  ]
+}

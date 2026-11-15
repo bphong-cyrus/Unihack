@@ -1,0 +1,421 @@
+{
+  "document_id": "126/2020/NĐ-CP",
+  "source_file": "../../legal-sources/1262020ndcp/02.pdf",
+  "source_sha256": "008daa92f4d699b69b9318c4a8e6fa7db8d73453305e1a4f155134656e26847b",
+  "page_count": 147,
+  "render_dpi": 150,
+  "engine": "Tesseract 5.5.4 (vie+eng; OEM 1; PSM 3)",
+  "review_status": "UNREVIEWED",
+  "tesseract_version": "5.5.4",
+  "tsv_parser_version": 2,
+  "languages": [
+    "vie",
+    "eng"
+  ],
+  "traineddata_sha256": {
+    "vie": "b6b49293d95d0b6dbd8780174627e82c75be957b6f4ed9862155540d6b00bb45",
+    "eng": "8280aed0782fe27257a68ea10fe7ef324ca0f8d85bd2fd145d1c2b560bcb66ba"
+  },
+  "ocr_engine_mode": 1,
+  "page_segmentation_mode": 3,
+  "thread_limit": 1,
+  "page": 52,
+  "lines": [
+    {
+      "bbox": [
+        [
+          659.0,
+          70.0
+        ],
+        [
+          686.0,
+          70.0
+        ],
+        [
+          686.0,
+          91.0
+        ],
+        [
+          659.0,
+          91.0
+        ]
+      ],
+      "text": "26",
+      "confidence": 0.96970474
+    },
+    {
+      "bbox": [
+        [
+          278.0,
+          152.0
+        ],
+        [
+          1132.0,
+          152.0
+        ],
+        [
+          1132.0,
+          190.0
+        ],
+        [
+          278.0,
+          190.0
+        ]
+      ],
+      "text": "<Trường hợp thông báo điều chỉnh, bồ sung mà thay thé cho Thông báo",
+      "confidence": 0.9563657600000001
+    },
+    {
+      "bbox": [
+        [
+          217.0,
+          187.0
+        ],
+        [
+          1132.0,
+          187.0
+        ],
+        [
+          1132.0,
+          230.0
+        ],
+        [
+          217.0,
+          230.0
+        ]
+      ],
+      "text": "đã ban hành: Thông báo này thay thế Thông báo số.... ngày... tháng... năm",
+      "confidence": 0.9593853821428572
+    },
+    {
+      "bbox": [
+        [
+          220.0,
+          231.0
+        ],
+        [
+          582.0,
+          231.0
+        ],
+        [
+          582.0,
+          256.0
+        ],
+        [
+          220.0,
+          256.0
+        ]
+      ],
+      "text": "..... CỦa ... VỀ VIỆC............ >.",
+      "confidence": 0.7495151383333334
+    },
+    {
+      "bbox": [
+        [
+          277.0,
+          267.0
+        ],
+        [
+          1125.0,
+          267.0
+        ],
+        [
+          1125.0,
+          305.0
+        ],
+        [
+          277.0,
+          305.0
+        ]
+      ],
+      "text": "„..<Tên cơ quan thué>... thông báo để người nộp thuế được biết và",
+      "confidence": 0.9146914730769231
+    },
+    {
+      "bbox": [
+        [
+          218.0,
+          311.0
+        ],
+        [
+          348.0,
+          311.0
+        ],
+        [
+          348.0,
+          339.0
+        ],
+        [
+          218.0,
+          339.0
+        ]
+      ],
+      "text": "thực hiện./.",
+      "confidence": 0.92694725
+    },
+    {
+      "bbox": [
+        [
+          218.0,
+          400.0
+        ],
+        [
+          1156.0,
+          400.0
+        ],
+        [
+          1156.0,
+          435.0
+        ],
+        [
+          218.0,
+          435.0
+        ]
+      ],
+      "text": "Noi nhận: . THU TRUONG CO QUAN THUE",
+      "confidence": 0.8573440725
+    },
+    {
+      "bbox": [
+        [
+          218.0,
+          429.0
+        ],
+        [
+          1111.0,
+          429.0
+        ],
+        [
+          1111.0,
+          459.0
+        ],
+        [
+          218.0,
+          459.0
+        ]
+      ],
+      "text": "- <Ngudi nộp thuê; BẠN HÀNH THÔNG BÁO",
+      "confidence": 0.78903550125
+    },
+    {
+      "bbox": [
+        [
+          219.0,
+          452.0
+        ],
+        [
+          1089.0,
+          452.0
+        ],
+        [
+          1089.0,
+          496.0
+        ],
+        [
+          219.0,
+          496.0
+        ]
+      ],
+      "text": "- <Các bộ phận có liên quan>; Ký, ghi rõ họ tên, đó di",
+      "confidence": 0.9062815235714287
+    },
+    {
+      "bbox": [
+        [
+          219.0,
+          468.0
+        ],
+        [
+          1109.0,
+          468.0
+        ],
+        [
+          1109.0,
+          505.0
+        ],
+        [
+          219.0,
+          505.0
+        ]
+      ],
+      "text": "- Lưu: VT, bộ phận ban hành TB. (Ký, ghi rõ họ tên, đóng dau)",
+      "confidence": 0.9509580933333334
+    },
+    {
+      "bbox": [
+        [
+          281.0,
+          1375.0
+        ],
+        [
+          371.0,
+          1375.0
+        ],
+        [
+          371.0,
+          1394.0
+        ],
+        [
+          281.0,
+          1394.0
+        ]
+      ],
+      "text": "Ghi chú:",
+      "confidence": 0.8539255149999999
+    },
+    {
+      "bbox": [
+        [
+          281.0,
+          1392.0
+        ],
+        [
+          1134.0,
+          1392.0
+        ],
+        [
+          1134.0,
+          1431.0
+        ],
+        [
+          281.0,
+          1431.0
+        ]
+      ],
+      "text": "- Chỉ tiêu tổng số thuế tính bằng thóc phải nộp trong năm (kg) được tổng hợp từ số",
+      "confidence": 0.9584075363157895
+    },
+    {
+      "bbox": [
+        [
+          221.0,
+          1426.0
+        ],
+        [
+          1135.0,
+          1426.0
+        ],
+        [
+          1135.0,
+          1457.0
+        ],
+        [
+          221.0,
+          1457.0
+        ]
+      ],
+      "text": "thuế phải nộp của tht cả các lô đắt chịu thuế sử dụng đất nông nghiệp trong địa phương cấp",
+      "confidence": 0.9606693795
+    },
+    {
+      "bbox": [
+        [
+          222.0,
+          1456.0
+        ],
+        [
+          1106.0,
+          1456.0
+        ],
+        [
+          1106.0,
+          1486.0
+        ],
+        [
+          222.0,
+          1486.0
+        ]
+      ],
+      "text": "xã do chỉ cục thuế quản lý, bao gồm cả số thuế bộ sung tính trên diện tích vượt hạn mức.",
+      "confidence": 0.9649684242857143
+    },
+    {
+      "bbox": [
+        [
+          281.0,
+          1484.0
+        ],
+        [
+          1136.0,
+          1484.0
+        ],
+        [
+          1136.0,
+          1524.0
+        ],
+        [
+          281.0,
+          1524.0
+        ]
+      ],
+      "text": "- Trường hợp người nộp thuế đề nghị được xem chỉ tiết cách tính ra số thuế phải nộp",
+      "confidence": 0.9643661421052632
+    },
+    {
+      "bbox": [
+        [
+          221.0,
+          1513.0
+        ],
+        [
+          1107.0,
+          1513.0
+        ],
+        [
+          1107.0,
+          1545.0
+        ],
+        [
+          221.0,
+          1545.0
+        ]
+      ],
+      "text": "thì cơ quan thuế in biểu tổng hợp số thuế phải nộp và thông báo cho người nộp thuê biết.",
+      "confidence": 0.9610357895
+    },
+    {
+      "bbox": [
+        [
+          281.0,
+          1542.0
+        ],
+        [
+          1136.0,
+          1542.0
+        ],
+        [
+          1136.0,
+          1573.0
+        ],
+        [
+          281.0,
+          1573.0
+        ]
+      ],
+      "text": "- Phần nội dung in nghiêng ghi trong dấu < > chỉ là trường hợp ví dụ, cơ quan thuế",
+      "confidence": 0.9546150470000001
+    },
+    {
+      "bbox": [
+        [
+          221.0,
+          1573.0
+        ],
+        [
+          744.0,
+          1573.0
+        ],
+        [
+          744.0,
+          1602.0
+        ],
+        [
+          221.0,
+          1602.0
+        ]
+      ],
+      "text": "căn cứ vào hồ sơ cụ thể để điền thông tin tương ứng.",
+      "confidence": 0.9435030723076921
+    }
+  ]
+}

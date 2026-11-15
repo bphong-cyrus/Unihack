@@ -1,0 +1,817 @@
+{
+  "document_id": "126/2020/NĐ-CP",
+  "source_file": "../../legal-sources/1262020ndcp/01.pdf",
+  "source_sha256": "310648e80396d267610946458e7fdd71ba87ef538b009d6574ed21514de3f7ca",
+  "page_count": 119,
+  "render_dpi": 150,
+  "engine": "Tesseract 5.5.4 (vie+eng; OEM 1; PSM 3)",
+  "review_status": "UNREVIEWED",
+  "tesseract_version": "5.5.4",
+  "tsv_parser_version": 2,
+  "languages": [
+    "vie",
+    "eng"
+  ],
+  "traineddata_sha256": {
+    "vie": "b6b49293d95d0b6dbd8780174627e82c75be957b6f4ed9862155540d6b00bb45",
+    "eng": "8280aed0782fe27257a68ea10fe7ef324ca0f8d85bd2fd145d1c2b560bcb66ba"
+  },
+  "ocr_engine_mode": 1,
+  "page_segmentation_mode": 3,
+  "thread_limit": 1,
+  "page": 105,
+  "lines": [
+    {
+      "bbox": [
+        [
+          694.0,
+          62.0
+        ],
+        [
+          732.0,
+          62.0
+        ],
+        [
+          732.0,
+          83.0
+        ],
+        [
+          694.0,
+          83.0
+        ]
+      ],
+      "text": "105",
+      "confidence": 0.96535599
+    },
+    {
+      "bbox": [
+        [
+          285.0,
+          137.0
+        ],
+        [
+          1141.0,
+          137.0
+        ],
+        [
+          1141.0,
+          180.0
+        ],
+        [
+          285.0,
+          180.0
+        ]
+      ],
+      "text": "a) Biện pháp cưỡng chế thu hồi giấy chứng nhận đăng ký doanh nghiệp",
+      "confidence": 0.9665654164285715
+    },
+    {
+      "bbox": [
+        [
+          225.0,
+          172.0
+        ],
+        [
+          1141.0,
+          172.0
+        ],
+        [
+          1141.0,
+          216.0
+        ],
+        [
+          225.0,
+          216.0
+        ]
+      ],
+      "text": "hoặc giấy chúng nhận đăng ký kinh doanh hoặc giấy chứng nhận đăng ký hợp",
+      "confidence": 0.9488270813333334
+    },
+    {
+      "bbox": [
+        [
+          225.0,
+          209.0
+        ],
+        [
+          1142.0,
+          209.0
+        ],
+        [
+          1142.0,
+          245.0
+        ],
+        [
+          225.0,
+          245.0
+        ]
+      ],
+      "text": "tác xã hoặc giấy chứng nhận đăng ký đầu tư hoặc giấy phép thành lập và hoạt",
+      "confidence": 0.9684395247058823
+    },
+    {
+      "bbox": [
+        [
+          225.0,
+          245.0
+        ],
+        [
+          1140.0,
+          245.0
+        ],
+        [
+          1140.0,
+          282.0
+        ],
+        [
+          225.0,
+          282.0
+        ]
+      ],
+      "text": "động hoặc giấy phép hành nghề hoặc giấy chứng nhận đăng ký hoạt động chỉ",
+      "confidence": 0.9669538673333333
+    },
+    {
+      "bbox": [
+        [
+          224.0,
+          284.0
+        ],
+        [
+          1140.0,
+          284.0
+        ],
+        [
+          1140.0,
+          318.0
+        ],
+        [
+          224.0,
+          318.0
+        ]
+      ],
+      "text": "nhánh, văn phòng đại diện (sau đây gọi chung là giấy chứng nhận đăng ký",
+      "confidence": 0.9684043886666668
+    },
+    {
+      "bbox": [
+        [
+          223.0,
+          321.0
+        ],
+        [
+          1140.0,
+          321.0
+        ],
+        [
+          1140.0,
+          354.0
+        ],
+        [
+          223.0,
+          354.0
+        ]
+      ],
+      "text": "kinh doanh) được thực hiện khi cơ quan quản lý thuế không áp dụng được các",
+      "confidence": 0.9693751756250001
+    },
+    {
+      "bbox": [
+        [
+          223.0,
+          355.0
+        ],
+        [
+          1140.0,
+          355.0
+        ],
+        [
+          1140.0,
+          389.0
+        ],
+        [
+          223.0,
+          389.0
+        ]
+      ],
+      "text": "biện pháp cưỡng chế quy định tại điểm a,b,c,d,đ,ekhoản1 Điều 125 Luật",
+      "confidence": 0.9532433183333334
+    },
+    {
+      "bbox": [
+        [
+          224.0,
+          391.0
+        ],
+        [
+          1139.0,
+          391.0
+        ],
+        [
+          1139.0,
+          426.0
+        ],
+        [
+          224.0,
+          426.0
+        ]
+      ],
+      "text": "Quản lý thuế hoặc đã áp dụng các biện pháp này nhưng vẫn không thu đủ tiền",
+      "confidence": 0.9632303300000001
+    },
+    {
+      "bbox": [
+        [
+          223.0,
+          426.0
+        ],
+        [
+          1136.0,
+          426.0
+        ],
+        [
+          1136.0,
+          462.0
+        ],
+        [
+          223.0,
+          462.0
+        ]
+      ],
+      "text": "thuế nợ vào ngân sách nhà nước hoặc thuộc trường hợp quy định tại khoản 3",
+      "confidence": 0.96841601375
+    },
+    {
+      "bbox": [
+        [
+          223.0,
+          463.0
+        ],
+        [
+          553.0,
+          463.0
+        ],
+        [
+          553.0,
+          497.0
+        ],
+        [
+          223.0,
+          497.0
+        ]
+      ],
+      "text": "Điều 125 Luật Quản lý thuế.",
+      "confidence": 0.963294475
+    },
+    {
+      "bbox": [
+        [
+          281.0,
+          527.0
+        ],
+        [
+          1138.0,
+          527.0
+        ],
+        [
+          1138.0,
+          561.0
+        ],
+        [
+          281.0,
+          561.0
+        ]
+      ],
+      "text": "b) Khi thực hiện biện pháp cưỡng chế theo quy định tại Điều này, cơ",
+      "confidence": 0.9661646779999999
+    },
+    {
+      "bbox": [
+        [
+          221.0,
+          561.0
+        ],
+        [
+          1137.0,
+          561.0
+        ],
+        [
+          1137.0,
+          597.0
+        ],
+        [
+          221.0,
+          597.0
+        ]
+      ],
+      "text": "quan quản lý thuế phải công khai trên trang thông tin điện tử ngành thuế hoặc",
+      "confidence": 0.9687168174999999
+    },
+    {
+      "bbox": [
+        [
+          221.0,
+          603.0
+        ],
+        [
+          948.0,
+          603.0
+        ],
+        [
+          948.0,
+          634.0
+        ],
+        [
+          221.0,
+          634.0
+        ]
+      ],
+      "text": "ngành hải quan hoặc trên các phương tiện thông tin đại chúng.",
+      "confidence": 0.9632684658333334
+    },
+    {
+      "bbox": [
+        [
+          279.0,
+          665.0
+        ],
+        [
+          534.0,
+          665.0
+        ],
+        [
+          534.0,
+          692.0
+        ],
+        [
+          279.0,
+          692.0
+        ]
+      ],
+      "text": "2. Xác minh thông tin",
+      "confidence": 0.9527393639999999
+    },
+    {
+      "bbox": [
+        [
+          278.0,
+          721.0
+        ],
+        [
+          1135.0,
+          721.0
+        ],
+        [
+          1135.0,
+          764.0
+        ],
+        [
+          278.0,
+          764.0
+        ]
+      ],
+      "text": "Cơ quan quản lý thuế xác minh thông tin của đối tượng bị áp dụng biện",
+      "confidence": 0.9661744362499999
+    },
+    {
+      "bbox": [
+        [
+          218.0,
+          756.0
+        ],
+        [
+          1135.0,
+          756.0
+        ],
+        [
+          1135.0,
+          805.0
+        ],
+        [
+          218.0,
+          805.0
+        ]
+      ],
+      "text": "pháp cưỡng chế qua các dữ liệu quản lý về người nộp thuế tại cơ quan quản lý",
+      "confidence": 0.9625211838888889
+    },
+    {
+      "bbox": [
+        [
+          218.0,
+          792.0
+        ],
+        [
+          1135.0,
+          792.0
+        ],
+        [
+          1135.0,
+          838.0
+        ],
+        [
+          218.0,
+          838.0
+        ]
+      ],
+      "text": "thuế hoặc tại cơ quan nhà nước có thẳm quyền ban hành các loại giấy tờ nêu",
+      "confidence": 0.9527897970588235
+    },
+    {
+      "bbox": [
+        [
+          218.0,
+          830.0
+        ],
+        [
+          1068.0,
+          830.0
+        ],
+        [
+          1068.0,
+          864.0
+        ],
+        [
+          218.0,
+          864.0
+        ]
+      ],
+      "text": "trên của người nộp thuế để làm căn cứ ban hành văn bản đề nghị thu hồi.",
+      "confidence": 0.966920695882353
+    },
+    {
+      "bbox": [
+        [
+          277.0,
+          890.0
+        ],
+        [
+          586.0,
+          890.0
+        ],
+        [
+          586.0,
+          923.0
+        ],
+        [
+          277.0,
+          923.0
+        ]
+      ],
+      "text": "3. Văn bản đề nghị thu hồi",
+      "confidence": 0.9691606571428573
+    },
+    {
+      "bbox": [
+        [
+          276.0,
+          952.0
+        ],
+        [
+          1132.0,
+          952.0
+        ],
+        [
+          1132.0,
+          992.0
+        ],
+        [
+          276.0,
+          992.0
+        ]
+      ],
+      "text": "a) Văn bản đề nghị thu hồi giấy chứng nhận đăng ký kinh doanh theo",
+      "confidence": 0.9662974193333334
+    },
+    {
+      "bbox": [
+        [
+          217.0,
+          987.0
+        ],
+        [
+          1133.0,
+          987.0
+        ],
+        [
+          1133.0,
+          1035.0
+        ],
+        [
+          217.0,
+          1035.0
+        ]
+      ],
+      "text": "Mẫu số 07/CC tại Phụ lục III ban hành kèm theo Nghị định này phải có một",
+      "confidence": 0.9456313911764705
+    },
+    {
+      "bbox": [
+        [
+          217.0,
+          1023.0
+        ],
+        [
+          1131.0,
+          1023.0
+        ],
+        [
+          1131.0,
+          1068.0
+        ],
+        [
+          217.0,
+          1068.0
+        ]
+      ],
+      "text": "số nội dung chủ yếu sau: Cơ quan nhà nước có thẩm quyền nhận văn bản;",
+      "confidence": 0.961523175
+    },
+    {
+      "bbox": [
+        [
+          216.0,
+          1061.0
+        ],
+        [
+          1132.0,
+          1061.0
+        ],
+        [
+          1132.0,
+          1105.0
+        ],
+        [
+          216.0,
+          1105.0
+        ]
+      ],
+      "text": "thông tin của người nộp thuế bị cưỡng chế: tên, mã số thuế, địa chỉ đăng ký",
+      "confidence": 0.9682248564705883
+    },
+    {
+      "bbox": [
+        [
+          216.0,
+          1097.0
+        ],
+        [
+          1132.0,
+          1097.0
+        ],
+        [
+          1132.0,
+          1142.0
+        ],
+        [
+          216.0,
+          1142.0
+        ]
+      ],
+      "text": "kinh doanh; loại giấy tờ đề nghị thu hồi; các thông tin liên quan đến loại giấy",
+      "confidence": 0.9628807017647059
+    },
+    {
+      "bbox": [
+        [
+          216.0,
+          1131.0
+        ],
+        [
+          1131.0,
+          1131.0
+        ],
+        [
+          1131.0,
+          1176.0
+        ],
+        [
+          216.0,
+          1176.0
+        ]
+      ],
+      "text": "tờ đề nghị thu hồi (số, ngày tháng năm ban hành...); lý do thu hồi; thời gian đề",
+      "confidence": 0.9627440222222222
+    },
+    {
+      "bbox": [
+        [
+          216.0,
+          1171.0
+        ],
+        [
+          1085.0,
+          1171.0
+        ],
+        [
+          1085.0,
+          1205.0
+        ],
+        [
+          216.0,
+          1205.0
+        ]
+      ],
+      "text": "nghị cơ quan ban hành thực hiện thu hồi giấy chứng nhận đăng ký kinh doanh.",
+      "confidence": 0.967342114375
+    },
+    {
+      "bbox": [
+        [
+          274.0,
+          1230.0
+        ],
+        [
+          1131.0,
+          1230.0
+        ],
+        [
+          1131.0,
+          1279.0
+        ],
+        [
+          274.0,
+          1279.0
+        ]
+      ],
+      "text": "b) Văn bản đề nghị thu hồi phải được gửi đến người nộp | thuế bị cưỡng",
+      "confidence": 0.96054018
+    },
+    {
+      "bbox": [
+        [
+          216.0,
+          1265.0
+        ],
+        [
+          1130.0,
+          1265.0
+        ],
+        [
+          1130.0,
+          1313.0
+        ],
+        [
+          216.0,
+          1313.0
+        ]
+      ],
+      "text": "chế và cơ quan quản lý nhà nước có thẩm quyền để thu hồi giấy chúng nhận",
+      "confidence": 0.9521647858823529
+    },
+    {
+      "bbox": [
+        [
+          216.0,
+          1306.0
+        ],
+        [
+          1129.0,
+          1306.0
+        ],
+        [
+          1129.0,
+          1340.0
+        ],
+        [
+          216.0,
+          1340.0
+        ]
+      ],
+      "text": "đăng ký kinh doanh trong vòng 03 ngày làm việc kể từ ngày hoàn tất xác",
+      "confidence": 0.964990795625
+    },
+    {
+      "bbox": [
+        [
+          215.0,
+          1340.0
+        ],
+        [
+          1129.0,
+          1340.0
+        ],
+        [
+          1129.0,
+          1378.0
+        ],
+        [
+          215.0,
+          1378.0
+        ]
+      ],
+      "text": "minh thông tin đối tượng thuộc diện bị áp dụng biện pháp cưỡng chế. Trong",
+      "confidence": 0.9638692313333332
+    },
+    {
+      "bbox": [
+        [
+          214.0,
+          1379.0
+        ],
+        [
+          1128.0,
+          1379.0
+        ],
+        [
+          1128.0,
+          1424.0
+        ],
+        [
+          214.0,
+          1424.0
+        ]
+      ],
+      "text": "thời gian từ ngày cơ quan quản lý thuế có văn bản đề nghị thu hồi gửi cơ quan",
+      "confidence": 0.9655800752631579
+    },
+    {
+      "bbox": [
+        [
+          215.0,
+          1415.0
+        ],
+        [
+          1128.0,
+          1415.0
+        ],
+        [
+          1128.0,
+          1459.0
+        ],
+        [
+          215.0,
+          1459.0
+        ]
+      ],
+      "text": "đăng ký kinh doanh đến ngày cơ quan đăng ký kinh doanh có quyết định thu",
+      "confidence": 0.95808639125
+    },
+    {
+      "bbox": [
+        [
+          214.0,
+          1450.0
+        ],
+        [
+          1128.0,
+          1450.0
+        ],
+        [
+          1128.0,
+          1494.0
+        ],
+        [
+          214.0,
+          1494.0
+        ]
+      ],
+      "text": "hồi hoặc có văn bản về việc không thu hồi thì cơ quan quản lý thuế có thể",
+      "confidence": 0.9662142433333333
+    },
+    {
+      "bbox": [
+        [
+          214.0,
+          1489.0
+        ],
+        [
+          1128.0,
+          1489.0
+        ],
+        [
+          1128.0,
+          1529.0
+        ],
+        [
+          214.0,
+          1529.0
+        ]
+      ],
+      "text": "áp dụng biện pháp cưỡng chế phù hợp để đảm bảo hiệu quả công tác quản",
+      "confidence": 0.9670068175000001
+    },
+    {
+      "bbox": [
+        [
+          215.0,
+          1524.0
+        ],
+        [
+          299.0,
+          1524.0
+        ],
+        [
+          299.0,
+          1557.0
+        ],
+        [
+          215.0,
+          1557.0
+        ]
+      ],
+      "text": "lý thuế.",
+      "confidence": 0.959206655
+    }
+  ]
+}

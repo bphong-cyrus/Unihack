@@ -1,0 +1,883 @@
+{
+  "document_id": "126/2020/NĐ-CP",
+  "source_file": "../../legal-sources/1262020ndcp/01.pdf",
+  "source_sha256": "310648e80396d267610946458e7fdd71ba87ef538b009d6574ed21514de3f7ca",
+  "page_count": 119,
+  "render_dpi": 150,
+  "engine": "Tesseract 5.5.4 (vie+eng; OEM 1; PSM 3)",
+  "review_status": "UNREVIEWED",
+  "tesseract_version": "5.5.4",
+  "tsv_parser_version": 2,
+  "languages": [
+    "vie",
+    "eng"
+  ],
+  "traineddata_sha256": {
+    "vie": "b6b49293d95d0b6dbd8780174627e82c75be957b6f4ed9862155540d6b00bb45",
+    "eng": "8280aed0782fe27257a68ea10fe7ef324ca0f8d85bd2fd145d1c2b560bcb66ba"
+  },
+  "ocr_engine_mode": 1,
+  "page_segmentation_mode": 3,
+  "thread_limit": 1,
+  "page": 38,
+  "lines": [
+    {
+      "bbox": [
+        [
+          681.0,
+          61.0
+        ],
+        [
+          707.0,
+          61.0
+        ],
+        [
+          707.0,
+          80.0
+        ],
+        [
+          681.0,
+          80.0
+        ]
+      ],
+      "text": "38",
+      "confidence": 0.96776237
+    },
+    {
+      "bbox": [
+        [
+          267.0,
+          136.0
+        ],
+        [
+          1125.0,
+          136.0
+        ],
+        [
+          1125.0,
+          169.0
+        ],
+        [
+          267.0,
+          169.0
+        ]
+      ],
+      "text": "b) Người nộp thuế chấm dứt hoạt động, không hoạt động tại địa chỉ đăng",
+      "confidence": 0.9622484226666667
+    },
+    {
+      "bbox": [
+        [
+          208.0,
+          168.0
+        ],
+        [
+          1125.0,
+          168.0
+        ],
+        [
+          1125.0,
+          209.0
+        ],
+        [
+          208.0,
+          209.0
+        ]
+      ],
+      "text": "ký kinh doanh, giải thể, phá sản chưa hoàn thành nghĩa vụ thuế thì cơ quan",
+      "confidence": 0.9686760137499999
+    },
+    {
+      "bbox": [
+        [
+          208.0,
+          201.0
+        ],
+        [
+          1124.0,
+          201.0
+        ],
+        [
+          1124.0,
+          237.0
+        ],
+        [
+          208.0,
+          237.0
+        ]
+      ],
+      "text": "hải quan tính thuế, thông báo thuế để xác định số tiền thuế phải nộp đối với tổ",
+      "confidence": 0.9633793305555556
+    },
+    {
+      "bbox": [
+        [
+          209.0,
+          241.0
+        ],
+        [
+          854.0,
+          241.0
+        ],
+        [
+          854.0,
+          269.0
+        ],
+        [
+          209.0,
+          269.0
+        ]
+      ],
+      "text": "chức, cá nhân có liên quan theo quy định của pháp luật.",
+      "confidence": 0.9693853558333335
+    },
+    {
+      "bbox": [
+        [
+          265.0,
+          292.0
+        ],
+        [
+          1123.0,
+          292.0
+        ],
+        [
+          1123.0,
+          333.0
+        ],
+        [
+          265.0,
+          333.0
+        ]
+      ],
+      "text": "©) Cơ quan nhà nước có thẩm quyền đề nghị cơ quan hải quan xác định",
+      "confidence": 0.936799576875
+    },
+    {
+      "bbox": [
+        [
+          209.0,
+          324.0
+        ],
+        [
+          1123.0,
+          324.0
+        ],
+        [
+          1123.0,
+          360.0
+        ],
+        [
+          209.0,
+          360.0
+        ]
+      ],
+      "text": "số tiền thuế hàng hóa xuất khẩu, nhập khẩu bị tịch thu để làm căn cứ xử lý",
+      "confidence": 0.9671087022222222
+    },
+    {
+      "bbox": [
+        [
+          208.0,
+          367.0
+        ],
+        [
+          490.0,
+          367.0
+        ],
+        [
+          490.0,
+          394.0
+        ],
+        [
+          208.0,
+          394.0
+        ]
+      ],
+      "text": "theo quy định pháp luật.",
+      "confidence": 0.969453812
+    },
+    {
+      "bbox": [
+        [
+          269.0,
+          414.0
+        ],
+        [
+          1125.0,
+          414.0
+        ],
+        [
+          1125.0,
+          455.0
+        ],
+        [
+          269.0,
+          455.0
+        ]
+      ],
+      "text": "d) Hàng hóa nhập khẩu chưa nộp các loại thuế ở khâu nhập khẩu, bị cơ",
+      "confidence": 0.9647523075
+    },
+    {
+      "bbox": [
+        [
+          210.0,
+          449.0
+        ],
+        [
+          1125.0,
+          449.0
+        ],
+        [
+          1125.0,
+          489.0
+        ],
+        [
+          210.0,
+          489.0
+        ]
+      ],
+      "text": "quan có thắm quyên cưỡng chế kê biên bán đầu giá, trường hợp hàng hóa phải",
+      "confidence": 0.9374064925000001
+    },
+    {
+      "bbox": [
+        [
+          209.0,
+          481.0
+        ],
+        [
+          1125.0,
+          481.0
+        ],
+        [
+          1125.0,
+          523.0
+        ],
+        [
+          209.0,
+          523.0
+        ]
+      ],
+      "text": "nộp các loại thuế ở khâu nhập khẩu, cơ quan hải quan tính thuế, thông báo",
+      "confidence": 0.9404756706249999
+    },
+    {
+      "bbox": [
+        [
+          209.0,
+          515.0
+        ],
+        [
+          845.0,
+          515.0
+        ],
+        [
+          845.0,
+          550.0
+        ],
+        [
+          209.0,
+          550.0
+        ]
+      ],
+      "text": "thuế cho cơ quan thu tiền bán đầu giá để nộp tiền thuế.",
+      "confidence": 0.95138412
+    },
+    {
+      "bbox": [
+        [
+          269.0,
+          569.0
+        ],
+        [
+          1126.0,
+          569.0
+        ],
+        [
+          1126.0,
+          616.0
+        ],
+        [
+          269.0,
+          616.0
+        ]
+      ],
+      "text": "đ) Người nộp t thuế bị xử phạt vi phạm hành chính về quản lý thuế, số tiền",
+      "confidence": 0.94230011
+    },
+    {
+      "bbox": [
+        [
+          210.0,
+          604.0
+        ],
+        [
+          881.0,
+          604.0
+        ],
+        [
+          881.0,
+          640.0
+        ],
+        [
+          210.0,
+          640.0
+        ]
+      ],
+      "text": "xử phạt tính theo số tiền thuế khai thiểu, số tiền thuế trồn.",
+      "confidence": 0.9482198576923078
+    },
+    {
+      "bbox": [
+        [
+          270.0,
+          659.0
+        ],
+        [
+          1126.0,
+          659.0
+        ],
+        [
+          1126.0,
+          701.0
+        ],
+        [
+          270.0,
+          701.0
+        ]
+      ],
+      "text": "e) Hàng hóa nhập khẩu thuộc đối tượng miễn thuế, không chịu thuế,",
+      "confidence": 0.9525013961538462
+    },
+    {
+      "bbox": [
+        [
+          211.0,
+          692.0
+        ],
+        [
+          1126.0,
+          692.0
+        ],
+        [
+          1126.0,
+          738.0
+        ],
+        [
+          211.0,
+          738.0
+        ]
+      ],
+      "text": "người khai thuế cầm cố, thế chấp để làm tài sản bảo đảm các khoản vay,",
+      "confidence": 0.96045457875
+    },
+    {
+      "bbox": [
+        [
+          210.0,
+          726.0
+        ],
+        [
+          1128.0,
+          726.0
+        ],
+        [
+          1128.0,
+          767.0
+        ],
+        [
+          210.0,
+          767.0
+        ]
+      ],
+      "text": "trường hợp tổ chức tín dụng phải xử lý tài sản cằm có, thế chấp theo quy định",
+      "confidence": 0.9601818044444446
+    },
+    {
+      "bbox": [
+        [
+          211.0,
+          760.0
+        ],
+        [
+          1127.0,
+          760.0
+        ],
+        [
+          1127.0,
+          798.0
+        ],
+        [
+          211.0,
+          798.0
+        ]
+      ],
+      "text": "của pháp luật để thu hồi nợ nhưng người khai thuế chưa kê khai tờ khai hải",
+      "confidence": 0.9657144252941176
+    },
+    {
+      "bbox": [
+        [
+          211.0,
+          793.0
+        ],
+        [
+          1127.0,
+          793.0
+        ],
+        [
+          1127.0,
+          838.0
+        ],
+        [
+          211.0,
+          838.0
+        ]
+      ],
+      "text": "quan mới, chưa nộp đủ thuế theo quy định của pháp, luật về hải quan, cơ quan",
+      "confidence": 0.9586035470588234
+    },
+    {
+      "bbox": [
+        [
+          210.0,
+          826.0
+        ],
+        [
+          1054.0,
+          826.0
+        ],
+        [
+          1054.0,
+          862.0
+        ],
+        [
+          210.0,
+          862.0
+        ]
+      ],
+      "text": "hải quan tính thuế, thông báo cho tổ chức tín dụng số tiền thuế phải nộp.",
+      "confidence": 0.963244756875
+    },
+    {
+      "bbox": [
+        [
+          270.0,
+          887.0
+        ],
+        [
+          1102.0,
+          887.0
+        ],
+        [
+          1102.0,
+          917.0
+        ],
+        [
+          270.0,
+          917.0
+        ]
+      ],
+      "text": "g) Phí hải quan; lệ phí hàng hóa, hành lý, phương tiện vận tải quá cảnh.",
+      "confidence": 0.965351995625
+    },
+    {
+      "bbox": [
+        [
+          238.0,
+          937.0
+        ],
+        [
+          1126.0,
+          937.0
+        ],
+        [
+          1126.0,
+          979.0
+        ],
+        [
+          238.0,
+          979.0
+        ]
+      ],
+      "text": "_ 11. Trách nhiệm của người nộp thuế, cơ quan quản lý thuế, cơ quan có",
+      "confidence": 0.950205911875
+    },
+    {
+      "bbox": [
+        [
+          211.0,
+          980.0
+        ],
+        [
+          348.0,
+          980.0
+        ],
+        [
+          348.0,
+          1007.0
+        ],
+        [
+          211.0,
+          1007.0
+        ]
+      ],
+      "text": "thâm quyên",
+      "confidence": 0.9584545499999999
+    },
+    {
+      "bbox": [
+        [
+          271.0,
+          1027.0
+        ],
+        [
+          1126.0,
+          1027.0
+        ],
+        [
+          1126.0,
+          1068.0
+        ],
+        [
+          271.0,
+          1068.0
+        ]
+      ],
+      "text": "a) Người nộp thuế có trách nhiệm khai chính xác, trung thực, đầy đủ các",
+      "confidence": 0.9647686666666666
+    },
+    {
+      "bbox": [
+        [
+          211.0,
+          1062.0
+        ],
+        [
+          1126.0,
+          1062.0
+        ],
+        [
+          1126.0,
+          1098.0
+        ],
+        [
+          211.0,
+          1098.0
+        ]
+      ],
+      "text": "nội dung trong hồ sơ khai thuế hoặc hồ sơ xác định nghĩa vụ tài chính và nộp",
+      "confidence": 0.9670206283333332
+    },
+    {
+      "bbox": [
+        [
+          212.0,
+          1094.0
+        ],
+        [
+          1128.0,
+          1094.0
+        ],
+        [
+          1128.0,
+          1133.0
+        ],
+        [
+          212.0,
+          1133.0
+        ]
+      ],
+      "text": "hồ sơ cho cơ quan quản lý thuế hoặc cơ quan quản lý nhà nước có thẩm \"quyên",
+      "confidence": 0.9389242127777778
+    },
+    {
+      "bbox": [
+        [
+          212.0,
+          1127.0
+        ],
+        [
+          1129.0,
+          1127.0
+        ],
+        [
+          1129.0,
+          1168.0
+        ],
+        [
+          212.0,
+          1168.0
+        ]
+      ],
+      "text": "theo quy định của pháp luật và chịu trách nhiệm về các thông tin trên hồ sơ đã",
+      "confidence": 0.9682139466666666
+    },
+    {
+      "bbox": [
+        [
+          212.0,
+          1161.0
+        ],
+        [
+          1128.0,
+          1161.0
+        ],
+        [
+          1128.0,
+          1201.0
+        ],
+        [
+          212.0,
+          1201.0
+        ]
+      ],
+      "text": "kê khai; giải trình, bổ sung thông tin tài liệu đầy đủ, đúng thời hạn theo yêu",
+      "confidence": 0.9433102376470589
+    },
+    {
+      "bbox": [
+        [
+          212.0,
+          1195.0
+        ],
+        [
+          559.0,
+          1195.0
+        ],
+        [
+          559.0,
+          1229.0
+        ],
+        [
+          212.0,
+          1229.0
+        ]
+      ],
+      "text": "cầu của cơ quan quản lý thuế.",
+      "confidence": 0.9634354628571429
+    },
+    {
+      "bbox": [
+        [
+          271.0,
+          1251.0
+        ],
+        [
+          561.0,
+          1251.0
+        ],
+        [
+          561.0,
+          1284.0
+        ],
+        [
+          271.0,
+          1284.0
+        ]
+      ],
+      "text": "b) Cơ quan quản lý thuế:",
+      "confidence": 0.9590026466666666
+    },
+    {
+      "bbox": [
+        [
+          272.0,
+          1306.0
+        ],
+        [
+          1129.0,
+          1306.0
+        ],
+        [
+          1129.0,
+          1346.0
+        ],
+        [
+          272.0,
+          1346.0
+        ]
+      ],
+      "text": "b.1) Trường hợp cơ quan quản lý thuế tính thuế, thông báo số tiền thuế",
+      "confidence": 0.9622435246666667
+    },
+    {
+      "bbox": [
+        [
+          213.0,
+          1340.0
+        ],
+        [
+          1129.0,
+          1340.0
+        ],
+        [
+          1129.0,
+          1379.0
+        ],
+        [
+          213.0,
+          1379.0
+        ]
+      ],
+      "text": "phải nộp theo hồ sơ khai thuế của người nộp thuế, cơ quan quản lý thuế có",
+      "confidence": 0.9541896341176471
+    },
+    {
+      "bbox": [
+        [
+          213.0,
+          1373.0
+        ],
+        [
+          1131.0,
+          1373.0
+        ],
+        [
+          1131.0,
+          1413.0
+        ],
+        [
+          213.0,
+          1413.0
+        ]
+      ],
+      "text": "trách nhiệm kiểm tra thông tin người nộp thuế kê khai trên hồ sơ khai thuế và",
+      "confidence": 0.9690844064705882
+    },
+    {
+      "bbox": [
+        [
+          213.0,
+          1406.0
+        ],
+        [
+          1131.0,
+          1406.0
+        ],
+        [
+          1131.0,
+          1446.0
+        ],
+        [
+          213.0,
+          1446.0
+        ]
+      ],
+      "text": "thực hiện tính thuế, thong báo thuế cho người nộp thuế. Trường hợp thông tin",
+      "confidence": 0.9614539906666667
+    },
+    {
+      "bbox": [
+        [
+          214.0,
+          1440.0
+        ],
+        [
+          1131.0,
+          1440.0
+        ],
+        [
+          1131.0,
+          1480.0
+        ],
+        [
+          214.0,
+          1480.0
+        ]
+      ],
+      "text": "trên hồ sơ khai thuế của người nộp thuế không day đủ, không chính xác, cơ",
+      "confidence": 0.960309066875
+    },
+    {
+      "bbox": [
+        [
+          214.0,
+          1471.0
+        ],
+        [
+          1130.0,
+          1471.0
+        ],
+        [
+          1130.0,
+          1517.0
+        ],
+        [
+          214.0,
+          1517.0
+        ]
+      ],
+      "text": "quan quản lý thuế không chấp nhận hồ sơ khai thuế hoặc thông báo cho người",
+      "confidence": 0.9687082775
+    },
+    {
+      "bbox": [
+        [
+          215.0,
+          1508.0
+        ],
+        [
+          1131.0,
+          1508.0
+        ],
+        [
+          1131.0,
+          1547.0
+        ],
+        [
+          215.0,
+          1547.0
+        ]
+      ],
+      "text": "nộp thuế theo Mẫu số 01/TB-BSTT-NNT tại Phụ lục II ban hành kèm theo",
+      "confidence": 0.9479536007142858
+    },
+    {
+      "bbox": [
+        [
+          215.0,
+          1537.0
+        ],
+        [
+          1130.0,
+          1537.0
+        ],
+        [
+          1130.0,
+          1578.0
+        ],
+        [
+          215.0,
+          1578.0
+        ]
+      ],
+      "text": "Nghị định để giải trình, bd sung thông tin tài liệu hoặc 4 ấn định thuế theo quy",
+      "confidence": 0.9528016488888889
+    },
+    {
+      "bbox": [
+        [
+          216.0,
+          1581.0
+        ],
+        [
+          436.0,
+          1581.0
+        ],
+        [
+          436.0,
+          1609.0
+        ],
+        [
+          216.0,
+          1609.0
+        ]
+      ],
+      "text": "định của pháp luật.",
+      "confidence": 0.968869705
+    }
+  ]
+}

@@ -1,0 +1,773 @@
+{
+  "document_id": "69/2018/NĐ-CP",
+  "source_file": "../../legal-sources/692018ndcp/01.pdf",
+  "source_sha256": "cfe9d66c02837d203a0781cb916273fa6c3c6151b52fc6becc6d1c006d96681e",
+  "page_count": 89,
+  "render_dpi": 150,
+  "engine": "Tesseract 5.5.4 (vie+eng; OEM 1; PSM 3)",
+  "review_status": "UNREVIEWED",
+  "tesseract_version": "5.5.4",
+  "tsv_parser_version": 2,
+  "languages": [
+    "vie",
+    "eng"
+  ],
+  "traineddata_sha256": {
+    "vie": "b6b49293d95d0b6dbd8780174627e82c75be957b6f4ed9862155540d6b00bb45",
+    "eng": "8280aed0782fe27257a68ea10fe7ef324ca0f8d85bd2fd145d1c2b560bcb66ba"
+  },
+  "ocr_engine_mode": 1,
+  "page_segmentation_mode": 3,
+  "thread_limit": 1,
+  "page": 42,
+  "lines": [
+    {
+      "bbox": [
+        [
+          657.0,
+          128.0
+        ],
+        [
+          678.0,
+          128.0
+        ],
+        [
+          678.0,
+          143.0
+        ],
+        [
+          657.0,
+          143.0
+        ]
+      ],
+      "text": "42",
+      "confidence": 0.93688477
+    },
+    {
+      "bbox": [
+        [
+          317.0,
+          183.0
+        ],
+        [
+          1074.0,
+          183.0
+        ],
+        [
+          1074.0,
+          220.0
+        ],
+        [
+          317.0,
+          220.0
+        ]
+      ],
+      "text": "2. Trong trường hợp có từ hai cơ quan nhà nước được giao quản lý, theo",
+      "confidence": 0.96925341
+    },
+    {
+      "bbox": [
+        [
+          265.0,
+          210.0
+        ],
+        [
+          1074.0,
+          210.0
+        ],
+        [
+          1074.0,
+          251.0
+        ],
+        [
+          265.0,
+          251.0
+        ]
+      ],
+      "text": "dõi các biện pháp quản lý ngoại thương là đối tượng của vụ việc tranh chấp cụ",
+      "confidence": 0.9651686770588236
+    },
+    {
+      "bbox": [
+        [
+          265.0,
+          248.0
+        ],
+        [
+          1074.0,
+          248.0
+        ],
+        [
+          1074.0,
+          284.0
+        ],
+        [
+          265.0,
+          284.0
+        ]
+      ],
+      "text": "thể, các cơ quan này phải thống nhất để một trong các cơ quan này là Cơ quan",
+      "confidence": 0.9677551283333333
+    },
+    {
+      "bbox": [
+        [
+          266.0,
+          280.0
+        ],
+        [
+          1075.0,
+          280.0
+        ],
+        [
+          1075.0,
+          315.0
+        ],
+        [
+          266.0,
+          315.0
+        ]
+      ],
+      "text": "chủ trì, báo cáo Thủ tướng Chính phủ và thông báo cho Bộ Công Thương",
+      "confidence": 0.9684522966666667
+    },
+    {
+      "bbox": [
+        [
+          267.0,
+          321.0
+        ],
+        [
+          409.0,
+          321.0
+        ],
+        [
+          409.0,
+          349.0
+        ],
+        [
+          267.0,
+          349.0
+        ]
+      ],
+      "text": "bằng văn bản.",
+      "confidence": 0.9689505766666667
+    },
+    {
+      "bbox": [
+        [
+          320.0,
+          364.0
+        ],
+        [
+          1077.0,
+          364.0
+        ],
+        [
+          1077.0,
+          397.0
+        ],
+        [
+          320.0,
+          397.0
+        ]
+      ],
+      "text": "3. Đối với trường hợp Chính phủ Việt Nam bị kiện, trong thời hạn 3 (ba)",
+      "confidence": 0.9613072524999999
+    },
+    {
+      "bbox": [
+        [
+          268.0,
+          386.0
+        ],
+        [
+          1077.0,
+          386.0
+        ],
+        [
+          1077.0,
+          433.0
+        ],
+        [
+          268.0,
+          433.0
+        ]
+      ],
+      "text": "ngày làm việc kể từ ngày nhận được yêu cầu tham vấn mà không thống nhất",
+      "confidence": 0.9677267168749999
+    },
+    {
+      "bbox": [
+        [
+          268.0,
+          427.0
+        ],
+        [
+          1078.0,
+          427.0
+        ],
+        [
+          1078.0,
+          463.0
+        ],
+        [
+          268.0,
+          463.0
+        ]
+      ],
+      "text": "được Cơ quan chủ trì, các cơ quan này phải báo cáo Thủ tướng Chính phủ và",
+      "confidence": 0.9687630364705881
+    },
+    {
+      "bbox": [
+        [
+          269.0,
+          468.0
+        ],
+        [
+          607.0,
+          468.0
+        ],
+        [
+          607.0,
+          495.0
+        ],
+        [
+          269.0,
+          495.0
+        ]
+      ],
+      "text": "thông báo cho Bộ Công Thương.",
+      "confidence": 0.9689702233333333
+    },
+    {
+      "bbox": [
+        [
+          322.0,
+          512.0
+        ],
+        [
+          1079.0,
+          512.0
+        ],
+        [
+          1079.0,
+          547.0
+        ],
+        [
+          322.0,
+          547.0
+        ]
+      ],
+      "text": "4. Trong trường hợp cần thiết, theo đề nghị của Bộ trưởng Bộ Công",
+      "confidence": 0.9651803242857143
+    },
+    {
+      "bbox": [
+        [
+          270.0,
+          540.0
+        ],
+        [
+          1079.0,
+          540.0
+        ],
+        [
+          1079.0,
+          579.0
+        ],
+        [
+          270.0,
+          579.0
+        ]
+      ],
+      "text": "Thương, Thủ tướng Chính phủ quyết định phân công hoặc thay đổi Cơ quan",
+      "confidence": 0.9581473214285714
+    },
+    {
+      "bbox": [
+        [
+          271.0,
+          588.0
+        ],
+        [
+          341.0,
+          588.0
+        ],
+        [
+          341.0,
+          606.0
+        ],
+        [
+          271.0,
+          606.0
+        ]
+      ],
+      "text": "chủ trì.",
+      "confidence": 0.9422446099999999
+    },
+    {
+      "bbox": [
+        [
+          324.0,
+          629.0
+        ],
+        [
+          853.0,
+          629.0
+        ],
+        [
+          853.0,
+          662.0
+        ],
+        [
+          324.0,
+          662.0
+        ]
+      ],
+      "text": "5. Cơ quan chủ trì có nhiệm vụ, quyền hạn sau đây:",
+      "confidence": 0.9676466749999999
+    },
+    {
+      "bbox": [
+        [
+          324.0,
+          677.0
+        ],
+        [
+          1081.0,
+          677.0
+        ],
+        [
+          1081.0,
+          715.0
+        ],
+        [
+          324.0,
+          715.0
+        ]
+      ],
+      "text": "a) Tiếp nhận, xử lý các thông tin, tài liệu liên quan đến giải quyết tranh",
+      "confidence": 0.96466467375
+    },
+    {
+      "bbox": [
+        [
+          273.0,
+          718.0
+        ],
+        [
+          779.0,
+          718.0
+        ],
+        [
+          779.0,
+          748.0
+        ],
+        [
+          273.0,
+          748.0
+        ]
+      ],
+      "text": "chấp về áp dụng biện pháp quản lý ngoại thương.",
+      "confidence": 0.9686719439999999
+    },
+    {
+      "bbox": [
+        [
+          325.0,
+          766.0
+        ],
+        [
+          1082.0,
+          766.0
+        ],
+        [
+          1082.0,
+          800.0
+        ],
+        [
+          325.0,
+          800.0
+        ]
+      ],
+      "text": "b) Làm đầu mồi liên lạc, trao đổi với Chính phủ nước ngoài tham gia vụ",
+      "confidence": 0.9425282481249999
+    },
+    {
+      "bbox": [
+        [
+          274.0,
+          793.0
+        ],
+        [
+          1082.0,
+          793.0
+        ],
+        [
+          1082.0,
+          831.0
+        ],
+        [
+          274.0,
+          831.0
+        ]
+      ],
+      "text": "việc tranh chấp và với cơ quan trọng tài hoặc cơ quan tài phán quốc tế có",
+      "confidence": 0.9683528364705883
+    },
+    {
+      "bbox": [
+        [
+          274.0,
+          834.0
+        ],
+        [
+          399.0,
+          834.0
+        ],
+        [
+          399.0,
+          868.0
+        ],
+        [
+          274.0,
+          868.0
+        ]
+      ],
+      "text": "thâm quyền.",
+      "confidence": 0.9666744249999999
+    },
+    {
+      "bbox": [
+        [
+          326.0,
+          879.0
+        ],
+        [
+          1083.0,
+          879.0
+        ],
+        [
+          1083.0,
+          915.0
+        ],
+        [
+          326.0,
+          915.0
+        ]
+      ],
+      "text": "¢) Chủ trì, phối hợp với Cơ quan đầu mồi và cơ quan, tổ chức, cá nhân liên",
+      "confidence": 0.9574684694444444
+    },
+    {
+      "bbox": [
+        [
+          275.0,
+          913.0
+        ],
+        [
+          1083.0,
+          913.0
+        ],
+        [
+          1083.0,
+          947.0
+        ],
+        [
+          275.0,
+          947.0
+        ]
+      ],
+      "text": "quan trong quá trình giải quyết tranh chấp về áp dụng biện pháp quản lý ngoại",
+      "confidence": 0.96780402125
+    },
+    {
+      "bbox": [
+        [
+          275.0,
+          941.0
+        ],
+        [
+          1013.0,
+          941.0
+        ],
+        [
+          1013.0,
+          978.0
+        ],
+        [
+          275.0,
+          978.0
+        ]
+      ],
+      "text": "thương tại cơ quan trọng tài hoặc cơ quan tài phán quốc tế có thẩm quyền.",
+      "confidence": 0.95963439
+    },
+    {
+      "bbox": [
+        [
+          328.0,
+          997.0
+        ],
+        [
+          1084.0,
+          997.0
+        ],
+        [
+          1084.0,
+          1031.0
+        ],
+        [
+          328.0,
+          1031.0
+        ]
+      ],
+      "text": "d) Phối hợp với Cơ quan đầu mồi và cơ quan, tổ chức, cá nhân liên quan xây",
+      "confidence": 0.9604146277777779
+    },
+    {
+      "bbox": [
+        [
+          276.0,
+          1030.0
+        ],
+        [
+          1067.0,
+          1030.0
+        ],
+        [
+          1067.0,
+          1062.0
+        ],
+        [
+          276.0,
+          1062.0
+        ]
+      ],
+      "text": "dựng kê hoạch giải quyết tranh chấp về áp dụng biện pháp quản lý ngoại thương.",
+      "confidence": 0.96592877375
+    },
+    {
+      "bbox": [
+        [
+          329.0,
+          1079.0
+        ],
+        [
+          1086.0,
+          1079.0
+        ],
+        [
+          1086.0,
+          1115.0
+        ],
+        [
+          329.0,
+          1115.0
+        ]
+      ],
+      "text": "đ) Chủ trì, phối hợp với Cơ quan đầu mối và cơ quan, tổ chức, cá nhân",
+      "confidence": 0.9633368411764707
+    },
+    {
+      "bbox": [
+        [
+          278.0,
+          1115.0
+        ],
+        [
+          1086.0,
+          1115.0
+        ],
+        [
+          1086.0,
+          1146.0
+        ],
+        [
+          278.0,
+          1146.0
+        ]
+      ],
+      "text": "liên quan trong việc chỉ định trọng tài viên trong trường hợp thành lập cơ quan",
+      "confidence": 0.9680841725
+    },
+    {
+      "bbox": [
+        [
+          277.0,
+          1146.0
+        ],
+        [
+          1033.0,
+          1146.0
+        ],
+        [
+          1033.0,
+          1178.0
+        ],
+        [
+          277.0,
+          1178.0
+        ]
+      ],
+      "text": "trọng tài giải quyết tranh chap về áp dụng biện pháp quản lý ngoại thương.",
+      "confidence": 0.9672346033333333
+    },
+    {
+      "bbox": [
+        [
+          330.0,
+          1194.0
+        ],
+        [
+          1086.0,
+          1194.0
+        ],
+        [
+          1086.0,
+          1237.0
+        ],
+        [
+          330.0,
+          1237.0
+        ]
+      ],
+      "text": "e) Chủ trì, phối hợp với Cơ quan đầu mồi lựa chọn, thuê và giám sát tổ",
+      "confidence": 0.9597370547058824
+    },
+    {
+      "bbox": [
+        [
+          279.0,
+          1227.0
+        ],
+        [
+          1087.0,
+          1227.0
+        ],
+        [
+          1087.0,
+          1262.0
+        ],
+        [
+          279.0,
+          1262.0
+        ]
+      ],
+      "text": "chức hành nghề luật sư (sau đây gọi chung là luật sư) tư vấn giải quyết tranh",
+      "confidence": 0.9680190358823529
+    },
+    {
+      "bbox": [
+        [
+          279.0,
+          1267.0
+        ],
+        [
+          785.0,
+          1267.0
+        ],
+        [
+          785.0,
+          1295.0
+        ],
+        [
+          279.0,
+          1295.0
+        ]
+      ],
+      "text": "chấp về áp dụng biện pháp quản lý ngoại thương.",
+      "confidence": 0.966970062
+    },
+    {
+      "bbox": [
+        [
+          332.0,
+          1315.0
+        ],
+        [
+          1087.0,
+          1315.0
+        ],
+        [
+          1087.0,
+          1347.0
+        ],
+        [
+          332.0,
+          1347.0
+        ]
+      ],
+      "text": "g) Chủ trì, phối hợp với cơ quan, tổ chức, cá nhân liên quản xử lý các",
+      "confidence": 0.961600001764706
+    },
+    {
+      "bbox": [
+        [
+          280.0,
+          1347.0
+        ],
+        [
+          1087.0,
+          1347.0
+        ],
+        [
+          1087.0,
+          1378.0
+        ],
+        [
+          280.0,
+          1378.0
+        ]
+      ],
+      "text": "vấn đề liên quan đến tranh chấp về áp dụng biện pháp quản lý ngoại thương,",
+      "confidence": 0.967013716875
+    },
+    {
+      "bbox": [
+        [
+          280.0,
+          1379.0
+        ],
+        [
+          1089.0,
+          1379.0
+        ],
+        [
+          1089.0,
+          1410.0
+        ],
+        [
+          280.0,
+          1410.0
+        ]
+      ],
+      "text": "trong đó có việc thuê chuyên gia kỹ thuật và mời nhân chứng phục vụ quá",
+      "confidence": 0.96791557875
+    },
+    {
+      "bbox": [
+        [
+          281.0,
+          1407.0
+        ],
+        [
+          557.0,
+          1407.0
+        ],
+        [
+          557.0,
+          1444.0
+        ],
+        [
+          281.0,
+          1444.0
+        ]
+      ],
+      "text": "trình giải quyết tranh chấp.",
+      "confidence": 0.968882844
+    }
+  ]
+}
