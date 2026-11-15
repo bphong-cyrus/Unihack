@@ -91,13 +91,6 @@ export default function RightPanel({
   const currentCit = citations[safeIdx];
   const currentCheck = checks[safeIdx];
   const passed = Boolean(activeAssistantMsg?.validation?.passed);
-  const overallScore = activeAssistantMsg?.validation?.overall_score ?? 0;
-
-  const simPct = currentCheck
-    ? Math.round((currentCheck.excerpt_similarity || 0) * 100)
-    : passed
-    ? 100
-    : 0;
 
   function applyFormat(cmd: string) {
     if (typeof document !== "undefined") {
@@ -188,7 +181,7 @@ export default function RightPanel({
                       border: `1px solid ${passed ? "#a7f3d0" : "#fecaca"}`
                     }}
                   >
-                    {passed ? `✔ ${simPct}% Khớp` : `✕ Không đạt (${overallScore.toFixed(0)}%)`}
+                    {passed ? "✔ Đã xác thực" : "✕ Cần kiểm tra lại"}
                   </span>
                 ) : (
                   <span

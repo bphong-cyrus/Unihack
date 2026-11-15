@@ -514,6 +514,161 @@ export default function AskPayWorkspacePage() {
     setMobileMenuOpen(false);
   }
 
+  function getConversationalReply(input: string): string | null {
+    const rawLower = input.normalize("NFC").trim().toLowerCase();
+    if (!rawLower) return null;
+
+    if (/\d+\s*\/\s*\d{4}/.test(rawLower) || rawLower.includes("c/o")) {
+      return null;
+    }
+
+    const xnkKeywords = [
+      "thuế",
+      "hải quan",
+      "nhập khẩu",
+      "xuất khẩu",
+      "tờ khai",
+      "mã hs",
+      "phạt",
+      "thông tư",
+      "nghị định",
+      "luật",
+      "cảng",
+      "container",
+      "nhãn",
+      "trị giá",
+      "tạm nhập",
+      "tái xuất",
+      "xuất xứ",
+      "kiểm tra",
+      "xuất cảnh",
+      "gia công",
+      "sxxk",
+      "tntx",
+      "bcqt",
+      "ecosys",
+      "evfta",
+      "atiga",
+      "cptpp",
+      "acfta",
+      "gsp",
+      "aeo",
+      "bổ sung",
+      "phân luồng",
+      "thông quan"
+    ];
+    if (xnkKeywords.some((kw) => rawLower.includes(kw))) {
+      return null;
+    }
+
+    const normalized = rawLower
+      .replace(/[?!.,;:'"()[\]{}…]/g, " ")
+      .replace(/\s+/g, " ")
+      .trim();
+
+    if (!normalized || normalized.split(" ").length > 8) {
+      return null;
+    }
+
+    const greetings = new Set([
+      "hi",
+      "hello",
+      "helo",
+      "hê lô",
+      "hế lô",
+      "hey",
+      "yo",
+      "alo",
+      "a lô",
+      "chào",
+      "xin chào",
+      "chào bạn",
+      "chào ad",
+      "chào askpay",
+      "chào hệ thống",
+      "chào trợ lý",
+      "hi askpay",
+      "hello askpay",
+      "hi bạn",
+      "hello bạn",
+      "good morning",
+      "good afternoon",
+      "good evening"
+    ]);
+    const isGreetingRegex =
+      /^(hi|hello|helo|hey|alo|a lô|xin chào|chào)(\s+(bạn|ad|askpay|nhé|nha|ơi|ạ|em|anh|chị|there|everyone))?$/i.test(
+        normalized
+      );
+
+    if (greetings.has(normalized) || isGreetingRegex) {
+      return (
+        "Xin chào! Mình là trợ lý pháp lý AskPay chuyên về Hải quan và Xuất Nhập Khẩu.\n\n" +
+        "Tin nhắn chào hỏi này hoàn toàn miễn phí (không gọi ví hay trừ cọc). Bạn có thể nhập ngay câu hỏi nghiệp vụ (ví dụ: thời hạn nộp tờ khai nhập khẩu, xử phạt khai sai mã HS, thủ tục C/O mẫu E/D/EUR.1, hoàn thuế hàng tái xuất...) để AskPay tra cứu và đối chiếu trực tiếp từ 43 văn bản pháp luật chính thức."
+      );
+    }
+
+    const helpSet = new Set([
+      "bạn là ai",
+      "askpay là gì",
+      "bạn làm được gì",
+      "web này làm gì",
+      "ứng dụng này làm gì",
+      "hướng dẫn",
+      "hướng dẫn sử dụng",
+      "cách dùng",
+      "cách sử dụng",
+      "giúp tôi",
+      "giúp mình",
+      "help",
+      "tư vấn giúp",
+      "cho mình hỏi",
+      "cho tôi hỏi",
+      "mình muốn hỏi",
+      "tôi muốn hỏi",
+      "có ai ở đó không"
+    ]);
+    if (helpSet.has(normalized)) {
+      return (
+        "Mình là AskPay — trợ lý tra cứu và đối chiếu pháp luật Hải quan & Xuất Nhập Khẩu.\n\n" +
+        "• Hỏi Nhanh (0.05 USDC): Tra cứu ngắn gọn kết luận và Điều/Khoản áp dụng.\n" +
+        "• Tình Huống (0.20 USDC): Phân tích chuyên sâu đa văn bản, kèm hướng dẫn hồ sơ & lưu ý thực tế.\n" +
+        "• Cam kết hoàn phí: Nếu không tìm thấy căn cứ hợp lệ hoặc văn bản đã hết hiệu lực, hệ thống tự động hoàn trả 100% chi phí.\n\n" +
+        "Hãy nhập tình huống XNK cụ thể của bạn để bắt đầu nhé!"
+      );
+    }
+
+    const thanksSet = new Set([
+      "cảm ơn",
+      "cám ơn",
+      "cảm ơn bạn",
+      "cảm ơn nhiều",
+      "cám ơn nhiều",
+      "cảm ơn ạ",
+      "thanks",
+      "thank you",
+      "thank",
+      "tks",
+      "ty",
+      "ok",
+      "oke",
+      "okay",
+      "ok bạn",
+      "được rồi",
+      "tốt quá",
+      "tuyệt vời",
+      "hay quá",
+      "tạm biệt",
+      "bye",
+      "bye bye",
+      "goodbye"
+    ]);
+    if (thanksSet.has(normalized)) {
+      return "Rất vui được hỗ trợ bạn! Nếu có thêm vướng mắc về tờ khai, mã HS, C/O hay quy định hải quan, bạn cứ nhắn câu hỏi bất cứ lúc nào nhé.";
+    }
+
+    return null;
+  }
+
   function handleInspectCitation(assistantMsgId: string, citIdx: number) {
     setFocusedAssistantId(assistantMsgId);
     setSelectedCitationIdx(citIdx);
@@ -525,6 +680,47 @@ export default function AskPayWorkspacePage() {
     const queryText = (customPrompt ?? questionInput).trim();
     if (!queryText) {
       setErrorMsg("Vui lòng nhập tình huống Hải quan hoặc câu hỏi pháp luật cần tra cứu.");
+      return;
+    }
+
+    const freeConversationalReply = getConversationalReply(queryText);
+    if (freeConversationalReply) {
+      setErrorMsg("");
+      const fallbackSession = createEmptySession();
+      const targetSessionId = activeSession?.id || fallbackSession.id;
+      const nowLabel = formatNowLabel();
+      const userMsg: ChatMessage = {
+        id: `u-${Date.now()}`,
+        role: "user",
+        timestampLabel: nowLabel,
+        content: queryText
+      };
+      const freeAssistantMsg: ChatMessage = {
+        id: `a-${Date.now() + 1}`,
+        role: "assistant",
+        timestampLabel: nowLabel,
+        feeLabel: "Hỗ trợ trực tuyến · Miễn phí",
+        content: freeConversationalReply,
+        citations: []
+      };
+
+      setSessions((prev) => {
+        const base = prev.length > 0 ? prev : [fallbackSession];
+        return base.map((s) =>
+          s.id === targetSessionId
+            ? {
+                ...s,
+                title: s.messages.length === 0 ? queryText : s.title,
+                messages: [...s.messages, userMsg, freeAssistantMsg]
+              }
+            : s
+        );
+      });
+      if (!customPrompt) setQuestionInput("");
+      setFocusedAssistantId(freeAssistantMsg.id);
+      setTimeout(() => {
+        chatEndRef.current?.scrollIntoView({ behavior: "smooth" });
+      }, 60);
       return;
     }
 
@@ -1702,66 +1898,68 @@ export default function AskPayWorkspacePage() {
                       )}
 
                       {/* Gợi ý bước tiếp theo */}
-                      <div className="next-steps-box">
-                        <div
-                          className="section-micro-label"
-                          style={{ marginBottom: 8, fontSize: 10.5 }}
-                        >
-                          Gợi ý bước tiếp theo
-                        </div>
-                        <div style={{ display: "flex", flexWrap: "wrap", gap: 8 }}>
-                          <button
-                            type="button"
-                            onClick={() => {
-                              setFocusedAssistantId(msg.id);
-                              setRightTab("document");
-                              setRightOpen(true);
-                            }}
-                            className="next-step-btn primary"
+                      {msg.validation && (
+                        <div className="next-steps-box">
+                          <div
+                            className="section-micro-label"
+                            style={{ marginBottom: 8, fontSize: 10.5 }}
                           >
-                            <FileTextIcon size={14} />
-                            Soạn Phiếu / Công văn
-                            <span
-                              style={{
-                                fontSize: 10,
-                                background: "rgba(255,255,255,0.65)",
-                                color: "#102a43",
-                                padding: "1px 6px",
-                                borderRadius: 5,
-                                fontWeight: 700
+                            Gợi ý bước tiếp theo
+                          </div>
+                          <div style={{ display: "flex", flexWrap: "wrap", gap: 8 }}>
+                            <button
+                              type="button"
+                              onClick={() => {
+                                setFocusedAssistantId(msg.id);
+                                setRightTab("document");
+                                setRightOpen(true);
                               }}
+                              className="next-step-btn primary"
                             >
-                              Văn bản
-                            </span>
-                          </button>
+                              <FileTextIcon size={14} />
+                              Soạn Phiếu / Công văn
+                              <span
+                                style={{
+                                  fontSize: 10,
+                                  background: "rgba(255,255,255,0.65)",
+                                  color: "#102a43",
+                                  padding: "1px 6px",
+                                  borderRadius: 5,
+                                  fontWeight: 700
+                                }}
+                              >
+                                Văn bản
+                              </span>
+                            </button>
 
-                          <button
-                            type="button"
-                            onClick={() => {
-                              setFocusedAssistantId(msg.id);
-                              setRightTab("experts");
-                              setRightOpen(true);
-                            }}
-                            className="next-step-btn secondary"
-                          >
-                            <UsersIcon size={14} />
-                            Nhờ Chuyên gia rà soát
-                            <span
-                              style={{
-                                fontSize: 10,
-                                background: "#f1f5f9",
-                                color: "#475569",
-                                padding: "1px 6px",
-                                borderRadius: 5,
-                                border: "1px solid #e2e8f0",
-                                fontWeight: 600
+                            <button
+                              type="button"
+                              onClick={() => {
+                                setFocusedAssistantId(msg.id);
+                                setRightTab("experts");
+                                setRightOpen(true);
                               }}
+                              className="next-step-btn secondary"
                             >
-                              Escrow
-                            </span>
-                          </button>
+                              <UsersIcon size={14} />
+                              Nhờ Chuyên gia rà soát
+                              <span
+                                style={{
+                                  fontSize: 10,
+                                  background: "#f1f5f9",
+                                  color: "#475569",
+                                  padding: "1px 6px",
+                                  borderRadius: 5,
+                                  border: "1px solid #e2e8f0",
+                                  fontWeight: 600
+                                }}
+                              >
+                                Escrow
+                              </span>
+                            </button>
+                          </div>
                         </div>
-                      </div>
+                      )}
                     </div>
                   </div>
                 );

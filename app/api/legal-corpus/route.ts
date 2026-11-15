@@ -52,6 +52,12 @@ const BUILTIN_CORPUS_ROWS: BuiltinCorpusRow[] = [
   ["373/2025/NĐ-CP", "Nghị định quy định về quản lý hải quan và thủ tục xuất nhập khẩu", "4", "1", "ACTIVE", "2025-12-01"],
   ["108/2025/QH15", "Luật sửa đổi, bổ sung một số điều của các luật trong lĩnh vực tài chính, thuế và hải quan", "1", "1", "ACTIVE", "2026-07-01"],
   ["142/2026/TT-BTC", "Thông tư quy định biểu mẫu và chứng từ nghiệp vụ hải quan, thuế xuất nhập khẩu", "1", "1", "ACTIVE", "2026-11-16"],
+  ["54/2014/QH13", "Luật Hải quan năm 2014", "24", "1", "ACTIVE", "2015-01-01"],
+  ["107/2016/QH13", "Luật Thuế xuất khẩu, thuế nhập khẩu năm 2016", "16", "1", "ACTIVE", "2016-09-01"],
+  ["128/2020/NĐ-CP", "Nghị định quy định xử phạt vi phạm hành chính trong lĩnh vực hải quan", "7", "1", "ACTIVE", "2020-12-10"],
+  ["08/2015/NĐ-CP", "Nghị định quy định chi tiết và biện pháp thi hành Luật Hải quan về thủ tục hải quan, kiểm tra, giám sát, kiểm soát hải quan", "25", "1", "ACTIVE", "2015-03-15"],
+  ["38/2015/TT-BTC", "Thông tư quy định về thủ tục hải quan; kiểm tra, giám sát hải quan; thuế xuất khẩu, thuế nhập khẩu", "20", "1", "ACTIVE", "2015-04-01"],
+  ["31/2018/NĐ-CP", "Nghị định quy định chi tiết Luật Quản lý ngoại thương về xuất xứ hàng hóa (C/O)", "14", "1", "ACTIVE", "2018-03-08"],
   ["128/2013/TT-BTC", "Thông tư quy định về thủ tục hải quan; kiểm tra, giám sát hải quan; thuế xuất khẩu, thuế nhập khẩu (ĐÃ HẾT HIỆU LỰC)", "10", "1", "EXPIRED", "2013-11-01"],
   ["45/2016/NĐ-CP", "Nghị định sửa đổi, bổ sung một số điều của Nghị định 127/2013/NĐ-CP quy định xử phạt vi phạm hành chính trong lĩnh vực hải quan (ĐÃ HẾT HIỆU LỰC)", "1", "4", "EXPIRED", "2016-08-01"],
   ["155/2016/TT-BTC", "Thông tư quy định chi tiết thi hành Nghị định 127/2013/NĐ-CP và Nghị định 45/2016/NĐ-CP về xử phạt vi phạm hành chính trong lĩnh vực hải quan (ĐÃ HẾT HIỆU LỰC)", "3", "1", "EXPIRED", "2016-12-01"],
@@ -59,7 +65,7 @@ const BUILTIN_CORPUS_ROWS: BuiltinCorpusRow[] = [
 ];
 
 const BUILTIN_CORPUS_INVENTORY = {
-  total_documents: BUILTIN_CORPUS_ROWS.length,
+  total_documents: new Set(BUILTIN_CORPUS_ROWS.map((row) => row[0])).size,
   total_chunks: BUILTIN_CORPUS_ROWS.length,
   corpus_status: "DEMO_UNVERIFIED",
   domain: "Import-Export & Vietnam Customs Law",

@@ -560,6 +560,62 @@ const EXTENDED_CORPUS_LIST: CorpusEntry[] = [
     ]
   },
   {
+    doc_id: "54/2014/QH13",
+    article: "24",
+    clause: "1",
+    doc_title: "Luật Hải quan năm 2014",
+    status: "ACTIVE",
+    raw_text:
+      "Hồ sơ hải quan gồm tờ khai hải quan và các chứng từ phải nộp hoặc xuất trình cho cơ quan hải quan theo quy định của Luật Hải quan đối với từng loại hình xuất khẩu, nhập khẩu."
+  },
+  {
+    doc_id: "107/2016/QH13",
+    article: "16",
+    clause: "1",
+    doc_title: "Luật Thuế xuất khẩu, thuế nhập khẩu năm 2016",
+    status: "ACTIVE",
+    raw_text:
+      "Miễn thuế xuất khẩu, thuế nhập khẩu đối với hàng hóa xuất khẩu, nhập khẩu theo điều ước quốc tế mà Cộng hòa xã hội chủ nghĩa Việt Nam là thành viên và nguyên liệu, vật tư, linh kiện nhập khẩu để gia công, sản xuất hàng hóa xuất khẩu."
+  },
+  {
+    doc_id: "128/2020/NĐ-CP",
+    article: "7",
+    clause: "1",
+    doc_title: "Nghị định quy định xử phạt vi phạm hành chính trong lĩnh vực hải quan",
+    status: "ACTIVE",
+    raw_text:
+      "Phạt tiền từ 500.000 đồng đến 1.000.000 đồng đối với hành vi không làm thủ tục hải quan đúng thời hạn quy định đối với hàng hóa xuất khẩu, nhập khẩu thuộc diện phải khai hải quan."
+  },
+  {
+    doc_id: "08/2015/NĐ-CP",
+    article: "25",
+    clause: "1",
+    doc_title:
+      "Nghị định quy định chi tiết và biện pháp thi hành Luật Hải quan về thủ tục hải quan, kiểm tra, giám sát, kiểm soát hải quan",
+    status: "ACTIVE",
+    raw_text:
+      "Khai hải quan được thực hiện theo phương thức điện tử; người khai hải quan lập và gửi tờ khai hải quan qua Hệ thống xử lý dữ liệu điện tử hải quan để được tiếp nhận, kiểm tra và phân luồng thông quan."
+  },
+  {
+    doc_id: "38/2015/TT-BTC",
+    article: "20",
+    clause: "1",
+    doc_title:
+      "Thông tư quy định về thủ tục hải quan; kiểm tra, giám sát hải quan; thuế xuất khẩu, thuế nhập khẩu",
+    status: "ACTIVE",
+    raw_text:
+      "Khai bổ sung hồ sơ hải quan đối với hàng hóa xuất khẩu, nhập khẩu là việc người khai hải quan khai sửa đổi, bổ sung các chỉ tiêu thông tin trên tờ khai hải quan và nộp các chứng từ liên quan đến việc khai bổ sung."
+  },
+  {
+    doc_id: "31/2018/NĐ-CP",
+    article: "14",
+    clause: "1",
+    doc_title: "Nghị định quy định chi tiết Luật Quản lý ngoại thương về xuất xứ hàng hóa (C/O)",
+    status: "ACTIVE",
+    raw_text:
+      "Hồ sơ đề nghị cấp Giấy chứng nhận xuất xứ hàng hóa (C/O) gồm đơn đề nghị cấp C/O, mẫu C/O đã khai hoàn chỉnh, bản in tờ khai hải quan xuất khẩu, hóa đơn thương mại và vận đơn hoặc chứng từ vận tải tương đương."
+  },
+  {
     doc_id: "128/2013/TT-BTC",
     article: "10",
     clause: "1",
@@ -620,6 +676,20 @@ const BUILTIN_CORPUS: Record<
 
 function escapeRegExp(s: string): string {
   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+}
+
+function makeCitationTS(docId: string, article: string, clause: string) {
+  const key = `${docId.toUpperCase()}#${article}#${clause}`;
+  const found = Object.entries(BUILTIN_CORPUS).find(([k]) => k.toUpperCase() === key);
+  if (!found) return null;
+  const [, val] = found;
+  return {
+    document: docId,
+    document_title: val.doc_title,
+    article,
+    clause,
+    excerpt: val.raw_text
+  };
 }
 
 const BM25_STOPWORDS_TS = new Set(
@@ -830,20 +900,36 @@ function matchExtendedCorpusQuestionTS(
     answer +=
       " (Lưu ý: Văn bản này đã hết hiệu lực thi hành — hệ thống tự động kích hoạt hoàn phí Escrow 100%).";
   } else if (tier === "deep") {
-    answer += `\n\nGhi chú đối chiếu chuyên sâu (XNK): Doanh nghiệp cần rà soát đồng bộ các chứng từ liên quan trong bộ hồ sơ hải quan và kiểm tra hiệu lực áp dụng của ${matched.doc_id} tại thời điểm mở tờ khai.`;
+    answer += `\n\nHướng dẫn thực thi XNK:\n① Đối chiếu đồng bộ mã HS, trị giá, xuất xứ (C/O) trên hệ thống VNACCS/VCIS với hiệu lực của ${matched.doc_id} tại thời điểm đăng ký tờ khai.\n② Lưu trữ đầy đủ bộ chứng từ thương mại (Tờ khai, Invoice, Packing List, B/L, chứng từ thanh toán) để phục vụ kiểm tra sau thông quan.`;
+  }
+
+  const citations = [
+    {
+      document: matched.doc_id,
+      document_title: matched.doc_title,
+      article: matched.article,
+      clause: matched.clause,
+      excerpt: matched.raw_text
+    }
+  ];
+
+  if (tier === "deep" && matched.status === "ACTIVE") {
+    const secondaryMap: Record<string, [string, string, string]> = {
+      "38/2015/TT-BTC": ["08/2015/NĐ-CP", "25", "1"],
+      "134/2016/NĐ-CP": ["107/2016/QH13", "16", "1"],
+      "18/2021/NĐ-CP": ["107/2016/QH13", "16", "1"],
+      "08/2015/NĐ-CP": ["54/2014/QH13", "24", "1"]
+    };
+    const pair = secondaryMap[matched.doc_id];
+    if (pair) {
+      const extraCit = makeCitationTS(pair[0], pair[1], pair[2]);
+      if (extraCit) citations.push(extraCit);
+    }
   }
 
   return {
     answer,
-    citations: [
-      {
-        document: matched.doc_id,
-        document_title: matched.doc_title,
-        article: matched.article,
-        clause: matched.clause,
-        excerpt: matched.raw_text
-      }
-    ]
+    citations
   };
 }
 
@@ -937,6 +1023,12 @@ function runBuiltinMockLegalQA(
           "Thương nhân đề nghị cấp Giấy chứng nhận xuất xứ hàng hóa (C/O) lần đầu phải đăng ký Hồ sơ thương nhân với cơ quan, tổ chức cấp Giấy chứng nhận xuất xứ hàng hóa thông qua Hệ thống quản lý và cấp chứng nhận xuất xứ điện tử."
       }
     ];
+    if (tier === "deep") {
+      answer +=
+        "\n\nHướng dẫn thực tế cho bộ phận XNK:\n① Hồ sơ cần chuẩn bị khi xin cấp C/O: Đăng ký Hồ sơ thương nhân trên hệ thống eCoSys trước, sau đó nộp đơn đề nghị cấp C/O, mẫu C/O khai hoàn chỉnh, tờ khai hải quan xuất khẩu, hóa đơn thương mại (Invoice) và vận đơn (B/L).\n② Lưu ý rủi ro: Doanh nghiệp phải lưu giữ hồ sơ chứng minh xuất xứ (bảng kê nguyên phụ liệu, hóa đơn đầu vào) để phục vụ hậu kiểm sau thông quan.";
+      const extraCit = makeCitationTS("31/2018/NĐ-CP", "14", "1");
+      if (extraCit) citations.push(extraCit);
+    }
   } else if (
     qLower.includes("hoàn thuế") &&
     qLower.includes("nhập khẩu") &&
@@ -954,6 +1046,12 @@ function runBuiltinMockLegalQA(
           "Người nộp thuế đã nộp thuế nhập khẩu nhưng hàng hóa nhập khẩu phải tái xuất được hoàn thuế nhập khẩu và không phải nộp thuế xuất khẩu khi hàng hóa chưa qua sử dụng, gia công, chế biến tại Việt Nam."
       }
     ];
+    if (tier === "deep") {
+      answer +=
+        "\n\nHướng dẫn thực tế cho bộ phận XNK:\n① Điều kiện tiên quyết: Hàng hóa phải còn nguyên trạng, chưa qua sử dụng, gia công hoặc chế biến tại Việt Nam và có đối chiếu khớp tờ khai nhập khẩu ban đầu với tờ khai tái xuất.\n② Thủ tục nộp hồ sơ: Doanh nghiệp thực hiện nộp hồ sơ hoàn thuế điện tử qua Hệ thống xử lý dữ liệu điện tử hải quan kèm chứng từ thanh toán và xác nhận hàng đã thực xuất.";
+      const extraCit = makeCitationTS("182/2025/NĐ-CP", "1", "1");
+      if (extraCit) citations.push(extraCit);
+    }
   } else if (
     qLower.includes("thời hạn") &&
     qLower.includes("tờ khai") &&
@@ -971,6 +1069,14 @@ function runBuiltinMockLegalQA(
           "Đối với hàng hóa nhập khẩu, nộp trước ngày hàng hóa đến cửa khẩu hoặc trong thời hạn 30 ngày kể từ ngày hàng hóa đến cửa khẩu."
       }
     ];
+    if (tier === "deep") {
+      answer +=
+        "\n\nHướng dẫn thực tế cho bộ phận XNK:\n① Chứng từ bắt buộc trong bộ hồ sơ: Tờ khai hải quan điện tử, hóa đơn thương mại (Commercial Invoice), vận đơn (B/L hoặc AWB), danh sách đóng gói (Packing List) và C/O (nếu hưởng thuế ưu đãi).\n② Lưu ý rủi ro: Nếu quá 30 ngày kể từ ngày hàng đến cửa khẩu mới mở tờ khai, doanh nghiệp có thể bị xử phạt vi phạm hành chính về thời hạn làm thủ tục hải quan theo Nghị định 128/2020/NĐ-CP.";
+      const citA = makeCitationTS("54/2014/QH13", "24", "1");
+      const citB = makeCitationTS("128/2020/NĐ-CP", "7", "1");
+      if (citA) citations.push(citA);
+      if (citB) citations.push(citB);
+    }
   } else if (qLower.includes("khai bổ sung") && qLower.includes("phân luồng")) {
     answer =
       "Theo Khoản 7 Điều 1 Thông tư 39/2018/TT-BTC, người khai hải quan được phép khai bổ sung hồ sơ hải quan sau khi Hệ thống phân luồng tờ khai nhưng trước thời điểm cơ quan hải quan thông báo kiểm tra trực tiếp hồ sơ hoặc kiểm tra thực tế hàng hóa.";
@@ -985,6 +1091,12 @@ function runBuiltinMockLegalQA(
           "Người khai hải quan được khai bổ sung hồ sơ hải quan sau khi Hệ thống phân luồng tờ khai nhưng trước thời điểm cơ quan hải quan thông báo việc kiểm tra trực tiếp hồ sơ hải quan hoặc kiểm tra thực tế hàng hóa."
       }
     ];
+    if (tier === "deep") {
+      answer +=
+        "\n\nHướng dẫn thực tế cho bộ phận XNK:\n① Quy trình thực hiện: Sử dụng nghiệp vụ AMA/AMC trên VNACCS/VCIS để khai sửa đổi, bổ sung các chỉ tiêu thông tin tờ khai và đính kèm văn bản giải trình lý do sai sót kèm chứng từ gốc.\n② Mốc thời gian vàng: Phải hoàn tất khai bổ sung trước khi cơ quan hải quan thông báo kiểm tra trực tiếp hồ sơ (luồng vàng) hoặc kiểm tra thực tế hàng hóa (luồng đỏ).";
+      const extraCit = makeCitationTS("38/2015/TT-BTC", "20", "1");
+      if (extraCit) citations.push(extraCit);
+    }
   } else if (
     qLower.includes("nhãn phụ") ||
     (qLower.includes("nhãn hàng hóa") && qLower.includes("nhập khẩu"))
@@ -1001,6 +1113,12 @@ function runBuiltinMockLegalQA(
           "Hàng hóa nhập khẩu vào Việt Nam mà trên nhãn chưa thể hiện hoặc thể hiện chưa đủ những nội dung bắt buộc bằng tiếng Việt thì phải có nhãn phụ thể hiện những nội dung bắt buộc bằng tiếng Việt và giữ nguyên nhãn gốc của hàng hóa."
       }
     ];
+    if (tier === "deep") {
+      answer +=
+        "\n\nHướng dẫn thực tế cho bộ phận XNK:\n① Nội dung bắt buộc: Nhãn phụ tiếng Việt phải giữ nguyên nhãn gốc và thể hiện đầy đủ tên hàng hóa, xuất xứ hàng hóa, tên và địa chỉ tổ chức nhập khẩu chịu trách nhiệm cùng các thông số theo tính chất hàng hóa.\n② Lưu ý thực thi: Doanh nghiệp phải hoàn tất dán nhãn phụ trước khi đưa hàng hóa lưu thông trên thị trường Việt Nam.";
+      const extraCit = makeCitationTS("111/2021/NĐ-CP", "1", "5");
+      if (extraCit) citations.push(extraCit);
+    }
   } else if (
     qLower.includes("chỉ tiêu thông tin") ||
     (qLower.includes("tờ khai hải quan") && qLower.includes("hệ thống xử lý dữ liệu điện tử"))
@@ -1018,6 +1136,12 @@ function runBuiltinMockLegalQA(
           "Người khai hải quan phải khai đầy đủ các thông tin trên tờ khai hải quan theo các chỉ tiêu thông tin quy định tại mẫu số 01 hoặc mẫu số 02 Phụ lục II ban hành kèm theo Thông tư này và gửi các chứng từ thuộc hồ sơ hải quan cho cơ quan hải quan qua hệ thống xử lý dữ liệu điện tử hải quan."
       }
     ];
+    if (tier === "deep") {
+      answer +=
+        "\n\nHướng dẫn thực thi XNK:\n① Kiểm tra kỹ các chỉ tiêu trọng yếu (Mã HS, Trị giá hóa đơn, Điều kiện giao hàng Incoterms, Xuất xứ C/O) trước khi truyền chính thức trên VNACCS/VCIS.\n② Chuẩn bị sẵn bản scan ký số của bộ chứng từ đính kèm V5 phòng trường hợp tờ khai phân luồng Vàng hoặc Đỏ.";
+      const extraCit = makeCitationTS("08/2015/NĐ-CP", "25", "1");
+      if (extraCit) citations.push(extraCit);
+    }
   } else if (
     (qLower.includes("mã hs") || qLower.includes("mã số hàng")) &&
     (qLower.includes("sai") || qLower.includes("nhầm")) &&
@@ -1025,10 +1149,6 @@ function runBuiltinMockLegalQA(
   ) {
     answer =
       "Theo quy định tại Khoản 1 Điều 9 Nghị định 128/2020/NĐ-CP, trường hợp doanh nghiệp xuất nhập khẩu khai sai mã số hàng hóa (mã HS), thuế suất dẫn đến thiếu số tiền thuế phải nộp mà bị cơ quan hải quan phát hiện trong quá trình kiểm tra sau thông quan thì bị phạt 20% tính trên số tiền thuế khai thiếu.";
-    if (tier === "deep") {
-      answer +=
-        "\n\nLưu ý thực tế cho bộ phận XNK: Ngoài tiền phạt 20% trên số thuế khai thiếu, doanh nghiệp vẫn phải nộp đủ số tiền thuế truy thu và tiền chậm nộp theo Luật Quản lý thuế. Nếu doanh nghiệp tự nguyện phát hiện sai sót và khai bổ sung trước thời điểm có quyết định kiểm tra sau thông quan thì có thể giảm thiểu rủi ro chế tài tùy hồ sơ.";
-    }
     citations = [
       {
         document: "128/2020/NĐ-CP",
@@ -1039,6 +1159,12 @@ function runBuiltinMockLegalQA(
           "Phạt 20% tính trên số tiền thuế khai thiếu hoặc số tiền thuế được miễn, giảm, hoàn, không thu cao hơn so với quy định của pháp luật về thuế đối với hành vi khai sai mã số hàng hóa, thuế suất, mức thuế đối với hàng hóa xuất khẩu, nhập khẩu"
       }
     ];
+    if (tier === "deep") {
+      answer +=
+        "\n\nHướng dẫn thực tế cho bộ phận XNK:\n① Nghĩa vụ tài chính: Ngoài mức phạt 20% trên số thuế khai thiếu, doanh nghiệp vẫn phải nộp đủ số tiền thuế truy thu và tiền chậm nộp theo Luật Quản lý thuế.\n② Phương án xử lý giảm rủi ro: Nếu doanh nghiệp tự rà soát phát hiện nhầm mã HS và thực hiện khai bổ sung hồ sơ hải quan, nộp đủ thuế trước thời điểm có quyết định kiểm tra sau thông quan thì có thể giảm thiểu rủi ro chế tài.";
+      const extraCit = makeCitationTS("38/2015/TT-BTC", "20", "1");
+      if (extraCit) citations.push(extraCit);
+    }
   } else {
     const extendedMatch = matchExtendedCorpusQuestionTS(qLower, tier);
     if (extendedMatch) {
