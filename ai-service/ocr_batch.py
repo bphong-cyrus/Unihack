@@ -53,6 +53,7 @@ def run_batch(source, output, document_id, page_count, recognize, dpi=150, engin
                 json.dump(record, temporary, ensure_ascii=False, indent=2)
                 temporary.write('\n')
                 temporary.flush()
+                temporary.close()
                 os.replace(temporary.name, checkpoint)
             finally:
                 if os.path.exists(temporary.name):

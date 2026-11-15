@@ -7,8 +7,6 @@ import subprocess
 import tempfile
 from pathlib import Path
 
-from pypdf import PdfReader
-
 from ocr_batch import BatchError, run_batch
 
 
@@ -134,6 +132,8 @@ def main():
     if args.threads < 1 or args.dpi < 1 or args.oem not in range(4) or args.psm not in range(14):
         parser.error('invalid thread, DPI, OEM or PSM value')
     try:
+        from pypdf import PdfReader
+
         version = tesseract_version(args.tesseract)
         hashes = model_hashes(args.tessdata_dir, args.languages)
         metadata = {
@@ -155,7 +155,7 @@ def main():
             len(PdfReader(args.source).pages), recognize, args.dpi,
             engine=engine, engine_metadata=metadata,
         )
-    except (BatchError, OSError, ValueError, subprocess.SubprocessError) as error:
+    except (BatchError, OSError, ImportError, ValueError, subprocess.SubprocessError) as error:
         parser.exit(1, f'OCR failed: {error}\n')
 
 

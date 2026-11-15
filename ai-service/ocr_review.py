@@ -30,7 +30,7 @@ def render_review(record_path, output_path):
                 raise ReviewError('invalid OCR confidence')
             text = html.escape(line['text'])
             rows.append(f'<tr><td>{index}</td><td>{confidence:.1%}</td><td>{text}</td></tr>')
-        relative = os.path.relpath(source, Path(output_path).resolve().parent)
+        relative = Path(os.path.relpath(source, Path(output_path).resolve().parent)).as_posix()
         pdf_url = quote(relative, safe='/') + f'#page={page}'
         title = html.escape(str(record['document_id']))
     except (OSError, KeyError, TypeError, ValueError, json.JSONDecodeError) as error:

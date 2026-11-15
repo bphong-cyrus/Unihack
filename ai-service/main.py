@@ -109,6 +109,19 @@ CORPUS_RECORDS = [
         ),
     },
     {
+        "doc_id": "43/2017/NĐ-CP",
+        "doc_title": "Nghị định về nhãn hàng hóa (được sửa đổi bởi Nghị định 111/2021/NĐ-CP)",
+        "article": "7",
+        "clause": "3",
+        "status": "ACTIVE",
+        "effective_date": "2017-06-01",
+        "raw_text": (
+            "Hàng hóa nhập khẩu vào Việt Nam mà trên nhãn chưa thể hiện hoặc thể hiện chưa đủ "
+            "những nội dung bắt buộc bằng tiếng Việt thì phải có nhãn phụ thể hiện những nội dung "
+            "bắt buộc bằng tiếng Việt và giữ nguyên nhãn gốc của hàng hóa."
+        ),
+    },
+    {
         "doc_id": "127/2013/NĐ-CP",
         "doc_title": "Nghị định quy định xử phạt vi phạm hành chính trong lĩnh vực hải quan (ĐÃ HẾT HIỆU LỰC)",
         "article": "8",
@@ -387,9 +400,47 @@ def ask_legal_question(req: AskRequest):
                     ),
                 }
             ]
+        elif "nhãn phụ" in q_lower or ("nhãn hàng hóa" in q_lower and "nhập khẩu" in q_lower):
+            answer = (
+                "Theo Khoản 3 Điều 7 Nghị định 43/2017/NĐ-CP (được sửa đổi, bổ sung bởi Nghị định 111/2021/NĐ-CP), "
+                "hàng hóa nhập khẩu vào Việt Nam mà trên nhãn gốc chưa thể hiện đủ nội dung bắt buộc bằng tiếng Việt "
+                "thì bắt buộc phải có nhãn phụ thể hiện những nội dung bắt buộc bằng tiếng Việt và giữ nguyên nhãn gốc."
+            )
+            citations = [
+                {
+                    "document": "43/2017/NĐ-CP",
+                    "document_title": "Nghị định về nhãn hàng hóa (được sửa đổi bởi Nghị định 111/2021/NĐ-CP)",
+                    "article": "7",
+                    "clause": "3",
+                    "excerpt": (
+                        "Hàng hóa nhập khẩu vào Việt Nam mà trên nhãn chưa thể hiện hoặc thể hiện chưa đủ "
+                        "những nội dung bắt buộc bằng tiếng Việt thì phải có nhãn phụ thể hiện những nội dung "
+                        "bắt buộc bằng tiếng Việt và giữ nguyên nhãn gốc của hàng hóa."
+                    ),
+                }
+            ]
+        elif "chỉ tiêu thông tin" in q_lower or ("tờ khai hải quan" in q_lower and "hệ thống xử lý dữ liệu điện tử" in q_lower):
+            answer = (
+                "Theo Khoản 1 Điều 18 Thông tư 38/2015/TT-BTC, người khai hải quan phải khai đầy đủ các thông tin "
+                "trên tờ khai hải quan theo các chỉ tiêu thông tin quy định và gửi các chứng từ thuộc hồ sơ hải quan "
+                "qua hệ thống xử lý dữ liệu điện tử hải quan."
+            )
+            citations = [
+                {
+                    "document": "38/2015/TT-BTC",
+                    "document_title": "Thông tư quy định về thủ tục hải quan; kiểm tra, giám sát hải quan; thuế xuất khẩu, thuế nhập khẩu",
+                    "article": "18",
+                    "clause": "1",
+                    "excerpt": (
+                        "Người khai hải quan phải khai đầy đủ các thông tin trên tờ khai hải quan theo các chỉ tiêu "
+                        "thông tin quy định tại mẫu số 01 hoặc mẫu số 02 Phụ lục II ban hành kèm theo Thông tư này "
+                        "và gửi các chứng từ thuộc hồ sơ hải quan cho cơ quan hải quan qua hệ thống xử lý dữ liệu điện tử hải quan."
+                    ),
+                }
+            ]
         elif not (any(term in q_lower for term in ("mã hs", "mã số hàng"))
                   and any(term in q_lower for term in ("sai", "nhầm"))
-                  and any(term in q_lower for term in ("phạt", "xử lý"))):
+                  and any(term in q_lower for term in ("phạt", "xử lý", "sau thông quan"))):
             answer = (
                 "Hiện chưa tìm thấy điều khoản pháp luật Hải quan và Xuất nhập khẩu phù hợp trong kho văn bản "
                 "để đối chiếu câu hỏi này. Đây là dữ liệu thử nghiệm, không có giao dịch thanh toán."
