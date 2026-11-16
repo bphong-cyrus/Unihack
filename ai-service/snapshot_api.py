@@ -7,11 +7,21 @@ import os
 import time
 from fastapi import HTTPException
 from legal_corpus import CorpusError, load_snapshot
+from corpus_database import DatabaseError, load_database_snapshot
 from snapshot_search import retrieve
 from versioned_validator import validate_snapshot_citations
 
 
 def configured_snapshot():
+    database = os.environ.get('ASKPAY_CORPUS_DATABASE')
+    if database:
+        snapshot_id = os.environ.get('ASKPAY_CORPUS_SNAPSHOT_ID')
+        if not snapshot_id:
+            raise HTTPException(status_code=503, detail='Chưa cấu hình mã snapshot đã duyệt trong database.')
+        try:
+            return load_database_snapshot(database, snapshot_id)
+        except DatabaseError as error:
+            raise HTTPException(status_code=503, detail='Database corpus hoặc nguồn snapshot không hợp lệ.') from error
     path = os.environ.get('ASKPAY_CORPUS_MANIFEST')
     if not path:
         return None

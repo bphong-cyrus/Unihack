@@ -13,6 +13,7 @@ import {
 } from "viem";
 import { avalancheFuji } from "viem/chains";
 import RightPanel, { RightTab } from "./components/RightPanel";
+import { migrateLegacySessions } from "./data/history-migration.mjs";
 import {
   AskPayLogo,
   BranchIcon,
@@ -142,6 +143,10 @@ export default function AskPayWorkspacePage() {
 
   // Composer & Backend states
   const [questionInput, setQuestionInput] = useState<string>("");
+  const [factDocument, setFactDocument] = useState("");
+  const [factArticle, setFactArticle] = useState("");
+  const [factClause, setFactClause] = useState("");
+  const [factPoint, setFactPoint] = useState("");
   const [mode, setMode] = useState<TierMode>("quick");
   const [demoFault, setDemoFault] = useState<"normal" | "hallucination" | "expired">("normal");
   const [loadingStep, setLoadingStep] = useState<string>("");
@@ -255,8 +260,18 @@ export default function AskPayWorkspacePage() {
       localStorage.setItem(AUTH_STORAGE_KEY, JSON.stringify(user));
       const savedSessions = localStorage.getItem(sessionsKeyForUser(user.email));
       if (savedSessions) {
-        const parsed = JSON.parse(savedSessions);
+        let parsed = JSON.parse(savedSessions);
         if (Array.isArray(parsed) && parsed.length > 0) {
+          const schemaKey = `${sessionsKeyForUser(user.email)}:history-schema`;
+          if (localStorage.getItem(schemaKey) !== '2') {
+            parsed = migrateLegacySessions(parsed);
+            try {
+              localStorage.setItem(sessionsKeyForUser(user.email), JSON.stringify(parsed));
+              localStorage.setItem(schemaKey, '2');
+            } catch {
+              // Keep the migrated view even if local storage is full.
+            }
+          }
           setSessions(parsed);
           setActiveSessionId(parsed[0].id);
         } else {
@@ -265,6 +280,7 @@ export default function AskPayWorkspacePage() {
           setActiveSessionId(empty.id);
         }
       } else {
+        localStorage.setItem(`${sessionsKeyForUser(user.email)}:history-schema`, '2');
         const empty = createEmptySession();
         setSessions([empty]);
         setActiveSessionId(empty.id);
@@ -680,6 +696,46 @@ export default function AskPayWorkspacePage() {
     const queryText = (customPrompt ?? questionInput).trim();
     if (!queryText) {
       setErrorMsg("Vui lòng nhập tình huống Hải quan hoặc câu hỏi pháp luật cần tra cứu.");
+      return;
+    }
+
+    if ((customMode ?? mode) === "factcheck") {
+      if (!factDocument.trim() || !factArticle.trim() || !factClause.trim()) {
+        setErrorMsg("Nhập số văn bản, Điều và Khoản cần kiểm chứng; dùng Khoản 0 nếu Điều không chia khoản.");
+        return;
+      }
+      setErrorMsg("");
+      setLoadingStep("Đang kiểm chứng điều khoản được chỉ định...");
+      try {
+        const response = await fetch('/api/legal-factcheck', {
+          method: 'POST', headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ document: factDocument, article: factArticle, clause: factClause,
+            point: factPoint, excerpt: queryText, ...(asOf ? { as_of: asOf } : {}) })
+        });
+        const data = await response.json();
+        if (!response.ok) throw new Error(data.error || 'Không thể kiểm chứng điều khoản.');
+        const differences = data.differences.map((item: { input: string; source: string }) =>
+          `“${item.input}” trong đoạn nhập khác “${item.source}” trong nguồn.`).join('\n');
+        const answer = data.passed ? 'Đoạn trích khớp điều khoản đã chỉ định.' :
+          `Không xác nhận được đoạn trích tại điều khoản đã chỉ định. ${data.fail_reason || ''}`;
+        const messages: ChatMessage[] = [
+          { id: `u-${Date.now()}`, role: 'user', timestampLabel: formatNowLabel(), content: queryText },
+          { id: `a-${Date.now()}`, role: 'assistant', timestampLabel: formatNowLabel(), mode: 'factcheck',
+            feeLabel: 'Kiểm chứng · Không thu phí', content: `${answer}${differences ? `\n${differences}` : ''}`,
+            citations: [data.citation], validation: data.validation }
+        ];
+        const fallback = createEmptySession();
+        const sessionId = activeSession?.id || fallback.id;
+        setSessions(prev => (prev.length ? prev : [fallback]).map(s => s.id === sessionId ?
+          { ...s, messages: [...s.messages, ...messages], status: data.passed ? 'verified' : 'draft' } : s));
+        setFocusedAssistantId(messages[1].id);
+        setRightTab('citation');
+        if (!customPrompt) setQuestionInput('');
+      } catch (error: any) {
+        setErrorMsg(error?.message || 'Không thể kiểm chứng điều khoản.');
+      } finally {
+        setLoadingStep('');
+      }
       return;
     }
 
@@ -2157,6 +2213,12 @@ export default function AskPayWorkspacePage() {
 
                 {/* Rounded Prompt Input Card */}
                 <div className="composer-box">
+                  {mode === 'factcheck' && <div style={{ display: 'flex', flexWrap: 'wrap', gap: 8, padding: '10px 12px' }}>
+                    <input aria-label="Số văn bản" placeholder="Số văn bản" value={factDocument} onChange={e => setFactDocument(e.target.value)} />
+                    <input aria-label="Điều" placeholder="Điều" value={factArticle} onChange={e => setFactArticle(e.target.value)} />
+                    <input aria-label="Khoản" placeholder="Khoản (0 nếu không chia)" value={factClause} onChange={e => setFactClause(e.target.value)} />
+                    <input aria-label="Điểm" placeholder="Điểm (nếu có)" value={factPoint} onChange={e => setFactPoint(e.target.value)} />
+                  </div>}
                   <textarea
                     rows={2}
                     value={questionInput}

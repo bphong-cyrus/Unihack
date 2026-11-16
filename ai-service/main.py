@@ -13,6 +13,8 @@ from pydantic import BaseModel, StringConstraints
 from citation_text import VALIDATOR_VERSION, normalize_vn_text, compute_excerpt_similarity
 from snapshot_api import ask_snapshot, configured_snapshot, corpus_response, query_date
 from versioned_validator import validate_snapshot_citations
+from factcheck import check_claim
+from relevance import evidence_relevant
 
 app = FastAPI(
     title="AskPay XNK — LegalIR / LegalQA & Citation Validator API",
@@ -1083,6 +1085,15 @@ class ValidateRequest(BaseModel):
     as_of: Optional[date] = None
 
 
+class FactcheckRequest(BaseModel):
+    document: Annotated[str, StringConstraints(strip_whitespace=True, min_length=1)]
+    article: Annotated[str, StringConstraints(strip_whitespace=True, min_length=1)]
+    clause: Annotated[str, StringConstraints(strip_whitespace=True, min_length=1)]
+    point: str = ''
+    excerpt: Annotated[str, StringConstraints(strip_whitespace=True, min_length=1)]
+    as_of: Optional[date] = None
+
+
 class AskRequest(BaseModel):
     question_id: Optional[str] = "0x00"
     question: Annotated[str, StringConstraints(strip_whitespace=True, min_length=1)]
@@ -1115,6 +1126,14 @@ def validate_endpoint(req: ValidateRequest):
     if req.as_of is not None:
         raise HTTPException(status_code=400, detail="Dữ liệu demo không hỗ trợ tra cứu theo ngày.")
     return validate_citations(req.citations)
+
+
+@app.post('/api/v1/legal/factcheck')
+def factcheck_endpoint(req: FactcheckRequest):
+    snapshot = configured_snapshot()
+    if snapshot is None:
+        raise HTTPException(status_code=503, detail='Chưa có snapshot pháp luật đã rà soát để kiểm chứng.')
+    return check_claim(snapshot, req.document, req.article, req.clause, req.point, req.excerpt, query_date(req.as_of))
 
 
 @app.post("/api/v1/legal/ask")
@@ -1383,6 +1402,11 @@ def ask_legal_question(req: AskRequest):
                     "Cần xác nhận thêm: (a) Đã có quyết định kiểm tra sau thông quan hay doanh nghiệp tự phát hiện trước kiểm tra, (b) Khai sai mã HS có làm thiếu số tiền thuế phải nộp hay không, (c) Hồ sơ kỹ thuật/catalogue chứng minh bản chất hàng hóa để xác định lại mã HS chuẩn.",
                 )
 
+    if citations and any(not evidence_relevant(req.question, citation.get('article', ''),
+                                               citation.get('document_title', ''), citation.get('excerpt', ''))
+                         for citation in citations):
+        answer = 'Chưa tìm thấy căn cứ phù hợp với vấn đề và điều khoản bạn yêu cầu trong dữ liệu hiện có.'
+        citations = []
     validation = validate_citations(citations)
     latency_ms = int((time.time() - start_time) * 1000)
 

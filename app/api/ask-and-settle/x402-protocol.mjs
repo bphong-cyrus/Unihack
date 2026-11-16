@@ -95,16 +95,14 @@ export function verifyX402PaymentHeader({
   const payload = proof.payload || proof;
   if (
     expectedQuestionId &&
-    payload.questionId &&
-    String(payload.questionId).toLowerCase() !== String(expectedQuestionId).toLowerCase()
+    String(payload.questionId || "").toLowerCase() !== String(expectedQuestionId).toLowerCase()
   ) {
     return { ok: false, reason: "X402_QUESTION_ID_MISMATCH" };
   }
 
   if (
     expectedQuestionHash &&
-    payload.questionHash &&
-    String(payload.questionHash).toLowerCase() !== String(expectedQuestionHash).toLowerCase()
+    String(payload.questionHash || "").toLowerCase() !== String(expectedQuestionHash).toLowerCase()
   ) {
     return { ok: false, reason: "X402_QUESTION_HASH_MISMATCH" };
   }
@@ -113,7 +111,8 @@ export function verifyX402PaymentHeader({
     return { ok: false, reason: `X402_AMOUNT_MISMATCH (expected ${expectedAmount} USDC base units)` };
   }
 
-  if (!payload.txHash && !payload.authorization) {
+  if (!/^0x[0-9a-fA-F]{64}$/.test(String(payload.txHash || "")) ||
+      !/^0x[0-9a-fA-F]{40}$/.test(String(payload.payer || payload.from || ""))) {
     return { ok: false, reason: "MISSING_X402_SETTLEMENT_PROOF" };
   }
 

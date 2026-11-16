@@ -13,10 +13,10 @@ import { avalancheFuji } from "viem/chains";
 import { evaluateSettlementDecision } from "./escrow-guard.mjs";
 import { forwardLegalQuestion } from "./legal-proxy.mjs";
 import { VALIDATOR_VERSION, computeExcerptSimilarity } from "./validator-core.mjs";
+import { evidenceRelevant } from "./relevance.mjs";
+import { verifyEscrowPayment } from "./escrow-payment-proof.mjs";
 import {
   buildX402Challenge,
-  getIdempotentResult,
-  setIdempotentResult,
   verifyX402PaymentHeader
 } from "./x402-protocol.mjs";
 
@@ -1253,6 +1253,11 @@ function runBuiltinMockLegalQA(
     }
   }
 
+  if (citations.some(c => !evidenceRelevant(question, c.article, c.document_title, c.excerpt))) {
+    answer = "Chưa tìm thấy căn cứ phù hợp với vấn đề và điều khoản bạn yêu cầu trong dữ liệu hiện có.";
+    citations = [];
+  }
+
   const checks = citations.map((c) => {
     const docId = c.document.toUpperCase().replace(/\s+/g, "");
     const key = `${docId}#${c.article}#${c.clause}`;
@@ -1450,18 +1455,6 @@ export async function POST(req: Request) {
   const escrowAddr = process.env.NEXT_PUBLIC_ESCROW_ADDRESS || "";
   const usdcAddr = process.env.NEXT_PUBLIC_USDC_ADDRESS || "";
 
-  // Check idempotency cache for repeated x402 / paid retries on the same questionId
-  const cachedReplay = getIdempotentResult(questionId);
-  if (cachedReplay && (body.requireX402 === true || req.headers.get("x-payment") || body.paymentProof)) {
-    return NextResponse.json({
-      ...cachedReplay,
-      x402Trace: {
-        ...(cachedReplay.x402Trace || {}),
-        idempotentReplay: true
-      }
-    });
-  }
-
   const requireX402 =
     body.requireX402 === true || req.headers.get("x-askpay-protocol") === "x402";
   const xPaymentHeader = req.headers.get("x-payment") || "";
@@ -1505,6 +1498,22 @@ export async function POST(req: Request) {
         { status: 402 }
       );
     }
+    if (typeof body.askerAddress !== 'string' || typeof body.escrowTxHash !== 'string' ||
+        body.escrowTxHash.toLowerCase() !== x402Verification.txHash.toLowerCase()) {
+      return NextResponse.json({ error: 'Proof phải khớp ví và giao dịch đặt cọc.', code: 'X402_PAYMENT_MISMATCH' }, { status: 402 });
+    }
+    const chain = createPublicClient({ chain: avalancheFuji,
+      transport: http(process.env.NEXT_PUBLIC_FUJI_RPC_URL || 'https://api.avax-test.network/ext/bc/C/rpc', { timeout: 10000 }) });
+    const checked = await verifyEscrowPayment(
+      { txHash: x402Verification.txHash, payer: x402Verification.payer, questionId, questionHash, amount: x402Verification.amount },
+      { questionId, questionHash, tier: body.tier, payer: body.askerAddress, escrowAddress: escrowAddr,
+        usdcAddress: usdcAddr || '0x5425890298aed601595a70AB815c96711a31Bc65' }, chain
+    );
+    if (!checked.ok) {
+      const unavailable = checked.reason === 'PAYMENT_VERIFICATION_UNAVAILABLE';
+      return NextResponse.json({ error: 'Không thể xác nhận giao dịch USDC escrow trên Fuji.', code: checked.reason },
+        { status: unavailable ? 503 : 402 });
+    }
   }
 
   const url =
@@ -1535,6 +1544,14 @@ export async function POST(req: Request) {
       body.simulateHallucination === true,
       body.simulateExpiredLaw === true
     );
+  }
+
+  if (Array.isArray(ragData?.citations) && ragData.citations.some((c: any) =>
+    !evidenceRelevant(question, c.article, c.document_title, c.excerpt))) {
+    ragData = { ...ragData,
+      answer: 'Chưa tìm thấy căn cứ phù hợp với vấn đề và điều khoản bạn yêu cầu trong dữ liệu hiện có.',
+      citations: [], validation: { ...ragData.validation, passed: false, settlement_eligible: false,
+        verdict: 'UNVERIFIED_REFUND', overall_score: 0, citation_checks: [], fail_reason: 'NO_RELEVANT_EVIDENCE' } };
   }
 
   const askerAddress: string =
@@ -1635,6 +1652,9 @@ export async function POST(req: Request) {
       { error: settlementDecision.error, code: settlementDecision.code },
       { status: settlementDecision.httpStatus }
     );
+  }
+  if (requireX402 && !settlementDecision.hasEscrow) {
+    return NextResponse.json({ error: 'Chưa thể đọc escrow đã xác nhận để quyết toán.', code: 'ESCROW_UNAVAILABLE' }, { status: 503 });
   }
 
   let finalSettlementStatus: string = settlementDecision.settlementStatus;
@@ -1766,10 +1786,6 @@ export async function POST(req: Request) {
       guardReason: settlementDecision.blockReason || undefined
     }
   };
-
-  if (x402Verification) {
-    setIdempotentResult(questionId, responsePayload);
-  }
 
   return NextResponse.json(responsePayload);
 }
