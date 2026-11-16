@@ -5,8 +5,14 @@ import json
 from math import log
 import re
 import time
+import os
+import secrets
+import threading
+import logging
+from contextlib import asynccontextmanager
 from typing import Annotated, List, Literal, Optional
-from fastapi import FastAPI, HTTPException
+from fastapi import FastAPI, HTTPException, Request
+from fastapi.responses import JSONResponse
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel, StringConstraints
 
@@ -15,11 +21,54 @@ from snapshot_api import ask_snapshot, configured_snapshot, corpus_response, que
 from versioned_validator import validate_snapshot_citations
 from factcheck import check_claim
 from relevance import evidence_relevant
+from payment_recovery import recover_pending
+from x402 import (EscrowSettlementClient, FacilitatorClient, X402ConfigurationError,
+                  X402PaymentError, build_payment_challenge, load_payment_config,
+                  process_paid_ask, payment_journal, load_recovery_config, facilitator_status_client)
+
+_recovery_stop = threading.Event()
+_recovery_thread = None
+_logger = logging.getLogger(__name__)
+
+
+def _recover_once():
+    config = load_recovery_config()
+    try:
+        timeout = max(0, int(os.environ.get('ASKPAY_PAYMENT_INTENT_TIMEOUT_SECONDS', '120')))
+    except ValueError as error:
+        raise X402ConfigurationError('invalid payment intent timeout') from error
+    return recover_pending(payment_journal(), EscrowSettlementClient(config), facilitator_status_client(config), timeout)
+
+
+def _recovery_loop():
+    while not _recovery_stop.is_set():
+        try:
+            _recover_once()
+        except X402ConfigurationError:
+            pass
+        except Exception:
+            _logger.exception('Escrow recovery failed; the worker will retry.')
+        _recovery_stop.wait(30)
+
+
+@asynccontextmanager
+async def lifespan(_app):
+    global _recovery_thread
+    if _recovery_thread is None or not _recovery_thread.is_alive():
+        _recovery_stop.clear()
+        _recovery_thread = threading.Thread(target=_recovery_loop, daemon=True, name='askpay-escrow-recovery')
+        _recovery_thread.start()
+    try:
+        yield
+    finally:
+        _recovery_stop.set()
+
 
 app = FastAPI(
     title="AskPay XNK — LegalIR / LegalQA & Citation Validator API",
     version="1.0.0",
-    description="API tra cứu pháp luật Hải quan & Xuất nhập khẩu với Deterministic Citation Validator (>=90%)"
+    description="API tra cứu pháp luật Hải quan & Xuất nhập khẩu với Deterministic Citation Validator (>=90%)",
+    lifespan=lifespan
 )
 
 app.add_middleware(
@@ -28,6 +77,7 @@ app.add_middleware(
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
+    expose_headers=["PAYMENT-REQUIRED", "PAYMENT-RESPONSE"],
 )
 
 # ==============================================================================
@@ -1136,7 +1186,6 @@ def factcheck_endpoint(req: FactcheckRequest):
     return check_claim(snapshot, req.document, req.article, req.clause, req.point, req.excerpt, query_date(req.as_of))
 
 
-@app.post("/api/v1/legal/ask")
 def ask_legal_question(req: AskRequest):
     snapshot = configured_snapshot()
     if snapshot is not None:
@@ -1425,3 +1474,39 @@ def ask_legal_question(req: AskRequest):
         },
         "latency_ms": latency_ms,
     }
+
+
+@app.post('/api/v1/legal/recover')
+def legal_recover_endpoint(request: Request):
+    expected = os.environ.get('ASKPAY_RECOVERY_TOKEN') or os.environ.get('ASKPAY_SETTLEMENT_TOKEN') or ''
+    supplied = request.headers.get('x-askpay-recovery-token', '')
+    if not expected or not secrets.compare_digest(supplied.encode(), expected.encode()):
+        raise HTTPException(status_code=401, detail='Không có quyền đối soát escrow.')
+    try:
+        return _recover_once()
+    except X402ConfigurationError as error:
+        raise HTTPException(status_code=503, detail='Chưa cấu hình đối soát escrow.') from error
+
+
+@app.post('/api/v1/legal/ask')
+def legal_ask_endpoint(req: AskRequest, request: Request):
+    if os.environ.get('ASKPAY_X402_ENABLED', '').lower() not in {'1', 'true', 'yes'}:
+        return ask_legal_question(req)
+    if configured_snapshot() is None:
+        raise HTTPException(status_code=503, detail='Không có snapshot corpus đã kiểm tra.')
+    try:
+        config = load_payment_config()
+        body = req.model_dump(mode='json')
+        resource_url = str(request.url)
+        challenge = build_payment_challenge(config, body, resource_url)
+        outcome = process_paid_ask(request.headers.get('payment-signature', ''), challenge,
+                                   challenge['accepts'][0], body, resource_url,
+                                   lambda: ask_legal_question(req), FacilitatorClient(config),
+                                   EscrowSettlementClient(config))
+    except X402ConfigurationError as error:
+        raise HTTPException(status_code=503, detail='x402/AnswerEscrow Fuji chưa được cấu hình đầy đủ.') from error
+    except X402PaymentError as error:
+        raise HTTPException(status_code=400, detail=str(error)) from error
+    except Exception as error:
+        raise HTTPException(status_code=502, detail='Không thể xác thực hoặc quyết toán thanh toán x402.') from error
+    return JSONResponse(status_code=outcome['status'], content=outcome['body'], headers=outcome['headers'])

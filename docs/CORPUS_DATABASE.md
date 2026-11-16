@@ -38,3 +38,9 @@ Chỉ các điều khoản đã qua lọc trạng thái review và ngày hiệu 
 ## LegalQA JSON có cấu trúc
 
 Mặc định API trả đoạn nguyên văn (`ASKPAY_LEGALQA_MODE=extractive`). Đặt `ASKPAY_LEGALQA_MODE=llm`, cấu hình `LLM_API_KEY` và `LLM_QUICK_MODEL`/`LLM_DEEP_MODEL` để bật chế độ LLM. Chỉ các đoạn đã truy xuất và còn đủ điều kiện mới được gửi cho nhà cung cấp mô hình. Phản hồi phải theo JSON schema, trích ít nhất 10 từ nguyên văn và khớp một đoạn duy nhất; sau đó citation vẫn được validator kiểm tra. Danh sách citation rỗng được validator đánh trượt. Không bật chế độ này trước khi đã đánh giá nhà cung cấp, dữ liệu gửi đi và chi phí sử dụng.
+
+## Đối soát x402 v2
+
+`ASKPAY_X402_ENABLED` mặc định tắt. Khi bật, `/api/v1/legal/ask` yêu cầu snapshot và dùng cấu hình facilitator + `AnswerEscrow` riêng; đây là luồng khác với `AskPayEscrow` đang dùng trong giao diện. Chưa bật trên môi trường triển khai cho tới khi thống nhất contract, UI và kiểm thử Fuji. `ASKPAY_PAYMENT_DB` phải nằm trên volume SQLite bền vững hỗ trợ locking; không dùng filesystem tạm của serverless. Endpoint `/api/v1/legal/recover` dùng header `x-askpay-recovery-token`; worker cũng chạy khi khởi động.
+
+Đối soát `PAYMENT_INITIATED` cần endpoint trạng thái riêng do facilitator cung cấp trong `ASKPAY_FACILITATOR_STATUS_URL`. Adapter yêu cầu phản hồi khớp query, ví, nonce, mạng, tài sản, người nhận và số tiền; chỉ đánh dấu thất bại khi trạng thái phủ định có tính xác quyết sau hạn chữ ký. Nếu không thể xác định, giữ trạng thái chờ. Đặt token và private key trong secret manager, không commit.
