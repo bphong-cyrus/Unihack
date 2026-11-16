@@ -5,6 +5,7 @@ import hashlib
 import json
 import os
 import time
+from pathlib import Path
 from fastapi import HTTPException
 from legal_corpus import CorpusError, load_snapshot
 from corpus_database import DatabaseError, load_database_snapshot
@@ -24,13 +25,18 @@ def configured_snapshot():
             return load_database_snapshot(database, snapshot_id)
         except DatabaseError as error:
             raise HTTPException(status_code=503, detail='Database corpus hoặc nguồn snapshot không hợp lệ.') from error
-    path = os.environ.get('ASKPAY_CORPUS_MANIFEST')
-    if not path:
+    explicit = os.environ.get('CORPUS_SNAPSHOT_PATH') or os.environ.get('ASKPAY_CORPUS_MANIFEST')
+    if not explicit and os.environ.get('ASKPAY_DEMO_MODE', '').lower() in {'1', 'true', 'yes'}:
         return None
+    path = Path(explicit or 'data/reviewed/corpus_snapshot.jsonl').expanduser()
+    if not path.is_absolute():
+        path = Path(__file__).resolve().parents[1] / path
+    if not path.is_file():
+        raise HTTPException(status_code=503, detail=f'Không tìm thấy tệp snapshot: {path}')
     try:
         return load_snapshot(path)
     except CorpusError as error:
-        raise HTTPException(status_code=503, detail='Kho dữ liệu không hợp lệ hoặc không thể đọc.') from error
+        raise HTTPException(status_code=503, detail=f'Snapshot không hợp lệ hoặc không thể đọc: {path}') from error
 
 
 def query_date(as_of):

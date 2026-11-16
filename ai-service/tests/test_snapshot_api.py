@@ -25,7 +25,7 @@ class SnapshotApiTests(unittest.TestCase):
             'document_id': 'TEST/2020', 'title': 'Synthetic document', 'source_url': 'https://example.gov.vn/document',
             'source_file': 'source.bin', 'source_sha256': hashlib.sha256(source).hexdigest(),
             'retrieved_at': '2025-01-01T00:00:00+00:00',
-            'provisions': [{'article': '1', 'clause': '1', 'point': '', 'text': self.text,
+            'provisions': [{'article': '1', 'clause': '1', 'point': '', 'text': self.text, 'status': 'ACTIVE', 'review_status': 'VERIFIED',
                             'effective_from': '2022-01-01', 'effective_until': None,
                             'reviewed_by': 'fixture', 'reviewed_at': '2025-01-01T00:00:00+00:00',
                             'status_evidence_url': 'https://example.gov.vn/status', 'verified_through': '2025-01-01'}]}]}, ensure_ascii=False))

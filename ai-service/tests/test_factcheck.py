@@ -25,7 +25,7 @@ class FactcheckTests(unittest.TestCase):
         manifest = {'snapshot_id': 'fixture', 'documents': [{'document_id': '54/2014/QH13', 'title': 'Luật fixture',
             'source_url': 'https://example.gov.vn/law', 'source_file': 'law.pdf',
             'source_sha256': hashlib.sha256(source).hexdigest(), 'retrieved_at': '2025-01-01T00:00:00+00:00',
-            'provisions': [{'article': '25', 'clause': '1', 'point': '', 'text': self.text,
+            'provisions': [{'article': '25', 'clause': '1', 'point': '', 'text': self.text, 'status': 'ACTIVE', 'review_status': 'VERIFIED',
                 'effective_from': '2020-01-01', 'effective_until': None, 'reviewed_by': 'fixture',
                 'reviewed_at': '2025-01-01T00:00:00+00:00', 'verified_through': '2025-01-01',
                 'status_evidence_url': 'https://example.gov.vn/status'}]}]}

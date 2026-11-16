@@ -8,7 +8,7 @@ const request = { questionId: '0x123', question: 'Thời hạn khai hải quan?'
 test('proxy accepts actual demo service results for matched and unmatched questions', async () => {
   const script = `import json,sys; sys.path.insert(0,'ai-service'); import main; print(json.dumps([main.ask_legal_question(main.AskRequest(question_id='0x123',question=q)) for q in ['Khai sai mã HS bị phạt bao nhiêu?', 'Thuế xuất khẩu cà phê là bao nhiêu?']],ensure_ascii=False))`;
   const pythonBin = process.env.PYTHON || (process.platform === 'win32' ? 'python' : 'python3');
-  const results = JSON.parse(execFileSync(pythonBin, ['-c', script], { encoding: 'utf8' }));
+  const results = JSON.parse(execFileSync(pythonBin, ['-c', script], { encoding: 'utf8', env: { ...process.env, ASKPAY_DEMO_MODE: 'true' } }));
   for (const [index, response] of results.entries()) {
     const result = await forwardLegalQuestion({ ...request, asOf: undefined }, 'http://service/ask', async () => ({ ok: true, json: async () => response }));
     assert.equal(result.status, 200);

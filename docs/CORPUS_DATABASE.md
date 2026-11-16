@@ -68,3 +68,9 @@ python ai-service/status_evidence.py data/askpay-source-registry.sqlite3 researc
 ```
 
 Khi kết quả sau chữ ký chưa rõ, giao diện lưu mã câu hỏi cùng địa chỉ ví và cho phép tra lại qua `GET /api/v1/legal/payments/{query_id}?payer=...`. API chỉ trả trạng thái cùng hash giao dịch, không trả chữ ký hay nội dung câu hỏi; cặp mã câu hỏi và địa chỉ ví không phải cơ chế xác thực danh tính. Trạng thái cuối chưa có hash quyết toán vẫn được giao diện hiển thị chờ đối soát. Dữ liệu tra cứu tồn tại chừng nào journal SQLite bền vững còn được giữ.
+
+## Snapshot JSONL
+
+Khi không dùng database, `CORPUS_SNAPSHOT_PATH` trỏ tới snapshot JSONL; mặc định là `data/reviewed/corpus_snapshot.jsonl` tính từ thư mục dự án. Mỗi dòng là một khoản, gồm `doc_id`, `doc_title`, `article`, `clause`, `raw_text`, `status` (`ACTIVE`, `EXPIRED`, `UNKNOWN`), `review_status` (`VERIFIED`, `UNREVIEWED`), thông tin hiệu lực, review và tệp nguồn tương tự manifest. Chỉ khoản có trạng thái rõ ràng `VERIFIED` và `ACTIVE`, đủ bằng chứng review và đúng ngày mới được truy xuất. Tên tệp nguồn là đường dẫn tương đối bên dưới thư mục snapshot; hash được kiểm tra mỗi lần tải. Văn bản được chuẩn hóa Unicode NFC.
+
+Thiếu hoặc sai snapshot trả 503 kèm đường dẫn. Các manifest cũ không ghi rõ `review_status` và `status`/`legal_status` sẽ không được coi là đã duyệt và còn hiệu lực, dù có các trường người duyệt. Chỉ dùng dữ liệu mẫu khi chủ động đặt `ASKPAY_DEMO_MODE=true` và không cấu hình snapshot hoặc database; không bật khi thanh toán thật. `ASKPAY_CORPUS_DATABASE` có ưu tiên cao nhất, sau đó `CORPUS_SNAPSHOT_PATH`, rồi `ASKPAY_CORPUS_MANIFEST`.

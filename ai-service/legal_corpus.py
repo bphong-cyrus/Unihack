@@ -9,6 +9,7 @@ from hashlib import sha256
 import json
 from pathlib import Path
 from urllib.parse import urlparse
+import unicodedata
 from zoneinfo import ZoneInfo
 from types import MappingProxyType
 
@@ -68,6 +69,7 @@ class Provision:
     verified_through: date | None
     source_url: str
     source_sha256: str
+    status: str = "UNKNOWN"
 
     @property
     def reviewed(self):
@@ -100,7 +102,7 @@ class CorpusSnapshot:
     def lookup(self, document_id, article, clause, point, as_of):
         key = (_doc_id(document_id), str(article).strip(), str(clause).strip(), str(point).strip())
         for item in self._index.get(key, ()):
-            if (item.reviewed and item.verified_through is not None and as_of <= item.verified_through
+            if (item.status == 'ACTIVE' and item.reviewed and item.verified_through is not None and as_of <= item.verified_through
                     and item.effective_from <= as_of
                     and (item.effective_until is None or as_of < item.effective_until)):
                 return item
@@ -137,11 +139,23 @@ def _read_provision(record, document_id, title, source_url, digest):
     point = record.get('point', '')
     if not isinstance(point, str):
         raise CorpusError('point must be a string')
+    status = record.get('legal_status', record.get('status', 'UNKNOWN'))
+    if status not in {'ACTIVE', 'EXPIRED', 'UNKNOWN'}:
+        raise CorpusError('invalid legal status')
+    review_status = record.get('review_status', 'UNREVIEWED')
+    if review_status not in {'VERIFIED', 'UNREVIEWED'}:
+        raise CorpusError('invalid review status')
     start = _date(record.get('effective_from'))
     end = _date(record['effective_until']) if record.get('effective_until') is not None else None
     if end is not None and end <= start:
         raise CorpusError('effective_until must be later than effective_from')
     review = [record.get('reviewed_by'), record.get('reviewed_at'), record.get('status_evidence_url'), record.get('verified_through')]
+    if any(value is not None for value in review) and not all(review):
+        raise CorpusError('review evidence must be complete')
+    if review_status == 'VERIFIED' and not all(review):
+        raise CorpusError('VERIFIED requires complete review evidence')
+    if review_status == 'UNREVIEWED':
+        review = [None] * 4
     if any(value is not None for value in review):
         reviewer = _required_string(record, 'reviewed_by')
         reviewed_at = _required_string(record, 'reviewed_at')
@@ -152,15 +166,41 @@ def _read_provision(record, document_id, title, source_url, digest):
         evidence = _https(_required_string(record, 'status_evidence_url'))
     else:
         reviewer = reviewed_at = evidence = verified_through = None
-    return Provision(document_id, title, article, clause, point.strip(), _required_string(record, 'text'),
-                     start, end, reviewer, reviewed_at, evidence, verified_through, source_url, digest)
+    return Provision(document_id, title, article, clause, point.strip(), unicodedata.normalize('NFC', _required_string(record, 'text')),
+                     start, end, reviewer, reviewed_at, evidence, verified_through, source_url, digest, status)
 
+
+
+def _parse_jsonl(raw, snapshot_id):
+    documents = {}
+    for number, line in enumerate(raw.decode('utf-8').splitlines(), 1):
+        if not line.strip():
+            continue
+        row = json.loads(line)
+        if not isinstance(row, dict):
+            raise CorpusError(f'JSONL line {number} must be an object')
+        doc_id = _required_string(row, 'doc_id')
+        if _required_string(row, 'review_status') not in {'VERIFIED', 'UNREVIEWED'}:
+            raise CorpusError(f'JSONL line {number} has invalid review_status')
+        if _required_string(row, 'status') not in {'ACTIVE', 'EXPIRED', 'UNKNOWN'}:
+            raise CorpusError(f'JSONL line {number} has invalid status')
+        doc = {key: _required_string(row, key) for key in ('source_url', 'source_file', 'source_sha256', 'retrieved_at')}
+        doc.update({'document_id': doc_id, 'title': _required_string(row, 'doc_title'), 'provisions': []})
+        if doc_id not in documents:
+            documents[doc_id] = doc
+        elif any(documents[doc_id][key] != doc[key] for key in ('source_url', 'source_file', 'source_sha256', 'retrieved_at', 'title')):
+            raise CorpusError(f'JSONL line {number} has inconsistent document metadata')
+        record = dict(row)
+        record['text'] = _required_string(row, 'raw_text')
+        documents[doc_id]['provisions'].append(record)
+    return {'snapshot_id': snapshot_id, 'documents': list(documents.values())}
 
 def load_snapshot(manifest_path):
     path = Path(manifest_path).resolve()
     try:
         manifest_bytes = path.read_bytes()
-        data = json.loads(manifest_bytes.decode('utf-8'))
+        data = (_parse_jsonl(manifest_bytes, path.stem) if path.suffix.lower() == '.jsonl'
+                else json.loads(manifest_bytes.decode('utf-8')))
         if not isinstance(data, dict):
             raise CorpusError('manifest must be an object')
         snapshot_id = _required_string(data, 'snapshot_id')

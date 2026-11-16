@@ -11,6 +11,9 @@ import main
 
 class ValidatorContractTests(unittest.TestCase):
     def setUp(self):
+        environment = patch.dict('os.environ', {'ASKPAY_DEMO_MODE': 'true'})
+        environment.start()
+        self.addCleanup(environment.stop)
         self.record = main.CORPUS_RECORDS[0]
         self.citation = {
             "document": self.record["doc_id"], "article": self.record["article"],
