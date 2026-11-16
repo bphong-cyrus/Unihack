@@ -46,3 +46,13 @@ Mặc định API trả đoạn nguyên văn (`ASKPAY_LEGALQA_MODE=extractive`).
 Đối soát `PAYMENT_INITIATED` cần endpoint trạng thái riêng do facilitator cung cấp trong `ASKPAY_FACILITATOR_STATUS_URL`. Adapter yêu cầu phản hồi khớp query, ví, nonce, mạng, tài sản, người nhận và số tiền; chỉ đánh dấu thất bại khi trạng thái phủ định có tính xác quyết sau hạn chữ ký. Nếu không thể xác định, giữ trạng thái chờ. Đặt token và private key trong secret manager, không commit.
 
 Giao diện dùng địa chỉ `NEXT_PUBLIC_ANSWER_ESCROW_ADDRESS` để kiểm tra người nhận trước khi ký. Backend cần `ASKPAY_PUBLIC_LEGAL_URL` trùng URL công khai `/api/v1/legal/ask` để ràng buộc chữ ký với endpoint. Khi ví được bật nhưng chưa có hai cấu hình phù hợp, giao diện báo lỗi và không chuyển sang thanh toán AVAX; chế độ preview vẫn dùng riêng. Nếu phản hồi sau chữ ký không xác định được kết quả, giao diện hiển thị mã câu hỏi và không tự gửi lại chữ ký.
+
+## Ứng viên Điều từ OCR
+
+`ocr_article_candidates` là vùng chuẩn bị dữ liệu, không phải snapshot được phép truy xuất: bộ tách nhận diện dòng bắt đầu bằng `Điều`, lưu nguyên các dòng OCR dưới dạng NFC cùng đường dẫn trang, SHA-256 trang và chỉ số dòng. Các trang đã được người dùng xác nhận OCR, nhưng ranh giới Điều và tình trạng hiệu lực của từng ứng viên vẫn cần kiểm tra độc lập; vì vậy `structure_status=UNREVIEWED`, `legal_status=UNKNOWN`. Không tự suy ra Khoản hay hiệu lực từ OCR. Nhiều Điều trùng số có thể đến từ văn bản sửa đổi, phụ lục hoặc lỗi nhận diện.
+
+```bash
+python ai-service/ocr_candidates.py research/extracted data/askpay-source-registry.sqlite3
+```
+
+Lệnh kiểm tra lại hash trang và tệp nguồn; nếu trang không khớp xác nhận hoặc đã có quyết định review cấu trúc/hiệu lực trong bảng, lệnh dừng và giữ dữ liệu đang có. Mỗi bộ OCR được lưu riêng, kể cả khi cùng văn bản có nhiều bộ hoặc phần phụ lục.
