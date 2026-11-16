@@ -1,0 +1,2 @@
+# Optional local neural retrieval; install in addition to requirements.txt.
+sentence-transformers>=5.0,<6

@@ -9,6 +9,7 @@ from fastapi import HTTPException
 from legal_corpus import CorpusError, load_snapshot
 from corpus_database import DatabaseError, load_database_snapshot
 from snapshot_search import retrieve
+from model_rankers import configured_rankers, RankerConfigurationError
 from versioned_validator import validate_snapshot_citations
 
 
@@ -54,7 +55,12 @@ def ask_snapshot(req, snapshot):
         raise HTTPException(status_code=400, detail='Tình huống giả lập chỉ hỗ trợ trong chế độ demo.')
     start = time.monotonic()
     as_of = query_date(req.as_of)
-    candidates = retrieve(snapshot, req.question, as_of, 3 if req.tier == 'quick' else 8)
+    try:
+        dense_ranker, reranker = configured_rankers()
+        candidates = retrieve(snapshot, req.question, as_of, 3 if req.tier == 'quick' else 8,
+                              dense_ranker=dense_ranker, reranker=reranker)
+    except RankerConfigurationError as error:
+        raise HTTPException(status_code=503, detail=str(error)) from error
     items = candidates[:3 if req.tier == 'quick' else 8]
     citations = [{'document': p.document_id, 'document_title': p.document_title,
                   'article': p.article, 'clause': p.clause, 'point': p.point, 'excerpt': p.text}
@@ -70,7 +76,7 @@ def ask_snapshot(req, snapshot):
         return '0x' + hashlib.sha256(value.encode('utf-8')).hexdigest()
     return {'question_id': req.question_id, 'tier': req.tier, 'answer': answer, 'citations': citations,
             'validation': validation, 'snapshot_id': snapshot.snapshot_id, 'snapshot_sha256': snapshot.snapshot_sha256, 'as_of': as_of.isoformat(),
-            'answer_method': 'EXTRACTIVE', 'payment_status': 'DISABLED',
+            'answer_method': 'EXTRACTIVE', 'retrieval_method': 'HYBRID' if dense_ranker or reranker else 'BM25', 'payment_status': 'DISABLED',
             'hashes': {'question_hash': digest(req.question), 'answer_hash': digest(answer),
                        'citations_hash': digest(json.dumps(citations, ensure_ascii=False)),
                        'validator_hash': digest(json.dumps(validation, ensure_ascii=False)),

@@ -5,7 +5,7 @@ from citation_text import normalize_vn_text
 from relevance import evidence_relevant
 from hybrid_retrieval import tokenize, reciprocal_rank_fusion
 
-_STOPWORDS = frozenset('của và là được các có cho trong với theo khi một những thì nào gì như tôi doanh nghiệp hàng hóa luật quy định về tại từ bị để hay phải không xin hỏi cần biết thời gian'.split())
+_STOPWORDS = frozenset('của và là được các có cho trong với theo khi một những thì nào gì như tôi doanh nghiệp hàng hóa luật quy định về tại từ bị để hay phải xin hỏi cần biết thời gian'.split())
 
 
 def retrieve(snapshot, question, as_of, limit, *, dense_ranker=None, reranker=None):
