@@ -1,3 +1,4 @@
+import { createHash } from "crypto";
 import { NextResponse } from "next/server";
 import {
   createPublicClient,
@@ -9,7 +10,15 @@ import {
 } from "viem";
 import { privateKeyToAccount } from "viem/accounts";
 import { avalancheFuji } from "viem/chains";
+import { evaluateSettlementDecision } from "./escrow-guard.mjs";
 import { forwardLegalQuestion } from "./legal-proxy.mjs";
+import { VALIDATOR_VERSION, computeExcerptSimilarity } from "./validator-core.mjs";
+import {
+  buildX402Challenge,
+  getIdempotentResult,
+  setIdempotentResult,
+  verifyX402PaymentHeader
+} from "./x402-protocol.mjs";
 
 export const maxDuration = 30;
 
@@ -790,6 +799,39 @@ function expandXnkColloquialQuery(qLower: string): string {
 }
 
 function bm25FallbackEntry(qExpanded: string): CorpusEntry | undefined {
+  const outOfScopeMarkers = [
+    "phòng trọ",
+    "thuê trọ",
+    "nhà trọ",
+    "thuê nhà",
+    "sinh viên",
+    "part time",
+    "làm thêm",
+    "vượt đèn đỏ",
+    "bằng lái xe",
+    "quy chế học",
+    "cà phê",
+    "bitcoin"
+  ];
+  const xnkAnchors = [
+    "hải quan",
+    "mã hs",
+    "c/o",
+    "xuất nhập khẩu",
+    "gia công",
+    "tạm nhập",
+    "tái xuất",
+    "vnaccs",
+    "tờ khai",
+    "xuất xứ"
+  ];
+  if (
+    outOfScopeMarkers.some((m) => qExpanded.includes(m)) &&
+    !xnkAnchors.some((a) => qExpanded.includes(a))
+  ) {
+    return undefined;
+  }
+
   const terms = Array.from(
     new Set(
       normalizeVn(qExpanded)
@@ -797,7 +839,7 @@ function bm25FallbackEntry(qExpanded: string): CorpusEntry | undefined {
         .filter((w) => w.length > 1 && !BM25_STOPWORDS_TS.has(w))
     )
   );
-  if (terms.length < 3) return undefined;
+  if (terms.length < 4) return undefined;
 
   const activeDocs = EXTENDED_CORPUS_LIST.filter((r) => r.status === "ACTIVE");
   if (activeDocs.length === 0) return undefined;
@@ -822,7 +864,7 @@ function bm25FallbackEntry(qExpanded: string): CorpusEntry | undefined {
 
   for (const doc of docs) {
     const matchedDistinct = terms.filter((t) => (doc.counts.get(t) || 0) > 0).length;
-    if (matchedDistinct < 3) continue;
+    if (matchedDistinct < 4) continue;
     let score = 0;
     for (const term of terms) {
       const freq = doc.counts.get(term) || 0;
@@ -838,7 +880,7 @@ function bm25FallbackEntry(qExpanded: string): CorpusEntry | undefined {
     }
   }
 
-  return bestScore >= 4.5 ? bestEntry : undefined;
+  return bestScore >= 9.0 ? bestEntry : undefined;
 }
 
 function matchExtendedCorpusQuestionTS(
@@ -898,9 +940,7 @@ function matchExtendedCorpusQuestionTS(
   let answer = `Theo quy định tại Khoản ${matched.clause} Điều ${matched.article} (${matched.doc_id} — ${matched.doc_title}): ${matched.raw_text}`;
   if (matched.status === "EXPIRED") {
     answer +=
-      " (Lưu ý: Văn bản này đã hết hiệu lực thi hành — hệ thống tự động kích hoạt hoàn phí Escrow 100%).";
-  } else if (tier === "deep") {
-    answer += `\n\nHướng dẫn thực thi XNK:\n① Đối chiếu đồng bộ mã HS, trị giá, xuất xứ (C/O) trên hệ thống VNACCS/VCIS với hiệu lực của ${matched.doc_id} tại thời điểm đăng ký tờ khai.\n② Lưu trữ đầy đủ bộ chứng từ thương mại (Tờ khai, Invoice, Packing List, B/L, chứng từ thanh toán) để phục vụ kiểm tra sau thông quan.`;
+      " (Lưu ý: Văn bản này đã hết hiệu lực thi hành — không đủ điều kiện xác thực/giải ngân Escrow).";
   }
 
   const citations = [
@@ -925,12 +965,41 @@ function matchExtendedCorpusQuestionTS(
       const extraCit = makeCitationTS(pair[0], pair[1], pair[2]);
       if (extraCit) citations.push(extraCit);
     }
+    answer += formatDeepAnalysisTS(
+      citations,
+      `Chỉ áp dụng ${matched.doc_id} nếu ngày đăng ký tờ khai nằm trong hiệu lực văn bản và đúng loại hình XNK chịu điều chỉnh; cần rà soát văn bản sửa đổi, bổ sung nếu phát sinh sau ngày hiệu lực gốc.`,
+      "Cần xác nhận thêm: (a) Mã loại hình tờ khai (A11, A12, E21, E31...), (b) Ngày đăng ký tờ khai và trạng thái phân luồng (Xanh/Vàng/Đỏ), (c) Bộ chứng từ kèm theo (Invoice, Packing List, B/L, C/O)."
+    );
   }
 
   return {
     answer,
     citations
   };
+}
+
+function formatDeepAnalysisTS(
+  citations: Array<{ document: string; article: string; clause: string }>,
+  conditionNote: string,
+  missingFactsNote: string
+): string {
+  const refs = citations
+    .map((c) => `${c.document} (Điều ${c.article}, Khoản ${c.clause})`)
+    .join("; ");
+  return (
+    "\n\nPhân tích chuyên sâu đa căn cứ (Gói Tình huống):\n" +
+    `① Đối chiếu nguồn quy định: Đã tổng hợp ${citations.length} căn cứ từ ${refs}.\n` +
+    `② Điều kiện áp dụng & Trường hợp ngoại lệ: ${conditionNote}\n` +
+    `③ Dữ kiện hồ sơ cần xác nhận thêm: ${missingFactsNote}`
+  );
+}
+
+const DEMO_CORPUS_SHA256_TS = createHash("sha256")
+  .update(JSON.stringify(EXTENDED_CORPUS_LIST))
+  .digest("hex");
+
+function sha256HexNode(value: string): string {
+  return "0x" + createHash("sha256").update(value).digest("hex");
 }
 
 function normalizeVn(s: string): string {
@@ -940,20 +1009,6 @@ function normalizeVn(s: string): string {
     .replace(/[^\p{L}\p{N}\s]/gu, " ")
     .replace(/\s+/g, " ")
     .trim();
-}
-
-function computeExcerptSimilarityTS(excerpt: string, rawText: string): number {
-  const normEx = normalizeVn(excerpt);
-  const normSrc = normalizeVn(rawText);
-  const exWords = normEx.split(" ").filter(Boolean);
-  if (exWords.length < 10 || !normSrc) return 0;
-  if (normSrc.includes(normEx)) return 1.0;
-
-  const srcWords = new Set(normSrc.split(" ").filter(Boolean));
-  const matched = exWords.filter((w) => srcWords.has(w)).length;
-  const wordRatio = matched / exWords.length;
-  const coverageBound = Math.min(1.0, normSrc.length / normEx.length);
-  return Number(Math.min(wordRatio, coverageBound).toFixed(4));
 }
 
 function runBuiltinMockLegalQA(
@@ -1003,7 +1058,7 @@ function runBuiltinMockLegalQA(
     ];
   } else if (NEGATIVE_GENERIC_GUARD_TS.has(qRawNorm)) {
     answer =
-      "Hiện chưa tìm thấy điều khoản pháp luật Hải quan và Xuất nhập khẩu phù hợp trong kho văn bản để đối chiếu câu hỏi này. Nếu đã khóa cọc Escrow, Smart Contract sẽ tự động hoàn trả 100%.";
+      "Hiện chưa tìm thấy điều khoản pháp luật Hải quan và Xuất nhập khẩu phù hợp trong kho văn bản để đối chiếu câu hỏi này.";
     citations = [];
   } else if (
     (qLower.includes("c/o") || qLower.includes("chứng nhận xuất xứ")) &&
@@ -1024,10 +1079,13 @@ function runBuiltinMockLegalQA(
       }
     ];
     if (tier === "deep") {
-      answer +=
-        "\n\nHướng dẫn thực tế cho bộ phận XNK:\n① Hồ sơ cần chuẩn bị khi xin cấp C/O: Đăng ký Hồ sơ thương nhân trên hệ thống eCoSys trước, sau đó nộp đơn đề nghị cấp C/O, mẫu C/O khai hoàn chỉnh, tờ khai hải quan xuất khẩu, hóa đơn thương mại (Invoice) và vận đơn (B/L).\n② Lưu ý rủi ro: Doanh nghiệp phải lưu giữ hồ sơ chứng minh xuất xứ (bảng kê nguyên phụ liệu, hóa đơn đầu vào) để phục vụ hậu kiểm sau thông quan.";
       const extraCit = makeCitationTS("31/2018/NĐ-CP", "14", "1");
       if (extraCit) citations.push(extraCit);
+      answer += formatDeepAnalysisTS(
+        citations,
+        "Chỉ cấp C/O ưu đãi khi thương nhân đã hoàn tất Hồ sơ thương nhân trên eCoSys và chứng minh được tiêu chí xuất xứ hàng hóa (WO, CTC hoặc LVC/RVC) theo hiệp định FTA tương ứng; trường hợp chưa đủ hồ sơ đầu vào từ nhà cung cấp sẽ bị từ chối cấp C/O.",
+        "Cần xác nhận thêm: (a) Nước nhập khẩu & Hiệp định FTA áp dụng (Form D, E, EUR.1, CPTPP...), (b) Mã HS 6–8 số của thành phẩm và bảng kê nguyên phụ liệu đầu vào (BOM)."
+      );
     }
   } else if (
     qLower.includes("hoàn thuế") &&
@@ -1047,10 +1105,13 @@ function runBuiltinMockLegalQA(
       }
     ];
     if (tier === "deep") {
-      answer +=
-        "\n\nHướng dẫn thực tế cho bộ phận XNK:\n① Điều kiện tiên quyết: Hàng hóa phải còn nguyên trạng, chưa qua sử dụng, gia công hoặc chế biến tại Việt Nam và có đối chiếu khớp tờ khai nhập khẩu ban đầu với tờ khai tái xuất.\n② Thủ tục nộp hồ sơ: Doanh nghiệp thực hiện nộp hồ sơ hoàn thuế điện tử qua Hệ thống xử lý dữ liệu điện tử hải quan kèm chứng từ thanh toán và xác nhận hàng đã thực xuất.";
       const extraCit = makeCitationTS("182/2025/NĐ-CP", "1", "1");
       if (extraCit) citations.push(extraCit);
+      answer += formatDeepAnalysisTS(
+        citations,
+        "Điều kiện bắt buộc để được hoàn thuế là hàng hóa chưa qua sử dụng, gia công hay chế biến tại Việt Nam và đối chiếu khớp tờ khai nhập ban đầu với tờ khai tái xuất; trường hợp hàng đã tiêu dùng hoặc gia công một phần tại Việt Nam không thuộc diện hoàn theo Điều 19 Khoản 1.",
+        "Cần xác nhận thêm: (a) Số tờ khai nhập khẩu ban đầu & ngày thông quan, (b) Lý do tái xuất (trả lại người bán hay xuất sang nước thứ ba), (c) Chứng từ thanh toán và biên bản kiểm tra thực tế hàng tái xuất."
+      );
     }
   } else if (
     qLower.includes("thời hạn") &&
@@ -1070,12 +1131,15 @@ function runBuiltinMockLegalQA(
       }
     ];
     if (tier === "deep") {
-      answer +=
-        "\n\nHướng dẫn thực tế cho bộ phận XNK:\n① Chứng từ bắt buộc trong bộ hồ sơ: Tờ khai hải quan điện tử, hóa đơn thương mại (Commercial Invoice), vận đơn (B/L hoặc AWB), danh sách đóng gói (Packing List) và C/O (nếu hưởng thuế ưu đãi).\n② Lưu ý rủi ro: Nếu quá 30 ngày kể từ ngày hàng đến cửa khẩu mới mở tờ khai, doanh nghiệp có thể bị xử phạt vi phạm hành chính về thời hạn làm thủ tục hải quan theo Nghị định 128/2020/NĐ-CP.";
       const citA = makeCitationTS("54/2014/QH13", "24", "1");
       const citB = makeCitationTS("128/2020/NĐ-CP", "7", "1");
       if (citA) citations.push(citA);
       if (citB) citations.push(citB);
+      answer += formatDeepAnalysisTS(
+        citations,
+        "Mốc 30 ngày tính từ ngày hàng đến cửa khẩu (trên manifest/thông báo hàng đến); nếu nộp quá thời hạn này sẽ áp dụng chế tài phạt hành chính từ 500.000đ đến 1.000.000đ theo Khoản 1 Điều 7 Nghị định 128/2020/NĐ-CP (trừ trường hợp hàng tồn đọng hoặc bất khả kháng theo quy định).",
+        "Cần xác nhận thêm: (a) Ngày tàu/máy bay cập cửa khẩu ghi trên B/L hoặc Manifest, (b) Trạng thái đã truyền tờ khai trên VNACCS hay chưa, (c) Bộ hồ sơ theo Điều 24 Luật Hải quan đã đủ chứng từ chưa."
+      );
     }
   } else if (qLower.includes("khai bổ sung") && qLower.includes("phân luồng")) {
     answer =
@@ -1092,10 +1156,13 @@ function runBuiltinMockLegalQA(
       }
     ];
     if (tier === "deep") {
-      answer +=
-        "\n\nHướng dẫn thực tế cho bộ phận XNK:\n① Quy trình thực hiện: Sử dụng nghiệp vụ AMA/AMC trên VNACCS/VCIS để khai sửa đổi, bổ sung các chỉ tiêu thông tin tờ khai và đính kèm văn bản giải trình lý do sai sót kèm chứng từ gốc.\n② Mốc thời gian vàng: Phải hoàn tất khai bổ sung trước khi cơ quan hải quan thông báo kiểm tra trực tiếp hồ sơ (luồng vàng) hoặc kiểm tra thực tế hàng hóa (luồng đỏ).";
       const extraCit = makeCitationTS("38/2015/TT-BTC", "20", "1");
       if (extraCit) citations.push(extraCit);
+      answer += formatDeepAnalysisTS(
+        citations,
+        "Phải phân biệt thời điểm khai bổ sung trước vs. sau khi cơ quan hải quan thông báo kiểm tra trực tiếp hồ sơ (luồng Vàng) hoặc kiểm hóa thực tế (luồng Đỏ); chỉ tiêu khai bổ sung ảnh hưởng đến thuế hoặc chính sách mặt hàng không được xử lý như sửa lỗi kỹ thuật thuần túy.",
+        "Cần xác nhận thêm: (a) Tờ khai đã có thông báo kiểm tra chi tiết trên hệ thống chưa, (b) Chỉ tiêu cần sửa (mô tả, số lượng, mã HS hay trị giá), (c) Chênh lệch số thuế phát sinh sau sửa đổi."
+      );
     }
   } else if (
     qLower.includes("nhãn phụ") ||
@@ -1114,10 +1181,13 @@ function runBuiltinMockLegalQA(
       }
     ];
     if (tier === "deep") {
-      answer +=
-        "\n\nHướng dẫn thực tế cho bộ phận XNK:\n① Nội dung bắt buộc: Nhãn phụ tiếng Việt phải giữ nguyên nhãn gốc và thể hiện đầy đủ tên hàng hóa, xuất xứ hàng hóa, tên và địa chỉ tổ chức nhập khẩu chịu trách nhiệm cùng các thông số theo tính chất hàng hóa.\n② Lưu ý thực thi: Doanh nghiệp phải hoàn tất dán nhãn phụ trước khi đưa hàng hóa lưu thông trên thị trường Việt Nam.";
       const extraCit = makeCitationTS("111/2021/NĐ-CP", "1", "5");
       if (extraCit) citations.push(extraCit);
+      answer += formatDeepAnalysisTS(
+        citations,
+        "Phải giữ nguyên nhãn gốc trên hàng hóa/bao bì thương phẩm; nhãn phụ tiếng Việt bổ sung phần thiếu và bắt buộc hoàn tất trước khi đưa hàng hóa lưu thông thương mại (riêng hàng hóa gia công xuất khẩu không lưu thông nội địa có chế độ áp dụng riêng theo Nghị định 111/2021/NĐ-CP).",
+        "Cần xác nhận thêm: (a) Nhãn gốc đã thể hiện rõ xuất xứ hàng hóa (Made in / Origin) chưa, (b) Mục đích nhập khẩu (tiêu thụ nội địa hay nguyên liệu sản xuất xuất khẩu), (c) Nhóm hàng có quy định nhãn chuyên ngành riêng (thực phẩm, mỹ phẩm, thiết bị y tế...)."
+      );
     }
   } else if (
     qLower.includes("chỉ tiêu thông tin") ||
@@ -1137,10 +1207,13 @@ function runBuiltinMockLegalQA(
       }
     ];
     if (tier === "deep") {
-      answer +=
-        "\n\nHướng dẫn thực thi XNK:\n① Kiểm tra kỹ các chỉ tiêu trọng yếu (Mã HS, Trị giá hóa đơn, Điều kiện giao hàng Incoterms, Xuất xứ C/O) trước khi truyền chính thức trên VNACCS/VCIS.\n② Chuẩn bị sẵn bản scan ký số của bộ chứng từ đính kèm V5 phòng trường hợp tờ khai phân luồng Vàng hoặc Đỏ.";
       const extraCit = makeCitationTS("08/2015/NĐ-CP", "25", "1");
       if (extraCit) citations.push(extraCit);
+      answer += formatDeepAnalysisTS(
+        citations,
+        "Trường hợp hàng hóa thuộc diện kiểm tra chuyên ngành hoặc miễn thuế phải khai kèm mã văn bản/giấy phép tại chỉ tiêu tương ứng ngay khi truyền VNACCS; khai thiếu chỉ tiêu bắt buộc khiến hệ thống từ chối tiếp nhận hoặc chuyển luồng kiểm tra.",
+        "Cần xác nhận thêm: (a) Hàng hóa thuộc phụ lục kiểm tra chuyên ngành/giấy phép nào không, (b) Điều kiện Incoterms & phí vận tải/bảo hiểm ảnh hưởng trị giá tính thuế, (c) Chứng từ đính kèm V5 đã ký số đầy đủ chưa."
+      );
     }
   } else if (
     (qLower.includes("mã hs") || qLower.includes("mã số hàng")) &&
@@ -1160,10 +1233,13 @@ function runBuiltinMockLegalQA(
       }
     ];
     if (tier === "deep") {
-      answer +=
-        "\n\nHướng dẫn thực tế cho bộ phận XNK:\n① Nghĩa vụ tài chính: Ngoài mức phạt 20% trên số thuế khai thiếu, doanh nghiệp vẫn phải nộp đủ số tiền thuế truy thu và tiền chậm nộp theo Luật Quản lý thuế.\n② Phương án xử lý giảm rủi ro: Nếu doanh nghiệp tự rà soát phát hiện nhầm mã HS và thực hiện khai bổ sung hồ sơ hải quan, nộp đủ thuế trước thời điểm có quyết định kiểm tra sau thông quan thì có thể giảm thiểu rủi ro chế tài.";
       const extraCit = makeCitationTS("38/2015/TT-BTC", "20", "1");
       if (extraCit) citations.push(extraCit);
+      answer += formatDeepAnalysisTS(
+        citations,
+        "Mức phạt 20% áp dụng đối với hành vi khai sai mã HS dẫn đến thiếu thuế khi cơ quan hải quan phát hiện trong kiểm tra sau thông quan; trường hợp doanh nghiệp chủ động khai bổ sung trước thời điểm cơ quan hải quan công bố quyết định kiểm tra sau thông quan hoặc không làm thiếu thuế thì chế tài sẽ khác (cần đối chiếu Khoản 2 Điều 9 và Điều 7 Nghị định 128/2020/NĐ-CP).",
+        "Cần xác nhận thêm: (a) Đã có quyết định kiểm tra sau thông quan hay doanh nghiệp tự phát hiện trước kiểm tra, (b) Khai sai mã HS có làm thiếu số tiền thuế phải nộp hay không, (c) Hồ sơ kỹ thuật/catalogue chứng minh bản chất hàng hóa để xác định lại mã HS chuẩn."
+      );
     }
   } else {
     const extendedMatch = matchExtendedCorpusQuestionTS(qLower, tier);
@@ -1172,7 +1248,7 @@ function runBuiltinMockLegalQA(
       citations = extendedMatch.citations;
     } else {
       answer =
-        "Hiện chưa tìm thấy điều khoản pháp luật Hải quan và Xuất nhập khẩu phù hợp trong kho văn bản để đối chiếu câu hỏi này. Nếu đã khóa cọc Escrow, Smart Contract sẽ tự động hoàn trả 100%.";
+        "Hiện chưa tìm thấy điều khoản pháp luật Hải quan và Xuất nhập khẩu phù hợp trong kho văn bản để đối chiếu câu hỏi này.";
       citations = [];
     }
   }
@@ -1188,7 +1264,7 @@ function runBuiltinMockLegalQA(
     )?.[1];
     const artClauseExists = Boolean(rec);
     const isInForce = Boolean(rec && rec.status === "ACTIVE");
-    const similarity = rec ? computeExcerptSimilarityTS(c.excerpt, rec.raw_text) : 0;
+    const similarity = rec ? computeExcerptSimilarity(c.excerpt, rec.raw_text) : 0;
 
     let failReason: string | null = null;
     if (!docExists) failReason = "DOCUMENT_NOT_IN_CORPUS";
@@ -1225,25 +1301,36 @@ function runBuiltinMockLegalQA(
       ? Number((checks.reduce((s, c) => s + c._score, 0) / checks.length).toFixed(2))
       : 0;
 
+  const validationPayload = {
+    passed: allPassed,
+    verdict: allPassed ? "VERIFIED_RELEASE" : "UNVERIFIED_REFUND",
+    settlement_eligible: false,
+    corpus_status: "DEMO_UNVERIFIED",
+    validator_version: VALIDATOR_VERSION,
+    corpus_sha256: DEMO_CORPUS_SHA256_TS,
+    overall_score: overallScore,
+    citation_checks: checks.map(({ _score, ...rest }) => rest),
+    ...(checks.length === 0 ? { fail_reason: "NO_CITATION_PROVIDED" } : {})
+  };
+
   return {
     question_id: questionId,
     tier,
     answer,
     citations,
-    validation: {
-      passed: allPassed,
-      verdict: allPassed ? "VERIFIED_RELEASE" : "UNVERIFIED_REFUND",
-      settlement_eligible: false,
-      corpus_status: "DEMO_UNVERIFIED",
-      overall_score: overallScore,
-      citation_checks: checks.map(({ _score, ...rest }) => rest),
-      ...(checks.length === 0 ? { fail_reason: "NO_CITATION_PROVIDED" } : {})
+    validation: validationPayload,
+    hashes: {
+      question_hash: sha256HexNode(question),
+      answer_hash: sha256HexNode(answer),
+      citations_hash: sha256HexNode(JSON.stringify(citations)),
+      validator_hash: sha256HexNode(JSON.stringify(validationPayload)),
+      corpus_hash: "0x" + DEMO_CORPUS_SHA256_TS
     },
     demo: true
   };
 }
 
-const ESCROW_ABI = [
+const ESCROW_V2_ABI = [
   {
     name: "escrows",
     type: "function",
@@ -1257,7 +1344,8 @@ const ESCROW_ABI = [
       { name: "createdAt", type: "uint256" },
       { name: "questionHash", type: "bytes32" },
       { name: "l1ReceiptHash", type: "bytes32" },
-      { name: "validatorScore", type: "uint16" }
+      { name: "validatorScore", type: "uint16" },
+      { name: "isUsdc", type: "bool" }
     ]
   },
   {
@@ -1274,7 +1362,48 @@ const ESCROW_ABI = [
   }
 ] as const;
 
-const RECEIPT_ABI = [
+const ESCROW_LEGACY_ABI = [
+  {
+    name: "escrows",
+    type: "function",
+    stateMutability: "view",
+    inputs: [{ name: "questionId", type: "bytes32" }],
+    outputs: [
+      { name: "asker", type: "address" },
+      { name: "amount", type: "uint256" },
+      { name: "tier", type: "uint8" },
+      { name: "status", type: "uint8" },
+      { name: "createdAt", type: "uint256" },
+      { name: "questionHash", type: "bytes32" },
+      { name: "l1ReceiptHash", type: "bytes32" },
+      { name: "validatorScore", type: "uint16" }
+    ]
+  }
+] as const;
+
+const RECEIPT_V2_ABI = [
+  {
+    name: "recordReceipt",
+    type: "function",
+    stateMutability: "nonpayable",
+    inputs: [
+      { name: "questionId", type: "bytes32" },
+      { name: "asker", type: "address" },
+      { name: "questionHash", type: "bytes32" },
+      { name: "answerHash", type: "bytes32" },
+      { name: "citationsHash", type: "bytes32" },
+      { name: "validatorHash", type: "bytes32" },
+      { name: "corpusHash", type: "bytes32" },
+      { name: "passed", type: "bool" },
+      { name: "validatorScore", type: "uint16" },
+      { name: "citedDocuments", type: "string" },
+      { name: "validatorVersion", type: "string" }
+    ],
+    outputs: [{ name: "receiptHash", type: "bytes32" }]
+  }
+] as const;
+
+const RECEIPT_LEGACY_ABI = [
   {
     name: "recordReceipt",
     type: "function",
@@ -1301,6 +1430,83 @@ export async function POST(req: Request) {
     return NextResponse.json({ error: "Dữ liệu yêu cầu không hợp lệ." }, { status: 400 });
   }
 
+  if (
+    !body ||
+    typeof body.question !== "string" ||
+    !body.question.trim() ||
+    typeof body.questionId !== "string" ||
+    !body.questionId ||
+    !["quick", "deep"].includes(body.tier)
+  ) {
+    return NextResponse.json(
+      { error: "Câu hỏi, mã câu hỏi hoặc gói tra cứu không hợp lệ." },
+      { status: 400 }
+    );
+  }
+
+  const questionId: string = body.questionId;
+  const question: string = body.question.trim();
+  const questionHash = keccak256(toBytes(question));
+  const escrowAddr = process.env.NEXT_PUBLIC_ESCROW_ADDRESS || "";
+  const usdcAddr = process.env.NEXT_PUBLIC_USDC_ADDRESS || "";
+
+  // Check idempotency cache for repeated x402 / paid retries on the same questionId
+  const cachedReplay = getIdempotentResult(questionId);
+  if (cachedReplay && (body.requireX402 === true || req.headers.get("x-payment") || body.paymentProof)) {
+    return NextResponse.json({
+      ...cachedReplay,
+      x402Trace: {
+        ...(cachedReplay.x402Trace || {}),
+        idempotentReplay: true
+      }
+    });
+  }
+
+  const requireX402 =
+    body.requireX402 === true || req.headers.get("x-askpay-protocol") === "x402";
+  const xPaymentHeader = req.headers.get("x-payment") || "";
+  let x402Verification: ReturnType<typeof verifyX402PaymentHeader> | null = null;
+
+  if (requireX402) {
+    const hasPaymentAttempt = Boolean(xPaymentHeader || body.paymentProof);
+    if (!hasPaymentAttempt) {
+      return NextResponse.json(
+        buildX402Challenge({
+          questionId,
+          questionHash,
+          tier: body.tier,
+          escrowAddress: escrowAddr,
+          usdcAddress: usdcAddr
+        }),
+        { status: 402 }
+      );
+    }
+
+    x402Verification = verifyX402PaymentHeader({
+      headerValue: xPaymentHeader,
+      paymentProof: body.paymentProof,
+      expectedQuestionId: questionId,
+      expectedQuestionHash: questionHash,
+      expectedTier: body.tier
+    });
+
+    if (!x402Verification.ok) {
+      return NextResponse.json(
+        {
+          ...buildX402Challenge({
+            questionId,
+            questionHash,
+            tier: body.tier,
+            escrowAddress: escrowAddr,
+            usdcAddress: usdcAddr
+          }),
+          error: `X-PAYMENT proof rejected: ${x402Verification.reason}`
+        },
+        { status: 402 }
+      );
+    }
+  }
+
   const url =
     process.env.AI_SERVICE_URL ||
     process.env.LEGAL_RAG_API_URL ||
@@ -1323,16 +1529,14 @@ export async function POST(req: Request) {
       );
     }
     ragData = runBuiltinMockLegalQA(
-      body.questionId,
-      body.question.trim(),
+      questionId,
+      question,
       body.tier,
       body.simulateHallucination === true,
       body.simulateExpiredLaw === true
     );
   }
 
-  const questionId: string = body.questionId;
-  const question: string = body.question.trim();
   const askerAddress: string =
     typeof body.askerAddress === "string" && body.askerAddress.startsWith("0x")
       ? body.askerAddress
@@ -1341,15 +1545,18 @@ export async function POST(req: Request) {
   const passed: boolean = Boolean(ragData?.validation?.passed);
   const scoreInt = Math.round((ragData?.validation?.overall_score || 0) * 100);
 
-  const questionHash = keccak256(toBytes(question));
   const answerHash = keccak256(toBytes(ragData.answer || ""));
   const citationsHash = keccak256(toBytes(JSON.stringify(ragData.citations || [])));
+  const validatorHash = keccak256(toBytes(JSON.stringify(ragData.validation || {})));
+  const corpusHash = keccak256(
+    toBytes(String(ragData?.validation?.corpus_sha256 || ragData?.hashes?.corpus_hash || DEMO_CORPUS_SHA256_TS))
+  );
+  const validatorVersion = String(ragData?.validation?.validator_version || VALIDATOR_VERSION);
   const citedDocsSummary = (ragData.citations || [])
     .map((c: any) => `${c.document}#Art${c.article}#Cl${c.clause}`)
     .join(";");
 
   const pk = process.env.ORACLE_PRIVATE_KEY || "";
-  const escrowAddr = process.env.NEXT_PUBLIC_ESCROW_ADDRESS || "";
   const receiptAddr = process.env.NEXT_PUBLIC_RECEIPT_LOG_ADDRESS || "";
 
   const isLiveOnchainReady =
@@ -1358,19 +1565,83 @@ export async function POST(req: Request) {
     escrowAddr.startsWith("0x") &&
     receiptAddr.startsWith("0x");
 
-  let l1TxHash = keccak256(
-    toBytes(`L1_RECEIPT_${questionId}_${answerHash}_${citationsHash}_${scoreInt}`)
-  );
-  let settlementTxHash = keccak256(
-    toBytes(`FUJI_SETTLE_${questionId}_${passed ? "RELEASE" : "REFUND"}_${Date.now()}`)
-  );
-  let onchainMode: "LIVE_AVALANCHE" | "SIMULATED_PREVIEW" = "SIMULATED_PREVIEW";
+  let l1TxHash = "";
+  let settlementTxHash = "";
+  let onchainMode: "LIVE_AVALANCHE" | "SIMULATED_NO_ESCROW" = "SIMULATED_NO_ESCROW";
+  let escrowRecord: any = null;
 
-  if (isLiveOnchainReady) {
+  const fujiRpc =
+    process.env.NEXT_PUBLIC_FUJI_RPC_URL || "https://api.avax-test.network/ext/bc/C/rpc";
+
+  // Read actual on-chain escrow only when the client submitted an escrowTxHash or live oracle is configured
+  const hasEscrowDepositHint =
+    typeof body.escrowTxHash === "string" && body.escrowTxHash.startsWith("0x");
+
+  if (isLiveOnchainReady && hasEscrowDepositHint && /^0x[0-9a-fA-F]{64}$/.test(questionId)) {
+    try {
+      const fujiPublic = createPublicClient({
+        chain: avalancheFuji,
+        transport: http(fujiRpc, { timeout: 10000 })
+      });
+      let rawTuple: any = null;
+      try {
+        rawTuple = await fujiPublic.readContract({
+          address: escrowAddr as `0x${string}`,
+          abi: ESCROW_V2_ABI,
+          functionName: "escrows",
+          args: [questionId as `0x${string}`],
+          authorizationList: undefined
+        });
+      } catch {
+        rawTuple = await fujiPublic.readContract({
+          address: escrowAddr as `0x${string}`,
+          abi: ESCROW_LEGACY_ABI,
+          functionName: "escrows",
+          args: [questionId as `0x${string}`],
+          authorizationList: undefined
+        });
+      }
+      if (rawTuple) {
+        escrowRecord = {
+          asker: rawTuple[0],
+          amount: rawTuple[1],
+          tier: Number(rawTuple[2]),
+          status: Number(rawTuple[3]),
+          createdAt: rawTuple[4],
+          questionHash: rawTuple[5],
+          l1ReceiptHash: rawTuple[6],
+          validatorScore: Number(rawTuple[7]),
+          isUsdc: Boolean(rawTuple[8])
+        };
+      }
+    } catch {
+      escrowRecord = null;
+    }
+  }
+
+  const settlementDecision = evaluateSettlementDecision({
+    request: {
+      questionId,
+      tier: body.tier,
+      askerAddress
+    },
+    expectedQuestionHash: questionHash,
+    escrowRecord,
+    validation: ragData.validation
+  });
+
+  if (!settlementDecision.ok) {
+    return NextResponse.json(
+      { error: settlementDecision.error, code: settlementDecision.code },
+      { status: settlementDecision.httpStatus }
+    );
+  }
+
+  let finalSettlementStatus: string = settlementDecision.settlementStatus;
+
+  if (isLiveOnchainReady && settlementDecision.hasEscrow) {
     try {
       const oracleAccount = privateKeyToAccount(pk as `0x${string}`);
-      const fujiRpc =
-        process.env.NEXT_PUBLIC_FUJI_RPC_URL || "https://api.avax-test.network/ext/bc/C/rpc";
       const l1Rpc = process.env.ASKPAY_L1_RPC_URL || fujiRpc;
       const l1ChainId = Number(process.env.ASKPAY_L1_CHAIN_ID || 43113);
 
@@ -1391,69 +1662,98 @@ export async function POST(req: Request) {
         transport: http(l1Rpc, { timeout: 10000 })
       });
 
-      l1TxHash = await l1Wallet.writeContract({
-        chain: askPayL1,
-        account: oracleAccount,
-        address: receiptAddr as `0x${string}`,
-        abi: RECEIPT_ABI,
-        functionName: "recordReceipt",
-        args: [
-          questionId as `0x${string}`,
-          askerAddress as `0x${string}`,
-          questionHash,
-          answerHash,
-          citationsHash,
-          passed,
-          scoreInt,
-          citedDocsSummary
-        ]
-      });
+      try {
+        l1TxHash = await l1Wallet.writeContract({
+          chain: askPayL1,
+          account: oracleAccount,
+          address: receiptAddr as `0x${string}`,
+          abi: RECEIPT_V2_ABI,
+          functionName: "recordReceipt",
+          args: [
+            questionId as `0x${string}`,
+            askerAddress as `0x${string}`,
+            questionHash,
+            answerHash,
+            citationsHash,
+            validatorHash,
+            corpusHash,
+            passed,
+            scoreInt,
+            citedDocsSummary,
+            validatorVersion
+          ]
+        });
+      } catch {
+        l1TxHash = await l1Wallet.writeContract({
+          chain: askPayL1,
+          account: oracleAccount,
+          address: receiptAddr as `0x${string}`,
+          abi: RECEIPT_LEGACY_ABI,
+          functionName: "recordReceipt",
+          args: [
+            questionId as `0x${string}`,
+            askerAddress as `0x${string}`,
+            questionHash,
+            answerHash,
+            citationsHash,
+            passed,
+            scoreInt,
+            citedDocsSummary
+          ]
+        });
+      }
 
       await l1Public.waitForTransactionReceipt({ hash: l1TxHash as `0x${string}` });
 
+      const fujiWallet = createWalletClient({
+        account: oracleAccount,
+        chain: avalancheFuji,
+        transport: http(fujiRpc, { timeout: 10000 })
+      });
       const fujiPublic = createPublicClient({
         chain: avalancheFuji,
         transport: http(fujiRpc, { timeout: 10000 })
       });
 
-      const escrowData = await fujiPublic.readContract({
+      settlementTxHash = await fujiWallet.writeContract({
+        chain: avalancheFuji,
+        account: oracleAccount,
         address: escrowAddr as `0x${string}`,
-        abi: ESCROW_ABI,
-        functionName: "escrows",
-        args: [questionId as `0x${string}`],
-        authorizationList: undefined
+        abi: ESCROW_V2_ABI,
+        functionName: "resolveQuestion",
+        args: [
+          questionId as `0x${string}`,
+          settlementDecision.canRelease,
+          scoreInt,
+          l1TxHash as `0x${string}`
+        ]
       });
 
-      const escrowStatus = Number(escrowData[3]); // 1 = PENDING
-      if (escrowStatus === 1) {
-        const fujiWallet = createWalletClient({
-          account: oracleAccount,
-          chain: avalancheFuji,
-          transport: http(fujiRpc, { timeout: 10000 })
-        });
-
-        settlementTxHash = await fujiWallet.writeContract({
-          chain: avalancheFuji,
-          account: oracleAccount,
-          address: escrowAddr as `0x${string}`,
-          abi: ESCROW_ABI,
-          functionName: "resolveQuestion",
-          args: [questionId as `0x${string}`, passed, scoreInt, l1TxHash as `0x${string}`]
-        });
-      } else {
-        settlementTxHash = keccak256(
-          toBytes(`NO_WALLET_DEPOSIT_${questionId}_${passed ? "VERIFIED" : "REFUND"}`)
-        );
-      }
-
+      await fujiPublic.waitForTransactionReceipt({ hash: settlementTxHash as `0x${string}` });
       onchainMode = "LIVE_AVALANCHE";
+      finalSettlementStatus = settlementDecision.settlementStatus;
     } catch {
-      onchainMode = "SIMULATED_PREVIEW";
+      onchainMode = "SIMULATED_NO_ESCROW";
+      finalSettlementStatus = l1TxHash ? "PENDING_RECONCILIATION" : settlementDecision.settlementStatus;
     }
   }
 
-  return NextResponse.json({
+  const responsePayload = {
     ...ragData,
+    ...(x402Verification
+      ? {
+          x402Trace: {
+            protocol: "x402",
+            scheme: x402Verification.scheme,
+            network: x402Verification.network,
+            amountUsdcBaseUnits: x402Verification.amount,
+            asset: x402Verification.asset,
+            payer: x402Verification.payer,
+            txHash: x402Verification.txHash,
+            idempotentReplay: false
+          }
+        }
+      : {}),
     onchain: {
       mode: onchainMode,
       escrowTxHash:
@@ -1462,7 +1762,14 @@ export async function POST(req: Request) {
           : undefined,
       l1ReceiptTxHash: l1TxHash,
       fujiSettlementTxHash: settlementTxHash,
-      settlementStatus: passed ? "RELEASED_TO_TREASURY" : "AUTO_REFUNDED_TO_USER"
+      settlementStatus: finalSettlementStatus,
+      guardReason: settlementDecision.blockReason || undefined
     }
-  });
+  };
+
+  if (x402Verification) {
+    setIdempotentResult(questionId, responsePayload);
+  }
+
+  return NextResponse.json(responsePayload);
 }

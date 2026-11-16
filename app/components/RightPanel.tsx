@@ -181,7 +181,7 @@ export default function RightPanel({
                       border: `1px solid ${passed ? "#a7f3d0" : "#fecaca"}`
                     }}
                   >
-                    {passed ? "✔ Đã xác thực" : "✕ Cần kiểm tra lại"}
+                    {passed ? "✔ Trích dẫn khớp nguồn" : "✕ Trích dẫn chưa đạt"}
                   </span>
                 ) : (
                   <span
@@ -319,6 +319,10 @@ export default function RightPanel({
                         </div>
                       )}
                   </div>
+
+                  <p style={{ marginTop: 10, fontSize: 11.5, color: "#64748b", lineHeight: 1.5 }}>
+                    Kiểm tra khớp văn bản &amp; hiệu lực nguồn; không thay thế ý kiến tư vấn pháp lý.
+                  </p>
                 </>
               ) : (
                 <div
@@ -333,7 +337,9 @@ export default function RightPanel({
                   }}
                 >
                   {activeAssistantMsg
-                    ? "Không tìm thấy trích dẫn phù hợp hoặc văn bản đã hết hiệu lực. Giao dịch sẽ được hoàn phí tự động."
+                    ? activeAssistantMsg.onchain?.mode === "LIVE_AVALANCHE"
+                      ? "Không tìm thấy trích dẫn phù hợp hoặc văn bản đã hết hiệu lực — Escrow đang xử lý hoàn cọc theo quy tắc."
+                      : "Chưa tìm thấy trích dẫn phù hợp hoặc văn bản đã hết hiệu lực (Chế độ mô phỏng — không phát sinh thu phí)."
                     : "Chọn một câu hỏi hoặc gửi tra cứu mới để đối chiếu trích dẫn pháp luật tại đây."}
                 </div>
               )}

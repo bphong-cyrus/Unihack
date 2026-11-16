@@ -851,33 +851,57 @@ export default function AskPayWorkspacePage() {
       }
 
       const passed = Boolean(data?.validation?.passed);
+      const settlementStatus = data.onchain?.settlementStatus || "NO_ESCROW_DEPOSIT";
+      const isLiveOnchain =
+        data.onchain?.mode === "LIVE_AVALANCHE" &&
+        Boolean(data.onchain?.fujiSettlementTxHash);
+      const hasEscrowDeposit = Boolean(escrowTxHash) || isLiveOnchain;
+
+      const computedFeeLabel = !hasEscrowDeposit
+        ? "Mô phỏng — Không thu phí (0 USDC)"
+        : settlementStatus === "AUTO_REFUNDED_TO_USER"
+        ? "Đã hoàn cọc 100% (On-chain)"
+        : settlementStatus === "SETTLEMENT_BLOCKED_INELIGIBLE"
+        ? "Chặn giải ngân (Chưa đủ điều kiện)"
+        : settlementStatus === "PENDING_RECONCILIATION"
+        ? "Chờ đối soát giao dịch"
+        : priceLabel;
+
       const assistantMsg: ChatMessage = {
         id: `a-${Date.now()}`,
         role: "assistant",
         timestampLabel: formatNowLabel(),
         mode: activeMode,
-        feeLabel: passed ? priceLabel : "Hoàn phí 100% (0.00 USDC)",
+        feeLabel: computedFeeLabel,
         questionId,
         content: data.answer || "",
         citations: data.citations || [],
         validation: data.validation,
+        hashes: data.hashes,
+        x402Trace: data.x402Trace,
         onchain: {
-          mode: data.onchain?.mode || "SIMULATED_PREVIEW",
+          mode: data.onchain?.mode || "SIMULATED_NO_ESCROW",
           escrowTxHash: escrowTxHash || data.onchain?.escrowTxHash || undefined,
           l1ReceiptTxHash: data.onchain?.l1ReceiptTxHash || "",
           fujiSettlementTxHash: data.onchain?.fujiSettlementTxHash || "",
-          settlementStatus:
-            data.onchain?.settlementStatus ||
-            (passed ? "RELEASED_TO_TREASURY" : "AUTO_REFUNDED_TO_USER")
+          settlementStatus,
+          guardReason: data.onchain?.guardReason
         }
       };
+
+      const nextSessionStatus =
+        isLiveOnchain && settlementStatus === "AUTO_REFUNDED_TO_USER"
+          ? "refunded"
+          : passed
+          ? "verified"
+          : "draft";
 
       setSessions((prev) =>
         prev.map((s) =>
           s.id === targetSessionId
             ? {
                 ...s,
-                status: passed ? "verified" : "refunded",
+                status: nextSessionStatus,
                 messages: [...s.messages, assistantMsg]
               }
             : s
@@ -926,7 +950,13 @@ export default function AskPayWorkspacePage() {
 
   const txHistory = sessions.flatMap((s) =>
     s.messages
-      .filter((m) => m.role === "assistant" && m.onchain)
+      .filter(
+        (m) =>
+          m.role === "assistant" &&
+          m.onchain &&
+          m.onchain.mode === "LIVE_AVALANCHE" &&
+          Boolean(m.onchain.fujiSettlementTxHash || m.onchain.escrowTxHash)
+      )
       .map((m) => ({
         sessionId: s.id,
         title: s.title,
@@ -1617,14 +1647,31 @@ export default function AskPayWorkspacePage() {
                   }}
                 >
                   <div>• Fuji Escrow Contract: {escrowAddress || "0xb4fc756871c6e1694f13d7692c8f714c47142108"}</div>
-                  <div>• AskPay L1 Receipt Contract (663010): {receiptAddress || "0xb4fc756871c6e1694f13d7692c8f714c47142108"}</div>
+                  <div>• AskPay L1 Receipt Contract: {receiptAddress || "0xb4fc756871c6e1694f13d7692c8f714c47142108"}</div>
+                  {activeAssistantMsg?.validation && (
+                    <>
+                      <div style={{ marginTop: 8, color: "#93c5fd" }}>
+                        • Validator: {activeAssistantMsg.validation.validator_version || "1.1.0-deterministic"} • corpus_status: {activeAssistantMsg.validation.corpus_status || "DEMO_UNVERIFIED"} • settlement_eligible: {String(Boolean(activeAssistantMsg.validation.settlement_eligible))}
+                      </div>
+                      {activeAssistantMsg.hashes && (
+                        <>
+                          <div>• question_hash: {activeAssistantMsg.hashes.question_hash}</div>
+                          <div>• answer_hash: {activeAssistantMsg.hashes.answer_hash}</div>
+                          <div>• citations_hash: {activeAssistantMsg.hashes.citations_hash}</div>
+                          <div>• validator_hash: {activeAssistantMsg.hashes.validator_hash}</div>
+                          <div>• corpus_hash: {activeAssistantMsg.hashes.corpus_hash}</div>
+                        </>
+                      )}
+                    </>
+                  )}
                   {activeAssistantMsg?.onchain && (
                     <>
-                      <div style={{ marginTop: 8, color: "#34d399" }}>
+                      <div style={{ marginTop: 8, color: activeAssistantMsg.onchain.mode === "LIVE_AVALANCHE" ? "#34d399" : "#fbbf24" }}>
                         • Mode gần nhất: {activeAssistantMsg.onchain.mode} ({activeAssistantMsg.onchain.settlementStatus})
+                        {activeAssistantMsg.onchain.guardReason ? ` — Reason: ${activeAssistantMsg.onchain.guardReason}` : ""}
                       </div>
-                      <div>• L1 Receipt Tx: {activeAssistantMsg.onchain.l1ReceiptTxHash}</div>
-                      <div>• Fuji Settlement Tx: {activeAssistantMsg.onchain.fujiSettlementTxHash}</div>
+                      <div>• L1 Receipt Tx: {activeAssistantMsg.onchain.l1ReceiptTxHash || "Chưa phát sinh Tx (Chế độ mô phỏng không đặt cọc)"}</div>
+                      <div>• Fuji Settlement Tx: {activeAssistantMsg.onchain.fujiSettlementTxHash || "Chưa phát sinh Tx (Chế độ mô phỏng không đặt cọc)"}</div>
                     </>
                   )}
                 </div>
@@ -1731,16 +1778,28 @@ export default function AskPayWorkspacePage() {
                     className="chat-header-status"
                     style={{
                       color:
-                        activeSession?.status === "refunded" ? "#d97706" : "#059669"
+                        activeSession?.status === "refunded"
+                          ? "#d97706"
+                          : activeSession?.status === "draft" && activeAssistantMsg?.validation && !activeAssistantMsg.validation.passed
+                          ? "#64748b"
+                          : "#059669"
                     }}
                   >
                     <ShieldCheckIcon
                       size={14}
-                      color={activeSession?.status === "refunded" ? "#d97706" : "#059669"}
+                      color={
+                        activeSession?.status === "refunded"
+                          ? "#d97706"
+                          : activeSession?.status === "draft" && activeAssistantMsg?.validation && !activeAssistantMsg.validation.passed
+                          ? "#64748b"
+                          : "#059669"
+                      }
                     />
                     {activeSession?.status === "refunded"
-                      ? "Không tìm thấy căn cứ phù hợp — Giao dịch được hoàn phí tự động"
-                      : "Phiên làm việc bảo mật · Đối chiếu trích dẫn chính thức"}
+                      ? "Giao dịch cọc đã được hoàn trả theo kết quả kiểm định"
+                      : activeSession?.status === "draft" && activeAssistantMsg?.validation && !activeAssistantMsg.validation.passed
+                      ? "Chế độ mô phỏng không thu phí · Chưa tìm thấy trích dẫn đủ điều kiện"
+                      : "Phiên làm việc tra cứu · Đối chiếu trích dẫn theo nguồn văn bản"}
                   </p>
                 </div>
               </div>
@@ -1840,13 +1899,13 @@ export default function AskPayWorkspacePage() {
                     </div>
 
                     <div className={`msg-ai-card ${passed ? "" : "refunded"}`}>
-                      {/* Refund Alert Banner if Validation Failed */}
+                      {/* Validation / Settlement Status Banner */}
                       {!passed && (
                         <div
                           style={{
-                            background: "#fef3c7",
-                            border: "1px solid #fde68a",
-                            color: "#92400e",
+                            background: msg.onchain?.mode === "LIVE_AVALANCHE" ? "#fef3c7" : "#f8fafc",
+                            border: `1px solid ${msg.onchain?.mode === "LIVE_AVALANCHE" ? "#fde68a" : "#cbd5e1"}`,
+                            color: msg.onchain?.mode === "LIVE_AVALANCHE" ? "#92400e" : "#475569",
                             borderRadius: 10,
                             padding: "9px 12px",
                             fontSize: 12.5,
@@ -1857,10 +1916,15 @@ export default function AskPayWorkspacePage() {
                             gap: 8
                           }}
                         >
-                          <UndoIcon size={15} color="#b45309" />
+                          <UndoIcon size={15} color={msg.onchain?.mode === "LIVE_AVALANCHE" ? "#b45309" : "#64748b"} />
                           <span>
-                            Không tìm thấy căn cứ hợp lệ hoặc văn bản đã hết hiệu lực — Giao dịch
-                            đã được tự động hoàn phí 100%.
+                            {msg.onchain?.mode === "LIVE_AVALANCHE" &&
+                            msg.onchain?.settlementStatus === "AUTO_REFUNDED_TO_USER" &&
+                            msg.onchain?.fujiSettlementTxHash
+                              ? `Không tìm thấy căn cứ hợp lệ hoặc văn bản đã hết hiệu lực — Giao dịch cọc đã hoàn trả 100% (Tx: ${msg.onchain.fujiSettlementTxHash.slice(0, 12)}...).`
+                              : msg.onchain?.settlementStatus === "PENDING_RECONCILIATION"
+                              ? "Đã ghi nhận kiểm định, giao dịch hoàn cọc trên blockchain đang chờ đối soát."
+                              : "Chưa tìm thấy trích dẫn đủ điều kiện hoặc văn bản đã hết hiệu lực — Chế độ mô phỏng không thu phí (chưa phát sinh giao dịch đặt cọc)."}
                           </span>
                         </div>
                       )}
@@ -2267,8 +2331,8 @@ export default function AskPayWorkspacePage() {
             </div>
 
             {txHistory.length === 0 ? (
-              <p style={{ fontSize: 13, color: "#64748b", margin: 0 }}>
-                Bạn chưa có giao dịch tra cứu nào trong tài khoản này.
+              <p style={{ fontSize: 13, color: "#64748b", margin: 0, lineHeight: 1.55 }}>
+                Chưa có giao dịch đặt cọc On-chain nào được ghi nhận trong tài khoản này (các lượt tra cứu ở chế độ mô phỏng không thu phí sẽ không ghi thành giao dịch hoàn tiền).
               </p>
             ) : (
               <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>

@@ -45,7 +45,7 @@ def ask_snapshot(req, snapshot):
     start = time.monotonic()
     as_of = query_date(req.as_of)
     candidates = retrieve(snapshot, req.question, as_of, 3 if req.tier == 'quick' else 8)
-    items = candidates[:3]
+    items = candidates[:3 if req.tier == 'quick' else 8]
     citations = [{'document': p.document_id, 'document_title': p.document_title,
                   'article': p.article, 'clause': p.clause, 'point': p.point, 'excerpt': p.text}
                  for p in items]
@@ -63,5 +63,6 @@ def ask_snapshot(req, snapshot):
             'answer_method': 'EXTRACTIVE', 'payment_status': 'DISABLED',
             'hashes': {'question_hash': digest(req.question), 'answer_hash': digest(answer),
                        'citations_hash': digest(json.dumps(citations, ensure_ascii=False)),
-                       'validator_hash': digest(json.dumps(validation, ensure_ascii=False))},
+                       'validator_hash': digest(json.dumps(validation, ensure_ascii=False)),
+                       'corpus_hash': '0x' + snapshot.snapshot_sha256},
             'latency_ms': int((time.monotonic() - start) * 1000)}

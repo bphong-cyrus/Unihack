@@ -46,6 +46,7 @@ function compileContracts() {
       "AskPayReceiptLog.sol": { content: receiptSource }
     },
     settings: {
+      viaIR: true,
       optimizer: { enabled: true, runs: 200 },
       outputSelection: {
         "*": {
@@ -144,10 +145,12 @@ async function main() {
       transport: http(fujiRpc)
     });
 
+    const usdcAddress =
+      process.env.NEXT_PUBLIC_USDC_ADDRESS || "0x5425890298aed601595a70AB815c96711a31Bc65";
     const escrowTxHash = await fujiWallet.deployContract({
       abi: escrowArtifact.abi,
       bytecode: escrowArtifact.bytecode,
-      args: [account.address, account.address] // (_aiOracle, _treasury)
+      args: [account.address, account.address, usdcAddress] // (_aiOracle, _treasury, _usdcToken)
     });
 
     const escrowReceipt = await fujiPublic.waitForTransactionReceipt({ hash: escrowTxHash });

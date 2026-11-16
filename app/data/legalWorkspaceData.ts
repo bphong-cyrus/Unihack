@@ -28,6 +28,10 @@ export interface CitationCheck {
 export interface ValidationPayload {
   passed: boolean;
   verdict: "VERIFIED_RELEASE" | "UNVERIFIED_REFUND";
+  settlement_eligible?: boolean;
+  corpus_status?: string;
+  validator_version?: string;
+  corpus_sha256?: string;
   overall_score: number;
   citation_checks: CitationCheck[];
   fail_reason?: string;
@@ -37,11 +41,25 @@ export interface ValidationPayload {
 }
 
 export interface OnchainProof {
-  mode: "LIVE_AVALANCHE" | "SIMULATED_PREVIEW" | "SAMPLE_SHOWCASE";
+  mode: "LIVE_AVALANCHE" | "SIMULATED_NO_ESCROW" | "SIMULATED_PREVIEW" | "SAMPLE_SHOWCASE";
   escrowTxHash?: string;
   l1ReceiptTxHash: string;
   fujiSettlementTxHash: string;
-  settlementStatus: "RELEASED_TO_TREASURY" | "AUTO_REFUNDED_TO_USER";
+  settlementStatus:
+    | "RELEASED_TO_TREASURY"
+    | "AUTO_REFUNDED_TO_USER"
+    | "NO_ESCROW_DEPOSIT"
+    | "SETTLEMENT_BLOCKED_INELIGIBLE"
+    | "PENDING_RECONCILIATION";
+  guardReason?: string;
+}
+
+export interface AuditHashes {
+  question_hash?: string;
+  answer_hash?: string;
+  citations_hash?: string;
+  validator_hash?: string;
+  corpus_hash?: string;
 }
 
 export interface ChatMessage {
@@ -53,6 +71,8 @@ export interface ChatMessage {
   feeLabel?: string;
   citations?: CitationItem[];
   validation?: ValidationPayload;
+  hashes?: AuditHashes;
+  x402Trace?: Record<string, any>;
   onchain?: OnchainProof;
   questionId?: string;
 }
@@ -252,7 +272,7 @@ export const INITIAL_SESSIONS: ChatSession[] = [
         role: "assistant",
         timestampLabel: "10:42 AM",
         mode: "deep",
-        feeLabel: "Phân tích sâu - 0.20 USDC",
+        feeLabel: "Mô phỏng — Không thu phí (Mẫu)",
         questionId: "0x76982b366f47344ce9c67a7dab35760a4fcb7d6f9ab789feb2d5e16b9781f1e9",
         content:
           "Chào bạn, đối với trường hợp doanh nghiệp xuất nhập khẩu khai sai mã số hàng hóa (mã HS) bị phát hiện trong quá trình kiểm tra sau thông quan, hệ thống căn cứ theo quy định hiện hành như sau:\n\n1. Mức xử phạt hành chính: Phạt 20% tính trên số tiền thuế khai thiếu hoặc số tiền thuế được miễn, giảm, hoàn cao hơn so với quy định nếu hành vi dẫn đến thiếu số tiền thuế phải nộp.\n\n2. Nghĩa vụ khắc phục hậu quả: Doanh nghiệp vẫn phải nộp đủ số tiền thuế truy thu và tiền chậm nộp theo Luật Quản lý thuế.\n\n3. Lưu ý khai bổ sung: Nếu tự nguyện phát hiện sai sót trước khi có quyết định kiểm tra trực tiếp hồ sơ/thực tế hàng hóa, doanh nghiệp có quyền khai bổ sung hồ sơ hải quan để giảm thiểu rủi ro chế tài.",
@@ -311,10 +331,10 @@ export const INITIAL_SESSIONS: ChatSession[] = [
           ]
         },
         onchain: {
-          mode: "SAMPLE_SHOWCASE",
-          l1ReceiptTxHash: "0x0433323556f5a2681a5b333f688a9d51b2a24bc94ff6d8338356ac66fa3c0203",
-          fujiSettlementTxHash: "0xb4fc756871c6e1694f13d7692c8f714c47142108",
-          settlementStatus: "RELEASED_TO_TREASURY"
+          mode: "SIMULATED_NO_ESCROW",
+          l1ReceiptTxHash: "",
+          fujiSettlementTxHash: "",
+          settlementStatus: "NO_ESCROW_DEPOSIT"
         }
       }
     ]
@@ -336,7 +356,7 @@ export const INITIAL_SESSIONS: ChatSession[] = [
         role: "assistant",
         timestampLabel: "09:15 AM",
         mode: "quick",
-        feeLabel: "Hỏi nhanh - 0.05 USDC",
+        feeLabel: "Mô phỏng — Không thu phí (Mẫu)",
         questionId: "0x3120181501a4b2c3d4e5f60718293a4b5c6d7e8f90123456789abcdef0123456",
         content:
           "Theo quy định tại Khoản 1 Điều 15 Nghị định 31/2018/NĐ-CP, thương nhân đề nghị cấp Giấy chứng nhận xuất xứ hàng hóa (C/O) lần đầu bắt buộc phải đăng ký Hồ sơ thương nhân qua Hệ thống quản lý và cấp chứng nhận xuất xứ điện tử (eCoSys) trước khi nộp hồ sơ đề nghị cấp C/O.",
@@ -373,10 +393,10 @@ export const INITIAL_SESSIONS: ChatSession[] = [
           ]
         },
         onchain: {
-          mode: "SAMPLE_SHOWCASE",
-          l1ReceiptTxHash: "0x8a92f3f9e42bb12c4091e2b7a11d49c8f32e108a42c7e5511092a3b4c5d6d912",
-          fujiSettlementTxHash: "0xb4fc756871c6e1694f13d7692c8f714c47142108",
-          settlementStatus: "RELEASED_TO_TREASURY"
+          mode: "SIMULATED_NO_ESCROW",
+          l1ReceiptTxHash: "",
+          fujiSettlementTxHash: "",
+          settlementStatus: "NO_ESCROW_DEPOSIT"
         }
       }
     ]
@@ -385,7 +405,7 @@ export const INITIAL_SESSIONS: ChatSession[] = [
     id: "demo-refund-127",
     title: "Kiểm thử: Luật cũ 127/2013 đã hết hạn",
     group: "week",
-    status: "refunded",
+    status: "draft",
     messages: [
       {
         id: "m-u3",
@@ -398,10 +418,10 @@ export const INITIAL_SESSIONS: ChatSession[] = [
         role: "assistant",
         timestampLabel: "7 ngày trước",
         mode: "quick",
-        feeLabel: "Hoàn tiền 100% (0.00 USDC)",
+        feeLabel: "Mô phỏng — Không thu phí (Mẫu)",
         questionId: "0x12720130801deadbeef00000000000000000000000000000000000000000081",
         content:
-          "Theo Khoản 1 Điều 8 Nghị định 127/2013/NĐ-CP, hành vi khai sai tên hàng, số lượng hàng hóa xuất nhập khẩu bị phạt từ 1.000.000 đồng đến 3.000.000 đồng.\n\n[CẢNH BÁO TỪ VALIDATOR]: Văn bản được AI trích dẫn đã HẾT HIỆU LỰC (thay thế bởi Nghị định 128/2020/NĐ-CP). Hợp đồng thông minh AskPayEscrow đã từ chối giải ngân và TỰ ĐỘNG HOÀN TRẢ 100% tiền cọc về ví người hỏi.",
+          "Theo Khoản 1 Điều 8 Nghị định 127/2013/NĐ-CP, hành vi khai sai tên hàng, số lượng hàng hóa xuất nhập khẩu bị phạt từ 1.000.000 đồng đến 3.000.000 đồng.\n\n[MÔ PHỎNG KIỂM THỬ VALIDATOR]: Văn bản được trích dẫn đã HẾT HIỆU LỰC (thay thế bởi Nghị định 128/2020/NĐ-CP). Trong luồng có đặt cọc Escrow thực tế, giao dịch này không đủ điều kiện giải ngân và sẽ đi theo nhánh hoàn cọc.",
         citations: [
           {
             document: "127/2013/NĐ-CP",
@@ -434,10 +454,10 @@ export const INITIAL_SESSIONS: ChatSession[] = [
           ]
         },
         onchain: {
-          mode: "SAMPLE_SHOWCASE",
-          l1ReceiptTxHash: "0xdead1272013000000000000000000000000000000000000000000000000refund",
-          fujiSettlementTxHash: "0xb4fc756871c6e1694f13d7692c8f714c47142108",
-          settlementStatus: "AUTO_REFUNDED_TO_USER"
+          mode: "SIMULATED_NO_ESCROW",
+          l1ReceiptTxHash: "",
+          fujiSettlementTxHash: "",
+          settlementStatus: "NO_ESCROW_DEPOSIT"
         }
       }
     ]

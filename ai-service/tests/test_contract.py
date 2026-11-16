@@ -111,6 +111,25 @@ class ValidatorContractTests(unittest.TestCase):
         self.assertEqual(result["total_documents"], len({r["doc_id"] for r in main.CORPUS_RECORDS}))
         self.assertEqual(result["corpus_status"], "DEMO_UNVERIFIED")
 
+    def test_numeric_and_negation_mutations_fail_threshold(self):
+        num_mutated = {
+            **self.citation,
+            "excerpt": self.citation["excerpt"].replace("20%", "10%", 1),
+        }
+        result_num = main.validate_citations([num_mutated])
+        self.assertFalse(result_num["passed"])
+        self.assertLess(result_num["citation_checks"][0]["excerpt_similarity"], 0.90)
+
+        neg_flipped = {
+            "document": "54/2014/QH13",
+            "article": "25",
+            "clause": "1",
+            "excerpt": "Đối với hàng hóa nhập khẩu, không phải nộp trước ngày hàng hóa đến cửa khẩu hoặc trong thời hạn 60 ngày kể từ ngày hàng hóa đến cửa khẩu.",
+        }
+        result_neg = main.validate_citations([neg_flipped])
+        self.assertFalse(result_neg["passed"])
+        self.assertLess(result_neg["citation_checks"][0]["excerpt_similarity"], 0.90)
+
 
 if __name__ == "__main__":
     unittest.main()

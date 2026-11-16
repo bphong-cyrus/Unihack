@@ -10,7 +10,7 @@ from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel, StringConstraints
 
-from citation_text import normalize_vn_text, compute_excerpt_similarity
+from citation_text import VALIDATOR_VERSION, normalize_vn_text, compute_excerpt_similarity
 from snapshot_api import ask_snapshot, configured_snapshot, corpus_response, query_date
 from versioned_validator import validate_snapshot_citations
 
@@ -809,12 +809,43 @@ def expand_xnk_colloquial_query(q_lower: str) -> str:
 
 
 def _bm25_fallback_record(q_expanded: str) -> Optional[dict]:
+    out_of_scope_markers = (
+        "phòng trọ",
+        "thuê trọ",
+        "nhà trọ",
+        "thuê nhà",
+        "sinh viên",
+        "part time",
+        "làm thêm",
+        "vượt đèn đỏ",
+        "bằng lái xe",
+        "quy chế học",
+        "cà phê",
+        "bitcoin",
+    )
+    xnk_anchors = (
+        "hải quan",
+        "mã hs",
+        "c/o",
+        "xuất nhập khẩu",
+        "gia công",
+        "tạm nhập",
+        "tái xuất",
+        "vnaccs",
+        "tờ khai",
+        "xuất xứ",
+    )
+    if any(m in q_expanded for m in out_of_scope_markers) and not any(
+        a in q_expanded for a in xnk_anchors
+    ):
+        return None
+
     terms = {
         word
         for word in normalize_vn_text(q_expanded).split()
         if len(word) > 1 and word not in _BM25_STOPWORDS
     }
-    if len(terms) < 3:
+    if len(terms) < 4:
         return None
 
     active_docs = [r for r in CORPUS_RECORDS if r.get("status") == "ACTIVE"]
@@ -836,7 +867,7 @@ def _bm25_fallback_record(q_expanded: str) -> Optional[dict]:
 
     for r, tokens, length in documents:
         matched_distinct = sum(1 for term in terms if tokens.get(term, 0) > 0)
-        if matched_distinct < 3:
+        if matched_distinct < 4:
             continue
         score = 0.0
         for term in sorted(terms):
@@ -848,7 +879,7 @@ def _bm25_fallback_record(q_expanded: str) -> Optional[dict]:
             best_score = score
             best_record = r
 
-    if best_score >= 4.5:
+    if best_score >= 9.0:
         return best_record
     return None
 
@@ -896,13 +927,7 @@ def match_extended_corpus_question(q_lower: str, tier: str) -> Optional[tuple[st
         f"({doc_id} — {matched_record['doc_title']}): {matched_record['raw_text']}"
     )
     if matched_record["status"] == "EXPIRED":
-        answer += " (Lưu ý: Văn bản này đã hết hiệu lực thi hành — hệ thống tự động kích hoạt hoàn phí Escrow 100%)."
-    elif tier == "deep":
-        answer += (
-            "\n\nHướng dẫn thực thi XNK:\n"
-            f"① Đối chiếu đồng bộ mã HS, trị giá, xuất xứ (C/O) trên hệ thống VNACCS/VCIS với hiệu lực của {doc_id} tại thời điểm đăng ký tờ khai.\n"
-            "② Lưu trữ đầy đủ bộ chứng từ thương mại (Tờ khai, Invoice, Packing List, B/L, chứng từ thanh toán) để phục vụ kiểm tra sau thông quan."
-        )
+        answer += " (Lưu ý: Văn bản này đã hết hiệu lực thi hành — không đủ điều kiện xác thực/giải ngân Escrow)."
 
     citations = [
         {
@@ -925,12 +950,33 @@ def match_extended_corpus_question(q_lower: str, tier: str) -> Optional[tuple[st
             extra_cit = _make_citation(*pair)
             if extra_cit is not None:
                 citations.append(extra_cit)
+        answer += _format_deep_analysis(
+            citations,
+            f"Chỉ áp dụng {doc_id} nếu ngày đăng ký tờ khai nằm trong hiệu lực văn bản và đúng loại hình XNK chịu điều chỉnh; cần rà soát văn bản sửa đổi, bổ sung nếu phát sinh sau ngày hiệu lực gốc.",
+            "Cần xác nhận thêm: (a) Mã loại hình tờ khai (A11, A12, E21, E31...), (b) Ngày đăng ký tờ khai và trạng thái phân luồng (Xanh/Vàng/Đỏ), (c) Bộ chứng từ kèm theo (Invoice, Packing List, B/L, C/O).",
+        )
     return answer, citations
+
+
+def _format_deep_analysis(citations: list[dict], condition_note: str, missing_facts_note: str) -> str:
+    refs = "; ".join(
+        f"{c['document']} (Điều {c['article']}, Khoản {c['clause']})" for c in citations
+    )
+    return (
+        "\n\nPhân tích chuyên sâu đa căn cứ (Gói Tình huống):\n"
+        f"① Đối chiếu nguồn quy định: Đã tổng hợp {len(citations)} căn cứ từ {refs}.\n"
+        f"② Điều kiện áp dụng & Trường hợp ngoại lệ: {condition_note}\n"
+        f"③ Dữ kiện hồ sơ cần xác nhận thêm: {missing_facts_note}"
+    )
 
 CORPUS_INDEX = {
     (r["doc_id"].upper(), str(r["article"]), str(r["clause"])): r
     for r in CORPUS_RECORDS
 }
+
+DEMO_CORPUS_SHA256 = hashlib.sha256(
+    json.dumps(CORPUS_RECORDS, sort_keys=True, ensure_ascii=False).encode("utf-8")
+).hexdigest()
 
 
 # ==============================================================================
@@ -945,6 +991,8 @@ def validate_citations(citations: list[dict]) -> dict:
             "verdict": "UNVERIFIED_REFUND",
             "settlement_eligible": False,
             "corpus_status": "DEMO_UNVERIFIED",
+            "validator_version": VALIDATOR_VERSION,
+            "corpus_sha256": DEMO_CORPUS_SHA256,
             "overall_score": 0.0,
             "citation_checks": [],
             "fail_reason": "NO_CITATION_PROVIDED",
@@ -1016,6 +1064,8 @@ def validate_citations(citations: list[dict]) -> dict:
         "verdict": "VERIFIED_RELEASE" if all_passed else "UNVERIFIED_REFUND",
         "settlement_eligible": False,
         "corpus_status": "DEMO_UNVERIFIED",
+        "validator_version": VALIDATOR_VERSION,
+        "corpus_sha256": DEMO_CORPUS_SHA256,
         "overall_score": round(sum(total_scores) / len(total_scores), 2),
         "citation_checks": checks,
     }
@@ -1143,17 +1193,14 @@ def ask_legal_question(req: AskRequest):
                 }
             ]
             if req.tier == "deep":
-                answer += (
-                    "\n\nHướng dẫn thực tế cho bộ phận XNK:\n"
-                    "① Hồ sơ cần chuẩn bị khi xin cấp C/O: Đăng ký Hồ sơ thương nhân trên hệ thống eCoSys trước, "
-                    "sau đó nộp đơn đề nghị cấp C/O, mẫu C/O khai hoàn chỉnh, tờ khai hải quan xuất khẩu, "
-                    "hóa đơn thương mại (Invoice) và vận đơn (B/L).\n"
-                    "② Lưu ý rủi ro: Doanh nghiệp phải lưu giữ hồ sơ chứng minh xuất xứ (bảng kê nguyên phụ liệu, "
-                    "hóa đơn đầu vào) để phục vụ hậu kiểm sau thông quan."
-                )
                 extra_cit = _make_citation("31/2018/NĐ-CP", "14", "1")
                 if extra_cit is not None:
                     citations.append(extra_cit)
+                answer += _format_deep_analysis(
+                    citations,
+                    "Chỉ cấp C/O ưu đãi khi thương nhân đã hoàn tất Hồ sơ thương nhân trên eCoSys và chứng minh được tiêu chí xuất xứ hàng hóa (WO, CTC hoặc LVC/RVC) theo hiệp định FTA tương ứng; trường hợp chưa đủ hồ sơ đầu vào từ nhà cung cấp sẽ bị từ chối cấp C/O.",
+                    "Cần xác nhận thêm: (a) Nước nhập khẩu & Hiệp định FTA áp dụng (Form D, E, EUR.1, CPTPP...), (b) Mã HS 6–8 số của thành phẩm và bảng kê nguyên phụ liệu đầu vào (BOM).",
+                )
         elif "hoàn thuế" in q_lower and "nhập khẩu" in q_lower and "tái xuất" in q_lower:
             answer = (
                 "Theo Khoản 1 Điều 19 Luật Thuế xuất khẩu, thuế nhập khẩu 2016 (Luật số 107/2016/QH13), "
@@ -1175,16 +1222,14 @@ def ask_legal_question(req: AskRequest):
                 }
             ]
             if req.tier == "deep":
-                answer += (
-                    "\n\nHướng dẫn thực tế cho bộ phận XNK:\n"
-                    "① Điều kiện tiên quyết: Hàng hóa phải còn nguyên trạng, chưa qua sử dụng, gia công hoặc chế biến "
-                    "tại Việt Nam và có đối chiếu khớp tờ khai nhập khẩu ban đầu với tờ khai tái xuất.\n"
-                    "② Thủ tục nộp hồ sơ: Doanh nghiệp thực hiện nộp hồ sơ hoàn thuế điện tử qua Hệ thống xử lý "
-                    "dữ liệu điện tử hải quan kèm chứng từ thanh toán và xác nhận hàng đã thực xuất."
-                )
                 extra_cit = _make_citation("182/2025/NĐ-CP", "1", "1")
                 if extra_cit is not None:
                     citations.append(extra_cit)
+                answer += _format_deep_analysis(
+                    citations,
+                    "Điều kiện bắt buộc để được hoàn thuế là hàng hóa chưa qua sử dụng, gia công hay chế biến tại Việt Nam và đối chiếu khớp tờ khai nhập ban đầu với tờ khai tái xuất; trường hợp hàng đã tiêu dùng hoặc gia công một phần tại Việt Nam không thuộc diện hoàn theo Điều 19 Khoản 1.",
+                    "Cần xác nhận thêm: (a) Số tờ khai nhập khẩu ban đầu & ngày thông quan, (b) Lý do tái xuất (trả lại người bán hay xuất sang nước thứ ba), (c) Chứng từ thanh toán và biên bản kiểm tra thực tế hàng tái xuất.",
+                )
         elif "thời hạn" in q_lower and "tờ khai" in q_lower and "nhập khẩu" in q_lower:
             answer = (
                 "Theo Điểm b Khoản 1 Điều 25 Luật Hải quan 2014 (Luật số 54/2014/QH13), đối với hàng hóa "
@@ -1204,17 +1249,15 @@ def ask_legal_question(req: AskRequest):
                 }
             ]
             if req.tier == "deep":
-                answer += (
-                    "\n\nHướng dẫn thực tế cho bộ phận XNK:\n"
-                    "① Chứng từ bắt buộc trong bộ hồ sơ: Tờ khai hải quan điện tử, hóa đơn thương mại (Commercial Invoice), "
-                    "vận đơn (B/L hoặc AWB), danh sách đóng gói (Packing List) và C/O (nếu hưởng thuế ưu đãi).\n"
-                    "② Lưu ý rủi ro: Nếu quá 30 ngày kể từ ngày hàng đến cửa khẩu mới mở tờ khai, doanh nghiệp "
-                    "có thể bị xử phạt vi phạm hành chính về thời hạn làm thủ tục hải quan theo Nghị định 128/2020/NĐ-CP."
-                )
                 for pair in (("54/2014/QH13", "24", "1"), ("128/2020/NĐ-CP", "7", "1")):
                     extra_cit = _make_citation(*pair)
                     if extra_cit is not None:
                         citations.append(extra_cit)
+                answer += _format_deep_analysis(
+                    citations,
+                    "Mốc 30 ngày tính từ ngày hàng đến cửa khẩu (trên manifest/thông báo hàng đến); nếu nộp quá thời hạn này sẽ áp dụng chế tài phạt hành chính từ 500.000đ đến 1.000.000đ theo Khoản 1 Điều 7 Nghị định 128/2020/NĐ-CP (trừ trường hợp hàng tồn đọng hoặc bất khả kháng theo quy định).",
+                    "Cần xác nhận thêm: (a) Ngày tàu/máy bay cập cửa khẩu ghi trên B/L hoặc Manifest, (b) Trạng thái đã truyền tờ khai trên VNACCS hay chưa, (c) Bộ hồ sơ theo Điều 24 Luật Hải quan đã đủ chứng từ chưa.",
+                )
         elif "khai bổ sung" in q_lower and "phân luồng" in q_lower:
             answer = (
                 "Theo Khoản 7 Điều 1 Thông tư 39/2018/TT-BTC, người khai hải quan được phép khai bổ sung "
@@ -1235,16 +1278,14 @@ def ask_legal_question(req: AskRequest):
                 }
             ]
             if req.tier == "deep":
-                answer += (
-                    "\n\nHướng dẫn thực tế cho bộ phận XNK:\n"
-                    "① Quy trình thực hiện: Sử dụng nghiệp vụ AMA/AMC trên VNACCS/VCIS để khai sửa đổi, bổ sung "
-                    "các chỉ tiêu thông tin tờ khai và đính kèm văn bản giải trình lý do sai sót kèm chứng từ gốc.\n"
-                    "② Mốc thời gian vàng: Phải hoàn tất khai bổ sung trước khi cơ quan hải quan thông báo kiểm tra "
-                    "trực tiếp hồ sơ (luồng vàng) hoặc kiểm tra thực tế hàng hóa (luồng đỏ)."
-                )
                 extra_cit = _make_citation("38/2015/TT-BTC", "20", "1")
                 if extra_cit is not None:
                     citations.append(extra_cit)
+                answer += _format_deep_analysis(
+                    citations,
+                    "Phải phân biệt thời điểm khai bổ sung trước vs. sau khi cơ quan hải quan thông báo kiểm tra trực tiếp hồ sơ (luồng Vàng) hoặc kiểm hóa thực tế (luồng Đỏ); chỉ tiêu khai bổ sung ảnh hưởng đến thuế hoặc chính sách mặt hàng không được xử lý như sửa lỗi kỹ thuật thuần túy.",
+                    "Cần xác nhận thêm: (a) Tờ khai đã có thông báo kiểm tra chi tiết trên hệ thống chưa, (b) Chỉ tiêu cần sửa (mô tả, số lượng, mã HS hay trị giá), (c) Chênh lệch số thuế phát sinh sau sửa đổi.",
+                )
         elif "nhãn phụ" in q_lower or ("nhãn hàng hóa" in q_lower and "nhập khẩu" in q_lower):
             answer = (
                 "Theo Khoản 3 Điều 7 Nghị định 43/2017/NĐ-CP (được sửa đổi, bổ sung bởi Nghị định 111/2021/NĐ-CP), "
@@ -1265,15 +1306,14 @@ def ask_legal_question(req: AskRequest):
                 }
             ]
             if req.tier == "deep":
-                answer += (
-                    "\n\nHướng dẫn thực tế cho bộ phận XNK:\n"
-                    "① Nội dung bắt buộc: Nhãn phụ tiếng Việt phải giữ nguyên nhãn gốc và thể hiện đầy đủ tên hàng hóa, "
-                    "xuất xứ hàng hóa, tên và địa chỉ tổ chức nhập khẩu chịu trách nhiệm cùng các thông số theo tính chất hàng hóa.\n"
-                    "② Lưu ý thực thi: Doanh nghiệp phải hoàn tất dán nhãn phụ trước khi đưa hàng hóa lưu thông trên thị trường Việt Nam."
-                )
                 extra_cit = _make_citation("111/2021/NĐ-CP", "1", "5")
                 if extra_cit is not None:
                     citations.append(extra_cit)
+                answer += _format_deep_analysis(
+                    citations,
+                    "Phải giữ nguyên nhãn gốc trên hàng hóa/bao bì thương phẩm; nhãn phụ tiếng Việt bổ sung phần thiếu và bắt buộc hoàn tất trước khi đưa hàng hóa lưu thông thương mại (riêng hàng hóa gia công xuất khẩu không lưu thông nội địa có chế độ áp dụng riêng theo Nghị định 111/2021/NĐ-CP).",
+                    "Cần xác nhận thêm: (a) Nhãn gốc đã thể hiện rõ xuất xứ hàng hóa (Made in / Origin) chưa, (b) Mục đích nhập khẩu (tiêu thụ nội địa hay nguyên liệu sản xuất xuất khẩu), (c) Nhóm hàng có quy định nhãn chuyên ngành riêng (thực phẩm, mỹ phẩm, thiết bị y tế...).",
+                )
         elif "chỉ tiêu thông tin" in q_lower or ("tờ khai hải quan" in q_lower and "hệ thống xử lý dữ liệu điện tử" in q_lower):
             answer = (
                 "Theo Khoản 1 Điều 18 Thông tư 38/2015/TT-BTC, người khai hải quan phải khai đầy đủ các thông tin "
@@ -1294,15 +1334,14 @@ def ask_legal_question(req: AskRequest):
                 }
             ]
             if req.tier == "deep":
-                answer += (
-                    "\n\nHướng dẫn thực thi XNK:\n"
-                    "① Kiểm tra kỹ các chỉ tiêu trọng yếu (Mã HS, Trị giá hóa đơn, Điều kiện giao hàng Incoterms, Xuất xứ C/O) "
-                    "trước khi truyền chính thức trên VNACCS/VCIS.\n"
-                    "② Chuẩn bị sẵn bản scan ký số của bộ chứng từ đính kèm V5 phòng trường hợp tờ khai phân luồng Vàng hoặc Đỏ."
-                )
                 extra_cit = _make_citation("08/2015/NĐ-CP", "25", "1")
                 if extra_cit is not None:
                     citations.append(extra_cit)
+                answer += _format_deep_analysis(
+                    citations,
+                    "Trường hợp hàng hóa thuộc diện kiểm tra chuyên ngành hoặc miễn thuế phải khai kèm mã văn bản/giấy phép tại chỉ tiêu tương ứng ngay khi truyền VNACCS; khai thiếu chỉ tiêu bắt buộc khiến hệ thống từ chối tiếp nhận hoặc chuyển luồng kiểm tra.",
+                    "Cần xác nhận thêm: (a) Hàng hóa thuộc phụ lục kiểm tra chuyên ngành/giấy phép nào không, (b) Điều kiện Incoterms & phí vận tải/bảo hiểm ảnh hưởng trị giá tính thuế, (c) Chứng từ đính kèm V5 đã ký số đầy đủ chưa.",
+                )
         elif not (any(term in q_lower for term in ("mã hs", "mã số hàng"))
                   and any(term in q_lower for term in ("sai", "nhầm"))
                   and any(term in q_lower for term in ("phạt", "xử lý", "sau thông quan"))):
@@ -1335,16 +1374,14 @@ def ask_legal_question(req: AskRequest):
                 }
             ]
             if req.tier == "deep":
-                answer += (
-                    "\n\nHướng dẫn thực tế cho bộ phận XNK:\n"
-                    "① Nghĩa vụ tài chính: Ngoài mức phạt 20% trên số thuế khai thiếu, doanh nghiệp vẫn phải nộp đủ "
-                    "số tiền thuế truy thu và tiền chậm nộp theo Luật Quản lý thuế.\n"
-                    "② Phương án xử lý giảm rủi ro: Nếu doanh nghiệp tự rà soát phát hiện nhầm mã HS và thực hiện khai bổ sung "
-                    "hồ sơ hải quan, nộp đủ thuế trước thời điểm có quyết định kiểm tra sau thông quan thì có thể giảm thiểu rủi ro chế tài."
-                )
                 extra_cit = _make_citation("38/2015/TT-BTC", "20", "1")
                 if extra_cit is not None:
                     citations.append(extra_cit)
+                answer += _format_deep_analysis(
+                    citations,
+                    "Mức phạt 20% áp dụng đối với hành vi khai sai mã HS dẫn đến thiếu thuế khi cơ quan hải quan phát hiện trong kiểm tra sau thông quan; trường hợp doanh nghiệp chủ động khai bổ sung trước thời điểm cơ quan hải quan công bố quyết định kiểm tra sau thông quan hoặc không làm thiếu thuế thì chế tài sẽ khác (cần đối chiếu Khoản 2 Điều 9 và Điều 7 Nghị định 128/2020/NĐ-CP).",
+                    "Cần xác nhận thêm: (a) Đã có quyết định kiểm tra sau thông quan hay doanh nghiệp tự phát hiện trước kiểm tra, (b) Khai sai mã HS có làm thiếu số tiền thuế phải nộp hay không, (c) Hồ sơ kỹ thuật/catalogue chứng minh bản chất hàng hóa để xác định lại mã HS chuẩn.",
+                )
 
     validation = validate_citations(citations)
     latency_ms = int((time.time() - start_time) * 1000)
@@ -1360,6 +1397,7 @@ def ask_legal_question(req: AskRequest):
             "answer_hash": sha256_hex(answer),
             "citations_hash": sha256_hex(json.dumps(citations, ensure_ascii=False)),
             "validator_hash": sha256_hex(json.dumps(validation, ensure_ascii=False)),
+            "corpus_hash": "0x" + DEMO_CORPUS_SHA256,
         },
         "latency_ms": latency_ms,
     }
