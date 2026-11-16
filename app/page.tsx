@@ -3,16 +3,15 @@
 import React, { useEffect, useRef, useState } from "react";
 import {
   createPublicClient,
-  createWalletClient,
-  custom,
   formatEther,
   http,
   keccak256,
-  parseEther,
   toBytes
 } from "viem";
 import { avalancheFuji } from "viem/chains";
 import RightPanel, { RightTab } from "./components/RightPanel";
+import { paidAsk } from "./lib/paid-ask.mjs";
+import { signFujiPayment } from "./lib/x402.mjs";
 import { migrateLegacySessions } from "./data/history-migration.mjs";
 import {
   AskPayLogo,
@@ -68,20 +67,6 @@ interface UserProfile {
   role: "user" | "admin";
   company: string;
 }
-
-const ESCROW_ABI = [
-  {
-    name: "askQuestion",
-    type: "function",
-    stateMutability: "payable",
-    inputs: [
-      { name: "questionId", type: "bytes32" },
-      { name: "tier", type: "uint8" },
-      { name: "questionHash", type: "bytes32" }
-    ],
-    outputs: []
-  }
-] as const;
 
 const AUTH_STORAGE_KEY = "askpay_auth_user_v1";
 const ACCOUNTS_STORAGE_KEY = "askpay_registered_accounts_v1";
@@ -174,7 +159,7 @@ export default function AskPayWorkspacePage() {
   const chatEndRef = useRef<HTMLDivElement>(null);
   const userMenuRef = useRef<HTMLDivElement>(null);
 
-  const escrowAddress = process.env.NEXT_PUBLIC_ESCROW_ADDRESS || "";
+  const escrowAddress = process.env.NEXT_PUBLIC_ANSWER_ESCROW_ADDRESS || "";
   const receiptAddress = process.env.NEXT_PUBLIC_RECEIPT_LOG_ADDRESS || "";
   const fujiRpc =
     process.env.NEXT_PUBLIC_FUJI_RPC_URL || "https://api.avax-test.network/ext/bc/C/rpc";
@@ -479,8 +464,12 @@ export default function AskPayWorkspacePage() {
             }
           ]
         });
+      } else {
+        throw switchError;
       }
     }
+    const chainId = await eth.request({ method: "eth_chainId" });
+    if (String(chainId).toLowerCase() !== "0xa869") throw new Error("Ví chưa kết nối Avalanche Fuji.");
   }
 
   async function connectWallet(): Promise<string> {
@@ -829,77 +818,39 @@ export default function AskPayWorkspacePage() {
           : null;
       let activeAccount = account;
 
-      if (
-        !isFreeRewardTurn &&
-        useOnchainWallet &&
-        !activeAccount &&
-        eth &&
-        escrowAddress &&
-        escrowAddress.startsWith("0x")
-      ) {
-        activeAccount = await connectWallet();
+      const paid = !isFreeRewardTurn && useOnchainWallet;
+      if (paid && (!eth || !escrowAddress)) {
+        throw new Error("Chưa cấu hình AnswerEscrow Fuji hoặc chưa có ví. Hãy chuyển sang chế độ preview nếu cần.");
       }
-
+      if (paid && !activeAccount) activeAccount = await connectWallet();
+      if (paid && !activeAccount) throw new Error("Cần kết nối ví để thanh toán USDC.");
       const asker = activeAccount || "0x0000000000000000000000000000000000000001";
       const questionId = keccak256(toBytes(`${asker}-${Date.now()}-${queryText}`));
-      const questionHash = keccak256(toBytes(queryText));
       let escrowTxHash = "";
-
-      if (
-        !isFreeRewardTurn &&
-        useOnchainWallet &&
-        activeAccount &&
-        eth &&
-        escrowAddress &&
-        escrowAddress.startsWith("0x")
-      ) {
-        try {
-          setLoadingStep("Đang xác nhận giao dịch qua ví Avalanche Fuji...");
-          await ensureFujiChain(eth);
-          const publicClient = createPublicClient({
-            chain: avalancheFuji,
-            transport: http(fujiRpc)
-          });
-          const walletClient = createWalletClient({
-            chain: avalancheFuji,
-            transport: custom(eth)
-          });
-
-          const depositValue = isDeep ? parseEther("0.02") : parseEther("0.005");
-          const txHash = await walletClient.writeContract({
-            chain: avalancheFuji,
-            account: activeAccount as `0x${string}`,
-            address: escrowAddress as `0x${string}`,
-            abi: ESCROW_ABI,
-            functionName: "askQuestion",
-            args: [questionId, isDeep ? 1 : 0, questionHash],
-            value: depositValue
-          });
-          await publicClient.waitForTransactionReceipt({ hash: txHash });
-          escrowTxHash = txHash;
-          await refreshBalance(activeAccount);
-        } catch {
-          escrowTxHash = "";
-        }
+      let res: Response;
+      if (paid) {
+        await ensureFujiChain(eth);
+        setLoadingStep("Đang kiểm tra yêu cầu thanh toán USDC...");
+        const publicUrl = `${window.location.origin}/api/v1/legal/ask`;
+        const requestBody = { question_id: questionId, question: queryText, tier: apiTier,
+          ...(asOf ? { as_of: asOf } : {}) };
+        res = await paidAsk('/api/v1/legal/ask', requestBody, async (challenge: string) => {
+          setLoadingStep("Vui lòng kiểm tra và ký thanh toán USDC trong ví...");
+          return signFujiPayment(challenge, apiTier, questionId, queryText, activeAccount,
+                                 escrowAddress, publicUrl, eth);
+        });
+      } else {
+        setLoadingStep("AskPay đang phân tích và đối chiếu văn bản pháp luật...");
+        const isDemoMode = !corpus || corpus.corpus_status === "DEMO_UNVERIFIED";
+        res = await fetch("/api/ask-and-settle", {
+          method: "POST", headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ questionId, question: queryText, tier: apiTier,
+            ...(corpus?.corpus_status === "REVIEW_ASSERTED" && asOf ? { asOf } : {}),
+            askerAddress: asker, escrowTxHash,
+            simulateHallucination: isDemoMode && demoFault === "hallucination",
+            simulateExpiredLaw: isDemoMode && demoFault === "expired" })
+        });
       }
-
-      setLoadingStep("AskPay đang phân tích và đối chiếu văn bản pháp luật...");
-
-      const isDemoMode = !corpus || corpus.corpus_status === "DEMO_UNVERIFIED";
-      const res = await fetch("/api/ask-and-settle", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          questionId,
-          question: queryText,
-          tier: apiTier,
-          ...(corpus?.corpus_status === "REVIEW_ASSERTED" && asOf ? { asOf } : {}),
-          askerAddress: asker,
-          escrowTxHash,
-          simulateHallucination: isDemoMode && demoFault === "hallucination",
-          simulateExpiredLaw: isDemoMode && demoFault === "expired"
-        })
-      });
 
       const data = await res.json();
       if (!res.ok || data.error) {
@@ -907,11 +858,16 @@ export default function AskPayWorkspacePage() {
       }
 
       const passed = Boolean(data?.validation?.passed);
-      const settlementStatus = data.onchain?.settlementStatus || "NO_ESCROW_DEPOSIT";
-      const isLiveOnchain =
-        data.onchain?.mode === "LIVE_AVALANCHE" &&
-        Boolean(data.onchain?.fujiSettlementTxHash);
-      const hasEscrowDeposit = Boolean(escrowTxHash) || isLiveOnchain;
+      const settledTx = data.onchain?.tx_hash || data.onchain?.fujiSettlementTxHash || "";
+      const paidStatus = data.onchain?.status;
+      escrowTxHash = data.onchain?.payment_tx_hash || data.payment_tx_hash || "";
+      const settlementStatus = paid ?
+        (paidStatus === "RELEASED" && settledTx ? "RELEASED_TO_TREASURY" :
+         paidStatus === "AUTO-REFUNDED" && settledTx ? "AUTO_REFUNDED_TO_USER" : "PENDING_RECONCILIATION") :
+        (data.onchain?.settlementStatus || "NO_ESCROW_DEPOSIT");
+      const isLiveOnchain = paid ? Boolean(settledTx && paidStatus !== "PENDING") :
+        data.onchain?.mode === "LIVE_AVALANCHE" && Boolean(data.onchain?.fujiSettlementTxHash);
+      const hasEscrowDeposit = paid || Boolean(escrowTxHash) || isLiveOnchain;
 
       const computedFeeLabel = !hasEscrowDeposit
         ? "Mô phỏng — Không thu phí (0 USDC)"
@@ -930,16 +886,16 @@ export default function AskPayWorkspacePage() {
         mode: activeMode,
         feeLabel: computedFeeLabel,
         questionId,
-        content: data.answer || "",
+        content: data.answer || (paid ? `Thanh toán đang chờ đối soát. Mã câu hỏi: ${questionId}` : ""),
         citations: data.citations || [],
         validation: data.validation,
         hashes: data.hashes,
         x402Trace: data.x402Trace,
         onchain: {
-          mode: data.onchain?.mode || "SIMULATED_NO_ESCROW",
+          mode: isLiveOnchain ? "LIVE_AVALANCHE" : (paid ? "PENDING_AVALANCHE" : (data.onchain?.mode || "SIMULATED_NO_ESCROW")),
           escrowTxHash: escrowTxHash || data.onchain?.escrowTxHash || undefined,
           l1ReceiptTxHash: data.onchain?.l1ReceiptTxHash || "",
-          fujiSettlementTxHash: data.onchain?.fujiSettlementTxHash || "",
+          fujiSettlementTxHash: settledTx,
           settlementStatus,
           guardReason: data.onchain?.guardReason
         }

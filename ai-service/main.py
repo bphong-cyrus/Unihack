@@ -1497,7 +1497,7 @@ def legal_ask_endpoint(req: AskRequest, request: Request):
     try:
         config = load_payment_config()
         body = req.model_dump(mode='json')
-        resource_url = str(request.url)
+        resource_url = os.environ.get('ASKPAY_PUBLIC_LEGAL_URL') or str(request.url)
         challenge = build_payment_challenge(config, body, resource_url)
         outcome = process_paid_ask(request.headers.get('payment-signature', ''), challenge,
                                    challenge['accepts'][0], body, resource_url,

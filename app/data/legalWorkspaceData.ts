@@ -41,7 +41,7 @@ export interface ValidationPayload {
 }
 
 export interface OnchainProof {
-  mode: "LIVE_AVALANCHE" | "SIMULATED_NO_ESCROW" | "SIMULATED_PREVIEW" | "SAMPLE_SHOWCASE";
+  mode: "LIVE_AVALANCHE" | "PENDING_AVALANCHE" | "SIMULATED_NO_ESCROW" | "SIMULATED_PREVIEW" | "SAMPLE_SHOWCASE";
   escrowTxHash?: string;
   l1ReceiptTxHash: string;
   fujiSettlementTxHash: string;
