@@ -1,3 +1,4 @@
+import { confirmedReceipt } from "./settlement-receipt.mjs";
 import { createHash } from "crypto";
 import { NextResponse } from "next/server";
 import {
@@ -1723,7 +1724,7 @@ export async function POST(req: Request) {
         });
       }
 
-      await l1Public.waitForTransactionReceipt({ hash: l1TxHash as `0x${string}` });
+      await confirmedReceipt(l1Public, l1TxHash as `0x${string}`);
 
       const fujiWallet = createWalletClient({
         account: oracleAccount,
@@ -1749,12 +1750,12 @@ export async function POST(req: Request) {
         ]
       });
 
-      await fujiPublic.waitForTransactionReceipt({ hash: settlementTxHash as `0x${string}` });
+      await confirmedReceipt(fujiPublic, settlementTxHash as `0x${string}`);
       onchainMode = "LIVE_AVALANCHE";
       finalSettlementStatus = settlementDecision.settlementStatus;
     } catch {
       onchainMode = "SIMULATED_NO_ESCROW";
-      finalSettlementStatus = l1TxHash ? "PENDING_RECONCILIATION" : settlementDecision.settlementStatus;
+      finalSettlementStatus = "PENDING_RECONCILIATION";
     }
   }
 
