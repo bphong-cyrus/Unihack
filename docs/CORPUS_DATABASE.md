@@ -66,3 +66,5 @@ Hai văn bản `127/2013/NĐ-CP` và `128/2013/TT-BTC` được gắn `EXPIRED` 
 ```bash
 python ai-service/status_evidence.py data/askpay-source-registry.sqlite3 research/status-evidence/observations.json
 ```
+
+Khi kết quả sau chữ ký chưa rõ, giao diện lưu mã câu hỏi cùng địa chỉ ví và cho phép tra lại qua `GET /api/v1/legal/payments/{query_id}?payer=...`. API chỉ trả trạng thái cùng hash giao dịch, không trả chữ ký hay nội dung câu hỏi; cặp mã câu hỏi và địa chỉ ví không phải cơ chế xác thực danh tính. Trạng thái cuối chưa có hash quyết toán vẫn được giao diện hiển thị chờ đối soát. Dữ liệu tra cứu tồn tại chừng nào journal SQLite bền vững còn được giữ.

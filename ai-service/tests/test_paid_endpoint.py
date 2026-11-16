@@ -28,3 +28,26 @@ class PaidEndpointTests(unittest.TestCase):
         with patch.dict(os.environ, {'ASKPAY_RECOVERY_TOKEN':'secret'}):
             result = TestClient(main.app).post('/api/v1/legal/recover')
         self.assertEqual(result.status_code, 401)
+
+class PaymentStatusTests(unittest.TestCase):
+    def test_payment_status_omits_private_payload_and_checks_payer(self):
+        from tempfile import TemporaryDirectory
+        from payment_recovery import PaymentJournal
+        with TemporaryDirectory() as tmp:
+            journal=PaymentJournal(Path(tmp)/'payments.sqlite3')
+            query='0x'+'1'*64; payer='0x'+'2'*40; tx='0x'+'3'*64
+            intent={'query_id':query,'question_hash':'0x'+'4'*64,'tier':'quick','amount':'50000','payer':payer,
+                    'nonce':'0x'+'5'*64,'network':'eip155:43113','asset':'0x'+'6'*40,
+                    'pay_to':'0x'+'7'*40,'valid_before':'9999999999'}
+            journal.record_initiated(intent, 'owner')
+            with patch('main.payment_journal', return_value=journal):
+                client=TestClient(main.app)
+                wrong=client.get(f'/api/v1/legal/payments/{query}',params={'payer':'0x'+'8'*40})
+                pending=client.get(f'/api/v1/legal/payments/{query}',params={'payer':payer})
+                self.assertEqual(wrong.status_code,404)
+                self.assertEqual(pending.json()['status'],'PAYMENT_INITIATED')
+                self.assertNotIn('nonce',pending.text)
+                journal.confirm_intent(query,'owner',tx)
+                result=client.get(f'/api/v1/legal/payments/{query}',params={'payer':payer})
+                self.assertEqual(result.json()['status'],'PENDING_ESCROW')
+                self.assertEqual(result.json()['payment_tx_hash'],tx)

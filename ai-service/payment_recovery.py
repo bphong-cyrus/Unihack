@@ -203,6 +203,19 @@ class PaymentJournal:
                        (tx_hash.lower(), owner))
 
 
+
+def get_public_payment_status(journal, query_id, payer):
+    if not re.fullmatch(r'0x[0-9a-fA-F]{64}', query_id or '') or not re.fullmatch(r'0x[0-9a-fA-F]{40}', payer or ''):
+        return None
+    with journal._connect() as db:
+        row = db.execute("""SELECT i.query_id, i.status, i.tx_hash, p.settlement_tx_hash
+                            FROM payment_intents i LEFT JOIN payments p ON p.tx_hash=i.tx_hash
+                            WHERE i.query_id=? AND i.payer_address=?""", (query_id.lower(), payer.lower())).fetchone()
+        if row is None:
+            return None
+        return {'question_id': row['query_id'], 'status': row['status'], 'payment_tx_hash': row['tx_hash'],
+                'settlement_tx_hash': row['settlement_tx_hash'] if row['status'] in {'RELEASED', 'REFUNDED'} else None}
+
 def recover_pending(journal, escrow, facilitator=None, intent_timeout_seconds=120):
     report = {'claimed': 0, 'refunded': 0, 'released': 0, 'pending': 0, 'intents_confirmed': 0, 'intents_failed': 0, 'intents_pending': 0}
     for query_id in journal.initiated_ids(intent_timeout_seconds):

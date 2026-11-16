@@ -11,6 +11,7 @@ import {
 import { avalancheFuji } from "viem/chains";
 import RightPanel, { RightTab } from "./components/RightPanel";
 import { paidAsk } from "./lib/paid-ask.mjs";
+import { paymentDisplay } from "./lib/payment-status.mjs";
 import { signFujiPayment } from "./lib/x402.mjs";
 import { migrateLegacySessions } from "./data/history-migration.mjs";
 import {
@@ -499,6 +500,34 @@ export default function AskPayWorkspacePage() {
     }
   }
 
+  async function refreshPaymentStatus(message: ChatMessage) {
+    const payer = message.onchain?.payerAddress;
+    if (!message.questionId || !payer) return;
+    setErrorMsg("");
+    try {
+      const response = await fetch(`/api/v1/legal/payments/${encodeURIComponent(message.questionId)}?payer=${encodeURIComponent(payer)}`, { cache: "no-store" });
+      const result = await response.json();
+      if (!response.ok) throw new Error(result.error || "Chưa thể tra trạng thái thanh toán.");
+      const display = paymentDisplay(result) as {
+        settlementStatus: NonNullable<ChatMessage["onchain"]>["settlementStatus"];
+        mode: NonNullable<ChatMessage["onchain"]>["mode"];
+        feeLabel: string;
+        tx: string;
+      };
+      setSessions(previous => previous.map(session => ({ ...session,
+        status: display.settlementStatus === "AUTO_REFUNDED_TO_USER" && session.messages.some(item => item.id === message.id)
+          ? "refunded" : session.status,
+        messages: session.messages.map(item => {
+        if (item.id !== message.id || !item.onchain) return item;
+        return { ...item, feeLabel: display.feeLabel, onchain: { ...item.onchain, mode: display.mode,
+          settlementStatus: display.settlementStatus, escrowTxHash: result.payment_tx_hash || item.onchain.escrowTxHash,
+          fujiSettlementTxHash: display.tx } };
+      }) })));
+    } catch (error: any) {
+      setErrorMsg(error?.message || "Chưa thể tra trạng thái thanh toán.");
+    }
+  }
+
   function handleStartNewSession() {
     const blank = createEmptySession();
     setSessions((prev) => [blank, ...prev]);
@@ -894,6 +923,7 @@ export default function AskPayWorkspacePage() {
         onchain: {
           mode: isLiveOnchain ? "LIVE_AVALANCHE" : (paid ? "PENDING_AVALANCHE" : (data.onchain?.mode || "SIMULATED_NO_ESCROW")),
           escrowTxHash: escrowTxHash || data.onchain?.escrowTxHash || undefined,
+          payerAddress: paid ? activeAccount : undefined,
           l1ReceiptTxHash: data.onchain?.l1ReceiptTxHash || "",
           fujiSettlementTxHash: settledTx,
           settlementStatus,
@@ -1943,6 +1973,13 @@ export default function AskPayWorkspacePage() {
 
                       {/* Body */}
                       <div className="ai-body-text">{msg.content}</div>
+
+                      {msg.onchain?.payerAddress && msg.questionId && (
+                        <div style={{ marginTop: 10, display: "flex", gap: 10, alignItems: "center", flexWrap: "wrap" }}>
+                          <button type="button" onClick={() => refreshPaymentStatus(msg)}>Kiểm tra trạng thái thanh toán</button>
+                          {msg.onchain.fujiSettlementTxHash && <a href={`https://testnet.snowtrace.io/tx/${msg.onchain.fujiSettlementTxHash}`} target="_blank" rel="noreferrer">Xem giao dịch Fuji</a>}
+                        </div>
+                      )}
 
                       {/* Clickable Statutory Citations */}
                       {citations.length > 0 && (

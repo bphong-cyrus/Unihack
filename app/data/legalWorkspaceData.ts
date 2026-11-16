@@ -43,6 +43,7 @@ export interface ValidationPayload {
 export interface OnchainProof {
   mode: "LIVE_AVALANCHE" | "PENDING_AVALANCHE" | "SIMULATED_NO_ESCROW" | "SIMULATED_PREVIEW" | "SAMPLE_SHOWCASE";
   escrowTxHash?: string;
+  payerAddress?: string;
   l1ReceiptTxHash: string;
   fujiSettlementTxHash: string;
   settlementStatus:
@@ -50,7 +51,8 @@ export interface OnchainProof {
     | "AUTO_REFUNDED_TO_USER"
     | "NO_ESCROW_DEPOSIT"
     | "SETTLEMENT_BLOCKED_INELIGIBLE"
-    | "PENDING_RECONCILIATION";
+    | "PENDING_RECONCILIATION"
+    | "PAYMENT_FAILED";
   guardReason?: string;
 }
 

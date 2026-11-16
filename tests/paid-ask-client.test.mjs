@@ -16,6 +16,7 @@ test('never signs if upstream fails or does not provide a challenge', async () =
 
 test('reports the question ID if a signed request has an uncertain result', async () => {
  let count=0; const fetcher=async()=>{count++;return count===1 ? new Response('{}',{status:402,headers:{'PAYMENT-REQUIRED':'challenge'}}) : new Response('{}',{status:502})};
- await assert.rejects(paidAsk('/api',body,async()=> 'signed',fetcher), /Mã câu hỏi: id/);
+ const result=await paidAsk('/api',body,async()=> 'signed',fetcher);
+ assert.equal(result.status,202); assert.equal((await result.json()).question_id,'id');
  assert.equal(count,2);
 });

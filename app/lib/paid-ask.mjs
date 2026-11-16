@@ -10,6 +10,7 @@ export async function paidAsk(url, body, sign, fetcher = fetch) {
     if (result.status >= 500) throw new Error('uncertain upstream response');
     return result;
   } catch {
-    throw new Error(`Chưa xác định được kết quả thanh toán; không gửi lại. Mã câu hỏi: ${body.question_id}`);
+    return new Response(JSON.stringify({ payment_status: 'SETTLEMENT_PENDING', question_id: body.question_id }),
+      { status: 202, headers: { 'Content-Type': 'application/json' } });
   }
 }

@@ -9,6 +9,7 @@ import os
 import secrets
 import threading
 import logging
+import sqlite3
 from contextlib import asynccontextmanager
 from typing import Annotated, List, Literal, Optional
 from fastapi import FastAPI, HTTPException, Request
@@ -21,7 +22,7 @@ from snapshot_api import ask_snapshot, configured_snapshot, corpus_response, que
 from versioned_validator import validate_snapshot_citations
 from factcheck import check_claim
 from relevance import evidence_relevant
-from payment_recovery import recover_pending
+from payment_recovery import recover_pending, get_public_payment_status
 from x402 import (EscrowSettlementClient, FacilitatorClient, X402ConfigurationError,
                   X402PaymentError, build_payment_challenge, load_payment_config,
                   process_paid_ask, payment_journal, load_recovery_config, facilitator_status_client)
@@ -1510,3 +1511,14 @@ def legal_ask_endpoint(req: AskRequest, request: Request):
     except Exception as error:
         raise HTTPException(status_code=502, detail='Không thể xác thực hoặc quyết toán thanh toán x402.') from error
     return JSONResponse(status_code=outcome['status'], content=outcome['body'], headers=outcome['headers'])
+
+
+@app.get('/api/v1/legal/payments/{query_id}')
+def payment_status_endpoint(query_id: str, payer: str):
+    try:
+        result = get_public_payment_status(payment_journal(), query_id, payer)
+    except (OSError, sqlite3.Error) as error:
+        raise HTTPException(status_code=503, detail='Không thể đọc trạng thái thanh toán.') from error
+    if result is None:
+        raise HTTPException(status_code=404, detail='Không tìm thấy thanh toán cho ví và mã câu hỏi này.')
+    return JSONResponse(content=result, headers={'Cache-Control': 'no-store'})
