@@ -56,3 +56,13 @@ python ai-service/ocr_candidates.py research/extracted data/askpay-source-regist
 ```
 
 Lệnh kiểm tra lại hash trang và tệp nguồn; nếu trang không khớp xác nhận hoặc đã có quyết định review cấu trúc/hiệu lực trong bảng, lệnh dừng và giữ dữ liệu đang có. Mỗi bộ OCR được lưu riêng, kể cả khi cùng văn bản có nhiều bộ hoặc phần phụ lục.
+
+## Quan sát hiệu lực ở cấp văn bản
+
+`research/status-evidence/observations.json` ghi các quan sát có liên kết tới CSDL quốc gia về văn bản pháp luật. Các trang gốc không mở trực tiếp được trong môi trường thu thập; dữ liệu được đối chiếu qua kết quả tìm kiếm đã lập chỉ mục, nên `source_access=indexed_search_cache` và `recorded_at` chỉ là thời điểm ghi, không chứng minh trang gốc còn trạng thái đó tại thời điểm hiện tại. Cần tải và lưu bản gốc, kiểm tra lại trước khi dùng như bằng chứng phát hành.
+
+Hai văn bản `127/2013/NĐ-CP` và `128/2013/TT-BTC` được gắn `EXPIRED` trong danh mục nguồn, lần lượt từ 10/12/2020 và 01/04/2015. Bốn văn bản có ghi nhận hết hiệu lực một phần chỉ được lưu là quan sát `PARTIALLY_EXPIRED`; không tự đánh dấu toàn văn `ACTIVE` hoặc `EXPIRED`. Những quan sát cấp văn bản này không tự duyệt ranh giới Điều/Khoản và chưa đưa nội dung OCR vào snapshot hoặc validator.
+
+```bash
+python ai-service/status_evidence.py data/askpay-source-registry.sqlite3 research/status-evidence/observations.json
+```
