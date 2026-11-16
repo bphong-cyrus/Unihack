@@ -34,3 +34,7 @@ python ai-service/ocr_attestation.py research/extracted data/askpay-source-regis
 Retriever mặc định dùng BM25. Để bật xếp hạng kết hợp, cài `ai-service/requirements-retrieval.txt`, rồi đặt `ASKPAY_EMBEDDING_MODEL` và/hoặc `ASKPAY_RERANKER_MODEL` thành đường dẫn thư mục mô hình cục bộ; `ASKPAY_MODEL_DEVICE` mặc định là `cpu`. Có thể dùng các mô hình `bqbbao6_vietnamese-legal-embedding` và `thanhtantran_Vietnamese_Reranker` trong thư mục UIT. Trọng số mô hình không được đưa vào Git. Khi cấu hình đường dẫn sai hoặc không tải được mô hình, API trả 503; không tự tải mô hình từ mạng.
 
 Chỉ các điều khoản đã qua lọc trạng thái review và ngày hiệu lực mới được gửi tới mô hình; BM25 tạo tập ứng viên và RRF kết hợp thứ hạng embedding và cross-encoder. API trả `retrieval_method` để phân biệt `BM25` và `HYBRID`. Chưa có bộ câu hỏi gán nhãn AskPay để đo chất lượng thực tế; kết quả đánh giá UIT không đại diện cho corpus AskPay.
+
+## LegalQA JSON có cấu trúc
+
+Mặc định API trả đoạn nguyên văn (`ASKPAY_LEGALQA_MODE=extractive`). Đặt `ASKPAY_LEGALQA_MODE=llm`, cấu hình `LLM_API_KEY` và `LLM_QUICK_MODEL`/`LLM_DEEP_MODEL` để bật chế độ LLM. Chỉ các đoạn đã truy xuất và còn đủ điều kiện mới được gửi cho nhà cung cấp mô hình. Phản hồi phải theo JSON schema, trích ít nhất 10 từ nguyên văn và khớp một đoạn duy nhất; sau đó citation vẫn được validator kiểm tra. Danh sách citation rỗng được validator đánh trượt. Không bật chế độ này trước khi đã đánh giá nhà cung cấp, dữ liệu gửi đi và chi phí sử dụng.
