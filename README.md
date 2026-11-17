@@ -1,61 +1,132 @@
-# AskPay XNK
+# Lorx
 
-**Tra cứu pháp luật xuất nhập khẩu có nguồn đối chiếu, với cơ chế giữ phí và hoàn tiền khi kiểm tra không đạt.**
+**Trợ lý tra cứu pháp luật Xuất Nhập Khẩu & Hải quan có đối chiếu nguồn văn bản, kết hợp cơ chế tạm giữ phí (escrow) và hoàn tiền khi kiểm tra trích dẫn không đạt.**
 
-Quick: **0,05 USDC** · Deep: **0,20 USDC** — giá thử nghiệm trên testnet.
+Quick: **0,05 USDC** · Deep: **0,20 USDC** *(giá thử nghiệm trên Avalanche Fuji testnet)* · **Kiểm chứng nguồn** & **Dùng thử demo**: **Miễn phí**.
 
-[**Mở demo**](https://askpay-virid.vercel.app/) · [**Chạy cục bộ / cấu hình payment**](docs/demo-readiness/README.md) · [**Kết quả kiểm tra bản deploy**](docs/demo-readiness/LATEST_REVIEW.md)
+- **Web Demo:** https://askpay-virid.vercel.app/
+- **Tài liệu kỹ thuật:** [Kiến trúc & Thiết kế](docs/KE_HOACH_THIET_KE.md) · [Kho luật theo phiên bản](docs/KHO_LUAT_PHIEN_BAN.md) · [Đánh giá & Kế hoạch](docs/demo-readiness/LATEST_REVIEW.md)
 
-> Bản vá trong repo cần được deploy riêng; link demo có thể còn chạy phiên bản trước. Corpus demo có đối chiếu nguồn tự động, chưa được chuyên gia pháp lý duyệt. Khớp đoạn trích không tự chứng minh kết luận pháp lý đúng.
+> **Lưu ý phạm vi:** Lorx hiện tập trung vào pháp luật Hải quan và Xuất Nhập Khẩu Việt Nam. Nguồn dữ liệu demo được đối chiếu tự động từ PDF chính thức kèm SHA-256 (`AI_ASSISTED_SOURCE_CHECK_ONLY`), chưa thay thế rà soát chuyên môn của luật sư; trích dẫn khớp nguyên văn không tự chứng minh kết luận pháp lý cuối cùng cho mọi tình huống thực tế.
 
-## Xem trong 3 phút
+---
 
-1. Chọn **Dùng thử demo**, hỏi thời hạn nộp tờ khai nhập khẩu.
-2. Chọn **Kiểm chứng nguồn**, sửa “30 ngày” thành “60 ngày” hoặc thử Điều 999.
-3. Hỏi về máy tiện cũ từ Nhật, thiếu mã HS và nhập để bán lại: hệ thống phải hỏi thêm, không tự kết luận đủ điều kiện.
-4. Xem nguồn và trạng thái tiền riêng. Chưa có explorer link xác nhận thì không coi là release/refund thật.
+## Trải nghiệm nhanh trong 3 phút
 
-## Đã có và còn thiếu
+1. Mở web demo và chọn **Dùng thử demo (Miễn phí)** để trải nghiệm ngay không cần ví, hoặc **Đăng nhập tài khoản / Kết nối Core Wallet · MetaMask** (mạng Avalanche Fuji Testnet, USDC) để thử luồng tạm giữ escrow.
+2. Thử **4 tình huống tiêu biểu** ngay trên màn hình chào:
+   - **Thời hạn nộp tờ khai nhập khẩu (30 ngày):** Tính số ngày đã qua / còn lại giữa `01/11/2026` và `17/11/2026` theo Điểm b Khoản 1 Điều 25 Luật Hải quan `54/2014/QH13`.
+   - **Nhập khẩu máy móc cũ (`18/2019/QĐ-TTg` & `28/2022/QĐ-TTg`):** Khi thiếu mã HS, chứng thư giám định hoặc nhập để bán lại, hệ thống chủ động yêu cầu làm rõ (`NEEDS_CLARIFICATION`), không tự suy đoán đủ điều kiện.
+   - **Hiệu lực văn bản theo thời gian:** Hỏi hiệu lực Nghị định `128/2020/NĐ-CP` tại `17/11/2026` → phát hiện đã hết hiệu lực từ `01/07/2026` theo Điều 38 Nghị định `169/2026/NĐ-CP`.
+   - **Kiểm chứng nguồn (Miễn phí):** Cố tình sửa `30 ngày` thành `60 ngày` hoặc hỏi `Điều 999` → bộ kiểm chứng giữ nguyên đối tượng kiểm tra và chỉ rõ sai lệch số liệu.
+3. Bấm vào từng căn cứ dưới câu trả lời để mở bảng **Trích dẫn** (nguyên văn + link nguồn gốc) hoặc tab **Văn bản** (dựng bản nháp & xuất PDF).
 
-| Thành phần | Bằng chứng / giới hạn |
+---
+
+## Kiến trúc & Cơ chế hoạt động
+
+1. **Kho luật có phiên bản & SHA-256 ([corpus/demo-v1/manifest.json](corpus/demo-v1/manifest.json)):**
+   - Gồm **6 văn bản / 34 điều khoản chọn lọc** trích xuất từ PDF chính thức (`54/2014/QH13` VBHN 2026, `18/2019/QĐ-TTg`, `28/2022/QĐ-TTg`, `02/2026/QĐ-TTg`, `169/2026/NĐ-CP`, `128/2020/NĐ-CP`), gắn mốc hiệu lực (`effective_from` / `effective_until`) và `verified_through: 2026-11-17`.
+   - Chạy đồng bộ qua backend Python (`ai-service/demo_api.py`) hoặc nhánh fallback tương đương trên Next.js cho các request demo miễn phí khi triển khai serverless.
+   - Tài liệu tham chiếu kho mở rộng 45 văn bản / 2.581 khoản được lưu tại [research/DANH_MUC_NGUON_LUAT.md](research/DANH_MUC_NGUON_LUAT.md) và [data/legal-corpus.json](data/legal-corpus.json).
+2. **Truy xuất & Kiểm chứng tất định ([ai-service/versioned_validator.py](ai-service/versioned_validator.py), [app/api/ask-and-settle/validator-core.mjs](app/api/ask-and-settle/validator-core.mjs)):**
+   - Kiểm tra sự tồn tại của văn bản, Điều/Khoản/Điểm, hiệu lực tại ngày tra cứu `as_of`, độ khớp nguyên văn `>= 90%`, và chặn sai lệch số liệu / từ phủ định.
+   - Giao diện tách riêng 3 trạng thái: **Nguồn trích dẫn**, **Mức độ kết luận / dữ kiện** (`ANSWERED`, `NEEDS_CLARIFICATION`, `INSUFFICIENT_EVIDENCE`, `FACTCHECK`), và **Trạng thái thanh toán**.
+3. **Thanh toán có điều kiện (`askpay-escrow-v2`):**
+   - Frontend tạo `requestHash(context)` ([app/lib/payment-request.mjs](app/lib/payment-request.mjs)), khóa USDC vào [AskPayEscrow.sol](contracts/AskPayEscrow.sol) trên Avalanche Fuji và ký EIP-191 xác nhận giao dịch.
+   - Backend xác minh proof trực tiếp qua RPC ([app/api/ask-and-settle/verify-payment.mjs](app/api/ask-and-settle/verify-payment.mjs)): kiểm tra chain ID, calldata `askQuestionUsdc`, log `QuestionAsked`, ERC-20 `Transfer`, trạng thái pending, số block xác nhận và timeout.
+   - Hỗ trợ khôi phục giao dịch trên UI (thử đối soát lại không trừ cọc mới và nút `claimTimeoutRefund` sau thời hạn timeout của contract).
+
+---
+
+## Trạng thái hiện tại & Giới hạn
+
+| Thành phần | Trạng thái & Ghi chú |
 |---|---|
-| Web chat, Quick/Deep, factcheck | UI có sẵn; bản vá đưa factcheck về snapshot chính xác |
-| Corpus rộng | 45 tài liệu / 2.581 đơn vị trong dữ liệu cũ; không đồng nghĩa 2.581 khoản đã được rà soát hiệu lực |
-| Corpus demo được chọn | 6 văn bản / 34 đơn vị trích dẫn + PDF + SHA-256, mốc 17/11/2026 |
-| LegalIR/LegalQA | Adapter có sẵn; `demo_api` là rule-based có giới hạn, chưa thay model của nhóm |
-| Payment proof | RPC + calldata/events + token transfer + pending escrow + chữ ký ví; test Quick/Deep trên local EVM |
-| HTTP 402 | Giao thức riêng `askpay-escrow-v2`; chưa chứng minh tương thích x402 facilitator chuẩn |
-| Release/refund/timeout | Contract chạy được trong local EVM; cần explorer evidence Fuji cho bản thi |
-| ReceiptLog | Có contract; own L1 phải có deployment/RPC/chain ID và receipt thực mới coi là hoàn thành |
+| Giao diện web (`Lorx`) | Tách rõ 2 luồng *Dùng thử demo* / *Đăng nhập & Ví Web3*, chế độ Nhanh / Phân tích tình huống / Kiểm chứng nguồn (free), đối chiếu nguồn, xuất bản nháp PDF và khôi phục cọc timeout. |
+| Corpus demo (`corpus/demo-v1`) | 6 văn bản / 34 điều khoản kèm PDF chính thức và SHA-256 (`AI_ASSISTED_SOURCE_CHECK_ONLY`); hiện giữ `settlement_eligible: false` cho tới khi có rà soát chuyên môn. |
+| Backend AI (`ai-service/`) | `demo_api.py` xử lý theo luật (rule-based) trong phạm vi XNK demo; `legal_pipeline.py` cung cấp sẵn contract adapter (`retrieve / answer / assess`) để nối mô hình LegalIR/LegalQA. |
+| Thanh toán & Smart Contract | Hợp đồng V2 (`AskPayEscrow.sol`, `AskPayReceiptLog.sol`) và trình xác minh proof `askpay-escrow-v2` đã kiểm thử đầy đủ trên EVM cục bộ (Ganache); chưa audit cho mainnet. |
 
-## Cách hoạt động
+---
 
-Frontend đặt USDC vào AnswerEscrow trên C-Chain, rồi ký xác nhận request. Backend kiểm tra proof với RPC trước khi xử lý. LegalIR lấy căn cứ đúng phiên bản; LegalQA tạo câu trả lời; validator đối chiếu trích dẫn. Policy cho phép release hoặc refund; lỗi sau đặt cọc phải giữ trạng thái pending để đối soát. Receipt lưu hash câu hỏi/đáp án/citation/validator/corpus để tái kiểm tra; hash không thay cho nội dung và quy trình rà soát.
+## Cấu trúc thư mục
 
-**Bản demo source-backed hiện chưa cho release câu trả lời pháp lý** vì chưa có rà soát chuyên môn. Contract release được kiểm tra bằng fixture trong test, ghi rõ khi trình bày.
+```text
+Unihack/
+├── app/                   # Next.js 14 App Router (UI Lorx, icon/favicon, API /api/ask-and-settle, /api/legal-corpus)
+├── ai-service/            # FastAPI demo_api.py, main.py, legal_pipeline.py, deterministic validator & tests
+├── contracts/             # Smart contracts Solidity V2 (AskPayEscrow.sol, AskPayReceiptLog.sol) + script deploy
+├── corpus/demo-v1/        # Corpus demo chuẩn hóa (6 văn bản / 34 điều khoản) + PDF gốc & SHA-256
+├── data/                  # Corpus mở rộng biên dịch sẵn (45 văn bản / 2.581 khoản)
+├── docs/                  # Tài liệu thiết kế, kho luật theo phiên bản và báo cáo rà soát
+├── research/              # Nguồn văn bản gốc thu thập và công cụ trích xuất / audit
+├── scripts/               # Script tải và biên dịch corpus/demo-v1 từ PDF chính thức
+└── tests/                 # Kiểm thử Node.js (payment proof Ganache EVM, proxy, factcheck, validator parity, HTTP smoke)
+```
 
-## Chạy nhanh
+---
+
+## Cài đặt & Chạy cục bộ
+
+### 1. Cài đặt phụ thuộc
+Yêu cầu Node.js (>= 18), npm và Python 3:
 
 ```bash
 npm ci
 python -m pip install -r ai-service/requirements.txt
-python -m uvicorn demo_api:app --app-dir ai-service --port 8000
 ```
 
-Terminal khác: `npm run dev`. Xem [hướng dẫn cấu hình](docs/demo-readiness/README.md) cho URL backend, testnet và migration request hash.
+### 2. Chạy dịch vụ AI & Giao diện web
+Trong terminal 1 (khởi chạy `demo_api`):
 
 ```bash
-python -m unittest discover -s ai-service/tests -q
-npm run test:payment
-npm run build
+python -m uvicorn demo_api:app --app-dir ai-service --host 127.0.0.1 --port 8000
 ```
 
-## Đường dẫn cho người review
+Trong terminal 2 (chạy Next.js):
 
-- [Payment verifier](app/api/ask-and-settle/verify-payment.mjs) và [request commitment](app/lib/payment-request.mjs).
-- [Corpus demo](corpus/demo-v1/manifest.json), [nguồn tải chính thức](corpus/demo-v1/sources/downloads.json).
-- [Backend demo](ai-service/demo_api.py), [adapter LegalIR/LegalQA](ai-service/legal_pipeline.py).
-- [Contract](contracts/AskPayEscrow.sol), [integration test local EVM](tests/payment-proof.integration.test.mjs).
-- [Kế hoạch pitching và phần còn lại](docs/demo-readiness/PITCHING_PLAN.md).
+```bash
+npm run dev
+```
 
-Không công bố hallucination rate chỉ từ tỷ lệ excerpt khớp; cần bộ câu hỏi holdout và đánh giá relevance/support riêng. Không thêm bonus trước khi hoàn thiện corpus, proof và bằng chứng giao dịch.
+Mở `http://localhost:3000`. Khi chưa bật `demo_api` (ví dụ deploy serverless trên Vercel), các lượt dùng thử miễn phí tự động dùng nhánh fallback tương đương từ `corpus/demo-v1/manifest.json` (có thể tắt fallback bằng `ASKPAY_ENABLE_BUILTIN_DEMO=false`).
+
+### 3. Cấu hình thanh toán USDC Testnet (tùy chọn)
+Chỉ dùng trên **Avalanche Fuji Testnet** và đặt trong `.env.local` (không commit khóa bí mật):
+
+```dotenv
+NEXT_PUBLIC_ESCROW_ADDRESS=0x...
+NEXT_PUBLIC_USDC_ADDRESS=0x5425890298aed601595a70AB815c96711a31Bc65
+NEXT_PUBLIC_FUJI_RPC_URL=https://api.avax-test.network/ext/bc/C/rpc
+NEXT_PUBLIC_RECEIPT_LOG_ADDRESS=0x...
+ASKPAY_L1_RPC_URL=https://...
+ASKPAY_L1_CHAIN_ID=663010
+ORACLE_PRIVATE_KEY=0x...
+ASKPAY_PAYMENT_CORPUS_SHA256=38f84d5d593a86142b23bb6d79187192a847be52f56f2befa9f0c0fabdd2bec3
+ASKPAY_PAYMENT_CONFIRMATIONS=2
+```
+
+---
+
+## Kiểm thử
+
+```bash
+# Kiểm thử Python (LegalIR/LegalQA adapter, validator, snapshot & demo-v1)
+python -m unittest discover -s ai-service/tests -q
+
+# Kiểm thử Node.js (proxy, memo, validator parity, factcheck)
+node --test tests/legal-proxy.test.mjs tests/memo.test.cjs tests/judge-audit-fixes.test.mjs
+
+# Kiểm thử luồng đặt cọc / proof / giải ngân / hoàn tiền / timeout trên Ganache EVM cục bộ
+npm run test:payment
+
+# Build kiểm tra TypeScript và Next.js production
+npx tsc --noEmit && npm run build
+```
+
+Để chạy kiểm thử HTTP end-to-end (`tests/demo-http-smoke.mjs`), khởi động `demo_api` (cổng `8000`) và `next start` (cổng `3017`) trong môi trường chưa bật payment rồi chạy:
+
+```bash
+ASK_BASE_URL=http://127.0.0.1:3017 node tests/demo-http-smoke.mjs
+```
