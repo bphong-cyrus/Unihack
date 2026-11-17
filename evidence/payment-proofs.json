@@ -1,10 +1,10 @@
 {
   "schema_version": "lorx-payment-proofs-v1",
-  "recorded_at_utc": "2026-11-17T12:38:00Z",
+  "recorded_at_utc": "2026-11-17T15:09:30Z",
   "snapshot_id": "askpay-demo-source-checked-2026-11-17",
   "snapshot_sha256": "38f84d5d593a86142b23bb6d79187192a847be52f56f2befa9f0c0fabdd2bec3",
   "policy_version": "source-check-v1",
-  "receipt_chain_naming_note": "Receipt logging runs on Avalanche Fuji C-Chain (43113) or an explicitly configured Receipt Chain RPC; no custom Avalanche L1 claim is made without an active dedicated L1 RPC and explorer proof.",
+  "receipt_chain_naming_note": "Escrow settlement transactions executed on Avalanche Fuji C-Chain (43113) with Snowtrace Testnet links; audit receipt transactions recorded on the configured Receipt Chain (chainId 663010, AskPayReceiptLog 0x79c3abf1dacdc51ab6fa5ba2f5a1f31f6ad699b2).",
   "local_evm_ganache_verification": {
     "payment_proof_suite": {
       "command": "npm run test:payment",
@@ -40,37 +40,101 @@
     "explorer_base_url": "https://testnet.snowtrace.io",
     "usdc_token_address": "0x5425890298aed601595a70AB815c96711a31Bc65",
     "usdc_decimals": 6,
-    "status": "NOT_RUN_REQUIRES_FUNDED_FUJI_WALLET",
-    "reason": "Funded Avalanche Fuji payer and oracle wallets (test AVAX for gas + Fuji test USDC) are required to execute live transactions and record explorer URLs. No fabricated tx hashes are stored.",
+    "status": "PASSED",
+    "actors": {
+      "payer_address": "0xC24d0C0D263c4fd0f2d68E4d31DB8f92F4eDa1dF",
+      "oracle_and_treasury_address": "0xBc4c717B826c9E18682D1A0A02D9Dc83EAC69440"
+    },
     "deployed_contracts": {
-      "escrow_v2_address": null,
-      "receipt_log_address": null,
+      "escrow_v2_address": "0x6d32bf8fcbbdaa5d430a30a38908bce8906ebc68",
+      "escrow_explorer_url": "https://testnet.snowtrace.io/address/0x6d32bf8fcbbdaa5d430a30a38908bce8906ebc68",
+      "receipt_log_address": "0x79c3abf1dacdc51ab6fa5ba2f5a1f31f6ad699b2",
+      "receipt_chain_id": 663010,
       "verified_source": false
+    },
+    "ending_balances_usdc": {
+      "payer": "19.95",
+      "treasury": "0.05",
+      "escrow_contract": "0"
     },
     "transactions": {
       "case_pass_release": {
-        "status": "NOT_RUN_REQUIRES_FUNDED_FUJI_WALLET",
-        "approve_tx_hash": null,
-        "deposit_tx_hash": null,
-        "receipt_tx_hash": null,
-        "resolve_tx_hash": null,
-        "balance_deltas_usdc_base_units": null,
-        "explorer_urls": []
+        "status": "RELEASED_TO_TREASURY",
+        "onchain_status_code": 2,
+        "whitelist_rule": "WL-1-CUSTOMS-DEADLINE-30D",
+        "question_id": "0x5c245518ac20e73ec9a1b666699920c5cfbde8b296d7b3b3bd7d6d6021d214d9",
+        "deposit_block": 61240417,
+        "deposit_tx_hash": "0x44fdc470840c165eba0e3f03b560111898d338d68ad118c90b9aaa468caa4aa6",
+        "receipt_chain_id": 663010,
+        "receipt_tx_hash": "0x4a790b3b021a094956fdf7abf2058f88c711e8c9359ebaeb6179d9dbdb8bf017",
+        "resolve_block": 61240434,
+        "resolve_tx_hash": "0x9827f026ee4d9bbb8eb4dd7d8e3d0b773856b37b934af678359805e2c53c69ba",
+        "balance_deltas_usdc_base_units": {
+          "payer": "-50000",
+          "treasury": "+50000",
+          "escrow": "0"
+        },
+        "explorer_urls": [
+          "https://testnet.snowtrace.io/tx/0x44fdc470840c165eba0e3f03b560111898d338d68ad118c90b9aaa468caa4aa6",
+          "https://testnet.snowtrace.io/tx/0x9827f026ee4d9bbb8eb4dd7d8e3d0b773856b37b934af678359805e2c53c69ba"
+        ]
       },
       "case_fail_refund": {
-        "status": "NOT_RUN_REQUIRES_FUNDED_FUJI_WALLET",
-        "deposit_tx_hash": null,
-        "receipt_tx_hash": null,
-        "resolve_tx_hash": null,
-        "balance_deltas_usdc_base_units": null,
-        "explorer_urls": []
+        "status": "AUTO_REFUNDED_TO_USER",
+        "onchain_status_code": 3,
+        "reason": "ANSWERED_OUTSIDE_WHITELIST_SOURCE_CHECK_V1",
+        "question_id": "0xa50e88482d1fe53e47e4337d4c034866148929a3d801e1f03d40d7184d829752",
+        "deposit_block": 61240360,
+        "deposit_tx_hash": "0xc8ade5ee63a2409ea9d4098790110a5f2aeceb06451bc3015cba5878176aa6e6",
+        "receipt_chain_id": 663010,
+        "receipt_tx_hash": "0xad666912acb065ccd718adb5626cee0e5a08a3da7b336b132ceaccb2a9bc4191",
+        "resolve_block": 61240376,
+        "resolve_tx_hash": "0x8c46e07bac55b47306d89ef766303a9233698cf304553cb141bf141594392a17",
+        "balance_deltas_usdc_base_units": {
+          "payer": "0",
+          "treasury": "0",
+          "escrow": "0"
+        },
+        "explorer_urls": [
+          "https://testnet.snowtrace.io/tx/0xc8ade5ee63a2409ea9d4098790110a5f2aeceb06451bc3015cba5878176aa6e6",
+          "https://testnet.snowtrace.io/tx/0x8c46e07bac55b47306d89ef766303a9233698cf304553cb141bf141594392a17"
+        ],
+        "additional_verified_refunds": [
+          {
+            "question_id": "0x48f80f4f51b04cd8b288406817f726664bfad96c099065b6c3591554c73f57b7",
+            "reason": "NEEDS_CLARIFICATION",
+            "amount_usdc_base_units": "200000",
+            "deposit_tx_hash": "0x24e02598ffb8aa91d33ca1022b06487b1373cf33c2c9050c5250c8fdad5f304e",
+            "receipt_tx_hash": "0x24848b39e6861a3340d607938b007434fd10a0b3b3a3ba99613e77b75ffda978",
+            "resolve_tx_hash": "0xf4e359b6cb4882f1632a54a286ff430e88c623d021282a80a546b9a9a50b4e6e"
+          },
+          {
+            "question_id": "0xcfea6827eeda46b5eb0c688110e07aff78a77a7b2bba47d846188b96060ce493",
+            "reason": "NEEDS_CLARIFICATION",
+            "amount_usdc_base_units": "50000",
+            "deposit_tx_hash": "0x2177254381dceca37c3c9f1c5c72bab773a2963f74476e511d31cdb15c44158f",
+            "receipt_tx_hash": "0xe1a50944f063c818774f9ffcf66a6892f32eb3cf631ef460c9a90828f27b3126",
+            "resolve_tx_hash": "0x778efdacee888a71af7b083808d393df8db6b594a7a1c5b3c619f73bb09f356f"
+          }
+        ]
       },
       "case_timeout_claim": {
-        "status": "NOT_RUN_REQUIRES_FUNDED_FUJI_WALLET",
-        "deposit_tx_hash": null,
-        "claim_timeout_tx_hash": null,
-        "balance_deltas_usdc_base_units": null,
-        "explorer_urls": []
+        "status": "TIMEOUT_REFUNDED",
+        "onchain_status_code": 4,
+        "question_id": "0xf4ef664840543332f19f09652cf09b174b4a97182b2ef166926469f229ddb821",
+        "deposit_block": 61240663,
+        "deposit_tx_hash": "0xcf52f92e1953e1070a9745912dc561d5d8eeda689ed728d7915fcffc46f740b2",
+        "claim_timeout_block": 61240952,
+        "claim_timeout_tx_hash": "0x54b484bbf535cd351731db037d72233d7c5d28bfa85bf870a06ca6fef0924d6e",
+        "balance_deltas_usdc_base_units": {
+          "payer": "0",
+          "treasury": "0",
+          "escrow": "0"
+        },
+        "explorer_urls": [
+          "https://testnet.snowtrace.io/tx/0xcf52f92e1953e1070a9745912dc561d5d8eeda689ed728d7915fcffc46f740b2",
+          "https://testnet.snowtrace.io/tx/0x54b484bbf535cd351731db037d72233d7c5d28bfa85bf870a06ca6fef0924d6e"
+        ]
       }
     }
   }
