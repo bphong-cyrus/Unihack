@@ -11,11 +11,12 @@ import {
 import { privateKeyToAccount } from "viem/accounts";
 import { avalancheFuji } from "viem/chains";
 import { evaluateSettlementDecision } from "./escrow-guard.mjs";
+import { runDeterministicFactcheck } from "./factcheck.mjs";
 import { forwardLegalQuestion } from "./legal-proxy.mjs";
 import { VALIDATOR_VERSION, computeExcerptSimilarity } from "./validator-core.mjs";
 import {
   buildX402Challenge,
-  getIdempotentResult,
+  checkIdempotentReplay,
   setIdempotentResult,
   verifyX402PaymentHeader
 } from "./x402-protocol.mjs";
@@ -864,7 +865,7 @@ function bm25FallbackEntry(qExpanded: string): CorpusEntry | undefined {
 
   for (const doc of docs) {
     const matchedDistinct = terms.filter((t) => (doc.counts.get(t) || 0) > 0).length;
-    if (matchedDistinct < 4) continue;
+    if (matchedDistinct < 5) continue;
     let score = 0;
     for (const term of terms) {
       const freq = doc.counts.get(term) || 0;
@@ -880,7 +881,84 @@ function bm25FallbackEntry(qExpanded: string): CorpusEntry | undefined {
     }
   }
 
-  return bestScore >= 9.0 ? bestEntry : undefined;
+  return bestScore >= 10.0 ? bestEntry : undefined;
+}
+
+function checkUncoveredXnkDomainTS(qLower: string): string | null {
+  const usedMachineryTerms = [
+    "máy tiện cũ",
+    "máy móc cũ",
+    "thiết bị cũ",
+    "đã qua sử dụng",
+    "chứng thư giám định",
+    "giám định tuổi thiết bị",
+    "18/2019/qđ-ttg",
+    "18/2019"
+  ];
+  if (usedMachineryTerms.some((t) => qLower.includes(t))) {
+    return "Mình chưa tìm thấy căn cứ phù hợp trong phạm vi kho văn bản hiện có: quy định về điều kiện nhập khẩu máy móc, thiết bị đã qua sử dụng và chứng thư giám định (như Quyết định 18/2019/QĐ-TTg) chưa được nạp vào bộ dữ liệu thử nghiệm này. Hệ thống từ chối trả lời để tránh trích dẫn lệch sang văn bản khác.";
+  }
+
+  if (
+    /mã\s+hs\s+(?:của|cho)\s+/i.test(qLower) ||
+    /thuế\s+suất\s+(?:nhập\s+khẩu|xuất\s+khẩu)?\s*(?:của|cho)\s+/i.test(qLower)
+  ) {
+    return "Mình chưa tìm thấy Biểu thuế XNK chi tiết trong phạm vi hiện có để xác định mã HS 8 số hoặc mức thuế suất cụ thể theo từng mặt hàng. Bạn có thể hỏi về quy định xử phạt khai sai mã HS, khai bổ sung hoặc thủ tục C/O.";
+  }
+  return null;
+}
+
+function tryDateDeadlineCalculationTS(questionText: string): {
+  answer: string;
+  citations: Array<{
+    document: string;
+    document_title: string;
+    article: string;
+    clause: string;
+    excerpt: string;
+  }>;
+} | null {
+  const matches = Array.from(questionText.matchAll(/\b(\d{1,2})[/-](\d{1,2})[/-](\d{4})\b/g));
+  if (matches.length < 2) return null;
+  const qLower = questionText.toLowerCase();
+  if (!["còn", "bao nhiêu ngày", "tính", "quá hạn", "hết hạn", "ngày"].some((t) => qLower.includes(t))) {
+    return null;
+  }
+
+  const d1 = new Date(Date.UTC(Number(matches[0][3]), Number(matches[0][2]) - 1, Number(matches[0][1])));
+  const d2 = new Date(Date.UTC(Number(matches[1][3]), Number(matches[1][2]) - 1, Number(matches[1][1])));
+  if (Number.isNaN(d1.getTime()) || Number.isNaN(d2.getTime())) return null;
+
+  const elapsed = Math.round((d2.getTime() - d1.getTime()) / 86400000);
+  const remaining = 30 - elapsed;
+  const d1Str = `${matches[0][1].padStart(2, "0")}/${matches[0][2].padStart(2, "0")}/${matches[0][3]}`;
+  const d2Str = `${matches[1][1].padStart(2, "0")}/${matches[1][2].padStart(2, "0")}/${matches[1][3]}`;
+
+  const cit25 = makeCitationTS("54/2014/QH13", "25", "1");
+  const citations = cit25 ? [cit25] : [];
+
+  if (elapsed < 0) {
+    return {
+      answer: `Ngày kiểm tra (${d2Str}) đang đứng trước ngày hàng đến cửa khẩu (${d1Str}) ${Math.abs(
+        elapsed
+      )} ngày. Theo Điểm b Khoản 1 Điều 25 Luật Hải quan 2014 (54/2014/QH13), người khai hải quan được nộp tờ khai trước ngày hàng hóa đến cửa khẩu hoặc trong thời hạn 30 ngày kể từ ngày hàng đến cửa khẩu.`,
+      citations
+    };
+  }
+  if (remaining >= 0) {
+    return {
+      answer: `Từ ngày ${d1Str} đến ngày ${d2Str} đã qua ${elapsed} ngày. Theo thời hạn 30 ngày tại Điểm b Khoản 1 Điều 25 Luật Hải quan 2014 (54/2014/QH13), bạn còn ${remaining} ngày để nộp tờ khai hải quan.`,
+      citations
+    };
+  }
+  const citLate = makeCitationTS("128/2020/NĐ-CP", "7", "1");
+  if (citLate) citations.push(citLate);
+  return {
+    answer: `Từ ngày ${d1Str} đến ngày ${d2Str} đã qua ${elapsed} ngày, vượt quá thời hạn 30 ngày là ${Math.abs(
+      remaining
+    )} ngày theo Điểm b Khoản 1 Điều 25 Luật Hải quan 2014 (54/2014/QH13) và có thể bị xử phạt hành chính về thời hạn làm thủ tục hải quan theo Khoản 1 Điều 7 Nghị định 128/2020/NĐ-CP.`,
+    citations
+  };
 }
 
 function matchExtendedCorpusQuestionTS(
@@ -1029,6 +1107,8 @@ function runBuiltinMockLegalQA(
 
   const qRawNorm = normalizeVn(question);
   const qLower = expandXnkColloquialQuery(question.toLowerCase());
+  const uncoveredMsg = checkUncoveredXnkDomainTS(qLower);
+  const dateCalc = uncoveredMsg === null ? tryDateDeadlineCalculationTS(question) : null;
 
   if (simulateExpiredLaw) {
     answer =
@@ -1058,8 +1138,14 @@ function runBuiltinMockLegalQA(
     ];
   } else if (NEGATIVE_GENERIC_GUARD_TS.has(qRawNorm)) {
     answer =
-      "Hiện chưa tìm thấy điều khoản pháp luật Hải quan và Xuất nhập khẩu phù hợp trong kho văn bản để đối chiếu câu hỏi này.";
+      "Mình chưa tìm thấy nguồn phù hợp trong phạm vi hiện có để đối chiếu câu hỏi này.";
     citations = [];
+  } else if (uncoveredMsg !== null) {
+    answer = uncoveredMsg;
+    citations = [];
+  } else if (dateCalc !== null) {
+    answer = dateCalc.answer;
+    citations = dateCalc.citations;
   } else if (
     (qLower.includes("c/o") || qLower.includes("chứng nhận xuất xứ")) &&
     qLower.includes("thương nhân") &&
@@ -1450,13 +1536,26 @@ export async function POST(req: Request) {
   const escrowAddr = process.env.NEXT_PUBLIC_ESCROW_ADDRESS || "";
   const usdcAddr = process.env.NEXT_PUBLIC_USDC_ADDRESS || "";
 
-  // Check idempotency cache for repeated x402 / paid retries on the same questionId
-  const cachedReplay = getIdempotentResult(questionId);
-  if (cachedReplay && (body.requireX402 === true || req.headers.get("x-payment") || body.paymentProof)) {
+  // Check idempotency cache (including conflict detection if questionHash or tier changed)
+  const replay = checkIdempotentReplay({
+    questionId,
+    questionHash,
+    tier: body.mode === "factcheck" ? "factcheck" : body.tier
+  });
+  if (replay.conflict) {
+    return NextResponse.json(
+      {
+        error: "Mã questionId đã được sử dụng cho câu hỏi hoặc gói khác.",
+        code: "IDEMPOTENCY_CONFLICT"
+      },
+      { status: 409 }
+    );
+  }
+  if (replay.hit && replay.response) {
     return NextResponse.json({
-      ...cachedReplay,
+      ...replay.response,
       x402Trace: {
-        ...(cachedReplay.x402Trace || {}),
+        ...(replay.response.x402Trace || {}),
         idempotentReplay: true
       }
     });
@@ -1507,34 +1606,44 @@ export async function POST(req: Request) {
     }
   }
 
-  const url =
-    process.env.AI_SERVICE_URL ||
-    process.env.LEGAL_RAG_API_URL ||
-    "http://127.0.0.1:8000/api/v1/legal/ask";
-
-  const proxyResult = await forwardLegalQuestion(body, url);
-  if (proxyResult.status === 400 || proxyResult.status === 502) {
-    return NextResponse.json(proxyResult.body, { status: proxyResult.status });
-  }
-
   let ragData: any;
-  if (proxyResult.status === 200) {
-    ragData = proxyResult.body;
+  if (body.mode === "factcheck") {
+    ragData = runDeterministicFactcheck({
+      questionId,
+      rawInput: question,
+      factcheckPayload: body.factcheckPayload || null,
+      corpusEntries: EXTENDED_CORPUS_LIST,
+      corpusSha256: DEMO_CORPUS_SHA256_TS
+    });
   } else {
-    // 503: Python service offline (e.g., serverless deployment on Vercel) -> run built-in validator fallback
-    if (body.asOf) {
-      return NextResponse.json(
-        { error: "Dữ liệu demo không hỗ trợ tra cứu theo ngày." },
-        { status: 400 }
+    const url =
+      process.env.AI_SERVICE_URL ||
+      process.env.LEGAL_RAG_API_URL ||
+      "http://127.0.0.1:8000/api/v1/legal/ask";
+
+    const proxyResult = await forwardLegalQuestion(body, url);
+    if (proxyResult.status === 400 || proxyResult.status === 502) {
+      return NextResponse.json(proxyResult.body, { status: proxyResult.status });
+    }
+
+    if (proxyResult.status === 200) {
+      ragData = proxyResult.body;
+    } else {
+      // 503: Python service offline (e.g., serverless deployment on Vercel) -> run built-in validator fallback
+      if (body.asOf) {
+        return NextResponse.json(
+          { error: "Dữ liệu demo không hỗ trợ tra cứu theo ngày." },
+          { status: 400 }
+        );
+      }
+      ragData = runBuiltinMockLegalQA(
+        questionId,
+        question,
+        body.tier,
+        body.simulateHallucination === true,
+        body.simulateExpiredLaw === true
       );
     }
-    ragData = runBuiltinMockLegalQA(
-      questionId,
-      question,
-      body.tier,
-      body.simulateHallucination === true,
-      body.simulateExpiredLaw === true
-    );
   }
 
   const askerAddress: string =
@@ -1768,7 +1877,10 @@ export async function POST(req: Request) {
   };
 
   if (x402Verification) {
-    setIdempotentResult(questionId, responsePayload);
+    setIdempotentResult(questionId, responsePayload, {
+      questionHash,
+      tier: body.mode === "factcheck" ? "factcheck" : body.tier
+    });
   }
 
   return NextResponse.json(responsePayload);

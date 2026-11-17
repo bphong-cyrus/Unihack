@@ -5,11 +5,13 @@ import { computeExcerptSimilarity } from "../app/api/ask-and-settle/validator-co
 import { evaluateSettlementDecision } from "../app/api/ask-and-settle/escrow-guard.mjs";
 import {
   buildX402Challenge,
+  checkIdempotentReplay,
   clearIdempotencyCacheForTesting,
   getIdempotentResult,
   setIdempotentResult,
   verifyX402PaymentHeader
 } from "../app/api/ask-and-settle/x402-protocol.mjs";
+import { runDeterministicFactcheck } from "../app/api/ask-and-settle/factcheck.mjs";
 
 test("validator-core matches Python similarity and blocks numeric/negation mutations", () => {
   const cases = [
@@ -208,7 +210,81 @@ test("x402-protocol issues 6-decimal USDC challenges, verifies proofs, and enfor
   assert.equal(wrongAmount.ok, false);
   assert(wrongAmount.reason.startsWith("X402_AMOUNT_MISMATCH"));
 
-  setIdempotentResult(qId, { question_id: qId, cached: true });
+  setIdempotentResult(qId, { question_id: qId, cached: true }, { questionHash: qHash, tier: "quick" });
   assert.deepEqual(getIdempotentResult(qId), { question_id: qId, cached: true });
+
+  // Reject empty authorization object without txHash
+  const emptyAuthHeader = Buffer.from(
+    JSON.stringify({
+      network: "avalanche-fuji",
+      scheme: "exact-escrow",
+      payload: {
+        questionId: qId,
+        questionHash: qHash,
+        amount: "50000",
+        authorization: {}
+      }
+    })
+  ).toString("base64");
+  const emptyAuthCheck = verifyX402PaymentHeader({
+    headerValue: emptyAuthHeader,
+    expectedQuestionId: qId,
+    expectedQuestionHash: qHash,
+    expectedTier: "quick"
+  });
+  assert.equal(emptyAuthCheck.ok, false);
+  assert.equal(emptyAuthCheck.reason, "INVALID_OR_EMPTY_PAYMENT_PROOF");
+
+  // Idempotency conflict when questionId is reused with different questionHash or tier
+  assert.equal(
+    checkIdempotentReplay({ questionId: qId, questionHash: "0x" + "1".repeat(64), tier: "quick" }).conflict,
+    true
+  );
+  assert.equal(
+    checkIdempotentReplay({ questionId: qId, questionHash: qHash, tier: "deep" }).conflict,
+    true
+  );
+  assert.equal(
+    checkIdempotentReplay({ questionId: qId, questionHash: qHash, tier: "quick" }).hit,
+    true
+  );
+
   clearIdempotencyCacheForTesting();
+});
+
+test("factcheck isolates verification target without substituting another article", () => {
+  const miniCorpus = [
+    {
+      doc_id: "54/2014/QH13",
+      doc_title: "Luật Hải quan năm 2014",
+      article: "25",
+      clause: "1",
+      status: "ACTIVE",
+      raw_text:
+        "Đối với hàng hóa nhập khẩu, nộp trước ngày hàng hóa đến cửa khẩu hoặc trong thời hạn 30 ngày kể từ ngày hàng hóa đến cửa khẩu."
+    }
+  ];
+
+  // 1. Điều 999 khoản 9 must NOT substitute Điều 25 khoản 1
+  const missingArt = runDeterministicFactcheck({
+    questionId: "0x1",
+    rawInput: "Điều 999 khoản 9 Luật 54/2014/QH13 có tồn tại không, đừng thay điều khác?",
+    corpusEntries: miniCorpus,
+    corpusSha256: "abc"
+  });
+  assert.equal(missingArt.validation.passed, false);
+  assert.equal(missingArt.citations[0].article, "999");
+  assert.equal(missingArt.validation.citation_checks[0].fail_reason, "ARTICLE_OR_CLAUSE_NOT_FOUND");
+
+  // 2. Excerpt mutated from 30 ngày -> 60 ngày must fail and pinpoint the numeric mismatch
+  const mutatedExcerpt = runDeterministicFactcheck({
+    questionId: "0x2",
+    rawInput:
+      "Kiểm chứng Điều 25 Khoản 1 Luật 54/2014/QH13: Đối với hàng hóa nhập khẩu, nộp trước ngày hàng hóa đến cửa khẩu hoặc trong thời hạn 60 ngày kể từ ngày hàng hóa đến cửa khẩu.",
+    corpusEntries: miniCorpus,
+    corpusSha256: "abc"
+  });
+  assert.equal(mutatedExcerpt.validation.passed, false);
+  assert(mutatedExcerpt.validation.citation_checks[0].fail_reason.startsWith("EXCERPT_MISMATCH"));
+  assert(mutatedExcerpt.validation.mismatch_detail.includes("60"));
 });

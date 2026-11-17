@@ -1,6 +1,6 @@
 /**
  * x402 HTTP Payment Required protocol helper for AskPay USDC micropayments (6 decimals)
- * + idempotent replay cache keyed by questionId so retries never charge or settle twice.
+ * + strict proof verification + idempotent replay conflict detection keyed by (questionId, questionHash, tier).
  */
 
 export const USDC_DECIMALS = 6;
@@ -10,7 +10,11 @@ export const X402_PRICES_USDC_UNITS = {
 };
 
 const FUJI_USDC_DEFAULT = "0x5425890298aed601595a70AB815c96711a31Bc65";
+const TX_HASH_REGEX = /^0x[0-9a-fA-F]{64}$/;
+const ADDRESS_REGEX = /^0x[0-9a-fA-F]{40}$/;
+const SIGNATURE_REGEX = /^0x[0-9a-fA-F]{130,}$/;
 
+// Maps lowercased questionId -> { questionHash, tier, responsePayload }
 const idempotencyCache = new Map();
 
 export function buildX402Challenge({
@@ -73,6 +77,16 @@ export function parseX402PaymentInput(headerValue, bodyProof) {
   return null;
 }
 
+function isValidSignedAuthorization(auth, expectedAmount) {
+  if (!auth || typeof auth !== "object") return false;
+  if (!ADDRESS_REGEX.test(String(auth.from || ""))) return false;
+  if (!ADDRESS_REGEX.test(String(auth.to || ""))) return false;
+  if (!TX_HASH_REGEX.test(String(auth.nonce || ""))) return false;
+  if (!SIGNATURE_REGEX.test(String(auth.signature || ""))) return false;
+  if (String(auth.value || "") !== expectedAmount) return false;
+  return true;
+}
+
 export function verifyX402PaymentHeader({
   headerValue,
   paymentProof,
@@ -94,16 +108,16 @@ export function verifyX402PaymentHeader({
 
   const payload = proof.payload || proof;
   if (
-    expectedQuestionId &&
-    payload.questionId &&
+    !payload.questionId ||
+    !expectedQuestionId ||
     String(payload.questionId).toLowerCase() !== String(expectedQuestionId).toLowerCase()
   ) {
     return { ok: false, reason: "X402_QUESTION_ID_MISMATCH" };
   }
 
   if (
-    expectedQuestionHash &&
-    payload.questionHash &&
+    !payload.questionHash ||
+    !expectedQuestionHash ||
     String(payload.questionHash).toLowerCase() !== String(expectedQuestionHash).toLowerCase()
   ) {
     return { ok: false, reason: "X402_QUESTION_HASH_MISMATCH" };
@@ -113,8 +127,11 @@ export function verifyX402PaymentHeader({
     return { ok: false, reason: `X402_AMOUNT_MISMATCH (expected ${expectedAmount} USDC base units)` };
   }
 
-  if (!payload.txHash && !payload.authorization) {
-    return { ok: false, reason: "MISSING_X402_SETTLEMENT_PROOF" };
+  const hasValidTxHash = TX_HASH_REGEX.test(String(payload.txHash || ""));
+  const hasValidAuth = isValidSignedAuthorization(payload.authorization, expectedAmount);
+
+  if (!hasValidTxHash && !hasValidAuth) {
+    return { ok: false, reason: "INVALID_OR_EMPTY_PAYMENT_PROOF" };
   }
 
   return {
@@ -123,23 +140,51 @@ export function verifyX402PaymentHeader({
     network: proof.network || "avalanche-fuji",
     amount: expectedAmount,
     asset: payload.asset || FUJI_USDC_DEFAULT,
-    payer: payload.payer || payload.from || "",
-    txHash: payload.txHash || ""
+    payer: payload.payer || payload.from || payload.authorization?.from || "",
+    txHash: hasValidTxHash ? payload.txHash : ""
+  };
+}
+
+export function checkIdempotentReplay({ questionId, questionHash, tier }) {
+  if (!questionId) return { hit: false, conflict: false, response: null };
+  const entry = idempotencyCache.get(String(questionId).toLowerCase());
+  if (!entry) return { hit: false, conflict: false, response: null };
+
+  const sameQuestion =
+    String(entry.questionHash || "").toLowerCase() === String(questionHash || "").toLowerCase();
+  const sameTier = entry.tier === tier;
+
+  if (!sameQuestion || !sameTier) {
+    return {
+      hit: true,
+      conflict: true,
+      response: null
+    };
+  }
+
+  return {
+    hit: true,
+    conflict: false,
+    response: entry.responsePayload
   };
 }
 
 export function getIdempotentResult(questionId) {
   if (!questionId) return null;
-  return idempotencyCache.get(String(questionId).toLowerCase()) || null;
+  return idempotencyCache.get(String(questionId).toLowerCase())?.responsePayload || null;
 }
 
-export function setIdempotentResult(questionId, resultPayload) {
+export function setIdempotentResult(questionId, resultPayload, meta = {}) {
   if (!questionId) return;
   if (idempotencyCache.size > 500) {
     const oldestKey = idempotencyCache.keys().next().value;
     if (oldestKey) idempotencyCache.delete(oldestKey);
   }
-  idempotencyCache.set(String(questionId).toLowerCase(), resultPayload);
+  idempotencyCache.set(String(questionId).toLowerCase(), {
+    questionHash: meta.questionHash || "",
+    tier: meta.tier || resultPayload?.tier || "quick",
+    responsePayload: resultPayload
+  });
 }
 
 export function clearIdempotencyCacheForTesting() {

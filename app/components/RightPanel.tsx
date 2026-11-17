@@ -142,8 +142,9 @@ export default function RightPanel({
           type="button"
           onClick={onClose}
           className="icon-btn"
-          style={{ marginBottom: 6 }}
-          title="Thu gọn bảng phải"
+          style={{ marginBottom: 6, minWidth: 36, minHeight: 36 }}
+          title="Đóng bảng nguồn luật"
+          aria-label="Đóng bảng nguồn luật"
         >
           <CloseXIcon size={16} />
         </button>
@@ -158,43 +159,51 @@ export default function RightPanel({
               <div
                 style={{
                   display: "flex",
-                  justifyContent: "space-between",
-                  alignItems: "center",
-                  gap: 8,
+                  flexDirection: "column",
+                  gap: 6,
                   marginBottom: 12
                 }}
               >
-                <span className="section-micro-label">ĐỐI CHIẾU DỮ LIỆU GỐC</span>
+                <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", gap: 8 }}>
+                  <span className="section-micro-label">NGUỒN LUẬT ĐỐI CHIẾU</span>
 
-                {activeAssistantMsg ? (
-                  <span
-                    style={{
-                      display: "inline-flex",
-                      alignItems: "center",
-                      gap: 5,
-                      padding: "3px 9px",
-                      borderRadius: 999,
-                      fontSize: 11.5,
-                      fontWeight: 700,
-                      background: passed ? "#ecfdf5" : "#fef2f2",
-                      color: passed ? "#047857" : "#b91c1c",
-                      border: `1px solid ${passed ? "#a7f3d0" : "#fecaca"}`
-                    }}
-                  >
-                    {passed ? "✔ Trích dẫn khớp nguồn" : "✕ Trích dẫn chưa đạt"}
-                  </span>
-                ) : (
-                  <span
-                    style={{
-                      fontSize: 11,
-                      color: "#64748b",
-                      background: "#f1f5f9",
-                      padding: "3px 8px",
-                      borderRadius: 999
-                    }}
-                  >
-                    Chờ tra cứu
-                  </span>
+                  {activeAssistantMsg ? (
+                    <span
+                      style={{
+                        display: "inline-flex",
+                        alignItems: "center",
+                        gap: 5,
+                        padding: "3px 9px",
+                        borderRadius: 999,
+                        fontSize: 11.5,
+                        fontWeight: 700,
+                        background: passed ? "#ecfdf5" : "#fffbeb",
+                        color: passed ? "#047857" : "#b45309",
+                        border: `1px solid ${passed ? "#a7f3d0" : "#fde68a"}`
+                      }}
+                    >
+                      {passed ? "✔ Đoạn trích khớp nguồn" : "! Chưa khớp nguồn"}
+                    </span>
+                  ) : (
+                    <span
+                      style={{
+                        fontSize: 11,
+                        color: "#64748b",
+                        background: "#f1f5f9",
+                        padding: "3px 8px",
+                        borderRadius: 999
+                      }}
+                    >
+                      Chờ tra cứu
+                    </span>
+                  )}
+                </div>
+                {activeAssistantMsg && (
+                  <div style={{ fontSize: 11.5, color: "#64748b", lineHeight: 1.45 }}>
+                    {activeAssistantMsg.validation?.corpus_status === "REVIEW_ASSERTED"
+                      ? "Nguồn từ snapshot đã gắn ngày rà soát. Việc áp dụng còn phụ thuộc tình huống cụ thể."
+                      : "Nguồn trong bộ dữ liệu thử nghiệm · Cần kiểm tra hiệu lực trước khi áp dụng."}
+                  </div>
                 )}
               </div>
 
@@ -323,6 +332,33 @@ export default function RightPanel({
                   <p style={{ marginTop: 10, fontSize: 11.5, color: "#64748b", lineHeight: 1.5 }}>
                     Kiểm tra khớp văn bản &amp; hiệu lực nguồn; không thay thế ý kiến tư vấn pháp lý.
                   </p>
+
+                  {/* Collapsible Technical Details */}
+                  <details
+                    style={{
+                      marginTop: 12,
+                      border: "1px solid #e2e8f0",
+                      borderRadius: 10,
+                      padding: "8px 12px",
+                      background: "#f8fafc",
+                      fontSize: 12
+                    }}
+                  >
+                    <summary style={{ cursor: "pointer", fontWeight: 600, color: "#334155" }}>
+                      Chi tiết kỹ thuật
+                    </summary>
+                    <div className="font-mono" style={{ marginTop: 8, color: "#475569", lineHeight: 1.6, fontSize: 11.5 }}>
+                      <div>• Validator: {activeAssistantMsg?.validation?.validator_version || "1.1.0-deterministic"}</div>
+                      <div>• Tương đồng đoạn trích: {currentCheck ? `${Math.round((currentCheck.excerpt_similarity || 0) * 100)}%` : "—"} (ngưỡng ≥ 90%)</div>
+                      <div>• Trạng thái kho nguồn: {activeAssistantMsg?.validation?.corpus_status || "DEMO_UNVERIFIED"}</div>
+                      {currentCheck?.fail_reason && (
+                        <div style={{ color: "#b91c1c" }}>• Lý do không đạt: {currentCheck.fail_reason}</div>
+                      )}
+                      {activeAssistantMsg?.validation?.corpus_sha256 && (
+                        <div style={{ wordBreak: "break-all" }}>• Corpus SHA-256: {activeAssistantMsg.validation.corpus_sha256}</div>
+                      )}
+                    </div>
+                  </details>
                 </>
               ) : (
                 <div
@@ -536,7 +572,7 @@ export default function RightPanel({
                   >
                     <div>
                       <div style={{ fontSize: 10, color: "#64748b", textTransform: "uppercase" }}>
-                        Phí Escrow
+                        Phí dự kiến (Roadmap)
                       </div>
                       <div style={{ fontWeight: 700, fontSize: 14, color: "#0a1c2e" }}>
                         {lawyer.escrowFeeUsdc} USDC
@@ -550,13 +586,13 @@ export default function RightPanel({
                         color: "#ffffff",
                         border: "none",
                         borderRadius: 8,
-                        padding: "8px 13px",
+                        padding: "9px 13px",
                         fontSize: 12,
                         fontWeight: 600,
                         cursor: "pointer"
                       }}
                     >
-                      Deposit &amp; Connect
+                      Xem cách gửi yêu cầu tư vấn
                     </button>
                   </div>
                 </div>

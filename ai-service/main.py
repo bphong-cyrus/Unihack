@@ -867,7 +867,7 @@ def _bm25_fallback_record(q_expanded: str) -> Optional[dict]:
 
     for r, tokens, length in documents:
         matched_distinct = sum(1 for term in terms if tokens.get(term, 0) > 0)
-        if matched_distinct < 4:
+        if matched_distinct < 5:
             continue
         score = 0.0
         for term in sorted(terms):
@@ -879,9 +879,81 @@ def _bm25_fallback_record(q_expanded: str) -> Optional[dict]:
             best_score = score
             best_record = r
 
-    if best_score >= 9.0:
+    if best_score >= 10.0:
         return best_record
     return None
+
+
+def _check_uncovered_xnk_domain(q_lower: str) -> Optional[str]:
+    used_machinery_terms = (
+        "máy tiện cũ",
+        "máy móc cũ",
+        "thiết bị cũ",
+        "đã qua sử dụng",
+        "chứng thư giám định",
+        "giám định tuổi thiết bị",
+        "18/2019/qđ-ttg",
+        "18/2019",
+    )
+    if any(t in q_lower for t in used_machinery_terms):
+        return (
+            "Mình chưa tìm thấy căn cứ phù hợp trong phạm vi kho văn bản hiện có: quy định về điều kiện nhập khẩu máy móc, "
+            "thiết bị đã qua sử dụng và chứng thư giám định (như Quyết định 18/2019/QĐ-TTg) chưa được nạp vào bộ dữ liệu thử nghiệm này. "
+            "Hệ thống từ chối trả lời để tránh trích dẫn lệch sang văn bản khác."
+        )
+
+    specific_tariff_patterns = (
+        r"mã\s+hs\s+(?:của|cho)\s+",
+        r"thuế\s+suất\s+(?:nhập\s+khẩu|xuất\s+khẩu)?\s*(?:của|cho)\s+",
+    )
+    if any(re.search(pat, q_lower) for pat in specific_tariff_patterns):
+        return (
+            "Mình chưa tìm thấy Biểu thuế XNK chi tiết trong phạm vi hiện có để xác định mã HS 8 số hoặc mức thuế suất cụ thể theo từng mặt hàng. "
+            "Bạn có thể hỏi về quy định xử phạt khai sai mã HS, khai bổ sung hoặc thủ tục C/O."
+        )
+    return None
+
+
+def _try_date_deadline_calculation(question_text: str) -> Optional[tuple[str, list[dict]]]:
+    date_matches = re.findall(r"\b(\d{1,2})[/-](\d{1,2})[/-](\d{4})\b", question_text)
+    if len(date_matches) < 2:
+        return None
+    q_lower = question_text.lower()
+    if not any(t in q_lower for t in ("còn", "bao nhiêu ngày", "tính", "quá hạn", "hết hạn", "ngày")):
+        return None
+    try:
+        d1 = date(int(date_matches[0][2]), int(date_matches[0][1]), int(date_matches[0][0]))
+        d2 = date(int(date_matches[1][2]), int(date_matches[1][1]), int(date_matches[1][0]))
+    except ValueError:
+        return None
+
+    elapsed = (d2 - d1).days
+    remaining = 30 - elapsed
+    d1_str = f"{date_matches[0][0].zfill(2)}/{date_matches[0][1].zfill(2)}/{date_matches[0][2]}"
+    d2_str = f"{date_matches[1][0].zfill(2)}/{date_matches[1][1].zfill(2)}/{date_matches[1][2]}"
+
+    cit_25 = _make_citation("54/2014/QH13", "25", "1")
+    citations = [cit_25] if cit_25 else []
+
+    if elapsed < 0:
+        ans = (
+            f"Ngày kiểm tra ({d2_str}) đang đứng trước ngày hàng đến cửa khẩu ({d1_str}) {abs(elapsed)} ngày. "
+            "Theo Điểm b Khoản 1 Điều 25 Luật Hải quan 2014 (54/2014/QH13), người khai hải quan được nộp tờ khai trước ngày hàng hóa đến cửa khẩu hoặc trong thời hạn 30 ngày kể từ ngày hàng đến cửa khẩu."
+        )
+    elif remaining >= 0:
+        ans = (
+            f"Từ ngày {d1_str} đến ngày {d2_str} đã qua {elapsed} ngày. "
+            f"Theo thời hạn 30 ngày tại Điểm b Khoản 1 Điều 25 Luật Hải quan 2014 (54/2014/QH13), bạn còn {remaining} ngày để nộp tờ khai hải quan."
+        )
+    else:
+        cit_late = _make_citation("128/2020/NĐ-CP", "7", "1")
+        if cit_late:
+            citations.append(cit_late)
+        ans = (
+            f"Từ ngày {d1_str} đến ngày {d2_str} đã qua {elapsed} ngày, vượt quá thời hạn 30 ngày là {abs(remaining)} ngày "
+            "theo Điểm b Khoản 1 Điều 25 Luật Hải quan 2014 (54/2014/QH13) và có thể bị xử phạt hành chính về thời hạn làm thủ tục hải quan theo Khoản 1 Điều 7 Nghị định 128/2020/NĐ-CP."
+        )
+    return ans, citations
 
 
 def match_extended_corpus_question(q_lower: str, tier: str) -> Optional[tuple[str, list[dict]]]:
@@ -1166,12 +1238,18 @@ def ask_legal_question(req: AskRequest):
     else:
         q_raw_norm = normalize_vn_text(req.question)
         q_lower = expand_xnk_colloquial_query(req.question.lower())
+        uncovered_msg = _check_uncovered_xnk_domain(q_lower)
+        date_calc = _try_date_deadline_calculation(req.question) if uncovered_msg is None else None
         if q_raw_norm in _NEGATIVE_GENERIC_GUARD_EXACT:
             answer = (
-                "Hiện chưa tìm thấy điều khoản pháp luật Hải quan và Xuất nhập khẩu phù hợp trong kho văn bản "
-                "để đối chiếu câu hỏi này. Đây là dữ liệu thử nghiệm, không có giao dịch thanh toán."
+                "Mình chưa tìm thấy nguồn phù hợp trong phạm vi hiện có để đối chiếu câu hỏi này."
             )
             citations = []
+        elif uncovered_msg is not None:
+            answer = uncovered_msg
+            citations = []
+        elif date_calc is not None:
+            answer, citations = date_calc
         elif (any(term in q_lower for term in ("c/o", "chứng nhận xuất xứ"))
                 and "thương nhân" in q_lower and any(term in q_lower for term in ("đăng ký", "hồ sơ"))):
             answer = (

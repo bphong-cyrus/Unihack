@@ -99,12 +99,45 @@ export interface ExpertLawyer {
   topRated?: boolean;
 }
 
-export const COMMON_SITUATIONS: string[] = [
-  "Khai sai mã HS khi kiểm tra sau thông quan bị xử lý thế nào?",
-  "Thủ tục đăng ký hồ sơ thương nhân xin cấp C/O lần đầu",
-  "Điều kiện hoàn thuế nhập khẩu đối với hàng tái xuất",
-  "Thời hạn nộp tờ khai hải quan đối với hàng hóa nhập khẩu"
+export interface SituationCard {
+  id: string;
+  title: string;
+  description: string;
+  prefill: string;
+}
+
+export const SITUATION_CARDS: SituationCard[] = [
+  {
+    id: "import-prep",
+    title: "Chuẩn bị nhập một lô hàng",
+    description: "Tìm hiểu giấy tờ và các bước cần chuẩn bị",
+    prefill:
+      "Tôi dự định nhập [loại hàng] từ [quốc gia] để [mục đích]. Tôi cần tìm hiểu giấy tờ và thủ tục nào?"
+  },
+  {
+    id: "amend-decl",
+    title: "Tờ khai có thông tin sai",
+    description: "Tra cứu quy định về khai bổ sung",
+    prefill:
+      "Tờ khai hải quan đã phân luồng nhưng phát hiện sai [chỉ tiêu sai]. Tôi có được khai bổ sung không?"
+  },
+  {
+    id: "co-origin",
+    title: "Xin giấy chứng nhận xuất xứ",
+    description: "Tìm căn cứ và hồ sơ liên quan đến C/O",
+    prefill:
+      "Tôi muốn đăng ký hồ sơ thương nhân và xin cấp C/O lần đầu thì cần chuẩn bị giấy tờ gì?"
+  },
+  {
+    id: "tax-refund",
+    title: "Tìm hiểu việc hoàn thuế",
+    description: "Tra cứu điều kiện và thủ tục",
+    prefill:
+      "Hàng hóa đã nộp thuế nhập khẩu nhưng phải tái xuất thì điều kiện hoàn thuế như thế nào?"
+  }
 ];
+
+export const COMMON_SITUATIONS: string[] = SITUATION_CARDS.map((c) => c.prefill);
 
 export const LEGAL_DOCUMENTS_LIST = [
   {
@@ -272,7 +305,7 @@ export const INITIAL_SESSIONS: ChatSession[] = [
         role: "assistant",
         timestampLabel: "10:42 AM",
         mode: "deep",
-        feeLabel: "Mô phỏng — Không thu phí (Mẫu)",
+        feeLabel: "Dữ liệu mô phỏng phiên bản trước — chưa xác minh giao dịch",
         questionId: "0x76982b366f47344ce9c67a7dab35760a4fcb7d6f9ab789feb2d5e16b9781f1e9",
         content:
           "Chào bạn, đối với trường hợp doanh nghiệp xuất nhập khẩu khai sai mã số hàng hóa (mã HS) bị phát hiện trong quá trình kiểm tra sau thông quan, hệ thống căn cứ theo quy định hiện hành như sau:\n\n1. Mức xử phạt hành chính: Phạt 20% tính trên số tiền thuế khai thiếu hoặc số tiền thuế được miễn, giảm, hoàn cao hơn so với quy định nếu hành vi dẫn đến thiếu số tiền thuế phải nộp.\n\n2. Nghĩa vụ khắc phục hậu quả: Doanh nghiệp vẫn phải nộp đủ số tiền thuế truy thu và tiền chậm nộp theo Luật Quản lý thuế.\n\n3. Lưu ý khai bổ sung: Nếu tự nguyện phát hiện sai sót trước khi có quyết định kiểm tra trực tiếp hồ sơ/thực tế hàng hóa, doanh nghiệp có quyền khai bổ sung hồ sơ hải quan để giảm thiểu rủi ro chế tài.",
@@ -356,7 +389,7 @@ export const INITIAL_SESSIONS: ChatSession[] = [
         role: "assistant",
         timestampLabel: "09:15 AM",
         mode: "quick",
-        feeLabel: "Mô phỏng — Không thu phí (Mẫu)",
+        feeLabel: "Dữ liệu mô phỏng phiên bản trước — chưa xác minh giao dịch",
         questionId: "0x3120181501a4b2c3d4e5f60718293a4b5c6d7e8f90123456789abcdef0123456",
         content:
           "Theo quy định tại Khoản 1 Điều 15 Nghị định 31/2018/NĐ-CP, thương nhân đề nghị cấp Giấy chứng nhận xuất xứ hàng hóa (C/O) lần đầu bắt buộc phải đăng ký Hồ sơ thương nhân qua Hệ thống quản lý và cấp chứng nhận xuất xứ điện tử (eCoSys) trước khi nộp hồ sơ đề nghị cấp C/O.",
@@ -418,7 +451,7 @@ export const INITIAL_SESSIONS: ChatSession[] = [
         role: "assistant",
         timestampLabel: "7 ngày trước",
         mode: "quick",
-        feeLabel: "Mô phỏng — Không thu phí (Mẫu)",
+        feeLabel: "Dữ liệu mô phỏng phiên bản trước — chưa xác minh giao dịch",
         questionId: "0x12720130801deadbeef00000000000000000000000000000000000000000081",
         content:
           "Theo Khoản 1 Điều 8 Nghị định 127/2013/NĐ-CP, hành vi khai sai tên hàng, số lượng hàng hóa xuất nhập khẩu bị phạt từ 1.000.000 đồng đến 3.000.000 đồng.\n\n[MÔ PHỎNG KIỂM THỬ VALIDATOR]: Văn bản được trích dẫn đã HẾT HIỆU LỰC (thay thế bởi Nghị định 128/2020/NĐ-CP). Trong luồng có đặt cọc Escrow thực tế, giao dịch này không đủ điều kiện giải ngân và sẽ đi theo nhánh hoàn cọc.",

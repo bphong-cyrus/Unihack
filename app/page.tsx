@@ -38,11 +38,11 @@ import {
   UsersIcon
 } from "./components/Icons";
 import {
-  COMMON_SITUATIONS,
   ChatMessage,
   ChatSession,
   ExpertLawyer,
   INITIAL_SESSIONS,
+  SITUATION_CARDS,
   TierMode
 } from "./data/legalWorkspaceData";
 
@@ -68,6 +68,9 @@ interface UserProfile {
   company: string;
 }
 
+const FUJI_USDC_ADDRESS =
+  process.env.NEXT_PUBLIC_USDC_ADDRESS || "0x5425890298aed601595a70AB815c96711a31Bc65";
+
 const ESCROW_ABI = [
   {
     name: "askQuestion",
@@ -79,8 +82,82 @@ const ESCROW_ABI = [
       { name: "questionHash", type: "bytes32" }
     ],
     outputs: []
+  },
+  {
+    name: "askQuestionUsdc",
+    type: "function",
+    stateMutability: "nonpayable",
+    inputs: [
+      { name: "questionId", type: "bytes32" },
+      { name: "tier", type: "uint8" },
+      { name: "questionHash", type: "bytes32" },
+      { name: "amount", type: "uint256" }
+    ],
+    outputs: []
   }
 ] as const;
+
+const ERC20_USDC_ABI = [
+  {
+    name: "allowance",
+    type: "function",
+    stateMutability: "view",
+    inputs: [
+      { name: "owner", type: "address" },
+      { name: "spender", type: "address" }
+    ],
+    outputs: [{ type: "uint256" }]
+  },
+  {
+    name: "approve",
+    type: "function",
+    stateMutability: "nonpayable",
+    inputs: [
+      { name: "spender", type: "address" },
+      { name: "amount", type: "uint256" }
+    ],
+    outputs: [{ type: "bool" }]
+  }
+] as const;
+
+function sanitizeLegacySessions(list: ChatSession[]): ChatSession[] {
+  return list.map((session) => {
+    let changedFromLegacyRefund = false;
+    const sanitizedMessages = (session.messages || []).map((msg) => {
+      if (msg.role !== "assistant") return msg;
+      const mode = msg.onchain?.mode;
+      const isLegacyMock =
+        mode === "SAMPLE_SHOWCASE" ||
+        mode === "SIMULATED_PREVIEW" ||
+        (mode !== "LIVE_AVALANCHE" && !msg.onchain?.escrowTxHash && !msg.onchain?.fujiSettlementTxHash);
+      if (!isLegacyMock) return msg;
+
+      if (session.status === "refunded") changedFromLegacyRefund = true;
+      return {
+        ...msg,
+        feeLabel:
+          msg.feeLabel && (msg.feeLabel.includes("Hoàn") || msg.feeLabel.includes("USDC"))
+            ? "Dữ liệu mô phỏng phiên bản trước — chưa xác minh giao dịch"
+            : msg.feeLabel || "Bản dùng thử — Không thu phí",
+        onchain: msg.onchain
+          ? {
+              ...msg.onchain,
+              mode: "SIMULATED_NO_ESCROW" as const,
+              l1ReceiptTxHash: "",
+              fujiSettlementTxHash: "",
+              settlementStatus: "NO_ESCROW_DEPOSIT" as const
+            }
+          : undefined
+      };
+    });
+
+    return {
+      ...session,
+      status: changedFromLegacyRefund ? "draft" : session.status,
+      messages: sanitizedMessages
+    };
+  });
+}
 
 const AUTH_STORAGE_KEY = "askpay_auth_user_v1";
 const ACCOUNTS_STORAGE_KEY = "askpay_registered_accounts_v1";
@@ -119,6 +196,7 @@ export default function AskPayWorkspacePage() {
   const [authChecked, setAuthChecked] = useState<boolean>(false);
   const [currentUser, setCurrentUser] = useState<UserProfile | null>(null);
   const [authTab, setAuthTab] = useState<"login" | "register">("login");
+  const [showLoginForm, setShowLoginForm] = useState<boolean>(false);
   const [authName, setAuthName] = useState<string>("");
   const [authCompany, setAuthCompany] = useState<string>("");
   const [authEmail, setAuthEmail] = useState<string>("");
@@ -138,10 +216,12 @@ export default function AskPayWorkspacePage() {
   // Wallet & On-chain states
   const [account, setAccount] = useState<string>("");
   const [avaxBalance, setAvaxBalance] = useState<string>("");
-  const [useOnchainWallet, setUseOnchainWallet] = useState<boolean>(true);
+  const [useOnchainWallet, setUseOnchainWallet] = useState<boolean>(false);
+  const [paymentAsset, setPaymentAsset] = useState<"USDC" | "AVAX">("USDC");
 
   // Composer & Backend states
   const [questionInput, setQuestionInput] = useState<string>("");
+  const [lastFailedPrompt, setLastFailedPrompt] = useState<string>("");
   const [mode, setMode] = useState<TierMode>("quick");
   const [demoFault, setDemoFault] = useState<"normal" | "hallucination" | "expired">("normal");
   const [loadingStep, setLoadingStep] = useState<string>("");
@@ -150,8 +230,8 @@ export default function AskPayWorkspacePage() {
   const [corpusError, setCorpusError] = useState<string>("");
   const [asOf, setAsOf] = useState<string>("");
 
-  // Layout & Right Panel states
-  const [rightOpen, setRightOpen] = useState<boolean>(true);
+  // Layout & Right Panel states (Nguồn luật mặc định đóng; mở khi bấm vào căn cứ)
+  const [rightOpen, setRightOpen] = useState<boolean>(false);
   const [rightTab, setRightTab] = useState<RightTab>("citation");
   const [selectedCitationIdx, setSelectedCitationIdx] = useState<number>(0);
   const [focusedAssistantId, setFocusedAssistantId] = useState<string>("");
@@ -167,6 +247,7 @@ export default function AskPayWorkspacePage() {
   const [selectedExpert, setSelectedExpert] = useState<ExpertLawyer | null>(null);
 
   const chatEndRef = useRef<HTMLDivElement>(null);
+  const textareaRef = useRef<HTMLTextAreaElement>(null);
   const userMenuRef = useRef<HTMLDivElement>(null);
 
   const escrowAddress = process.env.NEXT_PUBLIC_ESCROW_ADDRESS || "";
@@ -257,8 +338,9 @@ export default function AskPayWorkspacePage() {
       if (savedSessions) {
         const parsed = JSON.parse(savedSessions);
         if (Array.isArray(parsed) && parsed.length > 0) {
-          setSessions(parsed);
-          setActiveSessionId(parsed[0].id);
+          const cleanParsed = sanitizeLegacySessions(parsed);
+          setSessions(cleanParsed);
+          setActiveSessionId(cleanParsed[0].id);
         } else {
           const empty = createEmptySession();
           setSessions([empty]);
@@ -728,16 +810,28 @@ export default function AskPayWorkspacePage() {
     const isDeep = activeMode === "deep";
     const apiTier = isDeep ? "deep" : "quick";
     const isFreeRewardTurn = questionCount > 0 && questionCount % 10 === 9;
-    const priceLabel = isFreeRewardTurn
+    const isWalletPaymentActive = Boolean(
+      !isFreeRewardTurn && useOnchainWallet && account && escrowAddress && escrowAddress.startsWith("0x")
+    );
+    const priceLabel = !isWalletPaymentActive
+      ? "Miễn phí trong bản dùng thử"
+      : isFreeRewardTurn
       ? "Miễn phí (Ưu đãi 10 tặng 1)"
+      : paymentAsset === "USDC"
+      ? isDeep
+        ? "Phân tích tình huống - 0.20 USDC"
+        : activeMode === "factcheck"
+        ? "Kiểm chứng - 0.05 USDC"
+        : "Tra cứu nhanh - 0.05 USDC"
       : isDeep
-      ? "Phân tích sâu - 0.20 USDC"
+      ? "Phân tích tình huống - 0.02 AVAX testnet"
       : activeMode === "factcheck"
-      ? "Kiểm chứng - 0.05 USDC"
-      : "Hỏi nhanh - 0.05 USDC";
+      ? "Kiểm chứng - 0.005 AVAX testnet"
+      : "Tra cứu nhanh - 0.005 AVAX testnet";
 
     setErrorMsg("");
-    setLoadingStep("Đang kết nối hệ thống tra cứu...");
+    setLastFailedPrompt("");
+    setLoadingStep("Mình đang tìm căn cứ liên quan đến câu hỏi của bạn...");
 
     const fallbackSession = createEmptySession();
     const targetSessionId = activeSession?.id || fallbackSession.id;
@@ -766,28 +860,32 @@ export default function AskPayWorkspacePage() {
       chatEndRef.current?.scrollIntoView({ behavior: "smooth" });
     }, 60);
 
+    let escrowTxHash = "";
     try {
       const eth =
         typeof window !== "undefined"
           ? (window as any).avalanche || (window as any).ethereum
           : null;
-      let activeAccount = account;
-
-      if (
-        !isFreeRewardTurn &&
-        useOnchainWallet &&
-        !activeAccount &&
-        eth &&
-        escrowAddress &&
-        escrowAddress.startsWith("0x")
-      ) {
-        activeAccount = await connectWallet();
-      }
-
+      const activeAccount = account;
       const asker = activeAccount || "0x0000000000000000000000000000000000000001";
       const questionId = keccak256(toBytes(`${asker}-${Date.now()}-${queryText}`));
       const questionHash = keccak256(toBytes(queryText));
-      let escrowTxHash = "";
+      const isDemoMode = !corpus || corpus.corpus_status === "DEMO_UNVERIFIED";
+
+      const basePayload = {
+        questionId,
+        question: queryText,
+        tier: apiTier,
+        mode: activeMode,
+        ...(corpus?.corpus_status === "REVIEW_ASSERTED" && asOf ? { asOf } : {}),
+        askerAddress: asker,
+        simulateHallucination: isDemoMode && demoFault === "hallucination",
+        simulateExpiredLaw: isDemoMode && demoFault === "expired"
+      };
+
+      const requestHeaders: Record<string, string> = {
+        "Content-Type": "application/json"
+      };
 
       if (
         !isFreeRewardTurn &&
@@ -797,57 +895,128 @@ export default function AskPayWorkspacePage() {
         escrowAddress &&
         escrowAddress.startsWith("0x")
       ) {
-        try {
-          setLoadingStep("Đang xác nhận giao dịch qua ví Avalanche Fuji...");
-          await ensureFujiChain(eth);
-          const publicClient = createPublicClient({
-            chain: avalancheFuji,
-            transport: http(fujiRpc)
-          });
-          const walletClient = createWalletClient({
-            chain: avalancheFuji,
-            transport: custom(eth)
-          });
-
-          const depositValue = isDeep ? parseEther("0.02") : parseEther("0.005");
-          const txHash = await walletClient.writeContract({
-            chain: avalancheFuji,
-            account: activeAccount as `0x${string}`,
-            address: escrowAddress as `0x${string}`,
-            abi: ESCROW_ABI,
-            functionName: "askQuestion",
-            args: [questionId, isDeep ? 1 : 0, questionHash],
-            value: depositValue
-          });
-          await publicClient.waitForTransactionReceipt({ hash: txHash });
-          escrowTxHash = txHash;
-          await refreshBalance(activeAccount);
-        } catch {
-          escrowTxHash = "";
+        // Step 1: Request x402 HTTP 402 Payment Required challenge
+        setLoadingStep("Đang lấy thông tin tạm giữ khoản tiền (x402)...");
+        const challengeRes = await fetch("/api/ask-and-settle", {
+          method: "POST",
+          headers: requestHeaders,
+          body: JSON.stringify({ ...basePayload, requireX402: true })
+        });
+        const challengeData = await challengeRes.json();
+        if (challengeRes.status !== 402) {
+          throw new Error(challengeData?.error || "Không thể khởi tạo phiên thanh toán x402.");
         }
+        const accept = challengeData?.accepts?.[0];
+        const challengeAmount = String(accept?.maxAmountRequired || (isDeep ? "200000" : "50000"));
+        const challengeAsset = String(accept?.asset || FUJI_USDC_ADDRESS);
+
+        // Step 2: Execute on-chain Escrow deposit (USDC or AVAX testnet)
+        setLoadingStep(
+          paymentAsset === "USDC"
+            ? `Đang tạm giữ ${isDeep ? "0.20" : "0.05"} USDC vào Escrow...`
+            : `Đang tạm giữ ${isDeep ? "0.02" : "0.005"} AVAX testnet vào Escrow...`
+        );
+        await ensureFujiChain(eth);
+        const publicClient = createPublicClient({
+          chain: avalancheFuji,
+          transport: http(fujiRpc)
+        });
+        const walletClient = createWalletClient({
+          chain: avalancheFuji,
+          transport: custom(eth)
+        });
+
+        try {
+          if (paymentAsset === "USDC") {
+            const requiredUsdc = BigInt(challengeAmount);
+            const currentAllowance = (await publicClient.readContract({
+              address: challengeAsset as `0x${string}`,
+              abi: ERC20_USDC_ABI,
+              functionName: "allowance",
+              args: [activeAccount as `0x${string}`, escrowAddress as `0x${string}`],
+              authorizationList: undefined
+            })) as bigint;
+
+            if (currentAllowance < requiredUsdc) {
+              setLoadingStep("Đang cấp quyền USDC (Approve) cho hợp đồng tạm giữ...");
+              const approveTx = await walletClient.writeContract({
+                chain: avalancheFuji,
+                account: activeAccount as `0x${string}`,
+                address: challengeAsset as `0x${string}`,
+                abi: ERC20_USDC_ABI,
+                functionName: "approve",
+                args: [escrowAddress as `0x${string}`, requiredUsdc]
+              });
+              await publicClient.waitForTransactionReceipt({ hash: approveTx });
+            }
+
+            setLoadingStep(`Đang khóa ${isDeep ? "0.20" : "0.05"} USDC vào AskPayEscrow...`);
+            const txHash = await walletClient.writeContract({
+              chain: avalancheFuji,
+              account: activeAccount as `0x${string}`,
+              address: escrowAddress as `0x${string}`,
+              abi: ESCROW_ABI,
+              functionName: "askQuestionUsdc",
+              args: [questionId, isDeep ? 1 : 0, questionHash, requiredUsdc]
+            });
+            await publicClient.waitForTransactionReceipt({ hash: txHash });
+            escrowTxHash = txHash;
+          } else {
+            const depositValue = isDeep ? parseEther("0.02") : parseEther("0.005");
+            const txHash = await walletClient.writeContract({
+              chain: avalancheFuji,
+              account: activeAccount as `0x${string}`,
+              address: escrowAddress as `0x${string}`,
+              abi: ESCROW_ABI,
+              functionName: "askQuestion",
+              args: [questionId, isDeep ? 1 : 0, questionHash],
+              value: depositValue
+            });
+            await publicClient.waitForTransactionReceipt({ hash: txHash });
+            escrowTxHash = txHash;
+          }
+          await refreshBalance(activeAccount);
+        } catch (walletErr: any) {
+          throw new Error(
+            walletErr?.shortMessage ||
+              "Chưa thu tiền: Giao dịch tạm giữ qua ví đã bị hủy hoặc chưa đủ số dư."
+          );
+        }
+
+        // Step 3: Attach X-PAYMENT proof header for authenticated retry
+        const xPaymentPayload = {
+          network: "avalanche-fuji",
+          scheme: "exact-escrow",
+          payload: {
+            questionId,
+            questionHash,
+            amount: challengeAmount,
+            payer: activeAccount,
+            asset: challengeAsset,
+            txHash: escrowTxHash
+          }
+        };
+        requestHeaders["X-PAYMENT"] = btoa(JSON.stringify(xPaymentPayload));
       }
 
-      setLoadingStep("AskPay đang phân tích và đối chiếu văn bản pháp luật...");
+      setLoadingStep("Mình đang tìm căn cứ liên quan đến câu hỏi của bạn...");
 
-      const isDemoMode = !corpus || corpus.corpus_status === "DEMO_UNVERIFIED";
       const res = await fetch("/api/ask-and-settle", {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
+        headers: requestHeaders,
         body: JSON.stringify({
-          questionId,
-          question: queryText,
-          tier: apiTier,
-          ...(corpus?.corpus_status === "REVIEW_ASSERTED" && asOf ? { asOf } : {}),
-          askerAddress: asker,
+          ...basePayload,
           escrowTxHash,
-          simulateHallucination: isDemoMode && demoFault === "hallucination",
-          simulateExpiredLaw: isDemoMode && demoFault === "expired"
+          ...(escrowTxHash ? { requireX402: true } : {})
         })
       });
 
       const data = await res.json();
       if (!res.ok || data.error) {
-        throw new Error(data.error || "Không thể xử lý câu hỏi lúc này.");
+        throw new Error(
+          data.error ||
+            "Chưa nhận được câu trả lời. Câu hỏi của bạn vẫn được giữ lại để thử lại."
+        );
       }
 
       const passed = Boolean(data?.validation?.passed);
@@ -858,13 +1027,13 @@ export default function AskPayWorkspacePage() {
       const hasEscrowDeposit = Boolean(escrowTxHash) || isLiveOnchain;
 
       const computedFeeLabel = !hasEscrowDeposit
-        ? "Mô phỏng — Không thu phí (0 USDC)"
+        ? "Miễn phí trong bản dùng thử"
         : settlementStatus === "AUTO_REFUNDED_TO_USER"
-        ? "Đã hoàn cọc 100% (On-chain)"
+        ? "Đã hoàn tiền tạm giữ 100%"
         : settlementStatus === "SETTLEMENT_BLOCKED_INELIGIBLE"
-        ? "Chặn giải ngân (Chưa đủ điều kiện)"
+        ? "Tạm dừng giải ngân (Chưa đủ điều kiện)"
         : settlementStatus === "PENDING_RECONCILIATION"
-        ? "Chờ đối soát giao dịch"
+        ? "Đang kiểm tra trạng thái thanh toán"
         : priceLabel;
 
       const assistantMsg: ChatMessage = {
@@ -912,9 +1081,6 @@ export default function AskPayWorkspacePage() {
       setFocusedAssistantId(assistantMsg.id);
       setSelectedCitationIdx(0);
       setRightTab("citation");
-      if (typeof window !== "undefined" && window.innerWidth >= 1120) {
-        setRightOpen(true);
-      }
 
       if (activeAccount) {
         await refreshBalance(activeAccount);
@@ -924,7 +1090,15 @@ export default function AskPayWorkspacePage() {
         chatEndRef.current?.scrollIntoView({ behavior: "smooth" });
       }, 80);
     } catch (err: any) {
-      setErrorMsg(err?.message || "Đã có lỗi xảy ra khi xử lý yêu cầu.");
+      if (!customPrompt) setQuestionInput(queryText);
+      setLastFailedPrompt(queryText);
+      const baseMsg =
+        err?.message || "Chưa nhận được câu trả lời. Câu hỏi của bạn vẫn được giữ lại để thử lại.";
+      setErrorMsg(
+        escrowTxHash
+          ? `Đã tạm giữ khoản tiền (Tx: ${escrowTxHash.slice(0, 12)}...), nhưng ${baseMsg}`
+          : baseMsg
+      );
     } finally {
       setLoadingStep("");
     }
@@ -990,192 +1164,226 @@ export default function AskPayWorkspacePage() {
   if (!currentUser) {
     return (
       <div className="auth-shell">
-        <div className="auth-card">
-          <div style={{ display: "flex", alignItems: "center", gap: 12, marginBottom: 18 }}>
-            <AskPayLogo size={42} />
+        <div className="auth-card" style={{ maxWidth: showLoginForm ? 440 : 480 }}>
+          <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", gap: 12, marginBottom: 20 }}>
+            <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
+              <AskPayLogo size={40} />
+              <div>
+                <div
+                  style={{
+                    fontSize: 21,
+                    fontWeight: 800,
+                    color: "#0a1c2e",
+                    letterSpacing: "-0.02em",
+                    lineHeight: 1.15
+                  }}
+                >
+                  AskPay
+                </div>
+                <div style={{ fontSize: 12, color: "#64748b", marginTop: 2 }}>
+                  Bản dùng thử · Tra cứu pháp luật XNK
+                </div>
+              </div>
+            </div>
+            <span
+              style={{
+                fontSize: 11,
+                fontWeight: 700,
+                padding: "3px 9px",
+                borderRadius: 999,
+                background: "#f0f5fa",
+                color: "#285380",
+                border: "1px solid #bfd3ea"
+              }}
+            >
+              Bản dùng thử
+            </span>
+          </div>
+
+          {!showLoginForm ? (
             <div>
-              <div
+              <h1
                 style={{
+                  margin: "0 0 8px",
                   fontSize: 22,
                   fontWeight: 800,
                   color: "#0a1c2e",
-                  letterSpacing: "-0.02em",
-                  lineHeight: 1.15
+                  lineHeight: 1.3
                 }}
               >
-                AskPay
-              </div>
-              <div style={{ fontSize: 12.5, color: "#64748b", marginTop: 2 }}>
-                Trợ lý Pháp lý &amp; Hải quan Xuất Nhập Khẩu
+                Bạn đang vướng ở bước nào?
+              </h1>
+              <p style={{ margin: "0 0 20px", fontSize: 15, color: "#475569", lineHeight: 1.6 }}>
+                Hỏi về thủ tục hải quan, xuất xứ hàng hóa hoặc thuế xuất nhập khẩu. Bạn không cần biết trước số điều luật.
+              </p>
+
+              <button
+                type="button"
+                onClick={() => handleQuickDemoLogin("user")}
+                className="auth-submit-btn"
+                style={{ fontSize: 15, padding: "13px 18px" }}
+              >
+                Bắt đầu một câu hỏi
+              </button>
+
+              <p style={{ margin: "12px 0 18px", fontSize: 12.5, color: "#64748b", textAlign: "center", lineHeight: 1.5 }}>
+                Bản dùng thử không thu phí. Câu trả lời có căn cứ để bạn tự đối chiếu.
+              </p>
+
+              <div style={{ borderTop: "1px solid #e2e8f0", paddingTop: 14, display: "flex", justifyContent: "center" }}>
+                <button
+                  type="button"
+                  onClick={() => setShowLoginForm(true)}
+                  className="link-subtle"
+                  style={{ fontSize: 13, fontWeight: 600, color: "#285380" }}
+                >
+                  Đăng nhập để mở lại lịch sử
+                </button>
               </div>
             </div>
-          </div>
+          ) : (
+            <div>
+              <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", marginBottom: 14 }}>
+                <span style={{ fontSize: 14, fontWeight: 700, color: "#0a1c2e" }}>
+                  Đăng nhập để mở lại lịch sử
+                </span>
+                <button
+                  type="button"
+                  onClick={() => {
+                    setShowLoginForm(false);
+                    setAuthError("");
+                  }}
+                  className="link-subtle"
+                  style={{ fontSize: 12.5 }}
+                >
+                  ← Quay lại dùng thử
+                </button>
+              </div>
 
-          <div
-            style={{
-              display: "flex",
-              alignItems: "center",
-              gap: 8,
-              background: "#f8fafc",
-              border: "1px solid #e2e8f0",
-              borderRadius: 10,
-              padding: "9px 12px",
-              marginBottom: 16,
-              fontSize: 12.5,
-              color: "#475569"
-            }}
-          >
-            <LockIcon size={15} color="#285380" />
-            <span>Đăng nhập tài khoản để truy cập không gian tra cứu và lịch sử cá nhân.</span>
-          </div>
+              <div className="auth-tabs">
+                <button
+                  type="button"
+                  onClick={() => {
+                    setAuthTab("login");
+                    setAuthError("");
+                  }}
+                  className={`auth-tab-btn ${authTab === "login" ? "active" : ""}`}
+                >
+                  Đăng nhập
+                </button>
+                <button
+                  type="button"
+                  onClick={() => {
+                    setAuthTab("register");
+                    setAuthError("");
+                  }}
+                  className={`auth-tab-btn ${authTab === "register" ? "active" : ""}`}
+                >
+                  Đăng ký mới
+                </button>
+              </div>
 
-          <div className="auth-tabs">
-            <button
-              type="button"
-              onClick={() => {
-                setAuthTab("login");
-                setAuthError("");
-              }}
-              className={`auth-tab-btn ${authTab === "login" ? "active" : ""}`}
-            >
-              Đăng nhập
-            </button>
-            <button
-              type="button"
-              onClick={() => {
-                setAuthTab("register");
-                setAuthError("");
-              }}
-              className={`auth-tab-btn ${authTab === "register" ? "active" : ""}`}
-            >
-              Đăng ký mới
-            </button>
-          </div>
+              <form onSubmit={handleAuthSubmit}>
+                {authTab === "register" && (
+                  <>
+                    <div className="auth-field">
+                      <label className="auth-label" htmlFor="auth-name">
+                        Họ và tên
+                      </label>
+                      <input
+                        id="auth-name"
+                        type="text"
+                        value={authName}
+                        onChange={(e) => setAuthName(e.target.value)}
+                        placeholder="Nguyễn Minh Anh"
+                        className="auth-input"
+                      />
+                    </div>
+                    <div className="auth-field">
+                      <label className="auth-label" htmlFor="auth-company">
+                        Doanh nghiệp / Tổ chức (tùy chọn)
+                      </label>
+                      <input
+                        id="auth-company"
+                        type="text"
+                        value={authCompany}
+                        onChange={(e) => setAuthCompany(e.target.value)}
+                        placeholder="Công ty TNHH XNK Thái Bình Dương"
+                        className="auth-input"
+                      />
+                    </div>
+                  </>
+                )}
 
-          <form onSubmit={handleAuthSubmit}>
-            {authTab === "register" && (
-              <>
                 <div className="auth-field">
-                  <label className="auth-label" htmlFor="auth-name">
-                    Họ và tên
+                  <label className="auth-label" htmlFor="auth-email">
+                    Email
                   </label>
                   <input
-                    id="auth-name"
-                    type="text"
-                    value={authName}
-                    onChange={(e) => setAuthName(e.target.value)}
-                    placeholder="Nguyễn Minh Anh"
+                    id="auth-email"
+                    type="email"
+                    value={authEmail}
+                    onChange={(e) => setAuthEmail(e.target.value)}
+                    placeholder="ten@doanhnghiep.vn"
                     className="auth-input"
                   />
                 </div>
+
                 <div className="auth-field">
-                  <label className="auth-label" htmlFor="auth-company">
-                    Doanh nghiệp / Tổ chức (tùy chọn)
+                  <label className="auth-label" htmlFor="auth-password">
+                    Mật khẩu
                   </label>
                   <input
-                    id="auth-company"
-                    type="text"
-                    value={authCompany}
-                    onChange={(e) => setAuthCompany(e.target.value)}
-                    placeholder="Công ty TNHH XNK Thái Bình Dương"
+                    id="auth-password"
+                    type="password"
+                    value={authPassword}
+                    onChange={(e) => setAuthPassword(e.target.value)}
+                    placeholder="••••••••"
                     className="auth-input"
                   />
                 </div>
-              </>
-            )}
 
-            <div className="auth-field">
-              <label className="auth-label" htmlFor="auth-email">
-                Email
-              </label>
-              <input
-                id="auth-email"
-                type="email"
-                value={authEmail}
-                onChange={(e) => setAuthEmail(e.target.value)}
-                placeholder="ten@doanhnghiep.vn"
-                className="auth-input"
-              />
-            </div>
+                {authError && (
+                  <div
+                    style={{
+                      background: "#fef2f2",
+                      border: "1px solid #fecaca",
+                      color: "#b91c1c",
+                      borderRadius: 9,
+                      padding: "8px 10px",
+                      fontSize: 12.5,
+                      marginBottom: 10
+                    }}
+                  >
+                    {authError}
+                  </div>
+                )}
 
-            <div className="auth-field">
-              <label className="auth-label" htmlFor="auth-password">
-                Mật khẩu
-              </label>
-              <input
-                id="auth-password"
-                type="password"
-                value={authPassword}
-                onChange={(e) => setAuthPassword(e.target.value)}
-                placeholder="••••••••"
-                className="auth-input"
-              />
-            </div>
+                <button type="submit" className="auth-submit-btn">
+                  {authTab === "login" ? "Đăng nhập" : "Tạo tài khoản & Bắt đầu"}
+                </button>
+              </form>
 
-            {authError && (
-              <div
-                style={{
-                  background: "#fef2f2",
-                  border: "1px solid #fecaca",
-                  color: "#b91c1c",
-                  borderRadius: 9,
-                  padding: "8px 10px",
-                  fontSize: 12.5,
-                  marginBottom: 10
-                }}
-              >
-                {authError}
+              <div style={{ marginTop: 14, display: "flex", flexDirection: "column", gap: 8 }}>
+                <button
+                  type="button"
+                  onClick={handleWalletLogin}
+                  className="auth-quick-btn"
+                >
+                  <ShieldCheckIcon size={14} color="#1d4ed8" />
+                  Đăng nhập bằng Core Wallet / MetaMask
+                </button>
+                <button
+                  type="button"
+                  onClick={() => handleQuickDemoLogin("admin")}
+                  className="link-subtle"
+                  style={{ fontSize: 11.5, color: "#94a3b8", textAlign: "center", paddingTop: 4 }}
+                >
+                  Lối vào kiểm tra kỹ thuật (Quản trị)
+                </button>
               </div>
-            )}
-
-            <button type="submit" className="auth-submit-btn">
-              {authTab === "login" ? "Đăng nhập vào AskPay" : "Tạo tài khoản & Bắt đầu"}
-            </button>
-          </form>
-
-          <div
-            style={{
-              display: "flex",
-              alignItems: "center",
-              gap: 10,
-              margin: "18px 0 12px",
-              fontSize: 11.5,
-              color: "#94a3b8"
-            }}
-          >
-            <div style={{ flex: 1, height: 1, background: "#e2e8f0" }} />
-            <span>TRUY CẬP NHANH</span>
-            <div style={{ flex: 1, height: 1, background: "#e2e8f0" }} />
-          </div>
-
-          <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 8 }}>
-            <button
-              type="button"
-              onClick={() => handleQuickDemoLogin("user")}
-              className="auth-quick-btn"
-            >
-              <UserIcon size={14} />
-              Khách hàng (User)
-            </button>
-            <button
-              type="button"
-              onClick={() => handleQuickDemoLogin("admin")}
-              className="auth-quick-btn"
-            >
-              <SlidersIcon size={14} />
-              Quản trị (Admin)
-            </button>
-          </div>
-
-          <button
-            type="button"
-            onClick={handleWalletLogin}
-            className="auth-quick-btn"
-            style={{ marginTop: 8 }}
-          >
-            <ShieldCheckIcon size={14} color="#1d4ed8" />
-            Đăng nhập bằng Core Wallet / MetaMask
-          </button>
+            </div>
+          )}
         </div>
       </div>
     );
@@ -1203,7 +1411,7 @@ export default function AskPayWorkspacePage() {
             <div>
               <div className="brand-name">AskPay</div>
               <div style={{ fontSize: 10.5, color: "#64748b", fontWeight: 500 }}>
-                Trợ lý Pháp lý Thông minh
+                Bản dùng thử · Pháp lý XNK
               </div>
             </div>
           </div>
@@ -1212,87 +1420,37 @@ export default function AskPayWorkspacePage() {
             type="button"
             onClick={handleStartNewSession}
             className="btn-new-chat"
-            title="Tạo cuộc trò chuyện mới"
+            title="Bắt đầu câu hỏi mới"
           >
             <PlusIcon size={13} />
-            Mới
+            Câu hỏi mới
           </button>
         </div>
 
-        {/* Wallet & Loyalty Section */}
-        <div className="wallet-section">
-          <div className="wallet-header-row">
-            <span className="section-micro-label">Ví của bạn</span>
-            <button
-              type="button"
-              onClick={() => setShowHistoryModal(true)}
-              className="link-subtle"
-            >
-              Lịch sử GD
-            </button>
-          </div>
-
-          <div className="wallet-card">
-            <div style={{ display: "flex", alignItems: "center", gap: 9, minWidth: 0 }}>
-              <div className="usdc-emblem">$</div>
-              <div style={{ minWidth: 0 }}>
-                <div style={{ fontSize: 11.5, color: "#64748b", lineHeight: 1.2 }}>
-                  {account ? `${account.slice(0, 6)}...${account.slice(-4)}` : "Ví Fuji Testnet"}
-                </div>
-                <div
-                  style={{
-                    fontWeight: 700,
-                    fontSize: 14,
-                    color: "#0a1c2e",
-                    lineHeight: 1.3,
-                    whiteSpace: "nowrap",
-                    overflow: "hidden",
-                    textOverflow: "ellipsis"
-                  }}
-                >
-                  {account ? `${avaxBalance || "..."} AVAX` : "Chưa kết nối"}
-                </div>
-              </div>
-            </div>
-
-            <button
-              type="button"
-              onClick={() => {
-                if (account) {
-                  setShowSettingsModal(true);
-                } else {
-                  connectWallet();
-                }
-              }}
-              className="btn-wallet-plus"
-              title={
-                account
-                  ? "Xem cấu hình ví & Faucet Testnet"
-                  : "Kết nối Core Wallet / MetaMask"
-              }
-            >
-              <PlusIcon size={15} />
-            </button>
-          </div>
-
-          {/* Loyalty Promo Card ("Hỏi 10 câu tặng 1 câu") */}
+        {/* Compact Sidebar Utilities: Thư viện văn bản & Thanh toán */}
+        <div style={{ padding: "10px 14px 6px", display: "flex", flexDirection: "column", gap: 6 }}>
           <button
             type="button"
-            onClick={() => setShowLoyaltyModal(true)}
-            className="promo-card"
+            onClick={() => setShowDocsModal(true)}
+            className="history-item"
+            style={{ background: "#f8fafc", border: "1px solid #e2e8f0" }}
           >
-            <div>
-              <div style={{ fontSize: 12.5, fontWeight: 700, color: "#78350f" }}>
-                Hỏi 10 câu tặng 1 câu
-              </div>
-              <div style={{ fontSize: 10.5, color: "#b45309" }}>
-                {nextIsFree
-                  ? "Lượt hỏi tiếp theo của bạn miễn phí!"
-                  : "Tích lũy câu hỏi nhận lượt miễn phí"}
-              </div>
-            </div>
-            <span className="promo-pill">
-              {nextIsFree ? "🎁 0đ" : `${cycleProgress}/10`}
+            <FileTextIcon size={14} color="#285380" />
+            <span className="history-item-title" style={{ fontWeight: 600, color: "#0a1c2e" }}>
+              Thư viện văn bản
+            </span>
+          </button>
+          <button
+            type="button"
+            onClick={() => setShowSettingsModal(true)}
+            className="history-item"
+            style={{ background: "#ffffff", border: "1px solid #e2e8f0" }}
+          >
+            <ShieldCheckIcon size={14} color={useOnchainWallet && account ? "#059669" : "#64748b"} />
+            <span className="history-item-title" style={{ fontSize: 12.5 }}>
+              {useOnchainWallet && account
+                ? `Thanh toán (${paymentAsset})`
+                : "Thanh toán (Đang dùng thử)"}
             </span>
           </button>
         </div>
@@ -1808,10 +1966,12 @@ export default function AskPayWorkspacePage() {
                 <button
                   type="button"
                   onClick={() => setRightOpen(!rightOpen)}
-                  className="icon-btn"
-                  title="Đóng/Mở bảng đối chiếu bên phải"
+                  className="next-step-btn secondary"
+                  style={{ padding: "6px 11px", fontSize: 12 }}
+                  title="Đóng/Mở bảng nguồn luật đối chiếu"
                 >
-                  <SidebarIcon size={19} />
+                  <SidebarIcon size={16} />
+                  <span>{rightOpen ? "Ẩn nguồn" : "Nguồn luật"}</span>
                 </button>
               </div>
             </header>
@@ -1820,44 +1980,57 @@ export default function AskPayWorkspacePage() {
             <div className="chat-stream custom-scrollbar">
               {/* Welcome Empty State */}
               {(!activeSession || activeSession.messages.length === 0) && (
-                <div style={{ maxWidth: 680, margin: "24px auto", width: "100%" }}>
+                <div style={{ maxWidth: 680, margin: "20px auto", width: "100%" }}>
                   <div
                     style={{
                       background: "#f8fafc",
                       border: "1px solid #e2e8f0",
                       borderRadius: 16,
-                      padding: "22px 24px"
+                      padding: "24px"
                     }}
                   >
-                    <div
+                    <h2
                       style={{
-                        fontSize: 18,
+                        fontSize: 20,
                         fontWeight: 700,
                         color: "#0a1c2e",
-                        marginBottom: 6
+                        margin: "0 0 8px"
                       }}
                     >
-                      Xin chào {currentUser.name}, bạn cần AskPay hỗ trợ tra cứu vấn đề gì?
-                    </div>
-                    <p style={{ margin: 0, fontSize: 13.5, color: "#64748b", lineHeight: 1.55 }}>
-                      Đặt câu hỏi về thủ tục Hải quan, mã HS, C/O hoặc thuế Xuất Nhập Khẩu. Mọi
-                      câu trả lời đều đi kèm trích dẫn văn bản pháp luật rõ ràng để bạn đối chiếu
-                      và xuất công văn ngay.
+                      Bạn đang vướng ở bước nào?
+                    </h2>
+                    <p style={{ margin: 0, fontSize: 15, color: "#475569", lineHeight: 1.65 }}>
+                      Hỏi về thủ tục hải quan, xuất xứ hàng hóa hoặc thuế xuất nhập khẩu. Bạn không cần biết trước số điều luật — bấm vào một tình huống bên dưới để điền nhanh và chỉnh sửa trước khi gửi.
                     </p>
 
-                    <div className="welcome-grid">
-                      {COMMON_SITUATIONS.map((sit, i) => (
+                    <div className="welcome-grid" style={{ marginTop: 18 }}>
+                      {SITUATION_CARDS.map((card) => (
                         <button
-                          key={i}
+                          key={card.id}
                           type="button"
                           disabled={Boolean(loadingStep)}
-                          onClick={() => handleAsk(sit)}
+                          onClick={() => {
+                            setQuestionInput(card.prefill);
+                            setErrorMsg("");
+                            setTimeout(() => {
+                              textareaRef.current?.focus();
+                            }, 20);
+                          }}
                           className="welcome-chip"
+                          style={{
+                            display: "flex",
+                            flexDirection: "column",
+                            alignItems: "flex-start",
+                            gap: 4,
+                            padding: "13px 14px"
+                          }}
                         >
-                          <span style={{ color: "#285380", fontWeight: 700, marginRight: 6 }}>
-                            →
+                          <span style={{ fontWeight: 700, fontSize: 14, color: "#0a1c2e" }}>
+                            {card.title}
                           </span>
-                          {sit}
+                          <span style={{ fontSize: 12.5, color: "#64748b", lineHeight: 1.45 }}>
+                            {card.description}
+                          </span>
                         </button>
                       ))}
                     </div>
@@ -1899,33 +2072,69 @@ export default function AskPayWorkspacePage() {
                     </div>
 
                     <div className={`msg-ai-card ${passed ? "" : "refunded"}`}>
-                      {/* Validation / Settlement Status Banner */}
-                      {!passed && (
+                      {/* Two-part Verification & Settlement Status */}
+                      {msg.validation && (
                         <div
                           style={{
-                            background: msg.onchain?.mode === "LIVE_AVALANCHE" ? "#fef3c7" : "#f8fafc",
-                            border: `1px solid ${msg.onchain?.mode === "LIVE_AVALANCHE" ? "#fde68a" : "#cbd5e1"}`,
-                            color: msg.onchain?.mode === "LIVE_AVALANCHE" ? "#92400e" : "#475569",
+                            background: passed
+                              ? "#f0fdf4"
+                              : msg.onchain?.mode === "LIVE_AVALANCHE"
+                              ? "#fef3c7"
+                              : "#f8fafc",
+                            border: `1px solid ${
+                              passed
+                                ? "#bbf7d0"
+                                : msg.onchain?.mode === "LIVE_AVALANCHE"
+                                ? "#fde68a"
+                                : "#cbd5e1"
+                            }`,
+                            color: passed
+                              ? "#166534"
+                              : msg.onchain?.mode === "LIVE_AVALANCHE"
+                              ? "#92400e"
+                              : "#475569",
                             borderRadius: 10,
                             padding: "9px 12px",
                             fontSize: 12.5,
-                            fontWeight: 600,
-                            marginBottom: 12,
+                            marginBottom: 14,
                             display: "flex",
-                            alignItems: "center",
-                            gap: 8
+                            flexDirection: "column",
+                            gap: 3
                           }}
                         >
-                          <UndoIcon size={15} color={msg.onchain?.mode === "LIVE_AVALANCHE" ? "#b45309" : "#64748b"} />
-                          <span>
-                            {msg.onchain?.mode === "LIVE_AVALANCHE" &&
-                            msg.onchain?.settlementStatus === "AUTO_REFUNDED_TO_USER" &&
-                            msg.onchain?.fujiSettlementTxHash
-                              ? `Không tìm thấy căn cứ hợp lệ hoặc văn bản đã hết hiệu lực — Giao dịch cọc đã hoàn trả 100% (Tx: ${msg.onchain.fujiSettlementTxHash.slice(0, 12)}...).`
-                              : msg.onchain?.settlementStatus === "PENDING_RECONCILIATION"
-                              ? "Đã ghi nhận kiểm định, giao dịch hoàn cọc trên blockchain đang chờ đối soát."
-                              : "Chưa tìm thấy trích dẫn đủ điều kiện hoặc văn bản đã hết hiệu lực — Chế độ mô phỏng không thu phí (chưa phát sinh giao dịch đặt cọc)."}
-                          </span>
+                          <div style={{ fontWeight: 700, display: "flex", alignItems: "center", gap: 6 }}>
+                            {passed ? (
+                              <>
+                                <CheckCircleIcon size={15} color="#059669" />
+                                <span>Đoạn trích khớp với nguồn đối chiếu</span>
+                              </>
+                            ) : msg.onchain?.mode === "LIVE_AVALANCHE" &&
+                              msg.onchain?.settlementStatus === "AUTO_REFUNDED_TO_USER" &&
+                              msg.onchain?.fujiSettlementTxHash ? (
+                              <>
+                                <UndoIcon size={15} color="#b45309" />
+                                <span>
+                                  Chưa đạt kiểm định — Đã hoàn trả khoản tiền tạm giữ (Tx:{" "}
+                                  {msg.onchain.fujiSettlementTxHash.slice(0, 12)}...)
+                                </span>
+                              </>
+                            ) : msg.onchain?.settlementStatus === "PENDING_RECONCILIATION" ? (
+                              <>
+                                <UndoIcon size={15} color="#b45309" />
+                                <span>Đang kiểm tra trạng thái thanh toán trên chuỗi.</span>
+                              </>
+                            ) : (
+                              <>
+                                <UndoIcon size={15} color="#64748b" />
+                                <span>Mình chưa tìm thấy nguồn phù hợp trong phạm vi hiện có (không thu phí).</span>
+                              </>
+                            )}
+                          </div>
+                          <div style={{ fontSize: 11.5, color: "#64748b", fontWeight: 500 }}>
+                            {msg.validation.corpus_status === "REVIEW_ASSERTED"
+                              ? "Nguồn từ snapshot đã gắn ngày rà soát · Việc áp dụng còn phụ thuộc tình huống thực tế."
+                              : "Nguồn trong bộ dữ liệu thử nghiệm · Cần kiểm tra hiệu lực trước khi áp dụng."}
+                          </div>
                         </div>
                       )}
 
@@ -1936,15 +2145,15 @@ export default function AskPayWorkspacePage() {
                       {citations.length > 0 && (
                         <div
                           style={{
-                            marginTop: 12,
+                            marginTop: 14,
                             display: "flex",
                             flexWrap: "wrap",
                             gap: 8,
                             alignItems: "center"
                           }}
                         >
-                          <span style={{ fontSize: 12, color: "#64748b", fontWeight: 600 }}>
-                            Căn cứ trích dẫn:
+                          <span style={{ fontSize: 12.5, color: "#64748b", fontWeight: 600 }}>
+                            Căn cứ để đối chiếu:
                           </span>
                           {citations.map((cit, idx) => (
                             <button
@@ -1952,7 +2161,7 @@ export default function AskPayWorkspacePage() {
                               type="button"
                               onClick={() => handleInspectCitation(msg.id, idx)}
                               className="citation-hl"
-                              title="Bấm để đối chiếu văn bản ở bảng bên phải"
+                              title="Bấm để mở nguồn luật đối chiếu"
                             >
                               Điều {cit.article}, Khoản {cit.clause}
                               {cit.point ? `, Điểm ${cit.point}` : ""} ({cit.document})
@@ -1961,14 +2170,14 @@ export default function AskPayWorkspacePage() {
                         </div>
                       )}
 
-                      {/* Gợi ý bước tiếp theo */}
+                      {/* Bạn muốn làm tiếp điều gì? */}
                       {msg.validation && (
                         <div className="next-steps-box">
                           <div
                             className="section-micro-label"
                             style={{ marginBottom: 8, fontSize: 10.5 }}
                           >
-                            Gợi ý bước tiếp theo
+                            Bạn muốn làm tiếp điều gì?
                           </div>
                           <div style={{ display: "flex", flexWrap: "wrap", gap: 8 }}>
                             <button
@@ -1981,19 +2190,7 @@ export default function AskPayWorkspacePage() {
                               className="next-step-btn primary"
                             >
                               <FileTextIcon size={14} />
-                              Soạn Phiếu / Công văn
-                              <span
-                                style={{
-                                  fontSize: 10,
-                                  background: "rgba(255,255,255,0.65)",
-                                  color: "#102a43",
-                                  padding: "1px 6px",
-                                  borderRadius: 5,
-                                  fontWeight: 700
-                                }}
-                              >
-                                Văn bản
-                              </span>
+                              Tạo bản nháp từ câu trả lời
                             </button>
 
                             <button
@@ -2006,20 +2203,7 @@ export default function AskPayWorkspacePage() {
                               className="next-step-btn secondary"
                             >
                               <UsersIcon size={14} />
-                              Nhờ Chuyên gia rà soát
-                              <span
-                                style={{
-                                  fontSize: 10,
-                                  background: "#f1f5f9",
-                                  color: "#475569",
-                                  padding: "1px 6px",
-                                  borderRadius: 5,
-                                  border: "1px solid #e2e8f0",
-                                  fontWeight: 600
-                                }}
-                              >
-                                Escrow
-                              </span>
+                              Xem cách gửi yêu cầu tư vấn
                             </button>
                           </div>
                         </div>
@@ -2060,7 +2244,7 @@ export default function AskPayWorkspacePage() {
                 </div>
               )}
 
-              {/* Error Banner */}
+              {/* Error Banner with Retry & Kept Draft */}
               {errorMsg && (
                 <div
                   style={{
@@ -2068,28 +2252,51 @@ export default function AskPayWorkspacePage() {
                     border: "1px solid #fecdd3",
                     color: "#9f1239",
                     borderRadius: 12,
-                    padding: "11px 14px",
-                    fontSize: 13,
+                    padding: "12px 14px",
+                    fontSize: 13.5,
                     display: "flex",
                     justifyContent: "space-between",
                     alignItems: "center",
+                    flexWrap: "wrap",
                     gap: 10
                   }}
                 >
                   <span>{errorMsg}</span>
-                  <button
-                    type="button"
-                    onClick={() => setErrorMsg("")}
-                    style={{
-                      background: "none",
-                      border: "none",
-                      color: "#9f1239",
-                      cursor: "pointer",
-                      fontWeight: 700
-                    }}
-                  >
-                    ✕
-                  </button>
+                  <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
+                    {lastFailedPrompt && (
+                      <button
+                        type="button"
+                        onClick={() => handleAsk(lastFailedPrompt)}
+                        style={{
+                          background: "#9f1239",
+                          color: "#ffffff",
+                          border: "none",
+                          borderRadius: 8,
+                          padding: "6px 12px",
+                          fontSize: 12.5,
+                          fontWeight: 600,
+                          cursor: "pointer"
+                        }}
+                      >
+                        Thử lại
+                      </button>
+                    )}
+                    <button
+                      type="button"
+                      onClick={() => setErrorMsg("")}
+                      style={{
+                        background: "none",
+                        border: "none",
+                        color: "#9f1239",
+                        cursor: "pointer",
+                        fontWeight: 700,
+                        padding: "4px 6px"
+                      }}
+                      aria-label="Đóng thông báo lỗi"
+                    >
+                      ✕
+                    </button>
+                  </div>
                 </div>
               )}
 
@@ -2108,10 +2315,7 @@ export default function AskPayWorkspacePage() {
                       className={`mode-pill ${mode === "quick" ? "active-quick" : ""}`}
                     >
                       <LightningIcon size={13} />
-                      Hỏi Nhanh
-                      <span style={{ fontSize: 10, opacity: 0.75 }}>
-                        {nextIsFree ? "0$" : "0.05$"}
-                      </span>
+                      Tra cứu nhanh
                     </button>
 
                     <button
@@ -2120,10 +2324,7 @@ export default function AskPayWorkspacePage() {
                       className={`mode-pill ${mode === "deep" ? "active-deep" : ""}`}
                     >
                       <BranchIcon size={13} />
-                      Tình Huống
-                      <span style={{ fontSize: 10, opacity: 0.75 }}>
-                        {nextIsFree ? "0$" : "0.20$"}
-                      </span>
+                      Phân tích tình huống
                     </button>
 
                     <button
@@ -2132,32 +2333,43 @@ export default function AskPayWorkspacePage() {
                       className={`mode-pill ${mode === "factcheck" ? "active-factcheck" : ""}`}
                     >
                       <ShieldCheckIcon size={13} />
-                      Kiểm Chứng Luật
-                      <span style={{ fontSize: 10, opacity: 0.75 }}>
-                        {nextIsFree ? "0$" : "0.05$"}
-                      </span>
+                      Kiểm chứng nguồn
                     </button>
                   </div>
 
-                  {nextIsFree && (
-                    <span
-                      style={{
-                        fontSize: 11.5,
-                        fontWeight: 700,
-                        color: "#b45309",
-                        background: "#fef3c7",
-                        padding: "3px 9px",
-                        borderRadius: 999
-                      }}
-                    >
-                      🎁 Lượt hỏi miễn phí (10 tặng 1)
-                    </span>
-                  )}
+                  <span
+                    style={{
+                      fontSize: 11.5,
+                      fontWeight: 600,
+                      color: useOnchainWallet && account ? "#047857" : "#475569",
+                      background: useOnchainWallet && account ? "#ecfdf5" : "#f1f5f9",
+                      padding: "3px 9px",
+                      borderRadius: 999
+                    }}
+                  >
+                    {!useOnchainWallet || !account
+                      ? "Miễn phí trong bản dùng thử"
+                      : nextIsFree
+                      ? "Miễn phí lượt thứ 10 (10 tặng 1)"
+                      : paymentAsset === "USDC"
+                      ? `Tạm giữ ${mode === "deep" ? "0.20" : "0.05"} USDC (Fuji)`
+                      : `Tạm giữ ${mode === "deep" ? "0.02" : "0.005"} AVAX testnet`}
+                  </span>
+                </div>
+
+                {/* 1-line description for active mode */}
+                <div style={{ fontSize: 12, color: "#64748b", marginBottom: 8, padding: "0 4px" }}>
+                  {mode === "quick"
+                    ? "Một vấn đề cụ thể, câu trả lời ngắn gọn kèm căn cứ."
+                    : mode === "deep"
+                    ? "Xem các điều kiện áp dụng, ngoại lệ và thông tin còn thiếu."
+                    : "Kiểm tra số hiệu văn bản, Điều/Khoản hoặc đoạn trích cụ thể mà bạn nhập vào."}
                 </div>
 
                 {/* Rounded Prompt Input Card */}
                 <div className="composer-box">
                   <textarea
+                    ref={textareaRef}
                     rows={2}
                     value={questionInput}
                     onChange={(e) => setQuestionInput(e.target.value)}
@@ -2169,27 +2381,54 @@ export default function AskPayWorkspacePage() {
                     }}
                     placeholder={
                       mode === "factcheck"
-                        ? "Dán đoạn tư vấn hoặc điều khoản XNK bạn cần AskPay kiểm chứng..."
-                        : "Nhập câu hỏi Hải quan, mã HS, C/O hoặc thủ tục XNK..."
+                        ? "Ví dụ: Kiểm chứng Điều 25 Khoản 1 Luật 54/2014/QH13: Đối với hàng hóa nhập khẩu, nộp trong thời hạn 60 ngày..."
+                        : "Nhập câu hỏi về thủ tục hải quan, xuất xứ C/O hoặc thuế xuất nhập khẩu..."
                     }
                     className="composer-textarea custom-scrollbar"
                   />
 
                   <div className="composer-toolbar">
-                    <div style={{ display: "flex", alignItems: "center", gap: 6 }}>
+                    <div style={{ display: "flex", alignItems: "center", gap: 8, flexWrap: "wrap" }}>
                       <button
                         type="button"
                         onClick={() => setShowDocsModal(true)}
                         className="icon-btn"
-                        title="Xem danh mục văn bản pháp luật"
+                        title="Mở thư viện văn bản pháp luật"
                       >
                         <PaperclipIcon size={16} />
                       </button>
-                      <span style={{ fontSize: 11.5, color: "#64748b" }}>
-                        {useOnchainWallet && account
-                          ? `Ví Fuji sẵn sàng (${mode === "deep" ? "0.02" : "0.005"} AVAX)`
-                          : "Đối chiếu văn bản pháp luật chính thức"}
-                      </span>
+                      {useOnchainWallet && account ? (
+                        <div style={{ display: "flex", alignItems: "center", gap: 6, fontSize: 11.5 }}>
+                          <span style={{ color: "#047857", fontWeight: 600 }}>
+                            Ví {account.slice(0, 6)}...{account.slice(-4)}
+                          </span>
+                          <select
+                            value={paymentAsset}
+                            onChange={(e) => setPaymentAsset(e.target.value as "USDC" | "AVAX")}
+                            aria-label="Chọn loại tiền thanh toán"
+                            style={{
+                              fontSize: 11.5,
+                              padding: "2px 6px",
+                              borderRadius: 6,
+                              border: "1px solid #cbd5e1",
+                              background: "#f8fafc",
+                              color: "#0a1c2e"
+                            }}
+                          >
+                            <option value="USDC">USDC (Fuji)</option>
+                            <option value="AVAX">AVAX testnet</option>
+                          </select>
+                        </div>
+                      ) : (
+                        <button
+                          type="button"
+                          onClick={() => setShowSettingsModal(true)}
+                          className="link-subtle"
+                          style={{ fontSize: 11.5, color: "#64748b" }}
+                        >
+                          Bật thanh toán ví Fuji (USDC / AVAX)
+                        </button>
+                      )}
                     </div>
 
                     <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
@@ -2200,7 +2439,7 @@ export default function AskPayWorkspacePage() {
                         onClick={() => handleAsk()}
                         className="btn-send"
                       >
-                        {loadingStep ? "Đang xử lý..." : "Gửi"}
+                        {loadingStep ? "Đang tìm..." : "Gửi"}
                         <SendIcon size={13} />
                       </button>
                     </div>
