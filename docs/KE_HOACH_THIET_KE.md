@@ -325,8 +325,8 @@ Mỗi giai đoạn giữ phạm vi nguyên tử; test hợp đồng trước imp
 
 ## 12. Tài liệu trong repo
 
-- `REST_API_SPEC_FOR_RAG_TEAM.md`: mục tiêu sản phẩm, corpus dự kiến, validator và REST API đầu vào.
+- `docs/KE_HOACH_THIET_KE.md`: thiết kế kiến trúc, ranh giới kỹ thuật và quyết định trước production.
 - `docs/KHO_LUAT_PHIEN_BAN.md`: manifest snapshot, date semantics, review metadata và giới hạn validator hiện tại.
 - `research/DANH_MUC_NGUON_LUAT.md`: danh sách URL/tệp nguồn đã thu thập và các quan hệ cần rà soát.
-- `PRODUCT_OVERVIEW_FOR_BA.md`: mô tả pitch sản phẩm; các cam kết về “rủi ro bằng 0”, USDC, settlement và hiệu lực phải được xem là giả định/roadmap cho tới khi các cổng trong tài liệu này đạt.
+- `research/snapshot-manifest.json`: snapshot manifest 45 văn bản / 2.581 khoản theo định dạng `legal_corpus.py`.
 - `ai-service/ocr_tesseract_batch.py`: tạo bản OCR theo trang gắn nguồn/model metadata; không duyệt nội dung.

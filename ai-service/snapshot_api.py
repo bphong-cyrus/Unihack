@@ -7,6 +7,7 @@ import os
 import time
 from fastapi import HTTPException
 from legal_corpus import CorpusError, load_snapshot
+from legal_pipeline import ask_with_adapter
 from snapshot_search import retrieve
 from versioned_validator import validate_snapshot_citations
 
@@ -44,6 +45,9 @@ def ask_snapshot(req, snapshot):
         raise HTTPException(status_code=400, detail='Tình huống giả lập chỉ hỗ trợ trong chế độ demo.')
     start = time.monotonic()
     as_of = query_date(req.as_of)
+    generated = ask_with_adapter(req, snapshot, as_of)
+    if generated is not None:
+        return generated
     candidates = retrieve(snapshot, req.question, as_of, 3 if req.tier == 'quick' else 8)
     items = candidates[:3 if req.tier == 'quick' else 8]
     citations = [{'document': p.document_id, 'document_title': p.document_title,

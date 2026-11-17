@@ -196,7 +196,7 @@ export default function AskPayWorkspacePage() {
   const [authChecked, setAuthChecked] = useState<boolean>(false);
   const [currentUser, setCurrentUser] = useState<UserProfile | null>(null);
   const [authTab, setAuthTab] = useState<"login" | "register">("login");
-  const [showLoginForm, setShowLoginForm] = useState<boolean>(false);
+  const [showLoginForm, setShowLoginForm] = useState<boolean>(true);
   const [authName, setAuthName] = useState<string>("");
   const [authCompany, setAuthCompany] = useState<string>("");
   const [authEmail, setAuthEmail] = useState<string>("");
@@ -583,6 +583,7 @@ export default function AskPayWorkspacePage() {
     setFocusedAssistantId("");
     setQuestionInput("");
     setErrorMsg("");
+    if (mode === "factcheck") setMode("quick");
     setActiveView("chat");
     setMobileMenuOpen(false);
   }
@@ -1211,10 +1212,10 @@ export default function AskPayWorkspacePage() {
                   lineHeight: 1.3
                 }}
               >
-                Bạn đang vướng ở bước nào?
+                Tra cứu pháp luật xuất nhập khẩu
               </h1>
               <p style={{ margin: "0 0 20px", fontSize: 15, color: "#475569", lineHeight: 1.6 }}>
-                Hỏi về thủ tục hải quan, xuất xứ hàng hóa hoặc thuế xuất nhập khẩu. Bạn không cần biết trước số điều luật.
+                Nhập câu hỏi của bạn. AskPay sẽ tìm căn cứ để bạn đối chiếu.
               </p>
 
               <button
@@ -1223,7 +1224,7 @@ export default function AskPayWorkspacePage() {
                 className="auth-submit-btn"
                 style={{ fontSize: 15, padding: "13px 18px" }}
               >
-                Bắt đầu một câu hỏi
+                Dùng thử demo
               </button>
 
               <p style={{ margin: "12px 0 18px", fontSize: 12.5, color: "#64748b", textAlign: "center", lineHeight: 1.5 }}>
@@ -1250,13 +1251,21 @@ export default function AskPayWorkspacePage() {
                 <button
                   type="button"
                   onClick={() => {
-                    setShowLoginForm(false);
                     setAuthError("");
+                    handleQuickDemoLogin("user");
                   }}
-                  className="link-subtle"
-                  style={{ fontSize: 12.5 }}
+                  style={{
+                    fontSize: 12.5,
+                    fontWeight: 600,
+                    padding: "6px 12px",
+                    borderRadius: 999,
+                    border: "1px solid #bfd3ea",
+                    background: "#eef4fa",
+                    color: "#285380",
+                    cursor: "pointer"
+                  }}
                 >
-                  ← Quay lại dùng thử
+                  Dùng thử demo
                 </button>
               </div>
 
@@ -1427,19 +1436,21 @@ export default function AskPayWorkspacePage() {
           </button>
         </div>
 
-        {/* Compact Sidebar Utilities: Thư viện văn bản & Thanh toán */}
+        {/* Compact Sidebar Utilities: Thư viện văn bản (chỉ Admin) & Thanh toán */}
         <div style={{ padding: "10px 14px 6px", display: "flex", flexDirection: "column", gap: 6 }}>
-          <button
-            type="button"
-            onClick={() => setShowDocsModal(true)}
-            className="history-item"
-            style={{ background: "#f8fafc", border: "1px solid #e2e8f0" }}
-          >
-            <FileTextIcon size={14} color="#285380" />
-            <span className="history-item-title" style={{ fontWeight: 600, color: "#0a1c2e" }}>
-              Thư viện văn bản
-            </span>
-          </button>
+          {currentUser.role === "admin" && (
+            <button
+              type="button"
+              onClick={() => setShowDocsModal(true)}
+              className="history-item"
+              style={{ background: "#f8fafc", border: "1px solid #e2e8f0" }}
+            >
+              <FileTextIcon size={14} color="#285380" />
+              <span className="history-item-title" style={{ fontWeight: 600, color: "#0a1c2e" }}>
+                Thư viện văn bản
+              </span>
+            </button>
+          )}
           <button
             type="button"
             onClick={() => setShowSettingsModal(true)}
@@ -1997,10 +2008,10 @@ export default function AskPayWorkspacePage() {
                         margin: "0 0 8px"
                       }}
                     >
-                      Bạn đang vướng ở bước nào?
+                      Tra cứu pháp luật xuất nhập khẩu
                     </h2>
                     <p style={{ margin: 0, fontSize: 15, color: "#475569", lineHeight: 1.65 }}>
-                      Hỏi về thủ tục hải quan, xuất xứ hàng hóa hoặc thuế xuất nhập khẩu. Bạn không cần biết trước số điều luật — bấm vào một tình huống bên dưới để điền nhanh và chỉnh sửa trước khi gửi.
+                      Nhập câu hỏi của bạn. AskPay sẽ tìm căn cứ để bạn đối chiếu — hoặc bấm một tình huống bên dưới để điền nhanh trước khi gửi.
                     </p>
 
                     <div className="welcome-grid" style={{ marginTop: 18 }}>
@@ -2010,6 +2021,7 @@ export default function AskPayWorkspacePage() {
                           type="button"
                           disabled={Boolean(loadingStep)}
                           onClick={() => {
+                            if (mode === "factcheck") setMode("deep");
                             setQuestionInput(card.prefill);
                             setErrorMsg("");
                             setTimeout(() => {
@@ -2039,7 +2051,7 @@ export default function AskPayWorkspacePage() {
               )}
 
               {/* Render Messages */}
-              {(activeSession?.messages || []).map((msg) => {
+              {(activeSession?.messages || []).map((msg, msgIdx, msgArr) => {
                 if (msg.role === "user") {
                   return (
                     <div key={msg.id} className="msg-user-wrap">
@@ -2058,6 +2070,15 @@ export default function AskPayWorkspacePage() {
 
                 const passed = msg.validation?.passed !== false;
                 const citations = msg.citations || [];
+                const precedingUserPrompt =
+                  msgArr
+                    .slice(0, msgIdx)
+                    .reverse()
+                    .find((m) => m.role === "user")?.content || "";
+                const showSwitchToLookupBtn =
+                  msg.mode === "factcheck" &&
+                  msg.validation?.fail_reason === "INSUFFICIENT_STRUCTURED_CITATION" &&
+                  Boolean(precedingUserPrompt);
 
                 return (
                   <div key={msg.id} className="msg-ai-wrap">
@@ -2180,6 +2201,18 @@ export default function AskPayWorkspacePage() {
                             Bạn muốn làm tiếp điều gì?
                           </div>
                           <div style={{ display: "flex", flexWrap: "wrap", gap: 8 }}>
+                            {showSwitchToLookupBtn && (
+                              <button
+                                type="button"
+                                onClick={() => {
+                                  setMode("deep");
+                                  handleAsk(precedingUserPrompt, "deep");
+                                }}
+                                className="next-step-btn primary"
+                              >
+                                Chuyển sang Phân tích tình huống &amp; gửi lại
+                              </button>
+                            )}
                             <button
                               type="button"
                               onClick={() => {

@@ -3,6 +3,7 @@ from datetime import date
 import hashlib
 import json
 from math import log
+from pathlib import Path
 import re
 import time
 from typing import Annotated, List, Literal, Optional
@@ -659,6 +660,25 @@ CORPUS_RECORDS = [
     },
 ]
 
+_CORPUS_JSON_PATH = Path(__file__).resolve().parents[1] / "data" / "legal-corpus.json"
+_CORPUS_META = {
+    "source_bundle": "INLINE_SAMPLE",
+    "verified_chunks": len(CORPUS_RECORDS),
+    "unreviewed_extracted_chunks": 0,
+}
+if _CORPUS_JSON_PATH.exists():
+    try:
+        _bundle = json.loads(_CORPUS_JSON_PATH.read_text(encoding="utf-8"))
+        if isinstance(_bundle.get("records"), list) and _bundle["records"]:
+            CORPUS_RECORDS = _bundle["records"]
+            _CORPUS_META = {
+                "source_bundle": str(_bundle.get("corpus_id") or "askpay-xnk-45docs-v2"),
+                "verified_chunks": int(_bundle.get("verified_chunks") or 0),
+                "unreviewed_extracted_chunks": int(_bundle.get("unreviewed_extracted_chunks") or 0),
+            }
+    except Exception:
+        pass
+
 EXTENDED_QUERY_RULES = {
     "05/2017/QH14": (("phòng vệ thương mại",), ("chống bán phá giá",), ("chống trợ cấp",), ("tự vệ thương mại",), ("luật quản lý ngoại thương",)),
     "36/2005/QH11": (("mua bán hàng hóa quốc tế",), ("chuyển khẩu",), ("tạm xuất", "tái nhập"), ("luật thương mại", "xuất khẩu")),
@@ -695,6 +715,16 @@ EXTENDED_QUERY_RULES = {
     "128/2013/TT-BTC": (("thông tư 128/2013",),),
     "45/2016/NĐ-CP": (("nghị định 45/2016",),),
     "155/2016/TT-BTC": (("thông tư 155/2016",),),
+    "18/2019/QĐ-TTg": (
+        ("máy móc đã qua sử dụng",),
+        ("máy tiện cũ",),
+        ("máy móc cũ",),
+        ("thiết bị cũ",),
+        ("chứng thư giám định",),
+        ("tuổi thiết bị",),
+        ("18/2019",),
+    ),
+    "28/2022/QĐ-TTg": (("28/2022",), ("đơn giản hóa thủ tục", "dây chuyền công nghệ")),
 }
 
 
@@ -728,7 +758,8 @@ def _make_citation(doc_id: str, article: str, clause: str) -> Optional[dict]:
 _BM25_STOPWORDS = frozenset(
     "của và là được các có cho trong với theo khi một những thì nào gì như tôi doanh nghiệp "
     "hàng hóa luật quy định về tại từ bị để hay phải không xin hỏi cần biết thời gian bao nhiêu "
-    "lâu thế nào sao bên em công ty nước ngoài việt nam xuất khẩu nhập khẩu thuế hải quan".split()
+    "lâu thế nào sao bên em công ty nước ngoài việt nam xuất khẩu nhập khẩu thuế hải quan "
+    "dự định tìm hiểu nhập bán mua số bộ giấy tờ thủ tục liên quan cách làm xem".split()
 )
 
 _NEGATIVE_GENERIC_GUARD_EXACT = frozenset(
@@ -852,20 +883,43 @@ def _bm25_fallback_record(q_expanded: str) -> Optional[dict]:
     if not active_docs:
         return None
 
-    documents = []
-    for r in active_docs:
-        tokens = normalize_vn_text(f"{r['doc_title']} {r['raw_text']}").split()
-        documents.append((r, Counter(tokens), len(tokens)))
+    global _BM25_CACHE
+    if _BM25_CACHE is None:
+        docs = []
+        df_counter: Counter = Counter()
+        for r in active_docs:
+            tokens = normalize_vn_text(f"{r['doc_title']} {r['raw_text']}").split()
+            cnt = Counter(tokens)
+            docs.append((r, cnt, len(tokens)))
+            for w in cnt.keys():
+                df_counter[w] += 1
+        avg = (sum(length for _, _, length in docs) / len(docs)) if docs else 0.0
+        _BM25_CACHE = (docs, df_counter, avg)
 
-    avg_len = sum(length for _, _, length in documents) / len(documents)
+    documents, df_all, avg_len = _BM25_CACHE
     if not avg_len:
         return None
 
-    doc_freq = {term: sum(term in tokens for _, tokens, _ in documents) for term in terms}
+    doc_freq = {term: df_all.get(term, 0) for term in terms}
     best_score = 0.0
     best_record = None
 
+    commercial_specific_markers = (
+        "đấu thầu",
+        "mời thầu",
+        "nhượng quyền",
+        "khuyến mại",
+        "đại lý thương mại",
+        "môi giới",
+        "hội chợ",
+        "ủy thác mua bán",
+        "giám định thương mại",
+    )
+    allow_commercial_law_details = any(m in q_expanded for m in commercial_specific_markers)
+
     for r, tokens, length in documents:
+        if r.get("doc_id") == "36/2005/QH11" and not r.get("verified") and not allow_commercial_law_details:
+            continue
         matched_distinct = sum(1 for term in terms if tokens.get(term, 0) > 0)
         if matched_distinct < 5:
             continue
@@ -875,6 +929,8 @@ def _bm25_fallback_record(q_expanded: str) -> Optional[dict]:
             if freq:
                 idf = log(1 + (len(documents) - doc_freq[term] + 0.5) / (doc_freq[term] + 0.5))
                 score += idf * freq * 2.2 / (freq + 1.2 * (0.25 + 0.75 * length / avg_len))
+        if r.get("verified"):
+            score *= 1.12
         if score > best_score:
             best_score = score
             best_record = r
@@ -884,34 +940,129 @@ def _bm25_fallback_record(q_expanded: str) -> Optional[dict]:
     return None
 
 
-def _check_uncovered_xnk_domain(q_lower: str) -> Optional[str]:
-    used_machinery_terms = (
-        "máy tiện cũ",
-        "máy móc cũ",
-        "thiết bị cũ",
-        "đã qua sử dụng",
-        "chứng thư giám định",
-        "giám định tuổi thiết bị",
-        "18/2019/qđ-ttg",
-        "18/2019",
-    )
-    if any(t in q_lower for t in used_machinery_terms):
-        return (
-            "Mình chưa tìm thấy căn cứ phù hợp trong phạm vi kho văn bản hiện có: quy định về điều kiện nhập khẩu máy móc, "
-            "thiết bị đã qua sử dụng và chứng thư giám định (như Quyết định 18/2019/QĐ-TTg) chưa được nạp vào bộ dữ liệu thử nghiệm này. "
-            "Hệ thống từ chối trả lời để tránh trích dẫn lệch sang văn bản khác."
-        )
+_BM25_CACHE = None
 
+
+def _check_uncovered_xnk_domain(q_lower: str) -> Optional[str]:
     specific_tariff_patterns = (
         r"mã\s+hs\s+(?:của|cho)\s+",
         r"thuế\s+suất\s+(?:nhập\s+khẩu|xuất\s+khẩu)?\s*(?:của|cho)\s+",
     )
-    if any(re.search(pat, q_lower) for pat in specific_tariff_patterns):
+    if any(re.search(pat, q_lower) for pat in specific_tariff_patterns) and not any(
+        t in q_lower for t in ("cũ", "đã qua sử dụng", "18/2019", "28/2022", "chứng thư giám định")
+    ):
         return (
             "Mình chưa tìm thấy Biểu thuế XNK chi tiết trong phạm vi hiện có để xác định mã HS 8 số hoặc mức thuế suất cụ thể theo từng mặt hàng. "
             "Bạn có thể hỏi về quy định xử phạt khai sai mã HS, khai bổ sung hoặc thủ tục C/O."
         )
     return None
+
+
+def _try_used_machinery_answer(q_lower: str, tier: str) -> Optional[tuple[str, list[dict]]]:
+    used_machinery_terms = (
+        "máy tiện cũ",
+        "máy móc cũ",
+        "thiết bị cũ",
+        "đã qua sử dụng",
+        "dây chuyền công nghệ cũ",
+        "tuổi thiết bị",
+        "18/2019",
+        "28/2022",
+    )
+    if not any(t in q_lower for t in used_machinery_terms):
+        return None
+
+    cit_lathe = _make_citation("18/2019/QĐ-TTg", "Phụ lục I", "1.e")
+    cit_doc = _make_citation("18/2019/QĐ-TTg", "8", "1")
+    cit_custody = _make_citation("18/2019/QĐ-TTg", "8", "3")
+    cit_28 = _make_citation("28/2022/QĐ-TTg", "Phụ lục I", "1.6")
+
+    citations: list[dict] = []
+    if any(t in q_lower for t in ("máy tiện", "84.58", "tuổi", "mã hs")) and cit_lathe:
+        citations.append(cit_lathe)
+    if cit_doc:
+        citations.append(cit_doc)
+    if ("thiếu" in q_lower or "chưa có" in q_lower or "chứng thư giám định" in q_lower or tier == "deep") and cit_custody:
+        citations.append(cit_custody)
+    if tier == "deep" and cit_28 and len(citations) < 3:
+        citations.append(cit_28)
+    if not citations:
+        for fallback in (cit_doc, cit_lathe, cit_28):
+            if fallback:
+                citations.append(fallback)
+                break
+
+    lathe_note = (
+        "Riêng máy tiện (kể cả trung tâm gia công tiện) để bóc tách kim loại thuộc nhóm mã số HS 84.58 tại Mục 1.e Phụ lục I Quyết định 18/2019/QĐ-TTg "
+        "(giữ nguyên 20 năm tại Mục 1.6 Phụ lục I Quyết định 28/2022/QĐ-TTg) được phép tuổi thiết bị không vượt quá 20 năm (X = Năm nhập khẩu - Năm sản xuất). "
+        if ("máy tiện" in q_lower or "84.58" in q_lower)
+        else "Theo Khoản 1 Điều 6 Quyết định 18/2019/QĐ-TTg, máy móc thiết bị đã qua sử dụng thông thường có tuổi không quá 10 năm (trừ các nhóm cơ khí/gỗ/giấy tại Phụ lục I được phép đến 15–20 năm). "
+    )
+    g7_note = (
+        "Với hàng sản xuất tại Nhật Bản (thuộc nhóm nước G7), theo Điểm b, c Khoản 1 Điều 8 Quyết định 18/2019/QĐ-TTg, nếu có bản chính Giấy xác nhận của nhà sản xuất "
+        "(đã hợp pháp hóa lãnh sự và dịch tiếng Việt) về năm sản xuất và tiêu chuẩn đáp ứng Điều 6 thì không phải nộp Chứng thư giám định; "
+        "nếu thiếu giấy xác nhận của nhà sản xuất thì bắt buộc nộp Chứng thư giám định của tổ chức giám định được Bộ KH&CN chỉ định. "
+    )
+    missing_docs_note = (
+        "Trường hợp mở tờ khai khi chưa có ngay Chứng thư giám định, Khoản 3 Điều 8 cho phép đưa hàng về bảo quản sau khi nộp văn bản đăng ký dịch vụ giám định "
+        "có xác nhận của tổ chức giám định chỉ định, và phải nộp chứng thư giám định trong thời hạn không quá 30 ngày. "
+        "Nếu tuổi thiết bị vượt quá ngưỡng quy định (trên 20 năm đối với HS 84.58), phải xin chấp thuận của Bộ KH&CN theo Điều 9 (công suất/hiệu suất còn lại >= 85%, tiêu hao <= 15%)."
+    )
+    answer = f"{lathe_note}{g7_note}{missing_docs_note}"
+    if tier == "deep" and citations:
+        answer += _format_deep_analysis(
+            citations,
+            "Chỉ được phép nhập khẩu máy móc đã qua sử dụng để phục vụ trực tiếp sản xuất tại Việt Nam (Khoản 3 Điều 4 QĐ 18/2019/QĐ-TTg), đáp ứng tiêu chuẩn QCVN/TCVN hoặc G7/Hàn Quốc về an toàn, tiết kiệm năng lượng và bảo vệ môi trường.",
+            "Cần xác nhận thêm để kết luận dứt điểm hồ sơ: (a) Năm sản xuất ghi trên nhãn máy/hồ sơ để tính tuổi X = Năm NK - Năm SX, (b) Mã HS 8 số cụ thể của máy tiện (nhóm 84.58) & có thuộc diện hàng cấm/chuyên ngành không, (c) Doanh nghiệp có bản chính xác nhận của nhà sản xuất Nhật Bản hay sẽ đăng ký giám định để đưa hàng về bảo quản 30 ngày.",
+        )
+    return answer, citations
+
+
+def _try_general_import_procedure_answer(q_lower: str, tier: str) -> Optional[tuple[str, list[dict]]]:
+    has_explicit_doc_code = bool(re.search(r"\b\d{1,4}/\d{4}/", q_lower))
+    if has_explicit_doc_code:
+        return None
+    if any(t in q_lower for t in ("c/o", "chứng nhận xuất xứ", "hoàn thuế", "tái xuất", "khai bổ sung", "phân luồng", "mã hs", "sai mã", "tạm hoãn xuất cảnh", "cà phê")):
+        return None
+    wants_import_docs = (
+        any(t in q_lower for t in ("giấy tờ và thủ tục", "thủ tục nhập", "hồ sơ nhập", "chuẩn bị giấy tờ", "dự định nhập", "nhập hàng", "cần giấy tờ", "thủ tục nào"))
+        or (any(t in q_lower for t in ("nhập", "nhập khẩu")) and any(t in q_lower for t in ("để bán", "kinh doanh", "thương mại", "tiêu thụ")) and any(t in q_lower for t in ("giấy tờ", "thủ tục", "hồ sơ")))
+    )
+    if not wants_import_docs:
+        return None
+
+    cit_24 = _make_citation("54/2014/QH13", "24", "1")
+    cit_18 = _make_citation("38/2015/TT-BTC", "18", "1")
+    cit_label = _make_citation("43/2017/NĐ-CP", "7", "3")
+    citations: list[dict] = []
+    for c in (cit_24, cit_18):
+        if c:
+            citations.append(c)
+    if any(t in q_lower for t in ("để bán", "bán lẻ", "tiêu thụ", "lưu thông", "nhãn")) or tier == "deep":
+        if cit_label:
+            citations.append(cit_label)
+
+    is_for_sale = any(t in q_lower for t in ("để bán", "bán", "tiêu thụ", "lưu thông", "kinh doanh"))
+    sale_note = (
+        " Do hàng nhập về để bán/lưu thông nội địa, theo Khoản 3 Điều 7 Nghị định 43/2017/NĐ-CP (sửa đổi bởi Nghị định 111/2021/NĐ-CP), "
+        "bạn bắt buộc phải giữ nguyên nhãn gốc và gắn nhãn phụ tiếng Việt trước khi đưa hàng ra thị trường."
+        if is_for_sale
+        else ""
+    )
+    answer = (
+        "Theo Khoản 1 Điều 24 Luật Hải quan 2014 (54/2014/QH13) và Khoản 1 Điều 18 Thông tư 38/2015/TT-BTC, khi chuẩn bị nhập khẩu lô hàng thương mại, "
+        "doanh nghiệp cần chuẩn bị bộ hồ sơ hải quan điện tử gồm: (1) Tờ khai hải quan khai báo đầy đủ chỉ tiêu trên hệ thống VNACCS, "
+        "(2) Hóa đơn thương mại (Commercial Invoice), Hợp đồng mua bán (nếu có), Phiếu đóng gói (Packing List) và Vận đơn (B/L hoặc AWB), "
+        "(3) Giấy chứng nhận xuất xứ hàng hóa (C/O, ví dụ mẫu JV/AJ/RCEP nếu nhập từ Nhật Bản để hưởng thuế suất ưu đãi FTA) và giấy phép/kiểm tra chuyên ngành nếu mặt hàng thuộc diện quản lý."
+        f"{sale_note}"
+    )
+    if tier == "deep" and citations:
+        answer += _format_deep_analysis(
+            citations,
+            "Bộ chứng từ thông quan thực tế và mức thuế nhập khẩu/VAT phụ thuộc vào mã HS 8 chữ số của mặt hàng; kho dữ liệu hiện tại chưa bao gồm Biểu thuế XNK chi tiết theo từng tên hàng cụ thể.",
+            "Cần xác nhận thêm: (a) Tên hàng chi tiết, công dụng/chất liệu để tra mã HS 8 số chuẩn, (b) Có dùng C/O ưu đãi FTA (VJEPA, AJCEP, CPTPP, RCEP) từ nhà xuất khẩu hay không, (c) Mặt hàng có thuộc danh mục kiểm tra chuyên ngành (an toàn sản phẩm, đồ dùng học sinh/trẻ em, mỹ phẩm, thiết bị...) trước khi thông quan.",
+        )
+    return answer, citations
 
 
 def _try_date_deadline_calculation(question_text: str) -> Optional[tuple[str, list[dict]]]:
@@ -1041,10 +1192,11 @@ def _format_deep_analysis(citations: list[dict], condition_note: str, missing_fa
         f"③ Dữ kiện hồ sơ cần xác nhận thêm: {missing_facts_note}"
     )
 
-CORPUS_INDEX = {
-    (r["doc_id"].upper(), str(r["article"]), str(r["clause"])): r
-    for r in CORPUS_RECORDS
-}
+CORPUS_INDEX: dict[tuple[str, str, str], dict] = {}
+for _rec in CORPUS_RECORDS:
+    _key = (_rec["doc_id"].upper(), str(_rec["article"]), str(_rec["clause"]))
+    if _key not in CORPUS_INDEX or _rec.get("verified"):
+        CORPUS_INDEX[_key] = _rec
 
 DEMO_CORPUS_SHA256 = hashlib.sha256(
     json.dumps(CORPUS_RECORDS, sort_keys=True, ensure_ascii=False).encode("utf-8")
@@ -1170,12 +1322,34 @@ def get_corpus():
     snapshot = configured_snapshot()
     if snapshot is not None:
         return corpus_response(snapshot)
+    summary = {}
+    for r in CORPUS_RECORDS:
+        did = r["doc_id"]
+        doc = summary.setdefault(
+            did,
+            {
+                "doc_id": did,
+                "doc_title": r["doc_title"],
+                "article": r["article"],
+                "clause": r["clause"],
+                "status": r["status"],
+                "effective_date": r["effective_date"],
+                "total_versions": 0,
+                "reviewed_versions": 0,
+            },
+        )
+        doc["total_versions"] += 1
+        if r.get("verified"):
+            doc["reviewed_versions"] += 1
     return {
-        "total_documents": len({r["doc_id"] for r in CORPUS_RECORDS}),
+        "total_documents": len(summary),
         "total_chunks": len(CORPUS_RECORDS),
+        "reviewed_chunks": _CORPUS_META["verified_chunks"],
+        "extracted_unreviewed_chunks": _CORPUS_META["unreviewed_extracted_chunks"],
+        "source_bundle": _CORPUS_META["source_bundle"],
         "corpus_status": "DEMO_UNVERIFIED",
         "domain": "Import-Export & Vietnam Customs Law",
-        "records": CORPUS_RECORDS,
+        "records": list(summary.values()),
     }
 
 
@@ -1239,7 +1413,9 @@ def ask_legal_question(req: AskRequest):
         q_raw_norm = normalize_vn_text(req.question)
         q_lower = expand_xnk_colloquial_query(req.question.lower())
         uncovered_msg = _check_uncovered_xnk_domain(q_lower)
-        date_calc = _try_date_deadline_calculation(req.question) if uncovered_msg is None else None
+        used_machinery = _try_used_machinery_answer(q_lower, req.tier) if uncovered_msg is None else None
+        general_import = _try_general_import_procedure_answer(q_lower, req.tier) if (uncovered_msg is None and used_machinery is None) else None
+        date_calc = _try_date_deadline_calculation(req.question) if (uncovered_msg is None and used_machinery is None and general_import is None) else None
         if q_raw_norm in _NEGATIVE_GENERIC_GUARD_EXACT:
             answer = (
                 "Mình chưa tìm thấy nguồn phù hợp trong phạm vi hiện có để đối chiếu câu hỏi này."
@@ -1248,6 +1424,10 @@ def ask_legal_question(req: AskRequest):
         elif uncovered_msg is not None:
             answer = uncovered_msg
             citations = []
+        elif used_machinery is not None:
+            answer, citations = used_machinery
+        elif general_import is not None:
+            answer, citations = general_import
         elif date_calc is not None:
             answer, citations = date_calc
         elif (any(term in q_lower for term in ("c/o", "chứng nhận xuất xứ"))

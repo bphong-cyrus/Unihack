@@ -75,13 +75,17 @@ export default function RightPanel({
   onConnectExpert
 }: RightPanelProps) {
   const editorRef = useRef<HTMLDivElement>(null);
+  const lastMemoKeyRef = useRef<string>("");
   const [copiedMemo, setCopiedMemo] = useState<boolean>(false);
 
   useEffect(() => {
-    if (editorRef.current) {
+    if (!isOpen || activeTab !== "document" || !editorRef.current) return;
+    const memoKey = `${activeAssistantMsg?.id || "none"}::${activeQuestion}`;
+    if (lastMemoKeyRef.current !== memoKey || !editorRef.current.innerHTML.trim()) {
       editorRef.current.innerHTML = buildFormalMemoHtml(activeQuestion, activeAssistantMsg);
+      lastMemoKeyRef.current = memoKey;
     }
-  }, [activeQuestion, activeAssistantMsg]);
+  }, [activeQuestion, activeAssistantMsg, isOpen, activeTab]);
 
   if (!isOpen) return null;
 
@@ -332,33 +336,6 @@ export default function RightPanel({
                   <p style={{ marginTop: 10, fontSize: 11.5, color: "#64748b", lineHeight: 1.5 }}>
                     Kiểm tra khớp văn bản &amp; hiệu lực nguồn; không thay thế ý kiến tư vấn pháp lý.
                   </p>
-
-                  {/* Collapsible Technical Details */}
-                  <details
-                    style={{
-                      marginTop: 12,
-                      border: "1px solid #e2e8f0",
-                      borderRadius: 10,
-                      padding: "8px 12px",
-                      background: "#f8fafc",
-                      fontSize: 12
-                    }}
-                  >
-                    <summary style={{ cursor: "pointer", fontWeight: 600, color: "#334155" }}>
-                      Chi tiết kỹ thuật
-                    </summary>
-                    <div className="font-mono" style={{ marginTop: 8, color: "#475569", lineHeight: 1.6, fontSize: 11.5 }}>
-                      <div>• Validator: {activeAssistantMsg?.validation?.validator_version || "1.1.0-deterministic"}</div>
-                      <div>• Tương đồng đoạn trích: {currentCheck ? `${Math.round((currentCheck.excerpt_similarity || 0) * 100)}%` : "—"} (ngưỡng ≥ 90%)</div>
-                      <div>• Trạng thái kho nguồn: {activeAssistantMsg?.validation?.corpus_status || "DEMO_UNVERIFIED"}</div>
-                      {currentCheck?.fail_reason && (
-                        <div style={{ color: "#b91c1c" }}>• Lý do không đạt: {currentCheck.fail_reason}</div>
-                      )}
-                      {activeAssistantMsg?.validation?.corpus_sha256 && (
-                        <div style={{ wordBreak: "break-all" }}>• Corpus SHA-256: {activeAssistantMsg.validation.corpus_sha256}</div>
-                      )}
-                    </div>
-                  </details>
                 </>
               ) : (
                 <div

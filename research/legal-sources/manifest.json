@@ -874,6 +874,40 @@
       ]
     },
     {
+      "document_id": "18/2019/QĐ-TTg",
+      "metadata_url": "https://vanban.chinhphu.vn/?docid=196855&pageid=27160",
+      "retrieved_at_utc": "2026-11-17T01:18:26+00:00",
+      "identity_check": "matched_metadata",
+      "notes": "Bản in PDF rasterized (Microsoft Print To PDF) từ bản gốc VGP 18.signed_01.pdf do người dùng cung cấp (xnk.pdf), đủ 18 trang kể cả Phụ lục I và II.",
+      "attachments": [
+        {
+          "url": "https://datafiles.chinhphu.vn/cpp/files/vbpq/2019/04/18.signed_01.pdf",
+          "original_name": "18.signed_01.pdf",
+          "file": "182019qdttg/01.pdf",
+          "bytes": 2369730,
+          "sha256": "348467b99219f83a161d82299b719ff638ff587822e547525595cc27f1a9ef41",
+          "signature_verified": false
+        }
+      ]
+    },
+    {
+      "document_id": "28/2022/QĐ-TTg",
+      "metadata_url": "https://vanban.chinhphu.vn/",
+      "retrieved_at_utc": "2026-11-17T01:18:59+00:00",
+      "identity_check": "matched_metadata",
+      "notes": "Bản in PDF rasterized (Microsoft Print To PDF) từ bản gốc VGP 28-ttg.signed.pdf do người dùng cung cấp (2.pdf), đủ 17 trang kể cả Phụ lục I và III.",
+      "attachments": [
+        {
+          "url": "https://datafiles.chinhphu.vn/cpp/files/vbpq/2022/12/28-ttg.signed.pdf",
+          "original_name": "28-ttg.signed.pdf",
+          "file": "282022qdttg/01.pdf",
+          "bytes": 1408322,
+          "sha256": "f58cdea95083e6ab42fe778958f4afb909a655ca049d6333f3895aff3297406e",
+          "signature_verified": false
+        }
+      ]
+    },
+    {
       "document_id": "53/2026/VBHN-TT-BTC",
       "metadata_url": null,
       "retrieved_at_utc": "2026-11-14T01:03:36.195979+00:00",

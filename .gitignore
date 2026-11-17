@@ -17,8 +17,15 @@
 # Python AI Service
 __pycache__/
 *.py[cod]
+.pytest_cache/
 .venv/
 venv/
+research/extracted/**/*-review.html
+
+# Temp / Logs
+*.log
+*.patch
+*.tmp
 
 # OS / IDE
 .DS_Store

@@ -2,7 +2,7 @@
 
 Danh mục thu thập từ cổng Chính phủ và Bộ Công Thương theo đặc tả AskPay; ngày thu thập từng mục và SHA-256 của từng tệp được lưu trong `legal-sources/manifest.json`. Dữ liệu này là kho nguồn chờ biên tập, chưa phải corpus đã duyệt. Trang thông tin, tệp tải và số hiệu khớp không chứng minh chữ ký điện tử, hiệu lực hiện tại hay nội dung từng khoản. Không giải nén RAR tự động.
 
-Các tệp gốc được tải từ liên kết đính kèm trên trang metadata chính thức; một văn bản có thể có nhiều phần hoặc phụ lục. Các lỗi tải vẫn được ghi trong manifest. Đã tải tệp đính kèm của 43 mục; chưa tìm được bản chính thức của `53/2026/VBHN-TT-BTC`. Không suy ra phụ lục đã đầy đủ chỉ từ số tệp tải được.
+Các tệp gốc được tải từ liên kết đính kèm trên trang metadata chính thức; một văn bản có thể có nhiều phần hoặc phụ lục. Các lỗi tải vẫn được ghi trong manifest. Đã tải tệp đính kèm của 45 mục (gồm 43 bộ gốc và 2 Quyết định nhập khẩu máy móc đã qua sử dụng `18/2019/QĐ-TTg`, `28/2022/QĐ-TTg`); chưa tìm được bản chính thức của `53/2026/VBHN-TT-BTC`. Không suy ra phụ lục đã đầy đủ chỉ từ số tệp tải được.
 
 Đặc tả ghi 10 nghị định nhưng liệt kê 11; 25 mã được nêu trực tiếp cộng 4 mã FTA và 2 văn bản cũ thành 31 mã, không phải 30. Bốn mục sửa đổi bổ sung được giữ để rà soát, không tính thay cho yêu cầu gốc.
 
@@ -51,6 +51,8 @@ Các tệp gốc được tải từ liên kết đính kèm trên trang metadat
 | 155/2016/TT-BTC | [Trang nguồn](https://vanban.chinhphu.vn/?docid=187090&pageid=27160) | 2/2 |
 | 108/2025/QH15 | [Trang nguồn](https://vanban.chinhphu.vn/?docid=216541&pageid=27160) | 1/1 |
 | 142/2026/TT-BTC | [Trang nguồn](https://vanban.chinhphu.vn/?docid=219685&pageid=27160) | 2/2 |
+| 18/2019/QĐ-TTg | [Trang nguồn](https://vanban.chinhphu.vn/?docid=196855&pageid=27160) | 1/1 (bản in ảnh từ VGP, đủ 18 trang + Phụ lục I, II) |
+| 28/2022/QĐ-TTg | [Trang nguồn](https://vanban.chinhphu.vn/) | 1/1 (bản in ảnh từ VGP, đủ 17 trang + Phụ lục I, III) |
 | 53/2026/VBHN-TT-BTC | Chưa tìm thấy nguồn chính thức | 0/0 |
 
 ## Quan hệ cần rà soát

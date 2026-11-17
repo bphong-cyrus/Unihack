@@ -235,18 +235,99 @@ test("x402-protocol issues 6-decimal USDC challenges, verifies proofs, and enfor
   assert.equal(emptyAuthCheck.ok, false);
   assert.equal(emptyAuthCheck.reason, "INVALID_OR_EMPTY_PAYMENT_PROOF");
 
-  // Idempotency conflict when questionId is reused with different questionHash or tier
+  // Idempotency conflict when questionId is reused with different questionHash, tier, or asOf
+  setIdempotentResult(qId, { question_id: qId, cached: true }, { questionHash: qHash, tier: "quick", asOf: "2026-11-17" });
   assert.equal(
-    checkIdempotentReplay({ questionId: qId, questionHash: "0x" + "1".repeat(64), tier: "quick" }).conflict,
+    checkIdempotentReplay({ questionId: qId, questionHash: "0x" + "1".repeat(64), tier: "quick", asOf: "2026-11-17" }).conflict,
     true
   );
   assert.equal(
-    checkIdempotentReplay({ questionId: qId, questionHash: qHash, tier: "deep" }).conflict,
+    checkIdempotentReplay({ questionId: qId, questionHash: qHash, tier: "deep", asOf: "2026-11-17" }).conflict,
     true
   );
+  const asOfConflict = checkIdempotentReplay({
+    questionId: qId,
+    questionHash: qHash,
+    tier: "quick",
+    asOf: "2020-01-01"
+  });
+  assert.equal(asOfConflict.conflict, true);
+  assert.equal(asOfConflict.reason, "AS_OF_MISMATCH");
   assert.equal(
-    checkIdempotentReplay({ questionId: qId, questionHash: qHash, tier: "quick" }).hit,
+    checkIdempotentReplay({ questionId: qId, questionHash: qHash, tier: "quick", asOf: "2026-11-17" }).hit,
     true
+  );
+
+  // Reject wrong scheme, wrong asset token, and zero dummy txHash
+  const wrongSchemeHeader = Buffer.from(
+    JSON.stringify({
+      network: "avalanche-fuji",
+      scheme: "fake-scheme",
+      payload: {
+        questionId: qId,
+        questionHash: qHash,
+        amount: "50000",
+        asset: "0x5425890298aed601595a70AB815c96711a31Bc65",
+        txHash: "0x" + "f".repeat(64)
+      }
+    })
+  ).toString("base64");
+  assert.equal(
+    verifyX402PaymentHeader({
+      headerValue: wrongSchemeHeader,
+      expectedQuestionId: qId,
+      expectedQuestionHash: qHash,
+      expectedTier: "quick"
+    }).reason,
+    "UNSUPPORTED_X402_SCHEME"
+  );
+
+  const wrongAssetHeader = Buffer.from(
+    JSON.stringify({
+      network: "avalanche-fuji",
+      scheme: "exact-escrow",
+      payload: {
+        questionId: qId,
+        questionHash: qHash,
+        amount: "50000",
+        asset: "0x000000000000000000000000000000000000dEaD",
+        txHash: "0x" + "f".repeat(64)
+      }
+    })
+  ).toString("base64");
+  assert.equal(
+    verifyX402PaymentHeader({
+      headerValue: wrongAssetHeader,
+      expectedQuestionId: qId,
+      expectedQuestionHash: qHash,
+      expectedTier: "quick",
+      requireExplicitAsset: true
+    }).reason,
+    "UNSUPPORTED_X402_ASSET"
+  );
+
+  const zeroHashHeader = Buffer.from(
+    JSON.stringify({
+      network: "avalanche-fuji",
+      scheme: "exact-escrow",
+      payload: {
+        questionId: qId,
+        questionHash: qHash,
+        amount: "50000",
+        asset: "0x5425890298aed601595a70AB815c96711a31Bc65",
+        txHash: "0x" + "0".repeat(64)
+      }
+    })
+  ).toString("base64");
+  assert.equal(
+    verifyX402PaymentHeader({
+      headerValue: zeroHashHeader,
+      expectedQuestionId: qId,
+      expectedQuestionHash: qHash,
+      expectedTier: "quick",
+      requireExplicitAsset: true
+    }).reason,
+    "ZERO_TX_HASH_REJECTED"
   );
 
   clearIdempotencyCacheForTesting();

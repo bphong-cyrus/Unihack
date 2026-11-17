@@ -92,7 +92,9 @@ export function verifyX402PaymentHeader({
   paymentProof,
   expectedQuestionId,
   expectedQuestionHash,
-  expectedTier
+  expectedTier,
+  expectedAsset,
+  requireExplicitAsset = false
 }) {
   const proof = parseX402PaymentInput(headerValue, paymentProof);
   if (!proof) {
@@ -101,12 +103,25 @@ export function verifyX402PaymentHeader({
 
   const safeTier = expectedTier === "deep" ? "deep" : "quick";
   const expectedAmount = X402_PRICES_USDC_UNITS[safeTier];
+  const targetAsset = (expectedAsset || FUJI_USDC_DEFAULT).toLowerCase();
+
+  if (proof.scheme !== "exact-escrow") {
+    return { ok: false, reason: "UNSUPPORTED_X402_SCHEME" };
+  }
 
   if (proof.network && proof.network !== "avalanche-fuji") {
     return { ok: false, reason: "UNSUPPORTED_X402_NETWORK" };
   }
 
   const payload = proof.payload || proof;
+  const rawAsset = payload.asset || payload.token || proof.asset || proof.token || "";
+  if (requireExplicitAsset && !rawAsset) {
+    return { ok: false, reason: "MISSING_X402_ASSET" };
+  }
+  if (rawAsset && String(rawAsset).toLowerCase() !== targetAsset) {
+    return { ok: false, reason: "UNSUPPORTED_X402_ASSET" };
+  }
+
   if (
     !payload.questionId ||
     !expectedQuestionId ||
@@ -127,8 +142,14 @@ export function verifyX402PaymentHeader({
     return { ok: false, reason: `X402_AMOUNT_MISMATCH (expected ${expectedAmount} USDC base units)` };
   }
 
-  const hasValidTxHash = TX_HASH_REGEX.test(String(payload.txHash || ""));
+  const txHashStr = String(payload.txHash || "");
+  const isZeroTxHash = /^0x0{64}$/.test(txHashStr);
+  const hasValidTxHash = TX_HASH_REGEX.test(txHashStr) && !isZeroTxHash;
   const hasValidAuth = isValidSignedAuthorization(payload.authorization, expectedAmount);
+
+  if (isZeroTxHash && !hasValidAuth) {
+    return { ok: false, reason: "ZERO_TX_HASH_REJECTED" };
+  }
 
   if (!hasValidTxHash && !hasValidAuth) {
     return { ok: false, reason: "INVALID_OR_EMPTY_PAYMENT_PROOF" };
@@ -136,16 +157,52 @@ export function verifyX402PaymentHeader({
 
   return {
     ok: true,
-    scheme: proof.scheme || "exact-escrow",
+    scheme: proof.scheme,
     network: proof.network || "avalanche-fuji",
     amount: expectedAmount,
-    asset: payload.asset || FUJI_USDC_DEFAULT,
+    asset: rawAsset || targetAsset,
     payer: payload.payer || payload.from || payload.authorization?.from || "",
-    txHash: hasValidTxHash ? payload.txHash : ""
+    txHash: hasValidTxHash ? txHashStr : ""
   };
 }
 
-export function checkIdempotentReplay({ questionId, questionHash, tier }) {
+export async function verifyOnchainX402Receipt({
+  publicClient,
+  txHash,
+  escrowAddress,
+  usdcAddress
+}) {
+  if (!publicClient || !TX_HASH_REGEX.test(String(txHash || ""))) {
+    return { verified: false, reason: "INVALID_ONCHAIN_TX_HASH" };
+  }
+  try {
+    const receipt = await publicClient.getTransactionReceipt({ hash: txHash });
+    if (!receipt || receipt.status !== "success") {
+      return { verified: false, reason: "ONCHAIN_TX_FAILED_OR_NOT_FOUND" };
+    }
+    const allowedTargets = new Set(
+      [escrowAddress, usdcAddress]
+        .filter((a) => typeof a === "string" && a.startsWith("0x"))
+        .map((a) => a.toLowerCase())
+    );
+    const toAddr = String(receipt.to || "").toLowerCase();
+    const touchedAllowedLog = Array.isArray(receipt.logs)
+      ? receipt.logs.some((log) => allowedTargets.has(String(log?.address || "").toLowerCase()))
+      : false;
+    if (allowedTargets.size > 0 && !allowedTargets.has(toAddr) && !touchedAllowedLog) {
+      return { verified: false, reason: "ONCHAIN_TX_CONTRACT_MISMATCH" };
+    }
+    return {
+      verified: true,
+      blockNumber: receipt.blockNumber ? String(receipt.blockNumber) : undefined,
+      to: receipt.to
+    };
+  } catch {
+    return { verified: false, reason: "ONCHAIN_TX_RECEIPT_NOT_FOUND" };
+  }
+}
+
+export function checkIdempotentReplay({ questionId, questionHash, tier, asOf = "" }) {
   if (!questionId) return { hit: false, conflict: false, response: null };
   const entry = idempotencyCache.get(String(questionId).toLowerCase());
   if (!entry) return { hit: false, conflict: false, response: null };
@@ -153,11 +210,17 @@ export function checkIdempotentReplay({ questionId, questionHash, tier }) {
   const sameQuestion =
     String(entry.questionHash || "").toLowerCase() === String(questionHash || "").toLowerCase();
   const sameTier = entry.tier === tier;
+  const sameAsOf = String(entry.asOf || "") === String(asOf || "");
 
-  if (!sameQuestion || !sameTier) {
+  if (!sameQuestion || !sameTier || !sameAsOf) {
     return {
       hit: true,
       conflict: true,
+      reason: !sameAsOf
+        ? "AS_OF_MISMATCH"
+        : !sameTier
+        ? "TIER_MISMATCH"
+        : "QUESTION_HASH_MISMATCH",
       response: null
     };
   }
@@ -183,6 +246,7 @@ export function setIdempotentResult(questionId, resultPayload, meta = {}) {
   idempotencyCache.set(String(questionId).toLowerCase(), {
     questionHash: meta.questionHash || "",
     tier: meta.tier || resultPayload?.tier || "quick",
+    asOf: String(meta.asOf || ""),
     responsePayload: resultPayload
   });
 }

@@ -17,7 +17,9 @@ const DOC_ALIAS_MAP = [
   [/nghị\s+định\s+08\s*\/\s*2015/i, "08/2015/NĐ-CP"],
   [/nghị\s+định\s+43\s*\/\s*2017/i, "43/2017/NĐ-CP"],
   [/thông\s+tư\s+38\s*\/\s*2015/i, "38/2015/TT-BTC"],
-  [/thông\s+tư\s+39\s*\/\s*2018/i, "39/2018/TT-BTC"]
+  [/thông\s+tư\s+39\s*\/\s*2018/i, "39/2018/TT-BTC"],
+  [/quyết\s+định\s+18\s*\/\s*2019/i, "18/2019/QĐ-TTg"],
+  [/quyết\s+định\s+28\s*\/\s*2022/i, "28/2022/QĐ-TTg"]
 ];
 
 export function parseFactcheckInput(rawText, explicitPayload = null) {
@@ -52,9 +54,10 @@ export function parseFactcheckInput(rawText, explicitPayload = null) {
   }
 
   const artMatch = text.match(/điều\s+(\d+[a-z]?)/i);
-  const clauseMatch = text.match(/khoản\s+(\d+)/i);
-  const article = artMatch ? artMatch[1] : "";
-  const clause = clauseMatch ? clauseMatch[1] : article ? "1" : "";
+  const annexMatch = !artMatch ? text.match(/phụ\s+lục\s+([IVX\d]+)/i) : null;
+  const clauseMatch = text.match(/khoản\s+(\d+(?:\.[a-z0-9]+)?)|mục\s+(\d+(?:\.[a-z0-9]+)?)/i);
+  const article = artMatch ? artMatch[1] : annexMatch ? `Phụ lục ${annexMatch[1].toUpperCase()}` : "";
+  const clause = clauseMatch ? clauseMatch[1] || clauseMatch[2] : article ? "1" : "";
 
   let excerpt = "";
   const quotedMatch = text.match(/["“]([^"”]{10,})["”]/);
