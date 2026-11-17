@@ -605,6 +605,37 @@ export default function AskPayWorkspacePage() {
       return null;
     }
 
+    const normalized = rawLower
+      .replace(/[?!.,;:'"()[\]{}…]/g, " ")
+      .replace(/\s+/g, " ")
+      .trim();
+
+    if (!normalized) return null;
+
+    if (
+      [
+        "tất cả những gì bạn biết",
+        "những gì bạn biết",
+        "bạn biết những gì",
+        "bạn biết gì",
+        "cho tôi biết bạn làm được gì",
+        "hỗ trợ những lĩnh vực nào",
+        "tra cứu được gì"
+      ].some((phrase) => normalized.includes(phrase))
+    ) {
+      return (
+        "Mình là AskPay — trợ lý tra cứu và đối chiếu pháp luật Hải quan & Xuất Nhập Khẩu dựa trên kho 45 văn bản chính thức.\n\n" +
+        "Các nhóm nghiệp vụ bạn có thể hỏi ngay:\n" +
+        "1. Chuẩn bị nhập hàng / xuất hàng (hồ sơ hải quan, tờ khai VNACCS, hóa đơn, vận đơn, nhãn phụ tiếng Việt, giấy phép XNK).\n" +
+        "2. Thời hạn nộp & khai bổ sung tờ khai (mốc 30 ngày, phân luồng Xanh/Vàng/Đỏ, tính ngày còn lại giữa 2 mốc ngày).\n" +
+        "3. Xuất xứ hàng hóa C/O (hồ sơ thương nhân lần đầu, mẫu D/ATIGA, mẫu E/ACFTA, EUR.1/EVFTA, CPTPP).\n" +
+        "4. Thuế XNK, trị giá hải quan, hoàn thuế tái xuất, gia công/SXXK, và xử phạt sai mã HS (128/2020/NĐ-CP).\n" +
+        "5. Nhập khẩu máy móc, thiết bị đã qua sử dụng (18/2019/QĐ-TTg & 28/2022/QĐ-TTg, chứng thư giám định, tuổi thiết bị).\n" +
+        "6. Kiểm chứng nguồn: đối chiếu chính xác văn bản, Điều/Khoản và nguyên văn đoạn trích.\n\n" +
+        "Tin nhắn giới thiệu này hoàn toàn miễn phí (không gọi ví). Bạn đang cần tra cứu lô hàng nhập khẩu hay xuất khẩu cụ thể nào?"
+      );
+    }
+
     const xnkKeywords = [
       "thuế",
       "hải quan",
@@ -644,12 +675,7 @@ export default function AskPayWorkspacePage() {
       return null;
     }
 
-    const normalized = rawLower
-      .replace(/[?!.,;:'"()[\]{}…]/g, " ")
-      .replace(/\s+/g, " ")
-      .trim();
-
-    if (!normalized || normalized.split(" ").length > 8) {
+    if (normalized.split(" ").length > 8) {
       return null;
     }
 
@@ -686,7 +712,7 @@ export default function AskPayWorkspacePage() {
     if (greetings.has(normalized) || isGreetingRegex) {
       return (
         "Xin chào! Mình là trợ lý pháp lý AskPay chuyên về Hải quan và Xuất Nhập Khẩu.\n\n" +
-        "Tin nhắn chào hỏi này hoàn toàn miễn phí (không gọi ví hay trừ cọc). Bạn có thể nhập ngay câu hỏi nghiệp vụ (ví dụ: thời hạn nộp tờ khai nhập khẩu, xử phạt khai sai mã HS, thủ tục C/O mẫu E/D/EUR.1, hoàn thuế hàng tái xuất...) để AskPay tra cứu và đối chiếu trực tiếp từ 43 văn bản pháp luật chính thức."
+        "Tin nhắn chào hỏi này hoàn toàn miễn phí (không gọi ví hay trừ cọc). Bạn có thể nhập ngay câu hỏi nghiệp vụ (ví dụ: thời hạn nộp tờ khai nhập khẩu, để xuất hàng cần lưu ý gì, xử phạt khai sai mã HS, thủ tục C/O mẫu E/D/EUR.1, hoàn thuế hàng tái xuất...) để AskPay tra cứu và đối chiếu trực tiếp từ 45 văn bản pháp luật."
       );
     }
 
@@ -713,9 +739,9 @@ export default function AskPayWorkspacePage() {
     if (helpSet.has(normalized)) {
       return (
         "Mình là AskPay — trợ lý tra cứu và đối chiếu pháp luật Hải quan & Xuất Nhập Khẩu.\n\n" +
-        "• Hỏi Nhanh (0.05 USDC): Tra cứu ngắn gọn kết luận và Điều/Khoản áp dụng.\n" +
-        "• Tình Huống (0.20 USDC): Phân tích chuyên sâu đa văn bản, kèm hướng dẫn hồ sơ & lưu ý thực tế.\n" +
-        "• Cam kết hoàn phí: Nếu không tìm thấy căn cứ hợp lệ hoặc văn bản đã hết hiệu lực, hệ thống tự động hoàn trả 100% chi phí.\n\n" +
+        "• Tra cứu nhanh (0.05 USDC): Một vấn đề cụ thể, câu trả lời ngắn gọn kèm căn cứ.\n" +
+        "• Phân tích tình huống (0.20 USDC): Xem các điều kiện áp dụng, ngoại lệ và thông tin còn thiếu.\n" +
+        "• Kiểm chứng nguồn: Đối chiếu số hiệu văn bản, Điều/Khoản và nguyên văn đoạn trích.\n\n" +
         "Hãy nhập tình huống XNK cụ thể của bạn để bắt đầu nhé!"
       );
     }

@@ -1042,7 +1042,8 @@ function tryGeneralImportProcedureTS(
       "mã hs",
       "sai mã",
       "tạm hoãn xuất cảnh",
-      "cà phê"
+      "cà phê",
+      "thời hạn"
     ].some((t) => qLower.includes(t))
   ) {
     return null;
@@ -1055,13 +1056,16 @@ function tryGeneralImportProcedureTS(
       "hồ sơ nhập",
       "chuẩn bị giấy tờ",
       "dự định nhập",
-      "nhập hàng",
       "cần giấy tờ",
       "thủ tục nào"
     ].some((t) => qLower.includes(t)) ||
+    (["nhập hàng", "nhập khẩu"].some((t) => qLower.includes(t)) &&
+      ["lưu ý", "chú ý", "chuẩn bị", "giấy tờ", "thủ tục", "hồ sơ", "cần gì", "những gì"].some((t) =>
+        qLower.includes(t)
+      )) ||
     (["nhập", "nhập khẩu"].some((t) => qLower.includes(t)) &&
       ["để bán", "kinh doanh", "thương mại", "tiêu thụ"].some((t) => qLower.includes(t)) &&
-      ["giấy tờ", "thủ tục", "hồ sơ"].some((t) => qLower.includes(t)));
+      ["giấy tờ", "thủ tục", "hồ sơ", "lưu ý", "chuẩn bị"].some((t) => qLower.includes(t)));
 
   if (!wantsImportDocs) return null;
 
@@ -1099,6 +1103,76 @@ function tryGeneralImportProcedureTS(
       citations,
       "Bộ chứng từ thông quan thực tế và mức thuế nhập khẩu/VAT phụ thuộc vào mã HS 8 chữ số của mặt hàng; kho dữ liệu hiện tại chưa bao gồm Biểu thuế XNK chi tiết theo từng tên hàng cụ thể.",
       "Cần xác nhận thêm: (a) Tên hàng chi tiết, công dụng/chất liệu để tra mã HS 8 số chuẩn, (b) Có dùng C/O ưu đãi FTA (VJEPA, AJCEP, CPTPP, RCEP) từ nhà xuất khẩu hay không, (c) Mặt hàng có thuộc danh mục kiểm tra chuyên ngành (an toàn sản phẩm, đồ dùng học sinh/trẻ em, mỹ phẩm, thiết bị...) trước khi thông quan."
+    );
+  }
+  return { answer, citations };
+}
+
+function tryGeneralExportProcedureTS(
+  qLower: string,
+  tier: string
+): {
+  answer: string;
+  citations: Array<{
+    document: string;
+    document_title: string;
+    article: string;
+    clause: string;
+    excerpt: string;
+  }>;
+} | null {
+  if (/\b\d{1,4}\/\d{4}\//.test(qLower)) return null;
+  if (
+    [
+      "cà phê",
+      "thời hạn",
+      "bao lâu",
+      "hoàn thuế",
+      "tái xuất",
+      "khai bổ sung",
+      "phân luồng",
+      "mã hs",
+      "sai mã",
+      "tạm hoãn xuất cảnh"
+    ].some((t) => qLower.includes(t))
+  ) {
+    return null;
+  }
+
+  const wantsExportGuide =
+    ["xuất hàng", "xuất khẩu"].some((t) => qLower.includes(t)) &&
+    ["lưu ý", "chú ý", "chuẩn bị", "giấy tờ", "thủ tục", "hồ sơ", "cần gì", "cần những", "làm gì", "quy trình"].some(
+      (t) => qLower.includes(t)
+    );
+  if (!wantsExportGuide) return null;
+
+  const cit24 = makeCitationTS("54/2014/QH13", "24", "1");
+  const cit18 = makeCitationTS("38/2015/TT-BTC", "18", "1");
+  const citCo = makeCitationTS("31/2018/NĐ-CP", "14", "1");
+  const citations: Array<{
+    document: string;
+    document_title: string;
+    article: string;
+    clause: string;
+    excerpt: string;
+  }> = [];
+  if (cit24) citations.push(cit24);
+  if (cit18) citations.push(cit18);
+  if (
+    (tier === "deep" || qLower.includes("c/o") || qLower.includes("xuất xứ") || qLower.includes("lưu ý")) &&
+    citCo
+  ) {
+    citations.push(citCo);
+  }
+
+  let answer =
+    "Khi xuất khẩu hàng hóa ra nước ngoài, theo Khoản 1 Điều 24 Luật Hải quan 2014 (54/2014/QH13) và Khoản 1 Điều 18 Thông tư 38/2015/TT-BTC, doanh nghiệp cần lưu ý 4 nhóm việc chính: (1) Kiểm tra chính sách mặt hàng & mã HS: xác định hàng có thuộc danh mục cấm xuất khẩu, xuất khẩu có điều kiện hoặc cần giấy phép/kiểm dịch hay không (Nghị định 69/2018/NĐ-CP); (2) Chuẩn bị bộ hồ sơ & khai tờ khai xuất khẩu điện tử qua VNACCS kèm Hợp đồng, Commercial Invoice, Packing List, Booking/Vận đơn (B/L hoặc AWB); (3) Theo dõi phân luồng tờ khai (Xanh/Vàng/Đỏ theo Khoản 1 Điều 19 Nghị định 08/2015/NĐ-CP) để xuất trình hồ sơ hoặc kiểm hóa thực tế nếu hệ thống yêu cầu; (4) Cấp Giấy chứng nhận xuất xứ C/O (Khoản 1 Điều 14 Nghị định 31/2018/NĐ-CP) nếu đối tác nhập khẩu yêu cầu để hưởng ưu đãi thuế quan FTA.";
+
+  if (tier === "deep" && citations.length > 0) {
+    answer += formatDeepAnalysisTS(
+      citations,
+      "Nghĩa vụ thuế xuất khẩu, giấy phép chuyên ngành và yêu cầu C/O (mẫu D, E, EUR.1, CPTPP...) phụ thuộc vào mã HS 8 số của mặt hàng và thị trường nhập khẩu; kho dữ liệu hiện tại chưa bao gồm Biểu thuế xuất khẩu chi tiết từng mặt hàng.",
+      "Cần xác nhận thêm: (a) Tên hàng hóa cụ thể & mã HS 8 chữ số dự kiến xuất khẩu, (b) Quốc gia nhập khẩu & yêu cầu C/O ưu đãi của người mua, (c) Hàng hóa có thuộc diện kiểm tra chuyên ngành (gỗ, nông sản, khoáng sản, hóa chất...) không."
     );
   }
   return { answer, citations };
@@ -1307,8 +1381,15 @@ function runBuiltinMockLegalQA(
   const usedMachinery = uncoveredMsg === null ? tryUsedMachineryAnswerTS(qLower, tier) : null;
   const generalImport =
     uncoveredMsg === null && usedMachinery === null ? tryGeneralImportProcedureTS(qLower, tier) : null;
-  const dateCalc =
+  const generalExport =
     uncoveredMsg === null && usedMachinery === null && generalImport === null
+      ? tryGeneralExportProcedureTS(qLower, tier)
+      : null;
+  const dateCalc =
+    uncoveredMsg === null &&
+    usedMachinery === null &&
+    generalImport === null &&
+    generalExport === null
       ? tryDateDeadlineCalculationTS(question)
       : null;
 
@@ -1351,6 +1432,9 @@ function runBuiltinMockLegalQA(
   } else if (generalImport !== null) {
     answer = generalImport.answer;
     citations = generalImport.citations;
+  } else if (generalExport !== null) {
+    answer = generalExport.answer;
+    citations = generalExport.citations;
   } else if (dateCalc !== null) {
     answer = dateCalc.answer;
     citations = dateCalc.citations;

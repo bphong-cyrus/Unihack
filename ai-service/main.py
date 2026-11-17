@@ -1022,11 +1022,15 @@ def _try_general_import_procedure_answer(q_lower: str, tier: str) -> Optional[tu
     has_explicit_doc_code = bool(re.search(r"\b\d{1,4}/\d{4}/", q_lower))
     if has_explicit_doc_code:
         return None
-    if any(t in q_lower for t in ("c/o", "chứng nhận xuất xứ", "hoàn thuế", "tái xuất", "khai bổ sung", "phân luồng", "mã hs", "sai mã", "tạm hoãn xuất cảnh", "cà phê")):
+    if any(t in q_lower for t in ("c/o", "chứng nhận xuất xứ", "hoàn thuế", "tái xuất", "khai bổ sung", "phân luồng", "mã hs", "sai mã", "tạm hoãn xuất cảnh", "cà phê", "thời hạn")):
         return None
     wants_import_docs = (
-        any(t in q_lower for t in ("giấy tờ và thủ tục", "thủ tục nhập", "hồ sơ nhập", "chuẩn bị giấy tờ", "dự định nhập", "nhập hàng", "cần giấy tờ", "thủ tục nào"))
-        or (any(t in q_lower for t in ("nhập", "nhập khẩu")) and any(t in q_lower for t in ("để bán", "kinh doanh", "thương mại", "tiêu thụ")) and any(t in q_lower for t in ("giấy tờ", "thủ tục", "hồ sơ")))
+        any(t in q_lower for t in ("giấy tờ và thủ tục", "thủ tục nhập", "hồ sơ nhập", "chuẩn bị giấy tờ", "dự định nhập", "cần giấy tờ", "thủ tục nào"))
+        or (
+            any(t in q_lower for t in ("nhập hàng", "nhập khẩu"))
+            and any(t in q_lower for t in ("lưu ý", "chú ý", "chuẩn bị", "giấy tờ", "thủ tục", "hồ sơ", "cần gì", "những gì"))
+        )
+        or (any(t in q_lower for t in ("nhập", "nhập khẩu")) and any(t in q_lower for t in ("để bán", "kinh doanh", "thương mại", "tiêu thụ")) and any(t in q_lower for t in ("giấy tờ", "thủ tục", "hồ sơ", "lưu ý", "chuẩn bị")))
     )
     if not wants_import_docs:
         return None
@@ -1061,6 +1065,43 @@ def _try_general_import_procedure_answer(q_lower: str, tier: str) -> Optional[tu
             citations,
             "Bộ chứng từ thông quan thực tế và mức thuế nhập khẩu/VAT phụ thuộc vào mã HS 8 chữ số của mặt hàng; kho dữ liệu hiện tại chưa bao gồm Biểu thuế XNK chi tiết theo từng tên hàng cụ thể.",
             "Cần xác nhận thêm: (a) Tên hàng chi tiết, công dụng/chất liệu để tra mã HS 8 số chuẩn, (b) Có dùng C/O ưu đãi FTA (VJEPA, AJCEP, CPTPP, RCEP) từ nhà xuất khẩu hay không, (c) Mặt hàng có thuộc danh mục kiểm tra chuyên ngành (an toàn sản phẩm, đồ dùng học sinh/trẻ em, mỹ phẩm, thiết bị...) trước khi thông quan.",
+        )
+    return answer, citations
+
+
+def _try_general_export_procedure_answer(q_lower: str, tier: str) -> Optional[tuple[str, list[dict]]]:
+    has_explicit_doc_code = bool(re.search(r"\b\d{1,4}/\d{4}/", q_lower))
+    if has_explicit_doc_code:
+        return None
+    if any(t in q_lower for t in ("cà phê", "thời hạn", "bao lâu", "hoàn thuế", "tái xuất", "khai bổ sung", "phân luồng", "mã hs", "sai mã", "tạm hoãn xuất cảnh")):
+        return None
+    wants_export_guide = (
+        any(t in q_lower for t in ("xuất hàng", "xuất khẩu"))
+        and any(t in q_lower for t in ("lưu ý", "chú ý", "chuẩn bị", "giấy tờ", "thủ tục", "hồ sơ", "cần gì", "cần những", "làm gì", "quy trình"))
+    )
+    if not wants_export_guide:
+        return None
+
+    cit_24 = _make_citation("54/2014/QH13", "24", "1")
+    cit_18 = _make_citation("38/2015/TT-BTC", "18", "1")
+    cit_co = _make_citation("31/2018/NĐ-CP", "14", "1")
+    citations = [c for c in (cit_24, cit_18) if c is not None]
+    if (tier == "deep" or "c/o" in q_lower or "xuất xứ" in q_lower or "lưu ý" in q_lower) and cit_co is not None:
+        citations.append(cit_co)
+
+    answer = (
+        "Khi xuất khẩu hàng hóa ra nước ngoài, theo Khoản 1 Điều 24 Luật Hải quan 2014 (54/2014/QH13) và Khoản 1 Điều 18 Thông tư 38/2015/TT-BTC, "
+        "doanh nghiệp cần lưu ý 4 nhóm việc chính: "
+        "(1) Kiểm tra chính sách mặt hàng & mã HS: xác định hàng có thuộc danh mục cấm xuất khẩu, xuất khẩu có điều kiện hoặc cần giấy phép/kiểm dịch hay không (Nghị định 69/2018/NĐ-CP); "
+        "(2) Chuẩn bị bộ hồ sơ & khai tờ khai xuất khẩu điện tử qua VNACCS kèm Hợp đồng, Commercial Invoice, Packing List, Booking/Vận đơn (B/L hoặc AWB); "
+        "(3) Theo dõi phân luồng tờ khai (Xanh/Vàng/Đỏ theo Khoản 1 Điều 19 Nghị định 08/2015/NĐ-CP) để xuất trình hồ sơ hoặc kiểm hóa thực tế nếu hệ thống yêu cầu; "
+        "(4) Cấp Giấy chứng nhận xuất xứ C/O (Khoản 1 Điều 14 Nghị định 31/2018/NĐ-CP) nếu đối tác nhập khẩu yêu cầu để hưởng ưu đãi thuế quan FTA."
+    )
+    if tier == "deep" and citations:
+        answer += _format_deep_analysis(
+            citations,
+            "Nghĩa vụ thuế xuất khẩu, giấy phép chuyên ngành và yêu cầu C/O (mẫu D, E, EUR.1, CPTPP...) phụ thuộc vào mã HS 8 số của mặt hàng và thị trường nhập khẩu; kho dữ liệu hiện tại chưa bao gồm Biểu thuế xuất khẩu chi tiết từng mặt hàng.",
+            "Cần xác nhận thêm: (a) Tên hàng hóa cụ thể & mã HS 8 chữ số dự kiến xuất khẩu, (b) Quốc gia nhập khẩu & yêu cầu C/O ưu đãi của người mua, (c) Hàng hóa có thuộc diện kiểm tra chuyên ngành (gỗ, nông sản, khoáng sản, hóa chất...) không.",
         )
     return answer, citations
 
@@ -1415,7 +1456,8 @@ def ask_legal_question(req: AskRequest):
         uncovered_msg = _check_uncovered_xnk_domain(q_lower)
         used_machinery = _try_used_machinery_answer(q_lower, req.tier) if uncovered_msg is None else None
         general_import = _try_general_import_procedure_answer(q_lower, req.tier) if (uncovered_msg is None and used_machinery is None) else None
-        date_calc = _try_date_deadline_calculation(req.question) if (uncovered_msg is None and used_machinery is None and general_import is None) else None
+        general_export = _try_general_export_procedure_answer(q_lower, req.tier) if (uncovered_msg is None and used_machinery is None and general_import is None) else None
+        date_calc = _try_date_deadline_calculation(req.question) if (uncovered_msg is None and used_machinery is None and general_import is None and general_export is None) else None
         if q_raw_norm in _NEGATIVE_GENERIC_GUARD_EXACT:
             answer = (
                 "Mình chưa tìm thấy nguồn phù hợp trong phạm vi hiện có để đối chiếu câu hỏi này."
@@ -1428,6 +1470,8 @@ def ask_legal_question(req: AskRequest):
             answer, citations = used_machinery
         elif general_import is not None:
             answer, citations = general_import
+        elif general_export is not None:
+            answer, citations = general_export
         elif date_calc is not None:
             answer, citations = date_calc
         elif (any(term in q_lower for term in ("c/o", "chứng nhận xuất xứ"))
