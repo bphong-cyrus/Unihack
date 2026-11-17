@@ -1665,11 +1665,13 @@ function runBuiltinMockLegalQA(
       raw_text: rec?.raw_text || c.excerpt || "",
       status: (failReason ? "FAIL" : "PASS") as "PASS" | "FAIL",
       fail_reason: failReason,
-      _score: itemScore
+      _score: itemScore,
+      _verified: Boolean(rec?.verified)
     };
   });
 
   const allPassed = checks.length > 0 && checks.every((c) => c.status === "PASS");
+  const allVerifiedCurated = allPassed && checks.every((c) => c._verified);
   const overallScore =
     checks.length > 0
       ? Number((checks.reduce((s, c) => s + c._score, 0) / checks.length).toFixed(2))
@@ -1678,12 +1680,12 @@ function runBuiltinMockLegalQA(
   const validationPayload = {
     passed: allPassed,
     verdict: allPassed ? "VERIFIED_RELEASE" : "UNVERIFIED_REFUND",
-    settlement_eligible: false,
-    corpus_status: "DEMO_UNVERIFIED",
+    settlement_eligible: allVerifiedCurated,
+    corpus_status: allVerifiedCurated ? "VERIFIED_CURATED" : "DEMO_UNVERIFIED",
     validator_version: VALIDATOR_VERSION,
     corpus_sha256: DEMO_CORPUS_SHA256_TS,
     overall_score: overallScore,
-    citation_checks: checks.map(({ _score, ...rest }) => rest),
+    citation_checks: checks.map(({ _score, _verified, ...rest }) => rest),
     ...(checks.length === 0 ? { fail_reason: "NO_CITATION_PROVIDED" } : {})
   };
 
@@ -1954,6 +1956,23 @@ export async function POST(req: Request) {
 
     if (proxyResult.status === 200) {
       ragData = proxyResult.body;
+      const proxyChecks: any[] = ragData?.validation?.citation_checks || [];
+      const canSettleCuratedProxy =
+        ragData?.validation?.passed === true &&
+        !ragData.validation.settlement_eligible &&
+        proxyChecks.length > 0 &&
+        proxyChecks.every((c: any) => {
+          if (c?.status !== "PASS") return false;
+          const docUpper = String(c?.document || "").toUpperCase().replace(/\s+/g, "");
+          const rec = BUILTIN_CORPUS_MAP.get(`${docUpper}#${String(c?.article || "")}#${String(c?.clause || "")}`);
+          return Boolean(rec?.verified && rec?.status === "ACTIVE");
+        });
+      if (canSettleCuratedProxy) {
+        ragData.validation.settlement_eligible = true;
+        if (ragData.validation.corpus_status === "DEMO_UNVERIFIED") {
+          ragData.validation.corpus_status = "VERIFIED_CURATED";
+        }
+      }
     } else {
       if (process.env.ASKPAY_ENABLE_BUILTIN_DEMO === "false") {
         return NextResponse.json(proxyResult.body, { status: 503 });

@@ -198,6 +198,7 @@ export function runDeterministicFactcheck({
   }
 
   const passed = failReason === null;
+  const settlementEligible = passed && Boolean(matchedRec?.verified);
   const itemScore =
     (docExists ? 25 : 0) +
     (artClauseExists ? 25 : 0) +
@@ -243,8 +244,8 @@ export function runDeterministicFactcheck({
     validation: {
       passed,
       verdict: passed ? "VERIFIED_RELEASE" : "UNVERIFIED_REFUND",
-      settlement_eligible: false,
-      corpus_status: "DEMO_UNVERIFIED",
+      settlement_eligible: settlementEligible,
+      corpus_status: settlementEligible ? "VERIFIED_CURATED" : "DEMO_UNVERIFIED",
       validator_version: VALIDATOR_VERSION,
       corpus_sha256: corpusSha256,
       overall_score: Number(itemScore.toFixed(2)),

@@ -206,7 +206,9 @@ export default function RightPanel({
                   <div style={{ fontSize: 11.5, color: "#64748b", lineHeight: 1.45 }}>
                     {activeAssistantMsg.validation?.corpus_status === "REVIEW_ASSERTED"
                       ? "Nguồn từ snapshot đã gắn ngày rà soát. Việc áp dụng còn phụ thuộc tình huống cụ thể."
-                      : "Nguồn trong bộ dữ liệu thử nghiệm · Cần kiểm tra hiệu lực trước khi áp dụng."}
+                      : activeAssistantMsg.validation?.corpus_status === "VERIFIED_CURATED"
+                      ? "Nguồn đối chiếu nguyên văn từ kho văn bản chính thức · Đủ điều kiện giải ngân."
+                      : "Nguồn tách tự động / thử nghiệm (chưa rà soát từng điều) · Chưa mở giải ngân."}
                   </div>
                 )}
               </div>

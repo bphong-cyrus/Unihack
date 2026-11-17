@@ -2377,7 +2377,9 @@ export default function AskPayWorkspacePage() {
                           <div style={{ fontSize: 11.5, color: "#64748b", fontWeight: 500 }}>
                             {msg.validation.corpus_status === "REVIEW_ASSERTED"
                               ? "Nguồn từ snapshot đã gắn ngày rà soát · Việc áp dụng còn phụ thuộc tình huống thực tế."
-                              : "Nguồn trong bộ dữ liệu thử nghiệm · Cần kiểm tra hiệu lực trước khi áp dụng."}
+                              : msg.validation.corpus_status === "VERIFIED_CURATED"
+                              ? "Nguồn đối chiếu nguyên văn từ kho văn bản chính thức · Đủ điều kiện giải ngân."
+                              : "Nguồn tách tự động / thử nghiệm (chưa rà soát từng điều) · Chưa mở giải ngân."}
                           </div>
                         </div>
                       )}

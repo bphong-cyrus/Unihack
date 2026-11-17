@@ -411,3 +411,59 @@ test("x402-protocol trims accidental whitespace in escrow and token env addresse
   });
   assert.equal(verified.ok, true);
 });
+
+test("factcheck enables settlement only when verified curated record passes", () => {
+  const mixedCorpus = [
+    {
+      doc_id: "54/2014/QH13",
+      doc_title: "Luật Hải quan năm 2014",
+      article: "25",
+      clause: "1",
+      status: "ACTIVE",
+      verified: true,
+      raw_text:
+        "Đối với hàng hóa nhập khẩu, nộp trước ngày hàng hóa đến cửa khẩu hoặc trong thời hạn 30 ngày kể từ ngày hàng hóa đến cửa khẩu."
+    },
+    {
+      doc_id: "38/2015/TT-BTC",
+      doc_title: "Thông tư 38",
+      article: "99",
+      clause: "1",
+      status: "ACTIVE",
+      verified: false,
+      raw_text: "Đoạn tách tự động chưa rà soát nguyên văn với độ dài đủ mười từ để kiểm thử."
+    }
+  ];
+
+  const validCurated = runDeterministicFactcheck({
+    questionId: "0x" + "1".repeat(64),
+    rawInput:
+      "Kiểm chứng Điều 25 Khoản 1 Luật 54/2014/QH13: Đối với hàng hóa nhập khẩu, nộp trước ngày hàng hóa đến cửa khẩu hoặc trong thời hạn 30 ngày kể từ ngày hàng hóa đến cửa khẩu.",
+    corpusEntries: mixedCorpus,
+    corpusSha256: "abc"
+  });
+  assert.equal(validCurated.validation.passed, true);
+  assert.equal(validCurated.validation.settlement_eligible, true);
+  assert.equal(validCurated.validation.corpus_status, "VERIFIED_CURATED");
+
+  const mutatedCurated = runDeterministicFactcheck({
+    questionId: "0x" + "2".repeat(64),
+    rawInput:
+      "Kiểm chứng Điều 25 Khoản 1 Luật 54/2014/QH13: Đối với hàng hóa nhập khẩu, nộp trước ngày hàng hóa đến cửa khẩu hoặc trong thời hạn 60 ngày kể từ ngày hàng hóa đến cửa khẩu.",
+    corpusEntries: mixedCorpus,
+    corpusSha256: "abc"
+  });
+  assert.equal(mutatedCurated.validation.passed, false);
+  assert.equal(mutatedCurated.validation.settlement_eligible, false);
+
+  const unreviewedPass = runDeterministicFactcheck({
+    questionId: "0x" + "3".repeat(64),
+    rawInput:
+      "Kiểm chứng Điều 99 Khoản 1 Thông tư 38/2015/TT-BTC: Đoạn tách tự động chưa rà soát nguyên văn với độ dài đủ mười từ để kiểm thử.",
+    corpusEntries: mixedCorpus,
+    corpusSha256: "abc"
+  });
+  assert.equal(unreviewedPass.validation.passed, true);
+  assert.equal(unreviewedPass.validation.settlement_eligible, false);
+  assert.equal(unreviewedPass.validation.corpus_status, "DEMO_UNVERIFIED");
+});
