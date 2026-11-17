@@ -9,27 +9,32 @@ interface IconProps {
 export function AskPayLogo({ size = 36, className }: { size?: number; className?: string }) {
   return (
     <svg width={size} height={size} viewBox="0 0 40 40" fill="none" className={className} aria-hidden="true">
-      <defs>
-        <linearGradient id="askpay-bg" x1="2" y1="2" x2="38" y2="38" gradientUnits="userSpaceOnUse">
-          <stop offset="0%" stopColor="#0a1c2e" />
-          <stop offset="55%" stopColor="#1d4ed8" />
-          <stop offset="100%" stopColor="#0284c7" />
-        </linearGradient>
-        <linearGradient id="askpay-accent" x1="10" y1="10" x2="30" y2="30" gradientUnits="userSpaceOnUse">
-          <stop offset="0%" stopColor="#fde047" />
-          <stop offset="100%" stopColor="#38bdf8" />
-        </linearGradient>
-      </defs>
-      <rect x="2" y="2" width="36" height="36" rx="11" fill="url(#askpay-bg)" />
-      <rect x="2.75" y="2.75" width="34.5" height="34.5" rx="10.25" stroke="rgba(255,255,255,0.22)" strokeWidth="1.5" />
+      <circle cx="20" cy="20" r="19" fill="#0A2240" />
       <path
-        d="M20 9.5L11.5 29.5H15.6L17.4 25H22.6L24.4 29.5H28.5L20 9.5ZM18.6 21.6L20 17.8L21.4 21.6H18.6Z"
-        fill="#ffffff"
+        d="M15.8 24.8L26.2 14.4"
+        stroke="#00BF6F"
+        strokeWidth="3.8"
+        strokeLinecap="round"
       />
-      <circle cx="30" cy="11.5" r="3" fill="url(#askpay-accent)" />
+      <path
+        d="M19.8 14H26.6V20.8"
+        stroke="#00BF6F"
+        strokeWidth="4"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M14.2 13.5V26.5H25.2"
+        stroke="#FFFFFF"
+        strokeWidth="5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
     </svg>
   );
 }
+
+export const LorxLogo = AskPayLogo;
 
 export function ScalesIcon({ size = 18, className, color = "currentColor" }: IconProps) {
   return (

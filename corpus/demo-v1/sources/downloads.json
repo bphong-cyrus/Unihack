@@ -1,0 +1,54 @@
+[
+  {
+    "file": "customs-2026.pdf",
+    "url": "https://datafiles.chinhphu.vn/cpp/files/vbpq/2026/3/54-vbhn-vpqh.pdf",
+    "final_url": "https://datafiles.chinhphu.vn/cpp/files/vbpq/2026/3/54-vbhn-vpqh.pdf",
+    "sha256": "d6f19cb4f799c29cceffab0abefedf448f82046a20bd03aae655bba94a21148e",
+    "bytes": 1656823
+  },
+  {
+    "file": "used-machinery-2019-signed.pdf",
+    "url": "https://datafiles.chinhphu.vn/cpp/files/vbpq/2019/04/18.signed_01.pdf",
+    "final_url": "https://datafiles.chinhphu.vn/cpp/files/vbpq/2019/04/18.signed_01.pdf",
+    "sha256": "5c7e6074a18e59451e31c714a9d1c0536417ef0bee79ae8ce575be48526ada33",
+    "bytes": 1024200
+  },
+  {
+    "file": "penalties-2026-signed.pdf",
+    "url": "https://datafiles.chinhphu.vn/cpp/files/vbpq/2026/5/169-ndcp.signed.pdf",
+    "final_url": "https://datafiles.chinhphu.vn/cpp/files/vbpq/2026/5/169-ndcp.signed.pdf",
+    "sha256": "412ce3a0a809096b964dd8893dc96a89335a0a03cef1625d476b22899f13560a",
+    "bytes": 2348027
+  },
+  {
+    "file": "penalties-2026-congbao.pdf",
+    "url": "https://congbaocdn.chinhphu.vn/180507251028987904/2026/5/29/cong-bao-so-293-639156422724551727-ngay-31-05-47212_1780042351_signed.pdf",
+    "final_url": "https://congbaocdn.chinhphu.vn/180507251028987904/2026/5/29/cong-bao-so-293-639156422724551727-ngay-31-05-47212_1780042351_signed.pdf",
+    "sha256": "2e3b7c17cd4e5e3d08f190bcd6233a088e11ff915fcc800916a716095318c804",
+    "bytes": 2787618
+  },
+  {
+    "file": "used-machinery-2019.pdf",
+    "url": "https://congbaocdn.chinhphu.vn/CongBaoCP/VanBan/2019/4/28889/26622-1-2019409-41018-2019-qd-ttg.pdf",
+    "sha256": "642a888a48b6f924e5cf420fee81bbb82dca4be4972504a69b6b5d01b45ac730",
+    "bytes": 470789
+  },
+  {
+    "file": "used-machinery-2022.pdf",
+    "url": "https://congbaocdn.chinhphu.vn/CongBaoCP/VanBan/2022/12/38394/42715-1-2022965-96628-2022-qd-ttg.pdf",
+    "sha256": "06f59fe13521dfdd8af89d6d8f0481971156b0f989a77219da99e00dfbcedb22",
+    "bytes": 444997
+  },
+  {
+    "file": "machinery-amendment-2026.pdf",
+    "url": "https://congbaocdn.chinhphu.vn/180507251028987904/2026/1/27/02signed-17694880281021258781022.pdf",
+    "sha256": "5c432dc34491ecaabb13b9b9d14bf674cac37aa68351b27a8449f5053db2425d",
+    "bytes": 476808
+  },
+  {
+    "file": "penalties-2020.pdf",
+    "url": "https://congbaocdn.chinhphu.vn/CongBaoCP/VanBan/2020/10/32316/33053-1-20201027-1028128-2020-nd-cp.pdf",
+    "sha256": "921b54145084fbef46348f8b2fd76a3f9dd652eb993566884318ac707dd71fec",
+    "bytes": 636578
+  }
+]

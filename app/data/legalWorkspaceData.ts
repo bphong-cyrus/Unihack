@@ -13,6 +13,7 @@ export interface CitationCheck {
   document: string;
   article: string;
   clause: string;
+  point?: string;
   doc_exists: boolean;
   article_clause_exists: boolean;
   is_in_force: boolean;
@@ -69,6 +70,8 @@ export interface ChatMessage {
   timestampLabel: string;
   mode?: TierMode;
   feeLabel?: string;
+  answerStatus?: string;
+  reviewLevel?: string;
   citations?: CitationItem[];
   validation?: ValidationPayload;
   hashes?: AuditHashes;
@@ -108,32 +111,32 @@ export interface SituationCard {
 
 export const SITUATION_CARDS: SituationCard[] = [
   {
-    id: "import-prep",
-    title: "Chuẩn bị nhập một lô hàng",
-    description: "Tìm hiểu giấy tờ và các bước cần chuẩn bị",
+    id: "import-deadline",
+    title: "Thời hạn nộp tờ khai nhập khẩu (30 ngày)",
+    description: "Tính ngày còn lại từ mốc hàng đến cửa khẩu theo Luật Hải quan",
     prefill:
-      "Tôi dự định nhập [loại hàng] từ [quốc gia] để [mục đích]. Tôi cần tìm hiểu giấy tờ và thủ tục nào?"
+      "Hàng đến cửa khẩu ngày 01/11/2026, hôm nay 17/11/2026, theo mốc 30 ngày còn bao nhiêu ngày để nộp tờ khai nhập khẩu?"
   },
   {
-    id: "amend-decl",
-    title: "Tờ khai có thông tin sai",
-    description: "Tra cứu quy định về khai bổ sung",
+    id: "used-machinery",
+    title: "Nhập khẩu máy móc cũ (QĐ 18/2019 & 28/2022)",
+    description: "Kiểm tra điều kiện HS, năm sản xuất, xuất xứ và mục đích sử dụng",
     prefill:
-      "Tờ khai hải quan đã phân luồng nhưng phát hiện sai [chỉ tiêu sai]. Tôi có được khai bổ sung không?"
+      "Nhập máy tiện cũ từ Nhật năm 2012 để bán lại, chưa có mã HS hay giám định thì có đủ điều kiện nhập khẩu không?"
   },
   {
-    id: "co-origin",
-    title: "Xin giấy chứng nhận xuất xứ",
-    description: "Tìm căn cứ và hồ sơ liên quan đến C/O",
+    id: "penalty-repeal",
+    title: "Hiệu lực nghị định xử phạt (128/2020 → 169/2026)",
+    description: "Kiểm tra văn bản còn hiệu lực hay đã bị thay thế tại ngày tra cứu",
     prefill:
-      "Tôi muốn đăng ký hồ sơ thương nhân và xin cấp C/O lần đầu thì cần chuẩn bị giấy tờ gì?"
+      "Nghị định 128/2020/NĐ-CP về xử phạt vi phạm hành chính hải quan còn hiệu lực tại ngày 17/11/2026 không?"
   },
   {
-    id: "tax-refund",
-    title: "Tìm hiểu việc hoàn thuế",
-    description: "Tra cứu điều kiện và thủ tục",
+    id: "factcheck-demo",
+    title: "Kiểm chứng trích dẫn sai số liệu (30 → 60 ngày)",
+    description: "Phát hiện sai lệch số liệu nguyên văn trong câu trả lời hoặc trích dẫn",
     prefill:
-      "Hàng hóa đã nộp thuế nhập khẩu nhưng phải tái xuất thì điều kiện hoàn thuế như thế nào?"
+      "Kiểm chứng Điều 25 Khoản 1 Điểm b Luật 54/2014/QH13: Đối với hàng hóa nhập khẩu, nộp trước ngày hàng hóa đến cửa khẩu hoặc trong thời hạn 60 ngày kể từ ngày hàng hóa đến cửa khẩu;"
   }
 ];
 

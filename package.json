@@ -7,7 +7,9 @@
     "build": "next build",
     "start": "next start",
     "compile:contracts": "node contracts/compile_and_deploy.mjs --compile-only",
-    "deploy:contracts": "node contracts/compile_and_deploy.mjs --deploy"
+    "deploy:contracts": "node contracts/compile_and_deploy.mjs --deploy",
+    "test:payment": "node --test tests/payment-proof.integration.test.mjs",
+    "test:demo-http": "node tests/demo-http-smoke.mjs"
   },
   "dependencies": {
     "next": "14.2.15",
@@ -19,6 +21,7 @@
     "@types/node": "^20.14.0",
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
+    "ganache": "7.9.2",
     "solc": "^0.8.20",
     "typescript": "^5.5.0"
   }

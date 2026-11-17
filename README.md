@@ -1,91 +1,61 @@
 # AskPay XNK
-Hỏi về pháp luật xuất nhập khẩu, xem căn cứ cho từng câu trả lời.
 
-AskPay thử nghiệm cơ chế trả tiền cho câu trả lời AI có kiểm tra
-trích dẫn: tiền được giữ trong escrow; trích dẫn đạt điều kiện
-thì giải ngân, thất bại thì đi theo nhánh hoàn tiền.
+**Tra cứu pháp luật xuất nhập khẩu có nguồn đối chiếu, với cơ chế giữ phí và hoàn tiền khi kiểm tra không đạt.**
 
-Quick: 0,05 USDC · Deep: 0,20 USDC.
+Quick: **0,05 USDC** · Deep: **0,20 USDC** — giá thử nghiệm trên testnet.
 
-## Xem dự án trong 3 phút
-1. Đọc kiến trúc và trạng thái bên dưới.
-2. Mở https://askpay-virid.vercel.app/ → **Dùng thử demo**.
-3. Thử câu hỏi hợp lệ, citation sai (ví dụ `Điều 999` hoặc sửa `30` thành `60`) và tình huống máy móc đã qua sử dụng (`18/2019/QĐ-TTg`, `28/2022/QĐ-TTg`).
+[**Mở demo**](https://askpay-virid.vercel.app/) · [**Chạy cục bộ / cấu hình payment**](docs/demo-readiness/README.md) · [**Kết quả kiểm tra bản deploy**](docs/demo-readiness/LATEST_REVIEW.md)
 
-## Chúng tôi xây gì?
-- LegalIR / Extractive Search: tìm đúng điều/khoản trong `data/legal-corpus.json` & `research/snapshot-manifest.json` theo ngày áp dụng.
-- LegalQA Adapter (`ai-service/legal_pipeline.py`): lớp tích hợp trả lời từ các căn cứ được truy xuất.
-- Validator: kiểm tra văn bản, điều/khoản, hiệu lực theo snapshot và độ khớp excerpt tối thiểu 90%.
-- x402 & AnswerEscrow: challenge HTTP 402, xác minh `scheme` / `asset` USDC / receipt giao dịch trên Avalanche Fuji; giữ tiền, giải ngân hoặc hoàn theo kết quả oracle.
-- ReceiptLog: ghi hash để đối chiếu kết quả và phiên bản dữ liệu trên AskPay L1.
+> Bản vá trong repo cần được deploy riêng; link demo có thể còn chạy phiên bản trước. Corpus demo có đối chiếu nguồn tự động, chưa được chuyên gia pháp lý duyệt. Khớp đoạn trích không tự chứng minh kết luận pháp lý đúng.
 
-## Trạng thái hiện tại
-- Có web chat, Quick/Deep, kiểm chứng nguồn tách biệt (`mode: "factcheck"`), và smart contract V2 (USDC + AVAX).
-- Kho nguồn gốc gồm **45 văn bản đã lưu kèm SHA-256** (`43` bộ nguồn ban đầu + `18/2019/QĐ-TTg` và `28/2022/QĐ-TTg`), biên dịch thành **2.581 khoản** (`69` điều khoản đối chiếu nguyên văn trực tiếp + `2.512` điều khoản tách từ RTF/DOCX/OCR, được gắn nhãn trung thực trạng thái rà soát trong `research/snapshot-manifest.json`).
-- Đường snapshot mặc định là extractive (adapter `ASKPAY_LEGAL_ADAPTER` sẵn sàng nối model của nhóm).
-- Luồng thanh toán hỗ trợ x402 USDC trên Avalanche Fuji; chỉ ghi “đã release/refund” khi có receipt giao dịch xác nhận on-chain.
-- Khớp citation không tự chứng minh kết luận pháp lý đúng.
+## Xem trong 3 phút
 
-## Phạm vi
-Hải quan, xuất xứ hàng hóa, thuế xuất nhập khẩu và nhập khẩu máy móc, thiết bị đã qua sử dụng tại Việt Nam.
-Chưa bao phủ mọi lĩnh vực pháp luật.
+1. Chọn **Dùng thử demo**, hỏi thời hạn nộp tờ khai nhập khẩu.
+2. Chọn **Kiểm chứng nguồn**, sửa “30 ngày” thành “60 ngày” hoặc thử Điều 999.
+3. Hỏi về máy tiện cũ từ Nhật, thiếu mã HS và nhập để bán lại: hệ thống phải hỏi thêm, không tự kết luận đủ điều kiện.
+4. Xem nguồn và trạng thái tiền riêng. Chưa có explorer link xác nhận thì không coi là release/refund thật.
 
-## Bằng chứng cần xem
-- Nguồn dữ liệu: [research/DANH_MUC_NGUON_LUAT.md](research/DANH_MUC_NGUON_LUAT.md)
-- Kho phiên bản: [research/snapshot-manifest.json](research/snapshot-manifest.json)
-- Kế hoạch & thiết kế: [docs/KE_HOACH_THIET_KE.md](docs/KE_HOACH_THIET_KE.md) · [docs/KHO_LUAT_PHIEN_BAN.md](docs/KHO_LUAT_PHIEN_BAN.md)
-- Hợp đồng thông minh: [contracts/](contracts/)
+## Đã có và còn thiếu
 
-## Cấu trúc thư mục
-```text
-Unihack/
-├── app/                   # Next.js 14 App Router (UI chat, Admin, API /api/ask-and-settle, /api/legal-corpus)
-├── ai-service/            # FastAPI LegalIR/LegalQA, Deterministic Validator, Snapshot & OCR tools
-├── contracts/             # Smart contracts Solidity V2 (AskPayEscrow.sol, AskPayReceiptLog.sol) + artifacts
-├── data/                  # Corpus đã biên dịch sẵn cho runtime (45 văn bản / 2.581 khoản)
-├── docs/                  # Tài liệu thiết kế và đặc tả kho luật theo phiên bản
-├── research/              # 45 văn bản gốc tải từ cổng Chính phủ/BCT, dữ liệu trích xuất OCR & snapshot-manifest.json
-└── tests/                 # Bộ kiểm thử Node.js (proxy, memo, x402, factcheck, validator parity)
-```
+| Thành phần | Bằng chứng / giới hạn |
+|---|---|
+| Web chat, Quick/Deep, factcheck | UI có sẵn; bản vá đưa factcheck về snapshot chính xác |
+| Corpus rộng | 45 tài liệu / 2.581 đơn vị trong dữ liệu cũ; không đồng nghĩa 2.581 khoản đã được rà soát hiệu lực |
+| Corpus demo được chọn | 6 văn bản / 34 đơn vị trích dẫn + PDF + SHA-256, mốc 17/11/2026 |
+| LegalIR/LegalQA | Adapter có sẵn; `demo_api` là rule-based có giới hạn, chưa thay model của nhóm |
+| Payment proof | RPC + calldata/events + token transfer + pending escrow + chữ ký ví; test Quick/Deep trên local EVM |
+| HTTP 402 | Giao thức riêng `askpay-escrow-v2`; chưa chứng minh tương thích x402 facilitator chuẩn |
+| Release/refund/timeout | Contract chạy được trong local EVM; cần explorer evidence Fuji cho bản thi |
+| ReceiptLog | Có contract; own L1 phải có deployment/RPC/chain ID và receipt thực mới coi là hoàn thành |
 
-## Chạy cục bộ
+## Cách hoạt động
 
-Yêu cầu Node.js, npm và Python 3. Cài các phụ thuộc được khai báo trong dự án:
+Frontend đặt USDC vào AnswerEscrow trên C-Chain, rồi ký xác nhận request. Backend kiểm tra proof với RPC trước khi xử lý. LegalIR lấy căn cứ đúng phiên bản; LegalQA tạo câu trả lời; validator đối chiếu trích dẫn. Policy cho phép release hoặc refund; lỗi sau đặt cọc phải giữ trạng thái pending để đối soát. Receipt lưu hash câu hỏi/đáp án/citation/validator/corpus để tái kiểm tra; hash không thay cho nội dung và quy trình rà soát.
+
+**Bản demo source-backed hiện chưa cho release câu trả lời pháp lý** vì chưa có rà soát chuyên môn. Contract release được kiểm tra bằng fixture trong test, ghi rõ khi trình bày.
+
+## Chạy nhanh
 
 ```bash
 npm ci
 python -m pip install -r ai-service/requirements.txt
+python -m uvicorn demo_api:app --app-dir ai-service --port 8000
 ```
 
-Trong một terminal, chạy dịch vụ AI từ thư mục dự án:
+Terminal khác: `npm run dev`. Xem [hướng dẫn cấu hình](docs/demo-readiness/README.md) cho URL backend, testnet và migration request hash.
 
 ```bash
-cd ai-service
-python -m uvicorn main:app --host 127.0.0.1 --port 8000
-```
-
-Tuỳ chọn bật snapshot có kiểm tra ngày hiệu lực:
-
-```bash
-ASKPAY_CORPUS_MANIFEST=../research/snapshot-manifest.json python -m uvicorn main:app --host 127.0.0.1 --port 8000
-```
-
-Trong terminal khác, chạy giao diện:
-
-```bash
-npm run dev
-```
-
-Mở `http://localhost:3000`. Khi deploy serverless (Vercel) chưa cấu hình URL FastAPI rời, `route.ts` dùng bộ dữ liệu nội bộ `data/legal-corpus.json` và gắn nhãn nguồn rõ ràng (có thể đặt `ASKPAY_ENABLE_BUILTIN_DEMO=false` nếu muốn trả HTTP 503 khi backend Python tắt).
-
-## Kiểm tra
-
-```bash
-python ai-service/corpus_cli.py check research/snapshot-manifest.json
 python -m unittest discover -s ai-service/tests -q
-node --test tests/legal-proxy.test.mjs tests/memo.test.cjs tests/judge-audit-fixes.test.mjs
+npm run test:payment
 npm run build
-npm run compile:contracts
 ```
 
-Danh mục và nguồn văn bản đã thu thập nằm tại [research/DANH_MUC_NGUON_LUAT.md](research/DANH_MUC_NGUON_LUAT.md); các kết quả OCR nằm trong `research/extracted/`. Thiết kế, giới hạn và công việc còn lại được mô tả tại [docs/KE_HOACH_THIET_KE.md](docs/KE_HOACH_THIET_KE.md).
+## Đường dẫn cho người review
+
+- [Payment verifier](app/api/ask-and-settle/verify-payment.mjs) và [request commitment](app/lib/payment-request.mjs).
+- [Corpus demo](corpus/demo-v1/manifest.json), [nguồn tải chính thức](corpus/demo-v1/sources/downloads.json).
+- [Backend demo](ai-service/demo_api.py), [adapter LegalIR/LegalQA](ai-service/legal_pipeline.py).
+- [Contract](contracts/AskPayEscrow.sol), [integration test local EVM](tests/payment-proof.integration.test.mjs).
+- [Kế hoạch pitching và phần còn lại](docs/demo-readiness/PITCHING_PLAN.md).
+
+Không công bố hallucination rate chỉ từ tỷ lệ excerpt khớp; cần bộ câu hỏi holdout và đánh giá relevance/support riêng. Không thêm bonus trước khi hoàn thiện corpus, proof và bằng chứng giao dịch.

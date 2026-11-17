@@ -1,82 +1,78 @@
+import { readFileSync } from "fs";
+import path from "path";
 import { NextResponse } from "next/server";
 import { fetchLegalCorpus } from "../ask-and-settle/legal-proxy.mjs";
-import corpusBundle from "../../../data/legal-corpus.json";
-import sourceManifest from "../../../research/legal-sources/manifest.json";
+import demoManifest from "../../../corpus/demo-v1/manifest.json";
 
 export const dynamic = "force-dynamic";
 
-const SOURCE_URL_BY_DOC_ID = new Map<string, string>(
-  ((sourceManifest as any)?.documents || [])
-    .filter((d: any) => typeof d?.document_id === "string" && typeof d?.metadata_url === "string")
-    .map((d: any) => [d.document_id.toUpperCase().replace(/\s+/g, ""), d.metadata_url])
-);
+const DEFAULT_DEMO_V1_SHA256 =
+  "38f84d5d593a86142b23bb6d79187192a847be52f56f2befa9f0c0fabdd2bec3";
 
-function buildBuiltinCorpusInventory() {
-  const rows: any[] = Array.isArray((corpusBundle as any)?.records)
-    ? (corpusBundle as any).records
+function resolveDemoSnapshotSha256(): string {
+  try {
+    const shaPath = path.join(process.cwd(), "corpus", "demo-v1", "manifest.sha256");
+    const raw = readFileSync(shaPath, "utf8").trim();
+    if (/^[a-f0-9]{64}$/i.test(raw)) return raw.toLowerCase();
+  } catch {
+    // Fallback to pinned demo-v1 SHA-256 in serverless bundles
+  }
+  return DEFAULT_DEMO_V1_SHA256;
+}
+
+function buildBuiltinDemoV1Inventory() {
+  const docs: any[] = Array.isArray((demoManifest as any)?.documents)
+    ? (demoManifest as any).documents
     : [];
 
-  const summary = new Map<
-    string,
-    {
-      doc_id: string;
-      doc_title: string;
-      article: string;
-      clause: string;
-      status: "ACTIVE" | "EXPIRED";
-      effective_date: string;
-      source_url?: string;
-      total_versions: number;
-      reviewed_versions: number;
-    }
-  >();
+  let totalChunks = 0;
+  let reviewedChunks = 0;
 
-  for (const r of rows) {
-    const docId = String(r.doc_id || "");
-    if (!docId) continue;
-    const key = docId.toUpperCase().replace(/\s+/g, "");
-    const existing = summary.get(key);
-    if (!existing) {
-      summary.set(key, {
-        doc_id: docId,
-        doc_title: String(r.doc_title || ""),
-        article: String(r.article || "1"),
-        clause: String(r.clause || "1"),
-        status: r.status === "EXPIRED" ? "EXPIRED" : "ACTIVE",
-        effective_date: String(r.effective_date || ""),
-        ...(SOURCE_URL_BY_DOC_ID.get(key) ? { source_url: SOURCE_URL_BY_DOC_ID.get(key) } : {}),
-        total_versions: 1,
-        reviewed_versions: r.verified ? 1 : 0
-      });
-    } else {
-      existing.total_versions += 1;
-      if (r.verified) existing.reviewed_versions += 1;
-    }
-  }
+  const records = docs.map((doc) => {
+    const provisions: any[] = Array.isArray(doc.provisions) ? doc.provisions : [];
+    totalChunks += provisions.length;
+    const reviewedCount = provisions.filter(
+      (p) => Boolean(p?.reviewed_by && p?.reviewed_at && p?.status_evidence_url)
+    ).length;
+    reviewedChunks += reviewedCount;
+    return {
+      doc_id: String(doc.document_id || "").toUpperCase().replace(/\s+/g, ""),
+      doc_title: String(doc.title || ""),
+      source_url: String(doc.source_url || ""),
+      total_versions: provisions.length,
+      reviewed_versions: reviewedCount
+    };
+  });
 
   return {
-    total_documents: summary.size,
-    total_chunks: rows.length,
-    reviewed_chunks: Number((corpusBundle as any)?.verified_chunks || 0),
-    extracted_unreviewed_chunks: Number((corpusBundle as any)?.unreviewed_extracted_chunks || 0),
-    corpus_status: "DEMO_UNVERIFIED",
+    snapshot_id: String((demoManifest as any)?.snapshot_id || "askpay-demo-source-checked-2026-11-17"),
+    snapshot_sha256: resolveDemoSnapshotSha256(),
+    corpus_status: "REVIEW_ASSERTED",
+    review_level: "AI_ASSISTED_SOURCE_CHECK_ONLY",
+    coverage: "SELECTED_DEMO_PROVISIONS",
+    settlement_eligible: false,
+    total_documents: records.length,
+    total_chunks: totalChunks,
+    reviewed_chunks: reviewedChunks,
     domain: "Import-Export & Vietnam Customs Law",
-    records: Array.from(summary.values())
+    records
   };
 }
 
-const BUILTIN_CORPUS_INVENTORY = buildBuiltinCorpusInventory();
+const BUILTIN_DEMO_V1_INVENTORY = buildBuiltinDemoV1Inventory();
 
 export async function GET() {
-  const askUrl =
+  const askUrl = (
     process.env.AI_SERVICE_URL ||
     process.env.LEGAL_RAG_API_URL ||
-    "http://127.0.0.1:8000/api/v1/legal/ask";
-  const corpusUrl =
-    process.env.LEGAL_CORPUS_API_URL || askUrl.replace(/\/ask\/?$/, "/corpus");
+    "http://127.0.0.1:8000/api/v1/legal/ask"
+  ).trim();
+  const corpusUrl = (
+    process.env.LEGAL_CORPUS_API_URL || askUrl.replace(/\/ask\/?$/, "/corpus")
+  ).trim();
 
   if (corpusUrl === askUrl) {
-    return NextResponse.json(BUILTIN_CORPUS_INVENTORY, { status: 200 });
+    return NextResponse.json(BUILTIN_DEMO_V1_INVENTORY, { status: 200 });
   }
 
   const result = await fetchLegalCorpus(corpusUrl);
@@ -84,7 +80,7 @@ export async function GET() {
     if (process.env.ASKPAY_ENABLE_BUILTIN_DEMO === "false") {
       return NextResponse.json(result.body, { status: 503 });
     }
-    return NextResponse.json(BUILTIN_CORPUS_INVENTORY, { status: 200 });
+    return NextResponse.json(BUILTIN_DEMO_V1_INVENTORY, { status: 200 });
   }
   return NextResponse.json(result.body, { status: result.status });
 }

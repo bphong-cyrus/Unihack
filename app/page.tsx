@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useEffect, useRef, useState } from "react";
+import { paymentContext, requestHash, paymentProofMessage, PAYMENT_SCHEME } from "./lib/payment-request.mjs";
 import {
   createPublicClient,
   createWalletClient,
@@ -111,8 +112,27 @@ const ESCROW_ABI = [
       { name: "amount", type: "uint256" }
     ],
     outputs: []
+  },
+  {
+    name: "claimTimeoutRefund",
+    type: "function",
+    stateMutability: "nonpayable",
+    inputs: [{ name: "questionId", type: "bytes32" }],
+    outputs: []
   }
 ] as const;
+
+interface PendingPaidAttempt {
+  questionId: string;
+  queryText: string;
+  activeMode: TierMode;
+  apiTier: "quick" | "deep";
+  escrowTxHash: string;
+  xPaymentHeader: string;
+  asOf?: string;
+  priceLabel: string;
+  targetSessionId: string;
+}
 
 const ERC20_USDC_ABI = [
   {
@@ -247,6 +267,8 @@ export default function AskPayWorkspacePage() {
   // Composer & Backend states
   const [questionInput, setQuestionInput] = useState<string>("");
   const [lastFailedPrompt, setLastFailedPrompt] = useState<string>("");
+  const [pendingPaidAttempt, setPendingPaidAttempt] = useState<PendingPaidAttempt | null>(null);
+  const [claimingTimeoutId, setClaimingTimeoutId] = useState<string>("");
   const [mode, setMode] = useState<TierMode>("quick");
   const [demoFault, setDemoFault] = useState<"normal" | "hallucination" | "expired">("normal");
   const [loadingStep, setLoadingStep] = useState<string>("");
@@ -561,6 +583,8 @@ export default function AskPayWorkspacePage() {
     setAccount("");
     setAvaxBalance("");
     setUsdcBalance("");
+    setPendingPaidAttempt(null);
+    setClaimingTimeoutId("");
     setSessions([]);
     setActiveSessionId("");
   }
@@ -716,7 +740,7 @@ export default function AskPayWorkspacePage() {
       ].some((phrase) => normalized.includes(phrase))
     ) {
       return (
-        "Mình là AskPay — trợ lý tra cứu và đối chiếu pháp luật Hải quan & Xuất Nhập Khẩu dựa trên kho 45 văn bản chính thức.\n\n" +
+        "Mình là Lorx — trợ lý tra cứu và đối chiếu pháp luật Hải quan & Xuất Nhập Khẩu dựa trên kho văn bản đối chiếu.\n\n" +
         "Các nhóm nghiệp vụ bạn có thể hỏi ngay:\n" +
         "1. Chuẩn bị nhập hàng / xuất hàng (hồ sơ hải quan, tờ khai VNACCS, hóa đơn, vận đơn, nhãn phụ tiếng Việt, giấy phép XNK).\n" +
         "2. Thời hạn nộp & khai bổ sung tờ khai (mốc 30 ngày, phân luồng Xanh/Vàng/Đỏ, tính ngày còn lại giữa 2 mốc ngày).\n" +
@@ -786,10 +810,13 @@ export default function AskPayWorkspacePage() {
       "chào bạn",
       "chào ad",
       "chào askpay",
+      "chào lorx",
       "chào hệ thống",
       "chào trợ lý",
       "hi askpay",
+      "hi lorx",
       "hello askpay",
+      "hello lorx",
       "hi bạn",
       "hello bạn",
       "good morning",
@@ -797,20 +824,21 @@ export default function AskPayWorkspacePage() {
       "good evening"
     ]);
     const isGreetingRegex =
-      /^(hi|hello|helo|hey|alo|a lô|xin chào|chào)(\s+(bạn|ad|askpay|nhé|nha|ơi|ạ|em|anh|chị|there|everyone))?$/i.test(
+      /^(hi|hello|helo|hey|alo|a lô|xin chào|chào)(\s+(bạn|ad|askpay|lorx|nhé|nha|ơi|ạ|em|anh|chị|there|everyone))?$/i.test(
         normalized
       );
 
     if (greetings.has(normalized) || isGreetingRegex) {
       return (
-        "Xin chào! Mình là trợ lý pháp lý AskPay chuyên về Hải quan và Xuất Nhập Khẩu.\n\n" +
-        "Tin nhắn chào hỏi này hoàn toàn miễn phí (không gọi ví hay trừ cọc). Bạn có thể nhập ngay câu hỏi nghiệp vụ (ví dụ: thời hạn nộp tờ khai nhập khẩu, để xuất hàng cần lưu ý gì, xử phạt khai sai mã HS, thủ tục C/O mẫu E/D/EUR.1, hoàn thuế hàng tái xuất...) để AskPay tra cứu và đối chiếu trực tiếp từ 45 văn bản pháp luật."
+        "Xin chào! Mình là trợ lý pháp lý Lorx chuyên về Hải quan và Xuất Nhập Khẩu.\n\n" +
+        "Tin nhắn chào hỏi này hoàn toàn miễn phí (không gọi ví hay trừ cọc). Bạn có thể nhập ngay câu hỏi nghiệp vụ (ví dụ: thời hạn nộp tờ khai nhập khẩu, nhập khẩu máy móc đã qua sử dụng, hiệu lực NĐ 128/2020 vs 169/2026...) để Lorx tra cứu và đối chiếu trực tiếp từ nguồn chính thức."
       );
     }
 
     const helpSet = new Set([
       "bạn là ai",
       "askpay là gì",
+      "lorx là gì",
       "bạn làm được gì",
       "web này làm gì",
       "ứng dụng này làm gì",
@@ -830,7 +858,7 @@ export default function AskPayWorkspacePage() {
     ]);
     if (helpSet.has(normalized)) {
       return (
-        "Mình là AskPay — trợ lý tra cứu và đối chiếu pháp luật Hải quan & Xuất Nhập Khẩu.\n\n" +
+        "Mình là Lorx — trợ lý tra cứu và đối chiếu pháp luật Hải quan & Xuất Nhập Khẩu.\n\n" +
         "• Tra cứu nhanh (0.05 USDC): Một vấn đề cụ thể, câu trả lời ngắn gọn kèm căn cứ.\n" +
         "• Phân tích tình huống (0.20 USDC): Xem các điều kiện áp dụng, ngoại lệ và thông tin còn thiếu.\n" +
         "• Kiểm chứng nguồn: Đối chiếu số hiệu văn bản, Điều/Khoản và nguyên văn đoạn trích.\n\n" +
@@ -930,7 +958,8 @@ export default function AskPayWorkspacePage() {
     const apiTier = isDeep ? "deep" : "quick";
     const isAccountMode = !isDemoProfile(currentUser);
     const isFreeRewardTurn = questionCount > 0 && questionCount % 10 === 9;
-    const requiresWalletFlow = !isFreeRewardTurn && (useOnchainWallet || isAccountMode);
+    const isFactcheckFree = activeMode === "factcheck";
+    const requiresWalletFlow = !isFreeRewardTurn && !isFactcheckFree && (useOnchainWallet || isAccountMode);
 
     let activeAccount = account;
     if (requiresWalletFlow && !activeAccount) {
@@ -970,24 +999,23 @@ export default function AskPayWorkspacePage() {
     const isWalletPaymentActive = Boolean(
       requiresWalletFlow && activeAccount && eth && isValidEvmAddress(escrowAddress)
     );
-    const priceLabel = isFreeRewardTurn
+    const priceLabel = isFactcheckFree
+      ? "Kiểm chứng nguồn · Miễn phí"
+      : isFreeRewardTurn
       ? "Miễn phí (Ưu đãi 10 tặng 1)"
       : !isWalletPaymentActive
       ? "Miễn phí trong bản dùng thử"
       : paymentAsset === "USDC"
       ? isDeep
         ? "Phân tích tình huống - 0.20 USDC"
-        : activeMode === "factcheck"
-        ? "Kiểm chứng - 0.05 USDC"
         : "Tra cứu nhanh - 0.05 USDC"
       : isDeep
       ? "Phân tích tình huống - 0.02 AVAX testnet"
-      : activeMode === "factcheck"
-      ? "Kiểm chứng - 0.005 AVAX testnet"
       : "Tra cứu nhanh - 0.005 AVAX testnet";
 
     setErrorMsg("");
     setLastFailedPrompt("");
+    setPendingPaidAttempt(null);
     setLoadingStep("Mình đang tìm căn cứ liên quan đến câu hỏi của bạn...");
 
     const fallbackSession = createEmptySession();
@@ -1019,10 +1047,15 @@ export default function AskPayWorkspacePage() {
 
     let escrowTxHash = "";
     let usedX402Usdc = false;
+    let builtXPaymentHeader = "";
+    let builtAsOf: string | undefined =
+      corpus?.corpus_status === "REVIEW_ASSERTED" && asOf ? asOf : undefined;
+    let currentQuestionId = "";
     try {
       const asker = activeAccount || "0x0000000000000000000000000000000000000001";
       const questionId = keccak256(toBytes(`${asker}-${Date.now()}-${queryText}`));
-      const questionHash = keccak256(toBytes(queryText));
+      currentQuestionId = questionId;
+      let questionHash = keccak256(toBytes(queryText));
       const isDemoMode = !corpus || corpus.corpus_status === "DEMO_UNVERIFIED";
 
       const basePayload = {
@@ -1030,7 +1063,7 @@ export default function AskPayWorkspacePage() {
         question: queryText,
         tier: apiTier,
         mode: activeMode,
-        ...(corpus?.corpus_status === "REVIEW_ASSERTED" && asOf ? { asOf } : {}),
+        ...(builtAsOf ? { asOf: builtAsOf } : {}),
         askerAddress: asker,
         simulateHallucination: isDemoMode && demoFault === "hallucination",
         simulateExpiredLaw: isDemoMode && demoFault === "expired"
@@ -1051,9 +1084,10 @@ export default function AskPayWorkspacePage() {
           transport: custom(eth)
         });
 
+        if (paymentAsset !== "USDC") throw new Error("Bản vá proof chỉ hỗ trợ USDC. Chọn USDC hoặc dùng demo miễn phí.");
         if (paymentAsset === "USDC") {
-          // Step 1: Request x402 HTTP 402 Payment Required challenge
-          setLoadingStep("Đang lấy thông tin tạm giữ khoản tiền (x402)...");
+          // Step 1: Request escrow challenge
+          setLoadingStep("Đang lấy thông tin tạm giữ khoản tiền...");
           const challengeRes = await fetch("/api/ask-and-settle", {
             method: "POST",
             headers: requestHeaders,
@@ -1061,11 +1095,22 @@ export default function AskPayWorkspacePage() {
           });
           const challengeData = await challengeRes.json();
           if (challengeRes.status !== 402) {
-            throw new Error(challengeData?.error || "Không thể khởi tạo phiên thanh toán x402.");
+            throw new Error(challengeData?.error || "Không thể khởi tạo phiên thanh toán escrow.");
           }
           const accept = challengeData?.accepts?.[0];
           const challengeAmount = String(accept?.maxAmountRequired || (isDeep ? "200000" : "50000"));
           const challengeAsset = normalizeEnvValue(String(accept?.asset || FUJI_USDC_ADDRESS));
+          const offeredContext = accept?.extra?.context;
+          if (accept?.scheme !== PAYMENT_SCHEME || !offeredContext) throw new Error("Challenge không hợp lệ.");
+          const boundContext = paymentContext(basePayload, {
+            chainId: 43113, escrowAddress, usdcAddress: FUJI_USDC_ADDRESS,
+            corpusHash: offeredContext.corpusHash, asOf: offeredContext.asOf
+          });
+          questionHash = requestHash(boundContext);
+          if (questionHash !== accept.extra.requestHash || challengeAmount !== boundContext.amount ||
+              challengeAsset.toLowerCase() !== boundContext.asset) throw new Error("Challenge không khớp yêu cầu.");
+          basePayload.asOf = boundContext.asOf;
+          builtAsOf = boundContext.asOf;
           if (!isValidEvmAddress(challengeAsset)) {
             throw new Error("Địa chỉ token USDC thanh toán trên Fuji chưa hợp lệ.");
           }
@@ -1089,7 +1134,7 @@ export default function AskPayWorkspacePage() {
               throw new Error(
                 `Ví hiện có ${(Number(currentUsdcBal) / 1e6).toFixed(2)} USDC trên Fuji (cần ${
                   isDeep ? "0.20" : "0.05"
-                } USDC). Hãy đổi sang AVAX testnet ở thanh bên dưới hoặc nạp thêm USDC Fuji.`
+                } USDC). Hãy nạp thêm USDC Fuji hoặc dùng demo miễn phí.`
               );
             }
             if (nativeBal === 0n) {
@@ -1114,7 +1159,8 @@ export default function AskPayWorkspacePage() {
                 functionName: "approve",
                 args: [escrowAddress as `0x${string}`, requiredUsdc]
               });
-              await publicClient.waitForTransactionReceipt({ hash: approveTx });
+              const approval = await publicClient.waitForTransactionReceipt({ hash: approveTx });
+              if (approval.status !== "success") throw new Error("Approve USDC thất bại.");
             }
 
             setLoadingStep(`Đang khóa ${isDeep ? "0.20" : "0.05"} USDC vào AskPayEscrow...`);
@@ -1126,8 +1172,9 @@ export default function AskPayWorkspacePage() {
               functionName: "askQuestionUsdc",
               args: [questionId, isDeep ? 1 : 0, questionHash, requiredUsdc]
             });
-            await publicClient.waitForTransactionReceipt({ hash: txHash });
             escrowTxHash = txHash;
+            const depositReceipt = await publicClient.waitForTransactionReceipt({ hash: txHash, confirmations: 2 });
+            if (depositReceipt.status !== "success") throw new Error("Giao dịch đặt cọc đã revert; kiểm tra explorer.");
           } catch (walletErr: any) {
             throw new Error(
               walletErr?.shortMessage ||
@@ -1137,54 +1184,26 @@ export default function AskPayWorkspacePage() {
           }
 
           // Step 3: Attach X-PAYMENT proof header for authenticated retry
-          const xPaymentPayload = {
-            network: "avalanche-fuji",
-            scheme: "exact-escrow",
-            payload: {
-              questionId,
-              questionHash,
-              amount: challengeAmount,
-              payer: activeAccount,
-              asset: challengeAsset,
-              txHash: escrowTxHash
-            }
-          };
-          requestHeaders["X-PAYMENT"] = btoa(JSON.stringify(xPaymentPayload));
+          setLoadingStep("Ký xác nhận yêu cầu đã đặt cọc (không chuyển thêm tiền)...");
+          const signature = await walletClient.signMessage({ account: activeAccount as `0x${string}`,
+            message: paymentProofMessage(boundContext, escrowTxHash) });
+          const xPaymentPayload = { version: 2, scheme: PAYMENT_SCHEME, chainId: 43113,
+            asset: boundContext.asset, escrow: boundContext.escrow,
+            requestHash: questionHash, txHash: escrowTxHash, signature };
+          builtXPaymentHeader = btoa(JSON.stringify(xPaymentPayload));
+          requestHeaders["X-PAYMENT"] = builtXPaymentHeader;
           usedX402Usdc = true;
-        } else {
-          // AVAX testnet escrow flow (without spoofing USDC X-PAYMENT headers)
-          const depositValue = isDeep ? parseEther("0.02") : parseEther("0.005");
-          setLoadingStep(`Đang tạm giữ ${isDeep ? "0.02" : "0.005"} AVAX testnet vào Escrow...`);
-          try {
-            const nativeBal = await publicClient.getBalance({
-              address: activeAccount as `0x${string}`
-            });
-            if (nativeBal <= depositValue) {
-              throw new Error(
-                `Ví hiện có ${Number(formatEther(nativeBal)).toFixed(4)} AVAX (cần hơn ${
-                  isDeep ? "0.02" : "0.005"
-                } AVAX để tạm giữ + phí gas).`
-              );
-            }
-
-            const txHash = await walletClient.writeContract({
-              chain: avalancheFuji,
-              account: activeAccount as `0x${string}`,
-              address: escrowAddress as `0x${string}`,
-              abi: ESCROW_ABI,
-              functionName: "askQuestion",
-              args: [questionId, isDeep ? 1 : 0, questionHash],
-              value: depositValue
-            });
-            await publicClient.waitForTransactionReceipt({ hash: txHash });
-            escrowTxHash = txHash;
-          } catch (walletErr: any) {
-            throw new Error(
-              walletErr?.shortMessage ||
-                walletErr?.message ||
-                "Chưa thu tiền: Giao dịch tạm giữ AVAX qua ví đã bị hủy hoặc chưa đủ số dư."
-            );
-          }
+          setPendingPaidAttempt({
+            questionId,
+            queryText,
+            activeMode,
+            apiTier,
+            escrowTxHash,
+            xPaymentHeader: builtXPaymentHeader,
+            asOf: builtAsOf,
+            priceLabel,
+            targetSessionId
+          });
         }
         await refreshBalance(activeAccount);
       }
@@ -1209,70 +1228,19 @@ export default function AskPayWorkspacePage() {
         );
       }
 
-      const passed = Boolean(data?.validation?.passed);
-      const settlementStatus = data.onchain?.settlementStatus || "NO_ESCROW_DEPOSIT";
-      const isLiveOnchain =
-        data.onchain?.mode === "LIVE_AVALANCHE" &&
-        Boolean(data.onchain?.fujiSettlementTxHash);
-      const hasEscrowDeposit = Boolean(escrowTxHash) || isLiveOnchain;
-
-      const computedFeeLabel = isFreeRewardTurn
-        ? "Miễn phí (Ưu đãi 10 tặng 1)"
-        : !hasEscrowDeposit
-        ? "Miễn phí trong bản dùng thử"
-        : settlementStatus === "AUTO_REFUNDED_TO_USER"
-        ? "Đã hoàn tiền tạm giữ 100%"
-        : settlementStatus === "SETTLEMENT_BLOCKED_INELIGIBLE"
-        ? "Tạm dừng giải ngân (Chưa đủ điều kiện)"
-        : settlementStatus === "PENDING_RECONCILIATION"
-        ? "Đang kiểm tra trạng thái thanh toán"
-        : priceLabel;
-
-      const assistantMsg: ChatMessage = {
-        id: `a-${Date.now()}`,
-        role: "assistant",
-        timestampLabel: formatNowLabel(),
-        mode: activeMode,
-        feeLabel: computedFeeLabel,
+      const settledAttempt = commitAssistantResult({
+        data,
         questionId,
-        content: data.answer || "",
-        citations: data.citations || [],
-        validation: data.validation,
-        hashes: data.hashes,
-        x402Trace: data.x402Trace,
-        onchain: {
-          mode: data.onchain?.mode || "SIMULATED_NO_ESCROW",
-          escrowTxHash: escrowTxHash || data.onchain?.escrowTxHash || undefined,
-          l1ReceiptTxHash: data.onchain?.l1ReceiptTxHash || "",
-          fujiSettlementTxHash: data.onchain?.fujiSettlementTxHash || "",
-          settlementStatus,
-          guardReason: data.onchain?.guardReason
-        }
-      };
+        targetSessionId,
+        activeMode,
+        priceLabel,
+        escrowTxHash,
+        isFreeRewardTurn
+      });
 
-      const nextSessionStatus =
-        isLiveOnchain && settlementStatus === "AUTO_REFUNDED_TO_USER"
-          ? "refunded"
-          : passed
-          ? "verified"
-          : "draft";
-
-      setSessions((prev) =>
-        prev.map((s) =>
-          s.id === targetSessionId
-            ? {
-                ...s,
-                status: nextSessionStatus,
-                messages: [...s.messages, assistantMsg]
-              }
-            : s
-        )
-      );
-
-      setQuestionCount((prev) => prev + 1);
-      setFocusedAssistantId(assistantMsg.id);
-      setSelectedCitationIdx(0);
-      setRightTab("citation");
+      if (settledAttempt !== "PENDING_RECONCILIATION") {
+        setPendingPaidAttempt(null);
+      }
 
       if (activeAccount) {
         await refreshBalance(activeAccount);
@@ -1290,6 +1258,18 @@ export default function AskPayWorkspacePage() {
               : s
           )
         );
+      } else if (currentQuestionId && builtXPaymentHeader) {
+        setPendingPaidAttempt({
+          questionId: currentQuestionId,
+          queryText,
+          activeMode,
+          apiTier,
+          escrowTxHash,
+          xPaymentHeader: builtXPaymentHeader,
+          asOf: builtAsOf,
+          priceLabel,
+          targetSessionId
+        });
       }
       if (!customPrompt) setQuestionInput(queryText);
       setLastFailedPrompt(queryText);
@@ -1302,6 +1282,221 @@ export default function AskPayWorkspacePage() {
       );
     } finally {
       setLoadingStep("");
+    }
+  }
+
+  function commitAssistantResult({
+    data,
+    questionId,
+    targetSessionId,
+    activeMode,
+    priceLabel,
+    escrowTxHash,
+    isFreeRewardTurn
+  }: {
+    data: any;
+    questionId: string;
+    targetSessionId: string;
+    activeMode: TierMode;
+    priceLabel: string;
+    escrowTxHash: string;
+    isFreeRewardTurn: boolean;
+  }): string {
+    const passed = Boolean(data?.validation?.passed);
+    const settlementStatus = data.onchain?.settlementStatus || "NO_ESCROW_DEPOSIT";
+    const isLiveOnchain =
+      data.onchain?.mode === "LIVE_AVALANCHE" &&
+      Boolean(data.onchain?.fujiSettlementTxHash);
+    const hasEscrowDeposit = Boolean(escrowTxHash) || isLiveOnchain;
+
+    const computedFeeLabel =
+      activeMode === "factcheck"
+        ? "Kiểm chứng nguồn · Miễn phí"
+        : isFreeRewardTurn
+        ? "Miễn phí (Ưu đãi 10 tặng 1)"
+        : !hasEscrowDeposit
+        ? "Miễn phí trong bản dùng thử"
+        : settlementStatus === "AUTO_REFUNDED_TO_USER"
+        ? "Đã hoàn tiền tạm giữ 100%"
+        : settlementStatus === "SETTLEMENT_BLOCKED_INELIGIBLE"
+        ? "Tạm dừng giải ngân (Chưa đủ điều kiện)"
+        : settlementStatus === "PENDING_RECONCILIATION"
+        ? "Đang kiểm tra trạng thái thanh toán"
+        : priceLabel;
+
+    const assistantMsg: ChatMessage = {
+      id: `a-${Date.now()}`,
+      role: "assistant",
+      timestampLabel: formatNowLabel(),
+      mode: activeMode,
+      feeLabel: computedFeeLabel,
+      answerStatus: data.answer_status,
+      reviewLevel: data.validation?.review_level,
+      questionId,
+      content: data.answer || "",
+      citations: data.citations || [],
+      validation: data.validation,
+      hashes: data.hashes,
+      x402Trace: data.x402Trace,
+      onchain: {
+        mode: data.onchain?.mode || "SIMULATED_NO_ESCROW",
+        escrowTxHash: escrowTxHash || data.onchain?.escrowTxHash || undefined,
+        l1ReceiptTxHash: data.onchain?.l1ReceiptTxHash || "",
+        fujiSettlementTxHash: data.onchain?.fujiSettlementTxHash || "",
+        settlementStatus,
+        guardReason: data.onchain?.guardReason
+      }
+    };
+
+    const nextSessionStatus =
+      isLiveOnchain && settlementStatus === "AUTO_REFUNDED_TO_USER"
+        ? "refunded"
+        : passed
+        ? "verified"
+        : "draft";
+
+    setSessions((prev) =>
+      prev.map((s) =>
+        s.id === targetSessionId
+          ? {
+              ...s,
+              status: nextSessionStatus,
+              messages: [...s.messages, assistantMsg]
+            }
+          : s
+      )
+    );
+
+    setQuestionCount((prev) => prev + 1);
+    setFocusedAssistantId(assistantMsg.id);
+    setSelectedCitationIdx(0);
+    setRightTab("citation");
+    return settlementStatus;
+  }
+
+  async function handleRetryPendingAttempt(attempt: PendingPaidAttempt) {
+    if (loadingStep) return;
+    setErrorMsg("");
+    setLoadingStep("Đang gửi lại yêu cầu đã đặt cọc (không tạo cọc mới)...");
+    try {
+      const headers: Record<string, string> = {
+        "Content-Type": "application/json",
+        ...(attempt.xPaymentHeader ? { "X-PAYMENT": attempt.xPaymentHeader } : {})
+      };
+      const res = await fetch("/api/ask-and-settle", {
+        method: "POST",
+        headers,
+        body: JSON.stringify({
+          questionId: attempt.questionId,
+          question: attempt.queryText,
+          tier: attempt.apiTier,
+          mode: attempt.activeMode,
+          ...(attempt.asOf ? { asOf: attempt.asOf } : {}),
+          askerAddress: account || "0x0000000000000000000000000000000000000001",
+          escrowTxHash: attempt.escrowTxHash,
+          requireX402: true
+        })
+      });
+      const data = await res.json();
+      if (!res.ok || data.error) {
+        throw new Error(data.error || "Chưa thể đối soát yêu cầu đã đặt cọc.");
+      }
+      const status = commitAssistantResult({
+        data,
+        questionId: attempt.questionId,
+        targetSessionId: attempt.targetSessionId,
+        activeMode: attempt.activeMode,
+        priceLabel: attempt.priceLabel,
+        escrowTxHash: attempt.escrowTxHash,
+        isFreeRewardTurn: false
+      });
+      if (status !== "PENDING_RECONCILIATION") {
+        setPendingPaidAttempt(null);
+      }
+      if (account) await refreshBalance(account);
+    } catch (err: any) {
+      setErrorMsg(
+        `Đã tạm giữ khoản tiền (Tx: ${attempt.escrowTxHash.slice(0, 12)}...), nhưng ${
+          err?.message || "chưa thể hoàn tất xử lý."
+        }`
+      );
+    } finally {
+      setLoadingStep("");
+    }
+  }
+
+  async function handleClaimTimeoutRefund(targetQuestionId: string, msgId?: string) {
+    if (!targetQuestionId || claimingTimeoutId) return;
+    setErrorMsg("");
+    setClaimingTimeoutId(targetQuestionId);
+    try {
+      const eth =
+        typeof window !== "undefined"
+          ? (window as any).avalanche || (window as any).ethereum
+          : null;
+      if (!eth) throw new Error("Chưa phát hiện ví Core Wallet / MetaMask.");
+      const activeAddr = account || (await connectWallet());
+      if (!activeAddr) throw new Error("Vui lòng kết nối ví đã đặt cọc để rút lại tiền.");
+      if (!isValidEvmAddress(escrowAddress)) throw new Error("Địa chỉ hợp đồng Escrow chưa hợp lệ.");
+
+      await ensureFujiChain(eth);
+      const publicClient = createPublicClient({
+        chain: avalancheFuji,
+        transport: http(fujiRpc)
+      });
+      const walletClient = createWalletClient({
+        chain: avalancheFuji,
+        transport: custom(eth)
+      });
+      const refundTx = await walletClient.writeContract({
+        chain: avalancheFuji,
+        account: activeAddr as `0x${string}`,
+        address: escrowAddress as `0x${string}`,
+        abi: ESCROW_ABI,
+        functionName: "claimTimeoutRefund",
+        args: [targetQuestionId as `0x${string}`]
+      });
+      const receipt = await publicClient.waitForTransactionReceipt({ hash: refundTx });
+      if (receipt.status !== "success") throw new Error("Giao dịch rút lại cọc timeout đã revert.");
+
+      await refreshBalance(activeAddr);
+      if (pendingPaidAttempt?.questionId === targetQuestionId) {
+        setPendingPaidAttempt(null);
+      }
+      if (msgId) {
+        setSessions((prev) =>
+          prev.map((s) => ({
+            ...s,
+            status: s.messages.some((m) => m.id === msgId) ? "refunded" : s.status,
+            messages: s.messages.map((m) =>
+              m.id === msgId
+                ? {
+                    ...m,
+                    feeLabel: "Đã rút lại cọc sau timeout (100%)",
+                    onchain: m.onchain
+                      ? {
+                          ...m.onchain,
+                          settlementStatus: "AUTO_REFUNDED_TO_USER",
+                          fujiSettlementTxHash: refundTx
+                        }
+                      : undefined
+                  }
+                : m
+            )
+          }))
+        );
+      }
+    } catch (err: any) {
+      const msgText = String(err?.shortMessage || err?.message || "");
+      if (msgText.toLowerCase().includes("timeout not reached")) {
+        setErrorMsg("Chưa đủ thời hạn chờ 5 phút của hợp đồng Escrow; vui lòng thử lại sau ít phút.");
+      } else if (msgText.toLowerCase().includes("not pending")) {
+        setErrorMsg("Khoản cọc cho câu hỏi này đã được xử lý hoặc hoàn trả trước đó.");
+      } else {
+        setErrorMsg(msgText || "Không thể rút lại cọc timeout.");
+      }
+    } finally {
+      setClaimingTimeoutId("");
     }
   }
 
@@ -1356,7 +1551,7 @@ export default function AskPayWorkspacePage() {
       <div className="auth-shell">
         <div style={{ display: "flex", alignItems: "center", gap: 10, color: "#0a1c2e" }}>
           <AskPayLogo size={36} />
-          <span style={{ fontWeight: 700, fontSize: 18 }}>AskPay</span>
+          <span style={{ fontWeight: 700, fontSize: 18 }}>Lorx</span>
         </div>
       </div>
     );
@@ -1379,7 +1574,7 @@ export default function AskPayWorkspacePage() {
                     lineHeight: 1.15
                   }}
                 >
-                  AskPay
+                  Lorx
                 </div>
                 <div style={{ fontSize: 12, color: "#64748b", marginTop: 2 }}>
                   Bản dùng thử · Tra cứu pháp luật XNK
@@ -1415,7 +1610,7 @@ export default function AskPayWorkspacePage() {
                 Tra cứu pháp luật xuất nhập khẩu
               </h1>
               <p style={{ margin: "0 0 20px", fontSize: 15, color: "#475569", lineHeight: 1.6 }}>
-                Nhập câu hỏi của bạn. AskPay sẽ tìm căn cứ để bạn đối chiếu.
+                Nhập câu hỏi của bạn. Lorx sẽ tìm căn cứ để bạn đối chiếu.
               </p>
 
               <button
@@ -1618,7 +1813,7 @@ export default function AskPayWorkspacePage() {
           <div className="brand-mark">
             <AskPayLogo size={34} />
             <div>
-              <div className="brand-name">AskPay</div>
+              <div className="brand-name">Lorx</div>
               <div style={{ fontSize: 10.5, color: "#64748b", fontWeight: 500 }}>
                 {isDemoProfile(currentUser)
                   ? "Bản dùng thử · Pháp lý XNK"
@@ -1871,7 +2066,7 @@ export default function AskPayWorkspacePage() {
                   textOverflow: "ellipsis"
                 }}
               >
-                {currentUser.role === "admin" ? "Quản trị viên • AskPay" : currentUser.company}
+                {currentUser.role === "admin" ? "Quản trị viên • Lorx" : currentUser.company}
               </div>
             </div>
             <GearIcon size={17} color={showUserMenu ? "#1d4ed8" : "#94a3b8"} />
@@ -1908,7 +2103,7 @@ export default function AskPayWorkspacePage() {
                 <MenuIcon size={19} />
               </button>
               <div>
-                <h1 className="chat-header-title">AskPay Admin — Hệ thống Kiểm định &amp; Vận hành</h1>
+                <h1 className="chat-header-title">Lorx Admin — Hệ thống Kiểm định &amp; Vận hành</h1>
                 <p className="chat-header-status" style={{ color: "#1d4ed8" }}>
                   <ShieldCheckIcon size={14} color="#1d4ed8" />
                   Giám sát Deterministic Validator, Nhật ký L1/Fuji &amp; Kiểm thử dữ liệu
@@ -2164,7 +2359,7 @@ export default function AskPayWorkspacePage() {
 
                 <div style={{ minWidth: 0 }}>
                   <h1 className="chat-header-title">
-                    {activeSession?.title || "Trợ Lý Pháp Luật AskPay"}
+                    {activeSession?.title || "Trợ Lý Pháp Luật Lorx"}
                   </h1>
                   <p
                     className="chat-header-status"
@@ -2231,10 +2426,10 @@ export default function AskPayWorkspacePage() {
                         margin: "0 0 8px"
                       }}
                     >
-                      Tra cứu pháp luật xuất nhập khẩu
+                      Bạn muốn hỏi gì về xuất nhập khẩu?
                     </h2>
                     <p style={{ margin: 0, fontSize: 15, color: "#475569", lineHeight: 1.65 }}>
-                      Nhập câu hỏi của bạn. AskPay sẽ tìm căn cứ để bạn đối chiếu — hoặc bấm một tình huống bên dưới để điền nhanh trước khi gửi.
+                      Nhập câu hỏi của bạn. Lorx sẽ tìm căn cứ để bạn đối chiếu — hoặc bấm một tình huống bên dưới để điền nhanh trước khi gửi.
                     </p>
 
                     <div className="welcome-grid" style={{ marginTop: 18 }}>
@@ -2244,7 +2439,11 @@ export default function AskPayWorkspacePage() {
                           type="button"
                           disabled={Boolean(loadingStep)}
                           onClick={() => {
-                            if (mode === "factcheck") setMode("deep");
+                            if (card.id === "factcheck-demo") {
+                              setMode("factcheck");
+                            } else if (mode === "factcheck") {
+                              setMode("deep");
+                            }
                             setQuestionInput(card.prefill);
                             setErrorMsg("");
                             setTimeout(() => {
@@ -2310,13 +2509,13 @@ export default function AskPayWorkspacePage() {
                         <RobotIcon size={14} />
                       </div>
                       <span style={{ fontSize: 13.5, fontWeight: 700, color: "#0a1c2e" }}>
-                        AskPay
+                        Lorx
                       </span>
                       {msg.feeLabel && <span className="tier-tag-badge">{msg.feeLabel}</span>}
                     </div>
 
                     <div className={`msg-ai-card ${passed ? "" : "refunded"}`}>
-                      {/* Two-part Verification & Settlement Status */}
+                      {/* Separated Citation, Answer Status, and Payment/Escrow Status */}
                       {msg.validation && (
                         <div
                           style={{
@@ -2343,44 +2542,143 @@ export default function AskPayWorkspacePage() {
                             marginBottom: 14,
                             display: "flex",
                             flexDirection: "column",
-                            gap: 3
+                            gap: 5
                           }}
                         >
-                          <div style={{ fontWeight: 700, display: "flex", alignItems: "center", gap: 6 }}>
-                            {passed ? (
-                              <>
-                                <CheckCircleIcon size={15} color="#059669" />
-                                <span>Đoạn trích khớp với nguồn đối chiếu</span>
-                              </>
-                            ) : msg.onchain?.mode === "LIVE_AVALANCHE" &&
-                              msg.onchain?.settlementStatus === "AUTO_REFUNDED_TO_USER" &&
-                              msg.onchain?.fujiSettlementTxHash ? (
-                              <>
-                                <UndoIcon size={15} color="#b45309" />
-                                <span>
-                                  Chưa đạt kiểm định — Đã hoàn trả khoản tiền tạm giữ (Tx:{" "}
-                                  {msg.onchain.fujiSettlementTxHash.slice(0, 12)}...)
-                                </span>
-                              </>
-                            ) : msg.onchain?.settlementStatus === "PENDING_RECONCILIATION" ? (
-                              <>
-                                <UndoIcon size={15} color="#b45309" />
-                                <span>Đang kiểm tra trạng thái thanh toán trên chuỗi.</span>
-                              </>
-                            ) : (
-                              <>
-                                <UndoIcon size={15} color="#64748b" />
-                                <span>Mình chưa tìm thấy nguồn phù hợp trong phạm vi hiện có (không thu phí).</span>
-                              </>
+                          <div
+                            style={{
+                              display: "flex",
+                              alignItems: "center",
+                              justifyContent: "space-between",
+                              flexWrap: "wrap",
+                              gap: 8
+                            }}
+                          >
+                            <div style={{ fontWeight: 700, display: "flex", alignItems: "center", gap: 6 }}>
+                              {passed ? (
+                                <>
+                                  <CheckCircleIcon size={15} color="#059669" />
+                                  <span>Nguồn trích dẫn: Khớp đoạn đối chiếu</span>
+                                </>
+                              ) : (
+                                <>
+                                  <UndoIcon size={15} color="#b45309" />
+                                  <span>Nguồn trích dẫn: Chưa khớp hoặc chưa đủ điều kiện</span>
+                                </>
+                              )}
+                            </div>
+
+                            {msg.answerStatus && (
+                              <span
+                                style={{
+                                  fontSize: 11,
+                                  fontWeight: 700,
+                                  padding: "2px 8px",
+                                  borderRadius: 999,
+                                  background:
+                                    msg.answerStatus === "NEEDS_CLARIFICATION"
+                                      ? "#fef3c7"
+                                      : msg.answerStatus === "INSUFFICIENT_EVIDENCE"
+                                      ? "#e2e8f0"
+                                      : "#e0f2fe",
+                                  color:
+                                    msg.answerStatus === "NEEDS_CLARIFICATION"
+                                      ? "#92400e"
+                                      : msg.answerStatus === "INSUFFICIENT_EVIDENCE"
+                                      ? "#334155"
+                                      : "#075985"
+                                }}
+                              >
+                                {msg.answerStatus === "NEEDS_CLARIFICATION"
+                                  ? "Cần bổ sung dữ kiện"
+                                  : msg.answerStatus === "INSUFFICIENT_EVIDENCE"
+                                  ? "Chưa đủ căn cứ trong kho demo"
+                                  : msg.answerStatus === "FACTCHECK"
+                                  ? "Kiểm chứng nguyên văn"
+                                  : "Đã đối chiếu theo dữ kiện"}
+                              </span>
                             )}
                           </div>
+
+                          <div style={{ fontSize: 11.5, color: "#475569", fontWeight: 500 }}>
+                            {msg.onchain?.settlementStatus === "RELEASED_TO_TREASURY"
+                              ? `Thanh toán: Đã giải ngân phí${
+                                  msg.onchain?.fujiSettlementTxHash
+                                    ? ` (Tx: ${msg.onchain.fujiSettlementTxHash.slice(0, 12)}...)`
+                                    : ""
+                                }`
+                              : msg.onchain?.settlementStatus === "AUTO_REFUNDED_TO_USER"
+                              ? `Thanh toán: Đã hoàn trả khoản tiền tạm giữ${
+                                  msg.onchain?.fujiSettlementTxHash
+                                    ? ` (Tx: ${msg.onchain.fujiSettlementTxHash.slice(0, 12)}...)`
+                                    : ""
+                                }`
+                              : msg.onchain?.settlementStatus === "PENDING_RECONCILIATION"
+                              ? `Thanh toán: Đang giữ cọc / Chờ đối soát trên chuỗi${
+                                  msg.onchain?.escrowTxHash
+                                    ? ` (Deposit: ${msg.onchain.escrowTxHash.slice(0, 12)}...)`
+                                    : ""
+                                }`
+                              : msg.onchain?.settlementStatus === "SETTLEMENT_BLOCKED_INELIGIBLE"
+                              ? "Thanh toán: Chưa mở giải ngân cho demo (đi theo nhánh hoàn cọc nếu có đặt cọc)."
+                              : "Thanh toán: Không phát sinh giao dịch đặt cọc (chế độ dùng thử miễn phí)."}
+                          </div>
+
                           <div style={{ fontSize: 11.5, color: "#64748b", fontWeight: 500 }}>
                             {msg.validation.corpus_status === "REVIEW_ASSERTED"
-                              ? "Nguồn từ snapshot đã gắn ngày rà soát · Việc áp dụng còn phụ thuộc tình huống thực tế."
+                              ? "Nguồn có ngày đối chiếu · Demo chưa được rà soát chuyên môn, chưa đủ điều kiện giải ngân."
                               : msg.validation.corpus_status === "VERIFIED_CURATED"
-                              ? "Nguồn đối chiếu nguyên văn từ kho văn bản chính thức · Đủ điều kiện giải ngân."
+                              ? "Đoạn trích đã được đối chiếu nguồn · Xem trạng thái thanh toán riêng."
                               : "Nguồn tách tự động / thử nghiệm (chưa rà soát từng điều) · Chưa mở giải ngân."}
                           </div>
+
+                          {msg.onchain?.settlementStatus === "PENDING_RECONCILIATION" &&
+                            msg.questionId &&
+                            msg.onchain?.escrowTxHash && (
+                              <div style={{ display: "flex", flexWrap: "wrap", gap: 8, marginTop: 4 }}>
+                                {pendingPaidAttempt &&
+                                  pendingPaidAttempt.questionId === msg.questionId && (
+                                    <button
+                                      type="button"
+                                      disabled={Boolean(loadingStep)}
+                                      onClick={() => handleRetryPendingAttempt(pendingPaidAttempt)}
+                                      style={{
+                                        border: "1px solid #cbd5e1",
+                                        background: "#ffffff",
+                                        color: "#0a1c2e",
+                                        borderRadius: 7,
+                                        padding: "4px 9px",
+                                        fontSize: 11.5,
+                                        fontWeight: 600,
+                                        cursor: "pointer"
+                                      }}
+                                    >
+                                      Thử đối soát lại (Không trừ cọc mới)
+                                    </button>
+                                  )}
+                                <button
+                                  type="button"
+                                  disabled={claimingTimeoutId === msg.questionId}
+                                  onClick={() =>
+                                    handleClaimTimeoutRefund(msg.questionId!, msg.id)
+                                  }
+                                  style={{
+                                    border: "1px solid #f59e0b",
+                                    background: "#fffbeb",
+                                    color: "#92400e",
+                                    borderRadius: 7,
+                                    padding: "4px 9px",
+                                    fontSize: 11.5,
+                                    fontWeight: 600,
+                                    cursor: "pointer"
+                                  }}
+                                >
+                                  {claimingTimeoutId === msg.questionId
+                                    ? "Đang gửi giao dịch rút cọc..."
+                                    : "Rút lại cọc sau timeout (claimTimeoutRefund)"}
+                                </button>
+                              </div>
+                            )}
                         </div>
                       )}
 
@@ -2479,7 +2777,7 @@ export default function AskPayWorkspacePage() {
                       <RobotIcon size={14} />
                     </div>
                     <span style={{ fontSize: 13.5, fontWeight: 700, color: "#0a1c2e" }}>
-                      AskPay
+                      Lorx
                     </span>
                   </div>
                   <div className="msg-ai-card">
@@ -2520,24 +2818,65 @@ export default function AskPayWorkspacePage() {
                   }}
                 >
                   <span>{errorMsg}</span>
-                  <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
-                    {lastFailedPrompt && (
-                      <button
-                        type="button"
-                        onClick={() => handleAsk(lastFailedPrompt)}
-                        style={{
-                          background: "#9f1239",
-                          color: "#ffffff",
-                          border: "none",
-                          borderRadius: 8,
-                          padding: "6px 12px",
-                          fontSize: 12.5,
-                          fontWeight: 600,
-                          cursor: "pointer"
-                        }}
-                      >
-                        Thử lại
-                      </button>
+                  <div style={{ display: "flex", alignItems: "center", gap: 8, flexWrap: "wrap" }}>
+                    {pendingPaidAttempt ? (
+                      <>
+                        <button
+                          type="button"
+                          disabled={Boolean(loadingStep)}
+                          onClick={() => handleRetryPendingAttempt(pendingPaidAttempt)}
+                          style={{
+                            background: "#9f1239",
+                            color: "#ffffff",
+                            border: "none",
+                            borderRadius: 8,
+                            padding: "6px 12px",
+                            fontSize: 12.5,
+                            fontWeight: 600,
+                            cursor: "pointer"
+                          }}
+                        >
+                          Thử lại yêu cầu đã đặt cọc (Không trừ cọc mới)
+                        </button>
+                        <button
+                          type="button"
+                          disabled={claimingTimeoutId === pendingPaidAttempt.questionId}
+                          onClick={() => handleClaimTimeoutRefund(pendingPaidAttempt.questionId)}
+                          style={{
+                            background: "#fffbeb",
+                            color: "#92400e",
+                            border: "1px solid #f59e0b",
+                            borderRadius: 8,
+                            padding: "6px 12px",
+                            fontSize: 12.5,
+                            fontWeight: 600,
+                            cursor: "pointer"
+                          }}
+                        >
+                          {claimingTimeoutId === pendingPaidAttempt.questionId
+                            ? "Đang gửi giao dịch..."
+                            : "Rút lại cọc sau timeout (claimTimeoutRefund)"}
+                        </button>
+                      </>
+                    ) : (
+                      lastFailedPrompt && (
+                        <button
+                          type="button"
+                          onClick={() => handleAsk(lastFailedPrompt)}
+                          style={{
+                            background: "#9f1239",
+                            color: "#ffffff",
+                            border: "none",
+                            borderRadius: 8,
+                            padding: "6px 12px",
+                            fontSize: 12.5,
+                            fontWeight: 600,
+                            cursor: "pointer"
+                          }}
+                        >
+                          Thử lại
+                        </button>
+                      )
                     )}
                     <button
                       type="button"
@@ -2600,13 +2939,17 @@ export default function AskPayWorkspacePage() {
                       fontSize: 11.5,
                       fontWeight: 600,
                       color:
-                        useOnchainWallet && account
+                        mode === "factcheck"
+                          ? "#075985"
+                          : useOnchainWallet && account
                           ? "#047857"
                           : !isDemoProfile(currentUser)
                           ? "#b45309"
                           : "#475569",
                       background:
-                        useOnchainWallet && account
+                        mode === "factcheck"
+                          ? "#e0f2fe"
+                          : useOnchainWallet && account
                           ? "#ecfdf5"
                           : !isDemoProfile(currentUser)
                           ? "#fef3c7"
@@ -2615,7 +2958,9 @@ export default function AskPayWorkspacePage() {
                       borderRadius: 999
                     }}
                   >
-                    {!isDemoProfile(currentUser) && !account
+                    {mode === "factcheck"
+                      ? "Kiểm chứng nguồn · Miễn phí"
+                      : !isDemoProfile(currentUser) && !account
                       ? "Cần kết nối ví Core / MetaMask"
                       : !useOnchainWallet || !account
                       ? "Miễn phí trong bản dùng thử"
@@ -2686,7 +3031,9 @@ export default function AskPayWorkspacePage() {
                             }}
                           >
                             <option value="USDC">USDC (Fuji)</option>
-                            <option value="AVAX">AVAX testnet</option>
+                            <option value="AVAX" disabled>
+                              AVAX testnet (Tạm khóa — chỉ nhận USDC proof v2)
+                            </option>
                           </select>
                         </div>
                       ) : (
@@ -2968,7 +3315,7 @@ export default function AskPayWorkspacePage() {
               </div>
 
               <p style={{ margin: "0 0 14px", color: "#475569" }}>
-                Với mỗi <strong>10 câu hỏi</strong> thực hiện trên AskPay, hệ thống tự động tặng bạn{" "}
+                Với mỗi <strong>10 câu hỏi</strong> thực hiện trên Lorx, hệ thống tự động tặng bạn{" "}
                 <strong>1 lượt hỏi miễn phí (0 USDC)</strong> cho câu thứ 10 (áp dụng cho cả Hỏi
                 Nhanh và Phân Tích Tình Huống).
               </p>
@@ -3010,7 +3357,7 @@ export default function AskPayWorkspacePage() {
               }}
             >
               <h3 style={{ margin: 0, fontSize: 16.5, fontWeight: 700, color: "#0a1c2e" }}>
-                Hồ sơ Tài khoản AskPay
+                Hồ sơ Tài khoản Lorx
               </h3>
               <button
                 type="button"
@@ -3108,8 +3455,9 @@ export default function AskPayWorkspacePage() {
                     </div>
                     {usdcBalance === "0.00" && (
                       <div style={{ marginTop: 6, fontSize: 12, color: "#b45309", lineHeight: 1.45 }}>
-                        Ví hiện chưa có USDC Fuji. Bạn có thể đổi sang{" "}
-                        <strong>AVAX testnet</strong> ở ô chọn cạnh khung nhập câu hỏi để test ngay bằng số dư AVAX sẵn có.
+                        Ví hiện chưa có USDC Fuji. Luồng trả phí v2 hiện chỉ xác minh cọc{" "}
+                        <strong>USDC (Fuji)</strong>; bạn có thể nạp thêm USDC testnet hoặc chuyển sang{" "}
+                        <strong>Dùng thử demo miễn phí</strong>.
                       </div>
                     )}
                   </div>

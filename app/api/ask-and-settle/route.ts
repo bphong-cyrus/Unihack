@@ -1,4 +1,8 @@
 import { createHash } from "crypto";
+import { readFileSync } from "fs";
+import path from "path";
+import corpusBundle from "../../../data/legal-corpus.json";
+import demoManifest from "../../../corpus/demo-v1/manifest.json";
 import { NextResponse } from "next/server";
 import {
   createPublicClient,
@@ -11,17 +15,10 @@ import {
 import { privateKeyToAccount } from "viem/accounts";
 import { avalancheFuji } from "viem/chains";
 import { evaluateSettlementDecision } from "./escrow-guard.mjs";
-import { runDeterministicFactcheck } from "./factcheck.mjs";
 import { forwardLegalQuestion } from "./legal-proxy.mjs";
 import { VALIDATOR_VERSION, computeExcerptSimilarity } from "./validator-core.mjs";
-import {
-  buildX402Challenge,
-  checkIdempotentReplay,
-  setIdempotentResult,
-  verifyOnchainX402Receipt,
-  verifyX402PaymentHeader
-} from "./x402-protocol.mjs";
-import corpusBundle from "../../../data/legal-corpus.json";
+import { paymentContext, requestHash, PAYMENT_SCHEME } from "../../lib/payment-request.mjs";
+import { PaymentError, parsePaymentProof, verifyEscrowPayment } from "./verify-payment.mjs";
 
 export const maxDuration = 30;
 
@@ -1671,7 +1668,6 @@ function runBuiltinMockLegalQA(
   });
 
   const allPassed = checks.length > 0 && checks.every((c) => c.status === "PASS");
-  const allVerifiedCurated = allPassed && checks.every((c) => c._verified);
   const overallScore =
     checks.length > 0
       ? Number((checks.reduce((s, c) => s + c._score, 0) / checks.length).toFixed(2))
@@ -1680,8 +1676,8 @@ function runBuiltinMockLegalQA(
   const validationPayload = {
     passed: allPassed,
     verdict: allPassed ? "VERIFIED_RELEASE" : "UNVERIFIED_REFUND",
-    settlement_eligible: allVerifiedCurated,
-    corpus_status: allVerifiedCurated ? "VERIFIED_CURATED" : "DEMO_UNVERIFIED",
+    settlement_eligible: false,
+    corpus_status: "DEMO_UNVERIFIED",
     validator_version: VALIDATOR_VERSION,
     corpus_sha256: DEMO_CORPUS_SHA256_TS,
     overall_score: overallScore,
@@ -1704,6 +1700,481 @@ function runBuiltinMockLegalQA(
     },
     demo: true
   };
+}
+
+type DemoV1Provision = {
+  document_id: string;
+  document_title: string;
+  source_url: string;
+  source_sha256: string;
+  article: string;
+  clause: string;
+  point: string;
+  text: string;
+  effective_from: string;
+  effective_until: string | null;
+  verified_through: string | null;
+  reviewed: boolean;
+};
+
+const DEMO_V1_FALLBACK_SHA256 =
+  "38f84d5d593a86142b23bb6d79187192a847be52f56f2befa9f0c0fabdd2bec3";
+
+function getDemoV1Sha256(): string {
+  try {
+    const raw = readFileSync(
+      path.join(process.cwd(), "corpus", "demo-v1", "manifest.sha256"),
+      "utf8"
+    ).trim();
+    if (/^[a-f0-9]{64}$/i.test(raw)) return raw.toLowerCase();
+  } catch {
+    // Fallback to pinned manifest SHA-256
+  }
+  return DEMO_V1_FALLBACK_SHA256;
+}
+
+const DEMO_V1_SNAPSHOT_ID = String(
+  (demoManifest as any)?.snapshot_id || "askpay-demo-source-checked-2026-11-17"
+);
+const DEMO_V1_SNAPSHOT_SHA256 = getDemoV1Sha256();
+const DEMO_V1_PROVISIONS: DemoV1Provision[] = (() => {
+  const docs: any[] = Array.isArray((demoManifest as any)?.documents)
+    ? (demoManifest as any).documents
+    : [];
+  const items: DemoV1Provision[] = [];
+  for (const doc of docs) {
+    const docId = String(doc?.document_id || "").toUpperCase().replace(/\s+/g, "");
+    const title = String(doc?.title || "");
+    const sourceUrl = String(doc?.source_url || "");
+    const sourceSha = String(doc?.source_sha256 || "");
+    for (const p of Array.isArray(doc?.provisions) ? doc.provisions : []) {
+      items.push({
+        document_id: docId,
+        document_title: title,
+        source_url: sourceUrl,
+        source_sha256: sourceSha,
+        article: String(p?.article ?? "").trim(),
+        clause: String(p?.clause ?? "").trim(),
+        point: String(p?.point ?? "").trim(),
+        text: String(p?.text || ""),
+        effective_from: String(p?.effective_from || ""),
+        effective_until: p?.effective_until ? String(p.effective_until) : null,
+        verified_through: p?.verified_through ? String(p.verified_through) : null,
+        reviewed: Boolean(p?.reviewed_by && p?.reviewed_at && p?.status_evidence_url)
+      });
+    }
+  }
+  return items;
+})();
+
+const DEMO_V1_DOCS_SET = new Set(DEMO_V1_PROVISIONS.map((p) => p.document_id));
+
+class DemoV1HttpError extends Error {
+  status: number;
+  constructor(status: number, message: string) {
+    super(message);
+    this.status = status;
+  }
+}
+
+function foldDemoV1Text(s: string): string {
+  return s
+    .toLowerCase()
+    .replace(/đ/g, "d")
+    .normalize("NFD")
+    .replace(/\p{Mn}/gu, "");
+}
+
+function normalizeDemoV1DocId(doc: string): string {
+  return String(doc || "").toUpperCase().replace(/\s+/g, "");
+}
+
+function isValidIsoDateStr(val: string): boolean {
+  if (!/^\d{4}-\d{2}-\d{2}$/.test(val)) return false;
+  const [y, m, d] = val.split("-").map(Number);
+  const dt = new Date(Date.UTC(y, m - 1, d));
+  return dt.getUTCFullYear() === y && dt.getUTCMonth() === m - 1 && dt.getUTCDate() === d;
+}
+
+function parseDmyUtcDate(dmy: string): Date {
+  const m = /^(\d{2})\/(\d{2})\/(\d{4})$/.exec(dmy);
+  if (!m) throw new DemoV1HttpError(400, "Ngày không hợp lệ");
+  const day = Number(m[1]);
+  const month = Number(m[2]);
+  const year = Number(m[3]);
+  const dt = new Date(Date.UTC(year, month - 1, day));
+  if (
+    dt.getUTCFullYear() !== year ||
+    dt.getUTCMonth() !== month - 1 ||
+    dt.getUTCDate() !== day
+  ) {
+    throw new DemoV1HttpError(400, "Ngày không hợp lệ");
+  }
+  return dt;
+}
+
+function lookupDemoV1(
+  doc: string,
+  article: string | number,
+  clause: string | number,
+  point: string,
+  asOf: string
+): DemoV1Provision | null {
+  const docUpper = normalizeDemoV1DocId(doc);
+  const artStr = String(article).trim();
+  const clauseStr = String(clause).trim();
+  const pointStr = String(point || "").trim();
+  for (const item of DEMO_V1_PROVISIONS) {
+    if (
+      item.document_id === docUpper &&
+      item.article === artStr &&
+      item.clause === clauseStr &&
+      item.point === pointStr &&
+      item.reviewed &&
+      item.verified_through !== null &&
+      asOf <= item.verified_through &&
+      item.effective_from <= asOf &&
+      (item.effective_until === null || asOf < item.effective_until)
+    ) {
+      return item;
+    }
+  }
+  return null;
+}
+
+function validateSnapshotCitationsDemoV1(citations: any[], asOf: string) {
+  if (!citations.length) {
+    return {
+      passed: false,
+      verdict: "UNVERIFIED",
+      settlement_eligible: false,
+      corpus_status: "REVIEW_ASSERTED",
+      review_level: "AI_ASSISTED_SOURCE_CHECK_ONLY",
+      validator_version: VALIDATOR_VERSION,
+      overall_score: 0.0,
+      citation_checks: [],
+      fail_reason: "NO_CITATION_PROVIDED",
+      snapshot_id: DEMO_V1_SNAPSHOT_ID,
+      snapshot_sha256: DEMO_V1_SNAPSHOT_SHA256,
+      as_of: asOf
+    };
+  }
+
+  const checks: any[] = [];
+  const scores: number[] = [];
+
+  for (const c of citations) {
+    const doc = normalizeDemoV1DocId(String(c?.document || ""));
+    const art = String(c?.article || "").trim();
+    const cl = String(c?.clause || "").trim();
+    const pt = String(c?.point || "").trim();
+
+    const docExists = DEMO_V1_DOCS_SET.has(doc);
+    const provisionExists = DEMO_V1_PROVISIONS.some(
+      (item) =>
+        item.document_id === doc &&
+        item.article === art &&
+        item.clause === cl &&
+        item.point === pt
+    );
+    const version = lookupDemoV1(doc, art, cl, pt, asOf);
+    const inForce = version !== null;
+    const similarity = version ? computeExcerptSimilarity(String(c?.excerpt || ""), version.text) : 0;
+
+    let reason: string | null = docExists ? null : "DOCUMENT_NOT_IN_CORPUS";
+    if (reason === null && !provisionExists) reason = "ARTICLE_OR_CLAUSE_NOT_FOUND";
+    if (reason === null && !inForce) reason = "NO_REVIEWED_VERSION_FOR_DATE";
+    if (reason === null && similarity < 0.9) reason = "EXCERPT_MISMATCH_BELOW_90_PERCENT";
+
+    scores.push(
+      25 * (docExists ? 1 : 0) +
+        25 * (provisionExists ? 1 : 0) +
+        20 * (inForce ? 1 : 0) +
+        30 * similarity
+    );
+
+    checks.push({
+      document: doc,
+      article: art,
+      clause: cl,
+      point: pt,
+      doc_exists: docExists,
+      article_clause_exists: provisionExists,
+      is_in_force: inForce,
+      excerpt_similarity: similarity,
+      threshold_required: 0.9,
+      raw_text: version ? version.text : "",
+      source_url: version ? version.source_url : null,
+      source_sha256: version ? version.source_sha256 : null,
+      status: reason ? "FAIL" : "PASS",
+      fail_reason: reason
+    });
+  }
+
+  const passed = checks.every((c) => c.status === "PASS");
+  const overallScore = Number((scores.reduce((a, b) => a + b, 0) / scores.length).toFixed(2));
+  return {
+    passed,
+    verdict: passed ? "CITATIONS_MATCH" : "UNVERIFIED",
+    settlement_eligible: false,
+    corpus_status: "REVIEW_ASSERTED",
+    review_level: "AI_ASSISTED_SOURCE_CHECK_ONLY",
+    validator_version: VALIDATOR_VERSION,
+    overall_score: overallScore,
+    citation_checks: checks,
+    snapshot_id: DEMO_V1_SNAPSHOT_ID,
+    snapshot_sha256: DEMO_V1_SNAPSHOT_SHA256,
+    as_of: asOf
+  };
+}
+
+function buildDemoV1Response(
+  reqBody: any,
+  asOf: string,
+  answer: string,
+  citations: any[],
+  answerStatus: string,
+  extra?: Record<string, any>
+) {
+  const validation = validateSnapshotCitationsDemoV1(citations, asOf);
+  return {
+    question_id: reqBody.questionId,
+    tier: reqBody.tier,
+    answer,
+    citations,
+    validation,
+    answer_status: answerStatus,
+    answer_method: "RULE_BASED_DEMO",
+    snapshot_id: DEMO_V1_SNAPSHOT_ID,
+    snapshot_sha256: DEMO_V1_SNAPSHOT_SHA256,
+    as_of: asOf,
+    payment_status: "DISABLED",
+    latency_ms: 0,
+    ...(extra || {}),
+    hashes: {
+      question_hash: sha256HexNode(reqBody.question.trim()),
+      answer_hash: sha256HexNode(answer),
+      citations_hash: sha256HexNode(JSON.stringify(citations)),
+      validator_hash: sha256HexNode(JSON.stringify(validation)),
+      corpus_hash: "0x" + DEMO_V1_SNAPSHOT_SHA256
+    },
+    demo: true
+  };
+}
+
+function runBoundedDemoV1Factcheck(reqBody: any, asOf: string) {
+  const p =
+    reqBody.factcheckPayload && typeof reqBody.factcheckPayload === "object"
+      ? reqBody.factcheckPayload
+      : {};
+  const q = reqBody.question.trim();
+  const findFirst = (re: RegExp) => {
+    const m = re.exec(q);
+    return m ? m[1] : "";
+  };
+
+  const doc = p.document !== undefined ? p.document : findFirst(/(\d+\/\d{4}\/(?:QH\d+|NĐ-CP|QĐ-TTg|TT-[A-ZĐ]+))/i);
+  const art = p.article !== undefined ? p.article : findFirst(/Điều\s+(\d+[a-z]?)/i);
+  const cl = p.clause !== undefined ? p.clause : findFirst(/Khoản\s+(\d+)/i);
+  const pt = p.point !== undefined ? p.point : findFirst(/Điểm\s+([a-zđ])\b/iu);
+  const colonIdx = q.indexOf(":");
+  const excerpt =
+    p.excerpt !== undefined
+      ? p.excerpt
+      : colonIdx !== -1
+      ? q.slice(colonIdx + 1).trim()
+      : "";
+
+  if ([doc, art, cl, pt, excerpt].some((v) => typeof v !== "string")) {
+    throw new DemoV1HttpError(400, "Invalid citation target");
+  }
+
+  if (!doc || !art || !cl) {
+    return buildDemoV1Response(
+      reqBody,
+      asOf,
+      "Cần số hiệu văn bản, Điều và Khoản cần kiểm chứng. Đối tượng kiểm chứng sẽ được giữ nguyên.",
+      [],
+      "NEEDS_CLARIFICATION"
+    );
+  }
+
+  const target = { document: doc, article: art, clause: cl, point: pt, excerpt };
+  const docUpper = normalizeDemoV1DocId(doc);
+  const original =
+    DEMO_V1_PROVISIONS.find(
+      (x) =>
+        x.document_id === docUpper &&
+        x.article === art &&
+        x.clause === cl &&
+        x.point === pt
+    ) || null;
+  const valid = lookupDemoV1(doc, art, cl, pt, asOf);
+
+  let answer = "";
+  if (original === null) {
+    answer = `Không tìm thấy Điều ${art}, Khoản ${cl}, Điểm ${pt || "—"} của ${doc} trong corpus demo. Không thay bằng điều khác; corpus này không bao phủ toàn bộ văn bản.`;
+  } else if (valid === null) {
+    answer =
+      "Điều khoản có trong dữ liệu nhưng không đủ điều kiện hiệu lực/rà soát cho ngày áp dụng. Không xác nhận dùng làm căn cứ hiện hành.";
+  } else if (!excerpt) {
+    answer = "Tìm thấy đúng Điều/Khoản trong corpus. Chưa kiểm tra nguyên văn vì bạn chưa gửi đoạn trích.";
+  } else {
+    const v = validateSnapshotCitationsDemoV1([target], asOf);
+    if (v.passed) {
+      answer =
+        "Đoạn trích khớp nguồn tại đúng đối tượng bạn yêu cầu. Việc áp dụng cho tình huống vẫn cần được đánh giá riêng.";
+    } else {
+      const exNums = Array.from(new Set<string>(String(excerpt).match(/\d+/g) || []));
+      const srcNumsSet = new Set<string>(valid.text.match(/\d+/g) || []);
+      const srcNums = Array.from(srcNumsSet).sort();
+      const wrong = exNums.filter((n) => !srcNumsSet.has(n)).sort();
+      answer =
+        "Đoạn trích không khớp nguyên văn. " +
+        (wrong.length > 0
+          ? `Số ở đầu vào không có trong nguồn: [${wrong.map((x) => `'${x}'`).join(", ")}]; các số trong nguồn: [${srcNums.map((x) => `'${x}'`).join(", ")}].`
+          : "Xem đoạn nguồn để đối chiếu từng từ và điều kiện.");
+    }
+  }
+
+  return buildDemoV1Response(reqBody, asOf, answer, [target], "FACTCHECK", {
+    factcheck_target: target,
+    source_excerpt: original ? original.text : null
+  });
+}
+
+function runBoundedDemoV1QA(reqBody: any) {
+  if (!["quick", "deep"].includes(reqBody.tier)) {
+    throw new DemoV1HttpError(400, "Invalid tier");
+  }
+  if (reqBody.simulateHallucination === true || reqBody.simulateExpiredLaw === true) {
+    throw new DemoV1HttpError(400, "Use explicit factcheck input instead of simulated corruption");
+  }
+
+  const todayVn = new Intl.DateTimeFormat("en-CA", {
+    timeZone: "Asia/Ho_Chi_Minh"
+  }).format(new Date());
+  const asOfRaw = typeof reqBody.asOf === "string" && reqBody.asOf.trim() ? reqBody.asOf.trim() : todayVn;
+  if (!isValidIsoDateStr(asOfRaw)) {
+    throw new DemoV1HttpError(400, "Invalid ISO date");
+  }
+  const asOf = asOfRaw;
+
+  const q = foldDemoV1Text(reqBody.question);
+  if (reqBody.mode === "factcheck" || q.includes("kiem chung")) {
+    return runBoundedDemoV1Factcheck(reqBody, asOf);
+  }
+
+  if (asOf > "2026-11-17") {
+    return buildDemoV1Response(
+      reqBody,
+      asOf,
+      "Corpus chưa được rà soát đến ngày yêu cầu. Cần cập nhật nguồn trước khi trả lời.",
+      [],
+      "INSUFFICIENT_EVIDENCE"
+    );
+  }
+
+  const keys: Array<[string, string | number, string | number, string]> = [];
+  let status = "ANSWERED";
+  let answer = "";
+
+  if (q.includes("128/2020") || q.includes("169/2026") || q.includes("127/2013")) {
+    if (asOf < "2026-07-01") {
+      return buildDemoV1Response(
+        reqBody,
+        asOf,
+        "Đây là câu hỏi lịch sử; cần đối chiếu ngày vi phạm, ngày quyết định và văn bản sửa đổi. Bộ demo chưa đủ để kết luận mức phạt.",
+        [],
+        "NEEDS_CLARIFICATION"
+      );
+    }
+    keys.push(["169/2026/NĐ-CP", 38, 1, ""], ["169/2026/NĐ-CP", 38, 2, ""], ["169/2026/NĐ-CP", 39, 1, ""]);
+    answer =
+      "Nghị định 128/2020/NĐ-CP hết hiệu lực từ 01/07/2026 theo Điều 38 Nghị định 169/2026/NĐ-CP. Không dùng mức phạt cũ cho một hành vi mới vào tháng 11/2026. Vụ việc cũ còn phải đối chiếu Điều 39 về chuyển tiếp; cần ngày hành vi và ngày quyết định.";
+    if (q.includes("127/2013")) {
+      answer =
+        "Nghị định 127/2013 đã hết hiệu lực từ 10/12/2020 (Điều 35 Nghị định 128/2020; xem PDF lịch sử kèm corpus). " +
+        answer;
+    }
+  } else if (
+    ["may tien", "may moc", "thiet bi da qua su dung", "may cu"].some((t) => q.includes(t))
+  ) {
+    status = "NEEDS_CLARIFICATION";
+    keys.push(["18/2019/QĐ-TTG", 4, 3, ""], ["18/2019/QĐ-TTG", 6, 1, ""], ["18/2019/QĐ-TTG", 8, 1, ""]);
+    answer =
+      "Chưa đủ căn cứ để kết luận được nhập. Cần xác nhận mã HS và công dụng kỹ thuật, năm sản xuất/năm nhập, nước sản xuất, mục đích sử dụng và giấy xác nhận của nhà sản xuất hoặc chứng thư giám định. " +
+      "Nhập từ Nhật không tự chứng minh máy được sản xuất tại Nhật. Nếu chỉ nhập để bán lại, cần làm rõ điều kiện phục vụ trực tiếp hoạt động sản xuất tại Khoản 3 Điều 4, chưa thể kết luận đáp ứng. " +
+      "Quy tắc chung là tuổi thiết bị không quá 10 năm, có nhóm ngoại lệ ở Phụ lục I. Không tự gán HS 84.58 chỉ từ tên “máy tiện”.";
+    if (reqBody.tier === "deep") {
+      keys.push(
+        ["28/2022/QĐ-TTG", "Phụ lục I", "1.6", ""],
+        ["18/2019/QĐ-TTG", 8, 3, ""],
+        ["54/2014/QH13", 26, 1, ""]
+      );
+      answer +=
+        " Nếu hồ sơ xác nhận đúng máy tiện bóc tách kim loại thuộc nhóm 84.58, Mục 1.6 Phụ lục I QĐ 28/2022 nêu giới hạn 20 năm; đây chỉ là một tiêu chí. " +
+        "Khi thiếu giấy xác nhận/chứng thư, việc đưa về bảo quản có điều kiện đăng ký giám định và thời hạn nộp chứng thư tại Khoản 3 Điều 8. QĐ 02/2026 sửa thủ tục trường hợp khác ở Điều 9; không dùng mẫu cũ để nộp hồ sơ.";
+    }
+  } else if (
+    (q.includes("30 ngay") || q.includes("to khai")) &&
+    ["thoi han", "bao lau", "con bao nhieu", "ngay", "nop"].some((t) => q.includes(t))
+  ) {
+    keys.push(["54/2014/QH13", 25, 1, "b"]);
+    const dates = reqBody.question.match(/\b(\d{2}\/\d{2}\/\d{4})\b/g) || [];
+    if (dates.length === 2) {
+      const start = parseDmyUtcDate(dates[0]);
+      const reference = parseDmyUtcDate(dates[1]);
+      const elapsed = Math.round((reference.getTime() - start.getTime()) / 86400000);
+      const remaining = 30 - elapsed;
+      if (elapsed < 0) {
+        answer = "Ngày đối chiếu đứng trước ngày hàng đến. Cần xác nhận lại hai mốc.";
+        status = "NEEDS_CLARIFICATION";
+      } else {
+        answer =
+          `Từ ${dates[0]} đến ${dates[1]} đã qua ${elapsed} ngày; ` +
+          (remaining >= 0 ? `còn ${remaining} ngày` : `đã vượt mốc 30 ngày ${-remaining} ngày`) +
+          ". Đây là phép trừ ngày lịch, lấy ngày thứ nhất làm ngày hàng đến và không tính ngày bắt đầu; chưa kết luận hạn pháp lý cuối cùng hay xử lý ngày nghỉ.";
+      }
+    } else {
+      answer =
+        "Đối với hàng nhập khẩu: nộp trước ngày hàng đến cửa khẩu hoặc trong 30 ngày kể từ ngày hàng đến cửa khẩu (Điểm b Khoản 1 Điều 25). Cần ngày hàng đến để tính khoảng thời gian còn lại.";
+    }
+    if (reqBody.tier === "deep") {
+      keys.push(["54/2014/QH13", 25, 2, ""]);
+      answer +=
+        " Phân biệt với thời hạn 15 ngày có giá trị làm thủ tục của tờ khai kể từ ngày đăng ký; đó là mốc khác.";
+    }
+  } else {
+    return buildDemoV1Response(
+      reqBody,
+      asOf,
+      "Bộ demo chưa có đủ căn cứ cho câu hỏi này. Hiện hỗ trợ thời hạn tờ khai nhập khẩu, kiểm chứng trích dẫn, máy cũ và hiệu lực nghị định xử phạt. Không suy đoán từ một điều khoản có từ khóa gần giống.",
+      [],
+      "INSUFFICIENT_EVIDENCE"
+    );
+  }
+
+  const items = keys.map((k) => lookupDemoV1(k[0], k[1], k[2], k[3], asOf));
+  if (items.some((x) => x === null)) {
+    return buildDemoV1Response(
+      reqBody,
+      asOf,
+      "Thiếu phiên bản nguồn phù hợp ngày áp dụng. Chưa đủ căn cứ để trả lời.",
+      [],
+      "INSUFFICIENT_EVIDENCE"
+    );
+  }
+
+  const citations = items.map((p) => ({
+    document: p!.document_id,
+    document_title: p!.document_title,
+    article: p!.article,
+    clause: p!.clause,
+    point: p!.point,
+    excerpt: p!.text
+  }));
+  return buildDemoV1Response(reqBody, asOf, answer, citations, status);
 }
 
 const ESCROW_V2_ABI = [
@@ -1822,7 +2293,7 @@ export async function POST(req: Request) {
 
   const questionId: string = body.questionId;
   const question: string = body.question.trim();
-  const questionHash = keccak256(toBytes(question));
+  let questionHash = keccak256(toBytes(question));
   const asOfNorm: string = typeof body.asOf === "string" ? body.asOf.trim() : "";
   const escrowAddr = (process.env.NEXT_PUBLIC_ESCROW_ADDRESS || "").trim();
   const usdcAddr = (process.env.NEXT_PUBLIC_USDC_ADDRESS || "").trim();
@@ -1830,170 +2301,71 @@ export async function POST(req: Request) {
     process.env.NEXT_PUBLIC_FUJI_RPC_URL || "https://api.avax-test.network/ext/bc/C/rpc"
   ).trim();
 
-  // Check idempotency cache (including conflict detection if questionHash, tier, or asOf changed)
-  const replay = checkIdempotentReplay({
-    questionId,
-    questionHash,
-    tier: body.mode === "factcheck" ? "factcheck" : body.tier,
-    asOf: asOfNorm
-  });
-  if (replay.conflict) {
-    return NextResponse.json(
-      {
-        error: "Mã questionId đã được sử dụng cho câu hỏi, gói hoặc ngày áp dụng khác.",
-        code: "IDEMPOTENCY_CONFLICT"
-      },
-      { status: 409 }
-    );
-  }
-  if (replay.hit && replay.response) {
-    return NextResponse.json({
-      ...replay.response,
-      x402Trace: {
-        ...(replay.response.x402Trace || {}),
-        idempotentReplay: true
-      }
-    });
-  }
-
-  const requireX402 =
-    body.requireX402 === true || req.headers.get("x-askpay-protocol") === "x402";
   const xPaymentHeader = req.headers.get("x-payment") || "";
-  let x402Verification: ReturnType<typeof verifyX402PaymentHeader> | null = null;
-  let onchainProofResult: { verified: boolean; reason?: string; blockNumber?: string; to?: string } | null = null;
-
+  const requireX402 = body.requireX402 === true || req.headers.get("x-askpay-protocol") === "x402" ||
+    Boolean(xPaymentHeader || body.escrowTxHash || body.paymentProof);
+  let x402Verification: any = null;
+  let paidContext: any = null;
   if (requireX402) {
-    const hasPaymentAttempt = Boolean(xPaymentHeader || body.paymentProof);
-    if (!hasPaymentAttempt) {
-      return NextResponse.json(
-        buildX402Challenge({
-          questionId,
-          questionHash,
-          tier: body.tier,
-          escrowAddress: escrowAddr,
-          usdcAddress: usdcAddr
-        }),
-        { status: 402 }
-      );
+    if (!process.env.ASKPAY_PAYMENT_CORPUS_SHA256 || !escrowAddr || !usdcAddr || !process.env.ORACLE_PRIVATE_KEY || !process.env.NEXT_PUBLIC_RECEIPT_LOG_ADDRESS || !process.env.ASKPAY_L1_RPC_URL || !process.env.ASKPAY_L1_CHAIN_ID) {
+      return NextResponse.json({ error: "Thanh toán chưa được cấu hình đủ.", code: "PAYMENT_NOT_CONFIGURED" }, { status: 503 });
     }
-
-    x402Verification = verifyX402PaymentHeader({
-      headerValue: xPaymentHeader,
-      paymentProof: body.paymentProof,
-      expectedQuestionId: questionId,
-      expectedQuestionHash: questionHash,
-      expectedTier: body.tier,
-      expectedAsset: usdcAddr || undefined,
-      requireExplicitAsset: true
-    });
-
-    if (!x402Verification.ok) {
-      return NextResponse.json(
-        {
-          ...buildX402Challenge({
-            questionId,
-            questionHash,
-            tier: body.tier,
-            escrowAddress: escrowAddr,
-            usdcAddress: usdcAddr
-          }),
-          error: `X-PAYMENT proof rejected: ${x402Verification.reason}`
-        },
-        { status: 402 }
-      );
-    }
-
-    // Verify txHash receipt directly on Avalanche Fuji RPC when escrow is configured
-    if (x402Verification.txHash && escrowAddr.startsWith("0x")) {
-      const fujiCheckClient = createPublicClient({
-        chain: avalancheFuji,
-        transport: http(fujiRpc, { timeout: 8000 })
+    try {
+      paidContext = paymentContext(body, {
+        chainId: 43113, escrowAddress: escrowAddr, usdcAddress: usdcAddr,
+        corpusHash: process.env.ASKPAY_PAYMENT_CORPUS_SHA256,
+        asOf: new Intl.DateTimeFormat("en-CA", { timeZone: "Asia/Ho_Chi_Minh" }).format(new Date())
       });
-      onchainProofResult = await verifyOnchainX402Receipt({
-        publicClient: fujiCheckClient,
-        txHash: x402Verification.txHash,
-        escrowAddress: escrowAddr,
-        usdcAddress: usdcAddr
-      });
-      if (!onchainProofResult.verified) {
-        return NextResponse.json(
-          {
-            ...buildX402Challenge({
-              questionId,
-              questionHash,
-              tier: body.tier,
-              escrowAddress: escrowAddr,
-              usdcAddress: usdcAddr
-            }),
-            error: `X-PAYMENT proof rejected: ${onchainProofResult.reason}`
-          },
-          { status: 402 }
-        );
+      questionHash = requestHash(paidContext);
+      if (!xPaymentHeader) {
+        return NextResponse.json({
+          protocol: "askpay-escrow-v2", error: "USDC escrow deposit and payer signature required.",
+          accepts: [{ scheme: PAYMENT_SCHEME, network: "avalanche-fuji", chainId: 43113,
+            maxAmountRequired: paidContext.amount, asset: paidContext.asset, payTo: paidContext.escrow,
+            extra: { context: paidContext, requestHash: questionHash, decimals: 6 } }]
+        }, { status: 402 });
       }
+      const proof = parsePaymentProof(xPaymentHeader);
+      if (body.escrowTxHash && body.escrowTxHash.toLowerCase() !== proof.txHash.toLowerCase()) {
+        throw new PaymentError("DEPOSIT_HASH_CONFLICT");
+      }
+      const paymentClient = createPublicClient({ chain: avalancheFuji,
+        transport: http(process.env.NEXT_PUBLIC_FUJI_RPC_URL || "https://api.avax-test.network/ext/bc/C/rpc", { timeout: 10000 }) });
+      x402Verification = await verifyEscrowPayment({ client: paymentClient, context: paidContext, proof,
+        confirmations: Number(process.env.ASKPAY_PAYMENT_CONFIRMATIONS || "2") });
+      body.asOf = paidContext.asOf;
+      body.escrowTxHash = proof.txHash;
+    } catch (error: any) {
+      return NextResponse.json({ error: error.code || error.message || "PAYMENT_VERIFICATION_FAILED" },
+        { status: error.status || 400 });
     }
   }
 
   let ragData: any;
-  if (body.mode === "factcheck") {
-    ragData = runDeterministicFactcheck({
-      questionId,
-      rawInput: question,
-      factcheckPayload: body.factcheckPayload || null,
-      corpusEntries: EXTENDED_CORPUS_LIST,
-      corpusSha256: DEMO_CORPUS_SHA256_TS
-    });
+  const aiUrl = (
+    process.env.AI_SERVICE_URL ||
+    process.env.LEGAL_RAG_API_URL ||
+    "http://127.0.0.1:8000/api/v1/legal/ask"
+  ).trim();
+
+  const proxyResult = await forwardLegalQuestion(body, aiUrl);
+  if (proxyResult.status === 400 || proxyResult.status === 502) {
+    return NextResponse.json(proxyResult.body, { status: proxyResult.status });
+  }
+
+  if (proxyResult.status === 200) {
+    ragData = proxyResult.body;
   } else {
-    const url = (
-      process.env.AI_SERVICE_URL ||
-      process.env.LEGAL_RAG_API_URL ||
-      "http://127.0.0.1:8000/api/v1/legal/ask"
-    ).trim();
-
-    const proxyResult = await forwardLegalQuestion(body, url);
-    if (proxyResult.status === 400 || proxyResult.status === 502) {
-      return NextResponse.json(proxyResult.body, { status: proxyResult.status });
+    if (requireX402 || process.env.ASKPAY_ENABLE_BUILTIN_DEMO === "false") {
+      return NextResponse.json(proxyResult.body, { status: 503 });
     }
-
-    if (proxyResult.status === 200) {
-      ragData = proxyResult.body;
-      const proxyChecks: any[] = ragData?.validation?.citation_checks || [];
-      const canSettleCuratedProxy =
-        ragData?.validation?.passed === true &&
-        !ragData.validation.settlement_eligible &&
-        proxyChecks.length > 0 &&
-        proxyChecks.every((c: any) => {
-          if (c?.status !== "PASS") return false;
-          const docUpper = String(c?.document || "").toUpperCase().replace(/\s+/g, "");
-          const rec = BUILTIN_CORPUS_MAP.get(`${docUpper}#${String(c?.article || "")}#${String(c?.clause || "")}`);
-          return Boolean(rec?.verified && rec?.status === "ACTIVE");
-        });
-      if (canSettleCuratedProxy) {
-        ragData.validation.settlement_eligible = true;
-        if (ragData.validation.corpus_status === "DEMO_UNVERIFIED") {
-          ragData.validation.corpus_status = "VERIFIED_CURATED";
-        }
+    try {
+      ragData = runBoundedDemoV1QA({ ...body, question });
+    } catch (err: any) {
+      if (err instanceof DemoV1HttpError) {
+        return NextResponse.json({ error: err.message }, { status: err.status });
       }
-    } else {
-      if (process.env.ASKPAY_ENABLE_BUILTIN_DEMO === "false") {
-        return NextResponse.json(proxyResult.body, { status: 503 });
-      }
-      if (body.asOf) {
-        return NextResponse.json(
-          { error: "Dữ liệu nội bộ hiện tại chưa hỗ trợ lọc phiên bản lịch sử theo ngày khi dịch vụ snapshot tắt." },
-          { status: 400 }
-        );
-      }
-      ragData = {
-        ...runBuiltinMockLegalQA(
-          questionId,
-          question,
-          body.tier,
-          body.simulateHallucination === true,
-          body.simulateExpiredLaw === true
-        ),
-        answer_method: "EXTRACTIVE_BUILTIN_VERCEL",
-        corpus_source: "BUILTIN_45_DOCS"
-      };
+      throw err;
     }
   }
 
@@ -2002,6 +2374,9 @@ export async function POST(req: Request) {
       ? body.askerAddress
       : "0x0000000000000000000000000000000000000001";
 
+  if (paidContext && String(ragData?.snapshot_sha256 || ragData?.validation?.snapshot_sha256 || "").replace(/^0x/, "").toLowerCase() !== paidContext.corpusHash) {
+    return NextResponse.json({ error: "Corpus đã thay đổi; không xử lý khoản cọc bằng nguồn khác.", code: "CORPUS_VERSION_CONFLICT" }, { status: 409 });
+  }
   const passed: boolean = Boolean(ragData?.validation?.passed);
   const scoreInt = Math.round((ragData?.validation?.overall_score || 0) * 100);
 
@@ -2016,72 +2391,20 @@ export async function POST(req: Request) {
     .map((c: any) => `${c.document}#Art${c.article}#Cl${c.clause}`)
     .join(";");
 
-  const pk = (process.env.ORACLE_PRIVATE_KEY || "").trim();
-  const receiptAddr = (process.env.NEXT_PUBLIC_RECEIPT_LOG_ADDRESS || "").trim();
-  const isEvmAddress = (addr: string) => /^0x[0-9a-fA-F]{40}$/.test(addr);
+  const pk = process.env.ORACLE_PRIVATE_KEY || "";
+  const receiptAddr = process.env.NEXT_PUBLIC_RECEIPT_LOG_ADDRESS || "";
 
   const isLiveOnchainReady =
-    /^0x[0-9a-fA-F]{64}$/.test(pk) &&
-    isEvmAddress(escrowAddr) &&
-    isEvmAddress(receiptAddr);
+    pk.startsWith("0x") &&
+    pk.length === 66 &&
+    escrowAddr.startsWith("0x") &&
+    receiptAddr.startsWith("0x");
 
   let l1TxHash = "";
   let settlementTxHash = "";
   let onchainMode: "LIVE_AVALANCHE" | "SIMULATED_NO_ESCROW" = "SIMULATED_NO_ESCROW";
-  let escrowRecord: any = null;
+  const escrowRecord: any = x402Verification?.escrowRecord || null;
 
-  // Read actual on-chain escrow only when the client submitted an escrowTxHash or live oracle is configured
-  const hasEscrowDepositHint =
-    typeof body.escrowTxHash === "string" && body.escrowTxHash.trim().startsWith("0x");
-
-  if (isLiveOnchainReady && hasEscrowDepositHint && /^0x[0-9a-fA-F]{64}$/.test(questionId)) {
-    const fujiPublic = createPublicClient({
-      chain: avalancheFuji,
-      transport: http(fujiRpc, { timeout: 10000 })
-    });
-
-    for (let attempt = 0; attempt < 3; attempt++) {
-      try {
-        let rawTuple: any = null;
-        try {
-          rawTuple = await fujiPublic.readContract({
-            address: escrowAddr as `0x${string}`,
-            abi: ESCROW_V2_ABI,
-            functionName: "escrows",
-            args: [questionId as `0x${string}`],
-            authorizationList: undefined
-          });
-        } catch {
-          rawTuple = await fujiPublic.readContract({
-            address: escrowAddr as `0x${string}`,
-            abi: ESCROW_LEGACY_ABI,
-            functionName: "escrows",
-            args: [questionId as `0x${string}`],
-            authorizationList: undefined
-          });
-        }
-        if (rawTuple) {
-          escrowRecord = {
-            asker: rawTuple[0],
-            amount: rawTuple[1],
-            tier: Number(rawTuple[2]),
-            status: Number(rawTuple[3]),
-            createdAt: rawTuple[4],
-            questionHash: rawTuple[5],
-            l1ReceiptHash: rawTuple[6],
-            validatorScore: Number(rawTuple[7]),
-            isUsdc: Boolean(rawTuple[8])
-          };
-          if (escrowRecord.status !== 0) break;
-        }
-      } catch {
-        escrowRecord = null;
-      }
-      if (attempt < 2) {
-        await new Promise((resolve) => setTimeout(resolve, 1000));
-      }
-    }
-  }
 
   const settlementDecision = evaluateSettlementDecision({
     request: {
@@ -2101,12 +2424,13 @@ export async function POST(req: Request) {
     );
   }
 
-  let finalSettlementStatus: string = settlementDecision.settlementStatus;
+  let finalSettlementStatus: string = escrowRecord ? "PENDING_RECONCILIATION" : "NO_ESCROW_DEPOSIT";
+  if (escrowRecord) onchainMode = "LIVE_AVALANCHE";
 
   if (isLiveOnchainReady && settlementDecision.hasEscrow) {
     try {
       const oracleAccount = privateKeyToAccount(pk as `0x${string}`);
-      const l1Rpc = (process.env.ASKPAY_L1_RPC_URL || fujiRpc).trim();
+      const l1Rpc = process.env.ASKPAY_L1_RPC_URL || fujiRpc;
       const l1ChainId = Number(process.env.ASKPAY_L1_CHAIN_ID || 43113);
 
       const askPayL1 = defineChain({
@@ -2126,7 +2450,6 @@ export async function POST(req: Request) {
         transport: http(l1Rpc, { timeout: 10000 })
       });
 
-      try {
         l1TxHash = await l1Wallet.writeContract({
           chain: askPayL1,
           account: oracleAccount,
@@ -2147,27 +2470,9 @@ export async function POST(req: Request) {
             validatorVersion
           ]
         });
-      } catch {
-        l1TxHash = await l1Wallet.writeContract({
-          chain: askPayL1,
-          account: oracleAccount,
-          address: receiptAddr as `0x${string}`,
-          abi: RECEIPT_LEGACY_ABI,
-          functionName: "recordReceipt",
-          args: [
-            questionId as `0x${string}`,
-            askerAddress as `0x${string}`,
-            questionHash,
-            answerHash,
-            citationsHash,
-            passed,
-            scoreInt,
-            citedDocsSummary
-          ]
-        });
-      }
 
-      await l1Public.waitForTransactionReceipt({ hash: l1TxHash as `0x${string}` });
+      const auditReceipt = await l1Public.waitForTransactionReceipt({ hash: l1TxHash as `0x${string}` });
+      if (auditReceipt.status !== "success") throw new Error("AUDIT_RECEIPT_REVERTED");
 
       const fujiWallet = createWalletClient({
         account: oracleAccount,
@@ -2193,12 +2498,13 @@ export async function POST(req: Request) {
         ]
       });
 
-      await fujiPublic.waitForTransactionReceipt({ hash: settlementTxHash as `0x${string}` });
+      const settledReceipt = await fujiPublic.waitForTransactionReceipt({ hash: settlementTxHash as `0x${string}` });
+      if (settledReceipt.status !== "success") throw new Error("SETTLEMENT_REVERTED");
       onchainMode = "LIVE_AVALANCHE";
-      finalSettlementStatus = settlementDecision.settlementStatus;
+      finalSettlementStatus = settlementDecision.canRelease ? "RELEASED_TO_TREASURY" : "AUTO_REFUNDED_TO_USER";
     } catch {
-      onchainMode = "SIMULATED_NO_ESCROW";
-      finalSettlementStatus = l1TxHash ? "PENDING_RECONCILIATION" : settlementDecision.settlementStatus;
+      onchainMode = "LIVE_AVALANCHE";
+      finalSettlementStatus = "PENDING_RECONCILIATION";
     }
   }
 
@@ -2207,14 +2513,15 @@ export async function POST(req: Request) {
     ...(x402Verification
       ? {
           x402Trace: {
-            protocol: "x402",
+            protocol: "askpay-escrow-v2",
+            paymentVerified: true,
+            requestHash: questionHash,
             scheme: x402Verification.scheme,
             network: x402Verification.network,
             amountUsdcBaseUnits: x402Verification.amount,
             asset: x402Verification.asset,
             payer: x402Verification.payer,
             txHash: x402Verification.txHash,
-            onchainProofVerified: Boolean(onchainProofResult?.verified),
             idempotentReplay: false
           }
         }
@@ -2232,13 +2539,6 @@ export async function POST(req: Request) {
     }
   };
 
-  if (x402Verification) {
-    setIdempotentResult(questionId, responsePayload, {
-      questionHash,
-      tier: body.mode === "factcheck" ? "factcheck" : body.tier,
-      asOf: asOfNorm
-    });
-  }
-
   return NextResponse.json(responsePayload);
 }
+

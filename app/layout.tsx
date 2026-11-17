@@ -15,9 +15,9 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata = {
-  title: "AskPay — Nền tảng Trợ lý & Tư vấn Pháp lý Thông minh",
+  title: "Lorx — Nền tảng Trợ lý & Tư vấn Pháp lý Thông minh",
   description:
-    "AskPay — Nền tảng tra cứu, đối chiếu văn bản pháp luật và kết nối chuyên gia tư vấn theo mô hình Pay-per-Answer."
+    "Lorx — Nền tảng tra cứu, đối chiếu văn bản pháp luật và kết nối chuyên gia tư vấn theo mô hình Pay-per-Answer."
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

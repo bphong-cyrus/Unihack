@@ -207,7 +207,7 @@ export default function RightPanel({
                     {activeAssistantMsg.validation?.corpus_status === "REVIEW_ASSERTED"
                       ? "Nguồn từ snapshot đã gắn ngày rà soát. Việc áp dụng còn phụ thuộc tình huống cụ thể."
                       : activeAssistantMsg.validation?.corpus_status === "VERIFIED_CURATED"
-                      ? "Nguồn đối chiếu nguyên văn từ kho văn bản chính thức · Đủ điều kiện giải ngân."
+                      ? "Đoạn trích đã được đối chiếu nguồn · Xem trạng thái thanh toán riêng."
                       : "Nguồn tách tự động / thử nghiệm (chưa rà soát từng điều) · Chưa mở giải ngân."}
                   </div>
                 )}
@@ -259,7 +259,10 @@ export default function RightPanel({
                           color: "#0a1c2e"
                         }}
                       >
-                        Điều {currentCit.article}, Khoản {currentCit.clause}{currentCit.point ? `, Điểm ${currentCit.point}` : ""}
+                        Điều {currentCit.article}, Khoản {currentCit.clause}
+                        {currentCit.point || currentCheck?.point
+                          ? `, Điểm ${currentCit.point || currentCheck?.point}`
+                          : ""}
                       </h3>
                       <span
                         style={{
