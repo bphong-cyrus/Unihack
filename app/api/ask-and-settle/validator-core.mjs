@@ -27,7 +27,8 @@ export function hasNumericOrNegationConflict(normExcerpt, normSource) {
     ["không được", "được"],
     ["không phải", "phải"],
     ["không bị", "bị phạt"],
-    ["không bị", "bị xử phạt"]
+    ["không bị", "bị xử phạt"],
+    ["không vượt quá", "vượt quá"]
   ];
 
   for (const [negPhrase, posToken] of polarityPairs) {

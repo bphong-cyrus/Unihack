@@ -8,29 +8,22 @@ interface IconProps {
 
 export function AskPayLogo({ size = 36, className }: { size?: number; className?: string }) {
   return (
-    <svg width={size} height={size} viewBox="0 0 40 40" fill="none" className={className} aria-hidden="true">
-      <circle cx="20" cy="20" r="19" fill="#0A2240" />
-      <path
-        d="M15.8 24.8L26.2 14.4"
-        stroke="#00BF6F"
-        strokeWidth="3.8"
-        strokeLinecap="round"
-      />
-      <path
-        d="M19.8 14H26.6V20.8"
-        stroke="#00BF6F"
-        strokeWidth="4"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
-      <path
-        d="M14.2 13.5V26.5H25.2"
-        stroke="#FFFFFF"
-        strokeWidth="5"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
-    </svg>
+    <img
+      src="/lorx-logo.png"
+      alt="Lorx logo"
+      width={size}
+      height={size}
+      className={className}
+      style={{
+        width: size,
+        height: size,
+        borderRadius: Math.max(7, Math.round(size * 0.22)),
+        objectFit: "cover",
+        display: "block",
+        flexShrink: 0,
+        boxShadow: "0 1px 3px rgba(10, 28, 46, 0.2)"
+      }}
+    />
   );
 }
 

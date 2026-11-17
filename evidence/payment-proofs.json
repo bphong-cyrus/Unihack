@@ -1,0 +1,77 @@
+{
+  "schema_version": "lorx-payment-proofs-v1",
+  "recorded_at_utc": "2026-11-17T12:38:00Z",
+  "snapshot_id": "askpay-demo-source-checked-2026-11-17",
+  "snapshot_sha256": "38f84d5d593a86142b23bb6d79187192a847be52f56f2befa9f0c0fabdd2bec3",
+  "policy_version": "source-check-v1",
+  "receipt_chain_naming_note": "Receipt logging runs on Avalanche Fuji C-Chain (43113) or an explicitly configured Receipt Chain RPC; no custom Avalanche L1 claim is made without an active dedicated L1 RPC and explorer proof.",
+  "local_evm_ganache_verification": {
+    "payment_proof_suite": {
+      "command": "npm run test:payment",
+      "file": "tests/payment-proof.integration.test.mjs",
+      "status": "PASSED",
+      "tests_passed": 20,
+      "tests_failed": 0,
+      "verified_flows": [
+        "DEPOSITED -> RELEASED (pass releases exact amount once; settled proof rejected)",
+        "DEPOSITED -> REFUNDED_INVALID (fail refunds exact amount to payer)",
+        "DEPOSITED -> REFUNDED_TIMEOUT (timeout blocks processing and refunds payer via claimTimeoutRefund)",
+        "Adversarial rejections: empty/signature-only proof, fake txHash, wrong scheme/token/chain, changed date/corpus/tier, payer mismatch, forged context, insufficient confirmations, reorg detection, missing USDC Transfer, reverted tx"
+      ]
+    },
+    "settlement_journal_suite": {
+      "command": "npm run test:journal",
+      "file": "tests/settlement-journal.test.mjs",
+      "status": "PASSED",
+      "tests_passed": 6,
+      "tests_failed": 0,
+      "verified_flows": [
+        "Unique deposit txHash enforcement across questionIds (409 DEPOSIT_TX_REUSED)",
+        "requestHash mismatch, tx conflict for questionId, and concurrent lease rejection (409 JOB_IN_PROGRESS)",
+        "Crash recovery at QA_PERSISTED and RECEIPT_RECORDED without duplicate recordReceipt",
+        "On-chain resolved state reconciliation and offline EIP-191 signature verification",
+        "abortUnverifiedJob cleanup allowing confirmation retry"
+      ]
+    }
+  },
+  "avalanche_fuji_testnet_live": {
+    "chain_id": 43113,
+    "network_name": "Avalanche Fuji C-Chain",
+    "explorer_base_url": "https://testnet.snowtrace.io",
+    "usdc_token_address": "0x5425890298aed601595a70AB815c96711a31Bc65",
+    "usdc_decimals": 6,
+    "status": "NOT_RUN_REQUIRES_FUNDED_FUJI_WALLET",
+    "reason": "Funded Avalanche Fuji payer and oracle wallets (test AVAX for gas + Fuji test USDC) are required to execute live transactions and record explorer URLs. No fabricated tx hashes are stored.",
+    "deployed_contracts": {
+      "escrow_v2_address": null,
+      "receipt_log_address": null,
+      "verified_source": false
+    },
+    "transactions": {
+      "case_pass_release": {
+        "status": "NOT_RUN_REQUIRES_FUNDED_FUJI_WALLET",
+        "approve_tx_hash": null,
+        "deposit_tx_hash": null,
+        "receipt_tx_hash": null,
+        "resolve_tx_hash": null,
+        "balance_deltas_usdc_base_units": null,
+        "explorer_urls": []
+      },
+      "case_fail_refund": {
+        "status": "NOT_RUN_REQUIRES_FUNDED_FUJI_WALLET",
+        "deposit_tx_hash": null,
+        "receipt_tx_hash": null,
+        "resolve_tx_hash": null,
+        "balance_deltas_usdc_base_units": null,
+        "explorer_urls": []
+      },
+      "case_timeout_claim": {
+        "status": "NOT_RUN_REQUIRES_FUNDED_FUJI_WALLET",
+        "deposit_tx_hash": null,
+        "claim_timeout_tx_hash": null,
+        "balance_deltas_usdc_base_units": null,
+        "explorer_urls": []
+      }
+    }
+  }
+}

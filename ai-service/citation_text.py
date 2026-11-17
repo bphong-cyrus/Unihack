@@ -27,6 +27,7 @@ def has_numeric_or_negation_conflict(norm_excerpt: str, norm_source: str) -> boo
         ("không phải", "phải"),
         ("không bị", "bị phạt"),
         ("không bị", "bị xử phạt"),
+        ("không vượt quá", "vượt quá"),
     )
     for neg_phrase, pos_token in polarity_pairs:
         if neg_phrase in norm_source and neg_phrase not in norm_excerpt and pos_token in norm_excerpt:

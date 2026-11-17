@@ -9,6 +9,7 @@
     "compile:contracts": "node contracts/compile_and_deploy.mjs --compile-only",
     "deploy:contracts": "node contracts/compile_and_deploy.mjs --deploy",
     "test:payment": "node --test tests/payment-proof.integration.test.mjs",
+    "test:journal": "node --test tests/settlement-journal.test.mjs",
     "test:demo-http": "node tests/demo-http-smoke.mjs"
   },
   "dependencies": {

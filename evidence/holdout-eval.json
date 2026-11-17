@@ -1,0 +1,863 @@
+{
+  "evaluated_at_utc": "2026-11-17T12:47:29.792821+00:00",
+  "git_commit_sha": "eb61e4c3d39b3f8f540b0e32150e9c72891731e0",
+  "snapshot_id": "askpay-demo-source-checked-2026-11-17",
+  "snapshot_sha256": "38f84d5d593a86142b23bb6d79187192a847be52f56f2befa9f0c0fabdd2bec3",
+  "verified_through": "2026-11-17",
+  "answer_method": "RULE_BASED_DEMO",
+  "policy_version": "source-check-v1",
+  "policy_hash": "0xba8694d2ca0a6e81784ee4f03e2eb45463db4f6f9b98198b9ffa3a33ce8f6adb",
+  "dataset": {
+    "name": "lorx-holdout-30-v1",
+    "total_queries": 30,
+    "ui_prefill_overlap_count": 0,
+    "by_category": {
+      "whitelist_positive": 6,
+      "temporal_boundary": 5,
+      "clarification_required": 5,
+      "factcheck_pass": 2,
+      "adversarial_factcheck_fail": 6,
+      "out_of_scope_abstention": 6
+    }
+  },
+  "metrics": {
+    "exact_match_count": 30,
+    "exact_match_rate": 1.0,
+    "citation_match_count": 30,
+    "citation_match_rate": 1.0,
+    "abstention_and_refusal_expected": 21,
+    "abstention_and_refusal_correct": 21,
+    "abstention_and_refusal_rate": 1.0,
+    "false_accepts": 0,
+    "false_settlement_releases": 0,
+    "latency_p50_ms": 0.266,
+    "latency_p95_ms": 2.436
+  },
+  "cases": [
+    {
+      "id": "WL-1a",
+      "category": "whitelist_positive",
+      "as_of": "2026-11-17",
+      "mode": "quick",
+      "tier": "quick",
+      "expected": {
+        "answer_status": "ANSWERED",
+        "passed": true,
+        "settlement_eligible": true,
+        "docs": [
+          "54/2014/QH13"
+        ]
+      },
+      "actual": {
+        "answer_status": "ANSWERED",
+        "passed": true,
+        "settlement_eligible": true,
+        "whitelist_id": "WL-1-CUSTOMS-DEADLINE-30D",
+        "docs": [
+          "54/2014/QH13"
+        ],
+        "answer_method": "RULE_BASED_DEMO",
+        "policy_version": "source-check-v1"
+      },
+      "matched": true,
+      "latency_ms": 5.563
+    },
+    {
+      "id": "WL-1b",
+      "category": "whitelist_positive",
+      "as_of": "2026-11-17",
+      "mode": "quick",
+      "tier": "quick",
+      "expected": {
+        "answer_status": "ANSWERED",
+        "passed": true,
+        "settlement_eligible": true,
+        "docs": [
+          "54/2014/QH13"
+        ]
+      },
+      "actual": {
+        "answer_status": "ANSWERED",
+        "passed": true,
+        "settlement_eligible": true,
+        "whitelist_id": "WL-1-CUSTOMS-DEADLINE-30D",
+        "docs": [
+          "54/2014/QH13"
+        ],
+        "answer_method": "RULE_BASED_DEMO",
+        "policy_version": "source-check-v1"
+      },
+      "matched": true,
+      "latency_ms": 0.253
+    },
+    {
+      "id": "WL-2a",
+      "category": "whitelist_positive",
+      "as_of": "2026-11-17",
+      "mode": "quick",
+      "tier": "quick",
+      "expected": {
+        "answer_status": "ANSWERED",
+        "passed": true,
+        "settlement_eligible": true,
+        "docs": [
+          "54/2014/QH13"
+        ]
+      },
+      "actual": {
+        "answer_status": "ANSWERED",
+        "passed": true,
+        "settlement_eligible": true,
+        "whitelist_id": "WL-2-DECLARATION-VALIDITY-15D",
+        "docs": [
+          "54/2014/QH13"
+        ],
+        "answer_method": "RULE_BASED_DEMO",
+        "policy_version": "source-check-v1"
+      },
+      "matched": true,
+      "latency_ms": 0.161
+    },
+    {
+      "id": "WL-3a",
+      "category": "whitelist_positive",
+      "as_of": "2026-11-17",
+      "mode": "quick",
+      "tier": "quick",
+      "expected": {
+        "answer_status": "ANSWERED",
+        "passed": true,
+        "settlement_eligible": true,
+        "docs": [
+          "169/2026/NĐ-CP"
+        ]
+      },
+      "actual": {
+        "answer_status": "ANSWERED",
+        "passed": true,
+        "settlement_eligible": true,
+        "whitelist_id": "WL-3-PENALTY-REPEAL-169-2026",
+        "docs": [
+          "169/2026/NĐ-CP",
+          "169/2026/NĐ-CP",
+          "169/2026/NĐ-CP"
+        ],
+        "answer_method": "RULE_BASED_DEMO",
+        "policy_version": "source-check-v1"
+      },
+      "matched": true,
+      "latency_ms": 0.426
+    },
+    {
+      "id": "WL-4a",
+      "category": "whitelist_positive",
+      "as_of": "2026-11-17",
+      "mode": "quick",
+      "tier": "quick",
+      "expected": {
+        "answer_status": "ANSWERED",
+        "passed": true,
+        "settlement_eligible": true,
+        "docs": [
+          "18/2019/QĐ-TTg"
+        ]
+      },
+      "actual": {
+        "answer_status": "ANSWERED",
+        "passed": true,
+        "settlement_eligible": true,
+        "whitelist_id": "WL-4-MACHINERY-AGE-RULE-10Y",
+        "docs": [
+          "18/2019/QĐ-TTG"
+        ],
+        "answer_method": "RULE_BASED_DEMO",
+        "policy_version": "source-check-v1"
+      },
+      "matched": true,
+      "latency_ms": 0.206
+    },
+    {
+      "id": "WL-5a",
+      "category": "whitelist_positive",
+      "as_of": "2026-11-17",
+      "mode": "quick",
+      "tier": "quick",
+      "expected": {
+        "answer_status": "ANSWERED",
+        "passed": true,
+        "settlement_eligible": true,
+        "docs": [
+          "18/2019/QĐ-TTg"
+        ]
+      },
+      "actual": {
+        "answer_status": "ANSWERED",
+        "passed": true,
+        "settlement_eligible": true,
+        "whitelist_id": "WL-5-MACHINERY-INSPECTION-30D",
+        "docs": [
+          "18/2019/QĐ-TTG"
+        ],
+        "answer_method": "RULE_BASED_DEMO",
+        "policy_version": "source-check-v1"
+      },
+      "matched": true,
+      "latency_ms": 0.288
+    },
+    {
+      "id": "HORIZON-1",
+      "category": "temporal_boundary",
+      "as_of": "2026-11-18",
+      "mode": "quick",
+      "tier": "quick",
+      "expected": {
+        "answer_status": "INSUFFICIENT_EVIDENCE",
+        "passed": false,
+        "settlement_eligible": false,
+        "docs": []
+      },
+      "actual": {
+        "answer_status": "INSUFFICIENT_EVIDENCE",
+        "passed": false,
+        "settlement_eligible": false,
+        "whitelist_id": null,
+        "docs": [],
+        "answer_method": "RULE_BASED_DEMO",
+        "policy_version": "source-check-v1"
+      },
+      "matched": true,
+      "latency_ms": 0.07
+    },
+    {
+      "id": "HIST-1",
+      "category": "temporal_boundary",
+      "as_of": "2026-06-30",
+      "mode": "quick",
+      "tier": "quick",
+      "expected": {
+        "answer_status": "NEEDS_CLARIFICATION",
+        "passed": false,
+        "settlement_eligible": false,
+        "docs": []
+      },
+      "actual": {
+        "answer_status": "NEEDS_CLARIFICATION",
+        "passed": false,
+        "settlement_eligible": false,
+        "whitelist_id": null,
+        "docs": [],
+        "answer_method": "RULE_BASED_DEMO",
+        "policy_version": "source-check-v1"
+      },
+      "matched": true,
+      "latency_ms": 0.058
+    },
+    {
+      "id": "HIST-2",
+      "category": "temporal_boundary",
+      "as_of": "2026-05-15",
+      "mode": "quick",
+      "tier": "quick",
+      "expected": {
+        "answer_status": "NEEDS_CLARIFICATION",
+        "passed": false,
+        "settlement_eligible": false,
+        "docs": []
+      },
+      "actual": {
+        "answer_status": "NEEDS_CLARIFICATION",
+        "passed": false,
+        "settlement_eligible": false,
+        "whitelist_id": null,
+        "docs": [],
+        "answer_method": "RULE_BASED_DEMO",
+        "policy_version": "source-check-v1"
+      },
+      "matched": true,
+      "latency_ms": 0.055
+    },
+    {
+      "id": "DATE-SWAP",
+      "category": "temporal_boundary",
+      "as_of": "2026-11-17",
+      "mode": "quick",
+      "tier": "quick",
+      "expected": {
+        "answer_status": "NEEDS_CLARIFICATION",
+        "passed": true,
+        "settlement_eligible": false,
+        "docs": [
+          "54/2014/QH13"
+        ]
+      },
+      "actual": {
+        "answer_status": "NEEDS_CLARIFICATION",
+        "passed": true,
+        "settlement_eligible": false,
+        "whitelist_id": null,
+        "docs": [
+          "54/2014/QH13"
+        ],
+        "answer_method": "RULE_BASED_DEMO",
+        "policy_version": "source-check-v1"
+      },
+      "matched": true,
+      "latency_ms": 0.208
+    },
+    {
+      "id": "DATE-MISSING",
+      "category": "temporal_boundary",
+      "as_of": "2026-11-17",
+      "mode": "quick",
+      "tier": "quick",
+      "expected": {
+        "answer_status": "ANSWERED",
+        "passed": true,
+        "settlement_eligible": false,
+        "docs": [
+          "54/2014/QH13"
+        ]
+      },
+      "actual": {
+        "answer_status": "ANSWERED",
+        "passed": true,
+        "settlement_eligible": false,
+        "whitelist_id": null,
+        "docs": [
+          "54/2014/QH13"
+        ],
+        "answer_method": "RULE_BASED_DEMO",
+        "policy_version": "source-check-v1"
+      },
+      "matched": true,
+      "latency_ms": 0.174
+    },
+    {
+      "id": "MACH-1",
+      "category": "clarification_required",
+      "as_of": "2026-11-17",
+      "mode": "quick",
+      "tier": "quick",
+      "expected": {
+        "answer_status": "NEEDS_CLARIFICATION",
+        "passed": true,
+        "settlement_eligible": false,
+        "docs": [
+          "18/2019/QĐ-TTG"
+        ]
+      },
+      "actual": {
+        "answer_status": "NEEDS_CLARIFICATION",
+        "passed": true,
+        "settlement_eligible": false,
+        "whitelist_id": null,
+        "docs": [
+          "18/2019/QĐ-TTG",
+          "18/2019/QĐ-TTG",
+          "18/2019/QĐ-TTG"
+        ],
+        "answer_method": "RULE_BASED_DEMO",
+        "policy_version": "source-check-v1"
+      },
+      "matched": true,
+      "latency_ms": 0.582
+    },
+    {
+      "id": "MACH-2",
+      "category": "clarification_required",
+      "as_of": "2026-11-17",
+      "mode": "deep",
+      "tier": "deep",
+      "expected": {
+        "answer_status": "NEEDS_CLARIFICATION",
+        "passed": true,
+        "settlement_eligible": false,
+        "docs": [
+          "18/2019/QĐ-TTG",
+          "28/2022/QĐ-TTG"
+        ]
+      },
+      "actual": {
+        "answer_status": "NEEDS_CLARIFICATION",
+        "passed": true,
+        "settlement_eligible": false,
+        "whitelist_id": null,
+        "docs": [
+          "18/2019/QĐ-TTG",
+          "18/2019/QĐ-TTG",
+          "18/2019/QĐ-TTG",
+          "28/2022/QĐ-TTG",
+          "18/2019/QĐ-TTG",
+          "54/2014/QH13"
+        ],
+        "answer_method": "RULE_BASED_DEMO",
+        "policy_version": "source-check-v1"
+      },
+      "matched": true,
+      "latency_ms": 2.436
+    },
+    {
+      "id": "MACH-3",
+      "category": "clarification_required",
+      "as_of": "2026-11-17",
+      "mode": "quick",
+      "tier": "quick",
+      "expected": {
+        "answer_status": "NEEDS_CLARIFICATION",
+        "passed": true,
+        "settlement_eligible": false,
+        "docs": [
+          "18/2019/QĐ-TTG"
+        ]
+      },
+      "actual": {
+        "answer_status": "NEEDS_CLARIFICATION",
+        "passed": true,
+        "settlement_eligible": false,
+        "whitelist_id": null,
+        "docs": [
+          "18/2019/QĐ-TTG",
+          "18/2019/QĐ-TTG",
+          "18/2019/QĐ-TTG"
+        ],
+        "answer_method": "RULE_BASED_DEMO",
+        "policy_version": "source-check-v1"
+      },
+      "matched": true,
+      "latency_ms": 0.69
+    },
+    {
+      "id": "MACH-4",
+      "category": "clarification_required",
+      "as_of": "2026-11-17",
+      "mode": "deep",
+      "tier": "deep",
+      "expected": {
+        "answer_status": "NEEDS_CLARIFICATION",
+        "passed": true,
+        "settlement_eligible": false,
+        "docs": [
+          "18/2019/QĐ-TTG",
+          "28/2022/QĐ-TTG",
+          "54/2014/QH13"
+        ]
+      },
+      "actual": {
+        "answer_status": "NEEDS_CLARIFICATION",
+        "passed": true,
+        "settlement_eligible": false,
+        "whitelist_id": null,
+        "docs": [
+          "18/2019/QĐ-TTG",
+          "18/2019/QĐ-TTG",
+          "18/2019/QĐ-TTG",
+          "28/2022/QĐ-TTG",
+          "18/2019/QĐ-TTG",
+          "54/2014/QH13"
+        ],
+        "answer_method": "RULE_BASED_DEMO",
+        "policy_version": "source-check-v1"
+      },
+      "matched": true,
+      "latency_ms": 1.188
+    },
+    {
+      "id": "MACH-5",
+      "category": "clarification_required",
+      "as_of": "2026-11-17",
+      "mode": "quick",
+      "tier": "quick",
+      "expected": {
+        "answer_status": "NEEDS_CLARIFICATION",
+        "passed": true,
+        "settlement_eligible": false,
+        "docs": [
+          "18/2019/QĐ-TTG"
+        ]
+      },
+      "actual": {
+        "answer_status": "NEEDS_CLARIFICATION",
+        "passed": true,
+        "settlement_eligible": false,
+        "whitelist_id": null,
+        "docs": [
+          "18/2019/QĐ-TTG",
+          "18/2019/QĐ-TTG",
+          "18/2019/QĐ-TTG"
+        ],
+        "answer_method": "RULE_BASED_DEMO",
+        "policy_version": "source-check-v1"
+      },
+      "matched": true,
+      "latency_ms": 0.621
+    },
+    {
+      "id": "FC-PASS-54",
+      "category": "factcheck_pass",
+      "as_of": "2026-11-17",
+      "mode": "factcheck",
+      "tier": "quick",
+      "expected": {
+        "answer_status": "FACTCHECK",
+        "passed": true,
+        "settlement_eligible": false,
+        "docs": [
+          "54/2014/QH13"
+        ]
+      },
+      "actual": {
+        "answer_status": "FACTCHECK",
+        "passed": true,
+        "settlement_eligible": false,
+        "whitelist_id": null,
+        "docs": [
+          "54/2014/QH13"
+        ],
+        "answer_method": "RULE_BASED_DEMO",
+        "policy_version": "source-check-v1"
+      },
+      "matched": true,
+      "latency_ms": 0.279
+    },
+    {
+      "id": "FC-PASS-18",
+      "category": "factcheck_pass",
+      "as_of": "2026-11-17",
+      "mode": "factcheck",
+      "tier": "quick",
+      "expected": {
+        "answer_status": "FACTCHECK",
+        "passed": true,
+        "settlement_eligible": false,
+        "docs": [
+          "18/2019/QĐ-TTg"
+        ]
+      },
+      "actual": {
+        "answer_status": "FACTCHECK",
+        "passed": true,
+        "settlement_eligible": false,
+        "whitelist_id": null,
+        "docs": [
+          "18/2019/QĐ-TTg"
+        ],
+        "answer_method": "RULE_BASED_DEMO",
+        "policy_version": "source-check-v1"
+      },
+      "matched": true,
+      "latency_ms": 2.068
+    },
+    {
+      "id": "FC-FAIL-NUM-30-45",
+      "category": "adversarial_factcheck_fail",
+      "as_of": "2026-11-17",
+      "mode": "factcheck",
+      "tier": "quick",
+      "expected": {
+        "answer_status": "FACTCHECK",
+        "passed": false,
+        "settlement_eligible": false,
+        "docs": [
+          "54/2014/QH13"
+        ]
+      },
+      "actual": {
+        "answer_status": "FACTCHECK",
+        "passed": false,
+        "settlement_eligible": false,
+        "whitelist_id": null,
+        "docs": [
+          "54/2014/QH13"
+        ],
+        "answer_method": "RULE_BASED_DEMO",
+        "policy_version": "source-check-v1"
+      },
+      "matched": true,
+      "latency_ms": 2.103
+    },
+    {
+      "id": "FC-FAIL-NUM-10-15",
+      "category": "adversarial_factcheck_fail",
+      "as_of": "2026-11-17",
+      "mode": "factcheck",
+      "tier": "quick",
+      "expected": {
+        "answer_status": "FACTCHECK",
+        "passed": false,
+        "settlement_eligible": false,
+        "docs": [
+          "18/2019/QĐ-TTg"
+        ]
+      },
+      "actual": {
+        "answer_status": "FACTCHECK",
+        "passed": false,
+        "settlement_eligible": false,
+        "whitelist_id": null,
+        "docs": [
+          "18/2019/QĐ-TTg"
+        ],
+        "answer_method": "RULE_BASED_DEMO",
+        "policy_version": "source-check-v1"
+      },
+      "matched": true,
+      "latency_ms": 1.04
+    },
+    {
+      "id": "FC-FAIL-NEGATION",
+      "category": "adversarial_factcheck_fail",
+      "as_of": "2026-11-17",
+      "mode": "factcheck",
+      "tier": "quick",
+      "expected": {
+        "answer_status": "FACTCHECK",
+        "passed": false,
+        "settlement_eligible": false,
+        "docs": [
+          "18/2019/QĐ-TTg"
+        ]
+      },
+      "actual": {
+        "answer_status": "FACTCHECK",
+        "passed": false,
+        "settlement_eligible": false,
+        "whitelist_id": null,
+        "docs": [
+          "18/2019/QĐ-TTg"
+        ],
+        "answer_method": "RULE_BASED_DEMO",
+        "policy_version": "source-check-v1"
+      },
+      "matched": true,
+      "latency_ms": 0.481
+    },
+    {
+      "id": "FC-FAIL-ART999",
+      "category": "adversarial_factcheck_fail",
+      "as_of": "2026-11-17",
+      "mode": "factcheck",
+      "tier": "quick",
+      "expected": {
+        "answer_status": "FACTCHECK",
+        "passed": false,
+        "settlement_eligible": false,
+        "docs": [
+          "54/2014/QH13"
+        ]
+      },
+      "actual": {
+        "answer_status": "FACTCHECK",
+        "passed": false,
+        "settlement_eligible": false,
+        "whitelist_id": null,
+        "docs": [
+          "54/2014/QH13"
+        ],
+        "answer_method": "RULE_BASED_DEMO",
+        "policy_version": "source-check-v1"
+      },
+      "matched": true,
+      "latency_ms": 1.165
+    },
+    {
+      "id": "FC-FAIL-BAD-DOC",
+      "category": "adversarial_factcheck_fail",
+      "as_of": "2026-11-17",
+      "mode": "factcheck",
+      "tier": "quick",
+      "expected": {
+        "answer_status": "FACTCHECK",
+        "passed": false,
+        "settlement_eligible": false,
+        "docs": [
+          "88/2025/QH15"
+        ]
+      },
+      "actual": {
+        "answer_status": "FACTCHECK",
+        "passed": false,
+        "settlement_eligible": false,
+        "whitelist_id": null,
+        "docs": [
+          "88/2025/QH15"
+        ],
+        "answer_method": "RULE_BASED_DEMO",
+        "policy_version": "source-check-v1"
+      },
+      "matched": true,
+      "latency_ms": 0.173
+    },
+    {
+      "id": "FC-UNSTRUCTURED-BAD",
+      "category": "adversarial_factcheck_fail",
+      "as_of": "2026-11-17",
+      "mode": "factcheck",
+      "tier": "quick",
+      "expected": {
+        "answer_status": "FACTCHECK",
+        "passed": false,
+        "settlement_eligible": false,
+        "docs": [
+          "54/2014/QH13"
+        ]
+      },
+      "actual": {
+        "answer_status": "FACTCHECK",
+        "passed": false,
+        "settlement_eligible": false,
+        "whitelist_id": null,
+        "docs": [
+          "54/2014/QH13"
+        ],
+        "answer_method": "RULE_BASED_DEMO",
+        "policy_version": "source-check-v1"
+      },
+      "matched": true,
+      "latency_ms": 0.51
+    },
+    {
+      "id": "OOS-1",
+      "category": "out_of_scope_abstention",
+      "as_of": "2026-11-17",
+      "mode": "quick",
+      "tier": "quick",
+      "expected": {
+        "answer_status": "INSUFFICIENT_EVIDENCE",
+        "passed": false,
+        "settlement_eligible": false,
+        "docs": []
+      },
+      "actual": {
+        "answer_status": "INSUFFICIENT_EVIDENCE",
+        "passed": false,
+        "settlement_eligible": false,
+        "whitelist_id": null,
+        "docs": [],
+        "answer_method": "RULE_BASED_DEMO",
+        "policy_version": "source-check-v1"
+      },
+      "matched": true,
+      "latency_ms": 0.088
+    },
+    {
+      "id": "OOS-2",
+      "category": "out_of_scope_abstention",
+      "as_of": "2026-11-17",
+      "mode": "quick",
+      "tier": "quick",
+      "expected": {
+        "answer_status": "INSUFFICIENT_EVIDENCE",
+        "passed": false,
+        "settlement_eligible": false,
+        "docs": []
+      },
+      "actual": {
+        "answer_status": "INSUFFICIENT_EVIDENCE",
+        "passed": false,
+        "settlement_eligible": false,
+        "whitelist_id": null,
+        "docs": [],
+        "answer_method": "RULE_BASED_DEMO",
+        "policy_version": "source-check-v1"
+      },
+      "matched": true,
+      "latency_ms": 0.08
+    },
+    {
+      "id": "OOS-3",
+      "category": "out_of_scope_abstention",
+      "as_of": "2026-11-17",
+      "mode": "quick",
+      "tier": "quick",
+      "expected": {
+        "answer_status": "INSUFFICIENT_EVIDENCE",
+        "passed": false,
+        "settlement_eligible": false,
+        "docs": []
+      },
+      "actual": {
+        "answer_status": "INSUFFICIENT_EVIDENCE",
+        "passed": false,
+        "settlement_eligible": false,
+        "whitelist_id": null,
+        "docs": [],
+        "answer_method": "RULE_BASED_DEMO",
+        "policy_version": "source-check-v1"
+      },
+      "matched": true,
+      "latency_ms": 0.078
+    },
+    {
+      "id": "OOS-4",
+      "category": "out_of_scope_abstention",
+      "as_of": "2026-11-17",
+      "mode": "quick",
+      "tier": "quick",
+      "expected": {
+        "answer_status": "INSUFFICIENT_EVIDENCE",
+        "passed": false,
+        "settlement_eligible": false,
+        "docs": []
+      },
+      "actual": {
+        "answer_status": "INSUFFICIENT_EVIDENCE",
+        "passed": false,
+        "settlement_eligible": false,
+        "whitelist_id": null,
+        "docs": [],
+        "answer_method": "RULE_BASED_DEMO",
+        "policy_version": "source-check-v1"
+      },
+      "matched": true,
+      "latency_ms": 0.077
+    },
+    {
+      "id": "OOS-5",
+      "category": "out_of_scope_abstention",
+      "as_of": "2026-11-17",
+      "mode": "quick",
+      "tier": "quick",
+      "expected": {
+        "answer_status": "INSUFFICIENT_EVIDENCE",
+        "passed": false,
+        "settlement_eligible": false,
+        "docs": []
+      },
+      "actual": {
+        "answer_status": "INSUFFICIENT_EVIDENCE",
+        "passed": false,
+        "settlement_eligible": false,
+        "whitelist_id": null,
+        "docs": [],
+        "answer_method": "RULE_BASED_DEMO",
+        "policy_version": "source-check-v1"
+      },
+      "matched": true,
+      "latency_ms": 0.072
+    },
+    {
+      "id": "OOS-6",
+      "category": "out_of_scope_abstention",
+      "as_of": "2026-11-17",
+      "mode": "quick",
+      "tier": "quick",
+      "expected": {
+        "answer_status": "INSUFFICIENT_EVIDENCE",
+        "passed": false,
+        "settlement_eligible": false,
+        "docs": []
+      },
+      "actual": {
+        "answer_status": "INSUFFICIENT_EVIDENCE",
+        "passed": false,
+        "settlement_eligible": false,
+        "whitelist_id": null,
+        "docs": [],
+        "answer_method": "RULE_BASED_DEMO",
+        "policy_version": "source-check-v1"
+      },
+      "matched": true,
+      "latency_ms": 0.068
+    }
+  ]
+}

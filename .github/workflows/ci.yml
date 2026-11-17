@@ -1,0 +1,51 @@
+name: Lorx CI
+
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+    branches: [main, master]
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "npm"
+
+      - name: Install Node dependencies
+        run: npm ci
+
+      - name: Setup Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install Python dependencies
+        run: python -m pip install -r ai-service/requirements.txt
+
+      - name: Run Python AI & release policy unit tests
+        run: python -m unittest discover -s ai-service/tests -q
+
+      - name: Run 30-question holdout evaluation
+        run: python scripts/run_holdout_eval.py
+
+      - name: Run Node unit and settlement journal tests
+        run: node --test tests/legal-proxy.test.mjs tests/memo.test.cjs tests/judge-audit-fixes.test.mjs tests/settlement-journal.test.mjs
+
+      - name: Run Ganache escrow payment & proof integration tests
+        run: npm run test:payment
+
+      - name: Compile Solidity contracts
+        run: npm run compile:contracts
+
+      - name: TypeScript typecheck & Next.js production build
+        run: |
+          npx tsc --noEmit
+          npm run build

@@ -30,17 +30,26 @@ export function parsePaymentProof(header) {
   return proof;
 }
 
-export async function verifyEscrowPayment({ client, context, proof, confirmations = 2 }) {
-  ensure(Number.isSafeInteger(confirmations) && confirmations >= 1, 'INVALID_CONFIRMATION_POLICY', 503);
+/**
+ * Verifies payment proof domain fields, requestHash binding, and payer ECDSA signature.
+ */
+export async function verifyPaymentSignature({ context, proof }) {
   ensure(proof?.scheme === PAYMENT_SCHEME && proof.version === 2 && HASH.test(proof.txHash || ''),
     'UNSUPPORTED_PAYMENT_SCHEME');
   ensure(proof.chainId === context.chainId && eq(proof.asset, context.asset) && eq(proof.escrow, context.escrow),
     'PAYMENT_DOMAIN_MISMATCH');
-  ensure(eq(proof.requestHash, requestHash(context)), 'PAYMENT_REQUEST_MISMATCH');
+  const computedRequestHash = requestHash(context);
+  ensure(eq(proof.requestHash, computedRequestHash), 'PAYMENT_REQUEST_MISMATCH');
   let signer;
   try { signer = await recoverMessageAddress({ message: paymentProofMessage(context, proof.txHash), signature: proof.signature }); }
   catch { throw new PaymentError('INVALID_PAYER_SIGNATURE'); }
   ensure(eq(signer, context.payer), 'PAYER_SIGNATURE_MISMATCH');
+  return { signer, requestHash: computedRequestHash };
+}
+
+export async function verifyEscrowPayment({ client, context, proof, confirmations = 2 }) {
+  ensure(Number.isSafeInteger(confirmations) && confirmations >= 1, 'INVALID_CONFIRMATION_POLICY', 503);
+  await verifyPaymentSignature({ context, proof });
 
   try {
     ensure(await client.getChainId() === context.chainId, 'RPC_CHAIN_MISMATCH', 503);

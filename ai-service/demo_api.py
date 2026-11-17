@@ -10,6 +10,7 @@ from fastapi import FastAPI,HTTPException
 from pydantic import BaseModel,Field
 from legal_corpus import load_snapshot
 from versioned_validator import validate_snapshot_citations
+from release_policy import POLICY_HASH, POLICY_VERSION, evaluate_release_policy
 from snapshot_api import corpus_response
 
 MANIFEST=Path(os.environ.get('ASKPAY_CORPUS_MANIFEST',str(Path(__file__).resolve().parents[1]/'corpus/demo-v1/manifest.json')))
@@ -32,11 +33,24 @@ def citation(p):
 def lookup(doc,art,clause,point,asof): return SNAPSHOT.lookup(doc,str(art),str(clause),point,asof)
 def result(req,asof,answer,citations,status,extra=None):
     validation=validate_snapshot_citations(citations,SNAPSHOT,asof)
-    validation.update(verdict='CITATIONS_MATCH' if validation['passed'] else 'UNVERIFIED',settlement_eligible=False,
-                      review_level='AI_ASSISTED_SOURCE_CHECK_ONLY')
+    policy=evaluate_release_policy(
+        question=req.question,mode=req.mode,as_of=asof,answer_status=status,
+        citations=citations,validation=validation,
+        snapshot_id=SNAPSHOT.snapshot_id,snapshot_sha256=SNAPSHOT.snapshot_sha256,
+    )
+    validation.update(
+        verdict='CITATIONS_MATCH' if validation['passed'] else 'UNVERIFIED',
+        settlement_eligible=policy['settlement_eligible'],
+        policy_version=policy['policy_version'],
+        policy_hash=policy['policy_hash'],
+        whitelist_id=policy['whitelist_id'],
+        policy_reason=policy['policy_reason'],
+        review_level='AI_ASSISTED_SOURCE_CHECK_ONLY',
+    )
     obj=dict(question_id=req.question_id,tier=req.tier,answer=answer,citations=citations,validation=validation,
         answer_status=status,answer_method='RULE_BASED_DEMO',snapshot_id=SNAPSHOT.snapshot_id,
-        snapshot_sha256=SNAPSHOT.snapshot_sha256,as_of=asof.isoformat(),payment_status='DISABLED',latency_ms=0)
+        snapshot_sha256=SNAPSHOT.snapshot_sha256,as_of=asof.isoformat(),payment_status='DISABLED',latency_ms=0,
+        policy_version=policy['policy_version'],policy_hash=policy['policy_hash'])
     if extra: obj.update(extra)
     def h(x): return '0x'+hashlib.sha256(json.dumps(x,ensure_ascii=False,sort_keys=True).encode()).hexdigest()
     obj['hashes']=dict(question_hash=h(req.question),answer_hash=h(answer),citations_hash=h(citations),
@@ -76,7 +90,7 @@ def factcheck(req,asof):
 
 @app.get('/api/v1/legal/corpus')
 def corpus():
-    return {**corpus_response(SNAPSHOT),'review_level':'AI_ASSISTED_SOURCE_CHECK_ONLY','coverage':'SELECTED_DEMO_PROVISIONS','settlement_eligible':False}
+    return {**corpus_response(SNAPSHOT),'review_level':'AI_ASSISTED_SOURCE_CHECK_ONLY','coverage':'SELECTED_DEMO_PROVISIONS','settlement_eligible':False,'policy_version':POLICY_VERSION,'policy_hash':POLICY_HASH}
 @app.get('/health')
 def health(): return {'status':'ok','snapshot_sha256':SNAPSHOT.snapshot_sha256,'payment_enabled':False}
 @app.post('/api/v1/legal/ask')
@@ -94,6 +108,12 @@ def ask(req:Ask):
         keys=[('169/2026/NĐ-CP',38,1,''),('169/2026/NĐ-CP',38,2,''),('169/2026/NĐ-CP',39,1,'')]
         answer='Nghị định 128/2020/NĐ-CP hết hiệu lực từ 01/07/2026 theo Điều 38 Nghị định 169/2026/NĐ-CP. Không dùng mức phạt cũ cho một hành vi mới vào tháng 11/2026. Vụ việc cũ còn phải đối chiếu Điều 39 về chuyển tiếp; cần ngày hành vi và ngày quyết định.'
         if '127/2013' in q: answer='Nghị định 127/2013 đã hết hiệu lực từ 10/12/2020 (Điều 35 Nghị định 128/2020; xem PDF lịch sử kèm corpus). '+answer
+    elif '18/2019' in q and ('khoan 1 dieu 6' in q or 'dieu 6' in q) and ('tuoi thiet bi' in q or '10 nam' in q) and not any(w in q for w in ['ban lai','may cua toi','co duoc nhap','nhap tu nhat','nam 20']):
+        keys=[('18/2019/QĐ-TTG',6,1,'')]
+        answer='Theo Khoản 1 Điều 6 Quyết định 18/2019/QĐ-TTg, quy tắc chung là tuổi thiết bị không vượt quá 10 năm; một số lĩnh vực cụ thể áp dụng giới hạn riêng tại Phụ lục I.'
+    elif '18/2019' in q and ('khoan 3 dieu 8' in q or 'diem b khoan 3 dieu 8' in q) and any(t in q for t in ['chung thu giam dinh','bao quan','30 ngay']) and not any(w in q for w in ['ban lai','may cua toi','nhap tu nhat']):
+        keys=[('18/2019/QĐ-TTG',8,3,'b')]
+        answer='Theo Điểm b Khoản 3 Điều 8 Quyết định 18/2019/QĐ-TTg, trong thời hạn không quá 30 ngày kể từ ngày đưa máy móc, thiết bị về bảo quản, doanh nghiệp phải nộp Cơ quan hải quan chứng thư giám định.'
     elif any(x in q for x in ['may tien','may moc','thiet bi da qua su dung','may cu']):
         status='NEEDS_CLARIFICATION';keys=[('18/2019/QĐ-TTG',4,3,''),('18/2019/QĐ-TTG',6,1,''),('18/2019/QĐ-TTG',8,1,'')]
         answer=('Chưa đủ căn cứ để kết luận được nhập. Cần xác nhận mã HS và công dụng kỹ thuật, năm sản xuất/năm nhập, nước sản xuất, mục đích sử dụng và giấy xác nhận của nhà sản xuất hoặc chứng thư giám định. '
@@ -103,6 +123,9 @@ def ask(req:Ask):
             keys += [('28/2022/QĐ-TTG','Phụ lục I','1.6',''),('18/2019/QĐ-TTG',8,3,''),('54/2014/QH13',26,1,'')]
             answer+=(' Nếu hồ sơ xác nhận đúng máy tiện bóc tách kim loại thuộc nhóm 84.58, Mục 1.6 Phụ lục I QĐ 28/2022 nêu giới hạn 20 năm; đây chỉ là một tiêu chí. '
                      'Khi thiếu giấy xác nhận/chứng thư, việc đưa về bảo quản có điều kiện đăng ký giám định và thời hạn nộp chứng thư tại Khoản 3 Điều 8. QĐ 02/2026 sửa thủ tục trường hợp khác ở Điều 9; không dùng mẫu cũ để nộp hồ sơ.')
+    elif (('khoan 2' in q and 'dieu 25' in q) or '15 ngay' in q or 'gia tri lam thu tuc' in q) and ('to khai' in q or '54/2014' in q or 'dieu 25' in q):
+        keys=[('54/2014/QH13',25,2,'')]
+        answer='Theo Khoản 2 Điều 25 Luật Hải quan 54/2014/QH13, tờ khai hải quan có giá trị làm thủ tục hải quan trong thời hạn 15 ngày kể từ ngày đăng ký.'
     elif ('30 ngay' in q or 'to khai' in q) and any(x in q for x in ['thoi han','bao lau','con bao nhieu','ngay','nop']):
         keys=[('54/2014/QH13',25,1,'b')]
         dates=re.findall(r'\b(\d{2}/\d{2}/\d{4})\b',req.question)

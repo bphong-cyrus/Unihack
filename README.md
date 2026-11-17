@@ -4,16 +4,16 @@
 
 Quick: **0,05 USDC** · Deep: **0,20 USDC** *(giá thử nghiệm trên Avalanche Fuji testnet)* · **Kiểm chứng nguồn** & **Dùng thử demo**: **Miễn phí**.
 
-- **Web Demo:** https://askpay-virid.vercel.app/
+- **Web Demo:** https://lorx-xnk.vercel.app/
 - **Tài liệu kỹ thuật:** [Kiến trúc & Thiết kế](docs/KE_HOACH_THIET_KE.md) · [Kho luật theo phiên bản](docs/KHO_LUAT_PHIEN_BAN.md) · [Đánh giá & Kế hoạch](docs/demo-readiness/LATEST_REVIEW.md)
 
-> **Lưu ý phạm vi:** Lorx hiện tập trung vào pháp luật Hải quan và Xuất Nhập Khẩu Việt Nam. Nguồn dữ liệu demo được đối chiếu tự động từ PDF chính thức kèm SHA-256 (`AI_ASSISTED_SOURCE_CHECK_ONLY`), chưa thay thế rà soát chuyên môn của luật sư; trích dẫn khớp nguyên văn không tự chứng minh kết luận pháp lý cuối cùng cho mọi tình huống thực tế.
+> **Lưu ý phạm vi:** Lorx hiện chạy chế độ `RULE_BASED_DEMO` trong phạm vi pháp luật Hải quan và Xuất Nhập Khẩu Việt Nam (`Kiểm chứng nguyên văn & hiệu lực trong snapshot đã rà soát`, **không phải chứng nhận tư vấn pháp lý**). Trích dẫn khớp nguyên văn không tự chứng minh kết luận pháp lý cuối cùng cho mọi tình huống thực tế.
 
 ---
 
 ## Trải nghiệm nhanh trong 3 phút
 
-1. Mở web demo và chọn **Dùng thử demo (Miễn phí)** để trải nghiệm ngay không cần ví, hoặc **Đăng nhập tài khoản / Kết nối Core Wallet · MetaMask** (mạng Avalanche Fuji Testnet, USDC) để thử luồng tạm giữ escrow.
+1. Mở web demo và chọn **Dùng thử demo (Miễn phí)** (vào tài khoản mẫu **Nguyễn Minh Anh (Dữ liệu mẫu)**, không cần ví) hoặc **Đăng nhập tài khoản / Kết nối Core Wallet · MetaMask** (mạng Avalanche Fuji Testnet, USDC) để thử luồng tạm giữ escrow.
 2. Thử **4 tình huống tiêu biểu** ngay trên màn hình chào:
    - **Thời hạn nộp tờ khai nhập khẩu (30 ngày):** Tính số ngày đã qua / còn lại giữa `01/11/2026` và `17/11/2026` theo Điểm b Khoản 1 Điều 25 Luật Hải quan `54/2014/QH13`.
    - **Nhập khẩu máy móc cũ (`18/2019/QĐ-TTg` & `28/2022/QĐ-TTg`):** Khi thiếu mã HS, chứng thư giám định hoặc nhập để bán lại, hệ thống chủ động yêu cầu làm rõ (`NEEDS_CLARIFICATION`), không tự suy đoán đủ điều kiện.
@@ -43,10 +43,10 @@ Quick: **0,05 USDC** · Deep: **0,20 USDC** *(giá thử nghiệm trên Avalanch
 
 | Thành phần | Trạng thái & Ghi chú |
 |---|---|
-| Giao diện web (`Lorx`) | Tách rõ 2 luồng *Dùng thử demo* / *Đăng nhập & Ví Web3*, chế độ Nhanh / Phân tích tình huống / Kiểm chứng nguồn (free), đối chiếu nguồn, xuất bản nháp PDF và khôi phục cọc timeout. |
-| Corpus demo (`corpus/demo-v1`) | 6 văn bản / 34 điều khoản kèm PDF chính thức và SHA-256 (`AI_ASSISTED_SOURCE_CHECK_ONLY`); hiện giữ `settlement_eligible: false` cho tới khi có rà soát chuyên môn. |
-| Backend AI (`ai-service/`) | `demo_api.py` xử lý theo luật (rule-based) trong phạm vi XNK demo; `legal_pipeline.py` cung cấp sẵn contract adapter (`retrieve / answer / assess`) để nối mô hình LegalIR/LegalQA. |
-| Thanh toán & Smart Contract | Hợp đồng V2 (`AskPayEscrow.sol`, `AskPayReceiptLog.sol`) và trình xác minh proof `askpay-escrow-v2` đã kiểm thử đầy đủ trên EVM cục bộ (Ganache); chưa audit cho mainnet. |
+| Giao diện web (`Lorx`) | Tách rõ 2 luồng *Dùng thử demo* (`Nguyễn Minh Anh (Dữ liệu mẫu)`) / *Đăng nhập & Ví Web3*, chế độ Nhanh / Phân tích tình huống / Kiểm chứng nguồn (free), khôi phục phiên cọc qua reload (`lorx_pending_paid_attempt_v1`) và nút `claimTimeoutRefund`. |
+| Corpus demo (`corpus/demo-v1`) | 6 văn bản / 34 điều khoản kèm PDF chính thức và SHA-256 (`source-check-v1`: chỉ mở giải ngân tất định cho 5 nhóm câu kiểm chứng/định lượng nằm trong whitelist đã rà soát tới `2026-11-17`, các ca còn lại chặn/hoàn cọc an toàn). |
+| Backend AI (`ai-service/`) | Chạy ở chế độ `RULE_BASED_DEMO` trong phạm vi XNK (không phải mô hình RAG tổng quát hay tư vấn pháp lý chính thức); `legal_pipeline.py` cung cấp sẵn contract adapter (`retrieve / answer / assess`) cho mô hình LegalIR/LegalQA. |
+| Thanh toán & Smart Contract | Hợp đồng V2 (`AskPayEscrow.sol`, `AskPayReceiptLog.sol`), settlement journal bền vững phía server và trình xác minh proof `askpay-escrow-v2` đã kiểm thử trên Ganache EVM cục bộ; ghi nhận receipt qua Avalanche Fuji C-Chain (`43113`) hoặc Receipt Chain cấu hình riêng. |
 
 ---
 
@@ -100,8 +100,9 @@ NEXT_PUBLIC_ESCROW_ADDRESS=0x...
 NEXT_PUBLIC_USDC_ADDRESS=0x5425890298aed601595a70AB815c96711a31Bc65
 NEXT_PUBLIC_FUJI_RPC_URL=https://api.avax-test.network/ext/bc/C/rpc
 NEXT_PUBLIC_RECEIPT_LOG_ADDRESS=0x...
-ASKPAY_L1_RPC_URL=https://...
-ASKPAY_L1_CHAIN_ID=663010
+# Receipt Contract mặc định chạy trên Avalanche Fuji C-Chain (43113) hoặc trỏ tới Receipt Chain riêng
+ASKPAY_L1_RPC_URL=https://api.avax-test.network/ext/bc/C/rpc
+ASKPAY_L1_CHAIN_ID=43113
 ORACLE_PRIVATE_KEY=0x...
 ASKPAY_PAYMENT_CORPUS_SHA256=38f84d5d593a86142b23bb6d79187192a847be52f56f2befa9f0c0fabdd2bec3
 ASKPAY_PAYMENT_CONFIRMATIONS=2
@@ -112,11 +113,17 @@ ASKPAY_PAYMENT_CONFIRMATIONS=2
 ## Kiểm thử
 
 ```bash
-# Kiểm thử Python (LegalIR/LegalQA adapter, validator, snapshot & demo-v1)
+# Kiểm thử Python (LegalIR/LegalQA adapter, validator, snapshot, release policy & demo-v1)
 python -m unittest discover -s ai-service/tests -q
+
+# Đánh giá bộ 30 câu hỏi holdout (xuất evidence/holdout-eval.json & evidence/demo-results.json)
+python scripts/run_holdout_eval.py
 
 # Kiểm thử Node.js (proxy, memo, validator parity, factcheck)
 node --test tests/legal-proxy.test.mjs tests/memo.test.cjs tests/judge-audit-fixes.test.mjs
+
+# Kiểm thử Settlement Journal & khôi phục sau sự cố
+npm run test:journal
 
 # Kiểm thử luồng đặt cọc / proof / giải ngân / hoàn tiền / timeout trên Ganache EVM cục bộ
 npm run test:payment

@@ -203,12 +203,16 @@ export default function RightPanel({
                   )}
                 </div>
                 {activeAssistantMsg && (
-                  <div style={{ fontSize: 11.5, color: "#64748b", lineHeight: 1.45 }}>
-                    {activeAssistantMsg.validation?.corpus_status === "REVIEW_ASSERTED"
-                      ? "Nguồn từ snapshot đã gắn ngày rà soát. Việc áp dụng còn phụ thuộc tình huống cụ thể."
-                      : activeAssistantMsg.validation?.corpus_status === "VERIFIED_CURATED"
-                      ? "Đoạn trích đã được đối chiếu nguồn · Xem trạng thái thanh toán riêng."
-                      : "Nguồn tách tự động / thử nghiệm (chưa rà soát từng điều) · Chưa mở giải ngân."}
+                  <div style={{ fontSize: 11.5, color: "#64748b", lineHeight: 1.5 }}>
+                    <div>
+                      Kiểm chứng nguyên văn &amp; hiệu lực trong snapshot đã rà soát (không phải chứng nhận tư vấn pháp lý).
+                    </div>
+                    <div style={{ marginTop: 2, fontWeight: 600, color: "#475569" }}>
+                      {activeAssistantMsg.answerMethod || "RULE_BASED_DEMO"} · Policy:{" "}
+                      {activeAssistantMsg.policyVersion ||
+                        activeAssistantMsg.validation?.policy_version ||
+                        "source-check-v1"}
+                    </div>
                   </div>
                 )}
               </div>

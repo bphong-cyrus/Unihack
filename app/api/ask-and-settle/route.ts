@@ -18,7 +18,23 @@ import { evaluateSettlementDecision } from "./escrow-guard.mjs";
 import { forwardLegalQuestion } from "./legal-proxy.mjs";
 import { VALIDATOR_VERSION, computeExcerptSimilarity } from "./validator-core.mjs";
 import { paymentContext, requestHash, PAYMENT_SCHEME } from "../../lib/payment-request.mjs";
-import { PaymentError, parsePaymentProof, verifyEscrowPayment } from "./verify-payment.mjs";
+import {
+  PaymentError,
+  parsePaymentProof,
+  verifyEscrowPayment,
+  verifyPaymentSignature
+} from "./verify-payment.mjs";
+import {
+  acquirePaidJob,
+  abortUnverifiedJob,
+  JOURNAL_STAGES,
+  markDepositVerified,
+  reconcileOnchainEscrowState,
+  releasePaidJobLock,
+  savePersistedQA,
+  saveRecordedReceipt,
+  saveSettledOutcome
+} from "./settlement-journal.mjs";
 
 export const maxDuration = 30;
 
@@ -1928,6 +1944,152 @@ function validateSnapshotCitationsDemoV1(citations: any[], asOf: string) {
   };
 }
 
+const DEMO_V1_POLICY_VERSION = "source-check-v1";
+const DEMO_V1_POLICY_SPEC = {
+  allowed_modes: ["quick", "deep"],
+  max_reviewed_as_of: "2026-11-17",
+  min_excerpt_similarity: 0.9,
+  policy_version: DEMO_V1_POLICY_VERSION,
+  required_answer_status: "ANSWERED",
+  snapshot_id: "askpay-demo-source-checked-2026-11-17",
+  snapshot_sha256: DEMO_V1_FALLBACK_SHA256,
+  whitelist_rules: [
+    "WL-1-CUSTOMS-DEADLINE-30D",
+    "WL-2-DECLARATION-VALIDITY-15D",
+    "WL-3-PENALTY-REPEAL-169-2026",
+    "WL-4-MACHINERY-AGE-RULE-10Y",
+    "WL-5-MACHINERY-INSPECTION-30D"
+  ]
+};
+const DEMO_V1_POLICY_HASH = "0x" + sha256HexNode(JSON.stringify(DEMO_V1_POLICY_SPEC));
+
+function evaluateReleasePolicyDemoV1({
+  question,
+  mode,
+  asOf,
+  answerStatus,
+  citations,
+  validation
+}: {
+  question: string;
+  mode: string;
+  asOf: string;
+  answerStatus: string;
+  citations: any[];
+  validation: any;
+}) {
+  const reject = (reason: string) => ({
+    settlement_eligible: false,
+    policy_version: DEMO_V1_POLICY_VERSION,
+    policy_hash: DEMO_V1_POLICY_HASH,
+    whitelist_id: null as string | null,
+    policy_reason: reason
+  });
+
+  if (
+    DEMO_V1_SNAPSHOT_ID !== "askpay-demo-source-checked-2026-11-17" ||
+    DEMO_V1_SNAPSHOT_SHA256.toLowerCase() !== DEMO_V1_FALLBACK_SHA256
+  ) {
+    return reject("SNAPSHOT_MISMATCH");
+  }
+  if (asOf > "2026-11-17") return reject("AS_OF_OUTSIDE_REVIEW_HORIZON");
+  if (mode !== "quick" && mode !== "deep") return reject("MODE_NOT_ELIGIBLE_FOR_RELEASE");
+  if (answerStatus !== "ANSWERED") return reject(`ANSWER_STATUS_${answerStatus}_NOT_ELIGIBLE`);
+  if (!validation?.passed) return reject("VALIDATION_NOT_PASSED");
+
+  const checks: any[] = validation?.citation_checks || [];
+  if (!citations.length || !checks.length || citations.length !== checks.length) {
+    return reject("MISSING_OR_MISMATCHED_CITATIONS");
+  }
+  for (const check of checks) {
+    if (
+      check?.status !== "PASS" ||
+      !check?.is_in_force ||
+      Number(check?.excerpt_similarity || 0) < 0.9
+    ) {
+      return reject("CITATION_CHECK_INELIGIBLE");
+    }
+  }
+
+  const keys = new Set(
+    citations.map(
+      (c) =>
+        `${normalizeDemoV1DocId(String(c?.document || ""))}#${String(c?.article || "").trim()}#${String(
+          c?.clause || ""
+        ).trim()}#${String(c?.point || "").trim()}`
+    )
+  );
+  const qFold = foldDemoV1Text(question);
+  const dmyDates = question.match(/\b\d{2}\/\d{2}\/\d{4}\b/g) || [];
+  let whitelistId: string | null = null;
+
+  if (keys.has("54/2014/QH13#25#1#b")) {
+    const explicitRef =
+      (qFold.includes("54/2014") || qFold.includes("dieu 25") || qFold.includes("diem b")) &&
+      (qFold.includes("30 ngay") || qFold.includes("bao nhieu ngay"));
+    const twoDateCalc = dmyDates.length === 2 && qFold.includes("30 ngay");
+    if (explicitRef || twoDateCalc) whitelistId = "WL-1-CUSTOMS-DEADLINE-30D";
+  }
+
+  if (!whitelistId && keys.has("54/2014/QH13#25#2#")) {
+    if (
+      (qFold.includes("khoan 2") && qFold.includes("dieu 25")) ||
+      (qFold.includes("54/2014") && (qFold.includes("15 ngay") || qFold.includes("gia tri lam thu tuc")))
+    ) {
+      whitelistId = "WL-2-DECLARATION-VALIDITY-15D";
+    }
+  }
+
+  if (
+    !whitelistId &&
+    asOf >= "2026-07-01" &&
+    keys.has("169/2026/NĐ-CP#38#1#") &&
+    keys.has("169/2026/NĐ-CP#38#2#")
+  ) {
+    if (
+      qFold.includes("169/2026") &&
+      ["dieu 38", "01/07/2026", "hieu luc", "het hieu luc"].some((t) => qFold.includes(t))
+    ) {
+      whitelistId = "WL-3-PENALTY-REPEAL-169-2026";
+    }
+  }
+
+  if (!whitelistId && keys.has("18/2019/QĐ-TTG#6#1#")) {
+    const unverifiedLot = ["ban lai", "may cua toi", "co duoc nhap", "nhap tu nhat", "nam 20"].some((w) =>
+      qFold.includes(w)
+    );
+    if (
+      !unverifiedLot &&
+      qFold.includes("18/2019") &&
+      (qFold.includes("khoan 1 dieu 6") || qFold.includes("dieu 6")) &&
+      (qFold.includes("tuoi thiet bi") || qFold.includes("10 nam"))
+    ) {
+      whitelistId = "WL-4-MACHINERY-AGE-RULE-10Y";
+    }
+  }
+
+  if (!whitelistId && keys.has("18/2019/QĐ-TTG#8#3#b")) {
+    const unverifiedLot = ["ban lai", "may cua toi", "nhap tu nhat"].some((w) => qFold.includes(w));
+    if (
+      !unverifiedLot &&
+      qFold.includes("18/2019") &&
+      (qFold.includes("khoan 3 dieu 8") || qFold.includes("diem b khoan 3 dieu 8")) &&
+      ["chung thu giam dinh", "bao quan", "30 ngay"].some((t) => qFold.includes(t))
+    ) {
+      whitelistId = "WL-5-MACHINERY-INSPECTION-30D";
+    }
+  }
+
+  if (!whitelistId) return reject("NOT_IN_DETERMINISTIC_WHITELIST");
+  return {
+    settlement_eligible: true,
+    policy_version: DEMO_V1_POLICY_VERSION,
+    policy_hash: DEMO_V1_POLICY_HASH,
+    whitelist_id: whitelistId,
+    policy_reason: "WHITELISTED_SOURCE_CHECK_VERIFIED"
+  };
+}
+
 function buildDemoV1Response(
   reqBody: any,
   asOf: string,
@@ -1936,7 +2098,23 @@ function buildDemoV1Response(
   answerStatus: string,
   extra?: Record<string, any>
 ) {
-  const validation = validateSnapshotCitationsDemoV1(citations, asOf);
+  const rawValidation = validateSnapshotCitationsDemoV1(citations, asOf);
+  const policy = evaluateReleasePolicyDemoV1({
+    question: String(reqBody.question || ""),
+    mode: String(reqBody.mode || reqBody.tier || "quick"),
+    asOf,
+    answerStatus,
+    citations,
+    validation: rawValidation
+  });
+  const validation = {
+    ...rawValidation,
+    settlement_eligible: policy.settlement_eligible,
+    policy_version: policy.policy_version,
+    policy_hash: policy.policy_hash,
+    whitelist_id: policy.whitelist_id,
+    policy_reason: policy.policy_reason
+  };
   return {
     question_id: reqBody.questionId,
     tier: reqBody.tier,
@@ -1950,6 +2128,8 @@ function buildDemoV1Response(
     as_of: asOf,
     payment_status: "DISABLED",
     latency_ms: 0,
+    policy_version: policy.policy_version,
+    policy_hash: policy.policy_hash,
     ...(extra || {}),
     hashes: {
       question_hash: sha256HexNode(reqBody.question.trim()),
@@ -2098,6 +2278,24 @@ function runBoundedDemoV1QA(reqBody: any) {
         answer;
     }
   } else if (
+    q.includes("18/2019") &&
+    (q.includes("khoan 1 dieu 6") || q.includes("dieu 6")) &&
+    (q.includes("tuoi thiet bi") || q.includes("10 nam")) &&
+    !["ban lai", "may cua toi", "co duoc nhap", "nhap tu nhat", "nam 20"].some((w) => q.includes(w))
+  ) {
+    keys.push(["18/2019/QĐ-TTG", 6, 1, ""]);
+    answer =
+      "Theo Khoản 1 Điều 6 Quyết định 18/2019/QĐ-TTg, quy tắc chung là tuổi thiết bị không vượt quá 10 năm; một số lĩnh vực cụ thể áp dụng giới hạn riêng tại Phụ lục I.";
+  } else if (
+    q.includes("18/2019") &&
+    (q.includes("khoan 3 dieu 8") || q.includes("diem b khoan 3 dieu 8")) &&
+    ["chung thu giam dinh", "bao quan", "30 ngay"].some((t) => q.includes(t)) &&
+    !["ban lai", "may cua toi", "nhap tu nhat"].some((w) => q.includes(w))
+  ) {
+    keys.push(["18/2019/QĐ-TTG", 8, 3, "b"]);
+    answer =
+      "Theo Điểm b Khoản 3 Điều 8 Quyết định 18/2019/QĐ-TTg, trong thời hạn không quá 30 ngày kể từ ngày đưa máy móc, thiết bị về bảo quản, doanh nghiệp phải nộp Cơ quan hải quan chứng thư giám định.";
+  } else if (
     ["may tien", "may moc", "thiet bi da qua su dung", "may cu"].some((t) => q.includes(t))
   ) {
     status = "NEEDS_CLARIFICATION";
@@ -2116,6 +2314,15 @@ function runBoundedDemoV1QA(reqBody: any) {
         " Nếu hồ sơ xác nhận đúng máy tiện bóc tách kim loại thuộc nhóm 84.58, Mục 1.6 Phụ lục I QĐ 28/2022 nêu giới hạn 20 năm; đây chỉ là một tiêu chí. " +
         "Khi thiếu giấy xác nhận/chứng thư, việc đưa về bảo quản có điều kiện đăng ký giám định và thời hạn nộp chứng thư tại Khoản 3 Điều 8. QĐ 02/2026 sửa thủ tục trường hợp khác ở Điều 9; không dùng mẫu cũ để nộp hồ sơ.";
     }
+  } else if (
+    ((q.includes("khoan 2") && q.includes("dieu 25")) ||
+      q.includes("15 ngay") ||
+      q.includes("gia tri lam thu tuc")) &&
+    (q.includes("to khai") || q.includes("54/2014") || q.includes("dieu 25"))
+  ) {
+    keys.push(["54/2014/QH13", 25, 2, ""]);
+    answer =
+      "Theo Khoản 2 Điều 25 Luật Hải quan 54/2014/QH13, tờ khai hải quan có giá trị làm thủ tục hải quan trong thời hạn 15 ngày kể từ ngày đăng ký.";
   } else if (
     (q.includes("30 ngay") || q.includes("to khai")) &&
     ["thoi han", "bao lau", "con bao nhieu", "ngay", "nop"].some((t) => q.includes(t))
@@ -2269,6 +2476,73 @@ const RECEIPT_LEGACY_ABI = [
   }
 ] as const;
 
+function buildPaidResponsePayload(params: {
+  ragData: any;
+  x402Verification: any;
+  questionHash: string;
+  idempotentReplay: boolean;
+  onchainMode: "LIVE_AVALANCHE" | "SIMULATED_NO_ESCROW";
+  escrowTxHash?: string;
+  l1TxHash: string;
+  settlementTxHash: string;
+  finalSettlementStatus: string;
+  blockReason?: string;
+}) {
+  const {
+    ragData,
+    x402Verification,
+    questionHash,
+    idempotentReplay,
+    onchainMode,
+    escrowTxHash,
+    l1TxHash,
+    settlementTxHash,
+    finalSettlementStatus,
+    blockReason
+  } = params;
+
+  const policyVersion = String(
+    ragData?.policy_version || ragData?.validation?.policy_version || DEMO_V1_POLICY_VERSION
+  );
+  const policyHash = String(
+    ragData?.policy_hash || ragData?.validation?.policy_hash || DEMO_V1_POLICY_HASH
+  );
+  const hashes = ragData?.hashes
+    ? { ...ragData.hashes, policy_hash: ragData.hashes.policy_hash || policyHash }
+    : undefined;
+
+  return {
+    ...ragData,
+    policy_version: policyVersion,
+    policy_hash: policyHash,
+    ...(hashes ? { hashes } : {}),
+    ...(x402Verification
+      ? {
+          x402Trace: {
+            protocol: "askpay-escrow-v2",
+            paymentVerified: true,
+            requestHash: questionHash,
+            scheme: x402Verification.scheme,
+            network: x402Verification.network,
+            amountUsdcBaseUnits: x402Verification.amount,
+            asset: x402Verification.asset,
+            payer: x402Verification.payer,
+            txHash: x402Verification.txHash,
+            idempotentReplay
+          }
+        }
+      : {}),
+    onchain: {
+      mode: onchainMode,
+      escrowTxHash: escrowTxHash || undefined,
+      l1ReceiptTxHash: l1TxHash,
+      fujiSettlementTxHash: settlementTxHash,
+      settlementStatus: finalSettlementStatus,
+      guardReason: blockReason || undefined
+    }
+  };
+}
+
 export async function POST(req: Request) {
   let body: any;
   try {
@@ -2294,7 +2568,6 @@ export async function POST(req: Request) {
   const questionId: string = body.questionId;
   const question: string = body.question.trim();
   let questionHash = keccak256(toBytes(question));
-  const asOfNorm: string = typeof body.asOf === "string" ? body.asOf.trim() : "";
   const escrowAddr = (process.env.NEXT_PUBLIC_ESCROW_ADDRESS || "").trim();
   const usdcAddr = (process.env.NEXT_PUBLIC_USDC_ADDRESS || "").trim();
   const fujiRpc = (
@@ -2302,243 +2575,485 @@ export async function POST(req: Request) {
   ).trim();
 
   const xPaymentHeader = req.headers.get("x-payment") || "";
-  const requireX402 = body.requireX402 === true || req.headers.get("x-askpay-protocol") === "x402" ||
+  const requireX402 =
+    body.requireX402 === true ||
+    req.headers.get("x-askpay-protocol") === "x402" ||
     Boolean(xPaymentHeader || body.escrowTxHash || body.paymentProof);
+
   let x402Verification: any = null;
   let paidContext: any = null;
+  let paidProof: any = null;
+  let acquiredJob: any = null;
+  let paidLeaseOwner = "";
+
   if (requireX402) {
-    if (!process.env.ASKPAY_PAYMENT_CORPUS_SHA256 || !escrowAddr || !usdcAddr || !process.env.ORACLE_PRIVATE_KEY || !process.env.NEXT_PUBLIC_RECEIPT_LOG_ADDRESS || !process.env.ASKPAY_L1_RPC_URL || !process.env.ASKPAY_L1_CHAIN_ID) {
-      return NextResponse.json({ error: "Thanh toán chưa được cấu hình đủ.", code: "PAYMENT_NOT_CONFIGURED" }, { status: 503 });
+    if (
+      !process.env.ASKPAY_PAYMENT_CORPUS_SHA256 ||
+      !escrowAddr ||
+      !usdcAddr ||
+      !process.env.ORACLE_PRIVATE_KEY ||
+      !process.env.NEXT_PUBLIC_RECEIPT_LOG_ADDRESS ||
+      !process.env.ASKPAY_L1_RPC_URL ||
+      !process.env.ASKPAY_L1_CHAIN_ID
+    ) {
+      return NextResponse.json(
+        { error: "Thanh toán chưa được cấu hình đủ.", code: "PAYMENT_NOT_CONFIGURED" },
+        { status: 503 }
+      );
     }
     try {
       paidContext = paymentContext(body, {
-        chainId: 43113, escrowAddress: escrowAddr, usdcAddress: usdcAddr,
+        chainId: 43113,
+        escrowAddress: escrowAddr,
+        usdcAddress: usdcAddr,
         corpusHash: process.env.ASKPAY_PAYMENT_CORPUS_SHA256,
         asOf: new Intl.DateTimeFormat("en-CA", { timeZone: "Asia/Ho_Chi_Minh" }).format(new Date())
       });
       questionHash = requestHash(paidContext);
       if (!xPaymentHeader) {
-        return NextResponse.json({
-          protocol: "askpay-escrow-v2", error: "USDC escrow deposit and payer signature required.",
-          accepts: [{ scheme: PAYMENT_SCHEME, network: "avalanche-fuji", chainId: 43113,
-            maxAmountRequired: paidContext.amount, asset: paidContext.asset, payTo: paidContext.escrow,
-            extra: { context: paidContext, requestHash: questionHash, decimals: 6 } }]
-        }, { status: 402 });
+        return NextResponse.json(
+          {
+            protocol: "askpay-escrow-v2",
+            error: "USDC escrow deposit and payer signature required.",
+            accepts: [
+              {
+                scheme: PAYMENT_SCHEME,
+                network: "avalanche-fuji",
+                chainId: 43113,
+                maxAmountRequired: paidContext.amount,
+                asset: paidContext.asset,
+                payTo: paidContext.escrow,
+                extra: { context: paidContext, requestHash: questionHash, decimals: 6 }
+              }
+            ]
+          },
+          { status: 402 }
+        );
       }
-      const proof = parsePaymentProof(xPaymentHeader);
-      if (body.escrowTxHash && body.escrowTxHash.toLowerCase() !== proof.txHash.toLowerCase()) {
+
+      paidProof = parsePaymentProof(xPaymentHeader);
+      if (body.escrowTxHash && body.escrowTxHash.toLowerCase() !== paidProof.txHash.toLowerCase()) {
         throw new PaymentError("DEPOSIT_HASH_CONFLICT");
       }
-      const paymentClient = createPublicClient({ chain: avalancheFuji,
-        transport: http(process.env.NEXT_PUBLIC_FUJI_RPC_URL || "https://api.avax-test.network/ext/bc/C/rpc", { timeout: 10000 }) });
-      x402Verification = await verifyEscrowPayment({ client: paymentClient, context: paidContext, proof,
-        confirmations: Number(process.env.ASKPAY_PAYMENT_CONFIRMATIONS || "2") });
+      await verifyPaymentSignature({ context: paidContext, proof: paidProof });
+
+      const acquired = await acquirePaidJob({
+        questionId,
+        txHash: paidProof.txHash,
+        requestHash: questionHash,
+        corpusHash: paidContext.corpusHash,
+        payer: paidContext.payer,
+        amount: paidContext.amount,
+        asOf: paidContext.asOf
+      });
+      acquiredJob = acquired.job;
+      paidLeaseOwner = acquired.leaseOwner;
       body.asOf = paidContext.asOf;
-      body.escrowTxHash = proof.txHash;
+      body.escrowTxHash = paidProof.txHash;
     } catch (error: any) {
-      return NextResponse.json({ error: error.code || error.message || "PAYMENT_VERIFICATION_FAILED" },
-        { status: error.status || 400 });
+      return NextResponse.json(
+        {
+          error: error?.code || error?.message || "PAYMENT_VERIFICATION_FAILED",
+          code: error?.code || undefined
+        },
+        { status: error?.status || 400 }
+      );
     }
   }
 
-  let ragData: any;
-  const aiUrl = (
-    process.env.AI_SERVICE_URL ||
-    process.env.LEGAL_RAG_API_URL ||
-    "http://127.0.0.1:8000/api/v1/legal/ask"
-  ).trim();
+  try {
+    let reconciledState: any = null;
+    const paymentClient = requireX402
+      ? createPublicClient({
+          chain: avalancheFuji,
+          transport: http(fujiRpc, { timeout: 10000 })
+        })
+      : null;
 
-  const proxyResult = await forwardLegalQuestion(body, aiUrl);
-  if (proxyResult.status === 400 || proxyResult.status === 502) {
-    return NextResponse.json(proxyResult.body, { status: proxyResult.status });
-  }
-
-  if (proxyResult.status === 200) {
-    ragData = proxyResult.body;
-  } else {
-    if (requireX402 || process.env.ASKPAY_ENABLE_BUILTIN_DEMO === "false") {
-      return NextResponse.json(proxyResult.body, { status: 503 });
-    }
-    try {
-      ragData = runBoundedDemoV1QA({ ...body, question });
-    } catch (err: any) {
-      if (err instanceof DemoV1HttpError) {
-        return NextResponse.json({ error: err.message }, { status: err.status });
+    if (requireX402 && acquiredJob) {
+      if (acquiredJob.stage === JOURNAL_STAGES.SETTLED && acquiredJob.qa?.ragData) {
+        const cachedTrace = acquiredJob.x402Verification || {
+          scheme: PAYMENT_SCHEME,
+          network: "eip155:43113",
+          amount: paidContext.amount,
+          asset: paidContext.asset,
+          payer: paidContext.payer,
+          txHash: paidProof.txHash,
+          requestHash: questionHash
+        };
+        return NextResponse.json(
+          buildPaidResponsePayload({
+            ragData: acquiredJob.qa.ragData,
+            x402Verification: cachedTrace,
+            questionHash,
+            idempotentReplay: true,
+            onchainMode: "LIVE_AVALANCHE",
+            escrowTxHash: paidProof.txHash,
+            l1TxHash: acquiredJob.receipt?.l1TxHash || "",
+            settlementTxHash: acquiredJob.settlement?.settlementTxHash || "",
+            finalSettlementStatus:
+              acquiredJob.settlement?.settlementStatus || "RELEASED_TO_TREASURY",
+            blockReason: acquiredJob.qa?.blockReason
+          })
+        );
       }
-      throw err;
+
+      if (!acquiredJob.depositVerified) {
+        try {
+          x402Verification = await verifyEscrowPayment({
+            client: paymentClient!,
+            context: paidContext,
+            proof: paidProof,
+            confirmations: Number(process.env.ASKPAY_PAYMENT_CONFIRMATIONS || "2")
+          });
+          acquiredJob = await markDepositVerified({
+            questionId,
+            leaseOwner: paidLeaseOwner,
+            x402Verification
+          });
+        } catch (error: any) {
+          await abortUnverifiedJob({ questionId, leaseOwner: paidLeaseOwner }).catch(() => {});
+          return NextResponse.json(
+            { error: error?.code || error?.message || "PAYMENT_VERIFICATION_FAILED" },
+            { status: error?.status || 400 }
+          );
+        }
+      } else {
+        reconciledState = await reconcileOnchainEscrowState({
+          client: paymentClient!,
+          escrowAddress: escrowAddr as `0x${string}`,
+          abi: ESCROW_V2_ABI,
+          questionId: questionId as `0x${string}`,
+          journalPath: undefined,
+          leaseOwner: paidLeaseOwner,
+          job: acquiredJob
+        });
+        x402Verification = {
+          ...(acquiredJob.x402Verification || {
+            scheme: PAYMENT_SCHEME,
+            network: "eip155:43113",
+            amount: paidContext.amount,
+            asset: paidContext.asset,
+            payer: paidContext.payer,
+            txHash: paidProof.txHash,
+            requestHash: questionHash
+          }),
+          escrowRecord:
+            reconciledState.escrowRecord || acquiredJob.x402Verification?.escrowRecord || null
+        };
+        if (reconciledState.settledOnchain && acquiredJob.qa?.ragData) {
+          return NextResponse.json(
+            buildPaidResponsePayload({
+              ragData: acquiredJob.qa.ragData,
+              x402Verification,
+              questionHash,
+              idempotentReplay: true,
+              onchainMode: "LIVE_AVALANCHE",
+              escrowTxHash: paidProof.txHash,
+              l1TxHash: reconciledState.l1TxHash || acquiredJob.receipt?.l1TxHash || "",
+              settlementTxHash:
+                reconciledState.settlementTxHash ||
+                acquiredJob.settlement?.settlementTxHash ||
+                "",
+              finalSettlementStatus: reconciledState.settlementStatus,
+              blockReason: acquiredJob.qa?.blockReason
+            })
+          );
+        }
+      }
     }
-  }
 
-  const askerAddress: string =
-    typeof body.askerAddress === "string" && body.askerAddress.startsWith("0x")
-      ? body.askerAddress
-      : "0x0000000000000000000000000000000000000001";
+    let ragData: any;
+    const aiUrl = (
+      process.env.AI_SERVICE_URL ||
+      process.env.LEGAL_RAG_API_URL ||
+      "http://127.0.0.1:8000/api/v1/legal/ask"
+    ).trim();
 
-  if (paidContext && String(ragData?.snapshot_sha256 || ragData?.validation?.snapshot_sha256 || "").replace(/^0x/, "").toLowerCase() !== paidContext.corpusHash) {
-    return NextResponse.json({ error: "Corpus đã thay đổi; không xử lý khoản cọc bằng nguồn khác.", code: "CORPUS_VERSION_CONFLICT" }, { status: 409 });
-  }
-  const passed: boolean = Boolean(ragData?.validation?.passed);
-  const scoreInt = Math.round((ragData?.validation?.overall_score || 0) * 100);
+    if (acquiredJob?.qa?.ragData) {
+      ragData = acquiredJob.qa.ragData;
+    } else {
+      const proxyResult = await forwardLegalQuestion(body, aiUrl);
+      if (proxyResult.status === 400 || proxyResult.status === 502) {
+        return NextResponse.json(proxyResult.body, { status: proxyResult.status });
+      }
 
-  const answerHash = keccak256(toBytes(ragData.answer || ""));
-  const citationsHash = keccak256(toBytes(JSON.stringify(ragData.citations || [])));
-  const validatorHash = keccak256(toBytes(JSON.stringify(ragData.validation || {})));
-  const corpusHash = keccak256(
-    toBytes(String(ragData?.validation?.corpus_sha256 || ragData?.hashes?.corpus_hash || DEMO_CORPUS_SHA256_TS))
-  );
-  const validatorVersion = String(ragData?.validation?.validator_version || VALIDATOR_VERSION);
-  const citedDocsSummary = (ragData.citations || [])
-    .map((c: any) => `${c.document}#Art${c.article}#Cl${c.clause}`)
-    .join(";");
+      if (proxyResult.status === 200) {
+        ragData = proxyResult.body;
+      } else {
+        if (requireX402 || process.env.ASKPAY_ENABLE_BUILTIN_DEMO === "false") {
+          return NextResponse.json(proxyResult.body, { status: 503 });
+        }
+        try {
+          ragData = runBoundedDemoV1QA({ ...body, question });
+        } catch (err: any) {
+          if (err instanceof DemoV1HttpError) {
+            return NextResponse.json({ error: err.message }, { status: err.status });
+          }
+          throw err;
+        }
+      }
+    }
 
-  const pk = process.env.ORACLE_PRIVATE_KEY || "";
-  const receiptAddr = process.env.NEXT_PUBLIC_RECEIPT_LOG_ADDRESS || "";
+    const askerAddress: string =
+      typeof body.askerAddress === "string" && body.askerAddress.startsWith("0x")
+        ? body.askerAddress
+        : "0x0000000000000000000000000000000000000001";
 
-  const isLiveOnchainReady =
-    pk.startsWith("0x") &&
-    pk.length === 66 &&
-    escrowAddr.startsWith("0x") &&
-    receiptAddr.startsWith("0x");
+    if (
+      paidContext &&
+      String(ragData?.snapshot_sha256 || ragData?.validation?.snapshot_sha256 || "")
+        .replace(/^0x/, "")
+        .toLowerCase() !== paidContext.corpusHash
+    ) {
+      return NextResponse.json(
+        {
+          error: "Corpus đã thay đổi; không xử lý khoản cọc bằng nguồn khác.",
+          code: "CORPUS_VERSION_CONFLICT"
+        },
+        { status: 409 }
+      );
+    }
 
-  let l1TxHash = "";
-  let settlementTxHash = "";
-  let onchainMode: "LIVE_AVALANCHE" | "SIMULATED_NO_ESCROW" = "SIMULATED_NO_ESCROW";
-  const escrowRecord: any = x402Verification?.escrowRecord || null;
+    const passed: boolean = Boolean(ragData?.validation?.passed);
+    const scoreInt = Math.round((ragData?.validation?.overall_score || 0) * 100);
 
-
-  const settlementDecision = evaluateSettlementDecision({
-    request: {
-      questionId,
-      tier: body.tier,
-      askerAddress
-    },
-    expectedQuestionHash: questionHash,
-    escrowRecord,
-    validation: ragData.validation
-  });
-
-  if (!settlementDecision.ok) {
-    return NextResponse.json(
-      { error: settlementDecision.error, code: settlementDecision.code },
-      { status: settlementDecision.httpStatus }
+    const answerHash = keccak256(toBytes(ragData.answer || ""));
+    const citationsHash = keccak256(toBytes(JSON.stringify(ragData.citations || [])));
+    const validatorHash = keccak256(toBytes(JSON.stringify(ragData.validation || {})));
+    const corpusHash = keccak256(
+      toBytes(
+        String(
+          ragData?.validation?.corpus_sha256 || ragData?.hashes?.corpus_hash || DEMO_CORPUS_SHA256_TS
+        )
+      )
     );
-  }
+    const validatorVersion = String(ragData?.validation?.validator_version || VALIDATOR_VERSION);
+    const citedDocsSummary = (ragData.citations || [])
+      .map((c: any) => `${c.document}#Art${c.article}#Cl${c.clause}`)
+      .join(";");
 
-  let finalSettlementStatus: string = escrowRecord ? "PENDING_RECONCILIATION" : "NO_ESCROW_DEPOSIT";
-  if (escrowRecord) onchainMode = "LIVE_AVALANCHE";
+    const pk = process.env.ORACLE_PRIVATE_KEY || "";
+    const receiptAddr = process.env.NEXT_PUBLIC_RECEIPT_LOG_ADDRESS || "";
 
-  if (isLiveOnchainReady && settlementDecision.hasEscrow) {
-    try {
-      const oracleAccount = privateKeyToAccount(pk as `0x${string}`);
-      const l1Rpc = process.env.ASKPAY_L1_RPC_URL || fujiRpc;
-      const l1ChainId = Number(process.env.ASKPAY_L1_CHAIN_ID || 43113);
+    const isLiveOnchainReady =
+      pk.startsWith("0x") &&
+      pk.length === 66 &&
+      escrowAddr.startsWith("0x") &&
+      receiptAddr.startsWith("0x");
 
-      const askPayL1 = defineChain({
-        id: l1ChainId,
-        name: "AskPay Audit L1",
-        nativeCurrency: { name: "ASK", symbol: "ASK", decimals: 18 },
-        rpcUrls: { default: { http: [l1Rpc] } }
+    let l1TxHash = String(acquiredJob?.receipt?.l1TxHash || "");
+    let settlementTxHash = String(acquiredJob?.settlement?.settlementTxHash || "");
+    let onchainMode: "LIVE_AVALANCHE" | "SIMULATED_NO_ESCROW" = "SIMULATED_NO_ESCROW";
+    const escrowRecord: any = x402Verification?.escrowRecord || null;
+
+    if (reconciledState?.settledOnchain) {
+      onchainMode = "LIVE_AVALANCHE";
+      return NextResponse.json(
+        buildPaidResponsePayload({
+          ragData,
+          x402Verification,
+          questionHash,
+          idempotentReplay: true,
+          onchainMode,
+          escrowTxHash: typeof body.escrowTxHash === "string" ? body.escrowTxHash : undefined,
+          l1TxHash: reconciledState.l1TxHash || l1TxHash,
+          settlementTxHash: reconciledState.settlementTxHash || settlementTxHash,
+          finalSettlementStatus: reconciledState.settlementStatus,
+          blockReason: acquiredJob?.qa?.blockReason
+        })
+      );
+    }
+
+    const settlementDecision = evaluateSettlementDecision({
+      request: {
+        questionId,
+        tier: body.tier,
+        askerAddress
+      },
+      expectedQuestionHash: questionHash,
+      escrowRecord,
+      validation: ragData.validation
+    });
+
+    if (!settlementDecision.ok) {
+      return NextResponse.json(
+        { error: settlementDecision.error, code: settlementDecision.code },
+        { status: settlementDecision.httpStatus }
+      );
+    }
+
+    let finalSettlementStatus: string = escrowRecord
+      ? "PENDING_RECONCILIATION"
+      : "NO_ESCROW_DEPOSIT";
+    if (escrowRecord) onchainMode = "LIVE_AVALANCHE";
+
+    if (requireX402 && paidLeaseOwner) {
+      acquiredJob = await savePersistedQA({
+        questionId,
+        leaseOwner: paidLeaseOwner,
+        ragData,
+        scoreInt,
+        canRelease: settlementDecision.canRelease,
+        settlementStatus: finalSettlementStatus,
+        blockReason: settlementDecision.blockReason,
+        hashes: {
+          requestHash: questionHash,
+          answerHash,
+          citationsHash,
+          validatorHash,
+          corpusHash
+        }
       });
+    }
 
-      const l1Public = createPublicClient({
-        chain: askPayL1,
-        transport: http(l1Rpc, { timeout: 10000 })
-      });
-      const l1Wallet = createWalletClient({
-        account: oracleAccount,
-        chain: askPayL1,
-        transport: http(l1Rpc, { timeout: 10000 })
-      });
+    if (isLiveOnchainReady && settlementDecision.hasEscrow) {
+      try {
+        const oracleAccount = privateKeyToAccount(pk as `0x${string}`);
+        const l1Rpc = process.env.ASKPAY_L1_RPC_URL || fujiRpc;
+        const l1ChainId = Number(process.env.ASKPAY_L1_CHAIN_ID || 43113);
 
-        l1TxHash = await l1Wallet.writeContract({
-          chain: askPayL1,
+        if (!l1TxHash) {
+          const receiptChain = defineChain({
+            id: l1ChainId,
+            name: l1ChainId === 43113 ? "Avalanche Fuji C-Chain (Receipt Chain)" : "Lorx Receipt Chain",
+            nativeCurrency: { name: "AVAX", symbol: "AVAX", decimals: 18 },
+            rpcUrls: { default: { http: [l1Rpc] } }
+          });
+
+          const l1Public = createPublicClient({
+            chain: receiptChain,
+            transport: http(l1Rpc, { timeout: 10000 })
+          });
+          const l1Wallet = createWalletClient({
+            account: oracleAccount,
+            chain: receiptChain,
+            transport: http(l1Rpc, { timeout: 10000 })
+          });
+
+          l1TxHash = await l1Wallet.writeContract({
+            chain: receiptChain,
+            account: oracleAccount,
+            address: receiptAddr as `0x${string}`,
+            abi: RECEIPT_V2_ABI,
+            functionName: "recordReceipt",
+            args: [
+              questionId as `0x${string}`,
+              askerAddress as `0x${string}`,
+              questionHash,
+              answerHash,
+              citationsHash,
+              validatorHash,
+              corpusHash,
+              passed,
+              scoreInt,
+              citedDocsSummary,
+              validatorVersion
+            ]
+          });
+
+          const auditReceipt = await l1Public.waitForTransactionReceipt({
+            hash: l1TxHash as `0x${string}`
+          });
+          if (auditReceipt.status !== "success") throw new Error("AUDIT_RECEIPT_REVERTED");
+
+          if (requireX402 && paidLeaseOwner) {
+            acquiredJob = await saveRecordedReceipt({
+              questionId,
+              leaseOwner: paidLeaseOwner,
+              l1TxHash,
+              chainId: l1ChainId
+            });
+          }
+        }
+
+        const fujiWallet = createWalletClient({
           account: oracleAccount,
-          address: receiptAddr as `0x${string}`,
-          abi: RECEIPT_V2_ABI,
-          functionName: "recordReceipt",
+          chain: avalancheFuji,
+          transport: http(fujiRpc, { timeout: 10000 })
+        });
+        const fujiPublic = createPublicClient({
+          chain: avalancheFuji,
+          transport: http(fujiRpc, { timeout: 10000 })
+        });
+
+        settlementTxHash = await fujiWallet.writeContract({
+          chain: avalancheFuji,
+          account: oracleAccount,
+          address: escrowAddr as `0x${string}`,
+          abi: ESCROW_V2_ABI,
+          functionName: "resolveQuestion",
           args: [
             questionId as `0x${string}`,
-            askerAddress as `0x${string}`,
-            questionHash,
-            answerHash,
-            citationsHash,
-            validatorHash,
-            corpusHash,
-            passed,
+            settlementDecision.canRelease,
             scoreInt,
-            citedDocsSummary,
-            validatorVersion
+            l1TxHash as `0x${string}`
           ]
         });
 
-      const auditReceipt = await l1Public.waitForTransactionReceipt({ hash: l1TxHash as `0x${string}` });
-      if (auditReceipt.status !== "success") throw new Error("AUDIT_RECEIPT_REVERTED");
+        const settledReceipt = await fujiPublic.waitForTransactionReceipt({
+          hash: settlementTxHash as `0x${string}`
+        });
+        if (settledReceipt.status !== "success") throw new Error("SETTLEMENT_REVERTED");
+        onchainMode = "LIVE_AVALANCHE";
+        finalSettlementStatus = settlementDecision.canRelease
+          ? "RELEASED_TO_TREASURY"
+          : "AUTO_REFUNDED_TO_USER";
 
-      const fujiWallet = createWalletClient({
-        account: oracleAccount,
-        chain: avalancheFuji,
-        transport: http(fujiRpc, { timeout: 10000 })
-      });
-      const fujiPublic = createPublicClient({
-        chain: avalancheFuji,
-        transport: http(fujiRpc, { timeout: 10000 })
-      });
-
-      settlementTxHash = await fujiWallet.writeContract({
-        chain: avalancheFuji,
-        account: oracleAccount,
-        address: escrowAddr as `0x${string}`,
-        abi: ESCROW_V2_ABI,
-        functionName: "resolveQuestion",
-        args: [
-          questionId as `0x${string}`,
-          settlementDecision.canRelease,
-          scoreInt,
-          l1TxHash as `0x${string}`
-        ]
-      });
-
-      const settledReceipt = await fujiPublic.waitForTransactionReceipt({ hash: settlementTxHash as `0x${string}` });
-      if (settledReceipt.status !== "success") throw new Error("SETTLEMENT_REVERTED");
-      onchainMode = "LIVE_AVALANCHE";
-      finalSettlementStatus = settlementDecision.canRelease ? "RELEASED_TO_TREASURY" : "AUTO_REFUNDED_TO_USER";
-    } catch {
-      onchainMode = "LIVE_AVALANCHE";
-      finalSettlementStatus = "PENDING_RECONCILIATION";
-    }
-  }
-
-  const responsePayload = {
-    ...ragData,
-    ...(x402Verification
-      ? {
-          x402Trace: {
-            protocol: "askpay-escrow-v2",
-            paymentVerified: true,
-            requestHash: questionHash,
-            scheme: x402Verification.scheme,
-            network: x402Verification.network,
-            amountUsdcBaseUnits: x402Verification.amount,
-            asset: x402Verification.asset,
-            payer: x402Verification.payer,
-            txHash: x402Verification.txHash,
-            idempotentReplay: false
+        if (requireX402 && paidLeaseOwner) {
+          acquiredJob = await saveSettledOutcome({
+            questionId,
+            leaseOwner: paidLeaseOwner,
+            settlementTxHash,
+            settlementStatus: finalSettlementStatus,
+            onchainStatus: settlementDecision.canRelease ? 2 : 3,
+            l1TxHash
+          });
+        }
+      } catch {
+        onchainMode = "LIVE_AVALANCHE";
+        finalSettlementStatus = "PENDING_RECONCILIATION";
+        if (requireX402 && paymentClient) {
+          try {
+            const recovered = await reconcileOnchainEscrowState({
+              client: paymentClient,
+              escrowAddress: escrowAddr as `0x${string}`,
+              abi: ESCROW_V2_ABI,
+              questionId: questionId as `0x${string}`,
+              journalPath: undefined,
+              leaseOwner: paidLeaseOwner || undefined,
+              job: acquiredJob
+            });
+            if (recovered.settledOnchain) {
+              finalSettlementStatus = recovered.settlementStatus;
+              l1TxHash = recovered.l1TxHash || l1TxHash;
+              settlementTxHash = recovered.settlementTxHash || settlementTxHash;
+            }
+          } catch {
+            // Keep PENDING_RECONCILIATION for client/worker retry
           }
         }
-      : {}),
-    onchain: {
-      mode: onchainMode,
-      escrowTxHash:
-        typeof body.escrowTxHash === "string" && body.escrowTxHash
-          ? body.escrowTxHash
-          : undefined,
-      l1ReceiptTxHash: l1TxHash,
-      fujiSettlementTxHash: settlementTxHash,
-      settlementStatus: finalSettlementStatus,
-      guardReason: settlementDecision.blockReason || undefined
+      }
     }
-  };
 
-  return NextResponse.json(responsePayload);
+    return NextResponse.json(
+      buildPaidResponsePayload({
+        ragData,
+        x402Verification,
+        questionHash,
+        idempotentReplay: Boolean(acquiredJob?.stage === JOURNAL_STAGES.SETTLED && settlementTxHash === "" && reconciledState?.settledOnchain),
+        onchainMode,
+        escrowTxHash: typeof body.escrowTxHash === "string" ? body.escrowTxHash : undefined,
+        l1TxHash,
+        settlementTxHash,
+        finalSettlementStatus,
+        blockReason: settlementDecision.blockReason
+      })
+    );
+  } finally {
+    if (paidLeaseOwner) {
+      await releasePaidJobLock({ questionId, leaseOwner: paidLeaseOwner }).catch(() => {});
+    }
+  }
 }
 

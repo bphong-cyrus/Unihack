@@ -1,0 +1,33 @@
+{
+  "generated_at_utc": "2026-11-17T12:47:29.792821+00:00",
+  "git_commit_sha": "eb61e4c3d39b3f8f540b0e32150e9c72891731e0",
+  "product": "Lorx",
+  "live_demo_url": "https://lorx-xnk.vercel.app/",
+  "answer_method": "RULE_BASED_DEMO",
+  "scope_note": "Kiểm chứng nguyên văn & hiệu lực trong snapshot đã rà soát; không phải mô hình RAG tổng quát hay chứng nhận tư vấn pháp lý.",
+  "corpus": {
+    "snapshot_id": "askpay-demo-source-checked-2026-11-17",
+    "snapshot_sha256": "38f84d5d593a86142b23bb6d79187192a847be52f56f2befa9f0c0fabdd2bec3",
+    "verified_through": "2026-11-17",
+    "documents": 6,
+    "provisions": 34
+  },
+  "release_policy": {
+    "policy_version": "source-check-v1",
+    "policy_hash": "0xba8694d2ca0a6e81784ee4f03e2eb45463db4f6f9b98198b9ffa3a33ce8f6adb",
+    "whitelist_count": 5
+  },
+  "holdout_summary": {
+    "exact_match_count": 30,
+    "exact_match_rate": 1.0,
+    "citation_match_count": 30,
+    "citation_match_rate": 1.0,
+    "abstention_and_refusal_expected": 21,
+    "abstention_and_refusal_correct": 21,
+    "abstention_and_refusal_rate": 1.0,
+    "false_accepts": 0,
+    "false_settlement_releases": 0,
+    "latency_p50_ms": 0.266,
+    "latency_p95_ms": 2.436
+  }
+}

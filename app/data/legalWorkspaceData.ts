@@ -39,6 +39,9 @@ export interface ValidationPayload {
   snapshot_id?: string;
   snapshot_sha256?: string;
   as_of?: string;
+  policy_version?: string;
+  policy_hash?: string;
+  policy_rule?: string | null;
 }
 
 export interface OnchainProof {
@@ -61,6 +64,7 @@ export interface AuditHashes {
   citations_hash?: string;
   validator_hash?: string;
   corpus_hash?: string;
+  policy_hash?: string;
 }
 
 export interface ChatMessage {
@@ -71,6 +75,8 @@ export interface ChatMessage {
   mode?: TierMode;
   feeLabel?: string;
   answerStatus?: string;
+  answerMethod?: string;
+  policyVersion?: string;
   reviewLevel?: string;
   citations?: CitationItem[];
   validation?: ValidationPayload;

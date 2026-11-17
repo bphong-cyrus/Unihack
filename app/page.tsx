@@ -59,6 +59,7 @@ type CorpusInventory = {
   total_chunks: number;
   corpus_status: string;
   snapshot_id?: string;
+  snapshot_sha256?: string;
   records: CorpusRecord[];
 };
 
@@ -132,6 +133,24 @@ interface PendingPaidAttempt {
   asOf?: string;
   priceLabel: string;
   targetSessionId: string;
+  payerAddress?: string;
+  boundContext?: {
+    version?: number;
+    scheme: string;
+    chainId: number;
+    escrow: string;
+    asset: string;
+    payer: string;
+    questionId: string;
+    question?: string;
+    tier: string;
+    mode?: string;
+    amount: string;
+    corpusHash: string;
+    asOf: string;
+  };
+  requestHashHex?: string;
+  savedAt?: string;
 }
 
 const ERC20_USDC_ABI = [
@@ -205,6 +224,7 @@ function sanitizeLegacySessions(list: ChatSession[]): ChatSession[] {
 
 const AUTH_STORAGE_KEY = "askpay_auth_user_v1";
 const ACCOUNTS_STORAGE_KEY = "askpay_registered_accounts_v1";
+const PENDING_PAID_ATTEMPT_KEY = "lorx_pending_paid_attempt_v1";
 
 function sessionsKeyForUser(email: string): string {
   return `askpay_sessions_v5_${email.toLowerCase()}`;
@@ -268,6 +288,19 @@ export default function AskPayWorkspacePage() {
   const [questionInput, setQuestionInput] = useState<string>("");
   const [lastFailedPrompt, setLastFailedPrompt] = useState<string>("");
   const [pendingPaidAttempt, setPendingPaidAttempt] = useState<PendingPaidAttempt | null>(null);
+  function persistPendingPaidAttempt(next: PendingPaidAttempt | null) {
+    setPendingPaidAttempt(next);
+    if (typeof window === "undefined") return;
+    try {
+      if (next) {
+        localStorage.setItem(PENDING_PAID_ATTEMPT_KEY, JSON.stringify(next));
+      } else {
+        localStorage.removeItem(PENDING_PAID_ATTEMPT_KEY);
+      }
+    } catch {
+      // ignore storage errors
+    }
+  }
   const [claimingTimeoutId, setClaimingTimeoutId] = useState<string>("");
   const [mode, setMode] = useState<TierMode>("quick");
   const [demoFault, setDemoFault] = useState<"normal" | "hallucination" | "expired">("normal");
@@ -311,6 +344,13 @@ export default function AskPayWorkspacePage() {
         const parsedUser: UserProfile = JSON.parse(savedUser);
         if (parsedUser && parsedUser.email) {
           hydrateUserWorkspace(parsedUser);
+        }
+      }
+      const savedPending = localStorage.getItem(PENDING_PAID_ATTEMPT_KEY);
+      if (savedPending) {
+        const parsedPending: PendingPaidAttempt = JSON.parse(savedPending);
+        if (parsedPending && parsedPending.questionId && parsedPending.escrowTxHash) {
+          setPendingPaidAttempt(parsedPending);
         }
       }
     } catch {
@@ -536,10 +576,10 @@ export default function AskPayWorkspacePage() {
             accountMode: "demo"
           }
         : {
-            name: "Nguyễn Minh Anh",
+            name: "Nguyễn Minh Anh (Dữ liệu mẫu)",
             email: "doanhnghiep@askpay.vn",
             role: "user",
-            company: "Công ty XNK Thái Bình Dương",
+            company: "Công ty XNK Thái Bình Dương (Dữ liệu mẫu)",
             accountMode: "demo"
           };
     hydrateUserWorkspace(profile);
@@ -699,7 +739,7 @@ export default function AskPayWorkspacePage() {
     setFocusedAssistantId("");
     setQuestionInput("");
     setErrorMsg("");
-    if (mode === "factcheck") setMode("quick");
+    setMode("quick");
     setActiveView("chat");
     setMobileMenuOpen(false);
   }
@@ -1015,7 +1055,6 @@ export default function AskPayWorkspacePage() {
 
     setErrorMsg("");
     setLastFailedPrompt("");
-    setPendingPaidAttempt(null);
     setLoadingStep("Mình đang tìm căn cứ liên quan đến câu hỏi của bạn...");
 
     const fallbackSession = createEmptySession();
@@ -1050,6 +1089,8 @@ export default function AskPayWorkspacePage() {
     let builtXPaymentHeader = "";
     let builtAsOf: string | undefined =
       corpus?.corpus_status === "REVIEW_ASSERTED" && asOf ? asOf : undefined;
+    let builtBoundContext: PendingPaidAttempt["boundContext"] = undefined;
+    let builtQuestionHash = "";
     let currentQuestionId = "";
     try {
       const asker = activeAccount || "0x0000000000000000000000000000000000000001";
@@ -1107,6 +1148,8 @@ export default function AskPayWorkspacePage() {
             corpusHash: offeredContext.corpusHash, asOf: offeredContext.asOf
           });
           questionHash = requestHash(boundContext);
+          builtBoundContext = boundContext;
+          builtQuestionHash = questionHash;
           if (questionHash !== accept.extra.requestHash || challengeAmount !== boundContext.amount ||
               challengeAsset.toLowerCase() !== boundContext.asset) throw new Error("Challenge không khớp yêu cầu.");
           basePayload.asOf = boundContext.asOf;
@@ -1175,6 +1218,21 @@ export default function AskPayWorkspacePage() {
             escrowTxHash = txHash;
             const depositReceipt = await publicClient.waitForTransactionReceipt({ hash: txHash, confirmations: 2 });
             if (depositReceipt.status !== "success") throw new Error("Giao dịch đặt cọc đã revert; kiểm tra explorer.");
+            persistPendingPaidAttempt({
+              questionId,
+              queryText,
+              activeMode,
+              apiTier,
+              escrowTxHash,
+              xPaymentHeader: "",
+              asOf: builtAsOf,
+              priceLabel,
+              targetSessionId,
+              payerAddress: activeAccount,
+              boundContext: builtBoundContext,
+              requestHashHex: builtQuestionHash,
+              savedAt: new Date().toISOString()
+            });
           } catch (walletErr: any) {
             throw new Error(
               walletErr?.shortMessage ||
@@ -1193,7 +1251,7 @@ export default function AskPayWorkspacePage() {
           builtXPaymentHeader = btoa(JSON.stringify(xPaymentPayload));
           requestHeaders["X-PAYMENT"] = builtXPaymentHeader;
           usedX402Usdc = true;
-          setPendingPaidAttempt({
+          persistPendingPaidAttempt({
             questionId,
             queryText,
             activeMode,
@@ -1202,7 +1260,11 @@ export default function AskPayWorkspacePage() {
             xPaymentHeader: builtXPaymentHeader,
             asOf: builtAsOf,
             priceLabel,
-            targetSessionId
+            targetSessionId,
+            payerAddress: activeAccount,
+            boundContext: builtBoundContext,
+            requestHashHex: builtQuestionHash,
+            savedAt: new Date().toISOString()
           });
         }
         await refreshBalance(activeAccount);
@@ -1239,7 +1301,7 @@ export default function AskPayWorkspacePage() {
       });
 
       if (settledAttempt !== "PENDING_RECONCILIATION") {
-        setPendingPaidAttempt(null);
+        persistPendingPaidAttempt(null);
       }
 
       if (activeAccount) {
@@ -1258,17 +1320,21 @@ export default function AskPayWorkspacePage() {
               : s
           )
         );
-      } else if (currentQuestionId && builtXPaymentHeader) {
-        setPendingPaidAttempt({
+      } else if (currentQuestionId) {
+        persistPendingPaidAttempt({
           questionId: currentQuestionId,
           queryText,
           activeMode,
           apiTier,
           escrowTxHash,
-          xPaymentHeader: builtXPaymentHeader,
+          xPaymentHeader: builtXPaymentHeader || "",
           asOf: builtAsOf,
           priceLabel,
-          targetSessionId
+          targetSessionId,
+          payerAddress: activeAccount || undefined,
+          boundContext: builtBoundContext,
+          requestHashHex: builtQuestionHash || undefined,
+          savedAt: new Date().toISOString()
         });
       }
       if (!customPrompt) setQuestionInput(queryText);
@@ -1292,7 +1358,8 @@ export default function AskPayWorkspacePage() {
     activeMode,
     priceLabel,
     escrowTxHash,
-    isFreeRewardTurn
+    isFreeRewardTurn,
+    fallbackQueryText
   }: {
     data: any;
     questionId: string;
@@ -1301,6 +1368,7 @@ export default function AskPayWorkspacePage() {
     priceLabel: string;
     escrowTxHash: string;
     isFreeRewardTurn: boolean;
+    fallbackQueryText?: string;
   }): string {
     const passed = Boolean(data?.validation?.passed);
     const settlementStatus = data.onchain?.settlementStatus || "NO_ESCROW_DEPOSIT";
@@ -1331,6 +1399,8 @@ export default function AskPayWorkspacePage() {
       mode: activeMode,
       feeLabel: computedFeeLabel,
       answerStatus: data.answer_status,
+      answerMethod: data.answer_method,
+      policyVersion: data.policy_version || data.validation?.policy_version,
       reviewLevel: data.validation?.review_level,
       questionId,
       content: data.answer || "",
@@ -1355,17 +1425,44 @@ export default function AskPayWorkspacePage() {
         ? "verified"
         : "draft";
 
-    setSessions((prev) =>
-      prev.map((s) =>
-        s.id === targetSessionId
-          ? {
-              ...s,
-              status: nextSessionStatus,
-              messages: [...s.messages, assistantMsg]
-            }
-          : s
-      )
-    );
+    setSessions((prev) => {
+      const appendRecovered = (s: ChatSession): ChatSession => {
+        const hasUserPrompt =
+          !fallbackQueryText ||
+          s.messages.some((m) => m.role === "user" && m.content.trim() === fallbackQueryText.trim());
+        const extras: ChatMessage[] = hasUserPrompt
+          ? [assistantMsg]
+          : [
+              {
+                id: `u-recovered-${Date.now()}`,
+                role: "user",
+                timestampLabel: formatNowLabel(),
+                content: fallbackQueryText
+              },
+              assistantMsg
+            ];
+        return {
+          ...s,
+          title:
+            s.messages.length === 0 && fallbackQueryText
+              ? fallbackQueryText.length > 52
+                ? `${fallbackQueryText.slice(0, 52)}...`
+                : fallbackQueryText
+              : s.title,
+          status: nextSessionStatus,
+          messages: [...s.messages, ...extras]
+        };
+      };
+
+      if (prev.some((s) => s.id === targetSessionId)) {
+        return prev.map((s) => (s.id === targetSessionId ? appendRecovered(s) : s));
+      }
+      if (prev.length > 0) {
+        return prev.map((s, idx) => (idx === 0 ? appendRecovered(s) : s));
+      }
+      const created = createEmptySession();
+      return [appendRecovered({ ...created, id: targetSessionId })];
+    });
 
     setQuestionCount((prev) => prev + 1);
     setFocusedAssistantId(assistantMsg.id);
@@ -1377,11 +1474,85 @@ export default function AskPayWorkspacePage() {
   async function handleRetryPendingAttempt(attempt: PendingPaidAttempt) {
     if (loadingStep) return;
     setErrorMsg("");
-    setLoadingStep("Đang gửi lại yêu cầu đã đặt cọc (không tạo cọc mới)...");
     try {
+      let paymentHeader = attempt.xPaymentHeader;
+      let activePayer =
+        account || attempt.payerAddress || "0x0000000000000000000000000000000000000001";
+
+      if (!paymentHeader) {
+        const eth =
+          typeof window !== "undefined"
+            ? (window as any).avalanche || (window as any).ethereum
+            : null;
+        if (!eth) throw new Error("Chưa phát hiện ví Core Wallet / MetaMask để ký xác nhận.");
+        const connectedAddr = account || (await connectWallet());
+        if (!connectedAddr) throw new Error("Vui lòng kết nối ví đã đặt cọc để ký xác nhận.");
+        if (
+          attempt.payerAddress &&
+          connectedAddr.toLowerCase() !== attempt.payerAddress.toLowerCase()
+        ) {
+          throw new Error(
+            `Vui lòng chuyển về ví đã đặt cọc (${attempt.payerAddress.slice(
+              0,
+              6
+            )}...${attempt.payerAddress.slice(-4)}).`
+          );
+        }
+        activePayer = connectedAddr;
+        await ensureFujiChain(eth);
+        const walletClient = createWalletClient({
+          chain: avalancheFuji,
+          transport: custom(eth)
+        });
+        const rebuiltContext =
+          attempt.boundContext ||
+          paymentContext(
+            {
+              questionId: attempt.questionId,
+              question: attempt.queryText,
+              tier: attempt.apiTier,
+              askerAddress: connectedAddr
+            },
+            {
+              chainId: 43113,
+              escrowAddress,
+              usdcAddress: FUJI_USDC_ADDRESS,
+              corpusHash: corpus?.snapshot_sha256 || "",
+              asOf: attempt.asOf || ""
+            }
+          );
+        const computedReqHash = attempt.requestHashHex || requestHash(rebuiltContext);
+        setLoadingStep("Ký xác nhận lại giao dịch đã đặt cọc (không tạo cọc mới)...");
+        const signature = await walletClient.signMessage({
+          account: connectedAddr as `0x${string}`,
+          message: paymentProofMessage(rebuiltContext, attempt.escrowTxHash)
+        });
+        paymentHeader = btoa(
+          JSON.stringify({
+            version: 2,
+            scheme: PAYMENT_SCHEME,
+            chainId: 43113,
+            asset: rebuiltContext.asset,
+            escrow: rebuiltContext.escrow,
+            requestHash: computedReqHash,
+            txHash: attempt.escrowTxHash,
+            signature
+          })
+        );
+        persistPendingPaidAttempt({
+          ...attempt,
+          payerAddress: connectedAddr,
+          boundContext: rebuiltContext,
+          requestHashHex: computedReqHash,
+          xPaymentHeader: paymentHeader,
+          savedAt: new Date().toISOString()
+        });
+      }
+
+      setLoadingStep("Đang gửi lại yêu cầu đã đặt cọc (không tạo cọc mới)...");
       const headers: Record<string, string> = {
         "Content-Type": "application/json",
-        ...(attempt.xPaymentHeader ? { "X-PAYMENT": attempt.xPaymentHeader } : {})
+        ...(paymentHeader ? { "X-PAYMENT": paymentHeader } : {})
       };
       const res = await fetch("/api/ask-and-settle", {
         method: "POST",
@@ -1392,7 +1563,7 @@ export default function AskPayWorkspacePage() {
           tier: attempt.apiTier,
           mode: attempt.activeMode,
           ...(attempt.asOf ? { asOf: attempt.asOf } : {}),
-          askerAddress: account || "0x0000000000000000000000000000000000000001",
+          askerAddress: activePayer,
           escrowTxHash: attempt.escrowTxHash,
           requireX402: true
         })
@@ -1408,12 +1579,15 @@ export default function AskPayWorkspacePage() {
         activeMode: attempt.activeMode,
         priceLabel: attempt.priceLabel,
         escrowTxHash: attempt.escrowTxHash,
-        isFreeRewardTurn: false
+        isFreeRewardTurn: false,
+        fallbackQueryText: attempt.queryText
       });
       if (status !== "PENDING_RECONCILIATION") {
-        setPendingPaidAttempt(null);
+        persistPendingPaidAttempt(null);
       }
-      if (account) await refreshBalance(account);
+      if (activePayer && activePayer !== "0x0000000000000000000000000000000000000001") {
+        await refreshBalance(activePayer);
+      }
     } catch (err: any) {
       setErrorMsg(
         `Đã tạm giữ khoản tiền (Tx: ${attempt.escrowTxHash.slice(0, 12)}...), nhưng ${
@@ -1461,7 +1635,7 @@ export default function AskPayWorkspacePage() {
 
       await refreshBalance(activeAddr);
       if (pendingPaidAttempt?.questionId === targetQuestionId) {
-        setPendingPaidAttempt(null);
+        persistPendingPaidAttempt(null);
       }
       if (msgId) {
         setSessions((prev) =>
@@ -2210,7 +2384,7 @@ export default function AskPayWorkspacePage() {
                 )}
               </section>
 
-              {/* Admin Section 2: On-chain Audit Log (L1 Node 663010 & Avalanche Fuji) */}
+              {/* Admin Section 2: On-chain Audit Log (Avalanche Fuji C-Chain & Receipt Chain) */}
               <section
                 style={{
                   background: "#ffffff",
@@ -2220,7 +2394,7 @@ export default function AskPayWorkspacePage() {
                 }}
               >
                 <h2 style={{ margin: "0 0 12px", fontSize: 15.5, color: "#0a1c2e" }}>
-                  2. Nhật ký On-chain (Avalanche Fuji 43113 &amp; AskPay L1 663010)
+                  2. Nhật ký On-chain (Avalanche Fuji C-Chain 43113 &amp; Receipt Chain)
                 </h2>
                 <div
                   className="font-mono"
@@ -2233,12 +2407,12 @@ export default function AskPayWorkspacePage() {
                     lineHeight: 1.7
                   }}
                 >
-                  <div>• Fuji Escrow Contract: {escrowAddress || "0xb4fc756871c6e1694f13d7692c8f714c47142108"}</div>
-                  <div>• AskPay L1 Receipt Contract: {receiptAddress || "0xb4fc756871c6e1694f13d7692c8f714c47142108"}</div>
+                  <div>• Fuji Escrow Contract (43113): {escrowAddress || "0xb4fc756871c6e1694f13d7692c8f714c47142108"}</div>
+                  <div>• Receipt Contract (Avalanche Fuji C-Chain 43113 / Receipt Chain): {receiptAddress || "0xb4fc756871c6e1694f13d7692c8f714c47142108"}</div>
                   {activeAssistantMsg?.validation && (
                     <>
                       <div style={{ marginTop: 8, color: "#93c5fd" }}>
-                        • Validator: {activeAssistantMsg.validation.validator_version || "1.1.0-deterministic"} • corpus_status: {activeAssistantMsg.validation.corpus_status || "DEMO_UNVERIFIED"} • settlement_eligible: {String(Boolean(activeAssistantMsg.validation.settlement_eligible))}
+                        • Validator: {activeAssistantMsg.validation.validator_version || "1.1.0-deterministic"} • Policy: {activeAssistantMsg.policyVersion || activeAssistantMsg.validation.policy_version || "source-check-v1"} • Answer mode: {activeAssistantMsg.answerMethod || "RULE_BASED_DEMO"} • corpus_status: {activeAssistantMsg.validation.corpus_status || "DEMO_UNVERIFIED"} • settlement_eligible: {String(Boolean(activeAssistantMsg.validation.settlement_eligible))}
                       </div>
                       {activeAssistantMsg.hashes && (
                         <>
@@ -2247,6 +2421,9 @@ export default function AskPayWorkspacePage() {
                           <div>• citations_hash: {activeAssistantMsg.hashes.citations_hash}</div>
                           <div>• validator_hash: {activeAssistantMsg.hashes.validator_hash}</div>
                           <div>• corpus_hash: {activeAssistantMsg.hashes.corpus_hash}</div>
+                          {(activeAssistantMsg.hashes.policy_hash || activeAssistantMsg.validation.policy_hash) && (
+                            <div>• policy_hash: {activeAssistantMsg.hashes.policy_hash || activeAssistantMsg.validation.policy_hash}</div>
+                          )}
                         </>
                       )}
                     </>
@@ -2257,7 +2434,7 @@ export default function AskPayWorkspacePage() {
                         • Mode gần nhất: {activeAssistantMsg.onchain.mode} ({activeAssistantMsg.onchain.settlementStatus})
                         {activeAssistantMsg.onchain.guardReason ? ` — Reason: ${activeAssistantMsg.onchain.guardReason}` : ""}
                       </div>
-                      <div>• L1 Receipt Tx: {activeAssistantMsg.onchain.l1ReceiptTxHash || "Chưa phát sinh Tx (Chế độ mô phỏng không đặt cọc)"}</div>
+                      <div>• Receipt Chain Tx: {activeAssistantMsg.onchain.l1ReceiptTxHash || "Chưa phát sinh Tx (Chế độ mô phỏng không đặt cọc)"}</div>
                       <div>• Fuji Settlement Tx: {activeAssistantMsg.onchain.fujiSettlementTxHash || "Chưa phát sinh Tx (Chế độ mô phỏng không đặt cọc)"}</div>
                     </>
                   )}
@@ -2624,12 +2801,19 @@ export default function AskPayWorkspacePage() {
                               : "Thanh toán: Không phát sinh giao dịch đặt cọc (chế độ dùng thử miễn phí)."}
                           </div>
 
-                          <div style={{ fontSize: 11.5, color: "#64748b", fontWeight: 500 }}>
-                            {msg.validation.corpus_status === "REVIEW_ASSERTED"
-                              ? "Nguồn có ngày đối chiếu · Demo chưa được rà soát chuyên môn, chưa đủ điều kiện giải ngân."
-                              : msg.validation.corpus_status === "VERIFIED_CURATED"
-                              ? "Đoạn trích đã được đối chiếu nguồn · Xem trạng thái thanh toán riêng."
-                              : "Nguồn tách tự động / thử nghiệm (chưa rà soát từng điều) · Chưa mở giải ngân."}
+                          <div style={{ fontSize: 11.5, color: "#64748b", fontWeight: 500, lineHeight: 1.5 }}>
+                            <div>
+                              {msg.validation.corpus_status === "REVIEW_ASSERTED"
+                                ? "Kiểm chứng nguyên văn & hiệu lực trong snapshot đã rà soát (không phải chứng nhận tư vấn pháp lý)."
+                                : msg.validation.corpus_status === "VERIFIED_CURATED"
+                                ? "Đoạn trích đã được đối chiếu nguồn · Kiểm chứng nguyên văn trong snapshot."
+                                : "Nguồn tách tự động / thử nghiệm (chưa rà soát từng điều) · Chưa mở giải ngân."}
+                            </div>
+                            <div style={{ marginTop: 2, fontSize: 11, color: "#475569", fontWeight: 600 }}>
+                              Chế độ trả lời: {msg.answerMethod || "RULE_BASED_DEMO"} · Policy:{" "}
+                              {msg.policyVersion || msg.validation.policy_version || "source-check-v1"}
+                              {msg.validation.policy_rule ? ` (${msg.validation.policy_rule})` : ""}
+                            </div>
                           </div>
 
                           {msg.onchain?.settlementStatus === "PENDING_RECONCILIATION" &&
@@ -2800,13 +2984,13 @@ export default function AskPayWorkspacePage() {
                 </div>
               )}
 
-              {/* Error Banner with Retry & Kept Draft */}
-              {errorMsg && (
+              {/* Error & Pending Paid Attempt Recovery Banner */}
+              {(errorMsg || pendingPaidAttempt) && (
                 <div
                   style={{
-                    background: "#fff1f2",
-                    border: "1px solid #fecdd3",
-                    color: "#9f1239",
+                    background: errorMsg ? "#fff1f2" : "#fffbeb",
+                    border: `1px solid ${errorMsg ? "#fecdd3" : "#fde68a"}`,
+                    color: errorMsg ? "#9f1239" : "#92400e",
                     borderRadius: 12,
                     padding: "12px 14px",
                     fontSize: 13.5,
@@ -2817,7 +3001,23 @@ export default function AskPayWorkspacePage() {
                     gap: 10
                   }}
                 >
-                  <span>{errorMsg}</span>
+                  <span>
+                    {errorMsg ||
+                      (pendingPaidAttempt
+                        ? `Phát hiện phiên đặt cọc đang chờ hoàn tất (Tx: ${pendingPaidAttempt.escrowTxHash.slice(
+                            0,
+                            12
+                          )}...) cho câu hỏi "${
+                            pendingPaidAttempt.queryText.length > 56
+                              ? `${pendingPaidAttempt.queryText.slice(0, 56)}...`
+                              : pendingPaidAttempt.queryText
+                          }". ${
+                            pendingPaidAttempt.xPaymentHeader
+                              ? "Bấm Thử lại để đối soát không trừ cọc mới."
+                              : "Hãy ký xác nhận lại (không tạo cọc mới) hoặc rút lại cọc sau timeout."
+                          }`
+                        : "")}
+                  </span>
                   <div style={{ display: "flex", alignItems: "center", gap: 8, flexWrap: "wrap" }}>
                     {pendingPaidAttempt ? (
                       <>
@@ -2836,7 +3036,9 @@ export default function AskPayWorkspacePage() {
                             cursor: "pointer"
                           }}
                         >
-                          Thử lại yêu cầu đã đặt cọc (Không trừ cọc mới)
+                          {pendingPaidAttempt.xPaymentHeader
+                            ? "Thử lại yêu cầu đã đặt cọc (Không trừ cọc mới)"
+                            : "Ký lại & gửi yêu cầu (Không trừ cọc mới)"}
                         </button>
                         <button
                           type="button"
@@ -2856,6 +3058,25 @@ export default function AskPayWorkspacePage() {
                           {claimingTimeoutId === pendingPaidAttempt.questionId
                             ? "Đang gửi giao dịch..."
                             : "Rút lại cọc sau timeout (claimTimeoutRefund)"}
+                        </button>
+                        <button
+                          type="button"
+                          onClick={() => {
+                            setErrorMsg("");
+                            persistPendingPaidAttempt(null);
+                          }}
+                          style={{
+                            background: "transparent",
+                            border: "1px solid #cbd5e1",
+                            color: "#475569",
+                            borderRadius: 8,
+                            padding: "5px 9px",
+                            fontSize: 12,
+                            fontWeight: 600,
+                            cursor: "pointer"
+                          }}
+                        >
+                          Ẩn phiên cọc
                         </button>
                       </>
                     ) : (
@@ -2878,21 +3099,23 @@ export default function AskPayWorkspacePage() {
                         </button>
                       )
                     )}
-                    <button
-                      type="button"
-                      onClick={() => setErrorMsg("")}
-                      style={{
-                        background: "none",
-                        border: "none",
-                        color: "#9f1239",
-                        cursor: "pointer",
-                        fontWeight: 700,
-                        padding: "4px 6px"
-                      }}
-                      aria-label="Đóng thông báo lỗi"
-                    >
-                      ✕
-                    </button>
+                    {errorMsg && (
+                      <button
+                        type="button"
+                        onClick={() => setErrorMsg("")}
+                        style={{
+                          background: "none",
+                          border: "none",
+                          color: "#9f1239",
+                          cursor: "pointer",
+                          fontWeight: 700,
+                          padding: "4px 6px"
+                        }}
+                        aria-label="Đóng thông báo lỗi"
+                      >
+                        ✕
+                      </button>
+                    )}
                   </div>
                 </div>
               )}

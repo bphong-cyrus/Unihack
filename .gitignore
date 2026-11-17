@@ -26,6 +26,7 @@ research/extracted/**/*-review.html
 *.log
 *.patch
 *.tmp
+/.data/
 
 # OS / IDE
 .DS_Store
