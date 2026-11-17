@@ -27,8 +27,8 @@ export function buildX402Challenge({
 }) {
   const safeTier = tier === "deep" ? "deep" : "quick";
   const maxAmountRequired = X402_PRICES_USDC_UNITS[safeTier];
-  const asset = usdcAddress || FUJI_USDC_DEFAULT;
-  const payTo = escrowAddress || "0x0000000000000000000000000000000000000000";
+  const asset = String(usdcAddress || "").trim() || FUJI_USDC_DEFAULT;
+  const payTo = String(escrowAddress || "").trim() || "0x0000000000000000000000000000000000000000";
 
   return {
     x402Version: 1,
@@ -103,7 +103,7 @@ export function verifyX402PaymentHeader({
 
   const safeTier = expectedTier === "deep" ? "deep" : "quick";
   const expectedAmount = X402_PRICES_USDC_UNITS[safeTier];
-  const targetAsset = (expectedAsset || FUJI_USDC_DEFAULT).toLowerCase();
+  const targetAsset = (String(expectedAsset || "").trim() || FUJI_USDC_DEFAULT).toLowerCase();
 
   if (proof.scheme !== "exact-escrow") {
     return { ok: false, reason: "UNSUPPORTED_X402_SCHEME" };
@@ -182,8 +182,8 @@ export async function verifyOnchainX402Receipt({
     }
     const allowedTargets = new Set(
       [escrowAddress, usdcAddress]
-        .filter((a) => typeof a === "string" && a.startsWith("0x"))
-        .map((a) => a.toLowerCase())
+        .map((a) => String(a || "").trim().toLowerCase())
+        .filter((a) => /^0x[0-9a-f]{40}$/.test(a))
     );
     const toAddr = String(receipt.to || "").toLowerCase();
     const touchedAllowedLog = Array.isArray(receipt.logs)

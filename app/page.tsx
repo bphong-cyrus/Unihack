@@ -66,10 +66,27 @@ interface UserProfile {
   email: string;
   role: "user" | "admin";
   company: string;
+  accountMode?: "demo" | "account";
+}
+
+function normalizeEnvValue(val?: string): string {
+  return String(val || "").trim();
+}
+
+function isValidEvmAddress(addr: string): boolean {
+  return /^0x[0-9a-fA-F]{40}$/.test(addr.trim());
+}
+
+function isDemoProfile(user: UserProfile | null): boolean {
+  if (!user) return true;
+  if (user.accountMode === "demo") return true;
+  if (user.accountMode === "account") return false;
+  return user.email === "doanhnghiep@askpay.vn" || user.email === "admin@askpay.vn";
 }
 
 const FUJI_USDC_ADDRESS =
-  process.env.NEXT_PUBLIC_USDC_ADDRESS || "0x5425890298aed601595a70AB815c96711a31Bc65";
+  normalizeEnvValue(process.env.NEXT_PUBLIC_USDC_ADDRESS) ||
+  "0x5425890298aed601595a70AB815c96711a31Bc65";
 
 const ESCROW_ABI = [
   {
@@ -98,6 +115,13 @@ const ESCROW_ABI = [
 ] as const;
 
 const ERC20_USDC_ABI = [
+  {
+    name: "balanceOf",
+    type: "function",
+    stateMutability: "view",
+    inputs: [{ name: "owner", type: "address" }],
+    outputs: [{ type: "uint256" }]
+  },
   {
     name: "allowance",
     type: "function",
@@ -216,6 +240,7 @@ export default function AskPayWorkspacePage() {
   // Wallet & On-chain states
   const [account, setAccount] = useState<string>("");
   const [avaxBalance, setAvaxBalance] = useState<string>("");
+  const [usdcBalance, setUsdcBalance] = useState<string>("");
   const [useOnchainWallet, setUseOnchainWallet] = useState<boolean>(false);
   const [paymentAsset, setPaymentAsset] = useState<"USDC" | "AVAX">("USDC");
 
@@ -250,10 +275,11 @@ export default function AskPayWorkspacePage() {
   const textareaRef = useRef<HTMLTextAreaElement>(null);
   const userMenuRef = useRef<HTMLDivElement>(null);
 
-  const escrowAddress = process.env.NEXT_PUBLIC_ESCROW_ADDRESS || "";
-  const receiptAddress = process.env.NEXT_PUBLIC_RECEIPT_LOG_ADDRESS || "";
+  const escrowAddress = normalizeEnvValue(process.env.NEXT_PUBLIC_ESCROW_ADDRESS);
+  const receiptAddress = normalizeEnvValue(process.env.NEXT_PUBLIC_RECEIPT_LOG_ADDRESS);
   const fujiRpc =
-    process.env.NEXT_PUBLIC_FUJI_RPC_URL || "https://api.avax-test.network/ext/bc/C/rpc";
+    normalizeEnvValue(process.env.NEXT_PUBLIC_FUJI_RPC_URL) ||
+    "https://api.avax-test.network/ext/bc/C/rpc";
 
   // Hydrate authenticated user & screen layout on mount
   useEffect(() => {
@@ -330,11 +356,16 @@ export default function AskPayWorkspacePage() {
   }, [questionCount, currentUser]);
 
   function hydrateUserWorkspace(user: UserProfile) {
-    setCurrentUser(user);
+    const normalizedUser: UserProfile = {
+      ...user,
+      accountMode: isDemoProfile(user) ? "demo" : "account"
+    };
+    setCurrentUser(normalizedUser);
+    setUseOnchainWallet(normalizedUser.accountMode === "account");
     setActiveView("chat");
     try {
-      localStorage.setItem(AUTH_STORAGE_KEY, JSON.stringify(user));
-      const savedSessions = localStorage.getItem(sessionsKeyForUser(user.email));
+      localStorage.setItem(AUTH_STORAGE_KEY, JSON.stringify(normalizedUser));
+      const savedSessions = localStorage.getItem(sessionsKeyForUser(normalizedUser.email));
       if (savedSessions) {
         const parsed = JSON.parse(savedSessions);
         if (Array.isArray(parsed) && parsed.length > 0) {
@@ -352,7 +383,7 @@ export default function AskPayWorkspacePage() {
         setActiveSessionId(empty.id);
       }
 
-      const savedCount = Number(localStorage.getItem(loyaltyKeyForUser(user.email)) || "0");
+      const savedCount = Number(localStorage.getItem(loyaltyKeyForUser(normalizedUser.email)) || "0");
       setQuestionCount(Number.isFinite(savedCount) && savedCount >= 0 ? savedCount : 0);
     } catch {
       const empty = createEmptySession();
@@ -360,6 +391,41 @@ export default function AskPayWorkspacePage() {
       setActiveSessionId(empty.id);
     }
   }
+
+  // Silently sync already-authorized browser wallet when signed into account mode
+  useEffect(() => {
+    if (!currentUser || isDemoProfile(currentUser) || typeof window === "undefined") return;
+    const eth = (window as any).avalanche || (window as any).ethereum;
+    if (!eth) return;
+
+    let cancelled = false;
+    eth
+      .request({ method: "eth_accounts" })
+      .then((accounts: string[]) => {
+        if (cancelled || !Array.isArray(accounts) || !accounts[0]) return;
+        setAccount(accounts[0]);
+        refreshBalance(accounts[0]);
+      })
+      .catch(() => {
+        // ignore passive wallet check errors
+      });
+
+    const handleAccountsChanged = (accounts: string[]) => {
+      const next = Array.isArray(accounts) && accounts[0] ? accounts[0] : "";
+      setAccount(next);
+      if (next) {
+        refreshBalance(next);
+      } else {
+        setAvaxBalance("");
+        setUsdcBalance("");
+      }
+    };
+    eth.on?.("accountsChanged", handleAccountsChanged);
+    return () => {
+      cancelled = true;
+      eth.removeListener?.("accountsChanged", handleAccountsChanged);
+    };
+  }, [currentUser]);
 
   function handleAuthSubmit(e: React.FormEvent) {
     e.preventDefault();
@@ -385,7 +451,8 @@ export default function AskPayWorkspacePage() {
         name: authName.trim(),
         email,
         role: "user",
-        company: authCompany.trim() || "Doanh nghiệp XNK"
+        company: authCompany.trim() || "Doanh nghiệp XNK",
+        accountMode: "account"
       };
       try {
         const existingRaw = localStorage.getItem(ACCOUNTS_STORAGE_KEY);
@@ -428,7 +495,8 @@ export default function AskPayWorkspacePage() {
         : email.split("@")[0].replace(/[._]/g, " "),
       email,
       role: isAdminEmail ? "admin" : "user",
-      company: isAdminEmail ? "AskPay Operations" : "Tài khoản Doanh nghiệp"
+      company: isAdminEmail ? "AskPay Operations" : "Tài khoản Doanh nghiệp",
+      accountMode: isAdminEmail ? "demo" : "account"
     };
     hydrateUserWorkspace(profile);
     setAuthPassword("");
@@ -442,13 +510,15 @@ export default function AskPayWorkspacePage() {
             name: "Admin AskPay",
             email: "admin@askpay.vn",
             role: "admin",
-            company: "AskPay System Admin"
+            company: "AskPay System Admin",
+            accountMode: "demo"
           }
         : {
             name: "Nguyễn Minh Anh",
             email: "doanhnghiep@askpay.vn",
             role: "user",
-            company: "Công ty XNK Thái Bình Dương"
+            company: "Công ty XNK Thái Bình Dương",
+            accountMode: "demo"
           };
     hydrateUserWorkspace(profile);
   }
@@ -465,7 +535,8 @@ export default function AskPayWorkspacePage() {
       name: `Ví ${shortAddr}`,
       email: `${selected.toLowerCase()}@wallet.askpay`,
       role: "user",
-      company: "Avalanche Fuji Wallet"
+      company: "Avalanche Fuji Wallet",
+      accountMode: "account"
     });
   }
 
@@ -486,6 +557,10 @@ export default function AskPayWorkspacePage() {
       // ignore
     }
     setCurrentUser(null);
+    setUseOnchainWallet(false);
+    setAccount("");
+    setAvaxBalance("");
+    setUsdcBalance("");
     setSessions([]);
     setActiveSessionId("");
   }
@@ -512,7 +587,7 @@ export default function AskPayWorkspacePage() {
   })();
 
   async function refreshBalance(addr: string) {
-    if (!addr) return;
+    if (!isValidEvmAddress(addr)) return;
     try {
       const client = createPublicClient({
         chain: avalancheFuji,
@@ -520,8 +595,23 @@ export default function AskPayWorkspacePage() {
       });
       const bal = await client.getBalance({ address: addr as `0x${string}` });
       setAvaxBalance(Number(formatEther(bal)).toFixed(4));
+      if (isValidEvmAddress(FUJI_USDC_ADDRESS)) {
+        try {
+          const usdcRaw = (await client.readContract({
+            address: FUJI_USDC_ADDRESS as `0x${string}`,
+            abi: ERC20_USDC_ABI,
+            functionName: "balanceOf",
+            args: [addr as `0x${string}`],
+            authorizationList: undefined
+          })) as bigint;
+          setUsdcBalance((Number(usdcRaw) / 1e6).toFixed(2));
+        } catch {
+          setUsdcBalance("");
+        }
+      }
     } catch {
       setAvaxBalance("");
+      setUsdcBalance("");
     }
   }
 
@@ -532,7 +622,7 @@ export default function AskPayWorkspacePage() {
         params: [{ chainId: "0xa869" }]
       });
     } catch (switchError: any) {
-      if (switchError.code === 4902) {
+      if (switchError?.code === 4902) {
         await eth.request({
           method: "wallet_addEthereumChain",
           params: [
@@ -545,6 +635,8 @@ export default function AskPayWorkspacePage() {
             }
           ]
         });
+      } else if (switchError?.code === 4001) {
+        throw new Error("Bạn đã hủy chuyển sang mạng Avalanche Fuji Testnet trên ví.");
       }
     }
   }
@@ -836,14 +928,52 @@ export default function AskPayWorkspacePage() {
     const activeMode = customMode ?? mode;
     const isDeep = activeMode === "deep";
     const apiTier = isDeep ? "deep" : "quick";
+    const isAccountMode = !isDemoProfile(currentUser);
     const isFreeRewardTurn = questionCount > 0 && questionCount % 10 === 9;
+    const requiresWalletFlow = !isFreeRewardTurn && (useOnchainWallet || isAccountMode);
+
+    let activeAccount = account;
+    if (requiresWalletFlow && !activeAccount) {
+      activeAccount = await connectWallet();
+      if (!activeAccount) {
+        setLastFailedPrompt(queryText);
+        setErrorMsg(
+          "Tài khoản đã đăng nhập sử dụng luồng thanh toán có cam kết trích dẫn. Vui lòng kết nối Core Wallet / MetaMask để tiếp tục (hoặc đăng xuất để Dùng thử demo miễn phí)."
+        );
+        setShowSettingsModal(true);
+        return;
+      }
+    }
+
+    if (requiresWalletFlow && !isValidEvmAddress(escrowAddress)) {
+      setLastFailedPrompt(queryText);
+      setErrorMsg(
+        "Cấu hình địa chỉ hợp đồng Escrow (NEXT_PUBLIC_ESCROW_ADDRESS) chưa hợp lệ."
+      );
+      return;
+    }
+
+    const eth =
+      typeof window !== "undefined"
+        ? (window as any).avalanche || (window as any).ethereum
+        : null;
+
+    if (requiresWalletFlow && !eth) {
+      setLastFailedPrompt(queryText);
+      setErrorMsg(
+        "Chưa phát hiện ví Core Wallet / MetaMask trên trình duyệt để ký tạm giữ khoản tiền."
+      );
+      setShowSettingsModal(true);
+      return;
+    }
+
     const isWalletPaymentActive = Boolean(
-      !isFreeRewardTurn && useOnchainWallet && account && escrowAddress && escrowAddress.startsWith("0x")
+      requiresWalletFlow && activeAccount && eth && isValidEvmAddress(escrowAddress)
     );
-    const priceLabel = !isWalletPaymentActive
-      ? "Miễn phí trong bản dùng thử"
-      : isFreeRewardTurn
+    const priceLabel = isFreeRewardTurn
       ? "Miễn phí (Ưu đãi 10 tặng 1)"
+      : !isWalletPaymentActive
+      ? "Miễn phí trong bản dùng thử"
       : paymentAsset === "USDC"
       ? isDeep
         ? "Phân tích tình huống - 0.20 USDC"
@@ -888,12 +1018,8 @@ export default function AskPayWorkspacePage() {
     }, 60);
 
     let escrowTxHash = "";
+    let usedX402Usdc = false;
     try {
-      const eth =
-        typeof window !== "undefined"
-          ? (window as any).avalanche || (window as any).ethereum
-          : null;
-      const activeAccount = account;
       const asker = activeAccount || "0x0000000000000000000000000000000000000001";
       const questionId = keccak256(toBytes(`${asker}-${Date.now()}-${queryText}`));
       const questionHash = keccak256(toBytes(queryText));
@@ -914,35 +1040,7 @@ export default function AskPayWorkspacePage() {
         "Content-Type": "application/json"
       };
 
-      if (
-        !isFreeRewardTurn &&
-        useOnchainWallet &&
-        activeAccount &&
-        eth &&
-        escrowAddress &&
-        escrowAddress.startsWith("0x")
-      ) {
-        // Step 1: Request x402 HTTP 402 Payment Required challenge
-        setLoadingStep("Đang lấy thông tin tạm giữ khoản tiền (x402)...");
-        const challengeRes = await fetch("/api/ask-and-settle", {
-          method: "POST",
-          headers: requestHeaders,
-          body: JSON.stringify({ ...basePayload, requireX402: true })
-        });
-        const challengeData = await challengeRes.json();
-        if (challengeRes.status !== 402) {
-          throw new Error(challengeData?.error || "Không thể khởi tạo phiên thanh toán x402.");
-        }
-        const accept = challengeData?.accepts?.[0];
-        const challengeAmount = String(accept?.maxAmountRequired || (isDeep ? "200000" : "50000"));
-        const challengeAsset = String(accept?.asset || FUJI_USDC_ADDRESS);
-
-        // Step 2: Execute on-chain Escrow deposit (USDC or AVAX testnet)
-        setLoadingStep(
-          paymentAsset === "USDC"
-            ? `Đang tạm giữ ${isDeep ? "0.20" : "0.05"} USDC vào Escrow...`
-            : `Đang tạm giữ ${isDeep ? "0.02" : "0.005"} AVAX testnet vào Escrow...`
-        );
+      if (isWalletPaymentActive && activeAccount && eth) {
         await ensureFujiChain(eth);
         const publicClient = createPublicClient({
           chain: avalancheFuji,
@@ -953,9 +1051,51 @@ export default function AskPayWorkspacePage() {
           transport: custom(eth)
         });
 
-        try {
-          if (paymentAsset === "USDC") {
+        if (paymentAsset === "USDC") {
+          // Step 1: Request x402 HTTP 402 Payment Required challenge
+          setLoadingStep("Đang lấy thông tin tạm giữ khoản tiền (x402)...");
+          const challengeRes = await fetch("/api/ask-and-settle", {
+            method: "POST",
+            headers: requestHeaders,
+            body: JSON.stringify({ ...basePayload, requireX402: true })
+          });
+          const challengeData = await challengeRes.json();
+          if (challengeRes.status !== 402) {
+            throw new Error(challengeData?.error || "Không thể khởi tạo phiên thanh toán x402.");
+          }
+          const accept = challengeData?.accepts?.[0];
+          const challengeAmount = String(accept?.maxAmountRequired || (isDeep ? "200000" : "50000"));
+          const challengeAsset = normalizeEnvValue(String(accept?.asset || FUJI_USDC_ADDRESS));
+          if (!isValidEvmAddress(challengeAsset)) {
+            throw new Error("Địa chỉ token USDC thanh toán trên Fuji chưa hợp lệ.");
+          }
+
+          // Step 2: Pre-check balances & execute USDC Escrow deposit
+          setLoadingStep(`Đang kiểm tra số dư và tạm giữ ${isDeep ? "0.20" : "0.05"} USDC...`);
+          try {
             const requiredUsdc = BigInt(challengeAmount);
+            const [nativeBal, currentUsdcBal] = await Promise.all([
+              publicClient.getBalance({ address: activeAccount as `0x${string}` }),
+              publicClient.readContract({
+                address: challengeAsset as `0x${string}`,
+                abi: ERC20_USDC_ABI,
+                functionName: "balanceOf",
+                args: [activeAccount as `0x${string}`],
+                authorizationList: undefined
+              }) as Promise<bigint>
+            ]);
+
+            if (currentUsdcBal < requiredUsdc) {
+              throw new Error(
+                `Ví hiện có ${(Number(currentUsdcBal) / 1e6).toFixed(2)} USDC trên Fuji (cần ${
+                  isDeep ? "0.20" : "0.05"
+                } USDC). Hãy đổi sang AVAX testnet ở thanh bên dưới hoặc nạp thêm USDC Fuji.`
+              );
+            }
+            if (nativeBal === 0n) {
+              throw new Error("Ví cần một ít AVAX testnet để trả phí gas trên Avalanche Fuji.");
+            }
+
             const currentAllowance = (await publicClient.readContract({
               address: challengeAsset as `0x${string}`,
               abi: ERC20_USDC_ABI,
@@ -988,8 +1128,45 @@ export default function AskPayWorkspacePage() {
             });
             await publicClient.waitForTransactionReceipt({ hash: txHash });
             escrowTxHash = txHash;
-          } else {
-            const depositValue = isDeep ? parseEther("0.02") : parseEther("0.005");
+          } catch (walletErr: any) {
+            throw new Error(
+              walletErr?.shortMessage ||
+                walletErr?.message ||
+                "Chưa thu tiền: Giao dịch tạm giữ qua ví đã bị hủy hoặc chưa đủ số dư."
+            );
+          }
+
+          // Step 3: Attach X-PAYMENT proof header for authenticated retry
+          const xPaymentPayload = {
+            network: "avalanche-fuji",
+            scheme: "exact-escrow",
+            payload: {
+              questionId,
+              questionHash,
+              amount: challengeAmount,
+              payer: activeAccount,
+              asset: challengeAsset,
+              txHash: escrowTxHash
+            }
+          };
+          requestHeaders["X-PAYMENT"] = btoa(JSON.stringify(xPaymentPayload));
+          usedX402Usdc = true;
+        } else {
+          // AVAX testnet escrow flow (without spoofing USDC X-PAYMENT headers)
+          const depositValue = isDeep ? parseEther("0.02") : parseEther("0.005");
+          setLoadingStep(`Đang tạm giữ ${isDeep ? "0.02" : "0.005"} AVAX testnet vào Escrow...`);
+          try {
+            const nativeBal = await publicClient.getBalance({
+              address: activeAccount as `0x${string}`
+            });
+            if (nativeBal <= depositValue) {
+              throw new Error(
+                `Ví hiện có ${Number(formatEther(nativeBal)).toFixed(4)} AVAX (cần hơn ${
+                  isDeep ? "0.02" : "0.005"
+                } AVAX để tạm giữ + phí gas).`
+              );
+            }
+
             const txHash = await walletClient.writeContract({
               chain: avalancheFuji,
               account: activeAccount as `0x${string}`,
@@ -1001,29 +1178,15 @@ export default function AskPayWorkspacePage() {
             });
             await publicClient.waitForTransactionReceipt({ hash: txHash });
             escrowTxHash = txHash;
+          } catch (walletErr: any) {
+            throw new Error(
+              walletErr?.shortMessage ||
+                walletErr?.message ||
+                "Chưa thu tiền: Giao dịch tạm giữ AVAX qua ví đã bị hủy hoặc chưa đủ số dư."
+            );
           }
-          await refreshBalance(activeAccount);
-        } catch (walletErr: any) {
-          throw new Error(
-            walletErr?.shortMessage ||
-              "Chưa thu tiền: Giao dịch tạm giữ qua ví đã bị hủy hoặc chưa đủ số dư."
-          );
         }
-
-        // Step 3: Attach X-PAYMENT proof header for authenticated retry
-        const xPaymentPayload = {
-          network: "avalanche-fuji",
-          scheme: "exact-escrow",
-          payload: {
-            questionId,
-            questionHash,
-            amount: challengeAmount,
-            payer: activeAccount,
-            asset: challengeAsset,
-            txHash: escrowTxHash
-          }
-        };
-        requestHeaders["X-PAYMENT"] = btoa(JSON.stringify(xPaymentPayload));
+        await refreshBalance(activeAccount);
       }
 
       setLoadingStep("Mình đang tìm căn cứ liên quan đến câu hỏi của bạn...");
@@ -1034,7 +1197,7 @@ export default function AskPayWorkspacePage() {
         body: JSON.stringify({
           ...basePayload,
           escrowTxHash,
-          ...(escrowTxHash ? { requireX402: true } : {})
+          ...(escrowTxHash && usedX402Usdc ? { requireX402: true } : {})
         })
       });
 
@@ -1053,7 +1216,9 @@ export default function AskPayWorkspacePage() {
         Boolean(data.onchain?.fujiSettlementTxHash);
       const hasEscrowDeposit = Boolean(escrowTxHash) || isLiveOnchain;
 
-      const computedFeeLabel = !hasEscrowDeposit
+      const computedFeeLabel = isFreeRewardTurn
+        ? "Miễn phí (Ưu đãi 10 tặng 1)"
+        : !hasEscrowDeposit
         ? "Miễn phí trong bản dùng thử"
         : settlementStatus === "AUTO_REFUNDED_TO_USER"
         ? "Đã hoàn tiền tạm giữ 100%"
@@ -1117,6 +1282,15 @@ export default function AskPayWorkspacePage() {
         chatEndRef.current?.scrollIntoView({ behavior: "smooth" });
       }, 80);
     } catch (err: any) {
+      if (!escrowTxHash) {
+        setSessions((prev) =>
+          prev.map((s) =>
+            s.id === targetSessionId
+              ? { ...s, messages: s.messages.filter((m) => m.id !== userMsg.id) }
+              : s
+          )
+        );
+      }
       if (!customPrompt) setQuestionInput(queryText);
       setLastFailedPrompt(queryText);
       const baseMsg =
@@ -1250,11 +1424,11 @@ export default function AskPayWorkspacePage() {
                 className="auth-submit-btn"
                 style={{ fontSize: 15, padding: "13px 18px" }}
               >
-                Dùng thử demo
+                Dùng thử demo (Miễn phí)
               </button>
 
               <p style={{ margin: "12px 0 18px", fontSize: 12.5, color: "#64748b", textAlign: "center", lineHeight: 1.5 }}>
-                Bản dùng thử không thu phí. Câu trả lời có căn cứ để bạn tự đối chiếu.
+                Bản dùng thử miễn phí, không cần kết nối ví. Hoặc đăng nhập tài khoản để kết nối ví thanh toán on-chain.
               </p>
 
               <div style={{ borderTop: "1px solid #e2e8f0", paddingTop: 14, display: "flex", justifyContent: "center" }}>
@@ -1264,7 +1438,7 @@ export default function AskPayWorkspacePage() {
                   className="link-subtle"
                   style={{ fontSize: 13, fontWeight: 600, color: "#285380" }}
                 >
-                  Đăng nhập để mở lại lịch sử
+                  Đăng nhập tài khoản / Kết nối ví
                 </button>
               </div>
             </div>
@@ -1272,7 +1446,7 @@ export default function AskPayWorkspacePage() {
             <div>
               <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", marginBottom: 14 }}>
                 <span style={{ fontSize: 14, fontWeight: 700, color: "#0a1c2e" }}>
-                  Đăng nhập để mở lại lịch sử
+                  Đăng nhập tài khoản (Kết nối ví)
                 </span>
                 <button
                   type="button"
@@ -1291,7 +1465,7 @@ export default function AskPayWorkspacePage() {
                     cursor: "pointer"
                   }}
                 >
-                  Dùng thử demo
+                  Dùng thử demo (Free)
                 </button>
               </div>
 
@@ -1446,7 +1620,9 @@ export default function AskPayWorkspacePage() {
             <div>
               <div className="brand-name">AskPay</div>
               <div style={{ fontSize: 10.5, color: "#64748b", fontWeight: 500 }}>
-                Bản dùng thử · Pháp lý XNK
+                {isDemoProfile(currentUser)
+                  ? "Bản dùng thử · Pháp lý XNK"
+                  : "Tài khoản Web3 · Pháp lý XNK"}
               </div>
             </div>
           </div>
@@ -1481,13 +1657,34 @@ export default function AskPayWorkspacePage() {
             type="button"
             onClick={() => setShowSettingsModal(true)}
             className="history-item"
-            style={{ background: "#ffffff", border: "1px solid #e2e8f0" }}
+            style={{
+              background: !isDemoProfile(currentUser) && !account ? "#fffbeb" : "#ffffff",
+              border: !isDemoProfile(currentUser) && !account ? "1px solid #fde68a" : "1px solid #e2e8f0"
+            }}
           >
-            <ShieldCheckIcon size={14} color={useOnchainWallet && account ? "#059669" : "#64748b"} />
-            <span className="history-item-title" style={{ fontSize: 12.5 }}>
+            <ShieldCheckIcon
+              size={14}
+              color={
+                useOnchainWallet && account
+                  ? "#059669"
+                  : !isDemoProfile(currentUser)
+                  ? "#b45309"
+                  : "#64748b"
+              }
+            />
+            <span
+              className="history-item-title"
+              style={{
+                fontSize: 12.5,
+                color: !isDemoProfile(currentUser) && !account ? "#b45309" : undefined,
+                fontWeight: !isDemoProfile(currentUser) && !account ? 600 : undefined
+              }}
+            >
               {useOnchainWallet && account
                 ? `Thanh toán (${paymentAsset})`
-                : "Thanh toán (Đang dùng thử)"}
+                : !isDemoProfile(currentUser)
+                ? "Kết nối ví để thanh toán"
+                : "Thanh toán (Dùng thử miễn phí)"}
             </span>
           </button>
         </div>
@@ -2400,13 +2597,25 @@ export default function AskPayWorkspacePage() {
                     style={{
                       fontSize: 11.5,
                       fontWeight: 600,
-                      color: useOnchainWallet && account ? "#047857" : "#475569",
-                      background: useOnchainWallet && account ? "#ecfdf5" : "#f1f5f9",
+                      color:
+                        useOnchainWallet && account
+                          ? "#047857"
+                          : !isDemoProfile(currentUser)
+                          ? "#b45309"
+                          : "#475569",
+                      background:
+                        useOnchainWallet && account
+                          ? "#ecfdf5"
+                          : !isDemoProfile(currentUser)
+                          ? "#fef3c7"
+                          : "#f1f5f9",
                       padding: "3px 9px",
                       borderRadius: 999
                     }}
                   >
-                    {!useOnchainWallet || !account
+                    {!isDemoProfile(currentUser) && !account
+                      ? "Cần kết nối ví Core / MetaMask"
+                      : !useOnchainWallet || !account
                       ? "Miễn phí trong bản dùng thử"
                       : nextIsFree
                       ? "Miễn phí lượt thứ 10 (10 tặng 1)"
@@ -2481,11 +2690,24 @@ export default function AskPayWorkspacePage() {
                       ) : (
                         <button
                           type="button"
-                          onClick={() => setShowSettingsModal(true)}
+                          onClick={async () => {
+                            if (!isDemoProfile(currentUser)) {
+                              const connected = await connectWallet();
+                              if (!connected) setShowSettingsModal(true);
+                            } else {
+                              setShowSettingsModal(true);
+                            }
+                          }}
                           className="link-subtle"
-                          style={{ fontSize: 11.5, color: "#64748b" }}
+                          style={{
+                            fontSize: 11.5,
+                            color: !isDemoProfile(currentUser) ? "#b45309" : "#64748b",
+                            fontWeight: !isDemoProfile(currentUser) ? 600 : 400
+                          }}
                         >
-                          Bật thanh toán ví Fuji (USDC / AVAX)
+                          {!isDemoProfile(currentUser)
+                            ? "Kết nối ví Fuji (USDC / AVAX) để tiếp tục"
+                            : "Bật thanh toán ví Fuji (USDC / AVAX)"}
                         </button>
                       )}
                     </div>
@@ -2880,8 +3102,14 @@ export default function AskPayWorkspacePage() {
                       Địa chỉ ví: {account}
                     </div>
                     <div style={{ marginTop: 4, color: "#047857", fontWeight: 600 }}>
-                      Số dư Testnet: {avaxBalance || "..."} AVAX
+                      Số dư Testnet: {avaxBalance || "..."} AVAX • {usdcBalance || "0.00"} USDC
                     </div>
+                    {usdcBalance === "0.00" && (
+                      <div style={{ marginTop: 6, fontSize: 12, color: "#b45309", lineHeight: 1.45 }}>
+                        Ví hiện chưa có USDC Fuji. Bạn có thể đổi sang{" "}
+                        <strong>AVAX testnet</strong> ở ô chọn cạnh khung nhập câu hỏi để test ngay bằng số dư AVAX sẵn có.
+                      </div>
+                    )}
                   </div>
                 ) : (
                   <button
@@ -2902,23 +3130,60 @@ export default function AskPayWorkspacePage() {
                   </button>
                 )}
 
-                <label
-                  style={{
-                    display: "flex",
-                    alignItems: "center",
-                    gap: 8,
-                    marginTop: 10,
-                    cursor: "pointer",
-                    color: "#334155"
-                  }}
-                >
-                  <input
-                    type="checkbox"
-                    checked={useOnchainWallet}
-                    onChange={(e) => setUseOnchainWallet(e.target.checked)}
-                  />
-                  <span>Thanh toán qua ví Web3 khi gửi câu hỏi</span>
-                </label>
+                {isDemoProfile(currentUser) ? (
+                  <label
+                    style={{
+                      display: "flex",
+                      alignItems: "center",
+                      gap: 8,
+                      marginTop: 10,
+                      cursor: "pointer",
+                      color: "#334155"
+                    }}
+                  >
+                    <input
+                      type="checkbox"
+                      checked={useOnchainWallet}
+                      onChange={(e) => setUseOnchainWallet(e.target.checked)}
+                    />
+                    <span>Bật thanh toán ví Web3 trong bản dùng thử</span>
+                  </label>
+                ) : (
+                  <div
+                    style={{
+                      marginTop: 10,
+                      paddingTop: 10,
+                      borderTop: "1px dashed #cbd5e1",
+                      display: "flex",
+                      flexDirection: "column",
+                      gap: 8
+                    }}
+                  >
+                    <div style={{ fontSize: 12, color: "#334155", lineHeight: 1.5 }}>
+                      Luồng <strong>Tài khoản đã đăng nhập</strong> mặc định tạm giữ cọc qua ví Web3 (chỉ giải ngân khi trích dẫn đạt chuẩn, sai tự hoàn tiền).
+                    </div>
+                    <button
+                      type="button"
+                      onClick={() => {
+                        setShowSettingsModal(false);
+                        handleQuickDemoLogin("user");
+                      }}
+                      style={{
+                        alignSelf: "flex-start",
+                        border: "1px solid #cbd5e1",
+                        background: "#ffffff",
+                        color: "#285380",
+                        borderRadius: 8,
+                        padding: "6px 11px",
+                        fontSize: 12,
+                        fontWeight: 600,
+                        cursor: "pointer"
+                      }}
+                    >
+                      Chuyển sang Dùng thử demo miễn phí
+                    </button>
+                  </div>
+                )}
               </div>
 
               <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>

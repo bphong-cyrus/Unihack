@@ -1822,10 +1822,11 @@ export async function POST(req: Request) {
   const question: string = body.question.trim();
   const questionHash = keccak256(toBytes(question));
   const asOfNorm: string = typeof body.asOf === "string" ? body.asOf.trim() : "";
-  const escrowAddr = process.env.NEXT_PUBLIC_ESCROW_ADDRESS || "";
-  const usdcAddr = process.env.NEXT_PUBLIC_USDC_ADDRESS || "";
-  const fujiRpc =
-    process.env.NEXT_PUBLIC_FUJI_RPC_URL || "https://api.avax-test.network/ext/bc/C/rpc";
+  const escrowAddr = (process.env.NEXT_PUBLIC_ESCROW_ADDRESS || "").trim();
+  const usdcAddr = (process.env.NEXT_PUBLIC_USDC_ADDRESS || "").trim();
+  const fujiRpc = (
+    process.env.NEXT_PUBLIC_FUJI_RPC_URL || "https://api.avax-test.network/ext/bc/C/rpc"
+  ).trim();
 
   // Check idempotency cache (including conflict detection if questionHash, tier, or asOf changed)
   const replay = checkIdempotentReplay({
@@ -1940,10 +1941,11 @@ export async function POST(req: Request) {
       corpusSha256: DEMO_CORPUS_SHA256_TS
     });
   } else {
-    const url =
+    const url = (
       process.env.AI_SERVICE_URL ||
       process.env.LEGAL_RAG_API_URL ||
-      "http://127.0.0.1:8000/api/v1/legal/ask";
+      "http://127.0.0.1:8000/api/v1/legal/ask"
+    ).trim();
 
     const proxyResult = await forwardLegalQuestion(body, url);
     if (proxyResult.status === 400 || proxyResult.status === 502) {
@@ -1995,14 +1997,14 @@ export async function POST(req: Request) {
     .map((c: any) => `${c.document}#Art${c.article}#Cl${c.clause}`)
     .join(";");
 
-  const pk = process.env.ORACLE_PRIVATE_KEY || "";
-  const receiptAddr = process.env.NEXT_PUBLIC_RECEIPT_LOG_ADDRESS || "";
+  const pk = (process.env.ORACLE_PRIVATE_KEY || "").trim();
+  const receiptAddr = (process.env.NEXT_PUBLIC_RECEIPT_LOG_ADDRESS || "").trim();
+  const isEvmAddress = (addr: string) => /^0x[0-9a-fA-F]{40}$/.test(addr);
 
   const isLiveOnchainReady =
-    pk.startsWith("0x") &&
-    pk.length === 66 &&
-    escrowAddr.startsWith("0x") &&
-    receiptAddr.startsWith("0x");
+    /^0x[0-9a-fA-F]{64}$/.test(pk) &&
+    isEvmAddress(escrowAddr) &&
+    isEvmAddress(receiptAddr);
 
   let l1TxHash = "";
   let settlementTxHash = "";
@@ -2011,47 +2013,54 @@ export async function POST(req: Request) {
 
   // Read actual on-chain escrow only when the client submitted an escrowTxHash or live oracle is configured
   const hasEscrowDepositHint =
-    typeof body.escrowTxHash === "string" && body.escrowTxHash.startsWith("0x");
+    typeof body.escrowTxHash === "string" && body.escrowTxHash.trim().startsWith("0x");
 
   if (isLiveOnchainReady && hasEscrowDepositHint && /^0x[0-9a-fA-F]{64}$/.test(questionId)) {
-    try {
-      const fujiPublic = createPublicClient({
-        chain: avalancheFuji,
-        transport: http(fujiRpc, { timeout: 10000 })
-      });
-      let rawTuple: any = null;
+    const fujiPublic = createPublicClient({
+      chain: avalancheFuji,
+      transport: http(fujiRpc, { timeout: 10000 })
+    });
+
+    for (let attempt = 0; attempt < 3; attempt++) {
       try {
-        rawTuple = await fujiPublic.readContract({
-          address: escrowAddr as `0x${string}`,
-          abi: ESCROW_V2_ABI,
-          functionName: "escrows",
-          args: [questionId as `0x${string}`],
-          authorizationList: undefined
-        });
+        let rawTuple: any = null;
+        try {
+          rawTuple = await fujiPublic.readContract({
+            address: escrowAddr as `0x${string}`,
+            abi: ESCROW_V2_ABI,
+            functionName: "escrows",
+            args: [questionId as `0x${string}`],
+            authorizationList: undefined
+          });
+        } catch {
+          rawTuple = await fujiPublic.readContract({
+            address: escrowAddr as `0x${string}`,
+            abi: ESCROW_LEGACY_ABI,
+            functionName: "escrows",
+            args: [questionId as `0x${string}`],
+            authorizationList: undefined
+          });
+        }
+        if (rawTuple) {
+          escrowRecord = {
+            asker: rawTuple[0],
+            amount: rawTuple[1],
+            tier: Number(rawTuple[2]),
+            status: Number(rawTuple[3]),
+            createdAt: rawTuple[4],
+            questionHash: rawTuple[5],
+            l1ReceiptHash: rawTuple[6],
+            validatorScore: Number(rawTuple[7]),
+            isUsdc: Boolean(rawTuple[8])
+          };
+          if (escrowRecord.status !== 0) break;
+        }
       } catch {
-        rawTuple = await fujiPublic.readContract({
-          address: escrowAddr as `0x${string}`,
-          abi: ESCROW_LEGACY_ABI,
-          functionName: "escrows",
-          args: [questionId as `0x${string}`],
-          authorizationList: undefined
-        });
+        escrowRecord = null;
       }
-      if (rawTuple) {
-        escrowRecord = {
-          asker: rawTuple[0],
-          amount: rawTuple[1],
-          tier: Number(rawTuple[2]),
-          status: Number(rawTuple[3]),
-          createdAt: rawTuple[4],
-          questionHash: rawTuple[5],
-          l1ReceiptHash: rawTuple[6],
-          validatorScore: Number(rawTuple[7]),
-          isUsdc: Boolean(rawTuple[8])
-        };
+      if (attempt < 2) {
+        await new Promise((resolve) => setTimeout(resolve, 1000));
       }
-    } catch {
-      escrowRecord = null;
     }
   }
 
@@ -2078,7 +2087,7 @@ export async function POST(req: Request) {
   if (isLiveOnchainReady && settlementDecision.hasEscrow) {
     try {
       const oracleAccount = privateKeyToAccount(pk as `0x${string}`);
-      const l1Rpc = process.env.ASKPAY_L1_RPC_URL || fujiRpc;
+      const l1Rpc = (process.env.ASKPAY_L1_RPC_URL || fujiRpc).trim();
       const l1ChainId = Number(process.env.ASKPAY_L1_CHAIN_ID || 43113);
 
       const askPayL1 = defineChain({

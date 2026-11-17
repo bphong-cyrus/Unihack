@@ -369,3 +369,45 @@ test("factcheck isolates verification target without substituting another articl
   assert(mutatedExcerpt.validation.citation_checks[0].fail_reason.startsWith("EXCERPT_MISMATCH"));
   assert(mutatedExcerpt.validation.mismatch_detail.includes("60"));
 });
+
+test("x402-protocol trims accidental whitespace in escrow and token env addresses", () => {
+  const qId = "0x" + "a".repeat(64);
+  const qHash = "0x" + "b".repeat(64);
+  const paddedEscrow = "  0x6d32bf8fcbbdaa5d430a30a38908bce8906ebc68 \n";
+  const paddedUsdc = " 0x5425890298aed601595a70AB815c96711a31Bc65 ";
+
+  const challenge = buildX402Challenge({
+    questionId: qId,
+    questionHash: qHash,
+    tier: "quick",
+    escrowAddress: paddedEscrow,
+    usdcAddress: paddedUsdc
+  });
+
+  assert.equal(challenge.accepts[0].payTo, "0x6d32bf8fcbbdaa5d430a30a38908bce8906ebc68");
+  assert.equal(challenge.accepts[0].asset, "0x5425890298aed601595a70AB815c96711a31Bc65");
+
+  const header = Buffer.from(
+    JSON.stringify({
+      network: "avalanche-fuji",
+      scheme: "exact-escrow",
+      payload: {
+        questionId: qId,
+        questionHash: qHash,
+        amount: "50000",
+        asset: "0x5425890298aed601595a70AB815c96711a31Bc65",
+        txHash: "0x" + "e".repeat(64)
+      }
+    })
+  ).toString("base64");
+
+  const verified = verifyX402PaymentHeader({
+    headerValue: header,
+    expectedQuestionId: qId,
+    expectedQuestionHash: qHash,
+    expectedTier: "quick",
+    expectedAsset: paddedUsdc,
+    requireExplicitAsset: true
+  });
+  assert.equal(verified.ok, true);
+});
